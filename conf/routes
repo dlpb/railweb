@@ -1,0 +1,28 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+
+# user/admin stuff
+GET  /login                         controllers.web.UserController.showLoginForm
+POST /doLogin                       controllers.web.UserController.processLoginAttempt
+GET /welcome                        controllers.web.LandingPageController.showLandingPage
+GET /logout                         controllers.web.AuthenticatedUserController.logout
+
+GET /map                            controllers.web.MapController.showMapPage
+GET /routes                         controllers.web.RouteController.showRouteListPage
+GET /route/detail/:from/:to         controllers.web.RouteController.showRouteDetailPage(from: String, to: String)
+GET /locations                      controllers.web.LocationController.showLocationListPage
+GET /location/detail/:id            controllers.web.LocationController.showLocationDetailPage(id: String)
+
+
+GET /api/location/map               controllers.api.ApiAuthenticatedController.getLocationsForMap
+GET /api/location/list/default      controllers.api.ApiAuthenticatedController.getLocationsForList
+GET /api/location/:id               controllers.api.ApiAuthenticatedController.getLocation(id: String)
+
+GET /api/route/map                  controllers.api.ApiAuthenticatedController.getRoutesForMap
+GET /api/route/list/default         controllers.api.ApiAuthenticatedController.getRoutesForList
+GET /api/route/:from/:to            controllers.api.ApiAuthenticatedController.getRoute(from: String, to: String)
