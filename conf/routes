@@ -13,11 +13,6 @@ GET /welcome                        controllers.web.LandingPageController.showLa
 GET /logout                         controllers.web.AuthenticatedUserController.logout
 
 GET /map                            controllers.web.MapController.showMapPage
-GET /routes                         controllers.web.RouteController.showRouteListPage
-GET /route/detail/:from/:to         controllers.web.RouteController.showRouteDetailPage(from: String, to: String)
-GET /locations                      controllers.web.LocationController.showLocationListPage
-GET /location/detail/:id            controllers.web.LocationController.showLocationDetailPage(id: String)
-
 
 GET /api/location/map               controllers.api.ApiAuthenticatedController.getLocationsForMap
 GET /api/location/list/default      controllers.api.ApiAuthenticatedController.getLocationsForList

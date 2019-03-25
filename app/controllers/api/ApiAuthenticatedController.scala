@@ -9,16 +9,18 @@ import org.json4s.jackson.Serialization.write
 import play.api.Environment
 import play.api.mvc.{AbstractController, AnyContent, ControllerComponents}
 
+import scala.io.Source
+
 @Singleton
 class ApiAuthenticatedController @Inject()(
                                             env: Environment,
                                             cc: ControllerComponents,
-                                            locations: LocationsService,
-                                            routes: RoutesService,
                                             authAction: AuthorizedAction // NEW - add the action as a constructor argument
                              )
   extends AbstractController(cc) {
 
+  private val locations: LocationsService = makeLocationService()
+  private val routes: RoutesService = makeRouteService()
 
   implicit val formats = DefaultFormats
 
@@ -64,5 +66,15 @@ class ApiAuthenticatedController @Inject()(
         case None => NotFound
       }
     }
+  }
+
+  private def makeLocationService(): LocationsService ={
+    val jsonString = Source.fromFile(System.getProperty("user.dir") + "/resources/data/static/locations.json").mkString
+    LocationsService.makeLocationsService(jsonString)
+  }
+
+  private def makeRouteService(): RoutesService ={
+    val jsonString = Source.fromFile(System.getProperty("user.dir") + "/resources/data/static/routes.json").mkString
+    RoutesService.makeRoutesService(jsonString)
   }
 }
