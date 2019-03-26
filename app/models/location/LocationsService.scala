@@ -3,7 +3,12 @@ package models.location
 import org.json4s.jackson.JsonMethods._
 import org.json4s._
 
-class LocationsService(locations: Set[Location]) {
+import scala.io.Source
+
+class LocationsService {
+
+  private val locations = LocationsService.makeLocations(LocationsService.readLocationsFromFile)
+
   def getLocation(id: String): Option[Location] =
     locations.find(_.id.equals(id))
 
@@ -19,9 +24,13 @@ class LocationsService(locations: Set[Location]) {
 }
 
 object LocationsService {
-  def makeLocationsService(locations: String): LocationsService = {
+
+  def readLocationsFromFile: String = {
+    Source.fromFile(System.getProperty("user.dir") + "/resources/data/static/locations.json").mkString
+  }
+
+  def makeLocations(locations: String): Set[Location] = {
     implicit val formats = DefaultFormats
-    new LocationsService(parse(locations).extract[Set[Location]]
-    )
+    parse(locations).extract[Set[Location]]
   }
 }

@@ -148,7 +148,7 @@ function populateConnections(map, token){
             to: connection.to.id,
             name: connection.from.name + " - " + connection.to.name + ' (' + connection.from.id + ' - ' + connection.to.id + ')',
             visited: connection.visited,
-            operator: connection.operator,
+            operator: connection.toc,
 
         });
 
@@ -188,10 +188,10 @@ function registerMapHandler(map){
 
             var url = '';
             if(type==='Route'){
-                url="/track/detail/?from=" + feature.get('from') + "&to=" +  feature.get('to');
+                url="/route/detail/" + feature.get('from') + "/" +  feature.get('to');
             }
             else if(type==='Location'){
-                url="/stations/detail/?" +  feature.get('id');
+                url="/location/detail/" +  feature.get('id');
             }
 
             jQuery(content).append(infoBox(iname, type, visited, url, operator));

@@ -3,7 +3,12 @@ package models.route
 import org.json4s.DefaultFormats
 import org.json4s.jackson.JsonMethods.parse
 
-class RoutesService(routes: Set[Route]) {
+import scala.io.Source
+
+class RoutesService {
+
+  private val routes = RoutesService.makeRoutes(RoutesService.readRoutesFromFile)
+
   def getRoute(fromId: String, toId: String): Option[Route] =
     routes.find(r => r.from.id.equals(fromId) &&  r.to.id.equals(toId))
 
@@ -19,9 +24,12 @@ class RoutesService(routes: Set[Route]) {
 }
 
 object RoutesService {
-  def makeRoutesService(routes: String): RoutesService = {
+  def readRoutesFromFile: String = {
+    Source.fromFile(System.getProperty("user.dir") + "/resources/data/static/routes.json").mkString
+  }
+
+  def makeRoutes(routes: String): Set[Route] = {
     implicit val formats = DefaultFormats
-    new RoutesService(parse(routes).extract[Set[Route]]
-    )
+    parse(routes).extract[Set[Route]]
   }
 }
