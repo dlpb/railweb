@@ -1,11 +1,16 @@
 package models.location
 
+import models.auth.User
 import org.json4s.jackson.JsonMethods._
 import org.json4s._
 
+import scala.collection.mutable
 import scala.io.Source
 
 class LocationsService {
+
+  private val visits: scala.collection.mutable.Map[User, mutable.Map[Location, List[String]]] =
+    new mutable.HashMap()
 
   private val locations = LocationsService.makeLocations(LocationsService.readLocationsFromFile)
 
@@ -21,6 +26,26 @@ class LocationsService {
     locations map {l => ListLocation(l)}
   }
 
+  def getVisitsForLocation(location: Location, user: User): List[String] = {
+     visits.get(user) flatMap {_.get(location)} match {
+       case Some(list) => list
+       case None => List()
+     }
+  }
+  def visitLocation(location: Location, user: User): Unit = {
+    val visitsForUser: Option[mutable.Map[Location, List[String]]] = visits.get(user)
+    visitsForUser match {
+      case Some(_) =>
+        val visitsForLocation: Option[List[String]] = visits(user).get(location)
+        visitsForLocation match {
+          case Some(_) => visits(user)(location) = "" :: visits(user)(location)
+          case None => visits(user)(location) = List("")
+        }
+      case None =>
+        visits(user) = new mutable.HashMap()
+        visitLocation(location, user)
+    }
+  }
 }
 
 object LocationsService {
