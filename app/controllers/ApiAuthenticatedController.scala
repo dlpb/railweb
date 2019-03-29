@@ -74,11 +74,14 @@ class ApiAuthenticatedController @Inject()(
         case Some(loc) =>
           locations.getLocation(loc) match {
             case Some(loc) =>
-              Ok(s"Loc found $loc")
+              locations.visitLocation(loc, request.user)
+              Ok(s"Loc found ${loc.id}, visiting")
             case None => NotFound
           }
         case None => BadRequest
       }
     }
   }
+
+
 }
