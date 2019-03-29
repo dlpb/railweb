@@ -31,3 +31,8 @@ GET /api/visit/location/:id         controllers.ApiAuthenticatedController.getAl
 POST /api/visit/location            controllers.ApiAuthenticatedController.visitLocation
 DELETE /api/visit/location/last     controllers.ApiAuthenticatedController.removeLastVisitForLocation
 DELETE /api/visit/location/all      controllers.ApiAuthenticatedController.removeAllVisitsForLocation
+
+GET /api/visit/route/:from/:to            controllers.ApiAuthenticatedController.getAllVisitsForRoute(from: String, to: String)
+POST /api/visit/route               controllers.ApiAuthenticatedController.visitRoute
+DELETE /api/visit/route/last        controllers.ApiAuthenticatedController.removeLastVisitForRoute
+DELETE /api/visit/route/all         controllers.ApiAuthenticatedController.removeAllVisitsForRoute
