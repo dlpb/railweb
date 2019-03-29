@@ -1,5 +1,4 @@
-package controllers.web
-
+package controllers
 
 import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject.{Inject, Singleton}

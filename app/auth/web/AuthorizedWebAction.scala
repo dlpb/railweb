@@ -1,6 +1,6 @@
 package auth.web
 
-import controllers.web.routes
+import controllers.routes
 import javax.inject.Inject
 import models.auth.{User, UserDao}
 import play.api.mvc.Results._

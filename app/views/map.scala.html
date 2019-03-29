@@ -1,4 +1,6 @@
-@(jwtToken: String)
+@import helper._
+
+@(jwtToken: String, visitLocationUrl: Call)(implicit request: Request[AnyContent])
 
 <script src='@routes.Assets.versioned("javascripts/mapFunctions.js")' type="text/javascript"></script>
 <script src='@routes.Assets.versioned("javascripts/tocData.js")' type="text/javascript"></script>
@@ -15,6 +17,16 @@
 <h1>Map</h1>
 <div>
     <p>@jwtToken</p>
+    @helper.form(visitLocationUrl, 'id -> "user-login-form") {
+
+    @helper.CSRF.formField
+
+    <input type="hidden" id="Authorization" name="Authorization" value="@jwtToken"/>
+    <input type="hidden" id="location" value="CTH" name="location"/>
+
+    <button>Login</button>
+
+    }
 </div>
 <div id="content-placeholder"></div>
 

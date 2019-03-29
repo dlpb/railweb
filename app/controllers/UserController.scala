@@ -1,9 +1,9 @@
-package controllers.web
+package controllers
 
 import javax.inject.Inject
+import models.Global
 import models.auth.UserDao
 import models.web.forms.LoginUser
-import models.{Global}
 import play.api.data.Forms._
 import play.api.data._
 import play.api.mvc._

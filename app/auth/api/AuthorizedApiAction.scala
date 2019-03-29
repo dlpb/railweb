@@ -5,6 +5,7 @@ import javax.inject.Inject
 import models.auth.{User, UserDao}
 import play.api.http.HeaderNames
 import play.api.mvc._
+import play.mvc.Http.RequestBody
 
 import scala.concurrent.{ExecutionContext, Future}
 import scala.util.{Failure, Success}
@@ -42,8 +43,15 @@ class AuthorizedAction @Inject()(bodyParser: BodyParsers.Default)(implicit ec: E
     }
   }
 
-  private def extractBearerToken[A](request: Request[A]): Option[String] =
-    request.headers.get(HeaderNames.AUTHORIZATION) collect {
+  private def extractBearerToken[A](request: Request[A]): Option[String] = {
+    val fromHeader = request.headers.get(HeaderNames.AUTHORIZATION) collect {
       case headerTokenRegex(token) => token
     }
+    fromHeader match {
+      case None =>
+        val data = request.body.asInstanceOf[AnyContentAsFormUrlEncoded].data
+        data.get("Authorization").map {_.head}
+      case x => x
+    }
+  }
 }

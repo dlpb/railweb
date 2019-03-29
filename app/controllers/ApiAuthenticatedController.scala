@@ -1,4 +1,4 @@
-package controllers.api
+package controllers
 
 import auth.api.{AuthorizedAction, UserRequest}
 import javax.inject.{Inject, Singleton}
@@ -7,7 +7,7 @@ import models.route.RoutesService
 import org.json4s.DefaultFormats
 import org.json4s.jackson.Serialization.write
 import play.api.Environment
-import play.api.mvc.{AbstractController, AnyContent, ControllerComponents}
+import play.api.mvc.{AbstractController, AnyContent, AnyContentAsFormUrlEncoded, ControllerComponents}
 
 @Singleton
 class ApiAuthenticatedController @Inject()(
@@ -16,7 +16,7 @@ class ApiAuthenticatedController @Inject()(
                                             locations: LocationsService,
                                             routes: RoutesService,
                                             authAction: AuthorizedAction // NEW - add the action as a constructor argument
-                             )
+                                          )
   extends AbstractController(cc) {
 
 
@@ -62,6 +62,22 @@ class ApiAuthenticatedController @Inject()(
       route match {
         case Some(routing) => Ok(write(routing)).as(JSON)
         case None => NotFound
+      }
+    }
+  }
+
+  def visitLocation() = {
+    authAction { implicit request =>
+      val id = request.request.body.asFormUrlEncoded.get("location").headOption
+
+      id match {
+        case Some(loc) =>
+          locations.getLocation(loc) match {
+            case Some(loc) =>
+              Ok(s"Loc found $loc")
+            case None => NotFound
+          }
+        case None => BadRequest
       }
     }
   }
