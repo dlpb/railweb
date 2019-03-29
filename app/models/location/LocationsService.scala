@@ -67,7 +67,7 @@ class LocationsService {
     }
   }
 
-  def deleteAllVisit(location: Location, user: User): Unit = {
+  def deleteAllVisits(location: Location, user: User): Unit = {
     val visitsForUser: Option[mutable.Map[Location, List[String]]] = visits.get(user)
     visitsForUser match {
       case Some(_) =>

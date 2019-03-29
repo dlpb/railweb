@@ -110,7 +110,7 @@ class LocationServiceTest extends FlatSpec with Matchers {
     service.visitLocation(location, user)
     service.getVisitsForLocation(location, user).size should be(2)
 
-    service.deleteAllVisit(location, user)
+    service.deleteAllVisits(location, user)
     service.getVisitsForLocation(location, user).size should be(0)
   }
 }
