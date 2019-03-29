@@ -181,7 +181,8 @@ function registerMapHandler(map){
 
             jQuery(content).empty();
 
-            var iname = feature.get('name');
+            let name = feature.get('name');
+            let id = feature.get("id");
             let type = feature.get('type');
             let visited = feature.get('visited') ? "Visited" : "Not yet visited";
             let operator = feature.get('operator');
@@ -194,13 +195,13 @@ function registerMapHandler(map){
                 url="/location/detail/" +  feature.get('id');
             }
 
-            jQuery(content).append(infoBox(iname, type, visited, url, operator));
+            jQuery(content).append(infoBox(name, type, visited, operator, id, url));
         }
     });
 }
 
 
-function infoBox(info, type, data, url, toc){
+function infoBox(info, type, data, toc, id, url){
     var infoTemplate = document.getElementsByTagName("template")[0];
     var infoElement = infoTemplate.content.querySelector("div");
     var renderedInfoElement = document.importNode(infoElement, true);
@@ -208,16 +209,31 @@ function infoBox(info, type, data, url, toc){
     renderedInfoElement.querySelector("slot[name=info]").textContent = info;
     renderedInfoElement.querySelector("slot[name=type]").textContent = type;
     renderedInfoElement.querySelector("slot[name=data]").textContent = data;
+    renderedInfoElement.querySelector("#location-visit-form #location").value = id;
     renderedInfoElement.querySelector("a").setAttribute("href", url);
 
+
     let tocData = findTocData(toc);
-    console.log(toc);
-    console.log(tocData);
-
     renderedInfoElement.querySelector("slot[name=tocBadge]").textContent = tocData.name;
-
     renderedInfoElement.querySelector("#tocBadge").style.backgroundColor = tocData["colour"];
     renderedInfoElement.querySelector("#tocBadge").style.color = tocData["textColour"];
+
+    renderedInfoElement.querySelector("#visit").onclick = function() {
+        if(type === 'Route') {
+
+        }
+        else if(type === 'Location'){
+            jQuery.ajax({
+              type: "POST",
+              url: '/api/visit/location',
+              data: {
+                'csrfToken': renderedInfoElement.querySelector('#location-visit-form').children["user-login-form"][0].value,
+                'Authorization': renderedInfoElement.querySelector('#location-visit-form #Authorization').value,
+                'location': id
+              },
+            });
+        }
+    }
 
     return renderedInfoElement;
 }

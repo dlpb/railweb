@@ -17,16 +17,6 @@
 <h1>Map</h1>
 <div>
     <p>@jwtToken</p>
-    @helper.form(visitLocationUrl, 'id -> "user-login-form") {
-
-    @helper.CSRF.formField
-
-    <input type="hidden" id="Authorization" name="Authorization" value="@jwtToken"/>
-    <input type="hidden" id="location" value="CTH" name="location"/>
-
-    <button>Login</button>
-
-    }
 </div>
 <div id="content-placeholder"></div>
 
@@ -46,6 +36,16 @@
             </span><br />
         <slot name="data"></slot>
         <a href="" target="_blank">More Details</a>
+
+        <div id="location-visit-form">
+            @helper.form(visitLocationUrl, 'id -> "user-login-form") {
+                @helper.CSRF.formField
+                <input type="hidden" id="Authorization" name="Authorization" value="@jwtToken"/>
+                <input type="hidden" id="location" value="" name="location"/>
+            }
+        </div>
+
+        <button id="visit">Visit</button>
     </div>
 </template>
 
