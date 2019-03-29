@@ -186,6 +186,8 @@ function registerMapHandler(map){
             let type = feature.get('type');
             let visited = feature.get('visited') ? "Visited" : "Not yet visited";
             let operator = feature.get('operator');
+            let from = feature.get('from') || "";
+            let to = feature.get('to') || "";
 
             var url = '';
             if(type==='Route'){
@@ -195,13 +197,13 @@ function registerMapHandler(map){
                 url="/location/detail/" +  feature.get('id');
             }
 
-            jQuery(content).append(infoBox(name, type, visited, operator, id, url));
+            jQuery(content).append(infoBox(name, type, visited, operator, id, url, from, to));
         }
     });
 }
 
 
-function infoBox(info, type, data, toc, id, url){
+function infoBox(info, type, data, toc, id, url, from, to){
     var infoTemplate = document.getElementsByTagName("template")[0];
     var infoElement = infoTemplate.content.querySelector("div");
     var renderedInfoElement = document.importNode(infoElement, true);
@@ -220,7 +222,16 @@ function infoBox(info, type, data, toc, id, url){
 
     renderedInfoElement.querySelector("#visit").onclick = function() {
         if(type === 'Route') {
-
+            jQuery.ajax({
+              type: "POST",
+              url: '/api/visit/route',
+              data: {
+                'csrfToken': renderedInfoElement.querySelector('#location-visit-form').children["user-login-form"][0].value,
+                'Authorization': renderedInfoElement.querySelector('#location-visit-form #Authorization').value,
+                'from': from,
+                'to': to
+              },
+            });
         }
         else if(type === 'Location'){
             jQuery.ajax({
