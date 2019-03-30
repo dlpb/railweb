@@ -18,7 +18,6 @@ class LocationController @Inject()(
                                        jwtService: JWTService
 
                                      ) extends AbstractController(cc) {
-  private val logoutUrl = routes.AuthenticatedUserController.logout
 
   def showLocationDetailPage(id: String) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
    if(request.user.roles.contains(MapUser)){
@@ -33,14 +32,11 @@ class LocationController @Inject()(
          routes.ApiAuthenticatedController.removeAllVisitsForLocation(id)
        )(request.request))
        case None => NotFound("Location not found.")
-
      }
    }
    else {
      Forbidden("User not authorized to view page")
    }
-
-
   }
 
   def showLocationListPage() = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
@@ -51,8 +47,5 @@ class LocationController @Inject()(
     else {
       Forbidden("User not authorized to view page")
     }
-
-
   }
-
 }
