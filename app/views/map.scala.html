@@ -38,7 +38,7 @@
         <a href="" target="_blank">More Details</a>
 
         <div id="location-visit-form">
-            @helper.form(visitLocationUrl, 'id -> "user-login-form") {
+            @helper.form(visitLocationUrl, 'id -> "visit-form") {
                 @helper.CSRF.formField
                 <input type="hidden" id="Authorization" name="Authorization" value="@jwtToken"/>
                 <input type="hidden" id="location" value="" name="location"/>

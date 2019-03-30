@@ -31,8 +31,10 @@ class RoutesService {
     visits.get(user) flatMap {
       _.get(route)
     } match {
-      case Some(list) => list
-      case None => List()
+      case Some(list) =>
+        list
+      case None =>
+        List()
     }
   }
 

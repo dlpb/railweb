@@ -14,8 +14,8 @@ import play.api.mvc.{AbstractController, AnyContent, AnyContentAsFormUrlEncoded,
 class ApiAuthenticatedController @Inject()(
                                             env: Environment,
                                             cc: ControllerComponents,
-                                            locations: LocationsService,
-                                            routes: RoutesService,
+                                            locationService: LocationsService,
+                                            routeService: RoutesService,
                                             authAction: AuthorizedAction // NEW - add the action as a constructor argument
                                           )
   extends AbstractController(cc) {
@@ -25,19 +25,19 @@ class ApiAuthenticatedController @Inject()(
 
   def getLocationsForMap() = {
     authAction { implicit request: UserRequest[AnyContent] =>
-      Ok(write(locations.mapLocations)).as(JSON)
+      Ok(write(locationService.mapLocations)).as(JSON)
     }
   }
 
   def getLocationsForList() = {
     authAction { implicit request =>
-      Ok(write(locations.defaultListLocations)).as(JSON)
+      Ok(write(locationService.defaultListLocations)).as(JSON)
     }
   }
 
   def getLocation(id: String) = {
     authAction { implicit request =>
-      val loc = locations.getLocation(id)
+      val loc = locationService.getLocation(id)
       loc match {
         case Some(location) => Ok(write(location)).as(JSON)
         case None => NotFound
@@ -47,19 +47,19 @@ class ApiAuthenticatedController @Inject()(
 
   def getRoutesForMap() = {
     authAction { implicit request =>
-      Ok(write(routes.mapRoutes)).as(JSON)
+      Ok(write(routeService.mapRoutes)).as(JSON)
     }
   }
 
   def getRoutesForList() = {
     authAction { implicit request =>
-      Ok(write(routes.defaultListRoutes)).as(JSON)
+      Ok(write(routeService.defaultListRoutes)).as(JSON)
     }
   }
 
   def getRoute(from: String, to: String) = {
     authAction { implicit request =>
-      val route = routes.getRoute(from, to)
+      val route = routeService.getRoute(from, to)
       route match {
         case Some(routing) => Ok(write(routing)).as(JSON)
         case None => NotFound
@@ -73,9 +73,9 @@ class ApiAuthenticatedController @Inject()(
 
       id match {
         case Some(loc) =>
-          locations.getLocation(loc) match {
+          locationService.getLocation(loc) match {
             case Some(l) =>
-              locations.visitLocation(l, request.user)
+              locationService.visitLocation(l, request.user)
               Ok(s"Loc found ${l.id}, visiting")
             case None => NotFound
           }
@@ -86,10 +86,10 @@ class ApiAuthenticatedController @Inject()(
 
   def getAllVisitsForLocation(id: String) = {
     authAction { implicit request =>
-      val location = locations.getLocation(id)
+      val location = locationService.getLocation(id)
       location match {
         case Some(loc) =>
-          val visits: List[String] = locations.getVisitsForLocation(loc, request.user)
+          val visits: List[String] = locationService.getVisitsForLocation(loc, request.user)
           Ok(Json.toJson(visits))
         case None => NotFound
       }
@@ -102,9 +102,9 @@ class ApiAuthenticatedController @Inject()(
 
       id match {
         case Some(loc) =>
-          locations.getLocation(loc) match {
+          locationService.getLocation(loc) match {
             case Some(l) =>
-              locations.deleteLastVisit(l, request.user)
+              locationService.deleteLastVisit(l, request.user)
               Ok(s"Loc found ${l.id}, deleting last visit")
             case None => NotFound
           }
@@ -119,9 +119,9 @@ class ApiAuthenticatedController @Inject()(
 
       id match {
         case Some(loc) =>
-          locations.getLocation(loc) match {
+          locationService.getLocation(loc) match {
             case Some(l) =>
-              locations.deleteAllVisits(l, request.user)
+              locationService.deleteAllVisits(l, request.user)
               Ok(s"Loc found ${l.id}, deleting all visit")
             case None => NotFound
           }
@@ -137,8 +137,8 @@ class ApiAuthenticatedController @Inject()(
 
       (from, to) match {
         case (Some(f), Some(t)) =>
-          routes.getRoute(f,t) match {
-            case Some(r) => routes.visitRoute(r, request.user)
+          routeService.getRoute(f, t) match {
+            case Some(r) => routeService.visitRoute(r, request.user)
               Ok(s"Route found ${r.from.id}, ${r.to.id}, visiting")
             case None => NotFound
           }
@@ -147,50 +147,46 @@ class ApiAuthenticatedController @Inject()(
     }
   }
 
+  def visitRouteWithParams(from: String, to: String) = {
+    authAction { implicit request =>
+      routeService.getRoute(from, to) match {
+        case Some(r) => routeService.visitRoute(r, request.user)
+          Redirect(routes.RouteController.showRouteDetailPage(from, to))
+        case None => NotFound
+      }
+    }
+  }
+
   def getAllVisitsForRoute(from: String, to: String) = {
     authAction { implicit request =>
-      val route = routes.getRoute(from, to)
+      val route = routeService.getRoute(from, to)
       route match {
         case Some(r) =>
-          val visits: List[String] = routes.getVisitsForRoute(r, request.user)
+          val visits: List[String] = routeService.getVisitsForRoute(r, request.user)
           Ok(Json.toJson(visits))
         case None => NotFound
       }
     }
   }
 
-  def removeLastVisitForRoute() = {
+  def removeLastVisitForRoute(from: String, to: String) = {
     authAction { implicit request =>
-      val from = request.request.body.asFormUrlEncoded.get("from").headOption
-      val to = request.request.body.asFormUrlEncoded.get("to").headOption
-
-      (from, to) match {
-        case (Some(f), Some(t)) =>
-          routes.getRoute(f,t) match {
-            case Some(r) =>
-              routes.deleteLastVisit(r, request.user)
-              Ok(s"Loc found ${r.from.id}, ${r.to.id}, deleting last visit")
-            case None => NotFound
-          }
-        case _ => BadRequest
+      routeService.getRoute(from, to) match {
+        case Some(r) =>
+          routeService.deleteLastVisit(r, request.user)
+          Redirect(routes.RouteController.showRouteDetailPage(from, to))
+        case None => NotFound
       }
     }
   }
 
-  def removeAllVisitsForRoute() = {
+  def removeAllVisitsForRoute(from: String, to: String) = {
     authAction { implicit request =>
-      val from = request.request.body.asFormUrlEncoded.get("from").headOption
-      val to = request.request.body.asFormUrlEncoded.get("to").headOption
-
-      (from, to) match {
-        case (Some(f), Some(t)) =>
-          routes.getRoute(f,t) match {
-            case Some(r) =>
-              routes.deleteAllVisits(r, request.user)
-              Ok(s"Loc found ${r.from.id}, ${r.to.id}, deleting all visit")
-            case None => NotFound
-          }
-        case _ => BadRequest
+      routeService.getRoute(from, to) match {
+        case Some(r) =>
+          routeService.deleteAllVisits(r, request.user)
+          Redirect(routes.RouteController.showRouteDetailPage(from, to))
+        case None => NotFound
       }
     }
   }

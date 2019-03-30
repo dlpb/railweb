@@ -1,4 +1,9 @@
-@(route: models.route.Route)
+@(route: models.route.Route,
+visits: List[String],
+token: String,
+visitUrl: Call,
+removeLast: Call,
+removeAll: Call)(implicit request: Request[AnyContent])
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
@@ -13,5 +18,34 @@
     <h1>
         Route
     </h1>
+
+    <div id="route-visit-form">
+        @helper.form(visitUrl, 'id -> "visit-form") {
+            @helper.CSRF.formField
+            <input type="hidden" id="Authorization" name="Authorization" value="@token"/>
+            <button id="visit">Visit</button>
+        }
+    </div>
+
+    <div id="route-remove-last-visit-form">
+        @helper.form(visitUrl, 'id -> "visit-form") {
+        @helper.CSRF.formField
+        <input type="hidden" id="Authorization-last-visit" name="Authorization" value="@token"/>
+        <button id="remove-last-visit">Remove Last Visit</button>
+        }
+    </div>
+
+    <div id="route-remove-all-visit-form">
+        @helper.form(visitUrl, 'id -> "visit-form") {
+        @helper.CSRF.formField
+        <input type="hidden" id="Authorization-all-visit" name="Authorization" value="@token"/>
+        <button id="remove-all-visit">Remove All Visit</button>
+        }
+    </div>
+    <h2>Route Details</h2>
     <p>@route</p>
+    <h2>Visits</h2>
+    <p>@visits</p>
+
+
 </div>
