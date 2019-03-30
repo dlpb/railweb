@@ -31,7 +31,7 @@ class LocationController @Inject()(
          routes.ApiAuthenticatedController.visitLocationWithParams(id),
          routes.ApiAuthenticatedController.removeLastVisitForLocation(id),
          routes.ApiAuthenticatedController.removeAllVisitsForLocation(id)
-       )(request.request))g
+       )(request.request))
        case None => NotFound("Location not found.")
 
      }
