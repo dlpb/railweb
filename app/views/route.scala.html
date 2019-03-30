@@ -28,7 +28,7 @@ removeAll: Call)(implicit request: Request[AnyContent])
     </div>
 
     <div id="route-remove-last-visit-form">
-        @helper.form(visitUrl, 'id -> "visit-form") {
+        @helper.form(removeLast, 'id -> "visit-form") {
         @helper.CSRF.formField
         <input type="hidden" id="Authorization-last-visit" name="Authorization" value="@token"/>
         <button id="remove-last-visit">Remove Last Visit</button>
@@ -36,7 +36,7 @@ removeAll: Call)(implicit request: Request[AnyContent])
     </div>
 
     <div id="route-remove-all-visit-form">
-        @helper.form(visitUrl, 'id -> "visit-form") {
+        @helper.form(removeAll, 'id -> "visit-form") {
         @helper.CSRF.formField
         <input type="hidden" id="Authorization-all-visit" name="Authorization" value="@token"/>
         <button id="remove-all-visit">Remove All Visit</button>

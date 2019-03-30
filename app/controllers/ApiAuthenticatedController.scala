@@ -84,6 +84,17 @@ class ApiAuthenticatedController @Inject()(
     }
   }
 
+  def visitLocationWithParams(id: String) = {
+    authAction { implicit request =>
+      locationService.getLocation(id) match {
+        case Some(l) =>
+          locationService.visitLocation(l, request.user)
+          Redirect(routes.LocationController.showLocationDetailPage(id))
+        case None => NotFound
+      }
+    }
+  }
+
   def getAllVisitsForLocation(id: String) = {
     authAction { implicit request =>
       val location = locationService.getLocation(id)
@@ -96,36 +107,24 @@ class ApiAuthenticatedController @Inject()(
     }
   }
 
-  def removeLastVisitForLocation() = {
+  def removeLastVisitForLocation(id: String) = {
     authAction { implicit request =>
-      val id = request.request.body.asFormUrlEncoded.get("location").headOption
-
-      id match {
-        case Some(loc) =>
-          locationService.getLocation(loc) match {
-            case Some(l) =>
-              locationService.deleteLastVisit(l, request.user)
-              Ok(s"Loc found ${l.id}, deleting last visit")
-            case None => NotFound
-          }
-        case None => BadRequest
+      locationService.getLocation(id) match {
+        case Some(l) =>
+          locationService.deleteLastVisit(l, request.user)
+          Redirect(routes.LocationController.showLocationDetailPage(id))
+        case None => NotFound
       }
     }
   }
 
-  def removeAllVisitsForLocation() = {
+  def removeAllVisitsForLocation(id: String) = {
     authAction { implicit request =>
-      val id = request.request.body.asFormUrlEncoded.get("location").headOption
-
-      id match {
-        case Some(loc) =>
-          locationService.getLocation(loc) match {
-            case Some(l) =>
-              locationService.deleteAllVisits(l, request.user)
-              Ok(s"Loc found ${l.id}, deleting all visit")
-            case None => NotFound
-          }
-        case None => BadRequest
+      locationService.getLocation(id) match {
+        case Some(l) =>
+          locationService.deleteAllVisits(l, request.user)
+          Redirect(routes.LocationController.showLocationDetailPage(id))
+        case None => NotFound
       }
     }
   }

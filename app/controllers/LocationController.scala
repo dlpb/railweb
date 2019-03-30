@@ -1,5 +1,8 @@
 package controllers
 
+import java.util.Date
+
+import auth.api.JWTService
 import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject.{Inject, Singleton}
 import models.auth.roles.MapUser
@@ -11,7 +14,8 @@ import play.api.mvc._
 class LocationController @Inject()(
                                        cc: ControllerComponents,
                                        authenticatedUserAction: AuthorizedWebAction,
-                                       locationService: LocationsService
+                                       locationService: LocationsService,
+                                       jwtService: JWTService
 
                                      ) extends AbstractController(cc) {
   private val logoutUrl = routes.AuthenticatedUserController.logout
@@ -19,8 +23,15 @@ class LocationController @Inject()(
   def showLocationDetailPage(id: String) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
    if(request.user.roles.contains(MapUser)){
      val location: Option[Location] = locationService.getLocation(id)
+     val token = jwtService.createToken(request.user, new Date())
      location match {
-       case Some(loc) => Ok(views.html.location(loc))
+       case Some(loc) => Ok(views.html.location(loc,
+         locationService.getVisitsForLocation(loc, request.user),
+         token,
+         routes.ApiAuthenticatedController.visitLocationWithParams(id),
+         routes.ApiAuthenticatedController.removeLastVisitForLocation(id),
+         routes.ApiAuthenticatedController.removeAllVisitsForLocation(id)
+       ))
        case None => NotFound("Location not found.")
 
      }
