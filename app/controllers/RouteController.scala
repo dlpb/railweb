@@ -18,7 +18,6 @@ class RouteController @Inject()(
                                        jwtService: JWTService
 
 ) extends AbstractController(cc) {
-  private val logoutUrl = routes.AuthenticatedUserController.logout
 
   def showRouteDetailPage(from: String, to: String) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
    if(request.user.roles.contains(MapUser)){
@@ -34,14 +33,11 @@ class RouteController @Inject()(
            routes.ApiAuthenticatedController.removeAllVisitsForRoute(from, to)
          )(request.request))
        case None => NotFound("Route combination not found.")
-
      }
    }
    else {
      Forbidden("User not authorized to view page")
    }
-
-
   }
 
   def showRouteListPage() = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
@@ -52,8 +48,5 @@ class RouteController @Inject()(
     else {
       Forbidden("User not authorized to view page")
     }
-
-
   }
-
 }
