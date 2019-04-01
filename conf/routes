@@ -30,11 +30,11 @@ GET /api/route/:from/:to            controllers.ApiAuthenticatedController.getRo
 GET /api/visit/location/:id         controllers.ApiAuthenticatedController.getAllVisitsForLocation(id: String)
 POST /api/visit/location            controllers.ApiAuthenticatedController.visitLocation
 POST /api/visit/location/:id        controllers.ApiAuthenticatedController.visitLocationWithParams(id: String)
-DELETE /api/visit/location/last/:id controllers.ApiAuthenticatedController.removeLastVisitForLocation(id: String)
-DELETE /api/visit/location/all/:id  controllers.ApiAuthenticatedController.removeAllVisitsForLocation(id: String)
+POST /api/visit/location/delete/last/:id controllers.ApiAuthenticatedController.removeLastVisitForLocation(id: String)
+POST /api/visit/location/de;ete/all/:id  controllers.ApiAuthenticatedController.removeAllVisitsForLocation(id: String)
 
 GET /api/visit/route/:from/:to          controllers.ApiAuthenticatedController.getAllVisitsForRoute(from: String, to: String)
 POST /api/visit/route                   controllers.ApiAuthenticatedController.visitRoute
 POST /api/visit/route/:from/:to         controllers.ApiAuthenticatedController.visitRouteWithParams(from: String, to: String)
-DELETE /api/visit/route/last/:from/:to  controllers.ApiAuthenticatedController.removeLastVisitForRoute(from: String, to: String)
-DELETE /api/visit/route/all/:from/:to   controllers.ApiAuthenticatedController.removeAllVisitsForRoute(from: String, to: String)
+POST /api/visit/route/delete/last/:from/:to    controllers.ApiAuthenticatedController.removeLastVisitForRoute(from: String, to: String)
+POST /api/visit/route/delete/all/:from/:to     controllers.ApiAuthenticatedController.removeAllVisitsForRoute(from: String, to: String)
