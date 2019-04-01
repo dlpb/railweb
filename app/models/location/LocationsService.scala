@@ -1,17 +1,13 @@
 package models.location
 
 import models.auth.User
+import models.data.DataProvider
 import org.json4s.jackson.JsonMethods._
 import org.json4s._
 
-import scala.collection.mutable
 import scala.io.Source
 
-class LocationsService {
-
-
-  private val visits: scala.collection.mutable.Map[User, mutable.Map[Location, List[String]]] =
-    new mutable.HashMap()
+class LocationsService(dataProvider: DataProvider[Location]) {
 
   private val locations = LocationsService.makeLocations(LocationsService.readLocationsFromFile)
 
@@ -28,8 +24,8 @@ class LocationsService {
   }
 
   def getVisitsForLocation(location: Location, user: User): List[String] = {
-    visits.get(user) flatMap {
-      _.get(location)
+    dataProvider.getVisits(user) flatMap {
+      _.get(dataProvider.idToString(location))
     } match {
       case Some(list) => list
       case None => List()
@@ -37,47 +33,15 @@ class LocationsService {
   }
 
   def visitLocation(location: Location, user: User): Unit = {
-    val visitsForUser: Option[mutable.Map[Location, List[String]]] = visits.get(user)
-    visitsForUser match {
-      case Some(_) =>
-        val visitsForLocation: Option[List[String]] = visits(user).get(location)
-        visitsForLocation match {
-          case Some(_) => visits(user)(location) = java.time.LocalDate.now.toString :: visits(user)(location)
-          case None => visits(user)(location) = List(java.time.LocalDate.now.toString)
-        }
-      case None =>
-        visits(user) = new mutable.HashMap()
-        visitLocation(location, user)
-    }
+    dataProvider.saveVisit(location, user)
   }
 
   def deleteLastVisit(location: Location, user: User): Unit = {
-    val visitsForUser: Option[mutable.Map[Location, List[String]]] = visits.get(user)
-    visitsForUser match {
-      case Some(_) =>
-        val visitsForLocation: Option[List[String]] = visits(user).get(location)
-        visitsForLocation match {
-          case Some(_) => visits(user)(location) match {
-            case _ :: tail => visits(user)(location) = tail
-            case _ => visits(user)(location) = List()
-          }
-          case None =>
-        }
-      case None =>
-    }
+    dataProvider.removeLastVisit(location, user)
   }
 
   def deleteAllVisits(location: Location, user: User): Unit = {
-    val visitsForUser: Option[mutable.Map[Location, List[String]]] = visits.get(user)
-    visitsForUser match {
-      case Some(_) =>
-        val visitsForLocation: Option[List[String]] = visits(user).get(location)
-        visitsForLocation match {
-          case Some(_) => visits(user)(location) = List()
-          case None =>
-        }
-      case None =>
-    }
+    dataProvider.removeAllVisits(location, user)
   }
 }
 

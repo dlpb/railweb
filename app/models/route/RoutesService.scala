@@ -1,35 +1,31 @@
 package models.route
 
 import models.auth.User
+import models.data.DataProvider
 import org.json4s.DefaultFormats
 import org.json4s.jackson.JsonMethods.parse
 
-import scala.collection.mutable
 import scala.io.Source
 
-class RoutesService {
+class RoutesService(dataProvider: DataProvider[Route]) {
 
-  private val visits: scala.collection.mutable.Map[User, mutable.Map[Route, List[String]]] =
-    new mutable.HashMap()
-  
   private val routes = RoutesService.makeRoutes(RoutesService.readRoutesFromFile)
 
   def getRoute(fromId: String, toId: String): Option[Route] =
-    routes.find(r => r.from.id.equals(fromId) &&  r.to.id.equals(toId))
+    routes.find(r => r.from.id.equals(fromId) && r.to.id.equals(toId))
 
 
   def mapRoutes: Set[MapRoute] = {
-    routes map {l => MapRoute(l)}
+    routes map { l => MapRoute(l) }
   }
 
   def defaultListRoutes: Set[ListRoute] = {
-    routes map {l => ListRoute(l)}
+    routes map { l => ListRoute(l) }
   }
 
-
   def getVisitsForRoute(route: Route, user: User): List[String] = {
-    visits.get(user) flatMap {
-      _.get(route)
+    dataProvider.getVisits(user) flatMap {
+      _.get(dataProvider.idToString(route))
     } match {
       case Some(list) =>
         list
@@ -39,47 +35,15 @@ class RoutesService {
   }
 
   def visitRoute(route: Route, user: User): Unit = {
-    val visitsForUser: Option[mutable.Map[Route, List[String]]] = visits.get(user)
-    visitsForUser match {
-      case Some(_) =>
-        val visitsForRoute: Option[List[String]] = visits(user).get(route)
-        visitsForRoute match {
-          case Some(_) => visits(user)(route) = java.time.LocalDate.now.toString :: visits(user)(route)
-          case None => visits(user)(route) = List(java.time.LocalDate.now.toString)
-        }
-      case None =>
-        visits(user) = new mutable.HashMap()
-        visitRoute(route, user)
-    }
+    dataProvider.saveVisit(route, user)
   }
 
   def deleteLastVisit(route: Route, user: User): Unit = {
-    val visitsForUser: Option[mutable.Map[Route, List[String]]] = visits.get(user)
-    visitsForUser match {
-      case Some(_) =>
-        val visitsForRoute: Option[List[String]] = visits(user).get(route)
-        visitsForRoute match {
-          case Some(_) => visits(user)(route) match {
-            case _ :: tail => visits(user)(route) = tail
-            case _ => visits(user)(route) = List()
-          }
-          case None =>
-        }
-      case None =>
-    }
+    dataProvider.removeLastVisit(route, user)
   }
 
   def deleteAllVisits(route: Route, user: User): Unit = {
-    val visitsForUser: Option[mutable.Map[Route, List[String]]] = visits.get(user)
-    visitsForUser match {
-      case Some(_) =>
-        val visitsForRoute: Option[List[String]] = visits(user).get(route)
-        visitsForRoute match {
-          case Some(_) => visits(user)(route) = List()
-          case None =>
-        }
-      case None =>
-    }
+    dataProvider.removeAllVisits(route, user)
   }
 }
 

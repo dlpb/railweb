@@ -1,3 +1,4 @@
+import data.RouteMapBasedDataProvider
 import models.auth.User
 import models.route.{Route, RoutePoint, RoutesService}
 import org.scalatest.{FlatSpec, Matchers}
@@ -11,15 +12,14 @@ class RoutesServiceTest extends FlatSpec with Matchers{
   val user2 = User(2, "user", Set())
 
   "Route Service" should "get no visits to a route if a user has none" in {
-    val service = new RoutesService()
-
+    val service = new RoutesService(new RouteMapBasedDataProvider())
     val visits = service.getVisitsForRoute(route, user)
 
     visits should be(List())
   }
 
   it should "save a visit to a route" in {
-    val service = new RoutesService()
+    val service = new RoutesService(new RouteMapBasedDataProvider())
 
     service.visitRoute(route, user)
     val visits = service.getVisitsForRoute(route, user)
@@ -29,7 +29,7 @@ class RoutesServiceTest extends FlatSpec with Matchers{
   }
 
   it should "save two visits to one route for one user" in {
-    val service = new RoutesService()
+    val service = new RoutesService(new RouteMapBasedDataProvider())
 
     service.visitRoute(route, user)
     service.visitRoute(route, user)
@@ -39,7 +39,7 @@ class RoutesServiceTest extends FlatSpec with Matchers{
   }
 
   it should "save one visits to two route for one user" in {
-    val service = new RoutesService()
+    val service = new RoutesService(new RouteMapBasedDataProvider())
 
     service.visitRoute(route, user)
     service.visitRoute(route2, user)
@@ -51,7 +51,7 @@ class RoutesServiceTest extends FlatSpec with Matchers{
   }
 
   it should "save one visits to two route for two user" in {
-    val service = new RoutesService()
+    val service = new RoutesService(new RouteMapBasedDataProvider())
 
     service.visitRoute(route, user)
     service.visitRoute(route2, user2)
@@ -63,7 +63,7 @@ class RoutesServiceTest extends FlatSpec with Matchers{
   }
 
   it should "delete last visit for a route when more than one visit" in {
-    val service = new RoutesService()
+    val service = new RoutesService(new RouteMapBasedDataProvider())
 
     service.visitRoute(route, user)
     service.visitRoute(route, user)
@@ -75,7 +75,7 @@ class RoutesServiceTest extends FlatSpec with Matchers{
   }
 
   it should "delete last visit for a route when one visit" in {
-    val service = new RoutesService()
+    val service = new RoutesService(new RouteMapBasedDataProvider())
 
     service.visitRoute(route, user)
     service.getVisitsForRoute(route, user).size should be(1)
@@ -85,14 +85,14 @@ class RoutesServiceTest extends FlatSpec with Matchers{
   }
 
   it should "delete last visit for a route when no visit" in {
-    val service = new RoutesService()
+    val service = new RoutesService(new RouteMapBasedDataProvider())
 
     service.deleteLastVisit(route, user)
     service.getVisitsForRoute(route, user).size should be(0)
   }
 
   it should "delete last visit for one use only" in {
-    val service = new RoutesService()
+    val service = new RoutesService(new RouteMapBasedDataProvider())
 
     service.visitRoute(route, user)
     service.visitRoute(route, user2)
@@ -105,7 +105,7 @@ class RoutesServiceTest extends FlatSpec with Matchers{
   }
 
   it should "delete all visits" in {
-    val service = new RoutesService()
+    val service = new RoutesService(new RouteMapBasedDataProvider())
 
     service.visitRoute(route, user)
     service.visitRoute(route, user)
