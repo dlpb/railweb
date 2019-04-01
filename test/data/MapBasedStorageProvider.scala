@@ -17,8 +17,8 @@ trait MapBasedStorageProvider[T] extends DataProvider[T] {
       case Some(_) =>
         val visitsForLocation: Option[List[String]] = visits(user).get(idToString(id))
         visitsForLocation match {
-          case Some(_) => visits(user)(idToString(id)) = java.time.LocalDate.now.toString :: visits(user)(idToString(id))
-          case None => visits(user)(idToString(id)) = List(java.time.LocalDate.now.toString)
+          case Some(_) => visits(user)(idToString(id)) = timestamp() :: visits(user)(idToString(id))
+          case None => visits(user)(idToString(id)) = List(timestamp())
         }
       case None =>
         visits(user) = new mutable.HashMap()

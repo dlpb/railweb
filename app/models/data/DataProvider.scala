@@ -1,6 +1,8 @@
 package models.data
 
 import models.auth.User
+import models.location.Location
+import models.route.Route
 
 trait DataProvider[T] {
 
@@ -10,4 +12,10 @@ trait DataProvider[T] {
   def removeAllVisits(id: T, user: User): Unit
 
   def idToString(id: T): String
+
+  def timestamp(): String = java.time.LocalDate.now.toString
 }
+
+trait LocationDataProvider extends DataProvider[Location]
+
+trait RouteDataProvider extends DataProvider[Route]

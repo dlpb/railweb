@@ -1,13 +1,14 @@
 package models.location
 
+import javax.inject.Inject
 import models.auth.User
-import models.data.DataProvider
-import org.json4s.jackson.JsonMethods._
+import models.data.LocationDataProvider
 import org.json4s._
+import org.json4s.jackson.JsonMethods._
 
 import scala.io.Source
 
-class LocationsService(dataProvider: DataProvider[Location]) {
+class LocationsService @Inject() (dataProvider: LocationDataProvider) {
 
   private val locations = LocationsService.makeLocations(LocationsService.readLocationsFromFile)
 

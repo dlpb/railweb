@@ -1,13 +1,14 @@
 package models.route
 
+import javax.inject.{Inject, Named}
 import models.auth.User
-import models.data.DataProvider
+import models.data.{DataProvider, RouteDataProvider}
 import org.json4s.DefaultFormats
 import org.json4s.jackson.JsonMethods.parse
 
 import scala.io.Source
 
-class RoutesService(dataProvider: DataProvider[Route]) {
+class RoutesService @Inject() (dataProvider: RouteDataProvider) {
 
   private val routes = RoutesService.makeRoutes(RoutesService.readRoutesFromFile)
 
