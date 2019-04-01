@@ -1,3 +1,4 @@
+import com.typesafe.config.{Config, ConfigFactory, ConfigValueFactory}
 import data.LocationMapBasedDataProvider
 import models.auth.User
 import models.location.{Location, LocationsService, SpatialLocation}
@@ -11,7 +12,8 @@ class LocationServiceTest extends FlatSpec with Matchers {
   val user2 = User(2, "user", Set())
 
   "Location Service" should "get no visits to a location if a user has none" in {
-    val service = new LocationsService(new LocationMapBasedDataProvider())
+    val service = new LocationsService(config,
+      new LocationMapBasedDataProvider())
 
     val visits = service.getVisitsForLocation(location, user)
 
@@ -19,7 +21,7 @@ class LocationServiceTest extends FlatSpec with Matchers {
   }
 
   it should "save a visit to a location" in {
-    val service = new LocationsService(new LocationMapBasedDataProvider())
+    val service = new LocationsService(config, new LocationMapBasedDataProvider())
 
     service.visitLocation(location, user)
     val visits = service.getVisitsForLocation(location, user)
@@ -29,7 +31,7 @@ class LocationServiceTest extends FlatSpec with Matchers {
   }
 
   it should "save two visits to one location for one user" in {
-    val service = new LocationsService(new LocationMapBasedDataProvider())
+    val service = new LocationsService(config, new LocationMapBasedDataProvider())
 
     service.visitLocation(location, user)
     service.visitLocation(location, user)
@@ -39,7 +41,7 @@ class LocationServiceTest extends FlatSpec with Matchers {
   }
 
   it should "save one visits to two location for one user" in {
-    val service = new LocationsService(new LocationMapBasedDataProvider())
+    val service = new LocationsService(config, new LocationMapBasedDataProvider())
 
     service.visitLocation(location, user)
     service.visitLocation(location2, user)
@@ -51,7 +53,7 @@ class LocationServiceTest extends FlatSpec with Matchers {
   }
 
   it should "save one visits to two location for two user" in {
-    val service = new LocationsService(new LocationMapBasedDataProvider())
+    val service = new LocationsService(config, new LocationMapBasedDataProvider())
 
     service.visitLocation(location, user)
     service.visitLocation(location2, user2)
@@ -63,7 +65,7 @@ class LocationServiceTest extends FlatSpec with Matchers {
   }
 
   it should "delete last visit for a location when more than one visit" in {
-    val service = new LocationsService(new LocationMapBasedDataProvider())
+    val service = new LocationsService(config, new LocationMapBasedDataProvider())
 
     service.visitLocation(location, user)
     service.visitLocation(location, user)
@@ -75,7 +77,7 @@ class LocationServiceTest extends FlatSpec with Matchers {
   }
 
   it should "delete last visit for a location when one visit" in {
-    val service = new LocationsService(new LocationMapBasedDataProvider())
+    val service = new LocationsService(config, new LocationMapBasedDataProvider())
 
     service.visitLocation(location, user)
     service.getVisitsForLocation(location, user).size should be(1)
@@ -85,14 +87,14 @@ class LocationServiceTest extends FlatSpec with Matchers {
   }
 
   it should "delete last visit for a location when no visit" in {
-    val service = new LocationsService(new LocationMapBasedDataProvider())
+    val service = new LocationsService(config, new LocationMapBasedDataProvider())
 
     service.deleteLastVisit(location, user)
     service.getVisitsForLocation(location, user).size should be(0)
   }
 
   it should "delete last visit for one use only" in {
-    val service = new LocationsService(new LocationMapBasedDataProvider())
+    val service = new LocationsService(config, new LocationMapBasedDataProvider())
 
     service.visitLocation(location, user)
     service.visitLocation(location, user2)
@@ -105,7 +107,7 @@ class LocationServiceTest extends FlatSpec with Matchers {
   }
 
   it should "delete all visits" in {
-    val service = new LocationsService(new LocationMapBasedDataProvider())
+    val service = new LocationsService(config, new LocationMapBasedDataProvider())
 
     service.visitLocation(location, user)
     service.visitLocation(location, user)
@@ -114,4 +116,12 @@ class LocationServiceTest extends FlatSpec with Matchers {
     service.deleteAllVisits(location, user)
     service.getVisitsForLocation(location, user).size should be(0)
   }
+
+  private def config = {
+    val config = ConfigFactory
+      .empty()
+      .withValue("data.static.root", ConfigValueFactory.fromAnyRef(getClass().getResource("locations.json").getPath))
+    config
+  }
+
 }
