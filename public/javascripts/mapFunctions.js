@@ -211,7 +211,7 @@ function infoBox(info, type, data, toc, id, url, from, to){
     renderedInfoElement.querySelector("slot[name=info]").textContent = info;
     renderedInfoElement.querySelector("slot[name=type]").textContent = type;
     renderedInfoElement.querySelector("slot[name=data]").textContent = data;
-    renderedInfoElement.querySelector("#location-visit-form #location").value = id;
+    renderedInfoElement.querySelector("#visit-form #location").value = id;
     renderedInfoElement.querySelector("a").setAttribute("href", url);
 
 
@@ -226,8 +226,8 @@ function infoBox(info, type, data, toc, id, url, from, to){
               type: "POST",
               url: '/api/visit/route',
               data: {
-                'csrfToken': renderedInfoElement.querySelector('#location-visit-form').children["user-login-form"][0].value,
-                'Authorization': renderedInfoElement.querySelector('#location-visit-form #Authorization').value,
+                'csrfToken': renderedInfoElement.querySelector('#visit-form').children["visit-form"][0].value,
+                'Authorization': renderedInfoElement.querySelector('#visit-form #Authorization').value,
                 'from': from,
                 'to': to
               },
@@ -238,8 +238,8 @@ function infoBox(info, type, data, toc, id, url, from, to){
               type: "POST",
               url: '/api/visit/location',
               data: {
-                'csrfToken': renderedInfoElement.querySelector('#location-visit-form').children["user-login-form"][0].value,
-                'Authorization': renderedInfoElement.querySelector('#location-visit-form #Authorization').value,
+                'csrfToken': renderedInfoElement.querySelector('#visit-form').children["visit-form"][0].value,
+                'Authorization': renderedInfoElement.querySelector('#visit-form #Authorization').value,
                 'location': id
               },
             });
