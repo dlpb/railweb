@@ -1,5 +1,6 @@
 package models.location
 
+import com.typesafe.config.Config
 import javax.inject.Inject
 import models.auth.User
 import models.data.LocationDataProvider
@@ -8,9 +9,11 @@ import org.json4s.jackson.JsonMethods._
 
 import scala.io.Source
 
-class LocationsService @Inject() (dataProvider: LocationDataProvider) {
+class LocationsService @Inject() ( config: Config,
+                                   dataProvider: LocationDataProvider) {
 
-  private val locations = LocationsService.makeLocations(LocationsService.readLocationsFromFile)
+  private val dataRoot = config.getString("data.static.root")
+  private val locations = makeLocations(readLocationsFromFile)
 
   def getLocation(id: String): Option[Location] =
     locations.find(_.id.equals(id))
@@ -44,12 +47,9 @@ class LocationsService @Inject() (dataProvider: LocationDataProvider) {
   def deleteAllVisits(location: Location, user: User): Unit = {
     dataProvider.removeAllVisits(location, user)
   }
-}
-
-object LocationsService {
 
   def readLocationsFromFile: String = {
-    Source.fromFile(System.getProperty("user.dir") + "/resources/data/static/locations.json").mkString
+    Source.fromFile(dataRoot + "/locations.json").mkString
   }
 
   def makeLocations(locations: String): Set[Location] = {

@@ -1,16 +1,19 @@
 package models.route
 
-import javax.inject.{Inject, Named}
+import com.typesafe.config.Config
+import javax.inject.Inject
 import models.auth.User
-import models.data.{DataProvider, RouteDataProvider}
+import models.data.RouteDataProvider
 import org.json4s.DefaultFormats
 import org.json4s.jackson.JsonMethods.parse
 
 import scala.io.Source
 
-class RoutesService @Inject() (dataProvider: RouteDataProvider) {
+class RoutesService @Inject() ( config: Config,
+                                dataProvider: RouteDataProvider) {
 
-  private val routes = RoutesService.makeRoutes(RoutesService.readRoutesFromFile)
+  private def dataRoot = config.getString("data.static.root")
+  private val routes = makeRoutes(readRoutesFromFile)
 
   def getRoute(fromId: String, toId: String): Option[Route] =
     routes.find(r => r.from.id.equals(fromId) && r.to.id.equals(toId))
@@ -46,11 +49,9 @@ class RoutesService @Inject() (dataProvider: RouteDataProvider) {
   def deleteAllVisits(route: Route, user: User): Unit = {
     dataProvider.removeAllVisits(route, user)
   }
-}
 
-object RoutesService {
   def readRoutesFromFile: String = {
-    Source.fromFile(System.getProperty("user.dir") + "/resources/data/static/routes.json").mkString
+    Source.fromFile(dataRoot + "/routes.json").mkString
   }
 
   def makeRoutes(routes: String): Set[Route] = {
