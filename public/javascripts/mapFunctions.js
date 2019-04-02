@@ -42,15 +42,23 @@ function populatePoints(map, token) {
         jQuery.ajax({
           url: "/api/location/map",
           headers: { "Authorization": "Bearer " + token }
+        }),
+        jQuery.ajax({
+        url: "/api/visit/locations",
+        headers: { "Authorization": "Bearer " + token }
         })
     )
-    .done(function(locations){
-        locations.forEach(function(loc){
-            loc.visited = false;
+    .done(function(locations, visits){
+        locations[0].forEach(function(loc){
+            loc.visited = findLocationVisit(loc, visits[0]);
             addLocation(loc);
         });
     });
+    function findLocationVisit(loc, visits){
+        return visits.includes(loc.id);
+    }
 }
+
 
  function addLocation(location){
     let lat = location.location.lat;
@@ -97,9 +105,13 @@ function populateConnections(map, token){
         jQuery.ajax({
           url: "/api/route/map",
           headers: { "Authorization": "Bearer " + token }
+        }),
+        jQuery.ajax({
+          url: "/api/visit/route",
+          headers: { "Authorization": "Bearer " + token }
         })
     )
-    .done(function(routes){
+    .done(function(routes, visits){
         var vectorLineLayer = new ol.layer.Vector({'id':'lines'});
         var vectorLinksLineLayer = new ol.layer.Vector({'id':'links'});
         var vectorMetroLineLayer = new ol.layer.Vector({'id':'metro'});
@@ -108,7 +120,11 @@ function populateConnections(map, token){
         var vectorLinksLine = new ol.source.Vector({});
         var vectorMetroLine = new ol.source.Vector({});
 
-        routes.forEach(function (connection) {
+
+        routes[0].forEach(function (connection) {
+
+           const visited = findRouteVisit(connection, visits[0]);
+           connection.visited = visited;
 
            if(connection.srsCode == "Link"){
                addConnection(connection, vectorLinksLine, vectorLinksLineLayer, findTocData(connection.toc).colour);
@@ -131,6 +147,12 @@ function populateConnections(map, token){
         vectorLinksLineLayer.setVisible(false);
 
     });
+
+    function findRouteVisit(route, visits){
+        const key = "from:" + route.from.id + "-to:" + route.to.id
+        return visits.includes(key);
+    }
+
 
      function addConnection(connection, line, layer, colour){
         var points = [
@@ -166,6 +188,37 @@ function populateConnections(map, token){
     }
 }
 
+function addSingleConnection(connection){
+    var vectorLineLayer = new ol.layer.Vector({'id':'lines'});
+    var vectorLine = new ol.source.Vector({});
+
+    var points = [
+            [connection.from.lon, connection.from.lat],
+            [connection.to.lon, connection.to.lat]];
+
+    for (var i = 0; i < points.length; i++) {
+        points[i] = ol.proj.transform(points[i], 'EPSG:4326', 'EPSG:3857');
+    }
+
+    var featureLine = new ol.Feature({
+        geometry: new ol.geom.LineString(points)
+
+    });
+    const colour = findSrsData(connection.srs).colour;
+    let dash = connection.visited ? [1,0]: [10, 10];
+    featureLine.setStyle(new ol.style.Style({
+        stroke: new ol.style.Stroke({
+            color: colour,
+            width: 10,
+        })
+    }));
+
+    vectorLine.addFeature(featureLine);
+    vectorLineLayer.setSource(vectorLine);
+    map.addLayer(vectorLineLayer);
+}
+
+
 /**
 * Info Box
 */
@@ -181,10 +234,13 @@ function registerMapHandler(map){
 
             jQuery(content).empty();
 
-            var iname = feature.get('name');
+            let name = feature.get('name');
+            let id = feature.get("id");
             let type = feature.get('type');
             let visited = feature.get('visited') ? "Visited" : "Not yet visited";
             let operator = feature.get('operator');
+            let from = feature.get('from') || "";
+            let to = feature.get('to') || "";
 
             var url = '';
             if(type==='Route'){
@@ -194,13 +250,13 @@ function registerMapHandler(map){
                 url="/location/detail/" +  feature.get('id');
             }
 
-            jQuery(content).append(infoBox(iname, type, visited, url, operator));
+            jQuery(content).append(infoBox(name, type, visited, operator, id, url, from, to));
         }
     });
 }
 
 
-function infoBox(info, type, data, url, toc){
+function infoBox(info, type, data, toc, id, url, from, to){
     var infoTemplate = document.getElementsByTagName("template")[0];
     var infoElement = infoTemplate.content.querySelector("div");
     var renderedInfoElement = document.importNode(infoElement, true);
@@ -208,16 +264,40 @@ function infoBox(info, type, data, url, toc){
     renderedInfoElement.querySelector("slot[name=info]").textContent = info;
     renderedInfoElement.querySelector("slot[name=type]").textContent = type;
     renderedInfoElement.querySelector("slot[name=data]").textContent = data;
+    renderedInfoElement.querySelector("#visit-form #location").value = id;
     renderedInfoElement.querySelector("a").setAttribute("href", url);
 
+
     let tocData = findTocData(toc);
-    console.log(toc);
-    console.log(tocData);
-
     renderedInfoElement.querySelector("slot[name=tocBadge]").textContent = tocData.name;
-
     renderedInfoElement.querySelector("#tocBadge").style.backgroundColor = tocData["colour"];
     renderedInfoElement.querySelector("#tocBadge").style.color = tocData["textColour"];
+
+    renderedInfoElement.querySelector("#visit").onclick = function() {
+        if(type === 'Route') {
+            jQuery.ajax({
+              type: "POST",
+              url: '/api/visit/route',
+              data: {
+                'csrfToken': renderedInfoElement.querySelector('#visit-form').children["visit-form"][0].value,
+                'Authorization': renderedInfoElement.querySelector('#visit-form #Authorization').value,
+                'from': from,
+                'to': to
+              },
+            });
+        }
+        else if(type === 'Location'){
+            jQuery.ajax({
+              type: "POST",
+              url: '/api/visit/location',
+              data: {
+                'csrfToken': renderedInfoElement.querySelector('#visit-form').children["visit-form"][0].value,
+                'Authorization': renderedInfoElement.querySelector('#visit-form #Authorization').value,
+                'location': id
+              },
+            });
+        }
+    }
 
     return renderedInfoElement;
 }

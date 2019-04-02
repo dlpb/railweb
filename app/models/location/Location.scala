@@ -53,7 +53,8 @@ case class ListLocation(id: String,
                        name: String,
                        operator: String,
                        `type`: String,
-                       orrStation: Boolean
+                       orrStation: Boolean,
+                        srs: String
                       )
 object ListLocation {
   def apply(location: Location): ListLocation = {
@@ -62,7 +63,8 @@ object ListLocation {
       location.name,
       location.operator,
       location.`type`,
-      location.orrStation
+      location.orrStation,
+      location.nrInfo.map {_.srs}.getOrElse("")
     )
   }
 }

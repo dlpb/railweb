@@ -1,17 +1,184 @@
-@(route: models.route.Route)
+@(route: models.route.Route,
+visits: List[String],
+token: String,
+visitUrl: Call,
+removeLast: Call,
+removeAll: Call)(implicit request: Request[AnyContent])
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+<head>
+    <title>
+        @route.from.name - @route.to.name (@route.from.id - @route.to.id) - All the Stations & Track
+    </title>
+</head>
+
+<script src='@routes.Assets.versioned("javascripts/mapFunctions.js")' type="text/javascript"></script>
+<script src='@routes.Assets.versioned("javascripts/tocData.js")' type="text/javascript"></script>
+<script src='@routes.Assets.versioned("javascripts/srsData.js")' type="text/javascript"></script>
+
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+<script src="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/build/ol.js"></script>
+
+<link rel="stylesheet" href="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/css/ol.css">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
       crossorigin="anonymous">
 
-<div>
-    <h1>
-        Route
-    </h1>
-    <p>@route</p>
+<script type="text/javascript">
+    const token = "@token";
+
+
+</script>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">All the Stations & Track</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/map">Map</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/locations">Locations</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/routes">Routes <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/profile">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/logout">Log Out</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="alert alert-primary" role="alert" id="@route.srsCode" style="padding-top:10px">
+        <h1>@route.from.name - @route.to.name (@route.from.id - @route.to.id)</h1>
+        <h3 id="@route.srsCode-header">@route.srsCode</h3>
+    </div>
+    <script>
+        const srsInfo = findSrsData('@route.srsCode');
+        const header = document.getElementById('@route.srsCode');
+
+        header.style.backgroundColor = srsInfo["colour"];
+        header.style.color = srsInfo["textColour"];
+
+        const title = document.getElementById('@route.srsCode-header');
+        title.textContent = "@route.srsCode - " + srsInfo["route"] + " / " + srsInfo["region"];
+    </script>
+    <div class="row">
+        <div class="col-sm">
+
+            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                <div class="btn-group mr-2" role="group" aria-label="First group">
+                    <div id="route-visit-form">
+                        @helper.form(visitUrl, 'id -> "visit-form") {
+                        @helper.CSRF.formField
+                        <input type="hidden" id="Authorization" name="Authorization" value="@token"/>
+                        <button id="visit" class="btn btn-primary">Visit</button>
+                        }
+                    </div>
+                </div>
+                <div class="btn-group mr-2" role="group" aria-label="Second group">
+
+                    <div id="route-remove-last-visit-form">
+                        @helper.form(removeLast, 'id -> "visit-form") {
+                        @helper.CSRF.formField
+                        <input type="hidden" id="Authorization-last-visit" name="Authorization" value="@token"/>
+                        <button id="remove-last-visit" class="btn btn-danger">Remove Last Visit</button>
+                        }
+                    </div>
+                </div>
+                <div class="btn-group mr-2" role="group" aria-label="Third group">
+                    <div id="route-remove-all-visit-form">
+                        @helper.form(removeAll, 'id -> "visit-form") {
+                        @helper.CSRF.formField
+                        <input type="hidden" id="Authorization-all-visit" name="Authorization" value="@token"/>
+                        <button id="remove-all-visit" class="btn btn-danger">Remove All Visit</button>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm">
+            <h3>Location Data</h3>
+            <ul>
+                <li>From
+                    <ul>
+                        <li>ID: @route.from.id</li>
+                        <li>Name: @route.from.name</li>
+                        <li>Lat: @route.from.lat</li>
+                        <li>Lon: @route.from.lon</li>
+                    </ul>
+                </li>
+                <li>To
+                    <ul>
+                        <li>ID: @route.to.id</li>
+                        <li>Name: @route.to.name</li>
+                        <li>Lat: @route.to.lat</li>
+                        <li>Lon: @route.to.lon</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="col-sm">
+            <h3>Route Data</h3>
+            <ul>
+                <li>TOC: @route.toc</li>
+                <li>Single Track: @route.singleTrack</li>
+                <li>Electrification: @route.electrification</li>
+                <li>Speed (MPH): @route.speed</li>
+                <li>SRS Code: @route.srsCode</li>
+            </ul>
+        </div>
+        <div class="col-sm">
+            <h3>Visits</h3>
+            <ul>
+                @for(visit <- visits){
+                <li>@visit</li>
+                }
+            </ul>
+        </div>
+    </div>
+    <div id="map" class="map"></div>
+
+    <script type="text/javascript">
+        createMap();
+        addSingleConnection(
+        {
+            "from": {
+                "lat":@route.from.lat,
+                "lon":@route.from.lon
+            },
+            "to": {
+                "lat":@route.to.lat,
+                "lon":@route.to.lon
+            },
+            "srs":"@route.srsCode",
+            "toc":"@route.toc"
+        })
+    </script>
+
 </div>

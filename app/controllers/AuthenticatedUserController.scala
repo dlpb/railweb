@@ -1,6 +1,6 @@
-package controllers.web
+package controllers
 
-import auth.web.AuthorizedWebAction
+import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject._
 import play.api.mvc._
 
@@ -15,6 +15,10 @@ class AuthenticatedUserController @Inject()(
     Redirect(routes.UserController.showLoginForm)
       .flashing("info" -> "You are logged out.")
       .withNewSession
+  }
+
+  def profile = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
+    Ok(views.html.profile(request.user))
   }
 
 }

@@ -1,0 +1,24 @@
+[
+  {
+    "from":{
+      "lat":57.31997511,
+      "lon":-5.691316014,
+      "id":"DRN",
+      "name":"Duirinish",
+      "type":""
+    },
+    "to":{
+      "lat":57.2797712,
+      "lon":-5.713812582,
+      "id":"KYL",
+      "name":"Kyle of Lochalsh",
+      "type":""
+    },
+    "toc":"SR",
+    "singleTrack":"Y",
+    "electrification":"NONE",
+    "speed":"40-75",
+    "srsCode":"P.12",
+    "type":"NR"
+  }
+]
