@@ -2,15 +2,14 @@ package controllers
 
 import auth.api.{AuthorizedAction, UserRequest}
 import javax.inject.{Inject, Singleton}
+import models.auth.roles.VisitUser
 import models.location.LocationsService
 import models.route.RoutesService
 import org.json4s.DefaultFormats
 import org.json4s.jackson.Serialization.write
 import play.api.Environment
 import play.api.libs.json.Json
-import play.api.mvc.{AbstractController, AnyContent, AnyContentAsFormUrlEncoded, ControllerComponents}
-
-import scala.collection.immutable
+import play.api.mvc.{AbstractController, AnyContent, ControllerComponents}
 
 @Singleton
 class ApiAuthenticatedController @Inject()(
@@ -71,6 +70,8 @@ class ApiAuthenticatedController @Inject()(
 
   def visitLocation() = {
     authAction { implicit request =>
+      if(!request.user.roles.contains(VisitUser)) Unauthorized("User does not have the right role")
+
       val id = request.request.body.asFormUrlEncoded.get("location").headOption
 
       id match {
@@ -88,6 +89,8 @@ class ApiAuthenticatedController @Inject()(
 
   def visitLocationWithParams(id: String) = {
     authAction { implicit request =>
+      if(!request.user.roles.contains(VisitUser)) Unauthorized("User does not have the right role")
+
       locationService.getLocation(id) match {
         case Some(l) =>
           locationService.visitLocation(l, request.user)
@@ -99,6 +102,8 @@ class ApiAuthenticatedController @Inject()(
 
   def visitLocationFromList(id: String) = {
     authAction { implicit request =>
+      if(!request.user.roles.contains(VisitUser)) Unauthorized("User does not have the right role")
+
       locationService.getLocation(id) match {
         case Some(l) =>
           locationService.visitLocation(l, request.user)
@@ -127,6 +132,7 @@ class ApiAuthenticatedController @Inject()(
 
   def removeLastVisitForLocation(id: String) = {
     authAction { implicit request =>
+      if(!request.user.roles.contains(VisitUser)) Unauthorized("User does not have the right role")
       locationService.getLocation(id) match {
         case Some(l) =>
           locationService.deleteLastVisit(l, request.user)
@@ -138,6 +144,7 @@ class ApiAuthenticatedController @Inject()(
 
   def removeAllVisitsForLocation(id: String) = {
     authAction { implicit request =>
+      if(!request.user.roles.contains(VisitUser)) Unauthorized("User does not have the right role")
       locationService.getLocation(id) match {
         case Some(l) =>
           locationService.deleteAllVisits(l, request.user)
@@ -149,6 +156,8 @@ class ApiAuthenticatedController @Inject()(
 
   def visitRoute() = {
     authAction { implicit request =>
+      if(!request.user.roles.contains(VisitUser)) Unauthorized("User does not have the right role")
+
       val from = request.request.body.asFormUrlEncoded.get("from").headOption
       val to = request.request.body.asFormUrlEncoded.get("to").headOption
 
@@ -166,6 +175,8 @@ class ApiAuthenticatedController @Inject()(
 
   def visitRouteWithParams(from: String, to: String) = {
     authAction { implicit request =>
+      if(!request.user.roles.contains(VisitUser)) Unauthorized("User does not have the right role")
+
       routeService.getRoute(from, to) match {
         case Some(r) => routeService.visitRoute(r, request.user)
           Redirect(routes.RouteController.showRouteDetailPage(from, to))
@@ -176,6 +187,8 @@ class ApiAuthenticatedController @Inject()(
 
   def visitRouteFromList(from: String, to: String) = {
     authAction { implicit request =>
+      if(!request.user.roles.contains(VisitUser)) Unauthorized("User does not have the right role")
+
       routeService.getRoute(from, to) match {
         case Some(r) => routeService.visitRoute(r, request.user)
           Redirect(routes.RouteController.showRouteListPage())
@@ -205,6 +218,8 @@ class ApiAuthenticatedController @Inject()(
 
   def removeLastVisitForRoute(from: String, to: String) = {
     authAction { implicit request =>
+      if(!request.user.roles.contains(VisitUser)) Unauthorized("User does not have the right role")
+
       routeService.getRoute(from, to) match {
         case Some(r) =>
           routeService.deleteLastVisit(r, request.user)
@@ -216,6 +231,8 @@ class ApiAuthenticatedController @Inject()(
 
   def removeAllVisitsForRoute(from: String, to: String) = {
     authAction { implicit request =>
+      if(!request.user.roles.contains(VisitUser)) Unauthorized("User does not have the right role")
+
       routeService.getRoute(from, to) match {
         case Some(r) =>
           routeService.deleteAllVisits(r, request.user)
