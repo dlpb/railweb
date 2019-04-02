@@ -10,6 +10,8 @@ import play.api.Environment
 import play.api.libs.json.Json
 import play.api.mvc.{AbstractController, AnyContent, AnyContentAsFormUrlEncoded, ControllerComponents}
 
+import scala.collection.immutable
+
 @Singleton
 class ApiAuthenticatedController @Inject()(
                                             env: Environment,
@@ -117,6 +119,11 @@ class ApiAuthenticatedController @Inject()(
       }
     }
   }
+  def getAllVisitsForLocations() = {
+    authAction { implicit request =>
+      Ok(Json.toJson(locationService.getVisitedLocations(request.user)))
+    }
+  }
 
   def removeLastVisitForLocation(id: String) = {
     authAction { implicit request =>
@@ -174,6 +181,13 @@ class ApiAuthenticatedController @Inject()(
           Redirect(routes.RouteController.showRouteListPage())
         case None => NotFound
       }
+    }
+  }
+
+  def getAllVisitsForRoutes() = {
+    authAction { implicit request =>
+      val visits = routeService.getVisitedRoutes(request.user)
+      Ok(Json.toJson(visits))
     }
   }
 

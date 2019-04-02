@@ -28,6 +28,7 @@ GET /api/route/map                  controllers.ApiAuthenticatedController.getRo
 GET /api/route/list/default         controllers.ApiAuthenticatedController.getRoutesForList
 GET /api/route/:from/:to            controllers.ApiAuthenticatedController.getRoute(from: String, to: String)
 
+GET /api/visit/locations             controllers.ApiAuthenticatedController.getAllVisitsForLocations()
 GET /api/visit/location/:id         controllers.ApiAuthenticatedController.getAllVisitsForLocation(id: String)
 POST /api/visit/location            controllers.ApiAuthenticatedController.visitLocation
 POST /api/visit/location/:id        controllers.ApiAuthenticatedController.visitLocationWithParams(id: String)
@@ -35,6 +36,7 @@ POST /api/visit/location/list/:id        controllers.ApiAuthenticatedController.
 POST /api/visit/location/delete/last/:id controllers.ApiAuthenticatedController.removeLastVisitForLocation(id: String)
 POST /api/visit/location/delete/all/:id  controllers.ApiAuthenticatedController.removeAllVisitsForLocation(id: String)
 
+GET /api/visit/route                    controllers.ApiAuthenticatedController.getAllVisitsForRoutes()
 GET /api/visit/route/:from/:to          controllers.ApiAuthenticatedController.getAllVisitsForRoute(from: String, to: String)
 POST /api/visit/route                   controllers.ApiAuthenticatedController.visitRoute
 POST /api/visit/route/:from/:to         controllers.ApiAuthenticatedController.visitRouteWithParams(from: String, to: String)

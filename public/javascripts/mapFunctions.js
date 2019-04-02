@@ -42,15 +42,23 @@ function populatePoints(map, token) {
         jQuery.ajax({
           url: "/api/location/map",
           headers: { "Authorization": "Bearer " + token }
+        }),
+        jQuery.ajax({
+        url: "/api/visit/locations",
+        headers: { "Authorization": "Bearer " + token }
         })
     )
-    .done(function(locations){
-        locations.forEach(function(loc){
-            loc.visited = false;
+    .done(function(locations, visits){
+        locations[0].forEach(function(loc){
+            loc.visited = findLocationVisit(loc, visits[0]);
             addLocation(loc);
         });
     });
+    function findLocationVisit(loc, visits){
+        return visits.includes(loc.id);
+    }
 }
+
 
  function addLocation(location){
     let lat = location.location.lat;
@@ -97,9 +105,13 @@ function populateConnections(map, token){
         jQuery.ajax({
           url: "/api/route/map",
           headers: { "Authorization": "Bearer " + token }
+        }),
+        jQuery.ajax({
+          url: "/api/visit/route",
+          headers: { "Authorization": "Bearer " + token }
         })
     )
-    .done(function(routes){
+    .done(function(routes, visits){
         var vectorLineLayer = new ol.layer.Vector({'id':'lines'});
         var vectorLinksLineLayer = new ol.layer.Vector({'id':'links'});
         var vectorMetroLineLayer = new ol.layer.Vector({'id':'metro'});
@@ -108,7 +120,11 @@ function populateConnections(map, token){
         var vectorLinksLine = new ol.source.Vector({});
         var vectorMetroLine = new ol.source.Vector({});
 
-        routes.forEach(function (connection) {
+
+        routes[0].forEach(function (connection) {
+
+           const visited = findRouteVisit(connection, visits[0]);
+           connection.visited = visited;
 
            if(connection.srsCode == "Link"){
                addConnection(connection, vectorLinksLine, vectorLinksLineLayer, findTocData(connection.toc).colour);
@@ -131,6 +147,11 @@ function populateConnections(map, token){
         vectorLinksLineLayer.setVisible(false);
 
     });
+
+    function findRouteVisit(route, visits){
+        const key = "from:" + route.from.id + "-to:" + route.to.id
+        return visits.includes(key);
+    }
 
 
      function addConnection(connection, line, layer, colour){
