@@ -58,7 +58,7 @@ class LocationController @Inject()(
       }).toMap
       val formActions:Map[String, Call] = locations.map({
         loc =>
-          loc.id -> routes.ApiAuthenticatedController.visitLocationFromList("")
+          loc.id -> routes.ApiAuthenticatedController.visitLocationFromList(loc.id)
       }).toMap
       val locIds = locations.map{_.id}
 

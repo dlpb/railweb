@@ -167,6 +167,16 @@ class ApiAuthenticatedController @Inject()(
     }
   }
 
+  def visitRouteFromList(from: String, to: String) = {
+    authAction { implicit request =>
+      routeService.getRoute(from, to) match {
+        case Some(r) => routeService.visitRoute(r, request.user)
+          Redirect(routes.RouteController.showRouteListPage())
+        case None => NotFound
+      }
+    }
+  }
+
   def getAllVisitsForRoute(from: String, to: String) = {
     authAction { implicit request =>
       val route = routeService.getRoute(from, to)

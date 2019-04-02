@@ -12,6 +12,7 @@ import scala.io.Source
 class RoutesService @Inject() ( config: Config,
                                 dataProvider: RouteDataProvider) {
 
+
   private def dataRoot = config.getString("data.static.root")
   private val routes = makeRoutes(readRoutesFromFile)
 
@@ -25,6 +26,12 @@ class RoutesService @Inject() ( config: Config,
 
   def defaultListRoutes: Set[ListRoute] = {
     routes map { l => ListRoute(l) }
+  }
+  def getVisitedRoutes(user: User): List[String] = {
+    dataProvider.getVisits(user).map {
+      data =>
+        data.keySet.toList
+    }.getOrElse(List())
   }
 
   def getVisitsForRoute(route: Route, user: User): List[String] = {

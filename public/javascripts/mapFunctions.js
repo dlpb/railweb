@@ -132,6 +132,7 @@ function populateConnections(map, token){
 
     });
 
+
      function addConnection(connection, line, layer, colour){
         var points = [
             [connection.from.lon, connection.from.lat],
@@ -165,6 +166,37 @@ function populateConnections(map, token){
         layer.setSource(line);
     }
 }
+
+function addSingleConnection(connection){
+    var vectorLineLayer = new ol.layer.Vector({'id':'lines'});
+    var vectorLine = new ol.source.Vector({});
+
+    var points = [
+            [connection.from.lon, connection.from.lat],
+            [connection.to.lon, connection.to.lat]];
+
+    for (var i = 0; i < points.length; i++) {
+        points[i] = ol.proj.transform(points[i], 'EPSG:4326', 'EPSG:3857');
+    }
+
+    var featureLine = new ol.Feature({
+        geometry: new ol.geom.LineString(points)
+
+    });
+    const colour = findSrsData(connection.srs).colour;
+    let dash = connection.visited ? [1,0]: [10, 10];
+    featureLine.setStyle(new ol.style.Style({
+        stroke: new ol.style.Stroke({
+            color: colour,
+            width: 10,
+        })
+    }));
+
+    vectorLine.addFeature(featureLine);
+    vectorLineLayer.setSource(vectorLine);
+    map.addLayer(vectorLineLayer);
+}
+
 
 /**
 * Info Box
