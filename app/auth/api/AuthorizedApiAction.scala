@@ -5,6 +5,7 @@ import javax.inject.Inject
 import models.auth.{User, UserDao}
 import play.api.http.HeaderNames
 import play.api.mvc._
+import play.mvc.Http.RequestBody
 
 import scala.concurrent.{ExecutionContext, Future}
 import scala.util.{Failure, Success}
@@ -12,7 +13,10 @@ import scala.util.{Failure, Success}
 
 case class UserRequest[A](claims: Map[String, Claim], token: String, request: Request[A], user: User) extends WrappedRequest[A](request)
 
-class AuthorizedAction @Inject()(bodyParser: BodyParsers.Default)(implicit ec: ExecutionContext)
+class AuthorizedAction @Inject()(
+                                  userDao: UserDao,
+                                  bodyParser: BodyParsers.Default
+                                )(implicit ec: ExecutionContext)
   extends ActionBuilder[UserRequest, AnyContent] {
 
   override def parser: BodyParser[AnyContent] = bodyParser
@@ -26,7 +30,7 @@ class AuthorizedAction @Inject()(bodyParser: BodyParsers.Default)(implicit ec: E
     extractBearerToken(request) map { token =>
 
       val service = new JWTService()
-      val userApiAuthService = new UserApiAuthService(new UserDao())
+      val userApiAuthService = new UserApiAuthService(userDao)
       service.isValidToken(token) match {
         case Success(claims) => {
           val user = userApiAuthService.extractUserFrom(claims)
@@ -42,8 +46,15 @@ class AuthorizedAction @Inject()(bodyParser: BodyParsers.Default)(implicit ec: E
     }
   }
 
-  private def extractBearerToken[A](request: Request[A]): Option[String] =
-    request.headers.get(HeaderNames.AUTHORIZATION) collect {
+  private def extractBearerToken[A](request: Request[A]): Option[String] = {
+    val fromHeader = request.headers.get(HeaderNames.AUTHORIZATION) collect {
       case headerTokenRegex(token) => token
     }
+    fromHeader match {
+      case None =>
+        val data = request.body.asInstanceOf[AnyContentAsFormUrlEncoded].data
+        data.get("Authorization").map {_.head}
+      case x => x
+    }
+  }
 }

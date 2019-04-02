@@ -1,4 +1,4 @@
-package controllers.web
+package controllers
 
 import auth.web.AuthorizedWebAction
 import javax.inject._

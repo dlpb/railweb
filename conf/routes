@@ -7,22 +7,39 @@
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
 
 # user/admin stuff
-GET  /login                         controllers.web.UserController.showLoginForm
-POST /doLogin                       controllers.web.UserController.processLoginAttempt
-GET /welcome                        controllers.web.LandingPageController.showLandingPage
-GET /logout                         controllers.web.AuthenticatedUserController.logout
+GET  /login                         controllers.UserController.showLoginForm
+POST /doLogin                       controllers.UserController.processLoginAttempt
+GET /welcome                        controllers.LandingPageController.showLandingPage
+GET /logout                         controllers.AuthenticatedUserController.logout
+GET /profile                        controllers.AuthenticatedUserController.profile
 
-GET /map                            controllers.web.MapController.showMapPage
-GET /routes                         controllers.web.RouteController.showRouteListPage
-GET /route/detail/:from/:to         controllers.web.RouteController.showRouteDetailPage(from: String, to: String)
-GET /locations                      controllers.web.LocationController.showLocationListPage
-GET /location/detail/:id            controllers.web.LocationController.showLocationDetailPage(id: String)
+GET /map                            controllers.MapController.showMapPage
+GET /routes                         controllers.RouteController.showRouteListPage(nrRoutes: Boolean ?=true, srs: String ?= "all", name: String ?= "all", id: String ?= "all")
+GET /route/detail/:from/:to         controllers.RouteController.showRouteDetailPage(from: String, to: String)
+GET /locations                      controllers.LocationController.showLocationListPage(orrStations: Boolean ?=true, operator: String ?= "all", name: String ?= "all", id: String ?= "all")
+GET /location/detail/:id            controllers.LocationController.showLocationDetailPage(id: String)
 
 
-GET /api/location/map               controllers.api.ApiAuthenticatedController.getLocationsForMap
-GET /api/location/list/default      controllers.api.ApiAuthenticatedController.getLocationsForList
-GET /api/location/:id               controllers.api.ApiAuthenticatedController.getLocation(id: String)
+GET /api/location/map               controllers.ApiAuthenticatedController.getLocationsForMap
+GET /api/location/list/default      controllers.ApiAuthenticatedController.getLocationsForList
+GET /api/location/:id               controllers.ApiAuthenticatedController.getLocation(id: String)
 
-GET /api/route/map                  controllers.api.ApiAuthenticatedController.getRoutesForMap
-GET /api/route/list/default         controllers.api.ApiAuthenticatedController.getRoutesForList
-GET /api/route/:from/:to            controllers.api.ApiAuthenticatedController.getRoute(from: String, to: String)
+GET /api/route/map                  controllers.ApiAuthenticatedController.getRoutesForMap
+GET /api/route/list/default         controllers.ApiAuthenticatedController.getRoutesForList
+GET /api/route/:from/:to            controllers.ApiAuthenticatedController.getRoute(from: String, to: String)
+
+GET /api/visit/locations             controllers.ApiAuthenticatedController.getAllVisitsForLocations()
+GET /api/visit/location/:id         controllers.ApiAuthenticatedController.getAllVisitsForLocation(id: String)
+POST /api/visit/location            controllers.ApiAuthenticatedController.visitLocation
+POST /api/visit/location/:id        controllers.ApiAuthenticatedController.visitLocationWithParams(id: String)
+POST /api/visit/location/list/:id        controllers.ApiAuthenticatedController.visitLocationFromList(id: String)
+POST /api/visit/location/delete/last/:id controllers.ApiAuthenticatedController.removeLastVisitForLocation(id: String)
+POST /api/visit/location/delete/all/:id  controllers.ApiAuthenticatedController.removeAllVisitsForLocation(id: String)
+
+GET /api/visit/route                    controllers.ApiAuthenticatedController.getAllVisitsForRoutes()
+GET /api/visit/route/:from/:to          controllers.ApiAuthenticatedController.getAllVisitsForRoute(from: String, to: String)
+POST /api/visit/route                   controllers.ApiAuthenticatedController.visitRoute
+POST /api/visit/route/:from/:to         controllers.ApiAuthenticatedController.visitRouteWithParams(from: String, to: String)
+POST /api/visit/route/list/:from/:to         controllers.ApiAuthenticatedController.visitRouteFromList(from: String, to: String)
+POST /api/visit/route/delete/last/:from/:to    controllers.ApiAuthenticatedController.removeLastVisitForRoute(from: String, to: String)
+POST /api/visit/route/delete/all/:from/:to     controllers.ApiAuthenticatedController.removeAllVisitsForRoute(from: String, to: String)
