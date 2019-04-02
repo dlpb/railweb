@@ -5,6 +5,12 @@ visitUrl: Call,
 removeLast: Call,
 removeAll: Call)(implicit request: Request[AnyContent])
 
+<head>
+    <title>
+        @route.from.name - @route.to.name (@route.from.id - @route.to.id) - All the Stations & Track
+    </title>
+</head>
+
 <script src='@routes.Assets.versioned("javascripts/mapFunctions.js")' type="text/javascript"></script>
 <script src='@routes.Assets.versioned("javascripts/tocData.js")' type="text/javascript"></script>
 <script src='@routes.Assets.versioned("javascripts/srsData.js")' type="text/javascript"></script>
