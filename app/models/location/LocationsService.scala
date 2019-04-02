@@ -1,32 +1,74 @@
 package models.location
 
-import org.json4s.jackson.JsonMethods._
+import com.typesafe.config.Config
+import javax.inject.Inject
+import models.auth.User
+import models.data.LocationDataProvider
 import org.json4s._
+import org.json4s.jackson.JsonMethods._
 
 import scala.io.Source
 
-class LocationsService {
+class LocationsService @Inject() ( config: Config,
+                                   dataProvider: LocationDataProvider) {
 
-  private val locations = LocationsService.makeLocations(LocationsService.readLocationsFromFile)
+  private val dataRoot = config.getString("data.static.root")
+  private val locations = makeLocations(readLocationsFromFile)
 
   def getLocation(id: String): Option[Location] =
     locations.find(_.id.equals(id))
 
 
   def mapLocations: Set[MapLocation] = {
-    locations map {l => MapLocation(l)}
+    locations map { l => MapLocation(l) }
   }
 
-  def defaultListLocations: Set[ListLocation] = {
-    locations map {l => ListLocation(l)}
+  def defaultListLocations: List[ListLocation] = {
+
+    def sortLocations(a: ListLocation, b: ListLocation): Boolean = {
+      if(a.operator.equals(b.operator)) {
+        if(a.srs.equals(b.srs))
+          a.name < b.name
+        else a.srs < b.srs
+      }
+      else a.operator < b.operator
+    }
+
+    val listItems = locations map { l => ListLocation(l) }
+    listItems.toList.sortWith(sortLocations)
+
   }
 
-}
+  def getVisitedLocations(user: User): List[String] = {
+    dataProvider.getVisits(user).map {
+      data =>
+        data.keySet.toList
+    } .getOrElse(List())
+  }
 
-object LocationsService {
+  def getVisitsForLocation(location: Location, user: User): List[String] = {
+    dataProvider.getVisits(user) flatMap {
+      _.get(dataProvider.idToString(location))
+    } match {
+      case Some(list) => list
+      case None => List()
+    }
+  }
+
+  def visitLocation(location: Location, user: User): Unit = {
+    dataProvider.saveVisit(location, user)
+  }
+
+  def deleteLastVisit(location: Location, user: User): Unit = {
+    dataProvider.removeLastVisit(location, user)
+  }
+
+  def deleteAllVisits(location: Location, user: User): Unit = {
+    dataProvider.removeAllVisits(location, user)
+  }
 
   def readLocationsFromFile: String = {
-    Source.fromFile(System.getProperty("user.dir") + "/resources/data/static/locations.json").mkString
+    Source.fromFile(dataRoot + "/locations.json").mkString
   }
 
   def makeLocations(locations: String): Set[Location] = {
