@@ -1,5 +1,7 @@
 package models.location
 
+import java.io.InputStream
+
 import com.typesafe.config.Config
 import javax.inject.Inject
 import models.auth.User
@@ -68,8 +70,9 @@ class LocationsService @Inject() ( config: Config,
   }
 
   def readLocationsFromFile: String = {
-    Source.fromFile(dataRoot + "/locations.json").mkString
-  }
+    val path = "/data/static/locations.json"
+    val data: InputStream = getClass().getResourceAsStream(path)
+    Source.fromInputStream(data).mkString  }
 
   def makeLocations(locations: String): Set[Location] = {
     implicit val formats = DefaultFormats

@@ -1,5 +1,7 @@
 package models.route
 
+import java.io.InputStream
+
 import com.typesafe.config.Config
 import javax.inject.Inject
 import models.auth.User
@@ -58,7 +60,9 @@ class RoutesService @Inject() ( config: Config,
   }
 
   def readRoutesFromFile: String = {
-    Source.fromFile(dataRoot + "/routes.json").mkString
+    val path = "/data/static/routes.json"
+    val data: InputStream = getClass().getResourceAsStream(path)
+    Source.fromInputStream(data).mkString
   }
 
   def makeRoutes(routes: String): Set[Route] = {
