@@ -39,10 +39,46 @@ class LocationController @Inject()(
    }
   }
 
-  def showLocationListPage() = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
+  def showLocationListPage(orr: Boolean, operator: String, name: String, id: String) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     if(request.user.roles.contains(MapUser)){
-      val locations: Set[ListLocation] = locationService.defaultListLocations
-      Ok(views.html.locations(locations))
+      val token = jwtService.createToken(request.user, new Date())
+      val locations: List[ListLocation] = locationService.defaultListLocations.filter({
+        loc =>
+          val orrFlag = if(orr) loc.orrStation else true
+          val operatorFlag = if(!operator.equals("all")) loc.operator.toLowerCase.contains(operator.toLowerCase) else true
+          val nameFlag = if(!name.equals("all")) loc.name.toLowerCase.contains(name.toLowerCase) else true
+          val idFlag = if(!id.equals("all")) loc.id.toLowerCase.contains(id.toLowerCase) else true
+          orrFlag && operatorFlag && nameFlag && idFlag
+      })
+
+      val visited = locationService.getVisitedLocations(request.user)
+      val visits: Map[String, Boolean] = locations.map({
+        l =>
+          l.id -> visited.contains(l.id)
+      }).toMap
+      val formActions:Map[String, Call] = locations.map({
+        loc =>
+          loc.id -> routes.ApiAuthenticatedController.visitLocationFromList("")
+      }).toMap
+      val locIds = locations.map{_.id}
+
+      val visitedLocs = visited.count({ v => locIds.contains(v) })
+      val availableLocs = locations.size
+      val percentage = (visitedLocs.toDouble / availableLocs.toDouble) * 100.0
+      val formattedPercentage: String = f"$percentage%1.1f"
+      Ok(views.html.locations(
+        locations,
+        visits,
+        formActions,
+        token,
+        visitedLocs,
+        availableLocs,
+        formattedPercentage,
+        orr,
+        name,
+        id,
+        operator
+      ))
     }
     else {
       Forbidden("User not authorized to view page")

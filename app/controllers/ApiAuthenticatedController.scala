@@ -95,6 +95,17 @@ class ApiAuthenticatedController @Inject()(
     }
   }
 
+  def visitLocationFromList(id: String) = {
+    authAction { implicit request =>
+      locationService.getLocation(id) match {
+        case Some(l) =>
+          locationService.visitLocation(l, request.user)
+          Redirect(routes.LocationController.showLocationListPage())
+        case None => NotFound
+      }
+    }
+  }
+
   def getAllVisitsForLocation(id: String) = {
     authAction { implicit request =>
       val location = locationService.getLocation(id)

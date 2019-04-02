@@ -15,7 +15,7 @@ GET /logout                         controllers.AuthenticatedUserController.logo
 GET /map                            controllers.MapController.showMapPage
 GET /routes                         controllers.RouteController.showRouteListPage
 GET /route/detail/:from/:to         controllers.RouteController.showRouteDetailPage(from: String, to: String)
-GET /locations                      controllers.LocationController.showLocationListPage
+GET /locations                      controllers.LocationController.showLocationListPage(orrStations: Boolean ?=false, operator: String ?= "all", name: String ?= "all", id: String ?= "all")
 GET /location/detail/:id            controllers.LocationController.showLocationDetailPage(id: String)
 
 
@@ -30,8 +30,9 @@ GET /api/route/:from/:to            controllers.ApiAuthenticatedController.getRo
 GET /api/visit/location/:id         controllers.ApiAuthenticatedController.getAllVisitsForLocation(id: String)
 POST /api/visit/location            controllers.ApiAuthenticatedController.visitLocation
 POST /api/visit/location/:id        controllers.ApiAuthenticatedController.visitLocationWithParams(id: String)
+POST /api/visit/location/list/:id        controllers.ApiAuthenticatedController.visitLocationFromList(id: String)
 POST /api/visit/location/delete/last/:id controllers.ApiAuthenticatedController.removeLastVisitForLocation(id: String)
-POST /api/visit/location/de;ete/all/:id  controllers.ApiAuthenticatedController.removeAllVisitsForLocation(id: String)
+POST /api/visit/location/delete/all/:id  controllers.ApiAuthenticatedController.removeAllVisitsForLocation(id: String)
 
 GET /api/visit/route/:from/:to          controllers.ApiAuthenticatedController.getAllVisitsForRoute(from: String, to: String)
 POST /api/visit/route                   controllers.ApiAuthenticatedController.visitRoute
