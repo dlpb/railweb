@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "username": "foo",
+    "password": "1cc0d51be8484747b2569e142154db5a450ff937e989c3e016fb958e54d756e5",
+    "roles": [
+      "MapUser",
+      "VisitUser"
+    ]
+  }
+]

@@ -10,15 +10,16 @@ import scala.concurrent.{ExecutionContext, Future}
 
 case class WebUserContext[A](user: User, request: Request[A]) extends WrappedRequest[A](request)
 
-class AuthorizedWebAction @Inject()(parser: BodyParsers.Default)(implicit ec: ExecutionContext)
+class AuthorizedWebAction @Inject()(
+                                     userDao: UserDao,
+                                     bodyParser: BodyParsers.Default
+                                   )(implicit ec: ExecutionContext)
   extends ActionBuilder[WebUserContext, AnyContent] {
 
-  override def parser: BodyParser[AnyContent] = parser
+  override def parser: BodyParser[AnyContent] = bodyParser
   override protected def executionContext: ExecutionContext = ec
 
   private val logger = play.api.Logger(this.getClass)
-
-  private val userDao: UserDao = new UserDao()
 
   override def invokeBlock[A](request: Request[A], block: WebUserContext[A] => Future[Result]) = {
     logger.info("ENTERED AuthenticatedUserAction::invokeBlock ...")

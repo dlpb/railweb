@@ -13,7 +13,10 @@ import scala.util.{Failure, Success}
 
 case class UserRequest[A](claims: Map[String, Claim], token: String, request: Request[A], user: User) extends WrappedRequest[A](request)
 
-class AuthorizedAction @Inject()(bodyParser: BodyParsers.Default)(implicit ec: ExecutionContext)
+class AuthorizedAction @Inject()(
+                                  userDao: UserDao,
+                                  bodyParser: BodyParsers.Default
+                                )(implicit ec: ExecutionContext)
   extends ActionBuilder[UserRequest, AnyContent] {
 
   override def parser: BodyParser[AnyContent] = bodyParser
@@ -27,7 +30,7 @@ class AuthorizedAction @Inject()(bodyParser: BodyParsers.Default)(implicit ec: E
     extractBearerToken(request) map { token =>
 
       val service = new JWTService()
-      val userApiAuthService = new UserApiAuthService(new UserDao())
+      val userApiAuthService = new UserApiAuthService(userDao)
       service.isValidToken(token) match {
         case Success(claims) => {
           val user = userApiAuthService.extractUserFrom(claims)
