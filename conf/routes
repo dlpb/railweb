@@ -12,6 +12,7 @@ POST /doLogin                       controllers.UserController.processLoginAttem
 GET /welcome                        controllers.LandingPageController.showLandingPage
 GET /logout                         controllers.AuthenticatedUserController.logout
 GET /profile                        controllers.AuthenticatedUserController.profile
+POST /profile                       controllers.AuthenticatedUserController.changePassword
 
 GET /map                            controllers.MapController.showMapPage
 GET /routes                         controllers.RouteController.showRouteListPage(nrRoutes: Boolean ?=true, srs: String ?= "all", name: String ?= "all", id: String ?= "all")

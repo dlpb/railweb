@@ -11,15 +11,17 @@ import scala.io.Source
 
 abstract class UserDao(config: Config) extends UserProvider {
 
+
   def dataRoot = config.getString("data.user.list.root")
 
-  private val users: Set[DaoUser] = getUsers
+  private[auth] var users: Set[DaoUser] = getUsers
   private val salt: String = readSalt
 
   def lookupUser(u: LoginUser): Boolean = {
     val matchingUsers = users.filter(user => u.username.equals(user.username) && hashAndSaltPassword(salt, u.password).equals(user.password))
     matchingUsers.size == 1
   }
+  def getDaoUser(user: User): Option[DaoUser] = users.find(u => user.id.equals(u.id) && user.username.equals(u.username))
 
   def findUserByLoginUser(u: LoginUser): Option[User] = {
     users.find({user =>
@@ -41,6 +43,8 @@ abstract class UserDao(config: Config) extends UserProvider {
       userId.equals(id)
     }) map mapDaoUserToUser
   }
+
+  def encryptPassword(password: String) = hashAndSaltPassword(salt, password)
 
   def readSalt = Source.fromFile(dataRoot + "/salt.txt").mkString
 

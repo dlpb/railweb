@@ -11,5 +11,8 @@ class PostgresBasedUserDao @Inject()(config: Config, dbProvider: PostgresDB) ext
       dbProvider.getUsers().toSet
     }
 
-  override def updateUser(user: DaoUser): Unit = {}
+  override def updateUser(user: DaoUser): Unit = {
+    dbProvider.updateUser(user)
+    users = users.filterNot(u => u.id.equals(user.id)) + user
+  }
 }

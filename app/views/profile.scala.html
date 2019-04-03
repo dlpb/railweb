@@ -1,6 +1,11 @@
 @import helper._
 
-@(user: models.auth.User)(implicit request: Request[AnyContent])
+@(
+token: String,
+user: models.auth.User,
+form: Form[models.web.forms.ChangePassword],
+errors: List[String]
+)(implicit request: Request[AnyContent])
 <head>
     <title>
         Profile
@@ -67,6 +72,31 @@
                 </ul>
             </li>
         </ul>
+    </div>
+    <div class="row">
+        @if(!errors.isEmpty){
+            <div class="alert alert-danger">
+                <ul>
+                    @for(error <- errors){
+                        <li>@error</li>
+                    }
+                </ul>
+            </div>
+        }
+    </div>
+    <div class="row">
 
+        <form method="POST" id="change-password-form">
+            @helper.CSRF.formField
+            <input type="hidden" name="Authorization" id="Authorization" value="@token"/>
+            <label for="oldPassword">Old Password</label>
+            <input class="form-control" type="password" id="oldPassword" name="oldPassword"/>
+            <label for="newPassword">New Password</label>
+            <input class="form-control" type="password" id="newPassword" name="newPassword"/>
+            <label for="confirmPassword">Confirm Password</label>
+            <input class="form-control" type="password" id="confirmPassword" name="confirmPassword"/>
+
+            <button type="submit" id="submit" class="btn btn-primary">Change Password</button>
+        </form>
     </div>
 </div>

@@ -9,6 +9,7 @@ import models.auth.DaoUser
 
 class PostgresDB @Inject() (config: Config) {
 
+
   private val createTableSQL =
     """CREATE TABLE IF NOT EXISTS users (
       |id BIGSERIAL PRIMARY KEY,
@@ -36,6 +37,7 @@ class PostgresDB @Inject() (config: Config) {
   private val getRoutesSql = "SELECT route_visits FROM users WHERE id = ?"
   private val getLocationsSql = "SELECT location_visits FROM users WHERE id = ?"
   private val getUsersSql = "SELECT id, username, password, roles FROM users"
+  private val updateUserSql = "UPDATE users SET username = ?, password = ?, roles = ? WHERE id = ?"
 
   ensureDatabaseSetup()
 
@@ -94,6 +96,17 @@ class PostgresDB @Inject() (config: Config) {
     statement.close()
     connection.close()
     sb.toString()
+  }
+  def updateUser(user: DaoUser) = {
+    val connection = getConnection(config)
+    val statement = connection.prepareStatement(updateUserSql)
+    statement.setString(1, user.username)
+    statement.setString(2, user.password)
+    statement.setString(3, user.roles.mkString(","))
+    statement.setLong(4, user.id)
+    statement.executeUpdate()
+    statement.close()
+    connection.close()
   }
 
   def getUsers(): List[DaoUser] = {

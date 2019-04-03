@@ -1,14 +1,32 @@
 package controllers
 
+import java.util.Date
+
+import auth.api.{AuthorizedAction, JWTService}
 import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject._
+import models.auth.UserDao
+import models.web.forms.ChangePassword
+import play.api.data.Form
+import play.api.data.Forms.{mapping, nonEmptyText}
 import play.api.mvc._
 
 @Singleton
 class AuthenticatedUserController @Inject()(
+                                             userDao: UserDao,
+                                             jwtService: JWTService,
                                              cc: ControllerComponents,
-                                             authenticatedUserAction: AuthorizedWebAction
+                                             authenticatedUserAction: AuthorizedWebAction,
+                                             authorizedAction: AuthorizedAction
                                            ) extends AbstractController(cc) {
+
+  val form: Form[ChangePassword] = Form(
+    mapping(
+      "oldPassword" -> nonEmptyText,
+      "newPassword" -> nonEmptyText,
+      "confirmPassword" -> nonEmptyText,
+    )(ChangePassword.apply)(ChangePassword.unapply)
+  )
 
   def logout = authenticatedUserAction { implicit request: Request[AnyContent] =>
     // docs: “withNewSession ‘discards the whole (old) session’”
@@ -18,7 +36,41 @@ class AuthenticatedUserController @Inject()(
   }
 
   def profile = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
-    Ok(views.html.profile(request.user))
+    val token = jwtService.createToken(request.user, new Date())
+    println("getting")
+    Ok(views.html.profile(token, request.user, form, List()))
+  }
+
+  def changePassword = authorizedAction  { implicit request =>
+    println("Posting...")
+
+    val token = jwtService.createToken(request.user, new Date())
+    val data = request.request.body.asFormUrlEncoded
+    println(data)
+    (data.get("oldPassword").headOption, data.get("newPassword").headOption, data.get("confirmPassword").headOption) match {
+      case (Some(oldPassword), Some(newPassword), Some(confirmPassword)) =>
+        userDao.getDaoUser(request.user) match {
+          case Some(daoUser) =>
+            val encryptedOldPassword = userDao.encryptPassword(oldPassword)
+            println(encryptedOldPassword)
+            println(daoUser.password)
+            println(encryptedOldPassword.equals(daoUser.password))
+            if(encryptedOldPassword.equals(daoUser.password)){
+              if(newPassword.equals(confirmPassword)){
+                val newDaoUser = daoUser.copy(password = userDao.encryptPassword(newPassword))
+                userDao.updateUser(newDaoUser)
+                Ok(views.html.profile(token, request.user, form, List()))
+              } else
+                Ok(views.html.profile(token, request.user, form, List("Passwords do not match")))
+            }
+            else
+              Ok(views.html.profile(token, request.user, form, List("Password was not correct")))
+          case None =>
+            Ok(views.html.profile(token, request.user, form, List("Something went wrong, please try again. Error 2")))
+        }
+      case _ =>
+        Ok(views.html.profile(token, request.user, form, List("Something went wrong, please try again. Error 1")))
+    }
   }
 
 }

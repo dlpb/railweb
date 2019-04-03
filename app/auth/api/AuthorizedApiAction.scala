@@ -5,7 +5,6 @@ import javax.inject.Inject
 import models.auth.{User, UserDao}
 import play.api.http.HeaderNames
 import play.api.mvc._
-import play.mvc.Http.RequestBody
 
 import scala.concurrent.{ExecutionContext, Future}
 import scala.util.{Failure, Success}
