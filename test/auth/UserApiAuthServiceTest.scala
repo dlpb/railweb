@@ -4,13 +4,13 @@ import java.util.Date
 
 import auth.api.{JWTService, UserApiAuthService}
 import com.typesafe.config.{ConfigFactory, ConfigValueFactory}
-import models.auth.{User, UserDao}
+import models.auth.{FileBasedUserDao, User}
 import org.scalatest.{FlatSpec, Matchers}
 
 class UserApiAuthServiceTest extends FlatSpec with Matchers{
 
   "UserApiAuthService" should "find a user if the id is in the claim list and is valid" in {
-    val dao = new UserDao(config)
+    val dao = new FileBasedUserDao(config)
     val service = new UserApiAuthService(dao)
 
     val jwtService = new JWTService()
@@ -21,7 +21,7 @@ class UserApiAuthServiceTest extends FlatSpec with Matchers{
   }
 
   it should "not extract user that cannot be found" in {
-    val dao = new UserDao(config)
+    val dao = new FileBasedUserDao(config)
     val service = new UserApiAuthService(dao)
 
     val jwtService = new JWTService()

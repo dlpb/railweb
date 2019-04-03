@@ -4,20 +4,16 @@ import java.math.BigInteger
 import java.security.MessageDigest
 
 import com.typesafe.config.Config
-import javax.inject.Inject
-import models.auth.roles.{MapUser, Role, VisitUser}
+import models.auth.roles.Role
 import models.web.forms.LoginUser
-import org.json4s.DefaultFormats
-import org.json4s.jackson.JsonMethods.parse
 
 import scala.io.Source
 
-@javax.inject.Singleton
-class UserDao @Inject()(config: Config) {
+abstract class UserDao(config: Config) extends UserProvider {
 
   def dataRoot = config.getString("data.user.list.root")
 
-  private val users: Set[DaoUser] = makeUsers(readUsersFromFile)
+  private val users: Set[DaoUser] = getUsers
   private val salt: String = readSalt
 
   def lookupUser(u: LoginUser): Boolean = {
@@ -44,15 +40,6 @@ class UserDao @Inject()(config: Config) {
       val userId: Long = user.id
       userId.equals(id)
     }) map mapDaoUserToUser
-  }
-
-  def makeUsers(data: String): Set[DaoUser] = {
-    implicit val formats = DefaultFormats
-    parse(data).extract[Set[DaoUser]]
-  }
-
-  def readUsersFromFile(): String = {
-    Source.fromFile(dataRoot + "/users.json").mkString
   }
 
   def readSalt = Source.fromFile(dataRoot + "/salt.txt").mkString
