@@ -22,4 +22,8 @@ class FileBasedUserDao @Inject()(config: Config) extends UserDao(config) {
   override def getUsers: Set[DaoUser] = makeUsers(readUsersFromFile())
 
   override def updateUser(user: DaoUser): Unit = ???
+
+  override def createUser(username: String, password: String, roles: Set[String]): Unit = {}
+
+  override def deleteUser(user: DaoUser): Unit = {}
 }

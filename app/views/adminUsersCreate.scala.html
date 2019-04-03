@@ -3,12 +3,12 @@
 @(
 token: String,
 user: models.auth.User,
-form: Form[models.web.forms.ChangePassword],
-errors: List[String]
+users: Set[models.auth.DaoUser],
+messages: List[String]
 )(implicit request: Request[AnyContent])
 <head>
     <title>
-        Profile
+        Admin Users
     </title>
 </head>
 <script src='@routes.Assets.versioned("javascripts/mapFunctions.js")' type="text/javascript"></script>
@@ -71,46 +71,45 @@ errors: List[String]
     </div>
 </nav>
 
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/admin">Admin</a></li>
+        <li class="breadcrumb-item"><a href="/admin/users">Users</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Create</li>
+    </ol>
+</nav>
+
 <div class="container">
     <div class="row">
-        <h1>Profile</h1>
-    </div>
-    <div class="row">
-        <ul>
-            <li>Username: @user.username</li>
-            <li>Roles
-                <ul>
-                    @for(role <- user.roles) {
-                        <li>@role</li>
-                    }
-                </ul>
-            </li>
-        </ul>
-    </div>
-    <div class="row">
-        @if(!errors.isEmpty){
-            <div class="alert alert-danger">
-                <ul>
-                    @for(error <- errors){
-                        <li>@error</li>
-                    }
-                </ul>
-            </div>
-        }
-    </div>
-    <div class="row">
+        <div class="col-sm">
+            <h1>Create User</h1>
+            @if(user.roles.contains(models.auth.roles.AdminUser)) {
+                @if(messages.size > 0){
+                    <div class="alert alert-primary">
+                        <h2>Messages</h2>
+                        <ul>
+                        @for(message <- messages){
+                            <li>@message</li>
+                        }
+                        </ul>
+                    </div>
+                }
 
-        <form method="POST" id="change-password-form">
-            @helper.CSRF.formField
-            <input type="hidden" name="Authorization" id="Authorization" value="@token"/>
-            <label for="oldPassword">Old Password</label>
-            <input class="form-control" type="password" id="oldPassword" name="oldPassword"/>
-            <label for="newPassword">New Password</label>
-            <input class="form-control" type="password" id="newPassword" name="newPassword"/>
-            <label for="confirmPassword">Confirm Password</label>
-            <input class="form-control" type="password" id="confirmPassword" name="confirmPassword"/>
+            <form method="POST" action="/admin/users/create">
+                @helper.CSRF.formField
 
-            <button type="submit" id="submit" class="btn btn-primary">Change Password</button>
-        </form>
+                <input type="hidden" name="Authorization" id="Authorization" value="@token"/>
+                <label for="username">Username</label>
+                <input class="form-control" type="text" name="username" id="username"/>
+                <label for="Password">Password</label>
+                <input class="form-control" type="password" name="password" id="password"/>
+                <label for="roles">Roles</label>
+                <input class="form-control" type="text" name="roles" id="roles"/>
+                <label for="confirmation">Confirmation</label>
+                <input class="form-control" type="password" name="confirmation" id="confirmation"/>
+                <button type="submit" class="btn btn-primary">Create User</button>
+            </form>
+            }
+        </div>
     </div>
 </div>

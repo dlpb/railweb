@@ -23,11 +23,12 @@ abstract class UserDao(config: Config) extends UserProvider {
   }
   def getDaoUser(user: User): Option[DaoUser] = users.find(u => user.id.equals(u.id) && user.username.equals(u.username))
 
+  def usernameInUse(username: String): Boolean = users.exists(user => user.username.equals(username))
+
   def findUserByLoginUser(u: LoginUser): Option[User] = {
     users.find({user =>
       u.username.equals(user.username) && hashAndSaltPassword(salt, u.password).equals(user.password)}
     ) map mapDaoUserToUser
-
   }
 
   def mapDaoUserToUser(daoUser: DaoUser): User = {
@@ -42,6 +43,10 @@ abstract class UserDao(config: Config) extends UserProvider {
       val userId: Long = user.id
       userId.equals(id)
     }) map mapDaoUserToUser
+  }
+
+  def makeDaoUserFromRawData(username: String, password: String, roles: Set[String]) = {
+    DaoUser(0, username, encryptPassword(password), roles)
   }
 
   def encryptPassword(password: String) = hashAndSaltPassword(salt, password)

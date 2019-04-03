@@ -37,7 +37,9 @@ class PostgresDB @Inject() (config: Config) {
   private val getRoutesSql = "SELECT route_visits FROM users WHERE id = ?"
   private val getLocationsSql = "SELECT location_visits FROM users WHERE id = ?"
   private val getUsersSql = "SELECT id, username, password, roles FROM users"
+  private val createUserSql = "INSERT INTO users (username, password, roles) VALUES (?, ?, ?)"
   private val updateUserSql = "UPDATE users SET username = ?, password = ?, roles = ? WHERE id = ?"
+  private val deleteUserSql = "DELETE FROM users WHERE id = ?"
 
   ensureDatabaseSetup()
 
@@ -97,6 +99,16 @@ class PostgresDB @Inject() (config: Config) {
     connection.close()
     sb.toString()
   }
+  def createUser(user: DaoUser) = {
+    val connection = getConnection(config)
+    val statement = connection.prepareStatement(createUserSql)
+    statement.setString(1, user.username)
+    statement.setString(2, user.password)
+    statement.setString(3, user.roles.mkString(","))
+    statement.executeUpdate()
+    statement.close()
+    connection.close()
+  }
   def updateUser(user: DaoUser) = {
     val connection = getConnection(config)
     val statement = connection.prepareStatement(updateUserSql)
@@ -124,6 +136,14 @@ class PostgresDB @Inject() (config: Config) {
     statement.close()
     connection.close()
     users
+  }
+  def deleteUserById(id: Long) = {
+    val connection = getConnection(config)
+    val statement = connection.prepareStatement(deleteUserSql)
+    statement.setLong(1, id)
+    statement.executeUpdate()
+    statement.close()
+    connection.close()
   }
 
   def getConnection(config: Config): Connection = {

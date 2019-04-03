@@ -15,4 +15,15 @@ class PostgresBasedUserDao @Inject()(config: Config, dbProvider: PostgresDB) ext
     dbProvider.updateUser(user)
     users = users.filterNot(u => u.id.equals(user.id)) + user
   }
+
+  override def createUser(username: String, password: String, roles: Set[String]): Unit = {
+    val user = makeDaoUserFromRawData(username, password, roles)
+    dbProvider.createUser(user)
+    users = users + user
+  }
+
+  override def deleteUser(user: DaoUser): Unit = {
+    dbProvider.deleteUserById(user.id)
+    users = users - user
+  }
 }

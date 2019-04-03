@@ -7,12 +7,22 @@
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
 
 # user/admin stuff
+GET /                               controllers.LandingPageController.showLandingPage
 GET  /login                         controllers.UserController.showLoginForm
 POST /doLogin                       controllers.UserController.processLoginAttempt
 GET /welcome                        controllers.LandingPageController.showLandingPage
 GET /logout                         controllers.AuthenticatedUserController.logout
 GET /profile                        controllers.AuthenticatedUserController.profile
 POST /profile                       controllers.AuthenticatedUserController.changePassword
+
+GET /admin                          controllers.AuthenticatedUserController.admin
+GET /admin/users                    controllers.AuthenticatedUserController.adminUsers
+GET /admin/users/create             controllers.AuthenticatedUserController.adminUsersCreateView
+GET /admin/users/update             controllers.AuthenticatedUserController.adminUsersUpdateView
+GET /admin/users/delete             controllers.AuthenticatedUserController.adminUsersDeleteView
+POST /admin/users/update            controllers.AuthenticatedUserController.adminUpdateUser
+POST /admin/users/create            controllers.AuthenticatedUserController.adminCreateUser
+POST /admin/users/delete            controllers.AuthenticatedUserController.adminDeleteUser
 
 GET /map                            controllers.MapController.showMapPage
 GET /routes                         controllers.RouteController.showRouteListPage(nrRoutes: Boolean ?=true, srs: String ?= "all", name: String ?= "all", id: String ?= "all")

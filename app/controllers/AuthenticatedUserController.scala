@@ -5,7 +5,8 @@ import java.util.Date
 import auth.api.{AuthorizedAction, JWTService}
 import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject._
-import models.auth.UserDao
+import models.auth.{DaoUser, UserDao}
+import models.auth.roles.AdminUser
 import models.web.forms.ChangePassword
 import play.api.data.Form
 import play.api.data.Forms.{mapping, nonEmptyText}
@@ -35,28 +36,192 @@ class AuthenticatedUserController @Inject()(
       .withNewSession
   }
 
+  def admin = authenticatedUserAction {
+    implicit request =>
+      val token = jwtService.createToken(request.user, new Date())
+      if (!request.user.roles.contains(AdminUser)) {
+        Redirect(routes.LandingPageController.showLandingPage())
+      }
+      else {
+        Ok(views.html.admin(token, request.user))
+      }
+  }
+
+  def adminUsers = authenticatedUserAction {
+    implicit request =>
+      val token = jwtService.createToken(request.user, new Date())
+      if (!request.user.roles.contains(AdminUser)) {
+        Redirect(routes.LandingPageController.showLandingPage())
+      }
+      else {
+        Ok(views.html.adminUsers(token, request.user))
+      }
+  }
+
+  def adminUsersCreateView = authenticatedUserAction {
+    implicit request =>
+      val token = jwtService.createToken(request.user, new Date())
+      if (!request.user.roles.contains(AdminUser)) {
+        Redirect(routes.LandingPageController.showLandingPage())
+      }
+      else {
+        Ok(views.html.adminUsersCreate(token, request.user, userDao.getUsers, List()))
+      }
+  }
+
+  def adminUsersUpdateView = authenticatedUserAction {
+    implicit request =>
+      val token = jwtService.createToken(request.user, new Date())
+      if (!request.user.roles.contains(AdminUser)) {
+        Redirect(routes.LandingPageController.showLandingPage())
+      }
+      else {
+        Ok(views.html.adminUsersUpdate(token, request.user, userDao.getUsers, List()))
+      }
+  }
+
+  def adminUsersDeleteView = authenticatedUserAction {
+    implicit request =>
+      val token = jwtService.createToken(request.user, new Date())
+      if (!request.user.roles.contains(AdminUser)) {
+        Redirect(routes.LandingPageController.showLandingPage())
+      }
+      else {
+        Ok(views.html.adminUsersDelete(token, request.user, userDao.getUsers, List()))
+      }
+  }
+
+  def adminDeleteUser = authorizedAction {
+    implicit request =>
+      if (!request.user.roles.contains(AdminUser)) Unauthorized("Unauthorized")
+      else {
+
+        val data = request.request.body.asFormUrlEncoded
+        val token = jwtService.createToken(request.user, new Date())
+
+        data.get("confirmation").headOption match {
+          case Some(confirmation) =>
+            userDao.getDaoUser(request.user) match {
+              case Some(adminUser) =>
+                val encryptedConfirmation = userDao.encryptPassword(confirmation)
+                if (encryptedConfirmation.equals(adminUser.password)) {
+                  data.get("id").headOption match {
+                    case Some(id) =>
+                      userDao.findUserById(id.toLong) flatMap { u => userDao.getDaoUser(u) } match {
+                        case Some(daoUser) =>
+                          userDao.deleteUser(daoUser)
+                          Ok(views.html.adminUsersDelete(token, request.user, userDao.getUsers, List(s"Deleted user")))
+                        case None =>
+                          Ok(views.html.adminUsersDelete(token, request.user, userDao.getUsers, List("No user data")))
+                      }
+
+                    case _ =>
+                      Ok(views.html.adminUsersDelete(token, request.user, userDao.getUsers, List("Invalid data")))
+                  }
+                }
+                else
+                  Ok(views.html.adminUsersDelete(token, request.user, userDao.getUsers, List("Invalid confirmation")))
+              case None =>
+                Ok(views.html.adminUsersDelete(token, request.user, userDao.getUsers, List("Error finding admin user")))
+            }
+          case None =>
+            Ok(views.html.adminUsersDelete(token, request.user, userDao.getUsers, List("Please enter confirmation")))
+        }
+      }
+  }
+
+  def adminUpdateUser = authorizedAction {
+    implicit request =>
+      if (!request.user.roles.contains(AdminUser)) Unauthorized("Unauthorized")
+      else {
+
+        val data = request.request.body.asFormUrlEncoded
+        val token = jwtService.createToken(request.user, new Date())
+
+        data.get("confirmation").headOption match {
+          case Some(confirmation) =>
+            userDao.getDaoUser(request.user) match {
+              case Some(adminUser) =>
+                val encryptedConfirmation = userDao.encryptPassword(confirmation)
+                if (encryptedConfirmation.equals(adminUser.password)) {
+                  (data.get("id").headOption, data.get("username").headOption, data.get("password").headOption, data.get("roles").headOption) match {
+                    case (Some(id), Some(username), Some(password), Some(roles)) =>
+                      userDao.findUserById(id.toLong) flatMap { u => userDao.getDaoUser(u) } match {
+                        case Some(daoUser) =>
+                          userDao.updateUser(daoUser.copy(username = username, password = password, roles = roles.split(",").toSet))
+                          Ok(views.html.adminUsersUpdate(token, request.user, userDao.getUsers, List(s"Updated user $id $username")))
+                        case None =>
+                          Ok(views.html.adminUsersUpdate(token, request.user, userDao.getUsers, List("No user data")))
+                      }
+
+                    case _ =>
+                      Ok(views.html.adminUsersUpdate(token, request.user, userDao.getUsers, List("Invalid data")))
+                  }
+                }
+                else
+                  Ok(views.html.adminUsersUpdate(token, request.user, userDao.getUsers, List("Invalid confirmation")))
+              case None =>
+                Ok(views.html.adminUsersUpdate(token, request.user, userDao.getUsers, List("Error finding admin user")))
+            }
+          case None =>
+            Ok(views.html.adminUsersUpdate(token, request.user, userDao.getUsers, List("Please enter confirmation")))
+        }
+      }
+  }
+
+  def adminCreateUser = authorizedAction {
+    implicit request =>
+      if (!request.user.roles.contains(AdminUser)) Unauthorized("Unauthorized")
+      else {
+        val data = request.request.body.asFormUrlEncoded
+        val token = jwtService.createToken(request.user, new Date())
+
+        data.get("confirmation").headOption match {
+          case Some(confirmation) =>
+            userDao.getDaoUser(request.user) match {
+              case Some(adminUser) =>
+                val encryptedConfirmation = userDao.encryptPassword(confirmation)
+                if (encryptedConfirmation.equals(adminUser.password)) {
+                  (data.get("username").headOption, data.get("password").headOption, data.get("roles").headOption) match {
+                    case (Some(username), Some(password), Some(roles)) =>
+                      if (userDao.usernameInUse(username))
+                        Ok(views.html.adminUsersCreate(token, request.user, userDao.getUsers, List(s"Username $username is already in use")))
+                      else {
+                        userDao.createUser(username, password, roles.split(",").toSet)
+                        Ok(views.html.adminUsersCreate(token, request.user, userDao.getUsers, List()))
+                      }
+
+                    case _ =>
+                      Ok(views.html.adminUsersCreate(token, request.user, userDao.getUsers, List("Invalid data")))
+                  }
+                }
+                else
+                  Ok(views.html.adminUsersCreate(token, request.user, userDao.getUsers, List("Invalid confirmation")))
+              case None =>
+                Ok(views.html.adminUsersCreate(token, request.user, userDao.getUsers, List("Error finding admin user")))
+            }
+          case None =>
+            Ok(views.html.adminUsersCreate(token, request.user, userDao.getUsers, List("Please enter confirmation")))
+        }
+      }
+  }
+
   def profile = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     val token = jwtService.createToken(request.user, new Date())
-    println("getting")
     Ok(views.html.profile(token, request.user, form, List()))
   }
 
-  def changePassword = authorizedAction  { implicit request =>
-    println("Posting...")
+  def changePassword = authorizedAction { implicit request =>
 
     val token = jwtService.createToken(request.user, new Date())
     val data = request.request.body.asFormUrlEncoded
-    println(data)
     (data.get("oldPassword").headOption, data.get("newPassword").headOption, data.get("confirmPassword").headOption) match {
       case (Some(oldPassword), Some(newPassword), Some(confirmPassword)) =>
         userDao.getDaoUser(request.user) match {
           case Some(daoUser) =>
             val encryptedOldPassword = userDao.encryptPassword(oldPassword)
-            println(encryptedOldPassword)
-            println(daoUser.password)
-            println(encryptedOldPassword.equals(daoUser.password))
-            if(encryptedOldPassword.equals(daoUser.password)){
-              if(newPassword.equals(confirmPassword)){
+            if (encryptedOldPassword.equals(daoUser.password)) {
+              if (newPassword.equals(confirmPassword)) {
                 val newDaoUser = daoUser.copy(password = userDao.encryptPassword(newPassword))
                 userDao.updateUser(newDaoUser)
                 Ok(views.html.profile(token, request.user, form, List()))

@@ -3,12 +3,12 @@
 @(
 token: String,
 user: models.auth.User,
-form: Form[models.web.forms.ChangePassword],
-errors: List[String]
+users: Set[models.auth.DaoUser],
+messages: List[String]
 )(implicit request: Request[AnyContent])
 <head>
     <title>
-        Profile
+        Delete Existing Users
     </title>
 </head>
 <script src='@routes.Assets.versioned("javascripts/mapFunctions.js")' type="text/javascript"></script>
@@ -71,46 +71,68 @@ errors: List[String]
     </div>
 </nav>
 
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/admin">Admin</a></li>
+        <li class="breadcrumb-item"><a href="/admin/users">Users</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Delete</li>
+    </ol>
+</nav>
+
 <div class="container">
     <div class="row">
-        <h1>Profile</h1>
-    </div>
-    <div class="row">
-        <ul>
-            <li>Username: @user.username</li>
-            <li>Roles
-                <ul>
-                    @for(role <- user.roles) {
-                        <li>@role</li>
-                    }
-                </ul>
-            </li>
-        </ul>
-    </div>
-    <div class="row">
-        @if(!errors.isEmpty){
-            <div class="alert alert-danger">
-                <ul>
-                    @for(error <- errors){
-                        <li>@error</li>
-                    }
-                </ul>
-            </div>
-        }
-    </div>
-    <div class="row">
+        <div class="col-sm">
+            <h1>Delete Existing Users</h1>
+            @if(user.roles.contains(models.auth.roles.AdminUser)) {
+                @if(messages.size > 0){
+                    <div class="alert alert-primary">
+                        <h2>Messages</h2>
+                        <ul>
+                        @for(message <- messages){
+                            <li>@message</li>
+                        }
+                        </ul>
+                    </div>
+                }
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Username</th>
+                            <th>Roles</th>
+                            <th>Confirmation</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @for(u <- users){
+                            <tr>
+                                <form method="POST" action="/admin/users/delete">
+                                    @helper.CSRF.formField
+                                    <td>
+                                        @u.id
+                                        <input type="hidden" value="@u.id" name="id" id="@u.id"/>
+                                    </td>
+                                    <td>
+                                        <input class="form-control" id="username" name="username" value="@u.username"/>
+                                    </td>
 
-        <form method="POST" id="change-password-form">
-            @helper.CSRF.formField
-            <input type="hidden" name="Authorization" id="Authorization" value="@token"/>
-            <label for="oldPassword">Old Password</label>
-            <input class="form-control" type="password" id="oldPassword" name="oldPassword"/>
-            <label for="newPassword">New Password</label>
-            <input class="form-control" type="password" id="newPassword" name="newPassword"/>
-            <label for="confirmPassword">Confirm Password</label>
-            <input class="form-control" type="password" id="confirmPassword" name="confirmPassword"/>
-
-            <button type="submit" id="submit" class="btn btn-primary">Change Password</button>
-        </form>
+                                    <td>
+                                        <input type="hidden" id="Authorization" name="Authorization" value="@token"/>
+                                        <input class="form-control" type="text" id="roles" name="roles" value="@u.roles.mkString(",")"/>
+                                    </td>
+                                    <td>
+                                        <input class="form-control" type="password" name="confirmation" id="confirmation"/>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-danger" type="submit">Delete</button>
+                                    </td>
+                                </form>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+        </div>
     </div>
 </div>
