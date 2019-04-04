@@ -17,6 +17,14 @@ class LocationsService @Inject() ( config: Config,
   private val dataRoot = config.getString("data.static.root")
   private val locations = makeLocations(readLocationsFromFile)
 
+  def getVisitsForUser(user: User): Option[Map[String, List[String]]] = {
+    dataProvider.getVisits(user)
+  }
+
+  def saveVisits(visits: Option[Map[String, List[String]]], user: User) = {
+    dataProvider.saveVisits(visits, user)
+  }
+
   def getLocation(id: String): Option[Location] =
     locations.find(_.id.equals(id))
 

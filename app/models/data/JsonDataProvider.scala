@@ -13,6 +13,12 @@ abstract class JsonDataProvider[T]() extends DataProvider[T] {
     readJson(user)
   }
 
+  override def saveVisits(visits: Option[Map[String, List[String]]], user: User) = {
+    visits foreach { v =>
+      writeJson(v, user)
+    }
+  }
+
   override def saveVisit(id: T, user: User): Unit = {
     val visits: Option[Map[String, List[String]]] = readJson(user)
     val revisedVisits: Map[String, List[String]] = visits match {

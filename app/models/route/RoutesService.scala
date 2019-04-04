@@ -18,6 +18,14 @@ class RoutesService @Inject() ( config: Config,
   private def dataRoot = config.getString("data.static.root")
   private val routes = makeRoutes(readRoutesFromFile)
 
+  def getVisitsForUser(user: User): Option[Map[String, List[String]]] = {
+    dataProvider.getVisits(user)
+  }
+
+  def saveVisits(visits: Option[Map[String, List[String]]], user: User) = {
+    dataProvider.saveVisits(visits, user)
+  }
+
   def getRoute(fromId: String, toId: String): Option[Route] =
     routes.find(r => r.from.id.equals(fromId) && r.to.id.equals(toId))
 

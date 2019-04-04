@@ -13,16 +13,20 @@ POST /doLogin                       controllers.UserController.processLoginAttem
 GET /welcome                        controllers.LandingPageController.showLandingPage
 GET /logout                         controllers.AuthenticatedUserController.logout
 GET /profile                        controllers.AuthenticatedUserController.profile
+GET /profile/visits                 controllers.AuthenticatedUserController.visits
 POST /profile                       controllers.AuthenticatedUserController.changePassword
 
 GET /admin                          controllers.AuthenticatedUserController.admin
 GET /admin/users                    controllers.AuthenticatedUserController.adminUsers
 GET /admin/users/create             controllers.AuthenticatedUserController.adminUsersCreateView
 GET /admin/users/update             controllers.AuthenticatedUserController.adminUsersUpdateView
+GET /admin/users/update/data/:id    controllers.AuthenticatedUserController.adminUpdateUserDataView(id: Long)
 GET /admin/users/delete             controllers.AuthenticatedUserController.adminUsersDeleteView
 POST /admin/users/update            controllers.AuthenticatedUserController.adminUpdateUser
 POST /admin/users/create            controllers.AuthenticatedUserController.adminCreateUser
 POST /admin/users/delete            controllers.AuthenticatedUserController.adminDeleteUser
+POST /admin/users/update/data/:id    controllers.AuthenticatedUserController.adminUpdateUserData(id: Long)
+
 
 GET /map                            controllers.MapController.showMapPage
 GET /routes                         controllers.RouteController.showRouteListPage(nrRoutes: Boolean ?=true, srs: String ?= "all", name: String ?= "all", id: String ?= "all")

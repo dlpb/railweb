@@ -2,21 +2,27 @@ package controllers
 
 import java.util.Date
 
-import auth.api.{AuthorizedAction, JWTService}
+import auth.api.{AuthorizedAction, JWTService, UserRequest}
 import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject._
 import models.auth.{DaoUser, UserDao}
 import models.auth.roles.AdminUser
+import models.data.VisitJsonUtils
+import models.location.LocationsService
+import models.route.RoutesService
 import models.web.forms.ChangePassword
+import org.json4s.DefaultFormats
 import play.api.data.Form
 import play.api.data.Forms.{mapping, nonEmptyText}
-import play.api.mvc._
+import play.api.mvc.{request, _}
 
 @Singleton
 class AuthenticatedUserController @Inject()(
                                              userDao: UserDao,
                                              jwtService: JWTService,
                                              cc: ControllerComponents,
+                                             locationsService: LocationsService,
+                                             routesService: RoutesService,
                                              authenticatedUserAction: AuthorizedWebAction,
                                              authorizedAction: AuthorizedAction
                                            ) extends AbstractController(cc) {
@@ -88,6 +94,66 @@ class AuthenticatedUserController @Inject()(
       }
       else {
         Ok(views.html.adminUsersDelete(token, request.user, userDao.getUsers, List()))
+      }
+  }
+
+  def adminUpdateUserDataView(userId: Long): Action[AnyContent] = authenticatedUserAction {
+    implicit request =>
+      val token = jwtService.createToken(request.user, new Date())
+      if (!request.user.roles.contains(AdminUser)) {
+        Redirect(routes.LandingPageController.showLandingPage())
+      }
+      else {
+        userDao.findUserById(userId) match {
+          case Some(user) =>
+            val locations = locationsService.getVisitsForUser(user)
+            val routes = routesService.getVisitsForUser(user)
+            Ok(views.html.adminUserUpdateData(token, request.user, user.id, VisitJsonUtils.toJson(locations), VisitJsonUtils.toJson(routes), List()))
+          case None =>
+            NotFound(views.html.adminUserUpdateData(token, request.user, -1L, "", "", List(s"User with id $userId not found")))
+        }
+      }
+  }
+
+  def adminUpdateUserData(userId: Long): Action[AnyContent] = authorizedAction {
+    implicit request =>
+      if (!request.user.roles.contains(AdminUser)) {
+        Redirect(routes.LandingPageController.showLandingPage())
+      }
+      else {
+
+        val data = request.request.body.asFormUrlEncoded
+        val token = jwtService.createToken(request.user, new Date())
+
+        (data.get("locations").headOption, data.get("routes").headOption) match {
+          case (Some(locations), Some(routes)) =>
+            data.get("confirmation").headOption match {
+              case Some(confirmation) =>
+                userDao.getDaoUser(request.user) match {
+                  case Some(adminUser) =>
+                    val encryptedConfirmation = userDao.encryptPassword(confirmation)
+                    if (encryptedConfirmation.equals(adminUser.password)) {
+                      userDao.findUserById(userId) match {
+                        case Some(user) =>
+                          locationsService.saveVisits(VisitJsonUtils.fromJson(locations), user)
+                          routesService.saveVisits(VisitJsonUtils.fromJson(routes), user)
+
+                          Ok(views.html.adminUserUpdateData(token, request.user, userId, locations, routes, List("Saved")))
+                        case None =>
+                          Ok(views.html.adminUserUpdateData(token, request.user, userId, locations, routes, List("could not find user")))
+                      }
+                    }
+                    else
+                      Ok(views.html.adminUserUpdateData(token, request.user, userId, locations, routes, List("Invalid confirmation")))
+                  case None =>
+                    Ok(views.html.adminUserUpdateData(token, request.user, userId, locations, routes, List("Error finding admin user")))
+                }
+              case None =>
+                Ok(views.html.adminUserUpdateData(token, request.user, userId, locations, routes, List("Please enter confirmation")))
+            }
+          case _ =>
+            Ok(views.html.adminUserUpdateData(token, request.user, userId, "", "", List("Saved")))
+        }
       }
   }
 
@@ -209,6 +275,13 @@ class AuthenticatedUserController @Inject()(
   def profile = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     val token = jwtService.createToken(request.user, new Date())
     Ok(views.html.profile(token, request.user, form, List()))
+  }
+
+  def visits = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
+    val routes = routesService.getVisitsForUser(request.user).getOrElse(Map.empty[String, List[String]])
+    val locations = locationsService.getVisitsForUser(request.user).getOrElse(Map.empty[String, List[String]])
+    Ok(views.html.visits(locations, routes))
+
   }
 
   def changePassword = authorizedAction { implicit request =>
