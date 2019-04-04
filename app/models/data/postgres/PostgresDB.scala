@@ -79,7 +79,7 @@ class PostgresDB @Inject() (config: Config) {
       statement.close()
       connection.close()
     }
-    else {
+    catch {
       case e:Exception => println(s"Exception saving route data $e")
     }
   }
