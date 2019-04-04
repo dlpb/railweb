@@ -58,7 +58,6 @@ class LocationsService @Inject() ( config: Config,
   }
 
   def visitLocation(location: Location, user: User): Unit = {
-    println(s"Location Tracing === saving location $location")
     dataProvider.saveVisit(location, user)
   }
 

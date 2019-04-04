@@ -14,7 +14,6 @@ abstract class JsonDataProvider[T]() extends DataProvider[T] {
   }
 
   override def saveVisit(id: T, user: User): Unit = {
-    println(s"Location Tracing ==== save visit: $id, ${user.id}")
     val visits: Option[Map[String, List[String]]] = readJson(user)
     val revisedVisits: Map[String, List[String]] = visits match {
       case Some(data) => data.get(idToString(id)) match {

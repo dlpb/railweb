@@ -53,7 +53,6 @@ class PostgresDB @Inject() (config: Config) {
   }
 
   def updateLocationsForUser(userId: Long, data: String): Unit = {
-    println(s"Location Tracing saving data")
     try {
       val connection = getConnection(config)
       val statement = connection.prepareStatement(updateLocationSql)
@@ -70,14 +69,11 @@ class PostgresDB @Inject() (config: Config) {
 
   def updateRoutesForUser(userId: Long, data: String): Unit = {
     try{
-      println(s"Route tracing saving data")
-      println(s"$userId, $data")
       val connection = getConnection(config)
       val statement = connection.prepareStatement(updateRoutesSql)
       statement.setObject(1, data)
       statement.setLong(2, userId)
-      val i = statement.executeUpdate()
-      println(i)
+      statement.executeUpdate()
       statement.close()
       connection.close()
     }

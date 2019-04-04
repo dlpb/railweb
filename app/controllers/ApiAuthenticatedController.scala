@@ -107,10 +107,8 @@ class ApiAuthenticatedController @Inject()(
     authAction { implicit request =>
       if (!request.user.roles.contains(VisitUser)) Unauthorized("User does not have the right role")
       else {
-        println("Location Tracing = request allowed")
         locationService.getLocation(id) match {
           case Some(l) =>
-            println(s"Location Tracing == location $l")
             locationService.visitLocation(l, request.user)
             Redirect(routes.LocationController.showLocationListPage())
           case None => NotFound
@@ -202,7 +200,6 @@ class ApiAuthenticatedController @Inject()(
     authAction { implicit request =>
       if (!request.user.roles.contains(VisitUser)) Unauthorized("User does not have the right role")
       else {
-        println(s"Route tracing = saving route $from, $to")
         routeService.getRoute(from, to) match {
           case Some(r) => routeService.visitRoute(r, request.user)
             Redirect(routes.RouteController.showRouteListPage())
