@@ -107,7 +107,7 @@ class PostgresDB @Inject() (config: Config) {
     val resultSet = statement.executeQuery()
     val sb = new StringBuilder
     while(resultSet.next()){
-      sb.append(resultSet.getString("location_visits"))
+      sb.append(resultSet.getString("route_visits"))
     }
     statement.close()
     connection.close()

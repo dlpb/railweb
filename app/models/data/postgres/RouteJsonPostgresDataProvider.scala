@@ -14,7 +14,7 @@ class RouteJsonPostgresDataProvider @Inject() (dbProvider: PostgresDB)
   }
 
   override def readJson(user: User): Option[Map[String, List[String]]] = {
-    stringToModel(dbProvider.getLocationsForUser(user.id))
+    stringToModel(dbProvider.getRoutesForUser(user.id))
   }
 
   override def idToString(id: Route): String = s"""from:${id.from.id}-to:${id.to.id}"""
