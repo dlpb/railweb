@@ -48,6 +48,7 @@ class RoutesService @Inject() ( config: Config,
   }
 
   def visitRoute(route: Route, user: User): Unit = {
+    println(s"Route tracing == route found, saving $route")
     dataProvider.saveVisit(route, user)
   }
 

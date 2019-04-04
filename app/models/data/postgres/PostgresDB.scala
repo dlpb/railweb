@@ -69,13 +69,19 @@ class PostgresDB @Inject() (config: Config) {
   }
 
   def updateRoutesForUser(userId: Long, data: String): Unit = {
-    val connection = getConnection(config)
-    val statement = connection.prepareStatement(updateRoutesSql)
-    statement.setObject(1, data)
-    statement.setLong(2, userId)
-    statement.executeUpdate()
-    statement.close()
-    connection.close()
+    try{
+      println(s"Route tracing saving data")
+      val connection = getConnection(config)
+      val statement = connection.prepareStatement(updateRoutesSql)
+      statement.setObject(1, data)
+      statement.setLong(2, userId)
+      statement.executeUpdate()
+      statement.close()
+      connection.close()
+    }
+    else {
+      case e:Exception => println(s"Exception saving route data $e")
+    }
   }
 
   def getLocationsForUser(userId: Long): String = {
