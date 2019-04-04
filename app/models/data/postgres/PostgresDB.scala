@@ -53,13 +53,19 @@ class PostgresDB @Inject() (config: Config) {
   }
 
   def updateLocationsForUser(userId: Long, data: String): Unit = {
-    val connection = getConnection(config)
-    val statement = connection.prepareStatement(updateLocationSql)
-    statement.setObject(1, data)
-    statement.setLong(2, userId)
-    statement.executeUpdate()
-    statement.close()
-    connection.close()
+    println(s"Location Tracing saving data")
+    try {
+      val connection = getConnection(config)
+      val statement = connection.prepareStatement(updateLocationSql)
+      statement.setObject(1, data)
+      statement.setLong(2, userId)
+      statement.executeUpdate()
+      statement.close()
+      connection.close()
+    }
+    catch {
+      case e: Exception => println(s"Location tracing exception $e")
+    }
   }
 
   def updateRoutesForUser(userId: Long, data: String): Unit = {

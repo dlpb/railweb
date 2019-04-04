@@ -10,6 +10,7 @@ class LocationJsonPostgresDataProvider @Inject() (dbProvider: PostgresDB)
   with LocationDataProvider
 {
   override def writeJson(visits: Map[String, List[String]], user: User): Unit = {
+    println(s"Location Tracing ===== visits to save $visits")
     dbProvider.updateLocationsForUser(user.id, modelToString(visits))
   }
 
