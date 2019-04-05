@@ -33,6 +33,7 @@ messages: List[String]
     const token = "@token";
 
 
+
 </script>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -77,19 +78,20 @@ messages: List[String]
     </ol>
 </nav>
 <div class="container">
-    <div class="row">
-        <div class="col-sm">
-            <h1>Manage Existing Users</h1>
-            @if(user.roles.contains(models.auth.roles.AdminUser)) {
+    <div class="content">
+        <div class="row">
+            <div class="col-sm">
+                <h1>Manage Existing Users</h1>
+                @if(user.roles.contains(models.auth.roles.AdminUser)) {
                 @if(messages.size > 0){
-                    <div class="alert alert-primary">
-                        <h2>Messages</h2>
-                        <ul>
+                <div class="alert alert-primary">
+                    <h2>Messages</h2>
+                    <ul>
                         @for(message <- messages){
-                            <li>@message</li>
+                        <li>@message</li>
                         }
-                        </ul>
-                    </div>
+                    </ul>
+                </div>
                 }
                 <form action="/admin/users/update/data/@editedUserId" method="POST">
                     @helper.CSRF.formField
@@ -102,7 +104,8 @@ messages: List[String]
                     <input class="form-control" type="password" id="confirmation" name="confirmation"/>
                     <button class="btn btn-primary">Update</button>
                 </form>
-            }
+                }
+            </div>
         </div>
     </div>
 </div>

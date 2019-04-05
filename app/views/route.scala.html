@@ -40,6 +40,7 @@ removeAll: Call)(implicit request: Request[AnyContent])
     const token = "@token";
 
 
+
 </script>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -79,11 +80,13 @@ removeAll: Call)(implicit request: Request[AnyContent])
 </nav>
 
 <div class="container">
-    <div class="alert alert-primary" role="alert" id="@route.srsCode" style="padding-top:10px">
-        <h1>@route.from.name - @route.to.name (@route.from.id - @route.to.id)</h1>
-        <h3 id="@route.srsCode-header">@route.srsCode</h3>
-    </div>
-    <script>
+    <div class="content">
+
+        <div class="alert alert-primary" role="alert" id="@route.srsCode" style="padding-top:10px">
+            <h1>@route.from.name - @route.to.name (@route.from.id - @route.to.id)</h1>
+            <h3 id="@route.srsCode-header">@route.srsCode</h3>
+        </div>
+        <script>
         const srsInfo = findSrsData('@route.srsCode');
         const header = document.getElementById('@route.srsCode');
 
@@ -92,86 +95,87 @@ removeAll: Call)(implicit request: Request[AnyContent])
 
         const title = document.getElementById('@route.srsCode-header');
         title.textContent = "@route.srsCode - " + srsInfo["route"] + " / " + srsInfo["region"];
-    </script>
-    <div class="row">
-        <div class="col-sm">
 
-            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-                <div class="btn-group mr-2" role="group" aria-label="First group">
-                    <div id="route-visit-form">
-                        @helper.form(visitUrl, 'id -> "visit-form") {
-                        @helper.CSRF.formField
-                        <input type="hidden" id="Authorization" name="Authorization" value="@token"/>
-                        <button id="visit" class="btn btn-primary">Visit</button>
-                        }
-                    </div>
-                </div>
-                <div class="btn-group mr-2" role="group" aria-label="Second group">
+        </script>
+        <div class="row">
+            <div class="col-sm">
 
-                    <div id="route-remove-last-visit-form">
-                        @helper.form(removeLast, 'id -> "visit-form") {
-                        @helper.CSRF.formField
-                        <input type="hidden" id="Authorization-last-visit" name="Authorization" value="@token"/>
-                        <button id="remove-last-visit" class="btn btn-danger">Remove Last Visit</button>
-                        }
+                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group mr-2" role="group" aria-label="First group">
+                        <div id="route-visit-form">
+                            @helper.form(visitUrl, 'id -> "visit-form") {
+                            @helper.CSRF.formField
+                            <input type="hidden" id="Authorization" name="Authorization" value="@token"/>
+                            <button id="visit" class="btn btn-primary">Visit</button>
+                            }
+                        </div>
                     </div>
-                </div>
-                <div class="btn-group mr-2" role="group" aria-label="Third group">
-                    <div id="route-remove-all-visit-form">
-                        @helper.form(removeAll, 'id -> "visit-form") {
-                        @helper.CSRF.formField
-                        <input type="hidden" id="Authorization-all-visit" name="Authorization" value="@token"/>
-                        <button id="remove-all-visit" class="btn btn-danger">Remove All Visit</button>
-                        }
+                    <div class="btn-group mr-2" role="group" aria-label="Second group">
+
+                        <div id="route-remove-last-visit-form">
+                            @helper.form(removeLast, 'id -> "visit-form") {
+                            @helper.CSRF.formField
+                            <input type="hidden" id="Authorization-last-visit" name="Authorization" value="@token"/>
+                            <button id="remove-last-visit" class="btn btn-danger">Remove Last Visit</button>
+                            }
+                        </div>
+                    </div>
+                    <div class="btn-group mr-2" role="group" aria-label="Third group">
+                        <div id="route-remove-all-visit-form">
+                            @helper.form(removeAll, 'id -> "visit-form") {
+                            @helper.CSRF.formField
+                            <input type="hidden" id="Authorization-all-visit" name="Authorization" value="@token"/>
+                            <button id="remove-all-visit" class="btn btn-danger">Remove All Visit</button>
+                            }
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-sm">
-            <h3>Location Data</h3>
-            <ul>
-                <li>From
-                    <ul>
-                        <li>ID: @route.from.id</li>
-                        <li>Name: @route.from.name</li>
-                        <li>Lat: @route.from.lat</li>
-                        <li>Lon: @route.from.lon</li>
-                    </ul>
-                </li>
-                <li>To
-                    <ul>
-                        <li>ID: @route.to.id</li>
-                        <li>Name: @route.to.name</li>
-                        <li>Lat: @route.to.lat</li>
-                        <li>Lon: @route.to.lon</li>
-                    </ul>
-                </li>
-            </ul>
+        <div class="row">
+            <div class="col-sm">
+                <h3>Location Data</h3>
+                <ul>
+                    <li>From
+                        <ul>
+                            <li>ID: @route.from.id</li>
+                            <li>Name: @route.from.name</li>
+                            <li>Lat: @route.from.lat</li>
+                            <li>Lon: @route.from.lon</li>
+                        </ul>
+                    </li>
+                    <li>To
+                        <ul>
+                            <li>ID: @route.to.id</li>
+                            <li>Name: @route.to.name</li>
+                            <li>Lat: @route.to.lat</li>
+                            <li>Lon: @route.to.lon</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm">
+                <h3>Route Data</h3>
+                <ul>
+                    <li>TOC: @route.toc</li>
+                    <li>Single Track: @route.singleTrack</li>
+                    <li>Electrification: @route.electrification</li>
+                    <li>Speed (MPH): @route.speed</li>
+                    <li>SRS Code: @route.srsCode</li>
+                </ul>
+            </div>
+            <div class="col-sm">
+                <h3>Visits</h3>
+                <ul>
+                    @for(visit <- visits){
+                    <li>@visit</li>
+                    }
+                </ul>
+            </div>
         </div>
-        <div class="col-sm">
-            <h3>Route Data</h3>
-            <ul>
-                <li>TOC: @route.toc</li>
-                <li>Single Track: @route.singleTrack</li>
-                <li>Electrification: @route.electrification</li>
-                <li>Speed (MPH): @route.speed</li>
-                <li>SRS Code: @route.srsCode</li>
-            </ul>
-        </div>
-        <div class="col-sm">
-            <h3>Visits</h3>
-            <ul>
-                @for(visit <- visits){
-                <li>@visit</li>
-                }
-            </ul>
-        </div>
-    </div>
-    <div id="map" class="map"></div>
+        <div id="map" class="map"></div>
 
-    <script type="text/javascript">
+        <script type="text/javascript">
         createMap();
         addSingleConnection(
         {
@@ -186,6 +190,8 @@ removeAll: Call)(implicit request: Request[AnyContent])
             "srs":"@route.srsCode",
             "toc":"@route.toc"
         })
-    </script>
 
+        </script>
+
+    </div>
 </div>

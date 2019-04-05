@@ -31,6 +31,7 @@ messages: List[String]
     const token = "@token";
 
 
+
 </script>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -76,59 +77,63 @@ messages: List[String]
 </nav>
 
 <div class="container">
-    <div class="row">
-        <div class="col-sm">
-            <h1>Delete Existing Users</h1>
-            @if(user.roles.contains(models.auth.roles.AdminUser)) {
+    <div class="content">
+
+        <div class="row">
+            <div class="col-sm">
+                <h1>Delete Existing Users</h1>
+                @if(user.roles.contains(models.auth.roles.AdminUser)) {
                 @if(messages.size > 0){
-                    <div class="alert alert-primary">
-                        <h2>Messages</h2>
-                        <ul>
+                <div class="alert alert-primary">
+                    <h2>Messages</h2>
+                    <ul>
                         @for(message <- messages){
-                            <li>@message</li>
+                        <li>@message</li>
                         }
-                        </ul>
-                    </div>
+                    </ul>
+                </div>
                 }
                 <table>
                     <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Username</th>
-                            <th>Roles</th>
-                            <th>Confirmation</th>
-                            <th>Actions</th>
-                        </tr>
+                    <tr>
+                        <th>ID</th>
+                        <th>Username</th>
+                        <th>Roles</th>
+                        <th>Confirmation</th>
+                        <th>Actions</th>
+                    </tr>
                     </thead>
                     <tbody>
-                        @for(u <- users){
-                            <tr>
-                                <form method="POST" action="/admin/users/delete">
-                                    @helper.CSRF.formField
-                                    <td>
-                                        @u.id
-                                        <input type="hidden" value="@u.id" name="id" id="@u.id"/>
-                                    </td>
-                                    <td>
-                                        <input class="form-control" id="username" name="username" value="@u.username"/>
-                                    </td>
+                    @for(u <- users){
+                    <tr>
+                        <form method="POST" action="/admin/users/delete">
+                            @helper.CSRF.formField
+                            <td>
+                                @u.id
+                                <input type="hidden" value="@u.id" name="id" id="@u.id"/>
+                            </td>
+                            <td>
+                                <input class="form-control" id="username" name="username" value="@u.username"/>
+                            </td>
 
-                                    <td>
-                                        <input type="hidden" id="Authorization" name="Authorization" value="@token"/>
-                                        <input class="form-control" type="text" id="roles" name="roles" value="@u.roles.mkString(",")"/>
-                                    </td>
-                                    <td>
-                                        <input class="form-control" type="password" name="confirmation" id="confirmation"/>
-                                    </td>
-                                    <td>
-                                        <button class="btn btn-danger" type="submit">Delete</button>
-                                    </td>
-                                </form>
-                            </tr>
-                        }
+                            <td>
+                                <input type="hidden" id="Authorization" name="Authorization" value="@token"/>
+                                <input class="form-control" type="text" id="roles" name="roles"
+                                       value="@u.roles.mkString(" ,")"/>
+                            </td>
+                            <td>
+                                <input class="form-control" type="password" name="confirmation" id="confirmation"/>
+                            </td>
+                            <td>
+                                <button class="btn btn-danger" type="submit">Delete</button>
+                            </td>
+                        </form>
+                    </tr>
+                    }
                     </tbody>
                 </table>
-            }
+                }
+            </div>
         </div>
     </div>
 </div>

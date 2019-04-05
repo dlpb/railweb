@@ -72,13 +72,15 @@ user: models.auth.User
 
 @if(user.roles.contains(models.auth.roles.AdminUser)) {
     <div class="container">
-        <h1>Admin</h1>
-        <div class="row">
-                <div class="col-sm">
-                    <div class="card">
-                        <h2><a href="/admin/users">User Management</a></h2>
+        <div class="content">
+            <h1>Admin</h1>
+            <div class="row">
+                    <div class="col-sm">
+                        <div class="card">
+                            <h2><a href="/admin/users">User Management</a></h2>
+                        </div>
                     </div>
-                </div>
+            </div>
         </div>
 </div>
 }

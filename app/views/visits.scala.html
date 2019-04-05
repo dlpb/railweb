@@ -7,7 +7,7 @@ routeVisits: Map[String, List[String]]
 )(implicit request: Request[AnyContent])
 <head>
     <title>
-       Visits - Profile - All the Stations & Track
+        Visits - Profile - All the Stations & Track
     </title>
 </head>
 
@@ -69,43 +69,47 @@ routeVisits: Map[String, List[String]]
     </ol>
 </nav>
 <div class="container">
-    <div class="row">
-        <h1>Visits</h1>
-    </div>
-    <div class="row">
-        <div class="col-sm">
-            <h2>Locations</h2>
-            @for((key, value) <- locationVisits) {
-            <ul>
-                <li>
-                    <a href="/location/detail/@key" target="_blank">@key</a>
-                    <ul>
-                        @for(v <- value){
-                        <li>@v</li>
-                        }
-                    </ul>
-                </li>
-            </ul>
-
-            }
+    <div class="content">
+        <div class="row">
+            <div class="col-sm">
+                <h1>Visits</h1>
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-sm">
-            <h2>Locations</h2>
-            @for((key, value) <- routeVisits) {
-            <ul>
-                <li>
-                    @key
-                    <ul>
-                        @for(v <- value){
-                        <li>@v</li>
-                        }
-                    </ul>
-                </li>
-            </ul>
+        <div class="row">
+            <div class="col-sm">
+                <h2>Locations</h2>
+                @for((key, value) <- locationVisits) {
+                <ul>
+                    <li>
+                        <a href="/location/detail/@key" target="_blank">@key</a> - visited @value.size times
+                        <ul>
+                            @for(v <- value){
+                            <li>@v</li>
+                            }
+                        </ul>
+                    </li>
+                </ul>
 
-            }
+                }
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <h2>Routes</h2>
+                @for((key, value) <- routeVisits) {
+                <ul>
+                    <li>
+                        @key - visited @value.size times
+                        <ul>
+                            @for(v <- value){
+                            <li>@v</li>
+                            }
+                        </ul>
+                    </li>
+                </ul>
+
+                }
+            </div>
         </div>
     </div>
 </div>
