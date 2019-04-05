@@ -1,0 +1,95 @@
+@()(implicit request: Request[AnyContent])
+
+<head>
+    <title>
+        About - All the Stations & Track
+    </title>
+</head>
+
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">All the Stations & Track</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="content">
+        <div class="row">
+            <div class="col-sm">
+                <h1>All the Stations and Track</h1>
+                <p>
+                    A plan to visit all the stations and all the tracks
+                </p>
+                <ol>
+                    <li>Map all rail links</li>
+                    <li>Plot rail links</li>
+                    <li>Make register of stations and rail links</li>
+                    <li>Write algorithm to visit stations using Goeff Marshall's methods</li>
+                    <li>Do it!</li>
+                </ol>
+                <h2>References</h2>
+                <ul>
+                    <li><a href="http://allthestations.co.uk/">All the Stations</a> (original idea)</li>
+                </ul>
+                <ul>
+                    <li><a href="http://orr.gov.uk/statistics/published-stats/station-usage-estimates">2017/18 Station Usage Data</a> <a href="http://orr.gov.uk/__data/assets/excel_doc/0007/39967/estimates-of-station-usage-2017-18.xlsx">Excel Sheet</a> (also Location information)</li>
+                    <li><a href="https://docs.google.com/spreadsheets/d/1JxIBXs09RR1INAM-4jpTLWAElmHqPSLpzZDfvNk67EA/edit#gid=7">2008-2012 Station Usage Data</a> (also Location Information)</li>
+                    <li><a href="https://raw.githubusercontent.com/fasteroute/national-rail-stations/master/stations.json">List of UK Railway Points of Interest</a> (modified)</li>
+                    <li><a href="http://www.railwaycodes.org.uk/crs/CRS0.shtm">TIPLOC POI Database</a></li>
+                    <li><a href="https://wiki.openraildata.com/index.php/Identifying_Locations">TIPLOC Locations</a> <a href="https://wiki.openraildata.com/index.php/File:TIPLOC_Eastings_and_Northings.xlsx.gz">Excel sheet</a> (modified)</li>
+                </ul>
+                <ul>
+                    <li><a href="https://cdn.networkrail.co.uk/wp-content/uploads/2016/11/Route-Specifications-2016-Anglia.pdf">Network Rail Anglia Route Specification</a></li>
+                    <li><a href="https://cdn.networkrail.co.uk/wp-content/uploads/2018/06/LNEEM-Route-Specification.pdf">Network Rail LNE &amp; East Midlands Route Specification</a></li>
+                    <li><a href="https://cdn.networkrail.co.uk/wp-content/uploads/2016/12/LNW-Route-Specification.pdf">Network Rail LNW Route Specification</a></li>
+                    <li><a href="https://cdn.networkrail.co.uk/wp-content/uploads/2016/11/Route-Specifications-2016-South-East.pdf">Network Rail South East Route Specification</a></li>
+                    <li><a href="https://cdn.networkrail.co.uk/wp-content/uploads/2017/04/Route-Specification-Scotland-2017.pdf">Network Rail Scotland Route Specification</a></li>
+                    <li><a href="https://cdn.networkrail.co.uk/wp-content/uploads/2016/12/Wales-Route-Specification-2017.pdf">Network Rail Wales Route Specification</a></li>
+                    <li><a href="https://cdn.networkrail.co.uk/wp-content/uploads/2016/11/Route-Specification-2016-Wessex.pdf">Network Rail Wessex Route Specification</a></li>
+                    <li><a href="https://cdn.networkrail.co.uk/wp-content/uploads/2016/12/Western-Route-Specifications-2017-V2.pdf">Network Rail Western Route Specification</a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://www.researchgate.net/profile/Christos_Zaroliagis/publication/220825769_The_Railway_Traveling_Salesman_Problem/links/0912f514232bbe100b000000/The-Railway-Traveling-Salesman-Problem.pdf?origin=publication_detail">Railway Travelling Salesman Paper</a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://github.com/dlpb/">GitHub</a></li>
+                </ul>
+                <div>Some Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+                <div>Some Icons made by <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+                <div>Some Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer ">
+        <div class="container">
+            <span class="text-muted">All the Stations & Track &copy; dlpb.uk 2018 - @java.time.Year.now.getValue. <a href="/about">About</a></a></span>
+        </div>
+    </footer>
+
+</div>

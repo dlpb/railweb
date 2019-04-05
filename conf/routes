@@ -16,6 +16,7 @@ GET /profile                        controllers.AuthenticatedUserController.prof
 GET /profile/changePassword         controllers.AuthenticatedUserController.changePasswordView
 GET /profile/visits                 controllers.AuthenticatedUserController.visits
 POST /profile/changePassword        controllers.AuthenticatedUserController.changePassword
+GET /about                          controllers.UserController.about
 
 GET /admin                          controllers.AdminController.admin
 GET /admin/users                    controllers.AdminController.adminUsers

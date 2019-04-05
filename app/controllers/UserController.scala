@@ -36,6 +36,10 @@ class UserController @Inject()(
     Ok(views.html.login(form, formSubmitUrl))
   }
 
+  def about = Action {implicit request =>
+    Ok(views.html.about())
+  }
+
   def processLoginAttempt = Action { implicit request: MessagesRequest[AnyContent] =>
     val errorFunction = { formWithErrors: Form[LoginUser] =>
       // form validation/binding failed...
