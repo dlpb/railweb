@@ -1,7 +1,8 @@
-package auth.api
+package auth
 
+import java.time.{LocalDateTime, ZoneId, ZoneOffset}
 import java.util
-import java.util.Date
+import java.util.{Calendar, Date}
 
 import com.auth0.jwt.JWT
 import com.auth0.jwt.algorithms.Algorithm
@@ -20,13 +21,16 @@ class JWTService {
 
   def createToken(user: User, createDate: Date): String = {
     val id: java.lang.Long = user.id
+    val expires = Date.from(createDate.toInstant.atZone(ZoneId.systemDefault()).toLocalDateTime.plusDays(1).toInstant(ZoneOffset.UTC))
     val token = JWT.create()
       .withIssuedAt(createDate)
       .withKeyId("JWT Key")
       .withSubject(subject)
       .withAudience(subject)
       .withNotBefore(createDate)
+      .withExpiresAt(expires)
       .withClaim("userId", id)
+      .withClaim("username", user.username)
       .withIssuer(issuer).sign(algo)
     token
   }

@@ -1,8 +1,9 @@
 package auth.api
 
+import auth.JWTService
 import com.auth0.jwt.interfaces.Claim
 import javax.inject.Inject
-import models.auth.{User, UserDao}
+import models.auth.{User, UserAuthService, UserDao}
 import play.api.http.HeaderNames
 import play.api.mvc._
 
@@ -14,7 +15,8 @@ case class UserRequest[A](claims: Map[String, Claim], token: String, request: Re
 
 class AuthorizedAction @Inject()(
                                   userDao: UserDao,
-                                  bodyParser: BodyParsers.Default
+                                  bodyParser: BodyParsers.Default,
+                                  userAuthService: UserAuthService
                                 )(implicit ec: ExecutionContext)
   extends ActionBuilder[UserRequest, AnyContent] {
 
@@ -29,10 +31,9 @@ class AuthorizedAction @Inject()(
     extractBearerToken(request) map { token =>
 
       val service = new JWTService()
-      val userApiAuthService = new UserApiAuthService(userDao)
       service.isValidToken(token) match {
         case Success(claims) => {
-          val user = userApiAuthService.extractUserFrom(claims)
+          val user = userAuthService.extractUserFrom(claims)
           user match {
             case Some(user) => block(UserRequest(claims, token, request, user))
             case None => Future.successful(Results.Unauthorized("User error"))

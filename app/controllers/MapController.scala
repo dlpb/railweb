@@ -2,7 +2,7 @@ package controllers
 
 import java.util.Date
 
-import auth.api.JWTService
+import auth.JWTService
 import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject.{Inject, Singleton}
 import models.auth.roles.MapUser

@@ -2,19 +2,19 @@ package controllers
 
 import java.util.Date
 
-import auth.api.{AuthorizedAction, JWTService, UserRequest}
+import auth.JWTService
+import auth.api.AuthorizedAction
 import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject._
-import models.auth.{DaoUser, UserDao}
+import models.auth.UserDao
 import models.auth.roles.AdminUser
 import models.data.VisitJsonUtils
 import models.location.LocationsService
 import models.route.RoutesService
 import models.web.forms.ChangePassword
-import org.json4s.DefaultFormats
 import play.api.data.Form
 import play.api.data.Forms.{mapping, nonEmptyText}
-import play.api.mvc.{request, _}
+import play.api.mvc._
 
 @Singleton
 class AuthenticatedUserController @Inject()(
@@ -214,7 +214,7 @@ class AuthenticatedUserController @Inject()(
                     case (Some(id), Some(username), Some(password), Some(roles)) =>
                       userDao.findUserById(id.toLong) flatMap { u => userDao.getDaoUser(u) } match {
                         case Some(daoUser) =>
-                          userDao.updateUser(daoUser.copy(username = username, password = password, roles = roles.split(",").toSet))
+                          userDao.updateUser(daoUser.copy(username = username, password = userDao.encryptPassword(password), roles = roles.split(",").toSet))
                           Ok(views.html.adminUsersUpdate(token, request.user, userDao.getUsers, List(s"Updated user $id $username")))
                         case None =>
                           Ok(views.html.adminUsersUpdate(token, request.user, userDao.getUsers, List("No user data")))
