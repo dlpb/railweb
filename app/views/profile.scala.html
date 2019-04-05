@@ -51,6 +51,11 @@ errors: List[String]
             <li class="nav-item active">
                 <a class="nav-link" href="/profile">Profile  <span class="sr-only">(current)</span></a>
             </li>
+            @if(user.roles.contains(models.auth.roles.AdminUser)){
+            <li class="nav-item">
+                <a class="nav-link" href="/admin">Admin</a>
+            </li>
+            }
             <li class="nav-item">
                 <a class="nav-link" href="/logout">Log Out</a>
             </li>
@@ -65,26 +70,35 @@ errors: List[String]
 
 <div class="container">
     <div class="row">
-        <h1>Profile</h1>
-    </div>
-    <div class="row">
-        <ul>
-            <li>Username: @user.username</li>
-            <li>Roles
-                <ul>
-                    @for(role <- user.roles) {
-                        <li>@role</li>
-                    }
-                </ul>
-            </li>
-        </ul>
+        <div class="col-sm">
+            <h1>@user.username's Profile</h1>
+        </div>
     </div>
     <div class="row">
         <div class="col-sm">
-            <h2><a href="/profile/visits">Visits</a></h2>
+            <h2>Roles</h2>
+            <ul>
+                @for(role <- user.roles) {
+                    <li>@role</li>
+                }
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm">
+            <h2>Actions</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm">
+            <div class="card">
+                <h3><a href="/profile/changePassword">Change Password</a></h3>
+            </div>
         </div>
         <div class="col-sm">
-            <h2><a href="/profile/changePassword">Change Password</a></h2>
+            <div class="card">
+                <h3><a href="/profile/visits">Visits</a></h3>
+            </div>
         </div>
     </div>
 </div>

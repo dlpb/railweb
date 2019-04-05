@@ -53,7 +53,7 @@ class AuthenticatedUserController @Inject()(
   def visits = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     val routes = routesService.getVisitsForUser(request.user).getOrElse(Map.empty[String, List[String]])
     val locations = locationsService.getVisitsForUser(request.user).getOrElse(Map.empty[String, List[String]])
-    Ok(views.html.visits(locations, routes))
+    Ok(views.html.visits(request.user, locations, routes))
 
   }
 

@@ -27,7 +27,9 @@ class RouteController @Inject()(
      route match {
        case Some(r) =>
          val token = jwtService.createToken(request.user, new Date())
-         Ok(views.html.route(r,
+         Ok(views.html.route(
+           request.user,
+           r,
            routeService.getVisitsForRoute(r, request.user),
            token,
            routes.ApiAuthenticatedController.visitRouteWithParams(from, to),
@@ -89,6 +91,7 @@ class RouteController @Inject()(
       val formattedPercentage: String = f"$percentage%1.1f"
 
       Ok(views.html.routeList(
+        request.user,
         sortedRouteMap,
         visits,
         formActions,

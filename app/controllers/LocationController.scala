@@ -24,7 +24,9 @@ class LocationController @Inject()(
      val location: Option[Location] = locationService.getLocation(id)
      val token = jwtService.createToken(request.user, new Date())
      location match {
-       case Some(loc) => Ok(views.html.location(loc,
+       case Some(loc) => Ok(views.html.location(
+         request.user,
+         loc,
          locationService.getVisitsForLocation(loc, request.user),
          token,
          routes.ApiAuthenticatedController.visitLocationWithParams(id),
@@ -67,6 +69,7 @@ class LocationController @Inject()(
       val percentage = (visitedLocs.toDouble / availableLocs.toDouble) * 100.0
       val formattedPercentage: String = f"$percentage%1.1f"
       Ok(views.html.locations(
+        request.user,
         locations,
         visits,
         formActions,

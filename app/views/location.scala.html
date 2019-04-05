@@ -1,4 +1,6 @@
-@(location: models.location.Location,
+@(
+user: models.auth.User,
+location: models.location.Location,
 visits: List[String],
 token: String,
 visitUrl: Call,
@@ -55,6 +57,11 @@ removeAll: Call)(implicit request: Request[AnyContent])
             <li class="nav-item">
                 <a class="nav-link" href="/profile">Profile</a>
             </li>
+            @if(user.roles.contains(models.auth.roles.AdminUser)){
+            <li class="nav-item">
+                <a class="nav-link" href="/admin">Admin</a>
+            </li>
+            }
             <li class="nav-item">
                 <a class="nav-link" href="/logout">Log Out</a>
             </li>
