@@ -7,8 +7,6 @@ import auth.api.AuthorizedAction
 import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject._
 import models.auth.UserDao
-import models.auth.roles.AdminUser
-import models.data.VisitJsonUtils
 import models.location.LocationsService
 import models.route.RoutesService
 import models.web.forms.ChangePassword
@@ -45,6 +43,11 @@ class AuthenticatedUserController @Inject()(
   def profile = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     val token = jwtService.createToken(request.user, new Date())
     Ok(views.html.profile(token, request.user, form, List()))
+  }
+
+  def changePasswordView = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
+    val token = jwtService.createToken(request.user, new Date())
+    Ok(views.html.changePassword(token, request.user, form, List()))
   }
 
   def visits = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>

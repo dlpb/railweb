@@ -13,8 +13,9 @@ POST /doLogin                       controllers.UserController.processLoginAttem
 GET /welcome                        controllers.LandingPageController.showLandingPage
 GET /logout                         controllers.AuthenticatedUserController.logout
 GET /profile                        controllers.AuthenticatedUserController.profile
+GET /profile/changePassword         controllers.AuthenticatedUserController.changePasswordView
 GET /profile/visits                 controllers.AuthenticatedUserController.visits
-POST /profile                       controllers.AuthenticatedUserController.changePassword
+POST /profile/changePassword        controllers.AuthenticatedUserController.changePassword
 
 GET /admin                          controllers.AdminController.admin
 GET /admin/users                    controllers.AdminController.adminUsers

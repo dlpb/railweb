@@ -12,7 +12,7 @@ class PostgresBasedUserDao @Inject()(config: Config, dbProvider: PostgresDB) ext
     }
 
   override def updateUser(user: DaoUser): Unit = {
-    dbProvider.updateUser(user)
+    dbProvider.updateUser(user.copy(password = encryptPassword(user.password)))
     users = users.filterNot(u => u.id.equals(user.id)) + user
   }
 
