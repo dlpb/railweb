@@ -16,16 +16,16 @@ GET /profile                        controllers.AuthenticatedUserController.prof
 GET /profile/visits                 controllers.AuthenticatedUserController.visits
 POST /profile                       controllers.AuthenticatedUserController.changePassword
 
-GET /admin                          controllers.AuthenticatedUserController.admin
-GET /admin/users                    controllers.AuthenticatedUserController.adminUsers
-GET /admin/users/create             controllers.AuthenticatedUserController.adminUsersCreateView
-GET /admin/users/update             controllers.AuthenticatedUserController.adminUsersUpdateView
-GET /admin/users/update/data/:id    controllers.AuthenticatedUserController.adminUpdateUserDataView(id: Long)
-GET /admin/users/delete             controllers.AuthenticatedUserController.adminUsersDeleteView
-POST /admin/users/update            controllers.AuthenticatedUserController.adminUpdateUser
-POST /admin/users/create            controllers.AuthenticatedUserController.adminCreateUser
-POST /admin/users/delete            controllers.AuthenticatedUserController.adminDeleteUser
-POST /admin/users/update/data/:id    controllers.AuthenticatedUserController.adminUpdateUserData(id: Long)
+GET /admin                          controllers.AdminController.admin
+GET /admin/users                    controllers.AdminController.adminUsers
+GET /admin/users/create             controllers.AdminController.adminUsersCreateView
+GET /admin/users/update             controllers.AdminController.adminUsersUpdateView
+GET /admin/users/update/data/:id    controllers.AdminController.adminUpdateUserDataView(id: Long)
+GET /admin/users/delete             controllers.AdminController.adminUsersDeleteView
+POST /admin/users/update            controllers.AdminController.adminUpdateUser
+POST /admin/users/create            controllers.AdminController.adminCreateUser
+POST /admin/users/delete            controllers.AdminController.adminDeleteUser
+POST /admin/users/update/data/:id   controllers.AdminController.adminUpdateUserData(id: Long)
 
 
 GET /map                            controllers.MapController.showMapPage

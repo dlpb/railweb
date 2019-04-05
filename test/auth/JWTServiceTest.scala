@@ -3,7 +3,6 @@ package auth
 import java.text.SimpleDateFormat
 import java.util.Date
 
-import auth.api.JWTService
 import models.auth.User
 import org.scalatest.{FlatSpec, Matchers}
 
