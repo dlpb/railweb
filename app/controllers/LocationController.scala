@@ -41,7 +41,7 @@ class LocationController @Inject()(
    }
   }
 
-  def showLocationListPage(orr: Boolean, operator: String, name: String, id: String) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
+  def showLocationListPage(orr: Boolean, operator: String, name: String, id: String, srs: String) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     if(request.user.roles.contains(MapUser)){
       val token = jwtService.createToken(request.user, new Date())
       val locations: List[ListLocation] = locationService.defaultListLocations.filter({
@@ -50,7 +50,8 @@ class LocationController @Inject()(
           val operatorFlag = if(!operator.equals("all")) loc.operator.toLowerCase.contains(operator.toLowerCase) else true
           val nameFlag = if(!name.equals("all")) loc.name.toLowerCase.contains(name.toLowerCase) else true
           val idFlag = if(!id.equals("all")) loc.id.toLowerCase.contains(id.toLowerCase) else true
-          orrFlag && operatorFlag && nameFlag && idFlag
+          val srsFlag = if(!srs.equals("all")) loc.srs.toLowerCase.contains(srs.toLowerCase) else true
+          orrFlag && operatorFlag && nameFlag && idFlag && srsFlag
       })
 
       val visited = locationService.getVisitedLocations(request.user)
@@ -80,7 +81,8 @@ class LocationController @Inject()(
         orr,
         name,
         id,
-        operator
+        operator,
+        srs
       ))
     }
     else {

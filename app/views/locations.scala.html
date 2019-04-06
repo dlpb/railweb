@@ -10,7 +10,8 @@ percentage: String,
 orr: Boolean,
 name: String,
 id: String,
-operator: String)(implicit request: Request[AnyContent])
+operator: String,
+srs: String)(implicit request: Request[AnyContent])
 
 <head>
      <meta charset="utf-8">
@@ -22,6 +23,7 @@ operator: String)(implicit request: Request[AnyContent])
 </head>
 
 <script src='@routes.Assets.versioned("javascripts/tocData.js")' type="text/javascript"></script>
+<script src='@routes.Assets.versioned("javascripts/srsData.js")' type="text/javascript"></script>
 
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 
@@ -121,6 +123,8 @@ operator: String)(implicit request: Request[AnyContent])
                             <input type="text" class="form-control" name="id" id="id" value="@id">
                             <label for="operator">Operator contains</label>
                             <input type="text" class="form-control" name="operator" id="operator" value="@operator">
+                            <label for="srs">SRS contains</label>
+                            <input type="text" class="form-control" name="srs" id="srs" value="@srs">
                             <div style="padding-top:3px">
                                 <button type="submit" class="btn btn-primary">Filter</button>
                             </div>
@@ -147,6 +151,11 @@ operator: String)(implicit request: Request[AnyContent])
             <span class="tocBadge badge badge-light float-right">
                 <slot name="tocBadge">@location.operator</slot>
             </span>
+            @if(location.srs != ""){
+            <span class="srsBadge badge badge-light float-right">
+                @location.srs
+            </span>
+            }
         </div>
         }
     </div>
@@ -157,6 +166,14 @@ operator: String)(implicit request: Request[AnyContent])
 
         el.style.backgroundColor = tocInfo["colour"];
         el.style.color = tocInfo["textColour"];
+    });
+
+    const srs = document.querySelectorAll(".srsBadge");
+    srs.forEach(function(el) {
+        const srsInfo = findSrsData(el.textContent.trim());
+
+        el.style.backgroundColor = srsInfo["colour"];
+        el.style.color = srsInfo["textColour"];
     });
 
     </script>

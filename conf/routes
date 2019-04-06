@@ -33,7 +33,7 @@ POST /admin/users/update/data/:id   controllers.AdminController.adminUpdateUserD
 GET /map                            controllers.MapController.showMapPage
 GET /routes                         controllers.RouteController.showRouteListPage(nrRoutes: Boolean ?=true, srs: String ?= "all", name: String ?= "all", id: String ?= "all")
 GET /route/detail/:from/:to         controllers.RouteController.showRouteDetailPage(from: String, to: String)
-GET /locations                      controllers.LocationController.showLocationListPage(orrStations: Boolean ?=true, operator: String ?= "all", name: String ?= "all", id: String ?= "all")
+GET /locations                      controllers.LocationController.showLocationListPage(orrStations: Boolean ?=true, operator: String ?= "all", name: String ?= "all", id: String ?= "all", srs: String ?= "all")
 GET /location/detail/:id            controllers.LocationController.showLocationDetailPage(id: String)
 
 
