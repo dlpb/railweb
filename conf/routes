@@ -60,3 +60,10 @@ POST /api/visit/route/:from/:to         controllers.ApiAuthenticatedController.v
 POST /api/visit/route/list/:from/:to         controllers.ApiAuthenticatedController.visitRouteFromList(from: String, to: String)
 POST /api/visit/route/delete/last/:from/:to    controllers.ApiAuthenticatedController.removeLastVisitForRoute(from: String, to: String)
 POST /api/visit/route/delete/all/:from/:to     controllers.ApiAuthenticatedController.removeAllVisitsForRoute(from: String, to: String)
+
+GET /favicon.ico                    controllers.Assets.at(path="/public/favicon", file="favicon.ico")
+GET /apple-touch-icon.png           controllers.Assets.at(path="/public/favicon", file="/apple-touch-icon.png")
+GET /favicon-32x32.png              controllers.Assets.at(path="/public/favicon", file="/favicon-32x32.png")
+GET /favicon-16x16.png              controllers.Assets.at(path="/public/favicon", file="/favicon-16x16.png")
+GET /site.webmanifest               controllers.Assets.at(path="/public/favicon", file="/site.webmanifest")
+GET /safari-pinned-tab.svg          controllers.Assets.at(path="/public/favicon", file="/safari-pinned-tab.svg")
