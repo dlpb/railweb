@@ -73,6 +73,8 @@ class RoutesService @Inject() ( config: Config,
     Source.fromInputStream(data).mkString
   }
 
+  def getRoutes = routes
+
   def makeRoutes(routes: String): Set[Route] = {
     implicit val formats = DefaultFormats
     parse(routes).extract[Set[Route]]
