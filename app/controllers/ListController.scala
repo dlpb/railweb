@@ -31,8 +31,8 @@ class ListController @Inject()(
           val locations = listService.list(f, t, followFixedLinks, followFreightLinks)
           val mapRoutes: List[MapRoute] = getRoutes(locations)
           val mapLocations = locations map {l => MapLocation(l)}
-          Ok(views.html.listPage(request.user, token, mapLocations, mapRoutes))
-        case _ => NotFound(views.html.listPage(request.user, "", List(), List()))
+          Ok(views.html.findRoute(request.user, token, mapLocations, mapRoutes, from, to, followFreightLinks, followFixedLinks))
+        case _ => NotFound(views.html.findRoute(request.user, "", List(), List(), from, to, followFreightLinks, followFixedLinks))
       }
     }
     else {
