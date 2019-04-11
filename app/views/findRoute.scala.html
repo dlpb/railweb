@@ -23,7 +23,11 @@ followFixedLinks: Boolean
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="theme-color" content="#ffffff">
     <title>
-        Route from @from to @to - All the Stations & Track
+        @if(locations.isEmpty){
+            Route Finder - All the Stations & Track
+        } else {
+            Route from @locations.head.name to @locations.last.name - All the Stations & Track
+        }
     </title>
     <style>
         td {
@@ -175,47 +179,54 @@ followFixedLinks: Boolean
 
             <div class="col-sm">
                 <div class="card card-body">
-                    <h4>Route from @from to @to</h4>
+                    @if(locations.nonEmpty){
+                        <h4>Route from @locations.head.name to @locations.last.name</h4>
 
-                    @helper.CSRF.formField
-                    <table>
-                        @for(l <- locations) {
-                        <tr>
-                            <td></td>
-                            <td class="route-td">
-                                @if(l.orrStation) { <img src="/assets/images/station.svg" width="32px" height="32px"
-                                                         alt="station"/>
-                                } else { <img src="/assets/images/point.svg" width="32px" height="32px" alt="station"/>
+                        @helper.CSRF.formField
+                        <table>
+                            @for((l, i) <- locations.zipWithIndex) {
+                                <tr>
+                                    <td></td>
+                                    <td class="route-td">
+                                        @if(l.orrStation) { <img src="/assets/images/station.svg" width="32px" height="32px"
+                                                                 alt="station"/>
+                                        } else { <img src="/assets/images/point.svg" width="32px" height="32px" alt="station"/>
+                                        }
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-primary btn-sm"
+                                                onclick="visitLocation('@l.id', this)">
+                                            Visit Location
+                                        </button>
+                                        <div>
+                                            <a href="/location/detail/@l.id" target="_blank" class="">@l.name</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                @if(i < routeList.size) {
+                                <tr>
+                                    <td class="text-right">
+                                        <div>
+                                            <a href="/route/detail/@routeList(i).from.id/@routeList(i).to.id" target="_blank" class="">
+                                                @routeList(i).from.name -
+                                                @routeList(i).to.name</a>
+                                        </div>
+                                        <button type="button" class="btn btn-primary btn-sm"
+                                                onclick="visitRoute('@routeList(i).from.id', '@routeList(i).to.id', this)">Visit Route
+                                        </button>
+                                    </td>
+                                    <td class="route-td">
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
                                 }
-                            </td>
-                            <td>
-                                <button type="button" class="btn btn-primary btn-sm"
-                                        onclick="visitLocation('@l.id', this)">
-                                    Visit Location
-                                </button>
-                                <div>
-                                    <a href="/location/detail/@l.id" target="_blank" class="">@l.name</a>
-                                </div>
-                            </td>
-                        </tr>
-                        @routeList.find(r => r.from.id.equals(l.id)).map { r =>
-                        <tr>
-                            <td class="text-right">
-                                <div>
-                                    <a href="/route/detail/@r.from.id/@r.to.id" target="_blank" class="">@r.from.name -
-                                        @r.to.name</a>
-                                </div>
-                                <button type="button" class="btn btn-primary btn-sm"
-                                        onclick="visitRoute('@r.from.id', '@r.to.id', this)">Visit Route
-                                </button>
-                            </td>
-                            <td class="route-td">
-                            </td>
-                            <td></td>
-                        </tr>
-                        }
-                        }
-                    </table>
+                            }
+                        </table>
+                    } else {
+                        <h4>Route Finder</h4>
+                        <p>Please use the options to find a route</p>
+                    }
                 </div>
             </div>
         </div>

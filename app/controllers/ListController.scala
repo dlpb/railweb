@@ -25,12 +25,13 @@ class ListController @Inject()(
 
   def showListPage(from: String, to: String, followFreightLinks: Boolean, followFixedLinks: Boolean) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     if (request.user.roles.contains(MapUser)) {
-      (locationsService.getLocation(from), locationsService.getLocation(to)) match {
+      (locationsService.getLocation(from.toUpperCase), locationsService.getLocation(to.toUpperCase)) match {
         case (Some(f), Some(t)) =>
           val token = jwtService.createToken(request.user, new Date())
           val locations = listService.list(f, t, followFixedLinks, followFreightLinks)
           val mapRoutes: List[MapRoute] = getRoutes(locations)
           val mapLocations = locations map {l => MapLocation(l)}
+
           Ok(views.html.findRoute(request.user, token, mapLocations, mapRoutes, from, to, followFreightLinks, followFixedLinks))
         case _ => NotFound(views.html.findRoute(request.user, "", List(), List(), from, to, followFreightLinks, followFixedLinks))
       }
@@ -56,6 +57,6 @@ class ListController @Inject()(
           process(rest.head, rest.tail, route ++ accumulator)
       }
     }
-    process(locations.head, locations.tail, List())
+    process(locations.head, locations.tail, List()).reverse
   }
 }
