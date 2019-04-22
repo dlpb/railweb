@@ -37,8 +37,7 @@ GET /routes                         controllers.RouteController.showRouteListPag
 GET /route/detail/:from/:to         controllers.RouteController.showRouteDetailPage(from: String, to: String)
 GET /locations                      controllers.LocationController.showLocationListPage(orrStations: Boolean ?=true, operator: String ?= "all", name: String ?= "all", id: String ?= "all", srs: String ?= "all")
 GET /location/detail/:id            controllers.LocationController.showLocationDetailPage(id: String)
-GET /routes/find                    controllers.ListController.showListPage(from: String ?= "", to: String ?= "", followFreightLinks: Boolean ?=false, followFixedLinks: Boolean ?= false)
-GET /routes/find/:from/:to          controllers.ListController.showListPage(from: String, to: String, followFreightLinks: Boolean ?=false, followFixedLinks: Boolean ?= false)
+GET /routes/find                    controllers.ListController.showListPage(waypoints: String ?= "", followFreightLinks: Boolean ?=false, followFixedLinks: Boolean ?= false)
 
 GET /api/location/map               controllers.ApiAuthenticatedController.getLocationsForMap
 GET /api/location/list/default      controllers.ApiAuthenticatedController.getLocationsForList

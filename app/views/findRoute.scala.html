@@ -3,8 +3,7 @@ user: models.auth.User,
 token: String,
 locations: List[models.location.MapLocation],
 routeList: List[models.route.MapRoute],
-from: String,
-to: String,
+waypoints: String,
 followFreightLinks: Boolean,
 followFixedLinks: Boolean
 )(implicit request: Request[AnyContent])
@@ -166,10 +165,8 @@ followFixedLinks: Boolean
                             }
                             <label class="form-check-label" for="followFreightLinks2">Don't follow freight links</label>
                         </div>
-                        <input type="text" id="from" name="from" class="form-control" value="@from"/>
-                        <label for="from">From</label>
-                        <input type="text" id="to" name="to" class="form-control" value="@to"/>
-                        <label for="to">To</label>
+                        <textarea id="waypoints" name="waypoints" class="form-control">@waypoints</textarea>
+                        <label for="waypoints">Waypoints</label>
                         <div style="padding-top:3px">
                             <button class="btn btn-primary" type="submit">Find Route</button>
                         </div>
