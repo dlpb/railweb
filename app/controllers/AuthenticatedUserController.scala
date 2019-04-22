@@ -7,6 +7,7 @@ import auth.api.AuthorizedAction
 import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject._
 import models.auth.UserDao
+import models.data.postgres.RouteDataIdConverter
 import models.location.LocationsService
 import models.route.RoutesService
 import models.web.forms.ChangePassword
@@ -51,9 +52,13 @@ class AuthenticatedUserController @Inject()(
   }
 
   def visits = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
-    val routes = routesService.getVisitsForUser(request.user).getOrElse(Map.empty[String, List[String]])
+    val routes = routesService.getVisitsForUser(request.user).getOrElse(Map.empty[String, List[String]]) map {
+      r =>
+        RouteDataIdConverter.stringToRouteIds(r._1) -> r._2
+    }
+    val invalidRoutes: Set[(String, String)] = routes.keySet.filter(r => routesService.getRoute(r._1, r._2).isEmpty)
     val locations = locationsService.getVisitsForUser(request.user).getOrElse(Map.empty[String, List[String]])
-    Ok(views.html.visits(request.user, locations, routes))
+    Ok(views.html.visits(request.user, locations, routes, invalidRoutes))
 
   }
 

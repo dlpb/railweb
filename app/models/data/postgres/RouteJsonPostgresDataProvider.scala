@@ -19,3 +19,12 @@ class RouteJsonPostgresDataProvider @Inject() (dbProvider: PostgresDB)
 
   override def idToString(id: Route): String = s"""from:${id.from.id}-to:${id.to.id}"""
 }
+
+object RouteDataIdConverter {
+  def stringToRouteIds(id: String): (String, String) = {
+    val fromTo = id.split("-")
+    val from = fromTo(0).split(":")(1)
+    val to = fromTo(1).split(":")(1)
+    (from, to)
+  }
+}

@@ -5,6 +5,7 @@ token: String,
 user: models.auth.User,
 from: String,
 to: String,
+newRoutes: String,
 messages: List[String]
 )(implicit request: Request[AnyContent])
 <head>
@@ -21,8 +22,7 @@ messages: List[String]
 <meta name="application-name" content="All the Stations &amp; Track">
 <meta name="msapplication-TileColor" content="#2b5797">
 <meta name="theme-color" content="#ffffff">
-<title>Admin Users
-    </title>
+<title>Admin Routes - All the Stations & Track</title>
 </head>
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 
@@ -85,7 +85,8 @@ messages: List[String]
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="/admin">Admin</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Users</li>
+        <li class="breadcrumb-item active" aria-current="page">Routes</li>
+        <li class="breadcrumb-item active" aria-current="page">Migrate</li>
     </ol>
 </nav>
 
@@ -93,25 +94,34 @@ messages: List[String]
 <div class="container">
     <div class="content">
         <h1>Migrate Route</h1>
-        @from
-        @to
-        <div class="row">
-            <div class="col-sm">
-                <div class="card">
-                    <h2><a href="/admin/users/create">Create</a></h2>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card">
-                    <h2><a href="/admin/users/update">Update</a></h2>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card">
-                    <h2><a href="/admin/users/delete">Delete</a></h2>
-                </div>
-            </div>
+
+        @if(messages.size > 0){
+        <div class="alert alert-primary">
+            <h2>Messages</h2>
+            <ul>
+                @for(message <- messages){
+                <li>@message</li>
+                }
+            </ul>
         </div>
+        }
+
+        <form method="POST">
+            @helper.CSRF.formField
+            <input type="hidden" value="@token" name="Authorization" id="Authorization"/>
+            <label for="from">Old Route From</label>
+            <input type="text" class="form-control" value="@from" name="from" id="from"/>
+            <label for="to">Old Route To</label>
+            <input type="text" class="form-control" value="@to" name="to" id="to"/>
+            <label for="newroutes">New Routes</label>
+            <textarea class="form-control" name="newRoutes" id="newRoutes">@newRoutes</textarea>
+            <small id="newroutesHelp" class="form-text text-muted">One per line. Format: <pre>{from},{to}</pre></small>
+            <label for="confirmation">Confirmation</label>
+            <input type="password" class="form-control" name="confirmation" id="confirmation"/>
+            <br/>
+            <button type="submit" class="btn btn-primary">Save</button>
+        </form>
+
     </div>
 </div>
 }

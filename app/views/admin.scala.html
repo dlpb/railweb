@@ -18,8 +18,7 @@ user: models.auth.User
 <meta name="application-name" content="All the Stations &amp; Track">
 <meta name="msapplication-TileColor" content="#2b5797">
 <meta name="theme-color" content="#ffffff">
-<title>Admin Users
-    </title>
+<title>Admin Home - All the Stations & Track</title>
 </head>
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 
@@ -89,11 +88,16 @@ user: models.auth.User
         <div class="content">
             <h1>Admin</h1>
             <div class="row">
-                    <div class="col-sm">
-                        <div class="card">
-                            <h2><a href="/admin/users">User Management</a></h2>
-                        </div>
+                <div class="col-sm">
+                    <div class="card card-body">
+                        <h2><a href="/admin/users">User Management</a></h2>
                     </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card card-body">
+                        <h2><a href="/admin/routes/migrate">Migrate Route</a></h2>
+                    </div>
+                </div>
             </div>
         </div>
 </div>

@@ -4,7 +4,7 @@ import java.io.InputStream
 
 import com.typesafe.config.Config
 import javax.inject.Inject
-import models.auth.User
+import models.auth.{DaoUser, User}
 import models.data.RouteDataProvider
 import org.json4s.DefaultFormats
 import org.json4s.jackson.JsonMethods.parse
@@ -72,6 +72,8 @@ class RoutesService @Inject() ( config: Config,
     val data: InputStream = getClass().getResourceAsStream(path)
     Source.fromInputStream(data).mkString
   }
+
+  def migrate(oldRoute: Route, routes: List[Route], user: User): Unit = dataProvider.migrate(user, oldRoute, routes)
 
   def getRoutes = routes
 

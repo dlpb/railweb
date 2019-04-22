@@ -11,6 +11,7 @@ trait DataProvider[T] {
   def saveVisits(visits: Option[Map[String, List[String]]], user: User)
   def removeLastVisit(id: T, user: User): Unit
   def removeAllVisits(id: T, user: User): Unit
+  def migrate(user: User, id: T, ids: List[T]): Unit
 
   def idToString(id: T): String
 

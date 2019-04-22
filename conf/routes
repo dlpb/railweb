@@ -24,10 +24,12 @@ GET /admin/users/create             controllers.AdminController.adminUsersCreate
 GET /admin/users/update             controllers.AdminController.adminUsersUpdateView
 GET /admin/users/update/data/:id    controllers.AdminController.adminUpdateUserDataView(id: Long)
 GET /admin/users/delete             controllers.AdminController.adminUsersDeleteView
+GET /admin/routes/migrate           controllers.AdminController.adminMigrateRouteView(from: String ?="", to: String ?= "")
 POST /admin/users/update            controllers.AdminController.adminUpdateUser
 POST /admin/users/create            controllers.AdminController.adminCreateUser
 POST /admin/users/delete            controllers.AdminController.adminDeleteUser
 POST /admin/users/update/data/:id   controllers.AdminController.adminUpdateUserData(id: Long)
+POST /admin/routes/migrate          controllers.AdminController.adminMigrateRoute
 
 
 GET /map                            controllers.MapController.showMapPage

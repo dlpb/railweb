@@ -10,7 +10,7 @@ import models.auth.UserDao
 import models.auth.roles.AdminUser
 import models.data.VisitJsonUtils
 import models.location.LocationsService
-import models.route.RoutesService
+import models.route.{Route, RoutePoint, RoutesService}
 import play.api.mvc._
 
 @Singleton
@@ -219,6 +219,56 @@ class AdminController @Inject()(
 
             case _ =>
               Ok(views.html.adminUsersCreate(token, request.user, userDao.getUsers, List("Invalid data")))
+          }
+        }
+        ensureValidConfirmation(request, data, view _, fn _)
+      }
+  }
+
+  def adminMigrateRouteView(from: String, to: String) =  authenticatedUserAction {
+    implicit request =>
+      val token = jwtService.createToken(request.user, new Date())
+      if (!request.user.roles.contains(AdminUser)) {
+        Redirect(routes.LandingPageController.showLandingPage())
+      }
+      else {
+        Ok(views.html.adminMigrateRoute(token, request.user, from, to,"", List()))
+      }
+  }
+
+  def adminMigrateRoute = authorizedAction {
+    implicit request =>
+      def makeDummyRoute(from: String, to: String) = Route(RoutePoint(0.0, 0.0, from, "", ""), RoutePoint(0.0, 0.0, to, "", ""), "", "", "", "", "", "")
+      if (!request.user.roles.contains(AdminUser)) Unauthorized("Unauthorized")
+      else {
+        val data = request.request.body.asFormUrlEncoded
+        val token = jwtService.createToken(request.user, new Date())
+
+        def view(messages: List[String]): Result = Ok(views.html.adminMigrateRoute(token, request.user, "", "","", messages))
+
+        def fn(data: Option[Map[String, Seq[String]]]): Result = {
+          (data.get("from").headOption, data.get("to").headOption, data.get("newRoutes").headOption) match {
+            case (Some(from), Some(to), Some(newRoutes)) =>
+              val oldRoute = makeDummyRoute(from, to)
+              val routes: List[Route] = newRoutes.split("\n").toList flatMap {
+                inputRoute =>
+                  println(inputRoute)
+                  if(!inputRoute.contains(",")) Ok(views.html.adminMigrateRoute(token, request.user, from, to, newRoutes, List(s"Error processing $inputRoute. Must contain a comma separated value on a line")))
+                  val routeParts = inputRoute.split(",")
+                  if(!routeParts.size.equals(2)) Ok(views.html.adminMigrateRoute(token, request.user, from, to, newRoutes, List(s"Error processing $inputRoute. Must contain a comma separated value on a line")))
+                  val route = routesService.getRoute(routeParts(0).trim, routeParts(1).trim)
+                  if(route.isEmpty) Ok(views.html.adminMigrateRoute(token, request.user, from, to, newRoutes, List(s"Error processing $inputRoute. No valid route found")))
+                  route
+              }
+              userDao.getUsers foreach { user =>
+                userDao.findUserById(user.id) foreach {
+                  routesService.migrate(oldRoute, routes, _)
+                }
+              }
+              Ok(views.html.adminMigrateRoute(token, request.user, from, to, newRoutes, List("Updated")))
+
+            case _ =>
+              Ok(views.html.adminMigrateRoute(token, request.user,"", "","", List("Invalid data")))
           }
         }
         ensureValidConfirmation(request, data, view _, fn _)

@@ -85,4 +85,19 @@ abstract class JsonDataProvider[T]() extends DataProvider[T] {
       case e: Exception => None
     }
   }
+
+  override def migrate(user: User, id: T, ids: List[T]): Unit = {
+    val oldKey = idToString(id)
+
+    readJson(user) foreach {
+      data =>
+        val entryForOldKey: Option[List[String]] = data.get(oldKey)
+        val entriesForNewKeys: Map[String, List[String]] = entryForOldKey match {
+          case Some(visits) =>
+             ids.map( idToString(_) -> visits ).toMap
+          case _ => Map.empty
+        }
+        writeJson(data - oldKey ++ entriesForNewKeys, user)
+    }
+  }
 }

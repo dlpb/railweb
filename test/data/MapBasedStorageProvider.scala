@@ -58,4 +58,6 @@ trait MapBasedStorageProvider[T] extends DataProvider[T] {
       case None =>
     }
   }
+
+  override def migrate(user: User, id: T, ids: List[T]): Unit = {}
 }

@@ -3,7 +3,8 @@
 @(
 user: models.auth.User,
 locationVisits: Map[String, List[String]],
-routeVisits: Map[String, List[String]]
+routeVisits: Map[(String, String), List[String]],
+invalidRoutes: Set[(String, String)]
 )(implicit request: Request[AnyContent])
 <head>
      <meta charset="utf-8">
@@ -113,7 +114,13 @@ routeVisits: Map[String, List[String]]
                 @for((key, value) <- routeVisits) {
                 <ul>
                     <li>
-                        @key - visited @value.size times
+                        <a href="/route/detail/@key._1/@key._2" target="_blank">@key._1 - @key._2</a> - visited @value.size times
+                        @if(invalidRoutes.contains(key._1, key._2)){
+                            <span class="badge badge-danger">Invalid Route</span>
+                            @if(user.roles.contains(models.auth.roles.AdminUser)){
+                                <a href="/admin/routes/migrate?from=@key._1&to=@key._2">Migrate Route</a>
+                            }
+                        }
                         <ul>
                             @for(v <- value){
                             <li>@v</li>
