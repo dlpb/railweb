@@ -41,10 +41,16 @@ class ListController @Inject()(
           val to = locationsToRouteVia(i + 1).trim.toUpperCase()
           (locationsService.getLocation(from.toUpperCase), locationsService.getLocation(to.toUpperCase)) match {
             case (Some(f), Some(t)) =>
-              val routeLocations: List[Location] = listService.list(f, t, followFixedLinks, followFreightLinks)
+              var routeLocations: List[Location] = listService.list(f, t, followFixedLinks, followFreightLinks)
+              println(routeLocations)
               locations = locations ++ routeLocations
               mapRoutes = mapRoutes ++ getRoutes(routeLocations)
-              mapLocations = mapLocations ++ (routeLocations map { l => MapLocation(l) })
+              if(i > 0) {
+                mapLocations = mapLocations ++ (routeLocations.tail map { l => MapLocation(l) })
+              }
+              else {
+                mapLocations = mapLocations ++ (routeLocations map { l => MapLocation(l) })
+              }
             case _ =>
           }
         }
