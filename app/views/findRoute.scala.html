@@ -1,0 +1,342 @@
+@(
+user: models.auth.User,
+token: String,
+locations: List[models.location.MapLocation],
+routeList: List[models.route.MapRoute],
+waypoints: String,
+followFreightLinks: Boolean,
+followFixedLinks: Boolean
+)(implicit request: Request[AnyContent])
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="apple-mobile-web-app-title" content="All the Stations &amp; Track">
+    <meta name="application-name" content="All the Stations &amp; Track">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+    <title>
+        @if(locations.isEmpty){
+            Route Finder - All the Stations & Track
+        } else {
+            Route from @locations.head.name to @locations.last.name - All the Stations & Track
+        }
+    </title>
+    <style>
+        td {
+            padding: 0px;
+        }
+
+        .route-td {
+            background-image: url("/assets/images/line.svg");
+            background-size: 32px;
+            background-repeat: repeat-y;
+        }
+        button {
+            display: block;
+        }
+        td div {
+            display: block;
+        }
+
+
+    </style>
+</head>
+
+<script src='@routes.Assets.versioned("javascripts/mapFunctions.js")' type="text/javascript"></script>
+<script src='@routes.Assets.versioned("javascripts/tocData.js")' type="text/javascript"></script>
+
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+<script src="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/build/ol.js"></script>
+
+<link rel="stylesheet" href="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/css/ol.css">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous">
+
+<script type="text/javascript">
+    const token = "@token";
+
+
+
+</script>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">
+        <img src="/assets/images/toy-train.svg" width="24" height="24" alt="application icon"/>
+        All the Stations & Track
+    </a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/map">Map</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="/locations">Locations</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/routes">Routes <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/profile">Profile</a>
+            </li>
+            @if(user.roles.contains(models.auth.roles.AdminUser)){
+            <li class="nav-item">
+                <a class="nav-link" href="/admin">Admin</a>
+            </li>
+            }
+            <li class="nav-item">
+                <a class="nav-link" href="/logout">Log Out</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <div class="content">
+        <div class="row">
+            <div class="col-sm">
+                <div class="card card-body">
+                    <h4>Options</h4>
+                    <form method="GET">
+                        <div class="form-check form-check-inline">
+                            @if(followFixedLinks){
+                            <input class="form-check-input" type="radio" name="followFixedLinks" id="followFixedLinks1"
+                                   value="true" checked>
+                            } else {
+                            <input class="form-check-input" type="radio" name="followFixedLinks" id="followFixedLinks1"
+                                   value="true">
+                            }
+                            <label class="form-check-label" for="followFixedLinks1">Follow freight Links</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            @if(followFixedLinks){
+                            <input class="form-check-input" type="radio" name="followFixedLinks" id="followFixedLinks2"
+                                   value="false">
+                            } else {
+                            <input class="form-check-input" type="radio" name="followFixedLinks" id="followFixedLinks2"
+                                   value="false" checked>
+                            }
+                            <label class="form-check-label" for="followFixedLinks2">Don't follow fixed links</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            @if(followFreightLinks){
+                            <input class="form-check-input" type="radio" name="followFreightLinks"
+                                   id="followFreightLinks1"
+                                   value="true" checked>
+                            } else {
+                            <input class="form-check-input" type="radio" name="followFreightLinks"
+                                   id="followFreightLinks1"
+                                   value="true">
+                            }
+                            <label class="form-check-label" for="followFreightLinks1">Follow freight Links</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            @if(followFreightLinks){
+                            <input class="form-check-input" type="radio" name="followFreightLinks"
+                                   id="followFreightLinks2"
+                                   value="false">
+                            } else {
+                            <input class="form-check-input" type="radio" name="followFreightLinks"
+                                   id="followFreightLinks2"
+                                   value="false" checked>
+                            }
+                            <label class="form-check-label" for="followFreightLinks2">Don't follow freight links</label>
+                        </div>
+                        <textarea id="waypoints" name="waypoints" class="form-control">@waypoints</textarea>
+                        <label for="waypoints">Waypoints</label>
+                        <div style="padding-top:3px">
+                            <button class="btn btn-primary" type="submit">Find Route</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-sm">
+                <div class="card card-body">
+                    @if(locations.nonEmpty){
+                        <h4>Route from @locations.head.name to @locations.last.name</h4>
+
+                        @helper.CSRF.formField
+                        <table>
+                            @for((l, i) <- locations.zipWithIndex) {
+                                <tr>
+                                    <td></td>
+                                    <td class="route-td">
+                                        @if(l.orrStation) { <img src="/assets/images/station.svg" width="32px" height="32px"
+                                                                 alt="station"/>
+                                        } else { <img src="/assets/images/point.svg" width="32px" height="32px" alt="station"/>
+                                        }
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-primary btn-sm"
+                                                onclick="visitLocation('@l.id', this)">
+                                            Visit Location
+                                        </button>
+                                        <div>
+                                            <a href="/location/detail/@l.id" target="_blank" class="">@l.name</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                @if(i < routeList.size) {
+                                <tr>
+                                    <td class="text-right">
+                                        <div>
+                                            <a href="/route/detail/@routeList(i).from.id/@routeList(i).to.id" target="_blank" class="">
+                                                @routeList(i).from.name -
+                                                @routeList(i).to.name</a>
+                                        </div>
+                                        <button type="button" class="btn btn-primary btn-sm"
+                                                onclick="visitRoute('@routeList(i).from.id', '@routeList(i).to.id', this)">Visit Route
+                                        </button>
+                                    </td>
+                                    <td class="route-td">
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                }
+                            }
+                        </table>
+                    } else {
+                        <h4>Route Finder</h4>
+                        <p>Please use the options to find a route</p>
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <h4>Map of route</h4>
+                <div id="map" class="map"></div>
+
+            </div>
+        </div>
+
+        <script>
+            function visitLocation(location, source) {
+                console.log(location);
+                let csrf = document.getElementsByName("csrfToken")[0].value;
+                let token = "@token";
+
+                jQuery.ajax({
+                  type: "POST",
+                  url: '/api/visit/location',
+                  data: {
+                    'csrfToken': csrf,
+                    'Authorization': token,
+                    'location': location
+                  },
+                  success: function() {
+                    source.classList.remove("btn-primary");
+                    source.classList.add("btn-success");
+                  }
+                });
+
+            }
+
+            function visitRoute(from, to, source){
+            console.log(from, to);
+                let csrf = document.getElementsByName("csrfToken")[0].value;
+                let token = "@token";
+
+                jQuery.ajax({
+                  type: "POST",
+                  url: '/api/visit/route',
+                  data: {
+                    'csrfToken': csrf,
+                    'Authorization': token,
+                    'from': from,
+                    'to': to
+                  },
+                  success: function() {
+                    source.classList.remove("btn-primary");
+                    source.classList.add("btn-success");
+                  }
+                });
+            }
+
+
+        </script>
+
+        <script type="text/javascript">
+            createMap();
+            @for(loc <- locations) {
+                addLocation({
+                    "location": {
+                        "lat": @loc.location.lat,
+                        "lon": @loc.location.lon
+                    },
+                    "name":'@loc.name',
+                    "id": '@loc.id',
+                    "operator": '@loc.operator',
+                    "visited": false
+                });
+            }
+            var vectorLineLayer = new ol.layer.Vector({'id':'lines'});
+            var vectorLinksLineLayer = new ol.layer.Vector({'id':'links'});
+            var vectorMetroLineLayer = new ol.layer.Vector({'id':'metro'});
+
+            var vectorLine = new ol.source.Vector({});
+            var vectorLinksLine = new ol.source.Vector({});
+            var vectorMetroLine = new ol.source.Vector({});
+
+            @for(r <- routeList) {
+                addRoute({
+                    "from": {
+                        "lat": @r.from.lat,
+                        "lon": @r.from.lon
+                    },
+                    "to":{
+                        "lat": @r.to.lat,
+                        "lon": @r.to.lon
+                    },
+                    "toc":'@r.toc'
+                },
+                false,
+                vectorLine,
+                vectorLineLayer,
+                vectorLinksLine,
+                vectorLinksLineLayer,
+                vectorMetroLine,
+                vectorMetroLineLayer
+                );
+            }
+            map.addLayer(vectorLineLayer);
+            map.addLayer(vectorLinksLineLayer);
+            map.addLayer(vectorMetroLineLayer);
+
+            vectorLinksLineLayer.setVisible(false);
+
+
+        </script>
+    </div>
+</div>
+<footer class="footer ">
+    <div class="container">
+        <span class="text-muted">All the Stations & Track &copy; dlpb.uk 2018 - @java.time.Year.now.getValue. <a
+                href="/about">About</a></a></span>
+    </div>
+</footer>

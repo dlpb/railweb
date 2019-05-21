@@ -1,8 +1,10 @@
 package models.route
 
+import java.io.InputStream
+
 import com.typesafe.config.Config
 import javax.inject.Inject
-import models.auth.User
+import models.auth.{DaoUser, User}
 import models.data.RouteDataProvider
 import org.json4s.DefaultFormats
 import org.json4s.jackson.JsonMethods.parse
@@ -15,6 +17,14 @@ class RoutesService @Inject() ( config: Config,
 
   private def dataRoot = config.getString("data.static.root")
   private val routes = makeRoutes(readRoutesFromFile)
+
+  def getVisitsForUser(user: User): Option[Map[String, List[String]]] = {
+    dataProvider.getVisits(user)
+  }
+
+  def saveVisits(visits: Option[Map[String, List[String]]], user: User) = {
+    dataProvider.saveVisits(visits, user)
+  }
 
   def getRoute(fromId: String, toId: String): Option[Route] =
     routes.find(r => r.from.id.equals(fromId) && r.to.id.equals(toId))
@@ -58,8 +68,14 @@ class RoutesService @Inject() ( config: Config,
   }
 
   def readRoutesFromFile: String = {
-    Source.fromFile(dataRoot + "/routes.json").mkString
+    val path = "/data/static/routes.json"
+    val data: InputStream = getClass().getResourceAsStream(path)
+    Source.fromInputStream(data).mkString
   }
+
+  def migrate(oldRoute: Route, routes: List[Route], user: User): Unit = dataProvider.migrate(user, oldRoute, routes)
+
+  def getRoutes = routes
 
   def makeRoutes(routes: String): Set[Route] = {
     implicit val formats = DefaultFormats

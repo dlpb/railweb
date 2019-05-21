@@ -8,7 +8,8 @@ case class Route(
                 electrification: String,
                 speed: String,
                 srsCode: String,
-                `type`: String
+                `type`: String,
+                distance: Long = 0
                 )
 
 case class RoutePoint(

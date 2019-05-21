@@ -2,7 +2,7 @@ package controllers
 
 import java.util.Date
 
-import auth.api.JWTService
+import auth.JWTService
 import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject.{Inject, Singleton}
 import models.auth.roles.MapUser
@@ -24,7 +24,9 @@ class LocationController @Inject()(
      val location: Option[Location] = locationService.getLocation(id)
      val token = jwtService.createToken(request.user, new Date())
      location match {
-       case Some(loc) => Ok(views.html.location(loc,
+       case Some(loc) => Ok(views.html.location(
+         request.user,
+         loc,
          locationService.getVisitsForLocation(loc, request.user),
          token,
          routes.ApiAuthenticatedController.visitLocationWithParams(id),
@@ -39,7 +41,7 @@ class LocationController @Inject()(
    }
   }
 
-  def showLocationListPage(orr: Boolean, operator: String, name: String, id: String) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
+  def showLocationListPage(orr: Boolean, operator: String, name: String, id: String, srs: String) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     if(request.user.roles.contains(MapUser)){
       val token = jwtService.createToken(request.user, new Date())
       val locations: List[ListLocation] = locationService.defaultListLocations.filter({
@@ -48,7 +50,8 @@ class LocationController @Inject()(
           val operatorFlag = if(!operator.equals("all")) loc.operator.toLowerCase.contains(operator.toLowerCase) else true
           val nameFlag = if(!name.equals("all")) loc.name.toLowerCase.contains(name.toLowerCase) else true
           val idFlag = if(!id.equals("all")) loc.id.toLowerCase.contains(id.toLowerCase) else true
-          orrFlag && operatorFlag && nameFlag && idFlag
+          val srsFlag = if(!srs.equals("all")) loc.srs.toLowerCase.contains(srs.toLowerCase) else true
+          orrFlag && operatorFlag && nameFlag && idFlag && srsFlag
       })
 
       val visited = locationService.getVisitedLocations(request.user)
@@ -67,6 +70,7 @@ class LocationController @Inject()(
       val percentage = (visitedLocs.toDouble / availableLocs.toDouble) * 100.0
       val formattedPercentage: String = f"$percentage%1.1f"
       Ok(views.html.locations(
+        request.user,
         locations,
         visits,
         formActions,
@@ -77,7 +81,8 @@ class LocationController @Inject()(
         orr,
         name,
         id,
-        operator
+        operator,
+        srs
       ))
     }
     else {

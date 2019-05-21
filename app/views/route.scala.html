@@ -1,4 +1,6 @@
-@(route: models.route.Route,
+@(
+user: models.auth.User,
+route: models.route.Route,
 visits: List[String],
 token: String,
 visitUrl: Call,
@@ -6,6 +8,20 @@ removeLast: Call,
 removeAll: Call)(implicit request: Request[AnyContent])
 
 <head>
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="apple-mobile-web-app-title" content="All the Stations &amp; Track">
+<meta name="application-name" content="All the Stations &amp; Track">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="theme-color" content="#ffffff">
     <title>
         @route.from.name - @route.to.name (@route.from.id - @route.to.id) - All the Stations & Track
     </title>
@@ -38,11 +54,14 @@ removeAll: Call)(implicit request: Request[AnyContent])
     const token = "@token";
 
 
+
 </script>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="/">All the Stations & Track</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    <a class="navbar-brand" href="/">
+        <img src="/assets/images/toy-train.svg" width="24" height="24" alt="application icon"/>
+        All the Stations & Track
+    </a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -64,6 +83,11 @@ removeAll: Call)(implicit request: Request[AnyContent])
             <li class="nav-item">
                 <a class="nav-link" href="/profile">Profile</a>
             </li>
+            @if(user.roles.contains(models.auth.roles.AdminUser)){
+            <li class="nav-item">
+                <a class="nav-link" href="/admin">Admin</a>
+            </li>
+            }
             <li class="nav-item">
                 <a class="nav-link" href="/logout">Log Out</a>
             </li>
@@ -72,11 +96,13 @@ removeAll: Call)(implicit request: Request[AnyContent])
 </nav>
 
 <div class="container">
-    <div class="alert alert-primary" role="alert" id="@route.srsCode" style="padding-top:10px">
-        <h1>@route.from.name - @route.to.name (@route.from.id - @route.to.id)</h1>
-        <h3 id="@route.srsCode-header">@route.srsCode</h3>
-    </div>
-    <script>
+    <div class="content">
+
+        <div class="alert alert-primary" role="alert" id="@route.srsCode" style="padding-top:10px">
+            <h1>@route.from.name - @route.to.name (@route.from.id - @route.to.id)</h1>
+            <h3 id="@route.srsCode-header">@route.srsCode</h3>
+        </div>
+        <script>
         const srsInfo = findSrsData('@route.srsCode');
         const header = document.getElementById('@route.srsCode');
 
@@ -85,86 +111,87 @@ removeAll: Call)(implicit request: Request[AnyContent])
 
         const title = document.getElementById('@route.srsCode-header');
         title.textContent = "@route.srsCode - " + srsInfo["route"] + " / " + srsInfo["region"];
-    </script>
-    <div class="row">
-        <div class="col-sm">
 
-            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-                <div class="btn-group mr-2" role="group" aria-label="First group">
-                    <div id="route-visit-form">
-                        @helper.form(visitUrl, 'id -> "visit-form") {
-                        @helper.CSRF.formField
-                        <input type="hidden" id="Authorization" name="Authorization" value="@token"/>
-                        <button id="visit" class="btn btn-primary">Visit</button>
-                        }
-                    </div>
-                </div>
-                <div class="btn-group mr-2" role="group" aria-label="Second group">
+        </script>
+        <div class="row">
+            <div class="col-sm">
 
-                    <div id="route-remove-last-visit-form">
-                        @helper.form(removeLast, 'id -> "visit-form") {
-                        @helper.CSRF.formField
-                        <input type="hidden" id="Authorization-last-visit" name="Authorization" value="@token"/>
-                        <button id="remove-last-visit" class="btn btn-danger">Remove Last Visit</button>
-                        }
+                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group mr-2" role="group" aria-label="First group">
+                        <div id="route-visit-form">
+                            @helper.form(visitUrl, 'id -> "visit-form") {
+                            @helper.CSRF.formField
+                            <input type="hidden" id="Authorization" name="Authorization" value="@token"/>
+                            <button id="visit" class="btn btn-primary">Visit</button>
+                            }
+                        </div>
                     </div>
-                </div>
-                <div class="btn-group mr-2" role="group" aria-label="Third group">
-                    <div id="route-remove-all-visit-form">
-                        @helper.form(removeAll, 'id -> "visit-form") {
-                        @helper.CSRF.formField
-                        <input type="hidden" id="Authorization-all-visit" name="Authorization" value="@token"/>
-                        <button id="remove-all-visit" class="btn btn-danger">Remove All Visit</button>
-                        }
+                    <div class="btn-group mr-2" role="group" aria-label="Second group">
+
+                        <div id="route-remove-last-visit-form">
+                            @helper.form(removeLast, 'id -> "visit-form") {
+                            @helper.CSRF.formField
+                            <input type="hidden" id="Authorization-last-visit" name="Authorization" value="@token"/>
+                            <button id="remove-last-visit" class="btn btn-danger">Remove Last Visit</button>
+                            }
+                        </div>
+                    </div>
+                    <div class="btn-group mr-2" role="group" aria-label="Third group">
+                        <div id="route-remove-all-visit-form">
+                            @helper.form(removeAll, 'id -> "visit-form") {
+                            @helper.CSRF.formField
+                            <input type="hidden" id="Authorization-all-visit" name="Authorization" value="@token"/>
+                            <button id="remove-all-visit" class="btn btn-danger">Remove All Visit</button>
+                            }
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-sm">
-            <h3>Location Data</h3>
-            <ul>
-                <li>From
-                    <ul>
-                        <li>ID: @route.from.id</li>
-                        <li>Name: @route.from.name</li>
-                        <li>Lat: @route.from.lat</li>
-                        <li>Lon: @route.from.lon</li>
-                    </ul>
-                </li>
-                <li>To
-                    <ul>
-                        <li>ID: @route.to.id</li>
-                        <li>Name: @route.to.name</li>
-                        <li>Lat: @route.to.lat</li>
-                        <li>Lon: @route.to.lon</li>
-                    </ul>
-                </li>
-            </ul>
+        <div class="row">
+            <div class="col-sm">
+                <h3>Location Data</h3>
+                <ul>
+                    <li>From
+                        <ul>
+                            <li>ID: @route.from.id</li>
+                            <li>Name: @route.from.name</li>
+                            <li>Lat: @route.from.lat</li>
+                            <li>Lon: @route.from.lon</li>
+                        </ul>
+                    </li>
+                    <li>To
+                        <ul>
+                            <li>ID: @route.to.id</li>
+                            <li>Name: @route.to.name</li>
+                            <li>Lat: @route.to.lat</li>
+                            <li>Lon: @route.to.lon</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm">
+                <h3>Route Data</h3>
+                <ul>
+                    <li>TOC: @route.toc</li>
+                    <li>Single Track: @route.singleTrack</li>
+                    <li>Electrification: @route.electrification</li>
+                    <li>Speed (MPH): @route.speed</li>
+                    <li>SRS Code: @route.srsCode</li>
+                </ul>
+            </div>
+            <div class="col-sm">
+                <h3>Visits</h3>
+                <ul>
+                    @for(visit <- visits){
+                    <li>@visit</li>
+                    }
+                </ul>
+            </div>
         </div>
-        <div class="col-sm">
-            <h3>Route Data</h3>
-            <ul>
-                <li>TOC: @route.toc</li>
-                <li>Single Track: @route.singleTrack</li>
-                <li>Electrification: @route.electrification</li>
-                <li>Speed (MPH): @route.speed</li>
-                <li>SRS Code: @route.srsCode</li>
-            </ul>
-        </div>
-        <div class="col-sm">
-            <h3>Visits</h3>
-            <ul>
-                @for(visit <- visits){
-                <li>@visit</li>
-                }
-            </ul>
-        </div>
-    </div>
-    <div id="map" class="map"></div>
+        <div id="map" class="map"></div>
 
-    <script type="text/javascript">
+        <script type="text/javascript">
         createMap();
         addSingleConnection(
         {
@@ -179,6 +206,13 @@ removeAll: Call)(implicit request: Request[AnyContent])
             "srs":"@route.srsCode",
             "toc":"@route.toc"
         })
-    </script>
 
+        </script>
+
+    </div>
 </div>
+<footer class="footer ">
+    <div class="container">
+        <span class="text-muted">All the Stations & Track &copy; dlpb.uk 2018 - @java.time.Year.now.getValue. <a href="/about">About</a></a></span>
+    </div>
+</footer>

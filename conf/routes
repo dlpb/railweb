@@ -7,18 +7,37 @@
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
 
 # user/admin stuff
+GET /                               controllers.LandingPageController.showLandingPage
 GET  /login                         controllers.UserController.showLoginForm
 POST /doLogin                       controllers.UserController.processLoginAttempt
 GET /welcome                        controllers.LandingPageController.showLandingPage
 GET /logout                         controllers.AuthenticatedUserController.logout
 GET /profile                        controllers.AuthenticatedUserController.profile
+GET /profile/changePassword         controllers.AuthenticatedUserController.changePasswordView
+GET /profile/visits                 controllers.AuthenticatedUserController.visits
+POST /profile/changePassword        controllers.AuthenticatedUserController.changePassword
+GET /about                          controllers.UserController.about
+
+GET /admin                          controllers.AdminController.admin
+GET /admin/users                    controllers.AdminController.adminUsers
+GET /admin/users/create             controllers.AdminController.adminUsersCreateView
+GET /admin/users/update             controllers.AdminController.adminUsersUpdateView
+GET /admin/users/update/data/:id    controllers.AdminController.adminUpdateUserDataView(id: Long)
+GET /admin/users/delete             controllers.AdminController.adminUsersDeleteView
+GET /admin/routes/migrate           controllers.AdminController.adminMigrateRouteView(from: String ?="", to: String ?= "")
+POST /admin/users/update            controllers.AdminController.adminUpdateUser
+POST /admin/users/create            controllers.AdminController.adminCreateUser
+POST /admin/users/delete            controllers.AdminController.adminDeleteUser
+POST /admin/users/update/data/:id   controllers.AdminController.adminUpdateUserData(id: Long)
+POST /admin/routes/migrate          controllers.AdminController.adminMigrateRoute
+
 
 GET /map                            controllers.MapController.showMapPage
 GET /routes                         controllers.RouteController.showRouteListPage(nrRoutes: Boolean ?=true, srs: String ?= "all", name: String ?= "all", id: String ?= "all")
 GET /route/detail/:from/:to         controllers.RouteController.showRouteDetailPage(from: String, to: String)
-GET /locations                      controllers.LocationController.showLocationListPage(orrStations: Boolean ?=true, operator: String ?= "all", name: String ?= "all", id: String ?= "all")
+GET /locations                      controllers.LocationController.showLocationListPage(orrStations: Boolean ?=true, operator: String ?= "all", name: String ?= "all", id: String ?= "all", srs: String ?= "all")
 GET /location/detail/:id            controllers.LocationController.showLocationDetailPage(id: String)
-
+GET /routes/find                    controllers.ListController.showListPage(waypoints: String ?= "", followFreightLinks: Boolean ?=false, followFixedLinks: Boolean ?= false)
 
 GET /api/location/map               controllers.ApiAuthenticatedController.getLocationsForMap
 GET /api/location/list/default      controllers.ApiAuthenticatedController.getLocationsForList
@@ -43,3 +62,10 @@ POST /api/visit/route/:from/:to         controllers.ApiAuthenticatedController.v
 POST /api/visit/route/list/:from/:to         controllers.ApiAuthenticatedController.visitRouteFromList(from: String, to: String)
 POST /api/visit/route/delete/last/:from/:to    controllers.ApiAuthenticatedController.removeLastVisitForRoute(from: String, to: String)
 POST /api/visit/route/delete/all/:from/:to     controllers.ApiAuthenticatedController.removeAllVisitsForRoute(from: String, to: String)
+
+GET /favicon.ico                    controllers.Assets.at(path="/public/favicon", file="favicon.ico")
+GET /apple-touch-icon.png           controllers.Assets.at(path="/public/favicon", file="/apple-touch-icon.png")
+GET /favicon-32x32.png              controllers.Assets.at(path="/public/favicon", file="/favicon-32x32.png")
+GET /favicon-16x16.png              controllers.Assets.at(path="/public/favicon", file="/favicon-16x16.png")
+GET /site.webmanifest               controllers.Assets.at(path="/public/favicon", file="/site.webmanifest")
+GET /safari-pinned-tab.svg          controllers.Assets.at(path="/public/favicon", file="/safari-pinned-tab.svg")

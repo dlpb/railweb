@@ -69,7 +69,8 @@ function populatePoints(map, token) {
         name: location.name + ' (' + location.id + ')',
         type: "Location",
         operator: location.operator,
-        id: location.id
+        id: location.id,
+        visited: location.visited
     });
     locationPointFeature.setId(location.id);
 
@@ -124,20 +125,7 @@ function populateConnections(map, token){
         routes[0].forEach(function (connection) {
 
            const visited = findRouteVisit(connection, visits[0]);
-           connection.visited = visited;
-
-           if(connection.srsCode == "Link"){
-               addConnection(connection, vectorLinksLine, vectorLinksLineLayer, findTocData(connection.toc).colour);
-           }
-           else if(connection.type==="Light Rail"
-                || connection.type === "Underground"
-                || connection.type==="Metro"
-                || connection.type==="Tram"){
-                    addConnection(connection, vectorMetroLine, vectorMetroLineLayer, findTocData(connection.toc).colour);
-           }
-           else{
-               addConnection(connection, vectorLine, vectorLineLayer, findTocData(connection.toc).colour);
-           }
+           addRoute(connection, visited, vectorLine, vectorLineLayer, vectorLinksLine, vectorLinksLineLayer, vectorMetroLine, vectorMetroLineLayer);
         });
 
         map.addLayer(vectorLineLayer);
@@ -147,45 +135,62 @@ function populateConnections(map, token){
         vectorLinksLineLayer.setVisible(false);
 
     });
+}
 
-    function findRouteVisit(route, visits){
-        const key = "from:" + route.from.id + "-to:" + route.to.id
-        return visits.includes(key);
+function addRoute(connection, visited, vectorLine, vectorLineLayer, vectorLinksLine, vectorLinksLineLayer, vectorMetroLine, vectorMetroLineLayer){
+   connection.visited = visited;
+
+   if(connection.srsCode == "Link"){
+       addConnection(connection, vectorLinksLine, vectorLinksLineLayer, findTocData(connection.toc).colour);
+   }
+   else if(connection.type==="Light Rail"
+        || connection.type === "Underground"
+        || connection.type==="Metro"
+        || connection.type==="Tram"){
+            addConnection(connection, vectorMetroLine, vectorMetroLineLayer, findTocData(connection.toc).colour);
+   }
+   else{
+       addConnection(connection, vectorLine, vectorLineLayer, findTocData(connection.toc).colour);
+   }
+}
+
+function findRouteVisit(route, visits){
+    const key = "from:" + route.from.id + "-to:" + route.to.id
+    return visits.includes(key);
+}
+
+
+ function addConnection(connection, line, layer, colour){
+    var points = [
+        [connection.from.lon, connection.from.lat],
+        [connection.to.lon, connection.to.lat]];
+
+    for (var i = 0; i < points.length; i++) {
+        points[i] = ol.proj.transform(points[i], 'EPSG:4326', 'EPSG:3857');
     }
 
+    var featureLine = new ol.Feature({
+        geometry: new ol.geom.LineString(points),
+        type: "Route",
+        from: connection.from.id,
+        to: connection.to.id,
+        name: connection.from.name + " - " + connection.to.name + ' (' + connection.from.id + ' - ' + connection.to.id + ')',
+        visited: connection.visited,
+        operator: connection.toc,
 
-     function addConnection(connection, line, layer, colour){
-        var points = [
-            [connection.from.lon, connection.from.lat],
-            [connection.to.lon, connection.to.lat]];
+    });
 
-        for (var i = 0; i < points.length; i++) {
-            points[i] = ol.proj.transform(points[i], 'EPSG:4326', 'EPSG:3857');
-        }
+    let dash = connection.visited ? [1,0]: [10, 10];
+    featureLine.setStyle(new ol.style.Style({
+        stroke: new ol.style.Stroke({
+            color: colour,
+            width: 3,
+            lineDash: dash
+        })
+    }));
 
-        var featureLine = new ol.Feature({
-            geometry: new ol.geom.LineString(points),
-            type: "Route",
-            from: connection.from.id,
-            to: connection.to.id,
-            name: connection.from.name + " - " + connection.to.name + ' (' + connection.from.id + ' - ' + connection.to.id + ')',
-            visited: connection.visited,
-            operator: connection.toc,
-
-        });
-
-        let dash = connection.visited ? [1,0]: [10, 10];
-        featureLine.setStyle(new ol.style.Style({
-            stroke: new ol.style.Stroke({
-                color: colour,
-                width: 3,
-                lineDash: dash
-            })
-        }));
-
-        line.addFeature(featureLine);
-        layer.setSource(line);
-    }
+    line.addFeature(featureLine);
+    layer.setSource(line);
 }
 
 function addSingleConnection(connection){
@@ -205,7 +210,7 @@ function addSingleConnection(connection){
 
     });
     const colour = findSrsData(connection.srs).colour;
-    let dash = connection.visited ? [1,0]: [10, 10];
+
     featureLine.setStyle(new ol.style.Style({
         stroke: new ol.style.Stroke({
             color: colour,
@@ -233,6 +238,8 @@ function registerMapHandler(map){
             let content = document.getElementById("content-placeholder");
 
             jQuery(content).empty();
+            console.log(feature);
+            console.log(feature.get("visited"));
 
             let name = feature.get('name');
             let id = feature.get("id");
@@ -250,13 +257,13 @@ function registerMapHandler(map){
                 url="/location/detail/" +  feature.get('id');
             }
 
-            jQuery(content).append(infoBox(name, type, visited, operator, id, url, from, to));
+            jQuery(content).append(infoBox(name, type, visited, operator, id, url, from, to, feature));
         }
     });
 }
 
 
-function infoBox(info, type, data, toc, id, url, from, to){
+function infoBox(info, type, data, toc, id, url, from, to, feature){
     var infoTemplate = document.getElementsByTagName("template")[0];
     var infoElement = infoTemplate.content.querySelector("div");
     var renderedInfoElement = document.importNode(infoElement, true);
@@ -284,6 +291,19 @@ function infoBox(info, type, data, toc, id, url, from, to){
                 'from': from,
                 'to': to
               },
+              success: function() {
+                let btn = renderedInfoElement.querySelector("#visit");
+                btn.classList.remove('btn-primary');
+                btn.classList.add('btn-success');
+                renderedInfoElement.querySelector("#data").textContent = "Visited";
+
+                feature.setStyle(new ol.style.Style({
+                    stroke: new ol.style.Stroke({
+                        color: feature.getStyle().getStroke().color_,
+                        width: 3,
+                    })
+                }));
+              }
             });
         }
         else if(type === 'Location'){
@@ -295,6 +315,22 @@ function infoBox(info, type, data, toc, id, url, from, to){
                 'Authorization': renderedInfoElement.querySelector('#visit-form #Authorization').value,
                 'location': id
               },
+              success: function() {
+               let btn = renderedInfoElement.querySelector("#visit");
+               btn.classList.remove('btn-primary');
+               btn.classList.add('btn-success');
+               renderedInfoElement.querySelector("#data").textContent = "Visited";
+
+               let icon = '/assets/images/dot-visited.png';
+
+               feature.setStyle(new ol.style.Style({
+                   image: new ol.style.Icon(/** @type {olx.style.IconOptions} */({
+                       color: feature.getStyle().image_.color_,
+                       crossOrigin: 'anonymous',
+                       src: icon
+                   })),
+               }));
+              }
             });
         }
     }

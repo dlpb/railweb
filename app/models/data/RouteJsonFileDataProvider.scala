@@ -2,6 +2,7 @@ package models.data
 
 import com.typesafe.config.Config
 import javax.inject.Inject
+import models.data.file.JsonFileBasedDataProvider
 import models.route.Route
 
 class RouteJsonFileDataProvider @Inject()(config: Config)

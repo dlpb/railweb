@@ -1,5 +1,7 @@
 package models.location
 
+import java.io.InputStream
+
 import com.typesafe.config.Config
 import javax.inject.Inject
 import models.auth.User
@@ -14,6 +16,14 @@ class LocationsService @Inject() ( config: Config,
 
   private val dataRoot = config.getString("data.static.root")
   private val locations = makeLocations(readLocationsFromFile)
+
+  def getVisitsForUser(user: User): Option[Map[String, List[String]]] = {
+    dataProvider.getVisits(user)
+  }
+
+  def saveVisits(visits: Option[Map[String, List[String]]], user: User) = {
+    dataProvider.saveVisits(visits, user)
+  }
 
   def getLocation(id: String): Option[Location] =
     locations.find(_.id.equals(id))
@@ -68,8 +78,9 @@ class LocationsService @Inject() ( config: Config,
   }
 
   def readLocationsFromFile: String = {
-    Source.fromFile(dataRoot + "/locations.json").mkString
-  }
+    val path = "/data/static/locations.json"
+    val data: InputStream = getClass().getResourceAsStream(path)
+    Source.fromInputStream(data).mkString  }
 
   def makeLocations(locations: String): Set[Location] = {
     implicit val formats = DefaultFormats

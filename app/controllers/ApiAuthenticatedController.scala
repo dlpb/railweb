@@ -70,45 +70,49 @@ class ApiAuthenticatedController @Inject()(
 
   def visitLocation() = {
     authAction { implicit request =>
-      if(!request.user.roles.contains(VisitUser)) Unauthorized("User does not have the right role")
+      if (!request.user.roles.contains(VisitUser)) Unauthorized("User does not have the right role")
+      else {
+        val id = request.request.body.asFormUrlEncoded.get("location").headOption
 
-      val id = request.request.body.asFormUrlEncoded.get("location").headOption
-
-      id match {
-        case Some(loc) =>
-          locationService.getLocation(loc) match {
-            case Some(l) =>
-              locationService.visitLocation(l, request.user)
-              Ok(s"Loc found ${l.id}, visiting")
-            case None => NotFound
-          }
-        case None => BadRequest
+        id match {
+          case Some(loc) =>
+            locationService.getLocation(loc) match {
+              case Some(l) =>
+                locationService.visitLocation(l, request.user)
+                Ok(s"Loc found ${l.id}, visiting")
+              case None => NotFound
+            }
+          case None => BadRequest
+        }
       }
     }
   }
 
   def visitLocationWithParams(id: String) = {
     authAction { implicit request =>
-      if(!request.user.roles.contains(VisitUser)) Unauthorized("User does not have the right role")
+      if (!request.user.roles.contains(VisitUser)) Unauthorized("User does not have the right role")
+      else {
 
-      locationService.getLocation(id) match {
-        case Some(l) =>
-          locationService.visitLocation(l, request.user)
-          Redirect(routes.LocationController.showLocationDetailPage(id))
-        case None => NotFound
+        locationService.getLocation(id) match {
+          case Some(l) =>
+            locationService.visitLocation(l, request.user)
+            Redirect(routes.LocationController.showLocationDetailPage(id))
+          case None => NotFound
+        }
       }
     }
   }
 
   def visitLocationFromList(id: String) = {
     authAction { implicit request =>
-      if(!request.user.roles.contains(VisitUser)) Unauthorized("User does not have the right role")
-
-      locationService.getLocation(id) match {
-        case Some(l) =>
-          locationService.visitLocation(l, request.user)
-          Redirect(routes.LocationController.showLocationListPage())
-        case None => NotFound
+      if (!request.user.roles.contains(VisitUser)) Unauthorized("User does not have the right role")
+      else {
+        locationService.getLocation(id) match {
+          case Some(l) =>
+            locationService.visitLocation(l, request.user)
+            Redirect(routes.LocationController.showLocationListPage())
+          case None => NotFound
+        }
       }
     }
   }
@@ -124,6 +128,7 @@ class ApiAuthenticatedController @Inject()(
       }
     }
   }
+
   def getAllVisitsForLocations() = {
     authAction { implicit request =>
       Ok(Json.toJson(locationService.getVisitedLocations(request.user)))
@@ -132,67 +137,74 @@ class ApiAuthenticatedController @Inject()(
 
   def removeLastVisitForLocation(id: String) = {
     authAction { implicit request =>
-      if(!request.user.roles.contains(VisitUser)) Unauthorized("User does not have the right role")
-      locationService.getLocation(id) match {
-        case Some(l) =>
-          locationService.deleteLastVisit(l, request.user)
-          Redirect(routes.LocationController.showLocationDetailPage(id))
-        case None => NotFound
+      if (!request.user.roles.contains(VisitUser)) Unauthorized("User does not have the right role")
+      else {
+        locationService.getLocation(id) match {
+          case Some(l) =>
+            locationService.deleteLastVisit(l, request.user)
+            Redirect(routes.LocationController.showLocationDetailPage(id))
+          case None => NotFound
+        }
       }
     }
   }
 
   def removeAllVisitsForLocation(id: String) = {
     authAction { implicit request =>
-      if(!request.user.roles.contains(VisitUser)) Unauthorized("User does not have the right role")
-      locationService.getLocation(id) match {
-        case Some(l) =>
-          locationService.deleteAllVisits(l, request.user)
-          Redirect(routes.LocationController.showLocationDetailPage(id))
-        case None => NotFound
+      if (!request.user.roles.contains(VisitUser)) Unauthorized("User does not have the right role")
+      else {
+        locationService.getLocation(id) match {
+          case Some(l) =>
+            locationService.deleteAllVisits(l, request.user)
+            Redirect(routes.LocationController.showLocationDetailPage(id))
+          case None => NotFound
+        }
       }
     }
   }
 
   def visitRoute() = {
     authAction { implicit request =>
-      if(!request.user.roles.contains(VisitUser)) Unauthorized("User does not have the right role")
+      if (!request.user.roles.contains(VisitUser)) Unauthorized("User does not have the right role")
+      else {
+        val from = request.request.body.asFormUrlEncoded.get("from").headOption
+        val to = request.request.body.asFormUrlEncoded.get("to").headOption
 
-      val from = request.request.body.asFormUrlEncoded.get("from").headOption
-      val to = request.request.body.asFormUrlEncoded.get("to").headOption
-
-      (from, to) match {
-        case (Some(f), Some(t)) =>
-          routeService.getRoute(f, t) match {
-            case Some(r) => routeService.visitRoute(r, request.user)
-              Ok(s"Route found ${r.from.id}, ${r.to.id}, visiting")
-            case None => NotFound
-          }
-        case _ => BadRequest
+        (from, to) match {
+          case (Some(f), Some(t)) =>
+            routeService.getRoute(f, t) match {
+              case Some(r) => routeService.visitRoute(r, request.user)
+                Ok(s"Route found ${r.from.id}, ${r.to.id}, visiting")
+              case None => NotFound
+            }
+          case _ => BadRequest
+        }
       }
     }
   }
 
   def visitRouteWithParams(from: String, to: String) = {
     authAction { implicit request =>
-      if(!request.user.roles.contains(VisitUser)) Unauthorized("User does not have the right role")
-
-      routeService.getRoute(from, to) match {
-        case Some(r) => routeService.visitRoute(r, request.user)
-          Redirect(routes.RouteController.showRouteDetailPage(from, to))
-        case None => NotFound
+      if (!request.user.roles.contains(VisitUser)) Unauthorized("User does not have the right role")
+      else {
+        routeService.getRoute(from, to) match {
+          case Some(r) => routeService.visitRoute(r, request.user)
+            Redirect(routes.RouteController.showRouteDetailPage(from, to))
+          case None => NotFound
+        }
       }
     }
   }
 
   def visitRouteFromList(from: String, to: String) = {
     authAction { implicit request =>
-      if(!request.user.roles.contains(VisitUser)) Unauthorized("User does not have the right role")
-
-      routeService.getRoute(from, to) match {
-        case Some(r) => routeService.visitRoute(r, request.user)
-          Redirect(routes.RouteController.showRouteListPage())
-        case None => NotFound
+      if (!request.user.roles.contains(VisitUser)) Unauthorized("User does not have the right role")
+      else {
+        routeService.getRoute(from, to) match {
+          case Some(r) => routeService.visitRoute(r, request.user)
+            Redirect(routes.RouteController.showRouteListPage())
+          case None => NotFound
+        }
       }
     }
   }
@@ -218,26 +230,28 @@ class ApiAuthenticatedController @Inject()(
 
   def removeLastVisitForRoute(from: String, to: String) = {
     authAction { implicit request =>
-      if(!request.user.roles.contains(VisitUser)) Unauthorized("User does not have the right role")
-
-      routeService.getRoute(from, to) match {
-        case Some(r) =>
-          routeService.deleteLastVisit(r, request.user)
-          Redirect(routes.RouteController.showRouteDetailPage(from, to))
-        case None => NotFound
+      if (!request.user.roles.contains(VisitUser)) Unauthorized("User does not have the right role")
+      else {
+        routeService.getRoute(from, to) match {
+          case Some(r) =>
+            routeService.deleteLastVisit(r, request.user)
+            Redirect(routes.RouteController.showRouteDetailPage(from, to))
+          case None => NotFound
+        }
       }
     }
   }
 
   def removeAllVisitsForRoute(from: String, to: String) = {
     authAction { implicit request =>
-      if(!request.user.roles.contains(VisitUser)) Unauthorized("User does not have the right role")
-
-      routeService.getRoute(from, to) match {
-        case Some(r) =>
-          routeService.deleteAllVisits(r, request.user)
-          Redirect(routes.RouteController.showRouteDetailPage(from, to))
-        case None => NotFound
+      if (!request.user.roles.contains(VisitUser)) Unauthorized("User does not have the right role")
+      else {
+        routeService.getRoute(from, to) match {
+          case Some(r) =>
+            routeService.deleteAllVisits(r, request.user)
+            Redirect(routes.RouteController.showRouteDetailPage(from, to))
+          case None => NotFound
+        }
       }
     }
   }
