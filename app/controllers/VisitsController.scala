@@ -87,7 +87,7 @@ class VisitsController @Inject()(
       .flatMap { location => locationsService.getLocation(location._1) map { MapLocation(_) }}
       .toList
 
-    Ok(views.html.visits.byEventDetail(request.user, visitedRoutes, visitedLocations))
+    Ok(views.html.visits.byEventDetail(request.user, visitedRoutes, visitedLocations, event))
 
   }
 

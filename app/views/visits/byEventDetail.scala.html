@@ -4,6 +4,7 @@
 user: models.auth.User,
 routeList: List[models.route.MapRoute],
 locations: List[models.location.MapLocation],
+event: String
 )(implicit request: Request[AnyContent])
 <head>
     <meta charset="utf-8">
@@ -89,13 +90,14 @@ locations: List[models.location.MapLocation],
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="/profile">Profile</a></li>
         <li class="breadcrumb-item"><a href="/profile/visits">Visits</a></li>
-        <li class="breadcrumb-item active" aria-current="page">By Route</li>
+        <li class="breadcrumb-item"><a href="/profile/visits/by/event">By Event</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Event: @event</li>
     </ol>
 </nav>
 <div class="container">
     <div class="content">
         <div class="row">
-            <h1>Event</h1>
+            <h1>Event: @event</h1>
         </div>
         <div class="row">
             <div class="col-sm">
