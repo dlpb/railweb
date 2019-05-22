@@ -74,12 +74,21 @@ class VisitsController @Inject()(
   }
 
   def visitsByEventDetailPage(event: String) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
-    val visitedRoutes = routesService.getVisitsForUser(request.user)
+    val visitedRoutes: List[Route] = routesService.getVisitsForUser(request.user)
       .getOrElse(Map.empty)
       .filter(_._2.contains(event))
       .map { route => RouteDataIdConverter.stringToRouteIds(route._1)}
-      .flatMap { route => routesService.getRoute(route._1, route._2) map {MapRoute(_)}}
+      .map { route => routesService.getRoute(route._1, route._2)}
       .toList
+      .flatten
+
+    val distance: Long = visitedRoutes
+      .map({ _.distance })
+      .sum
+
+    val visitedMapRoutes = visitedRoutes
+      .map { MapRoute(_) }
+
 
     val visitedLocations = locationsService.getVisitsForUser(request.user)
       .getOrElse(Map.empty)
@@ -87,7 +96,7 @@ class VisitsController @Inject()(
       .flatMap { location => locationsService.getLocation(location._1) map { MapLocation(_) }}
       .toList
 
-    Ok(views.html.visits.byEventDetail(request.user, visitedRoutes, visitedLocations, event))
+    Ok(views.html.visits.byEventDetail(request.user, visitedMapRoutes, visitedLocations, event, distance))
 
   }
 

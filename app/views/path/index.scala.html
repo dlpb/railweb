@@ -6,6 +6,7 @@ routeList: List[models.route.MapRoute],
 waypoints: String,
 followFreightLinks: Boolean,
 followFixedLinks: Boolean,
+distance: Long,
 messages: List[String]
 )(implicit request: Request[AnyContent])
 <head>
@@ -189,6 +190,7 @@ messages: List[String]
                 <div class="card card-body">
                     @if(locations.nonEmpty){
                         <h4>Route from @locations.head.name to @locations.last.name</h4>
+                        <p>Distance: @(distance/1000.0)km</p>
 
                         @helper.CSRF.formField
                         <table>

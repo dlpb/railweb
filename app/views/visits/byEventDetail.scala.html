@@ -4,7 +4,8 @@
 user: models.auth.User,
 routeList: List[models.route.MapRoute],
 locations: List[models.location.MapLocation],
-event: String
+event: String,
+distance: Long
 )(implicit request: Request[AnyContent])
 <head>
     <meta charset="utf-8">
@@ -98,6 +99,12 @@ event: String
     <div class="content">
         <div class="row">
             <h1>Event: @event</h1>
+        </div>
+        <div class="row">
+            <div class="alert alert-light" role="alert">
+                <p>Distance: @(distance/1000.0)km</p>
+                <p>Locations: @locations.size</p>
+            </div>
         </div>
         <div class="row">
             <div class="col-sm">
