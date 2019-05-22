@@ -1,7 +1,8 @@
 @import helper._
 
 @(
-user: models.auth.User
+user: models.auth.User,
+locationVisits: Map[String, List[String]]
 )(implicit request: Request[AnyContent])
 <head>
      <meta charset="utf-8">
@@ -77,31 +78,28 @@ user: models.auth.User
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="/profile">Profile</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Visits</li>
+        <li class="breadcrumb-item"><a href="/profile/visits">Visits</a></li>
+        <li class="breadcrumb-item active" aria-current="page">By Location</li>
     </ol>
 </nav>
 <div class="container">
     <div class="content">
         <div class="row">
             <div class="col-sm">
-                <h1>Visits</h1>
-            </div>
-        </div>
-        <div class="row text-center">
-            <div class="col-sm">
-                <div class="card card-body">
-                    <h3><a href="/profile/visits/by/location">By Location</a></h3>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card card-body">
-                    <h3><a href="/profile/visits/by/route">By Route</a></h3>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card card-body">
-                    <h3><a href="/profile/visits/by/event">By Event</a></h3>
-                </div>
+                <h1>Locations</h1>
+                @for((key, value) <- locationVisits) {
+                <ul>
+                    <li>
+                        <a href="/location/detail/@key" target="_blank">@key</a> - visited @value.size times
+                        <ul>
+                            @for(v <- value){
+                            <li>@v</li>
+                            }
+                        </ul>
+                    </li>
+                </ul>
+
+                }
             </div>
         </div>
     </div>

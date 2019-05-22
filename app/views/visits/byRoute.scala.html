@@ -1,7 +1,9 @@
 @import helper._
 
 @(
-user: models.auth.User
+user: models.auth.User,
+routeVisits: Map[(String, String), List[String]],
+invalidRoutes: Set[(String, String)]
 )(implicit request: Request[AnyContent])
 <head>
      <meta charset="utf-8">
@@ -77,31 +79,34 @@ user: models.auth.User
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="/profile">Profile</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Visits</li>
+        <li class="breadcrumb-item"><a href="/profile/visits">Visits</a></li>
+        <li class="breadcrumb-item active" aria-current="page">By Route</li>
     </ol>
 </nav>
 <div class="container">
     <div class="content">
         <div class="row">
             <div class="col-sm">
-                <h1>Visits</h1>
-            </div>
-        </div>
-        <div class="row text-center">
-            <div class="col-sm">
-                <div class="card card-body">
-                    <h3><a href="/profile/visits/by/location">By Location</a></h3>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card card-body">
-                    <h3><a href="/profile/visits/by/route">By Route</a></h3>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card card-body">
-                    <h3><a href="/profile/visits/by/event">By Event</a></h3>
-                </div>
+                <h1>Routes</h1>
+                @for((key, value) <- routeVisits) {
+                <ul>
+                    <li>
+                        <a href="/route/detail/@key._1/@key._2" target="_blank">@key._1 - @key._2</a> - visited @value.size times
+                        @if(invalidRoutes.contains(key._1, key._2)){
+                            <span class="badge badge-danger">Invalid Route</span>
+                            @if(user.roles.contains(models.auth.roles.AdminUser)){
+                                <a href="/admin/routes/migrate?from=@key._1&to=@key._2">Migrate Route</a>
+                            }
+                        }
+                        <ul>
+                            @for(v <- value){
+                            <li>@v</li>
+                            }
+                        </ul>
+                    </li>
+                </ul>
+
+                }
             </div>
         </div>
     </div>

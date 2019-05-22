@@ -14,8 +14,16 @@ GET /welcome                        controllers.LandingPageController.showLandin
 GET /logout                         controllers.AuthenticatedUserController.logout
 GET /profile                        controllers.AuthenticatedUserController.profile
 GET /profile/changePassword         controllers.AuthenticatedUserController.changePasswordView
-GET /profile/visits                 controllers.AuthenticatedUserController.visits
 POST /profile/changePassword        controllers.AuthenticatedUserController.changePassword
+GET /profile/visits                 controllers.VisitsController.visitsPage
+GET /profile/visits/by/location     controllers.VisitsController.visitsByLocationPage
+GET /profile/visits/by/route        controllers.VisitsController.visitsByRoutePage
+GET /profile/visits/by/event        controllers.VisitsController.visitsByEventPage
+GET /profile/visits/by/event/:evt   controllers.VisitsController.visitsByEventDetailPage(evt: String)
+
+
+
+
 GET /about                          controllers.UserController.about
 
 GET /admin                          controllers.AdminController.admin
