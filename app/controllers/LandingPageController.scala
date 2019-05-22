@@ -15,7 +15,7 @@ class LandingPageController @Inject()(
   // this is where the user comes immediately after logging in.
   // notice that this uses `authenticatedUserAction`.
   def showLandingPage() = authenticatedUserAction { implicit request =>
-    Ok(views.html.loginLandingPage(request.user))
+    Ok(views.html.landing.index(request.user))
   }
 
 }

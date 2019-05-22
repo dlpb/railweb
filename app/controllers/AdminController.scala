@@ -31,7 +31,7 @@ class AdminController @Inject()(
         Redirect(routes.LandingPageController.showLandingPage())
       }
       else {
-        Ok(views.html.admin(token, request.user))
+        Ok(views.html.admin.index(token, request.user))
       }
   }
 
@@ -42,7 +42,7 @@ class AdminController @Inject()(
         Redirect(routes.LandingPageController.showLandingPage())
       }
       else {
-        Ok(views.html.adminUsers(token, request.user))
+        Ok(views.html.admin.users(token, request.user))
       }
   }
 
@@ -53,7 +53,7 @@ class AdminController @Inject()(
         Redirect(routes.LandingPageController.showLandingPage())
       }
       else {
-        Ok(views.html.adminUsersCreate(token, request.user, userDao.getUsers, List()))
+        Ok(views.html.admin.usersCreate(token, request.user, userDao.getUsers, List()))
       }
   }
 
@@ -64,7 +64,7 @@ class AdminController @Inject()(
         Redirect(routes.LandingPageController.showLandingPage())
       }
       else {
-        Ok(views.html.adminUsersUpdate(token, request.user, userDao.getUsers, List()))
+        Ok(views.html.admin.usersUpdate(token, request.user, userDao.getUsers, List()))
       }
   }
 
@@ -75,7 +75,7 @@ class AdminController @Inject()(
         Redirect(routes.LandingPageController.showLandingPage())
       }
       else {
-        Ok(views.html.adminUsersDelete(token, request.user, userDao.getUsers, List()))
+        Ok(views.html.admin.usersDelete(token, request.user, userDao.getUsers, List()))
       }
   }
 
@@ -90,9 +90,9 @@ class AdminController @Inject()(
           case Some(user) =>
             val locations = locationsService.getVisitsForUser(user)
             val routes = routesService.getVisitsForUser(user)
-            Ok(views.html.adminUserUpdateData(token, request.user, user.id, VisitJsonUtils.toJson(locations), VisitJsonUtils.toJson(routes), List()))
+            Ok(views.html.admin.userUpdateData(token, request.user, user.id, VisitJsonUtils.toJson(locations), VisitJsonUtils.toJson(routes), List()))
           case None =>
-            NotFound(views.html.adminUserUpdateData(token, request.user, -1L, "", "", List(s"User with id $userId not found")))
+            NotFound(views.html.admin.userUpdateData(token, request.user, -1L, "", "", List(s"User with id $userId not found")))
         }
       }
   }
@@ -120,21 +120,21 @@ class AdminController @Inject()(
                           locationsService.saveVisits(VisitJsonUtils.fromJson(locations), user)
                           routesService.saveVisits(VisitJsonUtils.fromJson(routes), user)
 
-                          Ok(views.html.adminUserUpdateData(token, request.user, userId, locations, routes, List("Saved")))
+                          Ok(views.html.admin.userUpdateData(token, request.user, userId, locations, routes, List("Saved")))
                         case None =>
-                          Ok(views.html.adminUserUpdateData(token, request.user, userId, locations, routes, List("could not find user")))
+                          Ok(views.html.admin.userUpdateData(token, request.user, userId, locations, routes, List("could not find user")))
                       }
                     }
                     else
-                      Ok(views.html.adminUserUpdateData(token, request.user, userId, locations, routes, List("Invalid confirmation")))
+                      Ok(views.html.admin.userUpdateData(token, request.user, userId, locations, routes, List("Invalid confirmation")))
                   case None =>
-                    Ok(views.html.adminUserUpdateData(token, request.user, userId, locations, routes, List("Error finding admin user")))
+                    Ok(views.html.admin.userUpdateData(token, request.user, userId, locations, routes, List("Error finding admin user")))
                 }
               case None =>
-                Ok(views.html.adminUserUpdateData(token, request.user, userId, locations, routes, List("Please enter confirmation")))
+                Ok(views.html.admin.userUpdateData(token, request.user, userId, locations, routes, List("Please enter confirmation")))
             }
           case _ =>
-            Ok(views.html.adminUserUpdateData(token, request.user, userId, "", "", List("Saved")))
+            Ok(views.html.admin.userUpdateData(token, request.user, userId, "", "", List("Saved")))
         }
       }
   }
@@ -147,7 +147,7 @@ class AdminController @Inject()(
         val data = request.request.body.asFormUrlEncoded
         val token = jwtService.createToken(request.user, new Date())
 
-        def view(messages: List[String]): Result = Ok(views.html.adminUsersDelete(token, request.user, userDao.getUsers, messages))
+        def view(messages: List[String]): Result = Ok(views.html.admin.usersDelete(token, request.user, userDao.getUsers, messages))
 
         def fn(data: Option[Map[String, Seq[String]]]): Result = {
           data.get("id").headOption match {
@@ -155,13 +155,13 @@ class AdminController @Inject()(
               userDao.findUserById(id.toLong) flatMap { u => userDao.getDaoUser(u) } match {
                 case Some(daoUser) =>
                   userDao.deleteUser(daoUser)
-                  Ok(views.html.adminUsersDelete(token, request.user, userDao.getUsers, List(s"Deleted user")))
+                  Ok(views.html.admin.usersDelete(token, request.user, userDao.getUsers, List(s"Deleted user")))
                 case None =>
-                  Ok(views.html.adminUsersDelete(token, request.user, userDao.getUsers, List("No user data")))
+                  Ok(views.html.admin.usersDelete(token, request.user, userDao.getUsers, List("No user data")))
               }
 
             case _ =>
-              Ok(views.html.adminUsersDelete(token, request.user, userDao.getUsers, List("Invalid data")))
+              Ok(views.html.admin.usersDelete(token, request.user, userDao.getUsers, List("Invalid data")))
           }
         }
 
@@ -177,7 +177,7 @@ class AdminController @Inject()(
         val data = request.request.body.asFormUrlEncoded
         val token = jwtService.createToken(request.user, new Date())
 
-        def view(messages: List[String]): Result = Ok(views.html.adminUsersUpdate(token, request.user, userDao.getUsers, messages))
+        def view(messages: List[String]): Result = Ok(views.html.admin.usersUpdate(token, request.user, userDao.getUsers, messages))
 
         def fn(data: Option[Map[String, Seq[String]]]): Result = {
           (data.get("id").headOption, data.get("username").headOption, data.get("password").headOption, data.get("roles").headOption) match {
@@ -185,13 +185,13 @@ class AdminController @Inject()(
               userDao.findUserById(id.toLong) flatMap { u => userDao.getDaoUser(u) } match {
                 case Some(daoUser) =>
                   userDao.updateUser(daoUser.copy(username = username, password = password, roles = roles.split(",").toSet))
-                  Ok(views.html.adminUsersUpdate(token, request.user, userDao.getUsers, List(s"Updated user $id $username")))
+                  Ok(views.html.admin.usersUpdate(token, request.user, userDao.getUsers, List(s"Updated user $id $username")))
                 case None =>
-                  Ok(views.html.adminUsersUpdate(token, request.user, userDao.getUsers, List("No user data")))
+                  Ok(views.html.admin.usersUpdate(token, request.user, userDao.getUsers, List("No user data")))
               }
 
             case _ =>
-              Ok(views.html.adminUsersUpdate(token, request.user, userDao.getUsers, List("Invalid data")))
+              Ok(views.html.admin.usersUpdate(token, request.user, userDao.getUsers, List("Invalid data")))
           }
         }
         ensureValidConfirmation(request, data, view _, fn _)
@@ -205,20 +205,20 @@ class AdminController @Inject()(
         val data = request.request.body.asFormUrlEncoded
         val token = jwtService.createToken(request.user, new Date())
 
-        def view(messages: List[String]): Result = Ok(views.html.adminUsersCreate(token, request.user, userDao.getUsers, messages))
+        def view(messages: List[String]): Result = Ok(views.html.admin.usersCreate(token, request.user, userDao.getUsers, messages))
 
         def fn(data: Option[Map[String, Seq[String]]]): Result = {
           (data.get("username").headOption, data.get("password").headOption, data.get("roles").headOption) match {
             case (Some(username), Some(password), Some(roles)) =>
               if (userDao.usernameInUse(username))
-                Ok(views.html.adminUsersCreate(token, request.user, userDao.getUsers, List(s"Username $username is already in use")))
+                Ok(views.html.admin.usersCreate(token, request.user, userDao.getUsers, List(s"Username $username is already in use")))
               else {
                 userDao.createUser(username, password, roles.split(",").toSet)
-                Ok(views.html.adminUsersCreate(token, request.user, userDao.getUsers, List()))
+                Ok(views.html.admin.usersCreate(token, request.user, userDao.getUsers, List()))
               }
 
             case _ =>
-              Ok(views.html.adminUsersCreate(token, request.user, userDao.getUsers, List("Invalid data")))
+              Ok(views.html.admin.usersCreate(token, request.user, userDao.getUsers, List("Invalid data")))
           }
         }
         ensureValidConfirmation(request, data, view _, fn _)
@@ -232,7 +232,7 @@ class AdminController @Inject()(
         Redirect(routes.LandingPageController.showLandingPage())
       }
       else {
-        Ok(views.html.adminMigrateRoute(token, request.user, from, to,"", List()))
+        Ok(views.html.admin.migrateRoute(token, request.user, from, to,"", List()))
       }
   }
 
@@ -244,7 +244,7 @@ class AdminController @Inject()(
         val data = request.request.body.asFormUrlEncoded
         val token = jwtService.createToken(request.user, new Date())
 
-        def view(messages: List[String]): Result = Ok(views.html.adminMigrateRoute(token, request.user, "", "","", messages))
+        def view(messages: List[String]): Result = Ok(views.html.admin.migrateRoute(token, request.user, "", "","", messages))
 
         def fn(data: Option[Map[String, Seq[String]]]): Result = {
           (data.get("from").headOption, data.get("to").headOption, data.get("newRoutes").headOption) match {
@@ -253,11 +253,11 @@ class AdminController @Inject()(
               val routes: List[Route] = newRoutes.split("\n").toList flatMap {
                 inputRoute =>
                   println(inputRoute)
-                  if(!inputRoute.contains(",")) Ok(views.html.adminMigrateRoute(token, request.user, from, to, newRoutes, List(s"Error processing $inputRoute. Must contain a comma separated value on a line")))
+                  if(!inputRoute.contains(",")) Ok(views.html.admin.migrateRoute(token, request.user, from, to, newRoutes, List(s"Error processing $inputRoute. Must contain a comma separated value on a line")))
                   val routeParts = inputRoute.split(",")
-                  if(!routeParts.size.equals(2)) Ok(views.html.adminMigrateRoute(token, request.user, from, to, newRoutes, List(s"Error processing $inputRoute. Must contain a comma separated value on a line")))
+                  if(!routeParts.size.equals(2)) Ok(views.html.admin.migrateRoute(token, request.user, from, to, newRoutes, List(s"Error processing $inputRoute. Must contain a comma separated value on a line")))
                   val route = routesService.getRoute(routeParts(0).trim, routeParts(1).trim)
-                  if(route.isEmpty) Ok(views.html.adminMigrateRoute(token, request.user, from, to, newRoutes, List(s"Error processing $inputRoute. No valid route found")))
+                  if(route.isEmpty) Ok(views.html.admin.migrateRoute(token, request.user, from, to, newRoutes, List(s"Error processing $inputRoute. No valid route found")))
                   route
               }
               userDao.getUsers foreach { user =>
@@ -265,10 +265,10 @@ class AdminController @Inject()(
                   routesService.migrate(oldRoute, routes, _)
                 }
               }
-              Ok(views.html.adminMigrateRoute(token, request.user, from, to, newRoutes, List("Updated")))
+              Ok(views.html.admin.migrateRoute(token, request.user, from, to, newRoutes, List("Updated")))
 
             case _ =>
-              Ok(views.html.adminMigrateRoute(token, request.user,"", "","", List("Invalid data")))
+              Ok(views.html.admin.migrateRoute(token, request.user,"", "","", List("Invalid data")))
           }
         }
         ensureValidConfirmation(request, data, view _, fn _)

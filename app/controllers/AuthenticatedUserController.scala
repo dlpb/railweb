@@ -43,12 +43,12 @@ class AuthenticatedUserController @Inject()(
 
   def profile = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     val token = jwtService.createToken(request.user, new Date())
-    Ok(views.html.profile(token, request.user, form, List()))
+    Ok(views.html.profile.index(token, request.user, form, List()))
   }
 
   def changePasswordView = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     val token = jwtService.createToken(request.user, new Date())
-    Ok(views.html.changePassword(token, request.user, form, List()))
+    Ok(views.html.profile.changePassword(token, request.user, form, List()))
   }
 
   def visits = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
@@ -58,7 +58,7 @@ class AuthenticatedUserController @Inject()(
     }
     val invalidRoutes: Set[(String, String)] = routes.keySet.filter(r => routesService.getRoute(r._1, r._2).isEmpty)
     val locations = locationsService.getVisitsForUser(request.user).getOrElse(Map.empty[String, List[String]])
-    Ok(views.html.visits(request.user, locations, routes, invalidRoutes))
+    Ok(views.html.visits.index(request.user, locations, routes, invalidRoutes))
 
   }
 
@@ -75,17 +75,17 @@ class AuthenticatedUserController @Inject()(
               if (newPassword.equals(confirmPassword)) {
                 val newDaoUser = daoUser.copy(password = userDao.encryptPassword(newPassword))
                 userDao.updateUser(newDaoUser)
-                Ok(views.html.profile(token, request.user, form, List()))
+                Ok(views.html.profile.index(token, request.user, form, List()))
               } else
-                Ok(views.html.profile(token, request.user, form, List("Passwords do not match")))
+                Ok(views.html.profile.index(token, request.user, form, List("Passwords do not match")))
             }
             else
-              Ok(views.html.profile(token, request.user, form, List("Password was not correct")))
+              Ok(views.html.profile.index(token, request.user, form, List("Password was not correct")))
           case None =>
-            Ok(views.html.profile(token, request.user, form, List("Something went wrong, please try again. Error 2")))
+            Ok(views.html.profile.index(token, request.user, form, List("Something went wrong, please try again. Error 2")))
         }
       case _ =>
-        Ok(views.html.profile(token, request.user, form, List("Something went wrong, please try again. Error 1")))
+        Ok(views.html.profile.index(token, request.user, form, List("Something went wrong, please try again. Error 1")))
     }
   }
 
