@@ -178,6 +178,7 @@ removeAll: Call)(implicit request: Request[AnyContent])
                     <li>Electrification: @route.electrification</li>
                     <li>Speed (MPH): @route.speed</li>
                     <li>SRS Code: @route.srsCode</li>
+                    <li>Distance: @(route.distance/1000.0)km</li>
                 </ul>
             </div>
             <div class="col-sm">
