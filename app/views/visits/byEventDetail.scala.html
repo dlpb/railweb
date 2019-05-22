@@ -145,16 +145,14 @@ event: String
 
 
         @for(location <- locations){
-            const operator = "@location.operator";
-            const lat = @location.location.lat;
-            const lon = @location.location.lon;
+
             addLocation(
             {
                 "location": {
-                    "lat":lat,
-                    "lon":lon
+                    "lat":@location.location.lat,
+                    "lon":@location.location.lon
                 },
-                "operator":operator
+                "operator":"@location.operator"
             })
         }
 
