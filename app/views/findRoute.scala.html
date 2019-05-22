@@ -5,7 +5,8 @@ locations: List[models.location.MapLocation],
 routeList: List[models.route.MapRoute],
 waypoints: String,
 followFreightLinks: Boolean,
-followFixedLinks: Boolean
+followFixedLinks: Boolean,
+messages: List[String]
 )(implicit request: Request[AnyContent])
 <head>
     <meta charset="utf-8">
@@ -116,6 +117,16 @@ followFixedLinks: Boolean
 </nav>
 <div class="container">
     <div class="content">
+        @if(messages.size > 0){
+        <div class="alert alert-primary">
+            <h2>Messages</h2>
+            <ul>
+                @for(message <- messages){
+                <li>@message</li>
+                }
+            </ul>
+        </div>
+        }
         <div class="row">
             <div class="col-sm">
                 <div class="card card-body">

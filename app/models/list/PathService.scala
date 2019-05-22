@@ -7,12 +7,55 @@ import models.route.{Route, RoutesService}
 import scala.collection.mutable
 
 
-class ListService @Inject()(
+class PathService @Inject()(
                              routesService: RoutesService,
                              locationsService: LocationsService
                            ) {
 
+  def findRouteForWaypoints(waypoints: List[String], followFixedLinks: Boolean = false, followFreightLinks: Boolean = false): Path = {
+    def getRoutes(locations: List[Location]): List[Route] = {
+      def process(current: Location, rest: List[Location], accumulator: List[Route]): List[Route] = {
+        rest match {
+          case Nil => accumulator
+          case head :: _ =>
+            val route: List[Route] = {
+              val ft = routesService.getRoute(current.id, head.id)
+              val tf = routesService.getRoute(head.id, current.id)
+              if (ft.isEmpty)
+                if (tf.isEmpty) List()
+                else List(tf.get)
+              else List(ft.get)
+            }
+            process(rest.head, rest.tail, route ++ accumulator)
+        }
+      }
+      process(locations.head, locations.tail, List()).reverse
+    }
 
+    var routes: List[Route] = List.empty
+    var locations: List[Location] = List.empty
+    if (waypoints.size >= 2) {
+      for (i <- 0 until waypoints.size - 1 ) {
+        val from = waypoints(i).trim.toUpperCase()
+        val to = waypoints(i + 1).trim.toUpperCase()
+        (locationsService.getLocation(from.toUpperCase), locationsService.getLocation(to.toUpperCase)) match {
+          case (Some(f), Some(t)) =>
+            val routeLocations: List[Location] = list(f, t, followFixedLinks, followFreightLinks)
+            if(i == 0) {
+              locations = locations ++ routeLocations
+            }
+            else {
+              locations = locations ++ routeLocations.tail
+            }
+            routes = routes ++ getRoutes(routeLocations)
+          case _ =>
+            throw new IllegalArgumentException(s"Could not find one or more of the locations in ['$from', '$to']")
+        }
+      }
+    }
+
+    Path(routes, locations)
+  }
 
   def list(beginning: Location,
            end: Location,
@@ -128,3 +171,5 @@ class ListService @Inject()(
 
 
 }
+
+case class Path(routes: List[Route], locations: List[Location])

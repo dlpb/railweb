@@ -167,6 +167,7 @@ srs: String)(implicit request: Request[AnyContent])
             </div>
 
         </div>
+
         @for((key, route) <- routeList){
         <div style="padding:1px">
             @helper.form(visitCalls(key), 'id -> "visit-form-@key", 'style -> "display: inline") {
