@@ -65,6 +65,13 @@ class LocationsService @Inject() ( config: Config,
     }
   }
 
+  def getLocationsVisitedForEvent(event: String, user: User): List[Location] = {
+    getVisitsForUser(user)
+      .getOrElse(Map.empty)
+      .filter(_._2.contains(event))
+      .flatMap { location => getLocation(location._1)}
+      .toList
+  }
   def visitLocation(location: Location, user: User): Unit = {
     dataProvider.saveVisit(location, user)
   }

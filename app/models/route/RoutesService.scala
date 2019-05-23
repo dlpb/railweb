@@ -4,8 +4,9 @@ import java.io.InputStream
 
 import com.typesafe.config.Config
 import javax.inject.Inject
-import models.auth.{DaoUser, User}
+import models.auth.User
 import models.data.RouteDataProvider
+import models.data.postgres.RouteDataIdConverter
 import org.json4s.DefaultFormats
 import org.json4s.jackson.JsonMethods.parse
 
@@ -53,6 +54,16 @@ class RoutesService @Inject() ( config: Config,
       case None =>
         List()
     }
+  }
+
+  def getRoutesVisitedForEvent(event: String, user: User): List[Route] = {
+    getVisitsForUser(user)
+      .getOrElse(Map.empty)
+      .filter(_._2.contains(event))
+      .keySet
+      .map { route => RouteDataIdConverter.stringToRouteIds(route)}
+      .flatMap { route => getRoute(route._1, route._2) }
+      .toList
   }
 
   def visitRoute(route: Route, user: User): Unit = {

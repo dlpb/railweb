@@ -6,7 +6,7 @@ import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject.{Inject, Singleton}
 import models.auth.UserDao
 import models.data.postgres.RouteDataIdConverter
-import models.location.{LocationsService, MapLocation}
+import models.location.{Location, LocationsService, MapLocation}
 import models.route.{MapRoute, Route, RoutesService}
 import models.visits.Event
 import play.api.mvc.{AbstractController, AnyContent, ControllerComponents}
@@ -30,18 +30,31 @@ class VisitsController @Inject()(
   }
 
   def visitsByLocationPage = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
-    val locations = locationsService.getVisitsForUser(request.user).getOrElse(Map.empty[String, List[String]])
-    Ok(views.html.visits.byLocation(request.user, locations))
+    val locations: Map[String, List[String]] = locationsService.getVisitsForUser(request.user).getOrElse(Map.empty[String, List[String]])
+    val mapLocations: List[MapLocation] = locations
+        .keySet
+        .flatMap { locationsService.getLocation }
+        .map { MapLocation(_) }
+        .toList
+
+    Ok(views.html.visits.byLocation(request.user, locations, mapLocations))
 
   }
 
   def visitsByRoutePage = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
-    val routes = routesService.getVisitsForUser(request.user).getOrElse(Map.empty[String, List[String]]) map {
+    val routes: Map[(String, String), List[String]] = routesService.getVisitsForUser(request.user).getOrElse(Map.empty[String, List[String]]) map {
       r =>
         RouteDataIdConverter.stringToRouteIds(r._1) -> r._2
     }
     val invalidRoutes: Set[(String, String)] = routes.keySet.filter(r => routesService.getRoute(r._1, r._2).isEmpty)
-    Ok(views.html.visits.byRoute(request.user, routes, invalidRoutes))
+
+    val mapRoutes: List[MapRoute] = routes
+        .keySet
+        .flatMap { r => routesService.getRoute(r._1, r._2) }
+        .map { MapRoute(_) }
+        .toList
+
+    Ok(views.html.visits.byRoute(request.user, routes, invalidRoutes, mapRoutes))
 
   }
 
@@ -74,13 +87,8 @@ class VisitsController @Inject()(
   }
 
   def visitsByEventDetailPage(event: String) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
-    val visitedRoutes: List[Route] = routesService.getVisitsForUser(request.user)
-      .getOrElse(Map.empty)
-      .filter(_._2.contains(event))
-      .map { route => RouteDataIdConverter.stringToRouteIds(route._1)}
-      .map { route => routesService.getRoute(route._1, route._2)}
-      .toList
-      .flatten
+    val visitedRoutes: List[Route] = routesService.getRoutesVisitedForEvent(event, request.user)
+    val visitedLocations = locationsService.getLocationsVisitedForEvent(event, request.user) map { MapLocation(_) }
 
     val distance: Long = visitedRoutes
       .map({ _.distance })
@@ -88,13 +96,6 @@ class VisitsController @Inject()(
 
     val visitedMapRoutes = visitedRoutes
       .map { MapRoute(_) }
-
-
-    val visitedLocations = locationsService.getVisitsForUser(request.user)
-      .getOrElse(Map.empty)
-      .filter(_._2.contains(event))
-      .flatMap { location => locationsService.getLocation(location._1) map { MapLocation(_) }}
-      .toList
 
     Ok(views.html.visits.byEventDetail(request.user, visitedMapRoutes, visitedLocations, event, distance))
 
