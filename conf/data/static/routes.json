@@ -57317,6 +57317,29 @@
   },
   {
     "from":{
+      "lat":53.356174,
+      "lon":-2.7778817,
+      "id":"DITTNWJ",
+      "name":"Ditton West Junction",
+      "type":"Infrastructure"
+    },
+    "to":{
+      "lat":53.353681,
+      "lon":-2.8264235,
+      "id":"HALWFSD",
+      "name":"Fords Sdgs Halewood",
+      "type":"Infrastructure"
+    },
+    "toc":"FRGT",
+    "singleTrack":"N",
+    "electrification":"OHLE",
+    "speed":"0-35",
+    "srsCode":"N.99",
+    "type":"NR",
+    "distance":3233
+  },
+  {
+    "from":{
       "lat":54.95874771,
       "lon":-1.665625902,
       "id":"MCE",
@@ -62834,6 +62857,29 @@
     "srsCode":"L.08/9",
     "type":"NR",
     "distance":1502
+  },
+  {
+    "from":{
+      "lat":53.353681,
+      "lon":-2.8264235,
+      "id":"HALWFSD",
+      "name":"Fords Sdgs Halewood",
+      "type":"Infrastructure"
+    },
+    "to":{
+      "lat":53.353382,
+      "lon":-2.8660805,
+      "id":"SPEKEJ",
+      "name":"Speke Jn",
+      "type":"Infrastructure"
+    },
+    "toc":"FRGT",
+    "singleTrack":"N",
+    "electrification":"OHLE",
+    "speed":"0-35",
+    "srsCode":"N.99",
+    "type":"NR",
+    "distance":2632
   },
   {
     "from":{
