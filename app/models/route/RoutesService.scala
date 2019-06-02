@@ -39,9 +39,10 @@ class RoutesService @Inject() ( config: Config,
     routes map { l => ListRoute(l) }
   }
   def getVisitedRoutes(user: User): List[String] = {
-    dataProvider.getVisits(user).map {
-      data =>
-        data.keySet.toList
+    dataProvider.getVisits(user)
+      .map {
+        data =>
+          data.filter(d => d._2.nonEmpty).keySet.toList
     }.getOrElse(List())
   }
 
