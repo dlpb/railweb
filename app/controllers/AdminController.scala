@@ -117,10 +117,25 @@ class AdminController @Inject()(
                     if (encryptedConfirmation.equals(adminUser.password)) {
                       userDao.findUserById(userId) match {
                         case Some(user) =>
-                          locationsService.saveVisits(VisitJsonUtils.fromJson(locations), user)
-                          routesService.saveVisits(VisitJsonUtils.fromJson(routes), user)
+                          var messages: List[String] = List()
 
-                          Ok(views.html.admin.userUpdateData(token, request.user, userId, locations, routes, List("Saved")))
+                          VisitJsonUtils.fromJson(locations) match {
+                            case Right(json) =>
+                              locationsService.saveVisits(json, user)
+                              messages = "Saved Locations" :: messages
+                            case Left(msg) =>
+                              messages = msg :: messages
+                          }
+
+                          VisitJsonUtils.fromJson(routes) match {
+                            case Right(json) =>
+                              routesService.saveVisits(json, user)
+                              messages = "Saved Routes" :: messages
+                            case Left(msg) =>
+                              messages = msg :: messages
+
+                          }
+                          Ok(views.html.admin.userUpdateData(token, request.user, userId, locations, routes, messages))
                         case None =>
                           Ok(views.html.admin.userUpdateData(token, request.user, userId, locations, routes, List("could not find user")))
                       }

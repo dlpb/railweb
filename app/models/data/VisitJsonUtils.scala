@@ -10,16 +10,16 @@ object VisitJsonUtils {
     json
   }
 
-  def fromJson(data: String): Option[Map[String, List[String]]] = {
+  def fromJson(data: String): Either[String, Option[Map[String, List[String]]]] = {
     try {
       import org.json4s._
       import org.json4s.jackson.JsonMethods._
       implicit val formats = DefaultFormats
       val allVisits = parse(data).extract[Map[String, List[String]]]
-      Some(allVisits)
+      Right(Some(allVisits))
     }
     catch {
-      case e: Exception => None
+      case e: Exception => Left(e.getMessage)
     }
   }
 }
