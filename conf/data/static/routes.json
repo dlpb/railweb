@@ -8695,6 +8695,29 @@
   },
   {
     "from":{
+      "lat":51.52252203,
+      "lon":-0.1629108999,
+      "id":"MYB",
+      "name":"London Marylebone",
+      "type":"Station"
+    },
+    "to":{
+      "lat":51.528805,
+      "lon":-0.16787694,
+      "id":"MARY10",
+      "name":"Marylebone 10 Signal",
+      "type":"Infrastructure"
+    },
+    "toc":"CH",
+    "singleTrack":"N",
+    "electrification":"NONE",
+    "speed":"40-75",
+    "srsCode":"M.02",
+    "type":"NR",
+    "distance":778
+  },
+  {
+    "from":{
       "lat":52.504229,
       "lon":-1.871933549,
       "id":"AST",
@@ -10716,6 +10739,29 @@
     "srsCode":"METRO",
     "type":"Tram",
     "distance":357
+  },
+  {
+    "from":{
+      "lat":52.772254,
+      "lon":-1.9337307,
+      "id":"RUGLYNJ",
+      "name":"Rugeley North Jn",
+      "type":"Infrastructure"
+    },
+    "to":{
+      "lat":52.78866,
+      "lon":-1.9859304,
+      "id":"COLWICH",
+      "name":"Colwich",
+      "type":"Infrastructure"
+    },
+    "toc":"VT",
+    "singleTrack":"N",
+    "electrification":"OHLE",
+    "speed":"110-125",
+    "srsCode":"N.02",
+    "type":"NR",
+    "distance":3956
   },
   {
     "from":{
@@ -18010,6 +18056,29 @@
   },
   {
     "from":{
+      "lat":51.528805,
+      "lon":-0.16787694,
+      "id":"MARY10",
+      "name":"Marylebone 10 Signal",
+      "type":"Infrastructure"
+    },
+    "to":{
+      "lat":51.54631,
+      "lon":-0.19668211,
+      "id":"NEASKV",
+      "name":"Kilburn Viaduct",
+      "type":"Infrastructure"
+    },
+    "toc":"CH",
+    "singleTrack":"N",
+    "electrification":"NONE",
+    "speed":"40-75",
+    "srsCode":"M.02",
+    "type":"NR",
+    "distance":2785
+  },
+  {
+    "from":{
       "lat":53.47735978,
       "lon":-2.230909897,
       "id":"MAN",
@@ -21207,6 +21276,29 @@
   },
   {
     "from":{
+      "lat":51.558288,
+      "lon":-0.020986018,
+      "id":"TMPLORR",
+      "name":"Orient Way Reception Road",
+      "type":"Infrastructure"
+    },
+    "to":{
+      "lat":51.562242,
+      "lon":-0.028850595,
+      "id":"TMPLOCS",
+      "name":"Orient Way Cs",
+      "type":"Infrastructure"
+    },
+    "toc":"FRGT",
+    "singleTrack":"N",
+    "electrification":"OHLE",
+    "speed":"0-35",
+    "srsCode":"D.01",
+    "type":"NR",
+    "distance":699
+  },
+  {
+    "from":{
       "lat":53.6485007,
       "lon":-1.784690209,
       "id":"HUD",
@@ -24056,6 +24148,29 @@
     "srsCode":"Q.03",
     "type":"NR",
     "distance":1497
+  },
+  {
+    "from":{
+      "lat":51.43386824,
+      "lon":0.1037945731,
+      "id":"SID",
+      "name":"Sidcup",
+      "type":"Station"
+    },
+    "to":{
+      "lat":51.434001,
+      "lon":0.10844782,
+      "id":"SIDCUPS",
+      "name":"Sidcup Siding",
+      "type":"Infrastructure"
+    },
+    "toc":"SE",
+    "singleTrack":"N",
+    "electrification":"DC",
+    "speed":"40-75",
+    "srsCode":"A.07",
+    "type":"NR",
+    "distance":322
   },
   {
     "from":{
@@ -28728,6 +28843,29 @@
   },
   {
     "from":{
+      "lat":53.370478,
+      "lon":-2.6086227,
+      "id":"WRGTWOM",
+      "name":"Walton Old Jn.M.S.C.Sdgs",
+      "type":"Infrastructure"
+    },
+    "to":{
+      "lat":53.374742,
+      "lon":-2.6044899,
+      "id":"WRGTWOJ",
+      "name":"Walton Old Jn.",
+      "type":"Infrastructure"
+    },
+    "toc":"FRGT",
+    "singleTrack":"Y",
+    "electrification":"NONE",
+    "speed":"0-35",
+    "srsCode":"H.99",
+    "type":"NR",
+    "distance":547
+  },
+  {
+    "from":{
       "lat":53.1140911,
       "lon":-1.245568271,
       "id":"SPK",
@@ -28794,6 +28932,29 @@
     "srsCode":"H.39",
     "type":"NR",
     "distance":3237
+  },
+  {
+    "from":{
+      "lat":53.45686405,
+      "lon":-2.131659521,
+      "id":"DTN",
+      "name":"Denton",
+      "type":"Station"
+    },
+    "to":{
+      "lat":53.453121,
+      "lon":-2.1351415,
+      "id":"DNTOSTJ",
+      "name":"Denton Station Jn",
+      "type":"Infrastructure"
+    },
+    "toc":"NT",
+    "singleTrack":"N",
+    "electrification":"NONE",
+    "speed":"40-75",
+    "srsCode":"H.30",
+    "type":"NR",
+    "distance":475
   },
   {
     "from":{
@@ -35927,6 +36088,29 @@
   },
   {
     "from":{
+      "lat":53.385411,
+      "lon":-2.5974243,
+      "id":"ARPLEYS",
+      "name":"Arpley Sidings",
+      "type":"Infrastructure"
+    },
+    "to":{
+      "lat":53.374742,
+      "lon":-2.6044899,
+      "id":"WRGTWOJ",
+      "name":"Walton Old Jn.",
+      "type":"Infrastructure"
+    },
+    "toc":"FRGT",
+    "singleTrack":"Y",
+    "electrification":"NONE",
+    "speed":"0-35",
+    "srsCode":"H.99",
+    "type":"NR",
+    "distance":1275
+  },
+  {
+    "from":{
       "lat":51.48819396,
       "lon":-3.229652283,
       "id":"WNG",
@@ -36223,29 +36407,6 @@
     "srsCode":"H.34",
     "type":"NR",
     "distance":2643
-  },
-  {
-    "from":{
-      "lat":53.20424109,
-      "lon":-1.202440565,
-      "id":"SHB",
-      "name":"Shirebrook",
-      "type":"Station"
-    },
-    "to":{
-      "lat":53.211033,
-      "lon":-1.2086335,
-      "id":"SHRBDAV",
-      "name":"Shirebrook Davis & Son",
-      "type":"Infrastructure"
-    },
-    "toc":"EM",
-    "singleTrack":"N",
-    "electrification":"NONE",
-    "speed":"40-75",
-    "srsCode":"I.04",
-    "type":"NR",
-    "distance":860
   },
   {
     "from":{
@@ -38109,6 +38270,29 @@
     "srsCode":"H.20",
     "type":"NR",
     "distance":1597
+  },
+  {
+    "from":{
+      "lat":53.370842,
+      "lon":-2.6095147,
+      "id":"WRGTWOY",
+      "name":"Walton Old Jn Yard",
+      "type":"Infrastructure"
+    },
+    "to":{
+      "lat":53.374742,
+      "lon":-2.6044899,
+      "id":"WRGTWOJ",
+      "name":"Walton Old Jn.",
+      "type":"Infrastructure"
+    },
+    "toc":"FRGT",
+    "singleTrack":"Y",
+    "electrification":"NONE",
+    "speed":"0-35",
+    "srsCode":"H.99",
+    "type":"NR",
+    "distance":546
   },
   {
     "from":{
@@ -40550,6 +40734,29 @@
   },
   {
     "from":{
+      "lat":53.20424109,
+      "lon":-1.202440565,
+      "id":"SHB",
+      "name":"Shirebrook",
+      "type":"Station"
+    },
+    "to":{
+      "lat":53.204883,
+      "lon":-1.2029377,
+      "id":"SHRBWJ",
+      "name":"Shirebrook Junction",
+      "type":"Infrastructure"
+    },
+    "toc":"EM",
+    "singleTrack":"N",
+    "electrification":"NONE",
+    "speed":"40-75",
+    "srsCode":"I.04",
+    "type":"NR",
+    "distance":78
+  },
+  {
+    "from":{
       "lat":54.43935834,
       "lon":-3.541825702,
       "id":"BYS",
@@ -41191,29 +41398,6 @@
     "srsCode":"K.08",
     "type":"NR",
     "distance":5693
-  },
-  {
-    "from":{
-      "lat":51.539644,
-      "lon":-0.126874,
-      "id":"XXY",
-      "name":"York Way Junction",
-      "type":"Junction"
-    },
-    "to":{
-      "lat":51.54482631,
-      "lon":-0.008777643917,
-      "id":"SFA",
-      "name":"Stratford International",
-      "type":"Station"
-    },
-    "toc":"ES",
-    "singleTrack":"N",
-    "electrification":"OHLE",
-    "speed":"130-200",
-    "srsCode":"A.15",
-    "type":"NR",
-    "distance":8187
   },
   {
     "from":{
@@ -45265,29 +45449,6 @@
   },
   {
     "from":{
-      "lat":51.542055,
-      "lon":-0.012388611,
-      "id":"CHNELUL",
-      "name":"Channelsea Up Loop",
-      "type":"Infrastructure"
-    },
-    "to":{
-      "lat":51.544484,
-      "lon":-0.012975024,
-      "id":"STFD156",
-      "name":"Stratford Sig L156",
-      "type":"Infrastructure"
-    },
-    "toc":"FRGT",
-    "singleTrack":"N",
-    "electrification":"OHLE",
-    "speed":"0-35",
-    "srsCode":"E.01",
-    "type":"NR",
-    "distance":273
-  },
-  {
-    "from":{
       "lat":51.42780008,
       "lon":-0.167910811,
       "id":"LUNTOB",
@@ -48462,6 +48623,29 @@
   },
   {
     "from":{
+      "lat":51.542055,
+      "lon":-0.012388611,
+      "id":"CHNELSJ",
+      "name":"Channelsea Jn",
+      "type":"Infrastructure"
+    },
+    "to":{
+      "lat":51.54189318,
+      "lon":-0.00339673558,
+      "id":"SRA",
+      "name":"Stratford (London)",
+      "type":"Station"
+    },
+    "toc":"LO",
+    "singleTrack":"N",
+    "electrification":"OHLE",
+    "speed":"0-30",
+    "srsCode":"E.03",
+    "type":"NR",
+    "distance":622
+  },
+  {
+    "from":{
       "lat":53.75303007,
       "lon":-3.029099255,
       "id":"SAS",
@@ -50115,29 +50299,6 @@
     "srsCode":"M.21",
     "type":"NR",
     "distance":4158
-  },
-  {
-    "from":{
-      "lat":51.543288,
-      "lon":-0.016171069,
-      "id":"LEAJ286",
-      "name":"Lea Junction Loop Sig 1286",
-      "type":"Infrastructure"
-    },
-    "to":{
-      "lat":51.542055,
-      "lon":-0.012388611,
-      "id":"CHNELUL",
-      "name":"Channelsea Up Loop",
-      "type":"Infrastructure"
-    },
-    "toc":"LO",
-    "singleTrack":"N",
-    "electrification":"OHLE",
-    "speed":"40-75",
-    "srsCode":"E.03",
-    "type":"NR",
-    "distance":295
   },
   {
     "from":{
@@ -52993,6 +53154,29 @@
   },
   {
     "from":{
+      "lat":51.539644,
+      "lon":-0.126874,
+      "id":"XXY",
+      "name":"York Way Junction",
+      "type":"Junction"
+    },
+    "to":{
+      "lat":51.544879,
+      "lon":-0.013448186,
+      "id":"STFOWJN",
+      "name":"Stratford Intl W Jn",
+      "type":"Infrastructure"
+    },
+    "toc":"ES",
+    "singleTrack":"N",
+    "electrification":"OHLE",
+    "speed":"130-200",
+    "srsCode":"A.15",
+    "type":"NR",
+    "distance":7865
+  },
+  {
+    "from":{
       "lat":51.710522,
       "lon":-4.0538791,
       "id":"HENDYJ",
@@ -55106,6 +55290,29 @@
     "srsCode":"LT",
     "type":"Underground",
     "distance":1123
+  },
+  {
+    "from":{
+      "lat":51.542055,
+      "lon":-0.012388611,
+      "id":"CHNELSJ",
+      "name":"Channelsea Jn",
+      "type":"Infrastructure"
+    },
+    "to":{
+      "lat":51.539915,
+      "lon":-0.0076220831,
+      "id":"CARPNRC",
+      "name":"Carpenters Road Curve",
+      "type":"Infrastructure"
+    },
+    "toc":"FRGT",
+    "singleTrack":"Y",
+    "electrification":"OHLE",
+    "speed":"0-35",
+    "srsCode":"D.99",
+    "type":"NR",
+    "distance":406
   },
   {
     "from":{
@@ -59249,6 +59456,29 @@
   },
   {
     "from":{
+      "lat":51.54482631,
+      "lon":-0.008777643917,
+      "id":"SFA",
+      "name":"Stratford International",
+      "type":"Station"
+    },
+    "to":{
+      "lat":51.544764,
+      "lon":-0.0045690772,
+      "id":"STFOEJN",
+      "name":"Stratford Intl E Jn",
+      "type":"Infrastructure"
+    },
+    "toc":"ES",
+    "singleTrack":"N",
+    "electrification":"OHLE",
+    "speed":"130-200",
+    "srsCode":"A.15",
+    "type":"NR",
+    "distance":291
+  },
+  {
+    "from":{
       "lat":54.5478,
       "lon":-2.4670117,
       "id":"ORMMSID",
@@ -62147,6 +62377,29 @@
   },
   {
     "from":{
+      "lat":53.204883,
+      "lon":-1.2029377,
+      "id":"SHRBWJ",
+      "name":"Shirebrook Junction",
+      "type":"Infrastructure"
+    },
+    "to":{
+      "lat":53.211033,
+      "lon":-1.2086335,
+      "id":"SHRBDAV",
+      "name":"Shirebrook Davis & Son",
+      "type":"Infrastructure"
+    },
+    "toc":"EM",
+    "singleTrack":"N",
+    "electrification":"NONE",
+    "speed":"40-75",
+    "srsCode":"I.04",
+    "type":"NR",
+    "distance":782
+  },
+  {
+    "from":{
       "lat":51.60941511,
       "lon":-0.3686014301,
       "id":"HTE",
@@ -64907,6 +65160,29 @@
   },
   {
     "from":{
+      "lat":51.523475,
+      "lon":-0.16285816,
+      "id":"MARYUPS",
+      "name":"Marylebone Up Platform Sdg",
+      "type":"Infrastructure"
+    },
+    "to":{
+      "lat":51.528904,
+      "lon":-0.1679162,
+      "id":"MARYUTS",
+      "name":"Marylebone Up Tunnel Sdgs",
+      "type":"Infrastructure"
+    },
+    "toc":"FRGT",
+    "singleTrack":"N",
+    "electrification":"NONE",
+    "speed":"40-75",
+    "srsCode":"M.02",
+    "type":"NR",
+    "distance":697
+  },
+  {
+    "from":{
       "lat":55.195571,
       "lon":-1.5234763,
       "id":"LYNMABJ",
@@ -65433,6 +65709,29 @@
     "srsCode":"Link",
     "type":"Unknown",
     "distance":12904
+  },
+  {
+    "from":{
+      "lat":51.523475,
+      "lon":-0.16285816,
+      "id":"MARYUPS",
+      "name":"Marylebone Up Platform Sdg",
+      "type":"Infrastructure"
+    },
+    "to":{
+      "lat":51.528805,
+      "lon":-0.16787694,
+      "id":"MARY10",
+      "name":"Marylebone 10 Signal",
+      "type":"Infrastructure"
+    },
+    "toc":"FRGT",
+    "singleTrack":"N",
+    "electrification":"NONE",
+    "speed":"40-75",
+    "srsCode":"M.02",
+    "type":"NR",
+    "distance":686
   },
   {
     "from":{
@@ -80869,6 +81168,29 @@
   },
   {
     "from":{
+      "lat":53.352613,
+      "lon":-2.8970436,
+      "id":"GRSTNCR",
+      "name":"Garston Church Road",
+      "type":"Infrastructure"
+    },
+    "to":{
+      "lat":53.352917,
+      "lon":-2.8996941,
+      "id":"GRSTNFT",
+      "name":"Garston F.L.T.",
+      "type":"Infrastructure"
+    },
+    "toc":"FRGT",
+    "singleTrack":"Y",
+    "electrification":"NONE",
+    "speed":"0-35",
+    "srsCode":"N.99",
+    "type":"NR",
+    "distance":179
+  },
+  {
+    "from":{
       "lat":56.45647253,
       "lon":-3.0573977,
       "id":"ING",
@@ -82410,6 +82732,29 @@
   },
   {
     "from":{
+      "lat":53.355855,
+      "lon":-2.7730079,
+      "id":"DITTNRS",
+      "name":"Ditton Reception Sidings",
+      "type":"Infrastructure"
+    },
+    "to":{
+      "lat":53.356174,
+      "lon":-2.7778817,
+      "id":"DITTNWJ",
+      "name":"Ditton West Junction",
+      "type":"Infrastructure"
+    },
+    "toc":"FRGT",
+    "singleTrack":"N",
+    "electrification":"NONE",
+    "speed":"0-35",
+    "srsCode":"N.99",
+    "type":"NR",
+    "distance":325
+  },
+  {
+    "from":{
       "lat":55.86699642,
       "lon":-3.069365776,
       "id":"NEG",
@@ -83166,6 +83511,29 @@
     "srsCode":"L.08/9",
     "type":"NR",
     "distance":5803
+  },
+  {
+    "from":{
+      "lat":51.544879,
+      "lon":-0.013448186,
+      "id":"STFOWJN",
+      "name":"Stratford Intl W Jn",
+      "type":"Infrastructure"
+    },
+    "to":{
+      "lat":51.54482631,
+      "lon":-0.008777643917,
+      "id":"SFA",
+      "name":"Stratford International",
+      "type":"Station"
+    },
+    "toc":"ES",
+    "singleTrack":"N",
+    "electrification":"OHLE",
+    "speed":"130-200",
+    "srsCode":"A.15",
+    "type":"NR",
+    "distance":323
   },
   {
     "from":{
@@ -84040,6 +84408,29 @@
     "srsCode":"Link",
     "type":"Unknown",
     "distance":4162
+  },
+  {
+    "from":{
+      "lat":53.453121,
+      "lon":-2.1351415,
+      "id":"DNTOSTJ",
+      "name":"Denton Station Jn",
+      "type":"Infrastructure"
+    },
+    "to":{
+      "lat":53.43592381,
+      "lon":-2.158764326,
+      "id":"RDS",
+      "name":"Reddish South",
+      "type":"Station"
+    },
+    "toc":"NT",
+    "singleTrack":"N",
+    "electrification":"NONE",
+    "speed":"40-75",
+    "srsCode":"H.30",
+    "type":"NR",
+    "distance":2470
   },
   {
     "from":{
@@ -86248,29 +86639,6 @@
     "srsCode":"O.01",
     "type":"NR",
     "distance":1399
-  },
-  {
-    "from":{
-      "lat":51.4702146,
-      "lon":-0.1385196592,
-      "id":"WWR",
-      "name":"Wandsworth Road",
-      "type":"Station"
-    },
-    "to":{
-      "lat":51.46418504,
-      "lon":-0.1702214719,
-      "id":"CLJ",
-      "name":"Clapham Junction",
-      "type":"Station"
-    },
-    "toc":"LO",
-    "singleTrack":"N",
-    "electrification":"DC",
-    "speed":"40-75",
-    "srsCode":"A.01",
-    "type":"NR",
-    "distance":2296
   },
   {
     "from":{
@@ -89928,6 +90296,29 @@
     "srsCode":"Link",
     "type":"Unknown",
     "distance":112
+  },
+  {
+    "from":{
+      "lat":51.543288,
+      "lon":-0.016171069,
+      "id":"LEAJ286",
+      "name":"Lea Junction Loop Sig 1286",
+      "type":"Infrastructure"
+    },
+    "to":{
+      "lat":51.542055,
+      "lon":-0.012388611,
+      "id":"CHNELSJ",
+      "name":"Channelsea Jn",
+      "type":"Infrastructure"
+    },
+    "toc":"LO",
+    "singleTrack":"N",
+    "electrification":"OHLE",
+    "speed":"40-75",
+    "srsCode":"E.03",
+    "type":"NR",
+    "distance":295
   },
   {
     "from":{
@@ -94163,6 +94554,29 @@
   },
   {
     "from":{
+      "lat":53.352749,
+      "lon":-2.888498,
+      "id":"GRSTNJ",
+      "name":"Garston Jn",
+      "type":"Infrastructure"
+    },
+    "to":{
+      "lat":53.35774244,
+      "lon":-2.889127737,
+      "id":"LPY",
+      "name":"Liverpool South Parkway",
+      "type":"Station"
+    },
+    "toc":"FRGT",
+    "singleTrack":"Y",
+    "electrification":"NONE",
+    "speed":"0-35",
+    "srsCode":"N.99",
+    "type":"NR",
+    "distance":556
+  },
+  {
+    "from":{
       "lat":53.330626,
       "lon":-3.8438711,
       "id":"TWHGO",
@@ -94229,6 +94643,29 @@
     "srsCode":"Q.07",
     "type":"NR",
     "distance":3256
+  },
+  {
+    "from":{
+      "lat":53.35627,
+      "lon":-2.7671858,
+      "id":"DITTON",
+      "name":"Ditton East Junction",
+      "type":"Infrastructure"
+    },
+    "to":{
+      "lat":53.35595,
+      "lon":-2.7651518,
+      "id":"DITTAHG",
+      "name":"Ditton Foundry Lane Ahc",
+      "type":"Infrastructure"
+    },
+    "toc":"FRGT",
+    "singleTrack":"N",
+    "electrification":"NONE",
+    "speed":"0-35",
+    "srsCode":"N.99",
+    "type":"NR",
+    "distance":139
   },
   {
     "from":{
@@ -96348,6 +96785,29 @@
   },
   {
     "from":{
+      "lat":52.745633,
+      "lon":-1.8830792,
+      "id":"ARMITAG",
+      "name":"Armitage Jn",
+      "type":"Infrastructure"
+    },
+    "to":{
+      "lat":52.767549,
+      "lon":-1.9276168,
+      "id":"RUGLYSJ",
+      "name":"Rugeley South Jn",
+      "type":"Infrastructure"
+    },
+    "toc":"VT",
+    "singleTrack":"N",
+    "electrification":"OHLE",
+    "speed":"110-125",
+    "srsCode":"N.02",
+    "type":"NR",
+    "distance":3862
+  },
+  {
+    "from":{
       "lat":52.896268,
       "lon":-1.2654244,
       "id":"LNGETNX",
@@ -96598,29 +97058,6 @@
     "srsCode":"H.99",
     "type":"NR",
     "distance":1643
-  },
-  {
-    "from":{
-      "lat":52.7696539,
-      "lon":-1.929851377,
-      "id":"RGL",
-      "name":"Rugeley Trent Valley",
-      "type":"Station"
-    },
-    "to":{
-      "lat":52.78866,
-      "lon":-1.9859304,
-      "id":"COLWICH",
-      "name":"Colwich",
-      "type":"Infrastructure"
-    },
-    "toc":"VT",
-    "singleTrack":"N",
-    "electrification":"OHLE",
-    "speed":"110-125",
-    "srsCode":"N.02",
-    "type":"NR",
-    "distance":4323
   },
   {
     "from":{
@@ -100948,29 +101385,6 @@
   },
   {
     "from":{
-      "lat":51.542055,
-      "lon":-0.012388611,
-      "id":"CHNELUL",
-      "name":"Channelsea Up Loop",
-      "type":"Infrastructure"
-    },
-    "to":{
-      "lat":51.539915,
-      "lon":-0.0076220831,
-      "id":"CARPNRC",
-      "name":"Carpenters Road Curve",
-      "type":"Infrastructure"
-    },
-    "toc":"FRGT",
-    "singleTrack":"Y",
-    "electrification":"OHLE",
-    "speed":"0-35",
-    "srsCode":"D.99",
-    "type":"NR",
-    "distance":406
-  },
-  {
-    "from":{
       "lat":51.53871708,
       "lon":0.6705925903,
       "id":"CHW",
@@ -102673,6 +103087,29 @@
   },
   {
     "from":{
+      "lat":52.7696539,
+      "lon":-1.929851377,
+      "id":"RGL",
+      "name":"Rugeley Trent Valley",
+      "type":"Station"
+    },
+    "to":{
+      "lat":52.771012,
+      "lon":-1.9314945,
+      "id":"RUGLYGF",
+      "name":"Rugeley G.F.",
+      "type":"Infrastructure"
+    },
+    "toc":"VT",
+    "singleTrack":"N",
+    "electrification":"OHLE",
+    "speed":"110-125",
+    "srsCode":"N.02",
+    "type":"NR",
+    "distance":187
+  },
+  {
+    "from":{
       "lat":55.857584,
       "lon":-4.2312953,
       "id":"GLGHSJN",
@@ -103202,6 +103639,29 @@
   },
   {
     "from":{
+      "lat":53.369415,
+      "lon":-2.6726772,
+      "id":"FDLRSSB",
+      "name":"Fiddlers Ferry S.B.",
+      "type":"Infrastructure"
+    },
+    "to":{
+      "lat":53.367345,
+      "lon":-2.6826687,
+      "id":"FDLRFHH",
+      "name":"Fiddlers Ferry P Stn Flhh",
+      "type":"Infrastructure"
+    },
+    "toc":"FRGT",
+    "singleTrack":"N",
+    "electrification":"NONE",
+    "speed":"0-35",
+    "srsCode":"N.99",
+    "type":"NR",
+    "distance":701
+  },
+  {
+    "from":{
       "lat":54.726638,
       "lon":-1.9625522,
       "id":"HCDFRO",
@@ -103636,6 +104096,29 @@
     "srsCode":"METROLINK",
     "type":"Unknown",
     "distance":660
+  },
+  {
+    "from":{
+      "lat":53.35627,
+      "lon":-2.7671858,
+      "id":"DITTON",
+      "name":"Ditton East Junction",
+      "type":"Infrastructure"
+    },
+    "to":{
+      "lat":53.355855,
+      "lon":-2.7730079,
+      "id":"DITTNRS",
+      "name":"Ditton Reception Sidings",
+      "type":"Infrastructure"
+    },
+    "toc":"FRGT",
+    "singleTrack":"N",
+    "electrification":"NONE",
+    "speed":"0-35",
+    "srsCode":"N.99",
+    "type":"NR",
+    "distance":389
   },
   {
     "from":{
@@ -105292,6 +105775,29 @@
     "srsCode":"G.21",
     "type":"NR",
     "distance":4388
+  },
+  {
+    "from":{
+      "lat":51.525632,
+      "lon":-0.16454447,
+      "id":"MARYSDS",
+      "name":"Marylebone (Sdgs 1-5)",
+      "type":"Infrastructure"
+    },
+    "to":{
+      "lat":51.528805,
+      "lon":-0.16787694,
+      "id":"MARY10",
+      "name":"Marylebone 10 Signal",
+      "type":"Infrastructure"
+    },
+    "toc":"FRGT",
+    "singleTrack":"N",
+    "electrification":"NONE",
+    "speed":"40-75",
+    "srsCode":"M.02",
+    "type":"NR",
+    "distance":421
   },
   {
     "from":{
@@ -113023,29 +113529,6 @@
   },
   {
     "from":{
-      "lat":52.745633,
-      "lon":-1.8830792,
-      "id":"ARMITAG",
-      "name":"Armitage Jn",
-      "type":"Infrastructure"
-    },
-    "to":{
-      "lat":52.7696539,
-      "lon":-1.929851377,
-      "id":"RGL",
-      "name":"Rugeley Trent Valley",
-      "type":"Station"
-    },
-    "toc":"VT",
-    "singleTrack":"N",
-    "electrification":"OHLE",
-    "speed":"110-125",
-    "srsCode":"N.02",
-    "type":"NR",
-    "distance":4128
-  },
-  {
-    "from":{
       "lat":52.690959,
       "lon":-1.3496706,
       "id":"BAGWTHJ",
@@ -115619,6 +116102,29 @@
     "srsCode":"METRO",
     "type":"Tram",
     "distance":450
+  },
+  {
+    "from":{
+      "lat":52.767549,
+      "lon":-1.9276168,
+      "id":"RUGLYSJ",
+      "name":"Rugeley South Jn",
+      "type":"Infrastructure"
+    },
+    "to":{
+      "lat":52.7696539,
+      "lon":-1.929851377,
+      "id":"RGL",
+      "name":"Rugeley Trent Valley",
+      "type":"Station"
+    },
+    "toc":"VT",
+    "singleTrack":"N",
+    "electrification":"OHLE",
+    "speed":"110-125",
+    "srsCode":"N.02",
+    "type":"NR",
+    "distance":278
   },
   {
     "from":{
@@ -118333,29 +118839,6 @@
     "srsCode":"I.10",
     "type":"NR",
     "distance":264
-  },
-  {
-    "from":{
-      "lat":51.52252203,
-      "lon":-0.1629108999,
-      "id":"MYB",
-      "name":"London Marylebone",
-      "type":"Station"
-    },
-    "to":{
-      "lat":51.54631,
-      "lon":-0.19668211,
-      "id":"NEASKV",
-      "name":"Kilburn Viaduct",
-      "type":"Infrastructure"
-    },
-    "toc":"CH",
-    "singleTrack":"N",
-    "electrification":"NONE",
-    "speed":"40-75",
-    "srsCode":"M.02",
-    "type":"NR",
-    "distance":3528
   },
   {
     "from":{
@@ -127628,29 +128111,6 @@
   },
   {
     "from":{
-      "lat":51.54482631,
-      "lon":-0.008777643917,
-      "id":"SFA",
-      "name":"Stratford International",
-      "type":"Station"
-    },
-    "to":{
-      "lat":51.44297125,
-      "lon":0.3209208445,
-      "id":"EBD",
-      "name":"Ebbsfleet International",
-      "type":"Station"
-    },
-    "toc":"ES",
-    "singleTrack":"N",
-    "electrification":"OHLE",
-    "speed":"130-200",
-    "srsCode":"A.15",
-    "type":"NR",
-    "distance":25480
-  },
-  {
-    "from":{
       "lat":51.88563742,
       "lon":0.927527575,
       "id":"HYH",
@@ -131423,6 +131883,29 @@
   },
   {
     "from":{
+      "lat":51.556814,
+      "lon":-0.017299237,
+      "id":"TMPLRRJ",
+      "name":"Ruckholt Road Junction",
+      "type":"Infrastructure"
+    },
+    "to":{
+      "lat":51.558288,
+      "lon":-0.020986018,
+      "id":"TMPLORR",
+      "name":"Orient Way Reception Road",
+      "type":"Infrastructure"
+    },
+    "toc":"FRGT",
+    "singleTrack":"N",
+    "electrification":"OHLE",
+    "speed":"0-35",
+    "srsCode":"D.01",
+    "type":"NR",
+    "distance":303
+  },
+  {
+    "from":{
       "lat":52.97535112,
       "lon":-0.1105287605,
       "id":"HBB",
@@ -133076,29 +133559,6 @@
     "srsCode":"K.11",
     "type":"NR",
     "distance":2773
-  },
-  {
-    "from":{
-      "lat":53.353382,
-      "lon":-2.8660805,
-      "id":"SPEKEJ",
-      "name":"Speke Jn",
-      "type":"Infrastructure"
-    },
-    "to":{
-      "lat":53.352917,
-      "lon":-2.8996941,
-      "id":"GRSTNFT",
-      "name":"Garston F.L.T.",
-      "type":"Infrastructure"
-    },
-    "toc":"FRGT",
-    "singleTrack":"Y",
-    "electrification":"NONE",
-    "speed":"0-35",
-    "srsCode":"N.99",
-    "type":"NR",
-    "distance":2231
   },
   {
     "from":{
@@ -140577,29 +141037,6 @@
   },
   {
     "from":{
-      "lat":51.542055,
-      "lon":-0.012388611,
-      "id":"CHNELUL",
-      "name":"Channelsea Up Loop",
-      "type":"Infrastructure"
-    },
-    "to":{
-      "lat":51.54189318,
-      "lon":-0.00339673558,
-      "id":"SRA",
-      "name":"Stratford (London)",
-      "type":"Station"
-    },
-    "toc":"LO",
-    "singleTrack":"N",
-    "electrification":"OHLE",
-    "speed":"0-30",
-    "srsCode":"E.03",
-    "type":"NR",
-    "distance":622
-  },
-  {
-    "from":{
       "lat":52.92882398,
       "lon":-4.064562424,
       "id":"PRH",
@@ -143311,6 +143748,29 @@
     "srsCode":"L.08/9",
     "type":"NR",
     "distance":1453
+  },
+  {
+    "from":{
+      "lat":52.771012,
+      "lon":-1.9314945,
+      "id":"RUGLYGF",
+      "name":"Rugeley G.F.",
+      "type":"Infrastructure"
+    },
+    "to":{
+      "lat":52.772254,
+      "lon":-1.9337307,
+      "id":"RUGLYNJ",
+      "name":"Rugeley North Jn",
+      "type":"Infrastructure"
+    },
+    "toc":"VT",
+    "singleTrack":"N",
+    "electrification":"OHLE",
+    "speed":"110-125",
+    "srsCode":"N.02",
+    "type":"NR",
+    "distance":204
   },
   {
     "from":{
@@ -149961,6 +150421,29 @@
   },
   {
     "from":{
+      "lat":53.382611,
+      "lon":-2.6019103,
+      "id":"ARPLYFA",
+      "name":"Warrington Fuelling Apron",
+      "type":"Infrastructure"
+    },
+    "to":{
+      "lat":53.374742,
+      "lon":-2.6044899,
+      "id":"WRGTWOJ",
+      "name":"Walton Old Jn.",
+      "type":"Infrastructure"
+    },
+    "toc":"FRGT",
+    "singleTrack":"Y",
+    "electrification":"NONE",
+    "speed":"0-35",
+    "srsCode":"H.99",
+    "type":"NR",
+    "distance":891
+  },
+  {
+    "from":{
       "lat":53.632928,
       "lon":-1.1109627,
       "id":"JNCRMOS",
@@ -150050,29 +150533,6 @@
     "srsCode":"METRO",
     "type":"Unknown",
     "distance":3563
-  },
-  {
-    "from":{
-      "lat":52.86249889,
-      "lon":-1.263231888,
-      "id":"EMD",
-      "name":"East Midlands Parkway",
-      "type":"Station"
-    },
-    "to":{
-      "lat":52.88237,
-      "lon":-1.2741445,
-      "id":"SHEETSJ",
-      "name":"Sheet Stores Jn",
-      "type":"Infrastructure"
-    },
-    "toc":"EM",
-    "singleTrack":"N",
-    "electrification":"NONE",
-    "speed":"80-105",
-    "srsCode":"I.03",
-    "type":"NR",
-    "distance":2327
   },
   {
     "from":{
@@ -150188,6 +150648,29 @@
     "srsCode":"LT",
     "type":"Underground",
     "distance":1210
+  },
+  {
+    "from":{
+      "lat":53.353382,
+      "lon":-2.8660805,
+      "id":"SPEKEJ",
+      "name":"Speke Jn",
+      "type":"Infrastructure"
+    },
+    "to":{
+      "lat":53.352749,
+      "lon":-2.888498,
+      "id":"GRSTNJ",
+      "name":"Garston Jn",
+      "type":"Infrastructure"
+    },
+    "toc":"FRGT",
+    "singleTrack":"Y",
+    "electrification":"NONE",
+    "speed":"0-35",
+    "srsCode":"N.99",
+    "type":"NR",
+    "distance":1489
   },
   {
     "from":{
@@ -157229,6 +157712,29 @@
   },
   {
     "from":{
+      "lat":53.352749,
+      "lon":-2.888498,
+      "id":"GRSTNJ",
+      "name":"Garston Jn",
+      "type":"Infrastructure"
+    },
+    "to":{
+      "lat":53.352613,
+      "lon":-2.8970436,
+      "id":"GRSTNCR",
+      "name":"Garston Church Road",
+      "type":"Infrastructure"
+    },
+    "toc":"FRGT",
+    "singleTrack":"Y",
+    "electrification":"NONE",
+    "speed":"0-35",
+    "srsCode":"N.99",
+    "type":"NR",
+    "distance":567
+  },
+  {
+    "from":{
       "lat":51.58190207,
       "lon":0.2059643084,
       "id":"GDP",
@@ -160219,6 +160725,29 @@
   },
   {
     "from":{
+      "lat":53.35627,
+      "lon":-2.7671858,
+      "id":"DITTON",
+      "name":"Ditton East Junction",
+      "type":"Infrastructure"
+    },
+    "to":{
+      "lat":53.356057,
+      "lon":-2.7512108,
+      "id":"DITTBOC",
+      "name":"Ditton (O'connor Sdgs)",
+      "type":"Infrastructure"
+    },
+    "toc":"FRGT",
+    "singleTrack":"N",
+    "electrification":"NONE",
+    "speed":"0-35",
+    "srsCode":"N.99",
+    "type":"NR",
+    "distance":1060
+  },
+  {
+    "from":{
       "lat":51.5061,
       "lon":-0.01578,
       "id":"CWF",
@@ -160285,6 +160814,29 @@
     "srsCode":"Link",
     "type":"Unknown",
     "distance":11972
+  },
+  {
+    "from":{
+      "lat":51.542055,
+      "lon":-0.012388611,
+      "id":"CHNELSJ",
+      "name":"Channelsea Jn",
+      "type":"Infrastructure"
+    },
+    "to":{
+      "lat":51.544484,
+      "lon":-0.012975024,
+      "id":"STFD156",
+      "name":"Stratford Sig L156",
+      "type":"Infrastructure"
+    },
+    "toc":"FRGT",
+    "singleTrack":"N",
+    "electrification":"OHLE",
+    "speed":"0-35",
+    "srsCode":"E.01",
+    "type":"NR",
+    "distance":273
   },
   {
     "from":{
@@ -166173,6 +166725,29 @@
     "srsCode":"I.05",
     "type":"NR",
     "distance":444
+  },
+  {
+    "from":{
+      "lat":51.558288,
+      "lon":-0.020986018,
+      "id":"TMPLORR",
+      "name":"Orient Way Reception Road",
+      "type":"Infrastructure"
+    },
+    "to":{
+      "lat":51.56169,
+      "lon":-0.027561567,
+      "id":"LETNCMD",
+      "name":"Leyton C.M.D.",
+      "type":"Infrastructure"
+    },
+    "toc":"FRGT",
+    "singleTrack":"N",
+    "electrification":"OHLE",
+    "speed":"0-35",
+    "srsCode":"D.01",
+    "type":"NR",
+    "distance":591
   },
   {
     "from":{
@@ -175143,6 +175718,29 @@
     "srsCode":"J.08",
     "type":"NR",
     "distance":444
+  },
+  {
+    "from":{
+      "lat":51.544764,
+      "lon":-0.0045690772,
+      "id":"STFOEJN",
+      "name":"Stratford Intl E Jn",
+      "type":"Infrastructure"
+    },
+    "to":{
+      "lat":51.44297125,
+      "lon":0.3209208445,
+      "id":"EBD",
+      "name":"Ebbsfleet International",
+      "type":"Station"
+    },
+    "toc":"ES",
+    "singleTrack":"N",
+    "electrification":"OHLE",
+    "speed":"130-200",
+    "srsCode":"A.15",
+    "type":"NR",
+    "distance":25216
   },
   {
     "from":{
@@ -191775,29 +192373,6 @@
   },
   {
     "from":{
-      "lat":53.45686405,
-      "lon":-2.131659521,
-      "id":"DTN",
-      "name":"Denton",
-      "type":"Station"
-    },
-    "to":{
-      "lat":53.43592381,
-      "lon":-2.158764326,
-      "id":"RDS",
-      "name":"Reddish South",
-      "type":"Station"
-    },
-    "toc":"NT",
-    "singleTrack":"N",
-    "electrification":"NONE",
-    "speed":"40-75",
-    "srsCode":"H.30",
-    "type":"NR",
-    "distance":2940
-  },
-  {
-    "from":{
       "lat":51.24452148,
       "lon":-0.6675877676,
       "id":"WAN",
@@ -195179,6 +195754,29 @@
   },
   {
     "from":{
+      "lat":53.260229,
+      "lon":-2.5216677,
+      "id":"NTHWFHH",
+      "name":"Oakleigh Sidings Flhh",
+      "type":"Infrastructure"
+    },
+    "to":{
+      "lat":53.260274,
+      "lon":-2.5216382,
+      "id":"NTHWOS",
+      "name":"Oakleigh Sidings",
+      "type":"Infrastructure"
+    },
+    "toc":"FRGT",
+    "singleTrack":"Y",
+    "electrification":"NONE",
+    "speed":"0-35",
+    "srsCode":"H.99",
+    "type":"NR",
+    "distance":5
+  },
+  {
+    "from":{
       "lat":53.47418215,
       "lon":-2.251050943,
       "id":"DGT",
@@ -195268,6 +195866,29 @@
     "srsCode":"Link",
     "type":"Unknown",
     "distance":15565
+  },
+  {
+    "from":{
+      "lat":51.544879,
+      "lon":-0.013448186,
+      "id":"STFOWJN",
+      "name":"Stratford Intl W Jn",
+      "type":"Infrastructure"
+    },
+    "to":{
+      "lat":51.555073,
+      "lon":-0.012167365,
+      "id":"TMPLMEY",
+      "name":"T.Mills E.Yd.(D.C.E) A.Rd.",
+      "type":"Infrastructure"
+    },
+    "toc":"ES",
+    "singleTrack":"N",
+    "electrification":"OHLE",
+    "speed":"130-200",
+    "srsCode":"A.15",
+    "type":"NR",
+    "distance":1136
   },
   {
     "from":{
