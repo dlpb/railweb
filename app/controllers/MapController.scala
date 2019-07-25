@@ -2,7 +2,7 @@ package controllers
 
 import java.util.Date
 
-import auth.api.JWTService
+import auth.JWTService
 import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject.{Inject, Singleton}
 import models.auth.roles.MapUser
@@ -22,7 +22,7 @@ class MapController @Inject()(
   def showMapPage() = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     if(request.user.roles.contains(MapUser)){
       val token = jwtService.createToken(request.user, new Date())
-      Ok(views.html.map(token, routes.ApiAuthenticatedController.visitLocation)(request.request))
+      Ok(views.html.map.index(request.user, token, routes.ApiAuthenticatedController.visitLocation)(request.request))
     }
     else {
       Forbidden("User not authorized to view page")

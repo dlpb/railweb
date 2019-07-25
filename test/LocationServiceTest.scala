@@ -117,6 +117,17 @@ class LocationServiceTest extends FlatSpec with Matchers {
     service.getVisitsForLocation(location, user).size should be(0)
   }
 
+  it should "work out visited locations for an event" in {
+    val service = new LocationsService(config, new LocationMapBasedDataProvider())
+    service.visitLocation(service.getLocation("GFORDSJ").get, user)
+    service.visitLocation(service.getLocation("GFORDEJ").get, user)
+    service.visitLocation(service.getLocation("PROY").get, user)
+
+    val visitedLocations = service.getLocationsVisitedForEvent(new LocationMapBasedDataProvider().timestamp(), user)
+    visitedLocations.size should be(3)
+  }
+
+
   private def config = {
     val config = ConfigFactory
       .empty()

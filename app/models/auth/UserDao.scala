@@ -4,32 +4,31 @@ import java.math.BigInteger
 import java.security.MessageDigest
 
 import com.typesafe.config.Config
-import javax.inject.Inject
-import models.auth.roles.{MapUser, Role, VisitUser}
+import models.auth.roles.Role
 import models.web.forms.LoginUser
-import org.json4s.DefaultFormats
-import org.json4s.jackson.JsonMethods.parse
 
 import scala.io.Source
 
-@javax.inject.Singleton
-class UserDao @Inject()(config: Config) {
+abstract class UserDao(config: Config) extends UserProvider {
+
 
   def dataRoot = config.getString("data.user.list.root")
 
-  private val users: Set[DaoUser] = makeUsers(readUsersFromFile)
+  private[auth] var users: Set[DaoUser] = getUsers
   private val salt: String = readSalt
 
   def lookupUser(u: LoginUser): Boolean = {
     val matchingUsers = users.filter(user => u.username.equals(user.username) && hashAndSaltPassword(salt, u.password).equals(user.password))
     matchingUsers.size == 1
   }
+  def getDaoUser(user: User): Option[DaoUser] = users.find(u => user.id.equals(u.id) && user.username.equals(u.username))
+
+  def usernameInUse(username: String): Boolean = users.exists(user => user.username.equals(username))
 
   def findUserByLoginUser(u: LoginUser): Option[User] = {
     users.find({user =>
       u.username.equals(user.username) && hashAndSaltPassword(salt, u.password).equals(user.password)}
     ) map mapDaoUserToUser
-
   }
 
   def mapDaoUserToUser(daoUser: DaoUser): User = {
@@ -46,14 +45,11 @@ class UserDao @Inject()(config: Config) {
     }) map mapDaoUserToUser
   }
 
-  def makeUsers(data: String): Set[DaoUser] = {
-    implicit val formats = DefaultFormats
-    parse(data).extract[Set[DaoUser]]
+  def makeDaoUserFromRawData(username: String, password: String, roles: Set[String]) = {
+    DaoUser(0, username, encryptPassword(password), roles)
   }
 
-  def readUsersFromFile(): String = {
-    Source.fromFile(dataRoot + "/users.json").mkString
-  }
+  def encryptPassword(password: String) = hashAndSaltPassword(salt, password)
 
   def readSalt = Source.fromFile(dataRoot + "/salt.txt").mkString
 

@@ -1,0 +1,1786 @@
+Index: app/views/map.scala.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/views/map.scala.html	(date 1553289368937)
++++ app/views/map.scala.html	(date 1553289368937)
+@@ -8,6 +8,15 @@
+ 
+ <link rel="stylesheet" href="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/css/ol.css">
+ 
++<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
++        crossorigin="anonymous"></script>
++<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
++        crossorigin="anonymous"></script>
++<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
++      crossorigin="anonymous">
++<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
++      crossorigin="anonymous">
++
+ <script type="text/javascript">
+     const token = "@jwtToken";
+ </script>
+Index: app/views/route.scala.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/views/route.scala.html	(date 1553289397086)
++++ app/views/route.scala.html	(date 1553289397086)
+@@ -0,0 +1,17 @@
++@(route: models.route.Route)
++
++<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
++        crossorigin="anonymous"></script>
++<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
++        crossorigin="anonymous"></script>
++<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
++      crossorigin="anonymous">
++<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
++      crossorigin="anonymous">
++
++<div>
++    <h1>
++        Route
++    </h1>
++    <p>@route</p>
++</div>
+\ No newline at end of file
+Index: app/views/routes.scala.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/views/routes.scala.html	(date 1553289397096)
++++ app/views/routes.scala.html	(date 1553289397096)
+@@ -0,0 +1,17 @@
++@(routes: Set[models.route.ListRoute])
++
++<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
++        crossorigin="anonymous"></script>
++<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
++        crossorigin="anonymous"></script>
++<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
++      crossorigin="anonymous">
++<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
++      crossorigin="anonymous">
++
++<div>
++    <h1>
++        Route
++    </h1>
++    <p>@routes</p>
++</div>
+\ No newline at end of file
+Index: app/views/location.scala.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/views/location.scala.html	(date 1553289397086)
++++ app/views/location.scala.html	(date 1553289397086)
+@@ -0,0 +1,17 @@
++@(location: models.location.Location)
++
++<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
++        crossorigin="anonymous"></script>
++<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
++        crossorigin="anonymous"></script>
++<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
++      crossorigin="anonymous">
++<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
++      crossorigin="anonymous">
++
++<div>
++    <h1>
++        Location
++    </h1>
++    <p>@location</p>
++</div>
+\ No newline at end of file
+Index: app/views/locations.scala.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/views/locations.scala.html	(date 1553289397086)
++++ app/views/locations.scala.html	(date 1553289397086)
+@@ -0,0 +1,17 @@
++@(locations: Set[models.location.ListLocation])
++
++<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
++        crossorigin="anonymous"></script>
++<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
++        crossorigin="anonymous"></script>
++<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
++      crossorigin="anonymous">
++<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
++      crossorigin="anonymous">
++
++<div>
++    <h1>
++        Locations
++    </h1>
++    <p>@locations</p>
++</div>
+\ No newline at end of file
+Index: app/models/route/RoutesService.scala
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/models/route/RoutesService.scala	(date 1553289397086)
++++ app/models/route/RoutesService.scala	(date 1553289397086)
+@@ -3,7 +3,12 @@
+ import org.json4s.DefaultFormats
+ import org.json4s.jackson.JsonMethods.parse
+ 
+-class RoutesService(routes: Set[Route]) {
++import scala.io.Source
++
++class RoutesService {
++
++  private val routes = RoutesService.makeRoutes(RoutesService.readRoutesFromFile)
++
+   def getRoute(fromId: String, toId: String): Option[Route] =
+     routes.find(r => r.from.id.equals(fromId) &&  r.to.id.equals(toId))
+ 
+@@ -19,9 +24,12 @@
+ }
+ 
+ object RoutesService {
+-  def makeRoutesService(routes: String): RoutesService = {
++  def readRoutesFromFile: String = {
++    Source.fromFile(System.getProperty("user.dir") + "/resources/data/static/routes.json").mkString
++  }
++
++  def makeRoutes(routes: String): Set[Route] = {
+     implicit val formats = DefaultFormats
+-    new RoutesService(parse(routes).extract[Set[Route]]
+-    )
++    parse(routes).extract[Set[Route]]
+   }
+ }
+\ No newline at end of file
+Index: app/models/location/LocationsService.scala
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/models/location/LocationsService.scala	(date 1553289397086)
++++ app/models/location/LocationsService.scala	(date 1553289397086)
+@@ -3,7 +3,12 @@
+ import org.json4s.jackson.JsonMethods._
+ import org.json4s._
+ 
+-class LocationsService(locations: Set[Location]) {
++import scala.io.Source
++
++class LocationsService {
++
++  private val locations = LocationsService.makeLocations(LocationsService.readLocationsFromFile)
++
+   def getLocation(id: String): Option[Location] =
+     locations.find(_.id.equals(id))
+ 
+@@ -19,9 +24,13 @@
+ }
+ 
+ object LocationsService {
+-  def makeLocationsService(locations: String): LocationsService = {
++
++  def readLocationsFromFile: String = {
++    Source.fromFile(System.getProperty("user.dir") + "/resources/data/static/locations.json").mkString
++  }
++
++  def makeLocations(locations: String): Set[Location] = {
+     implicit val formats = DefaultFormats
+-    new LocationsService(parse(locations).extract[Set[Location]]
+-    )
++    parse(locations).extract[Set[Location]]
+   }
+ }
+\ No newline at end of file
+Index: app/controllers/api/ApiAuthenticatedController.scala
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/controllers/api/ApiAuthenticatedController.scala	(date 1553289397086)
++++ app/controllers/api/ApiAuthenticatedController.scala	(date 1553289397086)
+@@ -9,18 +9,16 @@
+ import play.api.Environment
+ import play.api.mvc.{AbstractController, AnyContent, ControllerComponents}
+ 
+-import scala.io.Source
+-
+ @Singleton
+ class ApiAuthenticatedController @Inject()(
+                                             env: Environment,
+                                             cc: ControllerComponents,
++                                            locations: LocationsService,
++                                            routes: RoutesService,
+                                             authAction: AuthorizedAction // NEW - add the action as a constructor argument
+                              )
+   extends AbstractController(cc) {
+ 
+-  private val locations: LocationsService = makeLocationService()
+-  private val routes: RoutesService = makeRouteService()
+ 
+   implicit val formats = DefaultFormats
+ 
+@@ -67,14 +65,4 @@
+       }
+     }
+   }
+-
+-  private def makeLocationService(): LocationsService ={
+-    val jsonString = Source.fromFile(System.getProperty("user.dir") + "/resources/data/static/locations.json").mkString
+-    LocationsService.makeLocationsService(jsonString)
+-  }
+-
+-  private def makeRouteService(): RoutesService ={
+-    val jsonString = Source.fromFile(System.getProperty("user.dir") + "/resources/data/static/routes.json").mkString
+-    RoutesService.makeRoutesService(jsonString)
+-  }
+ }
+\ No newline at end of file
+Index: app/controllers/web/RouteController.scala
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/controllers/web/RouteController.scala	(date 1553289397086)
++++ app/controllers/web/RouteController.scala	(date 1553289397086)
+@@ -0,0 +1,48 @@
++package controllers.web
++
++
++import auth.web.{AuthorizedWebAction, WebUserContext}
++import javax.inject.{Inject, Singleton}
++import models.auth.roles.MapUser
++import models.route.RoutesService
++import play.api.mvc._
++
++
++@Singleton
++class RouteController @Inject()(
++                                       cc: ControllerComponents,
++                                       authenticatedUserAction: AuthorizedWebAction,
++                                       routeService: RoutesService
++
++                                     ) extends AbstractController(cc) {
++  private val logoutUrl = routes.AuthenticatedUserController.logout
++
++  def showRouteDetailPage(from: String, to: String) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
++   if(request.user.roles.contains(MapUser)){
++     val route = routeService.getRoute(from, to)
++     route match {
++       case Some(r) => Ok(views.html.route(r))
++       case None => NotFound("Route combination not found.")
++
++     }
++   }
++   else {
++     Forbidden("User not authorized to view page")
++   }
++
++
++  }
++
++  def showRouteListPage() = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
++    if(request.user.roles.contains(MapUser)){
++      val routes = routeService.defaultListRoutes
++      Ok(views.html.routes(routes))
++    }
++    else {
++      Forbidden("User not authorized to view page")
++    }
++
++
++  }
++
++}
+Index: app/controllers/web/LocationController.scala
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/controllers/web/LocationController.scala	(date 1553289397086)
++++ app/controllers/web/LocationController.scala	(date 1553289397086)
+@@ -0,0 +1,47 @@
++package controllers.web
++
++import auth.web.{AuthorizedWebAction, WebUserContext}
++import javax.inject.{Inject, Singleton}
++import models.auth.roles.MapUser
++import models.location.{ListLocation, Location, LocationsService}
++import play.api.mvc._
++
++
++@Singleton
++class LocationController @Inject()(
++                                       cc: ControllerComponents,
++                                       authenticatedUserAction: AuthorizedWebAction,
++                                       locationService: LocationsService
++
++                                     ) extends AbstractController(cc) {
++  private val logoutUrl = routes.AuthenticatedUserController.logout
++
++  def showLocationDetailPage(id: String) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
++   if(request.user.roles.contains(MapUser)){
++     val location: Option[Location] = locationService.getLocation(id)
++     location match {
++       case Some(loc) => Ok(views.html.location(loc))
++       case None => NotFound("Location not found.")
++
++     }
++   }
++   else {
++     Forbidden("User not authorized to view page")
++   }
++
++
++  }
++
++  def showLocationListPage() = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
++    if(request.user.roles.contains(MapUser)){
++      val locations: Set[ListLocation] = locationService.defaultListLocations
++      Ok(views.html.locations(locations))
++    }
++    else {
++      Forbidden("User not authorized to view page")
++    }
++
++
++  }
++
++}
+Index: conf/application.conf
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- conf/application.conf	(date 1553289397096)
++++ conf/application.conf	(date 1553289397096)
+@@ -6,17 +6,3 @@
+ }
+ 
+ play.server.akka.max-header-value-length=16k
+-
+-play.filters.enabled += "play.filters.gzip.GzipFilter"
+-play.filters.gzip {
+-
+-  contentType {
+-
+-    # If non empty, then a response will only be compressed if its content type is in this list.
+-    whiteList = [ "text/*", "application/javascript", "application/json" ]
+-
+-    # The black list is only used if the white list is empty.
+-    # Compress all responses except the ones whose content type is in this list.
+-    blackList = []
+-  }
+-}
+\ No newline at end of file
+Index: .idea/vcs.xml
+===================================================================
+--- .idea/vcs.xml	(date 0)
++++ .idea/vcs.xml	(date 0)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: public/javascripts/mapFunctions.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- public/javascripts/mapFunctions.js	(date 1553289397096)
++++ public/javascripts/mapFunctions.js	(date 1553289397096)
+@@ -148,7 +148,7 @@
+             to: connection.to.id,
+             name: connection.from.name + " - " + connection.to.name + ' (' + connection.from.id + ' - ' + connection.to.id + ')',
+             visited: connection.visited,
+-            operator: connection.operator,
++            operator: connection.toc,
+ 
+         });
+ 
+@@ -188,10 +188,10 @@
+ 
+             var url = '';
+             if(type==='Route'){
+-                url="/track/detail/?from=" + feature.get('from') + "&to=" +  feature.get('to');
++                url="/route/detail/" + feature.get('from') + "/" +  feature.get('to');
+             }
+             else if(type==='Location'){
+-                url="/stations/detail/?" +  feature.get('id');
++                url="/location/detail/" +  feature.get('id');
+             }
+ 
+             jQuery(content).append(infoBox(iname, type, visited, url, operator));
+Index: target/scala-2.12/twirl/main/views/html/map.template.scala
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- target/scala-2.12/twirl/main/views/html/map.template.scala	(date 1553289524445)
++++ target/scala-2.12/twirl/main/views/html/map.template.scala	(date 1553289524445)
+@@ -33,13 +33,22 @@
+ 
+ <link rel="stylesheet" href="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/css/ol.css">
+ 
++<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
++        crossorigin="anonymous"></script>
++<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
++        crossorigin="anonymous"></script>
++<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
++      crossorigin="anonymous">
++<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
++      crossorigin="anonymous">
++
+ <script type="text/javascript">
+-    const token = """"),_display_(/*12.21*/jwtToken),format.raw/*12.29*/("""";
++    const token = """"),_display_(/*21.21*/jwtToken),format.raw/*21.29*/("""";
+ </script>
+ 
+ <h1>Map</h1>
+ <div>
+-    <p>"""),_display_(/*17.9*/jwtToken),format.raw/*17.17*/("""</p>
++    <p>"""),_display_(/*26.9*/jwtToken),format.raw/*26.17*/("""</p>
+ </div>
+ <div id="content-placeholder"></div>
+ 
+@@ -84,11 +93,11 @@
+ 
+               /*
+                   -- GENERATED --
+-                  DATE: Fri Mar 22 17:32:25 GMT 2019
++                  DATE: Fri Mar 22 21:03:37 GMT 2019
+                   SOURCE: C:/Users/danie/Documents/code/rw/app/views/map.scala.html
+-                  HASH: 4c3b625d6ee9319f15421b8f1bb1ee9fc91a072c
+-                  MATRIX: 727->1|840->19|870->23|910->37|924->43|992->91|1068->141|1082->147|1145->190|1575->593|1604->601|1676->647|1705->655
+-                  LINES: 21->1|26->1|28->3|28->3|28->3|28->3|29->4|29->4|29->4|37->12|37->12|42->17|42->17
++                  HASH: 4d21829173704549b475355e18b5f9da1d2e1d94
++                  MATRIX: 727->1|840->19|870->23|910->37|924->43|992->91|1068->141|1082->147|1145->190|2429->1447|2458->1455|2530->1501|2559->1509
++                  LINES: 21->1|26->1|28->3|28->3|28->3|28->3|29->4|29->4|29->4|46->21|46->21|51->26|51->26
+                   -- GENERATED --
+               */
+           
+\ No newline at end of file
+Index: target/scala-2.12/twirl/main/views/html/main.template.scala
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- target/scala-2.12/twirl/main/views/html/main.template.scala	(date 1553289524400)
++++ target/scala-2.12/twirl/main/views/html/main.template.scala	(date 1553289524400)
+@@ -53,7 +53,7 @@
+ 
+               /*
+                   -- GENERATED --
+-                  DATE: Fri Mar 22 11:23:58 GMT 2019
++                  DATE: Fri Mar 22 21:03:37 GMT 2019
+                   SOURCE: C:/Users/danie/Documents/code/rw/app/views/main.scala.html
+                   HASH: c5897321661c01e4cadf57c2d0909d505170493e
+                   MATRIX: 733->1|857->32|884->33|971->94|996->99|1084->161|1098->167|1160->208|1247->269|1261->275|1321->314|1373->339|1388->345|1450->386|1544->453|1572->460|1604->465
+Index: target/scala-2.12/twirl/main/views/html/login.template.scala
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- target/scala-2.12/twirl/main/views/html/login.template.scala	(date 1553289524357)
++++ target/scala-2.12/twirl/main/views/html/login.template.scala	(date 1553289524357)
+@@ -99,7 +99,7 @@
+ 
+               /*
+                   -- GENERATED --
+-                  DATE: Fri Mar 22 11:23:58 GMT 2019
++                  DATE: Fri Mar 22 21:03:37 GMT 2019
+                   SOURCE: C:/Users/danie/Documents/code/rw/app/views/login.scala.html
+                   HASH: c1102d9093090390b5e351c7fe6b7a0f1278c4a5
+                   MATRIX: 782->1|978->102|1008->106|1126->198|1140->204|1201->245|1363->380|1379->387|1403->402|1464->425|1501->435|1534->441|1559->445|1589->448|1615->453|1663->470|1703->543|1741->554|1774->578|1814->580|1852->591|1865->595|1891->612|1951->634|1988->644|2042->671|2056->676|2081->680|2111->683|2125->688|2154->696|2191->706|2239->723|2281->734|2321->747|2336->753|2385->793|2425->795|2465->808|2480->814|2516->829|2556->842|2571->848|2759->1015|2799->1028|2814->1034|3006->1205|3045->1217|3111->1252|3146->1260
+Index: target/scala-2.12/twirl/main/views/html/loginLandingPage.template.scala
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- target/scala-2.12/twirl/main/views/html/loginLandingPage.template.scala	(date 1553289524377)
++++ target/scala-2.12/twirl/main/views/html/loginLandingPage.template.scala	(date 1553289524377)
+@@ -51,7 +51,7 @@
+ 
+               /*
+                   -- GENERATED --
+-                  DATE: Fri Mar 22 11:23:58 GMT 2019
++                  DATE: Fri Mar 22 21:03:37 GMT 2019
+                   SOURCE: C:/Users/danie/Documents/code/rw/app/views/loginLandingPage.scala.html
+                   HASH: dc380347332ce83caa242a5260ff208020123e17
+                   MATRIX: 744->1|879->41|909->46|940->69|979->71|1007->73|1063->141|1091->144|1103->149|1149->175|1179->179|1227->200|1257->209
+Index: target/scala-2.12/twirl/main/views/html/route.template.scala
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- target/scala-2.12/twirl/main/views/html/route.template.scala	(date 1553289524473)
++++ target/scala-2.12/twirl/main/views/html/route.template.scala	(date 1553289524473)
+@@ -0,0 +1,65 @@
++
++package views.html
++
++import _root_.play.twirl.api.TwirlFeatureImports._
++import _root_.play.twirl.api.TwirlHelperImports._
++import _root_.play.twirl.api.Html
++import _root_.play.twirl.api.JavaScript
++import _root_.play.twirl.api.Txt
++import _root_.play.twirl.api.Xml
++import models._
++import controllers._
++import play.api.i18n._
++import views.html._
++import play.api.templates.PlayMagic._
++import play.api.mvc._
++import play.api.data._
++
++object route extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,_root_.play.twirl.api.Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with _root_.play.twirl.api.Template1[models.route.Route,play.twirl.api.HtmlFormat.Appendable] {
++
++  /**/
++  def apply/*1.2*/(route: models.route.Route):play.twirl.api.HtmlFormat.Appendable = {
++    _display_ {
++      {
++
++
++Seq[Any](format.raw/*1.29*/("""
++
++"""),format.raw/*3.1*/("""<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
++        crossorigin="anonymous"></script>
++<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
++        crossorigin="anonymous"></script>
++<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
++      crossorigin="anonymous">
++<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
++      crossorigin="anonymous">
++
++<div>
++    <h1>
++        Route
++    </h1>
++    <p>"""),_display_(/*16.9*/route),format.raw/*16.14*/("""</p>
++</div>"""))
++      }
++    }
++  }
++
++  def render(route:models.route.Route): play.twirl.api.HtmlFormat.Appendable = apply(route)
++
++  def f:((models.route.Route) => play.twirl.api.HtmlFormat.Appendable) = (route) => apply(route)
++
++  def ref: this.type = this
++
++}
++
++
++              /*
++                  -- GENERATED --
++                  DATE: Fri Mar 22 21:03:37 GMT 2019
++                  SOURCE: C:/Users/danie/Documents/code/rw/app/views/route.scala.html
++                  HASH: a0798fda64dc645675ca60831544ad44cc3119e2
++                  MATRIX: 741->1|863->28|893->32|1824->937|1850->942
++                  LINES: 21->1|26->1|28->3|41->16|41->16
++                  -- GENERATED --
++              */
++          
+\ No newline at end of file
+Index: target/scala-2.12/twirl/main/views/html/routes.template.scala
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- target/scala-2.12/twirl/main/views/html/routes.template.scala	(date 1553289524496)
++++ target/scala-2.12/twirl/main/views/html/routes.template.scala	(date 1553289524496)
+@@ -0,0 +1,65 @@
++
++package views.html
++
++import _root_.play.twirl.api.TwirlFeatureImports._
++import _root_.play.twirl.api.TwirlHelperImports._
++import _root_.play.twirl.api.Html
++import _root_.play.twirl.api.JavaScript
++import _root_.play.twirl.api.Txt
++import _root_.play.twirl.api.Xml
++import models._
++import controllers._
++import play.api.i18n._
++import views.html._
++import play.api.templates.PlayMagic._
++import play.api.mvc._
++import play.api.data._
++
++object routes extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,_root_.play.twirl.api.Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with _root_.play.twirl.api.Template1[Set[models.route.ListRoute],play.twirl.api.HtmlFormat.Appendable] {
++
++  /**/
++  def apply/*1.2*/(routes: Set[models.route.ListRoute]):play.twirl.api.HtmlFormat.Appendable = {
++    _display_ {
++      {
++
++
++Seq[Any](format.raw/*1.39*/("""
++
++"""),format.raw/*3.1*/("""<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
++        crossorigin="anonymous"></script>
++<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
++        crossorigin="anonymous"></script>
++<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
++      crossorigin="anonymous">
++<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
++      crossorigin="anonymous">
++
++<div>
++    <h1>
++        Route
++    </h1>
++    <p>"""),_display_(/*16.9*/routes),format.raw/*16.15*/("""</p>
++</div>"""))
++      }
++    }
++  }
++
++  def render(routes:Set[models.route.ListRoute]): play.twirl.api.HtmlFormat.Appendable = apply(routes)
++
++  def f:((Set[models.route.ListRoute]) => play.twirl.api.HtmlFormat.Appendable) = (routes) => apply(routes)
++
++  def ref: this.type = this
++
++}
++
++
++              /*
++                  -- GENERATED --
++                  DATE: Fri Mar 22 21:03:37 GMT 2019
++                  SOURCE: C:/Users/danie/Documents/code/rw/app/views/routes.scala.html
++                  HASH: 6c6bf36e286c6942ad4bffabe73fa0bf894ef960
++                  MATRIX: 751->1|883->38|913->42|1844->947|1871->953
++                  LINES: 21->1|26->1|28->3|41->16|41->16
++                  -- GENERATED --
++              */
++          
+\ No newline at end of file
+Index: target/scala-2.12/twirl/main/views/html/location.template.scala
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- target/scala-2.12/twirl/main/views/html/location.template.scala	(date 1553289524296)
++++ target/scala-2.12/twirl/main/views/html/location.template.scala	(date 1553289524296)
+@@ -0,0 +1,65 @@
++
++package views.html
++
++import _root_.play.twirl.api.TwirlFeatureImports._
++import _root_.play.twirl.api.TwirlHelperImports._
++import _root_.play.twirl.api.Html
++import _root_.play.twirl.api.JavaScript
++import _root_.play.twirl.api.Txt
++import _root_.play.twirl.api.Xml
++import models._
++import controllers._
++import play.api.i18n._
++import views.html._
++import play.api.templates.PlayMagic._
++import play.api.mvc._
++import play.api.data._
++
++object location extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,_root_.play.twirl.api.Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with _root_.play.twirl.api.Template1[models.location.Location,play.twirl.api.HtmlFormat.Appendable] {
++
++  /**/
++  def apply/*1.2*/(location: models.location.Location):play.twirl.api.HtmlFormat.Appendable = {
++    _display_ {
++      {
++
++
++Seq[Any](format.raw/*1.38*/("""
++
++"""),format.raw/*3.1*/("""<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
++        crossorigin="anonymous"></script>
++<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
++        crossorigin="anonymous"></script>
++<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
++      crossorigin="anonymous">
++<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
++      crossorigin="anonymous">
++
++<div>
++    <h1>
++        Location
++    </h1>
++    <p>"""),_display_(/*16.9*/location),format.raw/*16.17*/("""</p>
++</div>"""))
++      }
++    }
++  }
++
++  def render(location:models.location.Location): play.twirl.api.HtmlFormat.Appendable = apply(location)
++
++  def f:((models.location.Location) => play.twirl.api.HtmlFormat.Appendable) = (location) => apply(location)
++
++  def ref: this.type = this
++
++}
++
++
++              /*
++                  -- GENERATED --
++                  DATE: Fri Mar 22 21:03:37 GMT 2019
++                  SOURCE: C:/Users/danie/Documents/code/rw/app/views/location.scala.html
++                  HASH: f1989d61ae17a9f0f062d30d855ae64d1d090b58
++                  MATRIX: 750->1|881->37|911->41|1845->949|1874->957
++                  LINES: 21->1|26->1|28->3|41->16|41->16
++                  -- GENERATED --
++              */
++          
+\ No newline at end of file
+Index: target/scala-2.12/twirl/main/views/html/locations.template.scala
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- target/scala-2.12/twirl/main/views/html/locations.template.scala	(date 1553289524319)
++++ target/scala-2.12/twirl/main/views/html/locations.template.scala	(date 1553289524319)
+@@ -0,0 +1,65 @@
++
++package views.html
++
++import _root_.play.twirl.api.TwirlFeatureImports._
++import _root_.play.twirl.api.TwirlHelperImports._
++import _root_.play.twirl.api.Html
++import _root_.play.twirl.api.JavaScript
++import _root_.play.twirl.api.Txt
++import _root_.play.twirl.api.Xml
++import models._
++import controllers._
++import play.api.i18n._
++import views.html._
++import play.api.templates.PlayMagic._
++import play.api.mvc._
++import play.api.data._
++
++object locations extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,_root_.play.twirl.api.Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with _root_.play.twirl.api.Template1[Set[models.location.ListLocation],play.twirl.api.HtmlFormat.Appendable] {
++
++  /**/
++  def apply/*1.2*/(locations: Set[models.location.ListLocation]):play.twirl.api.HtmlFormat.Appendable = {
++    _display_ {
++      {
++
++
++Seq[Any](format.raw/*1.48*/("""
++
++"""),format.raw/*3.1*/("""<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
++        crossorigin="anonymous"></script>
++<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
++        crossorigin="anonymous"></script>
++<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
++      crossorigin="anonymous">
++<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
++      crossorigin="anonymous">
++
++<div>
++    <h1>
++        Locations
++    </h1>
++    <p>"""),_display_(/*16.9*/locations),format.raw/*16.18*/("""</p>
++</div>"""))
++      }
++    }
++  }
++
++  def render(locations:Set[models.location.ListLocation]): play.twirl.api.HtmlFormat.Appendable = apply(locations)
++
++  def f:((Set[models.location.ListLocation]) => play.twirl.api.HtmlFormat.Appendable) = (locations) => apply(locations)
++
++  def ref: this.type = this
++
++}
++
++
++              /*
++                  -- GENERATED --
++                  DATE: Fri Mar 22 21:03:37 GMT 2019
++                  SOURCE: C:/Users/danie/Documents/code/rw/app/views/locations.scala.html
++                  HASH: a63a1a2f6ed939eba6576f52b00111da58d1d592
++                  MATRIX: 760->1|901->47|931->51|1866->960|1896->969
++                  LINES: 21->1|26->1|28->3|41->16|41->16
++                  -- GENERATED --
++              */
++          
+\ No newline at end of file
+Index: target/scala-2.12/routes/main/router/Routes.scala
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- target/scala-2.12/routes/main/router/Routes.scala	(date 1553289523840)
++++ target/scala-2.12/routes/main/router/Routes.scala	(date 1553289523840)
+@@ -1,6 +1,6 @@
+ // @GENERATOR:play-routes-compiler
+ // @SOURCE:C:/Users/danie/Documents/code/rw/conf/routes
+-// @DATE:Fri Mar 22 15:22:56 GMT 2019
++// @DATE:Fri Mar 22 21:03:36 GMT 2019
+ 
+ package router
+ 
+@@ -14,40 +14,48 @@
+ class Routes(
+   override val errorHandler: play.api.http.HttpErrorHandler, 
+   // @LINE:7
+-  Assets_4: controllers.Assets,
++  Assets_5: controllers.Assets,
+   // @LINE:10
+   UserController_0: controllers.web.UserController,
+   // @LINE:12
+-  LandingPageController_2: controllers.web.LandingPageController,
++  LandingPageController_3: controllers.web.LandingPageController,
+   // @LINE:13
+-  AuthenticatedUserController_5: controllers.web.AuthenticatedUserController,
++  AuthenticatedUserController_6: controllers.web.AuthenticatedUserController,
+   // @LINE:15
+-  MapController_3: controllers.web.MapController,
+-  // @LINE:17
+-  ApiAuthenticatedController_1: controllers.api.ApiAuthenticatedController,
++  MapController_4: controllers.web.MapController,
++  // @LINE:16
++  RouteController_1: controllers.web.RouteController,
++  // @LINE:18
++  LocationController_7: controllers.web.LocationController,
++  // @LINE:22
++  ApiAuthenticatedController_2: controllers.api.ApiAuthenticatedController,
+   val prefix: String
+ ) extends GeneratedRouter {
+ 
+    @javax.inject.Inject()
+    def this(errorHandler: play.api.http.HttpErrorHandler,
+     // @LINE:7
+-    Assets_4: controllers.Assets,
++    Assets_5: controllers.Assets,
+     // @LINE:10
+     UserController_0: controllers.web.UserController,
+     // @LINE:12
+-    LandingPageController_2: controllers.web.LandingPageController,
++    LandingPageController_3: controllers.web.LandingPageController,
+     // @LINE:13
+-    AuthenticatedUserController_5: controllers.web.AuthenticatedUserController,
++    AuthenticatedUserController_6: controllers.web.AuthenticatedUserController,
+     // @LINE:15
+-    MapController_3: controllers.web.MapController,
+-    // @LINE:17
+-    ApiAuthenticatedController_1: controllers.api.ApiAuthenticatedController
+-  ) = this(errorHandler, Assets_4, UserController_0, LandingPageController_2, AuthenticatedUserController_5, MapController_3, ApiAuthenticatedController_1, "/")
++    MapController_4: controllers.web.MapController,
++    // @LINE:16
++    RouteController_1: controllers.web.RouteController,
++    // @LINE:18
++    LocationController_7: controllers.web.LocationController,
++    // @LINE:22
++    ApiAuthenticatedController_2: controllers.api.ApiAuthenticatedController
++  ) = this(errorHandler, Assets_5, UserController_0, LandingPageController_3, AuthenticatedUserController_6, MapController_4, RouteController_1, LocationController_7, ApiAuthenticatedController_2, "/")
+ 
+   def withPrefix(addPrefix: String): Routes = {
+     val prefix = play.api.routing.Router.concatPrefix(addPrefix, this.prefix)
+     router.RoutesPrefix.setPrefix(prefix)
+-    new Routes(errorHandler, Assets_4, UserController_0, LandingPageController_2, AuthenticatedUserController_5, MapController_3, ApiAuthenticatedController_1, prefix)
++    new Routes(errorHandler, Assets_5, UserController_0, LandingPageController_3, AuthenticatedUserController_6, MapController_4, RouteController_1, LocationController_7, ApiAuthenticatedController_2, prefix)
+   }
+ 
+   private[this] val defaultPrefix: String = {
+@@ -61,6 +69,10 @@
+     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """welcome""", """controllers.web.LandingPageController.showLandingPage"""),
+     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """logout""", """controllers.web.AuthenticatedUserController.logout"""),
+     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """map""", """controllers.web.MapController.showMapPage"""),
++    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """routes""", """controllers.web.RouteController.showRouteListPage"""),
++    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """route/detail/""" + "$" + """from<[^/]+>/""" + "$" + """to<[^/]+>""", """controllers.web.RouteController.showRouteDetailPage(from:String, to:String)"""),
++    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """locations""", """controllers.web.LocationController.showLocationListPage"""),
++    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """location/detail/""" + "$" + """id<[^/]+>""", """controllers.web.LocationController.showLocationDetailPage(id:String)"""),
+     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """api/location/map""", """controllers.api.ApiAuthenticatedController.getLocationsForMap"""),
+     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """api/location/list/default""", """controllers.api.ApiAuthenticatedController.getLocationsForList"""),
+     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """api/location/""" + "$" + """id<[^/]+>""", """controllers.api.ApiAuthenticatedController.getLocation(id:String)"""),
+@@ -79,7 +91,7 @@
+     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
+   )
+   private[this] lazy val controllers_Assets_versioned0_invoker = createInvoker(
+-    Assets_4.versioned(fakeValue[String], fakeValue[Asset]),
++    Assets_5.versioned(fakeValue[String], fakeValue[Asset]),
+     play.api.routing.HandlerDef(this.getClass.getClassLoader,
+       "router",
+       "controllers.Assets",
+@@ -133,7 +145,7 @@
+     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("welcome")))
+   )
+   private[this] lazy val controllers_web_LandingPageController_showLandingPage3_invoker = createInvoker(
+-    LandingPageController_2.showLandingPage,
++    LandingPageController_3.showLandingPage,
+     play.api.routing.HandlerDef(this.getClass.getClassLoader,
+       "router",
+       "controllers.web.LandingPageController",
+@@ -151,7 +163,7 @@
+     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("logout")))
+   )
+   private[this] lazy val controllers_web_AuthenticatedUserController_logout4_invoker = createInvoker(
+-    AuthenticatedUserController_5.logout,
++    AuthenticatedUserController_6.logout,
+     play.api.routing.HandlerDef(this.getClass.getClassLoader,
+       "router",
+       "controllers.web.AuthenticatedUserController",
+@@ -169,7 +181,7 @@
+     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("map")))
+   )
+   private[this] lazy val controllers_web_MapController_showMapPage5_invoker = createInvoker(
+-    MapController_3.showMapPage,
++    MapController_4.showMapPage,
+     play.api.routing.HandlerDef(this.getClass.getClassLoader,
+       "router",
+       "controllers.web.MapController",
+@@ -181,13 +193,85 @@
+       Seq()
+     )
+   )
++
++  // @LINE:16
++  private[this] lazy val controllers_web_RouteController_showRouteListPage6_route = Route("GET",
++    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("routes")))
++  )
++  private[this] lazy val controllers_web_RouteController_showRouteListPage6_invoker = createInvoker(
++    RouteController_1.showRouteListPage,
++    play.api.routing.HandlerDef(this.getClass.getClassLoader,
++      "router",
++      "controllers.web.RouteController",
++      "showRouteListPage",
++      Nil,
++      "GET",
++      this.prefix + """routes""",
++      """""",
++      Seq()
++    )
++  )
+ 
+   // @LINE:17
+-  private[this] lazy val controllers_api_ApiAuthenticatedController_getLocationsForMap6_route = Route("GET",
++  private[this] lazy val controllers_web_RouteController_showRouteDetailPage7_route = Route("GET",
++    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("route/detail/"), DynamicPart("from", """[^/]+""",true), StaticPart("/"), DynamicPart("to", """[^/]+""",true)))
++  )
++  private[this] lazy val controllers_web_RouteController_showRouteDetailPage7_invoker = createInvoker(
++    RouteController_1.showRouteDetailPage(fakeValue[String], fakeValue[String]),
++    play.api.routing.HandlerDef(this.getClass.getClassLoader,
++      "router",
++      "controllers.web.RouteController",
++      "showRouteDetailPage",
++      Seq(classOf[String], classOf[String]),
++      "GET",
++      this.prefix + """route/detail/""" + "$" + """from<[^/]+>/""" + "$" + """to<[^/]+>""",
++      """""",
++      Seq()
++    )
++  )
++
++  // @LINE:18
++  private[this] lazy val controllers_web_LocationController_showLocationListPage8_route = Route("GET",
++    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("locations")))
++  )
++  private[this] lazy val controllers_web_LocationController_showLocationListPage8_invoker = createInvoker(
++    LocationController_7.showLocationListPage,
++    play.api.routing.HandlerDef(this.getClass.getClassLoader,
++      "router",
++      "controllers.web.LocationController",
++      "showLocationListPage",
++      Nil,
++      "GET",
++      this.prefix + """locations""",
++      """""",
++      Seq()
++    )
++  )
++
++  // @LINE:19
++  private[this] lazy val controllers_web_LocationController_showLocationDetailPage9_route = Route("GET",
++    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("location/detail/"), DynamicPart("id", """[^/]+""",true)))
++  )
++  private[this] lazy val controllers_web_LocationController_showLocationDetailPage9_invoker = createInvoker(
++    LocationController_7.showLocationDetailPage(fakeValue[String]),
++    play.api.routing.HandlerDef(this.getClass.getClassLoader,
++      "router",
++      "controllers.web.LocationController",
++      "showLocationDetailPage",
++      Seq(classOf[String]),
++      "GET",
++      this.prefix + """location/detail/""" + "$" + """id<[^/]+>""",
++      """""",
++      Seq()
++    )
++  )
++
++  // @LINE:22
++  private[this] lazy val controllers_api_ApiAuthenticatedController_getLocationsForMap10_route = Route("GET",
+     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/location/map")))
+   )
+-  private[this] lazy val controllers_api_ApiAuthenticatedController_getLocationsForMap6_invoker = createInvoker(
+-    ApiAuthenticatedController_1.getLocationsForMap,
++  private[this] lazy val controllers_api_ApiAuthenticatedController_getLocationsForMap10_invoker = createInvoker(
++    ApiAuthenticatedController_2.getLocationsForMap,
+     play.api.routing.HandlerDef(this.getClass.getClassLoader,
+       "router",
+       "controllers.api.ApiAuthenticatedController",
+@@ -200,12 +284,12 @@
+     )
+   )
+ 
+-  // @LINE:18
+-  private[this] lazy val controllers_api_ApiAuthenticatedController_getLocationsForList7_route = Route("GET",
++  // @LINE:23
++  private[this] lazy val controllers_api_ApiAuthenticatedController_getLocationsForList11_route = Route("GET",
+     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/location/list/default")))
+   )
+-  private[this] lazy val controllers_api_ApiAuthenticatedController_getLocationsForList7_invoker = createInvoker(
+-    ApiAuthenticatedController_1.getLocationsForList,
++  private[this] lazy val controllers_api_ApiAuthenticatedController_getLocationsForList11_invoker = createInvoker(
++    ApiAuthenticatedController_2.getLocationsForList,
+     play.api.routing.HandlerDef(this.getClass.getClassLoader,
+       "router",
+       "controllers.api.ApiAuthenticatedController",
+@@ -218,12 +302,12 @@
+     )
+   )
+ 
+-  // @LINE:19
+-  private[this] lazy val controllers_api_ApiAuthenticatedController_getLocation8_route = Route("GET",
++  // @LINE:24
++  private[this] lazy val controllers_api_ApiAuthenticatedController_getLocation12_route = Route("GET",
+     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/location/"), DynamicPart("id", """[^/]+""",true)))
+   )
+-  private[this] lazy val controllers_api_ApiAuthenticatedController_getLocation8_invoker = createInvoker(
+-    ApiAuthenticatedController_1.getLocation(fakeValue[String]),
++  private[this] lazy val controllers_api_ApiAuthenticatedController_getLocation12_invoker = createInvoker(
++    ApiAuthenticatedController_2.getLocation(fakeValue[String]),
+     play.api.routing.HandlerDef(this.getClass.getClassLoader,
+       "router",
+       "controllers.api.ApiAuthenticatedController",
+@@ -236,12 +320,12 @@
+     )
+   )
+ 
+-  // @LINE:21
+-  private[this] lazy val controllers_api_ApiAuthenticatedController_getRoutesForMap9_route = Route("GET",
++  // @LINE:26
++  private[this] lazy val controllers_api_ApiAuthenticatedController_getRoutesForMap13_route = Route("GET",
+     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/route/map")))
+   )
+-  private[this] lazy val controllers_api_ApiAuthenticatedController_getRoutesForMap9_invoker = createInvoker(
+-    ApiAuthenticatedController_1.getRoutesForMap,
++  private[this] lazy val controllers_api_ApiAuthenticatedController_getRoutesForMap13_invoker = createInvoker(
++    ApiAuthenticatedController_2.getRoutesForMap,
+     play.api.routing.HandlerDef(this.getClass.getClassLoader,
+       "router",
+       "controllers.api.ApiAuthenticatedController",
+@@ -254,12 +338,12 @@
+     )
+   )
+ 
+-  // @LINE:22
+-  private[this] lazy val controllers_api_ApiAuthenticatedController_getRoutesForList10_route = Route("GET",
++  // @LINE:27
++  private[this] lazy val controllers_api_ApiAuthenticatedController_getRoutesForList14_route = Route("GET",
+     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/route/list/default")))
+   )
+-  private[this] lazy val controllers_api_ApiAuthenticatedController_getRoutesForList10_invoker = createInvoker(
+-    ApiAuthenticatedController_1.getRoutesForList,
++  private[this] lazy val controllers_api_ApiAuthenticatedController_getRoutesForList14_invoker = createInvoker(
++    ApiAuthenticatedController_2.getRoutesForList,
+     play.api.routing.HandlerDef(this.getClass.getClassLoader,
+       "router",
+       "controllers.api.ApiAuthenticatedController",
+@@ -272,12 +356,12 @@
+     )
+   )
+ 
+-  // @LINE:23
+-  private[this] lazy val controllers_api_ApiAuthenticatedController_getRoute11_route = Route("GET",
++  // @LINE:28
++  private[this] lazy val controllers_api_ApiAuthenticatedController_getRoute15_route = Route("GET",
+     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/route/"), DynamicPart("from", """[^/]+""",true), StaticPart("/"), DynamicPart("to", """[^/]+""",true)))
+   )
+-  private[this] lazy val controllers_api_ApiAuthenticatedController_getRoute11_invoker = createInvoker(
+-    ApiAuthenticatedController_1.getRoute(fakeValue[String], fakeValue[String]),
++  private[this] lazy val controllers_api_ApiAuthenticatedController_getRoute15_invoker = createInvoker(
++    ApiAuthenticatedController_2.getRoute(fakeValue[String], fakeValue[String]),
+     play.api.routing.HandlerDef(this.getClass.getClassLoader,
+       "router",
+       "controllers.api.ApiAuthenticatedController",
+@@ -296,7 +380,7 @@
+     // @LINE:7
+     case controllers_Assets_versioned0_route(params@_) =>
+       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
+-        controllers_Assets_versioned0_invoker.call(Assets_4.versioned(path, file))
++        controllers_Assets_versioned0_invoker.call(Assets_5.versioned(path, file))
+       }
+   
+     // @LINE:10
+@@ -314,55 +398,79 @@
+     // @LINE:12
+     case controllers_web_LandingPageController_showLandingPage3_route(params@_) =>
+       call { 
+-        controllers_web_LandingPageController_showLandingPage3_invoker.call(LandingPageController_2.showLandingPage)
++        controllers_web_LandingPageController_showLandingPage3_invoker.call(LandingPageController_3.showLandingPage)
+       }
+   
+     // @LINE:13
+     case controllers_web_AuthenticatedUserController_logout4_route(params@_) =>
+       call { 
+-        controllers_web_AuthenticatedUserController_logout4_invoker.call(AuthenticatedUserController_5.logout)
++        controllers_web_AuthenticatedUserController_logout4_invoker.call(AuthenticatedUserController_6.logout)
+       }
+   
+     // @LINE:15
+     case controllers_web_MapController_showMapPage5_route(params@_) =>
+       call { 
+-        controllers_web_MapController_showMapPage5_invoker.call(MapController_3.showMapPage)
++        controllers_web_MapController_showMapPage5_invoker.call(MapController_4.showMapPage)
++      }
++  
++    // @LINE:16
++    case controllers_web_RouteController_showRouteListPage6_route(params@_) =>
++      call { 
++        controllers_web_RouteController_showRouteListPage6_invoker.call(RouteController_1.showRouteListPage)
+       }
+   
+     // @LINE:17
+-    case controllers_api_ApiAuthenticatedController_getLocationsForMap6_route(params@_) =>
+-      call { 
+-        controllers_api_ApiAuthenticatedController_getLocationsForMap6_invoker.call(ApiAuthenticatedController_1.getLocationsForMap)
++    case controllers_web_RouteController_showRouteDetailPage7_route(params@_) =>
++      call(params.fromPath[String]("from", None), params.fromPath[String]("to", None)) { (from, to) =>
++        controllers_web_RouteController_showRouteDetailPage7_invoker.call(RouteController_1.showRouteDetailPage(from, to))
+       }
+   
+     // @LINE:18
+-    case controllers_api_ApiAuthenticatedController_getLocationsForList7_route(params@_) =>
++    case controllers_web_LocationController_showLocationListPage8_route(params@_) =>
+       call { 
+-        controllers_api_ApiAuthenticatedController_getLocationsForList7_invoker.call(ApiAuthenticatedController_1.getLocationsForList)
++        controllers_web_LocationController_showLocationListPage8_invoker.call(LocationController_7.showLocationListPage)
+       }
+   
+     // @LINE:19
+-    case controllers_api_ApiAuthenticatedController_getLocation8_route(params@_) =>
++    case controllers_web_LocationController_showLocationDetailPage9_route(params@_) =>
+       call(params.fromPath[String]("id", None)) { (id) =>
+-        controllers_api_ApiAuthenticatedController_getLocation8_invoker.call(ApiAuthenticatedController_1.getLocation(id))
+-      }
+-  
+-    // @LINE:21
+-    case controllers_api_ApiAuthenticatedController_getRoutesForMap9_route(params@_) =>
+-      call { 
+-        controllers_api_ApiAuthenticatedController_getRoutesForMap9_invoker.call(ApiAuthenticatedController_1.getRoutesForMap)
++        controllers_web_LocationController_showLocationDetailPage9_invoker.call(LocationController_7.showLocationDetailPage(id))
+       }
+   
+     // @LINE:22
+-    case controllers_api_ApiAuthenticatedController_getRoutesForList10_route(params@_) =>
++    case controllers_api_ApiAuthenticatedController_getLocationsForMap10_route(params@_) =>
+       call { 
+-        controllers_api_ApiAuthenticatedController_getRoutesForList10_invoker.call(ApiAuthenticatedController_1.getRoutesForList)
++        controllers_api_ApiAuthenticatedController_getLocationsForMap10_invoker.call(ApiAuthenticatedController_2.getLocationsForMap)
+       }
+   
+     // @LINE:23
+-    case controllers_api_ApiAuthenticatedController_getRoute11_route(params@_) =>
++    case controllers_api_ApiAuthenticatedController_getLocationsForList11_route(params@_) =>
++      call { 
++        controllers_api_ApiAuthenticatedController_getLocationsForList11_invoker.call(ApiAuthenticatedController_2.getLocationsForList)
++      }
++  
++    // @LINE:24
++    case controllers_api_ApiAuthenticatedController_getLocation12_route(params@_) =>
++      call(params.fromPath[String]("id", None)) { (id) =>
++        controllers_api_ApiAuthenticatedController_getLocation12_invoker.call(ApiAuthenticatedController_2.getLocation(id))
++      }
++  
++    // @LINE:26
++    case controllers_api_ApiAuthenticatedController_getRoutesForMap13_route(params@_) =>
++      call { 
++        controllers_api_ApiAuthenticatedController_getRoutesForMap13_invoker.call(ApiAuthenticatedController_2.getRoutesForMap)
++      }
++  
++    // @LINE:27
++    case controllers_api_ApiAuthenticatedController_getRoutesForList14_route(params@_) =>
++      call { 
++        controllers_api_ApiAuthenticatedController_getRoutesForList14_invoker.call(ApiAuthenticatedController_2.getRoutesForList)
++      }
++  
++    // @LINE:28
++    case controllers_api_ApiAuthenticatedController_getRoute15_route(params@_) =>
+       call(params.fromPath[String]("from", None), params.fromPath[String]("to", None)) { (from, to) =>
+-        controllers_api_ApiAuthenticatedController_getRoute11_invoker.call(ApiAuthenticatedController_1.getRoute(from, to))
++        controllers_api_ApiAuthenticatedController_getRoute15_invoker.call(ApiAuthenticatedController_2.getRoute(from, to))
+       }
+   }
+ }
+Index: target/scala-2.12/routes/main/router/RoutesPrefix.scala
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- target/scala-2.12/routes/main/router/RoutesPrefix.scala	(date 1553289523819)
++++ target/scala-2.12/routes/main/router/RoutesPrefix.scala	(date 1553289523819)
+@@ -1,6 +1,6 @@
+ // @GENERATOR:play-routes-compiler
+ // @SOURCE:C:/Users/danie/Documents/code/rw/conf/routes
+-// @DATE:Fri Mar 22 15:22:56 GMT 2019
++// @DATE:Fri Mar 22 21:03:36 GMT 2019
+ 
+ 
+ package router {
+Index: target/scala-2.12/routes/main/controllers/api/javascript/JavaScriptReverseRoutes.scala
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- target/scala-2.12/routes/main/controllers/api/javascript/JavaScriptReverseRoutes.scala	(date 1553289523873)
++++ target/scala-2.12/routes/main/controllers/api/javascript/JavaScriptReverseRoutes.scala	(date 1553289523873)
+@@ -1,16 +1,16 @@
+ // @GENERATOR:play-routes-compiler
+ // @SOURCE:C:/Users/danie/Documents/code/rw/conf/routes
+-// @DATE:Fri Mar 22 15:22:56 GMT 2019
++// @DATE:Fri Mar 22 21:03:36 GMT 2019
+ 
+ import play.api.routing.JavaScriptReverseRoute
+ 
+ 
+ import _root_.controllers.Assets.Asset
+ 
+-// @LINE:17
++// @LINE:22
+ package controllers.api.javascript {
+ 
+-  // @LINE:17
++  // @LINE:22
+   class ReverseApiAuthenticatedController(_prefix: => String) {
+ 
+     def _defaultPrefix: String = {
+@@ -18,7 +18,7 @@
+     }
+ 
+   
+-    // @LINE:17
++    // @LINE:22
+     def getLocationsForMap: JavaScriptReverseRoute = JavaScriptReverseRoute(
+       "controllers.api.ApiAuthenticatedController.getLocationsForMap",
+       """
+@@ -28,7 +28,7 @@
+       """
+     )
+   
+-    // @LINE:19
++    // @LINE:24
+     def getLocation: JavaScriptReverseRoute = JavaScriptReverseRoute(
+       "controllers.api.ApiAuthenticatedController.getLocation",
+       """
+@@ -38,7 +38,7 @@
+       """
+     )
+   
+-    // @LINE:22
++    // @LINE:27
+     def getRoutesForList: JavaScriptReverseRoute = JavaScriptReverseRoute(
+       "controllers.api.ApiAuthenticatedController.getRoutesForList",
+       """
+@@ -48,7 +48,7 @@
+       """
+     )
+   
+-    // @LINE:23
++    // @LINE:28
+     def getRoute: JavaScriptReverseRoute = JavaScriptReverseRoute(
+       "controllers.api.ApiAuthenticatedController.getRoute",
+       """
+@@ -58,7 +58,7 @@
+       """
+     )
+   
+-    // @LINE:21
++    // @LINE:26
+     def getRoutesForMap: JavaScriptReverseRoute = JavaScriptReverseRoute(
+       "controllers.api.ApiAuthenticatedController.getRoutesForMap",
+       """
+@@ -68,7 +68,7 @@
+       """
+     )
+   
+-    // @LINE:18
++    // @LINE:23
+     def getLocationsForList: JavaScriptReverseRoute = JavaScriptReverseRoute(
+       "controllers.api.ApiAuthenticatedController.getLocationsForList",
+       """
+Index: target/scala-2.12/routes/main/controllers/api/routes.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- target/scala-2.12/routes/main/controllers/api/routes.java	(date 1553289523858)
++++ target/scala-2.12/routes/main/controllers/api/routes.java	(date 1553289523858)
+@@ -1,6 +1,6 @@
+ // @GENERATOR:play-routes-compiler
+ // @SOURCE:C:/Users/danie/Documents/code/rw/conf/routes
+-// @DATE:Fri Mar 22 15:22:56 GMT 2019
++// @DATE:Fri Mar 22 21:03:36 GMT 2019
+ 
+ package controllers.api;
+ 
+Index: target/scala-2.12/routes/main/controllers/api/ReverseRoutes.scala
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- target/scala-2.12/routes/main/controllers/api/ReverseRoutes.scala	(date 1553289523958)
++++ target/scala-2.12/routes/main/controllers/api/ReverseRoutes.scala	(date 1553289523958)
+@@ -1,53 +1,53 @@
+ // @GENERATOR:play-routes-compiler
+ // @SOURCE:C:/Users/danie/Documents/code/rw/conf/routes
+-// @DATE:Fri Mar 22 15:22:56 GMT 2019
++// @DATE:Fri Mar 22 21:03:36 GMT 2019
+ 
+ import play.api.mvc.Call
+ 
+ 
+ import _root_.controllers.Assets.Asset
+ 
+-// @LINE:17
++// @LINE:22
+ package controllers.api {
+ 
+-  // @LINE:17
++  // @LINE:22
+   class ReverseApiAuthenticatedController(_prefix: => String) {
+     def _defaultPrefix: String = {
+       if (_prefix.endsWith("/")) "" else "/"
+     }
+ 
+   
+-    // @LINE:17
++    // @LINE:22
+     def getLocationsForMap(): Call = {
+       
+       Call("GET", _prefix + { _defaultPrefix } + "api/location/map")
+     }
+   
+-    // @LINE:19
++    // @LINE:24
+     def getLocation(id:String): Call = {
+       
+       Call("GET", _prefix + { _defaultPrefix } + "api/location/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[String]].unbind("id", id)))
+     }
+   
+-    // @LINE:22
++    // @LINE:27
+     def getRoutesForList(): Call = {
+       
+       Call("GET", _prefix + { _defaultPrefix } + "api/route/list/default")
+     }
+   
+-    // @LINE:23
++    // @LINE:28
+     def getRoute(from:String, to:String): Call = {
+       
+       Call("GET", _prefix + { _defaultPrefix } + "api/route/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[String]].unbind("from", from)) + "/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[String]].unbind("to", to)))
+     }
+   
+-    // @LINE:21
++    // @LINE:26
+     def getRoutesForMap(): Call = {
+       
+       Call("GET", _prefix + { _defaultPrefix } + "api/route/map")
+     }
+   
+-    // @LINE:18
++    // @LINE:23
+     def getLocationsForList(): Call = {
+       
+       Call("GET", _prefix + { _defaultPrefix } + "api/location/list/default")
+Index: target/scala-2.12/routes/main/controllers/web/javascript/JavaScriptReverseRoutes.scala
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- target/scala-2.12/routes/main/controllers/web/javascript/JavaScriptReverseRoutes.scala	(date 1553289523910)
++++ target/scala-2.12/routes/main/controllers/web/javascript/JavaScriptReverseRoutes.scala	(date 1553289523910)
+@@ -1,6 +1,6 @@
+ // @GENERATOR:play-routes-compiler
+ // @SOURCE:C:/Users/danie/Documents/code/rw/conf/routes
+-// @DATE:Fri Mar 22 15:22:56 GMT 2019
++// @DATE:Fri Mar 22 21:03:36 GMT 2019
+ 
+ import play.api.routing.JavaScriptReverseRoute
+ 
+@@ -10,40 +10,50 @@
+ // @LINE:10
+ package controllers.web.javascript {
+ 
+-  // @LINE:12
+-  class ReverseLandingPageController(_prefix: => String) {
++  // @LINE:13
++  class ReverseAuthenticatedUserController(_prefix: => String) {
+ 
+     def _defaultPrefix: String = {
+       if (_prefix.endsWith("/")) "" else "/"
+     }
+ 
+   
+-    // @LINE:12
+-    def showLandingPage: JavaScriptReverseRoute = JavaScriptReverseRoute(
+-      "controllers.web.LandingPageController.showLandingPage",
++    // @LINE:13
++    def logout: JavaScriptReverseRoute = JavaScriptReverseRoute(
++      "controllers.web.AuthenticatedUserController.logout",
+       """
+         function() {
+-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "welcome"})
++          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "logout"})
+         }
+       """
+     )
+   
+   }
+ 
+-  // @LINE:15
+-  class ReverseMapController(_prefix: => String) {
++  // @LINE:18
++  class ReverseLocationController(_prefix: => String) {
+ 
+     def _defaultPrefix: String = {
+       if (_prefix.endsWith("/")) "" else "/"
+     }
+ 
+   
+-    // @LINE:15
+-    def showMapPage: JavaScriptReverseRoute = JavaScriptReverseRoute(
+-      "controllers.web.MapController.showMapPage",
++    // @LINE:19
++    def showLocationDetailPage: JavaScriptReverseRoute = JavaScriptReverseRoute(
++      "controllers.web.LocationController.showLocationDetailPage",
++      """
++        function(id0) {
++          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "location/detail/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[String]].javascriptUnbind + """)("id", id0))})
++        }
++      """
++    )
++  
++    // @LINE:18
++    def showLocationListPage: JavaScriptReverseRoute = JavaScriptReverseRoute(
++      "controllers.web.LocationController.showLocationListPage",
+       """
+         function() {
+-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "map"})
++          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "locations"})
+         }
+       """
+     )
+@@ -80,20 +90,70 @@
+   
+   }
+ 
+-  // @LINE:13
+-  class ReverseAuthenticatedUserController(_prefix: => String) {
++  // @LINE:15
++  class ReverseMapController(_prefix: => String) {
+ 
+     def _defaultPrefix: String = {
+       if (_prefix.endsWith("/")) "" else "/"
+     }
+ 
+   
+-    // @LINE:13
+-    def logout: JavaScriptReverseRoute = JavaScriptReverseRoute(
+-      "controllers.web.AuthenticatedUserController.logout",
++    // @LINE:15
++    def showMapPage: JavaScriptReverseRoute = JavaScriptReverseRoute(
++      "controllers.web.MapController.showMapPage",
++      """
++        function() {
++          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "map"})
++        }
++      """
++    )
++  
++  }
++
++  // @LINE:16
++  class ReverseRouteController(_prefix: => String) {
++
++    def _defaultPrefix: String = {
++      if (_prefix.endsWith("/")) "" else "/"
++    }
++
++  
++    // @LINE:16
++    def showRouteListPage: JavaScriptReverseRoute = JavaScriptReverseRoute(
++      "controllers.web.RouteController.showRouteListPage",
++      """
++        function() {
++          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "routes"})
++        }
++      """
++    )
++  
++    // @LINE:17
++    def showRouteDetailPage: JavaScriptReverseRoute = JavaScriptReverseRoute(
++      "controllers.web.RouteController.showRouteDetailPage",
++      """
++        function(from0,to1) {
++          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "route/detail/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[String]].javascriptUnbind + """)("from", from0)) + "/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[String]].javascriptUnbind + """)("to", to1))})
++        }
++      """
++    )
++  
++  }
++
++  // @LINE:12
++  class ReverseLandingPageController(_prefix: => String) {
++
++    def _defaultPrefix: String = {
++      if (_prefix.endsWith("/")) "" else "/"
++    }
++
++  
++    // @LINE:12
++    def showLandingPage: JavaScriptReverseRoute = JavaScriptReverseRoute(
++      "controllers.web.LandingPageController.showLandingPage",
+       """
+         function() {
+-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "logout"})
++          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "welcome"})
+         }
+       """
+     )
+Index: target/scala-2.12/routes/main/controllers/web/routes.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- target/scala-2.12/routes/main/controllers/web/routes.java	(date 1553289523940)
++++ target/scala-2.12/routes/main/controllers/web/routes.java	(date 1553289523940)
+@@ -1,6 +1,6 @@
+ // @GENERATOR:play-routes-compiler
+ // @SOURCE:C:/Users/danie/Documents/code/rw/conf/routes
+-// @DATE:Fri Mar 22 15:22:56 GMT 2019
++// @DATE:Fri Mar 22 21:03:36 GMT 2019
+ 
+ package controllers.web;
+ 
+@@ -8,17 +8,21 @@
+ 
+ public class routes {
+   
+-  public static final controllers.web.ReverseLandingPageController LandingPageController = new controllers.web.ReverseLandingPageController(RoutesPrefix.byNamePrefix());
+-  public static final controllers.web.ReverseMapController MapController = new controllers.web.ReverseMapController(RoutesPrefix.byNamePrefix());
+-  public static final controllers.web.ReverseUserController UserController = new controllers.web.ReverseUserController(RoutesPrefix.byNamePrefix());
+   public static final controllers.web.ReverseAuthenticatedUserController AuthenticatedUserController = new controllers.web.ReverseAuthenticatedUserController(RoutesPrefix.byNamePrefix());
++  public static final controllers.web.ReverseLocationController LocationController = new controllers.web.ReverseLocationController(RoutesPrefix.byNamePrefix());
++  public static final controllers.web.ReverseUserController UserController = new controllers.web.ReverseUserController(RoutesPrefix.byNamePrefix());
++  public static final controllers.web.ReverseMapController MapController = new controllers.web.ReverseMapController(RoutesPrefix.byNamePrefix());
++  public static final controllers.web.ReverseRouteController RouteController = new controllers.web.ReverseRouteController(RoutesPrefix.byNamePrefix());
++  public static final controllers.web.ReverseLandingPageController LandingPageController = new controllers.web.ReverseLandingPageController(RoutesPrefix.byNamePrefix());
+ 
+   public static class javascript {
+     
+-    public static final controllers.web.javascript.ReverseLandingPageController LandingPageController = new controllers.web.javascript.ReverseLandingPageController(RoutesPrefix.byNamePrefix());
+-    public static final controllers.web.javascript.ReverseMapController MapController = new controllers.web.javascript.ReverseMapController(RoutesPrefix.byNamePrefix());
+-    public static final controllers.web.javascript.ReverseUserController UserController = new controllers.web.javascript.ReverseUserController(RoutesPrefix.byNamePrefix());
+     public static final controllers.web.javascript.ReverseAuthenticatedUserController AuthenticatedUserController = new controllers.web.javascript.ReverseAuthenticatedUserController(RoutesPrefix.byNamePrefix());
++    public static final controllers.web.javascript.ReverseLocationController LocationController = new controllers.web.javascript.ReverseLocationController(RoutesPrefix.byNamePrefix());
++    public static final controllers.web.javascript.ReverseUserController UserController = new controllers.web.javascript.ReverseUserController(RoutesPrefix.byNamePrefix());
++    public static final controllers.web.javascript.ReverseMapController MapController = new controllers.web.javascript.ReverseMapController(RoutesPrefix.byNamePrefix());
++    public static final controllers.web.javascript.ReverseRouteController RouteController = new controllers.web.javascript.ReverseRouteController(RoutesPrefix.byNamePrefix());
++    public static final controllers.web.javascript.ReverseLandingPageController LandingPageController = new controllers.web.javascript.ReverseLandingPageController(RoutesPrefix.byNamePrefix());
+   }
+ 
+ }
+Index: target/scala-2.12/routes/main/controllers/web/ReverseRoutes.scala
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- target/scala-2.12/routes/main/controllers/web/ReverseRoutes.scala	(date 1553289523996)
++++ target/scala-2.12/routes/main/controllers/web/ReverseRoutes.scala	(date 1553289523996)
+@@ -1,6 +1,6 @@
+ // @GENERATOR:play-routes-compiler
+ // @SOURCE:C:/Users/danie/Documents/code/rw/conf/routes
+-// @DATE:Fri Mar 22 15:22:56 GMT 2019
++// @DATE:Fri Mar 22 21:03:36 GMT 2019
+ 
+ import play.api.mvc.Call
+ 
+@@ -10,32 +10,38 @@
+ // @LINE:10
+ package controllers.web {
+ 
+-  // @LINE:12
+-  class ReverseLandingPageController(_prefix: => String) {
++  // @LINE:13
++  class ReverseAuthenticatedUserController(_prefix: => String) {
+     def _defaultPrefix: String = {
+       if (_prefix.endsWith("/")) "" else "/"
+     }
+ 
+   
+-    // @LINE:12
+-    def showLandingPage(): Call = {
++    // @LINE:13
++    def logout(): Call = {
+       
+-      Call("GET", _prefix + { _defaultPrefix } + "welcome")
++      Call("GET", _prefix + { _defaultPrefix } + "logout")
+     }
+   
+   }
+ 
+-  // @LINE:15
+-  class ReverseMapController(_prefix: => String) {
++  // @LINE:18
++  class ReverseLocationController(_prefix: => String) {
+     def _defaultPrefix: String = {
+       if (_prefix.endsWith("/")) "" else "/"
+     }
+ 
+   
+-    // @LINE:15
+-    def showMapPage(): Call = {
++    // @LINE:19
++    def showLocationDetailPage(id:String): Call = {
+       
+-      Call("GET", _prefix + { _defaultPrefix } + "map")
++      Call("GET", _prefix + { _defaultPrefix } + "location/detail/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[String]].unbind("id", id)))
++    }
++  
++    // @LINE:18
++    def showLocationListPage(): Call = {
++      
++      Call("GET", _prefix + { _defaultPrefix } + "locations")
+     }
+   
+   }
+@@ -61,17 +67,53 @@
+   
+   }
+ 
+-  // @LINE:13
+-  class ReverseAuthenticatedUserController(_prefix: => String) {
++  // @LINE:15
++  class ReverseMapController(_prefix: => String) {
+     def _defaultPrefix: String = {
+       if (_prefix.endsWith("/")) "" else "/"
+     }
+ 
+   
+-    // @LINE:13
+-    def logout(): Call = {
++    // @LINE:15
++    def showMapPage(): Call = {
+       
+-      Call("GET", _prefix + { _defaultPrefix } + "logout")
++      Call("GET", _prefix + { _defaultPrefix } + "map")
++    }
++  
++  }
++
++  // @LINE:16
++  class ReverseRouteController(_prefix: => String) {
++    def _defaultPrefix: String = {
++      if (_prefix.endsWith("/")) "" else "/"
++    }
++
++  
++    // @LINE:16
++    def showRouteListPage(): Call = {
++      
++      Call("GET", _prefix + { _defaultPrefix } + "routes")
++    }
++  
++    // @LINE:17
++    def showRouteDetailPage(from:String, to:String): Call = {
++      
++      Call("GET", _prefix + { _defaultPrefix } + "route/detail/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[String]].unbind("from", from)) + "/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[String]].unbind("to", to)))
++    }
++  
++  }
++
++  // @LINE:12
++  class ReverseLandingPageController(_prefix: => String) {
++    def _defaultPrefix: String = {
++      if (_prefix.endsWith("/")) "" else "/"
++    }
++
++  
++    // @LINE:12
++    def showLandingPage(): Call = {
++      
++      Call("GET", _prefix + { _defaultPrefix } + "welcome")
+     }
+   
+   }
+Index: target/scala-2.12/routes/main/controllers/routes.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- target/scala-2.12/routes/main/controllers/routes.java	(date 1553289523887)
++++ target/scala-2.12/routes/main/controllers/routes.java	(date 1553289523887)
+@@ -1,6 +1,6 @@
+ // @GENERATOR:play-routes-compiler
+ // @SOURCE:C:/Users/danie/Documents/code/rw/conf/routes
+-// @DATE:Fri Mar 22 15:22:56 GMT 2019
++// @DATE:Fri Mar 22 21:03:36 GMT 2019
+ 
+ package controllers;
+ 
+Index: target/scala-2.12/routes/main/controllers/ReverseRoutes.scala
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- target/scala-2.12/routes/main/controllers/ReverseRoutes.scala	(date 1553289524007)
++++ target/scala-2.12/routes/main/controllers/ReverseRoutes.scala	(date 1553289524007)
+@@ -1,6 +1,6 @@
+ // @GENERATOR:play-routes-compiler
+ // @SOURCE:C:/Users/danie/Documents/code/rw/conf/routes
+-// @DATE:Fri Mar 22 15:22:56 GMT 2019
++// @DATE:Fri Mar 22 21:03:36 GMT 2019
+ 
+ import play.api.mvc.Call
+ 
+Index: target/scala-2.12/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- target/scala-2.12/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala	(date 1553289524020)
++++ target/scala-2.12/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala	(date 1553289524020)
+@@ -1,6 +1,6 @@
+ // @GENERATOR:play-routes-compiler
+ // @SOURCE:C:/Users/danie/Documents/code/rw/conf/routes
+-// @DATE:Fri Mar 22 15:22:56 GMT 2019
++// @DATE:Fri Mar 22 21:03:36 GMT 2019
+ 
+ import play.api.routing.JavaScriptReverseRoute
+ 
+Index: .gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .gitignore	(date 1553289397086)
++++ .gitignore	(date 1553289397086)
+@@ -0,0 +1,3 @@
++.idea/
++target/
++resources/data/static
+\ No newline at end of file

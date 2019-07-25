@@ -1,5 +1,8 @@
 package controllers
 
+import java.util.Date
+
+import auth.JWTService
 import javax.inject.Inject
 import models.Global
 import models.auth.UserDao
@@ -10,7 +13,8 @@ import play.api.mvc._
 
 class UserController @Inject()(
                                 cc: MessagesControllerComponents,
-                                userDao: UserDao
+                                userDao: UserDao,
+                                jwtService: JWTService
                               ) extends MessagesAbstractController(cc) {
 
   private val logger = play.api.Logger(this.getClass)
@@ -29,13 +33,17 @@ class UserController @Inject()(
   private val formSubmitUrl = routes.UserController.processLoginAttempt
 
   def showLoginForm = Action { implicit request: MessagesRequest[AnyContent] =>
-    Ok(views.html.login(form, formSubmitUrl))
+    Ok(views.html.login.index(form, formSubmitUrl))
+  }
+
+  def about = Action {implicit request =>
+    Ok(views.html.landing.about())
   }
 
   def processLoginAttempt = Action { implicit request: MessagesRequest[AnyContent] =>
     val errorFunction = { formWithErrors: Form[LoginUser] =>
       // form validation/binding failed...
-      BadRequest(views.html.login(formWithErrors, formSubmitUrl))
+      BadRequest(views.html.login.index(formWithErrors, formSubmitUrl))
     }
     val successFunction = { user: LoginUser =>
       // form validation/binding succeeded ...
@@ -45,11 +53,12 @@ class UserController @Inject()(
         case Some(user) => {
           Redirect(routes.LandingPageController.showLandingPage)
           .flashing("info" -> "You are logged in.")
-          .withSession(Global.SESSION_USERNAME_KEY -> user.id.toString)
+          .withSession(Global.SESSION_USERNAME_KEY -> user.id.toString, Global.SESSION_USER_TOKEN -> jwtService.createToken(user, new Date()))
         }
         case None => {
           Redirect(routes.UserController.showLoginForm)
             .flashing("error" -> "Invalid username/password.")
+            .withNewSession
         }
       }
     }

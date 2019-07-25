@@ -4,5 +4,6 @@ package models
 object Global {
 
   val SESSION_USERNAME_KEY = "username"
+  val SESSION_USER_TOKEN = "token"
 
 }

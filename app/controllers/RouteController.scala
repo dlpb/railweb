@@ -2,7 +2,7 @@ package controllers
 
 import java.util.Date
 
-import auth.api.JWTService
+import auth.JWTService
 import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject.{Inject, Singleton}
 import models.auth.roles.MapUser
@@ -27,7 +27,9 @@ class RouteController @Inject()(
      route match {
        case Some(r) =>
          val token = jwtService.createToken(request.user, new Date())
-         Ok(views.html.route(r,
+         Ok(views.html.route.route(
+           request.user,
+           r,
            routeService.getVisitsForRoute(r, request.user),
            token,
            routes.ApiAuthenticatedController.visitRouteWithParams(from, to),
@@ -88,7 +90,8 @@ class RouteController @Inject()(
       val percentage = (visitedCount.toDouble / availableCount.toDouble) * 100.0
       val formattedPercentage: String = f"$percentage%1.1f"
 
-      Ok(views.html.routeList(
+      Ok(views.html.route.index(
+        request.user,
         sortedRouteMap,
         visits,
         formActions,
