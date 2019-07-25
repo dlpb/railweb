@@ -27,7 +27,6 @@ abstract class UserDao(config: Config) extends UserProvider {
 
   def findUserByLoginUser(u: LoginUser): Option[User] = {
     users.find({user =>
-      println(s"DEBUG: ${user}, ${hashAndSaltPassword(salt, u.password)}")
       u.username.equals(user.username) && hashAndSaltPassword(salt, u.password).equals(user.password)}
     ) map mapDaoUserToUser
   }
