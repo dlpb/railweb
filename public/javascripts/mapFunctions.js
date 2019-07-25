@@ -59,6 +59,26 @@ function populatePoints(map, token) {
     }
 }
 
+/**
+* Add all points but with specific highlighting
+*/
+function populatePointsWithHighlighting(map, token, highlighting) {
+    jQuery.when(
+        jQuery.ajax({
+          url: "/api/location/map",
+          headers: { "Authorization": "Bearer " + token }
+        })
+    )
+    .done(function(locations, visits){
+        locations.forEach(function(loc){
+            loc.visited = findLocationVisit(loc, highlighting);
+            addLocation(loc);
+        });
+    });
+    function findLocationVisit(loc, visits){
+        return visits.includes(loc.id);
+    }
+}
 
  function addLocation(location){
     let lat = location.location.lat;
