@@ -1,6 +1,6 @@
 import com.typesafe.sbt.packager.MappingsHelper._
 
-name := """play-scala-forms-example"""
+name := """railweb"""
 
 version := "2.6.0"
 
