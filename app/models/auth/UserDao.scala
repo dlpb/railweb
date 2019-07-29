@@ -3,7 +3,7 @@ package models.auth
 import java.math.BigInteger
 import java.security.MessageDigest
 
-import com.typesafe.config.Config
+import com.typesafe.config.{Config, ConfigFactory, ConfigValueFactory}
 import models.auth.roles.Role
 import models.web.forms.LoginUser
 
@@ -58,6 +58,18 @@ abstract class UserDao(config: Config) extends UserProvider {
     String.format("%032x", new BigInteger(1, MessageDigest.getInstance("SHA-256").digest(toHash.getBytes("UTF-8"))))
   }
 
+}
+
+object UserDao extends App {
+  println(new UserDao(ConfigFactory.empty().withValue("data.user.list.root", ConfigValueFactory.fromAnyRef("conf/data/users"))) {
+    override def getUsers: Set[DaoUser] = Set.empty[DaoUser]
+
+    override def updateUser(user: DaoUser): Unit = ()
+
+    override def createUser(username: String, password: String, roles: Set[String]): Unit = ()
+
+    override def deleteUser(user: DaoUser): Unit = ()
+  }.encryptPassword("12345"))
 }
 
 case class DaoUser(id: Long, username: String, password: String, roles: Set[String])
