@@ -50,7 +50,7 @@ class PlanController @Inject()(
 
       val timetable = planService.getTrainsForLocation(loc)
 
-      Ok(views.html.plan.location.trains.index(request.user, timetable)(request.request))
+      Ok(views.html.plan.location.trains.index(request.user, timetable, locationsService)(request.request))
     }
     else {
       Forbidden("User not authorized to view page")

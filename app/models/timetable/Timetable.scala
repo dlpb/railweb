@@ -386,20 +386,31 @@ trait Location {
   def tiploc: String
 
   def platform: String
-
   def line: String
 
   def engineeringAllowance: Int
-
   def engineeringAllowanceHalfMinute: Boolean
 
   def pathingAllowance: Int
-
   def pathingAllowanceHalfMinute: Boolean
 
   def performanceAllowance: Int
-
   def performanceAllowanceHalfMinute: Boolean
+
+  def departure: Option[Int]
+  def departureHalfMinute: Option[Boolean]
+
+  def arrival: Option[Int]
+  def arrivalHalfMinute: Option[Boolean]
+
+  def pass: Option[Int]
+  def passHalfMinute: Option[Boolean]
+
+  def path: Option[String]
+
+  def publicArrival: Option[Int]
+  def publicDeparture: Option[Int]
+
 
 }
 
@@ -412,10 +423,17 @@ case class LocationOrigin(override val tiploc: String,
                           override val pathingAllowanceHalfMinute: Boolean,
                           override val performanceAllowance: Int,
                           override val performanceAllowanceHalfMinute: Boolean,
-                          departure: Int,
-                          departureHalfMinute: Boolean,
-                          publicDeparture: Int)
-  extends Location
+                          override val departure: Option[Int],
+                          override val departureHalfMinute: Option[Boolean],
+                          override val publicDeparture: Option[Int])
+  extends Location {
+  override def arrival: Option[Int] = None
+  override def arrivalHalfMinute: Option[Boolean] = None
+  override def pass: Option[Int] = None
+  override def passHalfMinute: Option[Boolean] = None
+  override def path: Option[String] = None
+  override def publicArrival: Option[Int] = None
+}
 
 case class LocationIntermediate(override val tiploc: String,
                                 override val platform: String,
@@ -426,14 +444,15 @@ case class LocationIntermediate(override val tiploc: String,
                                 override val pathingAllowanceHalfMinute: Boolean,
                                 override val performanceAllowance: Int,
                                 override val performanceAllowanceHalfMinute: Boolean,
-                                arrival: Option[Int],
-                                arrivalHalfMinute: Option[Boolean],
-                                departure: Option[Int],
-                                departureHalfMinute: Option[Boolean],
-                                pass: Option[Int],
-                                passHalfMinute: Option[Boolean],
-                                path: String,
-                                publicArrival: Option[Int], publicDeparture: Option[Int])
+                                override val arrival: Option[Int],
+                                override val arrivalHalfMinute: Option[Boolean],
+                                override val departure: Option[Int],
+                                override val departureHalfMinute: Option[Boolean],
+                                override val pass: Option[Int],
+                                override val passHalfMinute: Option[Boolean],
+                                override val path:  Option[String],
+                                override val publicArrival: Option[Int],
+                                override val publicDeparture: Option[Int])
   extends Location
 
 case class LocationTerminal(override val tiploc: String,
@@ -445,8 +464,14 @@ case class LocationTerminal(override val tiploc: String,
                             override val pathingAllowanceHalfMinute: Boolean,
                             override val performanceAllowance: Int,
                             override val performanceAllowanceHalfMinute: Boolean,
-                            arrival: Int,
-                            arrivalHalfMinute: Boolean,
-                            path: String,
-                            publicArrival: Int)
-  extends Location
+                            override val arrival: Option[Int],
+                            override val arrivalHalfMinute: Option[Boolean],
+                            override val path: Option[String],
+                            override val publicArrival: Option[Int])
+  extends Location {
+  override def departure: Option[Int] = None
+  override def departureHalfMinute: Option[Boolean] = None
+  override def pass: Option[Int] = None
+  override def passHalfMinute: Option[Boolean] = None
+  override def publicDeparture: Option[Int] = None
+}

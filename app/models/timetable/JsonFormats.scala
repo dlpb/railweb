@@ -41,7 +41,7 @@ case object LocationSerializer extends CustomSerializer[Location](format => ({
       JField("departure", JInt(d)) ::
       JField("departureHalfMinute", JBool(dh)) ::
       JField("publicDeparture", JInt(pd)) :: Nil
-    ) => LocationOrigin(t, p, l, ea.intValue(), eah, pa.intValue(), pah, pea.intValue(), peh, d.intValue(), dh, pd.intValue())
+    ) => LocationOrigin(t, p, l, ea.intValue(), eah, pa.intValue(), pah, pea.intValue(), peh, Some(d.intValue()), Some(dh), Some(pd.intValue()))
 
   //intermediate pass
   case JObject(
@@ -57,7 +57,7 @@ case object LocationSerializer extends CustomSerializer[Location](format => ({
       JField("pass", JInt(pass)) ::
       JField("passHalfMinute", JBool(passh)) ::
       JField("path", JString(pth)) :: Nil
-    ) => LocationIntermediate(t, p, l, ea.intValue(), eah, pa.intValue(), pah, pea.intValue(), peh, None, None, None, None, Some(pass.intValue()), Some(passh), pth, None, None)
+    ) => LocationIntermediate(t, p, l, ea.intValue(), eah, pa.intValue(), pah, pea.intValue(), peh, None, None, None, None, Some(pass.intValue()), Some(passh), Some(pth), None, None)
 
   //intermediate stop - public
   case JObject(
@@ -77,7 +77,7 @@ case object LocationSerializer extends CustomSerializer[Location](format => ({
       JField("path", JString(pth)) ::
       JField("publicArrival", JInt(par)) ::
       JField("publicDeparture", JInt(pd)) :: Nil
-    ) => LocationIntermediate(t, p, l, ea.intValue(), eah, pa.intValue(), pah, pe.intValue(), peh, Some(a.intValue()), Some(ah), Some(d.intValue()), Some(dh), None, None, pth, Some(par.intValue()), Some(pd.intValue()))
+    ) => LocationIntermediate(t, p, l, ea.intValue(), eah, pa.intValue(), pah, pe.intValue(), peh, Some(a.intValue()), Some(ah), Some(d.intValue()), Some(dh), None, None, Some(pth), Some(par.intValue()), Some(pd.intValue()))
 
   //intermediate stop - public dep only
   case JObject(
@@ -96,7 +96,7 @@ case object LocationSerializer extends CustomSerializer[Location](format => ({
       JField("departureHalfMinute", JBool(dh)) ::
       JField("path", JString(pth)) ::
       JField("publicDeparture", JInt(pd)) :: Nil
-    ) => LocationIntermediate(t, p, l, ea.intValue(), eah, pa.intValue(), pah, pe.intValue(), peh, Some(a.intValue()), Some(ah), Some(d.intValue()), Some(dh), None, None, pth, None, Some(pd.intValue()))
+    ) => LocationIntermediate(t, p, l, ea.intValue(), eah, pa.intValue(), pah, pe.intValue(), peh, Some(a.intValue()), Some(ah), Some(d.intValue()), Some(dh), None, None, Some(pth), None, Some(pd.intValue()))
 
   //intermediate stop - public dep only
   case JObject(
@@ -115,7 +115,7 @@ case object LocationSerializer extends CustomSerializer[Location](format => ({
       JField("departureHalfMinute", JBool(dh)) ::
       JField("path", JString(pth)) ::
       JField("publicArrival", JInt(par)) :: Nil
-    ) => LocationIntermediate(t, p, l, ea.intValue(), eah, pa.intValue(), pah, pe.intValue(), peh, Some(a.intValue()), Some(ah), Some(d.intValue()), Some(dh), None, None, pth, Some(par.intValue()), None)
+    ) => LocationIntermediate(t, p, l, ea.intValue(), eah, pa.intValue(), pah, pe.intValue(), peh, Some(a.intValue()), Some(ah), Some(d.intValue()), Some(dh), None, None, Some(pth), Some(par.intValue()), None)
 
   //intermediate stop - timing
   case JObject(
@@ -133,7 +133,7 @@ case object LocationSerializer extends CustomSerializer[Location](format => ({
       JField("departure", JInt(d)) ::
       JField("departureHalfMinute", JBool(dh)) ::
       JField("path", JString(pth)) :: Nil
-    ) => LocationIntermediate(t, p, l, ea.intValue(), eah, pa.intValue(), pah, pe.intValue(), peh, Some(a.intValue()), Some(ah), Some(d.intValue()), Some(dh), None, None, pth, None, None)
+    ) => LocationIntermediate(t, p, l, ea.intValue(), eah, pa.intValue(), pah, pe.intValue(), peh, Some(a.intValue()), Some(ah), Some(d.intValue()), Some(dh), None, None, Some(pth), None, None)
 
   //terminal
   case JObject(
@@ -150,7 +150,7 @@ case object LocationSerializer extends CustomSerializer[Location](format => ({
       JField("arrivalHalfMinute", JBool(ah)) ::
       JField("path", JString(pth)) ::
       JField("publicArrival", JInt(pa)) :: Nil
-    ) => LocationTerminal(t, p, l, ea.intValue(), eah, pa.intValue(), pah, pea.intValue(), peh, a.intValue(), ah, pth, pa.intValue())
+    ) => LocationTerminal(t, p, l, ea.intValue(), eah, pa.intValue(), pah, pea.intValue(), peh, Some(a.intValue()), Some(ah), Some(pth), Some(pa.intValue()))
 }, {
   case _ => JString("")
 }))

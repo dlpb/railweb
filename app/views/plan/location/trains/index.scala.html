@@ -1,6 +1,7 @@
 @(
 user: models.auth.User,
-trains: List[models.timetable.SimpleTimetable]
+trains: List[models.timetable.SimpleTimetable],
+locationsService: models.location.LocationsService
 )(implicit request: Request[AnyContent])
 <head>
     <meta charset="utf-8">
@@ -89,10 +90,10 @@ trains: List[models.timetable.SimpleTimetable]
                     <table>
                     @for(train <- trains) {
                         <tr>
-                            <td>@train.basicSchedule.trainUid</td>
-                            <td>@train.origin.tiploc</td>
-                            <td>@train.location.tiploc</td>
-                            <td>@train.destination.tiploc</td>
+                            <td>@bs(train.basicSchedule)</td>
+                            <td>@lo(train.origin)</td>
+                            <td>@loc(train.location)</td>
+                            <td>@lt(train.destination)</td>
                         </tr>
                     }
                     </table>
@@ -109,3 +110,40 @@ trains: List[models.timetable.SimpleTimetable]
         <span class="text-muted">All the Stations & Track &copy; dlpb.uk 2018 - @java.time.Year.now.getValue. <a href="/about">About</a></a></span>
     </div>
 </footer>
+
+@bs(bs: models.timetable.BasicSchedule) = {
+    <ul>
+        <li> Days:
+            @if(bs.validMonday) { M }
+            @if(bs.validTuesday) { T }
+            @if(bs.validWednesday) { W }
+            @if(bs.validThursday) { Th }
+            @if(bs.validFriday) { F }
+            @if(bs.validSaturday) { S }
+            @if(bs.validSunday) { Su }
+        </li>
+        <li>Headcode: @bs.headcode</li>
+        <li>Train UID: @bs.trainUid</li>
+    </ul>
+}
+@lo(lo: models.timetable.Location) = {
+<ul>
+    <li>@lo.tiploc</li>
+    <li>Depart: @lo.publicDeparture</li>
+</ul>
+}
+
+@loc(loc: models.timetable.Location) = {
+<ul>
+    <li>Pass: @loc.pass</li>
+    <li>Arrive: @loc.publicArrival</li>
+    <li>Depart: @loc.publicDeparture</li>
+</ul>
+}
+
+@lt(lt: models.timetable.Location) = {
+<ul>
+    <li>@lt.tiploc </li>
+    <li>Arrive: @lt.publicArrival</li>
+</ul>
+}
