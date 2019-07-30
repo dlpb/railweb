@@ -1,6 +1,6 @@
 @(
 user: models.auth.User,
-trains: List[models.timetable.SimpleTimetable],
+timetables: List[controllers.DisplaySimpleTimetable],
 locationsService: models.location.LocationsService
 )(implicit request: Request[AnyContent])
 <head>
@@ -88,12 +88,12 @@ locationsService: models.location.LocationsService
             <div class="col-sm">
                 <div class="card card-body">
                     <table>
-                    @for(train <- trains) {
+                    @for(tt <- timetables) {
                         <tr>
-                            <td>@bs(train.basicSchedule)</td>
-                            <td>@lo(train.origin)</td>
-                            <td>@loc(train.location)</td>
-                            <td>@lt(train.destination)</td>
+                            <td>@bs(tt.timetable.basicSchedule)</td>
+                            <td>@lo(tt.timetable.origin, tt.origin)</td>
+                            <td>@loc(tt.timetable.location, tt.location)</td>
+                            <td>@lt(tt.timetable.destination, tt.destination)</td>
                         </tr>
                     }
                     </table>
@@ -126,23 +126,26 @@ locationsService: models.location.LocationsService
         <li>Train UID: @bs.trainUid</li>
     </ul>
 }
-@lo(lo: models.timetable.Location) = {
+@lo(lo: models.timetable.Location, dlo: models.location.Location) = {
 <ul>
+    <li>@dlo.name</li>
     <li>@lo.tiploc</li>
     <li>Depart: @lo.publicDeparture</li>
 </ul>
 }
 
-@loc(loc: models.timetable.Location) = {
+@loc(loc: models.timetable.Location, dloc: models.location.Location) = {
 <ul>
+    <li>@dloc.name</li>
     <li>Pass: @loc.pass</li>
     <li>Arrive: @loc.publicArrival</li>
     <li>Depart: @loc.publicDeparture</li>
 </ul>
 }
 
-@lt(lt: models.timetable.Location) = {
+@lt(lt: models.timetable.Location, dlt: models.location.Location) = {
 <ul>
+    <li>@dlt.name</li>
     <li>@lt.tiploc </li>
     <li>Arrive: @lt.publicArrival</li>
 </ul>

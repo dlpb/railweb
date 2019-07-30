@@ -14,8 +14,10 @@ import scala.io.Source
 class LocationsService @Inject() ( config: Config,
                                    dataProvider: LocationDataProvider) {
 
+
   private val dataRoot = config.getString("data.static.root")
-  private val locations = makeLocations(readLocationsFromFile)
+  private val locations: Set[Location] = makeLocations(readLocationsFromFile)
+  def findLocation(tiploc: String): Option[Location] = locations.find(_.tiploc.contains(tiploc))
 
   def getVisitsForUser(user: User): Option[Map[String, List[String]]] = {
     dataProvider.getVisits(user)

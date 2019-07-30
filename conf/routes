@@ -47,7 +47,7 @@ GET /locations                      controllers.LocationController.showLocationL
 GET /location/detail/:id            controllers.LocationController.showLocationDetailPage(id: String)
 
 GET /plan                           controllers.PlanController.showPlanIndex()
-GET /plan/locations/highlight       controllers.PlanController.showLocationHighlights(locations: String ?= "")
+GET /plan/location/highlight        controllers.PlanController.showLocationHighlights(locations: String ?= "")
 GET /plan/location/trains/:loc      controllers.PlanController.showTrainsForLocation(loc: String)
 GET /routes/find                    controllers.ListController.showListPage(waypoints: String ?= "", followFreightLinks: Boolean ?=false, followFixedLinks: Boolean ?= false)
 
