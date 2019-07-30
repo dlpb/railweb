@@ -1,6 +1,6 @@
 package controllers
 
-import java.util.Date
+import java.util.{Calendar, Date}
 
 import auth.JWTService
 import auth.web.{AuthorizedWebAction, WebUserContext}
@@ -45,11 +45,26 @@ class PlanController @Inject()(
     }
   }
 
-  def showTrainsForLocation(loc: String) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
+  def showTrainsForLocationNow(loc: String) = {
+
+    val from: Calendar = Calendar.getInstance
+    from.add(Calendar.HOUR, -1)
+    val to: Calendar = from
+    to.add(Calendar.HOUR, 2)
+    showTrainsForLocation(loc,
+      from.get(Calendar.YEAR),
+      from.get(Calendar.MONTH),
+      from.get(Calendar.DAY_OF_MONTH),
+      from.get(Calendar.HOUR_OF_DAY)*100 + from.get(Calendar.MINUTE),
+      to.get(Calendar.HOUR_OF_DAY)*100 + to.get(Calendar.MINUTE)
+      )
+  }
+
+  def showTrainsForLocation(loc: String, year: Int, month: Int, day: Int, from: Int, to: Int) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     if (request.user.roles.contains(PlanUser)) {
       val token = jwtService.createToken(request.user, new Date())
 
-      val timetables = planService.getTrainsForLocation(loc) map {
+      val timetables = planService.getTrainsForLocation(loc, year, month, day, from, to) map {
         t =>
           DisplaySimpleTimetable(t,
             locationsService.findLocation(t.origin.tiploc).getOrElse(throw new IllegalArgumentException(s"error finding ${t.origin.tiploc}")),
@@ -57,7 +72,9 @@ class PlanController @Inject()(
             locationsService.findLocation(t.destination.tiploc).getOrElse(throw new IllegalArgumentException(s"error finding ${t.destination.tiploc}")))
       }
 
-      Ok(views.html.plan.location.trains.index(request.user, timetables, locationsService)(request.request))
+      val l = locationsService.findLocation(loc).getOrElse(throw new IllegalArgumentException(s"error finding ${loc}"))
+
+      Ok(views.html.plan.location.trains.index(request.user, timetables, l, year, month, day, from, to)(request.request))
     }
     else {
       Forbidden("User not authorized to view page")

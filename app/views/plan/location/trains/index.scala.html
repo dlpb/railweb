@@ -1,7 +1,12 @@
 @(
 user: models.auth.User,
 timetables: List[controllers.DisplaySimpleTimetable],
-locationsService: models.location.LocationsService
+location: models.location.Location,
+year: Int,
+month: Int,
+day: Int,
+from: Int,
+to: Int
 )(implicit request: Request[AnyContent])
 <head>
     <meta charset="utf-8">
@@ -84,6 +89,26 @@ locationsService: models.location.LocationsService
     </div>
 </nav>
 <div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <h2>Filters</h2>
+            <form id="search" onsubmit="search()">
+                <input class="form-control" type="text" id="location" value="@location.id"/>
+                <label for="location">Location</label>
+                <input class="form-control" type="text" id="year" value="@year"/>
+                <label for="year">Year</label>
+                <input class="form-control" type="text" id="month" value="@month"/>
+                <label for="year">Month</label>
+                <input class="form-control" type="text" id="day" value="@day"/>
+                <label for="year">Day</label>
+                <input class="form-control" type="text" id="from" value="@from"/>
+                <label for="year">From</label>
+                <input class="form-control" type="text" id="to" value="@to"/>
+                <label for="year">To</label>
+                <button type="submit" class="form-control">Search</button>
+            </form>
+        </div>
+    </div>
         <div class="row">
             <div class="col-sm">
                 <div class="card card-body">
@@ -110,6 +135,20 @@ locationsService: models.location.LocationsService
         <span class="text-muted">All the Stations & Track &copy; dlpb.uk 2018 - @java.time.Year.now.getValue. <a href="/about">About</a></a></span>
     </div>
 </footer>
+<script>
+    var form = jQuery('search').val();
+    val loc = jQuery('location').val();
+    val y = jQuery('year').val();
+    val m = jQuery('month').val();
+    val d = jQuery('day').val();
+    val f = jQuery('from').val();
+    val t = jQuery('to').val();
+
+    var urlLink = "/plan/location/trains/simple/" + loc + "/" + y  + "/" + m  + "/" + d  + "/" + f  + "/" + t;
+    urlLink = urlLink + action_src;
+
+    form.action = urlLink;
+</script>
 
 @bs(bs: models.timetable.BasicSchedule) = {
     <ul>
