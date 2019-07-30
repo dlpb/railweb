@@ -1,5 +1,7 @@
 package controllers
 
+import java.time.LocalDateTime
+import java.time.temporal.TemporalUnit
 import java.util.{Calendar, Date}
 
 import auth.JWTService
@@ -47,16 +49,16 @@ class PlanController @Inject()(
 
   def showTrainsForLocationNow(loc: String) = {
 
-    val from: Calendar = Calendar.getInstance
-    from.add(Calendar.HOUR, -1)
-    val to: Calendar = from
-    to.add(Calendar.HOUR, 2)
+    val from: LocalDateTime = LocalDateTime.now().minusMinutes(30)
+
+    val to: LocalDateTime = LocalDateTime.now().plusMinutes(30)
+
     showTrainsForLocation(loc,
-      from.get(Calendar.YEAR),
-      from.get(Calendar.MONTH),
-      from.get(Calendar.DAY_OF_MONTH),
-      from.get(Calendar.HOUR_OF_DAY)*100 + from.get(Calendar.MINUTE),
-      to.get(Calendar.HOUR_OF_DAY)*100 + to.get(Calendar.MINUTE)
+      from.getYear,
+      from.getMonthValue,
+      from.getDayOfMonth,
+      from.getHour*100 + from.getMinute,
+      to.getHour*100 + to.getMinute
       )
   }
 

@@ -90,39 +90,31 @@ to: Int
 <div class="container">
     <div class="row">
         <div class="col-sm">
-            <h2>Filters</h2>
-            <form id="search" onsubmit="search()">
-                <input class="form-control" type="text" id="location" value="@location.id"/>
-                <label for="location">Location</label>
-                <input class="form-control" type="text" id="year" value="@year"/>
-                <label for="year">Year</label>
-                <input class="form-control" type="text" id="month" value="@month"/>
-                <label for="year">Month</label>
-                <input class="form-control" type="text" id="day" value="@day"/>
-                <label for="year">Day</label>
-                <input class="form-control" type="text" id="from" value="@from"/>
-                <label for="year">From</label>
-                <input class="form-control" type="text" id="to" value="@to"/>
-                <label for="year">To</label>
-                <button type="submit" class="form-control">Search</button>
-            </form>
+            <h3>Simple Search</h3>
+            Showing trains for @location.name on @year-@month-@day between @from and @to
         </div>
     </div>
         <div class="row">
             <div class="col-sm">
-                <div class="card card-body">
-                    <table>
+                    <table class="table">
                     @for(tt <- timetables) {
                         <tr>
-                            <td>@bs(tt.timetable.basicSchedule)</td>
-                            <td>@lo(tt.timetable.origin, tt.origin)</td>
-                            <td>@loc(tt.timetable.location, tt.location)</td>
-                            <td>@lt(tt.timetable.destination, tt.destination)</td>
+                            <td>
+                                @loc(tt.timetable.location, tt.location)
+                            </td>
+                            <td>
+                                @lo(tt.timetable.origin, tt.origin)
+                                -
+                                @lt(tt.timetable.destination, tt.destination)
+                                </br>
+                            </td>
+                            <td>
+                                @platform(tt.timetable.location)
+                            </td>
                         </tr>
                     }
                     </table>
 
-                </div>
             </div>
 
 
@@ -134,57 +126,39 @@ to: Int
         <span class="text-muted">All the Stations & Track &copy; dlpb.uk 2018 - @java.time.Year.now.getValue. <a href="/about">About</a></a></span>
     </div>
 </footer>
-<script>
-    var form = jQuery('search').val();
-    val loc = jQuery('location').val();
-    val y = jQuery('year').val();
-    val m = jQuery('month').val();
-    val d = jQuery('day').val();
-    val f = jQuery('from').val();
-    val t = jQuery('to').val();
-
-    var urlLink = "/plan/location/trains/simple/" + loc + "/" + y  + "/" + m  + "/" + d  + "/" + f  + "/" + t;
-    urlLink = urlLink + action_src;
-
-    form.action = urlLink;
-</script>
 
 @bs(bs: models.timetable.BasicSchedule) = {
-    <ul>
-        <li> Days:
-            @if(bs.validMonday) { M }
-            @if(bs.validTuesday) { T }
-            @if(bs.validWednesday) { W }
-            @if(bs.validThursday) { Th }
-            @if(bs.validFriday) { F }
-            @if(bs.validSaturday) { S }
-            @if(bs.validSunday) { Su }
-        </li>
-        <li>Headcode: @bs.headcode</li>
-        <li>Train UID: @bs.trainUid</li>
-    </ul>
+
+    <!--<ul>-->
+        <!--<li> Days:-->
+            <!--@if(bs.validMonday) { M }-->
+            <!--@if(bs.validTuesday) { T }-->
+            <!--@if(bs.validWednesday) { W }-->
+            <!--@if(bs.validThursday) { Th }-->
+            <!--@if(bs.validFriday) { F }-->
+            <!--@if(bs.validSaturday) { S }-->
+            <!--@if(bs.validSunday) { Su }-->
+        <!--</li>-->
+        <!--<li>Headcode: @bs.headcode</li>-->
+        <!--<li>Train UID: @bs.trainUid</li>-->
+    <!--</ul>-->
 }
+
 @lo(lo: models.timetable.Location, dlo: models.location.Location) = {
-<ul>
-    <li>@dlo.name</li>
-    <li>@lo.tiploc</li>
-    <li>Depart: @lo.publicDeparture</li>
-</ul>
+@dlo.name
 }
 
 @loc(loc: models.timetable.Location, dloc: models.location.Location) = {
-<ul>
-    <li>@dloc.name</li>
-    <li>Pass: @loc.pass</li>
-    <li>Arrive: @loc.publicArrival</li>
-    <li>Depart: @loc.publicDeparture</li>
-</ul>
+
+@if(loc.pass.isDefined) {@loc.pass <br/> <small>Pass</small> <br/>}
+@if(loc.publicArrival.isDefined) {@loc.publicArrival <br/> <small>Arrival</small> <br/>}
+@if(loc.publicDeparture.isDefined) { @loc.publicDeparture <br/> <small>Departure</small><br/>}
+
 }
 
+@platform(loc: models.timetable.Location) = { <small>Platform</small> <br/> @loc.platform }
+
+
 @lt(lt: models.timetable.Location, dlt: models.location.Location) = {
-<ul>
-    <li>@dlt.name</li>
-    <li>@lt.tiploc </li>
-    <li>Arrive: @lt.publicArrival</li>
-</ul>
+@dlt.name
 }
