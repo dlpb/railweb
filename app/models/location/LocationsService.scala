@@ -17,7 +17,13 @@ class LocationsService @Inject() ( config: Config,
 
   private val dataRoot = config.getString("data.static.root")
   private val locations: Set[Location] = makeLocations(readLocationsFromFile)
-  def findLocation(tiploc: String): Option[Location] = locations.find(_.tiploc.contains(tiploc))
+  def findLocation(key: String): Option[Location] =
+    locations.find(l =>
+      l.tiploc.contains(key)  ||
+      l.crs.contains(key)  ||
+      l.id.equals(key)
+
+    )
 
   def getVisitsForUser(user: User): Option[Map[String, List[String]]] = {
     dataProvider.getVisits(user)
