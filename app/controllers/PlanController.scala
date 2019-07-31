@@ -69,12 +69,12 @@ class PlanController @Inject()(
       val timetables = planService.getTrainsForLocation(loc, year, month, day, from, to) map {
         t =>
           DisplaySimpleTimetable(t,
-            locationsService.findLocation(t.origin.tiploc).getOrElse(throw new IllegalArgumentException(s"error finding ${t.origin.tiploc}")),
-            locationsService.findLocation(t.location.tiploc).getOrElse(throw new IllegalArgumentException(s"error finding ${t.location.tiploc}")),
-            locationsService.findLocation(t.destination.tiploc).getOrElse(throw new IllegalArgumentException(s"error finding ${t.destination.tiploc}")))
+            locationsService.findLocation(t.origin.tiploc),
+            locationsService.findLocation(t.location.tiploc),
+            locationsService.findLocation(t.destination.tiploc))
       }
 
-      val l = locationsService.findLocation(loc).getOrElse(throw new IllegalArgumentException(s"error finding ${loc}"))
+      val l = locationsService.findLocation(loc)
 
       Ok(views.html.plan.location.trains.index(request.user, timetables, l, year, month, day, from, to)(request.request))
     }
@@ -84,4 +84,4 @@ class PlanController @Inject()(
   }
 }
 
-case class DisplaySimpleTimetable(timetable: SimpleTimetable, origin: Location, location: Location, destination: Location)
+case class DisplaySimpleTimetable(timetable: SimpleTimetable, origin: Option[Location], location: Option[Location], destination: Option[Location])

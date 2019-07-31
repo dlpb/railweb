@@ -1,12 +1,12 @@
 @(
 user: models.auth.User,
 timetables: List[controllers.DisplaySimpleTimetable],
-location: models.location.Location,
+location: Option[models.location.Location],
 year: Int,
 month: Int,
 day: Int,
-from: Int,
-to: Int
+f: Int,
+t: Int
 )(implicit request: Request[AnyContent])
 <head>
     <meta charset="utf-8">
@@ -91,27 +91,23 @@ to: Int
     <div class="row">
         <div class="col-sm">
             <h3>Simple Search</h3>
-            Showing trains for @location.name on @year-@month-@day between @from and @to
+            Showing trains for
+            @if(location.isDefined) {
+                @location.get.name on
+            }
+            else {
+                @if(timetables.headOption.isDefined) {
+                    @timetables.head.location.map(_.tiploc).getOrElse("")
+                }
+            }
+            @year-@month-@day between @f and @t
         </div>
     </div>
         <div class="row">
             <div class="col-sm">
                     <table class="table">
                     @for(tt <- timetables) {
-                        <tr>
-                            <td>
-                                @loc(tt.timetable.location, tt.location)
-                            </td>
-                            <td>
-                                @lo(tt.timetable.origin, tt.origin)
-                                -
-                                @lt(tt.timetable.destination, tt.destination)
-                                </br>
-                            </td>
-                            <td>
-                                @platform(tt.timetable.location)
-                            </td>
-                        </tr>
+                        @ttr(tt)
                     }
                     </table>
 
@@ -144,21 +140,54 @@ to: Int
     <!--</ul>-->
 }
 
-@lo(lo: models.timetable.Location, dlo: models.location.Location) = {
-@dlo.name
+@from(lo: models.timetable.Location, dlo: Option[models.location.Location]) = {
+    @dlo.map(_.name)
 }
 
-@loc(loc: models.timetable.Location, dloc: models.location.Location) = {
+<!--@loc(loc: models.timetable.Location, dloc: Option[models.location.Location]) = {-->
 
-@if(loc.pass.isDefined) {@loc.pass <br/> <small>Pass</small> <br/>}
-@if(loc.publicArrival.isDefined) {@loc.publicArrival <br/> <small>Arrival</small> <br/>}
-@if(loc.publicDeparture.isDefined) { @loc.publicDeparture <br/> <small>Departure</small><br/>}
+<!--@if(loc.pass.isDefined) {@loc.pass <br/> <small>Pass</small> <br/>}-->
+<!--@if(loc.publicArrival.isDefined) {@loc.publicArrival <br/> <small>Arrival</small> <br/>}-->
+<!--@if(loc.publicDeparture.isDefined) { @loc.publicDeparture <br/> <small>Departure</small><br/>}-->
 
+<!--}-->
+
+
+@to(lt: models.timetable.Location, dlt: Option[models.location.Location]) = {
+    @dlt.map(_.name)
+}
+
+@ttr(tt: controllers.DisplaySimpleTimetable) = {
+    if(tt.timetable.location.pass.isDefined){
+        <tr class="pass">
+    }
+    else { <tr> }
+        <td>
+            @arr(tt.timetable.location)
+        </td>
+        <td>
+            @from(tt.timetable.origin, tt.origin)
+        </td>
+        <td>
+            @to(tt.timetable.destination, tt.destination)
+        </td>
+        <td>
+            @platform(tt.timetable.location)
+        </td>
+        <td>
+            @dep(tt.timetable.location)
+        </td>
+    </tr>
 }
 
 @platform(loc: models.timetable.Location) = { <small>Platform</small> <br/> @loc.platform }
 
+@arr(loc: models.timetable.Location) = {
+    @loc.publicArrival.map { a => a <br/> <small>Arrival</small> }
+    @loc.pass.map { p => p <br/> <small>Pass</small> }
+}
 
-@lt(lt: models.timetable.Location, dlt: models.location.Location) = {
-@dlt.name
+@dep(loc: models.timetable.Location) = {
+    @loc.publicDeparture.map{ d => d <br/> <small>Departure</small> }
+    @loc.pass.map { p => p <br/> <small>Pass</small> }
 }

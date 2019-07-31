@@ -19,9 +19,9 @@ class LocationsService @Inject() ( config: Config,
   private val locations: Set[Location] = makeLocations(readLocationsFromFile)
   def findLocation(key: String): Option[Location] =
     locations.find(l =>
-      l.tiploc.contains(key)  ||
-      l.crs.contains(key)  ||
-      l.id.equals(key)
+      l.tiploc.map(_.toUpperCase).contains(key.toUpperCase)  ||
+      l.crs.map(_.toUpperCase).contains(key.toUpperCase)  ||
+      l.id.toUpperCase.equals(key.toUpperCase)
 
     )
 
