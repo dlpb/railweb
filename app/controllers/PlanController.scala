@@ -1,6 +1,6 @@
 package controllers
 
-import java.time.LocalDateTime
+import java.time.{LocalDateTime, ZonedDateTime}
 import java.time.temporal.TemporalUnit
 import java.util.{Calendar, Date}
 
@@ -49,9 +49,9 @@ class PlanController @Inject()(
 
   def showTrainsForLocationNow(loc: String) = {
 
-    val from: LocalDateTime = LocalDateTime.now().minusMinutes(30)
+    val from: ZonedDateTime = ZonedDateTime.now().minusMinutes(15)
 
-    val to: LocalDateTime = LocalDateTime.now().plusMinutes(30)
+    val to: ZonedDateTime = ZonedDateTime.now().plusMinutes(45)
 
     showTrainsForLocation(loc,
       from.getYear,
