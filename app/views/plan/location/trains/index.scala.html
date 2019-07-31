@@ -94,8 +94,7 @@ t: Int
             Showing trains for
             @if(location.isDefined) {
                 @location.get.name on
-            }
-            else {
+            } else {
                 @if(timetables.headOption.isDefined) {
                     @timetables.head.location.map(_.tiploc).getOrElse("")
                 }
@@ -158,7 +157,7 @@ t: Int
 }
 
 @ttr(tt: controllers.DisplaySimpleTimetable) = {
-    if(tt.timetable.location.pass.isDefined){
+    @if(tt.timetable.location.pass.isDefined){
         <tr class="pass">
     }
     else { <tr> }
@@ -183,11 +182,11 @@ t: Int
 @platform(loc: models.timetable.Location) = { <small>Platform</small> <br/> @loc.platform }
 
 @arr(loc: models.timetable.Location) = {
-    @loc.publicArrival.map { a => a <br/> <small>Arrival</small> }
-    @loc.pass.map { p => p <br/> <small>Pass</small> }
+    @loc.publicArrival.map { a => @a <br/> <small>Arrival</small> }
+    @loc.pass.map { p => @p <br/> <small>Pass</small> }
 }
 
 @dep(loc: models.timetable.Location) = {
-    @loc.publicDeparture.map{ d => d <br/> <small>Departure</small> }
-    @loc.pass.map { p => p <br/> <small>Pass</small> }
+    @loc.publicDeparture.map{ d => @d <br/> <small>Departure</small> }
+    @loc.pass.map { p => @p <br/> <small>Pass</small> }
 }
