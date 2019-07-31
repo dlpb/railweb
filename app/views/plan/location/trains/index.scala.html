@@ -159,8 +159,7 @@ t: Int
 @ttr(tt: controllers.DisplaySimpleTimetable) = {
     @if(tt.timetable.location.pass.isDefined){
         <tr class="pass">
-    }
-    else { <tr> }
+    } else { <tr> }
         <td>
             @arr(tt.timetable.location)
         </td>
