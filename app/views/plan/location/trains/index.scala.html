@@ -47,6 +47,12 @@ t: Int
       integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
       crossorigin="anonymous">
 
+<style>
+    tr .pass {
+        display: none;
+    }
+</style>
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="/">
         <img src="/assets/images/toy-train.svg" width="24" height="24" alt="application icon"/>
@@ -153,7 +159,7 @@ t: Int
 
 
 @to(lt: models.timetable.Location, dlt: Option[models.location.Location]) = {
-    @dlt.map(_.name)
+   @dlt.map(_.name)
 }
 
 @ttr(tt: controllers.DisplaySimpleTimetable) = {
@@ -178,14 +184,14 @@ t: Int
     </tr>
 }
 
-@platform(loc: models.timetable.Location) = { <small>Platform</small> <br/> @loc.platform }
+@platform(loc: models.timetable.Location) = { @loc.platform <br/> <small>Plat.</small> }
 
 @arr(loc: models.timetable.Location) = {
-    @loc.publicArrival.map { a => @a <br/> <small>Arrival</small> }
+    @loc.publicArrival.map { a => @a <br/> <small>Arr.</small> }
     @loc.pass.map { p => @p <br/> <small>Pass</small> }
 }
 
 @dep(loc: models.timetable.Location) = {
-    @loc.publicDeparture.map{ d => @d <br/> <small>Departure</small> }
+    @loc.publicDeparture.map{ d => @d <br/> <small>Dep.</small> }
     @loc.pass.map { p => @p <br/> <small>Pass</small> }
 }
