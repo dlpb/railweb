@@ -1,12 +1,6 @@
 @(
 user: models.auth.User,
-timetables: List[controllers.DisplaySimpleTimetable],
-location: Option[models.location.Location],
-year: Int,
-month: Int,
-day: Int,
-f: Int,
-t: Int
+timetable: Option[controllers.DisplayIndividualTimetable]
 )(implicit request: Request[AnyContent])
 <head>
     <meta charset="utf-8">
@@ -47,11 +41,6 @@ t: Int
       integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
       crossorigin="anonymous">
 
-<style>
-    tr.pass {
-        display: none;
-    }
-</style>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="/">
@@ -97,22 +86,18 @@ t: Int
     <div class="row">
         <div class="col-sm">
             <h3>Simple Search</h3>
-            Showing trains for
-            @if(location.isDefined) {
-                @location.get.name on
-            } else {
-                @if(timetables.headOption.isDefined) {
-                    @timetables.head.location.map(_.tiploc).getOrElse("")
-                }
-            }
-            @year-@month-@day between @f and @t
+            Showing basic info for train
+
+            @timetable.map(_.timetable.basicSchedule)
         </div>
     </div>
         <div class="row">
             <div class="col-sm">
                     <table class="table">
-                    @for(tt <- timetables) {
-                        @ttr(tt)
+                    @timetable.map{ t =>
+                       @for(l <- t.timetable.locations){
+                        <tr><td>@l</td></tr>
+                        }
                     }
                     </table>
 
@@ -163,34 +148,23 @@ t: Int
 }
 
 @ttr(tt: controllers.DisplaySimpleTimetable) = {
-
     @if(tt.timetable.location.pass.isDefined){
         <tr class="pass">
     } else { <tr> }
         <td>
-            <a href="/plan/train/simple/@tt.timetable.basicSchedule.trainUid">
-                 @arr(tt.timetable.location)
-            </a>
+            @arr(tt.timetable.location)
         </td>
         <td>
-            <a href="/plan/train/simple/@tt.timetable.basicSchedule.trainUid">
-                @from(tt.timetable.origin, tt.origin)
-            </a>
+            @from(tt.timetable.origin, tt.origin)
         </td>
         <td>
-            <a href="/plan/train/simple/@tt.timetable.basicSchedule.trainUid">
-                @to(tt.timetable.destination, tt.destination)
-            </a>
+            @to(tt.timetable.destination, tt.destination)
         </td>
         <td>
-            <a href="/plan/train/simple/@tt.timetable.basicSchedule.trainUid">
-                @platform(tt.timetable.location)
-            </a>
+            @platform(tt.timetable.location)
         </td>
         <td>
-            <a href="/plan/train/simple/@tt.timetable.basicSchedule.trainUid">
-                @dep(tt.timetable.location)
-            </a>
+            @dep(tt.timetable.location)
         </td>
     </tr>
 }

@@ -4,13 +4,34 @@ import java.io.{BufferedReader, FileNotFoundException, InputStreamReader}
 import java.net.URL
 import java.util.zip.{GZIPInputStream, ZipInputStream}
 
-import models.timetable.{JsonFormats, SimpleTimetable}
+import models.timetable.{IndividualTimetable, JsonFormats, SimpleTimetable}
 import org.json4s.DefaultFormats
 import org.json4s.native.JsonMethods.parse
 
 import scala.io.Source
 
 class PlanService {
+
+  def getTrain(train: String): Option[IndividualTimetable] = {
+    implicit val formats = DefaultFormats ++ JsonFormats.allFormats
+
+    try {
+      val url = s"http://railweb-timetables.herokuapp.com/timetables/train/$train"
+      val is = new URL(url).openStream()
+
+      val zis = new GZIPInputStream(is)
+
+      val string = Source.fromInputStream(zis).mkString
+      Some(parse(string).extract[IndividualTimetable])
+    }
+    catch {
+      case f: FileNotFoundException => println(s"No timetable for location $train")
+        None
+      case e: Exception => println(s"Something went wrong: ${e.getMessage}")
+        None
+    }
+  }
+
   def getTrainsForLocation(loc: String,
                            year: Int,
                            month: Int,

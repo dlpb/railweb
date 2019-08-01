@@ -9,7 +9,7 @@ import javax.inject.Inject
 import models.auth.roles.PlanUser
 import models.location.{Location, LocationsService}
 import models.plan.PlanService
-import models.timetable.SimpleTimetable
+import models.timetable.{IndividualTimetable, SimpleTimetable}
 import play.api.i18n.I18nSupport
 import play.api.mvc.{AbstractController, AnyContent, ControllerComponents}
 
@@ -81,6 +81,22 @@ class PlanController @Inject()(
       Forbidden("User not authorized to view page")
     }
   }
-}
+  def showTrain(train: String) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
+    if (request.user.roles.contains(PlanUser)) {
+      val token = jwtService.createToken(request.user, new Date())
 
+      val timetable = planService.getTrain(train) map {
+        t =>
+          DisplayIndividualTimetable(t)
+      }
+
+
+      Ok(views.html.plan.train.index(request.user, timetable)(request.request))
+    }
+    else {
+      Forbidden("User not authorized to view page")
+    }
+  }
+}
+case class DisplayIndividualTimetable(timetable: IndividualTimetable)
 case class DisplaySimpleTimetable(timetable: SimpleTimetable, origin: Option[Location], location: Option[Location], destination: Option[Location])
