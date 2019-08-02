@@ -50,6 +50,11 @@ t: Int
 <style>
     tr.pass {
         display: none;
+       font-style: italic;
+       color: gray;
+    }
+    tr.pass a {
+        color:gray;
     }
 </style>
 
@@ -130,32 +135,11 @@ t: Int
 
 @bs(bs: models.timetable.BasicSchedule) = {
 
-    <!--<ul>-->
-        <!--<li> Days:-->
-            <!--@if(bs.validMonday) { M }-->
-            <!--@if(bs.validTuesday) { T }-->
-            <!--@if(bs.validWednesday) { W }-->
-            <!--@if(bs.validThursday) { Th }-->
-            <!--@if(bs.validFriday) { F }-->
-            <!--@if(bs.validSaturday) { S }-->
-            <!--@if(bs.validSunday) { Su }-->
-        <!--</li>-->
-        <!--<li>Headcode: @bs.headcode</li>-->
-        <!--<li>Train UID: @bs.trainUid</li>-->
-    <!--</ul>-->
 }
 
 @from(lo: models.timetable.Location, dlo: Option[models.location.Location]) = {
     @dlo.map(_.name)
 }
-
-<!--@loc(loc: models.timetable.Location, dloc: Option[models.location.Location]) = {-->
-
-<!--@if(loc.pass.isDefined) {@loc.pass <br/> <small>Pass</small> <br/>}-->
-<!--@if(loc.publicArrival.isDefined) {@loc.publicArrival <br/> <small>Arrival</small> <br/>}-->
-<!--@if(loc.publicDeparture.isDefined) { @loc.publicDeparture <br/> <small>Departure</small><br/>}-->
-
-<!--}-->
 
 
 @to(lt: models.timetable.Location, dlt: Option[models.location.Location]) = {

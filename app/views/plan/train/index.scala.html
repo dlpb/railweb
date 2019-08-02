@@ -41,6 +41,16 @@ timetable: Option[controllers.DisplayIndividualTimetable]
       integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
       crossorigin="anonymous">
 
+<style>
+    tr.pass {
+       font-style: italic;
+       color: gray;
+    }
+    tr.pass a {
+        color:gray;
+    }
+</style>
+
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="/">
@@ -85,10 +95,10 @@ timetable: Option[controllers.DisplayIndividualTimetable]
 <div class="container">
     <div class="row">
         <div class="col-sm">
-            <h3>Simple Search</h3>
-            Showing basic info for train
-
-            @timetable.map(_.timetable.basicSchedule)
+            @timetable.map(t => title(t.timetable.locations))
+            <div class="alert alert-secondary">
+                @timetable.map(b => bs(b.timetable.basicSchedule))
+            </div>
         </div>
     </div>
         <div class="row">
@@ -96,7 +106,7 @@ timetable: Option[controllers.DisplayIndividualTimetable]
                     <table class="table">
                     @timetable.map{ t =>
                        @for(l <- t.timetable.locations){
-                        <tr><td>@l</td></tr>
+                            @location(l)
                         }
                     }
                     </table>
@@ -114,57 +124,89 @@ timetable: Option[controllers.DisplayIndividualTimetable]
 </footer>
 
 @bs(bs: models.timetable.BasicSchedule) = {
-
-    <!--<ul>-->
-        <!--<li> Days:-->
-            <!--@if(bs.validMonday) { M }-->
-            <!--@if(bs.validTuesday) { T }-->
-            <!--@if(bs.validWednesday) { W }-->
-            <!--@if(bs.validThursday) { Th }-->
-            <!--@if(bs.validFriday) { F }-->
-            <!--@if(bs.validSaturday) { S }-->
-            <!--@if(bs.validSunday) { Su }-->
-        <!--</li>-->
-        <!--<li>Headcode: @bs.headcode</li>-->
-        <!--<li>Train UID: @bs.trainUid</li>-->
-    <!--</ul>-->
+<div class="row">
+    <div class="col col-sm">
+        <h4>Date Information</h4>
+        <ul>
+            <li> Runs on:
+                @if(bs.validMonday) { M }
+                @if(bs.validTuesday) { T }
+                @if(bs.validWednesday) { W }
+                @if(bs.validThursday) { Th }
+                @if(bs.validFriday) { F }
+                @if(bs.validSaturday) { S }
+                @if(bs.validSunday) { Su }
+            </li>
+            <li>Runs between @bs.runsFrom and @bs.runsTo</li>
+            <li>Bank Holiday: @bs.bankHolidayRunning</li>
+        </ul>
+    </div>
+    <div class="col col-sm">
+        <h4>Train Identity</h4>
+        <ul>
+            <li>Train Status: @bs.trainStatus</li>
+            <li>Train Category: @bs.trainCategory</li>
+            <li>Identity: @bs.trainIdentity</li>
+            <li>Train UID: @bs.trainUid</li>
+            <li>Headcode: @bs.headcode</li>
+            <li>Service Code: @bs.trainServiceCode</li>
+            <li>STP Indicator@bs.stpIndicator</li>
+        </ul>
+    </div>
+    <div class="col col-sm">
+        <h4>Traction Information</h4>
+        <ul>
+            <li>Power Type: @bs.powerType</li>
+            <li>Timing: @bs.timing</li>
+            <li>Max Speed: @bs.speed</li>
+            <li>Operating Characteristics: @bs.operatingCharacteristics</li>
+        </ul>
+    </div>
+    <div class="col col-sm">
+        <h4>Passenger Information</h4>
+        <ul>
+            <li>Seating: @bs.seating</li>
+            <li>Sleeper: @bs.sleepers</li>
+            <li>Reservations: @bs.reservations</li>
+            <li>Catering: @bs.catering</li>
+            <li>Branding: @bs.branding</li>
+        </ul>
+    </div>
+</div>
 }
 
-@from(lo: models.timetable.Location, dlo: Option[models.location.Location]) = {
+@name(l: models.timetable.Location, dlo: Option[models.location.Location]) = {
     @dlo.map(_.name)
+    @l.tiploc
 }
 
-<!--@loc(loc: models.timetable.Location, dloc: Option[models.location.Location]) = {-->
-
-<!--@if(loc.pass.isDefined) {@loc.pass <br/> <small>Pass</small> <br/>}-->
-<!--@if(loc.publicArrival.isDefined) {@loc.publicArrival <br/> <small>Arrival</small> <br/>}-->
-<!--@if(loc.publicDeparture.isDefined) { @loc.publicDeparture <br/> <small>Departure</small><br/>}-->
-
-<!--}-->
-
-
-@to(lt: models.timetable.Location, dlt: Option[models.location.Location]) = {
-   @dlt.map(_.name)
+@title(l: List[models.timetable.Location]) = {
+    <h2>@l.head.tiploc - @l.last.tiploc</h2>
 }
 
-@ttr(tt: controllers.DisplaySimpleTimetable) = {
-    @if(tt.timetable.location.pass.isDefined){
+@location(l: models.timetable.Location) = {
+    @if(l.pass.isDefined){
         <tr class="pass">
     } else { <tr> }
         <td>
-            @arr(tt.timetable.location)
+            <a href="/plan/location/trains/simple/@l.tiploc">
+                @arr(l)
+            </a>
         </td>
         <td>
-            @from(tt.timetable.origin, tt.origin)
+            <a href="/plan/location/trains/simple/@l.tiploc">
+                @name(l, None)
+            </a>
         </td>
         <td>
-            @to(tt.timetable.destination, tt.destination)
+            <a href="/plan/location/trains/simple/@l.tiploc">
+                @platform(l)
+            </a>
         </td>
         <td>
-            @platform(tt.timetable.location)
-        </td>
-        <td>
-            @dep(tt.timetable.location)
+            <a href="/plan/location/trains/simple/@l.tiploc">
+                @dep(l)
+            </a>
         </td>
     </tr>
 }
