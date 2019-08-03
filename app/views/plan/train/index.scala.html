@@ -286,11 +286,23 @@ distance: Long
 @platform(loc: models.timetable.Location) = { @loc.platform <br/> <small>Plat.</small> }
 
 @arr(loc: models.timetable.Location) = {
-    @loc.publicArrival.map { a => @a <br/> <small>Arr.</small> }
-    @loc.pass.map { p => @p <br/> <small>Pass</small> }
+    @loc.publicArrival.map { a => @time(a) <br/> <small>Arr.</small> }
+    @loc.pass.map { p => @time(p) <br/> <small>Pass</small> }
 }
 
 @dep(loc: models.timetable.Location) = {
-    @loc.publicDeparture.map{ d => @d <br/> <small>Dep.</small> }
-    @loc.pass.map { p => @p <br/> <small>Pass</small> }
+    @loc.publicDeparture.map{ d => @time(d) <br/> <small>Dep.</small> }
+    @loc.pass.map { p => @time(p) <br/> <small>Pass</small> }
+}
+
+@time(time: Int) = {
+    @if(time < 10) {
+        000@time
+    } else if(time<100) {
+        00@time
+    } else if(time < 1000) {
+        0@time
+    } else {
+        @time
+    }
 }
