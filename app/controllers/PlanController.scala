@@ -1,22 +1,30 @@
 package controllers
 
-import java.time.ZonedDateTime
+import java.text.SimpleDateFormat
+import java.time.format.DateTimeFormatter
+import java.time.{LocalDate, ZoneId, ZonedDateTime}
 import java.util.Date
 
 import auth.JWTService
 import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject.Inject
 import models.auth.roles.PlanUser
-import models.location.{Location, LocationsService}
+import models.list.{Path, PathService}
+import models.location.{Location, LocationsService, MapLocation}
 import models.plan.PlanService
+import models.route.{MapRoute, Route}
+import models.timetable
 import models.timetable.{IndividualTimetable, SimpleTimetable}
 import play.api.i18n.I18nSupport
 import play.api.mvc.{AbstractController, AnyContent, ControllerComponents}
+
+import scala.collection.immutable
 
 class PlanController @Inject()(
                                 cc: ControllerComponents,
                                 authenticatedUserAction: AuthorizedWebAction,
                                 locationsService: LocationsService,
+                                pathService: PathService,
                                 planService: PlanService,
                                 jwtService: JWTService
 
@@ -57,15 +65,31 @@ class PlanController @Inject()(
       from.getMonthValue,
       from.getDayOfMonth,
       from.getHour*100 + from.getMinute,
-      to.getHour*100 + to.getMinute
+      to.getHour*100 + to.getMinute,
+      ""
       )
   }
 
-  def showTrainsForLocation(loc: String, year: Int, month: Int, day: Int, from: Int, to: Int) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
+  def showTrainsForLocation(loc: String, year: Int, month: Int, day: Int, from: Int, to: Int, date: String) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     if (request.user.roles.contains(PlanUser)) {
+
       val token = jwtService.createToken(request.user, new Date())
 
-      val timetables = planService.getTrainsForLocation(loc, year, month, day, from, to) map {
+      val rawTimetables = if(date != "") {
+        val d = LocalDate.parse(date, DateTimeFormatter.ISO_LOCAL_DATE)
+        timetablesForLocation(
+          loc,
+          d.getYear,
+          d.getMonthValue,
+          d.getDayOfMonth,
+          from,
+          to
+        )
+      }
+      else {
+        timetablesForLocation(loc, year, month, day, from, to)
+      }
+      val timetables = rawTimetables map {
         t =>
           DisplaySimpleTimetable(t,
             locationsService.findLocation(t.origin.tiploc),
@@ -75,28 +99,78 @@ class PlanController @Inject()(
 
       val l = locationsService.findLocation(loc)
 
-      Ok(views.html.plan.location.trains.index(request.user, timetables, l, year, month, day, from, to)(request.request))
+      Ok(views.html.plan.location.trains.index(
+        request.user, timetables, l, year, month, day, from, to)(request.request))
     }
     else {
       Forbidden("User not authorized to view page")
     }
   }
-  def showTrain(train: String) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
+
+  def timetablesForLocation(loc: String, year: Int, month: Int, day: Int, from: Int, to: Int) = {
+    planService.getTrainsForLocation(loc, year, month, day, from, to)
+  }
+
+  def showTrain(train: String,  year: Int, month: Int, day: Int) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     if (request.user.roles.contains(PlanUser)) {
       val token = jwtService.createToken(request.user, new Date())
 
-      val timetable = planService.getTrain(train) map {
+        val timetable = planService.getTrain(train) map {
         t =>
-          DisplayIndividualTimetable(t)
+          val ttl = t.locations map { l =>
+              l.tiploc -> locationsService.findLocation(l.tiploc)
+          }
+
+          val urls = t.locations map { l =>
+            def hourMinute(time: Int) = {
+              val hour = time / 100
+              val minute = time % 100
+              (hour, minute)
+            }
+
+            val (hour, minute) = if(l.pass.isDefined) hourMinute(l.pass.get)
+            else if (l.arrival.isDefined) hourMinute(l.arrival.get)
+            else if (l.departure.isDefined) hourMinute(l.departure.get)
+            else (0,0)
+
+            val dateFrom = ZonedDateTime.of(year, month, day, hour, minute, 0, 0, ZoneId.systemDefault()).minusMinutes(15)
+            val dateTo = ZonedDateTime.of(year, month, day, hour, minute, 0, 0, ZoneId.systemDefault()).plusMinutes(45)
+
+
+            l.tiploc -> s"""/plan/location/trains/simple?loc=${locationsService.findLocation(l.tiploc).map(_.id).getOrElse("")}
+              |&year=${dateFrom.getYear}
+              |&month=${dateFrom.getMonthValue}
+              |&day=${dateFrom.getDayOfMonth}
+              |&from=${dateFrom.getHour}${dateFrom.getMinute}
+              |&to=${dateTo.getHour}${dateTo.getMinute}""".stripMargin
+          }
+
+          DisplayIndividualTimetable(t, ttl.toMap, urls.toMap)
       }
 
 
-      Ok(views.html.plan.train.index(request.user, timetable)(request.request))
+      val ids = timetable
+          .map(_.timetable)
+          .map(_.locations)
+          .getOrElse(List.empty)
+          .flatMap(l => locationsService.findLocation(l.tiploc))
+          .map{_.id}
+
+
+       val path: Path = pathService.findRouteForWaypoints(ids)
+
+      val distance = path.routes
+        .map {_.distance}
+        .sum
+      val mapRoutes: List[MapRoute] = path.routes map { MapRoute(_) }
+      val mapLocations: List[MapLocation] = path.locations map { MapLocation(_) }
+
+      Ok(views.html.plan.train.index(request.user, timetable, mapLocations, mapRoutes, distance)(request.request))
     }
     else {
       Forbidden("User not authorized to view page")
     }
   }
 }
-case class DisplayIndividualTimetable(timetable: IndividualTimetable)
+case class DisplayIndividualTimetable(timetable: IndividualTimetable, tiplocToLocation: Map[String, Option[Location]], urls: Map[String, String])
 case class DisplaySimpleTimetable(timetable: SimpleTimetable, origin: Option[Location], location: Option[Location], destination: Option[Location])

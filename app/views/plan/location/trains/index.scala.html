@@ -101,16 +101,48 @@ t: Int
 <div class="container">
     <div class="row">
         <div class="col-sm">
-            <h3>Simple Search</h3>
-            Showing trains for
-            @if(location.isDefined) {
-                @location.get.name on
-            } else {
-                @if(timetables.headOption.isDefined) {
-                    @timetables.head.location.map(_.tiploc).getOrElse("")
+            <div class="alert alert-light" role="alert">
+                <h3>Simple Search</h3>
+                Showing trains for
+                @if(location.isDefined) {
+                    @location.get.name on
+                } else {
+                    @if(timetables.headOption.isDefined) {
+                        @timetables.head.location.map(_.tiploc).getOrElse("")
+                    }
                 }
-            }
-            @year-@month-@day between @f and @t
+                @year-@month-@day between @f and @t
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col col-sm">
+            <p>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#filters" aria-expanded="false" aria-controls="collapseExample">
+                    Filters
+                </button>
+            </p>
+            <div class="collapse" id="filters">
+                <div class="card card-body">
+                    <h2>Filters</h2>
+                    <form method="GET" action="/plan/location/trains/simple">
+                        <input class="form-control" type="text" id="loc" name="loc" value="@location.map(_.id)">
+                        <label for="loc">Location</label>
+                        <input class="form-control" type="hidden" id="year" name="year" value="@year">
+                        <input class="form-control" type="hidden" id="month" name="month" value="@month">
+                        <input class="form-control" type="hidden" id="day" name="day" value="@day">
+                        <input class="form-control" type="date" id="date" name="date" value="@pad(year)-@pad(month)-@pad(day)">
+                        <label for="date">Date</label>
+                        <input class="form-control" type="text" id="from" name="from" value="@f">
+                        <label for="year">From</label>
+                        <input class="form-control" type="text" id="to" name="to" value="@t">
+                        <label for="year">To</label>
+                        <div style="padding-top:3px">
+                            <button type="submit" class="btn btn-primary">Filter</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
         <div class="row">
@@ -152,41 +184,46 @@ t: Int
         <tr class="pass">
     } else { <tr> }
         <td>
-            <a href="/plan/train/simple/@tt.timetable.basicSchedule.trainUid">
+            <a href="/plan/train/simple/@tt.timetable.basicSchedule.trainUid/@year/@month/@day">
                  @arr(tt.timetable.location)
             </a>
         </td>
         <td>
-            <a href="/plan/train/simple/@tt.timetable.basicSchedule.trainUid">
+            <a href="/plan/train/simple/@tt.timetable.basicSchedule.trainUid/@year/@month/@day">
                 @from(tt.timetable.origin, tt.origin)
             </a>
         </td>
         <td>
-            <a href="/plan/train/simple/@tt.timetable.basicSchedule.trainUid">
+            <a href="/plan/train/simple/@tt.timetable.basicSchedule.trainUid/@year/@month/@day">
                 @to(tt.timetable.destination, tt.destination)
             </a>
         </td>
         <td>
-            <a href="/plan/train/simple/@tt.timetable.basicSchedule.trainUid">
+            <a href="/plan/train/simple/@tt.timetable.basicSchedule.trainUid/@year/@month/@day">
                 @platform(tt.timetable.location)
             </a>
         </td>
         <td>
-            <a href="/plan/train/simple/@tt.timetable.basicSchedule.trainUid">
+            <a href="/plan/train/simple/@tt.timetable.basicSchedule.trainUid/@year/@month/@day">
                 @dep(tt.timetable.location)
             </a>
         </td>
     </tr>
 }
 
-@platform(loc: models.timetable.Location) = { @loc.platform <br/> <small>Plat.</small> }
+@platform(loc: models.timetable.Location) = {
+    @loc.platform <br/> <small>Plat.</small>
+
+}
 
 @arr(loc: models.timetable.Location) = {
     @loc.publicArrival.map { a => @a <br/> <small>Arr.</small> }
-    @loc.pass.map { p => @p <br/> <small>Pass</small> }
+    @loc.pass.map { p => if(@p <br/> <small>Pass</small> }
 }
 
 @dep(loc: models.timetable.Location) = {
     @loc.publicDeparture.map{ d => @d <br/> <small>Dep.</small> }
     @loc.pass.map { p => @p <br/> <small>Pass</small> }
 }
+
+@pad(num: Int) = {@if(num < 10) {0@num} else {@num}}

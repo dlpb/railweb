@@ -1,6 +1,9 @@
 @(
 user: models.auth.User,
-timetable: Option[controllers.DisplayIndividualTimetable]
+timetable: Option[controllers.DisplayIndividualTimetable],
+locations: List[models.location.MapLocation],
+routeList: List[models.route.MapRoute],
+distance: Long
 )(implicit request: Request[AnyContent])
 <head>
     <meta charset="utf-8">
@@ -43,6 +46,7 @@ timetable: Option[controllers.DisplayIndividualTimetable]
 
 <style>
     tr.pass {
+        display: none;
        font-style: italic;
        color: gray;
     }
@@ -95,28 +99,86 @@ timetable: Option[controllers.DisplayIndividualTimetable]
 <div class="container">
     <div class="row">
         <div class="col-sm">
-            @timetable.map(t => title(t.timetable.locations))
-            <div class="alert alert-secondary">
-                @timetable.map(b => bs(b.timetable.basicSchedule))
+            <div id='title' class="alert alert-secondary">
+                @timetable.map(t => title(t, t.timetable.basicScheduleExtraDetails.atocCode))
             </div>
+            <!--<div class="alert alert-secondary">-->
+                <!--@timetable.map(t => bs(t.timetable.basicSchedule))-->
+            <!--</div>-->
         </div>
     </div>
-        <div class="row">
-            <div class="col-sm">
-                    <table class="table">
-                    @timetable.map{ t =>
-                       @for(l <- t.timetable.locations){
-                            @location(l)
-                        }
-                    }
-                    </table>
+    <div class="row">
+        <div class="col col-sm">
+            <div id="map" class="map"></div>
+            <script type="text/javascript">
+                createMap();
 
-            </div>
+                @for(loc <- locations) {
+                addLocation({
+                    "location": {
+                        "lat": @loc.location.lat,
+                        "lon": @loc.location.lon
+                    },
+                    "name":'@loc.name',
+                    "id": '@loc.id',
+                    "operator": '@loc.operator',
+                    "visited": false
+                });
+                }
+                var vectorLineLayer = new ol.layer.Vector({'id':'lines'});
+                var vectorLinksLineLayer = new ol.layer.Vector({'id':'links'});
+                var vectorMetroLineLayer = new ol.layer.Vector({'id':'metro'});
 
+                var vectorLine = new ol.source.Vector({});
+                var vectorLinksLine = new ol.source.Vector({});
+                var vectorMetroLine = new ol.source.Vector({});
+
+                @for(r <- routeList) {
+                addRoute({
+                    "from": {
+                        "lat": @r.from.lat,
+                        "lon": @r.from.lon
+                    },
+                    "to":{
+                        "lat": @r.to.lat,
+                        "lon": @r.to.lon
+                    },
+                    "toc":'@r.toc'
+                },
+                false,
+                vectorLine,
+                vectorLineLayer,
+                vectorLinksLine,
+                vectorLinksLineLayer,
+                vectorMetroLine,
+                vectorMetroLineLayer
+                );
+                }
+                map.addLayer(vectorLineLayer);
+                map.addLayer(vectorLinksLineLayer);
+                map.addLayer(vectorMetroLineLayer);
+
+                vectorLinksLineLayer.setVisible(false);
+        </script>
 
         </div>
     </div>
 </div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+                <table class="table">
+                @timetable.map{ t =>
+                   @for(l <- t.timetable.locations){
+                        @location(l, t.tiplocToLocation, t.urls)
+                    }
+                }
+                </table>
+
+        </div>
+    </div>
+</div>
+
 <footer class="footer ">
     <div class="container">
         <span class="text-muted">All the Stations & Track &copy; dlpb.uk 2018 - @java.time.Year.now.getValue. <a href="/about">About</a></a></span>
@@ -175,36 +237,46 @@ timetable: Option[controllers.DisplayIndividualTimetable]
 </div>
 }
 
-@name(l: models.timetable.Location, dlo: Option[models.location.Location]) = {
-    @dlo.map(_.name)
-    @l.tiploc
+@locationName(tiploc: String, ttl: Map[String, Option[models.location.Location]]) = {
+    @ttl(tiploc).map(_.name)
 }
 
-@title(l: List[models.timetable.Location]) = {
-    <h2>@l.head.tiploc - @l.last.tiploc</h2>
+@title(l: controllers.DisplayIndividualTimetable, operator: String) = {
+    <h2>@locationName(l.timetable.locations.head.tiploc, l.tiplocToLocation) - @locationName(l.timetable.locations.last.tiploc, l.tiplocToLocation)</h2>
+    Operated by: <span id="operator-name"></span>
+    <script>
+        const tocInfo = findTocData('@operator');
+        const element = document.getElementById('title');
+
+        element.style.backgroundColor = tocInfo["colour"];
+        element.style.color = tocInfo["textColour"];
+
+        const title = document.getElementById('operator-name');
+        title.textContent = tocInfo["name"];
+    </script>
 }
 
-@location(l: models.timetable.Location) = {
+@location(l: models.timetable.Location, ttl: Map[String, Option[models.location.Location]], urls: Map[String, String]) = {
     @if(l.pass.isDefined){
         <tr class="pass">
     } else { <tr> }
         <td>
-            <a href="/plan/location/trains/simple/@l.tiploc">
+            <a href="@urls(l.tiploc)">
                 @arr(l)
             </a>
         </td>
         <td>
-            <a href="/plan/location/trains/simple/@l.tiploc">
-                @name(l, None)
+            <a href="@urls(l.tiploc)">
+                @locationName(l.tiploc, ttl)
             </a>
         </td>
         <td>
-            <a href="/plan/location/trains/simple/@l.tiploc">
+            <a href="@urls(l.tiploc)">
                 @platform(l)
             </a>
         </td>
         <td>
-            <a href="/plan/location/trains/simple/@l.tiploc">
+            <a href="@urls(l.tiploc)">
                 @dep(l)
             </a>
         </td>
