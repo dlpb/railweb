@@ -127,6 +127,21 @@ class LocationServiceTest extends FlatSpec with Matchers {
     visitedLocations.size should be(3)
   }
 
+  it should "find a location by tiploc" in {
+    val service = new LocationsService(config, new LocationMapBasedDataProvider())
+    service.findLocation("LIVST").get.id should be("LST")
+  }
+
+  it should "find a location by crs" in {
+    val service = new LocationsService(config, new LocationMapBasedDataProvider())
+    service.findLocation("LST").get.id should be("LST")
+  }
+
+  it should "find a location by name" in {
+    val service = new LocationsService(config, new LocationMapBasedDataProvider())
+    service.findLocation("London Liverpool Street").get.id should be("LST")
+  }
+
 
   private def config = {
     val config = ConfigFactory

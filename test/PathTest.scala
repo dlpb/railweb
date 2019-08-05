@@ -65,7 +65,7 @@ class PathTest  extends FlatSpec with Matchers {
 
     val route = new PathService(routesService, locationsService).list(from, to, followFixedLinks = false)
 
-    route map {_.id} should be(List("HRW", "KNT", "SOK", "NWB", "WMB", "WLSDNBJ", "WLSDNN7", "ACTCWHF", "ACWLJN", "AML", "FRIARSJ", "LDBRKJ", "PRTOBJP", "PAD"))
+    route map {_.id} should be(List("HRW", "KNT", "SOK", "NWB", "WMB", "WLSDNBJ", "WLSDNN7", "ACTCWHF", "ACWLJN", "AML", "FRIARSJ", "OLDOKCW", "OLDOKCE", "LDBRKJ", "PRTOBJP", "PAD"))
   }
 
   it should "not travel down freight links when directed" in {

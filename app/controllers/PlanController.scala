@@ -9,9 +9,11 @@ import auth.JWTService
 import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject.Inject
 import models.auth.roles.PlanUser
+import models.location.LocationsService
 import models.list.{Path, PathService}
 import models.location.{Location, LocationsService, MapLocation}
 import models.plan.PlanService
+import models.timetable.DisplayTimetable
 import models.route.{MapRoute, Route}
 import models.timetable
 import models.timetable.{IndividualTimetable, SimpleTimetable}
@@ -54,47 +56,32 @@ class PlanController @Inject()(
     }
   }
 
-  def showTrainsForLocationNow(loc: String) = {
+  def showTrainsForLocationNow(loc: String)= authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
+    if (request.user.roles.contains(PlanUser)) {
+      val token = jwtService.createToken(request.user, new Date())
 
-    val from: ZonedDateTime = ZonedDateTime.now().minusMinutes(15)
+      val (timetable, dates) = planService.getTrainsForLocationAroundNow(loc)
+      val timetables = timetable map {
+        t =>
+          new DisplayTimetable(locationsService)(t)
+      }
 
-    val to: ZonedDateTime = ZonedDateTime.now().plusMinutes(45)
+      val l = locationsService.findLocation(loc)
 
-    showTrainsForLocation(loc,
-      from.getYear,
-      from.getMonthValue,
-      from.getDayOfMonth,
-      from.getHour*100 + from.getMinute,
-      to.getHour*100 + to.getMinute,
-      ""
-      )
+      Ok(views.html.plan.location.trains.index(request.user, timetables, l, dates._1, dates._2, dates._3, dates._4, dates._5)(request.request))
+    }
+    else {
+      Forbidden("User not authorized to view page")
+    }
   }
 
   def showTrainsForLocation(loc: String, year: Int, month: Int, day: Int, from: Int, to: Int, date: String) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     if (request.user.roles.contains(PlanUser)) {
-
       val token = jwtService.createToken(request.user, new Date())
 
-      val rawTimetables = if(date != "") {
-        val d = LocalDate.parse(date, DateTimeFormatter.ISO_LOCAL_DATE)
-        timetablesForLocation(
-          loc,
-          d.getYear,
-          d.getMonthValue,
-          d.getDayOfMonth,
-          from,
-          to
-        )
-      }
-      else {
-        timetablesForLocation(loc, year, month, day, from, to)
-      }
-      val timetables = rawTimetables map {
+      val timetables = planService.getTrainsForLocation(loc, year, month, day, from, to) map {
         t =>
-          DisplaySimpleTimetable(t,
-            locationsService.findLocation(t.origin.tiploc),
-            locationsService.findLocation(t.location.tiploc),
-            locationsService.findLocation(t.destination.tiploc))
+          new DisplayTimetable(locationsService)(t)
       }
 
       val l = locationsService.findLocation(loc)
@@ -173,4 +160,3 @@ class PlanController @Inject()(
   }
 }
 case class DisplayIndividualTimetable(timetable: IndividualTimetable, tiplocToLocation: Map[String, Option[Location]], urls: Map[String, String])
-case class DisplaySimpleTimetable(timetable: SimpleTimetable, origin: Option[Location], location: Option[Location], destination: Option[Location])

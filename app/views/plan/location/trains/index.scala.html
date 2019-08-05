@@ -1,6 +1,6 @@
 @(
 user: models.auth.User,
-timetables: List[controllers.DisplaySimpleTimetable],
+timetables: List[models.timetable.DisplaySimpleTimetable],
 location: Option[models.location.Location],
 year: Int,
 month: Int,
@@ -178,8 +178,7 @@ t: Int
    @dlt.map(_.name)
 }
 
-@ttr(tt: controllers.DisplaySimpleTimetable) = {
-
+@ttr(tt: models.timetable.DisplaySimpleTimetable) = {
     @if(tt.timetable.location.pass.isDefined){
         <tr class="pass">
     } else { <tr> }

@@ -21,7 +21,8 @@ class LocationsService @Inject() ( config: Config,
     locations.find(l =>
       l.tiploc.map(_.toUpperCase).contains(key.toUpperCase)  ||
       l.crs.map(_.toUpperCase).contains(key.toUpperCase)  ||
-      l.id.toUpperCase.equals(key.toUpperCase)
+      l.id.toUpperCase.equals(key.toUpperCase) ||
+      l.name.toUpperCase.equals(key.toUpperCase)
 
     )
 
