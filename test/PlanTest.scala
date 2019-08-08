@@ -130,9 +130,9 @@ class PlanTest extends FlatSpec with Matchers {
     val date = LocalDate.now()
     dst.runningOn should be(date)
     dst.locations should be(List(
-      DisplaySimpleTimetableLocation("London Liverpool Street", "", "", "1000", "Dep.", "1", "Plat.", PlanService.createUrlForDisplayingLocationSimpleTimetables("LST", date.getYear, date.getMonthValue, date.getDayOfMonth, 945, 1045)),
-      DisplaySimpleTimetableLocation("Cambridge", "1100", "Arr.", "1101", "Dep.", "1", "Plat.", PlanService.createUrlForDisplayingLocationSimpleTimetables("CBG", date.getYear, date.getMonthValue, date.getDayOfMonth, 1045, 1145)),
-      DisplaySimpleTimetableLocation("Kings Lynn", "1203", "Arr.", "", "", "1", "Plat.", PlanService.createUrlForDisplayingLocationSimpleTimetables("KLN", date.getYear, date.getMonthValue, date.getDayOfMonth, 1148, 1248)),
+      DisplaySimpleTimetableLocation("London Liverpool Street", "", "", "1000", "Dep.", "1", "Platform", PlanService.createUrlForDisplayingLocationSimpleTimetables("LST", date.getYear, date.getMonthValue, date.getDayOfMonth, 945, 1045)),
+      DisplaySimpleTimetableLocation("Cambridge", "1100", "Arr.", "1101", "Dep.", "1", "Platform", PlanService.createUrlForDisplayingLocationSimpleTimetables("CBG", date.getYear, date.getMonthValue, date.getDayOfMonth, 1045, 1145)),
+      DisplaySimpleTimetableLocation("Kings Lynn", "1203", "Arr.", "", "", "1", "Platform", PlanService.createUrlForDisplayingLocationSimpleTimetables("KLN", date.getYear, date.getMonthValue, date.getDayOfMonth, 1148, 1248)),
     ))
   }
 
