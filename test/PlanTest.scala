@@ -162,8 +162,23 @@ class PlanTest extends FlatSpec with Matchers {
   it should "filter out non public trains" in {
     val timetables = List(createNonPublicTrain)
     timetables.filter(t => PlanService.filterNonPassengerTrains(t)) should have length 0
+  }
 
+  it should "provide an arrival and departure time for intermediate locations" in {
+    val tt = createIndividualTimetableWithMissingArrival()
+    val dst = new DisplayTimetable(locationService, new PlanService(locationService, pathService)).displayIndividualTimetable(tt)
 
+    dst.origin should be("London Liverpool Street")
+    dst.destination should be("Kings Lynn")
+    dst.operator should be("XR")
+    val date = LocalDate.now()
+    dst.runningOn should be(date)
+    dst.locations.map(l => (l.arrival, l.departure)) should be(List(
+      ("","1000"),
+      ("0933","0933"),
+      ("1100","1101"),
+      ("1203","")
+   ))
   }
 
   private def config = {
@@ -274,6 +289,112 @@ class PlanTest extends FlatSpec with Matchers {
           None,
           None,
           None
+        ),
+        LocationIntermediate(
+          "CBG",
+          "1",
+          "",
+          0,
+          false,
+          0,
+          false,
+          0,
+          false,
+          Some(1050),
+          None,
+          Some(1101),
+          None,
+          None,
+          None,
+          None,
+          Some(1100),
+          Some(1101)
+        ),
+        LocationTerminal(
+          "KLN",
+          "1",
+          "",
+          0,
+          false,
+          0,
+          false,
+          0,
+          false,
+          Some(1200),
+          None,
+          None,
+          Some(1203)
+        )
+      )
+    )
+  }
+
+  private def createIndividualTimetableWithMissingArrival() = {
+    IndividualTimetable(
+      basicSchedule = BasicSchedule(
+        NewTransaction,
+        "12345",
+        new Date(System.currentTimeMillis()),
+        new Date(System.currentTimeMillis()),
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        RunsOnBankHolidays,
+        PassengerAndParcelsPermanent,
+        OrdinaryPassenger,
+        "12345",
+        "12345",
+        "12345",
+        Diesel,
+        DMUPowerCarAndTrailer,
+        100,
+        List.empty,
+        FirstAndStandardSeating,
+        NoSleeper,
+        ReservationsCompulsory,
+        List.empty,
+        "branding",
+        New
+      ),
+      basicScheduleExtraDetails = BasicScheduleExtraDetails("XR"),
+      locations = List(
+        LocationOrigin(
+          "LIVST",
+          "1",
+          "",
+          0,
+          false,
+          0,
+          false,
+          0,
+          false,
+          Some(1000),
+          None,
+          Some(1000)
+        ),
+        LocationIntermediate(
+          "BIS",
+          "1",
+          "",
+          0,
+          false,
+          0,
+          false,
+          0,
+          false,
+          Some(930),
+          None,
+          Some(932),
+          None,
+          None,
+          None,
+          None,
+          None,
+          Some(933)
         ),
         LocationIntermediate(
           "CBG",

@@ -29,11 +29,19 @@ class DisplayTimetable(locationsService: LocationsService, planService: PlanServ
           val from = date.atTime(hour, minute).minusMinutes(15)
           val to = date.atTime(hour, minute).plusMinutes(45)
 
+          val arrival = if(l.isInstanceOf[LocationIntermediate]) {
+            l.publicArrival.map(time).getOrElse(l.publicDeparture.map(time).getOrElse(""))
+          } else { l.publicArrival.map(time).getOrElse("") }
+
+          val departure = if(l.isInstanceOf[LocationIntermediate]) {
+            l.publicDeparture.map(time).getOrElse(l.publicArrival.map(time).getOrElse(""))
+          } else {l.publicDeparture.map(time).getOrElse("") }
+
           DisplaySimpleTimetableLocation(
             locationsService.findLocation(l.tiploc).map(_.name).getOrElse(""),
-            l.publicArrival.map(time).getOrElse(""),
+            arrival,
             if(l.publicArrival.isDefined) "Arr." else "",
-            l.publicDeparture.map(time).getOrElse(""),
+            departure,
             if(l.publicDeparture.isDefined) "Dep." else "",
             l.platform,
             "Plat.",
