@@ -82,7 +82,7 @@ class PlanTest extends FlatSpec with Matchers {
     dst.departure should be("0930")
     dst.departureLabel should be("Dep.")
     dst.platform should be("1")
-    dst.platformLabel should be("Plat.")
+    dst.platformLabel should be("Platform")
     dst.origin should be("London Liverpool Street")
     dst.destination should be("Kings Lynn")
     dst.trainUrl should be("http://railweb.herokuapp.com/plan/train/simple/12345/2019/1/1")
@@ -98,11 +98,12 @@ class PlanTest extends FlatSpec with Matchers {
     dst.departure should be("1000")
     dst.departureLabel should be("Dep.")
     dst.platform should be("1")
-    dst.platformLabel should be("Plat.")
+    dst.platformLabel should be("Platform")
     dst.origin should be("London Liverpool Street")
     dst.destination should be("Kings Lynn")
     dst.trainUrl should be("http://railweb.herokuapp.com/plan/train/simple/12345/2019/1/1")
   }
+
   it should "map timetable to display timetable for train that ends at same location" in {
 
     val stt = createSimpleTimetableForEndingWithoutPass
@@ -113,7 +114,7 @@ class PlanTest extends FlatSpec with Matchers {
     dst.departure should be("")
     dst.departureLabel should be("")
     dst.platform should be("1")
-    dst.platformLabel should be("Plat.")
+    dst.platformLabel should be("Platform")
     dst.origin should be("London Liverpool Street")
     dst.destination should be("Kings Lynn")
     dst.trainUrl should be("http://railweb.herokuapp.com/plan/train/simple/12345/2019/1/1")

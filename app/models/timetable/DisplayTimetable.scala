@@ -61,7 +61,8 @@ class DisplayTimetable(locationsService: LocationsService, planService: PlanServ
       simpleTimetable.location.platform,
       PlanService.createUrlForDisplayingSimpleTrainTimetable(simpleTimetable.basicSchedule.trainUid, year, month, day),
       if(simpleTimetable.location.publicArrival.isDefined) "Arr." else "",
-      if(simpleTimetable.location.publicDeparture.isDefined) "Dep." else ""
+      if(simpleTimetable.location.publicDeparture.isDefined) "Dep." else "",
+      "Platform"
     )
   }
 }
@@ -81,9 +82,9 @@ case class DisplaySimpleTimetable2(
                                     destination: String,
                                     platform: String,
                                     trainUrl: String,
-                                    arrivalLabel: String = "Arr.",
-                                    departureLabel: String = "Dep.",
-                                    platformLabel: String = "Plat."
+                                    arrivalLabel: String,
+                                    departureLabel: String,
+                                    platformLabel: String
                                   )
 
 case class DisplaySimpleIndividualTimetable(
@@ -97,7 +98,7 @@ case class DisplaySimpleIndividualTimetable(
 case class DisplaySimpleTimetableLocation(
                                 label: String,
                                 arrival: String,
-                                arrivalLabel: String = "Arr.",
+                                arrivalLabel: String,
                                 departure: String,
                                 departureLabel: String,
                                 platform: String,
