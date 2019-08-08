@@ -55,7 +55,7 @@ class PlanController @Inject()(
       val (timetable, dates) = planService.getTrainsForLocationAroundNow(loc)
       val timetables = timetable map {
         t =>
-          new DisplayTimetable(locationsService, planService).displaySimpleTimetable(t)
+          new DisplayTimetable(locationsService, planService).displaySimpleTimetable(t, dates._1, dates._2, dates._3)
       }
 
       val l = locationsService.findLocation(loc)
@@ -74,7 +74,7 @@ class PlanController @Inject()(
 
       val timetables = planService.getTrainsForLocation(loc, year, month, day, from, to) map {
         t =>
-          new DisplayTimetable(locationsService, planService).displaySimpleTimetable(t)
+          new DisplayTimetable(locationsService, planService).displaySimpleTimetable(t, year, month, day)
       }
 
       val l = locationsService.findLocation(loc)

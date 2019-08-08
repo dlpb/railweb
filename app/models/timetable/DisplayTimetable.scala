@@ -37,7 +37,7 @@ class DisplayTimetable(locationsService: LocationsService, planService: PlanServ
             if(l.publicDeparture.isDefined) "Dep." else "",
             l.platform,
             "Plat.",
-            PlanService.createUrlForLocationTimetables(
+            PlanService.createUrlForDisplayingLocationSimpleTimetables(
               locationsService.findLocation(l.tiploc).map(_.id).getOrElse(""),
               date.getYear,
               date.getMonthValue,
@@ -52,14 +52,14 @@ class DisplayTimetable(locationsService: LocationsService, planService: PlanServ
     )
   }
 
-  def displaySimpleTimetable(simpleTimetable: SimpleTimetable): DisplaySimpleTimetable2 = {
+  def displaySimpleTimetable(simpleTimetable: SimpleTimetable, year: Int,  month: Int, day: Int): DisplaySimpleTimetable2 = {
     DisplaySimpleTimetable2(
       simpleTimetable.location.publicArrival.map(time).getOrElse(""),
       simpleTimetable.location.publicDeparture.map(time).getOrElse(""),
       locationsService.findLocation(simpleTimetable.origin.tiploc).map(_.name).getOrElse(simpleTimetable.origin.tiploc),
       locationsService.findLocation(simpleTimetable.destination.tiploc).map(_.name).getOrElse(simpleTimetable.destination.tiploc),
       simpleTimetable.location.platform,
-      PlanService.createUrlForTrain(simpleTimetable.basicSchedule.trainUid),
+      PlanService.createUrlForDisplayingSimpleTrainTimetable(simpleTimetable.basicSchedule.trainUid, year, month, day),
       if(simpleTimetable.location.publicArrival.isDefined) "Arr." else "",
       if(simpleTimetable.location.publicDeparture.isDefined) "Dep." else ""
     )

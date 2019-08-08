@@ -20,13 +20,13 @@ class PlanTest extends FlatSpec with Matchers {
   val pathService = new PathService(routeService, locationService)
 
   "Plan Service" should "create a padded url for reading location timetables" in {
-    val url = PlanService.createUrlForLocationTimetables("CTH", 2019, 1, 1, 30, 900)
-    url should be("/timetables/location/CTH?year=2019&month=01&day=01&from=0030&to=0900")
+    val url = PlanService.createUrlForReadingLocationTimetables("CTH", 2019, 1, 1, 30, 900)
+    url should be("http://railweb-timetables.herokuapp.com/timetables/location/CTH?year=2019&month=01&day=01&from=0030&to=0900")
   }
 
   it should "create an unpadded url for reading location timetables" in {
-    val url = PlanService.createUrlForLocationTimetables("CTH", 2019, 10, 11, 2030, 2200)
-    url should be("/timetables/location/CTH?year=2019&month=10&day=11&from=2030&to=2200")
+    val url = PlanService.createUrlForReadingLocationTimetables("CTH", 2019, 10, 11, 2030, 2200)
+    url should be("http://railweb-timetables.herokuapp.com/timetables/location/CTH?year=2019&month=10&day=11&from=2030&to=2200")
   }
 
   it should "get timetable for around now" in {
@@ -36,7 +36,7 @@ class PlanTest extends FlatSpec with Matchers {
     val fromTime = from.getHour * 100 + from.getMinute
     val toTime = to.getHour * 100 + to.getMinute
 
-    val expectedUrl = PlanService.createUrlForLocationTimetables("CTH", from.getYear, from.getMonthValue, from.getDayOfMonth, fromTime, toTime)
+    val expectedUrl = PlanService.createUrlForReadingLocationTimetables("CTH", from.getYear, from.getMonthValue, from.getDayOfMonth, fromTime, toTime)
 
     val service = new PlanService(locationService, pathService, new Reader {
       override def getInputStream(url: String): InputStream = {
@@ -55,12 +55,12 @@ class PlanTest extends FlatSpec with Matchers {
     PlanService.hourMinute(2013) should be((20, 13))
   }
 
-  it should "create url for train" in {
-    PlanService.createUrlForTrain("train") should be("/timetables/train/train")
+  it should "create url for reading specific train timetable" in {
+    PlanService.createUrlForReadingTrainTimetable("train") should be("http://railweb-timetables.herokuapp.com/timetables/train/train")
   }
 
   it should "get timetable for specific train" in {
-    val expectedUrl = PlanService.createUrlForTrain("train")
+    val expectedUrl = PlanService.createUrlForReadingTrainTimetable("train")
 
     val service = new PlanService(locationService, pathService, new Reader {
       override def getInputStream(url: String): InputStream = {
@@ -75,7 +75,7 @@ class PlanTest extends FlatSpec with Matchers {
   it should "map timetable to display timetable" in {
 
     val stt = createSimpleTimetableWithoutPass
-    val dst = new DisplayTimetable(locationService, new PlanService(locationService, pathService)).displaySimpleTimetable(stt)
+    val dst = new DisplayTimetable(locationService, new PlanService(locationService, pathService)).displaySimpleTimetable(stt, 2019, 1,1)
 
     dst.arrival should be("0921")
     dst.arrivalLabel should be("Arr.")
@@ -85,13 +85,13 @@ class PlanTest extends FlatSpec with Matchers {
     dst.platformLabel should be("Plat.")
     dst.origin should be("London Liverpool Street")
     dst.destination should be("Kings Lynn")
-    dst.trainUrl should be("/timetables/train/12345")
+    dst.trainUrl should be("http://railweb.herokuapp.com/plan/train/simple/12345/2019/1/1")
   }
 
   it should "map timetable to display timetable for train that starts at same location" in {
 
     val stt = createSimpleTimetableForStartingWithoutPass
-    val dst = new DisplayTimetable(locationService, new PlanService(locationService, pathService)).displaySimpleTimetable(stt)
+    val dst = new DisplayTimetable(locationService, new PlanService(locationService, pathService)).displaySimpleTimetable(stt, 2019, 1, 1)
 
     dst.arrival should be("")
     dst.arrivalLabel should be("")
@@ -101,12 +101,12 @@ class PlanTest extends FlatSpec with Matchers {
     dst.platformLabel should be("Plat.")
     dst.origin should be("London Liverpool Street")
     dst.destination should be("Kings Lynn")
-    dst.trainUrl should be("/timetables/train/12345")
+    dst.trainUrl should be("http://railweb.herokuapp.com/plan/train/simple/12345/2019/1/1")
   }
   it should "map timetable to display timetable for train that ends at same location" in {
 
     val stt = createSimpleTimetableForEndingWithoutPass
-    val dst = new DisplayTimetable(locationService, new PlanService(locationService, pathService)).displaySimpleTimetable(stt)
+    val dst = new DisplayTimetable(locationService, new PlanService(locationService, pathService)).displaySimpleTimetable(stt, 2019, 1, 1)
 
     dst.arrival should be("1000")
     dst.arrivalLabel should be("Arr.")
@@ -116,7 +116,7 @@ class PlanTest extends FlatSpec with Matchers {
     dst.platformLabel should be("Plat.")
     dst.origin should be("London Liverpool Street")
     dst.destination should be("Kings Lynn")
-    dst.trainUrl should be("/timetables/train/12345")
+    dst.trainUrl should be("http://railweb.herokuapp.com/plan/train/simple/12345/2019/1/1")
   }
 
   it should "individual timetable to display timetable" in {
@@ -129,9 +129,9 @@ class PlanTest extends FlatSpec with Matchers {
     val date = LocalDate.now()
     dst.runningOn should be(date)
     dst.locations should be(List(
-      DisplaySimpleTimetableLocation("London Liverpool Street", "", "", "1000", "Dep.", "1", "Plat.", PlanService.createUrlForLocationTimetables("LST", date.getYear, date.getMonthValue, date.getDayOfMonth, 945, 1045)),
-      DisplaySimpleTimetableLocation("Cambridge", "1100", "Arr.", "1101", "Dep.", "1", "Plat.", PlanService.createUrlForLocationTimetables("CBG", date.getYear, date.getMonthValue, date.getDayOfMonth, 1045, 1145)),
-      DisplaySimpleTimetableLocation("Kings Lynn", "1203", "Arr.", "", "", "1", "Plat.", PlanService.createUrlForLocationTimetables("KLN", date.getYear, date.getMonthValue, date.getDayOfMonth, 1148, 1248)),
+      DisplaySimpleTimetableLocation("London Liverpool Street", "", "", "1000", "Dep.", "1", "Plat.", PlanService.createUrlForDisplayingLocationSimpleTimetables("LST", date.getYear, date.getMonthValue, date.getDayOfMonth, 945, 1045)),
+      DisplaySimpleTimetableLocation("Cambridge", "1100", "Arr.", "1101", "Dep.", "1", "Plat.", PlanService.createUrlForDisplayingLocationSimpleTimetables("CBG", date.getYear, date.getMonthValue, date.getDayOfMonth, 1045, 1145)),
+      DisplaySimpleTimetableLocation("Kings Lynn", "1203", "Arr.", "", "", "1", "Plat.", PlanService.createUrlForDisplayingLocationSimpleTimetables("KLN", date.getYear, date.getMonthValue, date.getDayOfMonth, 1148, 1248)),
     ))
   }
 
