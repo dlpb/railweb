@@ -1,9 +1,8 @@
 @(
 user: models.auth.User,
-timetable: Option[controllers.DisplayIndividualTimetable],
+timetable: models.timetable.DisplaySimpleIndividualTimetable,
 locations: List[models.location.MapLocation],
-routeList: List[models.route.MapRoute],
-distance: Long
+routeList: List[models.route.MapRoute]
 )(implicit request: Request[AnyContent])
 <head>
     <meta charset="utf-8">
@@ -100,11 +99,18 @@ distance: Long
     <div class="row">
         <div class="col-sm">
             <div id='title' class="alert alert-secondary">
-                @timetable.map(t => title(t, t.timetable.basicScheduleExtraDetails.atocCode))
+                A <span id="operator-name"></span> Service from @timetable.origin to @timetable.destination running on @timetable.runningOn
+                <script>
+                    const tocInfo = findTocData('@timetable.operator');
+                    const element = document.getElementById('title');
+
+                    element.style.backgroundColor = tocInfo["colour"];
+                    element.style.color = tocInfo["textColour"];
+
+                    const title = document.getElementById('operator-name');
+                    title.textContent = tocInfo["name"];
+                </script>
             </div>
-            <!--<div class="alert alert-secondary">-->
-                <!--@timetable.map(t => bs(t.timetable.basicSchedule))-->
-            <!--</div>-->
         </div>
     </div>
     <div class="row">
@@ -168,11 +174,11 @@ distance: Long
     <div class="row">
         <div class="col-sm">
                 <table class="table">
-                @timetable.map{ t =>
-                   @for(l <- t.timetable.locations){
-                        @location(l, t.tiplocToLocation, t.urls)
+
+                   @for(l <- timetable.locations){
+                        @location(l)
                     }
-                }
+
                 </table>
 
         </div>
@@ -237,72 +243,38 @@ distance: Long
 </div>
 }
 
-@locationName(tiploc: String, ttl: Map[String, Option[models.location.Location]]) = {
-    @ttl(tiploc).map(_.name)
-}
-
-@title(l: controllers.DisplayIndividualTimetable, operator: String) = {
-    <h2>@locationName(l.timetable.locations.head.tiploc, l.tiplocToLocation) - @locationName(l.timetable.locations.last.tiploc, l.tiplocToLocation)</h2>
-    Operated by: <span id="operator-name"></span>
-    <script>
-        const tocInfo = findTocData('@operator');
-        const element = document.getElementById('title');
-
-        element.style.backgroundColor = tocInfo["colour"];
-        element.style.color = tocInfo["textColour"];
-
-        const title = document.getElementById('operator-name');
-        title.textContent = tocInfo["name"];
-    </script>
-}
-
-@location(l: models.timetable.Location, ttl: Map[String, Option[models.location.Location]], urls: Map[String, String]) = {
-    @if(l.pass.isDefined){
-        <tr class="pass">
-    } else { <tr> }
+@location(l: models.timetable.DisplaySimpleTimetableLocation) = {
+        <tr>
         <td>
-            <a href="@urls(l.tiploc)">
+            <a href="@l.url">
                 @arr(l)
             </a>
         </td>
         <td>
-            <a href="@urls(l.tiploc)">
-                @locationName(l.tiploc, ttl)
+            <a href="@l.url">
+                @l.label
             </a>
         </td>
         <td>
-            <a href="@urls(l.tiploc)">
+            <a href="@l.url">
                 @platform(l)
             </a>
         </td>
         <td>
-            <a href="@urls(l.tiploc)">
+            <a href="@l.url">
                 @dep(l)
             </a>
         </td>
     </tr>
 }
 
-@platform(loc: models.timetable.Location) = { @loc.platform <br/> <small>Plat.</small> }
+@platform(l: models.timetable.DisplaySimpleTimetableLocation) = {
+    @l.platform <br/> <small>@l.platformLabel</small> }
 
-@arr(loc: models.timetable.Location) = {
-    @loc.publicArrival.map { a => @time(a) <br/> <small>Arr.</small> }
-    @loc.pass.map { p => @time(p) <br/> <small>Pass</small> }
+@arr(l: models.timetable.DisplaySimpleTimetableLocation) = {
+    @l.arrival <br/> <small>@l.arrivalLabel</small>
 }
 
-@dep(loc: models.timetable.Location) = {
-    @loc.publicDeparture.map{ d => @time(d) <br/> <small>Dep.</small> }
-    @loc.pass.map { p => @time(p) <br/> <small>Pass</small> }
-}
-
-@time(time: Int) = {
-    @if(time < 10) {
-        000@time
-    } else if(time<100) {
-        00@time
-    } else if(time < 1000) {
-        0@time
-    } else {
-        @time
-    }
+@dep(l: models.timetable.DisplaySimpleTimetableLocation) = {
+    @l.departure  <br/> <small>@l.departureLabel</small>
 }

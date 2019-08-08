@@ -1,12 +1,12 @@
 @(
 user: models.auth.User,
-timetables: List[models.timetable.DisplaySimpleTimetable],
+timetables: List[models.timetable.DisplaySimpleTimetable2],
 location: Option[models.location.Location],
 year: Int,
 month: Int,
 day: Int,
-f: Int,
-t: Int
+f: String,
+t: String
 )(implicit request: Request[AnyContent])
 <head>
     <meta charset="utf-8">
@@ -106,12 +106,8 @@ t: Int
                 Showing trains for
                 @if(location.isDefined) {
                     @location.get.name on
-                } else {
-                    @if(timetables.headOption.isDefined) {
-                        @timetables.head.location.map(_.tiploc).getOrElse("")
-                    }
                 }
-                @year-@month-@day between @time(f)and @time(t)
+                @year-@month-@day between @f and @t
             </div>
         </div>
     </div>
@@ -152,10 +148,7 @@ t: Int
                         @ttr(tt)
                     }
                     </table>
-
             </div>
-
-
         </div>
     </div>
 </div>
@@ -165,76 +158,47 @@ t: Int
     </div>
 </footer>
 
-@bs(bs: models.timetable.BasicSchedule) = {
-
-}
-
-@from(lo: models.timetable.Location, dlo: Option[models.location.Location]) = {
-    @dlo.map(_.name)
-}
-
-
-@to(lt: models.timetable.Location, dlt: Option[models.location.Location]) = {
-   @dlt.map(_.name)
-}
-
-@ttr(tt: models.timetable.DisplaySimpleTimetable) = {
-    @if(tt.timetable.location.pass.isDefined){
-        <tr class="pass">
-    } else { <tr> }
+@ttr(tt: models.timetable.DisplaySimpleTimetable2) = {
+    <tr>
         <td>
-            <a href="/plan/train/simple/@tt.timetable.basicSchedule.trainUid/@year/@month/@day">
-                 @arr(tt.timetable.location)
+            <a href="@tt.trainUrl">
+                 @arr(tt.arrival)
             </a>
         </td>
         <td>
-            <a href="/plan/train/simple/@tt.timetable.basicSchedule.trainUid/@year/@month/@day">
-                @from(tt.timetable.origin, tt.origin)
+            <a href="@tt.trainUrl">
+                @tt.origin
             </a>
         </td>
         <td>
-            <a href="/plan/train/simple/@tt.timetable.basicSchedule.trainUid/@year/@month/@day">
-                @to(tt.timetable.destination, tt.destination)
+            <a href="@tt.trainUrl">
+                @tt.destination
             </a>
         </td>
         <td>
-            <a href="/plan/train/simple/@tt.timetable.basicSchedule.trainUid/@year/@month/@day">
-                @platform(tt.timetable.location)
+            <a href="@tt.trainUrl">
+                @platform(tt.platform)
             </a>
         </td>
         <td>
-            <a href="/plan/train/simple/@tt.timetable.basicSchedule.trainUid/@year/@month/@day">
-                @dep(tt.timetable.location)
+            <a href="@tt.trainUrl">
+                @dep(tt.departure)
             </a>
         </td>
     </tr>
 }
 
-@platform(loc: models.timetable.Location) = {
-    @loc.platform <br/> <small>Plat.</small>
+@platform(platform: String) = {
+    @platform <br/> <small>Plat.</small>
 
 }
 
-@arr(loc: models.timetable.Location) = {
-    @loc.publicArrival.map { a => @time(a) <br/> <small>Arr.</small> }
-    @loc.pass.map { p => if(@time(p) <br/> <small>Pass</small> }
+@arr(arrival: String) = {
+    @arrival <br/> <small>Arr.</small>
 }
 
-@dep(loc: models.timetable.Location) = {
-    @loc.publicDeparture.map{ d => @time(d) <br/> <small>Dep.</small> }
-    @loc.pass.map { p => @time(p) <br/> <small>Pass</small> }
+@dep(departure: String) = {
+    @departure <br/> <small>Dep.</small>
 }
 
 @pad(num: Int) = {@if(num < 10) {0@num} else {@num}}
-
-@time(time: Int) = {
-    @if(time < 10) {
-        000@time
-    } else if(time<100) {
-        00@time
-    } else if(time < 1000) {
-        0@time
-    } else {
-        @time
-    }
-}

@@ -1,5 +1,6 @@
 package auth
 
+import java.nio.file.Files
 import java.util.Date
 
 import com.typesafe.config.{ConfigFactory, ConfigValueFactory}
@@ -32,11 +33,25 @@ class UserApiAuthServiceTest extends FlatSpec with Matchers{
   }
   private def config = {
     println(getClass.getResource("").getPath)
-    val path = getClass().getResource("users.json").getPath
+    val path = Files.createTempDirectory("users" ).toAbsolutePath
+    val usersJson: String =
+      """
+[
+  {
+    "id":1,
+    "username":"testuser",
+    "password":"test-password-hash",
+    "roles": ["MapUser","VisitUser"]
+  }
+]
+      """.stripMargin
+    Files.write(path.resolve("users.json"), usersJson.getBytes())
+    Files.write(path.resolve("salt.txt"), "test-salt".getBytes())
+
     val config = ConfigFactory
       .empty()
       .withValue("data.user.list.root", ConfigValueFactory.fromAnyRef(
-        path.substring(0, path.lastIndexOf("/"))
+        path.toAbsolutePath.toString
       ))
     config
   }

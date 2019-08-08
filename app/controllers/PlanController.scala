@@ -1,26 +1,18 @@
 package controllers
 
-import java.text.SimpleDateFormat
-import java.time.format.DateTimeFormatter
-import java.time.{LocalDate, ZoneId, ZonedDateTime}
 import java.util.Date
 
 import auth.JWTService
 import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject.Inject
 import models.auth.roles.PlanUser
-import models.location.LocationsService
 import models.list.{Path, PathService}
 import models.location.{Location, LocationsService, MapLocation}
 import models.plan.PlanService
-import models.timetable.DisplayTimetable
-import models.route.{MapRoute, Route}
-import models.timetable
-import models.timetable.{IndividualTimetable, SimpleTimetable}
+import models.route.MapRoute
+import models.timetable.{DisplayTimetable, IndividualTimetable}
 import play.api.i18n.I18nSupport
 import play.api.mvc.{AbstractController, AnyContent, ControllerComponents}
-
-import scala.collection.immutable
 
 class PlanController @Inject()(
                                 cc: ControllerComponents,
@@ -63,12 +55,13 @@ class PlanController @Inject()(
       val (timetable, dates) = planService.getTrainsForLocationAroundNow(loc)
       val timetables = timetable map {
         t =>
-          new DisplayTimetable(locationsService)(t)
+          new DisplayTimetable(locationsService, planService).displaySimpleTimetable(t)
       }
 
       val l = locationsService.findLocation(loc)
 
-      Ok(views.html.plan.location.trains.index(request.user, timetables, l, dates._1, dates._2, dates._3, dates._4, dates._5)(request.request))
+      Ok(views.html.plan.location.trains.index(request.user, timetables, l,
+        dates._1, dates._2, dates._3, DisplayTimetable.time(dates._4), DisplayTimetable.time(dates._5))(request.request))
     }
     else {
       Forbidden("User not authorized to view page")
@@ -81,78 +74,30 @@ class PlanController @Inject()(
 
       val timetables = planService.getTrainsForLocation(loc, year, month, day, from, to) map {
         t =>
-          new DisplayTimetable(locationsService)(t)
+          new DisplayTimetable(locationsService, planService).displaySimpleTimetable(t)
       }
 
       val l = locationsService.findLocation(loc)
 
       Ok(views.html.plan.location.trains.index(
-        request.user, timetables, l, year, month, day, from, to)(request.request))
+        request.user, timetables, l, year, month, day,  DisplayTimetable.time(from), DisplayTimetable.time(to))(request.request))
     }
     else {
       Forbidden("User not authorized to view page")
     }
   }
 
-  def timetablesForLocation(loc: String, year: Int, month: Int, day: Int, from: Int, to: Int) = {
-    planService.getTrainsForLocation(loc, year, month, day, from, to)
-  }
-
   def showTrain(train: String,  year: Int, month: Int, day: Int) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     if (request.user.roles.contains(PlanUser)) {
       val token = jwtService.createToken(request.user, new Date())
 
-        val timetable = planService.getTrain(train) map {
-        t =>
-          val ttl = t.locations map { l =>
-              l.tiploc -> locationsService.findLocation(l.tiploc)
-          }
+      val data = planService.showSimpleTrainTimetable(train, year, month, day)
 
-          val urls = t.locations map { l =>
-            def hourMinute(time: Int) = {
-              val hour = time / 100
-              val minute = time % 100
-              (hour, minute)
-            }
-
-            val (hour, minute) = if(l.pass.isDefined) hourMinute(l.pass.get)
-            else if (l.arrival.isDefined) hourMinute(l.arrival.get)
-            else if (l.departure.isDefined) hourMinute(l.departure.get)
-            else (0,0)
-
-            val dateFrom = ZonedDateTime.of(year, month, day, hour, minute, 0, 0, ZoneId.systemDefault()).minusMinutes(15)
-            val dateTo = ZonedDateTime.of(year, month, day, hour, minute, 0, 0, ZoneId.systemDefault()).plusMinutes(45)
-
-
-            l.tiploc -> s"""/plan/location/trains/simple?loc=${locationsService.findLocation(l.tiploc).map(_.id).getOrElse("")}
-              |&year=${dateFrom.getYear}
-              |&month=${dateFrom.getMonthValue}
-              |&day=${dateFrom.getDayOfMonth}
-              |&from=${dateFrom.getHour}${dateFrom.getMinute}
-              |&to=${dateTo.getHour}${dateTo.getMinute}""".stripMargin
-          }
-
-          DisplayIndividualTimetable(t, ttl.toMap, urls.toMap)
+      if(data.isDefined) {
+        Ok(views.html.plan.train.index(request.user, data.get.dst, data.get.mapLocations, data.get.routes)(request.request))
       }
+      else NotFound(s"Could not find train $train on $year-$month-$day")
 
-
-      val ids = timetable
-          .map(_.timetable)
-          .map(_.locations)
-          .getOrElse(List.empty)
-          .flatMap(l => locationsService.findLocation(l.tiploc))
-          .map{_.id}
-
-
-       val path: Path = pathService.findRouteForWaypoints(ids)
-
-      val distance = path.routes
-        .map {_.distance}
-        .sum
-      val mapRoutes: List[MapRoute] = path.routes map { MapRoute(_) }
-      val mapLocations: List[MapLocation] = path.locations map { MapLocation(_) }
-
-      Ok(views.html.plan.train.index(request.user, timetable, mapLocations, mapRoutes, distance)(request.request))
     }
     else {
       Forbidden("User not authorized to view page")
