@@ -37,14 +37,15 @@ class DisplayTimetable(locationsService: LocationsService, planService: PlanServ
             l.publicDeparture.map(time).getOrElse(l.publicArrival.map(time).getOrElse(""))
           } else {l.publicDeparture.map(time).getOrElse("") }
 
+          val platform = l.platform
           DisplaySimpleTimetableLocation(
             locationsService.findLocation(l.tiploc).map(_.name).getOrElse(""),
             arrival,
             if(arrival != "") "Arr." else "",
             departure,
             if(departure != "") "Dep." else "",
-            l.platform,
-            "Platform",
+            platform,
+            if(platform != "") "Platform" else "",
             PlanService.createUrlForDisplayingLocationSimpleTimetables(
               locationsService.findLocation(l.tiploc).map(_.id).getOrElse(""),
               date.getYear,
@@ -63,16 +64,17 @@ class DisplayTimetable(locationsService: LocationsService, planService: PlanServ
   def displaySimpleTimetable(simpleTimetable: SimpleTimetable, year: Int,  month: Int, day: Int): DisplaySimpleTimetable2 = {
     val arrival = simpleTimetable.location.publicArrival.map(time).getOrElse("")
     val departure = simpleTimetable.location.publicDeparture.map(time).getOrElse("")
+    val platform = simpleTimetable.location.platform
     DisplaySimpleTimetable2(
       arrival,
       departure,
       locationsService.findLocation(simpleTimetable.origin.tiploc).map(_.name).getOrElse(simpleTimetable.origin.tiploc),
       locationsService.findLocation(simpleTimetable.destination.tiploc).map(_.name).getOrElse(simpleTimetable.destination.tiploc),
-      simpleTimetable.location.platform,
+      platform,
       PlanService.createUrlForDisplayingSimpleTrainTimetable(simpleTimetable.basicSchedule.trainUid, year, month, day),
       if(arrival != "") "Arr." else "",
       if(departure != "") "Dep." else "",
-      "Platform"
+      if(platform != "") "Platform" else ""
     )
   }
 }
