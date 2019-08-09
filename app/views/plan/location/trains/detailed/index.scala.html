@@ -1,6 +1,6 @@
 @(
 user: models.auth.User,
-timetables: List[models.timetable.DisplaySimpleTimetable],
+timetables: List[models.timetable.DisplayDetailedTimetable],
 location: Option[models.location.Location],
 year: Int,
 month: Int,
@@ -24,9 +24,9 @@ t: String
     <meta name="theme-color" content="#ffffff">
     <title>
         @if(location.isDefined) {
-            @location.get.name -
+        @location.get.name -
         }
-        Simple Search - Trains - Plan - All the Stations & Track
+        Detailed Search - Trains - Plan - All the Stations & Track
     </title>
 </head>
 
@@ -53,13 +53,17 @@ t: String
 
 <style>
     tr.pass {
-        display: none;
        font-style: italic;
        color: gray;
     }
     tr.pass a {
         color:gray;
     }
+
+    .table-light a {
+        color: gray;
+    }
+
 </style>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -108,13 +112,13 @@ t: String
             <div class="alert alert-dark" role="alert">
                 <h3>
                     @if(location.isDefined) {
-                        @location.get.name -
+                    @location.get.name -
                     }
-                    Simple Search
+                    Detailed Search
                 </h3>
                 Showing trains
                 @if(location.isDefined) {
-                    for <strong>@location.get.name</strong>
+                for <strong>@location.get.name</strong>
                 }
                 on <strong>@year-@month-@day</strong> between <strong>@f</strong> and <strong>@t</strong>
             </div>
@@ -150,31 +154,34 @@ t: String
             </div>
         </div>
     </div>
-        <div class="row">
-            <div class="col-sm">
-                <div class="table-responsive">
-                    <table class="table table-hover">
-                        @if(timetables.isEmpty){
-                            <tr>No trains to show...</tr>
-                        } else {
-                            <thead>
-                                <tr>
-                                    <td>Arrival</td>
-                                    <td>Origin</td>
-                                    <td>Destination</td>
-                                    <td>Platform</td>
-                                    <td>Departure</td>
-                                </tr>
-                            </thead>
-                            @for(tt <- timetables) {
-                                @ttr(tt)
-                            }
-                        }
-                    </table>
-                </div>
+    <div class="row">
+        <div class="col-sm">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    @if(timetables.isEmpty){
+                    <tr>No trains to show...</tr>
+                    } else {
+                    <thead>
+                    <tr>
+                        <td>Arrival</td>
+                        <td>Origin</td>
+                        <td>Destination</td>
+                        <td>Platform</td>
+                        <td>Category</td>
+                        <td>ID</td>
+                        <td>UID</td>
+                        <td>Departure</td>
+                    </tr>
+                    </thead>
+                    @for(tt <- timetables) {
+                    @ttr(tt)
+                    }
+                    }
+                </table>
             </div>
         </div>
     </div>
+</div>
 </div>
 <footer class="footer ">
     <div class="container">
@@ -182,47 +189,65 @@ t: String
     </div>
 </footer>
 
-@ttr(tt: models.timetable.DisplaySimpleTimetable) = {
-    <tr>
-        <td>
-            <a href="@tt.trainUrl">
-                 @arr(tt.arrival, tt.arrivalLabel)
-            </a>
-        </td>
-        <td>
-            <a href="@tt.trainUrl">
-                @tt.origin
-            </a>
-        </td>
-        <td>
-            <a href="@tt.trainUrl">
-                @tt.destination
-            </a>
-        </td>
-        <td>
-            <a href="@tt.trainUrl">
-                @platform(tt.platform, tt.platformLabel)
-            </a>
-        </td>
-        <td>
-            <a href="@tt.trainUrl">
-                @dep(tt.departure, tt.departureLabel)
-            </a>
-        </td>
-    </tr>
+@ttr(tt: models.timetable.DisplayDetailedTimetable) = {
+    @if(tt.isPass) { <tr class="pass @tt.category table-light">
+    } else if(tt.isPublic) { <tr class="passenger @tt.category">
+    } else { <tr class="non-passenger @tt.category table-light"> }
+    <td>
+        <a href="@tt.trainUrl">
+            @arr(tt.arrival, tt.arrivalLabel)
+        </a>
+    </td>
+    <td>
+        <a href="@tt.trainUrl">
+            @tt.origin
+        </a>
+    </td>
+    <td>
+        <a href="@tt.trainUrl">
+            @tt.destination
+        </a>
+    </td>
+    <td>
+        <a href="@tt.trainUrl">
+            @platform(tt.platform, tt.platformLabel)
+        </a>
+    </td>
+    <td>
+        <a href="@tt.trainUrl">
+            @tt.category
+        </a>
+    </td>
+    <td>
+        <a href="@tt.trainUrl">
+            @tt.id
+        </a>
+    </td>
+    <td>
+        <a href="@tt.trainUrl">
+            @tt.uid
+        </a>
+    </td>
+
+    <td>
+        <a href="@tt.trainUrl">
+            @dep(tt.departure, tt.departureLabel)
+        </a>
+    </td>
+</tr>
 }
 
 @platform(platform: String, label: String) = {
-    @platform <br/> <small>@label</small>
+@platform <br/> <small>@label</small>
 
 }
 
 @arr(arrival: String, label: String) = {
-    @arrival <br/> <small>@label</small>
+@arrival <br/> <small>@label</small>
 }
 
 @dep(departure: String, label: String) = {
-    @departure <br/> <small>@label</small>
+@departure <br/> <small>@label</small>
 }
 
 @pad(num: Int) = {@if(num < 10) {0@num} else {@num}}

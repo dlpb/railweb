@@ -13,6 +13,8 @@ import models.timetable._
 import org.json4s.DefaultFormats
 import org.json4s.native.JsonMethods.parse
 
+import scala.concurrent.duration.Duration
+import scala.concurrent.{Await, Future}
 import scala.io.Source
 
 class PlanService @Inject()(locationsService: LocationsService, pathService: PathService, reader: Reader = new WebZipInputStream) {
@@ -36,12 +38,19 @@ class PlanService @Inject()(locationsService: LocationsService, pathService: Pat
     implicit val formats = DefaultFormats ++ JsonFormats.allFormats
 
     try {
-      val url = PlanService.createUrlForReadingTrainTimetable(train)
+      val f = Future {
+        val url = PlanService.createUrlForReadingTrainTimetable(train)
 
-      val zis = reader.getInputStream(url)
+        val zis = reader.getInputStream(url)
 
-      val string = Source.fromInputStream(zis).mkString
-      Some(parse(string).extract[IndividualTimetable])
+        val string = Source.fromInputStream(zis).mkString
+        Some(parse(string).extract[IndividualTimetable])
+      }(scala.concurrent.ExecutionContext.Implicits.global).recoverWith {
+        case e =>
+          println(s"Getting Individual Timetable error = ${e.getMessage}")
+          Future.successful(None)
+      }(scala.concurrent.ExecutionContext.Implicits.global)
+      Await.result(f, Duration(20, "second"))
     }
     catch {
       case f: FileNotFoundException => println(s"No timetable for location $train")
@@ -56,6 +65,19 @@ class PlanService @Inject()(locationsService: LocationsService, pathService: Pat
     val to = PlanService.to
 
     (getTrainsForLocation(loc,
+      from.getYear,
+      from.getMonthValue,
+      from.getDayOfMonth,
+      from.getHour*100 + from.getMinute,
+      to.getHour*100 + to.getMinute
+    ), (from.getYear, from.getMonthValue, from.getDayOfMonth, from.getHour*100 + from.getMinute, to.getHour*100 + to.getMinute))
+  }
+
+  def getDetailedTrainsForLocationAroundNow(loc: String): (List[SimpleTimetable],(Int, Int, Int, Int, Int)) = {
+    val from = PlanService.from
+    val to = PlanService.to
+
+    (getDetailedTrainsForLocation(loc,
       from.getYear,
       from.getMonthValue,
       from.getDayOfMonth,
@@ -82,8 +104,18 @@ class PlanService @Inject()(locationsService: LocationsService, pathService: Pat
                            to: Int
                           ): List[SimpleTimetable] = {
     readTimetable(loc, year, month, day, from, to).toList
-      .filter(PlanService.filterNonPassengerTrains)
-      .filter(PlanService.filterPasses)
+      .filter(PlanService.isPassengerTrain)
+      .filter(PlanService.isNotPass)
+  }
+
+  def getDetailedTrainsForLocation(loc: String,
+                           year: Int,
+                           month: Int,
+                           day: Int,
+                           from: Int,
+                           to: Int
+                          ): List[SimpleTimetable] = {
+    readTimetable(loc, year, month, day, from, to).toList
   }
 
   private def readTimetable(loc: String,
@@ -96,12 +128,19 @@ class PlanService @Inject()(locationsService: LocationsService, pathService: Pat
     implicit val formats = DefaultFormats ++ JsonFormats.allFormats
 
     try {
-      val url: String = PlanService.createUrlForReadingLocationTimetables(loc, year, month, day, from, to)
+      val f = Future {
+        val url = PlanService.createUrlForReadingLocationTimetables(loc, year, month, day, from, to)
+        val zis = reader.getInputStream(url)
 
-      val zis = reader.getInputStream(url)
+        val string = Source.fromInputStream(zis).mkString
+        parse(string).extract[Seq[SimpleTimetable]]
+      }(scala.concurrent.ExecutionContext.Implicits.global).recoverWith {
+        case e =>
+          println(s"Getting Simple Timetable error = ${e.getMessage}")
+          Future.successful(Seq.empty)
+      }(scala.concurrent.ExecutionContext.Implicits.global)
+      Await.result(f, Duration(20, "second"))
 
-      val string = Source.fromInputStream(zis).mkString
-      parse(string).extract[Seq[SimpleTimetable]]
     }
     catch {
       case f: FileNotFoundException => println(s"No timetable for location $loc")
@@ -158,9 +197,9 @@ object PlanService {
 
   def createUrlForReadingTrainTimetable(train: String) = s"http://railweb-timetables.herokuapp.com/timetables/train/$train"
 
-  def filterPasses(tt: SimpleTimetable): Boolean = tt.location.pass.isEmpty
+  def isNotPass(tt: SimpleTimetable): Boolean = tt.location.pass.isEmpty
 
-  def filterNonPassengerTrains(tt: SimpleTimetable): Boolean = {
+  def isPassengerTrain(tt: SimpleTimetable): Boolean = {
     val category = tt.basicSchedule.trainCategory
     category.equals(OrdinaryLondonUndergroundMetroService) ||
     category.equals(UnadvertisedOrdinaryPassenger) ||

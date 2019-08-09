@@ -17,6 +17,7 @@ libraryDependencies ++= Seq(
   "org.json4s" %% "json4s-jackson" % "3.6.5",
   "org.json4s" %% "json4s-native" % "3.6.5",
   "org.postgresql" % "postgresql" % "42.2.1",
+  "org.asynchttpclient" % "async-http-client" % "2.10.1"
 )
 
 libraryDependencies += ws

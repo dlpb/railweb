@@ -87,6 +87,45 @@ class PlanController @Inject()(
     }
   }
 
+  def showDetailedTrainsForLocationNow(loc: String)= authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
+    if (request.user.roles.contains(PlanUser)) {
+      val token = jwtService.createToken(request.user, new Date())
+
+      val (timetable, dates) = planService.getDetailedTrainsForLocationAroundNow(loc)
+      val timetables = timetable map {
+        t =>
+          new DisplayTimetable(locationsService, planService).displayDetailedTimetable(t, dates._1, dates._2, dates._3)
+      }
+
+      val l = locationsService.findLocation(loc)
+
+      Ok(views.html.plan.location.trains.detailed.index(request.user, timetables, l,
+        dates._1, dates._2, dates._3, DisplayTimetable.time(dates._4), DisplayTimetable.time(dates._5))(request.request))
+    }
+    else {
+      Forbidden("User not authorized to view page")
+    }
+  }
+
+  def showDetailedTrainsForLocation(loc: String, year: Int, month: Int, day: Int, from: Int, to: Int, date: String) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
+    if (request.user.roles.contains(PlanUser)) {
+      val token = jwtService.createToken(request.user, new Date())
+
+      val timetables = planService.getDetailedTrainsForLocation(loc, year, month, day, from, to) map {
+        t =>
+          new DisplayTimetable(locationsService, planService).displayDetailedTimetable(t, year, month, day)
+      }
+
+      val l = locationsService.findLocation(loc)
+
+      Ok(views.html.plan.location.trains.detailed.index(
+        request.user, timetables, l, year, month, day,  DisplayTimetable.time(from), DisplayTimetable.time(to))(request.request))
+    }
+    else {
+      Forbidden("User not authorized to view page")
+    }
+  }
+
   def showTrain(train: String,  year: Int, month: Int, day: Int) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     if (request.user.roles.contains(PlanUser)) {
       val token = jwtService.createToken(request.user, new Date())

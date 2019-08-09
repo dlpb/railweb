@@ -8,6 +8,44 @@ import models.plan.PlanService
 import DisplayTimetable._
 
 class DisplayTimetable(locationsService: LocationsService, planService: PlanService) {
+  def displayDetailedTimetable(simpleTimetable: SimpleTimetable, year: Int, month: Int, day: Int): DisplayDetailedTimetable = {
+    val public = PlanService.isPassengerTrain(simpleTimetable)
+
+    val arrival: String =
+      if(simpleTimetable.location.pass.isDefined) "pass"
+      else if(!public && simpleTimetable.location.arrival.isDefined) simpleTimetable.location.arrival.map(time).getOrElse("")
+      else if(simpleTimetable.location.publicArrival.isDefined) simpleTimetable.location.publicArrival.map(time).getOrElse("")
+      else ""
+
+    val departure =
+      if(simpleTimetable.location.pass.isDefined) simpleTimetable.location.pass.map(time).getOrElse("")
+      else if(!public && simpleTimetable.location.departure.isDefined) simpleTimetable.location.departure.map(time).getOrElse("")
+      else if(simpleTimetable.location.publicDeparture.isDefined) simpleTimetable.location.publicDeparture.map(time).getOrElse("")
+      else ""
+
+    val platform =
+      if(simpleTimetable.location.pass.isDefined) ""
+      else simpleTimetable.location.platform
+
+    DisplayDetailedTimetable(
+      public,
+      simpleTimetable.location.pass.isDefined,
+      simpleTimetable.basicSchedule.trainCategory.toString,
+      simpleTimetable.basicSchedule.trainIdentity,
+      simpleTimetable.basicSchedule.trainUid,
+      arrival,
+      departure,
+      locationsService.findLocation(simpleTimetable.origin.tiploc).map(_.name).getOrElse(simpleTimetable.origin.tiploc),
+      locationsService.findLocation(simpleTimetable.destination.tiploc).map(_.name).getOrElse(simpleTimetable.destination.tiploc),
+      platform,
+      PlanService.createUrlForDisplayingSimpleTrainTimetable(simpleTimetable.basicSchedule.trainUid, year, month, day),
+      "",
+      "",
+      ""
+    )
+
+  }
+
   def displayIndividualTimetable(tt: IndividualTimetable): DisplaySimpleIndividualTimetable = {
     val date = LocalDate.now()
     DisplaySimpleIndividualTimetable(
@@ -61,12 +99,12 @@ class DisplayTimetable(locationsService: LocationsService, planService: PlanServ
     )
   }
 
-  def displaySimpleTimetable(simpleTimetable: SimpleTimetable, year: Int,  month: Int, day: Int): DisplaySimpleTimetable2 = {
+  def displaySimpleTimetable(simpleTimetable: SimpleTimetable, year: Int,  month: Int, day: Int): DisplaySimpleTimetable = {
     val arrival = simpleTimetable.location.publicArrival.map(time).getOrElse("")
     val departure = simpleTimetable.location.publicDeparture.map(time).getOrElse("")
     val platform = simpleTimetable.location.platform
 
-    DisplaySimpleTimetable2(
+    DisplaySimpleTimetable(
       arrival,
       departure,
       locationsService.findLocation(simpleTimetable.origin.tiploc).map(_.name).getOrElse(simpleTimetable.origin.tiploc),
@@ -88,7 +126,24 @@ object DisplayTimetable {
   }
 }
 
-case class DisplaySimpleTimetable2(
+case class DisplaySimpleTimetable(
+                                    arrival: String,
+                                    departure: String,
+                                    origin: String,
+                                    destination: String,
+                                    platform: String,
+                                    trainUrl: String,
+                                    arrivalLabel: String,
+                                    departureLabel: String,
+                                    platformLabel: String
+                                  )
+
+case class DisplayDetailedTimetable(
+                                    isPublic: Boolean,
+                                    isPass: Boolean,
+                                    category: String,
+                                    id: String,
+                                    uid: String,
                                     arrival: String,
                                     departure: String,
                                     origin: String,
