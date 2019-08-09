@@ -60,7 +60,7 @@ class PlanController @Inject()(
 
       val l = locationsService.findLocation(loc)
 
-      Ok(views.html.plan.location.trains.index(request.user, timetables, l,
+      Ok(views.html.plan.location.trains.simple.index(request.user, timetables, l,
         dates._1, dates._2, dates._3, DisplayTimetable.time(dates._4), DisplayTimetable.time(dates._5))(request.request))
     }
     else {
@@ -79,7 +79,7 @@ class PlanController @Inject()(
 
       val l = locationsService.findLocation(loc)
 
-      Ok(views.html.plan.location.trains.index(
+      Ok(views.html.plan.location.trains.simple.index(
         request.user, timetables, l, year, month, day,  DisplayTimetable.time(from), DisplayTimetable.time(to))(request.request))
     }
     else {
@@ -94,7 +94,7 @@ class PlanController @Inject()(
       val data = planService.showSimpleTrainTimetable(train, year, month, day)
 
       if(data.isDefined) {
-        Ok(views.html.plan.train.index(request.user, data.get.dst, data.get.mapLocations, data.get.routes)(request.request))
+        Ok(views.html.plan.train.simple.index(request.user, data.get.dst, data.get.mapLocations, data.get.routes)(request.request))
       }
       else NotFound(s"Could not find train $train on $year-$month-$day")
 

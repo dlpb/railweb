@@ -22,7 +22,11 @@ t: String
     <meta name="application-name" content="All the Stations &amp; Track">
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="theme-color" content="#ffffff">
-    <title>Plan - All the Stations & Track
+    <title>
+        @if(location.isDefined) {
+            @location.get.name -
+        }
+        Simple Search - Trains - Plan - All the Stations & Track
     </title>
 </head>
 
@@ -98,16 +102,21 @@ t: String
         </ul>
     </div>
 </nav>
-<div class="container">
+<div class="container card-body">
     <div class="row">
         <div class="col-sm">
-            <div class="alert alert-light" role="alert">
-                <h3>Simple Search</h3>
-                Showing trains for
+            <div class="alert alert-dark" role="alert">
+                <h3>
+                    @if(location.isDefined) {
+                        @location.get.name -
+                    }
+                    Simple Search
+                </h3>
+                Showing trains
                 @if(location.isDefined) {
-                    @location.get.name on
+                    for <strong>@location.get.name</strong>
                 }
-                @year-@month-@day between @f and @t
+                on <strong>@year-@month-@day</strong> between <strong>@f</strong> and <strong>@t</strong>
             </div>
         </div>
     </div>
@@ -143,11 +152,26 @@ t: String
     </div>
         <div class="row">
             <div class="col-sm">
-                    <table class="table">
-                    @for(tt <- timetables) {
-                        @ttr(tt)
-                    }
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        @if(timetables.isEmpty){
+                            <tr>No trains to show...</tr>
+                        } else {
+                            <thead>
+                                <tr>
+                                    <td>Arrival</td>
+                                    <td>Origin</td>
+                                    <td>Destination</td>
+                                    <td>Platform</td>
+                                    <td>Departure</td>
+                                </tr>
+                            </thead>
+                            @for(tt <- timetables) {
+                                @ttr(tt)
+                            }
+                        }
                     </table>
+                </div>
             </div>
         </div>
     </div>
@@ -162,7 +186,7 @@ t: String
     <tr>
         <td>
             <a href="@tt.trainUrl">
-                 @arr(tt.arrival)
+                 @arr(tt.arrival, tt.arrivalLabel)
             </a>
         </td>
         <td>
@@ -177,28 +201,28 @@ t: String
         </td>
         <td>
             <a href="@tt.trainUrl">
-                @platform(tt.platform)
+                @platform(tt.platform, tt.platformLabel)
             </a>
         </td>
         <td>
             <a href="@tt.trainUrl">
-                @dep(tt.departure)
+                @dep(tt.departure, tt.departureLabel)
             </a>
         </td>
     </tr>
 }
 
-@platform(platform: String) = {
-    @platform <br/> <small>Plat.</small>
+@platform(platform: String, label: String) = {
+    @platform <br/> <small>@label</small>
 
 }
 
-@arr(arrival: String) = {
-    @arrival <br/> <small>Arr.</small>
+@arr(arrival: String, label: String) = {
+    @arrival <br/> <small>@label</small>
 }
 
-@dep(departure: String) = {
-    @departure <br/> <small>Dep.</small>
+@dep(departure: String, label: String) = {
+    @departure <br/> <small>@label</small>
 }
 
 @pad(num: Int) = {@if(num < 10) {0@num} else {@num}}

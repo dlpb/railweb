@@ -1,8 +1,7 @@
-import java.io.InputStream
+import java.io.{ByteArrayInputStream, InputStream}
 import java.time.LocalDate
 import java.util.Date
 
-import com.sun.xml.internal.messaging.saaj.util.ByteInputStream
 import com.typesafe.config.{ConfigFactory, ConfigValueFactory}
 import data.{LocationMapBasedDataProvider, RouteMapBasedDataProvider}
 import models.list.PathService
@@ -41,7 +40,7 @@ class PlanTest extends FlatSpec with Matchers {
     val service = new PlanService(locationService, pathService, new Reader {
       override def getInputStream(url: String): InputStream = {
         url should be(expectedUrl)
-        new ByteInputStream()
+        new ByteArrayInputStream("".getBytes)
       }
     })
 
@@ -65,7 +64,7 @@ class PlanTest extends FlatSpec with Matchers {
     val service = new PlanService(locationService, pathService, new Reader {
       override def getInputStream(url: String): InputStream = {
         url should be(expectedUrl)
-        new ByteInputStream()
+        new ByteArrayInputStream("".getBytes)
       }
     })
 
@@ -85,7 +84,7 @@ class PlanTest extends FlatSpec with Matchers {
     dst.platformLabel should be("Platform")
     dst.origin should be("London Liverpool Street")
     dst.destination should be("Kings Lynn")
-    dst.trainUrl should be("http://railweb.herokuapp.com/plan/train/simple/12345/2019/1/1")
+    dst.trainUrl should be("/plan/train/simple/12345/2019/1/1")
   }
 
   it should "map timetable to display timetable for train that starts at same location" in {
@@ -101,7 +100,7 @@ class PlanTest extends FlatSpec with Matchers {
     dst.platformLabel should be("Platform")
     dst.origin should be("London Liverpool Street")
     dst.destination should be("Kings Lynn")
-    dst.trainUrl should be("http://railweb.herokuapp.com/plan/train/simple/12345/2019/1/1")
+    dst.trainUrl should be("/plan/train/simple/12345/2019/1/1")
   }
 
   it should "map timetable to display timetable for train that ends at same location" in {
@@ -117,7 +116,7 @@ class PlanTest extends FlatSpec with Matchers {
     dst.platformLabel should be("Platform")
     dst.origin should be("London Liverpool Street")
     dst.destination should be("Kings Lynn")
-    dst.trainUrl should be("http://railweb.herokuapp.com/plan/train/simple/12345/2019/1/1")
+    dst.trainUrl should be("/plan/train/simple/12345/2019/1/1")
   }
 
   it should "individual timetable to display timetable" in {

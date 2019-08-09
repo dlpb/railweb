@@ -65,6 +65,7 @@ class DisplayTimetable(locationsService: LocationsService, planService: PlanServ
     val arrival = simpleTimetable.location.publicArrival.map(time).getOrElse("")
     val departure = simpleTimetable.location.publicDeparture.map(time).getOrElse("")
     val platform = simpleTimetable.location.platform
+
     DisplaySimpleTimetable2(
       arrival,
       departure,

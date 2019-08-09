@@ -18,7 +18,7 @@ routeList: List[models.route.MapRoute]
     <meta name="application-name" content="All the Stations &amp; Track">
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="theme-color" content="#ffffff">
-    <title>Plan - All the Stations & Track
+    <title>@timetable.origin to @timetable.destination - Simple Search - Plan - All the Stations & Track
     </title>
 </head>
 
@@ -95,11 +95,13 @@ routeList: List[models.route.MapRoute]
         </ul>
     </div>
 </nav>
-<div class="container">
+<div class="container card-body">
     <div class="row">
         <div class="col-sm">
             <div id='title' class="alert alert-secondary">
-                A <span id="operator-name"></span> Service from @timetable.origin to @timetable.destination running on @timetable.runningOn
+                <h3>
+                    A <strong><span id="operator-name"></span></strong> Service from <strong>@timetable.origin</strong> to <strong>@timetable.destination</strong>
+                </h3> running on <strong>@timetable.runningOn</strong>
                 <script>
                     const tocInfo = findTocData('@timetable.operator');
                     const element = document.getElementById('title');
@@ -170,17 +172,24 @@ routeList: List[models.route.MapRoute]
         </div>
     </div>
 </div>
-<div class="container">
+<div class="container card-body">
     <div class="row">
         <div class="col-sm">
-                <table class="table">
-
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <td>Arrival</td>
+                        <td>Station</td>
+                        <td>Platform</td>
+                        <td>Departure</td>
+                    </tr>
+                    </thead>
                    @for(l <- timetable.locations){
                         @location(l)
                     }
-
                 </table>
-
+            </div>
         </div>
     </div>
 </div>
