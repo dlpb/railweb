@@ -80,16 +80,17 @@ class DisplayTimetable(locationsService: LocationsService, planService: PlanServ
           val to = date.atTime(hour, minute).plusMinutes(45)
 
           DisplayDetailedIndividualTimetableLocation(
-            loc.map(_.id).getOrElse(""),
-            loc.map(_.name).getOrElse(""),
+            loc.map(_.id).getOrElse(l.tiploc),
+            loc.map(_.name).getOrElse(l.tiploc),
             platform,
             isPass,
             arrival,
             departure,
-            pathAllowance,
-            performanceAllowance,
-            engineeringAllowance,
+            if(pathAllowance == "0") "" else pathAllowance,
+            if(performanceAllowance == "0") "" else performanceAllowance,
+            if(engineeringAllowance == "0") "" else engineeringAllowance,
             l.path.getOrElse(""),
+            l.line,
             PlanService.createUrlForDisplayingLocationDetailedTimetables(
               loc.map(_.id).getOrElse(""),
               year,
@@ -308,5 +309,6 @@ case class DisplayDetailedIndividualTimetableLocation(
                                                      performanceAllowance: String,
                                                      engineeringAllowance: String,
                                                      path: String,
+                                                     line: String,
                                                      url: String
                                                      )

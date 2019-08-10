@@ -103,7 +103,7 @@ routeList: List[models.route.MapRoute]
         <div class="col-sm">
             <div id='title' class="alert alert-secondary">
                 <h3>
-                    A <strong><span id="operator-name"></span></strong> Service from <strong>@timetable.origin</strong> to <strong>@timetable.destination</strong>
+                    <strong><span id="operator-name"></span></strong> Service from <strong>@timetable.origin</strong> to <strong>@timetable.destination</strong>
                 </h3> running on <strong>@timetable.runningOn</strong>
                 <script>
                     const tocInfo = findTocData('@timetable.operator');
@@ -116,6 +116,11 @@ routeList: List[models.route.MapRoute]
                     title.textContent = tocInfo["name"];
                 </script>
             </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col col-sm">
+            @bs(timetable)
         </div>
     </div>
     <div class="row">
@@ -182,9 +187,6 @@ routeList: List[models.route.MapRoute]
                 <table class="table table-hover">
                     <thead>
                     <tr>
-
-                    </tr>
-                    <tr>
                         <td>Arrival</td>
                         <td>ID</td>
                         <td>Station</td>
@@ -194,6 +196,7 @@ routeList: List[models.route.MapRoute]
                         <td>Perf</td>
                         <td>Eng</td>
                         <td>Route</td>
+                        <td>Line</td>
                     </tr>
                     </thead>
                    @for(l <- timetable.locations){
@@ -211,20 +214,12 @@ routeList: List[models.route.MapRoute]
     </div>
 </footer>
 
-@bs(bs: models.timetable.BasicSchedule) = {
+@bs(bs: models.timetable.DisplayDetailedIndividualTimetable) = {
 <div class="row">
     <div class="col col-sm">
         <h4>Date Information</h4>
         <ul>
-            <li> Runs on:
-                @if(bs.validMonday) { M }
-                @if(bs.validTuesday) { T }
-                @if(bs.validWednesday) { W }
-                @if(bs.validThursday) { Th }
-                @if(bs.validFriday) { F }
-                @if(bs.validSaturday) { S }
-                @if(bs.validSunday) { Su }
-            </li>
+            <li> Runs @bs.runningDays</li>
             <li>Runs between @bs.runsFrom and @bs.runsTo</li>
             <li>Bank Holiday: @bs.bankHolidayRunning</li>
         </ul>
@@ -232,13 +227,11 @@ routeList: List[models.route.MapRoute]
     <div class="col col-sm">
         <h4>Train Identity</h4>
         <ul>
-            <li>Train Status: @bs.trainStatus</li>
-            <li>Train Category: @bs.trainCategory</li>
-            <li>Identity: @bs.trainIdentity</li>
-            <li>Train UID: @bs.trainUid</li>
-            <li>Headcode: @bs.headcode</li>
-            <li>Service Code: @bs.trainServiceCode</li>
-            <li>STP Indicator@bs.stpIndicator</li>
+            <li>Train Status: @bs.status</li>
+            <li>Train Category: @bs.category</li>
+            <li>Identity: @bs.id</li>
+            <li>Train UID: @bs.uid</li>
+            <li>STP Indicator @bs.stpIndicator</li>
         </ul>
     </div>
     <div class="col col-sm">
@@ -310,6 +303,11 @@ routeList: List[models.route.MapRoute]
         <td>
             <a href="@l.url">
                 @l.path
+            </a>
+        </td>
+        <td>
+            <a href="@l.url">
+                @l.line
             </a>
         </td>
     </tr>

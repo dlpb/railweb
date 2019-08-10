@@ -126,7 +126,7 @@ t: String
                 <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#filters" aria-expanded="false" aria-controls="collapseExample">
                     Filters
                 </button>
-
+                <a href="/plan/location/trains/detailed/@location.get.id?year=@year&month=@month&day=@day&from=@f&to=@t" class="btn btn-primary" role="button" aria-disabled="true">Switch to Detailed Search</a>
 
             </p>
             <div class="collapse" id="filters">
@@ -215,16 +215,16 @@ t: String
 }
 
 @platform(platform: String, label: String) = {
-    @platform <br/> <small>@label</small>
+    @platform
 
 }
 
 @arr(arrival: String, label: String) = {
-    @arrival <br/> <small>@label</small>
+    @arrival
 }
 
 @dep(departure: String, label: String) = {
-    @departure <br/> <small>@label</small>
+    @departure
 }
 
 @pad(num: Int) = {@if(num < 10) {0@num} else {@num}}

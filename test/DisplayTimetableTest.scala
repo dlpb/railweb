@@ -167,10 +167,10 @@ class DisplayTimetableTest extends FlatSpec with Matchers {
     dst.branding should be("branding")
     dst.stpIndicator should be("New")
     dst.locations should be(List(
-      DisplayDetailedIndividualTimetableLocation("LST","London Liverpool Street","1",false,"","1000","0","0","0","", "/plan/location/trains/detailed/LST?year=2019&month=08&day=10&from=0945&to=1045"),
-      DisplayDetailedIndividualTimetableLocation("BIS","Bishops Stortford","",true,"pass","1030","0","0","0","", "/plan/location/trains/detailed/BIS?year=2019&month=08&day=10&from=1015&to=1115"),
-      DisplayDetailedIndividualTimetableLocation("CBG","Cambridge","1",false,"1100","1101","0","0","0","", "/plan/location/trains/detailed/CBG?year=2019&month=08&day=10&from=1045&to=1145"),
-      DisplayDetailedIndividualTimetableLocation("KLN","Kings Lynn","1",false,"1203","","0","0","0","", "/plan/location/trains/detailed/KLN?year=2019&month=08&day=10&from=1148&to=1248"))
+      DisplayDetailedIndividualTimetableLocation("LST","London Liverpool Street","1",false,"","1000","","","","","", "/plan/location/trains/detailed/LST?year=2019&month=08&day=10&from=0945&to=1045"),
+      DisplayDetailedIndividualTimetableLocation("BIS","Bishops Stortford","",true,"pass","1030","","","","","", "/plan/location/trains/detailed/BIS?year=2019&month=08&day=10&from=1015&to=1115"),
+      DisplayDetailedIndividualTimetableLocation("CBG","Cambridge","1",false,"1100","1101","","","","","", "/plan/location/trains/detailed/CBG?year=2019&month=08&day=10&from=1045&to=1145"),
+      DisplayDetailedIndividualTimetableLocation("KLN","Kings Lynn","1",false,"1203","","","","","", "", "/plan/location/trains/detailed/KLN?year=2019&month=08&day=10&from=1148&to=1248"))
     )
   }
 
