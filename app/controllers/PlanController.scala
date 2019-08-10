@@ -10,9 +10,12 @@ import models.list.{Path, PathService}
 import models.location.{Location, LocationsService, MapLocation}
 import models.plan.PlanService
 import models.route.MapRoute
-import models.timetable.{DisplayTimetable, IndividualTimetable}
+import models.timetable.{DisplaySimpleTimetable, DisplayTimetable, IndividualTimetable}
 import play.api.i18n.I18nSupport
-import play.api.mvc.{AbstractController, AnyContent, ControllerComponents}
+import play.api.mvc._
+
+import scala.concurrent.{Await, Future, TimeoutException}
+import scala.concurrent.duration.Duration
 
 class PlanController @Inject()(
                                 cc: ControllerComponents,
@@ -23,6 +26,9 @@ class PlanController @Inject()(
                                 jwtService: JWTService
 
                               ) extends AbstractController(cc) with I18nSupport {
+
+  import scala.concurrent.ExecutionContext.Implicits.global
+
   def showLocationHighlights(locations: String) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     if(request.user.roles.contains(PlanUser)){
       val token = jwtService.createToken(request.user, new Date())
@@ -37,7 +43,7 @@ class PlanController @Inject()(
       Forbidden("User not authorized to view page")
     }
   }
-  def showPlanIndex() = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
+  def showPlanIndex(): Action[AnyContent] = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     if (request.user.roles.contains(PlanUser)) {
       val token = jwtService.createToken(request.user, new Date())
 
@@ -48,20 +54,37 @@ class PlanController @Inject()(
     }
   }
 
-  def showTrainsForLocationNow(loc: String)= authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
+  def showTrainsForLocationNow(loc: String): Action[AnyContent] = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     if (request.user.roles.contains(PlanUser)) {
       val token = jwtService.createToken(request.user, new Date())
 
       val (timetable, dates) = planService.getTrainsForLocationAroundNow(loc)
-      val timetables = timetable map {
-        t =>
-          new DisplayTimetable(locationsService, planService).displaySimpleTimetable(t, dates._1, dates._2, dates._3)
+      val timetables: Future[Seq[DisplaySimpleTimetable]] = timetable map {
+        f =>
+          f map {
+            t =>
+              new DisplayTimetable(locationsService, planService).displaySimpleTimetable(t, dates._1, dates._2, dates._3)
+          }
       }
 
       val l = locationsService.findLocation(loc)
 
-      Ok(views.html.plan.location.trains.simple.index(request.user, timetables, l,
-        dates._1, dates._2, dates._3, DisplayTimetable.time(dates._4), DisplayTimetable.time(dates._5))(request.request))
+      val eventualResult: Future[Result] = timetables map {
+        t =>
+          Ok(views.html.plan.location.trains.simple.index(request.user, t.toList, l,
+            dates._1, dates._2, dates._3, DisplayTimetable.time(dates._4), DisplayTimetable.time(dates._5))(request.request))
+      }
+      try {
+        Await.result(eventualResult, Duration(30, "second"))
+      }
+      catch{
+        case e: TimeoutException =>
+          InternalServerError(views.html.plan.error.index(request.user,
+            List(s"Could not get details for $loc around now",
+              "Timed out producing the page"
+            ))
+          (request.request))
+      }
     }
     else {
       Forbidden("User not authorized to view page")
@@ -73,15 +96,30 @@ class PlanController @Inject()(
       val token = jwtService.createToken(request.user, new Date())
 
       val timetables = planService.getTrainsForLocation(loc, year, month, day, from, to) map {
-        t =>
-          new DisplayTimetable(locationsService, planService).displaySimpleTimetable(t, year, month, day)
+        f =>
+          f map {
+            t =>
+              new DisplayTimetable(locationsService, planService).displaySimpleTimetable(t, year, month, day)
+          }
       }
 
       val l = locationsService.findLocation(loc)
-
-      Ok(views.html.plan.location.trains.simple.index(
-        request.user, timetables, l, year, month, day,  DisplayTimetable.time(from), DisplayTimetable.time(to))(request.request))
-    }
+      val eventualResult: Future[Result] = timetables map {
+        t =>
+          Ok(views.html.plan.location.trains.simple.index(
+            request.user, t.toList, l, year, month, day,  DisplayTimetable.time(from), DisplayTimetable.time(to))(request.request))
+      }
+      try {
+        Await.result(eventualResult, Duration(30, "second"))
+      }
+      catch{
+        case e: TimeoutException =>
+          InternalServerError(views.html.plan.error.index(request.user,
+            List(s"Could not get details for location $loc on $year-$month-$day",
+              "Timed out producing the page"
+            ))
+          (request.request))
+      }    }
     else {
       Forbidden("User not authorized to view page")
     }
@@ -93,15 +131,30 @@ class PlanController @Inject()(
 
       val (timetable, dates) = planService.getDetailedTrainsForLocationAroundNow(loc)
       val timetables = timetable map {
-        t =>
-          new DisplayTimetable(locationsService, planService).displayDetailedTimetable(t, dates._1, dates._2, dates._3)
+        f =>
+          f map {
+            t =>
+              new DisplayTimetable(locationsService, planService).displayDetailedTimetable(t, dates._1, dates._2, dates._3)
+          }
       }
 
       val l = locationsService.findLocation(loc)
-
-      Ok(views.html.plan.location.trains.detailed.index(request.user, timetables, l,
-        dates._1, dates._2, dates._3, DisplayTimetable.time(dates._4), DisplayTimetable.time(dates._5))(request.request))
-    }
+      val eventualResult: Future[Result] = timetables map {
+        t =>
+          Ok(views.html.plan.location.trains.detailed.index(request.user, t.toList, l,
+            dates._1, dates._2, dates._3, DisplayTimetable.time(dates._4), DisplayTimetable.time(dates._5))(request.request))
+      }
+      try {
+        Await.result(eventualResult, Duration(30, "second"))
+      }
+      catch{
+        case e: TimeoutException =>
+          InternalServerError(views.html.plan.error.index(request.user,
+            List(s"Could not get details for train $loc around now",
+              "Timed out producing the page"
+            ))
+          (request.request))
+      }    }
     else {
       Forbidden("User not authorized to view page")
     }
@@ -112,14 +165,30 @@ class PlanController @Inject()(
       val token = jwtService.createToken(request.user, new Date())
 
       val timetables = planService.getDetailedTrainsForLocation(loc, year, month, day, from, to) map {
-        t =>
-          new DisplayTimetable(locationsService, planService).displayDetailedTimetable(t, year, month, day)
+        f =>
+          f map {
+            t =>
+              new DisplayTimetable(locationsService, planService).displayDetailedTimetable(t, year, month, day)
+          }
       }
 
       val l = locationsService.findLocation(loc)
-
-      Ok(views.html.plan.location.trains.detailed.index(
-        request.user, timetables, l, year, month, day,  DisplayTimetable.time(from), DisplayTimetable.time(to))(request.request))
+      val eventualResult: Future[Result] = timetables map {
+        t =>
+          Ok(views.html.plan.location.trains.detailed.index(
+            request.user, t.toList, l, year, month, day, DisplayTimetable.time(from), DisplayTimetable.time(to))(request.request))
+      }
+      try {
+        Await.result(eventualResult, Duration(30, "second"))
+      }
+      catch{
+        case e: TimeoutException =>
+          InternalServerError(views.html.plan.error.index(request.user,
+            List(s"Could not get details for $loc on $year-$month-$day",
+              "Timed out producing the page"
+            ))
+          (request.request))
+      }
     }
     else {
       Forbidden("User not authorized to view page")
@@ -130,13 +199,27 @@ class PlanController @Inject()(
     if (request.user.roles.contains(PlanUser)) {
       val token = jwtService.createToken(request.user, new Date())
 
-      val data = planService.showSimpleTrainTimetable(train, year, month, day)
-
-      if(data.isDefined) {
-        Ok(views.html.plan.train.simple.index(request.user, data.get.dst, data.get.mapLocations, data.get.routes)(request.request))
+      val eventualResult = planService.showSimpleTrainTimetable(train, year, month, day) map {
+        data =>
+          if(data.isDefined) {
+            Ok(views.html.plan.train.simple.index(request.user, data.get.dst, data.get.mapLocations, data.get.routes)(request.request))
+          }
+          else NotFound(views.html.plan.error.index(request.user,
+            List(s"Could not fnd train $train on $year-$month-$day",
+              "Go back to <a href='/plan'>Plan</a>"
+            )))
       }
-      else NotFound(s"Could not find train $train on $year-$month-$day")
-
+      try {
+        Await.result(eventualResult, Duration(30, "second"))
+      }
+      catch{
+        case e: TimeoutException =>
+          InternalServerError(views.html.plan.error.index(request.user,
+            List(s"Could not get details for train $train on $year-$month-$day",
+              "Timed out producing the page"
+            ))
+          (request.request))
+      }
     }
     else {
       Forbidden("User not authorized to view page")
@@ -147,12 +230,27 @@ class PlanController @Inject()(
     if (request.user.roles.contains(PlanUser)) {
       val token = jwtService.createToken(request.user, new Date())
 
-      val data = planService.showDetailedTrainTimetable(train, year, month, day)
-
-      if(data.isDefined) {
-        Ok(views.html.plan.train.detailed.index(request.user, data.get.dtt, data.get.mapLocations, data.get.routes)(request.request))
+      val eventualResult = planService.showDetailedTrainTimetable(train, year, month, day) map {
+        data =>
+          if(data.isDefined)
+            Ok(views.html.plan.train.detailed.index(request.user, data.get.dtt, data.get.mapLocations, data.get.routes)(request.request))
+          else NotFound(views.html.plan.error.index(request.user,
+            List(s"Could not fnd train $train on $year-$month-$day",
+              "Go back to <a href='/plan'>Plan</a>"
+            ))
+          (request.request))
       }
-      else NotFound(s"Could not find train $train on $year-$month-$day")
+      try {
+        Await.result(eventualResult, Duration(30, "second"))
+      }
+      catch{
+        case e: TimeoutException =>
+          InternalServerError(views.html.plan.error.index(request.user,
+            List(s"Could not get details for train $train on $year-$month-$day",
+              "Timed out producing the page"
+            ))
+          (request.request))
+      }
 
     }
     else {

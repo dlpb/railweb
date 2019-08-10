@@ -16,8 +16,7 @@ libraryDependencies ++= Seq(
   "com.auth0" % "java-jwt" % "3.8.0",
   "org.json4s" %% "json4s-jackson" % "3.6.5",
   "org.json4s" %% "json4s-native" % "3.6.5",
-  "org.postgresql" % "postgresql" % "42.2.1",
-  "org.asynchttpclient" % "async-http-client" % "2.10.1"
+  "org.postgresql" % "postgresql" % "42.2.1"
 )
 
 libraryDependencies += ws
