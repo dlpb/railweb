@@ -56,6 +56,10 @@ GET /plan/train/simple/:train/:year/:month/:day                     controllers.
 GET /plan/train/detailed/:train/:year/:month/:day                   controllers.PlanController.showDetailedTrain(train: String, year: Int, month: Int, day: Int)
 GET /routes/find                    controllers.ListController.showListPage(waypoints: String ?= "", followFreightLinks: Boolean ?=false, followFixedLinks: Boolean ?= false)
 
+GET /api/plan/train/map/locations/simple/:train       controllers.ApiAuthenticatedController.getSimpleMapLocationsForTrain(train: String)
+GET /api/plan/train/map/locations/detailed/:train     controllers.ApiAuthenticatedController.getDetailedMapLocationsForTrain(train: String)
+GET /api/plan/train/map/route/:train                  controllers.ApiAuthenticatedController.createMapRouteForTrain(train: String)
+
 GET /api/location/map               controllers.ApiAuthenticatedController.getLocationsForMap
 GET /api/location/list/default      controllers.ApiAuthenticatedController.getLocationsForList
 GET /api/location/:id               controllers.ApiAuthenticatedController.getLocation(id: String)

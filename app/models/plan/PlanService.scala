@@ -27,8 +27,8 @@ class PlanService @Inject()(locationsService: LocationsService, pathService: Pat
       f =>
         f map {
           tt =>
-            val mapLocations = createDetailedMapLocations(tt)
-            val mapRoutes = createSimpleMapRoutes(tt)
+            val mapLocations = List()
+            val mapRoutes = List()
             val dst = new DisplayTimetable(locationsService, this).displayDetailedIndividualTimetable(tt, year, month, day)
             DetailedIndividualTimetable(dst, mapLocations, mapRoutes)
         }
@@ -36,27 +36,24 @@ class PlanService @Inject()(locationsService: LocationsService, pathService: Pat
   }
 
   def createSimpleMapRoutes(tt: IndividualTimetable): List[MapRoute] = {
-//    pathService.findRouteForWaypoints(tt.locations
-//      .flatMap { l => locationsService.findLocation(l.tiploc) }
-//      .map(_.id))
-//      .routes
-//      .map(r => MapRoute(r))
-    List()
+    pathService.findRouteForWaypoints(tt.locations
+      .flatMap { l => locationsService.findLocation(l.tiploc) }
+      .map(_.id))
+      .routes
+      .map(r => MapRoute(r))
   }
 
   def createSimpleMapLocations(tt: IndividualTimetable): List[MapLocation] = {
-//    tt.locations
-//      .filter(l => l.publicArrival.isDefined || l.publicDeparture.isDefined)
-//      .flatMap(l => locationsService.findLocation(l.tiploc))
-//      .map(l => MapLocation(l))
-    List()
+    tt.locations
+      .filter(l => l.publicArrival.isDefined || l.publicDeparture.isDefined)
+      .flatMap(l => locationsService.findLocation(l.tiploc))
+      .map(l => MapLocation(l))
   }
 
   def createDetailedMapLocations(tt: IndividualTimetable): List[MapLocation] = {
-//    tt.locations
-//      .flatMap(l => locationsService.findLocation(l.tiploc))
-//      .map(l => MapLocation(l))
-    List()
+    tt.locations
+      .flatMap(l => locationsService.findLocation(l.tiploc))
+      .map(l => MapLocation(l))
   }
 
 
@@ -118,8 +115,8 @@ class PlanService @Inject()(locationsService: LocationsService, pathService: Pat
       f =>
         f map {
           tt =>
-            val mapLocations = createSimpleMapLocations(tt)
-            val mapRoutes = createSimpleMapRoutes(tt)
+            val mapLocations = List()
+            val mapRoutes = List()
             val dst = new DisplayTimetable(locationsService, this).displayIndividualTimetable(tt, year, month, day)
             SimpleIndividualTimetable(dst, mapLocations, mapRoutes)
         }

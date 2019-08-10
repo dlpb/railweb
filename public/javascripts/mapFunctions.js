@@ -60,6 +60,35 @@ function populatePoints(map, token) {
 }
 
 /**
+* Add simple train calling points to map
+*/
+function populateSimpleTrainCallingPoints(map, token, train) {
+    jQuery.ajax({
+      url: "/api/plan/train/map/locations/simple/" + train,
+      headers: { "Authorization": "Bearer " + token }
+    })
+  .done(function(locations, visits){
+        JSON.parse(locations).forEach(function(loc){
+            addLocation(loc);
+        });
+    });
+}
+/**
+* Add detailed train calling points to map
+*/
+function populateDetailedTrainCallingPoints(map, token, train) {
+    jQuery.ajax({
+      url: "/api/plan/train/map/locations/detailed/" + train,
+      headers: { "Authorization": "Bearer " + token }
+    })
+    .done(function(locations, visits){
+        JSON.parse(locations).forEach(function(loc){
+            addLocation(loc);
+        });
+    });
+}
+
+/**
 * Add all points but with specific highlighting
 */
 function populatePointsWithHighlighting(map, token, highlighting) {
@@ -143,6 +172,40 @@ function populateConnections(map, token){
 
 
         routes[0].forEach(function (connection) {
+
+           const visited = findRouteVisit(connection, visits[0]);
+           addRoute(connection, visited, vectorLine, vectorLineLayer, vectorLinksLine, vectorLinksLineLayer, vectorMetroLine, vectorMetroLineLayer);
+        });
+
+        map.addLayer(vectorLineLayer);
+        map.addLayer(vectorLinksLineLayer);
+        map.addLayer(vectorMetroLineLayer);
+
+        vectorLinksLineLayer.setVisible(false);
+
+    });
+}
+
+/**
+* Add train connections to the map
+*/
+function populateTrainConnections(map, token, train){
+    jQuery.ajax({
+      url: "/api/plan/train/map/route/" + train,
+      headers: { "Authorization": "Bearer " + token }
+    })
+    .done(function(routes, visits){
+        var vectorLineLayer = new ol.layer.Vector({'id':'lines'});
+        var vectorLinksLineLayer = new ol.layer.Vector({'id':'links'});
+        var vectorMetroLineLayer = new ol.layer.Vector({'id':'metro'});
+
+        var vectorLine = new ol.source.Vector({});
+        var vectorLinksLine = new ol.source.Vector({});
+        var vectorMetroLine = new ol.source.Vector({});
+
+
+console.log(routes)
+        JSON.parse(routes).forEach(function (connection) {
 
            const visited = findRouteVisit(connection, visits[0]);
            addRoute(connection, visited, vectorLine, vectorLineLayer, vectorLinksLine, vectorLinksLineLayer, vectorMetroLine, vectorMetroLineLayer);

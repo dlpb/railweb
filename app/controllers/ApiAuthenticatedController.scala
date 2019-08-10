@@ -2,14 +2,18 @@ package controllers
 
 import auth.api.{AuthorizedAction, UserRequest}
 import javax.inject.{Inject, Singleton}
-import models.auth.roles.VisitUser
-import models.location.LocationsService
-import models.route.RoutesService
+import models.auth.roles.{PlanUser, VisitUser}
+import models.location.{LocationsService, MapLocation}
+import models.plan.PlanService
+import models.route.{MapRoute, RoutesService}
 import org.json4s.DefaultFormats
 import org.json4s.jackson.Serialization.write
 import play.api.Environment
-import play.api.libs.json.Json
+import play.api.libs.json.{Json, Writes}
 import play.api.mvc.{AbstractController, AnyContent, ControllerComponents}
+
+import scala.concurrent.duration.Duration
+import scala.concurrent.{Await, Future, TimeoutException}
 
 @Singleton
 class ApiAuthenticatedController @Inject()(
@@ -17,6 +21,7 @@ class ApiAuthenticatedController @Inject()(
                                             cc: ControllerComponents,
                                             locationService: LocationsService,
                                             routeService: RoutesService,
+                                            planService: PlanService,
                                             authAction: AuthorizedAction // NEW - add the action as a constructor argument
                                           )
   extends AbstractController(cc) {
@@ -255,4 +260,84 @@ class ApiAuthenticatedController @Inject()(
       }
     }
   }
+
+  def getSimpleMapLocationsForTrain(train: String) = {
+    authAction { implicit request =>
+      if (!request.user.roles.contains(PlanUser)) Unauthorized("User does not have the right role")
+      else {
+        val eventualResult: Future[Option[List[MapLocation]]] = planService.getTrain(train).map {
+          f =>
+            f map {
+              t =>
+                planService.createSimpleMapLocations(t)
+            }
+        }(scala.concurrent.ExecutionContext.Implicits.global)
+        try {
+          val mapDetails = Await.result(eventualResult, Duration(30, "second")).getOrElse(List())
+          import org.json4s._
+          import org.json4s.jackson.JsonMethods._
+
+          Ok(write(mapDetails))
+        }
+        catch{
+          case e: TimeoutException =>
+            InternalServerError(s"Could not get Map Simple Map Details for $train")
+        }
+      }
+    }
+  }
+
+  def getDetailedMapLocationsForTrain(train: String) = {
+    authAction { implicit request =>
+      if (!request.user.roles.contains(PlanUser)) Unauthorized("User does not have the right role")
+      else {
+        val eventualResult: Future[Option[List[MapLocation]]] = planService.getTrain(train).map {
+          f =>
+            f map {
+              t =>
+                planService.createDetailedMapLocations(t)
+            }
+        }(scala.concurrent.ExecutionContext.Implicits.global)
+        try {
+          val mapDetails = Await.result(eventualResult, Duration(30, "second")).getOrElse(List())
+          import org.json4s._
+          import org.json4s.jackson.JsonMethods._
+
+          Ok(write(mapDetails))
+        }
+        catch{
+          case e: TimeoutException =>
+            InternalServerError(s"Could not get Map Detailed Map Details for $train")
+        }
+      }
+    }
+  }
+
+  def createMapRouteForTrain(train: String) = {
+    authAction { implicit request =>
+      if (!request.user.roles.contains(PlanUser)) Unauthorized("User does not have the right role")
+      else {
+        val eventualResult: Future[Option[List[MapRoute]]] = planService.getTrain(train).map {
+          f =>
+            f map {
+              t =>
+                planService.createSimpleMapRoutes(t)
+            }
+        }(scala.concurrent.ExecutionContext.Implicits.global)
+        try {
+          val mapDetails = Await.result(eventualResult, Duration(30, "second")).getOrElse(List())
+          import org.json4s._
+          import org.json4s.jackson.JsonMethods._
+
+          Ok(write(mapDetails))
+        }
+        catch{
+          case e: TimeoutException =>
+            InternalServerError(s"Could not get Map Detailed Map Details for $train")
+        }
+      }
+    }
+  }
+
+
 }

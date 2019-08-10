@@ -1,5 +1,6 @@
 @(
 user: models.auth.User,
+token: String,
 timetable: models.timetable.DisplayDetailedIndividualTimetable,
 locations: List[models.location.MapLocation],
 routeList: List[models.route.MapRoute]
@@ -21,6 +22,10 @@ routeList: List[models.route.MapRoute]
     <title>@timetable.origin to @timetable.destination - Simple Search - Plan - All the Stations & Track
     </title>
 </head>
+
+<script>
+    const token = "@token";
+</script>
 
 <script src='@routes.Assets.versioned("javascripts/mapFunctions.js")' type="text/javascript"></script>
 <script src='@routes.Assets.versioned("javascripts/tocData.js")' type="text/javascript"></script>

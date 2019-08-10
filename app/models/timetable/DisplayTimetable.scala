@@ -191,9 +191,9 @@ class DisplayTimetable(locationsService: LocationsService, planService: PlanServ
               to.getHour*100 + to.getMinute
             )
 
-
           )
-      }
+      },
+      tt.basicSchedule.trainUid
     )
   }
 
@@ -258,7 +258,8 @@ case class DisplaySimpleIndividualTimetable(
                                            origin: String,
                                            destination: String,
                                            runningOn: LocalDate,
-                                           locations: List[DisplaySimpleTimetableLocation]
+                                           locations: List[DisplaySimpleTimetableLocation],
+                                           uid: String
                                            )
 
 case class DisplaySimpleTimetableLocation(

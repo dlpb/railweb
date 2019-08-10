@@ -202,7 +202,7 @@ class PlanController @Inject()(
       val eventualResult = planService.showSimpleTrainTimetable(train, year, month, day) map {
         data =>
           if(data.isDefined) {
-            Ok(views.html.plan.train.simple.index(request.user, data.get.dst, data.get.mapLocations, data.get.routes)(request.request))
+            Ok(views.html.plan.train.simple.index(request.user, token, data.get.dst, data.get.mapLocations, data.get.routes)(request.request))
           }
           else NotFound(views.html.plan.error.index(request.user,
             List(s"Could not fnd train $train on $year-$month-$day",
@@ -233,7 +233,7 @@ class PlanController @Inject()(
       val eventualResult = planService.showDetailedTrainTimetable(train, year, month, day) map {
         data =>
           if(data.isDefined)
-            Ok(views.html.plan.train.detailed.index(request.user, data.get.dtt, data.get.mapLocations, data.get.routes)(request.request))
+            Ok(views.html.plan.train.detailed.index(request.user, token, data.get.dtt, data.get.mapLocations, data.get.routes)(request.request))
           else NotFound(views.html.plan.error.index(request.user,
             List(s"Could not fnd train $train on $year-$month-$day",
               "Go back to <a href='/plan'>Plan</a>"
