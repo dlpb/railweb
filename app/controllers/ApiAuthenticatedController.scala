@@ -321,18 +321,22 @@ class ApiAuthenticatedController @Inject()(
           f =>
             f map {
               t =>
+                println("got timetable, creating route")
                 planService.createSimpleMapRoutes(t)
             }
         }(scala.concurrent.ExecutionContext.Implicits.global)
         try {
+          println("waiting for result")
           val mapDetails = Await.result(eventualResult, Duration(30, "second")).getOrElse(List())
           import org.json4s._
           import org.json4s.jackson.JsonMethods._
 
+          println("got result")
           Ok(write(mapDetails))
         }
         catch{
           case e: TimeoutException =>
+            println("timed out")
             InternalServerError(s"Could not get Map Detailed Map Details for $train")
         }
       }

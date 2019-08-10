@@ -15,7 +15,7 @@ import org.json4s.native.JsonMethods.parse
 import play.api.libs.ws.{WSClient, WSRequest}
 
 import scala.concurrent.duration.Duration
-import scala.concurrent.{Await, Future}
+import scala.concurrent.{Await, Future, TimeoutException}
 import scala.io.Source
 
 class PlanService @Inject()(locationsService: LocationsService, pathService: PathService, ws: WSClient, reader: Reader = new WebZipInputStream) {
@@ -36,11 +36,23 @@ class PlanService @Inject()(locationsService: LocationsService, pathService: Pat
   }
 
   def createSimpleMapRoutes(tt: IndividualTimetable): List[MapRoute] = {
-    pathService.findRouteForWaypoints(tt.locations
+    val waypoints = tt.locations
       .flatMap { l => locationsService.findLocation(l.tiploc) }
-      .map(_.id))
-      .routes
-      .map(r => MapRoute(r))
+      .map(_.id)
+
+    val routeParts: Iterator[Future[List[MapRoute]]] = waypoints.sliding(2).map { w => Future {
+      pathService.findRouteForWaypoints(w).routes.map(r => MapRoute(r))
+    }}
+    val eventualIterator: Future[Iterator[MapRoute]] = Future.sequence(routeParts) map {i => i.flatten}
+
+    try {
+      Await.result(eventualIterator, Duration(30, "second")).toList
+    }
+    catch {
+      case e: TimeoutException =>
+        println("Could not get waypoints")
+        List()
+    }
   }
 
   def createSimpleMapLocations(tt: IndividualTimetable): List[MapLocation] = {
