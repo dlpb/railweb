@@ -18,6 +18,16 @@ import scala.concurrent.{Await, Future}
 import scala.io.Source
 
 class PlanService @Inject()(locationsService: LocationsService, pathService: PathService, reader: Reader = new WebZipInputStream) {
+  def showDetailedTrainTimetable(train: String, year: Int, month: Int, day: Int) = {
+    getTrain(train) map {
+      tt =>
+        val mapLocations = createDetailedMapLocations(tt)
+        val mapRoutes = createSimpleMapRoutes(tt)
+        val dst = new DisplayTimetable(locationsService, this).displayDetailedIndividualTimetable(tt, year, month, day)
+        DetailedIndividualTimetable(dst, mapLocations, mapRoutes)
+    }
+  }
+
   def createSimpleMapRoutes(tt: IndividualTimetable): List[MapRoute] = {
     pathService.findRouteForWaypoints(tt.locations
       .flatMap{ l => locationsService.findLocation(l.tiploc)}
@@ -29,6 +39,12 @@ class PlanService @Inject()(locationsService: LocationsService, pathService: Pat
   def createSimpleMapLocations(tt: IndividualTimetable): List[MapLocation] = {
     tt.locations
         .filter(l => l.publicArrival.isDefined  || l.publicDeparture.isDefined )
+        .flatMap(l => locationsService.findLocation(l.tiploc))
+        .map(l => MapLocation(l))
+  }
+
+  def createDetailedMapLocations(tt: IndividualTimetable): List[MapLocation] = {
+    tt.locations
         .flatMap(l => locationsService.findLocation(l.tiploc))
         .map(l => MapLocation(l))
   }
@@ -91,7 +107,7 @@ class PlanService @Inject()(locationsService: LocationsService, pathService: Pat
       tt =>
         val mapLocations = createSimpleMapLocations(tt)
         val mapRoutes = createSimpleMapRoutes(tt)
-        val dst = new DisplayTimetable(locationsService, this).displayIndividualTimetable(tt)
+        val dst = new DisplayTimetable(locationsService, this).displayIndividualTimetable(tt, year, month, day)
         SimpleIndividualTimetable(dst, mapLocations, mapRoutes)
     }
   }
@@ -152,6 +168,7 @@ class PlanService @Inject()(locationsService: LocationsService, pathService: Pat
 }
 
 case class SimpleIndividualTimetable(dst: DisplaySimpleIndividualTimetable, mapLocations: List[MapLocation], routes: List[MapRoute])
+case class DetailedIndividualTimetable(dtt: DisplayDetailedIndividualTimetable, mapLocations: List[MapLocation], routes: List[MapRoute])
 
 class WebZipInputStream extends Reader {
   override def getInputStream(url: String): InputStream = {
@@ -193,7 +210,17 @@ object PlanService {
     url
   }
 
+  def createUrlForDisplayingLocationDetailedTimetables(loc: String, year: Int, month: Int, day: Int, from: Int, to: Int) = {
+    val m = if (month < 1) "01" else if (month < 10) s"0$month" else if (month > 12) "12" else s"$month"
+    val d = if (day < 1) "01" else if (day < 10) s"0$day" else if (day > 31) "31" else s"$day"
+    val f = if (from < 0) "0000" else if (from < 10) s"000$from" else if (from < 100) s"00$from" else if (from < 1000) s"0$from" else if (from > 2400) "2400" else s"$from"
+    val t = if (to < 0) "0000" else if (to < 10) s"000$to" else if (to < 100) s"00$to" else if (to < 1000) s"0$to" else if (to > 2400) "2400" else s"$to"
+    val url = s"/plan/location/trains/detailed/$loc?year=$year&month=$m&day=$d&from=$f&to=$t"
+    url
+  }
+
   def createUrlForDisplayingSimpleTrainTimetable(train: String, year: Int, month: Int, day: Int) = s"/plan/train/simple/$train/$year/$month/$day"
+  def createUrlForDisplayingDetailedTrainTimetable(train: String, year: Int, month: Int, day: Int) = s"/plan/train/detailed/$train/$year/$month/$day"
 
   def createUrlForReadingTrainTimetable(train: String) = s"http://railweb-timetables.herokuapp.com/timetables/train/$train"
 
@@ -201,19 +228,23 @@ object PlanService {
 
   def isPassengerTrain(tt: SimpleTimetable): Boolean = {
     val category = tt.basicSchedule.trainCategory
+    isPublicCategory(category)
+  }
+
+  def isPublicCategory(category: TrainCategory) = {
     category.equals(OrdinaryLondonUndergroundMetroService) ||
-    category.equals(UnadvertisedOrdinaryPassenger) ||
-    category.equals(OrdinaryPassenger)  ||
-    category.equals(OrdinaryStaffTrain)  ||
-    category.equals(ExpressChannelTunnel) ||
-    category.equals(ExpressSleeperEuropeNightServices) ||
-    category.equals(ExpressInternational) ||
-    category.equals(ExpressMotorail) ||
-    category.equals(UnadvertisedExpress) ||
-    category.equals(ExpressPassenger) ||
-    category.equals(ExpressSleeperDomestic) ||
-    category.equals(BusWtt) ||
-    category.equals(BusReplacement)  ||
-    category.equals(Ship)
+      category.equals(UnadvertisedOrdinaryPassenger) ||
+      category.equals(OrdinaryPassenger) ||
+      category.equals(OrdinaryStaffTrain) ||
+      category.equals(ExpressChannelTunnel) ||
+      category.equals(ExpressSleeperEuropeNightServices) ||
+      category.equals(ExpressInternational) ||
+      category.equals(ExpressMotorail) ||
+      category.equals(UnadvertisedExpress) ||
+      category.equals(ExpressPassenger) ||
+      category.equals(ExpressSleeperDomestic) ||
+      category.equals(BusWtt) ||
+      category.equals(BusReplacement) ||
+      category.equals(Ship)
   }
 }

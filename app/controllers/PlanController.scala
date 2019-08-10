@@ -142,5 +142,22 @@ class PlanController @Inject()(
       Forbidden("User not authorized to view page")
     }
   }
+
+  def showDetailedTrain(train: String,  year: Int, month: Int, day: Int) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
+    if (request.user.roles.contains(PlanUser)) {
+      val token = jwtService.createToken(request.user, new Date())
+
+      val data = planService.showDetailedTrainTimetable(train, year, month, day)
+
+      if(data.isDefined) {
+        Ok(views.html.plan.train.detailed.index(request.user, data.get.dtt, data.get.mapLocations, data.get.routes)(request.request))
+      }
+      else NotFound(s"Could not find train $train on $year-$month-$day")
+
+    }
+    else {
+      Forbidden("User not authorized to view page")
+    }
+  }
 }
 case class DisplayIndividualTimetable(timetable: IndividualTimetable, tiplocToLocation: Map[String, Option[Location]], urls: Map[String, String])

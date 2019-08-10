@@ -8,6 +8,102 @@ import models.plan.PlanService
 import DisplayTimetable._
 
 class DisplayTimetable(locationsService: LocationsService, planService: PlanService) {
+  def displayDetailedIndividualTimetable(tt: IndividualTimetable, year: Int, month: Int, day: Int) : DisplayDetailedIndividualTimetable = {
+    val date = LocalDate.of(year, month, day)
+    val m = if(tt.basicSchedule.validMonday) "M" else ""
+    val t = if(tt.basicSchedule.validTuesday) "T" else ""
+    val w = if(tt.basicSchedule.validWednesday) "W" else ""
+    val th = if(tt.basicSchedule.validThursday) "Th" else ""
+    val f = if(tt.basicSchedule.validFriday) "F" else ""
+    val s = if(tt.basicSchedule.validSaturday) "S" else ""
+    val su = if(tt.basicSchedule.validSunday) "Su" else ""
+    val runningDays = s"$m$t$w$th$f$s$su"
+
+    DisplayDetailedIndividualTimetable(
+      tt.locations.headOption.flatMap(l => locationsService.findLocation(l.tiploc).map(l => l.name)).getOrElse(""),
+      tt.locations.lastOption.flatMap(l => locationsService.findLocation(l.tiploc).map(l => l.name)).getOrElse(""),
+      tt.basicScheduleExtraDetails.atocCode,
+      tt.basicSchedule.trainIdentity,
+      tt.basicSchedule.trainUid,
+      date,
+      tt.basicSchedule.runsFrom,
+      tt.basicSchedule.runsTo,
+      runningDays,
+      tt.basicSchedule.bankHolidayRunning.toString,
+      tt.basicSchedule.trainCategory.toString,
+      tt.basicSchedule.timing.toString,
+      tt.basicSchedule.trainStatus.toString,
+      tt.basicSchedule.powerType.toString,
+      tt.basicSchedule.speed.toString,
+      tt.basicSchedule.operatingCharacteristics.map(c=>c.toString),
+      tt.basicSchedule.seating.toString,
+      tt.basicSchedule.sleepers.toString,
+      tt.basicSchedule.reservations.toString,
+      tt.basicSchedule.catering.map(c => c.toString) ,
+      tt.basicSchedule.branding,
+      tt.basicSchedule.stpIndicator.toString,
+      tt.locations map {
+        l =>
+          val loc = locationsService.findLocation(l.tiploc)
+          val isPass = l.pass.isDefined
+
+          val public = PlanService.isPublicCategory(tt.basicSchedule.trainCategory)
+
+          val arrival: String =
+            if(l.pass.isDefined) "pass"
+            else if(!public && l.arrival.isDefined)
+              s"${l.arrival.map(time).getOrElse("")}${if(l.arrivalHalfMinute.isDefined) "½" else ""}"
+            else if(l.publicArrival.isDefined) l.publicArrival.map(time).getOrElse("")
+            else ""
+
+          val departure =
+            if(l.pass.isDefined) l.pass.map(time).getOrElse("")
+            else if(!public && l.departure.isDefined)
+              s"${l.departure.map(time).getOrElse("")}${if(l.departureHalfMinute.isDefined) "½" else ""}"
+            else if(l.publicDeparture.isDefined) l.publicDeparture.map(time).getOrElse("")
+            else ""
+
+          val platform =
+            if(l.pass.isDefined) ""
+            else l.platform
+
+          val pathAllowance = s"${l.pathingAllowance}${if(l.pathingAllowanceHalfMinute) "½" else ""}"
+          val performanceAllowance = s"${l.performanceAllowance}${if(l.performanceAllowanceHalfMinute) "½" else ""}"
+          val engineeringAllowance = s"${l.engineeringAllowance}${if(l.engineeringAllowanceHalfMinute) "½" else ""}"
+
+          val (hour, minute) = if(l.pass.isDefined) PlanService.hourMinute(l.pass.get)
+          else if (l.publicArrival.isDefined) PlanService.hourMinute(l.publicArrival.get)
+          else if (l.publicDeparture.isDefined) PlanService.hourMinute(l.publicDeparture.get)
+          else (0,0)
+
+          val from = date.atTime(hour, minute).minusMinutes(15)
+          val to = date.atTime(hour, minute).plusMinutes(45)
+
+          DisplayDetailedIndividualTimetableLocation(
+            loc.map(_.id).getOrElse(""),
+            loc.map(_.name).getOrElse(""),
+            platform,
+            isPass,
+            arrival,
+            departure,
+            pathAllowance,
+            performanceAllowance,
+            engineeringAllowance,
+            l.path.getOrElse(""),
+            PlanService.createUrlForDisplayingLocationDetailedTimetables(
+              loc.map(_.id).getOrElse(""),
+              year,
+              month,
+              day,
+              from.getHour*100+from.getMinute,
+              to.getHour*100 + to.getMinute)
+          )
+      }
+
+
+    )
+  }
+
   def displayDetailedTimetable(simpleTimetable: SimpleTimetable, year: Int, month: Int, day: Int): DisplayDetailedTimetable = {
     val public = PlanService.isPassengerTrain(simpleTimetable)
 
@@ -38,7 +134,7 @@ class DisplayTimetable(locationsService: LocationsService, planService: PlanServ
       locationsService.findLocation(simpleTimetable.origin.tiploc).map(_.name).getOrElse(simpleTimetable.origin.tiploc),
       locationsService.findLocation(simpleTimetable.destination.tiploc).map(_.name).getOrElse(simpleTimetable.destination.tiploc),
       platform,
-      PlanService.createUrlForDisplayingSimpleTrainTimetable(simpleTimetable.basicSchedule.trainUid, year, month, day),
+      PlanService.createUrlForDisplayingDetailedTrainTimetable(simpleTimetable.basicSchedule.trainUid, year, month, day),
       "",
       "",
       ""
@@ -46,8 +142,8 @@ class DisplayTimetable(locationsService: LocationsService, planService: PlanServ
 
   }
 
-  def displayIndividualTimetable(tt: IndividualTimetable): DisplaySimpleIndividualTimetable = {
-    val date = LocalDate.now()
+  def displayIndividualTimetable(tt: IndividualTimetable,  year: Int, month: Int, day: Int): DisplaySimpleIndividualTimetable = {
+    val date = LocalDate.of(year, month, day)
     DisplaySimpleIndividualTimetable(
       tt.basicScheduleExtraDetails.atocCode,
       tt.locations.headOption.flatMap(l => locationsService.findLocation(l.tiploc).map(l => l.name)).getOrElse(""),
@@ -76,8 +172,9 @@ class DisplayTimetable(locationsService: LocationsService, planService: PlanServ
           } else {l.publicDeparture.map(time).getOrElse("") }
 
           val platform = l.platform
+          val loc = locationsService.findLocation(l.tiploc)
           DisplaySimpleTimetableLocation(
-            locationsService.findLocation(l.tiploc).map(_.name).getOrElse(""),
+            loc.map(_.name).getOrElse(""),
             arrival,
             if(arrival != "") "Arr." else "",
             departure,
@@ -85,7 +182,7 @@ class DisplayTimetable(locationsService: LocationsService, planService: PlanServ
             platform,
             if(platform != "") "Platform" else "",
             PlanService.createUrlForDisplayingLocationSimpleTimetables(
-              locationsService.findLocation(l.tiploc).map(_.id).getOrElse(""),
+              loc.map(_.id).getOrElse(""),
               date.getYear,
               date.getMonthValue,
               date.getDayOfMonth,
@@ -173,3 +270,43 @@ case class DisplaySimpleTimetableLocation(
                                 platformLabel: String,
                                 url: String
                                 )
+
+case class DisplayDetailedIndividualTimetable(
+                                             origin: String,
+                                             destination: String,
+                                             operator: String,
+                                             id: String,
+                                             uid: String,
+                                             runningOn: LocalDate,
+                                             runsFrom: Date,
+                                             runsTo: Date,
+                                             runningDays: String,
+                                             bankHolidayRunning: String,
+                                             category: String,
+                                             timing: String,
+                                             status: String,
+                                             powerType: String,
+                                             speed: String,
+                                             operatingCharacteristics: List[String],
+                                             seating: String,
+                                             sleepers: String,
+                                             reservations: String,
+                                             catering: List[String],
+                                             branding: String,
+                                             stpIndicator: String,
+                                             locations: List[DisplayDetailedIndividualTimetableLocation]
+                                             )
+
+case class DisplayDetailedIndividualTimetableLocation(
+                                                     id: String,
+                                                     label: String,
+                                                     platform: String,
+                                                     isPass: Boolean,
+                                                     arrival: String,
+                                                     departure: String,
+                                                     pathAllowance: String,
+                                                     performanceAllowance: String,
+                                                     engineeringAllowance: String,
+                                                     path: String,
+                                                     url: String
+                                                     )

@@ -33,6 +33,66 @@ class DisplayTimetableTest extends FlatSpec with Matchers {
     dst.trainUrl should be("/plan/train/simple/12345/2019/1/1")
   }
 
+  it should "map timetable to display detailed timetable" in {
+
+    val stt = createSimpleTimetableWithoutPass
+    val dst = new DisplayTimetable(locationService, new PlanService(locationService, pathService)).displayDetailedTimetable(stt, 2019, 1,1)
+
+    dst.id should be("12345")
+    dst.isPublic should be(true)
+    dst.uid should be("12345")
+    dst.isPass should be(false)
+    dst.arrival should be("0921")
+    dst.arrivalLabel should be("")
+    dst.departure should be("0930")
+    dst.departureLabel should be("")
+    dst.platform should be("1")
+    dst.platformLabel should be("")
+    dst.origin should be("London Liverpool Street")
+    dst.destination should be("Kings Lynn")
+    dst.trainUrl should be("/plan/train/detailed/12345/2019/1/1")
+  }
+
+  it should "map timetable with pass to display detailed timetable" in {
+
+    val stt = createSimpleTimetableWithPass
+    val dst = new DisplayTimetable(locationService, new PlanService(locationService, pathService)).displayDetailedTimetable(stt, 2019, 1,1)
+
+    dst.id should be("12345")
+    dst.isPublic should be(true)
+    dst.uid should be("12345")
+    dst.isPass should be(true)
+    dst.arrival should be("pass")
+    dst.arrivalLabel should be("")
+    dst.departure should be("0931")
+    dst.departureLabel should be("")
+    dst.platform should be("")
+    dst.platformLabel should be("")
+    dst.origin should be("London Liverpool Street")
+    dst.destination should be("Kings Lynn")
+    dst.trainUrl should be("/plan/train/detailed/12345/2019/1/1")
+  }
+
+  it should "map timetable for non passenger to display detailed timetable" in {
+
+    val stt = createNonPublicTrain()
+    val dst = new DisplayTimetable(locationService, new PlanService(locationService, pathService)).displayDetailedTimetable(stt, 2019, 1,1)
+
+    dst.id should be("12345")
+    dst.isPublic should be(false)
+    dst.uid should be("12345")
+    dst.isPass should be(true)
+    dst.arrival should be("pass")
+    dst.arrivalLabel should be("")
+    dst.departure should be("0931")
+    dst.departureLabel should be("")
+    dst.platform should be("")
+    dst.platformLabel should be("")
+    dst.origin should be("London Liverpool Street")
+    dst.destination should be("Kings Lynn")
+    dst.trainUrl should be("/plan/train/detailed/12345/2019/1/1")
+  }
+
   it should "map timetable to display timetable for train that starts at same location" in {
 
     val stt = createSimpleTimetableForStartingWithoutPass
@@ -67,12 +127,13 @@ class DisplayTimetableTest extends FlatSpec with Matchers {
 
   it should "individual timetable to display timetable" in {
     val tt = createIndividualTimetable()
-    val dst = new DisplayTimetable(locationService, new PlanService(locationService, pathService)).displayIndividualTimetable(tt)
+    val date = LocalDate.now()
+    val dst = new DisplayTimetable(locationService, new PlanService(locationService, pathService))
+      .displayIndividualTimetable(tt, date.getYear, date.getMonthValue, date.getDayOfMonth)
 
     dst.origin should be("London Liverpool Street")
     dst.destination should be("Kings Lynn")
     dst.operator should be("XR")
-    val date = LocalDate.now()
     dst.runningOn should be(date)
     dst.locations should be(List(
       DisplaySimpleTimetableLocation("London Liverpool Street", "", "", "1000", "Dep.", "1", "Platform", PlanService.createUrlForDisplayingLocationSimpleTimetables("LST", date.getYear, date.getMonthValue, date.getDayOfMonth, 945, 1045)),
@@ -81,14 +142,47 @@ class DisplayTimetableTest extends FlatSpec with Matchers {
     ))
   }
 
-  it should "provide an arrival and departure time for intermediate locations" in {
-    val tt = createIndividualTimetableWithMissingArrival()
-    val dst = new DisplayTimetable(locationService, new PlanService(locationService, pathService)).displayIndividualTimetable(tt)
+  it should "individual timetable to display detailed timetable" in {
+    val tt = createIndividualTimetable()
+    val date = LocalDate.now()
+    val dst = new DisplayTimetable(locationService, new PlanService(locationService, pathService))
+      .displayDetailedIndividualTimetable(tt, date.getYear, date.getMonthValue, date.getDayOfMonth)
 
     dst.origin should be("London Liverpool Street")
     dst.destination should be("Kings Lynn")
     dst.operator should be("XR")
+    dst.runningOn should be(date)
+    dst.runningDays should be("MTWThFSSu")
+    dst.bankHolidayRunning should be("RunsOnBankHolidays")
+    dst.category should be("OrdinaryPassenger")
+    dst.timing should be("DMUPowerCarAndTrailer")
+    dst.status should be("PassengerAndParcelsPermanent")
+    dst.powerType should be("Diesel")
+    dst.speed should be("100")
+    dst.operatingCharacteristics should be(List())
+    dst.seating should be("FirstAndStandardSeating")
+    dst.sleepers should be("NoSleeper")
+    dst.reservations should be("ReservationsCompulsory")
+    dst.catering should be(List())
+    dst.branding should be("branding")
+    dst.stpIndicator should be("New")
+    dst.locations should be(List(
+      DisplayDetailedIndividualTimetableLocation("LST","London Liverpool Street","1",false,"","1000","0","0","0","", "/plan/location/trains/detailed/LST?year=2019&month=08&day=10&from=0945&to=1045"),
+      DisplayDetailedIndividualTimetableLocation("BIS","Bishops Stortford","",true,"pass","1030","0","0","0","", "/plan/location/trains/detailed/BIS?year=2019&month=08&day=10&from=1015&to=1115"),
+      DisplayDetailedIndividualTimetableLocation("CBG","Cambridge","1",false,"1100","1101","0","0","0","", "/plan/location/trains/detailed/CBG?year=2019&month=08&day=10&from=1045&to=1145"),
+      DisplayDetailedIndividualTimetableLocation("KLN","Kings Lynn","1",false,"1203","","0","0","0","", "/plan/location/trains/detailed/KLN?year=2019&month=08&day=10&from=1148&to=1248"))
+    )
+  }
+
+  it should "provide an arrival and departure time for intermediate locations" in {
+    val tt = createIndividualTimetableWithMissingArrival()
     val date = LocalDate.now()
+    val dst = new DisplayTimetable(locationService, new PlanService(locationService, pathService))
+      .displayIndividualTimetable(tt, date.getYear, date.getMonthValue, date.getDayOfMonth)
+
+    dst.origin should be("London Liverpool Street")
+    dst.destination should be("Kings Lynn")
+    dst.operator should be("XR")
     dst.runningOn should be(date)
     dst.locations.map(l => (l.arrival, l.departure)) should be(List(
       ("","1000"),
@@ -561,4 +655,173 @@ class DisplayTimetableTest extends FlatSpec with Matchers {
         Some(1000)
       ))
   }
+  private def createSimpleTimetableWithPass
+  = {
+    SimpleTimetable(
+      basicSchedule = BasicSchedule(
+        NewTransaction,
+        "12345",
+        new Date(System.currentTimeMillis()),
+        new Date(System.currentTimeMillis()),
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        RunsOnBankHolidays,
+        PassengerAndParcelsPermanent,
+        OrdinaryPassenger,
+        "12345",
+        "12345",
+        "12345",
+        Diesel,
+        DMUPowerCarAndTrailer,
+        100,
+        List.empty,
+        FirstAndStandardSeating,
+        NoSleeper,
+        ReservationsCompulsory,
+        List.empty,
+        "branding",
+        New
+
+      ),
+      origin = LocationOrigin(
+        "LIVST",
+        "1",
+        "",
+        0,
+        false,
+        0,
+        false,
+        0,
+        false,
+        Some(1000),
+        None,
+        Some(1000)
+      ),
+      location = LocationIntermediate(
+        "CBG",
+        "1",
+        "",
+        0,
+        false,
+        0,
+        false,
+        0,
+        false,
+        None,
+        None,
+        None,
+        None,
+        Some(931),
+        None,
+        None,
+        None,
+        None
+
+      ),
+      destination = LocationTerminal(
+        "KLN",
+        "1",
+        "",
+        0,
+        false,
+        0,
+        false,
+        0,
+        false,
+        Some(1000),
+        None,
+        None,
+        Some(1000)
+      ))
+  }
+
+  private def createNonPublicTrain() = {
+    SimpleTimetable(
+      basicSchedule = BasicSchedule(
+        NewTransaction,
+        "12345",
+        new Date(System.currentTimeMillis()),
+        new Date(System.currentTimeMillis()),
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        RunsOnBankHolidays,
+        PassengerAndParcelsPermanent,
+        EmptyCoachingStock,
+        "12345",
+        "12345",
+        "12345",
+        Diesel,
+        DMUPowerCarAndTrailer,
+        100,
+        List.empty,
+        FirstAndStandardSeating,
+        NoSleeper,
+        ReservationsCompulsory,
+        List.empty,
+        "branding",
+        New
+      ),
+      origin = LocationOrigin(
+        "LIVST",
+        "1",
+        "",
+        0,
+        false,
+        0,
+        false,
+        0,
+        false,
+        Some(1000),
+        None,
+        Some(1000)
+      ),
+      location = LocationIntermediate(
+        "CBG",
+        "1",
+        "",
+        0,
+        false,
+        0,
+        false,
+        0,
+        false,
+        None,
+        None,
+        None,
+        None,
+        Some(931),
+        None,
+        None,
+        None,
+        None
+
+      ),
+      destination = LocationTerminal(
+        "KLN",
+        "1",
+        "",
+        0,
+        false,
+        0,
+        false,
+        0,
+        false,
+        Some(1000),
+        None,
+        None,
+        Some(1000)
+      )
+    )
+  }
+
 }

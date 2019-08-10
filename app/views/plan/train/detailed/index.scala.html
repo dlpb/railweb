@@ -1,0 +1,328 @@
+@(
+user: models.auth.User,
+timetable: models.timetable.DisplayDetailedIndividualTimetable,
+locations: List[models.location.MapLocation],
+routeList: List[models.route.MapRoute]
+)(implicit request: Request[AnyContent])
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="apple-mobile-web-app-title" content="All the Stations &amp; Track">
+    <meta name="application-name" content="All the Stations &amp; Track">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+    <title>@timetable.origin to @timetable.destination - Simple Search - Plan - All the Stations & Track
+    </title>
+</head>
+
+<script src='@routes.Assets.versioned("javascripts/mapFunctions.js")' type="text/javascript"></script>
+<script src='@routes.Assets.versioned("javascripts/tocData.js")' type="text/javascript"></script>
+
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+<script src="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/build/ol.js"></script>
+
+<link rel="stylesheet" href="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/css/ol.css">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous">
+
+<style>
+     tr.pass {
+       font-style: italic;
+       color: gray;
+    }
+    tr.pass a {
+        color:gray;
+    }
+
+    .table-light a {
+        color: gray;
+    }
+</style>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">
+        <img src="/assets/images/toy-train.svg" width="24" height="24" alt="application icon"/>
+        All the Stations & Track
+    </a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/map">Map</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/locations">Locations</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/routes">Routes</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/plan">Plan <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/profile">Profile</a>
+            </li>
+            @if(user.roles.contains(models.auth.roles.AdminUser)){
+            <li class="nav-item">
+                <a class="nav-link" href="/admin">Admin</a>
+            </li>
+            }
+            <li class="nav-item">
+                <a class="nav-link" href="/logout">Log Out</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container card-body">
+    <div class="row">
+        <div class="col-sm">
+            <div id='title' class="alert alert-secondary">
+                <h3>
+                    A <strong><span id="operator-name"></span></strong> Service from <strong>@timetable.origin</strong> to <strong>@timetable.destination</strong>
+                </h3> running on <strong>@timetable.runningOn</strong>
+                <script>
+                    const tocInfo = findTocData('@timetable.operator');
+                    const element = document.getElementById('title');
+
+                    element.style.backgroundColor = tocInfo["colour"];
+                    element.style.color = tocInfo["textColour"];
+
+                    const title = document.getElementById('operator-name');
+                    title.textContent = tocInfo["name"];
+                </script>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col col-sm">
+            <div id="map" class="map"></div>
+            <script type="text/javascript">
+                createMap();
+
+                @for(loc <- locations) {
+                addLocation({
+                    "location": {
+                        "lat": @loc.location.lat,
+                        "lon": @loc.location.lon
+                    },
+                    "name":'@loc.name',
+                    "id": '@loc.id',
+                    "operator": '@loc.operator',
+                    "visited": false
+                });
+                }
+                var vectorLineLayer = new ol.layer.Vector({'id':'lines'});
+                var vectorLinksLineLayer = new ol.layer.Vector({'id':'links'});
+                var vectorMetroLineLayer = new ol.layer.Vector({'id':'metro'});
+
+                var vectorLine = new ol.source.Vector({});
+                var vectorLinksLine = new ol.source.Vector({});
+                var vectorMetroLine = new ol.source.Vector({});
+
+                @for(r <- routeList) {
+                addRoute({
+                    "from": {
+                        "lat": @r.from.lat,
+                        "lon": @r.from.lon
+                    },
+                    "to":{
+                        "lat": @r.to.lat,
+                        "lon": @r.to.lon
+                    },
+                    "toc":'@r.toc'
+                },
+                false,
+                vectorLine,
+                vectorLineLayer,
+                vectorLinksLine,
+                vectorLinksLineLayer,
+                vectorMetroLine,
+                vectorMetroLineLayer
+                );
+                }
+                map.addLayer(vectorLineLayer);
+                map.addLayer(vectorLinksLineLayer);
+                map.addLayer(vectorMetroLineLayer);
+
+                vectorLinksLineLayer.setVisible(false);
+        </script>
+
+        </div>
+    </div>
+</div>
+<div class="container card-body">
+    <div class="row">
+        <div class="col-sm">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+
+                    </tr>
+                    <tr>
+                        <td>Arrival</td>
+                        <td>ID</td>
+                        <td>Station</td>
+                        <td>Platform</td>
+                        <td>Departure</td>
+                        <td>Path</td>
+                        <td>Perf</td>
+                        <td>Eng</td>
+                        <td>Route</td>
+                    </tr>
+                    </thead>
+                   @for(l <- timetable.locations){
+                        @location(l)
+                    }
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer ">
+    <div class="container">
+        <span class="text-muted">All the Stations & Track &copy; dlpb.uk 2018 - @java.time.Year.now.getValue. <a href="/about">About</a></a></span>
+    </div>
+</footer>
+
+@bs(bs: models.timetable.BasicSchedule) = {
+<div class="row">
+    <div class="col col-sm">
+        <h4>Date Information</h4>
+        <ul>
+            <li> Runs on:
+                @if(bs.validMonday) { M }
+                @if(bs.validTuesday) { T }
+                @if(bs.validWednesday) { W }
+                @if(bs.validThursday) { Th }
+                @if(bs.validFriday) { F }
+                @if(bs.validSaturday) { S }
+                @if(bs.validSunday) { Su }
+            </li>
+            <li>Runs between @bs.runsFrom and @bs.runsTo</li>
+            <li>Bank Holiday: @bs.bankHolidayRunning</li>
+        </ul>
+    </div>
+    <div class="col col-sm">
+        <h4>Train Identity</h4>
+        <ul>
+            <li>Train Status: @bs.trainStatus</li>
+            <li>Train Category: @bs.trainCategory</li>
+            <li>Identity: @bs.trainIdentity</li>
+            <li>Train UID: @bs.trainUid</li>
+            <li>Headcode: @bs.headcode</li>
+            <li>Service Code: @bs.trainServiceCode</li>
+            <li>STP Indicator@bs.stpIndicator</li>
+        </ul>
+    </div>
+    <div class="col col-sm">
+        <h4>Traction Information</h4>
+        <ul>
+            <li>Power Type: @bs.powerType</li>
+            <li>Timing: @bs.timing</li>
+            <li>Max Speed: @bs.speed</li>
+            <li>Operating Characteristics: @bs.operatingCharacteristics</li>
+        </ul>
+    </div>
+    <div class="col col-sm">
+        <h4>Passenger Information</h4>
+        <ul>
+            <li>Seating: @bs.seating</li>
+            <li>Sleeper: @bs.sleepers</li>
+            <li>Reservations: @bs.reservations</li>
+            <li>Catering: @bs.catering</li>
+            <li>Branding: @bs.branding</li>
+        </ul>
+    </div>
+</div>
+}
+
+@location(l: models.timetable.DisplayDetailedIndividualTimetableLocation) = {
+    @if(l.isPass) { <tr class="pass  table-light">
+    } else { <tr>
+    }
+        <td>
+            <a href="@l.url">
+                @arr(l)
+            </a>
+        </td>
+        <td>
+            <a href="@l.url">
+                @l.id
+            </a>
+        </td>
+        <td>
+            <a href="@l.url">
+                @l.label
+            </a>
+        </td>
+        <td>
+            <a href="@l.url">
+                @platform(l)
+            </a>
+        </td>
+        <td>
+            <a href="@l.url">
+                @dep(l)
+            </a>
+        </td>
+        <td>
+            <a href="@l.url">
+                @l.pathAllowance
+            </a>
+        </td>
+        <td>
+            <a href="@l.url">
+                @l.performanceAllowance
+            </a>
+        </td>
+        <td>
+            <a href="@l.url">
+                @l.engineeringAllowance
+            </a>
+        </td>
+        <td>
+            <a href="@l.url">
+                @l.path
+            </a>
+        </td>
+    </tr>
+}
+
+@platform(l: models.timetable.DisplayDetailedIndividualTimetableLocation) = {
+    @l.platform
+}
+
+@arr(l: models.timetable.DisplayDetailedIndividualTimetableLocation) = {
+    @l.arrival
+}
+
+@dep(l: models.timetable.DisplayDetailedIndividualTimetableLocation) = {
+    @l.departure
+}

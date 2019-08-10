@@ -53,6 +53,7 @@ GET /plan/location/trains/detailed/:loc                             controllers.
 GET /plan/location/trains/simple                                    controllers.PlanController.showTrainsForLocation(loc: String, year: Int, month: Int, day: Int, from: Int, to: Int, date: String ?= "")
 GET /plan/location/trains/detailed                                  controllers.PlanController.showDetailedTrainsForLocation(loc: String, year: Int, month: Int, day: Int, from: Int, to: Int, date: String ?= "")
 GET /plan/train/simple/:train/:year/:month/:day                     controllers.PlanController.showTrain(train: String, year: Int, month: Int, day: Int)
+GET /plan/train/detailed/:train/:year/:month/:day                   controllers.PlanController.showDetailedTrain(train: String, year: Int, month: Int, day: Int)
 GET /routes/find                    controllers.ListController.showListPage(waypoints: String ?= "", followFreightLinks: Boolean ?=false, followFixedLinks: Boolean ?= false)
 
 GET /api/location/map               controllers.ApiAuthenticatedController.getLocationsForMap
