@@ -55,6 +55,7 @@ GET /plan/location/trains/detailed                                  controllers.
 GET /plan/train/simple/:train/:year/:month/:day                     controllers.PlanController.showTrain(train: String, year: Int, month: Int, day: Int)
 GET /plan/train/detailed/:train/:year/:month/:day                   controllers.PlanController.showDetailedTrain(train: String, year: Int, month: Int, day: Int)
 GET /routes/find                    controllers.ListController.showListPage(waypoints: String ?= "", followFreightLinks: Boolean ?=false, followFixedLinks: Boolean ?= false)
+GET /plan/location/highlight/trains controllers.PlanController.showLocationHighlightsForTrains(trainsAndStations: String ?= "", srsLocations: String ?= "", locations: String ?= "")
 
 GET /api/plan/train/map/locations/simple/:train       controllers.ApiAuthenticatedController.getSimpleMapLocationsForTrain(train: String)
 GET /api/plan/train/map/locations/detailed/:train     controllers.ApiAuthenticatedController.getDetailedMapLocationsForTrain(train: String)

@@ -14,9 +14,11 @@ import scala.io.Source
 class LocationsService @Inject() ( config: Config,
                                    dataProvider: LocationDataProvider) {
 
-
   private val dataRoot = config.getString("data.static.root")
   private val locations: Set[Location] = makeLocations(readLocationsFromFile)
+
+  def getLocations = locations.toList
+
   def findLocation(key: String): Option[Location] =
     locations.find(l =>
       l.tiploc.map(_.toUpperCase).contains(key.toUpperCase)  ||

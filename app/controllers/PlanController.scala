@@ -1,5 +1,6 @@
 package controllers
 
+import java.io
 import java.util.Date
 
 import auth.JWTService
@@ -28,6 +29,107 @@ class PlanController @Inject()(
                               ) extends AbstractController(cc) with I18nSupport {
 
   import scala.concurrent.ExecutionContext.Implicits.global
+
+  def showLocationHighlightsForTrains(trainsAndStations: String, srsLocations: String, locations: String) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
+    if (request.user.roles.contains(PlanUser)) {
+      val token = jwtService.createToken(request.user, new Date())
+      val mapLocations: List[MapLocation] =
+        if(locations.isEmpty) { List.empty[MapLocation] }
+        else locations
+        .replaceAll("\\s+", ",")
+        .split(",")
+        .flatMap {
+          locationsService.getLocation
+        }
+        .map {
+          MapLocation(_)
+        }.toList
+
+      val srs = srsLocations
+        .replaceAll("\\s+", ",")
+        .split(",")
+
+      val srsMapLocations: List[MapLocation] = if(srsLocations.isEmpty) List.empty[MapLocation] else locationsService
+        .getLocations
+        .filter {
+          loc =>
+            srs.contains(loc.nrInfo.map {
+              _.srs
+            }.getOrElse(" ")) ||
+              srs.contains(loc.nrInfo.map {
+                _.srs + " "
+              }.getOrElse(" ").substring(0, 1))
+        }
+        .map {
+          MapLocation(_)
+        }
+
+      println(s"Map Location Size ${mapLocations.size}")
+      println(s"SRS Location Size ${srsMapLocations.size}")
+
+      val allStations = (srsMapLocations.toSet ++ mapLocations.toSet).toList
+
+      val trainIdStationList: List[(String, String, String)] = trainsAndStations
+        .linesWithSeparators
+        .map {
+          line =>
+            val parts = line.split(",")
+            (parts(0), parts(1), parts(2))
+        }.toList
+
+      val trainsF: List[Future[List[MapLocation]]] = trainIdStationList map {
+        tsl =>
+          val (train, from, to) = tsl
+          Future {
+            println(s"creating future for $train, $from, $to")
+            val tt: Future[Option[IndividualTimetable]] = planService.getTrain(train)
+            val result: Future[List[MapLocation]] = tt.map {
+              _.map {
+                t: IndividualTimetable =>
+                  println(s"got timetable for $train")
+                  val locs: List[Location] = t.locations.filter {
+                    l =>
+                      l.pass.isEmpty && (l.publicDeparture.isDefined || l.publicArrival.isDefined)
+                  }.map {
+                    _.tiploc
+                  }.flatMap {
+                    locationsService.findLocation
+                  }
+                  val fromIndexMaybe = locs.map(_.id).indexOf(from.trim)
+                  val toIndexMaybe = locs.map(_.id).indexOf(to.trim)
+
+                  val fromIndex = if(fromIndexMaybe < 0) 0 else fromIndexMaybe
+                  val toIndex = if(toIndexMaybe < 0) locs.size - 1
+                    else if (toIndexMaybe < locs.size) toIndexMaybe + 1
+                    else toIndexMaybe
+
+                  println(s"filtered locations = ${locs.map(_.id)}")
+                  println(s"index for $from is $fromIndex ($fromIndexMaybe)")
+                  println(s"index for $to  is $toIndex ($toIndexMaybe)")
+                  val sliced = locs
+                    .slice(fromIndex, toIndex)
+                    .map {
+                      l => MapLocation(l)
+                    }
+                  println(s"sliced locations = ${sliced.map(_.id)}")
+                  sliced
+
+
+              }.getOrElse(List.empty)
+            }
+            result
+
+          }.flatten
+      }
+      val list: List[MapLocation] = Await.result(Future.sequence(trainsF), Duration(30, "second")).flatten
+      println(s"Final list is ${list.map(_.id)}")
+      val percentage = if(allStations.nonEmpty) list.size*1.0d / allStations.size*1.0d else 100.0d
+      Ok(views.html.plan.location.highlight.trains.index(request.user, token, list, allStations, percentage, trainsF.size, trainsAndStations, srsLocations, locations, List("Work In Progress - Plan - Highlight Locations"))(request.request))
+    }
+    else {
+      Forbidden("User not authorized to view page")
+    }
+  }
 
   def showLocationHighlights(locations: String) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     if(request.user.roles.contains(PlanUser)){
