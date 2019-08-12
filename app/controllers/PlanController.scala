@@ -121,10 +121,11 @@ class PlanController @Inject()(
 
           }.flatten
       }
-      val list: List[MapLocation] = Await.result(Future.sequence(trainsF), Duration(30, "second")).flatten
-      println(s"Final list is ${list.map(_.id)}")
-      val percentage = if(allStations.nonEmpty) list.size*1.0d / allStations.size*1.0d else 100.0d
-      Ok(views.html.plan.location.highlight.trains.index(request.user, token, list, allStations, percentage, trainsF.size, trainsAndStations, srsLocations, locations, List("Work In Progress - Plan - Highlight Locations"))(request.request))
+      val calledAt: List[MapLocation] = Await.result(Future.sequence(trainsF), Duration(30, "second")).flatten.toSet.toList
+      val notCalledAt = allStations.diff(calledAt)
+      println(s"Final list is ${calledAt.map(_.id)}")
+      val percentage = if(allStations.nonEmpty) calledAt.size*1.0d / allStations.size*1.0d else 100.0d
+      Ok(views.html.plan.location.highlight.trains.index(request.user, token, calledAt, notCalledAt, allStations, percentage, trainsF.size, trainsAndStations, srsLocations, locations, List("Work In Progress - Plan - Highlight Locations"))(request.request))
     }
     else {
       Forbidden("User not authorized to view page")

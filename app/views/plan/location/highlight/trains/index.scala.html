@@ -2,6 +2,7 @@
 user: models.auth.User,
 token: String,
 callingPoints: List[models.location.MapLocation],
+notCalledAt: List[models.location.MapLocation],
 highlightPoints: List[models.location.MapLocation],
 percentage: Double,
 totalTrains: Int,
@@ -94,7 +95,7 @@ messages: List[String]
         </ul>
     </div>
 </nav>
-<div class="container">
+<div class="container card-body">
     <div class="content">
         @if(messages.size > 0){
         <div class="alert alert-primary">
@@ -133,15 +134,18 @@ messages: List[String]
                             <li>Total Highlighted Stations: @highlightPoints.size</li>
                             <li>Percent Highlighted points called at: @percentage</li>
                             <li>Number Of Trains: @totalTrains</li>
+                            <li>Called At: @callingPoints.map(_.id).mkString(", ")</li>
+                            <li>Not Called at: @notCalledAt.map(_.id).mkString(", ")</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
 
+    </div>
+    <div class="row">
         <div id="content-placeholder"></div>
 
-        <div id="map" class="map" style="width: 100%; height: 100%; position:fixed"></div>
 
         <template>
             <div class="alert alert-light alert-dismissible" role="alert">
@@ -161,41 +165,47 @@ messages: List[String]
             </div>
         </template>
 
+    </div>
+    <div class="row">
+        <div class="col col-sm">
+            <div id="map" class="map"></div>
+        </div>
 
-        <script type="text/javascript">
-        createMap();
-
-
-        @for(loc <- callingPoints) {
-            addLocation({
-                "location": {
-                    "lat": @loc.location.lat,
-                    "lon": @loc.location.lon
-                },
-                "name":'@loc.name',
-                "id": '@loc.id',
-                "operator": '@loc.operator',
-                "visited": true
-            });
-        }
-         @for(loc <- highlightPoints) {
-            addLocation({
-                "location": {
-                    "lat": @loc.location.lat,
-                    "lon": @loc.location.lon
-                },
-                "name":'@loc.name',
-                "id": '@loc.id',
-                "operator": '@loc.operator',
-                "visited": false
-            });
-        }
-
-        registerMapHandler(map);
-
-        </script>
     </div>
 </div>
+
+<script type="text/javascript">
+createMap();
+
+
+@for(loc <- callingPoints) {
+    addLocation({
+        "location": {
+            "lat": @loc.location.lat,
+            "lon": @loc.location.lon
+        },
+        "name":'@loc.name',
+        "id": '@loc.id',
+        "operator": '@loc.operator',
+        "visited": true
+    });
+}
+ @for(loc <- highlightPoints) {
+    addLocation({
+        "location": {
+            "lat": @loc.location.lat,
+            "lon": @loc.location.lon
+        },
+        "name":'@loc.name',
+        "id": '@loc.id',
+        "operator": '@loc.operator',
+        "visited": false
+    });
+}
+
+registerMapHandler(map);
+
+</script>
 <footer class="footer ">
     <div class="container">
         <span class="text-muted">All the Stations & Track &copy; dlpb.uk 2018 - @java.time.Year.now.getValue. <a href="/about">About</a></a></span>
