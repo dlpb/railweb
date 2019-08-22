@@ -34,17 +34,11 @@ class PathService @Inject()(
 
     var routes: List[Route] = List.empty
     var locations: List[Location] = List.empty
-    val waypointsWithRoutes = waypoints.filter { w =>
-      routesService.findRoutesForLocation(w).nonEmpty
-    }
 
-    println(s"waypoints without routes:${waypointsWithRoutes}")
-    println(s"Waypoints $waypoints")
-
-    if (waypointsWithRoutes.size >= 2) {
-      for (i <- 0 until waypointsWithRoutes.size - 1 ) {
-        val from = waypointsWithRoutes(i).trim.toUpperCase()
-        val to = waypointsWithRoutes(i + 1).trim.toUpperCase()
+    if (waypoints.size >= 2) {
+      for (i <- 0 until waypoints.size - 1 ) {
+        val from = waypoints(i).trim.toUpperCase()
+        val to = waypoints(i + 1).trim.toUpperCase()
         (locationsService.getLocation(from.toUpperCase), locationsService.getLocation(to.toUpperCase)) match {
           case (Some(f), Some(t)) =>
             val routeLocations: List[Location] = list(f, t, followFixedLinks, followFreightLinks)
