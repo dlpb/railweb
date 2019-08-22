@@ -14,6 +14,12 @@ import scala.io.Source
 
 class RoutesService @Inject() ( config: Config,
                                 dataProvider: RouteDataProvider) {
+  def findRoutesForLocation(id: String): Set[Route] = {
+    routes.filter { r =>
+      r.from.id.equalsIgnoreCase(id) ||
+      r.to.id.equalsIgnoreCase(id)
+    }
+  }
 
 
   private def dataRoot = config.getString("data.static.root")
@@ -28,7 +34,7 @@ class RoutesService @Inject() ( config: Config,
   }
 
   def getRoute(fromId: String, toId: String): Option[Route] =
-    routes.find(r => r.from.id.equals(fromId) && r.to.id.equals(toId))
+    routes.find(r => r.from.id.equalsIgnoreCase(fromId) && r.to.id.equalsIgnoreCase(toId))
 
 
   def mapRoutes: Set[MapRoute] = {

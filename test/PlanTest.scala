@@ -8,9 +8,19 @@ import models.location.{LocationsService, MapLocation}
 import models.plan.{PlanService, Reader}
 import models.route.RoutesService
 import models.timetable._
+import org.scalatest.mockito.MockitoSugar
 import org.scalatest.{FlatSpec, Matchers}
+import play.api.libs.ws.{WSClient, WSRequest}
 
 class PlanTest extends FlatSpec with Matchers {
+
+  val mockWsClient = new WSClient {
+    override def underlying[T]: T = ???
+
+    override def url(url: String): WSRequest = ???
+
+    override def close(): Unit = ???
+  }
 
   val locationService = new LocationsService(config, new LocationMapBasedDataProvider())
   val routeService = new RoutesService(config, new RouteMapBasedDataProvider())
@@ -36,7 +46,7 @@ class PlanTest extends FlatSpec with Matchers {
 
     val expectedUrl = PlanService.createUrlForReadingLocationTimetables("CTH", from.getYear, from.getMonthValue, from.getDayOfMonth, fromTime, toTime)
 
-    val service = new PlanService(locationService, pathService, new Reader {
+    val service = new PlanService(locationService, pathService, mockWsClient, new Reader {
       override def getInputStream(url: String): InputStream = {
         url should be(expectedUrl)
         new ByteArrayInputStream("".getBytes)
@@ -60,7 +70,7 @@ class PlanTest extends FlatSpec with Matchers {
   it should "get timetable for specific train" in {
     val expectedUrl = PlanService.createUrlForReadingTrainTimetable("train")
 
-    val service = new PlanService(locationService, pathService, new Reader {
+    val service = new PlanService(locationService, pathService, mockWsClient, new Reader {
       override def getInputStream(url: String): InputStream = {
         url should be(expectedUrl)
         new ByteArrayInputStream("".getBytes)
@@ -73,7 +83,7 @@ class PlanTest extends FlatSpec with Matchers {
   it should "get the route and station points for a simple timetable" in {
     val tt = createIndividualTimetable()
 
-    val service = new PlanService(locationService, pathService)
+    val service = new PlanService(locationService, pathService, mockWsClient)
 
 
     val mapLocations = service.createSimpleMapLocations(tt)

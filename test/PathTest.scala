@@ -137,6 +137,13 @@ class PathTest  extends FlatSpec with Matchers {
     }
   }
 
+  it should "ignore a location without a route" in {
+    val path = new PathService(routesService, locationsService).findRouteForWaypoints(List("GLGWWKS", "SPRNMCP", "SPS"))
+    path.locations.size should be(2)
+    path.routes.size should be(1)
+    path.locations map {_.id} should be(List("GLGWWKS", "SPS"))
+  }
+
   private def config = {
     val path = getClass().getResource("routes.json").getPath
     val config = ConfigFactory

@@ -8,9 +8,19 @@ import models.location.LocationsService
 import models.plan.PlanService
 import models.route.RoutesService
 import models.timetable._
+import org.scalatest.mockito.MockitoSugar
 import org.scalatest.{FlatSpec, Matchers}
+import play.api.libs.ws.{WSClient, WSRequest}
 
 class DisplayTimetableTest extends FlatSpec with Matchers {
+
+  val mockWsClient = new WSClient {
+    override def underlying[T]: T = ???
+
+    override def url(url: String): WSRequest = ???
+
+    override def close(): Unit = ???
+  }
 
   val locationService = new LocationsService(config, new LocationMapBasedDataProvider())
   val routeService = new RoutesService(config, new RouteMapBasedDataProvider())
@@ -20,7 +30,7 @@ class DisplayTimetableTest extends FlatSpec with Matchers {
   it should "map timetable to display timetable" in {
 
     val stt = createSimpleTimetableWithoutPass
-    val dst = new DisplayTimetable(locationService, new PlanService(locationService, pathService)).displaySimpleTimetable(stt, 2019, 1,1)
+    val dst = new DisplayTimetable(locationService, new PlanService(locationService, pathService, mockWsClient)).displaySimpleTimetable(stt, 2019, 1,1)
 
     dst.arrival should be("0921")
     dst.arrivalLabel should be("Arr.")
@@ -36,7 +46,7 @@ class DisplayTimetableTest extends FlatSpec with Matchers {
   it should "map timetable to display detailed timetable" in {
 
     val stt = createSimpleTimetableWithoutPass
-    val dst = new DisplayTimetable(locationService, new PlanService(locationService, pathService)).displayDetailedTimetable(stt, 2019, 1,1)
+    val dst = new DisplayTimetable(locationService, new PlanService(locationService, pathService, mockWsClient)).displayDetailedTimetable(stt, 2019, 1,1)
 
     dst.id should be("12345")
     dst.isPublic should be(true)
@@ -56,7 +66,7 @@ class DisplayTimetableTest extends FlatSpec with Matchers {
   it should "map timetable with pass to display detailed timetable" in {
 
     val stt = createSimpleTimetableWithPass
-    val dst = new DisplayTimetable(locationService, new PlanService(locationService, pathService)).displayDetailedTimetable(stt, 2019, 1,1)
+    val dst = new DisplayTimetable(locationService, new PlanService(locationService, pathService, mockWsClient)).displayDetailedTimetable(stt, 2019, 1,1)
 
     dst.id should be("12345")
     dst.isPublic should be(true)
@@ -76,7 +86,7 @@ class DisplayTimetableTest extends FlatSpec with Matchers {
   it should "map timetable for non passenger to display detailed timetable" in {
 
     val stt = createNonPublicTrain()
-    val dst = new DisplayTimetable(locationService, new PlanService(locationService, pathService)).displayDetailedTimetable(stt, 2019, 1,1)
+    val dst = new DisplayTimetable(locationService, new PlanService(locationService, pathService, mockWsClient)).displayDetailedTimetable(stt, 2019, 1,1)
 
     dst.id should be("12345")
     dst.isPublic should be(false)
@@ -96,7 +106,7 @@ class DisplayTimetableTest extends FlatSpec with Matchers {
   it should "map timetable to display timetable for train that starts at same location" in {
 
     val stt = createSimpleTimetableForStartingWithoutPass
-    val dst = new DisplayTimetable(locationService, new PlanService(locationService, pathService)).displaySimpleTimetable(stt, 2019, 1, 1)
+    val dst = new DisplayTimetable(locationService, new PlanService(locationService, pathService, mockWsClient)).displaySimpleTimetable(stt, 2019, 1, 1)
 
     dst.arrival should be("")
     dst.arrivalLabel should be("")
@@ -112,7 +122,7 @@ class DisplayTimetableTest extends FlatSpec with Matchers {
   it should "map timetable to display timetable for train that ends at same location" in {
 
     val stt = createSimpleTimetableForEndingWithoutPass
-    val dst = new DisplayTimetable(locationService, new PlanService(locationService, pathService)).displaySimpleTimetable(stt, 2019, 1, 1)
+    val dst = new DisplayTimetable(locationService, new PlanService(locationService, pathService, mockWsClient)).displaySimpleTimetable(stt, 2019, 1, 1)
 
     dst.arrival should be("1000")
     dst.arrivalLabel should be("Arr.")
@@ -128,7 +138,7 @@ class DisplayTimetableTest extends FlatSpec with Matchers {
   it should "individual timetable to display timetable" in {
     val tt = createIndividualTimetable()
     val date = LocalDate.now()
-    val dst = new DisplayTimetable(locationService, new PlanService(locationService, pathService))
+    val dst = new DisplayTimetable(locationService, new PlanService(locationService, pathService, mockWsClient))
       .displayIndividualTimetable(tt, date.getYear, date.getMonthValue, date.getDayOfMonth)
 
     dst.origin should be("London Liverpool Street")
@@ -145,7 +155,7 @@ class DisplayTimetableTest extends FlatSpec with Matchers {
   it should "individual timetable to display detailed timetable" in {
     val tt = createIndividualTimetable()
     val date = LocalDate.now()
-    val dst = new DisplayTimetable(locationService, new PlanService(locationService, pathService))
+    val dst = new DisplayTimetable(locationService, new PlanService(locationService, pathService, mockWsClient))
       .displayDetailedIndividualTimetable(tt, date.getYear, date.getMonthValue, date.getDayOfMonth)
 
     dst.origin should be("London Liverpool Street")
@@ -177,7 +187,7 @@ class DisplayTimetableTest extends FlatSpec with Matchers {
   it should "provide an arrival and departure time for intermediate locations" in {
     val tt = createIndividualTimetableWithMissingArrival()
     val date = LocalDate.now()
-    val dst = new DisplayTimetable(locationService, new PlanService(locationService, pathService))
+    val dst = new DisplayTimetable(locationService, new PlanService(locationService, pathService, mockWsClient))
       .displayIndividualTimetable(tt, date.getYear, date.getMonthValue, date.getDayOfMonth)
 
     dst.origin should be("London Liverpool Street")

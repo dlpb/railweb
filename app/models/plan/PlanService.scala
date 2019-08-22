@@ -29,8 +29,9 @@ class PlanService @Inject()(locationsService: LocationsService, pathService: Pat
           tt =>
             val mapLocations = List()
             val mapRoutes = List()
+            val link = PlanService.buildRouteLink(tt, locationsService)
             val dst = new DisplayTimetable(locationsService, this).displayDetailedIndividualTimetable(tt, year, month, day)
-            DetailedIndividualTimetable(dst, mapLocations, mapRoutes)
+            DetailedIndividualTimetable(dst, mapLocations, mapRoutes, link)
         }
     }
   }
@@ -129,8 +130,9 @@ class PlanService @Inject()(locationsService: LocationsService, pathService: Pat
           tt =>
             val mapLocations = List()
             val mapRoutes = List()
+            val link = PlanService.buildRouteLink(tt, locationsService)
             val dst = new DisplayTimetable(locationsService, this).displayIndividualTimetable(tt, year, month, day)
-            SimpleIndividualTimetable(dst, mapLocations, mapRoutes)
+            SimpleIndividualTimetable(dst, mapLocations, mapRoutes, link)
         }
     }
   }
@@ -195,9 +197,9 @@ class PlanService @Inject()(locationsService: LocationsService, pathService: Pat
   }
 }
 
-case class SimpleIndividualTimetable(dst: DisplaySimpleIndividualTimetable, mapLocations: List[MapLocation], routes: List[MapRoute])
+case class SimpleIndividualTimetable(dst: DisplaySimpleIndividualTimetable, mapLocations: List[MapLocation], routes: List[MapRoute], routeLink: String)
 
-case class DetailedIndividualTimetable(dtt: DisplayDetailedIndividualTimetable, mapLocations: List[MapLocation], routes: List[MapRoute])
+case class DetailedIndividualTimetable(dtt: DisplayDetailedIndividualTimetable, mapLocations: List[MapLocation], routes: List[MapRoute], routeLink: String)
 
 class WebZipInputStream extends Reader {
   override def getInputStream(url: String): InputStream = {
@@ -246,6 +248,12 @@ object PlanService {
     val f = if (from < 0) "0000" else if (from < 10) s"000$from" else if (from < 100) s"00$from" else if (from < 1000) s"0$from" else if (from > 2400) "2400" else s"$from"
     val t = if (to < 0) "0000" else if (to < 10) s"000$to" else if (to < 100) s"00$to" else if (to < 1000) s"0$to" else if (to > 2400) "2400" else s"$to"
     val url = s"/plan/location/trains/detailed/$loc?year=$year&month=$m&day=$d&from=$f&to=$t"
+    url
+  }
+
+  def buildRouteLink(tt: IndividualTimetable, locService: LocationsService): String = {
+    val ids = tt.locations.flatMap(l => locService.findLocation(l.tiploc).map(_.id)).mkString("%0D%0A")
+    val url = s"/routes/find?followFixedLinks=false&followFreightLinks=true&waypoints=$ids"
     url
   }
 

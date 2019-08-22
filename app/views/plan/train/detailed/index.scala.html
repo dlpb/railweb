@@ -3,7 +3,8 @@ user: models.auth.User,
 token: String,
 timetable: models.timetable.DisplayDetailedIndividualTimetable,
 locations: List[models.location.MapLocation],
-routeList: List[models.route.MapRoute]
+routeList: List[models.route.MapRoute],
+routeLink: String
 )(implicit request: Request[AnyContent])
 <head>
     <meta charset="utf-8">
@@ -140,6 +141,11 @@ routeList: List[models.route.MapRoute]
         </script>
 
         </div>
+    </div>
+</div>
+<div class="container card-body">
+    <div class="toolbar">
+        <a class="btn btn-primary" href="@routeLink" role="button">Show Route Details (Visit)</a>
     </div>
 </div>
 <div class="container card-body">
