@@ -37,13 +37,8 @@ class ListController @Inject()(
         val mapRoutes: List[MapRoute] = path.routes map { MapRoute(_) }
         val mapLocations: List[MapLocation] = path.locations map { MapLocation(_) }
 
-        val messages = List(
-          waypoints.mkString(", "),
-          s"Fixed Links: $followFixedLinks",
-          s"Freight links: $followFreightLinks",
-          s"Path Routes: ${mapRoutes}",
-          s"Path Locations: $mapLocations"
-        )
+        val notFoundLocations = waypoints.diff(mapLocations map {_.id})
+        val messages = if(notFoundLocations.nonEmpty) s"Could not find locations: $notFoundLocations" else List()
 
         Ok(views.html.path.index(request.user, token, mapLocations, mapRoutes, waypoints, followFreightLinks, followFixedLinks, distance, messages))
       }
