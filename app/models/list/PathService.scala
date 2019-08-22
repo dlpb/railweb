@@ -37,6 +37,10 @@ class PathService @Inject()(
     val waypointsWithRoutes = waypoints.filter { w =>
       routesService.findRoutesForLocation(w).nonEmpty
     }
+
+    println(s"waypoints without routes:${waypointsWithRoutes}")
+    println(s"Waypoints $waypoints")
+
     if (waypointsWithRoutes.size >= 2) {
       for (i <- 0 until waypointsWithRoutes.size - 1 ) {
         val from = waypointsWithRoutes(i).trim.toUpperCase()
