@@ -131,11 +131,11 @@ class PathTest  extends FlatSpec with Matchers {
     path.locations map {_.id} should be(List("SNF", "SHENLEJ", "BRE", "HRO", "GIDEPKJ","GDP", "RMF", "CTH"))
   }
 
-  it should "Not produce a route if location does not exist" in {
-    assertThrows[IllegalArgumentException] {
-      new PathService(routesService, locationsService).findRouteForWaypoints(List("GDP", "NONEXISTANT", "CTH"))
-    }
-  }
+//  it should "Not produce a route if location does not exist" in {
+//    assertThrows[IllegalArgumentException] {
+//      new PathService(routesService, locationsService).findRouteForWaypoints(List("GDP", "NONEXISTANT", "CTH"))
+//    }
+//  }
 
   it should "ignore a location without a route" in {
     val path = new PathService(routesService, locationsService).findRouteForWaypoints(List("GLGWWKS", "SPRNMCP", "SPS"))

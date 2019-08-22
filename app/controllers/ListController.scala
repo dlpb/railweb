@@ -37,7 +37,15 @@ class ListController @Inject()(
         val mapRoutes: List[MapRoute] = path.routes map { MapRoute(_) }
         val mapLocations: List[MapLocation] = path.locations map { MapLocation(_) }
 
-        Ok(views.html.path.index(request.user, token, mapLocations, mapRoutes, waypoints, followFreightLinks, followFixedLinks, distance, List.empty))
+        val messages = List(
+          waypoints.mkString(", "),
+          s"Fixed Links: $followFixedLinks",
+          s"Freight links: $followFreightLinks",
+          s"Path Routes: ${mapRoutes}",
+          s"Path Locations: $mapLocations"
+        )
+
+        Ok(views.html.path.index(request.user, token, mapLocations, mapRoutes, waypoints, followFreightLinks, followFixedLinks, distance, messages))
       }
       catch {
         case iae: IllegalArgumentException =>
