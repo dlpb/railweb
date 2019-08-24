@@ -39,12 +39,14 @@ class PlanController @Inject()(
         .replaceAll("\\s+", ",")
         .split(",")
         .flatMap {
-          locationsService.getLocation
+          locationsService.findLocation
         }
         .map {
           MapLocation(_)
         }.toList
 
+      println(locations.replaceAll("\\s+", ",").split(",").toList.flatMap(locationsService.findLocation))
+      println(s"Map Locations: ${mapLocations.map(_.id)}")
       val srs = srsLocations
         .replaceAll("\\s+", ",")
         .split(",")

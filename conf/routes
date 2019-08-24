@@ -32,6 +32,8 @@ GET /admin/users/create             controllers.AdminController.adminUsersCreate
 GET /admin/users/update             controllers.AdminController.adminUsersUpdateView
 GET /admin/users/update/data/:id    controllers.AdminController.adminUpdateUserDataView(id: Long)
 GET /admin/users/delete             controllers.AdminController.adminUsersDeleteView
+GET /admin/routes                   controllers.AdminController.adminRoutes
+GET /admin/routes/missing-locations controllers.AdminController.showAdminRoutesMissingLocations
 GET /admin/routes/migrate           controllers.AdminController.adminMigrateRouteView(from: String ?="", to: String ?= "")
 POST /admin/users/update            controllers.AdminController.adminUpdateUser
 POST /admin/users/create            controllers.AdminController.adminCreateUser

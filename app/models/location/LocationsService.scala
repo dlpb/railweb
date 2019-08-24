@@ -13,6 +13,13 @@ import scala.io.Source
 
 class LocationsService @Inject() ( config: Config,
                                    dataProvider: LocationDataProvider) {
+  def getTimetableLocations: Set[String] = {
+    implicit val formats = DefaultFormats
+    val json = Source.fromURL("http://rail.dlpb.uk/data/timetables/locationkeys.json").getLines().mkString
+    val locations = parse(json).extract[Map[String, String]]
+    locations.values.toSet
+  }
+
 
   private val dataRoot = config.getString("data.static.root")
   private val locations: Set[Location] = makeLocations(readLocationsFromFile)

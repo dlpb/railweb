@@ -9,9 +9,12 @@ import javax.inject.{Inject, Singleton}
 import models.auth.UserDao
 import models.auth.roles.AdminUser
 import models.data.VisitJsonUtils
-import models.location.LocationsService
+import models.location.{Location, LocationsService, MapLocation}
 import models.route.{Route, RoutePoint, RoutesService}
+import org.json4s.DefaultFormats
 import play.api.mvc._
+
+import scala.io.Source
 
 @Singleton
 class AdminController @Inject()(
@@ -32,6 +35,38 @@ class AdminController @Inject()(
       }
       else {
         Ok(views.html.admin.index(token, request.user))
+      }
+  }
+
+  def adminRoutes = authenticatedUserAction {
+    implicit request =>
+      val token = jwtService.createToken(request.user, new Date())
+      if (!request.user.roles.contains(AdminUser)) {
+        Redirect(routes.LandingPageController.showLandingPage())
+      }
+      else {
+        Ok(views.html.admin.routes.index(token, request.user))
+      }
+  }
+
+  def showAdminRoutesMissingLocations = authenticatedUserAction {
+    implicit request =>
+      val token = jwtService.createToken(request.user, new Date())
+      if (!request.user.roles.contains(AdminUser)) {
+        Redirect(routes.LandingPageController.showLandingPage())
+      }
+      else {
+        implicit val formats = DefaultFormats
+        val timetableLocs: Set[String] = locationsService.getTimetableLocations
+        val locs: Set[String] = routesService.getRoutes.map(_.from.id) ++ routesService.getRoutes.map(_.to.id)
+        val diff = timetableLocs diff locs
+        val mapLocations: List[MapLocation] = diff
+          .flatMap(locationsService.findLocation)
+          .map(l => MapLocation(l))
+          .toList
+        val locIds = diff.mkString("\n")
+        val messages = List("Admin", "Locations without Routes", s"Number of locations without Route: ${diff.size}")
+        Ok(views.html.plan.location.highlight.trains.index(request.user, token, List(), List(), mapLocations, 0.0d, 0, "", "", locIds, messages))
       }
   }
 
