@@ -13,6 +13,8 @@ import scala.io.Source
 
 class LocationsService @Inject() ( config: Config,
                                    dataProvider: LocationDataProvider) {
+
+
   def getTimetableLocations: Set[String] = {
     implicit val formats = DefaultFormats
     val json = Source.fromURL("http://rail.dlpb.uk/data/timetables/locationkeys.json").getLines().mkString
@@ -51,8 +53,37 @@ class LocationsService @Inject() ( config: Config,
     locations map { l => MapLocation(l) }
   }
 
-  def defaultListLocations: List[ListLocation] = {
+  def groupedByCrsListLocations: List[GroupedListLocation] = {
+    def sortLocations(a: GroupedListLocation, b: GroupedListLocation): Boolean = {
+      if(a.operator.equals(b.operator)) {
+        if(a.srs.equals(b.srs))
+          a.name < b.name
+        else a.srs < b.srs
+      }
+      else a.operator < b.operator
+    }
 
+    val groupedLocations = locations.toList
+      .filter(_.orrId.isDefined)
+      .groupBy(_.orrId)
+      .map{loc =>
+        val name = loc._2.map(_.name).toList.sortBy(_.length).headOption.getOrElse("")
+        val toc = loc._2.map(_.operator).headOption.getOrElse("XX")
+        val `type` = loc._2.map(_.`type`).headOption.getOrElse("")
+        val orrStation = loc._2.forall(_.orrStation)
+        val srs = loc._2.flatMap(_.nrInfo.map(_.srs)).headOption.getOrElse("")
+        val relatedLocations = loc._2.map(ListLocation(_))
+
+        val locs = GroupedListLocation(loc._1.getOrElse(""), name, toc, `type`,  orrStation, srs, relatedLocations)
+        locs
+      }
+
+    val groupedLocationsSorted = groupedLocations.toList.sortWith(sortLocations)
+    groupedLocationsSorted
+  }
+
+
+  def defaultListLocations: List[ListLocation] = {
     def sortLocations(a: ListLocation, b: ListLocation): Boolean = {
       if(a.operator.equals(b.operator)) {
         if(a.srs.equals(b.srs))
@@ -64,7 +95,6 @@ class LocationsService @Inject() ( config: Config,
 
     val listItems = locations map { l => ListLocation(l) }
     listItems.toList.sortWith(sortLocations)
-
   }
 
   def getVisitedLocations(user: User): List[String] = {
@@ -73,6 +103,31 @@ class LocationsService @Inject() ( config: Config,
         data.keySet.toList
     } .getOrElse(List())
   }
+
+  def getVisitedLocationsByCrs(user: User): List[String] = {
+    val orrLocs = locations.filter(_.orrId.isDefined).groupBy(_.orrId)
+
+    dataProvider.getVisits(user).map {
+      data =>
+        val map: List[String] = data.keySet.toList.flatMap {
+          tiploc =>
+            val visitedTiplocForCrs: Set[String] = {
+              val crsForTiploc: Set[String] = locations.filter(_.id.equals(tiploc)).flatMap(_.orrId)
+              val locationsForTiploc: Set[Location] = crsForTiploc.flatMap { crs =>
+                orrLocs.get(Some(crs))
+              }.flatten
+              locationsForTiploc.flatMap {
+                _.crs
+              }
+            }
+
+            val result: Set[String] = if (visitedTiplocForCrs.nonEmpty) visitedTiplocForCrs else Set()
+            result
+        }
+        map
+    }.getOrElse(Set()).toList
+  }
+
 
   def getVisitsForLocation(location: Location, user: User): List[String] = {
     dataProvider.getVisits(user) flatMap {

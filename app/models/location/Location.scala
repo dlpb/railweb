@@ -9,7 +9,8 @@ case class Location(
                    nrInfo: Option[NrInfo],
                    orrStation: Boolean,
                    crs: Set[String],
-                   tiploc: Set[String]
+                   tiploc: Set[String],
+                   orrId: Option[String] = None
                    )
 
 case class SpatialLocation(
@@ -54,7 +55,9 @@ case class ListLocation(id: String,
                        operator: String,
                        `type`: String,
                        orrStation: Boolean,
-                        srs: String
+                        srs: String,
+                        crs: Set[String],
+                        orrId: Option[String]
                       )
 object ListLocation {
   def apply(location: Location): ListLocation = {
@@ -64,7 +67,17 @@ object ListLocation {
       location.operator,
       location.`type`,
       location.orrStation,
-      location.nrInfo.map {_.srs}.getOrElse("")
+      location.nrInfo.map {_.srs}.getOrElse(""),
+      location.crs,
+      location.orrId
     )
   }
 }
+
+case class GroupedListLocation(id: String,
+                        name: String,
+                        operator: String,
+                        `type`: String,
+                        orrStation: Boolean,
+                        srs: String,
+                        relatedLocations: List[ListLocation])

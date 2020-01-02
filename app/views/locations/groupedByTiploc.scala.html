@@ -1,8 +1,7 @@
 @(
 user: models.auth.User,
-locations: List[models.location.GroupedListLocation],
+locations: List[models.location.ListLocation],
 visits: Map[String, Boolean],
-groupedVisits: Map[String, Boolean],
 visitCalls: Map[String, Call],
 token: String,
 visited: Int,
@@ -162,81 +161,25 @@ srs: String)(implicit request: Request[AnyContent])
         </div>
         @for(location <- locations){
         <div style="padding:1px">
-            @if(location.relatedLocations.size > 1){
-                @if(groupedVisits(location.id)) {
-                    <span class="badge badge-success">
-                        Visited
-                    </span>
-                } else {
-                    <span class="badge badge-primary">
-                        Not yet visited
-                    </span>
-                }
-                <a href="/location/detail/@location.id" target="_blank">
-                    @location.name
-                </a>
-
-                <span class="tocBadge badge badge-light float-right">
-                    <slot name="tocBadge">@location.operator</slot>
-                </span>
-                @if(location.srs != ""){
-                <span class="srsBadge badge badge-light float-right">
-                    @location.srs
-                </span>
-                @if(location.relatedLocations.size > 1){
-                    <ul>
-                    @for(related <- location.relatedLocations) {
-                        <li style="list-style-type: none;">
-                            <div style="padding: 1px;">
-                                @helper.form(visitCalls(related.id), 'id -> "visit-form-@related.id", 'style -> "display: inline") {
-                                    @helper.CSRF.formField
-                                    <input type="hidden" id="Authorization-@related.id" name="Authorization" value="@token"/>
-                                    @if(visits(related.id)){
-                                        <button id="visited-@related.id" class="btn btn-success btn-sm">Visit</button>
-                                    } else {
-                                        <button id="visit-@related.id" class="btn btn-primary btn-sm">Visit</button>
-                                    }
-                                }
-                                @related.name (@related.id)
-                            </div>
-                        </li>
-                    }
-                    </ul>
-                }
-                }
+            @helper.form(visitCalls(location.id), 'id -> "visit-form-@location.id", 'style -> "display: inline") {
+            @helper.CSRF.formField
+            <input type="hidden" id="Authorization-@location.id" name="Authorization" value="@token"/>
+            @if(visits(location.id)){
+            <button id="visited-@location.id" class="btn btn-success btn-sm">Visit</button>
             } else {
-                @helper.form(visitCalls(location.relatedLocations.head.id), 'id -> "visit-form-@location.relatedLocations.head.id", 'style -> "display: inline") {
-                    @helper.CSRF.formField
-                    <input type="hidden" id="Authorization-@location.relatedLocations.head.id" name="Authorization" value="@token"/>
-                    @if(visits(location.relatedLocations.head.id)){
-                        <button id="visited-@location.relatedLocations.head.id" class="btn btn-success btn-sm">Visit</button>
-                    } else {
-                        <button id="visit-@location.relatedLocations.head.id" class="btn btn-primary btn-sm">Visit</button>
-                    }
-                }
-                <a href="/location/detail/@location.relatedLocations.head.id" target="_blank">
-                    @location.name
-                </a>
-
-                <span class="tocBadge badge badge-light float-right">
-                        <slot name="tocBadge">@location.operator</slot>
-                    </span>
-                @if(location.srs != ""){
-                <span class="srsBadge badge badge-light float-right">
-                        @location.srs
-                    </span>
-                @if(location.relatedLocations.size > 1){
-                <ul>
-                    @for(related <- location.relatedLocations) {
-                    <li>
-                        <div style="padding: 1px;">
-                            @related.name (@related.id)
-                        </div>
-                    </li>
-                    }
-                </ul>
-                }
-                }
+            <button id="visit-@location.id" class="btn btn-primary btn-sm">Visit</button>
+            }
+            }
+            <a href="/location/detail/@location.id" target="_blank">
+                @location.name (@location.id) (@location.crs) (@location.orrId)
+            </a>
+            <span class="tocBadge badge badge-light float-right">
+                <slot name="tocBadge">@location.operator</slot>
+            </span>
+            @if(location.srs != ""){
+            <span class="srsBadge badge badge-light float-right">
+                @location.srs
+            </span>
             }
         </div>
         }

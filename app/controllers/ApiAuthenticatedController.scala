@@ -115,7 +115,7 @@ class ApiAuthenticatedController @Inject()(
         locationService.getLocation(id) match {
           case Some(l) =>
             locationService.visitLocation(l, request.user)
-            Redirect(routes.LocationController.showLocationListPage())
+            Redirect(routes.LocationController.showLocationHomePage())
           case None => NotFound
         }
       }
