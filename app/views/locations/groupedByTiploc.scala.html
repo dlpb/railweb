@@ -89,6 +89,12 @@ srs: String)(implicit request: Request[AnyContent])
         </ul>
     </div>
 </nav>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/locations">Locations</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Grouped by Tiploc</li>
+    </ol>
+</nav>
 <div class="container">
     <div class="content">
 
@@ -171,7 +177,7 @@ srs: String)(implicit request: Request[AnyContent])
             }
             }
             <a href="/location/detail/@location.id" target="_blank">
-                @location.name (@location.id) (@location.crs) (@location.orrId)
+                @location.name
             </a>
             <span class="tocBadge badge badge-light float-right">
                 <slot name="tocBadge">@location.operator</slot>
@@ -181,6 +187,15 @@ srs: String)(implicit request: Request[AnyContent])
                 @location.srs
             </span>
             }
+            <br/>
+            <a href="/location/detail/@location.id" target="_blank">
+                <span class="badge badge-light">
+                    @location.id
+                </span>
+                <span class="badge badge-light">
+                    @location.crs
+                </span>
+            </a>
         </div>
         }
     </div>

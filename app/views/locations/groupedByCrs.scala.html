@@ -28,7 +28,7 @@ srs: String)(implicit request: Request[AnyContent])
     <meta name="application-name" content="All the Stations &amp; Track">
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="theme-color" content="#ffffff">
-    <title>All Locations - All the Stations & Track
+    <title>All Locations - Grouped by CRS - All the Stations & Track
     </title>
 </head>
 
@@ -89,6 +89,12 @@ srs: String)(implicit request: Request[AnyContent])
             </li>
         </ul>
     </div>
+</nav>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/locations">Locations</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Grouped by CRS</li>
+    </ol>
 </nav>
 <div class="container">
     <div class="content">
@@ -172,37 +178,42 @@ srs: String)(implicit request: Request[AnyContent])
                         Not yet visited
                     </span>
                 }
-                <a href="/location/detail/@location.id" target="_blank">
-                    @location.name
-                </a>
+
+                @location.name
 
                 <span class="tocBadge badge badge-light float-right">
                     <slot name="tocBadge">@location.operator</slot>
                 </span>
                 @if(location.srs != ""){
-                <span class="srsBadge badge badge-light float-right">
-                    @location.srs
-                </span>
+                    <span class="srsBadge badge badge-light float-right">
+                        @location.srs
+                    </span>
+                }
                 @if(location.relatedLocations.size > 1){
                     <ul>
                     @for(related <- location.relatedLocations) {
                         <li style="list-style-type: none;">
                             <div style="padding: 1px;">
-                                @helper.form(visitCalls(related.id), 'id -> "visit-form-@related.id", 'style -> "display: inline") {
-                                    @helper.CSRF.formField
-                                    <input type="hidden" id="Authorization-@related.id" name="Authorization" value="@token"/>
-                                    @if(visits(related.id)){
-                                        <button id="visited-@related.id" class="btn btn-success btn-sm">Visit</button>
-                                    } else {
-                                        <button id="visit-@related.id" class="btn btn-primary btn-sm">Visit</button>
-                                    }
+                            @helper.form(visitCalls(related.id), 'id -> "visit-form-@related.id", 'style -> "display: inline") {
+                                @helper.CSRF.formField
+                                <input type="hidden" id="Authorization-@related.id" name="Authorization" value="@token"/>
+                                @if(visits(related.id)){
+                                    <button id="visited-@related.id" class="btn btn-success btn-sm">Visit</button>
+                                } else {
+                                    <button id="visit-@related.id" class="btn btn-primary btn-sm">Visit</button>
                                 }
-                                @related.name (@related.id)
+                            }
+                                 <a href="/location/detail/@related.id" target="_blank">
+                                    @related.name
+                                 </a>
+                                <br/>
+                                 <a href="/location/detail/@related.id" target="_blank">
+                                    <span class="badge badge-light">@related.crs.head</span> <span class="badge badge-light">@related.id</span>
+                                </a>
                             </div>
                         </li>
                     }
                     </ul>
-                }
                 }
             } else {
                 @helper.form(visitCalls(location.relatedLocations.head.id), 'id -> "visit-form-@location.relatedLocations.head.id", 'style -> "display: inline") {
@@ -217,26 +228,18 @@ srs: String)(implicit request: Request[AnyContent])
                 <a href="/location/detail/@location.relatedLocations.head.id" target="_blank">
                     @location.name
                 </a>
-
                 <span class="tocBadge badge badge-light float-right">
                         <slot name="tocBadge">@location.operator</slot>
                     </span>
                 @if(location.srs != ""){
-                <span class="srsBadge badge badge-light float-right">
+                     <span class="srsBadge badge badge-light float-right">
                         @location.srs
                     </span>
-                @if(location.relatedLocations.size > 1){
-                <ul>
-                    @for(related <- location.relatedLocations) {
-                    <li>
-                        <div style="padding: 1px;">
-                            @related.name (@related.id)
-                        </div>
-                    </li>
-                    }
-                </ul>
                 }
-                }
+                <br/>
+                <a href="/location/detail/@location.relatedLocations.head.id" target="_blank">
+                    <span class="badge badge-light">@location.id</span> <span class="badge badge-light">@location.relatedLocations.head.id</span>
+                </a>
             }
         </div>
         }

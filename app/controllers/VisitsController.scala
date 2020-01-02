@@ -12,6 +12,7 @@ import models.visits.Event
 import play.api.mvc.{AbstractController, AnyContent, ControllerComponents}
 
 import scala.collection.immutable
+import scala.collection.immutable.ListMap
 
 @Singleton
 class VisitsController @Inject()(
@@ -30,7 +31,10 @@ class VisitsController @Inject()(
   }
 
   def visitsByLocationPage = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
-    val locations: Map[String, List[String]] = locationsService.getVisitsForUser(request.user).getOrElse(Map.empty[String, List[String]])
+    val locations: Map[String, List[String]] =
+      locationsService
+        .getVisitsForUser(request.user)
+        .getOrElse(Map.empty[String, List[String]])
     val mapLocations: List[MapLocation] = locations
         .keySet
         .flatMap { locationsService.getLocation }
@@ -53,6 +57,7 @@ class VisitsController @Inject()(
         .flatMap { r => routesService.getRoute(r._1, r._2) }
         .map { MapRoute(_) }
         .toList
+        .sortBy(r => r.from.id + " - " + r.to.id)
 
     Ok(views.html.visits.byRoute(request.user, routes, invalidRoutes, mapRoutes))
 
@@ -79,6 +84,7 @@ class VisitsController @Inject()(
           route =>
             if(route._2.contains(event)) visitedRoutesForEvent = visitedRoutesForEvent + 1
         }
+
         Event(event, visitedRoutesForEvent, visitedLocationsForEvent)
     }
 
@@ -88,7 +94,10 @@ class VisitsController @Inject()(
 
   def visitsByEventDetailPage(event: String) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     val visitedRoutes: List[Route] = routesService.getRoutesVisitedForEvent(event, request.user)
-    val visitedLocations = locationsService.getLocationsVisitedForEvent(event, request.user) map { MapLocation(_) }
+    val visitedLocations = locationsService
+      .getLocationsVisitedForEvent(event, request.user)
+      .map({ MapLocation(_) })
+      .sortBy(_.name)
 
     val distance: Long = visitedRoutes
       .map({ _.distance })
@@ -96,6 +105,7 @@ class VisitsController @Inject()(
 
     val visitedMapRoutes = visitedRoutes
       .map { MapRoute(_) }
+        .sortBy(r => r.from.id + " - " + r.to.id)
 
     Ok(views.html.visits.byEventDetail(request.user, visitedMapRoutes, visitedLocations, event, distance))
 
