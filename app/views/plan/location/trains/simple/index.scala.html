@@ -135,15 +135,12 @@ t: String
                     <form method="GET" action="/plan/location/trains/simple">
                         <input class="form-control" type="text" id="loc" name="loc" value="@location.map(_.id)">
                         <label for="loc">Location</label>
-                        <input class="form-control" type="hidden" id="year" name="year" value="@year">
-                        <input class="form-control" type="hidden" id="month" name="month" value="@month">
-                        <input class="form-control" type="hidden" id="day" name="day" value="@day">
                         <input class="form-control" type="date" id="date" name="date" value="@pad(year)-@pad(month)-@pad(day)">
                         <label for="date">Date</label>
                         <input class="form-control" type="text" id="from" name="from" value="@f">
-                        <label for="year">From</label>
+                        <label for="from">From</label>
                         <input class="form-control" type="text" id="to" name="to" value="@t">
-                        <label for="year">To</label>
+                        <label for="to">To</label>
                         <div style="padding-top:3px">
                             <button type="submit" class="btn btn-primary">Filter</button>
                         </div>

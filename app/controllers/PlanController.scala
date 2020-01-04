@@ -161,6 +161,8 @@ class PlanController @Inject()(
 
   def showTrainsForLocationNow(loc: String): Action[AnyContent] = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     if (request.user.roles.contains(PlanUser)) {
+
+      println(s"show trains for now for $loc")
       val token = jwtService.createToken(request.user, new Date())
 
       val (timetable, dates) = planService.getTrainsForLocationAroundNow(loc)
@@ -200,11 +202,18 @@ class PlanController @Inject()(
     if (request.user.roles.contains(PlanUser)) {
       val token = jwtService.createToken(request.user, new Date())
 
-      val timetables = planService.getTrainsForLocation(loc, year, month, day, from, to) map {
+      println(s"Show trains for $loc at $year $month $day $from $to $date")
+
+      val (y,m,d): (Int, Int, Int) = if(date.contains("-")) {
+        val dateParts = date.split("-").map(_.toInt)
+        (dateParts(0), dateParts(1), dateParts(2))
+      } else (year, month, day)
+
+      val timetables = planService.getTrainsForLocation(loc, y, m, d, from, to) map {
         f =>
           f map {
             t =>
-              new DisplayTimetable(locationsService, planService).displaySimpleTimetable(t, year, month, day)
+              new DisplayTimetable(locationsService, planService).displaySimpleTimetable(t, y, m, d)
           }
       }
 
@@ -212,7 +221,7 @@ class PlanController @Inject()(
       val eventualResult: Future[Result] = timetables map {
         t =>
           Ok(views.html.plan.location.trains.simple.index(
-            request.user, t.toList, l, year, month, day,  DisplayTimetable.time(from), DisplayTimetable.time(to))(request.request))
+            request.user, t.toList, l, y, m, d,  DisplayTimetable.time(from), DisplayTimetable.time(to))(request.request))
       }
       try {
         Await.result(eventualResult, Duration(30, "second"))
