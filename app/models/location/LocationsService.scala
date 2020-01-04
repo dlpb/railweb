@@ -30,9 +30,9 @@ class LocationsService @Inject() ( config: Config,
 
   def findLocation(key: String): Option[Location] =
     locations.find(l =>
+      l.id.toUpperCase.equals(key.toUpperCase) ||
       l.tiploc.map(_.toUpperCase).contains(key.toUpperCase)  ||
       l.crs.map(_.toUpperCase).contains(key.toUpperCase)  ||
-      l.id.toUpperCase.equals(key.toUpperCase) ||
       l.name.toUpperCase.equals(key.toUpperCase)
 
     )
@@ -47,6 +47,12 @@ class LocationsService @Inject() ( config: Config,
 
   def getLocation(id: String): Option[Location] =
     locations.find(_.id.equals(id))
+
+  def getLocationByIdOrOrrId(id: String): Option[Location] =
+    locations.find(l =>
+      l.id.equals(id) ||
+      l.orrId.isDefined && l.orrId.get.equals(id)
+    )
 
 
   def mapLocations: Set[MapLocation] = {

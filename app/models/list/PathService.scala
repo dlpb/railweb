@@ -39,7 +39,7 @@ class PathService @Inject()(
       for (i <- 0 until waypoints.size - 1 ) {
         val from = waypoints(i).trim.toUpperCase()
         val to = waypoints(i + 1).trim.toUpperCase()
-        (locationsService.getLocation(from.toUpperCase), locationsService.getLocation(to.toUpperCase)) match {
+        (locationsService.getLocationByIdOrOrrId(from.toUpperCase), locationsService.getLocationByIdOrOrrId(to.toUpperCase)) match {
           case (Some(f), Some(t)) =>
             val routeLocations: List[Location] = list(f, t, followFixedLinks, followFreightLinks)
             if(i == 0) {
@@ -165,7 +165,7 @@ class PathService @Inject()(
     val locs: Set[Location] =
       (siblingRoutes.map(_.from.id) ++ siblingRoutes.map {_.to.id})
         .filterNot(_.equals(location.id))
-        .flatMap(l => locationsService.getLocation(l))
+        .flatMap(l => locationsService.getLocationByIdOrOrrId(l))
 
     locs
   }
