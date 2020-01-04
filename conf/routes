@@ -50,16 +50,18 @@ GET /locations/by/tiploc            controllers.LocationController.showLocationL
 GET /locations/by/crs               controllers.LocationController.showLocationListPageByCrs(orrStations: Boolean ?=true, operator: String ?= "all", name: String ?= "all", id: String ?= "all", srs: String ?= "all")
 GET /location/detail/:id            controllers.LocationController.showLocationDetailPage(id: String)
 
-GET /plan                           controllers.PlanController.showPlanIndex()
-GET /plan/location/highlight        controllers.PlanController.showLocationHighlights(locations: String ?= "")
+GET /plan                                                           controllers.PlanController.showPlanIndex()
+GET /plan/location/highlight                                        controllers.PlanController.showLocationHighlights(locations: String ?= "")
 GET /plan/location/trains/simple/:loc                               controllers.PlanController.showTrainsForLocationNow(loc: String)
 GET /plan/location/trains/detailed/:loc                             controllers.PlanController.showDetailedTrainsForLocationNow(loc: String)
-GET /plan/location/trains/simple                                    controllers.PlanController.showTrainsForLocation(loc: String, year: Int, month: Int, day: Int, from: Int, to: Int, date: String ?= "")
+GET /plan/location/trains/simple                                    controllers.PlanController.showTrainsForLocation(loc: String, year: Int ?= 0, month: Int ?= 0, day: Int ?= 0, from: Int, to: Int, date: String ?= "")
 GET /plan/location/trains/detailed                                  controllers.PlanController.showDetailedTrainsForLocation(loc: String, year: Int, month: Int, day: Int, from: Int, to: Int, date: String ?= "")
+GET /plan/location/highlight/trains                                 controllers.PlanController.showLocationHighlightsForTrains(trainsAndStations: String ?= "", srsLocations: String ?= "", locations: String ?= "")
 GET /plan/train/simple/:train/:year/:month/:day                     controllers.PlanController.showTrain(train: String, year: Int, month: Int, day: Int)
 GET /plan/train/detailed/:train/:year/:month/:day                   controllers.PlanController.showDetailedTrain(train: String, year: Int, month: Int, day: Int)
-GET /routes/find                    controllers.ListController.showListPage(waypoints: String ?= "", followFreightLinks: Boolean ?=false, followFixedLinks: Boolean ?= false)
-GET /plan/location/highlight/trains controllers.PlanController.showLocationHighlightsForTrains(trainsAndStations: String ?= "", srsLocations: String ?= "", locations: String ?= "")
+
+GET /routes/find                    controllers.ListController.showListPage(waypoints: String ?= "", followFreightLinks: Boolean ?=false, followFixedLinks: Boolean ?= false, visitAllRoutes: Boolean ?= false, visitAllStations: Boolean ?= false)
+
 
 GET /api/plan/train/map/locations/simple/:train       controllers.ApiAuthenticatedController.getSimpleMapLocationsForTrain(train: String)
 GET /api/plan/train/map/locations/detailed/:train     controllers.ApiAuthenticatedController.getDetailedMapLocationsForTrain(train: String)

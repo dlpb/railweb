@@ -23,7 +23,7 @@ class ListController @Inject()(
 
                               ) extends AbstractController(cc) {
 
-  def showListPage(waypoints: String, followFreightLinks: Boolean, followFixedLinks: Boolean) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
+  def showListPage(waypoints: String, followFreightLinks: Boolean, followFixedLinks: Boolean, visitAllRoutes: Boolean, visitAllStations: Boolean) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     if (request.user.roles.contains(MapUser)) {
       val locationsToRouteVia = waypoints.split("\n").toList
 
@@ -40,11 +40,26 @@ class ListController @Inject()(
         val notFoundLocations = waypoints.diff(mapLocations map {_.id})
         val messages = if(notFoundLocations.nonEmpty) List(s"Could not find locations: $notFoundLocations") else List()
 
-        Ok(views.html.path.index(request.user, token, mapLocations, mapRoutes, waypoints, followFreightLinks, followFixedLinks, distance, messages))
+        if(visitAllRoutes) {
+          path.routes foreach {
+            route =>
+              routesService.visitRoute(route, request.user)
+          }
+        }
+
+        if(visitAllStations) {
+          path.locations foreach {
+            location =>
+              if(location.orrStation)
+                locationsService.visitLocation(location, request.user)
+          }
+        }
+
+        Ok(views.html.path.index(request.user, token, mapLocations, mapRoutes, waypoints, followFreightLinks, followFixedLinks, distance, messages, visitAllRoutes, visitAllStations))
       }
       catch {
         case iae: IllegalArgumentException =>
-          Ok(views.html.path.index(request.user, token, List.empty, List.empty, waypoints, followFreightLinks, followFixedLinks, 0, List(iae.getMessage)))
+          Ok(views.html.path.index(request.user, token, List.empty, List.empty, waypoints, followFreightLinks, followFixedLinks, 0, List(iae.getMessage), visitAllRoutes, visitAllStations))
       }
 
     }
@@ -52,6 +67,4 @@ class ListController @Inject()(
       Forbidden("User not authorized to view page")
     }
   }
-
-
 }
