@@ -131,6 +131,15 @@
                     </a>
                 </div>
             </div>
+            @if(user.roles.contains(models.auth.roles.PlanUser)){
+            <div class="col-sm">
+                <div class="card card-body">
+                    <a href="/plan">
+                        <h2>Plan (Alpha)</h2>
+                    </a>
+                </div>
+            </div>
+            }
         </div>
     </div>
 </div>
