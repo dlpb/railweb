@@ -15,7 +15,7 @@ abstract class JsonDataProvider[T]() extends DataProvider[T] {
 
   override def saveVisits(visits: Option[Map[String, List[String]]], user: User) = {
     visits foreach { v =>
-      writeJson(v, user)
+      writeJson(removeEmptyVisits(v), user)
     }
   }
 
@@ -31,7 +31,7 @@ abstract class JsonDataProvider[T]() extends DataProvider[T] {
       case None =>
         Map(idToString(id) -> List(timestamp()))
     }
-    writeJson(revisedVisits, user)
+    writeJson(removeEmptyVisits(revisedVisits), user)
   }
 
   override def removeLastVisit(id: T, user: User): Unit = {
@@ -49,7 +49,7 @@ abstract class JsonDataProvider[T]() extends DataProvider[T] {
         }
       case None => Map()
     }
-    writeJson(revisedVisits, user)
+    writeJson(removeEmptyVisits(revisedVisits), user)
   }
 
   override def removeAllVisits(id: T, user: User): Unit = {
@@ -63,8 +63,10 @@ abstract class JsonDataProvider[T]() extends DataProvider[T] {
         }
       case None => Map()
     }
-    writeJson(revisedVisits, user)
+    writeJson(removeEmptyVisits(revisedVisits), user)
   }
+
+  def removeEmptyVisits(visits: Map[String, List[String]]) = visits.filter(_._2.nonEmpty)
 
   def modelToString(visits: Map[String, List[String]]) = {
     import org.json4s.jackson.Serialization.write

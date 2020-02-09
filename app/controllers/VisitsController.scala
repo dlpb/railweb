@@ -46,13 +46,19 @@ class VisitsController @Inject()(
   }
 
   def visitsByRoutePage = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
-    val routes: Map[(String, String), List[String]] = routesService.getVisitsForUser(request.user).getOrElse(Map.empty[String, List[String]]) map {
+    val routes: Map[(String, String), List[String]] = routesService.getVisitsForUser(request.user)
+      .getOrElse(Map.empty[String, List[String]])
+      .filter(_._2.nonEmpty)
+      .map {
       r =>
         RouteDataIdConverter.stringToRouteIds(r._1) -> r._2
     }
+
+    println(routes)
     val invalidRoutes: Set[(String, String)] = routes.keySet.filter(r => routesService.getRoute(r._1, r._2).isEmpty)
 
     val mapRoutes: List[MapRoute] = routes
+        .filter(_._2.nonEmpty)
         .keySet
         .flatMap { r => routesService.getRoute(r._1, r._2) }
         .map { MapRoute(_) }

@@ -30,7 +30,8 @@ class RoutesService @Inject() ( config: Config,
   }
 
   def saveVisits(visits: Option[Map[String, List[String]]], user: User) = {
-    dataProvider.saveVisits(visits, user)
+    val nonEmptyVisits = visits.map(data => data.filter(_._2.nonEmpty))
+    dataProvider.saveVisits(nonEmptyVisits, user)
   }
 
   def getRoute(fromId: String, toId: String): Option[Route] =
