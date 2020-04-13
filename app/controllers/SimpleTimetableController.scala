@@ -1,0 +1,64 @@
+package controllers
+
+import java.util.Date
+
+import auth.JWTService
+import auth.web.{AuthorizedWebAction, WebUserContext}
+import javax.inject.Inject
+import models.auth.roles.PlanUser
+import models.list.PathService
+import models.location.LocationsService
+import models.plan.timetable.TimetableService
+import models.plan.trains.LocationTrainService
+import play.api.i18n.I18nSupport
+import play.api.mvc._
+
+import scala.concurrent.duration.Duration
+import scala.concurrent.{Await, TimeoutException}
+
+class SimpleTimetableController @Inject()(
+                                           cc: ControllerComponents,
+                                           authenticatedUserAction: AuthorizedWebAction,
+                                           locationsService: LocationsService,
+                                           pathService: PathService,
+                                           trainService: LocationTrainService,
+                                           timetableService: TimetableService,
+                                           jwtService: JWTService
+
+                              ) extends AbstractController(cc) with I18nSupport {
+
+  import scala.concurrent.ExecutionContext.Implicits.global
+
+  def showTrainTimetable(train: String, year: Int, month: Int, day: Int) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
+    if (request.user.roles.contains(PlanUser)) {
+      val token = jwtService.createToken(request.user, new Date())
+
+      val eventualResult = timetableService.showSimpleTrainTimetable(train, year, month, day) map {
+        data =>
+          if(data.isDefined) {
+            Ok(views.html.plan.timetable.simple.index(request.user, token, data.get.dst, data.get.basicSchedule ,data.get.mapLocations, data.get.routes, data.get.routeLink, List.empty)(request.request))
+          }
+          else NotFound(views.html.plan.error.index(request.user,  locationsService.getLocations,
+            List(s"Could not fnd train $train on $year-$month-$day",
+              "Go back to <a href='/plan'>Plan</a>"
+            )))
+      }
+      try {
+        Await.result(eventualResult, Duration(30, "second"))
+      }
+      catch{
+        case e: TimeoutException =>
+          InternalServerError(views.html.plan.error.index(request.user,  locationsService.getLocations,
+            List(s"Could not get details for train $train on $year-$month-$day",
+              "Timed out producing the page"
+            ))
+          (request.request))
+      }
+    }
+    else {
+      Forbidden("User not authorized to view page")
+    }
+  }
+
+}
+

@@ -4,12 +4,13 @@ import auth.api.{AuthorizedAction, UserRequest}
 import javax.inject.{Inject, Singleton}
 import models.auth.roles.{PlanUser, VisitUser}
 import models.location.{LocationsService, MapLocation}
-import models.plan.PlanService
+import models.plan.timetable.TimetableService
+import models.plan.trains.LocationTrainService
 import models.route.{MapRoute, RoutesService}
 import org.json4s.DefaultFormats
 import org.json4s.jackson.Serialization.write
 import play.api.Environment
-import play.api.libs.json.{Json, Writes}
+import play.api.libs.json.Json
 import play.api.mvc.{AbstractController, AnyContent, ControllerComponents}
 
 import scala.concurrent.duration.Duration
@@ -21,7 +22,8 @@ class ApiAuthenticatedController @Inject()(
                                             cc: ControllerComponents,
                                             locationService: LocationsService,
                                             routeService: RoutesService,
-                                            planService: PlanService,
+                                            trainService: LocationTrainService,
+                                            timetableService: TimetableService,
                                             authAction: AuthorizedAction // NEW - add the action as a constructor argument
                                           )
   extends AbstractController(cc) {
@@ -261,21 +263,19 @@ class ApiAuthenticatedController @Inject()(
     }
   }
 
-  def getSimpleMapLocationsForTrain(train: String) = {
+  def getSimpleMapLocationsForTrain(train: String, year: Int, month: Int, day: Int) = {
     authAction { implicit request =>
       if (!request.user.roles.contains(PlanUser)) Unauthorized("User does not have the right role")
       else {
-        val eventualResult: Future[Option[List[MapLocation]]] = planService.getTrain(train).map {
+        val eventualResult: Future[Option[List[MapLocation]]] = timetableService.getTrain(train, year.toString, month.toString, day.toString).map {
           f =>
             f map {
               t =>
-                planService.createSimpleMapLocations(t)
+                timetableService.createSimpleMapLocations(t)
             }
         }(scala.concurrent.ExecutionContext.Implicits.global)
         try {
           val mapDetails = Await.result(eventualResult, Duration(30, "second")).getOrElse(List())
-          import org.json4s._
-          import org.json4s.jackson.JsonMethods._
 
           Ok(write(mapDetails))
         }
@@ -287,21 +287,19 @@ class ApiAuthenticatedController @Inject()(
     }
   }
 
-  def getDetailedMapLocationsForTrain(train: String) = {
+  def getDetailedMapLocationsForTrain(train: String, year: Int, month: Int, day: Int) = {
     authAction { implicit request =>
       if (!request.user.roles.contains(PlanUser)) Unauthorized("User does not have the right role")
       else {
-        val eventualResult: Future[Option[List[MapLocation]]] = planService.getTrain(train).map {
+        val eventualResult: Future[Option[List[MapLocation]]] = timetableService.getTrain(train,  year.toString, month.toString, day.toString).map {
           f =>
             f map {
               t =>
-                planService.createDetailedMapLocations(t)
+                timetableService.createDetailedMapLocations(t)
             }
         }(scala.concurrent.ExecutionContext.Implicits.global)
         try {
           val mapDetails = Await.result(eventualResult, Duration(30, "second")).getOrElse(List())
-          import org.json4s._
-          import org.json4s.jackson.JsonMethods._
 
           Ok(write(mapDetails))
         }
@@ -313,23 +311,21 @@ class ApiAuthenticatedController @Inject()(
     }
   }
 
-  def createMapRouteForTrain(train: String) = {
+  def createMapRouteForTrain(train: String, year: Int, month: Int, day: Int) = {
     authAction { implicit request =>
       if (!request.user.roles.contains(PlanUser)) Unauthorized("User does not have the right role")
       else {
-        val eventualResult: Future[Option[List[MapRoute]]] = planService.getTrain(train).map {
+        val eventualResult: Future[Option[List[MapRoute]]] = timetableService.getTrain(train,  year.toString, month.toString, day.toString).map {
           f =>
             f map {
               t =>
                 println("got timetable, creating route")
-                planService.createSimpleMapRoutes(t)
+                timetableService.createSimpleMapRoutes(t)
             }
         }(scala.concurrent.ExecutionContext.Implicits.global)
         try {
           println("waiting for result")
           val mapDetails = Await.result(eventualResult, Duration(30, "second")).getOrElse(List())
-          import org.json4s._
-          import org.json4s.jackson.JsonMethods._
 
           println("got result")
           Ok(write(mapDetails))

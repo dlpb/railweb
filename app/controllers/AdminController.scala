@@ -9,12 +9,10 @@ import javax.inject.{Inject, Singleton}
 import models.auth.UserDao
 import models.auth.roles.AdminUser
 import models.data.VisitJsonUtils
-import models.location.{Location, LocationsService, MapLocation}
+import models.location.{LocationsService, MapLocation}
 import models.route.{Route, RoutePoint, RoutesService}
 import org.json4s.DefaultFormats
 import play.api.mvc._
-
-import scala.io.Source
 
 @Singleton
 class AdminController @Inject()(

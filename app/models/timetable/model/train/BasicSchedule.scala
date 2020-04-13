@@ -1,90 +1,7 @@
-package models.timetable
+package models.timetable.model.train
 
 import java.util.Date
 
-case class Timetable(
-                      tiplocs: List[Tiploc],
-                      associations: List[Association],
-                      timetables: List[IndividualTimetable]
-                    )
-
-case class Header(header: String)
-
-case class IndividualTimetable(
-                                basicSchedule: BasicSchedule,
-                                basicScheduleExtraDetails: BasicScheduleExtraDetails,
-                                locations: List[Location])
-
-case class Association(transactionType: TransactionType,
-                       mainTrainUid: String,
-                       associatedTrainUid: String,
-                       startDate: Date,
-                       endDate: Date,
-                       validMonday: Boolean,
-                       validTuesday: Boolean,
-                       validWednesday: Boolean,
-                       validThursday: Boolean,
-                       validFriday: Boolean,
-                       validSaturday: Boolean,
-                       validSunday: Boolean,
-                       category: Category,
-                       dateIndicator: DateIndicator,
-                       location: String,
-                       baseSuffixLocation: Char,
-                       locationSuffix: Char,
-                       associationType: AssociationType,
-                       stpIndicator: StpIndicator
-                      )
-
-sealed trait TransactionType
-
-case object NewTransaction extends TransactionType
-
-case object DeleteTransaction extends TransactionType
-
-case object ReviseTransaction extends TransactionType
-
-sealed trait Category
-
-case object Join extends Category
-
-case object Divide extends Category
-
-case object Next extends Category
-
-case object NoCategory extends Category
-
-sealed trait DateIndicator
-
-case object StandardDaytimeOnly extends DateIndicator
-
-case object OverNextMidnight extends DateIndicator
-
-case object OverPreviousMidnight extends DateIndicator
-
-case object NoDateIndicator extends DateIndicator
-
-sealed trait AssociationType
-
-case object Passenger extends AssociationType
-
-case object Operating extends AssociationType
-
-case object NoAssociationType extends AssociationType
-
-sealed trait StpIndicator
-
-case object Cancellation extends StpIndicator
-
-case object New extends StpIndicator
-
-case object Overlay extends StpIndicator
-
-case object Permanent extends StpIndicator
-
-case class Tiploc(tiploc: String, nlc: Int, nlcCheckChar: Char, tpsDesc: String, stanox: Int, crs: String, desc: String)
-
-case class TiplocAmend(tiploc: String, nlc: Int, nlcCheckChar: Char, tpsDesc: String, stanox: Int, crs: String, desc: String, newTiploc: String)
 
 sealed trait BankHolidayRunning
 
@@ -93,6 +10,8 @@ case object NotOnSpecifiedBankHolidayMondays extends BankHolidayRunning
 case object NotOnGlasgowBankHolidays extends BankHolidayRunning
 
 case object RunsOnBankHolidays extends BankHolidayRunning
+
+
 
 sealed trait TrainStatus
 
@@ -115,6 +34,10 @@ case object TripStp extends TrainStatus
 case object ShipStp extends TrainStatus
 
 case object BusStp extends TrainStatus
+
+case object NoTrainStatus extends TrainStatus
+
+
 
 sealed trait TrainCategory
 
@@ -228,6 +151,8 @@ case object RFDEuropeanChannelTunnelJointVenture extends TrainCategory
 
 case class OtherTrainCategory(category: String) extends TrainCategory
 
+
+
 sealed trait PowerType
 
 case object Diesel extends PowerType
@@ -248,6 +173,8 @@ case object HighSpeedTrain extends PowerType
 
 case object NoTrainPowerType extends PowerType
 
+
+
 sealed trait Timing
 
 case object DMUPowerCarAndTrailer extends Timing
@@ -265,6 +192,8 @@ case class Hauled(load: Int) extends Timing
 case class Class(unitClass: String*) extends Timing
 
 case object NoTiming extends Timing
+
+
 
 sealed trait OperatingCharacteristics
 
@@ -294,11 +223,14 @@ case object SB1CGaugeNoDiversionWithoutAuthority extends OperatingCharacteristic
 
 case object NoOperatingCharacteristics extends OperatingCharacteristics
 
+
+
 sealed trait Seating
 
 case object FirstAndStandardSeating extends Seating
 
 case object StandardOnlySeating extends Seating
+
 
 sealed trait Sleepers
 
@@ -358,6 +290,7 @@ case class BasicSchedule(
                           trainIdentity: String,
                           headcode: String,
                           trainServiceCode: String,
+                          portionId: String,
                           powerType: PowerType,
                           timing: Timing,
                           speed: Int,
@@ -371,107 +304,3 @@ case class BasicSchedule(
 
                         )
 
-sealed trait TimetableCode
-
-case object SubjectToMonitoring extends TimetableCode
-
-case object NotSubjectToMonitoring extends TimetableCode
-
-case class BasicScheduleExtraDetails(
-                                      atocCode: String
-                                    )
-
-
-trait Location {
-  def tiploc: String
-
-  def platform: String
-  def line: String
-
-  def engineeringAllowance: Int
-  def engineeringAllowanceHalfMinute: Boolean
-
-  def pathingAllowance: Int
-  def pathingAllowanceHalfMinute: Boolean
-
-  def performanceAllowance: Int
-  def performanceAllowanceHalfMinute: Boolean
-
-  def departure: Option[Int]
-  def departureHalfMinute: Option[Boolean]
-
-  def arrival: Option[Int]
-  def arrivalHalfMinute: Option[Boolean]
-
-  def pass: Option[Int]
-  def passHalfMinute: Option[Boolean]
-
-  def path: Option[String]
-
-  def publicArrival: Option[Int]
-  def publicDeparture: Option[Int]
-
-
-}
-
-case class LocationOrigin(override val tiploc: String,
-                          override val platform: String,
-                          override val line: String,
-                          override val engineeringAllowance: Int,
-                          override val engineeringAllowanceHalfMinute: Boolean,
-                          override val pathingAllowance: Int,
-                          override val pathingAllowanceHalfMinute: Boolean,
-                          override val performanceAllowance: Int,
-                          override val performanceAllowanceHalfMinute: Boolean,
-                          override val departure: Option[Int],
-                          override val departureHalfMinute: Option[Boolean],
-                          override val publicDeparture: Option[Int])
-  extends Location {
-  override def arrival: Option[Int] = None
-  override def arrivalHalfMinute: Option[Boolean] = None
-  override def pass: Option[Int] = None
-  override def passHalfMinute: Option[Boolean] = None
-  override def path: Option[String] = None
-  override def publicArrival: Option[Int] = None
-}
-
-case class LocationIntermediate(override val tiploc: String,
-                                override val platform: String,
-                                override val line: String,
-                                override val engineeringAllowance: Int,
-                                override val engineeringAllowanceHalfMinute: Boolean,
-                                override val pathingAllowance: Int,
-                                override val pathingAllowanceHalfMinute: Boolean,
-                                override val performanceAllowance: Int,
-                                override val performanceAllowanceHalfMinute: Boolean,
-                                override val arrival: Option[Int],
-                                override val arrivalHalfMinute: Option[Boolean],
-                                override val departure: Option[Int],
-                                override val departureHalfMinute: Option[Boolean],
-                                override val pass: Option[Int],
-                                override val passHalfMinute: Option[Boolean],
-                                override val path:  Option[String],
-                                override val publicArrival: Option[Int],
-                                override val publicDeparture: Option[Int])
-  extends Location
-
-case class LocationTerminal(override val tiploc: String,
-                            override val platform: String,
-                            override val line: String,
-                            override val engineeringAllowance: Int,
-                            override val engineeringAllowanceHalfMinute: Boolean,
-                            override val pathingAllowance: Int,
-                            override val pathingAllowanceHalfMinute: Boolean,
-                            override val performanceAllowance: Int,
-                            override val performanceAllowanceHalfMinute: Boolean,
-                            override val arrival: Option[Int],
-                            override val arrivalHalfMinute: Option[Boolean],
-                            override val path: Option[String],
-                            override val publicArrival: Option[Int])
-  extends Location {
-  override def departure: Option[Int] = None
-  override def departureHalfMinute: Option[Boolean] = None
-  override def pass: Option[Int] = None
-  override def passHalfMinute: Option[Boolean] = None
-  override def publicDeparture: Option[Int] = None
-}

@@ -1,10 +1,12 @@
 @(
 user: models.auth.User,
 token: String,
-timetable: models.timetable.DisplayDetailedIndividualTimetable,
+timetable: models.timetable.dto.timetable.detailed.DisplayDetailedIndividualTimetable,
+basicSchedule: models.timetable.model.train.BasicSchedule,
 locations: List[models.location.MapLocation],
 routeList: List[models.route.MapRoute],
-routeLink: String
+routeLink: String,
+messages: List[String]
 )(implicit request: Request[AnyContent])
 <head>
     <meta charset="utf-8">
@@ -126,7 +128,7 @@ routeLink: String
     </div>
     <div class="row">
         <div class="col col-sm">
-            @bs(timetable)
+            @bs(basicSchedule)
         </div>
     </div>
     <div class="row">
@@ -136,8 +138,8 @@ routeLink: String
 
                 createMap();
 
-                populateDetailedTrainCallingPoints(map, token, "@timetable.uid")
-                populateTrainConnections(map, token, "@timetable.uid")
+                populateDetailedTrainCallingPoints(map, token, "@timetable.uid", @timetable.day, @timetable.month, @timetable.year)
+                populateTrainConnections(map, token, "@timetable.uid", @timetable.day, @timetable.month, @timetable.year)
         </script>
 
         </div>
@@ -146,7 +148,7 @@ routeLink: String
 <div class="container card-body">
     <div class="toolbar">
         <a class="btn btn-primary" href="@routeLink" role="button">Show Route Details (Visit)</a>
-        <a class="btn btn-primary" href="/plan/train/simple/@timetable.uid/@timetable.runningOn.toString.replaceAll("-", "/")" role="button">Show Simple Timetable</a>
+        <a class="btn btn-primary" href="/plan/timetables/train/@timetable.uid/simple/@timetable.runningOn.toString.replaceAll("-", "/")" role="button">Show Simple Timetable</a>
     </div>
 </div>
 <div class="container card-body">
@@ -183,24 +185,30 @@ routeLink: String
     </div>
 </footer>
 
-@bs(bs: models.timetable.DisplayDetailedIndividualTimetable) = {
+@bs(bs: models.timetable.model.train.BasicSchedule) = {
 <div class="row">
     <div class="col col-sm">
         <h4>Date Information</h4>
         <ul>
-            <li> Runs @bs.runningDays</li>
-            <li>Runs between @bs.runsFrom and @bs.runsTo</li>
+            <li>Runs @if(bs.validMonday) { M }
+                @if(bs.validTuesday) { T }
+                @if(bs.validWednesday) { W }
+                @if(bs.validThursday) { Th }
+                @if(bs.validFriday) { F }
+                @if(bs.validSaturday) { S }
+                @if(bs.validSunday) { Su }</li>
+            <li>Runs between<br/>@timetable.from<br/> and <br/>@timetable.to</li>
             <li>Bank Holiday: @bs.bankHolidayRunning</li>
         </ul>
     </div>
     <div class="col col-sm">
         <h4>Train Identity</h4>
         <ul>
-            <li>Train Status: @bs.status</li>
-            <li>Train Category: @bs.category</li>
-            <li>Identity: @bs.id</li>
-            <li>Train UID: @bs.uid</li>
-            <li>STP Indicator @bs.stpIndicator</li>
+            <li>Train Status: @bs.trainStatus</li>
+            <li>Train Category: @bs.trainCategory</li>
+            <li>Identity: @bs.trainIdentity</li>
+            <li>Train UID: @bs.trainUid</li>
+            <li>STP Indicator: @bs.stpIndicator</li>
         </ul>
     </div>
     <div class="col col-sm">
@@ -225,7 +233,7 @@ routeLink: String
 </div>
 }
 
-@location(l: models.timetable.DisplayDetailedIndividualTimetableLocation) = {
+@location(l: models.timetable.dto.timetable.detailed.DisplayDetailedIndividualTimetableLocation) = {
     @if(l.isPass) { <tr class="pass  table-light">
     } else { <tr>
     }
@@ -282,14 +290,14 @@ routeLink: String
     </tr>
 }
 
-@platform(l: models.timetable.DisplayDetailedIndividualTimetableLocation) = {
+@platform(l: models.timetable.dto.timetable.detailed.DisplayDetailedIndividualTimetableLocation) = {
     @l.platform
 }
 
-@arr(l: models.timetable.DisplayDetailedIndividualTimetableLocation) = {
+@arr(l: models.timetable.dto.timetable.detailed.DisplayDetailedIndividualTimetableLocation) = {
     @l.arrival
 }
 
-@dep(l: models.timetable.DisplayDetailedIndividualTimetableLocation) = {
+@dep(l: models.timetable.dto.timetable.detailed.DisplayDetailedIndividualTimetableLocation) = {
     @l.departure
 }

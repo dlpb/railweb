@@ -9,8 +9,6 @@ import models.auth.roles.MapUser
 import models.location.{GroupedListLocation, ListLocation, Location, LocationsService}
 import play.api.mvc._
 
-import scala.collection.immutable
-
 
 @Singleton
 class LocationController @Inject()(

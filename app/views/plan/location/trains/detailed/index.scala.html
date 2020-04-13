@@ -1,12 +1,14 @@
 @(
 user: models.auth.User,
-timetables: List[models.timetable.DisplayDetailedTimetable],
+timetables: List[models.timetable.dto.location.detailed.DisplayDetailedLocationTrain],
 location: Option[models.location.Location],
 year: Int,
 month: Int,
 day: Int,
 f: String,
-t: String
+t: String,
+locations: List[models.location.Location],
+messages: List[String]
 )(implicit request: Request[AnyContent])
 <head>
     <meta charset="utf-8">
@@ -136,7 +138,12 @@ t: String
                 <div class="card card-body">
                     <h2>Filters</h2>
                     <form method="GET" action="/plan/location/trains/simple">
-                        <input class="form-control" type="text" id="loc" name="loc" value="@location.map(_.id)">
+                        <datalist id="locations">
+                            @for(l <- locations){
+                            <option name="@l.name" value="@l.id">@l.name (@l.crs) [@l.id]</option>
+                            }
+                        </datalist>
+                        <input class="form-control" type="text" id="loc" name="loc" value="@location.map(_.id)" list="locations">
                         <label for="loc">Location</label>
                         <input class="form-control" type="hidden" id="year" name="year" value="@year">
                         <input class="form-control" type="hidden" id="month" name="month" value="@month">
@@ -168,8 +175,6 @@ t: String
                         <td>Origin</td>
                         <td>Destination</td>
                         <td>Platform</td>
-                        <td>Category</td>
-                        <td>ID</td>
                         <td>UID</td>
                         <td>Departure</td>
                     </tr>
@@ -190,10 +195,10 @@ t: String
     </div>
 </footer>
 
-@ttr(tt: models.timetable.DisplayDetailedTimetable) = {
-    @if(tt.isPass) { <tr class="pass @tt.category table-light">
-    } else if(tt.isPublic) { <tr class="passenger @tt.category">
-    } else { <tr class="non-passenger @tt.category table-light"> }
+@ttr(tt: models.timetable.dto.location.detailed.DisplayDetailedLocationTrain) = {
+    @if(tt.isPass) { <tr class="pass table-light">
+    } else if(tt.isPublic) { <tr class="passenger">
+    } else { <tr class="non-passenger table-light"> }
     <td>
         <a href="@tt.trainUrl">
             @arr(tt.arrival, tt.arrivalLabel)
@@ -212,16 +217,6 @@ t: String
     <td>
         <a href="@tt.trainUrl">
             @platform(tt.platform, tt.platformLabel)
-        </a>
-    </td>
-    <td>
-        <a href="@tt.trainUrl">
-            @tt.category
-        </a>
-    </td>
-    <td>
-        <a href="@tt.trainUrl">
-            @tt.id
         </a>
     </td>
     <td>

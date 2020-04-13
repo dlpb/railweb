@@ -1,10 +1,12 @@
 @(
 user: models.auth.User,
 token: String,
-timetable: models.timetable.DisplaySimpleIndividualTimetable,
+timetable: models.timetable.dto.timetable.simple.DisplaySimpleIndividualTimetable,
+bs: models.timetable.model.train.BasicSchedule,
 locations: List[models.location.MapLocation],
 routeList: List[models.route.MapRoute],
-routeLink: String
+routeLink: String,
+messages: List[String]
 )(implicit request: Request[AnyContent])
 <head>
     <meta charset="utf-8">
@@ -125,8 +127,8 @@ routeLink: String
                 const token = "@token";
                 createMap();
 
-                populateSimpleTrainCallingPoints(map, token, "@timetable.uid")
-                populateTrainConnections(map, token, "@timetable.uid")
+                populateSimpleTrainCallingPoints(map, token, "@timetable.uid", @timetable.day, @timetable.month, @timetable.year)
+                populateTrainConnections(map, token, "@timetable.uid", @timetable.day, @timetable.month, @timetable.year)
         </script>
 
         </div>
@@ -135,7 +137,7 @@ routeLink: String
 <div class="container card-body">
     <div class="toolbar">
         <a class="btn btn-primary" href="@routeLink" role="button">Show Route Details (Visit)</a>
-        <a class="btn btn-primary" href="/plan/train/detailed/@timetable.uid/@timetable.runningOn.toString.replaceAll("-", "/")" role="button">Show Detailed Timetable</a>
+        <a class="btn btn-primary" href="/plan/timetables/train/@timetable.uid/detailed/@timetable.runningOn.toString.replaceAll("-", "/")" role="button">Show Detailed Timetable</a>
     </div>
 </div>
 <div class="container card-body">
@@ -166,7 +168,7 @@ routeLink: String
     </div>
 </footer>
 
-@bs(bs: models.timetable.BasicSchedule) = {
+@bs(bs: models.timetable.model.train.BasicSchedule) = {
 <div class="row">
     <div class="col col-sm">
         <h4>Date Information</h4>
@@ -218,7 +220,7 @@ routeLink: String
 </div>
 }
 
-@location(l: models.timetable.DisplaySimpleTimetableLocation) = {
+@location(l: models.timetable.dto.timetable.simple.DisplaySimpleIndividualTimetableLocation) = {
         <tr>
         <td>
             <a href="@l.url">
@@ -227,7 +229,7 @@ routeLink: String
         </td>
         <td>
             <a href="@l.url">
-                @l.label
+                @l.name
             </a>
         </td>
         <td>
@@ -243,13 +245,13 @@ routeLink: String
     </tr>
 }
 
-@platform(l: models.timetable.DisplaySimpleTimetableLocation) = {
+@platform(l: models.timetable.dto.timetable.simple.DisplaySimpleIndividualTimetableLocation) = {
     @l.platform <br/> <small>@l.platformLabel</small> }
 
-@arr(l: models.timetable.DisplaySimpleTimetableLocation) = {
+@arr(l: models.timetable.dto.timetable.simple.DisplaySimpleIndividualTimetableLocation) = {
     @l.arrival <br/> <small>@l.arrivalLabel</small>
 }
 
-@dep(l: models.timetable.DisplaySimpleTimetableLocation) = {
+@dep(l: models.timetable.dto.timetable.simple.DisplaySimpleIndividualTimetableLocation) = {
     @l.departure  <br/> <small>@l.departureLabel</small>
 }

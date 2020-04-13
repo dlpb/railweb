@@ -5,7 +5,7 @@ import com.typesafe.config.{ConfigFactory, ConfigValueFactory}
 import data.{LocationMapBasedDataProvider, RouteMapBasedDataProvider}
 import models.list.PathService
 import models.location.{LocationsService, MapLocation}
-import models.plan.{PlanService, Reader}
+import models.plan.{TrainService, Reader}
 import models.route.RoutesService
 import models.timetable._
 import org.scalatest.mockito.MockitoSugar
@@ -28,25 +28,25 @@ class PlanTest extends FlatSpec with Matchers {
   val pathService = new PathService(routeService, locationService)
 
   "Plan Service" should "create a padded url for reading location timetables" in {
-    val url = PlanService.createUrlForReadingLocationTimetables("CTH", 2019, 1, 1, 30, 900)
+    val url = TrainService.createUrlForReadingLocationTimetables("CTH", 2019, 1, 1, 30, 900)
     url should be("http://railweb-timetables.herokuapp.com/timetables/location/CTH?year=2019&month=01&day=01&from=0030&to=0900")
   }
 
   it should "create an unpadded url for reading location timetables" in {
-    val url = PlanService.createUrlForReadingLocationTimetables("CTH", 2019, 10, 11, 2030, 2200)
+    val url = TrainService.createUrlForReadingLocationTimetables("CTH", 2019, 10, 11, 2030, 2200)
     url should be("http://railweb-timetables.herokuapp.com/timetables/location/CTH?year=2019&month=10&day=11&from=2030&to=2200")
   }
 
   it should "get timetable for around now" in {
-    val from = PlanService.from
-    val to = PlanService.to
+    val from = TrainService.from
+    val to = TrainService.to
 
     val fromTime = from.getHour * 100 + from.getMinute
     val toTime = to.getHour * 100 + to.getMinute
 
-    val expectedUrl = PlanService.createUrlForReadingLocationTimetables("CTH", from.getYear, from.getMonthValue, from.getDayOfMonth, fromTime, toTime)
+    val expectedUrl = TrainService.createUrlForReadingLocationTimetables("CTH", from.getYear, from.getMonthValue, from.getDayOfMonth, fromTime, toTime)
 
-    val service = new PlanService(locationService, pathService, mockWsClient, new Reader {
+    val service = new TrainService(locationService, pathService, mockWsClient, new Reader {
       override def getInputStream(url: String): InputStream = {
         url should be(expectedUrl)
         new ByteArrayInputStream("".getBytes)
@@ -57,20 +57,20 @@ class PlanTest extends FlatSpec with Matchers {
   }
 
   it should "extract hour minute fro int" in {
-    PlanService.hourMinute(0) should be((0, 0))
-    PlanService.hourMinute(30) should be((0, 30))
-    PlanService.hourMinute(103) should be((1, 3))
-    PlanService.hourMinute(2013) should be((20, 13))
+    TrainService.hourMinute(0) should be((0, 0))
+    TrainService.hourMinute(30) should be((0, 30))
+    TrainService.hourMinute(103) should be((1, 3))
+    TrainService.hourMinute(2013) should be((20, 13))
   }
 
   it should "create url for reading specific train timetable" in {
-    PlanService.createUrlForReadingTrainTimetable("train") should be("http://railweb-timetables.herokuapp.com/timetables/train/train")
+    TrainService.createUrlForReadingTrainTimetable("train") should be("http://railweb-timetables.herokuapp.com/timetables/train/train")
   }
 
   it should "get timetable for specific train" in {
-    val expectedUrl = PlanService.createUrlForReadingTrainTimetable("train")
+    val expectedUrl = TrainService.createUrlForReadingTrainTimetable("train")
 
-    val service = new PlanService(locationService, pathService, mockWsClient, new Reader {
+    val service = new TrainService(locationService, pathService, mockWsClient, new Reader {
       override def getInputStream(url: String): InputStream = {
         url should be(expectedUrl)
         new ByteArrayInputStream("".getBytes)
@@ -83,7 +83,7 @@ class PlanTest extends FlatSpec with Matchers {
   it should "get the route and station points for a simple timetable" in {
     val tt = createIndividualTimetable()
 
-    val service = new PlanService(locationService, pathService, mockWsClient)
+    val service = new TrainService(locationService, pathService, mockWsClient)
 
 
     val mapLocations = service.createSimpleMapLocations(tt)
@@ -100,12 +100,12 @@ class PlanTest extends FlatSpec with Matchers {
 
   it should "filter out trains that are passing" in {
     val timetables = List(createSimpleTimetableWithPass)
-    timetables.filter(t => PlanService.isNotPass(t)) should have length 0
+    timetables.filter(t => TrainService.isNotPass(t)) should have length 0
   }
 
   it should "filter out non public trains" in {
     val timetables = List(createNonPublicTrain)
-    timetables.filter(t => PlanService.isPassengerTrain(t)) should have length 0
+    timetables.filter(t => TrainService.isPassengerTrain(t)) should have length 0
   }
 
 

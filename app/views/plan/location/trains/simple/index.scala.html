@@ -1,12 +1,14 @@
 @(
 user: models.auth.User,
-timetables: List[models.timetable.DisplaySimpleTimetable],
+timetables: List[models.timetable.dto.location.simple.DisplaySimpleLocationTrain],
 location: Option[models.location.Location],
 year: Int,
 month: Int,
 day: Int,
 f: String,
-t: String
+t: String,
+locations: List[models.location.Location],
+messages: List[String]
 )(implicit request: Request[AnyContent])
 <head>
     <meta charset="utf-8">
@@ -133,7 +135,12 @@ t: String
                 <div class="card card-body">
                     <h2>Filters</h2>
                     <form method="GET" action="/plan/location/trains/simple">
-                        <input class="form-control" type="text" id="loc" name="loc" value="@location.map(_.id)">
+                        <datalist id="locations">
+                            @for(l <- locations){
+                            <option name="@l.name" value="@l.id">@l.name @if(l.crs.nonEmpty){(@l.crs)} [@l.id]</option>
+                            }
+                        </datalist>
+                        <input class="form-control" type="text" id="loc" name="loc" value="@location.map(_.id)" list="locations">
                         <label for="loc">Location</label>
                         <input class="form-control" type="date" id="date" name="date" value="@pad(year)-@pad(month)-@pad(day)">
                         <label for="date">Date</label>
@@ -181,7 +188,7 @@ t: String
     </div>
 </footer>
 
-@ttr(tt: models.timetable.DisplaySimpleTimetable) = {
+@ttr(tt: models.timetable.dto.location.simple.DisplaySimpleLocationTrain) = {
     <tr>
         <td>
             <a href="@tt.trainUrl">

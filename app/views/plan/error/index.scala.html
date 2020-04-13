@@ -1,5 +1,6 @@
 @(
 user: models.auth.User,
+locations: List[models.location.Location],
 messages: List[String]
 )(implicit request: Request[AnyContent])
 <head>
@@ -16,7 +17,7 @@ messages: List[String]
     <meta name="application-name" content="All the Stations &amp; Track">
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="theme-color" content="#ffffff">
-    <title>Error - Plan - All the Stations & Track
+    <title>Search - Plan - All the Stations & Track
     </title>
 </head>
 
@@ -83,15 +84,45 @@ messages: List[String]
     </div>
 </nav>
 <div class="container">
-        @for(m <- messages) {
-            <div class="row">
-                <div class="alert alert-primary">
-                    @m
+    @for(m <- messages) {
+        <div class="row">
+            <div class="alert alert-primary">
+                @m
+            </div>
+        </div>
+    }
+    <div class="row">
+        <div class="col col-sm">
+            <div id="filters">
+                <div class="card card-body">
+                    <h2>Filters</h2>
+                    <form method="GET" action="/plan/location/trains/simple">
+                        <datalist id="locations">
+                            @for(l <- locations){
+                            <option name="@l.name" value="@l.id">@l.name (@l.crs) [@l.id]</option>
+                            }
+                        </datalist>
+                        <input class="form-control" type="text" id="loc" name="loc" value="" list="locations">
+                        <label for="loc">Location</label>
+                        <input class="form-control" type="hidden" id="year" name="year" value="">
+                        <input class="form-control" type="hidden" id="month" name="month" value="">
+                        <input class="form-control" type="hidden" id="day" name="day" value="">
+                        <input class="form-control" type="date" id="date" name="date" value="">
+                        <label for="date">Date</label>
+                        <input class="form-control" type="text" id="from" name="from" value="">
+                        <label for="year">From</label>
+                        <input class="form-control" type="text" id="to" name="to" value="">
+                        <label for="year">To</label>
+                        <div style="padding-top:3px">
+                            <button type="submit" class="btn btn-primary">Filter</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-        }
+        </div>
     </div>
 </div>
+
 <footer class="footer ">
     <div class="container">
         <span class="text-muted">All the Stations & Track &copy; dlpb.uk 2018 - @java.time.Year.now.getValue. <a href="/about">About</a></a></span>

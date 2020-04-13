@@ -1,6 +1,5 @@
 package controllers
 
-
 import java.util.Date
 
 import auth.JWTService

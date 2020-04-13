@@ -62,9 +62,9 @@ function populatePoints(map, token) {
 /**
 * Add simple train calling points to map
 */
-function populateSimpleTrainCallingPoints(map, token, train) {
+function populateSimpleTrainCallingPoints(map, token, train, day, month, year) {
     jQuery.ajax({
-      url: "/api/plan/train/map/locations/simple/" + train,
+      url: "/api/plan/train/map/locations/simple/" + train+ "/" + year + "/" + month + "/" + day,
       headers: { "Authorization": "Bearer " + token }
     })
   .done(function(locations, visits){
@@ -76,9 +76,9 @@ function populateSimpleTrainCallingPoints(map, token, train) {
 /**
 * Add detailed train calling points to map
 */
-function populateDetailedTrainCallingPoints(map, token, train) {
+function populateDetailedTrainCallingPoints(map, token, train, day, month, year) {
     jQuery.ajax({
-      url: "/api/plan/train/map/locations/detailed/" + train,
+      url: "/api/plan/train/map/locations/detailed/" + train + "/" + year + "/" + month + "/" + day,
       headers: { "Authorization": "Bearer " + token }
     })
     .done(function(locations, visits){
@@ -189,9 +189,9 @@ function populateConnections(map, token){
 /**
 * Add train connections to the map
 */
-function populateTrainConnections(map, token, train){
+function populateTrainConnections(map, token, train, day, month, year){
     jQuery.ajax({
-      url: "/api/plan/train/map/route/" + train,
+      url: "/api/plan/train/map/route/" + train + "/" + year + "/" + month + "/" + day,
       headers: { "Authorization": "Bearer " + token }
     })
     .done(function(routes, visits){

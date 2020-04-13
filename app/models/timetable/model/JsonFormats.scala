@@ -1,10 +1,10 @@
-package models.timetable
+package models.timetable.model
 
 import org.json4s.CustomSerializer
-import org.json4s.JsonAST._
+import org.json4s.JsonAST.{JInt, JObject, JString}
+import models.timetable.model.train._
 
 object JsonFormats {
-  val locationFormats = Seq(LocationSerializer)
   val formats = Seq(
     TransactionTypeSerializer,
     CategorySerializer,
@@ -20,142 +20,11 @@ object JsonFormats {
     SeatingSerializer,
     SleepersSerializer,
     ReservationsSerializer,
-    CateringSerializer)
-
-  val allFormats = formats ++ locationFormats
-
+    CateringSerializer
+  )
 }
 
-case object LocationSerializer extends CustomSerializer[Location](format => ({
-  //origin
-  case JObject(
-    JField("tiploc", JString(t)) ::
-      JField("platform", JString(p)) ::
-      JField("line", JString(l)) ::
-      JField("engineeringAllowance", JInt(ea)) ::
-      JField("engineeringAllowanceHalfMinute", JBool(eah)) ::
-      JField("pathingAllowance", JInt(pa)) ::
-      JField("pathingAllowanceHalfMinute", JBool(pah)) ::
-      JField("performanceAllowance", JInt(pea)) ::
-      JField("performanceAllowanceHalfMinute", JBool(peh)) ::
-      JField("departure", JInt(d)) ::
-      JField("departureHalfMinute", JBool(dh)) ::
-      JField("publicDeparture", JInt(pd)) :: Nil
-    ) => LocationOrigin(t, p, l, ea.intValue(), eah, pa.intValue(), pah, pea.intValue(), peh, Some(d.intValue()), Some(dh), Some(pd.intValue()))
-
-  //intermediate pass
-  case JObject(
-    JField("tiploc", JString(t)) ::
-      JField("platform", JString(p)) ::
-      JField("line", JString(l)) ::
-      JField("engineeringAllowance", JInt(ea)) ::
-      JField("engineeringAllowanceHalfMinute", JBool(eah)) ::
-      JField("pathingAllowance", JInt(pa)) ::
-      JField("pathingAllowanceHalfMinute", JBool(pah)) ::
-      JField("performanceAllowance", JInt(pea)) ::
-      JField("performanceAllowanceHalfMinute", JBool(peh)) ::
-      JField("pass", JInt(pass)) ::
-      JField("passHalfMinute", JBool(passh)) ::
-      JField("path", JString(pth)) :: Nil
-    ) => LocationIntermediate(t, p, l, ea.intValue(), eah, pa.intValue(), pah, pea.intValue(), peh, None, None, None, None, Some(pass.intValue()), Some(passh), Some(pth), None, None)
-
-  //intermediate stop - public
-  case JObject(
-    JField("tiploc", JString(t)) ::
-      JField("platform", JString(p)) ::
-      JField("line", JString(l)) ::
-      JField("engineeringAllowance", JInt(ea)) ::
-      JField("engineeringAllowanceHalfMinute", JBool(eah)) ::
-      JField("pathingAllowance", JInt(pa)) ::
-      JField("pathingAllowanceHalfMinute", JBool(pah)) ::
-      JField("performanceAllowance", JInt(pe)) ::
-      JField("performanceAllowanceHalfMinute", JBool(peh)) ::
-      JField("arrival", JInt(a)) ::
-      JField("arrivalHalfMinute", JBool(ah)) ::
-      JField("departure", JInt(d)) ::
-      JField("departureHalfMinute", JBool(dh)) ::
-      JField("path", JString(pth)) ::
-      JField("publicArrival", JInt(par)) ::
-      JField("publicDeparture", JInt(pd)) :: Nil
-    ) => LocationIntermediate(t, p, l, ea.intValue(), eah, pa.intValue(), pah, pe.intValue(), peh, Some(a.intValue()), Some(ah), Some(d.intValue()), Some(dh), None, None, Some(pth), Some(par.intValue()), Some(pd.intValue()))
-
-  //intermediate stop - public dep only
-  case JObject(
-    JField("tiploc", JString(t)) ::
-      JField("platform", JString(p)) ::
-      JField("line", JString(l)) ::
-      JField("engineeringAllowance", JInt(ea)) ::
-      JField("engineeringAllowanceHalfMinute", JBool(eah)) ::
-      JField("pathingAllowance", JInt(pa)) ::
-      JField("pathingAllowanceHalfMinute", JBool(pah)) ::
-      JField("performanceAllowance", JInt(pe)) ::
-      JField("performanceAllowanceHalfMinute", JBool(peh)) ::
-      JField("arrival", JInt(a)) ::
-      JField("arrivalHalfMinute", JBool(ah)) ::
-      JField("departure", JInt(d)) ::
-      JField("departureHalfMinute", JBool(dh)) ::
-      JField("path", JString(pth)) ::
-      JField("publicDeparture", JInt(pd)) :: Nil
-    ) => LocationIntermediate(t, p, l, ea.intValue(), eah, pa.intValue(), pah, pe.intValue(), peh, Some(a.intValue()), Some(ah), Some(d.intValue()), Some(dh), None, None, Some(pth), None, Some(pd.intValue()))
-
-  //intermediate stop - public dep only
-  case JObject(
-    JField("tiploc", JString(t)) ::
-      JField("platform", JString(p)) ::
-      JField("line", JString(l)) ::
-      JField("engineeringAllowance", JInt(ea)) ::
-      JField("engineeringAllowanceHalfMinute", JBool(eah)) ::
-      JField("pathingAllowance", JInt(pa)) ::
-      JField("pathingAllowanceHalfMinute", JBool(pah)) ::
-      JField("performanceAllowance", JInt(pe)) ::
-      JField("performanceAllowanceHalfMinute", JBool(peh)) ::
-      JField("arrival", JInt(a)) ::
-      JField("arrivalHalfMinute", JBool(ah)) ::
-      JField("departure", JInt(d)) ::
-      JField("departureHalfMinute", JBool(dh)) ::
-      JField("path", JString(pth)) ::
-      JField("publicArrival", JInt(par)) :: Nil
-    ) => LocationIntermediate(t, p, l, ea.intValue(), eah, pa.intValue(), pah, pe.intValue(), peh, Some(a.intValue()), Some(ah), Some(d.intValue()), Some(dh), None, None, Some(pth), Some(par.intValue()), None)
-
-  //intermediate stop - timing
-  case JObject(
-    JField("tiploc", JString(t)) ::
-      JField("platform", JString(p)) ::
-      JField("line", JString(l)) ::
-      JField("engineeringAllowance", JInt(ea)) ::
-      JField("engineeringAllowanceHalfMinute", JBool(eah)) ::
-      JField("pathingAllowance", JInt(pa)) ::
-      JField("pathingAllowanceHalfMinute", JBool(pah)) ::
-      JField("performanceAllowance", JInt(pe)) ::
-      JField("performanceAllowanceHalfMinute", JBool(peh)) ::
-      JField("arrival", JInt(a)) ::
-      JField("arrivalHalfMinute", JBool(ah)) ::
-      JField("departure", JInt(d)) ::
-      JField("departureHalfMinute", JBool(dh)) ::
-      JField("path", JString(pth)) :: Nil
-    ) => LocationIntermediate(t, p, l, ea.intValue(), eah, pa.intValue(), pah, pe.intValue(), peh, Some(a.intValue()), Some(ah), Some(d.intValue()), Some(dh), None, None, Some(pth), None, None)
-
-  //terminal
-  case JObject(
-    JField("tiploc", JString(t)) ::
-      JField("platform", JString(p)) ::
-      JField("line", JString(l)) ::
-      JField("engineeringAllowance", JInt(ea)) ::
-      JField("engineeringAllowanceHalfMinute", JBool(eah)) ::
-      JField("pathingAllowance", JInt(paa)) ::
-      JField("pathingAllowanceHalfMinute", JBool(pah)) ::
-      JField("performanceAllowance", JInt(pea)) ::
-      JField("performanceAllowanceHalfMinute", JBool(peh)) ::
-      JField("arrival", JInt(a)) ::
-      JField("arrivalHalfMinute", JBool(ah)) ::
-      JField("path", JString(pth)) ::
-      JField("publicArrival", JInt(pa)) :: Nil
-    ) => LocationTerminal(t, p, l, ea.intValue(), eah, pa.intValue(), pah, pea.intValue(), peh, Some(a.intValue()), Some(ah), Some(pth), Some(pa.intValue()))
-}, {
-  case _ => JString("")
-}))
-
-case object TransactionTypeSerializer extends CustomSerializer[TransactionType](format => ({
+case object TransactionTypeSerializer extends CustomSerializer[TransactionType](format => ( {
   case JString(transactionType) => transactionType match {
     case "New" => NewTransaction
     case "Delete" => DeleteTransaction
@@ -167,7 +36,7 @@ case object TransactionTypeSerializer extends CustomSerializer[TransactionType](
   case ReviseTransaction => JString("Revise")
 }))
 
-case object CategorySerializer extends CustomSerializer[Category](format => ({
+case object CategorySerializer extends CustomSerializer[Category](format => ( {
   case JString(category) => category match {
     case "Join" => Join
     case "Divide" => Divide
@@ -179,9 +48,10 @@ case object CategorySerializer extends CustomSerializer[Category](format => ({
   case Divide => JString("Divide")
   case Next => JString("Next")
   case NoCategory => JString("NoCategory")
-}))
+}
+))
 
-case object DateIndicatorSerializer extends CustomSerializer[DateIndicator](format => ({
+case object DateIndicatorSerializer extends CustomSerializer[DateIndicator](format => ( {
   case JString(dateIndicator) => dateIndicator match {
     case "Standard" => StandardDaytimeOnly
     case "OverNext" => OverNextMidnight
@@ -196,7 +66,7 @@ case object DateIndicatorSerializer extends CustomSerializer[DateIndicator](form
 
 }))
 
-case object AssociationTypeSerializer extends CustomSerializer[AssociationType](format => ({
+case object AssociationTypeSerializer extends CustomSerializer[AssociationType](format => ( {
   case JString(assoc) => assoc match {
     case "Passenger" => Passenger
     case "Operating" => Operating
@@ -208,7 +78,7 @@ case object AssociationTypeSerializer extends CustomSerializer[AssociationType](
   case NoAssociationType => JString("None")
 }))
 
-case object StpIndicatorSerializer extends CustomSerializer[StpIndicator](format => ({
+case object StpIndicatorSerializer extends CustomSerializer[StpIndicator](format => ( {
   case JString(stp) => stp match {
     case "Cancellation" => Cancellation
     case "New" => New
@@ -222,7 +92,7 @@ case object StpIndicatorSerializer extends CustomSerializer[StpIndicator](format
   case Permanent => JString("Permanent")
 }))
 
-case object BankHolidayRunningSerializer extends CustomSerializer[BankHolidayRunning](format => ({
+case object BankHolidayRunningSerializer extends CustomSerializer[BankHolidayRunning](format => ( {
   case JString(running) => running match {
     case "NotOnSpecifiedHolidays" => NotOnSpecifiedBankHolidayMondays
     case "NotOnGlasgowHolidays" => NotOnGlasgowBankHolidays
@@ -234,7 +104,7 @@ case object BankHolidayRunningSerializer extends CustomSerializer[BankHolidayRun
   case RunsOnBankHolidays => JString("RunsOnBankHolidays")
 }))
 
-case object TrainStatusSerializer extends CustomSerializer[TrainStatus](format => ({
+case object TrainStatusSerializer extends CustomSerializer[TrainStatus](format => ( {
   case JString(status) => status match {
     case "BusPermanent" => BusPermanent
     case "FreightPermanent" => FreightPermanent
@@ -246,6 +116,7 @@ case object TrainStatusSerializer extends CustomSerializer[TrainStatus](format =
     case "TripStp" => TripStp
     case "ShipStp" => ShipStp
     case "BusStp" => BusStp
+    case "NoTrainStatus" => NoTrainStatus
   }
 }, {
   case BusPermanent => JString("BusPermanent")
@@ -258,9 +129,10 @@ case object TrainStatusSerializer extends CustomSerializer[TrainStatus](format =
   case TripStp => JString("TripStp")
   case ShipStp => JString("ShipStp")
   case BusStp => JString("BusStp")
+  case NoTrainStatus => JString("NoTrainStatus")
 }))
 
-case object TrainCategorySerializer extends CustomSerializer[TrainCategory](format => ({
+case object TrainCategorySerializer extends CustomSerializer[TrainCategory](format => ( {
   case JString(category) => category match {
     case "OrdinaryPassenger" => OrdinaryPassenger
     case "UnadvertisedOrdinaryPassenger" => UnadvertisedOrdinaryPassenger
@@ -372,7 +244,7 @@ case object TrainCategorySerializer extends CustomSerializer[TrainCategory](form
   case OtherTrainCategory(value) => JString(value)
 }))
 
-case object PowerTypeSerializer extends CustomSerializer[PowerType](format => ({
+case object PowerTypeSerializer extends CustomSerializer[PowerType](format => ( {
   case JString(power) => power match {
     case "D" => Diesel
     case "DEMU" => DieselElectricMultipleUnit
@@ -396,7 +268,7 @@ case object PowerTypeSerializer extends CustomSerializer[PowerType](format => ({
   case NoTrainPowerType => JString("NA")
 }))
 
-case object TimingSerializer extends CustomSerializer[Timing](format => ({
+case object TimingSerializer extends CustomSerializer[Timing](format => ( {
   case JString(timing) => timing match {
     case "DMUPowerCarAndTrailer" => DMUPowerCarAndTrailer
     case "DMUTwoPowerCarAndTrailer" => DMUTwoPowerCarsAndTrailer
@@ -413,13 +285,11 @@ case object TimingSerializer extends CustomSerializer[Timing](format => ({
     case "X" => Class("159")
     case "0" => Class("380")
     case "506" => Class("350/1 (110mph)")
-    case _ => NoTiming
+    case other if other.isEmpty => NoTiming
+    case other => Class(other)
   }
   case JInt(int) if int >= 0 && int <= 999 => Class(int.toString)
   case JInt(int) if int >= 1000 && int <= 9999 => Hauled(int.intValue())
-  case JObject(
-    JField("load", JInt(load)) :: Nil
-    ) => Hauled(load.intValue())
 
 }, {
   case DMUPowerCarAndTrailer => JString("DMUPowerCarAndTrailer")
@@ -444,7 +314,7 @@ case object TimingSerializer extends CustomSerializer[Timing](format => ({
   case Class(classes) => JInt(classes.toInt)
 }))
 
-case object OperatingCharacteristicsSerializer extends CustomSerializer[OperatingCharacteristics](format => ({
+case object OperatingCharacteristicsSerializer extends CustomSerializer[OperatingCharacteristics](format => ( {
   case JString(characteristcs) => characteristcs match {
     case "VacuumBraked" => VacuumBraked
     case "TimedAt100Mph" => TimedAt100Mph
@@ -476,31 +346,31 @@ case object OperatingCharacteristicsSerializer extends CustomSerializer[Operatin
   case NoOperatingCharacteristics => JString("NoOperatingCharacteristics")
 }))
 
-case object SeatingSerializer extends CustomSerializer[Seating](format => ({
+case object SeatingSerializer extends CustomSerializer[Seating] (format => ({
   case JString(seating) => seating match {
     case "FirstAndStandard" => FirstAndStandardSeating
     case "StandardOnly" => StandardOnlySeating
   }
-}, {
+},{
   case StandardOnlySeating => JString("StandardOnly")
   case FirstAndStandardSeating => JString("FirstAndStandard")
 }))
 
-case object SleepersSerializer extends CustomSerializer[Sleepers](format => ({
+case object SleepersSerializer extends CustomSerializer[Sleepers] (format => ({
   case JString(sleeper) => sleeper match {
     case "FirstAndStandard" => FirstAndStandardClassSleeper
     case "FirstOnly" => FirstClassOnlySleeper
     case "StandardOnly" => StandardClassOnlySleeper
     case _ => NoSleeper
   }
-}, {
+},{
   case FirstAndStandardClassSleeper => JString("FirstAndStandard")
   case FirstClassOnlySleeper => JString("FirstOnly")
   case StandardClassOnlySleeper => JString("StandardOnly")
   case NoSleeper => JString("NoSleeper")
 }))
 
-case object ReservationsSerializer extends CustomSerializer[Reservations](format => ({
+case object ReservationsSerializer extends CustomSerializer[Reservations] (format => ({
   case JString(reservations) => reservations match {
     case "Compulsory" => ReservationsCompulsory
     case "Bicycles" => ReservationsForBicycles
@@ -508,7 +378,7 @@ case object ReservationsSerializer extends CustomSerializer[Reservations](format
     case "AnyStation" => ReservationsPossibleFromAnyStation
     case _ => NoReservations
   }
-}, {
+},{
   case ReservationsCompulsory => JString("Compulsory")
   case ReservationsForBicycles => JString("Bicycles")
   case ReservationsRecommended => JString("Recommended")
@@ -516,18 +386,18 @@ case object ReservationsSerializer extends CustomSerializer[Reservations](format
   case NoReservations => JString("NoReservations")
 }))
 
-case object CateringSerializer extends CustomSerializer[Catering](format => ({
-  case JString(catering) => catering match {
-    case "Buffet" => BuffetServiceCatering
-    case "FirstClassRestaurant" => RestaurantCarFirstClassCatering
-    case "HotFood" => HotFoodCatering
-    case "MealIncluded" => MealIncludedFirstClassCatering
-    case "WheelchairOnly" => WheelchairOnlyReservationsCatering
-    case "Restaurant" => RestaurantCatering
-    case "TrolleyService" => TrolleyServiceCatering
-    case _ => NoCatering
-  }
-}, {
+case object CateringSerializer extends CustomSerializer[Catering] (format => ({
+ case JString(catering) => catering match {
+   case "Buffet" => BuffetServiceCatering
+   case "FirstClassRestaurant" => RestaurantCarFirstClassCatering
+   case "HotFood" => HotFoodCatering
+   case "MealIncluded" => MealIncludedFirstClassCatering
+   case "WheelchairOnly" => WheelchairOnlyReservationsCatering
+   case "Restaurant" => RestaurantCatering
+   case "TrolleyService" => TrolleyServiceCatering
+   case _ => NoCatering
+ }
+},{
   case BuffetServiceCatering => JString("Buffet")
   case RestaurantCarFirstClassCatering => JString("FirstClassRestaurant")
   case HotFoodCatering => JString("HotFood")
@@ -538,11 +408,14 @@ case object CateringSerializer extends CustomSerializer[Catering](format => ({
   case NoCatering => JString("NoCatering")
 }))
 
-case object TimetableCodeSerializer extends CustomSerializer[TimetableCode](format => ({
+case object TimetableCodeSerializer extends CustomSerializer[TimetableCode] (format => ({
   case JString(tc) => tc match {
     case "Y" => SubjectToMonitoring
     case "N" => NotSubjectToMonitoring
+    case _ => NotSubjectToMonitoring
   }
+  case JObject(List()) => NotSubjectToMonitoring
+  case _ => NotSubjectToMonitoring
 }, {
   case SubjectToMonitoring => JString("Y")
   case NotSubjectToMonitoring => JString("N")

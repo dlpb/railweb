@@ -1,0 +1,59 @@
+package models.timetable.dto.location.detailed
+
+import models.location.LocationsService
+import models.plan.timetable.TimetableService
+import models.timetable.model.location.TimetableForLocation
+
+object DisplayDetailedLocationTrain {
+
+  def apply(locationsService: LocationsService, simpleTimetable: TimetableForLocation, year: Int, month: Int, day: Int): DisplayDetailedLocationTrain = {
+
+    val public = simpleTimetable.publicTrain
+
+    val arrival: String =
+      if (simpleTimetable.pass.isDefined) "pass"
+      else if (!public && simpleTimetable.arr.isDefined) simpleTimetable.arr.getOrElse("")
+      else if (simpleTimetable.pubArr.isDefined) simpleTimetable.pubArr.getOrElse("")
+      else ""
+
+    val departure =
+      if (simpleTimetable.pass.isDefined) simpleTimetable.pass.getOrElse("")
+      else if (!public && simpleTimetable.dep.isDefined) simpleTimetable.dep.getOrElse("")
+      else if (simpleTimetable.pubDep.isDefined) simpleTimetable.pubDep.getOrElse("")
+      else ""
+
+    val platform =
+      if (simpleTimetable.pass.isDefined) ""
+      else simpleTimetable.platform.getOrElse("")
+
+    DisplayDetailedLocationTrain(
+      public,
+      simpleTimetable.pass.isDefined,
+      simpleTimetable.uid,
+      arrival,
+      departure,
+      simpleTimetable.origin.flatMap(o => locationsService.findLocation(o).map(_.name)).getOrElse(simpleTimetable.origin.getOrElse("")),
+      simpleTimetable.destination.flatMap(d => locationsService.findLocation(d).map(_.name)).getOrElse(simpleTimetable.destination.getOrElse("")),
+      platform,
+      TimetableService.createUrlForDisplayingDetailedTrainTimetable(simpleTimetable.uid, year, month, day),
+      "",
+      "",
+      ""
+    )
+  }
+}
+
+case class DisplayDetailedLocationTrain(
+                                    isPublic: Boolean,
+                                    isPass: Boolean,
+                                    uid: String,
+                                    arrival: String,
+                                    departure: String,
+                                    origin: String,
+                                    destination: String,
+                                    platform: String,
+                                    trainUrl: String,
+                                    arrivalLabel: String,
+                                    departureLabel: String,
+                                    platformLabel: String
+                                  )

@@ -1,3 +1,5 @@
 .idea/
 target/
 resources/data/static
+.DS_Store
+null/

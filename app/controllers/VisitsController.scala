@@ -6,13 +6,10 @@ import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject.{Inject, Singleton}
 import models.auth.UserDao
 import models.data.postgres.RouteDataIdConverter
-import models.location.{Location, LocationsService, MapLocation}
+import models.location.{LocationsService, MapLocation}
 import models.route.{MapRoute, Route, RoutesService}
 import models.visits.Event
 import play.api.mvc.{AbstractController, AnyContent, ControllerComponents}
-
-import scala.collection.immutable
-import scala.collection.immutable.ListMap
 
 @Singleton
 class VisitsController @Inject()(

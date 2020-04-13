@@ -7,7 +7,6 @@ import auth.api.AuthorizedAction
 import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject._
 import models.auth.UserDao
-import models.data.postgres.RouteDataIdConverter
 import models.location.LocationsService
 import models.route.RoutesService
 import models.web.forms.ChangePassword
