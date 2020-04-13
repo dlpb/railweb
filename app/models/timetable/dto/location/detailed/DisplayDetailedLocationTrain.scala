@@ -26,6 +26,8 @@ object DisplayDetailedLocationTrain {
       if (simpleTimetable.pass.isDefined) ""
       else simpleTimetable.platform.getOrElse("")
 
+    val toc = simpleTimetable.toc.getOrElse("Unknown TOC")
+
     DisplayDetailedLocationTrain(
       public,
       simpleTimetable.pass.isDefined,
@@ -35,6 +37,8 @@ object DisplayDetailedLocationTrain {
       simpleTimetable.origin.flatMap(o => locationsService.findLocation(o).map(_.name)).getOrElse(simpleTimetable.origin.getOrElse("")),
       simpleTimetable.destination.flatMap(d => locationsService.findLocation(d).map(_.name)).getOrElse(simpleTimetable.destination.getOrElse("")),
       platform,
+      toc,
+      simpleTimetable.stpIndicator.toString,
       TimetableService.createUrlForDisplayingDetailedTrainTimetable(simpleTimetable.uid, year, month, day),
       "",
       "",
@@ -52,6 +56,8 @@ case class DisplayDetailedLocationTrain(
                                     origin: String,
                                     destination: String,
                                     platform: String,
+                                    toc: String,
+                                    stpIndicator: String,
                                     trainUrl: String,
                                     arrivalLabel: String,
                                     departureLabel: String,

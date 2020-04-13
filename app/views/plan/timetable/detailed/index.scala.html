@@ -152,26 +152,46 @@ messages: List[String]
     </div>
 </div>
 <div class="container card-body">
-    <div class="row">
+    <div class="row d-none d-lg-block">
         <div class="col-sm">
             <div class="table-responsive">
                 <table class="table table-hover">
                     <thead>
                     <tr>
                         <td>Arrival</td>
-                        <td>ID</td>
-                        <td>Station</td>
+                        <td>Location</td>
                         <td>Platform</td>
                         <td>Departure</td>
                         <td>Path</td>
                         <td>Perf</td>
                         <td>Eng</td>
-                        <td>Route</td>
+                        <td>Path</td>
                         <td>Line</td>
                     </tr>
                     </thead>
                    @for(l <- timetable.locations){
                         @location(l)
+                    }
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="row d-block d-lg-none">
+        <div class="col-sm">
+            <div class="table-responsive">
+                <table class="table table-hover" style="font-size: 0.7rem;">
+                    <thead>
+                    <tr>
+                        <td>Location</td>
+                        <td>Pfm.</td>
+                        <td>TT<br/>Arr.<br/>Dep.</td>
+                        <td colspan="3">Allowances</td>
+                        <td colspan="2">Route</td>
+                    </tr>
+                    </thead>
+                    @for(l <- timetable.locations){
+                    @locationsmall(l)
                     }
                 </table>
             </div>
@@ -244,12 +264,8 @@ messages: List[String]
         </td>
         <td>
             <a href="@l.url">
-                @l.id
-            </a>
-        </td>
-        <td>
-            <a href="@l.url">
-                @l.label
+                @l.label <br/>
+                @l.id @l.crs
             </a>
         </td>
         <td>
@@ -288,6 +304,57 @@ messages: List[String]
             </a>
         </td>
     </tr>
+}
+
+
+@locationsmall(l: models.timetable.dto.timetable.detailed.DisplayDetailedIndividualTimetableLocation) = {
+@if(l.isPass) { <tr class="pass  table-light">
+    } else { <tr>
+    }
+
+    <td>
+        <a href="@l.url">
+            @l.label <br/>
+            @l.id @l.crs
+        </a>
+    </td>
+    <td>
+        <a href="@l.url">
+            @platform(l)
+        </a>
+    </td>
+    <td>
+        <a href="@l.url">
+            @arr(l) <br/>
+            @dep(l)
+        </a>
+    </td>
+    <td>
+        <a href="@l.url">
+            @l.pathAllowance
+        </a>
+    </td>
+    <td>
+        <a href="@l.url">
+            @l.performanceAllowance
+        </a>
+    </td>
+    <td>
+        <a href="@l.url">
+            @l.engineeringAllowance
+        </a>
+    </td>
+    <td>
+        <a href="@l.url">
+            @l.path
+        </a>
+    </td>
+    <td>
+        <a href="@l.url">
+            @l.line
+        </a>
+    </td>
+</tr>
 }
 
 @platform(l: models.timetable.dto.timetable.detailed.DisplayDetailedIndividualTimetableLocation) = {

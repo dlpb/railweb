@@ -53,6 +53,9 @@ messages: List[String]
       integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
       crossorigin="anonymous">
 
+<link rel="stylesheet" href='@routes.Assets.versioned("stylesheets/detailedTimetableLocation.css")'>
+
+
 <style>
     tr.pass {
        font-style: italic;
@@ -162,31 +165,37 @@ messages: List[String]
             </div>
         </div>
     </div>
+    @if(timetables.isEmpty){
     <div class="row">
-        <div class="col-sm">
-            <div class="table-responsive">
-                <table class="table table-hover">
-                    @if(timetables.isEmpty){
-                    <tr>No trains to show...</tr>
-                    } else {
-                    <thead>
-                    <tr>
-                        <td>Arrival</td>
-                        <td>Origin</td>
-                        <td>Destination</td>
-                        <td>Platform</td>
-                        <td>UID</td>
-                        <td>Departure</td>
-                    </tr>
-                    </thead>
-                    @for(tt <- timetables) {
-                    @ttr(tt)
-                    }
-                    }
-                </table>
+        <div class="col col-sm">
+            <div class="alert alert-danger" role="alert">
+                <h3>No trains to show</h3>
+                @if(location.isDefined) {
+                for <strong>@location.get.name</strong>
+                }
+                on <strong>@year-@month-@day</strong> between <strong>@f</strong> and <strong>@t</strong>
             </div>
         </div>
     </div>
+    } else {
+    <div class="row d-none d-md-block">
+        <div class="col col-sm">
+            <div class="main">
+                <div class="arr">Arrives</div>
+                <div class="origin">Origin</div>
+                <div class="dest">Destination</div>
+                <div class="plat">Platform</div>
+                <div class="dep">Departs</div>
+                <div class="toc">TOC</div>
+                <div class="stp">STP</div>
+            </div>
+        </div>
+    </div>
+    @for(tt <- timetables) {
+    @ttrdiv(tt)
+    }
+    }
+
 </div>
 </div>
 <footer class="footer ">
@@ -195,43 +204,55 @@ messages: List[String]
     </div>
 </footer>
 
-@ttr(tt: models.timetable.dto.location.detailed.DisplayDetailedLocationTrain) = {
-    @if(tt.isPass) { <tr class="pass table-light">
-    } else if(tt.isPublic) { <tr class="passenger">
-    } else { <tr class="non-passenger table-light"> }
-    <td>
-        <a href="@tt.trainUrl">
-            @arr(tt.arrival, tt.arrivalLabel)
-        </a>
-    </td>
-    <td>
-        <a href="@tt.trainUrl">
-            @tt.origin
-        </a>
-    </td>
-    <td>
-        <a href="@tt.trainUrl">
-            @tt.destination
-        </a>
-    </td>
-    <td>
-        <a href="@tt.trainUrl">
-            @platform(tt.platform, tt.platformLabel)
-        </a>
-    </td>
-    <td>
-        <a href="@tt.trainUrl">
-            @tt.uid
-        </a>
-    </td>
-
-    <td>
-        <a href="@tt.trainUrl">
-            @dep(tt.departure, tt.departureLabel)
-        </a>
-    </td>
-</tr>
+@ttrdiv(tt: models.timetable.dto.location.detailed.DisplayDetailedLocationTrain) = {
+@if(tt.isPass) { <div class="row pass table-light">
+} else if(tt.isPublic) { <div class="row passenger">
+} else { <div class="row non-passenger table-light"> }
+    <div class="col col-sm">
+        <div class="main">
+            <div class="arr">
+                <a href="@tt.trainUrl">
+                    @arr(tt.arrival, tt.arrivalLabel)
+                </a>
+            </div>
+            <div class="origin">
+                <a href="@tt.trainUrl">
+                    @tt.origin
+                </a>
+            </div>
+            <div class="dest">
+                <a href="@tt.trainUrl">
+                    <span class="d-md-none">to </span>
+                    @tt.destination
+                </a>
+            </div>
+            <div class="plat">
+                <a href="@tt.trainUrl">
+                    @platform(tt.platform, tt.platformLabel)
+                </a>
+            </div>
+            <div class="dep">
+                <a href="@tt.trainUrl">
+                    @dep(tt.departure, tt.departureLabel)
+                </a>
+            </div>
+            <div class="toc">
+                <a href="@tt.trainUrl">
+                    <span class="tocBadge badge badge-light">
+                        <slot name="tocBadge">@tt.toc</slot>
+                    </span>
+                </a>
+            </div>
+            <div class="stp">
+                <a href="@tt.trainUrl">
+                    @tt.stpIndicator
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 }
+
 
 @platform(platform: String, label: String) = {
 @platform <br/> <small>@label</small>
@@ -247,3 +268,13 @@ messages: List[String]
 }
 
 @pad(num: Int) = {@if(num < 10) {0@num} else {@num}}
+<script>
+    const els = document.querySelectorAll(".tocBadge");
+    els.forEach(function(el) {
+    console.log(el.textContent.trim);
+        const tocInfo = findTocData(el.textContent.trim());
+
+        el.style.backgroundColor = tocInfo["colour"];
+        el.style.color = tocInfo["textColour"];
+    });
+</script>

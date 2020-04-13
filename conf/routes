@@ -54,7 +54,7 @@ GET  /location/detail/:id                                           controllers.
 GET  /plan                                                          controllers.PlanController.showPlanIndex()
 
 GET  /plan/location/highlight                                       controllers.HighlightController.showLocationHighlights(locations: String ?= "")
-GET  /plan/location/highlight/trains/:year/:month/:day              controllers.HighlightController.showLocationHighlightsForTrains(trainsAndStations: String ?= "", srsLocations: String ?= "", locations: String ?= "", year: Int, month: Int, day: Int)
+GET  /plan/location/highlight/trains                                controllers.HighlightController.showLocationHighlightsForTrains(trainsAndStations: String ?= "", srsLocations: String ?= "", locations: String ?= "", year: Int ?= 0, month: Int ?= 0, day: Int ?= 0)
 
 GET  /plan/location/trains                                          controllers.SimpleLocationTrainController.showTrainSearchIndex
 GET  /plan/location/trains/simple/:loc                              controllers.SimpleLocationTrainController.showTrainsForLocationNow(loc: String)

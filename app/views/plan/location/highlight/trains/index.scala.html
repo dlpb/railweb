@@ -9,7 +9,10 @@ totalTrains: Int,
 trainsAndStations: String,
 srsLocations: String,
 locations: String,
-messages: List[String]
+messages: List[String],
+year: Int,
+month: Int,
+day: Int
 )(implicit request: Request[AnyContent])
 <head>
     <meta charset="utf-8">
@@ -118,6 +121,12 @@ messages: List[String]
                         <label for="locations">Locations</label>
                         <textarea id="srsLocations" name="srsLocations" class="form-control">@srsLocations</textarea>
                         <label for="srsLocations">SRS Locations</label>
+                        <input type="text" id="year" name="year" class="form-control" value="@year"/>
+                        <label for="year">Year</label>
+                        <input type="text" id="month" name="month" class="form-control" value="@month"/>
+                        <label for="month">Month</label>
+                        <input type="text" id="day" name="day" class="form-control" value="@day"/>
+                        <label for="day">Day</label>
                         <div style="padding-top:3px">
                             <button class="btn btn-primary" type="submit">Highlight Locations</button>
                         </div>

@@ -38,8 +38,7 @@ class DetailedTimetableController @Inject()(
           if(data.isDefined)
             Ok(views.html.plan.timetable.detailed.index(request.user, token, data.get.dtt, data.get.basicSchedule, data.get.mapLocations, data.get.routes, data.get.routeLink, List.empty)(request.request))
           else NotFound(views.html.plan.error.index(request.user,  locationsService.getLocations,
-            List(s"Could not fnd train $train on $year-$month-$day",
-              "Go back to <a href='/plan'>Plan</a>"
+            List(s"Could not fnd train $train on $year-$month-$day. Please try searching again."
             ))
           (request.request))
       }
@@ -49,8 +48,7 @@ class DetailedTimetableController @Inject()(
       catch{
         case e: TimeoutException =>
           InternalServerError(views.html.plan.error.index(request.user,  locationsService.getLocations,
-            List(s"Could not get details for train $train on $year-$month-$day",
-              "Timed out producing the page"
+            List(s"Could not get details for train $train on $year-$month-$day. Timed out producing the page"
             ))
           (request.request))
       }

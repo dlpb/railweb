@@ -141,7 +141,7 @@ object TimetableService {
   def createUrlForDisplayingDetailedTrainTimetable(uid: String, year: Int, month: Int, day: Int) = {
     val m = if (month < 1) "01" else if (month < 10) s"0$month" else if (month > 12) "12" else s"$month"
     val d = if (day < 1) "01" else if (day < 10) s"0$day" else if (day > 31) "31" else s"$day"
-    val url = s"/plan/timetables/train/$uid/detailed/$year/m/$d"
+    val url = s"/plan/timetables/train/$uid/detailed/$year/$m/$d"
     url
   }
 
@@ -151,5 +151,6 @@ object TimetableService {
     url
   }
 
-  def createUrlForReadingTrainTimetable(train: String, year: String, month: String, day: String) = s"http://railweb-timetables-java.herokuapp.com/timetables/train/$train?year=$year&month=$month&day=$day"
+//  def createUrlForReadingTrainTimetable(train: String, year: String, month: String, day: String) = s"http://railweb-timetables-java.herokuapp.com/timetables/train/$train?year=$year&month=$month&day=$day"
+  def createUrlForReadingTrainTimetable(train: String, year: String, month: String, day: String) = s"http://localhost:9090/timetables/train/$train?year=$year&month=$month&day=$day"
 }

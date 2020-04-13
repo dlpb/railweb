@@ -39,8 +39,7 @@ class SimpleTimetableController @Inject()(
             Ok(views.html.plan.timetable.simple.index(request.user, token, data.get.dst, data.get.basicSchedule ,data.get.mapLocations, data.get.routes, data.get.routeLink, List.empty)(request.request))
           }
           else NotFound(views.html.plan.error.index(request.user,  locationsService.getLocations,
-            List(s"Could not fnd train $train on $year-$month-$day",
-              "Go back to <a href='/plan'>Plan</a>"
+            List(s"Could not fnd train $train on $year-$month-$day. Please try searching again"
             )))
       }
       try {
@@ -49,8 +48,7 @@ class SimpleTimetableController @Inject()(
       catch{
         case e: TimeoutException =>
           InternalServerError(views.html.plan.error.index(request.user,  locationsService.getLocations,
-            List(s"Could not get details for train $train on $year-$month-$day",
-              "Timed out producing the page"
+            List(s"Could not get details for train $train on $year-$month-$day. Timed out producing the page"
             ))
           (request.request))
       }

@@ -86,8 +86,11 @@ messages: List[String]
 <div class="container">
     @for(m <- messages) {
         <div class="row">
-            <div class="alert alert-primary">
-                @m
+            <div class="col col-sm">
+
+                <div class="alert alert-primary">
+                    @m
+                </div>
             </div>
         </div>
     }

@@ -6,7 +6,7 @@ import java.util.Date
 import models.location.LocationsService
 import models.plan.trains.LocationTrainService
 import models.timetable.dto.TimetableHelper
-import models.timetable.model.train.IndividualTimetable
+import models.timetable.model.train.{Class, Hauled, IndividualTimetable, Timing}
 
 object DisplayDetailedIndividualTimetable {
   def apply(locationsService: LocationsService, tt: IndividualTimetable, year: Int, month: Int, day: Int) : DisplayDetailedIndividualTimetable = {
@@ -19,6 +19,8 @@ object DisplayDetailedIndividualTimetable {
     val s = if(tt.basicSchedule.validSaturday) "S" else ""
     val su = if(tt.basicSchedule.validSunday) "Su" else ""
     val runningDays = s"$m$t$w$th$f$s$su"
+
+
 
     DisplayDetailedIndividualTimetable(
       tt.locations.headOption.flatMap(l => locationsService.findLocation(l.tiploc).map(l => l.name)).getOrElse(""),
@@ -87,9 +89,9 @@ object DisplayDetailedIndividualTimetable {
             isPass,
             arrival,
             departure,
-            if(pathAllowance == "0") "" else pathAllowance,
-            if(performanceAllowance == "0") "" else performanceAllowance,
-            if(engineeringAllowance == "0") "" else engineeringAllowance,
+            if(pathAllowance == "0") "-" else pathAllowance,
+            if(performanceAllowance == "0") "-" else performanceAllowance,
+            if(engineeringAllowance == "0") "-" else engineeringAllowance,
             l.path,
             l.line,
             LocationTrainService.createUrlForDisplayingLocationDetailedTimetables(
@@ -98,7 +100,8 @@ object DisplayDetailedIndividualTimetable {
               month,
               day,
               from.getHour*100+from.getMinute,
-              to.getHour*100 + to.getMinute)
+              to.getHour*100 + to.getMinute),
+              loc.map(_.crs.mkString(" ")).getOrElse("")
           )
       }
 
@@ -151,5 +154,6 @@ case class DisplayDetailedIndividualTimetableLocation(
                                                      engineeringAllowance: String,
                                                      path: String,
                                                      line: String,
-                                                     url: String
+                                                     url: String,
+                                                     crs: String
                                                      )

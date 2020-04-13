@@ -26,6 +26,7 @@ case class TimetableForLocation(
                                  platform: Option[String],
                                  pubArr: Option[Time],
                                  pubDep: Option[Time],
-                                 stpIndicator: StpIndicator
+                                 stpIndicator: StpIndicator,
+                                 toc: Option[String]
                                )
 

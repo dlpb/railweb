@@ -64,7 +64,7 @@ class AdminController @Inject()(
           .toList
         val locIds = diff.mkString("\n")
         val messages = List("Admin", "Locations without Routes", s"Number of locations without Route: ${diff.size}")
-        Ok(views.html.plan.location.highlight.trains.index(request.user, token, List(), List(), mapLocations, 0.0d, 0, "", "", locIds, messages))
+        Ok(views.html.plan.location.highlight.trains.index(request.user, token, List(), List(), mapLocations, 0.0d, 0, "", "", locIds, messages, 0,0,0))
       }
   }
 
