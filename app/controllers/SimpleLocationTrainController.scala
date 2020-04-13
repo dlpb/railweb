@@ -44,17 +44,15 @@ class SimpleLocationTrainController @Inject()(
         val (timetable, dates) = locationTrainService.getTrainsForLocationAroundNow(loc)
         val timetables = timetable map {
           f =>
-            f map {
+            f.filter(tt => tt.publicStop && tt.publicTrain) map {
               t =>
                 DisplaySimpleLocationTrain(locationsService, t, dates._1, dates._2, dates._3)
             }
         }
 
-        val l = locationsService.findLocation(loc)
-
         val eventualResult: Future[Result] = timetables map {
           t =>
-            Ok(views.html.plan.location.trains.simple.index(request.user, t.toList, l,
+            Ok(views.html.plan.location.trains.simple.index(request.user, t.toList, location,
               dates._1, dates._2, dates._3, TimetableHelper.time(dates._4), TimetableHelper.time(dates._5), locationsService.getLocations, List.empty)(request.request))
         }
         try {
@@ -107,7 +105,7 @@ class SimpleLocationTrainController @Inject()(
       if (location.isDefined) {
         val timetables = locationTrainService.getTrainsForLocation(location.get.id, y, m, d, from, to) map {
           f =>
-            f map {
+            f.filter(tt => tt.publicStop && tt.publicTrain) map {
               t =>
                 DisplaySimpleLocationTrain(locationsService, t, y, m, d)
             }
