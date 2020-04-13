@@ -139,8 +139,8 @@ object LocationTrainService {
     url
   }
 
-//  def createUrlForReadingTrainTimetable(train: String) = s"http://railweb-timetables-java.herokuapp.com/timetables/train/$train"
-  def createUrlForReadingTrainTimetable(train: String) = s"http://localhost:9090/timetables/train/$train"
+  def createUrlForReadingTrainTimetable(train: String) = s"http://railweb-timetables-java.herokuapp.com/timetables/train/$train"
+//  def createUrlForReadingTrainTimetable(train: String) = s"http://localhost:9090/timetables/train/$train"
 
   def isPublicCategory(category: TrainCategory) = {
     category.equals(OrdinaryLondonUndergroundMetroService) ||
