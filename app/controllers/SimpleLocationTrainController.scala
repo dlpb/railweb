@@ -1,5 +1,6 @@
 package controllers
 
+import java.time.ZonedDateTime
 import java.util.Date
 
 import auth.JWTService
@@ -60,7 +61,7 @@ class SimpleLocationTrainController @Inject()(
         }
         catch {
           case e: TimeoutException =>
-            InternalServerError(views.html.plan.error.index(request.user, locationsService.getLocations,
+            InternalServerError(views.html.plan.search.index(request.user, locationsService.getLocations, defaultDate,
               List(s"Could not get details for $loc around now",
                 "Timed out producing the page"
               ))
@@ -68,7 +69,7 @@ class SimpleLocationTrainController @Inject()(
         }
       }
       else {
-        NotFound(views.html.plan.error.index(request.user, locationsService.getLocations,
+        NotFound(views.html.plan.search.index(request.user, locationsService.getLocations, defaultDate,
           List(s"Could not get details for location $loc around now",
             s"Location ${loc} not found"
           ))(request.request))
@@ -82,13 +83,19 @@ class SimpleLocationTrainController @Inject()(
   def showTrainSearchIndex(): Action[AnyContent] = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     if (request.user.roles.contains(PlanUser)) {
 
-      Ok(views.html.plan.error.index(request.user, locationsService.getLocations, List())(request.request))
+      Ok(views.html.plan.search.index(request.user, locationsService.getLocations, defaultDate, List())(request.request))
     }
     else {
       Forbidden("User not authorized to view page")
     }
   }
 
+
+  private def defaultDate = {
+    val now = ZonedDateTime.now
+    val defaultDate = s"${now.getYear}-${now.getMonthValue}-${now.getDayOfMonth}"
+    defaultDate
+  }
 
   def showTrainsForLocation(loc: String, year: Int, month: Int, day: Int, from: Int, to: Int, date: String) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     if (request.user.roles.contains(PlanUser)) {
@@ -122,7 +129,7 @@ class SimpleLocationTrainController @Inject()(
         }
         catch {
           case e: TimeoutException =>
-            InternalServerError(views.html.plan.error.index(request.user, locationsService.getLocations,
+            InternalServerError(views.html.plan.search.index(request.user, locationsService.getLocations, defaultDate,
               List(s"Could not get details for location $loc on $y-$m-$d",
                 "Timed out producing the page"
               ))
@@ -130,7 +137,7 @@ class SimpleLocationTrainController @Inject()(
         }
       }
       else {
-        NotFound(views.html.plan.error.index(request.user, locationsService.getLocations,
+        NotFound(views.html.plan.search.index(request.user, locationsService.getLocations, defaultDate,
           List(s"Could not get details for location $loc on $y-$m-$d",
             s"Location ${loc} not found"
           ))(request.request))

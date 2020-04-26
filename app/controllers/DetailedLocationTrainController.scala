@@ -1,5 +1,6 @@
 package controllers
 
+import java.time.ZonedDateTime
 import java.util.Date
 
 import auth.JWTService
@@ -58,7 +59,7 @@ class DetailedLocationTrainController @Inject()(
         }
         catch {
           case e: TimeoutException =>
-            InternalServerError(views.html.plan.error.index(request.user, locationsService.getLocations,
+            InternalServerError(views.html.plan.search.index(request.user, locationsService.getLocations,defaultDate,
               List(s"Could not get details for $loc around now",
                 "Timed out producing the page"
               ))
@@ -66,7 +67,7 @@ class DetailedLocationTrainController @Inject()(
         }
       }
       else {
-        NotFound(views.html.plan.error.index(request.user, locationsService.getLocations,
+        NotFound(views.html.plan.search.index(request.user, locationsService.getLocations,defaultDate,
           List(s"Could not get details for $loc around now",
             s"Could not find location ${loc}"
           ))
@@ -103,7 +104,7 @@ class DetailedLocationTrainController @Inject()(
         }
         catch {
           case e: TimeoutException =>
-            InternalServerError(views.html.plan.error.index(request.user, locationsService.getLocations,
+            InternalServerError(views.html.plan.search.index(request.user, locationsService.getLocations,defaultDate,
               List(s"Could not get details for $loc on $year-$month-$day",
                 "Timed out producing the page"
               ))
@@ -111,7 +112,7 @@ class DetailedLocationTrainController @Inject()(
         }
       }
       else {
-        NotFound(views.html.plan.error.index(request.user, locationsService.getLocations,
+        NotFound(views.html.plan.search.index(request.user, locationsService.getLocations,defaultDate,
           List(s"Could not get details for $loc on $year-$month-$day",
             s"Could not find location ${loc}"
           ))
@@ -122,6 +123,12 @@ class DetailedLocationTrainController @Inject()(
       Forbidden("User not authorized to view page")
     }
   }
+  private def defaultDate = {
+    val now = ZonedDateTime.now
+    val defaultDate = s"${now.getYear}-${now.getMonthValue}-${now.getDayOfMonth}"
+    defaultDate
+  }
+
 
 }
 

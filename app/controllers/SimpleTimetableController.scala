@@ -1,5 +1,6 @@
 package controllers
 
+import java.time.ZonedDateTime
 import java.util.Date
 
 import auth.JWTService
@@ -38,7 +39,7 @@ class SimpleTimetableController @Inject()(
           if(data.isDefined) {
             Ok(views.html.plan.timetable.simple.index(request.user, token, data.get.dst, data.get.basicSchedule ,data.get.mapLocations, data.get.routes, data.get.routeLink, List.empty)(request.request))
           }
-          else NotFound(views.html.plan.error.index(request.user,  locationsService.getLocations,
+          else NotFound(views.html.plan.search.index(request.user,  locationsService.getLocations,defaultDate,
             List(s"Could not fnd train $train on $year-$month-$day. Please try searching again"
             )))
       }
@@ -47,7 +48,7 @@ class SimpleTimetableController @Inject()(
       }
       catch{
         case e: TimeoutException =>
-          InternalServerError(views.html.plan.error.index(request.user,  locationsService.getLocations,
+          InternalServerError(views.html.plan.search.index(request.user,  locationsService.getLocations, defaultDate,
             List(s"Could not get details for train $train on $year-$month-$day. Timed out producing the page"
             ))
           (request.request))
@@ -56,6 +57,13 @@ class SimpleTimetableController @Inject()(
     else {
       Forbidden("User not authorized to view page")
     }
+  }
+
+
+  private def defaultDate = {
+    val now = ZonedDateTime.now
+    val defaultDate = s"${now.getYear}-${now.getMonthValue}-${now.getDayOfMonth}"
+    defaultDate
   }
 
 }
