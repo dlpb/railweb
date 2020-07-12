@@ -30,7 +30,7 @@ class UserController @Inject()(
     )(LoginUser.apply)(LoginUser.unapply)
   )
 
-  private val formSubmitUrl = routes.UserController.processLoginAttempt
+  private val formSubmitUrl = routes.UserController.processLoginAttempt()
 
   def showLoginForm = Action { implicit request: MessagesRequest[AnyContent] =>
     Ok(views.html.login.index(form, formSubmitUrl))
@@ -51,18 +51,18 @@ class UserController @Inject()(
       val validUser = userDao.findUserByLoginUser(user)
       validUser match {
         case Some(user) => {
-          Redirect(routes.LandingPageController.showLandingPage)
+          Redirect(routes.LandingPageController.showLandingPage())
           .flashing("info" -> "You are logged in.")
           .withSession(Global.SESSION_USERNAME_KEY -> user.id.toString, Global.SESSION_USER_TOKEN -> jwtService.createToken(user, new Date()))
         }
         case None => {
-          Redirect(routes.UserController.showLoginForm)
+          Redirect(routes.UserController.showLoginForm())
             .flashing("error" -> "Invalid username/password.")
             .withNewSession
         }
       }
     }
-    val formValidationResult: Form[LoginUser] = form.bindFromRequest
+    val formValidationResult: Form[LoginUser] = form.bindFromRequest()
     formValidationResult.fold(
       errorFunction,
       successFunction

@@ -87,26 +87,26 @@ postUrl: Call
             }
             }
 
-            @helper.form(postUrl, 'id -> "user-login-form") {
+            @helper.form(postUrl, Symbol("id") -> "user-login-form") {
 
             @helper.CSRF.formField
 
             @helper.inputText(
             form("username"),
-            '_label -> "Username",
-            'placeholder -> "username",
-            'id -> "username",
-            'class -> "form-control",
-            'size -> 60
+            Symbol("_label") -> "Username",
+            Symbol("placeholder") -> "username",
+            Symbol("id") -> "username",
+            Symbol("class") -> "form-control",
+            Symbol("size") -> 60
             )
 
             @helper.inputPassword(
             form("password"),
-            '_label -> "Password",
-            'placeholder -> "password",
-            'class -> "form-control",
-            'id -> "password",
-            'size -> 60
+            Symbol("_label") -> "Password",
+            Symbol("placeholder") -> "password",
+            Symbol("class") -> "form-control",
+            Symbol("id") -> "password",
+            Symbol("size") -> 60
             )
 
             <button class="btn btn-primary">Login</button>

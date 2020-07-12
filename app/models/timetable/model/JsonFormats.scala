@@ -289,7 +289,7 @@ case object TimingSerializer extends CustomSerializer[Timing](format => ( {
     case other => Class(other)
   }
   case JInt(int) if int >= 0 && int <= 999 => Class(int.toString)
-  case JInt(int) if int >= 1000 && int <= 9999 => Hauled(int.intValue())
+  case JInt(int) if int >= 1000 && int <= 9999 => Hauled(int.intValue)
 
 }, {
   case DMUPowerCarAndTrailer => JString("DMUPowerCarAndTrailer")

@@ -194,7 +194,7 @@ srs: String)(implicit request: Request[AnyContent])
                     @for(related <- location.relatedLocations) {
                         <li style="list-style-type: none;">
                             <div style="padding: 1px;">
-                            @helper.form(visitCalls(related.id), 'id -> "visit-form-@related.id", 'style -> "display: inline") {
+                            @helper.form(visitCalls(related.id), Symbol("id") -> "visit-form-@related.id", Symbol("style") -> "display: inline") {
                                 @helper.CSRF.formField
                                 <input type="hidden" id="Authorization-@related.id" name="Authorization" value="@token"/>
                                 @if(visits(related.id)){
@@ -216,7 +216,7 @@ srs: String)(implicit request: Request[AnyContent])
                     </ul>
                 }
             } else {
-                @helper.form(visitCalls(location.relatedLocations.head.id), 'id -> "visit-form-@location.relatedLocations.head.id", 'style -> "display: inline") {
+                @helper.form(visitCalls(location.relatedLocations.head.id), Symbol("id") -> "visit-form-@location.relatedLocations.head.id", Symbol("style") -> "display: inline") {
                     @helper.CSRF.formField
                     <input type="hidden" id="Authorization-@location.relatedLocations.head.id" name="Authorization" value="@token"/>
                     @if(visits(location.relatedLocations.head.id)){

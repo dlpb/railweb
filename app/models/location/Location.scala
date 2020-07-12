@@ -33,7 +33,8 @@ case class MapLocation(id: String,
                        location: SpatialLocation,
                        orrStation: Boolean,
                        crs: Set[String],
-                       tiploc: Set[String]
+                       tiploc: Set[String],
+                       srs: String
                       )
 object MapLocation {
   def apply(location: Location): MapLocation = {
@@ -45,7 +46,8 @@ object MapLocation {
       location.location,
       location.orrStation,
       location.crs,
-      location.tiploc
+      location.tiploc,
+      location.nrInfo.map(_.srs).getOrElse("")
     )
   }
 }

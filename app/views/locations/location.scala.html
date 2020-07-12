@@ -110,7 +110,7 @@ removeAll: Call)(implicit request: Request[AnyContent])
                 <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
                     <div class="btn-group mr-2" role="group" aria-label="First group">
                         <div id="location-visit-form">
-                            @helper.form(visitUrl, 'id -> "visit-form") {
+                            @helper.form(visitUrl, Symbol("id") -> "visit-form") {
                             @helper.CSRF.formField
                             <input type="hidden" id="Authorization" name="Authorization" value="@token"/>
                             <button id="visit" class="btn btn-primary">Visit</button>
@@ -120,7 +120,7 @@ removeAll: Call)(implicit request: Request[AnyContent])
 
                     <div class="btn-group mr-2" role="group" aria-label="Second group">
                         <div id="location-remove-last-visit-form">
-                            @helper.form(removeLast, 'id -> "visit-form") {
+                            @helper.form(removeLast, Symbol("id") -> "visit-form") {
                             @helper.CSRF.formField
                             <input type="hidden" id="Authorization-last-visit" name="Authorization" value="@token"/>
                             <button id="remove-last-visit" class="btn btn-danger">Remove Last Visit</button>
@@ -129,7 +129,7 @@ removeAll: Call)(implicit request: Request[AnyContent])
                     </div>
                     <div class="btn-group mr-2" role="group" aria-label="Third group">
                         <div id="location-remove-all-visit-form">
-                            @helper.form(removeAll, 'id -> "visit-form") {
+                            @helper.form(removeAll, Symbol("id") -> "visit-form") {
                             @helper.CSRF.formField
                             <input type="hidden" id="Authorization-all-visit" name="Authorization" value="@token"/>
                             <button id="remove-all-visit" class="btn btn-danger">Remove All Visit</button>

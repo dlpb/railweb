@@ -170,7 +170,7 @@ srs: String)(implicit request: Request[AnyContent])
 
         @for((key, route) <- routeList){
         <div style="padding:1px">
-            @helper.form(visitCalls(key), 'id -> "visit-form-@key", 'style -> "display: inline") {
+            @helper.form(visitCalls(key), Symbol("id") -> "visit-form-@key", Symbol("style") -> "display: inline") {
             @helper.CSRF.formField
             <input type="hidden" id="Authorization-@key" name="Authorization" value="@token"/>
             @if(visits(key)){

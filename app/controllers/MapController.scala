@@ -17,12 +17,12 @@ class MapController @Inject()(
                                        jwtService: JWTService
 
                                      ) extends AbstractController(cc) with I18nSupport {
-  private val logoutUrl = routes.AuthenticatedUserController.logout
+  private val logoutUrl = routes.AuthenticatedUserController.logout()
 
-  def showMapPage() = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
+  def showMapPage(colour: String) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     if(request.user.roles.contains(MapUser)){
       val token = jwtService.createToken(request.user, new Date())
-      Ok(views.html.map.index(request.user, token, routes.ApiAuthenticatedController.visitLocation)(request.request))
+      Ok(views.html.map.index(request.user, token, routes.ApiAuthenticatedController.visitLocation(), colour)(request.request))
     }
     else {
       Forbidden("User not authorized to view page")

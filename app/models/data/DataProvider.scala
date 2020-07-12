@@ -8,7 +8,7 @@ trait DataProvider[T] {
 
   def getVisits(user: User): Option[Map[String, List[String]]]
   def saveVisit(id: T, user: User): Unit
-  def saveVisits(visits: Option[Map[String, List[String]]], user: User)
+  def saveVisits(visits: Option[Map[String, List[String]]], user: User): Unit
   def removeLastVisit(id: T, user: User): Unit
   def removeAllVisits(id: T, user: User): Unit
   def migrate(user: User, id: T, ids: List[T]): Unit
