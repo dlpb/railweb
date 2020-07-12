@@ -3,7 +3,7 @@ package models.location
 import java.io.InputStream
 
 import com.typesafe.config.Config
-import javax.inject.Inject
+import javax.inject.{Inject, Singleton}
 import models.auth.User
 import models.data.LocationDataProvider
 import org.json4s._

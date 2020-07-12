@@ -1,7 +1,7 @@
 package models.auth
 
 import com.auth0.jwt.interfaces.Claim
-import javax.inject.Inject
+import javax.inject.{Inject, Singleton}
 import models.auth.roles.Role
 
 @Singleton
