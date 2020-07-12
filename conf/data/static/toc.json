@@ -1,0 +1,953 @@
+[ {
+  "id" : "LLANBERISLAKERLY",
+  "name" : "Llanberris Lake Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "EMBSAY&BOLTONABBEYRLY",
+  "name" : "Embsay & Bolton Abbey Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "LU-BKL",
+  "name" : "London Underground Bakerloo Line",
+  "colour" : {
+    "foregroundColour" : "#ffffff",
+    "backgroundColour" : "#a45a2a"
+  }
+}, {
+  "id" : "ME",
+  "name" : "Mersey Rail",
+  "colour" : {
+    "foregroundColour" : "#302407",
+    "backgroundColour" : "#fff200"
+  }
+}, {
+  "id" : "CHONNORPRINCESRISBOROUGHRLY",
+  "name" : "Chinnor & Princes Risborough Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "LYNTON&LYNMOUTHCLIFFRLY",
+  "name" : "Lynton & Lynmouth Cliff Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "GREATORMETRAMWAY",
+  "name" : "Great Orme Tramway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "LU-CEN",
+  "name" : "London Underground Central Line",
+  "colour" : {
+    "foregroundColour" : "#ffffff",
+    "backgroundColour" : "#da291c"
+  }
+}, {
+  "id" : "LU-PIC",
+  "name" : "London Underground Picadilly Line",
+  "colour" : {
+    "foregroundColour" : "#ffffff",
+    "backgroundColour" : "#10069f"
+  }
+}, {
+  "id" : "LM",
+  "name" : "London Midland",
+  "colour" : {
+    "foregroundColour" : "#e4f1fe",
+    "backgroundColour" : "#004c45"
+  }
+}, {
+  "id" : "LU-HAC",
+  "name" : "London Underground Hammersmith & City Line",
+  "colour" : {
+    "foregroundColour" : "#ffffff",
+    "backgroundColour" : "#e89cae"
+  }
+}, {
+  "id" : "LAUNCETONRLY",
+  "name" : "Launceston Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "CAMBRIANHERITAGERLY",
+  "name" : "Cambrian Heritage Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "VT",
+  "name" : "Virgin Trains",
+  "colour" : {
+    "foregroundColour" : "#e4f1fe",
+    "backgroundColour" : "#ff0000"
+  }
+}, {
+  "id" : "GN",
+  "name" : "Great Northern",
+  "colour" : {
+    "foregroundColour" : "#ffffff",
+    "backgroundColour" : "#e9438d"
+  }
+}, {
+  "id" : "CALEDONIANRLY",
+  "name" : "Caledonian Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "LU-DIS",
+  "name" : "London Underground District Line",
+  "colour" : {
+    "foregroundColour" : "#ffffff",
+    "backgroundColour" : "#007a33"
+  }
+}, {
+  "id" : "SX",
+  "name" : "Stansted Express",
+  "colour" : {
+    "foregroundColour" : "#ffffff",
+    "backgroundColour" : "#6b717a"
+  }
+}, {
+  "id" : "AW",
+  "name" : "Arriva Wales",
+  "colour" : {
+    "foregroundColour" : "#002a00",
+    "backgroundColour" : "#30c5b8"
+  }
+}, {
+  "id" : "LLANGOLLENRLY",
+  "name" : "Llangollen Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "WALK",
+  "name" : "Walk",
+  "colour" : {
+    "foregroundColour" : "#ffffff",
+    "backgroundColour" : "#78be20"
+  }
+}, {
+  "id" : "MIDNORFOLKRLY",
+  "name" : "Mid Norfolk Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "ZF",
+  "name" : "Ferry Link",
+  "colour" : {
+    "foregroundColour" : "#ffffff",
+    "backgroundColour" : "#007fff"
+  }
+}, {
+  "id" : "LO",
+  "name" : "London Overground",
+  "colour" : {
+    "foregroundColour" : "#2a150d",
+    "backgroundColour" : "#e87722"
+  }
+}, {
+  "id" : "LU",
+  "name" : "London Underground",
+  "colour" : {
+    "foregroundColour" : "#ffffff",
+    "backgroundColour" : "#10069f"
+  }
+}, {
+  "id" : "HX",
+  "name" : "Heathrow Express",
+  "colour" : {
+    "foregroundColour" : "#ffecdb",
+    "backgroundColour" : "#532e63"
+  }
+}, {
+  "id" : "TALLYLLYNRLY",
+  "name" : "Tallyllyn Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "BODMIN&WENFORDRLY",
+  "name" : "Bodmin & Wenford Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "DEANFORESTRLY",
+  "name" : "Dean Forest Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "MENGAPPSFARMMUSUM",
+  "name" : "Mengapps Farm Museum",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "RT",
+  "name" : "Network Rail",
+  "colour" : {
+    "foregroundColour" : "#2a150d",
+    "backgroundColour" : "#f48328"
+  }
+}, {
+  "id" : "HT",
+  "name" : "Hull Trains",
+  "colour" : {
+    "foregroundColour" : "#ffecdb",
+    "backgroundColour" : "#de005c"
+  }
+}, {
+  "id" : "EC",
+  "name" : "East Coast",
+  "colour" : {
+    "foregroundColour" : "#e4f1fe",
+    "backgroundColour" : "#d70e35"
+  }
+}, {
+  "id" : "SWINDON&CRICKLADERLY",
+  "name" : "Swindon & Cricklade Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "LAKESIDE&HAVERTHWAITERLY",
+  "name" : "Lakeside & Haverthwaite Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "FFESTINIOGRLY",
+  "name" : "Ffestiniog Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "PLYMRLY",
+  "name" : "Plym Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "MOUNTSORRELRLY",
+  "name" : "Mountsorrel Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "PAIGNTON&DARTMOTHRLY",
+  "name" : "Paignton & Dartmouth Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "WELLS&WALSINGHAMRLY",
+  "name" : "Wells & Walshingham Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "NT",
+  "name" : "Northern Rail",
+  "colour" : {
+    "foregroundColour" : "#e4f1fe",
+    "backgroundColour" : "#262262"
+  }
+}, {
+  "id" : "PONTYPOOL&BLAENAVONRLY",
+  "name" : "Pontypool & Blaenavon Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "CC",
+  "name" : "C2C",
+  "colour" : {
+    "foregroundColour" : "#ffffff",
+    "backgroundColour" : "#b7007c"
+  }
+}, {
+  "id" : "LEADHILLS&WANLOCKHEADRLY",
+  "name" : "Leadhills & Wanlockhead Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "STRATHSPEYRLY",
+  "name" : "Strathspey Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "BRECONMOUNTAINRLY",
+  "name" : "Brecon Mountain Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "SOUTHDEVONRLY",
+  "name" : "South Devon Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "KEITHDUFFTOWNRLY",
+  "name" : "Keith & Dufftown Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "IOWSTEAMRLY",
+  "name" : "Isle of Wight Steam Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "VALEOFRHEIDOLRLY",
+  "name" : "Vale of Rheidol Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "BATTLEFIELDLINERLY",
+  "name" : "Battlefield Line Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "UNDERGROUND",
+  "name" : "London Transport",
+  "colour" : {
+    "foregroundColour" : "#ffffff",
+    "backgroundColour" : "#10069f"
+  }
+}, {
+  "id" : "RAVENGLASS&ESKDALERLY",
+  "name" : "Ravenglass & Eskdale Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "ES",
+  "name" : "Eurostar",
+  "colour" : {
+    "foregroundColour" : "#302407",
+    "backgroundColour" : "#ffd700"
+  }
+}, {
+  "id" : "NORTHBEACHRLY",
+  "name" : "North Beach Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "TW",
+  "name" : "Tyne & Wear Metro",
+  "colour" : {
+    "foregroundColour" : "#ffffff",
+    "backgroundColour" : "#000000"
+  }
+}, {
+  "id" : "LU-NTH",
+  "name" : "London Underground Northern Line",
+  "colour" : {
+    "foregroundColour" : "#ffffff",
+    "backgroundColour" : "#000000"
+  }
+}, {
+  "id" : "RI",
+  "name" : "Iarnród Éireann",
+  "colour" : {
+    "foregroundColour" : "#ffffff",
+    "backgroundColour" : "#0072bc"
+  }
+}, {
+  "id" : "SW",
+  "name" : "South West Rail",
+  "colour" : {
+    "foregroundColour" : "#e4f1fe",
+    "backgroundColour" : "#24398c"
+  }
+}, {
+  "id" : "GC",
+  "name" : "Grand Central",
+  "colour" : {
+    "foregroundColour" : "#c8f7c5",
+    "backgroundColour" : "#2c3838"
+  }
+}, {
+  "id" : "TRANSFER",
+  "name" : "Transfer",
+  "colour" : {
+    "foregroundColour" : "#ffffff",
+    "backgroundColour" : "#78be20"
+  }
+}, {
+  "id" : "LU-VIC",
+  "name" : "London Underground Victoria Line",
+  "colour" : {
+    "foregroundColour" : "#ffffff",
+    "backgroundColour" : "#00a3e0"
+  }
+}, {
+  "id" : "LU-CIR",
+  "name" : "London Underground Circle Line",
+  "colour" : {
+    "foregroundColour" : "#ffffff",
+    "backgroundColour" : "#ffcd00"
+  }
+}, {
+  "id" : "LAVENDERLINE",
+  "name" : "Lavender Line",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "NENEVALLEYRLY",
+  "name" : "Nene Valley Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "HELSTONRLY",
+  "name" : "Helston Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "EPPINGONGARRLY",
+  "name" : "Epping Ongar Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "NORTHYORKSHIREMOORSRLY",
+  "name" : "North Yorkshire Moors Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "MIDDLETONRLY",
+  "name" : "Middleton Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "CHURNETVALLEYRLY",
+  "name" : "Churnet Valley Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "TP",
+  "name" : "TransPennine",
+  "colour" : {
+    "foregroundColour" : "#050709",
+    "backgroundColour" : "#06a6e4"
+  }
+}, {
+  "id" : "METRO",
+  "name" : "Metrolink Tram",
+  "colour" : {
+    "foregroundColour" : "#1d1905",
+    "backgroundColour" : "#ffdb4e"
+  }
+}, {
+  "id" : "GREATCENTRALRLY",
+  "name" : "Great Central Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "FAIRBOURNERLY",
+  "name" : "Fairbourne Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "FRGT",
+  "name" : "FREIGHT",
+  "colour" : {
+    "foregroundColour" : "#082213",
+    "backgroundColour" : "#00FF00"
+  }
+}, {
+  "id" : "SE",
+  "name" : "South Eastern",
+  "colour" : {
+    "foregroundColour" : "#000036",
+    "backgroundColour" : "#00afe8"
+  }
+}, {
+  "id" : "VOLKSELECTRICRLY",
+  "name" : "Volks Electric Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "EASTLANCASHIRERLY",
+  "name" : "East Lancashire Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "WEARDALERLY",
+  "name" : "Weardale Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "GR",
+  "name" : "East Coast",
+  "colour" : {
+    "foregroundColour" : "#e4f1fe",
+    "backgroundColour" : "#d70e35"
+  }
+}, {
+  "id" : "XR",
+  "name" : "Crossrail",
+  "colour" : {
+    "foregroundColour" : "#1d0029",
+    "backgroundColour" : "#9364cc"
+  }
+}, {
+  "id" : "BICTONWOODLANDRLY",
+  "name" : "Bicton Woodland Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "BLUEBELLRLY",
+  "name" : "Bluebell Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "WELSHPOOL&LLANFAIRRLY",
+  "name" : "Welshpool & Llanfair Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "EDENVALLEYRLY",
+  "name" : "Eden Valley Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "ZB",
+  "name" : "Bus Link",
+  "colour" : {
+    "foregroundColour" : "#ffffff",
+    "backgroundColour" : "#dc241f"
+  }
+}, {
+  "id" : "BALALAKERLY",
+  "name" : "Bala Lake Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "GWILIRLY",
+  "name" : "Gwili Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "TL",
+  "name" : "Thames Link",
+  "colour" : {
+    "foregroundColour" : "#ffffff",
+    "backgroundColour" : "#e9438d"
+  }
+}, {
+  "id" : "NORTHNORFOLKRLY",
+  "name" : "North Norfolk Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "XC",
+  "name" : "Cross Country",
+  "colour" : {
+    "foregroundColour" : "#fefefe",
+    "backgroundColour" : "#660f21"
+  }
+}, {
+  "id" : "SEATONTRAMWAY",
+  "name" : "Steaton Tramway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "ECCLESBOURNEVALLEYRLY",
+  "name" : "Ecclesbourne Valley Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "KENT&EASTSUSSEXRAILWAY",
+  "name" : "Kent & East Sussex Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "BLACKPOOL&FLEETWOODTRMY",
+  "name" : "Blackpool & Fleetwood Tramway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "CORRISRLY",
+  "name" : "Corris Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "TUBE",
+  "name" : "London Underground",
+  "colour" : {
+    "foregroundColour" : "#ffffff",
+    "backgroundColour" : "#10069f"
+  }
+}, {
+  "id" : "WELSHHIGHLANDRLY",
+  "name" : "Welsh Highland Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "KIRKLEESLIGHTRLY",
+  "name" : "Kirklees Light Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "CHOSLEY&WALLINGFORDRLY",
+  "name" : "Chosley & Wallingford Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "ROMNEYHYTHE&DYMCHURCHRLY",
+  "name" : "Romney, Hythe & Dymchurch Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "SPAVALLEYRLY",
+  "name" : "Spa Valley Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "KEIGHLY&WORTHVALLEYRLY",
+  "name" : "Keithly & Worth Valley Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "EM",
+  "name" : "East Midlands",
+  "colour" : {
+    "foregroundColour" : "#2b0000",
+    "backgroundColour" : "#ffa500"
+  }
+}, {
+  "id" : "CS",
+  "name" : "Caledonean Sleeper",
+  "colour" : {
+    "foregroundColour" : "#c8f7c5",
+    "backgroundColour" : "#2a4549"
+  }
+}, {
+  "id" : "TELFORD&HORSEHAYSTEAMRLY",
+  "name" : "Telford & Horsehay Steam Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "WENSLEYDALERLY",
+  "name" : "Wensleydale Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "EASTKENTRLY",
+  "name" : "East Kent Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "SR",
+  "name" : "Scot Rail",
+  "colour" : {
+    "foregroundColour" : "#ececec",
+    "backgroundColour" : "#1c4074"
+  }
+}, {
+  "id" : "EASTSOMERSETRLY",
+  "name" : "East Somerset Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "LT",
+  "name" : "London Transport",
+  "colour" : {
+    "foregroundColour" : "#ffffff",
+    "backgroundColour" : "#10069f"
+  }
+}, {
+  "id" : "LU-MET",
+  "name" : "London Underground Metropolitan Line",
+  "colour" : {
+    "foregroundColour" : "#ffffff",
+    "backgroundColour" : "#840b55"
+  }
+}, {
+  "id" : "MIDHANTSRLY",
+  "name" : "Mid Hants Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "SNOWDONMOUNTAINRLY",
+  "name" : "Snowdon Mountain Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "CHASEWATERRLY",
+  "name" : "Chasewater Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "CH",
+  "name" : "Chiltern",
+  "colour" : {
+    "foregroundColour" : "#082213",
+    "backgroundColour" : "#00bfff"
+  }
+}, {
+  "id" : "SN",
+  "name" : "Southern",
+  "colour" : {
+    "foregroundColour" : "#082213",
+    "backgroundColour" : "#8cc63e"
+  }
+}, {
+  "id" : "BUREVALLEYRLY",
+  "name" : "Bure Valley Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "PEAKRLY",
+  "name" : "Peak Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "LE",
+  "name" : "Greater Anglia",
+  "colour" : {
+    "foregroundColour" : "#e4f1fe",
+    "backgroundColour" : "#d70428"
+  }
+}, {
+  "id" : "GLOUCESTERSHIREWARWICKSHIRERLY",
+  "name" : "Gloucestershire Warwickshire Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "LU-JUB",
+  "name" : "London Underground Jubilee Line",
+  "colour" : {
+    "foregroundColour" : "#ffffff",
+    "backgroundColour" : "#7c878e"
+  }
+}, {
+  "id" : "HE",
+  "name" : "Heathrow Connect",
+  "colour" : {
+    "foregroundColour" : "#382903",
+    "backgroundColour" : "#f78f1e"
+  }
+}, {
+  "id" : "GW",
+  "name" : "Great Western",
+  "colour" : {
+    "foregroundColour" : "#e0ffff",
+    "backgroundColour" : "#0a493e"
+  }
+}, {
+  "id" : "BUS",
+  "name" : "Bus Link",
+  "colour" : {
+    "foregroundColour" : "#ffffff",
+    "backgroundColour" : "#dc241f"
+  }
+}, {
+  "id" : "TEIFIVALLEYRLY",
+  "name" : "Teifi Valley Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "WESTSOMERSETRLY",
+  "name" : "West Somerset Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "SEVERNVALLEYRLY",
+  "name" : "Severn Valley Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "LU-WNC",
+  "name" : "London Underground Waterloo & City Line",
+  "colour" : {
+    "foregroundColour" : "#ffffff",
+    "backgroundColour" : "#6eceb2"
+  }
+}, {
+  "id" : "BONESS&KINNEILRLY",
+  "name" : "Bo'ness and Kinneil Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "MTLK",
+  "name" : "Metrolink Tram",
+  "colour" : {
+    "foregroundColour" : "#1d1905",
+    "backgroundColour" : "#ffdb4e"
+  }
+}, {
+  "id" : "LYNTON&BARNSTAPLERLY",
+  "name" : "Lynton & Barnstaple Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "WM",
+  "name" : "West Midlands",
+  "colour" : {
+    "foregroundColour" : "#000036",
+    "backgroundColour" : "#ff8200"
+  }
+}, {
+  "id" : "ROYALDEESIDERLY",
+  "name" : "Royal Deeside Railway",
+  "colour" : {
+    "foregroundColour" : "#ecf0f1",
+    "backgroundColour" : "#333333"
+  }
+}, {
+  "id" : "IL",
+  "name" : "Island Line",
+  "colour" : {
+    "foregroundColour" : "#e0ffff",
+    "backgroundColour" : "#1e90ff"
+  }
+}, {
+  "id" : "_DEFAULT",
+  "name" : "Unknown operator",
+  "colour" : {
+    "foregroundColour" : "#2b0000",
+    "backgroundColour" : "#ffb8b8"
+  }
+} ]

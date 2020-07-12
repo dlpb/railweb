@@ -1,0 +1,3051 @@
+[ {
+  "id" : "A.01",
+  "name" : "SRS A.01 Victoria Lines",
+  "route" : "South East",
+  "region" : "Kent & HS1",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#c8c8c8",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "A.02",
+  "name" : "SRS A.02 Otford - Sevenoaks",
+  "route" : "South East",
+  "region" : "Kent & HS1",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#c8c8c8",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "A.03",
+  "name" : "SRS A.03 London - Chislehurst",
+  "route" : "South East",
+  "region" : "Kent & HS1",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#c8c8c8",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "A.04",
+  "name" : "SRS A.04 Chislehurst - Tonbridge",
+  "route" : "South East",
+  "region" : "Kent & HS1",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#c8c8c8",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "A.05",
+  "name" : "SRS A.05 Chislehurst - Ashford",
+  "route" : "South East",
+  "region" : "Kent & HS1",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#c8c8c8",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "A.06",
+  "name" : "SRS A.06 Tonbridge - Hastings",
+  "route" : "South East",
+  "region" : "Kent & HS1",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#c8c8c8",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "A.07",
+  "name" : "SRS A.07 Dartford lines to Gravesend & Hayes Branch",
+  "route" : "South East",
+  "region" : "Kent & HS1",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#c8c8c8",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "A.08",
+  "name" : "SRS A.08 Bromley North Branch",
+  "route" : "South East",
+  "region" : "Kent & HS1",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#c8c8c8",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "A.09",
+  "name" : "SRS A.09 Gravesend/Swanley - Margate",
+  "route" : "South East",
+  "region" : "Kent & HS1",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#c8c8c8",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "A.10",
+  "name" : "SRS A.10 Sheerness Branch",
+  "route" : "South East",
+  "region" : "Kent & HS1",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#c8c8c8",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "A.11",
+  "name" : "SRS A.11 Strood - Paddock Wood",
+  "route" : "South East",
+  "region" : "Kent & HS1",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#c8c8c8",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "A.12",
+  "name" : "SRS A.12 East Kent Routes",
+  "route" : "South East",
+  "region" : "Kent & HS1",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#c8c8c8",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "A.13",
+  "name" : "SRS A.13 Hastings - Ashford",
+  "route" : "South East",
+  "region" : "Kent & HS1",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#c8c8c8",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "A.14",
+  "name" : "SRS A.14 Tonbridge - Continental Junction",
+  "route" : "South East",
+  "region" : "Kent & HS1",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#c8c8c8",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "A.99",
+  "name" : "SRS A.99 Freight routes",
+  "route" : "South East",
+  "region" : "Kent & HS1",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#c8c8c8",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "B.01",
+  "name" : "SRS B.01 London Victoria - Windmill Bridge Junction ",
+  "route" : "South East",
+  "region" : "Sussex",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#1f78b4",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "B.02",
+  "name" : "SRS B.02 Windmill Bridge Junction - Brighton ",
+  "route" : "South East",
+  "region" : "Sussex",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#1f78b4",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "B.03",
+  "name" : "SRS B.03 London Bridge - Windmill Bridge Junction",
+  "route" : "South East",
+  "region" : "Sussex",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#1f78b4",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "B.04",
+  "name" : "SRS B.04  Three Bridges - Arundel Junction",
+  "route" : "South East",
+  "region" : "Sussex",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#1f78b4",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "B.05",
+  "name" : "SRS B.05 Brighton - Havant ",
+  "route" : "South East",
+  "region" : "Sussex",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#1f78b4",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "B.06",
+  "name" : "SRS B.06 Brighton/Wivelsfield - Seaford/Hastings ",
+  "route" : "South East",
+  "region" : "Sussex",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#1f78b4",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "B.07",
+  "name" : "SRS B.07  South Central Inner Suburban",
+  "route" : "South East",
+  "region" : "Sussex",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#1f78b4",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "B.08",
+  "name" : "SRS B.08 South Central Sutton Lines",
+  "route" : "South East",
+  "region" : "Sussex",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#1f78b4",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "B.09",
+  "name" : "SRS B.09 Dorking - Horsham",
+  "route" : "South East",
+  "region" : "Sussex",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#1f78b4",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "B.10",
+  "name" : "SRS B.10 Hurst Green - Uckfield ",
+  "route" : "South East",
+  "region" : "Sussex",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#1f78b4",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "B.11",
+  "name" : "SRS B.11 Tattenham Corner and Caterham Lines ",
+  "route" : "South East",
+  "region" : "Sussex",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#1f78b4",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "B.12",
+  "name" : "SRS B.12 East Grinstead Line",
+  "route" : "South East",
+  "region" : "Sussex",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#1f78b4",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "B.13",
+  "name" : "SRS B.13 West London Line",
+  "route" : "South East",
+  "region" : "Sussex",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#1f78b4",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "B.14",
+  "name" : "SRS B.14 Thameslink Core",
+  "route" : "South East",
+  "region" : "Sussex",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#1f78b4",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "B.15",
+  "name" : "SRS B.15 Redhill - Tonbridge ",
+  "route" : "South East",
+  "region" : "Sussex",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#1f78b4",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "B.99",
+  "name" : "SRS B.99 Freight routes",
+  "route" : "South East",
+  "region" : "Sussex",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#1f78b4",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "C.01",
+  "name" : "SRS C.01 Waterloo – Woking",
+  "route" : "Wessex",
+  "region" : "Wessex",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#fdbf6f",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "C.02",
+  "name" : "SRS C.02 Woking – Basingstoke",
+  "route" : "Wessex",
+  "region" : "Wessex",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#fdbf6f",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "C.03",
+  "name" : "SRS C.03 Basingstoke – Southampton",
+  "route" : "Wessex",
+  "region" : "Wessex",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#fdbf6f",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "C.04",
+  "name" : "SRS C.04 Southampton – Weymouth",
+  "route" : "Wessex",
+  "region" : "Wessex",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#fdbf6f",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "C.05",
+  "name" : "SRS C.05 Lymington Branch",
+  "route" : "Wessex",
+  "region" : "Wessex",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#fdbf6f",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "C.06",
+  "name" : "SRS C.06 Woking – Portsmouth",
+  "route" : "Wessex",
+  "region" : "Wessex",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#fdbf6f",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "C.07",
+  "name" : "SRS C.07 Main Line Suburban Lines",
+  "route" : "Wessex",
+  "region" : "Wessex",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#fdbf6f",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "C.08",
+  "name" : "SRS C.08 Redhill – Guildford",
+  "route" : "Wessex",
+  "region" : "Wessex",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#fdbf6f",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "C.09",
+  "name" : "SRS C.09 Guildford – Wokingham",
+  "route" : "Wessex",
+  "region" : "Wessex",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#fdbf6f",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "C.10",
+  "name" : "SRS C.10 Isle of Wight",
+  "route" : "Wessex",
+  "region" : "Wessex",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#fdbf6f",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "C.11",
+  "name" : "SRS C.11 Cosham to St Denys/Eastleigh",
+  "route" : "Wessex",
+  "region" : "Wessex",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#fdbf6f",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "C.12",
+  "name" : "SRS C.12 Inner Windsor Lines",
+  "route" : "Wessex",
+  "region" : "Wessex",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#fdbf6f",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "C.13",
+  "name" : "SRS C.13 Outer Windsor Lines",
+  "route" : "Wessex",
+  "region" : "Wessex",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#fdbf6f",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "C.14",
+  "name" : "SRS C.14 Basingstoke – Salisbury",
+  "route" : "Wessex",
+  "region" : "Wessex",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#fdbf6f",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "C.15",
+  "name" : "SRS C.15 Salisbury – Exmouth Junction",
+  "route" : "Wessex",
+  "region" : "Wessex",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#fdbf6f",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "C.16",
+  "name" : "SRS C.16 Redbridge/Eastleigh – Salisbury",
+  "route" : "Wessex",
+  "region" : "Wessex",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#fdbf6f",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "C.17",
+  "name" : "SRS C.17 Brookwood – Alton ",
+  "route" : "Wessex",
+  "region" : "Wessex",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#fdbf6f",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "C.99",
+  "name" : "SRS C.99 Other Freight Lines ",
+  "route" : "Wessex",
+  "region" : "Wessex",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#fdbf6f",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "D.01",
+  "name" : "SRS D.01 Bethnal Green – Stansted Airport",
+  "route" : "Anglia",
+  "region" : "East Anglia",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#d5bb8b",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "D.02",
+  "name" : "SRS D.02 Hackney Downs – Cheshunt/Enfield Town",
+  "route" : "Anglia",
+  "region" : "East Anglia",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#d5bb8b",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "D.03",
+  "name" : "SRS D.03 Hertford East Branch",
+  "route" : "Anglia",
+  "region" : "East Anglia",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#d5bb8b",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "D.04",
+  "name" : "SRS D.04 Chingford Branch",
+  "route" : "Anglia",
+  "region" : "East Anglia",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#d5bb8b",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "D.05",
+  "name" : "SRS D.05 Stansted – Ely",
+  "route" : "Anglia",
+  "region" : "East Anglia",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#d5bb8b",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "D.06",
+  "name" : "SRS D.06 Ely – Kings Lynn",
+  "route" : "Anglia",
+  "region" : "East Anglia",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#d5bb8b",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "D.07",
+  "name" : "SRS D.07 Peterborough – Stowmarket",
+  "route" : "Anglia",
+  "region" : "East Anglia",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#d5bb8b",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "D.08",
+  "name" : "SRS D.08 Cambridge – Chippenham Junction",
+  "route" : "Anglia",
+  "region" : "East Anglia",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#d5bb8b",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "D.09",
+  "name" : "SRS D.09 Ely – Norwich",
+  "route" : "Anglia",
+  "region" : "East Anglia",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#d5bb8b",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "D.10",
+  "name" : "SRS D.10 Liverpool Street – Shenfield",
+  "route" : "Anglia",
+  "region" : "East Anglia",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#d5bb8b",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "D.11",
+  "name" : "SRS D.11 Shenfield – Ipswich",
+  "route" : "Anglia",
+  "region" : "East Anglia",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#d5bb8b",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "D.12",
+  "name" : "SRS D.12 Ipswich – Norwich",
+  "route" : "Anglia",
+  "region" : "East Anglia",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#d5bb8b",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "D.13",
+  "name" : "SRS D.13 Shenfield – Southend/Southminster",
+  "route" : "Anglia",
+  "region" : "East Anglia",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#d5bb8b",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "D.14",
+  "name" : "SRS D.14 Braintree Branch",
+  "route" : "Anglia",
+  "region" : "East Anglia",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#d5bb8b",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "D.15",
+  "name" : "SRS D.15 Harwich Branch",
+  "route" : "Anglia",
+  "region" : "East Anglia",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#d5bb8b",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "D.16",
+  "name" : "SRS D.16 Walton and Clacton Branches",
+  "route" : "Anglia",
+  "region" : "East Anglia",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#d5bb8b",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "D.17",
+  "name" : "SRS D.17 Upminster Branch",
+  "route" : "Anglia",
+  "region" : "East Anglia",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#d5bb8b",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "D.18",
+  "name" : "SRS D.18 Sudbury Branch",
+  "route" : "Anglia",
+  "region" : "East Anglia",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#d5bb8b",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "D.19",
+  "name" : "SRS D.19 East Suffolk Line and Norfolk Branches",
+  "route" : "Anglia",
+  "region" : "East Anglia",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#d5bb8b",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "D.20",
+  "name" : "SRS D.20 Felixstowe – Ipswich",
+  "route" : "Anglia",
+  "region" : "East Anglia",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#d5bb8b",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "D.97",
+  "name" : "SRS D.97 London Crossrail",
+  "route" : "Anglia",
+  "region" : "East Anglia",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#d5bb8b",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "D.99",
+  "name" : "SRS D.99 Other Freight Lines",
+  "route" : "Anglia",
+  "region" : "East Anglia",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#d5bb8b",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "E.01",
+  "name" : "SRS E.01 Richmond – Willesden Junction",
+  "route" : "Anglia",
+  "region" : "North London Line",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#a7b51d",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "E.02",
+  "name" : "SRS E.02 Willesden Junction – Gospel Oak",
+  "route" : "Anglia",
+  "region" : "North London Line",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#a7b51d",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "E.03",
+  "name" : "SRS E.03 Gospel Oak – Stratford",
+  "route" : "Anglia",
+  "region" : "North London Line",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#a7b51d",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "E.04",
+  "name" : "SRS E.04 Gospel Oak – Woodgrange Park",
+  "route" : "Anglia",
+  "region" : "North London Line",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#a7b51d",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "E.05",
+  "name" : "SRS E.05 Forest Gate Junction – Barking",
+  "route" : "Anglia",
+  "region" : "North London Line",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#a7b51d",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "E.99",
+  "name" : "SRS E.99 Other Freight Line incl. E.91 Dudding Hill Line",
+  "route" : "Anglia",
+  "region" : "North London Line",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#a7b51d",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "F.01",
+  "name" : "SRS F.01 Fenchurch Street – Shoeburyness",
+  "route" : "Anglia",
+  "region" : "Thameside",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#e31a1c",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "F.02",
+  "name" : "SRS F.02 Tilbury Loop",
+  "route" : "Anglia",
+  "region" : "Thameside",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#e31a1c",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "F.99",
+  "name" : "SRS F.99 Other Freight Line",
+  "route" : "Anglia",
+  "region" : "Thameside",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#e31a1c",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "G.01",
+  "name" : "SRS G.01 - King’s Cross - Peterborough",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "ECML & North East",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#33a02c",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "G.02",
+  "name" : "SRS G.02 - Moorgate Branch",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "ECML & North East",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#33a02c",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "G.03",
+  "name" : "SRS G03–Hertford Loop",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "ECML & North East",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#33a02c",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "G.04",
+  "name" : "SRS G.04 - Hitchin - Cambridge",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "ECML & North East",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#33a02c",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "G.05",
+  "name" : "SRS G.05 - Peterborough - Doncaster",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "ECML & North East",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#33a02c",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "G.06",
+  "name" : "SRS G.06 - Doncaster (exclusive) - Leeds (exclusive)",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "ECML & North East",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#33a02c",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "G.07",
+  "name" : "SRS G.07 - Doncaster (exclusive) - Colton Junction",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "ECML & North East",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#33a02c",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "G.08",
+  "name" : "SRS G.08 – Colton Junction - Northallerton",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "ECML & North East",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#33a02c",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "G.09",
+  "name" : "SRS G.09 - Northallerton (exclusive) - Newcastle",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "ECML & North East",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#33a02c",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "G.10",
+  "name" : "SRS G.10 - Newcastle (exclusive) - Scottish Border",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "ECML & North East",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#33a02c",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "G.11",
+  "name" : "SRS G.11 Border – Edinburgh",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "ECML & North East",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#33a02c",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "G.12",
+  "name" : "SRS G.12 North Berwick Branch",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "ECML & North East",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#33a02c",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "G.13",
+  "name" : "SRS G.13 - Newcastle (exclusive) - Carlisle",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "ECML & North East",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#33a02c",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "G.14",
+  "name" : "SRS G.14 - Darlington - Bishop Auckland",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "ECML & North East",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#33a02c",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "G.15",
+  "name" : "SRS G.15 - Middlesbrough – Whitby",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "ECML & North East",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#33a02c",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "G.16",
+  "name" : "SRS G.16 / G.17 - Northallerton (exclusive) – Newcastle (exclusive) via Durham Coast",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "ECML & North East",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#33a02c",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "G.17",
+  "name" : "SRS G.16 / G.17 - Northallerton (exclusive) – Newcastle (exclusive) via Durham Coast",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "ECML & North East",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#33a02c",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "G.18",
+  "name" : "SRS G.18 / G.19 - Darlington (exclusive) -  Saltburn",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "ECML & North East",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#33a02c",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "G.19",
+  "name" : "SRS G.18 / G.19 - Darlington (exclusive) -  Saltburn",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "ECML & North East",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#33a02c",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "G.20",
+  "name" : "SRS G.20/G.23 - Doncaster (exclusive) – Peterborough (exc;isove) (via Lincoln)",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "ECML & North East",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#33a02c",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "G.21",
+  "name" : "SRS G.21 - Newark - Barnetby",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "ECML & North East",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#33a02c",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "G.22",
+  "name" : "SRS G22–Gainsborough-Barnetby (exclusive)",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "ECML & North East",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#33a02c",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "G.23",
+  "name" : " \tSRS G.20/G.23 - Doncaster (exclusive) – Peterborough (exc;isove) (via Lincoln) ",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "ECML & North East",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#33a02c",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "G.90",
+  "name" : "SRS G90–Stillington Branch",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "ECML & North East",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#33a02c",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "G.91",
+  "name" : "SRS G91–Blyth & Tyne Network",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "ECML & North East",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#33a02c",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "G.99",
+  "name" : "SRS G98/G99 Freight",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "ECML & North East",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#33a02c",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.01",
+  "name" : "SRS H.01 Leeds – Holbeck Junction",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.02",
+  "name" : "SRS H.02 Leeds – York (via Harrogate)",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.03",
+  "name" : "SRS H.03 Leeds – Skipton / Ilkley",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.04",
+  "name" : "SRS H.04 Leeds – Halifax (via Bradford)",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.05",
+  "name" : "SRS H.05 North TransPennine: Leeds – Guide Bridge",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.06",
+  "name" : "SRS H.06 Leeds – Colton Junction",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.07",
+  "name" : "SRS H.07 Hull – Micklefield",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.08",
+  "name" : "SRS H.08 Gilberdyke – Hatfield and Stainforth/Knottingley and Church Fenton – Moorthorpe",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.09",
+  "name" : "SRS H.09 Knottingley – Mirfield via Crofton Jn/Castleford and via Castleford Jn – Leeds West Jn/Whitwood",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.10",
+  "name" : "SRS H.10 Manchester Victoria – Mirfield (via Rochdale)/Stalybridge",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.11",
+  "name" : "SRS H.11 Hull – Seamer",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.12",
+  "name" : "SRS H.12 York – Scarborough",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.13",
+  "name" : "SRS H.13 Chesterfield – Swinton via Sheffield",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.14",
+  "name" : "SRS H.14 Swinton Junction – Brocklesby Junction",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.15",
+  "name" : "SRS H.15 South Kirkby Junction – Swinton Junction",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.16",
+  "name" : "SRS H.16 Sheffield – Gainsborough",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.17",
+  "name" : "SRS H.17 South TransPennine: Dore – Hazel Grove",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.18",
+  "name" : "SRS H.18 Sheffield Meadowhall – Horbury Junction",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.19",
+  "name" : "SRS H.19 Brocklesby Junction – Cleethorpes",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.20",
+  "name" : "SRS H.20 Penistone Line",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.21",
+  "name" : "SRS H.21 Barton-on-Humber Branch",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.22",
+  "name" : "SRS H.22 Manchester Piccadilly - Crewe ",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.23",
+  "name" : "SRS H.23 Manchester Piccadilly - Deansgate",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.24",
+  "name" : "SRS H.24 Deansgate - Liverpool South Parkway",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.25",
+  "name" : "SRS H.25 Liverpool Lime Street - Liverpool South Parkway",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.26",
+  "name" : "SRS H.26 North Transpennine: Manchester Piccadilly - Guide Bridge ",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.27",
+  "name" : "SRS H.27 Deansgate - Euxton Junction",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.28",
+  "name" : "SRS H.28 Ashburys/Hyde North - New Mills Central/Rose Hill",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.29",
+  "name" : "SRS H.29 Guide Bridge - Glossop/Hadfield ",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.30",
+  "name" : "SRS H.30 Guide Bridge - Chester (via Stockport) ",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.31",
+  "name" : "SRS H.31 Manchester Airport - Wilmslow/Slade Lane Junction",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.32",
+  "name" : "SRS H.32 Blackpool North Branch",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.33",
+  "name" : "SRS H.33 Edge Hill - Manchester Victoria (via Earlestown)/Wigan",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.34",
+  "name" : "SRS H.34 Southport/Kirkby - Wigan Wallgate",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.35",
+  "name" : "SRS H.35 Wigan Wallgate - Manchester Victoria",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.36",
+  "name" : "SRS H.36 Buxton Branch",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.37",
+  "name" : "SRS H.37 Bolton - Blackburn",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.38",
+  "name" : "SRS H.38 Hazel Grove - Edgeley Junction",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.39",
+  "name" : "SRS H.39 Cumbrian Coast",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.40",
+  "name" : "SRS H.40 Settle and Carlisle Line",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.41",
+  "name" : "SRS H.41 Windermere Branch",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.42",
+  "name" : "SRS H.42 Carnforth - Long Preston",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.43",
+  "name" : "SRS H.43 Morecambe/Heysham Port Branch",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.44",
+  "name" : "SRS H.44 Roses Line and Branches (including Preston - Ormskirk and Blackburn - Hellifield)",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.45",
+  "name" : "SRS H.45 Chester/Ellesmere Port - Warrington Bank Quay",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.46",
+  "name" : "SRS H.46 Blackpool South Branch",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.90",
+  "name" : "SRS H.90 Immingham and Killingholme Docks",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.91",
+  "name" : "SRS H.91 - Freight",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "H.99",
+  "name" : "SRS H.98 and H.99 - Freight",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "HS.1",
+  "name" : "High Speed One",
+  "route" : "South East",
+  "region" : "Kent & HS1",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#c8c8c8",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "I.01",
+  "name" : "SRS I.01 St Pancras – Bedford",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "East Midlands",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#fb9a99",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "I.02",
+  "name" : "SRS I.02 Bedford – Nottingham",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "East Midlands",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#fb9a99",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "I.03",
+  "name" : "SRS I.03 Wichnor Junction/Long Eaton – Chesterfield",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "East Midlands",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#fb9a99",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "I.04",
+  "name" : "SRS I.04 Worksop/Chesterfield – Nottingham",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "East Midlands",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#fb9a99",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "I.05",
+  "name" : "SRS I.05 Nottingham – Newark Crossing",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "East Midlands",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#fb9a99",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "I.06",
+  "name" : "SRS I.06 Matlock Branch",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "East Midlands",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#fb9a99",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "I.07",
+  "name" : "SRS I.07 Netherfield – Grantham ",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "East Midlands",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#fb9a99",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "I.08",
+  "name" : "SRS I.08 Skegness – Grantham ",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "East Midlands",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#fb9a99",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "I.09",
+  "name" : "SRS I.09 Nuneaton – South Wigston ",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "East Midlands",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#fb9a99",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "I.10",
+  "name" : "SRS I.10 Syston – Peterborough/Corby ",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "East Midlands",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#fb9a99",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "I.11",
+  "name" : "SRS I.11 North Stafford Junction – Stoke-on-Trent ",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "East Midlands",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#fb9a99",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "I.98",
+  "name" : "SRS I.98 and I.99 - Freight",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "East Midlands",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#fb9a99",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "I.99",
+  "name" : "SRS I.98 and I.99 - Freight",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "East Midlands",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#fb9a99",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "J.01",
+  "name" : "SRS J.01 London Paddington - Heathrow Airport Junction",
+  "route" : "Western",
+  "region" : "London & West",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#b15928",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "J.02",
+  "name" : "SRS J.02 Heathrow Airport Junction - Reading",
+  "route" : "Western",
+  "region" : "London & West",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#b15928",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "J.03",
+  "name" : "SRS J.03 Reading- Didcot",
+  "route" : "Western",
+  "region" : "London & West",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#b15928",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "J.04",
+  "name" : "SRS J.04 Didcot - Border (near Pilning)",
+  "route" : "Western",
+  "region" : "London & West",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#b15928",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "J.05",
+  "name" : "SRS J.05 Reading - Newbury",
+  "route" : "Western",
+  "region" : "London & West",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#b15928",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "J.06",
+  "name" : "SRS J.06 Newbury - Cogload Junction",
+  "route" : "Western",
+  "region" : "London & West",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#b15928",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "J.07",
+  "name" : "SRS J.07 Didcot - Oxford",
+  "route" : "Western",
+  "region" : "London & West",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#b15928",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "J.08",
+  "name" : "SRS J.08 Greenford Lines",
+  "route" : "Western",
+  "region" : "London & West",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#b15928",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "J.09",
+  "name" : "SRS J.09 Reading - Basingstoke",
+  "route" : "Western",
+  "region" : "London & West",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#b15928",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "J.10",
+  "name" : "SRS J.10 Swindon - Standish Junction",
+  "route" : "Western",
+  "region" : "London & West",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#b15928",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "J.11",
+  "name" : "SRS J.11 Cotswolds Line",
+  "route" : "Western",
+  "region" : "London & West",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#b15928",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "J.12",
+  "name" : "SRS J.12 Henley-on-Thames Branch",
+  "route" : "Western",
+  "region" : "London & West",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#b15928",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "J.13",
+  "name" : "SRS J.13 Marlow Branch",
+  "route" : "Western",
+  "region" : "London & West",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#b15928",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "J.14",
+  "name" : "SRS J.14 Windsor & Eton Branch",
+  "route" : "Western",
+  "region" : "London & West",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#b15928",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "J.16",
+  "name" : "SRS J.16 Heathrow Airport",
+  "route" : "Western",
+  "region" : "London & West",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#b15928",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "J.98",
+  "name" : "SRS J.98 Freight Trunk Routes",
+  "route" : "Western",
+  "region" : "London & West",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#b15928",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "J.99",
+  "name" : "SRS J.99 Other Freight Lines",
+  "route" : "Western",
+  "region" : "London & West",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#b15928",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "K.01",
+  "name" : "SRS K.01 Bristol Temple Meads - Exeter St Davids",
+  "route" : "Western",
+  "region" : "West of England",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#4cc9c6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "K.02",
+  "name" : "SRS K.02 Exeter St Davids - Plymouth",
+  "route" : "Western",
+  "region" : "West of England",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#4cc9c6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "K.03",
+  "name" : "SRS K.03 Plymouth - Penzance",
+  "route" : "Western",
+  "region" : "West of England",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#4cc9c6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "K.04",
+  "name" : "SRS K.04 Sailsbury - Bathampton / Thingley Junction",
+  "route" : "Western",
+  "region" : "West of England",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#4cc9c6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "K.05",
+  "name" : "SRS K.05 Castle Cary - Dorchester",
+  "route" : "Western",
+  "region" : "West of England",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#4cc9c6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "K.06",
+  "name" : "SRS K.06 Exeter - Exmouth Junction",
+  "route" : "Western",
+  "region" : "West of England",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#4cc9c6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "K.07",
+  "name" : "SRS K.07 Paignton Line",
+  "route" : "Western",
+  "region" : "West of England",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#4cc9c6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "K.08",
+  "name" : "SRS K.08 Barnstaple Branch",
+  "route" : "Western",
+  "region" : "West of England",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#4cc9c6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "K.09",
+  "name" : "SRS K.09 St Ives Branch",
+  "route" : "Western",
+  "region" : "West of England",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#4cc9c6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "K.10",
+  "name" : "SRS K.10 Looe Branch",
+  "route" : "Western",
+  "region" : "West of England",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#4cc9c6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "K.11",
+  "name" : "SRS K.11 Exmouth Branch",
+  "route" : "Western",
+  "region" : "West of England",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#4cc9c6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "K.12",
+  "name" : "SRS K.12 Falmouth Docks Branch",
+  "route" : "Western",
+  "region" : "West of England",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#4cc9c6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "K.13",
+  "name" : "SRS K.13 Newquay Line",
+  "route" : "Western",
+  "region" : "West of England",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#4cc9c6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "K.14",
+  "name" : "SRS K.14 Gunnislake Branch",
+  "route" : "Western",
+  "region" : "West of England",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#4cc9c6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "K.15",
+  "name" : "SRS K.15 Swindon (Via Bath Spa) - Bristol Temple Meads",
+  "route" : "Western",
+  "region" : "West of England",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#4cc9c6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "K.16",
+  "name" : "SRS K.16 Bristol - Birmingham Line",
+  "route" : "Western",
+  "region" : "West of England",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#4cc9c6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "K.17",
+  "name" : "SRS K.17 Weston-super-Mare Loop",
+  "route" : "Western",
+  "region" : "West of England",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#4cc9c6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "K.18",
+  "name" : "SRS K.18 Severn Beach Branch",
+  "route" : "Western",
+  "region" : "West of England",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#4cc9c6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "K.98",
+  "name" : "SRS K.98 Freight Trunk Routes",
+  "route" : "Western",
+  "region" : "West of England",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#4cc9c6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "K.99",
+  "name" : "SRS K.99 Other Freight Lines",
+  "route" : "Western",
+  "region" : "West of England",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#4cc9c6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "L.01",
+  "name" : "SRS L.01 Border (near Pilning) – Swansea",
+  "route" : "Wales",
+  "region" : "Wales",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#b2df8a",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "L.02",
+  "name" : "SRS L.02/03 Gloucester – Severn Tunnel Junction",
+  "route" : "Wales",
+  "region" : "Wales",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#b2df8a",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "L.03",
+  "name" : "SRS L.02/03 Gloucester – Severn Tunnel Junction",
+  "route" : "Wales",
+  "region" : "Wales",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#b2df8a",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "L.04",
+  "name" : "SRS L.04/05 Newport – Crewe",
+  "route" : "Wales",
+  "region" : "Wales",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#b2df8a",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "L.05",
+  "name" : "SRS L.04/05 Newport – Crewe",
+  "route" : "Wales",
+  "region" : "Wales",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#b2df8a",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "L.06",
+  "name" : "SRS L.06/07 Llanelli – Craven Arms, Heart of Wales line",
+  "route" : "Wales",
+  "region" : "Wales",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#b2df8a",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "L.07",
+  "name" : "SRS L.06/07 Llanelli – Craven Arms, Heart of Wales line",
+  "route" : "Wales",
+  "region" : "Wales",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#b2df8a",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "L.08",
+  "name" : "SRS L.08/09 Shrewsbury – Aberystwyth, Pwllheli, Cambrian line (Cambrian Main Line and Cambrian Coast lines)",
+  "route" : "Wales",
+  "region" : "Wales",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#b2df8a",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "L.09",
+  "name" : "SRS L.08/09 Shrewsbury – Aberystwyth, Pwllheli, Cambrian line (Cambrian Main Line and Cambrian Coast lines)",
+  "route" : "Wales",
+  "region" : "Wales",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#b2df8a",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "L.10",
+  "name" : "SRS L.10 – 12 Shrewsbury – Chester",
+  "route" : "Wales",
+  "region" : "Wales",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#b2df8a",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "L.11",
+  "name" : "SRS L.10 – 12 Shrewsbury – Chester",
+  "route" : "Wales",
+  "region" : "Wales",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#b2df8a",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "L.12",
+  "name" : "SRS L.10 – 12 Shrewsbury – Chester",
+  "route" : "Wales",
+  "region" : "Wales",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#b2df8a",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "L.13",
+  "name" : "SRS L.13/14 Chester – Holyhead",
+  "route" : "Wales",
+  "region" : "Wales",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#b2df8a",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "L.14",
+  "name" : "SRS L.13/14 Chester – Holyhead",
+  "route" : "Wales",
+  "region" : "Wales",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#b2df8a",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "L.15",
+  "name" : "SRS L.15/16 Wrexham – Bidston",
+  "route" : "Wales",
+  "region" : "Wales",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#b2df8a",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "L.16",
+  "name" : "SRS L.15/16 Wrexham – Bidston",
+  "route" : "Wales",
+  "region" : "Wales",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#b2df8a",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "L.17",
+  "name" : "SRS L.17 Newport – Ebbw Vale",
+  "route" : "Wales",
+  "region" : "Wales",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#b2df8a",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "L.18",
+  "name" : "SRS L.18 South Wales Valleys",
+  "route" : "Wales",
+  "region" : "Wales",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#b2df8a",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "L.19",
+  "name" : "SRS L.19 Bridgend – Maesteg",
+  "route" : "Wales",
+  "region" : "Wales",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#b2df8a",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "L.20",
+  "name" : "SRS L.20 – 22 Swansea – Milford Haven/Pembroke Dock/Fishguard Harbour",
+  "route" : "Wales",
+  "region" : "Wales",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#b2df8a",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "L.21",
+  "name" : "SRS L.20 – 22 Swansea – Milford Haven/Pembroke Dock/Fishguard Harbour",
+  "route" : "Wales",
+  "region" : "Wales",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#b2df8a",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "L.22",
+  "name" : "SRS L.20 – 22 Swansea – Milford Haven/Pembroke Dock/Fishguard Harbour",
+  "route" : "Wales",
+  "region" : "Wales",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#b2df8a",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "L.23",
+  "name" : "SRS L.23 Llandudno – Blaenau Ffestiniog",
+  "route" : "Wales",
+  "region" : "Wales",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#b2df8a",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "L.99",
+  "name" : "SRS L.99 Other Freight Lines",
+  "route" : "Wales",
+  "region" : "Wales",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#b2df8a",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "M.01",
+  "name" : "M1 and M12 London Marylebone to Birmingham Snow Hill",
+  "route" : "London North Western",
+  "region" : "West Midlands & Chilterns",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#cab2d6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "M.02",
+  "name" : "M2, M3 and M4 Aylesbury lines",
+  "route" : "London North Western",
+  "region" : "West Midlands & Chilterns",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#cab2d6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "M.03",
+  "name" : "M2, M3 and M4 Aylesbury lines",
+  "route" : "London North Western",
+  "region" : "West Midlands & Chilterns",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#cab2d6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "M.04",
+  "name" : "M2, M3 and M4 Aylesbury lines",
+  "route" : "London North Western",
+  "region" : "West Midlands & Chilterns",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#cab2d6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "M.05",
+  "name" : "M5 Rugby to Birmingham New Street",
+  "route" : "London North Western",
+  "region" : "West Midlands & Chilterns",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#cab2d6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "M.06",
+  "name" : "M6 and M7 Stafford and Wolverhampton",
+  "route" : "London North Western",
+  "region" : "West Midlands & Chilterns",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#cab2d6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "M.07",
+  "name" : "M6 and M7 Stafford and Wolverhampton",
+  "route" : "London North Western",
+  "region" : "West Midlands & Chilterns",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#cab2d6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "M.08",
+  "name" : "M8, M9, M19 and M21 Cross City Souh lines  ",
+  "route" : "London North Western",
+  "region" : "West Midlands & Chilterns",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#cab2d6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "M.09",
+  "name" : "M8, M9, M19 and M21 Cross City Souh lines  ",
+  "route" : "London North Western",
+  "region" : "West Midlands & Chilterns",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#cab2d6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "M.10",
+  "name" : "M10  ad  M22  Derby  and  Nuneaton  lines                                                                                         ",
+  "route" : "London North Western",
+  "region" : "West Midlands & Chilterns",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#cab2d6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "M.11",
+  "name" : "M11 and M23 Nuneaton to Oxford",
+  "route" : "London North Western",
+  "region" : "West Midlands & Chilterns",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#cab2d6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "M.12",
+  "name" : "M1 and M12 London Marylebone to Birmingham Snow Hill",
+  "route" : "London North Western",
+  "region" : "West Midlands & Chilterns",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#cab2d6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "M.13",
+  "name" : "M13, M18 andM24 Wolverhampton, Walsall and Rugeley Corridor",
+  "route" : "London North Western",
+  "region" : "West Midlands & Chilterns",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#cab2d6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "M.14",
+  "name" : "M14 and M25 Birmingham Snow Hill to Stourbridge",
+  "route" : "London North Western",
+  "region" : "West Midlands & Chilterns",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#cab2d6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "M.15",
+  "name" : "M15 Stourbridge to Worcester and Hereford",
+  "route" : "London North Western",
+  "region" : "West Midlands & Chilterns",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#cab2d6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "M.16",
+  "name" : "M16 Stratford-upon-Avon lines",
+  "route" : "London North Western",
+  "region" : "West Midlands & Chilterns",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#cab2d6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "M.17",
+  "name" : "M17 Cross City North",
+  "route" : "London North Western",
+  "region" : "West Midlands & Chilterns",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#cab2d6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "M.18",
+  "name" : "M13, M18 andM24 Wolverhampton, Walsall and Rugeley Corridor",
+  "route" : "London North Western",
+  "region" : "West Midlands & Chilterns",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#cab2d6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "M.19",
+  "name" : "M8, M9, M19 and M21 Cross City Souh lines  ",
+  "route" : "London North Western",
+  "region" : "West Midlands & Chilterns",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#cab2d6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "M.20",
+  "name" : "M20 Wolverhampton to Shrewsbury",
+  "route" : "London North Western",
+  "region" : "West Midlands & Chilterns",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#cab2d6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "M.21",
+  "name" : "M8, M9, M19 and M21 Cross City Souh lines  ",
+  "route" : "London North Western",
+  "region" : "West Midlands & Chilterns",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#cab2d6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "M.22",
+  "name" : "M10  ad  M22  Derby  and  Nuneaton  lines                                                                                         ",
+  "route" : "London North Western",
+  "region" : "West Midlands & Chilterns",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#cab2d6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "M.23",
+  "name" : "M11 and M23 Nuneaton to Oxford",
+  "route" : "London North Western",
+  "region" : "West Midlands & Chilterns",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#cab2d6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "M.24",
+  "name" : "M13, M18 andM24 Wolverhampton, Walsall and Rugeley Corridor",
+  "route" : "London North Western",
+  "region" : "West Midlands & Chilterns",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#cab2d6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "M.25",
+  "name" : "M14 and M25 Birmingham Snow Hill to Stourbridge",
+  "route" : "London North Western",
+  "region" : "West Midlands & Chilterns",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#cab2d6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "M.26",
+  "name" : "M26 Bicester to Oxford",
+  "route" : "London North Western",
+  "region" : "West Midlands & Chilterns",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#cab2d6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "M.99",
+  "name" : "M99 Other Freight Lines",
+  "route" : "London North Western",
+  "region" : "West Midlands & Chilterns",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#cab2d6",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "N.01",
+  "name" : "SRS N.01    Euston to Rugby",
+  "route" : "London North Western",
+  "region" : "WCML",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#000000",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "N.02",
+  "name" : "SRS N.02    Rugby to Stafford",
+  "route" : "London North Western",
+  "region" : "WCML",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#000000",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "N.03",
+  "name" : "SRS N.03    Stafford to Crewe ",
+  "route" : "London North Western",
+  "region" : "WCML",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#000000",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "N.04",
+  "name" : "SRS N.04    Crewe to Preston ",
+  "route" : "London North Western",
+  "region" : "WCML",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#000000",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "N.05",
+  "name" : "SRS N.05    Preston to Border (near Gretna Junction) ",
+  "route" : "London North Western",
+  "region" : "WCML",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#000000",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "N.06",
+  "name" : "SRS N.06    Border (near Gretna Junction) to Carstairs South Junction ",
+  "route" : "London North Western",
+  "region" : "WCML",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#000000",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "N.07",
+  "name" : "SRS N.07    Weaver Junction to Liverpool South Parkway ",
+  "route" : "London North Western",
+  "region" : "WCML",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#000000",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "N.08",
+  "name" : "SRS N.08    Norton Bridge/Colwich Junction to Cheadle Hulme ",
+  "route" : "London North Western",
+  "region" : "WCML",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#000000",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "N.09",
+  "name" : "SRS N.09    Crewe to Kidsgrove ",
+  "route" : "London North Western",
+  "region" : "WCML",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#000000",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "N.10",
+  "name" : "SRS N.10    Watford Junction to St Albans Abbey ",
+  "route" : "London North Western",
+  "region" : "WCML",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#000000",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "N.11",
+  "name" : "SRS N.11    Euston to Watford Junction (DC Lines) ",
+  "route" : "London North Western",
+  "region" : "WCML",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#000000",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "N.12",
+  "name" : "SRS N.12    Bletchley to Bedford ",
+  "route" : "London North Western",
+  "region" : "WCML",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#000000",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "N.13",
+  "name" : "SRS N.13    Crewe to Chester",
+  "route" : "London North Western",
+  "region" : "WCML",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#000000",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "N.99",
+  "name" : "SRS N.99    Freight lines",
+  "route" : "London North Western",
+  "region" : "WCML",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#000000",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "O.01",
+  "name" : "SRS O.01  Merseyrail",
+  "route" : "London North Western",
+  "region" : "Merseyside",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#fad600",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "O.99",
+  "name" : "SRS O.99 Other Freight Lines",
+  "route" : "London North Western",
+  "region" : "Merseyside",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#fad600",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "P.01",
+  "name" : "SRS P.01 Glasgow Queen Street to Edinburgh Waverley",
+  "route" : "Scotland",
+  "region" : "Scotland East",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#ff7f00",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "P.02",
+  "name" : "SRS P.02 Carstairs to Edinburgh",
+  "route" : "Scotland",
+  "region" : "Scotland East",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#ff7f00",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "P.03",
+  "name" : "SRS P.03 Newbridge to Drumgelloch",
+  "route" : "Scotland",
+  "region" : "Scotland East",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#ff7f00",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "P.04",
+  "name" : "SRS P.04 Dunblane/Alloa to Polmont Junction/Greenhill Upper Junction",
+  "route" : "Scotland",
+  "region" : "Scotland East",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#ff7f00",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "P.05",
+  "name" : "SRS P.05 Newcraighall to Portobello Junction",
+  "route" : "Scotland",
+  "region" : "Scotland East",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#ff7f00",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "P.06",
+  "name" : "SRS P.06 Fife Circle",
+  "route" : "Scotland",
+  "region" : "Scotland East",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#ff7f00",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "P.07",
+  "name" : "SRS P.07 Dundee to Dunblane",
+  "route" : "Scotland",
+  "region" : "Scotland East",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#ff7f00",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "P.08",
+  "name" : "SRS P.08 Dundee/Perth to Thornton Junctions",
+  "route" : "Scotland",
+  "region" : "Scotland East",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#ff7f00",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "P.09",
+  "name" : "SRS P.09 Dundee to Aberdeen",
+  "route" : "Scotland",
+  "region" : "Scotland East",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#ff7f00",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "P.10",
+  "name" : "SRS P.10 Aberdeen to Inverness",
+  "route" : "Scotland",
+  "region" : "Scotland East",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#ff7f00",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "P.11",
+  "name" : "SRS P.11 Perth to Inverness",
+  "route" : "Scotland",
+  "region" : "Scotland East",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#ff7f00",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "P.12",
+  "name" : "SRS P.12 Far North & Kyle Lines",
+  "route" : "Scotland",
+  "region" : "Scotland East",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#ff7f00",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "P.13",
+  "name" : "SRS P.13 Borders Line",
+  "route" : "Scotland",
+  "region" : "Scotland East",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#ff7f00",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "P.98",
+  "name" : "SRS P.98 Other Freight Lines Edinburgh Suburban Line",
+  "route" : "Scotland",
+  "region" : "Scotland East",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#ff7f00",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "P.99",
+  "name" : "SRS P.99 Other Freight Lines (secondary) (Longannet , Powderhall , Aberdeen  Waterloo, Grangemouth , Leith , Methil, Rosyth Branches)",
+  "route" : "Scotland",
+  "region" : "Scotland East",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#ff7f00",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "Q.01",
+  "name" : "SRS Q.01 West Coast Main Line: Glasgow Central to Carstairs",
+  "route" : "Scotland",
+  "region" : "Scotland West",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#ff7f00",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "Q.02",
+  "name" : "SRS Q.02 Midcalder Junction to Holytown Junction",
+  "route" : "Scotland",
+  "region" : "Scotland West",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#ff7f00",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "Q.03",
+  "name" : "SRS Q.03 Glasgow Central to Ayr, Largs & Inverclyde",
+  "route" : "Scotland",
+  "region" : "Scotland West",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#ff7f00",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "Q.04",
+  "name" : "SRS Q.04 Glasgow North Electric Routes",
+  "route" : "Scotland",
+  "region" : "Scotland West",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#ff7f00",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "Q.05",
+  "name" : "SRS Q.05 Stranraer to Ayr",
+  "route" : "Scotland",
+  "region" : "Scotland West",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#ff7f00",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "Q.06",
+  "name" : "SRS Q.06 Paisley Canal Branch",
+  "route" : "Scotland",
+  "region" : "Scotland West",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#ff7f00",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "Q.07",
+  "name" : "SRS Q.07 Muirhouse Junction to East Kilbride/Kilmarnock",
+  "route" : "Scotland",
+  "region" : "Scotland West",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#ff7f00",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "Q.08",
+  "name" : "SRS Q.08 Gretna Green to Barassie Junction",
+  "route" : "Scotland",
+  "region" : "Scotland West",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#ff7f00",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "Q.09",
+  "name" : "SRS Q.09 Eglinton Street Junction to Neilston, Newton & Cathcart Circle",
+  "route" : "Scotland",
+  "region" : "Scotland West",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#ff7f00",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "Q.10",
+  "name" : "SRS Q.10 Newton to Gartsherrie South/Rutherglen East Junction",
+  "route" : "Scotland",
+  "region" : "Scotland West",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#ff7f00",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "Q.11",
+  "name" : "SRS Q.11 Lanark Branch",
+  "route" : "Scotland",
+  "region" : "Scotland West",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#ff7f00",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "Q.12",
+  "name" : "SRS Q.12 Anniesland to Greenhill Lower Junction",
+  "route" : "Scotland",
+  "region" : "Scotland West",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#ff7f00",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "Q.13",
+  "name" : "SRS Q.13 Gretna Green to Gretna Junction",
+  "route" : "Scotland",
+  "region" : "Scotland West",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#ff7f00",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "Q.14",
+  "name" : "SRS Q.14 West Highland Line",
+  "route" : "Scotland",
+  "region" : "Scotland West",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#ff7f00",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "Q.98",
+  "name" : "SRS Q.98 Other Freight Lines (secondary) City Union & Clydesdale Lines",
+  "route" : "Scotland",
+  "region" : "Scotland West",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#ff7f00",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "Q.99",
+  "name" : "SRS Q.99 Other Freight Lines (secondary) Annbank,  Ayr Harbour, Chalmerston , Deanside , Killoch, Riccarton, Greenburn Branches",
+  "route" : "Scotland",
+  "region" : "Scotland West",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#ff7f00",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "_DEFAULT",
+  "name" : "_DEFAULT",
+  "route" : "_DEFAULT",
+  "region" : "_DEFAULT",
+  "colour" : {
+    "foregroundColour" : "#2b0000",
+    "backgroundColour" : "#ffb8b8",
+    "opacity" : 1.0
+  }
+} ]
