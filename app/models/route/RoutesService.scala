@@ -3,7 +3,7 @@ package models.route
 import java.io.InputStream
 
 import com.typesafe.config.Config
-import javax.inject.Inject
+import javax.inject.{Inject, Singleton}
 import models.auth.User
 import models.data.RouteDataProvider
 import models.data.postgres.RouteDataIdConverter
@@ -12,6 +12,7 @@ import org.json4s.jackson.JsonMethods.parse
 
 import scala.io.Source
 
+@Singleton
 class RoutesService @Inject() ( config: Config,
                                 dataProvider: RouteDataProvider) {
   def findRoutesForLocation(id: String): Set[Route] = {

@@ -3,7 +3,7 @@ package models.plan.timetable
 import java.io.FileNotFoundException
 import java.time.ZonedDateTime
 
-import javax.inject.Inject
+import javax.inject.{Inject, Singleton}
 import models.list.PathService
 import models.location.{LocationsService, MapLocation}
 import models.plan.reader.{Reader, WebZipInputStream}
@@ -19,6 +19,7 @@ import play.api.libs.ws.{WSClient, WSRequest}
 import scala.concurrent.duration.Duration
 import scala.concurrent.{Await, Future, TimeoutException}
 
+@Singleton
 class TimetableService @Inject()(locationsService: LocationsService, pathService: PathService, ws: WSClient, reader: Reader = new WebZipInputStream) {
 
   import scala.concurrent.ExecutionContext.Implicits.global

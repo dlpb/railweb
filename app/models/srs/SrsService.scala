@@ -11,7 +11,6 @@ import org.json4s.jackson.JsonMethods.parse
 
 import scala.io.Source
 
-
 @Singleton
 class SrsService @Inject()(locationService: LocationsService,
                            routesService: RoutesService,

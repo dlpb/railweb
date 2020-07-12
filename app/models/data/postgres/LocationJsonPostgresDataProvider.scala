@@ -1,10 +1,11 @@
 package models.data.postgres
 
-import javax.inject.Inject
+import javax.inject.{Inject, Singleton}
 import models.auth.User
 import models.data.{JsonDataProvider, LocationDataProvider}
 import models.location.Location
 
+@Singleton
 class LocationJsonPostgresDataProvider @Inject() (dbProvider: PostgresDB)
   extends JsonDataProvider[Location]
   with LocationDataProvider

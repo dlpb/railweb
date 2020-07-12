@@ -1,10 +1,11 @@
 package models.data.postgres
 
-import javax.inject.Inject
+import javax.inject.{Inject, Singleton}
 import models.auth.User
 import models.data.{JsonDataProvider, RouteDataProvider}
 import models.route.Route
 
+@Singleton
 class RouteJsonPostgresDataProvider @Inject() (dbProvider: PostgresDB)
   extends JsonDataProvider[Route]
   with RouteDataProvider

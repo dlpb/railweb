@@ -11,6 +11,7 @@ import org.json4s.jackson.JsonMethods._
 
 import scala.io.Source
 
+@Singleton
 class LocationsService @Inject() ( config: Config,
                                    dataProvider: LocationDataProvider) {
 

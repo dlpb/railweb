@@ -1,12 +1,12 @@
 package models.list
 
-import javax.inject.Inject
+import javax.inject.{Inject, Singleton}
 import models.location.{Location, LocationsService}
 import models.route.{Route, RoutesService}
 
 import scala.collection.mutable
 
-
+@Singleton
 class PathService @Inject()(
                              routesService: RoutesService,
                              locationsService: LocationsService

@@ -2,11 +2,13 @@ package models.data.postgres
 
 import java.net.URI
 import java.sql.{Connection, DriverManager}
+import java.util.concurrent.atomic.AtomicInteger
 
 import com.typesafe.config.Config
-import javax.inject.Inject
+import javax.inject.{Inject, Singleton}
 import models.auth.DaoUser
 
+@Singleton
 class PostgresDB @Inject() (config: Config) {
 
 
@@ -41,15 +43,21 @@ class PostgresDB @Inject() (config: Config) {
   private val updateUserSql = "UPDATE users SET username = ?, password = ?, roles = ? WHERE id = ?"
   private val deleteUserSql = "DELETE FROM users WHERE id = ?"
 
+  val count: AtomicInteger = new AtomicInteger(0)
   ensureDatabaseSetup()
 
+
   def ensureDatabaseSetup(): Unit = {
+    val start = System.currentTimeMillis()
+    println(s"starting preparations: ${start}")
     val connection = getConnection(config)
     val statement = connection.createStatement()
     statement.executeUpdate(createTableSQL)
     statement.executeUpdate(ensureAdminUser)
     statement.close()
     connection.close()
+    val end = System.currentTimeMillis()
+    println(s"finishing preparations: ${end}. Took ${end-start} ms")
   }
 
   def updateLocationsForUser(userId: Long, data: String): Unit = {
@@ -83,6 +91,7 @@ class PostgresDB @Inject() (config: Config) {
   }
 
   def getLocationsForUser(userId: Long): String = {
+    println(s"Count of setup is ${count.get()}")
     val connection = getConnection(config)
     val statement = connection.prepareStatement(getLocationsSql)
     statement.setLong(1, userId)

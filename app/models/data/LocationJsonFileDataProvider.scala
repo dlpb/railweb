@@ -1,10 +1,11 @@
 package models.data
 
 import com.typesafe.config.Config
-import javax.inject.Inject
+import javax.inject.{Inject, Singleton}
 import models.data.file.JsonFileBasedDataProvider
 import models.location.Location
 
+@Singleton
 class LocationJsonFileDataProvider @Inject() (config: Config)
   extends JsonFileBasedDataProvider[Location](config)
     with LocationDataProvider {
