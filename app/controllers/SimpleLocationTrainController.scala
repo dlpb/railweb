@@ -36,7 +36,6 @@ class SimpleLocationTrainController @Inject()(
   def showTrainsForLocationNow(loc: String): Action[AnyContent] = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     if (request.user.roles.contains(PlanUser)) {
 
-      println(s"show trains for now for $loc")
       val token = jwtService.createToken(request.user, new Date())
 
       val location = locationsService.findLocation(loc)
@@ -100,8 +99,6 @@ class SimpleLocationTrainController @Inject()(
   def showTrainsForLocation(loc: String, year: Int, month: Int, day: Int, from: Int, to: Int, date: String) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     if (request.user.roles.contains(PlanUser)) {
       val token = jwtService.createToken(request.user, new Date())
-
-      println(s"Show trains for $loc at $year $month $day $from $to $date")
 
       val (y, m, d): (Int, Int, Int) = if (date.contains("-")) {
         val dateParts = date.split("-").map(_.toInt)

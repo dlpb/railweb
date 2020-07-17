@@ -49,7 +49,6 @@ class PostgresDB @Inject() (config: Config) {
 
   def ensureDatabaseSetup(): Unit = {
     val start = System.currentTimeMillis()
-    println(s"starting preparations: ${start}")
     val connection = getConnection(config)
     val statement = connection.createStatement()
     statement.executeUpdate(createTableSQL)
@@ -57,7 +56,6 @@ class PostgresDB @Inject() (config: Config) {
     statement.close()
     connection.close()
     val end = System.currentTimeMillis()
-    println(s"finishing preparations: ${end}. Took ${end-start} ms")
   }
 
   def updateLocationsForUser(userId: Long, data: String): Unit = {
@@ -91,7 +89,6 @@ class PostgresDB @Inject() (config: Config) {
   }
 
   def getLocationsForUser(userId: Long): String = {
-    println(s"Count of setup is ${count.get()}")
     val connection = getConnection(config)
     val statement = connection.prepareStatement(getLocationsSql)
     statement.setLong(1, userId)

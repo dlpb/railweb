@@ -78,12 +78,10 @@ class HighlightController @Inject()(
         tsl =>
           val (train, from, to) = tsl
           Future {
-            println(s"creating future for $train, $from, $to")
             val tt = timetableService.getTrain(train, year.toString, month.toString, day.toString)
             val result: Future[List[MapLocation]] = tt.map {
               _.map {
                 t: IndividualTimetable =>
-                  println(s"got timetable for $train")
                   val locs = t.locations.map {
                     _.tiploc
                   }.flatMap {
@@ -97,15 +95,12 @@ class HighlightController @Inject()(
                     else if (toIndexMaybe < locs.size) toIndexMaybe + 1
                     else toIndexMaybe
 
-                  println(s"filtered locations = ${locs.map(_.id)}")
-                  println(s"index for $from is $fromIndex ($fromIndexMaybe)")
-                  println(s"index for $to  is $toIndex ($toIndexMaybe)")
+
                   val sliced = locs
                     .slice(fromIndex, toIndex)
                     .map {
                       l => MapLocation(l)
                     }
-                  println(s"sliced locations = ${sliced.map(_.id)}")
                   sliced
 
 
@@ -117,7 +112,6 @@ class HighlightController @Inject()(
       }
       val calledAt: List[MapLocation] = Await.result(Future.sequence(trainsF), Duration(30, "second")).flatten.toSet.toList
       val notCalledAt = allStations.diff(calledAt)
-      println(s"Final list is ${calledAt.map(_.id)}")
       val percentage = if(allStations.nonEmpty) calledAt.size*1.0d / allStations.size*1.0d else 100.0d
       Ok(views.html.plan.location.highlight.trains.index(request.user, token, calledAt, notCalledAt, allStations, percentage, trainsF.size, trainsAndStations, srsLocations, locations, List("Work In Progress - Plan - Highlight Locations"), year, month, day)(request.request))
     }

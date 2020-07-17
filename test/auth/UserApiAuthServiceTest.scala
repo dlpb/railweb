@@ -32,7 +32,6 @@ class UserApiAuthServiceTest extends FlatSpec with Matchers{
     service.extractUserFrom(claims) should be(None)
   }
   private def config = {
-    println(getClass.getResource("").getPath)
     val path = Files.createTempDirectory("users" ).toAbsolutePath
     val usersJson: String =
       """

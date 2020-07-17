@@ -76,7 +76,6 @@ class LocationTrainService @Inject()(locationsService: LocationsService, pathSer
 
     try {
       val url = LocationTrainService.createUrlForReadingLocationTimetables(loc, year, month, day, from, to)
-      println(s"trying to get something for URL $url")
       val request: WSRequest = ws.url(url)
       request
         .withRequestTimeout(Duration(30, "second"))

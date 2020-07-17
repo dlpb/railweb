@@ -319,15 +319,12 @@ class ApiAuthenticatedController @Inject()(
           f =>
             f map {
               t =>
-                println("got timetable, creating route")
                 timetableService.createSimpleMapRoutes(t)
             }
         }(scala.concurrent.ExecutionContext.Implicits.global)
         try {
-          println("waiting for result")
           val mapDetails = Await.result(eventualResult, Duration(30, "second")).getOrElse(List())
 
-          println("got result")
           Ok(write(mapDetails))
         }
         catch{

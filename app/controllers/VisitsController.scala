@@ -51,7 +51,6 @@ class VisitsController @Inject()(
         RouteDataIdConverter.stringToRouteIds(r._1) -> r._2
     }
 
-    println(routes)
     val invalidRoutes: Set[(String, String)] = routes.keySet.filter(r => routesService.getRoute(r._1, r._2).isEmpty)
 
     val mapRoutes: List[MapRoute] = routes

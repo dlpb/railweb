@@ -300,7 +300,6 @@ class AdminController @Inject()(
               val oldRoute = makeDummyRoute(from, to)
               val routes: List[Route] = newRoutes.split("\n").toList flatMap {
                 inputRoute =>
-                  println(inputRoute)
                   if(!inputRoute.contains(",")) Ok(views.html.admin.migrateRoute(token, request.user, from, to, newRoutes, List(s"Error processing $inputRoute. Must contain a comma separated value on a line")))
                   val routeParts = inputRoute.split(",")
                   if(!routeParts.size.equals(2)) Ok(views.html.admin.migrateRoute(token, request.user, from, to, newRoutes, List(s"Error processing $inputRoute. Must contain a comma separated value on a line")))
