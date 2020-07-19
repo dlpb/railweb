@@ -1,4 +1,24 @@
 [ {
+  "id" : "",
+  "name" : "",
+  "route" : "",
+  "region" : "",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#000000",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "0-35",
+  "name" : "0-35",
+  "route" : "",
+  "region" : "",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#000000",
+    "opacity" : 1.0
+  }
+}, {
   "id" : "A.01",
   "name" : "SRS A.01 Victoria Lines",
   "route" : "South East",
@@ -131,6 +151,16 @@
 }, {
   "id" : "A.14",
   "name" : "SRS A.14 Tonbridge - Continental Junction",
+  "route" : "South East",
+  "region" : "Kent & HS1",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#c8c8c8",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "A.15",
+  "name" : "SRS A.15 High Speed 1",
   "route" : "South East",
   "region" : "Kent & HS1",
   "colour" : {
@@ -489,6 +519,16 @@
     "opacity" : 1.0
   }
 }, {
+  "id" : "CZ",
+  "name" : "České dráhy",
+  "route" : "OBB",
+  "region" : "Czech Republic",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#002664",
+    "opacity" : 1.0
+  }
+}, {
   "id" : "D.01",
   "name" : "SRS D.01 Bethnal Green – Stansted Airport",
   "route" : "Anglia",
@@ -709,6 +749,16 @@
     "opacity" : 1.0
   }
 }, {
+  "id" : "DB",
+  "name" : "Deuche Bahn",
+  "route" : "Germany",
+  "region" : "Germany",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#ec0016",
+    "opacity" : 1.0
+  }
+}, {
   "id" : "E.01",
   "name" : "SRS E.01 Richmond – Willesden Junction",
   "route" : "Anglia",
@@ -759,13 +809,33 @@
     "opacity" : 1.0
   }
 }, {
-  "id" : "E.99",
-  "name" : "SRS E.99 Other Freight Line incl. E.91 Dudding Hill Line",
+  "id" : "E.91",
+  "name" : "SRS E.91 Dudding Hill Line",
   "route" : "Anglia",
   "region" : "North London Line",
   "colour" : {
     "foregroundColour" : "#FFFFFF",
     "backgroundColour" : "#a7b51d",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "E.99",
+  "name" : "SRS E.99 Other Freight Line",
+  "route" : "Anglia",
+  "region" : "North London Line",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#a7b51d",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "ET",
+  "name" : "Channel Tunnel Rail Link",
+  "route" : "Channel Tunnel Rail Link",
+  "region" : "Channel Tunnel",
+  "colour" : {
+    "foregroundColour" : "#302407",
+    "backgroundColour" : "#ffd700",
     "opacity" : 1.0
   }
 }, {
@@ -796,6 +866,16 @@
   "colour" : {
     "foregroundColour" : "#FFFFFF",
     "backgroundColour" : "#e31a1c",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "FENICULAR",
+  "name" : "FENICULAR",
+  "route" : "",
+  "region" : "",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#000000",
     "opacity" : 1.0
   }
 }, {
@@ -1049,8 +1129,18 @@
     "opacity" : 1.0
   }
 }, {
-  "id" : "G.99",
+  "id" : "G.98",
   "name" : "SRS G98/G99 Freight",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "ECML & North East",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#33a02c",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "G.99",
+  "name" : "SRS G99 Freight",
   "route" : "London North Eastern & East Midlands",
   "region" : "ECML & North East",
   "colour" : {
@@ -1539,8 +1629,8 @@
     "opacity" : 1.0
   }
 }, {
-  "id" : "H.99",
-  "name" : "SRS H.98 and H.99 - Freight",
+  "id" : "H.98",
+  "name" : "SRS H.98 - Freight",
   "route" : "London North Eastern & East Midlands",
   "region" : "Cross-Pennine, Yorkshire & Humber, North West",
   "colour" : {
@@ -1549,13 +1639,23 @@
     "opacity" : 1.0
   }
 }, {
-  "id" : "HS.1",
-  "name" : "High Speed One",
-  "route" : "South East",
-  "region" : "Kent & HS1",
+  "id" : "H.99",
+  "name" : "SRS H.99 - Freight",
+  "route" : "London North Eastern & East Midlands",
+  "region" : "Cross-Pennine, Yorkshire & Humber, North West",
+  "colour" : {
+    "foregroundColour" : "#000000",
+    "backgroundColour" : "#a6cee3",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "HERITAGE",
+  "name" : "HERITAGE",
+  "route" : "",
+  "region" : "",
   "colour" : {
     "foregroundColour" : "#FFFFFF",
-    "backgroundColour" : "#c8c8c8",
+    "backgroundColour" : "#000000",
     "opacity" : 1.0
   }
 }, {
@@ -1686,6 +1786,26 @@
   "colour" : {
     "foregroundColour" : "#FFFFFF",
     "backgroundColour" : "#fb9a99",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "IRELAND",
+  "name" : "Iarnród Éireann",
+  "route" : "Iarnród Éireann",
+  "region" : "Iarnród Éireann",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#000000",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "ITALIA",
+  "name" : "ItaliaRail",
+  "route" : "ITALIA",
+  "region" : "Italy",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#e11936",
     "opacity" : 1.0
   }
 }, {
@@ -1823,6 +1943,16 @@
   "name" : "SRS J.14 Windsor & Eton Branch",
   "route" : "Western",
   "region" : "London & West",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#b15928",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "J.15",
+  "name" : "SRS J.15 Bicester to Oxford",
+  "route" : "London North Western",
+  "region" : "West Midlands & Chilterns",
   "colour" : {
     "foregroundColour" : "#FFFFFF",
     "backgroundColour" : "#b15928",
@@ -2299,6 +2429,36 @@
     "opacity" : 1.0
   }
 }, {
+  "id" : "LT",
+  "name" : "Transport For London",
+  "route" : "Transport For London",
+  "region" : "London",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#0019a8",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "LUL",
+  "name" : "London Underground Ltd Met Line / Chilterns",
+  "route" : "Harrow - Amersham Met Line",
+  "region" : "Chilterns",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#0019a8",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "Link",
+  "name" : "Link",
+  "route" : "",
+  "region" : "",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#000000",
+    "opacity" : 1.0
+  }
+}, {
   "id" : "M.01",
   "name" : "M1 and M12 London Marylebone to Birmingham Snow Hill",
   "route" : "London North Western",
@@ -2549,8 +2709,8 @@
     "opacity" : 1.0
   }
 }, {
-  "id" : "M.26",
-  "name" : "M26 Bicester to Oxford",
+  "id" : "M.99",
+  "name" : "M99 Other Freight Lines",
   "route" : "London North Western",
   "region" : "West Midlands & Chilterns",
   "colour" : {
@@ -2559,13 +2719,33 @@
     "opacity" : 1.0
   }
 }, {
-  "id" : "M.99",
-  "name" : "M99 Other Freight Lines",
-  "route" : "London North Western",
-  "region" : "West Midlands & Chilterns",
+  "id" : "METRO",
+  "name" : "METRO",
+  "route" : "",
+  "region" : "",
   "colour" : {
-    "foregroundColour" : "#000000",
-    "backgroundColour" : "#cab2d6",
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#000000",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "METROLINK",
+  "name" : "METROLINK",
+  "route" : "",
+  "region" : "",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#000000",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "MUSEUM",
+  "name" : "MUSEUM",
+  "route" : "",
+  "region" : "",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#000000",
     "opacity" : 1.0
   }
 }, {
@@ -2709,6 +2889,26 @@
     "opacity" : 1.0
   }
 }, {
+  "id" : "NONE",
+  "name" : "NONE",
+  "route" : "",
+  "region" : "",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#000000",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "NS",
+  "name" : "Nederlandse Spoorwegen",
+  "route" : "NS",
+  "region" : "Netherlands",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#042c74",
+    "opacity" : 1.0
+  }
+}, {
   "id" : "O.01",
   "name" : "SRS O.01  Merseyrail",
   "route" : "London North Western",
@@ -2726,6 +2926,26 @@
   "colour" : {
     "foregroundColour" : "#FFFFFF",
     "backgroundColour" : "#fad600",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "OBB",
+  "name" : "Österreichische Bundesbahnen",
+  "route" : "OBB",
+  "region" : "Austria",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#e2002e",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "OHLE",
+  "name" : "OHLE",
+  "route" : "",
+  "region" : "",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#000000",
     "opacity" : 1.0
   }
 }, {
@@ -3036,6 +3256,66 @@
   "colour" : {
     "foregroundColour" : "#FFFFFF",
     "backgroundColour" : "#ff7f00",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "RENFE",
+  "name" : "Renfe Operadora",
+  "route" : "RENFE",
+  "region" : "Spain",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#830065",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "SBB",
+  "name" : "Schweizerische Bundesbahnen",
+  "route" : "SBB",
+  "region" : "Switzerland",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#ec0000",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "SNCB",
+  "name" : "Société nationale des chemins de fer belges",
+  "route" : "SNCB",
+  "region" : "Belgium",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#1769ac",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "SNCF",
+  "name" : "Société nationale des chemins de fer français",
+  "route" : "France",
+  "region" : "France",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#a71175",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "TRAMWAY",
+  "name" : "TRAMWAY",
+  "route" : "",
+  "region" : "",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#000000",
+    "opacity" : 1.0
+  }
+}, {
+  "id" : "Transfer",
+  "name" : "Transfer",
+  "route" : "",
+  "region" : "",
+  "colour" : {
+    "foregroundColour" : "#FFFFFF",
+    "backgroundColour" : "#000000",
     "opacity" : 1.0
   }
 }, {
