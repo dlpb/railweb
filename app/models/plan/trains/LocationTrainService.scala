@@ -19,30 +19,28 @@ import scala.concurrent.duration.Duration
 
 class LocationTrainService @Inject()(locationsService: LocationsService, pathService: PathService, ws: WSClient, reader: Reader = new WebZipInputStream) {
 
-  def getTrainsForLocationAroundNow(loc: String): (Future[Seq[TimetableForLocation]], (Int, Int, Int, Int, Int)) = {
+  private def getTrainsForLocationAroundNow(loc: String):LocationTimetableResult = {
     val from = LocationTrainService.from
     val to = LocationTrainService.to
 
-    (getTrainsForLocation(loc,
+    getTrainsForLocation(loc,
       from.getYear,
       from.getMonthValue,
       from.getDayOfMonth,
       from.getHour * 100 + from.getMinute,
-      to.getHour * 100 + to.getMinute
-    ), (from.getYear, from.getMonthValue, from.getDayOfMonth, from.getHour * 100 + from.getMinute, to.getHour * 100 + to.getMinute))
+      to.getHour * 100 + to.getMinute)
   }
 
-  def getDetailedTrainsForLocationAroundNow(loc: String): (Future[Seq[TimetableForLocation]], (Int, Int, Int, Int, Int)) = {
+  private def getDetailedTrainsForLocationAroundNow(loc: String): LocationTimetableResult = {
     val from = LocationTrainService.from
     val to = LocationTrainService.to
 
-    (getDetailedTrainsForLocation(loc,
+    getDetailedTrainsForLocation(loc,
       from.getYear,
       from.getMonthValue,
       from.getDayOfMonth,
       from.getHour * 100 + from.getMinute,
-      to.getHour * 100 + to.getMinute
-    ), (from.getYear, from.getMonthValue, from.getDayOfMonth, from.getHour * 100 + from.getMinute, to.getHour * 100 + to.getMinute))
+      to.getHour * 100 + to.getMinute)
   }
 
   def getTrainsForLocation(loc: String,
@@ -51,8 +49,11 @@ class LocationTrainService @Inject()(locationsService: LocationsService, pathSer
                            day: Int,
                            from: Int,
                            to: Int
-                          ): Future[Seq[TimetableForLocation]] = {
-    readTimetable(loc, year, month, day, from, to)
+                          ): LocationTimetableResult = {
+    (year,month,day,from,to) match {
+      case (0,0,0,-1,-1) => getTrainsForLocationAroundNow(loc)
+      case _ => LocationTimetableResult(readTimetable(loc, year, month, day, from, to), year, month, day, from, to)
+    }
   }
 
   def getDetailedTrainsForLocation(loc: String,
@@ -61,8 +62,11 @@ class LocationTrainService @Inject()(locationsService: LocationsService, pathSer
                                    day: Int,
                                    from: Int,
                                    to: Int
-                                  ): Future[Seq[TimetableForLocation]] = {
-    readTimetable(loc, year, month, day, from, to)
+                                  ): LocationTimetableResult = {
+    (year,month,day,from,to) match {
+      case (0, 0, 0, -1, -1) => getTrainsForLocationAroundNow(loc)
+      case _ => LocationTimetableResult(readTimetable(loc, year, month, day, from, to), year, month, day, from, to)
+    }
   }
 
   private def readTimetable(loc: String,
@@ -98,6 +102,8 @@ class LocationTrainService @Inject()(locationsService: LocationsService, pathSer
     }
   }
 }
+
+case class LocationTimetableResult(timetables: Future[Seq[TimetableForLocation]], year: Int, month: Int, day: Int, from: Int, to: Int)
 
 object LocationTrainService {
 

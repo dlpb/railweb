@@ -192,6 +192,28 @@ visitAllStations: Boolean
             </div>
         </div>
         <div class="row">
+            <div class="col col-sm">
+                <div class="card card-body">
+                    <h3>Shortcuts</h3>
+                    <form method="GET">
+                        <input type="hidden" id="waypoints" name="waypoints" value="@waypoints"/>
+                        <input type="hidden" id="followFixedLinks" name="followFixedLinks" value="@followFixedLinks"/>
+                        <input type="hidden" id="followFreightLinks" name="followFreightLinks" value="@followFreightLinks"/>
+                        <input type="hidden" id="visitAllRoutes" name="visitAllRoutes" value="true"/>
+                        <input type="hidden" id="visitAllStations" name="visitAllStations" value="false"/>
+                        <button type="submit" class="btn btn-primary" style="width: 100%">Visit All Routes</button>
+                    </form>
+                    <form method="GET">
+                        <input type="hidden" id="waypoints" name="waypoints" value="@waypoints"/>
+                        <input type="hidden" id="followFixedLinks" name="followFixedLinks" value="@followFixedLinks"/>
+                        <input type="hidden" id="followFreightLinks" name="followFreightLinks" value="@followFreightLinks"/>
+                        <input type="hidden" id="visitAllRoutes" name="visitAllRoutes" value="false"/>
+                        <input type="hidden" id="visitAllStations" name="visitAllStations" value="true"/>
+                        <button type="submit" class="btn btn-primary" style="width: 100%">Visit All Stations</button>
+                    </form>
+                    <a class="btn btn-primary" href="#map-container" role="button">Jump to Map</a>
+                </div>
+            </div>
             <div class="col-sm">
                 <div class="card card-body">
                     @if(locations.nonEmpty){
@@ -253,29 +275,6 @@ visitAllStations: Boolean
                         <h4>Route Finder</h4>
                         <p>Please use the options to find a route</p>
                     }
-                </div>
-            </div>
-            <div class="col col-sm">
-                <div class="card card-body">
-                    <h3>Shortcuts</h3>
-                        <form method="GET">
-                            <input type="hidden" id="waypoints" name="waypoints" value="@waypoints"/>
-                            <input type="hidden" id="followFixedLinks" name="followFixedLinks" value="@followFixedLinks"/>
-                            <input type="hidden" id="followFreightLinks" name="followFreightLinks" value="@followFreightLinks"/>
-                            <input type="hidden" id="visitAllRoutes" name="visitAllRoutes" value="true"/>
-                            <input type="hidden" id="visitAllStations" name="visitAllStations" value="false"/>
-                            <button type="submit" class="btn btn-primary" style="width: 100%">Visit All Routes</button>
-                        </form>
-                        <form method="GET">
-                            <input type="hidden" id="waypoints" name="waypoints" value="@waypoints"/>
-                            <input type="hidden" id="followFixedLinks" name="followFixedLinks" value="@followFixedLinks"/>
-                            <input type="hidden" id="followFreightLinks" name="followFreightLinks" value="@followFreightLinks"/>
-                            <input type="hidden" id="visitAllRoutes" name="visitAllRoutes" value="false"/>
-                            <input type="hidden" id="visitAllStations" name="visitAllStations" value="true"/>
-                            <button type="submit" class="btn btn-primary" style="width: 100%">Visit All Stations</button>
-                        </form>
-                    <a class="btn btn-primary" href="#map-container" role="button">Jump to Map</a>
-                    </div>
                 </div>
             </div>
         </div>

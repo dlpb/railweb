@@ -32,52 +32,6 @@ class DetailedLocationTrainController @Inject()(
 
   import scala.concurrent.ExecutionContext.Implicits.global
 
-  def showDetailedTrainsForLocationNow(loc: String) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
-    if (request.user.roles.contains(PlanUser)) {
-      val token = jwtService.createToken(request.user, new Date())
-
-      val location = locationsService.findLocation(loc)
-      if (location.isDefined) {
-
-        val (timetable, dates) = trainService.getDetailedTrainsForLocationAroundNow(location.get.id)
-        val timetables = timetable map {
-          f =>
-            f map {
-              t =>
-                DisplayDetailedLocationTrain(locationsService, t, dates._1, dates._2, dates._3)
-            }
-        }
-
-        val l = locationsService.findLocation(loc)
-        val eventualResult: Future[Result] = timetables map {
-          t =>
-            Ok(views.html.plan.location.trains.detailed.index(request.user, t.toList, l,
-              dates._1, dates._2, dates._3, TimetableHelper.time(dates._4), TimetableHelper.time(dates._5), locationsService.getLocations, List.empty)(request.request))
-        }
-        try {
-          Await.result(eventualResult, Duration(30, "second"))
-        }
-        catch {
-          case e: TimeoutException =>
-            InternalServerError(views.html.plan.search.index(request.user, locationsService.getLocations,defaultDate,
-              List(s"Could not get details for $loc around now",
-                "Timed out producing the page"
-              ))
-            (request.request))
-        }
-      }
-      else {
-        NotFound(views.html.plan.search.index(request.user, locationsService.getLocations,defaultDate,
-          List(s"Could not get details for $loc around now",
-            s"Could not find location ${loc}"
-          ))
-        (request.request))
-      }
-    }
-    else {
-      Forbidden("User not authorized to view page")
-    }
-  }
 
   def showDetailedTrainsForLocation(loc: String, year: Int, month: Int, day: Int, from: Int, to: Int, date: String) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     if (request.user.roles.contains(PlanUser)) {
@@ -85,11 +39,12 @@ class DetailedLocationTrainController @Inject()(
 
       val location = locationsService.findLocation(loc)
       if (location.isDefined) {
-        val timetables = trainService.getDetailedTrainsForLocation(location.get.id, year, month, day, from, to) map {
+        val result = trainService.getDetailedTrainsForLocation(location.get.id, year, month, day, from, to)
+        val timetables = result.timetables map {
           f =>
             f map {
               t =>
-                DisplayDetailedLocationTrain(locationsService, t, year, month, day)
+                DisplayDetailedLocationTrain(locationsService, t, result.year, result.month, result.day)
             }
         }
 
@@ -97,7 +52,7 @@ class DetailedLocationTrainController @Inject()(
         val eventualResult: Future[Result] = timetables map {
           t =>
             Ok(views.html.plan.location.trains.detailed.index(
-              request.user, t.toList, l, year, month, day, TimetableHelper.time(from), TimetableHelper.time(to), locationsService.getLocations, List.empty)(request.request))
+              request.user, t.toList, l, result.year, result.month, result.day, TimetableHelper.time(result.from), TimetableHelper.time(result.to), locationsService.getLocations, List.empty)(request.request))
         }
         try {
           Await.result(eventualResult, Duration(30, "second"))

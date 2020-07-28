@@ -57,11 +57,8 @@ GET  /plan/location/highlight                                       controllers.
 GET  /plan/location/highlight/trains                                controllers.HighlightController.showLocationHighlightsForTrains(trainsAndStations: String ?= "", srsLocations: String ?= "", locations: String ?= "", year: Int ?= 0, month: Int ?= 0, day: Int ?= 0)
 
 GET  /plan/location/trains                                          controllers.SimpleLocationTrainController.showTrainSearchIndex()
-GET  /plan/location/trains/simple/:loc                              controllers.SimpleLocationTrainController.showTrainsForLocationNow(loc: String)
-GET  /plan/location/trains/detailed/:loc                            controllers.DetailedLocationTrainController.showDetailedTrainsForLocationNow(loc: String)
-GET  /plan/location/trains/simple                                   controllers.SimpleLocationTrainController.showTrainsForLocationNow(loc: String)
-GET  /plan/location/trains/simple                                   controllers.SimpleLocationTrainController.showTrainsForLocation(loc: String, year: Int ?= 0, month: Int ?= 0, day: Int ?= 0, from: Int, to: Int, date: String ?= "")
-GET  /plan/location/trains/detailed                                 controllers.DetailedLocationTrainController.showDetailedTrainsForLocation(loc: String, year: Int ?=0, month: Int ?=0, day: Int ?=0, from: Int, to: Int, date: String ?= "")
+GET  /plan/location/trains/simple                                   controllers.SimpleLocationTrainController.showTrainsForLocation(loc: String, year: Int ?= 0, month: Int ?= 0, day: Int ?= 0, from: Int ?= -1, to: Int ?= -1 , date: String ?= "")
+GET  /plan/location/trains/detailed                                 controllers.DetailedLocationTrainController.showDetailedTrainsForLocation(loc: String, year: Int ?=0, month: Int ?=0, day: Int ?=0, from: Int ?= -1, to: Int ?= -1, date: String ?= "")
 
 GET  /plan/timetables/train/:train/simple/:year/:month/:day         controllers.SimpleTimetableController.showTrainTimetable(train: String, year: Int, month: Int, day: Int)
 GET  /plan/timetables/train/:train/detailed/:year/:month/:day       controllers.DetailedTimetableController.showDetailedTrainTimetable(train: String, year: Int, month: Int, day: Int)
