@@ -11,7 +11,9 @@ case class Location(
                    crs: Set[String],
                    tiploc: Set[String],
                    orrId: Option[String] = None
-                   )
+                   ) {
+  def isOrrStation = orrStation && orrId.nonEmpty
+}
 
 case class SpatialLocation(
                           lat: Double,

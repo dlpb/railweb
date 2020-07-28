@@ -1,7 +1,8 @@
 @(
 user: models.auth.User,
 timetables: List[models.timetable.dto.location.detailed.DisplayDetailedLocationTrain],
-location: Option[models.location.Location],
+locationName: String,
+locationId: String,
 year: Int,
 month: Int,
 day: Int,
@@ -25,10 +26,7 @@ messages: List[String]
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="theme-color" content="#ffffff">
     <title>
-        @if(location.isDefined) {
-        @location.get.name -
-        }
-        Detailed Search - Trains - Plan - All the Stations & Track
+        @locationName - Detailed Search - Trains - Plan - All the Stations & Track
     </title>
 </head>
 
@@ -116,15 +114,10 @@ messages: List[String]
         <div class="col-sm">
             <div class="alert alert-dark" role="alert">
                 <h3>
-                    @if(location.isDefined) {
-                    @location.get.name -
-                    }
-                    Detailed Search
+                   @locationName - Detailed Search
                 </h3>
                 Showing trains
-                @if(location.isDefined) {
-                for <strong>@location.get.name</strong>
-                }
+                for <strong>@locationName</strong>
                 on <strong>@year-@month-@day</strong> between <strong>@f</strong> and <strong>@t</strong>
             </div>
         </div>
@@ -135,18 +128,18 @@ messages: List[String]
                 <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#filters" aria-expanded="false" aria-controls="collapseExample">
                     Filters
                 </button>
-                <a href="/plan/location/trains/simple?loc=@location.get.id&year=@year&month=@month&day=@day&from=@f&to=@t" class="btn btn-primary" role="button" aria-disabled="true">Switch to Simple Search</a>
+                <a href="/plan/location/trains/simple?loc=@locationId&year=@year&month=@month&day=@day&from=@f&to=@t" class="btn btn-primary" role="button" aria-disabled="true">Switch to Simple Search</a>
             </p>
             <div class="collapse" id="filters">
                 <div class="card card-body">
                     <h2>Filters</h2>
-                    <form method="GET" action="/plan/location/trains/simple">
+                    <form method="GET" action="/plan/location/trains/detailed">
                         <datalist id="locations">
                             @for(l <- locations){
                             <option name="@l.name" value="@l.id">@l.name (@l.crs) [@l.id]</option>
                             }
                         </datalist>
-                        <input class="form-control" type="text" id="loc" name="loc" value="@location.map(_.id)" list="locations">
+                        <input class="form-control" type="text" id="loc" name="loc" value="@locationId" list="locations">
                         <label for="loc">Location</label>
                         <input class="form-control" type="hidden" id="year" name="year" value="@year">
                         <input class="form-control" type="hidden" id="month" name="month" value="@month">
@@ -170,9 +163,7 @@ messages: List[String]
         <div class="col col-sm">
             <div class="alert alert-danger" role="alert">
                 <h3>No trains to show</h3>
-                @if(location.isDefined) {
-                for <strong>@location.get.name</strong>
-                }
+                for <strong>@locationName</strong>
                 on <strong>@year-@month-@day</strong> between <strong>@f</strong> and <strong>@t</strong>
             </div>
         </div>

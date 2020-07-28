@@ -38,6 +38,24 @@ class LocationsService @Inject() ( config: Config,
 
     )
 
+  def findAllLocationsMatchingCrs(key: String): Set[Location] = {
+    val initialLocation = findLocation(key)
+    if(initialLocation.isDefined){
+      val location = initialLocation.get
+      if(location.isOrrStation){
+        location.crs.flatMap({ crs =>
+          locations.filter(l => l.crs.contains(crs) && l.isOrrStation)
+        })
+      }
+      else {
+        Set(location)
+      }
+    }
+    else{
+      Set.empty
+    }
+  }
+
   def getVisitsForUser(user: User): Option[Map[String, List[String]]] = {
     dataProvider.getVisits(user)
   }

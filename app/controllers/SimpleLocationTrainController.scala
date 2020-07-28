@@ -61,22 +61,31 @@ class SimpleLocationTrainController @Inject()(
         (dateParts(0), dateParts(1), dateParts(2))
       } else (year, month, day)
 
-      val location = locationsService.findLocation(loc)
-      if (location.isDefined) {
-        val result = locationTrainService.getTrainsForLocation(location.get.id, y, m, d, from, to)
-        val timetables = result.timetables map {
+      val locations = locationsService.findAllLocationsMatchingCrs(loc)
+
+      println(s"Showing results for ${locations.map(_.tiploc)}")
+      if (locations.nonEmpty) {
+        val allTiplocResults = locations.map(location => locationTrainService.getTrainsForLocation(location.id, y, m, d, from, to))
+
+        val allTimetables: Seq[Future[Seq[DisplaySimpleLocationTrain]]] = allTiplocResults.map(result => result.timetables map {
           f =>
             f.filter(tt => tt.publicStop && tt.publicTrain) map {
               t =>
                 DisplaySimpleLocationTrain(locationsService, t, result.year, result.month, result.day)
             }
-        }
+        }).toSeq
 
-        val l = locationsService.findLocation(loc)
+        val timetables = Future.sequence(allTimetables)
+
+        val l = locations.head
         val eventualResult: Future[Result] = timetables map {
-          t =>
+          timetable: Seq[Seq[DisplaySimpleLocationTrain]] =>
+            val t: Seq[DisplaySimpleLocationTrain] = timetable.flatten
+            val result = allTiplocResults.head
+            val locationName = l.name
+            val locationId = if(l.crs.nonEmpty && l.isOrrStation) l.crs.head else l.id
             Ok(views.html.plan.location.trains.simple.index(
-              request.user, t.toList, l, result.year, result.month, result.day, TimetableHelper.time(result.from), TimetableHelper.time(result.to), locationsService.getLocations,  List.empty)(request.request))
+              request.user, t.toList, locationName, locationId, result.year, result.month, result.day, TimetableHelper.time(result.from), TimetableHelper.time(result.to), locationsService.getLocations,  List.empty)(request.request))
         }
         try {
           Await.result(eventualResult, Duration(30, "second"))

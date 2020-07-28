@@ -13,6 +13,7 @@ import models.plan.timetable.TimetableService
 import models.plan.trains.LocationTrainService
 import models.timetable.dto.TimetableHelper
 import models.timetable.dto.location.detailed.DisplayDetailedLocationTrain
+import models.timetable.dto.location.simple.DisplaySimpleLocationTrain
 import play.api.i18n.I18nSupport
 import play.api.mvc._
 
@@ -37,22 +38,30 @@ class DetailedLocationTrainController @Inject()(
     if (request.user.roles.contains(PlanUser)) {
       val token = jwtService.createToken(request.user, new Date())
 
-      val location = locationsService.findLocation(loc)
-      if (location.isDefined) {
-        val result = trainService.getDetailedTrainsForLocation(location.get.id, year, month, day, from, to)
-        val timetables = result.timetables map {
+      val locations = locationsService.findAllLocationsMatchingCrs(loc)
+      println(s"Showing results for ${locations.map(_.tiploc)}")
+
+      if (locations.nonEmpty) {
+        val allTiplocResults = locations.map(location => trainService.getDetailedTrainsForLocation(location.id, year, month, day, from, to))
+        val allTimetables: Set[Future[Seq[DisplayDetailedLocationTrain]]] = allTiplocResults.map(result => result.timetables map {
           f =>
             f map {
               t =>
                 DisplayDetailedLocationTrain(locationsService, t, result.year, result.month, result.day)
             }
-        }
+        })
 
-        val l = locationsService.findLocation(loc)
+        val timetables = Future.sequence(allTimetables)
+
+        val l = locations.head
         val eventualResult: Future[Result] = timetables map {
-          t =>
+          timetable: Set[Seq[DisplayDetailedLocationTrain]] =>
+            val t = timetable.flatten
+            val result = allTiplocResults.head
+            val locationName = l.name
+            val locationId = if(l.crs.nonEmpty && l.isOrrStation) l.crs.head else l.id
             Ok(views.html.plan.location.trains.detailed.index(
-              request.user, t.toList, l, result.year, result.month, result.day, TimetableHelper.time(result.from), TimetableHelper.time(result.to), locationsService.getLocations, List.empty)(request.request))
+              request.user, t.toList, locationName, locationId, result.year, result.month, result.day, TimetableHelper.time(result.from), TimetableHelper.time(result.to), locationsService.getLocations, List.empty)(request.request))
         }
         try {
           Await.result(eventualResult, Duration(30, "second"))
