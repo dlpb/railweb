@@ -348,9 +348,9 @@ visitAllStations: Boolean
                     "visited": false
                 });
             }
-            var vectorLineLayer = new ol.layer.Vector({Symbol("id")':'lines'});
-            var vectorLinksLineLayer = new ol.layer.Vector({Symbol("id")':'links'});
-            var vectorMetroLineLayer = new ol.layer.Vector({Symbol("id")':'metro'});
+            var vectorLineLayer = new ol.layer.Vector({'id':'lines'});
+            var vectorLinksLineLayer = new ol.layer.Vector({'id':'links'});
+            var vectorMetroLineLayer = new ol.layer.Vector({'id':'metro'});
 
             var vectorLine = new ol.source.Vector({});
             var vectorLinksLine = new ol.source.Vector({});
