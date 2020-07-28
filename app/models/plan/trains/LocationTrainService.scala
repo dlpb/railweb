@@ -131,7 +131,7 @@ object LocationTrainService {
     val d = if (day < 1) "01" else if (day < 10) s"0$day" else if (day > 31) "31" else s"$day"
     val f = if (from < 0) "0000" else if (from < 10) s"000$from" else if (from < 100) s"00$from" else if (from < 1000) s"0$from" else if (from > 2400) "2400" else s"$from"
     val t = if (to < 0) "0000" else if (to < 10) s"000$to" else if (to < 100) s"00$to" else if (to < 1000) s"0$to" else if (to > 2400) "2400" else s"$to"
-    val url = s"/plan/location/trains/simple/$loc?year=$year&month=$m&day=$d&from=$f&to=$t"
+    val url = s"/plan/location/trains/simple?loc=$loc&year=$year&month=$m&day=$d&from=$f&to=$t"
     url
   }
 
@@ -140,7 +140,7 @@ object LocationTrainService {
     val d = if (day < 1) "01" else if (day < 10) s"0$day" else if (day > 31) "31" else s"$day"
     val f = if (from < 0) "0000" else if (from < 10) s"000$from" else if (from < 100) s"00$from" else if (from < 1000) s"0$from" else if (from > 2400) "2400" else s"$from"
     val t = if (to < 0) "0000" else if (to < 10) s"000$to" else if (to < 100) s"00$to" else if (to < 1000) s"0$to" else if (to > 2400) "2400" else s"$to"
-    val url = s"/plan/location/trains/detailed/$loc?year=$year&month=$m&day=$d&from=$f&to=$t"
+    val url = s"/plan/location/trains/detailed?loc$loc&year=$year&month=$m&day=$d&from=$f&to=$t"
     url
   }
 
