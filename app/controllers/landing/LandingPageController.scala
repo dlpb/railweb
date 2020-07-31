@@ -1,6 +1,7 @@
-package controllers
+package controllers.landing
 
 import auth.web.AuthorizedWebAction
+import controllers.routes
 import javax.inject._
 import play.api.mvc._
 

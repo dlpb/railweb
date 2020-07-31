@@ -1,9 +1,10 @@
-package controllers
+package controllers.route
 
 import java.util.Date
 
 import auth.JWTService
 import auth.web.{AuthorizedWebAction, WebUserContext}
+import controllers.routes
 import javax.inject.{Inject, Singleton}
 import models.auth.roles.MapUser
 import models.route.{ListRoute, RoutesService}
@@ -32,9 +33,9 @@ class RouteController @Inject()(
            r,
            routeService.getVisitsForRoute(r, request.user),
            token,
-           routes.ApiAuthenticatedController.visitRouteWithParams(from, to),
-           routes.ApiAuthenticatedController.removeLastVisitForRoute(from, to),
-           routes.ApiAuthenticatedController.removeAllVisitsForRoute(from, to)
+           controllers.api.authenticated.routes.ApiAuthenticatedController.visitRouteWithParams(from, to),
+           controllers.api.authenticated.routes.ApiAuthenticatedController.removeLastVisitForRoute(from, to),
+           controllers.api.authenticated.routes.ApiAuthenticatedController.removeAllVisitsForRoute(from, to)
          )(request.request))
        case None => NotFound("Route combination not found.")
      }
@@ -75,7 +76,7 @@ class RouteController @Inject()(
       val formActions: Map[String, Call] = routeList.map({
         r =>
           val key = makeRouteKey(r)
-          key -> routes.ApiAuthenticatedController.visitRouteFromList(r.from.id, r.to.id)
+          key -> controllers.api.authenticated.routes.ApiAuthenticatedController.visitRouteFromList(r.from.id, r.to.id)
       }).toMap
       val routeMap: Map[String, ListRoute] = routeList.map({
         r =>

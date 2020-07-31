@@ -1,4 +1,4 @@
-package controllers
+package controllers.plan.location
 
 import java.time.ZonedDateTime
 import java.util.Date
@@ -13,7 +13,6 @@ import models.plan.timetable.TimetableService
 import models.plan.trains.LocationTrainService
 import models.timetable.dto.TimetableHelper
 import models.timetable.dto.location.detailed.DisplayDetailedLocationTrain
-import models.timetable.dto.location.simple.DisplaySimpleLocationTrain
 import play.api.i18n.I18nSupport
 import play.api.mvc._
 

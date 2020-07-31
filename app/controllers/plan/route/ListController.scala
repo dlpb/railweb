@@ -1,4 +1,4 @@
-package controllers
+package controllers.plan.route
 
 import java.util.Date
 

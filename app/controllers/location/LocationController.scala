@@ -1,9 +1,10 @@
-package controllers
+package controllers.location
 
 import java.util.Date
 
 import auth.JWTService
 import auth.web.{AuthorizedWebAction, WebUserContext}
+import controllers.routes
 import javax.inject.{Inject, Singleton}
 import models.auth.roles.MapUser
 import models.location.{GroupedListLocation, ListLocation, Location, LocationsService}
@@ -29,9 +30,9 @@ class LocationController @Inject()(
          loc,
          locationService.getVisitsForLocation(loc, request.user),
          token,
-         routes.ApiAuthenticatedController.visitLocationWithParams(id),
-         routes.ApiAuthenticatedController.removeLastVisitForLocation(id),
-         routes.ApiAuthenticatedController.removeAllVisitsForLocation(id)
+         controllers.api.authenticated.routes.ApiAuthenticatedController.visitLocationWithParams(id),
+         controllers.api.authenticated.routes.ApiAuthenticatedController.removeLastVisitForLocation(id),
+         controllers.api.authenticated.routes.ApiAuthenticatedController.removeAllVisitsForLocation(id)
        )(request.request))
        case None => NotFound("Location not found.")
      }
@@ -83,7 +84,7 @@ class LocationController @Inject()(
 
       val formActions:Map[String, Call] = locationTiplocs.map({
         loc =>
-          loc -> routes.ApiAuthenticatedController.visitLocationFromList(loc)
+          loc -> controllers.api.authenticated.routes.ApiAuthenticatedController.visitLocationFromList(loc)
       }).toMap
       val locIds = locations.map{_.id}
 
@@ -135,7 +136,7 @@ class LocationController @Inject()(
 
       val formActions:Map[String, Call] = locations.map({
         loc =>
-          loc.id -> routes.ApiAuthenticatedController.visitLocationFromList(loc.id)
+          loc.id -> controllers.api.authenticated.routes.ApiAuthenticatedController.visitLocationFromList(loc.id)
       }).toMap
       val locIds = locations.map{_.id}
 

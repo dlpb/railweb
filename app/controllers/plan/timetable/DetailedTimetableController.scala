@@ -1,4 +1,4 @@
-package controllers
+package controllers.plan.timetable
 
 import java.time.ZonedDateTime
 import java.util.Date

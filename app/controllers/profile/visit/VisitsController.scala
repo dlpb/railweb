@@ -1,4 +1,4 @@
-package controllers
+package controllers.profile.visit
 
 import auth.JWTService
 import auth.api.AuthorizedAction

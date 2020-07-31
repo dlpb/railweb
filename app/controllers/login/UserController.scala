@@ -1,8 +1,9 @@
-package controllers
+package controllers.login
 
 import java.util.Date
 
 import auth.JWTService
+import controllers.routes
 import javax.inject.Inject
 import models.Global
 import models.auth.UserDao
@@ -51,7 +52,7 @@ class UserController @Inject()(
       val validUser = userDao.findUserByLoginUser(user)
       validUser match {
         case Some(user) => {
-          Redirect(routes.LandingPageController.showLandingPage())
+          Redirect(controllers.landing.routes.LandingPageController.showLandingPage())
           .flashing("info" -> "You are logged in.")
           .withSession(Global.SESSION_USERNAME_KEY -> user.id.toString, Global.SESSION_USER_TOKEN -> jwtService.createToken(user, new Date()))
         }

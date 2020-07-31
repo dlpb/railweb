@@ -1,4 +1,4 @@
-package controllers
+package controllers.plan.location
 
 import java.time.ZonedDateTime
 import java.util.Date

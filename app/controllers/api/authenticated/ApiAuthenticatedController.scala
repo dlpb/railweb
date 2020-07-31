@@ -1,4 +1,4 @@
-package controllers
+package controllers.api.authenticated
 
 import auth.api.{AuthorizedAction, UserRequest}
 import javax.inject.{Inject, Singleton}
@@ -103,7 +103,7 @@ class ApiAuthenticatedController @Inject()(
         locationService.getLocation(id) match {
           case Some(l) =>
             locationService.visitLocation(l, request.user)
-            Redirect(routes.LocationController.showLocationDetailPage(id))
+            Redirect(controllers.location.routes.LocationController.showLocationDetailPage(id))
           case None => NotFound
         }
       }
@@ -117,7 +117,7 @@ class ApiAuthenticatedController @Inject()(
         locationService.getLocation(id) match {
           case Some(l) =>
             locationService.visitLocation(l, request.user)
-            Redirect(routes.LocationController.showLocationHomePage())
+            Redirect(controllers.location.routes.LocationController.showLocationHomePage())
           case None => NotFound
         }
       }
@@ -149,7 +149,7 @@ class ApiAuthenticatedController @Inject()(
         locationService.getLocation(id) match {
           case Some(l) =>
             locationService.deleteLastVisit(l, request.user)
-            Redirect(routes.LocationController.showLocationDetailPage(id))
+            Redirect(controllers.location.routes.LocationController.showLocationDetailPage(id))
           case None => NotFound
         }
       }
@@ -163,7 +163,7 @@ class ApiAuthenticatedController @Inject()(
         locationService.getLocation(id) match {
           case Some(l) =>
             locationService.deleteAllVisits(l, request.user)
-            Redirect(routes.LocationController.showLocationDetailPage(id))
+            Redirect(controllers.location.routes.LocationController.showLocationDetailPage(id))
           case None => NotFound
         }
       }
@@ -196,7 +196,7 @@ class ApiAuthenticatedController @Inject()(
       else {
         routeService.getRoute(from, to) match {
           case Some(r) => routeService.visitRoute(r, request.user)
-            Redirect(routes.RouteController.showRouteDetailPage(from, to))
+            Redirect(s"/route/detail/$from/$to")
           case None => NotFound
         }
       }
@@ -209,7 +209,7 @@ class ApiAuthenticatedController @Inject()(
       else {
         routeService.getRoute(from, to) match {
           case Some(r) => routeService.visitRoute(r, request.user)
-            Redirect(routes.RouteController.showRouteListPage())
+            Redirect(s"/route/detail/$from/$to")
           case None => NotFound
         }
       }
@@ -242,7 +242,7 @@ class ApiAuthenticatedController @Inject()(
         routeService.getRoute(from, to) match {
           case Some(r) =>
             routeService.deleteLastVisit(r, request.user)
-            Redirect(routes.RouteController.showRouteDetailPage(from, to))
+            Redirect(s"/route/detail/$from/$to")
           case None => NotFound
         }
       }
@@ -256,7 +256,7 @@ class ApiAuthenticatedController @Inject()(
         routeService.getRoute(from, to) match {
           case Some(r) =>
             routeService.deleteAllVisits(r, request.user)
-            Redirect(routes.RouteController.showRouteDetailPage(from, to))
+            Redirect(s"/route/detail/$from/$to")
           case None => NotFound
         }
       }

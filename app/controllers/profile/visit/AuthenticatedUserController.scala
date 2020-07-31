@@ -1,10 +1,11 @@
-package controllers
+package controllers.profile.visit
 
 import java.util.Date
 
 import auth.JWTService
 import auth.api.AuthorizedAction
 import auth.web.{AuthorizedWebAction, WebUserContext}
+import controllers.routes
 import javax.inject._
 import models.auth.UserDao
 import models.location.LocationsService

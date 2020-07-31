@@ -1,4 +1,4 @@
-package controllers
+package controllers.admin
 
 import java.util.Date
 
@@ -29,7 +29,7 @@ class AdminController @Inject()(
     implicit request =>
       val token = jwtService.createToken(request.user, new Date())
       if (!request.user.roles.contains(AdminUser)) {
-        Redirect(routes.LandingPageController.showLandingPage())
+        Redirect(controllers.landing.routes.LandingPageController.showLandingPage())
       }
       else {
         Ok(views.html.admin.index(token, request.user))
@@ -40,7 +40,7 @@ class AdminController @Inject()(
     implicit request =>
       val token = jwtService.createToken(request.user, new Date())
       if (!request.user.roles.contains(AdminUser)) {
-        Redirect(routes.LandingPageController.showLandingPage())
+        Redirect(controllers.landing.routes.LandingPageController.showLandingPage())
       }
       else {
         Ok(views.html.admin.routes.index(token, request.user))
@@ -51,7 +51,7 @@ class AdminController @Inject()(
     implicit request =>
       val token = jwtService.createToken(request.user, new Date())
       if (!request.user.roles.contains(AdminUser)) {
-        Redirect(routes.LandingPageController.showLandingPage())
+        Redirect(controllers.landing.routes.LandingPageController.showLandingPage())
       }
       else {
         implicit val formats = DefaultFormats
@@ -72,7 +72,7 @@ class AdminController @Inject()(
     implicit request =>
       val token = jwtService.createToken(request.user, new Date())
       if (!request.user.roles.contains(AdminUser)) {
-        Redirect(routes.LandingPageController.showLandingPage())
+        Redirect(controllers.landing.routes.LandingPageController.showLandingPage())
       }
       else {
         Ok(views.html.admin.users(token, request.user))
@@ -83,7 +83,7 @@ class AdminController @Inject()(
     implicit request =>
       val token = jwtService.createToken(request.user, new Date())
       if (!request.user.roles.contains(AdminUser)) {
-        Redirect(routes.LandingPageController.showLandingPage())
+        Redirect(controllers.landing.routes.LandingPageController.showLandingPage())
       }
       else {
         Ok(views.html.admin.usersCreate(token, request.user, userDao.getUsers, List()))
@@ -94,7 +94,7 @@ class AdminController @Inject()(
     implicit request =>
       val token = jwtService.createToken(request.user, new Date())
       if (!request.user.roles.contains(AdminUser)) {
-        Redirect(routes.LandingPageController.showLandingPage())
+        Redirect(controllers.landing.routes.LandingPageController.showLandingPage())
       }
       else {
         Ok(views.html.admin.usersUpdate(token, request.user, userDao.getUsers, List()))
@@ -105,7 +105,7 @@ class AdminController @Inject()(
     implicit request =>
       val token = jwtService.createToken(request.user, new Date())
       if (!request.user.roles.contains(AdminUser)) {
-        Redirect(routes.LandingPageController.showLandingPage())
+        Redirect(controllers.landing.routes.LandingPageController.showLandingPage())
       }
       else {
         Ok(views.html.admin.usersDelete(token, request.user, userDao.getUsers, List()))
@@ -116,7 +116,7 @@ class AdminController @Inject()(
     implicit request =>
       val token = jwtService.createToken(request.user, new Date())
       if (!request.user.roles.contains(AdminUser)) {
-        Redirect(routes.LandingPageController.showLandingPage())
+        Redirect(controllers.landing.routes.LandingPageController.showLandingPage())
       }
       else {
         userDao.findUserById(userId) match {
@@ -133,7 +133,7 @@ class AdminController @Inject()(
   def adminUpdateUserData(userId: Long): Action[AnyContent] = authorizedAction {
     implicit request =>
       if (!request.user.roles.contains(AdminUser)) {
-        Redirect(routes.LandingPageController.showLandingPage())
+        Redirect(controllers.landing.routes.LandingPageController.showLandingPage())
       }
       else {
 
@@ -277,7 +277,7 @@ class AdminController @Inject()(
     implicit request =>
       val token = jwtService.createToken(request.user, new Date())
       if (!request.user.roles.contains(AdminUser)) {
-        Redirect(routes.LandingPageController.showLandingPage())
+        Redirect(controllers.landing.routes.LandingPageController.showLandingPage())
       }
       else {
         Ok(views.html.admin.migrateRoute(token, request.user, from, to,"", List()))
