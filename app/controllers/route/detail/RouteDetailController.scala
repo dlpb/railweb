@@ -32,9 +32,9 @@ class RouteDetailController @Inject()(
            r,
            routeService.getVisitsForRoute(r, request.user),
            token,
-           controllers.api.authenticated.routes.ApiAuthenticatedController.visitRouteWithParams(from, to),
-           controllers.api.authenticated.routes.ApiAuthenticatedController.removeLastVisitForRoute(from, to),
-           controllers.api.authenticated.routes.ApiAuthenticatedController.removeAllVisitsForRoute(from, to)
+           controllers.api.route.visit.routes.VisitRouteApiController.visitRouteWithParams(from, to),
+           controllers.api.route.visit.routes.VisitRouteApiController.removeLastVisitForRoute(from, to),
+           controllers.api.route.visit.routes.VisitRouteApiController.removeAllVisitsForRoute(from, to)
          )(request.request))
        case None => NotFound("Route combination not found.")
      }

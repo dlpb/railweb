@@ -53,7 +53,7 @@ class RouteController @Inject()(
       val formActions: Map[String, Call] = routeList.map({
         r =>
           val key = makeRouteKey(r)
-          key -> controllers.api.authenticated.routes.ApiAuthenticatedController.visitRouteFromList(r.from.id, r.to.id)
+          key -> controllers.api.route.visit.routes.VisitRouteApiController.visitRouteFromList(r.from.id, r.to.id)
       }).toMap
       val routeMap: Map[String, ListRoute] = routeList.map({
         r =>

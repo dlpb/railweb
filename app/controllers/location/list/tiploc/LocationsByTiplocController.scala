@@ -42,7 +42,7 @@ class LocationsByTiplocController @Inject()(
 
       val formActions: Map[String, Call] = locations.map({
         loc =>
-          loc.id -> controllers.api.authenticated.routes.ApiAuthenticatedController.visitLocationFromTiplocList(loc.id)
+          loc.id -> controllers.api.locations.visit.routes.VisitLocationsApiController.visitLocationFromTiplocList(loc.id)
       }).toMap
       val locIds = locations.map {
         _.id

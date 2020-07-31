@@ -29,9 +29,9 @@ class LocationDetailController @Inject()(
           loc,
           locationService.getVisitsForLocation(loc, request.user),
           token,
-          controllers.api.authenticated.routes.ApiAuthenticatedController.visitLocationWithParams(id),
-          controllers.api.authenticated.routes.ApiAuthenticatedController.removeLastVisitForLocation(id),
-          controllers.api.authenticated.routes.ApiAuthenticatedController.removeAllVisitsForLocation(id)
+          controllers.api.locations.visit.routes.VisitLocationsApiController.visitLocationWithParams(id),
+          controllers.api.locations.visit.routes.VisitLocationsApiController.removeLastVisitForLocation(id),
+          controllers.api.locations.visit.routes.VisitLocationsApiController.removeAllVisitsForLocation(id)
         )(request.request))
         case None => NotFound("Location not found.")
       }
