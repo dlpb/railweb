@@ -11,7 +11,7 @@ import org.json4s.DefaultFormats
 import org.json4s.jackson.Serialization.write
 import play.api.Environment
 import play.api.libs.json.Json
-import play.api.mvc.{AbstractController, AnyContent, ControllerComponents}
+import play.api.mvc.{AbstractController, AnyContent, Call, ControllerComponents}
 
 import scala.concurrent.duration.Duration
 import scala.concurrent.{Await, Future, TimeoutException}
@@ -103,26 +103,41 @@ class ApiAuthenticatedController @Inject()(
         locationService.getLocation(id) match {
           case Some(l) =>
             locationService.visitLocation(l, request.user)
-            Redirect(controllers.location.routes.LocationController.showLocationDetailPage(id))
+            Redirect(controllers.location.detail.routes.LocationDetailController.index(id))
           case None => NotFound
         }
       }
     }
   }
 
-  def visitLocationFromList(id: String) = {
+  def visitLocationFromCrsList(id: String) = {
     authAction { implicit request =>
       if (!request.user.roles.contains(VisitUser)) Unauthorized("User does not have the right role")
       else {
         locationService.getLocation(id) match {
           case Some(l) =>
             locationService.visitLocation(l, request.user)
-            Redirect(controllers.location.routes.LocationController.showLocationHomePage())
+            Redirect(controllers.location.list.crs.routes.LocationsByCrsController.index())
           case None => NotFound
         }
       }
     }
   }
+
+  def visitLocationFromTiplocList(id: String) = {
+    authAction { implicit request =>
+      if (!request.user.roles.contains(VisitUser)) Unauthorized("User does not have the right role")
+      else {
+        locationService.getLocation(id) match {
+          case Some(l) =>
+            locationService.visitLocation(l, request.user)
+            Redirect(controllers.location.list.tiploc.routes.LocationsByTiplocController.index())
+          case None => NotFound
+        }
+      }
+    }
+  }
+
 
   def getAllVisitsForLocation(id: String) = {
     authAction { implicit request =>
@@ -149,7 +164,7 @@ class ApiAuthenticatedController @Inject()(
         locationService.getLocation(id) match {
           case Some(l) =>
             locationService.deleteLastVisit(l, request.user)
-            Redirect(controllers.location.routes.LocationController.showLocationDetailPage(id))
+            Redirect(controllers.location.detail.routes.LocationDetailController.index(id))
           case None => NotFound
         }
       }
@@ -163,7 +178,7 @@ class ApiAuthenticatedController @Inject()(
         locationService.getLocation(id) match {
           case Some(l) =>
             locationService.deleteAllVisits(l, request.user)
-            Redirect(controllers.location.routes.LocationController.showLocationDetailPage(id))
+            Redirect(controllers.location.detail.routes.LocationDetailController.index(id))
           case None => NotFound
         }
       }

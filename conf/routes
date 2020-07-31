@@ -42,10 +42,11 @@ POST /admin/users/delete                                            controllers.
 GET  /map                                                           controllers.map.MapController.showMapPage(colour: String ?= "toc")
 GET  /routes                                                        controllers.route.RouteController.showRouteListPage(nrRoutes: Boolean ?=true, srs: String ?= "all", name: String ?= "all", id: String ?= "all")
 GET  /route/detail/:from/:to                                        controllers.route.RouteController.showRouteDetailPage(from: String, to: String)
-GET  /locations                                                     controllers.location.LocationController.showLocationHomePage()
-GET  /locations/by/tiploc                                           controllers.location.LocationController.showLocationListPageByTiploc(orrStations: Boolean ?=true, operator: String ?= "all", name: String ?= "all", id: String ?= "all", srs: String ?= "all")
-GET  /locations/by/crs                                              controllers.location.LocationController.showLocationListPageByCrs(orrStations: Boolean ?=true, operator: String ?= "all", name: String ?= "all", id: String ?= "all", srs: String ?= "all")
-GET  /location/detail/:id                                           controllers.location.LocationController.showLocationDetailPage(id: String)
+
+GET  /locations                                                     controllers.location.LocationController.index()
+GET  /locations/by/tiploc                                           controllers.location.list.tiploc.LocationsByTiplocController.index(orrStations: Boolean ?=true, operator: String ?= "all", name: String ?= "all", id: String ?= "all", srs: String ?= "all")
+GET  /locations/by/crs                                              controllers.location.list.crs.LocationsByCrsController.index(orrStations: Boolean ?=true, operator: String ?= "all", name: String ?= "all", id: String ?= "all", srs: String ?= "all")
+GET  /location/detail/:id                                           controllers.location.detail.LocationDetailController.index(id: String)
 
 GET  /plan                                                          controllers.plan.PlanController.showPlanIndex()
 
@@ -78,7 +79,8 @@ GET  /api/visit/locations                                           controllers.
 GET  /api/visit/location/:id                                        controllers.api.authenticated.ApiAuthenticatedController.getAllVisitsForLocation(id: String)
 POST /api/visit/location                                            controllers.api.authenticated.ApiAuthenticatedController.visitLocation()
 POST /api/visit/location/:id                                        controllers.api.authenticated.ApiAuthenticatedController.visitLocationWithParams(id: String)
-POST /api/visit/location/list/:id                                   controllers.api.authenticated.ApiAuthenticatedController.visitLocationFromList(id: String)
+POST /api/visit/location/list/crs/:id                               controllers.api.authenticated.ApiAuthenticatedController.visitLocationFromCrsList(id: String)
+POST /api/visit/location/list/tiploc/:id                            controllers.api.authenticated.ApiAuthenticatedController.visitLocationFromTiplocList(id: String)
 POST /api/visit/location/delete/last/:id                            controllers.api.authenticated.ApiAuthenticatedController.removeLastVisitForLocation(id: String)
 POST /api/visit/location/delete/all/:id                             controllers.api.authenticated.ApiAuthenticatedController.removeAllVisitsForLocation(id: String)
 
