@@ -1,4 +1,4 @@
-package controllers.plan.callingpoint.highlight
+package controllers.plan.highlight.callingpoints
 
 import java.util.Date
 
@@ -17,7 +17,7 @@ import play.api.mvc._
 import scala.concurrent.duration.Duration
 import scala.concurrent.{Await, Future}
 
-class HighlightController @Inject()(
+class TrainCallingPointHighlightController @Inject()(
                                      cc: ControllerComponents,
                                      authenticatedUserAction: AuthorizedWebAction,
                                      locationsService: LocationsService,
@@ -30,20 +30,20 @@ class HighlightController @Inject()(
 
   import scala.concurrent.ExecutionContext.Implicits.global
 
-  def showLocationHighlightsForTrains(trainsAndStations: String, srsLocations: String, locations: String, year: Int, month: Int, day: Int) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
+  def index(trainsAndStations: String, srsLocations: String, locations: String, year: Int, month: Int, day: Int) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     if (request.user.roles.contains(PlanUser)) {
       val token = jwtService.createToken(request.user, new Date())
       val mapLocations: List[MapLocation] =
         if(locations.isEmpty) { List.empty[MapLocation] }
         else locations
-        .replaceAll("\\s+", ",")
-        .split(",")
-        .flatMap {
-          locationsService.findLocation
-        }
-        .map {
-          MapLocation(_)
-        }.toList
+          .replaceAll("\\s+", ",")
+          .split(",")
+          .flatMap {
+            locationsService.findLocation
+          }
+          .map {
+            MapLocation(_)
+          }.toList
 
       val srs = srsLocations
         .replaceAll("\\s+", ",")
@@ -92,8 +92,8 @@ class HighlightController @Inject()(
 
                   val fromIndex = if(fromIndexMaybe < 0) 0 else fromIndexMaybe
                   val toIndex = if(toIndexMaybe < 0) locs.size - 1
-                    else if (toIndexMaybe < locs.size) toIndexMaybe + 1
-                    else toIndexMaybe
+                  else if (toIndexMaybe < locs.size) toIndexMaybe + 1
+                  else toIndexMaybe
 
 
                   val sliced = locs
@@ -120,19 +120,5 @@ class HighlightController @Inject()(
     }
   }
 
-  def showLocationHighlights(locations: String) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
-    if(request.user.roles.contains(PlanUser)){
-      val token = jwtService.createToken(request.user, new Date())
-      val locIds = locations
-        .replaceAll("\\s+", ",")
-        .split(",")
-        .flatMap {locationsService.getLocation}
-        .map { _.id }
-      Ok(views.html.plan.location.highlight.index(request.user, token, locIds.toList, List("Work In Progress - Plan - Highlight Locations"))(request.request))
-    }
-    else {
-      Forbidden("User not authorized to view page")
-    }
-  }
 }
 
