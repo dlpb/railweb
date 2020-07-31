@@ -11,16 +11,17 @@ GET  /                                                              controllers.
 GET  /login                                                         controllers.login.LoginController.index()
 POST /doLogin                                                       controllers.login.LoginController.processLoginAttempt()
 GET  /welcome                                                       controllers.landing.LandingPageController.showLandingPage()
-GET  /logout                                                        controllers.profile.visit.AuthenticatedUserController.logout()
+GET  /logout                                                        controllers.logout.LogoutController.logout()
 
-GET  /profile                                                       controllers.profile.visit.AuthenticatedUserController.profile()
-GET  /profile/changePassword                                        controllers.profile.visit.AuthenticatedUserController.changePasswordView()
-POST /profile/changePassword                                        controllers.profile.visit.AuthenticatedUserController.changePassword()
-GET  /profile/visits                                                controllers.profile.visit.VisitsController.visitsPage()
-GET  /profile/visits/by/location                                    controllers.profile.visit.VisitsController.visitsByLocationPage()
-GET  /profile/visits/by/route                                       controllers.profile.visit.VisitsController.visitsByRoutePage()
-GET  /profile/visits/by/event                                       controllers.profile.visit.VisitsController.visitsByEventPage()
-GET  /profile/visits/by/event/:evt                                  controllers.profile.visit.VisitsController.visitsByEventDetailPage(evt: String)
+GET  /profile                                                       controllers.profile.ProfileController.index()
+GET  /profile/changePassword                                        controllers.profile.visit.PasswordController.index()
+POST /profile/changePassword                                        controllers.profile.visit.PasswordController.changePassword()
+
+GET  /profile/visits                                                controllers.profile.visit.VisitsController.index()
+GET  /profile/visits/by/location                                    controllers.profile.visit.location.LocationVisitsController.index()
+GET  /profile/visits/by/route                                       controllers.profile.visit.route.RouteVisitsController.index()
+GET  /profile/visits/by/event                                       controllers.profile.visit.event.EventVisitsController.index()
+GET  /profile/visits/by/event/:evt                                  controllers.profile.visit.event.detail.EventDetailController.index(evt: String)
 
 
 

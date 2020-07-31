@@ -16,7 +16,7 @@ import play.api.data.Forms.{mapping, nonEmptyText}
 import play.api.mvc._
 
 @Singleton
-class AuthenticatedUserController @Inject()(
+class PasswordController @Inject()(
                                              userDao: UserDao,
                                              jwtService: JWTService,
                                              cc: ControllerComponents,
@@ -34,19 +34,7 @@ class AuthenticatedUserController @Inject()(
     )(ChangePassword.apply)(ChangePassword.unapply)
   )
 
-  def logout = authenticatedUserAction { implicit request: Request[AnyContent] =>
-    // docs: “withNewSession ‘discards the whole (old) session’”
-    Redirect(controllers.login.routes.LoginController.index())
-      .flashing("info" -> "You are logged out.")
-      .withNewSession
-  }
-
-  def profile = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
-    val token = jwtService.createToken(request.user, new Date())
-    Ok(views.html.profile.index(token, request.user, form, List()))
-  }
-
-  def changePasswordView = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
+  def index = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     val token = jwtService.createToken(request.user, new Date())
     Ok(views.html.profile.changePassword(token, request.user, form, List()))
   }
