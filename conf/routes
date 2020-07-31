@@ -39,7 +39,7 @@ GET  /admin/users/delete                                            controllers.
 POST /admin/users/delete                                            controllers.admin.users.delete.DeleteUserController.deleteUser()
 
 
-GET  /map                                                           controllers.map.MapController.showMapPage(colour: String ?= "toc")
+GET  /map                                                           controllers.map.MapController.index(colour: String ?= "toc")
 GET  /routes                                                        controllers.route.RouteController.showRouteListPage(nrRoutes: Boolean ?=true, srs: String ?= "all", name: String ?= "all", id: String ?= "all")
 GET  /route/detail/:from/:to                                        controllers.route.RouteController.showRouteDetailPage(from: String, to: String)
 

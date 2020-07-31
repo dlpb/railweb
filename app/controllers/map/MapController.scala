@@ -18,7 +18,7 @@ class MapController @Inject()(
                                        jwtService: JWTService
 
                                      ) extends AbstractController(cc) with I18nSupport {
-  def showMapPage(colour: String) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
+  def index(colour: String) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     if(request.user.roles.contains(MapUser)){
       val token = jwtService.createToken(request.user, new Date())
       Ok(views.html.map.index(request.user, token, controllers.api.authenticated.routes.ApiAuthenticatedController.visitLocation(), colour)(request.request))
