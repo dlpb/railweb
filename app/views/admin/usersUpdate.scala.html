@@ -3,7 +3,7 @@
 @(
 token: String,
 user: models.auth.User,
-users: Set[models.auth.DaoUser],
+users: List[models.auth.DaoUser],
 messages: List[String]
 )(implicit request: Request[AnyContent])
 <head>
