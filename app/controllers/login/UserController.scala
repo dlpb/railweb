@@ -31,7 +31,7 @@ class UserController @Inject()(
     )(LoginUser.apply)(LoginUser.unapply)
   )
 
-  private val formSubmitUrl = routes.UserController.processLoginAttempt()
+  private val formSubmitUrl = controllers.login.routes.UserController.processLoginAttempt()
 
   def showLoginForm = Action { implicit request: MessagesRequest[AnyContent] =>
     Ok(views.html.login.index(form, formSubmitUrl))
@@ -57,7 +57,7 @@ class UserController @Inject()(
           .withSession(Global.SESSION_USERNAME_KEY -> user.id.toString, Global.SESSION_USER_TOKEN -> jwtService.createToken(user, new Date()))
         }
         case None => {
-          Redirect(routes.UserController.showLoginForm())
+          Redirect(controllers.login.routes.UserController.showLoginForm())
             .flashing("error" -> "Invalid username/password.")
             .withNewSession
         }

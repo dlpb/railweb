@@ -11,7 +11,7 @@ class LandingPageController @Inject()(
                                        authenticatedUserAction: AuthorizedWebAction
                                      ) extends AbstractController(cc) {
 
-  private val logoutUrl = routes.AuthenticatedUserController.logout()
+  private val logoutUrl = controllers.profile.visit.routes.AuthenticatedUserController.logout()
 
   // this is where the user comes immediately after logging in.
   // notice that this uses `authenticatedUserAction`.
