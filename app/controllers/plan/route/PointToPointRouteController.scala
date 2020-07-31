@@ -12,7 +12,7 @@ import models.route.{MapRoute, RoutesService}
 import play.api.mvc.{AbstractController, AnyContent, ControllerComponents}
 
 @Singleton
-class ListController @Inject()(
+class PointToPointRouteController @Inject()(
                                 cc: ControllerComponents,
                                 authenticatedUserAction: AuthorizedWebAction,
                                 pathService: PathService,
@@ -22,7 +22,7 @@ class ListController @Inject()(
 
                               ) extends AbstractController(cc) {
 
-  def showListPage(waypoints: String, followFreightLinks: Boolean, followFixedLinks: Boolean, visitAllRoutes: Boolean, visitAllStations: Boolean) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
+  def index(waypoints: String, followFreightLinks: Boolean, followFixedLinks: Boolean, visitAllRoutes: Boolean, visitAllStations: Boolean) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     if (request.user.roles.contains(MapUser)) {
       val locationsToRouteVia = waypoints.split("\n").toList
 

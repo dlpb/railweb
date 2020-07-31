@@ -148,7 +148,7 @@ object TimetableService {
 
   def buildRouteLink(tt: IndividualTimetable, locService: LocationsService): String = {
     val ids = tt.locations.flatMap(l => locService.findLocation(l.tiploc).map(_.id)).mkString("%0D%0A")
-    val url = s"/routes/find?followFixedLinks=false&followFreightLinks=true&waypoints=$ids"
+    val url = s"/plan/routes/point-to-point/find?followFixedLinks=false&followFreightLinks=true&waypoints=$ids"
     url
   }
 
