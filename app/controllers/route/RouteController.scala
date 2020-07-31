@@ -22,30 +22,7 @@ class RouteController @Inject()(
 
 ) extends AbstractController(cc) {
 
-  def showRouteDetailPage(from: String, to: String) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
-   if(request.user.roles.contains(MapUser)){
-     val route = routeService.getRoute(from, to)
-     route match {
-       case Some(r) =>
-         val token = jwtService.createToken(request.user, new Date())
-         Ok(views.html.route.route(
-           request.user,
-           r,
-           routeService.getVisitsForRoute(r, request.user),
-           token,
-           controllers.api.authenticated.routes.ApiAuthenticatedController.visitRouteWithParams(from, to),
-           controllers.api.authenticated.routes.ApiAuthenticatedController.removeLastVisitForRoute(from, to),
-           controllers.api.authenticated.routes.ApiAuthenticatedController.removeAllVisitsForRoute(from, to)
-         )(request.request))
-       case None => NotFound("Route combination not found.")
-     }
-   }
-   else {
-     Forbidden("User not authorized to view page")
-   }
-  }
-
-  def showRouteListPage(nrRoutes: Boolean, srs: String, name: String, id: String) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
+  def index(nrRoutes: Boolean, srs: String, name: String, id: String) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     if(request.user.roles.contains(MapUser)){
       def sortRoutes(a: ListRoute, b: ListRoute): Boolean = {
         if(a.srs.equals(b.srs))

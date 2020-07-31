@@ -40,8 +40,8 @@ POST /admin/users/delete                                            controllers.
 
 
 GET  /map                                                           controllers.map.MapController.index(colour: String ?= "toc")
-GET  /routes                                                        controllers.route.RouteController.showRouteListPage(nrRoutes: Boolean ?=true, srs: String ?= "all", name: String ?= "all", id: String ?= "all")
-GET  /route/detail/:from/:to                                        controllers.route.RouteController.showRouteDetailPage(from: String, to: String)
+GET  /routes                                                        controllers.route.RouteController.index(nrRoutes: Boolean ?=true, srs: String ?= "all", name: String ?= "all", id: String ?= "all")
+GET  /route/detail/:from/:to                                        controllers.route.detail.RouteDetailController.index(from: String, to: String)
 
 GET  /locations                                                     controllers.location.LocationController.index()
 GET  /locations/by/tiploc                                           controllers.location.list.tiploc.LocationsByTiplocController.index(orrStations: Boolean ?=true, operator: String ?= "all", name: String ?= "all", id: String ?= "all", srs: String ?= "all")
