@@ -37,9 +37,6 @@ class UserController @Inject()(
     Ok(views.html.login.index(form, formSubmitUrl))
   }
 
-  def about = Action {implicit request =>
-    Ok(views.html.landing.about())
-  }
 
   def processLoginAttempt = Action { implicit request: MessagesRequest[AnyContent] =>
     val errorFunction = { formWithErrors: Form[LoginUser] =>

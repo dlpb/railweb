@@ -25,7 +25,7 @@ GET  /profile/visits/by/event/:evt                                  controllers.
 
 
 
-GET  /about                                                         controllers.login.UserController.about()
+GET  /about                                                         controllers.about.AboutController.about()
 
 GET  /admin                                                         controllers.admin.AdminController.index()
 GET  /admin/users                                                   controllers.admin.users.UserAdminController.index()
