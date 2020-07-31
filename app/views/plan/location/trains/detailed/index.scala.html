@@ -128,12 +128,12 @@ messages: List[String]
                 <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#filters" aria-expanded="false" aria-controls="collapseExample">
                     Filters
                 </button>
-                <a href="/plan/location/trains/simple?loc=@locationId&year=@year&month=@month&day=@day&from=@f&to=@t" class="btn btn-primary" role="button" aria-disabled="true">Switch to Simple Search</a>
+                <a href="/plan/timetables/location/simple?loc=@locationId&year=@year&month=@month&day=@day&from=@f&to=@t" class="btn btn-primary" role="button" aria-disabled="true">Switch to Simple Search</a>
             </p>
             <div class="collapse" id="filters">
                 <div class="card card-body">
                     <h2>Filters</h2>
-                    <form method="GET" action="/plan/location/trains/detailed">
+                    <form method="GET" action="/plan/timetables/location/detailed">
                         <datalist id="locations">
                             @for(l <- locations){
                             <option name="@l.name" value="@l.id">@l.name (@l.crs) [@l.id]</option>

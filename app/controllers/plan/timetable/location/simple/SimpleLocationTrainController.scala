@@ -1,4 +1,4 @@
-package controllers.plan.location
+package controllers.plan.timetable.location.simple
 
 import java.time.ZonedDateTime
 import java.util.Date
@@ -24,7 +24,6 @@ class SimpleLocationTrainController @Inject()(
                                                authenticatedUserAction: AuthorizedWebAction,
                                                locationsService: LocationsService,
                                                pathService: PathService,
-
                                                locationTrainService: LocationTrainService,
                                                timetableService: TimetableService,
                                                jwtService: JWTService
@@ -33,24 +32,7 @@ class SimpleLocationTrainController @Inject()(
 
   import scala.concurrent.ExecutionContext.Implicits.global
 
-  def showTrainSearchIndex(): Action[AnyContent] = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
-    if (request.user.roles.contains(PlanUser)) {
-
-      Ok(views.html.plan.search.index(request.user, locationsService.getLocations, defaultDate, List())(request.request))
-    }
-    else {
-      Forbidden("User not authorized to view page")
-    }
-  }
-
-
-  private def defaultDate = {
-    val now = ZonedDateTime.now
-    val defaultDate = s"${now.getYear}-${now.getMonthValue}-${now.getDayOfMonth}"
-    defaultDate
-  }
-
-  def showTrainsForLocation(loc: String, year: Int, month: Int, day: Int, from: Int, to: Int, date: String) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
+  def index(loc: String, year: Int, month: Int, day: Int, from: Int, to: Int, date: String) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
 
     println("trying train at specific time")
     if (request.user.roles.contains(PlanUser)) {
@@ -92,7 +74,7 @@ class SimpleLocationTrainController @Inject()(
         }
         catch {
           case e: TimeoutException =>
-            InternalServerError(views.html.plan.search.index(request.user, locationsService.getLocations, defaultDate,
+            InternalServerError(views.html.plan.search.index(request.user, locationsService.getLocations, TimetableHelper.defaultDate,
               List(s"Could not get details for location $loc on $y-$m-$d",
                 "Timed out producing the page"
               ))
@@ -100,7 +82,7 @@ class SimpleLocationTrainController @Inject()(
         }
       }
       else {
-        NotFound(views.html.plan.search.index(request.user, locationsService.getLocations, defaultDate,
+        NotFound(views.html.plan.search.index(request.user, locationsService.getLocations, TimetableHelper.defaultDate,
           List(s"Could not get details for location $loc on $y-$m-$d",
             s"Location ${loc} not found"
           ))(request.request))

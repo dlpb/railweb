@@ -1,4 +1,4 @@
-package controllers.plan.timetable
+package controllers.plan.timetable.train.simple
 
 import java.time.ZonedDateTime
 import java.util.Date
@@ -11,6 +11,7 @@ import models.list.PathService
 import models.location.LocationsService
 import models.plan.timetable.TimetableService
 import models.plan.trains.LocationTrainService
+import models.timetable.dto.TimetableHelper
 import play.api.i18n.I18nSupport
 import play.api.mvc._
 
@@ -30,7 +31,7 @@ class SimpleTimetableController @Inject()(
 
   import scala.concurrent.ExecutionContext.Implicits.global
 
-  def showTrainTimetable(train: String, year: Int, month: Int, day: Int) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
+  def index(train: String, year: Int, month: Int, day: Int) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     if (request.user.roles.contains(PlanUser)) {
       val token = jwtService.createToken(request.user, new Date())
 
@@ -39,7 +40,7 @@ class SimpleTimetableController @Inject()(
           if(data.isDefined) {
             Ok(views.html.plan.timetable.simple.index(request.user, token, data.get.dst, data.get.basicSchedule ,data.get.mapLocations, data.get.routes, data.get.routeLink, List.empty)(request.request))
           }
-          else NotFound(views.html.plan.search.index(request.user,  locationsService.getLocations,defaultDate,
+          else NotFound(views.html.plan.search.index(request.user,  locationsService.getLocations, TimetableHelper.defaultDate,
             List(s"Could not fnd train $train on $year-$month-$day. Please try searching again"
             )))
       }
@@ -48,7 +49,7 @@ class SimpleTimetableController @Inject()(
       }
       catch{
         case e: TimeoutException =>
-          InternalServerError(views.html.plan.search.index(request.user,  locationsService.getLocations, defaultDate,
+          InternalServerError(views.html.plan.search.index(request.user,  locationsService.getLocations, TimetableHelper.defaultDate,
             List(s"Could not get details for train $train on $year-$month-$day. Timed out producing the page"
             ))
           (request.request))
@@ -60,11 +61,7 @@ class SimpleTimetableController @Inject()(
   }
 
 
-  private def defaultDate = {
-    val now = ZonedDateTime.now
-    val defaultDate = s"${now.getYear}-${now.getMonthValue}-${now.getDayOfMonth}"
-    defaultDate
-  }
+
 
 }
 
