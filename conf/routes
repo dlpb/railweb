@@ -48,17 +48,17 @@ GET  /locations/by/tiploc                                           controllers.
 GET  /locations/by/crs                                              controllers.location.list.crs.LocationsByCrsController.index(orrStations: Boolean ?=true, operator: String ?= "all", name: String ?= "all", id: String ?= "all", srs: String ?= "all")
 GET  /location/detail/:id                                           controllers.location.detail.LocationDetailController.index(id: String)
 
-GET  /plan                                                          controllers.plan.PlanController.showPlanIndex()
+GET  /plan                                                          controllers.plan.PlanController.index()
 
 GET  /plan/location/highlight                                       controllers.plan.callingpoint.highlight.HighlightController.showLocationHighlights(locations: String ?= "")
 GET  /plan/location/highlight/trains                                controllers.plan.callingpoint.highlight.HighlightController.showLocationHighlightsForTrains(trainsAndStations: String ?= "", srsLocations: String ?= "", locations: String ?= "", year: Int ?= 0, month: Int ?= 0, day: Int ?= 0)
 
 GET  /plan/timetables/location                                      controllers.plan.timetable.location.LocationTimetableSearchController.index()
-GET  /plan/timetables/location/simple                               controllers.plan.timetable.location.simple.SimpleLocationTrainController.index(loc: String, year: Int ?= 0, month: Int ?= 0, day: Int ?= 0, from: Int ?= -1, to: Int ?= -1 , date: String ?= "")
-GET  /plan/timetables/location/detailed                             controllers.plan.timetable.location.detailed.DetailedLocationTrainController.index(loc: String, year: Int ?=0, month: Int ?=0, day: Int ?=0, from: Int ?= -1, to: Int ?= -1, date: String ?= "")
+GET  /plan/timetables/location/simple                               controllers.plan.timetable.location.simple.SimpleLocationTimetableController.index(loc: String, year: Int ?= 0, month: Int ?= 0, day: Int ?= 0, from: Int ?= -1, to: Int ?= -1 , date: String ?= "")
+GET  /plan/timetables/location/detailed                             controllers.plan.timetable.location.detailed.DetailedLocationTimetableController.index(loc: String, year: Int ?=0, month: Int ?=0, day: Int ?=0, from: Int ?= -1, to: Int ?= -1, date: String ?= "")
 
-GET  /plan/timetables/train/:train/simple/:year/:month/:day         controllers.plan.timetable.train.simple.SimpleTimetableController.index(train: String, year: Int, month: Int, day: Int)
-GET  /plan/timetables/train/:train/detailed/:year/:month/:day       controllers.plan.timetable.train.detailed.DetailedTimetableController.index(train: String, year: Int, month: Int, day: Int)
+GET  /plan/timetables/train/:train/simple/:year/:month/:day         controllers.plan.timetable.train.simple.SimpleTrainTimetableController.index(train: String, year: Int, month: Int, day: Int)
+GET  /plan/timetables/train/:train/detailed/:year/:month/:day       controllers.plan.timetable.train.detailed.DetailedTrainTimetableController.index(train: String, year: Int, month: Int, day: Int)
 
 GET  /routes/find                                                   controllers.plan.route.ListController.showListPage(waypoints: String ?= "", followFreightLinks: Boolean ?=false, followFixedLinks: Boolean ?= false, visitAllRoutes: Boolean ?= false, visitAllStations: Boolean ?= false)
 

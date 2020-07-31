@@ -19,7 +19,7 @@ import play.api.mvc._
 import scala.concurrent.duration.Duration
 import scala.concurrent.{Await, Future, TimeoutException}
 
-class SimpleLocationTrainController @Inject()(
+class SimpleLocationTimetableController @Inject()(
                                                cc: ControllerComponents,
                                                authenticatedUserAction: AuthorizedWebAction,
                                                locationsService: LocationsService,

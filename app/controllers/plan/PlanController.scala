@@ -16,7 +16,7 @@ class PlanController @Inject()(
 
                               ) extends AbstractController(cc) with I18nSupport {
 
-  def showPlanIndex(): Action[AnyContent] = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
+  def index(): Action[AnyContent] = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     if (request.user.roles.contains(PlanUser)) {
       val token = jwtService.createToken(request.user, new Date())
 
