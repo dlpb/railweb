@@ -12,7 +12,7 @@ import play.api.data.Forms._
 import play.api.data._
 import play.api.mvc._
 
-class UserController @Inject()(
+class LoginController @Inject()(
                                 cc: MessagesControllerComponents,
                                 userDao: UserDao,
                                 jwtService: JWTService
@@ -31,9 +31,9 @@ class UserController @Inject()(
     )(LoginUser.apply)(LoginUser.unapply)
   )
 
-  private val formSubmitUrl = controllers.login.routes.UserController.processLoginAttempt()
+  private val formSubmitUrl = controllers.login.routes.LoginController.processLoginAttempt()
 
-  def showLoginForm = Action { implicit request: MessagesRequest[AnyContent] =>
+  def index = Action { implicit request: MessagesRequest[AnyContent] =>
     Ok(views.html.login.index(form, formSubmitUrl))
   }
 
@@ -54,7 +54,7 @@ class UserController @Inject()(
           .withSession(Global.SESSION_USERNAME_KEY -> user.id.toString, Global.SESSION_USER_TOKEN -> jwtService.createToken(user, new Date()))
         }
         case None => {
-          Redirect(controllers.login.routes.UserController.showLoginForm())
+          Redirect(controllers.login.routes.LoginController.index())
             .flashing("error" -> "Invalid username/password.")
             .withNewSession
         }

@@ -8,8 +8,8 @@ GET     /assets/*file               controllers.Assets.versioned(path="/public",
 
 # user/admin stuff
 GET  /                                                              controllers.landing.LandingPageController.showLandingPage()
-GET  /login                                                         controllers.login.UserController.showLoginForm()
-POST /doLogin                                                       controllers.login.UserController.processLoginAttempt()
+GET  /login                                                         controllers.login.LoginController.index()
+POST /doLogin                                                       controllers.login.LoginController.processLoginAttempt()
 GET  /welcome                                                       controllers.landing.LandingPageController.showLandingPage()
 GET  /logout                                                        controllers.profile.visit.AuthenticatedUserController.logout()
 
