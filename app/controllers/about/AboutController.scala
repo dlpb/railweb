@@ -12,7 +12,7 @@ class AboutController @Inject()(
                                ) extends MessagesAbstractController(cc) {
 
   def about = Action { implicit request =>
-    Ok(views.html.landing.about())
+    Ok(views.html.about.index())
   }
 
 
