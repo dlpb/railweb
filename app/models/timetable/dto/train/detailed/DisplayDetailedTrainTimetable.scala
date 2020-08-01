@@ -9,8 +9,8 @@ import models.plan.timetable.location.{LocationTimetableFilters, LocationTimetab
 import models.timetable.dto.TimetableHelper
 import models.timetable.model.train.IndividualTimetable
 
-object DisplayDetailedIndividualTimetable {
-  def apply(locationsService: LocationsService, tt: IndividualTimetable, year: Int, month: Int, day: Int) : DisplayDetailedIndividualTimetable = {
+object DisplayDetailedTrainTimetable {
+  def apply(locationsService: LocationsService, tt: IndividualTimetable, year: Int, month: Int, day: Int) : DisplayDetailedTrainTimetable = {
     val date = LocalDate.of(year, month, day)
     val m = if(tt.basicSchedule.validMonday) "M" else ""
     val t = if(tt.basicSchedule.validTuesday) "T" else ""
@@ -23,7 +23,7 @@ object DisplayDetailedIndividualTimetable {
 
 
 
-    DisplayDetailedIndividualTimetable(
+    DisplayDetailedTrainTimetable(
       tt.locations.headOption.flatMap(l => locationsService.findLocation(l.tiploc).map(l => l.name)).getOrElse(""),
       tt.locations.lastOption.flatMap(l => locationsService.findLocation(l.tiploc).map(l => l.name)).getOrElse(""),
       tt.basicScheduleExtraDetails.atocCode,
@@ -111,7 +111,7 @@ object DisplayDetailedIndividualTimetable {
   }
 }
 
-case class DisplayDetailedIndividualTimetable(
+case class DisplayDetailedTrainTimetable(
                                              origin: String,
                                              destination: String,
                                              operator: String,

@@ -41,7 +41,7 @@ class DetailedLocationTimetableController @Inject()(
       println(s"Showing results for ${locations.map(_.tiploc)}")
 
       if (locations.nonEmpty) {
-        val allTiplocResults = locations.map(location => trainService.getDetailedTrainsForLocation(location.id, year, month, day, from, to))
+        val allTiplocResults = locations.map(location => trainService.getTrainsForLocation(location.id, year, month, day, from, to))
         val allTimetables: Set[Future[Seq[DisplayDetailedLocationTimetable]]] = allTiplocResults.map(result => result.timetables map {
           f =>
             f map {
