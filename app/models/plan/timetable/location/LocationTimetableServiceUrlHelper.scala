@@ -13,24 +13,13 @@ object LocationTimetableServiceUrlHelper {
   }
 
   def createUrlForDisplayingLocationSimpleTimetables(loc: String, year: Int, month: Int, day: Int, from: Int, to: Int) = {
-    val m = TimetableDateTimeHelper.padMonth(month)
-    val d = TimetableDateTimeHelper.padDay(day)
-    val f = TimetableDateTimeHelper.padTime(from)
-    val t = TimetableDateTimeHelper.padTime(to)
-    val url = s"/plan/timetables/location/simple?loc=$loc&year=$year&month=$m&day=$d&from=$f&to=$t"
+    val url = controllers.plan.timetable.location.simple.routes.SimpleLocationTimetableController.index(loc,year,month,day,from,to).url
     url
   }
 
   def createUrlForDisplayingLocationDetailedTimetables(loc: String, year: Int, month: Int, day: Int, from: Int, to: Int) = {
-    val m = TimetableDateTimeHelper.padMonth(month)
-    val d = TimetableDateTimeHelper.padDay(day)
-    val f = TimetableDateTimeHelper.padTime(from)
-    val t = TimetableDateTimeHelper.padTime(to)
-    val url = s"/plan/timetables/location/detailed?loc=$loc&year=$year&month=$m&day=$d&from=$f&to=$t"
+    val url = controllers.plan.timetable.location.detailed.routes.DetailedLocationTimetableController.index(loc,year,month,day,from,to).url
     url
   }
-
-  def createUrlForReadingTrainTimetable(train: String) = s"http://railweb-timetables-java.herokuapp.com/timetables/train/$train"
-  //  def createUrlForReadingTrainTimetable(train: String) = s"http://localhost:9090/timetables/train/$train"
 
 }
