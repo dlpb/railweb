@@ -27,7 +27,7 @@ class RouteDetailController @Inject()(
      route match {
        case Some(r) =>
          val token = jwtService.createToken(request.user, new Date())
-         Ok(views.html.route.route(
+         Ok(views.html.route.detail.index(
            request.user,
            r,
            routeService.getVisitsForRoute(r, request.user),
