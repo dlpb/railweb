@@ -5,7 +5,7 @@ import java.util.Date
 
 import models.location.LocationsService
 import models.plan.timetable.TimetableDateTimeHelper
-import models.plan.timetable.location.{LocationTimetableService, LocationTimetableServiceUrlHelper}
+import models.plan.timetable.location.{LocationTimetableFilters, LocationTimetableService, LocationTimetableServiceUrlHelper}
 import models.timetable.dto.TimetableHelper
 import models.timetable.model.train.{Class, Hauled, IndividualTimetable, Timing}
 
@@ -51,7 +51,7 @@ object DisplayDetailedIndividualTimetable {
           val loc = locationsService.findLocation(l.tiploc)
           val isPass = l.pass.isDefined
 
-          val public = LocationTimetableService.isPublicCategory(tt.basicSchedule.trainCategory)
+          val public = LocationTimetableFilters.isPublicCategory(tt.basicSchedule.trainCategory)
 
           val arrival: String =
             if(l.pass.isDefined) "pass"
