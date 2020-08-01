@@ -8,8 +8,8 @@ import models.list.PathService
 import models.location.{LocationsService, MapLocation}
 import models.plan.timetable.reader.{Reader, WebZipInputStream}
 import models.route.MapRoute
-import models.timetable.dto.timetable.detailed.DisplayDetailedIndividualTimetable
-import models.timetable.dto.timetable.simple.DisplaySimpleIndividualTimetable
+import models.timetable.dto.train.detailed.DisplayDetailedIndividualTimetable
+import models.timetable.dto.train.simple.DisplaySimpleTrainTimetable
 import models.timetable.model.JsonFormats
 import models.timetable.model.train._
 import org.json4s.DefaultFormats
@@ -32,7 +32,7 @@ class TrainTimetableService @Inject()(locationsService: LocationsService, pathSe
             val mapLocations = List()
             val mapRoutes = List()
             val link = TrainTimetableServiceUrlHelper.buildRouteLink(tt, locationsService)
-            val dst = DisplaySimpleIndividualTimetable(locationsService, tt, year, month, day)
+            val dst = DisplaySimpleTrainTimetable(locationsService, tt, year, month, day)
             SimpleIndividualTimetableWrapper(dst, tt.basicSchedule, mapLocations, mapRoutes, link)
         }
     }
@@ -116,7 +116,7 @@ class TrainTimetableService @Inject()(locationsService: LocationsService, pathSe
   }
 }
 
-case class SimpleIndividualTimetableWrapper(dst: DisplaySimpleIndividualTimetable, basicSchedule: BasicSchedule, mapLocations: List[MapLocation], routes: List[MapRoute], routeLink: String)
+case class SimpleIndividualTimetableWrapper(dst: DisplaySimpleTrainTimetable, basicSchedule: BasicSchedule, mapLocations: List[MapLocation], routes: List[MapRoute], routeLink: String)
 
 case class DetailedIndividualTimetableWrapper(dtt: DisplayDetailedIndividualTimetable, basicSchedule: BasicSchedule, mapLocations: List[MapLocation], routes: List[MapRoute], routeLink: String)
 

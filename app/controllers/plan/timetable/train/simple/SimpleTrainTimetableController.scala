@@ -1,6 +1,5 @@
 package controllers.plan.timetable.train.simple
 
-import java.time.ZonedDateTime
 import java.util.Date
 
 import auth.JWTService

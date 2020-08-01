@@ -17,6 +17,7 @@ import scala.concurrent.Future
 import scala.concurrent.duration.Duration
 
 class LocationTimetableService @Inject()(locationsService: LocationsService, pathService: PathService, ws: WSClient, reader: Reader = new WebZipInputStream) {
+  
 
   private def getTrainsForLocationAroundNow(loc: String):LocationTimetableResult = {
     val from = TimetableDateTimeHelper.from

@@ -1,4 +1,4 @@
-package models.timetable.dto.timetable.detailed
+package models.timetable.dto.train.detailed
 
 import java.time.{LocalDate, ZoneId}
 import java.util.Date
@@ -83,7 +83,7 @@ object DisplayDetailedIndividualTimetable {
           val from = date.atTime(hour, minute).minusMinutes(15)
           val to = date.atTime(hour, minute).plusMinutes(45)
 
-          DisplayDetailedIndividualTimetableLocation(
+          DisplayDetailedTrainTimetableCallingPoint(
             loc.map(_.id).getOrElse(l.tiploc),
             loc.map(_.name).getOrElse(l.tiploc),
             platform,
@@ -134,7 +134,7 @@ case class DisplayDetailedIndividualTimetable(
                                              catering: List[String],
                                              branding: String,
                                              stpIndicator: String,
-                                             locations: List[DisplayDetailedIndividualTimetableLocation]
+                                             locations: List[DisplayDetailedTrainTimetableCallingPoint]
                                              ) {
   def day = runningOn.getDayOfMonth
   def month = runningOn.getMonth.getValue
@@ -143,7 +143,7 @@ case class DisplayDetailedIndividualTimetable(
   def to = runsTo.toInstant.atZone(ZoneId.of("Z")).toLocalDate
 }
 
-case class DisplayDetailedIndividualTimetableLocation(
+case class DisplayDetailedTrainTimetableCallingPoint(
                                                      id: String,
                                                      label: String,
                                                      platform: String,

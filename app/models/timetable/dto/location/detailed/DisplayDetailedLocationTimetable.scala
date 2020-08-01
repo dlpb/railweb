@@ -1,12 +1,12 @@
 package models.timetable.dto.location.detailed
 
 import models.location.LocationsService
-import models.plan.timetable.trains.{TrainTimetableService, TrainTimetableServiceUrlHelper}
+import models.plan.timetable.trains.TrainTimetableServiceUrlHelper
 import models.timetable.model.location.TimetableForLocation
 
-object DisplayDetailedLocationTrain {
+object DisplayDetailedLocationTimetable {
 
-  def apply(locationsService: LocationsService, simpleTimetable: TimetableForLocation, year: Int, month: Int, day: Int): DisplayDetailedLocationTrain = {
+  def apply(locationsService: LocationsService, simpleTimetable: TimetableForLocation, year: Int, month: Int, day: Int): DisplayDetailedLocationTimetable = {
 
     val public = simpleTimetable.publicTrain
 
@@ -28,7 +28,7 @@ object DisplayDetailedLocationTrain {
 
     val toc = simpleTimetable.toc.getOrElse("Unknown TOC")
 
-    DisplayDetailedLocationTrain(
+    DisplayDetailedLocationTimetable(
       public,
       simpleTimetable.pass.isDefined,
       simpleTimetable.uid,
@@ -47,7 +47,7 @@ object DisplayDetailedLocationTrain {
   }
 }
 
-case class DisplayDetailedLocationTrain(
+case class DisplayDetailedLocationTimetable(
                                     isPublic: Boolean,
                                     isPass: Boolean,
                                     uid: String,

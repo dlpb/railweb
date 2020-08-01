@@ -12,7 +12,7 @@ import models.location.LocationsService
 import models.plan.timetable.location.LocationTimetableService
 import models.plan.timetable.trains.TrainTimetableService
 import models.timetable.dto.TimetableHelper
-import models.timetable.dto.location.simple.DisplaySimpleLocationTrain
+import models.timetable.dto.location.simple.DisplaySimpleLocationTimetable
 import play.api.i18n.I18nSupport
 import play.api.mvc._
 
@@ -49,11 +49,11 @@ class SimpleLocationTimetableController @Inject()(
       if (locations.nonEmpty) {
         val allTiplocResults = locations.map(location => locationTrainService.getTrainsForLocation(location.id, y, m, d, from, to))
 
-        val allTimetables: Seq[Future[Seq[DisplaySimpleLocationTrain]]] = allTiplocResults.map(result => result.timetables map {
+        val allTimetables: Seq[Future[Seq[DisplaySimpleLocationTimetable]]] = allTiplocResults.map(result => result.timetables map {
           f =>
             f.filter(tt => tt.publicStop && tt.publicTrain) map {
               t =>
-                DisplaySimpleLocationTrain(locationsService, t, result.year, result.month, result.day)
+                DisplaySimpleLocationTimetable(locationsService, t, result.year, result.month, result.day)
             }
         }).toSeq
 
@@ -61,8 +61,8 @@ class SimpleLocationTimetableController @Inject()(
 
         val l = locations.head
         val eventualResult: Future[Result] = timetables map {
-          timetable: Seq[Seq[DisplaySimpleLocationTrain]] =>
-            val t: Seq[DisplaySimpleLocationTrain] = timetable.flatten
+          timetable: Seq[Seq[DisplaySimpleLocationTimetable]] =>
+            val t: Seq[DisplaySimpleLocationTimetable] = timetable.flatten
             val result = allTiplocResults.head
             val locationName = l.name
             val locationId = if(l.crs.nonEmpty && l.isOrrStation) l.crs.head else l.id

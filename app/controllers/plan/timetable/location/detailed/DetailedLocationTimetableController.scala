@@ -12,7 +12,7 @@ import models.location.LocationsService
 import models.plan.timetable.location.LocationTimetableService
 import models.plan.timetable.trains.TrainTimetableService
 import models.timetable.dto.TimetableHelper
-import models.timetable.dto.location.detailed.DisplayDetailedLocationTrain
+import models.timetable.dto.location.detailed.DisplayDetailedLocationTimetable
 import play.api.i18n.I18nSupport
 import play.api.mvc._
 
@@ -42,11 +42,11 @@ class DetailedLocationTimetableController @Inject()(
 
       if (locations.nonEmpty) {
         val allTiplocResults = locations.map(location => trainService.getDetailedTrainsForLocation(location.id, year, month, day, from, to))
-        val allTimetables: Set[Future[Seq[DisplayDetailedLocationTrain]]] = allTiplocResults.map(result => result.timetables map {
+        val allTimetables: Set[Future[Seq[DisplayDetailedLocationTimetable]]] = allTiplocResults.map(result => result.timetables map {
           f =>
             f map {
               t =>
-                DisplayDetailedLocationTrain(locationsService, t, result.year, result.month, result.day)
+                DisplayDetailedLocationTimetable(locationsService, t, result.year, result.month, result.day)
             }
         })
 
@@ -54,7 +54,7 @@ class DetailedLocationTimetableController @Inject()(
 
         val l = locations.head
         val eventualResult: Future[Result] = timetables map {
-          timetable: Set[Seq[DisplayDetailedLocationTrain]] =>
+          timetable: Set[Seq[DisplayDetailedLocationTimetable]] =>
             val t = timetable.flatten
             val result = allTiplocResults.head
             val locationName = l.name

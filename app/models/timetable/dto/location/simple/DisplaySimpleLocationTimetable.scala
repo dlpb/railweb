@@ -1,17 +1,17 @@
 package models.timetable.dto.location.simple
 
 import models.location.LocationsService
-import models.plan.timetable.trains.{TrainTimetableService, TrainTimetableServiceUrlHelper}
+import models.plan.timetable.trains.TrainTimetableServiceUrlHelper
 import models.timetable.model.location.TimetableForLocation
 
-object DisplaySimpleLocationTrain {
+object DisplaySimpleLocationTimetable {
 
-  def apply(locationsService: LocationsService, simpleTimetable: TimetableForLocation, year: Int, month: Int, day: Int): DisplaySimpleLocationTrain = {
+  def apply(locationsService: LocationsService, simpleTimetable: TimetableForLocation, year: Int, month: Int, day: Int): DisplaySimpleLocationTimetable = {
     val arrival = simpleTimetable.pubArr.map(_.toString).getOrElse("")
     val departure = simpleTimetable.pubDep.map(_.toString).getOrElse("")
     val platform = simpleTimetable.platform.map(_.toString).getOrElse("")
 
-    DisplaySimpleLocationTrain(
+    DisplaySimpleLocationTimetable(
       arrival,
       departure,
       simpleTimetable.origin.flatMap({ o => locationsService.findLocation(o).map(_.name)}).getOrElse(simpleTimetable.origin.getOrElse("")),
@@ -23,16 +23,9 @@ object DisplaySimpleLocationTrain {
       if(platform != "") "Platform" else ""
     )
   }
-
-  def time(time: Int): String = {
-    if(time < 10) s"000$time"
-    else if (time < 100) s"00$time"
-    else if (time < 1000) s"0$time"
-    else s"$time"
-  }
 }
 
-case class DisplaySimpleLocationTrain(
+case class DisplaySimpleLocationTimetable(
                                     arrival: String,
                                     departure: String,
                                     origin: String,

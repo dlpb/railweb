@@ -1,4 +1,4 @@
-package models.timetable.dto.timetable.simple
+package models.timetable.dto.train.simple
 
 import java.time.LocalDate
 
@@ -8,13 +8,13 @@ import models.plan.timetable.location.LocationTimetableServiceUrlHelper
 import models.timetable.dto.TimetableHelper
 import models.timetable.model.train.IndividualTimetable
 
-object DisplaySimpleIndividualTimetable {
+object DisplaySimpleTrainTimetable {
 
 
-  def apply(locationsService: LocationsService, tt: IndividualTimetable, year: Int, month: Int, day: Int): DisplaySimpleIndividualTimetable = {
+  def apply(locationsService: LocationsService, tt: IndividualTimetable, year: Int, month: Int, day: Int): DisplaySimpleTrainTimetable = {
     val date = LocalDate.of(year, month, day)
 
-    DisplaySimpleIndividualTimetable(
+    DisplaySimpleTrainTimetable(
       tt.basicScheduleExtraDetails.atocCode,
       tt.locations.headOption.flatMap(l => locationsService.findLocation(l.tiploc).map(l => l.name)).getOrElse(""),
       tt.locations.lastOption.flatMap(l => locationsService.findLocation(l.tiploc).map(l => l.name)).getOrElse(""),
@@ -39,7 +39,7 @@ object DisplaySimpleIndividualTimetable {
 
             val platform = l.platform
             val loc = locationsService.findLocation(l.tiploc)
-            DisplaySimpleIndividualTimetableLocation(
+            DisplaySimpleTrainTimetableCallingPoint(
               loc.map(_.name).getOrElse(""),
               arrival map TimetableHelper.time getOrElse "",
               if (arrival.isDefined) "Arr." else "",
@@ -64,20 +64,20 @@ object DisplaySimpleIndividualTimetable {
   }
 }
 
-case class DisplaySimpleIndividualTimetable(
-                                           operator: String,
-                                           origin: String,
-                                           destination: String,
-                                           runningOn: LocalDate,
-                                           locations: List[DisplaySimpleIndividualTimetableLocation],
-                                           uid: String
+case class DisplaySimpleTrainTimetable(
+                                        operator: String,
+                                        origin: String,
+                                        destination: String,
+                                        runningOn: LocalDate,
+                                        locations: List[DisplaySimpleTrainTimetableCallingPoint],
+                                        uid: String
                                            ) {
   def day = runningOn.getDayOfMonth
   def month = runningOn.getMonth.getValue
   def year = runningOn.getYear
 }
 
-case class DisplaySimpleIndividualTimetableLocation(name: String, arrival: String, arrivalLabel: String, departure: String, departureLabel: String, platform: String, platformLabel: String, url: String)
+case class DisplaySimpleTrainTimetableCallingPoint(name: String, arrival: String, arrivalLabel: String, departure: String, departureLabel: String, platform: String, platformLabel: String, url: String)
 
 
 
