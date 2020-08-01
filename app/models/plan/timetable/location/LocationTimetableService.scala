@@ -1,14 +1,12 @@
 package models.plan.timetable.location
 
 import java.io.FileNotFoundException
-import java.util.Date
 
 import javax.inject.Inject
 import models.list.PathService
 import models.location.{Location, LocationsService}
 import models.plan.timetable.TimetableDateTimeHelper
 import models.plan.timetable.reader.{Reader, WebZipInputStream}
-import models.plan.timetable.trains.SimpleTrainTimetableWrapper
 import models.timetable.dto.TimetableHelper
 import models.timetable.dto.location.detailed.DisplayDetailedLocationTimetable
 import models.timetable.dto.location.simple.DisplaySimpleLocationTimetable
@@ -30,6 +28,25 @@ class LocationTimetableService @Inject()(
 
   import scala.concurrent.ExecutionContext.Implicits.global
 
+  def getDetailedTimetablesForLocation(loc: String,
+                                       year: Int,
+                                       month: Int,
+                                       day: Int,
+                                       from: Int,
+                                       to: Int,
+                                       date: String): LocationDetailedTimetableResult = {
+    mapTimetablesToDisplayTimetables[DisplayDetailedLocationTimetable, LocationDetailedTimetableResult](
+      loc,
+      year,
+      month,
+      day,
+      from,
+      to,
+      date,
+      DisplayDetailedLocationTimetable.apply,
+      LocationDetailedTimetableResult.apply)
+  }
+
   def getSimpleTimetablesForLocation(loc: String,
                                      year: Int,
                                      month: Int,
@@ -38,6 +55,29 @@ class LocationTimetableService @Inject()(
                                      to: Int,
                                      date: String): LocationSimpleTimetableResult = {
 
+    mapTimetablesToDisplayTimetables[DisplaySimpleLocationTimetable, LocationSimpleTimetableResult](
+      loc,
+      year,
+      month,
+      day,
+      from,
+      to,
+      date,
+      DisplaySimpleLocationTimetable.apply,
+      LocationSimpleTimetableResult.apply)
+  }
+
+
+  private def mapTimetablesToDisplayTimetables[M,R](
+                                                loc: String,
+                                                year: Int,
+                                                month: Int,
+                                                day: Int,
+                                                from: Int,
+                                                to: Int,
+                                                date: String,
+                                                mappingFn: (LocationsService, TimetableForLocation, Int, Int, Int) => M,
+                                                resultFn: (Future[Seq[M]], Int, Int, Int, Int, Int, Set[Location]) => R) = {
     val (y, m, d): (Int, Int, Int) = if (date.contains("-")) {
       val dateParts = date.split("-").map(_.toInt)
       (dateParts(0), dateParts(1), dateParts(2))
@@ -49,23 +89,22 @@ class LocationTimetableService @Inject()(
     if (locations.nonEmpty) {
       val allTiplocResults = locations.map(location => getTrainsForLocation(location.id, y, m, d, from, to))
 
-      val allTimetables: Seq[Future[Seq[DisplaySimpleLocationTimetable]]] = allTiplocResults.map(result => result.timetables map {
+      val allTimetables: Seq[Future[Seq[M]]] = allTiplocResults.map(result => result.timetables map {
         f =>
           f.filter(tt => tt.publicStop && tt.publicTrain) map {
             t =>
-              DisplaySimpleLocationTimetable(locationsService, t, result.year, result.month, result.day)
+              mappingFn(locationsService, t, result.year, result.month, result.day)
           }
       }).toSeq
 
       val timetables = Future.sequence(allTimetables).map(_.flatten)
 
-      LocationSimpleTimetableResult(timetables, y, m, d, allTiplocResults.headOption.map(_.from).getOrElse(from), allTiplocResults.headOption.map(_.to).getOrElse(to), locations)
+      resultFn(timetables, y, m, d, allTiplocResults.headOption.map(_.from).getOrElse(from), allTiplocResults.headOption.map(_.to).getOrElse(to), locations)
     }
     else {
-      LocationSimpleTimetableResult(Future.successful(Seq.empty), y, m, d, from, to, locations)
+      resultFn(Future.successful(Seq.empty), y, m, d, from, to, locations)
     }
   }
-
 
   private def getTrainsForLocationAroundNow(loc: String): LocationTimetableResult = {
     val from = TimetableDateTimeHelper.from
