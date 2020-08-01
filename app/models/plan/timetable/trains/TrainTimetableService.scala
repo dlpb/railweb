@@ -33,7 +33,7 @@ class TrainTimetableService @Inject()(locationsService: LocationsService, pathSe
             val mapRoutes = List()
             val link = TrainTimetableServiceUrlHelper.buildRouteLink(tt, locationsService)
             val dst = DisplaySimpleTrainTimetable(locationsService, tt, year, month, day)
-            SimpleIndividualTimetableWrapper(dst, tt.basicSchedule, mapLocations, mapRoutes, link)
+            SimpleTrainTimetableWrapper(dst, tt.basicSchedule, mapLocations, mapRoutes, link)
         }
     }
   }
@@ -46,7 +46,7 @@ class TrainTimetableService @Inject()(locationsService: LocationsService, pathSe
             val mapRoutes = List()
             val link = TrainTimetableServiceUrlHelper.buildRouteLink(tt, locationsService)
             val ddt = DisplayDetailedIndividualTimetable(locationsService, tt, year, month, day)
-            DetailedIndividualTimetableWrapper(ddt, tt.basicSchedule, mapLocations, mapRoutes, link)
+            DetailedTrainTimetableWrapper(ddt, tt.basicSchedule, mapLocations, mapRoutes, link)
         }
     }
   }
@@ -116,7 +116,7 @@ class TrainTimetableService @Inject()(locationsService: LocationsService, pathSe
   }
 }
 
-case class SimpleIndividualTimetableWrapper(dst: DisplaySimpleTrainTimetable, basicSchedule: BasicSchedule, mapLocations: List[MapLocation], routes: List[MapRoute], routeLink: String)
+case class SimpleTrainTimetableWrapper(dst: DisplaySimpleTrainTimetable, basicSchedule: BasicSchedule, mapLocations: List[MapLocation], routes: List[MapRoute], routeLink: String)
 
-case class DetailedIndividualTimetableWrapper(dtt: DisplayDetailedIndividualTimetable, basicSchedule: BasicSchedule, mapLocations: List[MapLocation], routes: List[MapRoute], routeLink: String)
+case class DetailedTrainTimetableWrapper(dtt: DisplayDetailedIndividualTimetable, basicSchedule: BasicSchedule, mapLocations: List[MapLocation], routes: List[MapRoute], routeLink: String)
 
