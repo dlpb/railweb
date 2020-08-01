@@ -45,7 +45,7 @@ mapLocations: List[models.location.MapLocation]
       integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
       crossorigin="anonymous">
 
-@templates.menu.menu(None)
+@templates.menu.menu(Some(user))
 
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">

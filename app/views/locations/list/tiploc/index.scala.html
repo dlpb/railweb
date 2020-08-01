@@ -51,7 +51,7 @@ srs: String)(implicit request: Request[AnyContent])
       crossorigin="anonymous">
 
 
-@templates.menu.menu(None)
+@templates.menu.menu(Some(user))
 
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">

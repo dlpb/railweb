@@ -44,7 +44,7 @@ user: models.auth.User
 
 </script>
 
-@templates.menu.menu(None)
+@templates.menu.menu(Some(user))
 
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">

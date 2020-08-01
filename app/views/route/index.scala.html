@@ -47,7 +47,7 @@ srs: String)(implicit request: Request[AnyContent])
       crossorigin="anonymous">
 
 
-@templates.menu.menu(None)
+@templates.menu.menu(Some(user))
 
 <div class="container">
     <div class="content">
