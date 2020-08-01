@@ -1,7 +1,7 @@
 package models.timetable.dto.location.detailed
 
 import models.location.LocationsService
-import models.plan.timetable.trains.TimetableService
+import models.plan.timetable.trains.{TrainTimetableService, TrainTimetableServiceUrlHelper}
 import models.timetable.model.location.TimetableForLocation
 
 object DisplayDetailedLocationTrain {
@@ -39,7 +39,7 @@ object DisplayDetailedLocationTrain {
       platform,
       toc,
       simpleTimetable.stpIndicator.toString,
-      TimetableService.createUrlForDisplayingDetailedTrainTimetable(simpleTimetable.uid, year, month, day),
+      TrainTimetableServiceUrlHelper.createUrlForDisplayingDetailedTrainTimetable(simpleTimetable.uid, year, month, day),
       "",
       "",
       ""

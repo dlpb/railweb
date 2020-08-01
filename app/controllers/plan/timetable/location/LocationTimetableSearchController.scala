@@ -6,8 +6,8 @@ import javax.inject.Inject
 import models.auth.roles.PlanUser
 import models.list.PathService
 import models.location.LocationsService
-import models.plan.timetable.location.LocationTrainService
-import models.plan.timetable.trains.TimetableService
+import models.plan.timetable.location.LocationTimetableService
+import models.plan.timetable.trains.TrainTimetableService
 import models.timetable.dto.TimetableHelper
 import play.api.i18n.I18nSupport
 import play.api.mvc.{AbstractController, Action, AnyContent, ControllerComponents}
@@ -17,8 +17,8 @@ class LocationTimetableSearchController @Inject()(
                                                    authenticatedUserAction: AuthorizedWebAction,
                                                    locationsService: LocationsService,
                                                    pathService: PathService,
-                                                   locationTrainService: LocationTrainService,
-                                                   timetableService: TimetableService,
+                                                   locationTrainService: LocationTimetableService,
+                                                   timetableService: TrainTimetableService,
                                                    jwtService: JWTService
 
                                                  ) extends AbstractController(cc) with I18nSupport {

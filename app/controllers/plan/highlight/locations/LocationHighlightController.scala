@@ -8,19 +8,19 @@ import javax.inject.Inject
 import models.auth.roles.PlanUser
 import models.list.PathService
 import models.location.LocationsService
-import models.plan.timetable.location.LocationTrainService
-import models.plan.timetable.trains.TimetableService
+import models.plan.timetable.location.LocationTimetableService
+import models.plan.timetable.trains.TrainTimetableService
 import play.api.i18n.I18nSupport
 import play.api.mvc._
 
 class LocationHighlightController @Inject()(
-                                     cc: ControllerComponents,
-                                     authenticatedUserAction: AuthorizedWebAction,
-                                     locationsService: LocationsService,
-                                     pathService: PathService,
-                                     trainService: LocationTrainService,
-                                     timetableService: TimetableService,
-                                     jwtService: JWTService
+                                             cc: ControllerComponents,
+                                             authenticatedUserAction: AuthorizedWebAction,
+                                             locationsService: LocationsService,
+                                             pathService: PathService,
+                                             trainService: LocationTimetableService,
+                                             timetableService: TrainTimetableService,
+                                             jwtService: JWTService
 
                               ) extends AbstractController(cc) with I18nSupport {
 

@@ -4,8 +4,8 @@ import auth.api.{AuthorizedAction, UserRequest}
 import javax.inject.{Inject, Singleton}
 import models.auth.roles.{PlanUser, VisitUser}
 import models.location.{LocationsService, MapLocation}
-import models.plan.timetable.location.LocationTrainService
-import models.plan.timetable.trains.TimetableService
+import models.plan.timetable.location.LocationTimetableService
+import models.plan.timetable.trains.TrainTimetableService
 import models.route.{MapRoute, RoutesService}
 import org.json4s.DefaultFormats
 import org.json4s.jackson.Serialization.write
@@ -18,13 +18,13 @@ import scala.concurrent.{Await, Future, TimeoutException}
 
 @Singleton
 class VisitRouteApiController @Inject()(
-                                            env: Environment,
-                                            cc: ControllerComponents,
-                                            locationService: LocationsService,
-                                            routeService: RoutesService,
-                                            trainService: LocationTrainService,
-                                            timetableService: TimetableService,
-                                            authAction: AuthorizedAction // NEW - add the action as a constructor argument
+                                         env: Environment,
+                                         cc: ControllerComponents,
+                                         locationService: LocationsService,
+                                         routeService: RoutesService,
+                                         trainService: LocationTimetableService,
+                                         timetableService: TrainTimetableService,
+                                         authAction: AuthorizedAction // NEW - add the action as a constructor argument
                                           )
   extends AbstractController(cc) {
 

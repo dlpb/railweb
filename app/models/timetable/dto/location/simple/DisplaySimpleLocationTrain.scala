@@ -1,7 +1,7 @@
 package models.timetable.dto.location.simple
 
 import models.location.LocationsService
-import models.plan.timetable.trains.TimetableService
+import models.plan.timetable.trains.{TrainTimetableService, TrainTimetableServiceUrlHelper}
 import models.timetable.model.location.TimetableForLocation
 
 object DisplaySimpleLocationTrain {
@@ -17,7 +17,7 @@ object DisplaySimpleLocationTrain {
       simpleTimetable.origin.flatMap({ o => locationsService.findLocation(o).map(_.name)}).getOrElse(simpleTimetable.origin.getOrElse("")),
       simpleTimetable.destination.flatMap({ o => locationsService.findLocation(o).map(_.name)}).getOrElse(simpleTimetable.destination.getOrElse("")),
       platform,
-      TimetableService.createUrlForDisplayingTrainSimpleTimetable(simpleTimetable.uid, year, month, day),
+      TrainTimetableServiceUrlHelper.createUrlForDisplayingTrainSimpleTimetable(simpleTimetable.uid, year, month, day),
       if(arrival != "") "Arr." else "",
       if(departure != "") "Dep." else "",
       if(platform != "") "Platform" else ""

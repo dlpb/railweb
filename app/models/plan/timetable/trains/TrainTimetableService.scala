@@ -20,7 +20,7 @@ import scala.concurrent.duration.Duration
 import scala.concurrent.{Await, Future, TimeoutException}
 
 @Singleton
-class TimetableService @Inject()(locationsService: LocationsService, pathService: PathService, ws: WSClient, reader: Reader = new WebZipInputStream) {
+class TrainTimetableService @Inject()(locationsService: LocationsService, pathService: PathService, ws: WSClient, reader: Reader = new WebZipInputStream) {
 
   import scala.concurrent.ExecutionContext.Implicits.global
 
@@ -31,7 +31,7 @@ class TimetableService @Inject()(locationsService: LocationsService, pathService
           tt =>
             val mapLocations = List()
             val mapRoutes = List()
-            val link = TimetableService.buildRouteLink(tt, locationsService)
+            val link = TrainTimetableServiceUrlHelper.buildRouteLink(tt, locationsService)
             val dst = DisplaySimpleIndividualTimetable(locationsService, tt, year, month, day)
             SimpleIndividualTimetableWrapper(dst, tt.basicSchedule, mapLocations, mapRoutes, link)
         }
@@ -44,7 +44,7 @@ class TimetableService @Inject()(locationsService: LocationsService, pathService
           tt =>
             val mapLocations = List()
             val mapRoutes = List()
-            val link = TimetableService.buildRouteLink(tt, locationsService)
+            val link = TrainTimetableServiceUrlHelper.buildRouteLink(tt, locationsService)
             val ddt = DisplayDetailedIndividualTimetable(locationsService, tt, year, month, day)
             DetailedIndividualTimetableWrapper(ddt, tt.basicSchedule, mapLocations, mapRoutes, link)
         }
@@ -89,7 +89,7 @@ class TimetableService @Inject()(locationsService: LocationsService, pathService
     implicit val formats = DefaultFormats ++ JsonFormats.formats
 
     try {
-      val url = TimetableService.createUrlForReadingTrainTimetable(train, year, month, day)
+      val url = TrainTimetableService.createUrlForReadingTrainTimetable(train, year, month, day)
       println(s"getting data for url $url")
       val request: WSRequest = ws.url(url)
       request
@@ -120,7 +120,7 @@ case class SimpleIndividualTimetableWrapper(dst: DisplaySimpleIndividualTimetabl
 
 case class DetailedIndividualTimetableWrapper(dtt: DisplayDetailedIndividualTimetable, basicSchedule: BasicSchedule, mapLocations: List[MapLocation], routes: List[MapRoute], routeLink: String)
 
-object TimetableService {
+object TrainTimetableService {
 
   def from: ZonedDateTime = ZonedDateTime.now().minusMinutes(15)
 
@@ -130,26 +130,6 @@ object TimetableService {
     val hour = time / 100
     val minute = time % 100
     (hour, minute)
-  }
-
-  def createUrlForDisplayingTrainSimpleTimetable(uid: String, year: Int, month: Int, day: Int) = {
-    val m = if (month < 1) "01" else if (month < 10) s"0$month" else if (month > 12) "12" else s"$month"
-    val d = if (day < 1) "01" else if (day < 10) s"0$day" else if (day > 31) "31" else s"$day"
-    val url = s"/plan/timetables/train/$uid/simple/$year/$m/$d"
-    url
-  }
-
-  def createUrlForDisplayingDetailedTrainTimetable(uid: String, year: Int, month: Int, day: Int) = {
-    val m = if (month < 1) "01" else if (month < 10) s"0$month" else if (month > 12) "12" else s"$month"
-    val d = if (day < 1) "01" else if (day < 10) s"0$day" else if (day > 31) "31" else s"$day"
-    val url = s"/plan/timetables/train/$uid/detailed/$year/$m/$d"
-    url
-  }
-
-  def buildRouteLink(tt: IndividualTimetable, locService: LocationsService): String = {
-    val ids = tt.locations.flatMap(l => locService.findLocation(l.tiploc).map(_.id)).mkString("%0D%0A")
-    val url = s"/plan/routes/point-to-point/find?followFixedLinks=false&followFreightLinks=true&waypoints=$ids"
-    url
   }
 
   def createUrlForReadingTrainTimetable(train: String, year: String, month: String, day: String) = s"http://railweb-timetables-java.herokuapp.com/timetables/train/$train?year=$year&month=$month&day=$day"

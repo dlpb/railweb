@@ -3,8 +3,8 @@ package models.timetable.dto.timetable.simple
 import java.time.LocalDate
 
 import models.location.LocationsService
-import models.plan.timetable.location.LocationTrainService
-import models.plan.timetable.trains.TimetableService
+import models.plan.timetable.location.{LocationTimetableService, LocationTimetableServiceUrlHelper}
+import models.plan.timetable.trains.TrainTimetableService
 import models.timetable.dto.TimetableHelper
 import models.timetable.model.train.IndividualTimetable
 
@@ -25,9 +25,9 @@ object DisplaySimpleIndividualTimetable {
         }
         .map {
           l =>
-            val (hour, minute) = if (l.pass.isDefined) TimetableService.hourMinute(l.pass.get)
-            else if (l.publicArrival.isDefined) TimetableService.hourMinute(l.publicArrival.get)
-            else if (l.publicDeparture.isDefined) TimetableService.hourMinute(l.publicDeparture.get)
+            val (hour, minute) = if (l.pass.isDefined) TrainTimetableService.hourMinute(l.pass.get)
+            else if (l.publicArrival.isDefined) TrainTimetableService.hourMinute(l.publicArrival.get)
+            else if (l.publicDeparture.isDefined) TrainTimetableService.hourMinute(l.publicDeparture.get)
             else (0, 0)
 
             val from = date.atTime(hour, minute).minusMinutes(15)
@@ -47,7 +47,7 @@ object DisplaySimpleIndividualTimetable {
               if (departure.isDefined) "Dep." else "",
               platform,
               if (platform != "") "Platform" else "",
-              LocationTrainService.createUrlForDisplayingLocationSimpleTimetables(
+              LocationTimetableServiceUrlHelper.createUrlForDisplayingLocationSimpleTimetables(
                 loc.map(_.id).getOrElse(""),
                 date.getYear,
                 date.getMonthValue,
