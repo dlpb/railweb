@@ -52,7 +52,7 @@ class LocationsByTiplocController @Inject()(
       val availableLocs = locations.size
       val percentage = (visitedLocs.toDouble / availableLocs.toDouble) * 100.0
       val formattedPercentage: String = f"$percentage%1.1f"
-      Ok(views.html.locations.groupedByTiploc(
+      Ok(views.html.locations.list.tiploc.index(
         request.user,
         locations,
         visits,

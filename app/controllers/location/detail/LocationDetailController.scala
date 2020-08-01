@@ -24,7 +24,7 @@ class LocationDetailController @Inject()(
       val location: Option[Location] = locationService.getLocation(id)
       val token = jwtService.createToken(request.user, new Date())
       location match {
-        case Some(loc) => Ok(views.html.locations.location(
+        case Some(loc) => Ok(views.html.locations.detail.index(
           request.user,
           loc,
           locationService.getVisitsForLocation(loc, request.user),
