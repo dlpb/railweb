@@ -1,7 +1,6 @@
 package models.plan.timetable.location
 
 import java.io.FileNotFoundException
-import java.time.ZonedDateTime
 
 import javax.inject.Inject
 import models.list.PathService
@@ -10,7 +9,6 @@ import models.plan.timetable.TimetableDateTimeHelper
 import models.plan.timetable.reader.{Reader, WebZipInputStream}
 import models.timetable.model.JsonFormats
 import models.timetable.model.location.TimetableForLocation
-import models.timetable.model.train._
 import org.json4s.DefaultFormats
 import org.json4s.native.JsonMethods.parse
 import play.api.libs.ws.{WSClient, WSRequest}
@@ -93,9 +91,3 @@ class LocationTimetableService @Inject()(locationsService: LocationsService, pat
 }
 
 case class LocationTimetableResult(timetables: Future[Seq[TimetableForLocation]], year: Int, month: Int, day: Int, from: Int, to: Int)
-
-object LocationTimetableService {
-
-
-
-}

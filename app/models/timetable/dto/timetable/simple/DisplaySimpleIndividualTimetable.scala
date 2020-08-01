@@ -4,8 +4,7 @@ import java.time.LocalDate
 
 import models.location.LocationsService
 import models.plan.timetable.TimetableDateTimeHelper
-import models.plan.timetable.location.{LocationTimetableService, LocationTimetableServiceUrlHelper}
-import models.plan.timetable.trains.TrainTimetableService
+import models.plan.timetable.location.LocationTimetableServiceUrlHelper
 import models.timetable.dto.TimetableHelper
 import models.timetable.model.train.IndividualTimetable
 

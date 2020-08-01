@@ -5,9 +5,9 @@ import java.util.Date
 
 import models.location.LocationsService
 import models.plan.timetable.TimetableDateTimeHelper
-import models.plan.timetable.location.{LocationTimetableFilters, LocationTimetableService, LocationTimetableServiceUrlHelper}
+import models.plan.timetable.location.{LocationTimetableFilters, LocationTimetableServiceUrlHelper}
 import models.timetable.dto.TimetableHelper
-import models.timetable.model.train.{Class, Hauled, IndividualTimetable, Timing}
+import models.timetable.model.train.IndividualTimetable
 
 object DisplayDetailedIndividualTimetable {
   def apply(locationsService: LocationsService, tt: IndividualTimetable, year: Int, month: Int, day: Int) : DisplayDetailedIndividualTimetable = {
