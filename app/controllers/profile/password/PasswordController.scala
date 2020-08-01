@@ -36,7 +36,7 @@ class PasswordController @Inject()(
 
   def index = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     val token = jwtService.createToken(request.user, new Date())
-    Ok(views.html.profile.changePassword(token, request.user, form, List()))
+    Ok(views.html.profile.password.change.index(token, request.user, form, List()))
   }
 
 
