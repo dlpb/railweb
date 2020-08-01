@@ -30,7 +30,7 @@ class UserAdminController @Inject()(
         Redirect(controllers.landing.routes.LandingPageController.showLandingPage())
       }
       else {
-        Ok(views.html.admin.users(token, request.user))
+        Ok(views.html.admin.users.index(token, request.user))
       }
   }
 

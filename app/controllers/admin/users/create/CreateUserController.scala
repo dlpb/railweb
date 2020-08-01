@@ -30,7 +30,7 @@ class CreateUserController @Inject()(
         Redirect(controllers.landing.routes.LandingPageController.showLandingPage())
       }
       else {
-        Ok(views.html.admin.usersCreate(token, request.user, userDao.getUsers, List()))
+        Ok(views.html.admin.users.create.index(token, request.user, userDao.getUsers, List()))
       }
   }
 
@@ -41,20 +41,20 @@ class CreateUserController @Inject()(
         val data = request.request.body.asFormUrlEncoded
         val token = jwtService.createToken(request.user, new Date())
 
-        def view(messages: List[String]): Result = Ok(views.html.admin.usersCreate(token, request.user, userDao.getUsers, messages))
+        def view(messages: List[String]): Result = Ok(views.html.admin.users.create.index(token, request.user, userDao.getUsers, messages))
 
         def fn(data: Option[Map[String, Seq[String]]]): Result = {
           (data.get("username").headOption, data.get("password").headOption, data.get("roles").headOption) match {
             case (Some(username), Some(password), Some(roles)) =>
               if (userDao.usernameInUse(username))
-                Ok(views.html.admin.usersCreate(token, request.user, userDao.getUsers, List(s"Username $username is already in use")))
+                Ok(views.html.admin.users.create.index(token, request.user, userDao.getUsers, List(s"Username $username is already in use")))
               else {
                 userDao.createUser(username, password, roles.split(",").toSet)
-                Ok(views.html.admin.usersCreate(token, request.user, userDao.getUsers, List()))
+                Ok(views.html.admin.users.create.index(token, request.user, userDao.getUsers, List()))
               }
 
             case _ =>
-              Ok(views.html.admin.usersCreate(token, request.user, userDao.getUsers, List("Invalid data")))
+              Ok(views.html.admin.users.create.index(token, request.user, userDao.getUsers, List("Invalid data")))
           }
         }
         AdminHelpers.ensureValidConfirmation(userDao, request, data, view _, fn _)

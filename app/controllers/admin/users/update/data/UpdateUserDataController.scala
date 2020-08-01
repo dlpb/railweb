@@ -34,9 +34,9 @@ class UpdateUserDataController @Inject()(
           case Some(user) =>
             val locations = locationsService.getVisitsForUser(user)
             val routes = routesService.getVisitsForUser(user)
-            Ok(views.html.admin.userUpdateData(token, request.user, user.id, VisitJsonUtils.toJson(locations), VisitJsonUtils.toJson(routes), List()))
+            Ok(views.html.admin.users.update.data.index(token, request.user, user.id, VisitJsonUtils.toJson(locations), VisitJsonUtils.toJson(routes), List()))
           case None =>
-            NotFound(views.html.admin.userUpdateData(token, request.user, -1L, "", "", List(s"User with id $userId not found")))
+            NotFound(views.html.admin.users.update.data.index(token, request.user, -1L, "", "", List(s"User with id $userId not found")))
         }
       }
   }
@@ -80,21 +80,21 @@ class UpdateUserDataController @Inject()(
                               messages = msg :: messages
 
                           }
-                          Ok(views.html.admin.userUpdateData(token, request.user, userId, locations, routes, messages))
+                          Ok(views.html.admin.users.update.data.index(token, request.user, userId, locations, routes, messages))
                         case None =>
-                          Ok(views.html.admin.userUpdateData(token, request.user, userId, locations, routes, List("could not find user")))
+                          Ok(views.html.admin.users.update.data.index(token, request.user, userId, locations, routes, List("could not find user")))
                       }
                     }
                     else
-                      Ok(views.html.admin.userUpdateData(token, request.user, userId, locations, routes, List("Invalid confirmation")))
+                      Ok(views.html.admin.users.update.data.index(token, request.user, userId, locations, routes, List("Invalid confirmation")))
                   case None =>
-                    Ok(views.html.admin.userUpdateData(token, request.user, userId, locations, routes, List("Error finding admin user")))
+                    Ok(views.html.admin.users.update.data.index(token, request.user, userId, locations, routes, List("Error finding admin user")))
                 }
               case None =>
-                Ok(views.html.admin.userUpdateData(token, request.user, userId, locations, routes, List("Please enter confirmation")))
+                Ok(views.html.admin.users.update.data.index(token, request.user, userId, locations, routes, List("Please enter confirmation")))
             }
           case _ =>
-            Ok(views.html.admin.userUpdateData(token, request.user, userId, "", "", List("Saved")))
+            Ok(views.html.admin.users.update.data.index(token, request.user, userId, "", "", List("Saved")))
         }
       }
   }

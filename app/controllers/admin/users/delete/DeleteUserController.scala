@@ -34,7 +34,7 @@ class DeleteUserController @Inject()(
         Redirect(controllers.landing.routes.LandingPageController.showLandingPage())
       }
       else {
-        Ok(views.html.admin.usersDelete(token, request.user, getAndSortUsers, List()))
+        Ok(views.html.admin.users.delete.index(token, request.user, getAndSortUsers, List()))
       }
   }
 
@@ -47,7 +47,7 @@ class DeleteUserController @Inject()(
         val data = request.request.body.asFormUrlEncoded
         val token = jwtService.createToken(request.user, new Date())
 
-        def view(messages: List[String]): Result = Ok(views.html.admin.usersDelete(token, request.user, getAndSortUsers, messages))
+        def view(messages: List[String]): Result = Ok(views.html.admin.users.delete.index(token, request.user, getAndSortUsers, messages))
 
         def fn(data: Option[Map[String, Seq[String]]]): Result = {
           data.get("id").headOption match {
@@ -55,13 +55,13 @@ class DeleteUserController @Inject()(
               userDao.findUserById(id.toLong) flatMap { u => userDao.getDaoUser(u) } match {
                 case Some(daoUser) =>
                   userDao.deleteUser(daoUser)
-                  Ok(views.html.admin.usersDelete(token, request.user, getAndSortUsers, List(s"Deleted user")))
+                  Ok(views.html.admin.users.delete.index(token, request.user, getAndSortUsers, List(s"Deleted user")))
                 case None =>
-                  Ok(views.html.admin.usersDelete(token, request.user, getAndSortUsers, List("No user data")))
+                  Ok(views.html.admin.users.delete.index(token, request.user, getAndSortUsers, List("No user data")))
               }
 
             case _ =>
-              Ok(views.html.admin.usersDelete(token, request.user, getAndSortUsers, List("Invalid data")))
+              Ok(views.html.admin.users.delete.index(token, request.user, getAndSortUsers, List("Invalid data")))
           }
         }
 

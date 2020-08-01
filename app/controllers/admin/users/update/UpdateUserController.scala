@@ -30,7 +30,7 @@ class UpdateUserController @Inject()(
         Redirect(controllers.landing.routes.LandingPageController.showLandingPage())
       }
       else {
-        Ok(views.html.admin.usersUpdate(token, request.user, getAndSortUsers, List()))
+        Ok(views.html.admin.users.update.index(token, request.user, getAndSortUsers, List()))
       }
   }
 
@@ -42,7 +42,7 @@ class UpdateUserController @Inject()(
         val data = request.request.body.asFormUrlEncoded
         val token = jwtService.createToken(request.user, new Date())
 
-        def view(messages: List[String]): Result = Ok(views.html.admin.usersUpdate(token, request.user, getAndSortUsers, messages))
+        def view(messages: List[String]): Result = Ok(views.html.admin.users.update.index(token, request.user, getAndSortUsers, messages))
 
         def fn(data: Option[Map[String, Seq[String]]]): Result = {
           (data.get("id").headOption, data.get("username").headOption, data.get("password").headOption, data.get("roles").headOption) match {
@@ -50,13 +50,13 @@ class UpdateUserController @Inject()(
               userDao.findUserById(id.toLong) flatMap { u => userDao.getDaoUser(u) } match {
                 case Some(daoUser) =>
                   userDao.updateUser(daoUser.copy(username = username, password = password, roles = roles.split(",").toSet))
-                  Ok(views.html.admin.usersUpdate(token, request.user, getAndSortUsers, List(s"Updated user $id $username")))
+                  Ok(views.html.admin.users.update.index(token, request.user, getAndSortUsers, List(s"Updated user $id $username")))
                 case None =>
-                  Ok(views.html.admin.usersUpdate(token, request.user, getAndSortUsers, List("No user data")))
+                  Ok(views.html.admin.users.update.index(token, request.user, getAndSortUsers, List("No user data")))
               }
 
             case _ =>
-              Ok(views.html.admin.usersUpdate(token, request.user, getAndSortUsers, List("Invalid data")))
+              Ok(views.html.admin.users.update.index(token, request.user, getAndSortUsers, List("Invalid data")))
           }
         }
         AdminHelpers.ensureValidConfirmation(userDao, request, data, view _, fn _)
