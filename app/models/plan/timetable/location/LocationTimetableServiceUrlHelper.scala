@@ -13,12 +13,12 @@ object LocationTimetableServiceUrlHelper {
   }
 
   def createUrlForDisplayingLocationSimpleTimetables(loc: String, year: Int, month: Int, day: Int, from: Int, to: Int) = {
-    val url = controllers.plan.timetable.location.simple.routes.SimpleLocationTimetableController.index(loc,year,month,day,from,to).url
+    val url = controllers.plan.timetable.location.simple.routes.SimpleLocationTimetableController.index(loc,year,month,day,from,to, "").url
     url
   }
 
   def createUrlForDisplayingLocationDetailedTimetables(loc: String, year: Int, month: Int, day: Int, from: Int, to: Int) = {
-    val url = controllers.plan.timetable.location.detailed.routes.DetailedLocationTimetableController.index(loc,year,month,day,from,to).url
+    val url = controllers.plan.timetable.location.detailed.routes.DetailedLocationTimetableController.index(loc,year,month,day,from,to, "").url
     url
   }
 

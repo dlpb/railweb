@@ -99,7 +99,7 @@ class LocationTimetableService @Inject()(
 
       val timetables = Future.sequence(allTimetables).map(_.flatten)
 
-      resultFn(timetables, y, m, d, allTiplocResults.headOption.map(_.from).getOrElse(from), allTiplocResults.headOption.map(_.to).getOrElse(to), locations)
+      resultFn(timetables, allTiplocResults.headOption.map(_.year).getOrElse(y), allTiplocResults.headOption.map(_.month).getOrElse(m), allTiplocResults.headOption.map(_.day).getOrElse(d), allTiplocResults.headOption.map(_.from).getOrElse(from), allTiplocResults.headOption.map(_.to).getOrElse(to), locations)
     }
     else {
       resultFn(Future.successful(Seq.empty), y, m, d, from, to, locations)
