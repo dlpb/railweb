@@ -1,4 +1,4 @@
-@(user: Option[models.auth.User])
+@(user: Option[models.auth.User], highlightMenuPosition: String = "")
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="/">
@@ -12,33 +12,33 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
+            <li class='nav-item @if(highlightMenuPosition.equals("Home")){ active }'>
                 <a class="nav-link" href="/">Home</a>
             </li>
             @if(user.isDefined && user.get.roles.contains(models.auth.roles.VisitUser)){
-            <li class="nav-item">
+            <li class='nav-item @if(highlightMenuPosition.equals("Map")){ active }'>
                 <a class="nav-link" href="/map">Map</a>
             </li>
-            <li class="nav-item">
+            <li class='nav-item @if(highlightMenuPosition.equals("Locations")){ active }'>
                 <a class="nav-link" href="/locations">Locations</a>
             </li>
-            <li class="nav-item">
+            <li class='nav-item @if(highlightMenuPosition.equals("Routes")){ active }'>
                 <a class="nav-link" href="/routes">Routes</a>
             </li>
             }
             @if(user.isDefined && user.get.roles.contains(models.auth.roles.PlanUser)){
-            <li class="nav-item">
+            <li class='nav-item @if(highlightMenuPosition.equals("Plan")){ active }'>
                 <a class="nav-link" href="/plan">Plan</a>
             </li>
 
             }
             @if(user.isDefined){
-            <li class="nav-item">
+            <li class='nav-item @if(highlightMenuPosition.equals("Profile")){ active }'>
                 <a class="nav-link" href="/profile">Profile</a>
             </li>
             }
             @if(user.isDefined && user.get.roles.contains(models.auth.roles.AdminUser)){
-            <li class="nav-item">
+            <li class='nav-item @if(highlightMenuPosition.equals("Admin")){ active }'>
                 <a class="nav-link" href="/admin">Admin</a>
             </li>
             }
