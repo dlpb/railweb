@@ -3,8 +3,8 @@ package models.timetable.dto.timetable.simple
 import java.time.LocalDate
 
 import models.location.LocationsService
-import models.plan.timetable.TimetableService
-import models.plan.trains.LocationTrainService
+import models.plan.timetable.location.LocationTrainService
+import models.plan.timetable.trains.TimetableService
 import models.timetable.dto.TimetableHelper
 import models.timetable.model.train.IndividualTimetable
 

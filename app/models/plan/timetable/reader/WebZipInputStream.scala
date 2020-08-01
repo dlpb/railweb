@@ -1,4 +1,4 @@
-package models.plan.reader
+package models.plan.timetable.reader
 
 import java.io.InputStream
 import java.net.URL

@@ -1,4 +1,4 @@
-package models.plan.timetable
+package models.plan.timetable.trains
 
 import java.io.FileNotFoundException
 import java.time.ZonedDateTime
@@ -6,7 +6,7 @@ import java.time.ZonedDateTime
 import javax.inject.{Inject, Singleton}
 import models.list.PathService
 import models.location.{LocationsService, MapLocation}
-import models.plan.reader.{Reader, WebZipInputStream}
+import models.plan.timetable.reader.{Reader, WebZipInputStream}
 import models.route.MapRoute
 import models.timetable.dto.timetable.detailed.DisplayDetailedIndividualTimetable
 import models.timetable.dto.timetable.simple.DisplaySimpleIndividualTimetable

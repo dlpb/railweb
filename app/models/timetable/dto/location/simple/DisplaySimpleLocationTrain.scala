@@ -1,7 +1,7 @@
 package models.timetable.dto.location.simple
 
 import models.location.LocationsService
-import models.plan.timetable.TimetableService
+import models.plan.timetable.trains.TimetableService
 import models.timetable.model.location.TimetableForLocation
 
 object DisplaySimpleLocationTrain {

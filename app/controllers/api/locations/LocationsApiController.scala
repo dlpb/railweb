@@ -4,8 +4,8 @@ import auth.api.{AuthorizedAction, UserRequest}
 import javax.inject.{Inject, Singleton}
 import models.auth.roles.{PlanUser, VisitUser}
 import models.location.{LocationsService, MapLocation}
-import models.plan.timetable.TimetableService
-import models.plan.trains.LocationTrainService
+import models.plan.timetable.location.LocationTrainService
+import models.plan.timetable.trains.TimetableService
 import models.route.{MapRoute, RoutesService}
 import org.json4s.DefaultFormats
 import org.json4s.jackson.Serialization.write

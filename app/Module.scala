@@ -2,7 +2,7 @@ import com.google.inject.AbstractModule
 import models.auth.{PostgresBasedUserDao, UserDao}
 import models.data._
 import models.data.postgres.{LocationJsonPostgresDataProvider, RouteJsonPostgresDataProvider}
-import models.plan.reader.{Reader, WebZipInputStream}
+import models.plan.timetable.reader.{Reader, WebZipInputStream}
 
 class Module extends AbstractModule {
   override def configure() = {

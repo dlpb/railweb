@@ -8,8 +8,8 @@ import javax.inject.Inject
 import models.auth.roles.PlanUser
 import models.list.PathService
 import models.location.LocationsService
-import models.plan.timetable.TimetableService
-import models.plan.trains.LocationTrainService
+import models.plan.timetable.location.LocationTrainService
+import models.plan.timetable.trains.TimetableService
 import play.api.i18n.I18nSupport
 import play.api.mvc._
 

@@ -4,7 +4,7 @@ import java.time.{LocalDate, ZoneId}
 import java.util.Date
 
 import models.location.LocationsService
-import models.plan.trains.LocationTrainService
+import models.plan.timetable.location.LocationTrainService
 import models.timetable.dto.TimetableHelper
 import models.timetable.model.train.{Class, Hauled, IndividualTimetable, Timing}
 
