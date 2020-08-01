@@ -4,6 +4,7 @@ import java.time.{LocalDate, ZoneId}
 import java.util.Date
 
 import models.location.LocationsService
+import models.plan.timetable.TimetableDateTimeHelper
 import models.plan.timetable.location.{LocationTimetableService, LocationTimetableServiceUrlHelper}
 import models.timetable.dto.TimetableHelper
 import models.timetable.model.train.{Class, Hauled, IndividualTimetable, Timing}
@@ -74,9 +75,9 @@ object DisplayDetailedIndividualTimetable {
           val performanceAllowance = s"${l.performanceAllowance}${if(l.performanceAllowanceHalfMinute && l.performanceAllowanceHalfMinute) "½" else ""}"
           val engineeringAllowance = s"${l.engineeringAllowance}${if(l.engineeringAllowanceHalfMinute && l.engineeringAllowanceHalfMinute) "½" else ""}"
 
-          val (hour, minute) = if(l.pass.isDefined) LocationTimetableService.hourMinute(l.pass.get)
-          else if (l.publicArrival.isDefined) LocationTimetableService.hourMinute(l.publicArrival.get)
-          else if (l.publicDeparture.isDefined) LocationTimetableService.hourMinute(l.publicDeparture.get)
+          val (hour, minute) = if(l.pass.isDefined) TimetableDateTimeHelper.hourMinute(l.pass.get)
+          else if (l.publicArrival.isDefined) TimetableDateTimeHelper.hourMinute(l.publicArrival.get)
+          else if (l.publicDeparture.isDefined) TimetableDateTimeHelper.hourMinute(l.publicDeparture.get)
           else (0,0)
 
           val from = date.atTime(hour, minute).minusMinutes(15)

@@ -3,6 +3,7 @@ package models.timetable.dto.timetable.simple
 import java.time.LocalDate
 
 import models.location.LocationsService
+import models.plan.timetable.TimetableDateTimeHelper
 import models.plan.timetable.location.{LocationTimetableService, LocationTimetableServiceUrlHelper}
 import models.plan.timetable.trains.TrainTimetableService
 import models.timetable.dto.TimetableHelper
@@ -25,9 +26,9 @@ object DisplaySimpleIndividualTimetable {
         }
         .map {
           l =>
-            val (hour, minute) = if (l.pass.isDefined) TrainTimetableService.hourMinute(l.pass.get)
-            else if (l.publicArrival.isDefined) TrainTimetableService.hourMinute(l.publicArrival.get)
-            else if (l.publicDeparture.isDefined) TrainTimetableService.hourMinute(l.publicDeparture.get)
+            val (hour, minute) = if (l.pass.isDefined) TimetableDateTimeHelper.hourMinute(l.pass.get)
+            else if (l.publicArrival.isDefined) TimetableDateTimeHelper.hourMinute(l.publicArrival.get)
+            else if (l.publicDeparture.isDefined) TimetableDateTimeHelper.hourMinute(l.publicDeparture.get)
             else (0, 0)
 
             val from = date.atTime(hour, minute).minusMinutes(15)

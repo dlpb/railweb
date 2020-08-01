@@ -24,4 +24,8 @@ object TrainTimetableServiceUrlHelper {
     val url = s"/plan/routes/point-to-point/find?followFixedLinks=false&followFreightLinks=true&waypoints=$ids"
     url
   }
+
+  def createUrlForReadingTrainTimetable(train: String, year: String, month: String, day: String) = s"http://railweb-timetables-java.herokuapp.com/timetables/train/$train?year=$year&month=$month&day=$day"
+  //  def createUrlForReadingTrainTimetable(train: String, year: String, month: String, day: String) = s"http://localhost:9090/timetables/train/$train?year=$year&month=$month&day=$day"
+
 }

@@ -6,6 +6,7 @@ import java.time.ZonedDateTime
 import javax.inject.Inject
 import models.list.PathService
 import models.location.LocationsService
+import models.plan.timetable.TimetableDateTimeHelper
 import models.plan.timetable.reader.{Reader, WebZipInputStream}
 import models.timetable.model.JsonFormats
 import models.timetable.model.location.TimetableForLocation
@@ -20,22 +21,10 @@ import scala.concurrent.duration.Duration
 class LocationTimetableService @Inject()(locationsService: LocationsService, pathService: PathService, ws: WSClient, reader: Reader = new WebZipInputStream) {
 
   private def getTrainsForLocationAroundNow(loc: String):LocationTimetableResult = {
-    val from = LocationTimetableService.from
-    val to = LocationTimetableService.to
+    val from = TimetableDateTimeHelper.from
+    val to = TimetableDateTimeHelper.to
 
     getTrainsForLocation(loc,
-      from.getYear,
-      from.getMonthValue,
-      from.getDayOfMonth,
-      from.getHour * 100 + from.getMinute,
-      to.getHour * 100 + to.getMinute)
-  }
-
-  private def getDetailedTrainsForLocationAroundNow(loc: String): LocationTimetableResult = {
-    val from = LocationTimetableService.from
-    val to = LocationTimetableService.to
-
-    getDetailedTrainsForLocation(loc,
       from.getYear,
       from.getMonthValue,
       from.getDayOfMonth,
@@ -106,16 +95,6 @@ class LocationTimetableService @Inject()(locationsService: LocationsService, pat
 case class LocationTimetableResult(timetables: Future[Seq[TimetableForLocation]], year: Int, month: Int, day: Int, from: Int, to: Int)
 
 object LocationTimetableService {
-
-  def from: ZonedDateTime = ZonedDateTime.now().minusMinutes(15)
-
-  def to: ZonedDateTime = ZonedDateTime.now().plusMinutes(45)
-
-  def hourMinute(time: Int) = {
-    val hour = time / 100
-    val minute = time % 100
-    (hour, minute)
-  }
 
 
   def isPublicCategory(category: TrainCategory) = {

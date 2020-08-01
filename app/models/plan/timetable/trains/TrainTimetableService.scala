@@ -89,7 +89,7 @@ class TrainTimetableService @Inject()(locationsService: LocationsService, pathSe
     implicit val formats = DefaultFormats ++ JsonFormats.formats
 
     try {
-      val url = TrainTimetableService.createUrlForReadingTrainTimetable(train, year, month, day)
+      val url = TrainTimetableServiceUrlHelper.createUrlForReadingTrainTimetable(train, year, month, day)
       println(s"getting data for url $url")
       val request: WSRequest = ws.url(url)
       request
@@ -120,18 +120,3 @@ case class SimpleIndividualTimetableWrapper(dst: DisplaySimpleIndividualTimetabl
 
 case class DetailedIndividualTimetableWrapper(dtt: DisplayDetailedIndividualTimetable, basicSchedule: BasicSchedule, mapLocations: List[MapLocation], routes: List[MapRoute], routeLink: String)
 
-object TrainTimetableService {
-
-  def from: ZonedDateTime = ZonedDateTime.now().minusMinutes(15)
-
-  def to: ZonedDateTime = ZonedDateTime.now().plusMinutes(45)
-
-  def hourMinute(time: Int) = {
-    val hour = time / 100
-    val minute = time % 100
-    (hour, minute)
-  }
-
-  def createUrlForReadingTrainTimetable(train: String, year: String, month: String, day: String) = s"http://railweb-timetables-java.herokuapp.com/timetables/train/$train?year=$year&month=$month&day=$day"
-//  def createUrlForReadingTrainTimetable(train: String, year: String, month: String, day: String) = s"http://localhost:9090/timetables/train/$train?year=$year&month=$month&day=$day"
-}
