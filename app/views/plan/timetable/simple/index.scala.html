@@ -1,7 +1,7 @@
 @(
 user: models.auth.User,
 token: String,
-timetable: models.timetable.dto.timetable.simple.DisplaySimpleIndividualTimetable,
+timetable: models.timetable.dto.train.simple.DisplaySimpleTrainTimetable,
 bs: models.timetable.model.train.BasicSchedule,
 locations: List[models.location.MapLocation],
 routeList: List[models.route.MapRoute],
@@ -220,7 +220,7 @@ messages: List[String]
 </div>
 }
 
-@location(l: models.timetable.dto.timetable.simple.DisplaySimpleIndividualTimetableLocation) = {
+@location(l: models.timetable.dto.train.simple.DisplaySimpleTrainTimetableCallingPoint) = {
         <tr>
         <td>
             <a href="@l.url">
@@ -245,13 +245,13 @@ messages: List[String]
     </tr>
 }
 
-@platform(l: models.timetable.dto.timetable.simple.DisplaySimpleIndividualTimetableLocation) = {
+@platform(l: models.timetable.dto.train.simple.DisplaySimpleTrainTimetableCallingPoint) = {
     @l.platform }
 
-@arr(l: models.timetable.dto.timetable.simple.DisplaySimpleIndividualTimetableLocation) = {
+@arr(l: models.timetable.dto.train.simple.DisplaySimpleTrainTimetableCallingPoint) = {
     @l.arrival <br/> <small>@l.arrivalLabel</small>
 }
 
-@dep(l: models.timetable.dto.timetable.simple.DisplaySimpleIndividualTimetableLocation) = {
+@dep(l: models.timetable.dto.train.simple.DisplaySimpleTrainTimetableCallingPoint) = {
     @l.departure  <br/> <small>@l.departureLabel</small>
 }

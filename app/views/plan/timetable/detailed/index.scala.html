@@ -1,7 +1,7 @@
 @(
 user: models.auth.User,
 token: String,
-timetable: models.timetable.dto.timetable.detailed.DisplayDetailedIndividualTimetable,
+timetable: models.timetable.dto.train.detailed.DisplayDetailedTrainTimetable,
 basicSchedule: models.timetable.model.train.BasicSchedule,
 locations: List[models.location.MapLocation],
 routeList: List[models.route.MapRoute],
@@ -253,7 +253,7 @@ messages: List[String]
 </div>
 }
 
-@location(l: models.timetable.dto.timetable.detailed.DisplayDetailedIndividualTimetableLocation) = {
+@location(l: models.timetable.dto.train.detailed.DisplayDetailedTrainTimetableCallingPoint) = {
     @if(l.isPass) { <tr class="pass  table-light">
     } else { <tr>
     }
@@ -307,7 +307,7 @@ messages: List[String]
 }
 
 
-@locationsmall(l: models.timetable.dto.timetable.detailed.DisplayDetailedIndividualTimetableLocation) = {
+@locationsmall(l: models.timetable.dto.train.detailed.DisplayDetailedTrainTimetableCallingPoint) = {
 @if(l.isPass) { <tr class="pass  table-light">
     } else { <tr>
     }
@@ -357,14 +357,14 @@ messages: List[String]
 </tr>
 }
 
-@platform(l: models.timetable.dto.timetable.detailed.DisplayDetailedIndividualTimetableLocation) = {
+@platform(l: models.timetable.dto.train.detailed.DisplayDetailedTrainTimetableCallingPoint) = {
     @l.platform
 }
 
-@arr(l: models.timetable.dto.timetable.detailed.DisplayDetailedIndividualTimetableLocation) = {
+@arr(l: models.timetable.dto.train.detailed.DisplayDetailedTrainTimetableCallingPoint) = {
     @l.arrival
 }
 
-@dep(l: models.timetable.dto.timetable.detailed.DisplayDetailedIndividualTimetableLocation) = {
+@dep(l: models.timetable.dto.train.detailed.DisplayDetailedTrainTimetableCallingPoint) = {
     @l.departure
 }

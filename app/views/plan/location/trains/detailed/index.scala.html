@@ -1,6 +1,6 @@
 @(
 user: models.auth.User,
-timetables: List[models.timetable.dto.location.detailed.DisplayDetailedLocationTrain],
+timetables: List[models.timetable.dto.location.detailed.DisplayDetailedLocationTimetable],
 locationName: String,
 locationId: String,
 year: Int,
@@ -136,7 +136,7 @@ messages: List[String]
                     <form method="GET" action="/plan/timetables/location/detailed">
                         <datalist id="locations">
                             @for(l <- locations){
-                            <option name="@l.name" value="@l.id">@l.name (@l.crs) [@l.id]</option>
+                            <option name="@l.name" value="@l.name">@l.name @if(l.crs.nonEmpty){(@l.crs)} [@l.id]</option>
                             }
                         </datalist>
                         <input class="form-control" type="text" id="loc" name="loc" value="@locationId" list="locations">
@@ -195,7 +195,7 @@ messages: List[String]
     </div>
 </footer>
 
-@ttrdiv(tt: models.timetable.dto.location.detailed.DisplayDetailedLocationTrain) = {
+@ttrdiv(tt: models.timetable.dto.location.detailed.DisplayDetailedLocationTimetable) = {
 @if(tt.isPass) { <div class="row pass table-light">
 } else if(tt.isPublic) { <div class="row passenger">
 } else { <div class="row non-passenger table-light"> }

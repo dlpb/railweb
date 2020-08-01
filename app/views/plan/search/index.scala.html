@@ -103,7 +103,7 @@ messages: List[String]
                     <form method="GET" action="/plan/timetables/location/simple">
                         <datalist id="locations">
                             @for(l <- locations){
-                            <option name="@l.name" value="@l.id">@l.name (@l.crs) [@l.id]</option>
+                            <option name="@l.name" value="@l.name">@l.name @if(l.crs.nonEmpty){(@l.crs)} [@l.id]</option>
                             }
                         </datalist>
                         <input class="form-control" type="text" id="loc" name="loc" value="" list="locations">
