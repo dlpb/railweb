@@ -1,12 +1,15 @@
 package models.plan.timetable.location
 
 import java.io.FileNotFoundException
+import java.util.Date
 
 import javax.inject.Inject
 import models.list.PathService
 import models.location.{Location, LocationsService}
 import models.plan.timetable.TimetableDateTimeHelper
 import models.plan.timetable.reader.{Reader, WebZipInputStream}
+import models.plan.timetable.trains.SimpleTrainTimetableWrapper
+import models.timetable.dto.TimetableHelper
 import models.timetable.dto.location.detailed.DisplayDetailedLocationTimetable
 import models.timetable.dto.location.simple.DisplaySimpleLocationTimetable
 import models.timetable.model.JsonFormats
@@ -14,16 +17,57 @@ import models.timetable.model.location.TimetableForLocation
 import org.json4s.DefaultFormats
 import org.json4s.native.JsonMethods.parse
 import play.api.libs.ws.{WSClient, WSRequest}
+import play.api.mvc.Result
 
-import scala.concurrent.Future
+import scala.concurrent.{Await, Future, TimeoutException}
 import scala.concurrent.duration.Duration
 
-class LocationTimetableService @Inject()(locationsService: LocationsService, pathService: PathService, ws: WSClient, reader: Reader = new WebZipInputStream) {
+class LocationTimetableService @Inject()(
+                                          locationsService: LocationsService,
+                                          pathService: PathService,
+                                          ws: WSClient,
+                                          reader: Reader = new WebZipInputStream) {
+
+  import scala.concurrent.ExecutionContext.Implicits.global
+
+  def getSimpleTimetablesForLocation(loc: String,
+                                     year: Int,
+                                     month: Int,
+                                     day: Int,
+                                     from: Int,
+                                     to: Int,
+                                     date: String): LocationSimpleTimetableResult = {
+
+    val (y, m, d): (Int, Int, Int) = if (date.contains("-")) {
+      val dateParts = date.split("-").map(_.toInt)
+      (dateParts(0), dateParts(1), dateParts(2))
+    } else (year, month, day)
+
+    val locations = locationsService.findAllLocationsMatchingCrs(loc)
+
+    println(s"Showing results for ${locations.map(_.tiploc)}")
+    if (locations.nonEmpty) {
+      val allTiplocResults = locations.map(location => getTrainsForLocation(location.id, y, m, d, from, to))
+
+      val allTimetables: Seq[Future[Seq[DisplaySimpleLocationTimetable]]] = allTiplocResults.map(result => result.timetables map {
+        f =>
+          f.filter(tt => tt.publicStop && tt.publicTrain) map {
+            t =>
+              DisplaySimpleLocationTimetable(locationsService, t, result.year, result.month, result.day)
+          }
+      }).toSeq
+
+      val timetables = Future.sequence(allTimetables).map(_.flatten)
+
+      LocationSimpleTimetableResult(timetables, y, m, d, allTiplocResults.headOption.map(_.from).getOrElse(from), allTiplocResults.headOption.map(_.to).getOrElse(to), locations)
+    }
+    else {
+      LocationSimpleTimetableResult(Future.successful(Seq.empty), y, m, d, from, to, locations)
+    }
+  }
 
 
-
-
-  private def getTrainsForLocationAroundNow(loc: String):LocationTimetableResult = {
+  private def getTrainsForLocationAroundNow(loc: String): LocationTimetableResult = {
     val from = TimetableDateTimeHelper.from
     val to = TimetableDateTimeHelper.to
 
@@ -42,8 +86,8 @@ class LocationTimetableService @Inject()(locationsService: LocationsService, pat
                            from: Int,
                            to: Int
                           ): LocationTimetableResult = {
-    (year,month,day,from,to) match {
-      case (0,0,0,-1,-1) => getTrainsForLocationAroundNow(loc)
+    (year, month, day, from, to) match {
+      case (0, 0, 0, -1, -1) => getTrainsForLocationAroundNow(loc)
       case _ => LocationTimetableResult(readTimetable(loc, year, month, day, from, to), year, month, day, from, to)
     }
   }
@@ -83,6 +127,7 @@ class LocationTimetableService @Inject()(locationsService: LocationsService, pat
 }
 
 case class LocationSimpleTimetableResult(timetables: Future[Seq[DisplaySimpleLocationTimetable]], year: Int, month: Int, day: Int, from: Int, to: Int, locations: Set[Location])
+
 case class LocationDetailedTimetableResult(timetables: Future[Seq[DisplayDetailedLocationTimetable]], year: Int, month: Int, day: Int, from: Int, to: Int, locations: Set[Location])
 
 case class LocationTimetableResult(timetables: Future[Seq[TimetableForLocation]], year: Int, month: Int, day: Int, from: Int, to: Int)

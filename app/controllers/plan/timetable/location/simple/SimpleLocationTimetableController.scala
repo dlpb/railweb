@@ -1,6 +1,5 @@
 package controllers.plan.timetable.location.simple
 
-import java.time.ZonedDateTime
 import java.util.Date
 
 import auth.JWTService
@@ -28,7 +27,7 @@ class SimpleLocationTimetableController @Inject()(
                                                    timetableService: TrainTimetableService,
                                                    jwtService: JWTService
 
-                                             ) extends AbstractController(cc) with I18nSupport {
+                                                 ) extends AbstractController(cc) with I18nSupport {
 
   import scala.concurrent.ExecutionContext.Implicits.global
 
@@ -38,36 +37,16 @@ class SimpleLocationTimetableController @Inject()(
     if (request.user.roles.contains(PlanUser)) {
       val token = jwtService.createToken(request.user, new Date())
 
-      val (y, m, d): (Int, Int, Int) = if (date.contains("-")) {
-        val dateParts = date.split("-").map(_.toInt)
-        (dateParts(0), dateParts(1), dateParts(2))
-      } else (year, month, day)
+      val result = locationTrainService.getSimpleTimetablesForLocation(loc, year, month, day, from, to, date)
 
-      val locations = locationsService.findAllLocationsMatchingCrs(loc)
-
-      println(s"Showing results for ${locations.map(_.tiploc)}")
-      if (locations.nonEmpty) {
-        val allTiplocResults = locations.map(location => locationTrainService.getTrainsForLocation(location.id, y, m, d, from, to))
-
-        val allTimetables: Seq[Future[Seq[DisplaySimpleLocationTimetable]]] = allTiplocResults.map(result => result.timetables map {
-          f =>
-            f.filter(tt => tt.publicStop && tt.publicTrain) map {
-              t =>
-                DisplaySimpleLocationTimetable(locationsService, t, result.year, result.month, result.day)
-            }
-        }).toSeq
-
-        val timetables = Future.sequence(allTimetables)
-
-        val l = locations.head
-        val eventualResult: Future[Result] = timetables map {
-          timetable: Seq[Seq[DisplaySimpleLocationTimetable]] =>
-            val t: Seq[DisplaySimpleLocationTimetable] = timetable.flatten
-            val result = allTiplocResults.head
+      if(result.locations.nonEmpty) {
+        val l = result.locations.head
+        val eventualResult: Future[Result] = result.timetables map {
+          timetable: Seq[DisplaySimpleLocationTimetable] =>
             val locationName = l.name
-            val locationId = if(l.crs.nonEmpty && l.isOrrStation) l.crs.head else l.id
+            val locationId = if (l.crs.nonEmpty && l.isOrrStation) l.crs.head else l.id
             Ok(views.html.plan.location.trains.simple.index(
-              request.user, t.toList, locationName, locationId, result.year, result.month, result.day, TimetableHelper.time(result.from), TimetableHelper.time(result.to), locationsService.getLocations,  List.empty)(request.request))
+              request.user, timetable.toList, locationName, locationId, result.year, result.month, result.day, TimetableHelper.time(result.from), TimetableHelper.time(result.to), locationsService.getLocations, List.empty)(request.request))
         }
         try {
           Await.result(eventualResult, Duration(30, "second"))
@@ -75,15 +54,16 @@ class SimpleLocationTimetableController @Inject()(
         catch {
           case e: TimeoutException =>
             InternalServerError(views.html.plan.search.index(request.user, locationsService.getLocations, TimetableHelper.defaultDate,
-              List(s"Could not get details for location $loc on $y-$m-$d",
+              List(s"Could not get details for location $loc on ${result.year}-${result.month}-${result.day}",
                 "Timed out producing the page"
               ))
             (request.request))
         }
       }
-      else {
+      else
+      {
         NotFound(views.html.plan.search.index(request.user, locationsService.getLocations, TimetableHelper.defaultDate,
-          List(s"Could not get details for location $loc on $y-$m-$d",
+          List(s"Could not get details for location $loc on ${year}-${month}-${day}",
             s"Location ${loc} not found"
           ))(request.request))
       }
