@@ -43,7 +43,7 @@ class RouteVisitsController @Inject()(
       .toList
       .sortBy(r => r.from.id + " - " + r.to.id)
 
-    Ok(views.html.visits.byRoute(request.user, routes, invalidRoutes, mapRoutes))
+    Ok(views.html.visits.route.index(request.user, routes, invalidRoutes, mapRoutes))
 
   }
 }

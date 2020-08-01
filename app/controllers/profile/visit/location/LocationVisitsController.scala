@@ -38,7 +38,7 @@ class LocationVisitsController @Inject()(
       }
       .toList
 
-    Ok(views.html.visits.byLocation(request.user, locations, mapLocations))
+    Ok(views.html.visits.location.index(request.user, locations, mapLocations))
 
   }
 }

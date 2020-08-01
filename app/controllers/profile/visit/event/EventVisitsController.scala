@@ -54,7 +54,7 @@ class EventVisitsController @Inject()(
         Event(event, visitedRoutesForEvent, visitedLocationsForEvent)
     }
 
-    Ok(views.html.visits.byEvent(request.user, eventsAndVisits))
+    Ok(views.html.visits.event.index(request.user, eventsAndVisits))
 
   }
 }

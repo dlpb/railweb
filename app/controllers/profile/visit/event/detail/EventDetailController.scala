@@ -42,7 +42,7 @@ class EventDetailController @Inject()(
       }
       .sortBy(r => r.from.id + " - " + r.to.id)
 
-    Ok(views.html.visits.byEventDetail(request.user, visitedMapRoutes, visitedLocations, event, distance))
+    Ok(views.html.visits.event.detail.index(request.user, visitedMapRoutes, visitedLocations, event, distance))
 
   }
 
