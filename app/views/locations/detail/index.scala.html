@@ -50,43 +50,8 @@ removeAll: Call)(implicit request: Request[AnyContent])
     const token = "@token";
 
 </script>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="/">
-        <img src="/assets/images/toy-train.svg" width="24" height="24" alt="application icon"/>
-        All the Stations & Track
-    </a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+@templates.menu.menu(None)
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="/">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/map">Map</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="/locations">Locations <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/routes">Routes</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/profile">Profile</a>
-            </li>
-            @if(user.roles.contains(models.auth.roles.AdminUser)){
-            <li class="nav-item">
-                <a class="nav-link" href="/admin">Admin</a>
-            </li>
-            }
-            <li class="nav-item">
-                <a class="nav-link" href="/logout">Log Out</a>
-            </li>
-        </ul>
-    </div>
-</nav>
 <div class="container">
     <div class="content">
         <div class="alert alert-primary" role="alert" id="@location.operator" style="padding-top:10px">
