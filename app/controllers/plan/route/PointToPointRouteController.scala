@@ -53,11 +53,11 @@ class PointToPointRouteController @Inject()(
           }
         }
 
-        Ok(views.html.path.index(request.user, token, mapLocations, mapRoutes, waypoints, followFreightLinks, followFixedLinks, distance, messages, visitAllRoutes, visitAllStations))
+        Ok(views.html.plan.route.pointtopoint.find.index(request.user, token, mapLocations, mapRoutes, waypoints, followFreightLinks, followFixedLinks, distance, messages, visitAllRoutes, visitAllStations))
       }
       catch {
         case iae: IllegalArgumentException =>
-          Ok(views.html.path.index(request.user, token, List.empty, List.empty, waypoints, followFreightLinks, followFixedLinks, 0, List(iae.getMessage), visitAllRoutes, visitAllStations))
+          Ok(views.html.plan.route.pointtopoint.find.index(request.user, token, List.empty, List.empty, waypoints, followFreightLinks, followFixedLinks, 0, List(iae.getMessage), visitAllRoutes, visitAllStations))
       }
 
     }
