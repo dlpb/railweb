@@ -7,13 +7,17 @@ import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject.Inject
 import models.auth.roles.PlanUser
 import models.list.PathService
-import models.location.{LocationsService, MapLocation}
+import models.location.{Location, LocationsService, MapLocation}
+import models.plan.timetable.TimetableDateTimeHelper
 import models.plan.timetable.location.LocationTimetableService
 import models.plan.timetable.trains.TrainTimetableService
 import models.timetable.model.train.IndividualTimetable
+import play.api.data.Form
+import play.api.data.Forms._
 import play.api.i18n.I18nSupport
 import play.api.mvc._
 
+import scala.collection.{immutable, mutable}
 import scala.concurrent.duration.Duration
 import scala.concurrent.{Await, Future}
 
@@ -29,6 +33,122 @@ class TrainCallingPointHighlightController @Inject()(
                               ) extends AbstractController(cc) with I18nSupport {
 
   import scala.concurrent.ExecutionContext.Implicits.global
+
+  def newView() = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
+    if (request.user.roles.contains(PlanUser)) {
+      val token = jwtService.createToken(request.user, new Date())
+
+      Ok(views.html.plan.location.highlight.trains.newView(
+        request.user,
+        token,
+        locationsService.getLocations.filter(_.isOrrStation).sortBy(_.name),
+        List.empty,
+        List.empty,
+        List.empty,
+        List.empty,
+        List("Work In Progress - Plan - Highlight Locations"),
+        controllers.plan.highlight.callingpoints.routes.TrainCallingPointHighlightController.post())
+      (request.request))
+    }
+    else {
+      Forbidden("User not authorized to view page")
+    }
+  }
+
+  case class DummyForm(id: String)
+  val form = Form(mapping("id" -> text)(DummyForm.apply)(DummyForm.unapply))
+
+  def post( )= authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
+    if (request.user.roles.contains(PlanUser)) {
+      val token = jwtService.createToken(request.user, new Date())
+
+      val dynamicForm = form.bindFromRequest()
+      val data: Map[String, String] = dynamicForm.data.view.filterKeys(_.contains("-")).toMap
+
+      println("Processing called at points")
+      println(data)
+
+      val groupedDataByRow: Map[String, Map[String, String]] = data
+        .keys
+        .groupBy(key => key.split("_").toList.last)
+        .map(row => {
+          row._1 -> row._2.map(key => key -> data(key)).toMap
+        })
+
+      val formDataToReturn: List[Map[String, (String, String)]] = groupedDataByRow.map(entry => {
+        val (row, data) = entry
+        val locationKey = s"location_$row"
+        val dateKey = s"date_$row"
+        val trainKey = s"train-id_$row"
+        val boardKey = s"board_$row"
+        val alightKey = s"alight_$row"
+        val date = data.getOrElse(dateKey, "")
+        val trainId = data.getOrElse(trainKey, "")
+        val board = data.getOrElse(boardKey, "")
+        val alight = data.getOrElse(alightKey, "")
+        val location = data.getOrElse(locationKey, "")
+        val map = Map("date" -> (dateKey, date), "trainId" -> (trainKey, trainId), "board" -> (boardKey, board), "alight" -> (alightKey, alight), "location" -> (locationKey, location))
+        map
+      }).toList
+
+      val locationsCalledAtF: List[Future[List[MapLocation]]] = groupedDataByRow.map(entry => {
+        val (row, data) = entry
+        val dateOpt = data.get(s"date_$row")
+        val trainIdOpt = data.get(s"train-id_$row")
+        val boardOpt = data.get(s"board_$row")
+        val alightOpt = data.get(s"alight_$row")
+
+        (dateOpt, trainIdOpt, boardOpt, alightOpt) match {
+          case (Some(date), Some(trainId), Some(board), Some(alight)) =>
+            val (y, m, d): (Int, Int, Int) = if (date.contains("-")) {
+              val dateParts = date.split("-").map(_.toInt)
+              (dateParts(0), dateParts(1), dateParts(2))
+            } else (0, 0, 0)
+            val timetableF = timetableService.getTrain(trainId, y.toString, m.toString, d.toString )
+            val callingPointsF: Future[List[Location]] = timetableF.map(timetableOpt => {
+              timetableOpt
+                .map(_.locations)
+                .getOrElse(List.empty)
+                .flatMap(l => locationsService.findLocation(l.tiploc))
+                .filter(_.isOrrStation)
+            })
+            val calledAtPointsF: Future[List[Location]] = callingPointsF.map(callingPoints => {
+              val boardIndex = callingPoints.map(_.id).indexOf(board)
+              val alightIndex = callingPoints.map(_.id).indexOf(alight) + 1
+              callingPoints.slice(boardIndex, alightIndex)
+            })
+            val mapLocationsF: Future[List[MapLocation]] = calledAtPointsF.map((cps: List[Location]) => {
+              cps.map(cp => MapLocation(cp))
+            })
+            mapLocationsF
+          case _ => Future.successful(List.empty)
+        }
+
+      }).toList
+
+      val locationsCalledAtFSequenced: Future[List[MapLocation]] = Future.sequence(locationsCalledAtF).map(_.flatten)
+
+      val locationsCalledAt = Await.result(locationsCalledAtFSequenced, Duration(30, "seconds"))
+
+      println(data)
+      println(locationsCalledAt)
+
+      Ok(views.html.plan.location.highlight.trains.newView(
+        request.user,
+        token,
+        locationsService.getLocations.filter(_.isOrrStation).sortBy(_.name),
+        formDataToReturn,
+        locationsCalledAt,
+        List.empty,
+        List.empty,
+        List("Work In Progress - Plan - Highlight Locations"),
+        controllers.plan.highlight.callingpoints.routes.TrainCallingPointHighlightController.newView())
+      (request.request))
+    }
+    else {
+      Forbidden("User not authorized to view page")
+    }
+  }
 
   def index(trainsAndStations: String, srsLocations: String, locations: String, year: Int, month: Int, day: Int) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     if (request.user.roles.contains(PlanUser)) {
@@ -82,11 +202,14 @@ class TrainCallingPointHighlightController @Inject()(
             val result: Future[List[MapLocation]] = tt.map {
               _.map {
                 t: IndividualTimetable =>
-                  val locs = t.locations.map {
-                    _.tiploc
-                  }.flatMap {
-                    locationsService.findLocation
-                  }
+                  val locs = t
+                    .locations
+                    .filter(l => l.publicArrival.isDefined || l.publicDeparture.isDefined)
+                    .map {
+                      _.tiploc
+                    }.flatMap {
+                      locationsService.findLocation
+                    }
                   val fromIndexMaybe = locs.map(_.id).indexOf(from.trim)
                   val toIndexMaybe = locs.map(_.id).indexOf(to.trim)
 
@@ -110,7 +233,7 @@ class TrainCallingPointHighlightController @Inject()(
 
           }.flatten
       }
-      val calledAt: List[MapLocation] = Await.result(Future.sequence(trainsF), Duration(30, "second")).flatten.toSet.toList
+      val calledAt: List[MapLocation] = Await.result(Future.sequence(trainsF), Duration(30, "second")).flatten.distinct
       val notCalledAt = allStations.diff(calledAt)
       val percentage = if(allStations.nonEmpty) calledAt.size*1.0d / allStations.size*1.0d else 100.0d
       Ok(views.html.plan.location.highlight.trains.index(request.user, token, calledAt, notCalledAt, allStations, percentage, trainsF.size, trainsAndStations, srsLocations, locations, List("Work In Progress - Plan - Highlight Locations"), year, month, day)(request.request))

@@ -53,6 +53,8 @@ GET  /plan                                                          controllers.
 
 GET  /plan/highlight/locations                                      controllers.plan.highlight.locations.LocationHighlightController.index(locations: String ?= "")
 GET  /plan/highlight/trains/callingpoints                           controllers.plan.highlight.callingpoints.TrainCallingPointHighlightController.index(trainsAndStations: String ?= "", srsLocations: String ?= "", locations: String ?= "", year: Int ?= 0, month: Int ?= 0, day: Int ?= 0)
+GET  /plan/highlight/trains/callingpoints/new                       controllers.plan.highlight.callingpoints.TrainCallingPointHighlightController.newView()
+POST /plan/highlight/trains/callingpoints/new                      controllers.plan.highlight.callingpoints.TrainCallingPointHighlightController.post()
 
 GET  /plan/timetables/location                                      controllers.plan.timetable.location.LocationTimetableSearchController.index()
 GET  /plan/timetables/location/simple                               controllers.plan.timetable.location.simple.SimpleLocationTimetableController.index(loc: String, year: Int ?= 0, month: Int ?= 0, day: Int ?= 0, from: Int ?= -1, to: Int ?= -1 , date: String ?= "")
@@ -67,6 +69,9 @@ GET  /plan/routes/point-to-point/find                               controllers.
 GET  /api/plan/train/map/locations/simple/:train/:year/:month/:day  controllers.api.plan.locations.PlanLocationsApiController.getSimpleMapLocationsForTrain(train: String, year: Int, month: Int, day: Int)
 GET  /api/plan/train/map/locations/detailed/:train/:year/:month/:day controllers.api.plan.locations.PlanLocationsApiController.getDetailedMapLocationsForTrain(train: String, year: Int, month: Int, day: Int)
 GET  /api/plan/train/map/route/:train/:year/:month/:day             controllers.api.plan.route.PlanRoutesApiController.createMapRouteForTrain(train: String, year: Int, month: Int, day: Int)
+
+GET  /api/plan/highlight/trains/callingpoints/:train/:date          controllers.api.plan.highlight.callingpoints.PlanCallingPointHighlightApiController.getTrainTimetableCallingPoints(train: String, date: String)
+GET  /api/plan/highlight/trains/location/:location/:date            controllers.api.plan.highlight.callingpoints.PlanCallingPointHighlightApiController.getTrainsAtStationForToday(location: String, date: String)
 
 GET  /api/location/map                                              controllers.api.locations.map.MapLocationsApiController.getLocationsForMap()
 GET  /api/location/list/default                                     controllers.api.locations.LocationsApiController.getLocationsForList()
