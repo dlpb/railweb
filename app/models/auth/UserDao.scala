@@ -27,12 +27,14 @@ abstract class UserDao(config: Config) extends UserProvider {
 
   def findUserByLoginUser(u: LoginUser): Option[User] = {
     users.find({user =>
+      println(s"searching ${u.username} looking at ${u.username}")
       u.username.equals(user.username) && hashAndSaltPassword(salt, u.password).equals(user.password)}
     ) map mapDaoUserToUser
   }
 
   def mapDaoUserToUser(daoUser: DaoUser): User = {
     val roles = daoUser.roles.map({ role =>
+      println(s"adding $roles for ${daoUser.id}")
       Role.getRole(role)
     })
     User(daoUser.id, daoUser.username, roles)
