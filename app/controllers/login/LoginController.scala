@@ -47,7 +47,6 @@ class LoginController @Inject()(
       // form validation/binding succeeded ...
 
       val validUser = userDao.findUserByLoginUser(user)
-      println(s"Looking for a user for ${user}, found $validUser")
       validUser match {
         case Some(user) => {
           Redirect(controllers.landing.routes.LandingPageController.showLandingPage())
