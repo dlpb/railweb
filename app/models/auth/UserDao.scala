@@ -34,7 +34,7 @@ abstract class UserDao(config: Config) extends UserProvider {
 
   def mapDaoUserToUser(daoUser: DaoUser): User = {
     val roles = daoUser.roles.map({ role =>
-      println(s"adding $roles for ${daoUser.id}")
+      println(s"adding $role for ${daoUser.id}")
       Role.getRole(role)
     })
     User(daoUser.id, daoUser.username, roles)
