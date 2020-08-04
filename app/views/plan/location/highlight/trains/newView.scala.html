@@ -9,6 +9,7 @@ formData: List[Map[String, (String, String)]],
 callingPoints: List[models.location.MapLocation],
 notCalledAt: List[models.location.MapLocation],
 highlightPoints: List[models.location.MapLocation],
+trainDataPlan: String,
 messages: List[String],
 formSubmitRoute: Call
 )(implicit request: Request[AnyContent])
@@ -37,6 +38,15 @@ formSubmitRoute: Call
 </div>
 }
 
+@if(formData.nonEmpty){
+<div class="row">
+    <div class="col col-sm">
+        <a class="btn btn-info" role="button" download="plan.tsv" href="data:text/tab-separated-values;base64,@trainDataPlan">Download this Train Plan</a>
+        <hr/>
+    </div>
+</div>
+}
+
 @helper.form(action = formSubmitRoute) {
 @helper.CSRF.formField
 <div class="row">
@@ -49,8 +59,6 @@ formSubmitRoute: Call
         </datalist>
         <div id="container">
             @for(data <- formData){
-
-            @data
             <div class="row">
                 <div class="col col-sm">
                     <div class="form-group">
@@ -58,25 +66,33 @@ formSubmitRoute: Call
                         <input id='@data("date")._1' name='@data("date")._1' class="form-control" type="date" value='@data("date")._2'>
 
                         <label for='@data("location")._1'>Location to Search for Trains at</label>
-                        <input id='@data("location")._1' name='@data("location")._1' class="form-control location" list="stations"
-                               onchange="addLocation(this)" onfocusout="addLocationSuggestion(this)" value='@data("location")._2'/>
+                        <div class="input-group mb-2">
+                            <input id='@data("location")._1' name='@data("location")._1' class="form-control location" list="stations"
+                               value='@data("location")._2'/>
+                            <div class="input-group-append">
+                                <button type="button" class="btn btn-outline-primary btn-sm search" onclick="addLocationSuggestion(this)">Search</button>
+                            </div>
+                        </div>
 
                         <label for='@data("trainId")._1'>Train ID</label>
                         <datalist id="datalist-0"></datalist>
-                        <input id='@data("trainId")._1' name='@data("trainId")._1' class="form-control train-id" type="text"
-                               onchange="addTrain(this)" onfocusout="addTrain(this)" list="datalist-0" value='@data("trainId")._2'>
+                        <select id='@data("trainId")._1' name='@data("trainId")._1' class="form-control train-id" type="text"
+                               onchange="addTrain(this)" onfocusout="addTrain(this)" list="datalist-0" value='@data("trainId")._2' disabled="disabled">
+                            <option selected="selected">@data("trainId")._2</option>
+                        </select>
 
                         <label for='@data("board")._1'>Board At</label>
-                        <select id='@data("board")._1' name='@data("board")._1' class="form-control">
-                            <option>@data("board")._2</option>
+                        <select id='@data("board")._1' name='@data("board")._1' class="form-control" disabled="disabled">
+                            <option selected="selected">@data("board")._2</option>
                         </select>
 
                         <label for='@data("alight")._1'>Alight At</label>
-                        <select id='@data("alight")._1' name='@data("board")._1' class="form-control">
-                            <option>@data("alight")._2</option>
+                        <select id='@data("alight")._1' name='@data("alight")._1' class="form-control" disabled="disabled">
+                            <option selected="selected">@data("alight")._2</option>
                         </select>
-
+                        <br/>
                         <a role="button" class="btn btn-danger remove"><span class="text-light">Remove</span></a>
+                        <hr/>
                     </div>
                 </div>
             </div>
@@ -90,6 +106,7 @@ formSubmitRoute: Call
             <a role="button" class="btn btn-secondary add"><span class="text-light">Add Train</span></a>
             <button type="submit" class="btn btn-primary">Submit</button>
         </div>
+        <hr/>
     </div>
 </div>
 <input type="hidden" id="serialized" name="serialized"/>
@@ -127,21 +144,26 @@ formSubmitRoute: Call
                     <input id="date" name="date" class="form-control" type="date">
 
                     <label id="location-label" for="location">Search for Trains at this Location</label>
-                    <input id="location" name="location" class="form-control location" list="stations"
-                           onchange="addLocation(this)" onfocusout="addLocationSuggestion(this)"/>
+                    <div class="input-group mb-2">
+                        <input id="location" name="location" class="form-control location" list="stations"/>
+                        <div class="input-group-append">
+                            <button type="button" class="btn btn-outline-primary btn-sm search" onclick="addLocationSuggestion(this)">Search</button>
+                        </div>
+                    </div>
 
                     <label id="train-label" for="train-id">Train ID</label>
                     <datalist id="datalist"></datalist>
-                    <input id="train-id" name="train-id" class="form-control train-id" type="text"
-                           onchange="addTrain(this)" onfocusout="addTrain(this)" list="datalist-0">
+                    <select id="train-id" name="train-id" class="form-control train-id" type="text"
+                            onchange="addTrain(this)" onfocusout="addTrain(this)" list="datalist-0" disabled="disabled"></select>
 
                     <label id="board-label" for="board">Board At</label>
                     <select id="board" name="board" class="form-control" disabled="disabled"></select>
 
                     <label id="alight-label" for="alight">Alight At</label>
                     <select id="alight" name="alight" class="form-control" disabled="disabled"></select>
-
+                    <br/>
                     <a role="button" class="btn btn-danger remove" onclick="removeRow(this)"><span class="text-light">Remove</span></a>
+                    <hr/>
                 </div>
             </div>
         </div>
@@ -150,6 +172,7 @@ formSubmitRoute: Call
 </div>
 <div class="row">
     <div class="col col-sm">
+        <h3>Calling Points</h3>
         <div id="map" class="map"></div>
     </div>
 
@@ -158,6 +181,24 @@ formSubmitRoute: Call
 
 <script type="text/javascript">
 createMap();
+
+$("document").ready(function() {
+    setTimeout(function() {
+        var locations = document.getElementsByClassName("search");
+        for(var i=0; i<locations.length; i++) {
+            locations[i].dispatchEvent(new Event("click"));
+        }
+    },10);
+
+    setTimeout(function() {
+        var trainIds = document.getElementsByClassName("train-id");
+        for(var i=0; i<trainIds.length; i++) {
+            trainIds[i].dispatchEvent(new Event("change"));
+        }
+
+    },5000);
+
+});
 
 function uuidv4() {
   return ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, c =>
@@ -243,10 +284,20 @@ registerMapHandler(map);
 function addLocationSuggestion(element){
 
         var $this=$(element);
+        $this.attr("disabled", "disabled");
+        console.log("setting location suggestions");
 
-        var location = $this.parent().parent().find('.location')[0].value;
-        var datalist = $this.parent().parent().find('datalist')[0];
-        var date = $this.parent().parent().find('input[type=date]').val();
+        var location = $this.parent().parent().parent().find('.location')[0].value;
+
+        var selects = $this.parent().parent().parent().find('select');
+        var trainIds = selects[0];
+        var previousTrainId = "";
+        if(typeof trainIds !== 'undefined') {
+           previousTrainId = trainIds.value;
+           trainIds.options.length = 0;
+        }
+
+        var date = $this.parent().parent().parent().find('input[type=date]').val();
 
          jQuery.when(
             jQuery.ajax({
@@ -259,15 +310,24 @@ function addLocationSuggestion(element){
 
             var json = JSON.parse(timetable);
 
-            datalist.options.length = 0;
-
             json.forEach(function(t) {
                 var option = document.createElement("option");
-                option.text=t.uid + " - " + t.org + " to " + t.dst + " - Pfm.: " + t.pfm + " Arrives: " + t.arr + " Departs: " + t.dep;
+                if(t.uid === previousTrainId) { option.selected = true; }
+                var arrStr = "";
+                var depStr = "";
+                var pfmStr = "";
+                if(t.arr != "")  arrStr = " a.";
+                if(t.dep != "") depStr = "d. ";
+                if(t.pfm != "") pfmStr = " - Pfm.:";
+                option.text=t.uid + " - " + t.dep + depStr + t.org + " to " + t.dst + pfmStr + t.pfm + arrStr + t.arr;
                 option.value=t.uid;
-                datalist.appendChild(option);
+                trainIds.appendChild(option);
 
             });
+
+            $this.removeAttr("disabled");
+            $this.parent().parent().parent().find('.train-id')[0].removeAttribute("disabled");
+
 
         });
 }
@@ -276,13 +336,18 @@ function addTrain(element){
         var $this=$(element);
 
         var selects = $this.parent().parent().find('select');
-        var board = selects[0];
-        var alight = selects[1];
+        var board = selects[1];
+        var alight = selects[2];
 
         console.log("disabling selects")
 
         board.setAttribute("disabled", "disabled");
         alight.setAttribute("disabled", "disabled");
+
+        var previousBoardValue = board.value;
+        var previousAlightValue = alight.value;
+
+        console.log(previousBoardValue, previousAlightValue);
 
         board.options.length = 0;
         alight.options.length = 0;
@@ -290,6 +355,7 @@ function addTrain(element){
         var date = $this.parent().parent().find('input[type=date]').val()
         var trainId = $this.val();
 
+        console.log("making request for "+ trainId +", on date " + date);
 
          jQuery.when(
             jQuery.ajax({
@@ -305,6 +371,7 @@ function addTrain(element){
             var depOptions = json.map(function(t) {
                 if(t.type !== "Origin") {
                     var option = document.createElement("option");
+                    if(t.tiploc === previousBoardValue) { option.selected = true; }
                     option.text=t.name + " - " + t.dep;
                     option.value=t.tiploc;
                     return option;
@@ -314,6 +381,7 @@ function addTrain(element){
             var arrOptions = json.map(function(t) {
                 if(t.type !== "Terminus"){
                     var option = document.createElement("option");
+                    if(t.tiploc === previousAlightValue) { option.selected = true; }
                     option.text=t.name + " - " + t.arr;
                     option.value=t.tiploc;
                     return option;

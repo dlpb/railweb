@@ -4,6 +4,8 @@ import java.util.Date
 
 import auth.JWTService
 import auth.web.{AuthorizedWebAction, WebUserContext}
+import com.google.common.base.Charsets
+import com.google.common.io.BaseEncoding
 import javax.inject.Inject
 import models.auth.roles.PlanUser
 import models.list.PathService
@@ -46,6 +48,7 @@ class TrainCallingPointHighlightController @Inject()(
         List.empty,
         List.empty,
         List.empty,
+        "",
         List("Work In Progress - Plan - Highlight Locations"),
         controllers.plan.highlight.callingpoints.routes.TrainCallingPointHighlightController.post())
       (request.request))
@@ -91,7 +94,10 @@ class TrainCallingPointHighlightController @Inject()(
         map
       }).toList
 
-      val locationsCalledAtF: List[Future[List[MapLocation]]] = groupedDataByRow.map(entry => {
+      case class TimetableFound(timetable: IndividualTimetable, date: String, trainId: String, board: String, alight: String)
+      case class LocationsCalledAtFromTimetable(timetable: IndividualTimetable, locations: List[Location], date: String, trainId: String, board: String, alight: String)
+
+      val timetablesF: List[Future[Option[TimetableFound]]] = groupedDataByRow.map(entry => {
         val (row, data) = entry
         val dateOpt = data.get(s"date_$row")
         val trainIdOpt = data.get(s"train-id_$row")
@@ -104,45 +110,92 @@ class TrainCallingPointHighlightController @Inject()(
               val dateParts = date.split("-").map(_.toInt)
               (dateParts(0), dateParts(1), dateParts(2))
             } else (0, 0, 0)
-            val timetableF = timetableService.getTrain(trainId, y.toString, m.toString, d.toString )
-            val callingPointsF: Future[List[Location]] = timetableF.map(timetableOpt => {
-              timetableOpt
-                .map(_.locations)
-                .getOrElse(List.empty)
-                .flatMap(l => locationsService.findLocation(l.tiploc))
-                .filter(_.isOrrStation)
-            })
-            val calledAtPointsF: Future[List[Location]] = callingPointsF.map(callingPoints => {
-              val boardIndex = callingPoints.map(_.id).indexOf(board)
-              val alightIndex = callingPoints.map(_.id).indexOf(alight) + 1
-              callingPoints.slice(boardIndex, alightIndex)
-            })
-            val mapLocationsF: Future[List[MapLocation]] = calledAtPointsF.map((cps: List[Location]) => {
-              cps.map(cp => MapLocation(cp))
-            })
-            mapLocationsF
-          case _ => Future.successful(List.empty)
+            val timetableF: Future[Option[TimetableFound]] = timetableService.getTrain(trainId, y.toString, m.toString, d.toString ).map(_.map(TimetableFound(_, date, trainId, board, alight)))
+            timetableF
+          case _ => Future.successful(None)
         }
-
       }).toList
 
-      val locationsCalledAtFSequenced: Future[List[MapLocation]] = Future.sequence(locationsCalledAtF).map(_.flatten)
+      val locationsCalledAtF: List[Future[Option[LocationsCalledAtFromTimetable]]] = timetablesF.map({
+        timetableF =>
+          val callingPointsF: Future[Option[LocationsCalledAtFromTimetable]] = timetableF.map((timetableOpt: Option[TimetableFound]) => {
+            timetableOpt match {
+              case Some(TimetableFound(tt, date, id, board, alight)) =>
+                val stationsCalledAt: List[Location] = tt
+                  .locations
+                  .filter(_.pass.isEmpty)
+                  .flatMap(l => locationsService.findLocation(l.tiploc))
+                  .filter(_.isOrrStation)
 
-      val locationsCalledAt = Await.result(locationsCalledAtFSequenced, Duration(30, "seconds"))
+                val calledAtPoints: List[Location] = {
+                  val boardIndex = stationsCalledAt.map(_.id).indexOf(board)
+                  val alightIndex = stationsCalledAt.map(_.id).indexOf(alight) + 1
+                  stationsCalledAt.slice(boardIndex, alightIndex)
+                }
+
+                Some(LocationsCalledAtFromTimetable(tt, calledAtPoints, date, id, board, alight))
+
+              case _ => None
+            }
+          })
+          callingPointsF
+      })
+
+      val mapLocationsCalledAtF: Future[List[MapLocation]] = Future.sequence(locationsCalledAtF)
+        .map(_.flatten)
+        .map(_.flatMap(_.locations.map(MapLocation(_))))
+
+      val mapLocationsCalledAt = Await.result(mapLocationsCalledAtF, Duration(30, "seconds"))
+
+      val trainDataPlanF: List[Future[Option[String]]] = locationsCalledAtF.map(f =>
+        f.map(o =>
+          o.map(l => {
+            val date = l.date
+            val timetable = l.timetable
+            val boardTimetableEntry = timetable.locations.find(_.tiploc.equals(l.board))
+            val alightTimetableEntry = timetable.locations.find(_.tiploc.equals(l.alight))
+            val boardTime = boardTimetableEntry.map(l => l.publicDeparture.getOrElse(l.departure.getOrElse("----"))).getOrElse("")
+            val boardPlatform = boardTimetableEntry.map(_.platform).getOrElse("")
+            val alightTime = alightTimetableEntry.map(l => l.publicArrival.getOrElse(l.arrival.getOrElse("----"))).getOrElse("")
+            val alightPlatform = alightTimetableEntry.map(_.platform).getOrElse("")
+            val boardCrs = boardTimetableEntry.flatMap(l => locationsService.findLocation(l.tiploc).map(_.crs.headOption.getOrElse(l.tiploc))).getOrElse("")
+            val alightCrs = alightTimetableEntry.flatMap(l => locationsService.findLocation(l.tiploc).map(_.crs.headOption.getOrElse(l.tiploc))).getOrElse("")
+            val calledAtCrs = l.locations.flatMap(_.crs.headOption).mkString(",")
+
+            val boardTimeFormatString = f"$boardTime%4s"
+            val alightTimeFormatString = f"$alightTime%4s"
+            val boardCrsFormatString = f"$boardCrs%3s"
+            val alightCrsFormatString = f"$alightCrs%3s"
+            val boardPlatformFormatString = f"$boardPlatform%4s"
+            val alightPlatformFormatString = f"$alightPlatform%4s"
+
+            val row = s"$date $boardTimeFormatString $boardCrsFormatString $boardPlatformFormatString $alightPlatformFormatString $alightCrsFormatString $alightTimeFormatString https://www.realtimetrains.co.uk/train/${l.trainId}/$date/detailed $calledAtCrs"
+
+            row
+          })
+        )
+      )
+
+      val dataPlanEntriesF = Future.sequence(trainDataPlanF).map(_.flatten)
+      val trainDataPlan = Await.result(dataPlanEntriesF, Duration(30, "seconds")).mkString("\n")
 
       println(data)
-      println(locationsCalledAt)
+      println(mapLocationsCalledAt)
+      println(trainDataPlan)
+
+      val trainPlanEncoded = BaseEncoding.base64().encode(trainDataPlan.getBytes(Charsets.UTF_8))
 
       Ok(views.html.plan.location.highlight.trains.newView(
         request.user,
         token,
         locationsService.getLocations.filter(_.isOrrStation).sortBy(_.name),
         formDataToReturn,
-        locationsCalledAt,
+        mapLocationsCalledAt,
         List.empty,
         List.empty,
+        trainPlanEncoded,
         List("Work In Progress - Plan - Highlight Locations"),
-        controllers.plan.highlight.callingpoints.routes.TrainCallingPointHighlightController.newView())
+        controllers.plan.highlight.callingpoints.routes.TrainCallingPointHighlightController.post())
       (request.request))
     }
     else {
