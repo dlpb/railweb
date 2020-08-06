@@ -33,7 +33,7 @@ class PlanCallingPointHighlightApiController @Inject()(
 
   private val timeout: FiniteDuration = Duration(30, "second")
 
-  def getTrainsAtStationForToday(location: String, date: String) = {
+  def getTrainsAtStationForToday(location: String, date: String, hasCalledAt: String, willCallAt: String) = {
 
       import scala.concurrent.ExecutionContext.Implicits.global
 
@@ -49,9 +49,13 @@ class PlanCallingPointHighlightApiController @Inject()(
 
           val locs = locationsService.findAllLocationsMatchingCrs(location).flatMap(l => locationsService.findAllLocationsMatchingCrs(l.crs.mkString))
           if(locs.isEmpty) BadRequest(s"location $location not found")
-          println(s"trying to get timetable for location $location (${locs.map(_.id)}) on date $y $m $d")
+          println(s"trying to get timetable for location $location (${locs.map(_.id)}) on date $y $m $d with hasCalledAt $hasCalledAt and willCallAt $willCallAt")
 
-          val eventualResult: Future[Seq[HighlightLocationTimetableEntry]] = Future.sequence(locs.map(l => locationTimetableService.getTrainsForLocation(l.id, y, m, d, 0, 2400).timetables.map {
+
+          val willCallAtLoc = if(!willCallAt.isBlank) locationsService.findLocation(willCallAt).map(_.id) else None
+          val hasCalledAtLoc = if(!hasCalledAt.isBlank) locationsService.findLocation(hasCalledAt).map(_.id) else None
+
+          val eventualResult: Future[Seq[HighlightLocationTimetableEntry]] = Future.sequence(locs.map(l => locationTimetableService.getTrainsForLocation(l.id, y, m, d, 0, 2400, hasCalledAtLoc, willCallAtLoc).timetables.map {
               timetables =>
                 timetables
                   .filter(t => t.publicTrain && t.publicStop)

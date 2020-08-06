@@ -123,11 +123,13 @@ class LocationTimetableService @Inject()(
                            month: Int,
                            day: Int,
                            from: Int,
-                           to: Int
+                           to: Int,
+                           hasCalledAt: Option[String] = None,
+                           willCallAt: Option[String] = None
                           ): LocationTimetableResult = {
     (year, month, day, from, to) match {
       case (0, 0, 0, -1, -1) => getTrainsForLocationAroundNow(loc)
-      case _ => LocationTimetableResult(readTimetable(loc, year, month, day, from, to), year, month, day, from, to)
+      case _ => LocationTimetableResult(readTimetable(loc, year, month, day, from, to, hasCalledAt, willCallAt), year, month, day, from, to)
     }
   }
 
@@ -136,12 +138,15 @@ class LocationTimetableService @Inject()(
                             month: Int,
                             day: Int,
                             from: Int,
-                            to: Int
+                            to: Int,
+                            hasCalledAt: Option[String] = None,
+                            willCallAt: Option[String] = None
                            ): Future[Seq[TimetableForLocation]] = {
     implicit val formats = DefaultFormats ++ JsonFormats.formats
 
     try {
-      val url = LocationTimetableServiceUrlHelper.createUrlForReadingLocationTimetables(loc, year, month, day, from, to)
+      val url = LocationTimetableServiceUrlHelper.createUrlForReadingLocationTimetables(loc, year, month, day, from, to, hasCalledAt, willCallAt)
+      println(url)
       val request: WSRequest = ws.url(url)
       request
         .withRequestTimeout(Duration(30, "second"))

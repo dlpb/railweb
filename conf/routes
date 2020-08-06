@@ -71,7 +71,7 @@ GET  /api/plan/train/map/locations/detailed/:train/:year/:month/:day controllers
 GET  /api/plan/train/map/route/:train/:year/:month/:day             controllers.api.plan.route.PlanRoutesApiController.createMapRouteForTrain(train: String, year: Int, month: Int, day: Int)
 
 GET  /api/plan/highlight/trains/callingpoints/:train/:date          controllers.api.plan.highlight.callingpoints.PlanCallingPointHighlightApiController.getTrainTimetableCallingPoints(train: String, date: String)
-GET  /api/plan/highlight/trains/location/:location/:date            controllers.api.plan.highlight.callingpoints.PlanCallingPointHighlightApiController.getTrainsAtStationForToday(location: String, date: String)
+GET  /api/plan/highlight/trains/location/:location/:date            controllers.api.plan.highlight.callingpoints.PlanCallingPointHighlightApiController.getTrainsAtStationForToday(location: String, date: String, hasCalledAt: String ?= "", willCallAt: String ?= "")
 
 GET  /api/location/map                                              controllers.api.locations.map.MapLocationsApiController.getLocationsForMap()
 GET  /api/location/list/default                                     controllers.api.locations.LocationsApiController.getLocationsForList()

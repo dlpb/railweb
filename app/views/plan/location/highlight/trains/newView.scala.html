@@ -71,13 +71,20 @@ formSubmitRoute: Call
                         </div>
 
                         <label for='@data("location")._1'>Location to Search for Trains at</label>
-                        <div class="input-group mb-2">
-                            <input id='@data("location")._1' name='@data("location")._1' class="form-control location" list="stations"
-                               value='@data("location")._2' disabled="disabled"/>
-                            <div class="input-group-append">
-                                <button type="button" class="btn btn-outline-primary btn-sm search" onclick="addLocationSuggestion(this)"  disabled="disabled">Search</button>
-                            </div>
+                        <input id='@data("location")._1' name='@data("location")._1' class="form-control location" list="stations"
+                           value='@data("location")._2' disabled="disabled"/>
+                        <label for='@data("hasCalledAt")._1'>Train should have called at</label>
+
+                        <input id='@data("hasCalledAt")._1' name='@data("hasCalledAt")._1' class="form-control hasCalledAt" list="stations"
+                               value='@data("hasCalledAt")._2' disabled="disabled"/>
+
+                        <label for='@data("willCallAt")._1'>Train should call at</label>
+                        <input id='@data("willCallAt")._1' name='@data("willCallAt")._1' class="form-control willCallAt" list="stations"
+                               value='@data("willCallAt")._2' disabled="disabled"/>
+                        <div class="input-group-append">
+                            <button type="button" class="btn btn-outline-primary btn-sm search" onclick="addLocationSuggestion(this)"  disabled="disabled">Search</button>
                         </div>
+
 
                         <label for='@data("trainId")._1'>Train ID</label>
                         <datalist id="datalist-0"></datalist>
@@ -154,12 +161,20 @@ formSubmitRoute: Call
                     </div>
 
                     <label id="location-label" for="location">Search for Trains at this Location</label>
-                    <div class="input-group mb-2">
-                        <input id="location" name="location" class="form-control location" list="stations" disabled="disabled"/>
-                        <div class="input-group-append">
-                            <button type="button" class="btn btn-outline-primary btn-sm search" onclick="addLocationSuggestion(this)"  disabled="disabled" >Search</button>
-                        </div>
+                    <input id="location" name="location" class="form-control location" list="stations" disabled="disabled"/>
+
+                    <label id="hasCalledAt-label" for="hasCalledAt">Train should have called at</label>
+                    <input id='hasCalledAt' name='hasCalledAt' class="form-control hasCalledAt" list="stations"
+                           disabled="disabled"/>
+
+                    <label id="willCallAt-label" for='willCallAt'>Train should call at</label>
+                    <input id='willCallAt' name='willCallAt' class="form-control willCallAt" list="stations"
+                           disabled="disabled"/>
+
+                    <div class="input-group-append">
+                        <button type="button" class="btn btn-outline-primary btn-sm search" onclick="addLocationSuggestion(this)"  disabled="disabled" >Search</button>
                     </div>
+
 
                     <label id="train-label" for="train-id">Train ID</label>
                     <datalist id="datalist"></datalist>
@@ -214,6 +229,8 @@ function enableLocation(element){
         var $this=$(element);
         $this.parent().parent().parent().find('.location')[0].removeAttribute("disabled");
         $this.parent().parent().parent().find('.search')[0].removeAttribute("disabled");
+        $this.parent().parent().parent().find('.willCallAt')[0].removeAttribute("disabled");
+        $this.parent().parent().parent().find('.hasCalledAt')[0].removeAttribute("disabled");
 }
 
 function uuidv4() {
@@ -274,18 +291,24 @@ registerMapHandler(map);
         document.getElementById("train-id").name = "train-id_" + rowNumber;
         document.getElementById("board").name = "board_" + rowNumber;
         document.getElementById("alight").name = "alight_" + rowNumber;
+        document.getElementById("hasCalledAt").name = "hasCalledAt_" + rowNumber;
+        document.getElementById("willCallAt").name = "willCallAt_" + rowNumber;
 
         document.getElementById("date-label").setAttribute("for","date-label_" + rowNumber);
         document.getElementById("location-label").setAttribute("for","location-label_" + rowNumber);
         document.getElementById("train-label").setAttribute("for","train-id-label_" + rowNumber);
         document.getElementById("board-label").setAttribute("for","board-label_" + rowNumber);
         document.getElementById("alight-label").setAttribute("for","alight-label_" + rowNumber);
+        document.getElementById("hasCalledAt-label").name = "hasCalledAt-label_" + rowNumber;
+        document.getElementById("willCallAt-label").name = "willCallAt-label_" + rowNumber;
 
         document.getElementById("date-label").setAttribute("id","date-label_" + rowNumber);
         document.getElementById("location-label").setAttribute("id","location-label_" + rowNumber);
         document.getElementById("train-label").setAttribute("id","train-id-label_" + rowNumber);
         document.getElementById("board-label").setAttribute("id","board-label_" + rowNumber);
         document.getElementById("alight-label").setAttribute("id","alight-label_" + rowNumber);
+        document.getElementById("hasCalledAt").setAttribute("id","hasCalledAt_" + rowNumber);
+        document.getElementById("willCallAt").setAttribute("id","willCallAt_" + rowNumber);
 
         document.getElementById("date").id = "date_" + rowNumber;
         document.getElementById("datalist").id = "datalist_" + rowNumber;
@@ -313,6 +336,9 @@ function addLocationSuggestion(element){
         $this.parent().parent().parent().find('.location')[0].setAttribute("disabled", "disabled");
         $this.parent().parent().parent().find('.search')[0].setAttribute("disabled", "disabled");
 
+        $this.parent().parent().parent().find('.willCallAt')[0].setAttribute("disabled", "disabled");
+        $this.parent().parent().parent().find('.hasCalledAt')[0].setAttribute("disabled", "disabled");
+
 
         var selects = $this.parent().parent().parent().find('select');
         var trainIds = selects[0];
@@ -323,11 +349,19 @@ function addLocationSuggestion(element){
         }
 
         var date = $this.parent().parent().parent().find('input[type=date]').val();
+        var callsAt = $this.parent().parent().parent().find('.willCallAt').val();
+        var calledAt = $this.parent().parent().parent().find('.hasCalledAt').val();
+
+        console.log(callsAt, calledAt);
 
          jQuery.when(
             jQuery.ajax({
               url: "/api/plan/highlight/trains/location/" + location + "/" + date,
-              headers: { "Authorization": "Bearer " + token }
+              headers: { "Authorization": "Bearer " + token },
+              data: {
+                willCallAt: callsAt,
+                hasCalledAt: calledAt
+              }
             })
 
         )
@@ -354,6 +388,9 @@ function addLocationSuggestion(element){
             $this.parent().parent().parent().find('.location')[0].removeAttribute("disabled");
             $this.parent().parent().parent().find('.train-id')[0].removeAttribute("disabled");
             $this.parent().parent().parent().find('.search')[0].removeAttribute("disabled");
+            $this.parent().parent().parent().find('.willCallAt')[0].removeAttribute("disabled");
+            $this.parent().parent().parent().find('.hasCalledAt')[0].removeAttribute("disabled");
+
         });
 }
 

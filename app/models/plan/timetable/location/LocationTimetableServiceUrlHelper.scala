@@ -3,12 +3,14 @@ package models.plan.timetable.location
 import models.plan.timetable.TimetableDateTimeHelper
 
 object LocationTimetableServiceUrlHelper {
-  def createUrlForReadingLocationTimetables(loc: String, year: Int, month: Int, day: Int, from: Int, to: Int) = {
+  def createUrlForReadingLocationTimetables(loc: String, year: Int, month: Int, day: Int, from: Int, to: Int, hasCalledAt: Option[String], willCallAt: Option[String]) = {
     val m = TimetableDateTimeHelper.padMonth(month)
     val d = TimetableDateTimeHelper.padDay(day)
     val f = TimetableDateTimeHelper.padTime(from)
     val t = TimetableDateTimeHelper.padTime(to)
-    val url = s"http://railweb-timetables-java.herokuapp.com/timetables/location/$loc?year=$year&month=$m&day=$d&from=$f&to=$t"
+    val hca = hasCalledAt.map(s => s"&hasCalledAt=$s").getOrElse("")
+    val wca = willCallAt.map(s => s"&willCallAt=$s").getOrElse("")
+    val url = s"http://railweb-timetables-java.herokuapp.com/timetables/location/$loc?year=$year&month=$m&day=$d&from=$f&to=$t$hca$wca"
     url
   }
 
