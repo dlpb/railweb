@@ -34,7 +34,10 @@ class LocationTimetableService @Inject()(
                                        day: Int,
                                        from: Int,
                                        to: Int,
-                                       date: String): LocationDetailedTimetableResult = {
+                                       date: String,
+                                       hasCalledAt: Option[String],
+                                       willCallAt: Option[String]
+                                      ): LocationDetailedTimetableResult = {
     mapTimetablesToDisplayTimetables[DisplayDetailedLocationTimetable, LocationDetailedTimetableResult](
       loc,
       year,
@@ -43,6 +46,8 @@ class LocationTimetableService @Inject()(
       from,
       to,
       date,
+      hasCalledAt,
+      willCallAt,
       DisplayDetailedLocationTimetable.apply,
       LocationDetailedTimetableResult.apply)
   }
@@ -53,8 +58,9 @@ class LocationTimetableService @Inject()(
                                      day: Int,
                                      from: Int,
                                      to: Int,
-                                     date: String): LocationSimpleTimetableResult = {
-
+                                     date: String,
+                                     hasCalledAt: Option[String],
+                                     willCallAt: Option[String]): LocationSimpleTimetableResult = {
     mapTimetablesToDisplayTimetables[DisplaySimpleLocationTimetable, LocationSimpleTimetableResult](
       loc,
       year,
@@ -63,21 +69,25 @@ class LocationTimetableService @Inject()(
       from,
       to,
       date,
+      hasCalledAt,
+      willCallAt,
       DisplaySimpleLocationTimetable.apply,
       LocationSimpleTimetableResult.apply)
   }
 
 
-  private def mapTimetablesToDisplayTimetables[M,R](
-                                                loc: String,
-                                                year: Int,
-                                                month: Int,
-                                                day: Int,
-                                                from: Int,
-                                                to: Int,
-                                                date: String,
-                                                mappingFn: (LocationsService, TimetableForLocation, Int, Int, Int) => M,
-                                                resultFn: (Future[Seq[M]], Int, Int, Int, Int, Int, Set[Location]) => R) = {
+  private def mapTimetablesToDisplayTimetables[M, R](
+                                                      loc: String,
+                                                      year: Int,
+                                                      month: Int,
+                                                      day: Int,
+                                                      from: Int,
+                                                      to: Int,
+                                                      date: String,
+                                                      hasCalledAt: Option[String],
+                                                      willCallAt: Option[String],
+                                                      mappingFn: (LocationsService, TimetableForLocation, Int, Int, Int) => M,
+                                                      resultFn: (Future[Seq[M]], Int, Int, Int, Int, Int, Set[Location]) => R) = {
     val (y, m, d): (Int, Int, Int) = if (date.contains("-")) {
       val dateParts = date.split("-").map(_.toInt)
       (dateParts(0), dateParts(1), dateParts(2))
@@ -87,7 +97,7 @@ class LocationTimetableService @Inject()(
 
     println(s"Showing results for ${locations.map(_.tiploc)}")
     if (locations.nonEmpty) {
-      val allTiplocResults = locations.map(location => getTrainsForLocation(location.id, y, m, d, from, to))
+      val allTiplocResults = locations.map(location => getTrainsForLocation(location.id, y, m, d, from, to, hasCalledAt, willCallAt))
 
       val allTimetables: Seq[Future[Seq[M]]] = allTiplocResults.map(result => result.timetables map {
         f =>
@@ -106,7 +116,7 @@ class LocationTimetableService @Inject()(
     }
   }
 
-  private def getTrainsForLocationAroundNow(loc: String): LocationTimetableResult = {
+  private def getTrainsForLocationAroundNow(loc: String, hasCalledAt: Option[String] = None, willCallAt: Option[String] = None): LocationTimetableResult = {
     val from = TimetableDateTimeHelper.from
     val to = TimetableDateTimeHelper.to
 
@@ -115,7 +125,9 @@ class LocationTimetableService @Inject()(
       from.getMonthValue,
       from.getDayOfMonth,
       from.getHour * 100 + from.getMinute,
-      to.getHour * 100 + to.getMinute)
+      to.getHour * 100 + to.getMinute,
+      hasCalledAt,
+      willCallAt)
   }
 
   def getTrainsForLocation(loc: String,
@@ -127,8 +139,9 @@ class LocationTimetableService @Inject()(
                            hasCalledAt: Option[String] = None,
                            willCallAt: Option[String] = None
                           ): LocationTimetableResult = {
+
     (year, month, day, from, to) match {
-      case (0, 0, 0, -1, -1) => getTrainsForLocationAroundNow(loc)
+      case (_, _, _, -1, -1) => getTrainsForLocationAroundNow(loc, hasCalledAt, willCallAt)
       case _ => LocationTimetableResult(readTimetable(loc, year, month, day, from, to, hasCalledAt, willCallAt), year, month, day, from, to)
     }
   }

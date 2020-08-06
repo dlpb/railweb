@@ -57,8 +57,8 @@ GET  /plan/highlight/trains/callingpoints/new                       controllers.
 POST /plan/highlight/trains/callingpoints/new                      controllers.plan.highlight.callingpoints.TrainCallingPointHighlightController.post()
 
 GET  /plan/timetables/location                                      controllers.plan.timetable.location.LocationTimetableSearchController.index()
-GET  /plan/timetables/location/simple                               controllers.plan.timetable.location.simple.SimpleLocationTimetableController.index(loc: String, year: Int ?= 0, month: Int ?= 0, day: Int ?= 0, from: Int ?= -1, to: Int ?= -1 , date: String ?= "")
-GET  /plan/timetables/location/detailed                             controllers.plan.timetable.location.detailed.DetailedLocationTimetableController.index(loc: String, year: Int ?=0, month: Int ?=0, day: Int ?=0, from: Int ?= -1, to: Int ?= -1, date: String ?= "")
+GET  /plan/timetables/location/simple                               controllers.plan.timetable.location.simple.SimpleLocationTimetableController.index(loc: String, year: Int ?= 0, month: Int ?= 0, day: Int ?= 0, from: Int ?= -1, to: Int ?= -1 , date: String ?= "", hasCalledAt: String ?= "", willCallAt: String ?= "")
+GET  /plan/timetables/location/detailed                             controllers.plan.timetable.location.detailed.DetailedLocationTimetableController.index(loc: String, year: Int ?=0, month: Int ?=0, day: Int ?=0, from: Int ?= -1, to: Int ?= -1, date: String ?= "", hasCalledAt: String ?= "", willCallAt: String ?= "")
 
 GET  /plan/timetables/train/:train/simple/:year/:month/:day         controllers.plan.timetable.train.simple.SimpleTrainTimetableController.index(train: String, year: Int, month: Int, day: Int)
 GET  /plan/timetables/train/:train/detailed/:year/:month/:day       controllers.plan.timetable.train.detailed.DetailedTrainTimetableController.index(train: String, year: Int, month: Int, day: Int)

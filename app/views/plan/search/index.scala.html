@@ -28,17 +28,21 @@ messages: List[String]
                             <option name="@l.name" value="@l.name">@l.name @if(l.crs.nonEmpty){(@l.crs)} [@l.id]</option>
                             }
                         </datalist>
-                        <input class="form-control" type="text" id="loc" name="loc" value="" list="locations">
                         <label for="loc">Location</label>
+                        <input class="form-control" type="text" id="loc" name="loc" value="" list="locations">
                         <input class="form-control" type="hidden" id="year" name="year" value="">
                         <input class="form-control" type="hidden" id="month" name="month" value="">
                         <input class="form-control" type="hidden" id="day" name="day" value="">
-                        <input class="form-control" type="date" id="date" name="date" value="@defaultDate">
                         <label for="date">Date</label>
-                        <input class="form-control" type="text" id="from" name="from" value="">
+                        <input class="form-control" type="date" id="date" name="date" value="@defaultDate">
                         <label for="year">From</label>
-                        <input class="form-control" type="text" id="to" name="to" value="">
+                        <input class="form-control" type="text" id="from" name="from" value="">
                         <label for="year">To</label>
+                        <input class="form-control" type="text" id="to" name="to" value="">
+                        <label for="hasCalledAt">Has Called at Previously</label>
+                        <input class="form-control" type="text" id="hasCalledAt" name="hasCalledAt" value="" list="locations">
+                        <label for="willCallAt">Will Call at Subsequently</label>
+                        <input class="form-control" type="text" id="willCallAt" name="willCallAt" value="" list="locations">
                         <div style="padding-top:3px">
                             <button type="submit" class="btn btn-primary">Filter</button>
                         </div>

@@ -31,13 +31,16 @@ class SimpleLocationTimetableController @Inject()(
 
   import scala.concurrent.ExecutionContext.Implicits.global
 
-  def index(loc: String, year: Int, month: Int, day: Int, from: Int, to: Int, date: String) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
+  def index(loc: String, year: Int, month: Int, day: Int, from: Int, to: Int, date: String, hasCalledAt: String, willCallAt: String) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
 
-    println("trying train at specific time")
+    println(s"Fetching Simple trains for $loc on $year-$month-$day (date $date) from $from to $to having called at $hasCalledAt and will call at $willCallAt")
     if (request.user.roles.contains(PlanUser)) {
       val token = jwtService.createToken(request.user, new Date())
 
-      val result = locationTrainService.getSimpleTimetablesForLocation(loc, year, month, day, from, to, date)
+      val hca = if(!hasCalledAt.isBlank) locationsService.findLocation(hasCalledAt).map(_.id) else None
+      val wca = if(!willCallAt.isBlank) locationsService.findLocation(willCallAt).map(_.id) else None
+
+      val result = locationTrainService.getSimpleTimetablesForLocation(loc, year, month, day, from, to, date, hca, wca)
 
       if(result.locations.nonEmpty) {
         val l = result.locations.head
@@ -46,7 +49,7 @@ class SimpleLocationTimetableController @Inject()(
             val locationName = l.name
             val locationId = if (l.crs.nonEmpty && l.isOrrStation) l.crs.head else l.id
             Ok(views.html.plan.location.trains.simple.index(
-              request.user, timetable.toList, locationName, locationId, result.year, result.month, result.day, TimetableHelper.time(result.from), TimetableHelper.time(result.to), locationsService.getLocations, List.empty)(request.request))
+              request.user, timetable.toList, locationName, locationId, result.year, result.month, result.day, TimetableHelper.time(result.from), TimetableHelper.time(result.to), hasCalledAt, willCallAt, locationsService.getLocations, List.empty)(request.request))
         }
         try {
           Await.result(eventualResult, Duration(30, "second"))
