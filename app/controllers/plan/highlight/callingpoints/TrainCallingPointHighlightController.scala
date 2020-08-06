@@ -85,12 +85,23 @@ class TrainCallingPointHighlightController @Inject()(
         val trainKey = s"train-id_$row"
         val boardKey = s"board_$row"
         val alightKey = s"alight_$row"
+        val wilLCallAtKey = s"willCallAt_$row"
+        val hasCalledAtKey = s"hasCalledAt_$row"
         val date = data.getOrElse(dateKey, "")
         val trainId = data.getOrElse(trainKey, "")
         val board = data.getOrElse(boardKey, "")
         val alight = data.getOrElse(alightKey, "")
         val location = data.getOrElse(locationKey, "")
-        val map = Map("date" -> (dateKey, date), "trainId" -> (trainKey, trainId), "board" -> (boardKey, board), "alight" -> (alightKey, alight), "location" -> (locationKey, location))
+        val wilLCallAt = data.getOrElse(wilLCallAtKey, "")
+        val hasCalledAt = data.getOrElse(hasCalledAtKey, "")
+        val map = Map(
+          "date" -> (dateKey, date),
+          "trainId" -> (trainKey, trainId),
+          "board" -> (boardKey, board),
+          "alight" -> (alightKey, alight),
+          "location" -> (locationKey, location),
+          "willCallAt" -> (wilLCallAtKey, wilLCallAt),
+          "hasCalledAt" -> (hasCalledAtKey, hasCalledAt))
         map
       }).toList
 
