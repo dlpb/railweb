@@ -154,9 +154,9 @@ class TrainCallingPointHighlightController @Inject()(
             val timetable = l.timetable
             val boardTimetableEntry = timetable.locations.find(_.tiploc.equals(l.board))
             val alightTimetableEntry = timetable.locations.find(_.tiploc.equals(l.alight))
-            val boardTime = boardTimetableEntry.map(l => l.publicDeparture.getOrElse(l.departure.getOrElse("----"))).getOrElse("")
+            val boardTime = TimetableDateTimeHelper.padTime(boardTimetableEntry.map(l => l.publicDeparture.getOrElse(l.departure.getOrElse(0))).getOrElse(0))
             val boardPlatform = boardTimetableEntry.map(_.platform).getOrElse("")
-            val alightTime = alightTimetableEntry.map(l => l.publicArrival.getOrElse(l.arrival.getOrElse("----"))).getOrElse("")
+            val alightTime = TimetableDateTimeHelper.padTime(alightTimetableEntry.map(l => l.publicArrival.getOrElse(l.arrival.getOrElse(0))).getOrElse(0))
             val alightPlatform = alightTimetableEntry.map(_.platform).getOrElse("")
             val boardCrs = boardTimetableEntry.flatMap(l => locationsService.findLocation(l.tiploc).map(_.crs.headOption.getOrElse(l.tiploc))).getOrElse("")
             val alightCrs = alightTimetableEntry.flatMap(l => locationsService.findLocation(l.tiploc).map(_.crs.headOption.getOrElse(l.tiploc))).getOrElse("")

@@ -63,14 +63,19 @@ formSubmitRoute: Call
                 <div class="col col-sm">
                     <div class="form-group">
                         <label for='@data("date")._1'>Date</label>
-                        <input id='@data("date")._1' name='@data("date")._1' class="form-control" type="date" value='@data("date")._2'>
+                        <div class="input-group mb-2">
+                            <input id='@data("date")._1' name='@data("date")._1' class="form-control" type="date" value='@data("date")._2'>
+                            <div class="input-group-append">
+                                <button type="button" class="btn btn-outline-primary btn-sm date" onclick="enableLocation(this)">Set Date</button>
+                            </div>
+                        </div>
 
                         <label for='@data("location")._1'>Location to Search for Trains at</label>
                         <div class="input-group mb-2">
                             <input id='@data("location")._1' name='@data("location")._1' class="form-control location" list="stations"
-                               value='@data("location")._2'/>
+                               value='@data("location")._2' disabled="disabled"/>
                             <div class="input-group-append">
-                                <button type="button" class="btn btn-outline-primary btn-sm search" onclick="addLocationSuggestion(this)">Search</button>
+                                <button type="button" class="btn btn-outline-primary btn-sm search" onclick="addLocationSuggestion(this)"  disabled="disabled">Search</button>
                             </div>
                         </div>
 
@@ -141,13 +146,18 @@ formSubmitRoute: Call
             <div class="col col-sm">
                 <div class="form-group">
                     <label id="date-label" for="date">Date</label>
-                    <input id="date" name="date" class="form-control" type="date">
+                    <div class="input-group mb-2">
+                        <input id="date" name="date" class="form-control" type="date">
+                        <div class="input-group-append">
+                            <button type="button" class="btn btn-outline-primary btn-sm date" onclick="enableLocation(this)">Set Date</button>
+                        </div>
+                    </div>
 
                     <label id="location-label" for="location">Search for Trains at this Location</label>
                     <div class="input-group mb-2">
-                        <input id="location" name="location" class="form-control location" list="stations"/>
+                        <input id="location" name="location" class="form-control location" list="stations" disabled="disabled"/>
                         <div class="input-group-append">
-                            <button type="button" class="btn btn-outline-primary btn-sm search" onclick="addLocationSuggestion(this)">Search</button>
+                            <button type="button" class="btn btn-outline-primary btn-sm search" onclick="addLocationSuggestion(this)"  disabled="disabled" >Search</button>
                         </div>
                     </div>
 
@@ -199,6 +209,12 @@ $("document").ready(function() {
     },5000);
 
 });
+
+function enableLocation(element){
+        var $this=$(element);
+        $this.parent().parent().parent().find('.location')[0].removeAttribute("disabled");
+        $this.parent().parent().parent().find('.search')[0].removeAttribute("disabled");
+}
 
 function uuidv4() {
   return ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, c =>
@@ -281,6 +297,12 @@ registerMapHandler(map);
 
     });
 
+function removeOptions(el){
+    for(var i = el.length -1 ; i>= 0; i--){
+        el.remove(i);
+    }
+}
+
 function addLocationSuggestion(element){
 
         var $this=$(element);
@@ -288,13 +310,16 @@ function addLocationSuggestion(element){
         console.log("setting location suggestions");
 
         var location = $this.parent().parent().parent().find('.location')[0].value;
+        $this.parent().parent().parent().find('.location')[0].setAttribute("disabled", "disabled");
+        $this.parent().parent().parent().find('.search')[0].setAttribute("disabled", "disabled");
+
 
         var selects = $this.parent().parent().parent().find('select');
         var trainIds = selects[0];
         var previousTrainId = "";
         if(typeof trainIds !== 'undefined') {
            previousTrainId = trainIds.value;
-           trainIds.options.length = 0;
+           removeOptions(trainIds);
         }
 
         var date = $this.parent().parent().parent().find('input[type=date]').val();
@@ -326,9 +351,9 @@ function addLocationSuggestion(element){
             });
 
             $this.removeAttr("disabled");
+            $this.parent().parent().parent().find('.location')[0].removeAttribute("disabled");
             $this.parent().parent().parent().find('.train-id')[0].removeAttribute("disabled");
-
-
+            $this.parent().parent().parent().find('.search')[0].removeAttribute("disabled");
         });
 }
 
@@ -349,8 +374,8 @@ function addTrain(element){
 
         console.log(previousBoardValue, previousAlightValue);
 
-        board.options.length = 0;
-        alight.options.length = 0;
+        removeOptions(board);
+        removeOptions(alight);
 
         var date = $this.parent().parent().find('input[type=date]').val()
         var trainId = $this.val();
