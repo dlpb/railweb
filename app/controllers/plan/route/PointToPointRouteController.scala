@@ -1,5 +1,6 @@
 package controllers.plan.route
 
+import java.net.URLDecoder
 import java.util.Date
 
 import auth.JWTService
@@ -24,7 +25,8 @@ class PointToPointRouteController @Inject()(
 
   def index(waypoints: String, followFreightLinks: Boolean, followFixedLinks: Boolean, visitAllRoutes: Boolean, visitAllStations: Boolean) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     if (request.user.roles.contains(MapUser)) {
-      val locationsToRouteVia = waypoints.split("\n").toList
+      val decodedWaypoints = URLDecoder.decode(waypoints, "utf-8")
+      val locationsToRouteVia = decodedWaypoints.split("\n").toList
 
       val token = jwtService.createToken(request.user, new Date())
 
@@ -53,11 +55,11 @@ class PointToPointRouteController @Inject()(
           }
         }
 
-        Ok(views.html.plan.route.pointtopoint.find.index(request.user, token, mapLocations, mapRoutes, waypoints, followFreightLinks, followFixedLinks, distance, messages, visitAllRoutes, visitAllStations))
+        Ok(views.html.plan.route.pointtopoint.find.index(request.user, token, mapLocations, mapRoutes, decodedWaypoints, followFreightLinks, followFixedLinks, distance, messages, visitAllRoutes, visitAllStations))
       }
       catch {
         case iae: IllegalArgumentException =>
-          Ok(views.html.plan.route.pointtopoint.find.index(request.user, token, List.empty, List.empty, waypoints, followFreightLinks, followFixedLinks, 0, List(iae.getMessage), visitAllRoutes, visitAllStations))
+          Ok(views.html.plan.route.pointtopoint.find.index(request.user, token, List.empty, List.empty, decodedWaypoints, followFreightLinks, followFixedLinks, 0, List(iae.getMessage), visitAllRoutes, visitAllStations))
       }
 
     }
