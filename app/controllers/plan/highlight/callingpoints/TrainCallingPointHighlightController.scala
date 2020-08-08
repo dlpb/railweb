@@ -8,8 +8,8 @@ import com.google.common.base.Charsets
 import com.google.common.io.BaseEncoding
 import javax.inject.Inject
 import models.auth.roles.PlanUser
-import models.list.PathService
 import models.location.{Location, LocationsService, MapLocation}
+import models.plan.route.pointtopoint.PathService
 import models.plan.timetable.TimetableDateTimeHelper
 import models.plan.timetable.location.LocationTimetableService
 import models.plan.timetable.trains.TrainTimetableService

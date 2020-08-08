@@ -6,6 +6,7 @@ routeList: List[models.route.MapRoute],
 waypoints: String,
 followFreightLinks: Boolean,
 followFixedLinks: Boolean,
+followUnknownLinks: Boolean,
 distance: Long,
 messages: List[String],
 visitAllRoutes: Boolean,
@@ -98,6 +99,30 @@ visitAllStations: Boolean
                                    value="false" checked>
                             }
                             <label class="form-check-label" for="followFreightLinks2">Don't follow Freight links</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            @if(followFreightLinks){
+                            <input class="form-check-input" type="radio" name="followUnknownLinks"
+                                   id="followUnknownLinks1"
+                                   value="true" checked>
+                            } else {
+                            <input class="form-check-input" type="radio" name="followUnknownLinks"
+                                   id="followUnknownLinks1"
+                                   value="true">
+                            }
+                            <label class="form-check-label" for="followUnknownLinks1">Follow Unknown or Unclassified Links</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            @if(followUnknownLinks){
+                            <input class="form-check-input" type="radio" name="followUnknownLinks"
+                                   id="followUnknownLinks2"
+                                   value="false">
+                            } else {
+                            <input class="form-check-input" type="radio" name="followUnknownLinks"
+                                   id="followUnknownLinks2"
+                                   value="false" checked>
+                            }
+                            <label class="form-check-label" for="followUnknownLinks2">Don't Follow Unknown or Unclassified Links</label>
                         </div>
                         <textarea id="waypoints" name="waypoints" class="form-control" rows="15">@waypoints</textarea>
                         <label for="waypoints">Waypoints</label>

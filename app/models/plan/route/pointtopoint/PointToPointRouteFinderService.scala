@@ -1,4 +1,4 @@
-package models.list
+package models.plan.route.pointtopoint
 
 import javax.inject.{Inject, Singleton}
 import models.location.{Location, LocationsService}
@@ -12,7 +12,7 @@ class PathService @Inject()(
                              locationsService: LocationsService
                            ) {
 
-  def findRouteForWaypoints(waypoints: List[String], followFixedLinks: Boolean = false, followFreightLinks: Boolean = false): Path = {
+  def findRouteForWaypoints(waypoints: List[String], followFixedLinks: Boolean = false, followFreightLinks: Boolean = false, followUnknownLinks: Boolean = false): Path = {
     def getRoutes(locations: List[Location]): List[Route] = {
       def process(current: Location, rest: List[Location], accumulator: List[Route]): List[Route] = {
         rest match {
@@ -41,7 +41,7 @@ class PathService @Inject()(
         val to = waypoints(i + 1).trim.toUpperCase()
         (locationsService.getLocationByIdOrOrrId(from.toUpperCase), locationsService.getLocationByIdOrOrrId(to.toUpperCase)) match {
           case (Some(f), Some(t)) =>
-            val routeLocations: List[Location] = list(f, t, followFixedLinks, followFreightLinks)
+            val routeLocations: List[Location] = list(f, t, followFixedLinks, followFreightLinks, followUnknownLinks)
             if(i == 0) {
               locations = locations ++ routeLocations
             }
@@ -61,7 +61,8 @@ class PathService @Inject()(
   def list(beginning: Location,
            end: Location,
            followFixedLinks: Boolean = false,
-           followFreightLinks: Boolean = true
+           followFreightLinks: Boolean = true,
+           followUnknownLinks: Boolean = true
           ): List[Location] = {
 
     val frontier: collection.mutable.PriorityQueue[OrderedLocationWrapper] = new mutable.PriorityQueue[OrderedLocationWrapper]()
@@ -79,7 +80,7 @@ class PathService @Inject()(
         return findPath(path, beginning, end)
       }
 
-      val neighbours = graphNeighbours(current, followFixedLinks, followFreightLinks)
+      val neighbours = graphNeighbours(current, followFixedLinks, followFreightLinks, followUnknownLinks)
       neighbours foreach {
         next =>
           val newCost: Int = pathCost(current) + getCostBetween(current, next)
@@ -141,7 +142,11 @@ class PathService @Inject()(
     }
     route map {_.distance.toInt} getOrElse Int.MaxValue
   }
-  def graphNeighbours(location: Location, followFixedLinks: Boolean, followFreightLinks: Boolean): Set[Location] = {
+  def graphNeighbours(
+                       location: Location,
+                       followFixedLinks: Boolean,
+                       followFreightLinks: Boolean,
+                       followUnknownLinks: Boolean): Set[Location] = {
     def fixedLinkFilter(r: Route): Boolean = {
       val isFixedLink: Boolean = r.srsCode.equals("Link")
       val fixedLinksAllowed: Boolean = if (!followFixedLinks) !isFixedLink else true
@@ -154,12 +159,20 @@ class PathService @Inject()(
       freightLinkAllowed
     }
 
+    def unknownLinkFilter(r: Route) : Boolean = {
+      val isUnknownLink: Boolean = r.`type`.isBlank
+      val unknownLinkAllowed = if(!followUnknownLinks) !isUnknownLink else true
+      unknownLinkAllowed
+    }
+
     val siblingRoutes: Set[Route] = routesService.getRoutes.filter ({
 
       r =>
         val fixedLinksAllowed: Boolean = fixedLinkFilter(r)
         val freightLinksAllowed: Boolean = freightLinkFilter(r)
-        freightLinksAllowed && fixedLinksAllowed && (r.from.id.equals(location.id) || r.to.id.equals(location.id))
+        val unknownLinksAllowed: Boolean = unknownLinkFilter(r)
+
+        freightLinksAllowed && fixedLinksAllowed && unknownLinksAllowed && (r.from.id.equals(location.id) || r.to.id.equals(location.id))
       }
     )
     val locs: Set[Location] =

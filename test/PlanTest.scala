@@ -3,9 +3,9 @@ import java.util.Date
 
 import com.typesafe.config.{ConfigFactory, ConfigValueFactory}
 import data.{LocationMapBasedDataProvider, RouteMapBasedDataProvider}
-import models.list.PathService
 import models.location.{LocationsService, MapLocation}
-import models.plan.{TrainService, Reader}
+import models.plan.route.pointtopoint.PathService
+import models.plan.{Reader, TrainService}
 import models.route.RoutesService
 import models.timetable._
 import org.scalatest.mockito.MockitoSugar

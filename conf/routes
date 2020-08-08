@@ -63,7 +63,7 @@ GET  /plan/timetables/location/detailed                             controllers.
 GET  /plan/timetables/train/:train/simple/:year/:month/:day         controllers.plan.timetable.train.simple.SimpleTrainTimetableController.index(train: String, year: Int, month: Int, day: Int)
 GET  /plan/timetables/train/:train/detailed/:year/:month/:day       controllers.plan.timetable.train.detailed.DetailedTrainTimetableController.index(train: String, year: Int, month: Int, day: Int)
 
-GET  /plan/routes/point-to-point/find                               controllers.plan.route.PointToPointRouteController.index(waypoints: String ?= "", followFreightLinks: Boolean ?=false, followFixedLinks: Boolean ?= false, visitAllRoutes: Boolean ?= false, visitAllStations: Boolean ?= false)
+GET  /plan/routes/point-to-point/find                               controllers.plan.route.PointToPointRouteController.index(waypoints: String ?= "", followFreightLinks: Boolean ?=false, followFixedLinks: Boolean ?= false, followUnknownLinks: Boolean ?= false, visitAllRoutes: Boolean ?= false, visitAllStations: Boolean ?= false)
 
 
 GET  /api/plan/train/map/locations/simple/:train/:year/:month/:day  controllers.api.plan.locations.PlanLocationsApiController.getSimpleMapLocationsForTrain(train: String, year: Int, month: Int, day: Int)

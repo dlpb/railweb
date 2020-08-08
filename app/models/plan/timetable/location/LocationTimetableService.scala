@@ -3,8 +3,8 @@ package models.plan.timetable.location
 import java.io.FileNotFoundException
 
 import javax.inject.Inject
-import models.list.PathService
 import models.location.{Location, LocationsService}
+import models.plan.route.pointtopoint.PathService
 import models.plan.timetable.TimetableDateTimeHelper
 import models.plan.timetable.reader.{Reader, WebZipInputStream}
 import models.timetable.dto.TimetableHelper

@@ -4,8 +4,8 @@ import java.io.FileNotFoundException
 import java.time.ZonedDateTime
 
 import javax.inject.{Inject, Singleton}
-import models.list.PathService
 import models.location.{LocationsService, MapLocation}
+import models.plan.route.pointtopoint.PathService
 import models.plan.timetable.reader.{Reader, WebZipInputStream}
 import models.route.MapRoute
 import models.timetable.dto.train.detailed.DisplayDetailedTrainTimetable
