@@ -28,6 +28,8 @@ class PointToPointRouteController @Inject()(
       val decodedWaypoints = URLDecoder.decode(waypoints, "utf-8")
       val locationsToRouteVia = decodedWaypoints.split("\n").toList
 
+      println(s"Fixed: $followFixedLinks, unknown: $followUnknownLinks, freight: $followFreightLinks")
+
       val token = jwtService.createToken(request.user, new Date())
 
       try {

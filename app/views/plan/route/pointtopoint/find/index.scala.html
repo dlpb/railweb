@@ -56,74 +56,19 @@ visitAllStations: Boolean
                         <input type="hidden" id="visitAllRoutes" name="visitAllRoutes" value="false"/>
                         <input type="hidden" id="visitAllStations" name="visitAllStations" value="false"/>
 
-                        <div class="form-check form-check-inline">
-                            @if(followFixedLinks){
-                            <input class="form-check-input" type="radio" name="followFixedLinks" id="followFixedLinks1"
-                                   value="true" checked>
-                            } else {
-                            <input class="form-check-input" type="radio" name="followFixedLinks" id="followFixedLinks1"
-                                   value="true">
-                            }
-                            <label class="form-check-label" for="followFixedLinks1">Follow Fixed Links</label>
+                        <div class="form-check">
+                            <input type="checkbox" id="followFixedLinks" name="followFixedLinks" value="true" class="form-check-input" @if(followFixedLinks){ checked="true" }>
+                            <label for="followFixedLinks">Follow Fixed Links</label><br>
                         </div>
-                        <div class="form-check form-check-inline">
-                            @if(followFixedLinks){
-                            <input class="form-check-input" type="radio" name="followFixedLinks" id="followFixedLinks2"
-                                   value="false">
-                            } else {
-                            <input class="form-check-input" type="radio" name="followFixedLinks" id="followFixedLinks2"
-                                   value="false" checked>
-                            }
-                            <label class="form-check-label" for="followFixedLinks2">Don't follow Fixed links</label>
+                        <div class="form-check">
+                            <input type="checkbox" id="followFreightLinks" name="followFreightLinks" value="true" class="form-check-input" @if(followFreightLinks){ checked="true" }>
+                            <label for="followFreightLinks">Follow Freight Links</label><br>
                         </div>
-                        <div class="form-check form-check-inline">
-                            @if(followFreightLinks){
-                            <input class="form-check-input" type="radio" name="followFreightLinks"
-                                   id="followFreightLinks1"
-                                   value="true" checked>
-                            } else {
-                            <input class="form-check-input" type="radio" name="followFreightLinks"
-                                   id="followFreightLinks1"
-                                   value="true">
-                            }
-                            <label class="form-check-label" for="followFreightLinks1">Follow Freight Links</label>
+                        <div class="form-check">
+                            <input type="checkbox" id="followUnknownLinks" name="followUnknownLinks" value="true" class="form-check-input" @if(followUnknownLinks){ checked="true" }>
+                            <label for="followUnknownLinks">Follow Unknown Links</label><br>
                         </div>
-                        <div class="form-check form-check-inline">
-                            @if(followFreightLinks){
-                            <input class="form-check-input" type="radio" name="followFreightLinks"
-                                   id="followFreightLinks2"
-                                   value="false">
-                            } else {
-                            <input class="form-check-input" type="radio" name="followFreightLinks"
-                                   id="followFreightLinks2"
-                                   value="false" checked>
-                            }
-                            <label class="form-check-label" for="followFreightLinks2">Don't follow Freight links</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            @if(followFreightLinks){
-                            <input class="form-check-input" type="radio" name="followUnknownLinks"
-                                   id="followUnknownLinks1"
-                                   value="true" checked>
-                            } else {
-                            <input class="form-check-input" type="radio" name="followUnknownLinks"
-                                   id="followUnknownLinks1"
-                                   value="true">
-                            }
-                            <label class="form-check-label" for="followUnknownLinks1">Follow Unknown or Unclassified Links</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            @if(followUnknownLinks){
-                            <input class="form-check-input" type="radio" name="followUnknownLinks"
-                                   id="followUnknownLinks2"
-                                   value="false">
-                            } else {
-                            <input class="form-check-input" type="radio" name="followUnknownLinks"
-                                   id="followUnknownLinks2"
-                                   value="false" checked>
-                            }
-                            <label class="form-check-label" for="followUnknownLinks2">Don't Follow Unknown or Unclassified Links</label>
-                        </div>
+
                         <textarea id="waypoints" name="waypoints" class="form-control" rows="15">@waypoints</textarea>
                         <label for="waypoints">Waypoints</label>
                         <div style="padding-top:3px">
