@@ -111,9 +111,10 @@ class PlanCallingPointHighlightApiController @Inject()(
                     loc =>
                       val dep = loc.publicDeparture.getOrElse(loc.departure.getOrElse(-1))
                       val arr = loc.publicArrival.getOrElse(loc.arrival.getOrElse(-1))
+                      val timetableLocation = locationsService.findPriortiseOrrStations(loc.tiploc)
                       HighlightTrainTimetableEntry(
                         loc.tiploc,
-                        locationsService.findLocation(loc.tiploc).map(l => "["+ l.crs.mkString + "] " + l.name).getOrElse(loc.tiploc),
+                        timetableLocation.map(l => "["+ l.crs.mkString + "] " + l.name).getOrElse(loc.tiploc),
                         TimetableDateTimeHelper.padTime(dep),
                         TimetableDateTimeHelper.padTime(arr),
                         (loc.publicDeparture, loc.publicArrival) match {

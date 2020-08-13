@@ -54,7 +54,9 @@ GET  /plan                                                          controllers.
 GET  /plan/highlight/locations                                      controllers.plan.highlight.locations.LocationHighlightController.index(locations: String ?= "")
 GET  /plan/highlight/trains/callingpoints                           controllers.plan.highlight.callingpoints.TrainCallingPointHighlightController.index(trainsAndStations: String ?= "", srsLocations: String ?= "", locations: String ?= "", year: Int ?= 0, month: Int ?= 0, day: Int ?= 0)
 GET  /plan/highlight/trains/callingpoints/new                       controllers.plan.highlight.callingpoints.TrainCallingPointHighlightController.newView()
-POST /plan/highlight/trains/callingpoints/new                      controllers.plan.highlight.callingpoints.TrainCallingPointHighlightController.post()
+POST /plan/highlight/trains/callingpoints/new                       controllers.plan.highlight.callingpoints.TrainCallingPointHighlightController.post()
+GET  /plan/highlight/trains/callingpoints/upload                    controllers.plan.highlight.callingpoints.upload.TrainCallingPointUploadController.index()
+POST /plan/highlight/trains/callingpoints/upload                    controllers.plan.highlight.callingpoints.upload.TrainCallingPointUploadController.post()
 
 GET  /plan/timetables/location                                      controllers.plan.timetable.location.LocationTimetableSearchController.index()
 GET  /plan/timetables/location/simple                               controllers.plan.timetable.location.simple.SimpleLocationTimetableController.index(loc: String, year: Int ?= 0, month: Int ?= 0, day: Int ?= 0, from: Int ?= -1, to: Int ?= -1 , date: String ?= "", hasCalledAt: String ?= "", willCallAt: String ?= "")

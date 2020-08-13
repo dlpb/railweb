@@ -1,0 +1,51 @@
+@import helper._
+
+
+@(
+user: models.auth.User,
+token: String,
+messages: List[String],
+formSubmitRoute: Call
+)(implicit request: Request[AnyContent])
+@templates.main("Highlight Trains", "Plan",  Some(user)){
+
+<style>
+    td{
+        display:block;
+    }
+
+</style>
+
+<script type="text/javascript">
+    const token = "@token";
+
+</script>
+
+@if(messages.size > 0){
+<div class="alert alert-primary">
+    <h2>Messages</h2>
+    <ul>
+        @for(message <- messages){
+        <li>@message</li>
+        }
+    </ul>
+</div>
+}
+
+@helper.form(action = formSubmitRoute, Symbol("enctype") -> "multipart/form-data") {
+@helper.CSRF.formField
+<div class="row">
+    <div class="col col-sm">
+
+        <label for="trainPlan">Train Plan</label>
+        <br/>
+        <textarea class="form-control" type="file" id="trainPlan" name="trainPlan"></textarea>
+        <br/>
+        <button type="submit" class="btn btn-primary">Import</button>
+
+        <datalist id="tocs"></datalist>
+    </div>
+</div>
+}
+
+}

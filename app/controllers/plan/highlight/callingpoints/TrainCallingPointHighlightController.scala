@@ -8,9 +8,9 @@ import com.google.common.base.Charsets
 import com.google.common.io.BaseEncoding
 import javax.inject.Inject
 import models.auth.roles.PlanUser
-import models.location.{Location, LocationsService, MapLocation}
+import models.location.{LocationsService, MapLocation}
+import models.plan.highlight.{HighlightTimetableService, LocationsCalledAtFromTimetable, TimetableFound, TrainPlanEntry}
 import models.plan.route.pointtopoint.PathService
-import models.plan.timetable.TimetableDateTimeHelper
 import models.plan.timetable.location.LocationTimetableService
 import models.plan.timetable.trains.TrainTimetableService
 import models.timetable.model.train.IndividualTimetable
@@ -19,7 +19,6 @@ import play.api.data.Forms._
 import play.api.i18n.I18nSupport
 import play.api.mvc._
 
-import scala.collection.{immutable, mutable}
 import scala.concurrent.duration.Duration
 import scala.concurrent.{Await, Future}
 
@@ -30,6 +29,7 @@ class TrainCallingPointHighlightController @Inject()(
                                                       pathService: PathService,
                                                       trainService: LocationTimetableService,
                                                       timetableService: TrainTimetableService,
+                                                      highlightTimetableService: HighlightTimetableService,
                                                       jwtService: JWTService
 
                               ) extends AbstractController(cc) with I18nSupport {
@@ -68,150 +68,47 @@ class TrainCallingPointHighlightController @Inject()(
       val dynamicForm = form.bindFromRequest()
       val data: Map[String, String] = dynamicForm.data.view.filterKeys(_.contains("-")).toMap
 
-      println("Processing called at points")
-      println(data)
+      val groupedDataByRow: Map[String, Map[String, String]] = highlightTimetableService.getTrainDataFromFormEntryGroupedByRow(data)
 
-      val groupedDataByRow: Map[String, Map[String, String]] = data
-        .keys
-        .groupBy(key => key.split("_").toList.last)
-        .map(row => {
-          row._1 -> row._2.map(key => key -> data(key)).toMap
-        })
+      val formDataToReturn: List[Map[String, (String, String)]] = highlightTimetableService.makeReturnDataFromForm(groupedDataByRow)
 
-      val formDataToReturn: List[Map[String, (String, String)]] = groupedDataByRow.map(entry => {
-        val (row, data) = entry
-        val locationKey = s"location_$row"
-        val dateKey = s"date_$row"
-        val trainKey = s"train-id_$row"
-        val boardKey = s"board_$row"
-        val alightKey = s"alight_$row"
-        val wilLCallAtKey = s"willCallAt_$row"
-        val hasCalledAtKey = s"hasCalledAt_$row"
-        val date = data.getOrElse(dateKey, "")
-        val trainId = data.getOrElse(trainKey, "")
-        val board = data.getOrElse(boardKey, "")
-        val alight = data.getOrElse(alightKey, "")
-        val location = data.getOrElse(locationKey, "")
-        val wilLCallAt = data.getOrElse(wilLCallAtKey, "")
-        val hasCalledAt = data.getOrElse(hasCalledAtKey, "")
-        val map = Map(
-          "date" -> (dateKey, date),
-          "trainId" -> (trainKey, trainId),
-          "board" -> (boardKey, board),
-          "alight" -> (alightKey, alight),
-          "location" -> (locationKey, location),
-          "willCallAt" -> (wilLCallAtKey, wilLCallAt),
-          "hasCalledAt" -> (hasCalledAtKey, hasCalledAt))
-        map
-      }).toList
+      val timetablesF: List[Future[Option[TimetableFound]]] = highlightTimetableService.getTimetablesFuture(groupedDataByRow)
 
-      case class TimetableFound(timetable: IndividualTimetable, date: String, trainId: String, board: String, alight: String)
-      case class LocationsCalledAtFromTimetable(timetable: IndividualTimetable, locations: List[Location], date: String, trainId: String, board: String, alight: String)
-
-      val timetablesF: List[Future[Option[TimetableFound]]] = groupedDataByRow.map(entry => {
-        val (row, data) = entry
-        val dateOpt = data.get(s"date_$row")
-        val trainIdOpt = data.get(s"train-id_$row")
-        val boardOpt = data.get(s"board_$row")
-        val alightOpt = data.get(s"alight_$row")
-
-        (dateOpt, trainIdOpt, boardOpt, alightOpt) match {
-          case (Some(date), Some(trainId), Some(board), Some(alight)) =>
-            val (y, m, d): (Int, Int, Int) = if (date.contains("-")) {
-              val dateParts = date.split("-").map(_.toInt)
-              (dateParts(0), dateParts(1), dateParts(2))
-            } else (0, 0, 0)
-            val timetableF: Future[Option[TimetableFound]] = timetableService.getTrain(trainId, y.toString, m.toString, d.toString ).map(_.map(TimetableFound(_, date, trainId, board, alight)))
-            timetableF
-          case _ => Future.successful(None)
-        }
-      }).toList
-
-      val locationsCalledAtF: List[Future[Option[LocationsCalledAtFromTimetable]]] = timetablesF.map({
-        timetableF =>
-          val callingPointsF: Future[Option[LocationsCalledAtFromTimetable]] = timetableF.map((timetableOpt: Option[TimetableFound]) => {
-            timetableOpt match {
-              case Some(TimetableFound(tt, date, id, board, alight)) =>
-                val stationsCalledAt: List[Location] = tt
-                  .locations
-                  .filter(_.pass.isEmpty)
-                  .flatMap(l => locationsService.findLocation(l.tiploc))
-                  .filter(_.isOrrStation)
-
-                val calledAtPoints: List[Location] = {
-                  val boardIndex = stationsCalledAt.map(_.id).indexOf(board)
-                  val alightIndex = stationsCalledAt.map(_.id).indexOf(alight) + 1
-                  stationsCalledAt.slice(boardIndex, alightIndex)
-                }
-
-                Some(LocationsCalledAtFromTimetable(tt, calledAtPoints, date, id, board, alight))
-
-              case _ => None
-            }
-          })
-          callingPointsF
-      })
-
-      val mapLocationsCalledAtF: Future[List[MapLocation]] = Future.sequence(locationsCalledAtF)
-        .map(_.flatten)
-        .map(_.flatMap(_.locations.map(MapLocation(_))))
-
-      val mapLocationsCalledAt = Await.result(mapLocationsCalledAtF, Duration(30, "seconds"))
-
-      val trainDataPlanF: List[Future[Option[String]]] = locationsCalledAtF.map(f =>
-        f.map(o =>
-          o.map(l => {
-            val date = l.date
-            val timetable = l.timetable
-            val boardTimetableEntry = timetable.locations.find(_.tiploc.equals(l.board))
-            val alightTimetableEntry = timetable.locations.find(_.tiploc.equals(l.alight))
-            val boardTime = TimetableDateTimeHelper.padTime(boardTimetableEntry.map(l => l.publicDeparture.getOrElse(l.departure.getOrElse(0))).getOrElse(0))
-            val boardPlatform = boardTimetableEntry.map(_.platform).getOrElse("")
-            val alightTime = TimetableDateTimeHelper.padTime(alightTimetableEntry.map(l => l.publicArrival.getOrElse(l.arrival.getOrElse(0))).getOrElse(0))
-            val alightPlatform = alightTimetableEntry.map(_.platform).getOrElse("")
-            val boardCrs = boardTimetableEntry.flatMap(l => locationsService.findLocation(l.tiploc).map(_.crs.headOption.getOrElse(l.tiploc))).getOrElse("")
-            val alightCrs = alightTimetableEntry.flatMap(l => locationsService.findLocation(l.tiploc).map(_.crs.headOption.getOrElse(l.tiploc))).getOrElse("")
-            val calledAtCrs = l.locations.flatMap(_.crs.headOption).mkString(",")
-
-            val boardTimeFormatString = f"$boardTime%4s"
-            val alightTimeFormatString = f"$alightTime%4s"
-            val boardCrsFormatString = f"$boardCrs%3s"
-            val alightCrsFormatString = f"$alightCrs%3s"
-            val boardPlatformFormatString = f"$boardPlatform%4s"
-            val alightPlatformFormatString = f"$alightPlatform%4s"
-
-            val row = s"$date $boardTimeFormatString $boardCrsFormatString $boardPlatformFormatString $alightPlatformFormatString $alightCrsFormatString $alightTimeFormatString https://www.realtimetrains.co.uk/train/${l.trainId}/$date/detailed $calledAtCrs"
-
-            row
-          })
-        )
-      )
-
-      val dataPlanEntriesF = Future.sequence(trainDataPlanF).map(_.flatten)
-      val trainDataPlan = Await.result(dataPlanEntriesF, Duration(30, "seconds")).mkString("\n")
-
-      println(data)
-      println(mapLocationsCalledAt)
-      println(trainDataPlan)
-
-      val trainPlanEncoded = BaseEncoding.base64().encode(trainDataPlan.getBytes(Charsets.UTF_8))
-
-      Ok(views.html.plan.location.highlight.trains.newView(
-        request.user,
-        token,
-        locationsService.getLocations.filter(_.isOrrStation).sortBy(_.name),
-        formDataToReturn,
-        mapLocationsCalledAt,
-        List.empty,
-        List.empty,
-        trainPlanEncoded,
-        List("Work In Progress - Plan - Highlight Locations"),
-        controllers.plan.highlight.callingpoints.routes.TrainCallingPointHighlightController.post())
-      (request.request))
+      generateResponse(request, token, data, formDataToReturn, timetablesF)
     }
     else {
       Forbidden("User not authorized to view page")
     }
+  }
+
+
+  private def generateResponse(request: WebUserContext[AnyContent], token: String, data: Map[String, String], formDataToReturn: List[Map[String, (String, String)]], timetablesF: List[Future[Option[TimetableFound]]]) = {
+    val locationsCalledAtF: List[Future[Option[LocationsCalledAtFromTimetable]]] = highlightTimetableService.getLocationsCalledAtFuture(timetablesF)
+    val mapLocationsCalledAt: List[MapLocation] = highlightTimetableService.getMapLocationsForLocationsCalledAt(locationsCalledAtF)
+
+    val trainDataPlanF: List[Future[Option[TrainPlanEntry]]] = highlightTimetableService.getTrainPlanEntriesFuture(locationsCalledAtF)
+    val dataPlanEntriesF: Future[List[TrainPlanEntry]] = highlightTimetableService.getSortedTrainPlanEntries(trainDataPlanF)
+    val trainDataPlan = highlightTimetableService.getTrainPlan(dataPlanEntriesF)
+
+    println("Train Plan Result")
+    println(data)
+    println(mapLocationsCalledAt)
+    println(trainDataPlan)
+
+    val trainPlanEncoded = BaseEncoding.base64().encode(trainDataPlan.getBytes(Charsets.UTF_8))
+
+    Ok(views.html.plan.location.highlight.trains.newView(
+      request.user,
+      token,
+      locationsService.getLocations.filter(_.isOrrStation).sortBy(_.name),
+      formDataToReturn,
+      mapLocationsCalledAt,
+      List.empty,
+      List.empty,
+      trainPlanEncoded,
+      List("Work In Progress - Plan - Highlight Locations"),
+      controllers.plan.highlight.callingpoints.routes.TrainCallingPointHighlightController.post())
+    (request.request))
   }
 
   def index(trainsAndStations: String, srsLocations: String, locations: String, year: Int, month: Int, day: Int) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
@@ -223,7 +120,7 @@ class TrainCallingPointHighlightController @Inject()(
           .replaceAll("\\s+", ",")
           .split(",")
           .flatMap {
-            locationsService.findLocation
+            locationsService.findPriortiseOrrStations
           }
           .map {
             MapLocation(_)
@@ -272,7 +169,7 @@ class TrainCallingPointHighlightController @Inject()(
                     .map {
                       _.tiploc
                     }.flatMap {
-                      locationsService.findLocation
+                      locationsService.findPriortiseOrrStations
                     }
                   val fromIndexMaybe = locs.map(_.id).indexOf(from.trim)
                   val toIndexMaybe = locs.map(_.id).indexOf(to.trim)
@@ -307,5 +204,6 @@ class TrainCallingPointHighlightController @Inject()(
     }
   }
 
-}
 
+
+}

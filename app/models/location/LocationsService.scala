@@ -29,14 +29,27 @@ class LocationsService @Inject() ( config: Config,
 
   def getLocations = locations.toList
 
-  def findLocation(key: String): Option[Location] =
+  def findLocation(key: String): Option[Location] = {
     locations.find(l =>
       l.id.toUpperCase.equals(key.toUpperCase) ||
-      l.tiploc.map(_.toUpperCase).contains(key.toUpperCase)  ||
-      l.crs.map(_.toUpperCase).contains(key.toUpperCase)  ||
-      l.name.toUpperCase.equals(key.toUpperCase)
-
+        l.tiploc.map(_.toUpperCase).contains(key.toUpperCase) ||
+        l.crs.map(_.toUpperCase).contains(key.toUpperCase) ||
+        l.name.toUpperCase.equals(key.toUpperCase)
     )
+  }
+
+  def findPriortiseOrrStations(key: String): Option[Location] = {
+    val matchingLocsIncludingNonOrrStations = locations
+      .filter(l =>
+        l.id.toUpperCase.equals(key.toUpperCase) ||
+        l.tiploc.map(_.toUpperCase).contains(key.toUpperCase) ||
+        l.crs.map(_.toUpperCase).contains(key.toUpperCase) ||
+        l.name.toUpperCase.equals(key.toUpperCase)
+    )
+    val matchingOrrLocations = matchingLocsIncludingNonOrrStations.filter(_.isOrrStation)
+    if(matchingOrrLocations.nonEmpty) matchingOrrLocations.headOption
+    else matchingLocsIncludingNonOrrStations.headOption
+  }
 
   def findAllLocationsMatchingCrs(key: String): Set[Location] = {
     val initialLocation = findLocation(key)
