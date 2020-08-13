@@ -57,7 +57,8 @@ class LocationsService @Inject() ( config: Config,
       val location = initialLocation.get
       if(location.isOrrStation){
         location.crs.flatMap({ crs =>
-          locations.filter(l => l.crs.contains(crs) && l.isOrrStation)
+          val locs = locations.filter(l => l.crs.contains(crs) && l.isOrrStation)
+          locs
         })
       }
       else {

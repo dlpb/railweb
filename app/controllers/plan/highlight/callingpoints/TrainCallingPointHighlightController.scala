@@ -90,11 +90,6 @@ class TrainCallingPointHighlightController @Inject()(
     val dataPlanEntriesF: Future[List[TrainPlanEntry]] = highlightTimetableService.getSortedTrainPlanEntries(trainDataPlanF)
     val trainDataPlan = highlightTimetableService.getTrainPlan(dataPlanEntriesF)
 
-    println("Train Plan Result")
-    println(data)
-    println(mapLocationsCalledAt)
-    println(trainDataPlan)
-
     val trainPlanEncoded = BaseEncoding.base64().encode(trainDataPlan.getBytes(Charsets.UTF_8))
 
     Ok(views.html.plan.location.highlight.trains.newView(

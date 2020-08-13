@@ -34,8 +34,8 @@ case class TrainPlanEntry(
     val alightTimeFormatString = f"${alightTime}%4s"
     val boardCrsFormatString = f"${boardLocation.crs.headOption.getOrElse(boardLocation.id)}%7s"
     val alightCrsFormatString = f"${alightLocation.crs.headOption.getOrElse(alightLocation.id)}%7s"
-    val boardPlatformFormatString = f"$boardPlatform%4s"
-    val alightPlatformFormatString = f"$alightPlatform%4s"
+    val boardPlatformFormatString = if(boardPlatform.isBlank) "   -" else f"$boardPlatform%4s"
+    val alightPlatformFormatString = if(alightPlatform.isBlank) "   -" else f"$alightPlatform%4s"
     val calledAtCrs = callingPoints.map(l => l.crs.headOption.getOrElse(l.id)).mkString(",")
 
     s"$boardDate $boardTimeFormatString $boardCrsFormatString $boardPlatformFormatString $alightPlatformFormatString $alightCrsFormatString $alightTimeFormatString $alightDate $trainId https://www.realtimetrains.co.uk/train/${trainId}/$boardDate/detailed $calledAtCrs ## $sanitisedComments"

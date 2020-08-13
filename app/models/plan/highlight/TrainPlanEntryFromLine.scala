@@ -11,22 +11,29 @@ object TrainPlanEntryFromLine {
     if(!line.startsWith("#")) None
 
     val lineParts = line.split(" ").toList.filterNot(_.isBlank)
-    if(lineParts.size != 10) None
-
+    if(lineParts.size < 10) {
+      println(s"Not enough fields for ${line}")
+      None
+    }
 
     try {
-      val boardDate = LocalDate.parse(lineParts(0))
-      val boardTime = LocalTime.parse(lineParts(1), DateTimeFormatter.ofPattern("HH:mm"))
+      val boardDateStr = lineParts(0)
+      val boardTimeStr = lineParts(1)
       val boardLocationCrs = lineParts(2)
       val boardPlatform = lineParts(3)
       val alightPlatform = lineParts(4)
       val alightCrs = lineParts(5)
-      val alightTIme = LocalTime.parse(lineParts(6), DateTimeFormatter.ofPattern("HH:mm"))
-      val alightDate =  LocalDate.parse(lineParts(7))
+      val alightTImeStr = lineParts(6)
+      val alightDateStr =  lineParts(7)
       val trainId = lineParts(8)
       val rttUrl = lineParts(9)
-      val calledAt = lineParts(10)
-      val comments = lineParts(11)
+      val calledAt = if(lineParts.size > 10) lineParts(10) else ""
+      val comments = ""
+
+      val boardDate = LocalDate.parse(boardDateStr, DateTimeFormatter.ofPattern("yyyy-MM-dd"))
+      val boardTime = LocalTime.parse(boardTimeStr, DateTimeFormatter.ofPattern("HH:mm"))
+      val alightTIme = LocalTime.parse(alightTImeStr, DateTimeFormatter.ofPattern("HH:mm"))
+      val alightDate =  LocalDate.parse(alightDateStr, DateTimeFormatter.ofPattern("yyyy-MM-dd"))
 
       val boardLocation = locationsService.findPriortiseOrrStations(boardLocationCrs)
       val alightLocation = locationsService.findPriortiseOrrStations(alightCrs)
@@ -50,6 +57,7 @@ object TrainPlanEntryFromLine {
     }
     catch {
       case e: Exception =>
+        println(s"Something went wrong processing line ${line}")
         e.printStackTrace()
         None
     }

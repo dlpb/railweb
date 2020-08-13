@@ -76,9 +76,6 @@ class TrainCallingPointUploadController @Inject()(
         .getOrElse(List.empty)
         .flatMap(entry => TrainPlanEntryFromLine(entry)(locationsService))
 
-
-      println(trainPlans)
-
       val token = jwtService.createToken(request.user, new Date())
       try {
 
@@ -115,11 +112,6 @@ class TrainCallingPointUploadController @Inject()(
     val trainDataPlanF: List[Future[Option[TrainPlanEntry]]] = highlightTimetableService.getTrainPlanEntriesFuture(locationsCalledAtF)
     val dataPlanEntriesF: Future[List[TrainPlanEntry]] = highlightTimetableService.getSortedTrainPlanEntries(trainDataPlanF)
     val trainDataPlan = highlightTimetableService.getTrainPlan(dataPlanEntriesF)
-
-    println("Train Plan Result")
-    println(data)
-    println(mapLocationsCalledAt)
-    println(trainDataPlan)
 
     val trainPlanEncoded = BaseEncoding.base64().encode(trainDataPlan.getBytes(Charsets.UTF_8))
 
