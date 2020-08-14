@@ -33,6 +33,51 @@ removeAll: Call)(implicit request: Request[AnyContent])
         title.textContent = "@route.srsCode - " + srsInfo["route"] + " / " + srsInfo["region"];
 
         </script>
+
+        <div class="row">
+            <div class="col-sm">
+                <h3>Location Data</h3>
+                <ul>
+                    <li>From
+                        <ul>
+                            <li>ID: <a href="/location/detail/@route.from.id">@route.from.id</a></li>
+                            <li>Name: <a href="/location/detail/@route.from.id">@route.from.name</a></li>
+                            <li>Lat: @route.from.lat</li>
+                            <li>Lon: @route.from.lon</li>
+                        </ul>
+                    </li>
+                    <li>To
+                        <ul>
+                            <li>ID:  <a href="/location/detail/@route.to.id">@route.to.id</a></li>
+                            <li>Name:  <a href="/location/detail/@route.to.id">@route.to.name</a></li>
+                            <li>Lat: @route.to.lat</li>
+                            <li>Lon: @route.to.lon</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm">
+                <h3>Route Data</h3>
+                <ul>
+                    @if(!route.toc.isBlank){<li>Primary Operator: <a href="/toc/@route.toc">@route.toc</a></li>}
+                    @if(!route.singleTrack.isBlank){<li>Number of Tracks (Single Track): @route.singleTrack</li>}
+                    @if(!route.electrification.isBlank){<li>Electrification: @route.electrification</li>}
+                    @if(!route.speed.isBlank){<li>Speed (MPH): @route.speed</li>}
+                    @if(!route.srsCode.isBlank){<li>SRS Code: <a href="/srs/@route.srsCode">@route.srsCode</a></li>}
+                    <li>Distance: @(route.distance/1000.0)km</li>
+                </ul>
+            </div>
+            @if(visits.nonEmpty){
+            <div class="col-sm">
+                <h3>Visits</h3>
+                <ul>
+                    @for(visit <- visits){
+                    <li><a href="/profile/visits/by/event/@visit">@visit</a></li>
+                    }
+                </ul>
+            </div>
+            }
+        </div>
         <div class="row">
             <div class="col-sm">
 
@@ -68,49 +113,12 @@ removeAll: Call)(implicit request: Request[AnyContent])
                 </div>
             </div>
         </div>
+        <hr/>
         <div class="row">
-            <div class="col-sm">
-                <h3>Location Data</h3>
-                <ul>
-                    <li>From
-                        <ul>
-                            <li>ID: @route.from.id</li>
-                            <li>Name: @route.from.name</li>
-                            <li>Lat: @route.from.lat</li>
-                            <li>Lon: @route.from.lon</li>
-                        </ul>
-                    </li>
-                    <li>To
-                        <ul>
-                            <li>ID: @route.to.id</li>
-                            <li>Name: @route.to.name</li>
-                            <li>Lat: @route.to.lat</li>
-                            <li>Lon: @route.to.lon</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-sm">
-                <h3>Route Data</h3>
-                <ul>
-                    <li>TOC: @route.toc</li>
-                    <li>Single Track: @route.singleTrack</li>
-                    <li>Electrification: @route.electrification</li>
-                    <li>Speed (MPH): @route.speed</li>
-                    <li>SRS Code: @route.srsCode</li>
-                    <li>Distance: @(route.distance/1000.0)km</li>
-                </ul>
-            </div>
-            <div class="col-sm">
-                <h3>Visits</h3>
-                <ul>
-                    @for(visit <- visits){
-                    <li>@visit</li>
-                    }
-                </ul>
+            <div class="col col-sm">
+                <div id="map" class="map"></div>
             </div>
         </div>
-        <div id="map" class="map"></div>
 
         <script type="text/javascript">
         createMap();
