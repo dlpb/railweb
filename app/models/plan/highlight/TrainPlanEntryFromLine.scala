@@ -3,11 +3,17 @@ package models.plan.highlight
 import java.time.format.DateTimeFormatter
 import java.time.{LocalDate, LocalTime}
 
+import models.location
 import models.location.LocationsService
 import models.plan.highlight
+import models.plan.timetable.trains.TrainTimetableService
+import models.timetable.model.train.{IndividualTimetable, Location}
+
+import scala.concurrent.duration.Duration
+import scala.concurrent.{Await, Future}
 
 object TrainPlanEntryFromLine {
-  def apply(line: String)(implicit locationsService: LocationsService): Option[TrainPlanEntry] = {
+  def apply(line: String)(implicit locationsService: LocationsService, trainTimetableService: TrainTimetableService): Option[TrainPlanEntry] = {
     if(!line.startsWith("#")) None
 
     val lineParts = line.split(" ").toList.filterNot(_.isBlank)
@@ -35,18 +41,41 @@ object TrainPlanEntryFromLine {
       val alightTIme = LocalTime.parse(alightTImeStr, DateTimeFormatter.ofPattern("HH:mm"))
       val alightDate =  LocalDate.parse(alightDateStr, DateTimeFormatter.ofPattern("yyyy-MM-dd"))
 
-      val boardLocation = locationsService.findPriortiseOrrStations(boardLocationCrs)
-      val alightLocation = locationsService.findPriortiseOrrStations(alightCrs)
+
       val callingPoints = calledAt.split(",").toList.flatMap(l => locationsService.findPriortiseOrrStations(l))
 
-      if(boardLocation.isEmpty || alightLocation.isEmpty) None
+      val timetableF: Future[Option[IndividualTimetable]] = trainTimetableService.getTrain(trainId, boardDate.getYear.toString, boardDate.getMonth.getValue.toString, boardDate.getDayOfMonth.toString)
+
+      val timetable = Await.result(timetableF, Duration(30, "seconds"))
+
+      val callingPointsFromTimetable: List[(String, location.Location)] = timetable
+        .map(_.locations)
+        .getOrElse(List.empty)
+        .map(l => (l.tiploc, locationsService.findPriortiseOrrStations(l.tiploc).get))
+
+      val boardTiplocFromTimetable = callingPointsFromTimetable.find(cp => {
+        val crs = cp._2.crs
+        crs contains boardLocationCrs
+      })
+
+      val alightTiplocFromTimetable = callingPointsFromTimetable.find(cp => {
+        val crs = cp._2.crs
+        crs contains alightCrs
+      })
+
+      val boardLocation = boardTiplocFromTimetable.get._2
+      val alightLocation = alightTiplocFromTimetable.get._2
+
+      if(boardTiplocFromTimetable.isEmpty || alightTiplocFromTimetable.isEmpty) println(s"Could not find board location for $boardLocationCrs or alight location for $alightCrs")
 
       Some(highlight.TrainPlanEntry(
         boardDate,
-        boardLocation.get,
+        boardTiplocFromTimetable.get._1,
+        boardLocation,
         boardTime,
         boardPlatform,
-        alightLocation.get,
+        alightTiplocFromTimetable.get._1,
+        alightLocation,
         alightTIme,
         alightPlatform,
         trainId,

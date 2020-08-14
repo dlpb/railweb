@@ -94,7 +94,6 @@ class PlanCallingPointHighlightApiController @Inject()(
         else if(train.length != 6) BadRequest("Train ID Must be 5 characters long, e.g. P12345")
         else if(!date.contains("-")) BadRequest("Date must be in the format yyyy-mm-dd")
         else {
-          println(s"$train, $date")
           val (y, m, d): (Int, Int, Int) = if (date.contains("-")) {
             val dateParts = date.split("-").map(_.toInt)
             (dateParts(0), dateParts(1), dateParts(2))

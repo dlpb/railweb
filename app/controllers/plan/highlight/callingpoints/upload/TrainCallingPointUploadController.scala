@@ -74,7 +74,7 @@ class TrainCallingPointUploadController @Inject()(
           .toList
       )
         .getOrElse(List.empty)
-        .flatMap(entry => TrainPlanEntryFromLine(entry)(locationsService))
+        .flatMap(entry => TrainPlanEntryFromLine(entry)(locationsService, timetableService))
 
       val token = jwtService.createToken(request.user, new Date())
       try {

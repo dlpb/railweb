@@ -6,9 +6,11 @@ import models.location.Location
 
 case class TrainPlanEntry(
                            boardDate: LocalDate,
+                           boardLocationTiploc: String,
                            boardLocation: Location,
                            boardTime: LocalTime,
                            boardPlatform: String,
+                           alightLocationTiploc: String,
                            alightLocation: Location,
                            alightTime: LocalTime,
                            alightPlatform: String,

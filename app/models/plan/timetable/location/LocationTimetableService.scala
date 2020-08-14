@@ -95,7 +95,6 @@ class LocationTimetableService @Inject()(
 
     val locations = locationsService.findAllLocationsMatchingCrs(loc)
 
-    println(s"Showing results for ${locations.map(_.tiploc)}")
     if (locations.nonEmpty) {
       val allTiplocResults = locations.map(location => getTrainsForLocation(location.id, y, m, d, from, to, hasCalledAt, willCallAt))
 

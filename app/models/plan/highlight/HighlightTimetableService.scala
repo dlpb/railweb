@@ -126,9 +126,11 @@ class HighlightTimetableService @Inject()(
             case (Some(boardLocation), Some(alightLocation)) =>
               Some(highlight.TrainPlanEntry(
                 date,
+                boardLocation.id,
                 boardLocation,
                 LocalTime.parse(boardTime, DateTimeFormatter.ofPattern("HHmm")),
                 boardPlatform,
+                alightLocation.id,
                 alightLocation,
                 LocalTime.parse(alightTime, DateTimeFormatter.ofPattern("HHmm")),
                 alightPlatform,

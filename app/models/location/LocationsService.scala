@@ -46,6 +46,7 @@ class LocationsService @Inject() ( config: Config,
         l.crs.map(_.toUpperCase).contains(key.toUpperCase) ||
         l.name.toUpperCase.equals(key.toUpperCase)
     )
+
     val matchingOrrLocations = matchingLocsIncludingNonOrrStations.filter(_.isOrrStation)
     if(matchingOrrLocations.nonEmpty) matchingOrrLocations.headOption
     else matchingLocsIncludingNonOrrStations.headOption
