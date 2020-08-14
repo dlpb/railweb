@@ -13,11 +13,15 @@ case class Location(
                    orrId: Option[String] = None
                    ) {
   def isOrrStation = orrStation && orrId.nonEmpty
+  def getLocationType = `type`
 }
 
 case class SpatialLocation(
                           lat: Double,
-                          lon: Double
+                          lon: Double,
+                          county: Option[String],
+                          district: Option[String],
+                          postcode: Option[String]
                           )
 
 case class NrInfo(
