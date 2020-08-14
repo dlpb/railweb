@@ -49,7 +49,7 @@ class HighlightTimetableService @Inject()(
       val trainId = plan.trainId
       val board = plan.boardLocation.id
       val alight = plan.alightLocation.id
-      val location = plan.boardLocation.id
+      val location = plan.boardLocation.name
       val wilLCallAt = ""
       val hasCalledAt = ""
       val map = Map(
