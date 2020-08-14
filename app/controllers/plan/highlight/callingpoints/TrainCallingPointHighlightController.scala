@@ -8,11 +8,12 @@ import com.google.common.base.Charsets
 import com.google.common.io.BaseEncoding
 import javax.inject.Inject
 import models.auth.roles.PlanUser
-import models.location.{LocationsService, MapLocation}
+import models.location.{Location, LocationsService, MapLocation}
 import models.plan.highlight.{HighlightTimetableService, LocationsCalledAtFromTimetable, TimetableFound, TrainPlanEntry}
 import models.plan.route.pointtopoint.PathService
 import models.plan.timetable.location.LocationTimetableService
 import models.plan.timetable.trains.TrainTimetableService
+import models.srs.SrsService
 import models.timetable.model.train.IndividualTimetable
 import play.api.data.Form
 import play.api.data.Forms._
@@ -30,6 +31,7 @@ class TrainCallingPointHighlightController @Inject()(
                                                       trainService: LocationTimetableService,
                                                       timetableService: TrainTimetableService,
                                                       highlightTimetableService: HighlightTimetableService,
+                                                      srsService: SrsService,
                                                       jwtService: JWTService
 
                               ) extends AbstractController(cc) with I18nSupport {
@@ -48,7 +50,12 @@ class TrainCallingPointHighlightController @Inject()(
         List.empty,
         List.empty,
         List.empty,
+        List.empty,
+        srsService.getAll.map(srs => (srs.id, srs.name + " - " + srs.region)).toList.sortBy(_._1),
         "",
+        0,
+        0,
+        0.0,
         List("Work In Progress - Plan - Highlight Locations"),
         controllers.plan.highlight.callingpoints.routes.TrainCallingPointHighlightController.post())
       (request.request))
@@ -67,14 +74,23 @@ class TrainCallingPointHighlightController @Inject()(
 
       val dynamicForm = form.bindFromRequest()
       val data: Map[String, String] = dynamicForm.data.view.filterKeys(_.contains("-")).toMap
+      val locationsToHighlightKeys = dynamicForm.data
+        .getOrElse("locationsToHighlight", "")
+        .split(",")
+        .toList
+
+      val locationsToHighlight: List[Location] = locationsToHighlightKeys
+        .map(loc => loc.trim)
+        .flatMap(loc => {
+          if(loc.contains(".")) locationsService.getLocations.filter(_.nrInfo.map(_.srs).contains(loc))
+          else locationsService.findLocation(loc)
+        })
 
       val groupedDataByRow: Map[String, Map[String, String]] = highlightTimetableService.getTrainDataFromFormEntryGroupedByRow(data)
-
       val formDataToReturn: List[Map[String, (String, String)]] = highlightTimetableService.makeReturnDataFromForm(groupedDataByRow)
-
       val timetablesF: List[Future[Option[TimetableFound]]] = highlightTimetableService.getTimetablesFuture(groupedDataByRow)
 
-      generateResponse(request, token, data, formDataToReturn, timetablesF)
+      generateResponse(request, token, data, formDataToReturn, timetablesF, locationsToHighlight, locationsToHighlightKeys)
     }
     else {
       Forbidden("User not authorized to view page")
@@ -82,9 +98,18 @@ class TrainCallingPointHighlightController @Inject()(
   }
 
 
-  private def generateResponse(request: WebUserContext[AnyContent], token: String, data: Map[String, String], formDataToReturn: List[Map[String, (String, String)]], timetablesF: List[Future[Option[TimetableFound]]]) = {
+  private def generateResponse(
+                                request: WebUserContext[AnyContent],
+                                token: String,
+                                data: Map[String, String],
+                                formDataToReturn: List[Map[String, (String, String)]],
+                                timetablesF: List[Future[Option[TimetableFound]]],
+                                locationsToHighlight: List[Location],
+                                locationsToHighlightKeys: List[String]
+                              ) = {
     val locationsCalledAtF: List[Future[Option[LocationsCalledAtFromTimetable]]] = highlightTimetableService.getLocationsCalledAtFuture(timetablesF)
     val mapLocationsCalledAt: List[MapLocation] = highlightTimetableService.getMapLocationsForLocationsCalledAt(locationsCalledAtF)
+    val mapLocationsToHighlight = locationsToHighlight.map(MapLocation(_))
 
     val trainDataPlanF: List[Future[Option[TrainPlanEntry]]] = highlightTimetableService.getTrainPlanEntriesFuture(locationsCalledAtF)
     val dataPlanEntriesF: Future[List[TrainPlanEntry]] = highlightTimetableService.getSortedTrainPlanEntries(trainDataPlanF)
@@ -99,8 +124,13 @@ class TrainCallingPointHighlightController @Inject()(
       formDataToReturn,
       mapLocationsCalledAt,
       List.empty,
-      List.empty,
+      mapLocationsToHighlight,
+      locationsToHighlightKeys,
+      srsService.getAll.map(srs => (srs.id, srs.name + " - " + srs.region)).toList.sortBy(_._1),
       trainPlanEncoded,
+      mapLocationsCalledAt.size,
+      mapLocationsToHighlight.size,
+      0.0 ,
       List("Work In Progress - Plan - Highlight Locations"),
       controllers.plan.highlight.callingpoints.routes.TrainCallingPointHighlightController.post())
     (request.request))

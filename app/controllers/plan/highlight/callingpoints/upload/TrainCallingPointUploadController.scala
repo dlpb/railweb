@@ -16,6 +16,7 @@ import models.plan.route.pointtopoint.PathService
 import models.plan.timetable.TimetableDateTimeHelper
 import models.plan.timetable.location.LocationTimetableService
 import models.plan.timetable.trains.TrainTimetableService
+import models.srs.SrsService
 import models.timetable.model.train.IndividualTimetable
 import play.api.data.Form
 import play.api.data.Forms._
@@ -35,6 +36,7 @@ class TrainCallingPointUploadController @Inject()(
                                                    trainService: LocationTimetableService,
                                                    timetableService: TrainTimetableService,
                                                    highlightTimetableService: HighlightTimetableService,
+                                                   srsService: SrsService,
                                                    jwtService: JWTService
 
                                                  ) extends AbstractController(cc) with I18nSupport {
@@ -82,7 +84,7 @@ class TrainCallingPointUploadController @Inject()(
         val timetablesF = highlightTimetableService.getTimetablesFutureFromTrainPlan(trainPlans)
         val formDataToReturn = highlightTimetableService.makeReturnFormDataFromTrainPlans(trainPlans)
 
-          generateResponse(request, token, data, formDataToReturn, timetablesF)
+        generateResponse(request, token, data, formDataToReturn, timetablesF)
       }
       catch {
         case e: Exception =>
@@ -94,7 +96,12 @@ class TrainCallingPointUploadController @Inject()(
             List.empty,
             List.empty,
             List.empty,
+            List.empty,
+            srsService.getAll.map(srs => (srs.id, srs.name + " - " + srs.region)).toList.sortBy(_._1),
             "",
+            0,
+            0,
+            0.0,
             List("Work In Progress - Plan - Highlight Locations", s"Something went wrong processing the train plan: ${e.getMessage}"),
             controllers.plan.highlight.callingpoints.routes.TrainCallingPointHighlightController.post())
           (request.request))
@@ -123,7 +130,12 @@ class TrainCallingPointUploadController @Inject()(
       mapLocationsCalledAt,
       List.empty,
       List.empty,
+      List.empty,
+      srsService.getAll.map(srs => (srs.id, srs.name + " - " + srs.region)).toList.sortBy(_._1),
       trainPlanEncoded,
+      mapLocationsCalledAt.size,
+      0,
+      0.0,
       List("Work In Progress - Plan - Highlight Locations"),
       controllers.plan.highlight.callingpoints.routes.TrainCallingPointHighlightController.post())
     (request.request))

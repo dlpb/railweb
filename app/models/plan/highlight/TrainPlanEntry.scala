@@ -4,6 +4,9 @@ import java.time.{LocalDate, LocalTime}
 
 import models.location.Location
 
+case class TrainPlan(entries: List[TrainPlanEntry], highlight: HighlightLocationsInTrainPlan)
+case class HighlightLocationsInTrainPlan(srs: List[String], locations: List[String])
+
 case class TrainPlanEntry(
                            boardDate: LocalDate,
                            boardLocationTiploc: String,

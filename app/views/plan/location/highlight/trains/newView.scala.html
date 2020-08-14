@@ -9,7 +9,12 @@ formData: List[Map[String, (String, String)]],
 callingPoints: List[models.location.MapLocation],
 notCalledAt: List[models.location.MapLocation],
 highlightPoints: List[models.location.MapLocation],
+highlightKeys: List[String],
+srs: List[(String, String)],
 trainDataPlan: String,
+totalCalledAt: Int,
+totalHighlighted: Int,
+percentageCalledAt: Double,
 messages: List[String],
 formSubmitRoute: Call
 )(implicit request: Request[AnyContent])
@@ -65,6 +70,24 @@ formSubmitRoute: Call
             }
         </datalist>
         <div id="container">
+            <div class="row">
+                <div class="col col-sm">
+                    <div class="form-group">
+                        <label for="locationsToHighlight">Locations / SRS to Highlight</label>
+
+                        <input type="text" name="locationsToHighlight" id="locationsToHighlight" class="form-control" list="locationsToHighlightList" value='@highlightKeys.mkString(",")'>
+                        <datalist id="locationsToHighlightList">
+                            @for(s <- srs) {
+                            <option value="@s._1">@s._2 [@s._1]</option>
+                            }
+                            @for(s <- stations) {
+                            <option value="@s.name">@s.name [@s.id] [@s.crs.mkString]</option>
+                            }
+                        </datalist>
+                    </div>
+                </div>
+            </div>
+            <hr/>
             @for(data <- formData){
             <div class="row">
                 <div class="col col-sm">
@@ -132,7 +155,6 @@ formSubmitRoute: Call
 }
 
 <div class="row">
-    <div id="content-placeholder"></div>
 
 
     <template>
@@ -204,7 +226,20 @@ formSubmitRoute: Call
 </div>
 <div class="row">
     <div class="col col-sm">
+        <h3>Statistics</h3>
+        <ul class="list-group">
+            <li class="list-group-item">Total Stations Called At: @totalCalledAt</li>
+            <li class="list-group-item">Total Stations Highlighted: @totalHighlighted</li>
+            <li class="list-group-item">Percentage called at: @percentageCalledAt %</li>
+        </ul>
+    </div>
+</div>
+<hr/>
+<div class="row">
+    <div class="col col-sm">
         <h3>Calling Points</h3>
+        <div id="content-placeholder"></div>
+
         <div id="map" class="map"></div>
     </div>
 
