@@ -30,7 +30,7 @@ This application runs in Heroku, and in the free tier, there is a 30s warmup per
      "lon" : -0.080939088,
      "county" : "London",
      "district" : "Greater London",
-     "postcode" : "\"EC2M 7PY"
+     "postcode" : "EC2M 7PY"
    },
    "nrInfo" : {
      "crp" : "",

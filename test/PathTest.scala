@@ -2,7 +2,7 @@ import com.typesafe.config.{ConfigFactory, ConfigValueFactory}
 import data.{LocationMapBasedDataProvider, RouteMapBasedDataProvider}
 import models.data.{LocationDataProvider, RouteDataProvider}
 import models.location.LocationsService
-import models.plan.route.pointtopoint.PathService
+import models.plan.route.pointtopoint.PointToPointRouteFinderService
 import models.route.{Route, RoutePoint, RoutesService}
 import org.scalatest.{FlatSpec, Matchers}
 
@@ -16,7 +16,7 @@ class PathTest  extends FlatSpec with Matchers {
     val from = locationsService.getLocation("CTH").get
     val to = locationsService.getLocation("RMF").get
 
-    val route = new PathService(routesService, locationsService).list(from, to)
+    val route = new PointToPointRouteFinderService(routesService, locationsService).list(from, to)
 
     route map {
       _.id
@@ -27,7 +27,7 @@ class PathTest  extends FlatSpec with Matchers {
     val from = locationsService.getLocation("WHR").get
     val to = locationsService.getLocation("BSO").get
 
-    val route = new PathService(routesService, locationsService).list(from, to)
+    val route = new PointToPointRouteFinderService(routesService, locationsService).list(from, to)
 
     route map {_.id} should be(List("WHR", "LAI", "BSO"))
   }
@@ -36,7 +36,7 @@ class PathTest  extends FlatSpec with Matchers {
     val from = locationsService.getLocation("BET").get
     val to = locationsService.getLocation("CBH").get
 
-    val route = new PathService(routesService, locationsService).list(from, to)
+    val route = new PointToPointRouteFinderService(routesService, locationsService).list(from, to)
 
     route map {_.id} should be(List("BET", "BTHNLGN", "CBH"))
   }
@@ -45,7 +45,7 @@ class PathTest  extends FlatSpec with Matchers {
     val from = locationsService.getLocation("RMF").get
     val to = locationsService.getLocation("GDP").get
 
-    val route = new PathService(routesService, locationsService).list(from, to)
+    val route = new PointToPointRouteFinderService(routesService, locationsService).list(from, to)
 
     route map {_.id} should be(List("RMF", "GDP"))
   }
@@ -54,7 +54,7 @@ class PathTest  extends FlatSpec with Matchers {
     val from = locationsService.getLocation("HRO").get
     val to = locationsService.getLocation("CTH").get
 
-    val route = new PathService(routesService, locationsService).list(from, to)
+    val route = new PointToPointRouteFinderService(routesService, locationsService).list(from, to)
 
     route map {_.id} should be(List("HRO", "GIDEPKJ", "GDP", "RMF", "CTH"))
   }
@@ -63,7 +63,7 @@ class PathTest  extends FlatSpec with Matchers {
     val from = locationsService.getLocation("HRW").get
     val to = locationsService.getLocation("PAD").get
 
-    val route = new PathService(routesService, locationsService).list(from, to, followFixedLinks = false)
+    val route = new PointToPointRouteFinderService(routesService, locationsService).list(from, to, followFixedLinks = false)
 
     route map {_.id} should be(List("HRW", "KNT", "SOK", "NWB", "WMB", "WLSDNBJ", "WLSDNN7", "ACTCWHF", "ACWLJN", "AML", "FRIARSJ", "OLDOKCW", "OLDOKCE", "LDBRKJ", "PRTOBJP", "PAD"))
   }
@@ -72,7 +72,7 @@ class PathTest  extends FlatSpec with Matchers {
     val from = locationsService.getLocation("HRW").get
     val to = locationsService.getLocation("PAD").get
 
-    val route = new PathService(routesService, locationsService).list(from, to, followFreightLinks = false)
+    val route = new PointToPointRouteFinderService(routesService, locationsService).list(from, to, followFreightLinks = false)
 
     route map {_.id} should be(List("HRW", "KNT", "SOK", "NWB", "WMB", "SBP", "HDN", "WIJ", "KNL", "QPW", "LUBKIP", "LUBMAV", "LUBWAA", "ZPN", "LUCERCL", "ZBS", "BSZ", "PAD"))
 
@@ -82,7 +82,7 @@ class PathTest  extends FlatSpec with Matchers {
     val from = locationsService.getLocation("KGX").get
     val to = locationsService.getLocation("ABD").get
 
-    val route = new PathService(routesService, locationsService).list(from, to)
+    val route = new PointToPointRouteFinderService(routesService, locationsService).list(from, to)
 
     route map {_.id} should be(List("KGX", "KNGXBEL", "KNGXFTJ", "HLWYSJ", "FPK", "HGY", "HRN", "AAP", "NSG", "OKL", "NBA", "HDW", "PBR", "BPK", "WMG", "WELHMXO", "HAT", "WGC", "DIGSWEL", "WLW", "WLMRGRN", "KBW", "LNGYJN", "SVG", "HIT", "HITCHCJ", "ARLSCAD", "ARL", "BIW", "SDY", "LBRFTMP", "SNO", "HUN", "HNTNNJN", "CNNGABR", "CNNGSJN", "FLETTON", "PBO", "WRNGTNJ", "HELPSTN", "TALNGTN", "SOKELBY", "SOKEJN", "HGHDJN", "GRA", "GTHMNBJ", "GTHMNJN", "BRKSTSJ", "CLPLLP", "NNG", "NWRKD83", "NWRKFC", "CRLTOTL", "TUXFDWJ", "GRRDGAM", "RET", "RANSKLL", "RANSBAW", "DONCLCJ", "DONCBCJ", "DONCPCJ", "DONCBJN", "DONCSJJ", "DON", "DONCMRG", "ARKSEYL", "BTLYXO", "SHFTHLJ", "JNCROFT", "JNCRMOS", "HCKPBAL", "TEMPLHJ", "HAMBLSJ", "HAMBLNJ", "HAMBRYV", "COLTONJ", "COLTONN", "YORKHLJ", "YORKYSJ", "YORKYSF", "SKELTON", "SKELTNB", "SKELBRO", "TOLERTN", "TOLEPIL", "THI", "LNGLNDJ", "NTR", "NLRTWDR", "NLRTDBW", "DLTNECX", "DLTNS", "DAR", "DLTNN", "FYHLAYC", "FYHLPRM", "FYHLSJN", "THRISTE", "DHM", "CLS", "CLSTOXO", "BRTLYJN", "TYNEY", "LOWFELJ", "KEBGSJN", "KEBGNJN", "NCL", "MAS", "HTONSJN", "HTONNJN", "BENTON", "NSHMSEG", "NSHMLC", "BDLNTNX", "WSLKWXJ", "BDLNMHJ", "ASHGTNJ", "BUTRFHH", "BUTRDCR", "WDD", "CHVNNC", "ACK", "WNGTJN", "ALM", "ALNMILL", "CHHLCHR", "CHT", "BEALSMA", "BEAL", "TWEDMSB", "BWK", "BUMOUTH", "RESTON", "GTHSCE", "CCBNPH", "INNERWK", "TORNGSP", "DUN", "STENTON", "DRM", "LND", "PST", "WAF", "MNKTNHJ", "MUB", "PORTOBL", "CRGNTPS", "EDB", "HYM", "HAYMREJ", "HAYMRCJ", "HAYMRWJ", "SGL", "EGY", "DAM", "NQU", "IVRKSJN", "INK", "IVRKEJN", "DAG", "AUR", "BTS", "KGH", "KDY", "THRN568", "MNC", "LDY", "SPF", "CUP", "LEU", "TAYBDGS", "DUNDCJ", "DEE", "CMPRDNJ", "BYF", "BSI", "MON", "BYL", "GOF", "CAN", "ARB", "INVKLOR", "USAN", "MTS", "CRAIGO", "LAU", "CAARMNT", "SHVNS", "STN", "PLN", "CVEBAY", "CRGISTH", "ABRDFJN", "ABD"))
   }
@@ -91,13 +91,13 @@ class PathTest  extends FlatSpec with Matchers {
     val from = locationsService.getLocation("RMF").get
     val to = locationsService.getLocation("CTH").get
 
-    val route = new PathService(routesService, locationsService).list(from, to)
+    val route = new PointToPointRouteFinderService(routesService, locationsService).list(from, to)
 
     route map {_.id} should be(List("RMF", "CTH"))
   }
 
   it should "find a route between two waypoints" in {
-    val path = new PathService(routesService, locationsService).findRouteForWaypoints(List("RMF", "CTH"))
+    val path = new PointToPointRouteFinderService(routesService, locationsService).findRouteForWaypoints(List("RMF", "CTH"))
     path.locations map {_.id} should be(List("RMF", "CTH"))
     path.routes.size should be(1)
     path.routes.head.from.id should be("CTH")
@@ -105,7 +105,7 @@ class PathTest  extends FlatSpec with Matchers {
   }
 
   it should "find a route between two waypoints with a gap" in {
-    val path = new PathService(routesService, locationsService).findRouteForWaypoints(List("GDP", "CTH"))
+    val path = new PointToPointRouteFinderService(routesService, locationsService).findRouteForWaypoints(List("GDP", "CTH"))
     path.locations map {_.id} should be(List("GDP", "RMF", "CTH"))
     path.routes.size should be(2)
     path.routes.head.from.id should be("RMF")
@@ -115,7 +115,7 @@ class PathTest  extends FlatSpec with Matchers {
   }
 
   it should "find a route between 3 waypoints" in {
-    val path = new PathService(routesService, locationsService).findRouteForWaypoints(List("GDP", "RMF", "CTH"))
+    val path = new PointToPointRouteFinderService(routesService, locationsService).findRouteForWaypoints(List("GDP", "RMF", "CTH"))
     path.locations map {_.id} should be(List("GDP", "RMF", "CTH"))
     path.routes.size should be(2)
     path.routes.head.from.id should be("RMF")
@@ -125,7 +125,7 @@ class PathTest  extends FlatSpec with Matchers {
   }
 
   it should "find a route between many waypoints" in {
-    val path = new PathService(routesService, locationsService).findRouteForWaypoints(List("SNF", "BRE", "HRO", "GDP", "RMF", "CTH"))
+    val path = new PointToPointRouteFinderService(routesService, locationsService).findRouteForWaypoints(List("SNF", "BRE", "HRO", "GDP", "RMF", "CTH"))
     path.locations.size should be(8)
     path.routes.size should be(7)
     path.locations map {_.id} should be(List("SNF", "SHENLEJ", "BRE", "HRO", "GIDEPKJ","GDP", "RMF", "CTH"))
@@ -138,7 +138,7 @@ class PathTest  extends FlatSpec with Matchers {
 //  }
 
   it should "ignore a location without a route" in {
-    val path = new PathService(routesService, locationsService).findRouteForWaypoints(List("GLGWWKS", "SPRNMCP", "SPS"))
+    val path = new PointToPointRouteFinderService(routesService, locationsService).findRouteForWaypoints(List("GLGWWKS", "SPRNMCP", "SPS"))
     path.locations.size should be(2)
     path.routes.size should be(1)
     path.locations map {_.id} should be(List("GLGWWKS", "SPS"))

@@ -4,7 +4,7 @@ import java.util.Date
 import com.typesafe.config.{ConfigFactory, ConfigValueFactory}
 import data.{LocationMapBasedDataProvider, RouteMapBasedDataProvider}
 import models.location.{LocationsService, MapLocation}
-import models.plan.route.pointtopoint.PathService
+import models.plan.route.pointtopoint.PointToPointRouteFinderService
 import models.plan.{Reader, TrainService}
 import models.route.RoutesService
 import models.timetable._
@@ -25,7 +25,7 @@ class PlanTest extends FlatSpec with Matchers {
   val locationService = new LocationsService(config, new LocationMapBasedDataProvider())
   val routeService = new RoutesService(config, new RouteMapBasedDataProvider())
 
-  val pathService = new PathService(routeService, locationService)
+  val pathService = new PointToPointRouteFinderService(routeService, locationService)
 
   "Plan Service" should "create a padded url for reading location timetables" in {
     val url = TrainService.createUrlForReadingLocationTimetables("CTH", 2019, 1, 1, 30, 900)

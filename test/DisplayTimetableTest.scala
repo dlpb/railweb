@@ -5,7 +5,7 @@ import com.typesafe.config.{ConfigFactory, ConfigValueFactory}
 import data.{LocationMapBasedDataProvider, RouteMapBasedDataProvider}
 import models.location.LocationsService
 import models.plan.TrainService
-import models.plan.route.pointtopoint.PathService
+import models.plan.route.pointtopoint.PointToPointRouteFinderService
 import models.route.RoutesService
 import models.timetable._
 import org.scalatest.mockito.MockitoSugar
@@ -25,7 +25,7 @@ class DisplayTimetableTest extends FlatSpec with Matchers {
   val locationService = new LocationsService(config, new LocationMapBasedDataProvider())
   val routeService = new RoutesService(config, new RouteMapBasedDataProvider())
 
-  val pathService = new PathService(routeService, locationService)
+  val pathService = new PointToPointRouteFinderService(routeService, locationService)
 
   it should "map timetable to display timetable" in {
 
