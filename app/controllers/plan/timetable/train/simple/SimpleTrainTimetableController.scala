@@ -7,7 +7,7 @@ import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject.Inject
 import models.auth.roles.PlanUser
 import models.location.LocationsService
-import models.plan.route.pointtopoint.PathService
+import models.plan.route.pointtopoint.PointToPointRouteFinderService
 import models.plan.timetable.location.LocationTimetableService
 import models.plan.timetable.trains.TrainTimetableService
 import models.timetable.dto.TimetableHelper
@@ -21,7 +21,7 @@ class SimpleTrainTimetableController @Inject()(
                                                 cc: ControllerComponents,
                                                 authenticatedUserAction: AuthorizedWebAction,
                                                 locationsService: LocationsService,
-                                                pathService: PathService,
+                                                pathService: PointToPointRouteFinderService,
                                                 trainService: LocationTimetableService,
                                                 timetableService: TrainTimetableService,
                                                 jwtService: JWTService

@@ -5,7 +5,8 @@ visits: List[String],
 token: String,
 visitUrl: Call,
 removeLast: Call,
-removeAll: Call)(implicit request: Request[AnyContent])
+removeAll: Call
+)(implicit request: Request[AnyContent])
 
 @templates.main(route.from.name +" - "+route.to.name+" ("+route.from.id+" - "+route.to.id+")", "Routes", Some(user)){
 

@@ -4,7 +4,7 @@ import java.io.FileNotFoundException
 
 import javax.inject.Inject
 import models.location.{Location, LocationsService}
-import models.plan.route.pointtopoint.PathService
+import models.plan.route.pointtopoint.PointToPointRouteFinderService
 import models.plan.timetable.TimetableDateTimeHelper
 import models.plan.timetable.reader.{Reader, WebZipInputStream}
 import models.timetable.dto.TimetableHelper
@@ -22,7 +22,7 @@ import scala.concurrent.duration.Duration
 
 class LocationTimetableService @Inject()(
                                           locationsService: LocationsService,
-                                          pathService: PathService,
+                                          pathService: PointToPointRouteFinderService,
                                           ws: WSClient,
                                           reader: Reader = new WebZipInputStream) {
 

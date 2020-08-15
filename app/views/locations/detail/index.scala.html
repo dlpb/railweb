@@ -5,7 +5,9 @@ visits: List[String],
 token: String,
 visitUrl: Call,
 removeLast: Call,
-removeAll: Call)(implicit request: Request[AnyContent])
+removeAll: Call,
+nearestLocations: List[models.location.PathElementLocation]
+)(implicit request: Request[AnyContent])
 
 @templates.main(location.name, "Locations", Some(user)){
 
@@ -141,6 +143,13 @@ removeAll: Call)(implicit request: Request[AnyContent])
             </div>
         </div>
 
+        <div class="row">
+            <div class="col col-sm">
+                <h3>Adjacent locations</h3>
+                @listLocation(nearestLocations)
+            </div>
+        </div>
+
         <script type="text/javascript">
         const operator = "@location.operator";
         const lat = @location.location.lat;
@@ -157,4 +166,18 @@ removeAll: Call)(implicit request: Request[AnyContent])
         })
 
         </script>
+}
+
+@listLocation(l: List[models.location.PathElementLocation]) = {
+<ul>
+    @for(ll <- l){
+    <li>
+
+        <ul>
+            @ll.location.name
+            @listLocation(ll.adjacentPathElements)
+        </ul>
+    </li>
+    }
+</ul>
 }

@@ -5,7 +5,7 @@ import java.time.ZonedDateTime
 
 import javax.inject.{Inject, Singleton}
 import models.location.{LocationsService, MapLocation}
-import models.plan.route.pointtopoint.PathService
+import models.plan.route.pointtopoint.PointToPointRouteFinderService
 import models.plan.timetable.reader.{Reader, WebZipInputStream}
 import models.route.MapRoute
 import models.timetable.dto.train.detailed.DisplayDetailedTrainTimetable
@@ -20,7 +20,7 @@ import scala.concurrent.duration.Duration
 import scala.concurrent.{Await, Future, TimeoutException}
 
 @Singleton
-class TrainTimetableService @Inject()(locationsService: LocationsService, pathService: PathService, ws: WSClient, reader: Reader = new WebZipInputStream) {
+class TrainTimetableService @Inject()(locationsService: LocationsService, pathService: PointToPointRouteFinderService, ws: WSClient, reader: Reader = new WebZipInputStream) {
 
   import scala.concurrent.ExecutionContext.Implicits.global
 

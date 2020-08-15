@@ -7,6 +7,7 @@ import javax.inject.{Inject, Singleton}
 import models.auth.User
 import models.data.RouteDataProvider
 import models.data.postgres.RouteDataIdConverter
+import models.location.{Location, LocationsService}
 import org.json4s.DefaultFormats
 import org.json4s.jackson.JsonMethods.parse
 
@@ -21,7 +22,6 @@ class RoutesService @Inject() ( config: Config,
       r.to.id.equalsIgnoreCase(id)
     }
   }
-
 
   private def dataRoot = config.getString("data.static.root")
   private val routes = makeRoutes(readRoutesFromFile)

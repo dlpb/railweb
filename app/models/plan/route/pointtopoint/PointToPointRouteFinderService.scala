@@ -7,7 +7,7 @@ import models.route.{Route, RoutesService}
 import scala.collection.mutable
 
 @Singleton
-class PathService @Inject()(
+class PointToPointRouteFinderService @Inject()(
                              routesService: RoutesService,
                              locationsService: LocationsService
                            ) {
