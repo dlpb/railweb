@@ -139,13 +139,14 @@ nearestLocations: List[models.location.PathElementLocation]
         <hr/>
         <div class="row">
             <div class="col col-sm">
+                <h3>Map</h3>
                 <div id="map" class="map"></div>
             </div>
         </div>
 
         <div class="row">
             <div class="col col-sm">
-                <h3>Adjacent locations</h3>
+                <h3>Adjacent Route Diagram</h3>
                 @listLocation(nearestLocations)
             </div>
         </div>
@@ -168,14 +169,45 @@ nearestLocations: List[models.location.PathElementLocation]
         </script>
 }
 
-@listLocation(l: List[models.location.PathElementLocation]) = {
-<ul>
-    @for(ll <- l){
-    <li>
+<style>
+    ul .adjacentRoutes {
+        list-style: None;
+        padding-left:0;
+    }
+    li .adjacentRoutes {
+        list-style: None;
+    }
 
-        <ul>
-            @ll.location.name
-            @listLocation(ll.adjacentPathElements)
+    .adjacentRoutes img {
+        display: inline-block;
+    }
+</style>
+
+@listLocation(l: List[models.location.PathElementLocation], nestedDepth: Int = 0) = {
+<ul class="adjacentRoutes" >
+    @for(locationWithIndex <- l.zipWithIndex){
+    <li class="adjacentRoutes">
+        @for(_ <- 1 to nestedDepth) {
+        <img src="/assets/images/location-detail-pass-location.svg" width="32px" height="32px" alt="station"/>
+        <img src="/assets/images/blank.svg" width="32px" height="32px" alt="station"/>
+        }
+        @if(locationWithIndex._1.adjacentPathElements.isEmpty && locationWithIndex._2 + 1 == l.size) {
+            <img src="/assets/images/location-detail-end-on-new-line.svg" width="32px" height="32px" alt="station"/>
+            <img src="/assets/images/location-detail-adjacent-location-terminal.svg" width="32px" height="32px" alt="station"/>
+        } else {
+            <img src="/assets/images/location-detail-pass-branch-to-sublist.svg" width="32px" height="32px" alt="station"/>
+            @if(locationWithIndex._1.adjacentPathElements.isEmpty && locationWithIndex._2 + 1 != l.size) {
+                <img src="/assets/images/location-detail-adjacent-location-terminal.svg" width="32px" height="32px" alt="station"/>
+            } else {
+                <img src="/assets/images/location-detail-adjacent-location-intermediate.svg" width="32px" height="32px" alt="station"/>
+                <img src="/assets/images/location-detail-continue-on-new-line.svg" width="32px" height="32px" alt="station"/>
+            }
+        }
+
+        <a href="/location/detail/@locationWithIndex._1.location.id">@locationWithIndex._1.location.name</a>
+
+        <ul class="adjacentRoutes">
+            @listLocation(locationWithIndex._1.adjacentPathElements, nestedDepth + 1)
         </ul>
     </li>
     }
