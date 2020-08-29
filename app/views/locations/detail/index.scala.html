@@ -171,6 +171,7 @@ nearestLocations: List[models.location.PathElementLocation]
 
 <style>
     ul .adjacentRoutes {
+        font-size: 0px;
         list-style: None;
         padding-left:0;
     }
@@ -180,6 +181,11 @@ nearestLocations: List[models.location.PathElementLocation]
 
     .adjacentRoutes img {
         display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+    .adjacentRoutes a {
+        font-size: 16px;
     }
 </style>
 
@@ -196,16 +202,14 @@ nearestLocations: List[models.location.PathElementLocation]
             <img src="/assets/images/location-detail-adjacent-location-terminal.svg" width="32px" height="32px" alt="station"/>
         } else {
             <img src="/assets/images/location-detail-pass-branch-to-sublist.svg" width="32px" height="32px" alt="station"/>
-            @if(locationWithIndex._1.adjacentPathElements.isEmpty && locationWithIndex._2 + 1 != l.size) {
+        @if(locationWithIndex._1.adjacentPathElements.isEmpty && locationWithIndex._2 + 1 != l.size) {
                 <img src="/assets/images/location-detail-adjacent-location-terminal.svg" width="32px" height="32px" alt="station"/>
             } else {
                 <img src="/assets/images/location-detail-adjacent-location-intermediate.svg" width="32px" height="32px" alt="station"/>
                 <img src="/assets/images/location-detail-continue-on-new-line.svg" width="32px" height="32px" alt="station"/>
             }
         }
-
         <a href="/location/detail/@locationWithIndex._1.location.id">@locationWithIndex._1.location.name</a>
-
         <ul class="adjacentRoutes">
             @listLocation(locationWithIndex._1.adjacentPathElements, nestedDepth + 1)
         </ul>
