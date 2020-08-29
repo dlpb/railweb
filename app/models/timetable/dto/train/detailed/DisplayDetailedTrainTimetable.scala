@@ -24,8 +24,8 @@ object DisplayDetailedTrainTimetable {
 
 
     DisplayDetailedTrainTimetable(
-      tt.locations.headOption.flatMap(l => locationsService.findLocation(l.tiploc).map(l => l.name)).getOrElse(""),
-      tt.locations.lastOption.flatMap(l => locationsService.findLocation(l.tiploc).map(l => l.name)).getOrElse(""),
+      tt.locations.headOption.flatMap(l => locationsService.findLocationByTiploc(l.tiploc).map(l => l.name)).getOrElse(""),
+      tt.locations.lastOption.flatMap(l => locationsService.findLocationByTiploc(l.tiploc).map(l => l.name)).getOrElse(""),
       tt.basicScheduleExtraDetails.atocCode,
       tt.basicSchedule.trainIdentity,
       tt.basicSchedule.trainUid,
@@ -48,7 +48,7 @@ object DisplayDetailedTrainTimetable {
       tt.basicSchedule.stpIndicator.toString,
       tt.locations map {
         l =>
-          val loc = locationsService.findLocation(l.tiploc)
+          val loc = locationsService.findLocationByTiploc(l.tiploc)
           val isPass = l.pass.isDefined
 
           val public = LocationTimetableFilters.isPublicCategory(tt.basicSchedule.trainCategory)

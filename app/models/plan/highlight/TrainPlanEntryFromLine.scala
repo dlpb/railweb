@@ -42,7 +42,7 @@ object TrainPlanEntryFromLine {
       val alightDate =  LocalDate.parse(alightDateStr, DateTimeFormatter.ofPattern("yyyy-MM-dd"))
 
 
-      val callingPoints = calledAt.split(",").toList.flatMap(l => locationsService.findPriortiseOrrStations(l))
+      val callingPoints = calledAt.split(",").toList.flatMap(l => locationsService.findLocationByNameTiplocCrsIdPrioritiseOrrStations(l))
 
       val timetableF: Future[Option[IndividualTimetable]] = trainTimetableService.getTrain(trainId, boardDate.getYear.toString, boardDate.getMonth.getValue.toString, boardDate.getDayOfMonth.toString)
 
@@ -51,7 +51,7 @@ object TrainPlanEntryFromLine {
       val callingPointsFromTimetable: List[(String, location.Location)] = timetable
         .map(_.locations)
         .getOrElse(List.empty)
-        .map(l => (l.tiploc, locationsService.findPriortiseOrrStations(l.tiploc).get))
+        .map(l => (l.tiploc, locationsService.findLocationByNameTiplocCrsIdPrioritiseOrrStations(l.tiploc).get))
 
       val boardTiplocFromTimetable = callingPointsFromTimetable.find(cp => {
         val crs = cp._2.crs

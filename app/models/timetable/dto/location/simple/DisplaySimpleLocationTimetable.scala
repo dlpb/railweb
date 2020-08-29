@@ -14,8 +14,8 @@ object DisplaySimpleLocationTimetable {
     DisplaySimpleLocationTimetable(
       arrival,
       departure,
-      simpleTimetable.origin.flatMap({ o => locationsService.findLocation(o).map(_.name)}).getOrElse(simpleTimetable.origin.getOrElse("")),
-      simpleTimetable.destination.flatMap({ o => locationsService.findLocation(o).map(_.name)}).getOrElse(simpleTimetable.destination.getOrElse("")),
+      simpleTimetable.origin.flatMap({ o => locationsService.findLocationByTiploc(o).map(_.name)}).getOrElse(simpleTimetable.origin.getOrElse("")),
+      simpleTimetable.destination.flatMap({ o => locationsService.findLocationByTiploc(o).map(_.name)}).getOrElse(simpleTimetable.destination.getOrElse("")),
       platform,
       TrainTimetableServiceUrlHelper.createUrlForDisplayingTrainSimpleTimetable(simpleTimetable.uid, year, month, day),
       if(arrival != "") "Arr." else "",

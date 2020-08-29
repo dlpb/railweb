@@ -16,8 +16,8 @@ object DisplaySimpleTrainTimetable {
 
     DisplaySimpleTrainTimetable(
       tt.basicScheduleExtraDetails.atocCode,
-      tt.locations.headOption.flatMap(l => locationsService.findLocation(l.tiploc).map(l => l.name)).getOrElse(""),
-      tt.locations.lastOption.flatMap(l => locationsService.findLocation(l.tiploc).map(l => l.name)).getOrElse(""),
+      tt.locations.headOption.flatMap(l => locationsService.findLocationByTiploc(l.tiploc).map(l => l.name)).getOrElse(""),
+      tt.locations.lastOption.flatMap(l => locationsService.findLocationByTiploc(l.tiploc).map(l => l.name)).getOrElse(""),
       date,
       tt.locations
         .filter {
@@ -38,7 +38,7 @@ object DisplaySimpleTrainTimetable {
             val departure = l.departure
 
             val platform = l.platform
-            val loc = locationsService.findLocation(l.tiploc)
+            val loc = locationsService.findLocationByTiploc(l.tiploc)
             DisplaySimpleTrainTimetableCallingPoint(
               loc.map(_.name).getOrElse(""),
               arrival map TimetableHelper.time getOrElse "",

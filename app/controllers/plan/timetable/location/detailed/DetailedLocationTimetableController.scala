@@ -39,8 +39,8 @@ class DetailedLocationTimetableController @Inject()(
 
       println(s"Fetching Detailed trains for $loc on $year-$month-$day (date $date) from $from to $to having called at $hasCalledAt and will call at $willCallAt")
 
-      val hca = if(!hasCalledAt.isBlank) locationsService.findLocation(hasCalledAt).map(_.id) else None
-      val wca = if(!willCallAt.isBlank) locationsService.findLocation(willCallAt).map(_.id) else None
+      val hca = if(!hasCalledAt.isBlank) locationsService.findLocationByNameTiplocCrsOrId(hasCalledAt).map(_.id) else None
+      val wca = if(!willCallAt.isBlank) locationsService.findLocationByNameTiplocCrsOrId(willCallAt).map(_.id) else None
 
       val result = trainService.getDetailedTimetablesForLocation(loc, year, month, day, from, to, date, hca, wca)
 

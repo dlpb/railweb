@@ -83,7 +83,7 @@ class TrainCallingPointHighlightController @Inject()(
         .map(loc => loc.trim)
         .flatMap(loc => {
           if(loc.contains(".")) locationsService.getLocations.filter(_.nrInfo.map(_.srs).contains(loc))
-          else locationsService.findLocation(loc)
+          else locationsService.findLocationByNameTiplocCrsOrId(loc)
         })
 
       val groupedDataByRow: Map[String, Map[String, String]] = highlightTimetableService.getTrainDataFromFormEntryGroupedByRow(data)
@@ -145,7 +145,7 @@ class TrainCallingPointHighlightController @Inject()(
           .replaceAll("\\s+", ",")
           .split(",")
           .flatMap {
-            locationsService.findPriortiseOrrStations
+            locationsService.findLocationByNameTiplocCrsIdPrioritiseOrrStations
           }
           .map {
             MapLocation(_)
@@ -194,7 +194,7 @@ class TrainCallingPointHighlightController @Inject()(
                     .map {
                       _.tiploc
                     }.flatMap {
-                      locationsService.findPriortiseOrrStations
+                      locationsService.findLocationByNameTiplocCrsIdPrioritiseOrrStations
                     }
                   val fromIndexMaybe = locs.map(_.id).indexOf(from.trim)
                   val toIndexMaybe = locs.map(_.id).indexOf(to.trim)

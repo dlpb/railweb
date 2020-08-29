@@ -53,7 +53,7 @@ class TrainTimetableService @Inject()(locationsService: LocationsService, pathSe
 
   def createSimpleMapRoutes(tt: IndividualTimetable): List[MapRoute] = {
     val waypoints = tt.locations
-      .flatMap { l => locationsService.findLocation(l.tiploc) }
+      .flatMap { l => locationsService.findLocationByTiploc(l.tiploc) }
       .map(_.id)
 
     val routeParts: Iterator[Future[List[MapRoute]]] = waypoints.sliding(2).map { w => Future {
@@ -74,13 +74,13 @@ class TrainTimetableService @Inject()(locationsService: LocationsService, pathSe
   def createSimpleMapLocations(tt: IndividualTimetable): List[MapLocation] = {
     tt.locations
       .filter(l => l.publicArrival.isDefined || l.publicDeparture.isDefined)
-      .flatMap(l => locationsService.findLocation(l.tiploc))
+      .flatMap(l => locationsService.findLocationByTiploc(l.tiploc))
       .map(l => MapLocation(l))
   }
 
   def createDetailedMapLocations(tt: IndividualTimetable): List[MapLocation] = {
     tt.locations
-      .flatMap(l => locationsService.findLocation(l.tiploc))
+      .flatMap(l => locationsService.findLocationByTiploc(l.tiploc))
       .map(l => MapLocation(l))
   }
 

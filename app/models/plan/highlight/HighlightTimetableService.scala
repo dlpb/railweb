@@ -118,8 +118,8 @@ class HighlightTimetableService @Inject()(
           val boardPlatform = boardTimetableEntry.map(_.platform).getOrElse("")
           val alightTime = TimetableDateTimeHelper.padTime(alightTimetableEntry.map(l => l.publicArrival.getOrElse(l.arrival.getOrElse(0))).getOrElse(0))
           val alightPlatform = alightTimetableEntry.map(_.platform).getOrElse("")
-          val boardLocationOpt = boardTimetableEntry.flatMap(l => locationsService.findPriortiseOrrStations(l.tiploc))
-          val alightLocationOpt = alightTimetableEntry.flatMap(l => locationsService.findPriortiseOrrStations(l.tiploc))
+          val boardLocationOpt = boardTimetableEntry.flatMap(l => locationsService.findLocationByNameTiplocCrsIdPrioritiseOrrStations(l.tiploc))
+          val alightLocationOpt = alightTimetableEntry.flatMap(l => locationsService.findLocationByNameTiplocCrsIdPrioritiseOrrStations(l.tiploc))
           val calledAtLocations = l.locations
 
           val result: Option[TrainPlanEntry] = (boardLocationOpt, alightLocationOpt) match {
@@ -164,7 +164,7 @@ class HighlightTimetableService @Inject()(
               val stationsCalledAt: List[Location] = tt
                 .locations
                 .filter(_.pass.isEmpty)
-                .flatMap(l => locationsService.findPriortiseOrrStations(l.tiploc))
+                .flatMap(l => locationsService.findLocationByNameTiplocCrsIdPrioritiseOrrStations(l.tiploc))
                 .filter(_.isOrrStation)
 
               val calledAtPoints: List[Location] = {

@@ -22,6 +22,8 @@ class LocationsService @Inject() ( config: Config,
                                    routesService: RoutesService,
                                    dataProvider: LocationDataProvider) {
 
+  def findLocationByTiploc(tiploc: String) = locations.find(_.id.equalsIgnoreCase(tiploc))
+
   def findAdjacentLocations(startingPoint: Location,
                             orrStationMaxDepth: Int = 2,
                             nonOrrStationMaxDepth: Int = 2,
@@ -53,7 +55,7 @@ class LocationsService @Inject() ( config: Config,
 
 
         val adjacentPathElements: List[PathElementLocation] = endPoints.map(endpoint => {
-          val endpointLoc = findLocation(endpoint.id).get
+          val endpointLoc = findLocationByNameTiplocCrsOrId(endpoint.id).get
 
           val isOrrStation = endpointLoc.isOrrStation
           val newOrrStationMaxDepth = if (isOrrStation) orrStationMaxDepth - 1 else orrStationMaxDepth
@@ -90,7 +92,7 @@ class LocationsService @Inject() ( config: Config,
 
   def getLocations = locations.toList
 
-  def findLocation(key: String): Option[Location] = {
+  def findLocationByNameTiplocCrsOrId(key: String): Option[Location] = {
     locations.find(l =>
       l.id.toUpperCase.equals(key.toUpperCase) ||
         l.tiploc.map(_.toUpperCase).contains(key.toUpperCase) ||
@@ -99,7 +101,7 @@ class LocationsService @Inject() ( config: Config,
     )
   }
 
-  def findPriortiseOrrStations(key: String): Option[Location] = {
+  def findLocationByNameTiplocCrsIdPrioritiseOrrStations(key: String): Option[Location] = {
     val matchingLocsIncludingNonOrrStations = locations
       .filter(l =>
         l.id.toUpperCase.equals(key.toUpperCase) ||
@@ -114,7 +116,7 @@ class LocationsService @Inject() ( config: Config,
   }
 
   def findAllLocationsMatchingCrs(key: String): Set[Location] = {
-    val initialLocation = findLocation(key)
+    val initialLocation = findLocationByNameTiplocCrsOrId(key)
     if(initialLocation.isDefined){
       val location = initialLocation.get
       if(location.isOrrStation){

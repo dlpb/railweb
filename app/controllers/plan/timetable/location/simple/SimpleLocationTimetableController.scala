@@ -37,8 +37,8 @@ class SimpleLocationTimetableController @Inject()(
     if (request.user.roles.contains(PlanUser)) {
       val token = jwtService.createToken(request.user, new Date())
 
-      val hca = if(!hasCalledAt.isBlank) locationsService.findLocation(hasCalledAt).map(_.id) else None
-      val wca = if(!willCallAt.isBlank) locationsService.findLocation(willCallAt).map(_.id) else None
+      val hca = if(!hasCalledAt.isBlank) locationsService.findLocationByNameTiplocCrsOrId(hasCalledAt).map(_.id) else None
+      val wca = if(!willCallAt.isBlank) locationsService.findLocationByNameTiplocCrsOrId(willCallAt).map(_.id) else None
 
       val result = locationTrainService.getSimpleTimetablesForLocation(loc, year, month, day, from, to, date, hca, wca)
 

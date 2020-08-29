@@ -18,7 +18,7 @@ object TrainTimetableServiceUrlHelper {
   }
 
   def buildRouteLink(tt: IndividualTimetable, locService: LocationsService): String = {
-    val ids = tt.locations.flatMap(l => locService.findLocation(l.tiploc).map(_.id)).mkString("%0D%0A")
+    val ids = tt.locations.flatMap(l => locService.findLocationByTiploc(l.tiploc).map(_.id)).mkString("%0D%0A")
     val url = controllers.plan.route.routes.PointToPointRouteController.index(ids).url
     url
   }

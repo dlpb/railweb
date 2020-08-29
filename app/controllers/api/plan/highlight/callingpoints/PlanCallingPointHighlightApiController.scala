@@ -52,8 +52,8 @@ class PlanCallingPointHighlightApiController @Inject()(
           println(s"trying to get timetable for location $location (${locs.map(_.id)}) on date $y $m $d with hasCalledAt $hasCalledAt and willCallAt $willCallAt")
 
 
-          val willCallAtLoc = if(!willCallAt.isBlank) locationsService.findLocation(willCallAt).map(_.id) else None
-          val hasCalledAtLoc = if(!hasCalledAt.isBlank) locationsService.findLocation(hasCalledAt).map(_.id) else None
+          val willCallAtLoc = if(!willCallAt.isBlank) locationsService.findLocationByNameTiplocCrsOrId(willCallAt).map(_.id) else None
+          val hasCalledAtLoc = if(!hasCalledAt.isBlank) locationsService.findLocationByNameTiplocCrsOrId(hasCalledAt).map(_.id) else None
 
           val eventualResult: Future[Seq[HighlightLocationTimetableEntry]] = Future.sequence(locs.map(l => locationTimetableService.getTrainsForLocation(l.id, y, m, d, 0, 2400, hasCalledAtLoc, willCallAtLoc).timetables.map {
               timetables =>
@@ -61,8 +61,8 @@ class PlanCallingPointHighlightApiController @Inject()(
                   .filter(t => t.publicTrain && t.publicStop)
                   .map(t => HighlightLocationTimetableEntry(
                     t.uid,
-                    t.origin.flatMap(locationsService.findLocation).map(_.name).getOrElse(t.origin.getOrElse("")),
-                    t.destination.flatMap(locationsService.findLocation).map(_.name).getOrElse(t.destination.getOrElse("")),
+                    t.origin.flatMap(locationsService.findLocationByNameTiplocCrsOrId).map(_.name).getOrElse(t.origin.getOrElse("")),
+                    t.destination.flatMap(locationsService.findLocationByNameTiplocCrsOrId).map(_.name).getOrElse(t.destination.getOrElse("")),
                     t.pubArr.getOrElse(t.arr.getOrElse("")),
                     t.pubDep.getOrElse(t.dep.getOrElse("")),
                     t.platform.getOrElse(""),
@@ -110,7 +110,7 @@ class PlanCallingPointHighlightApiController @Inject()(
                     loc =>
                       val dep = loc.publicDeparture.getOrElse(loc.departure.getOrElse(-1))
                       val arr = loc.publicArrival.getOrElse(loc.arrival.getOrElse(-1))
-                      val timetableLocation = locationsService.findPriortiseOrrStations(loc.tiploc)
+                      val timetableLocation = locationsService.findLocationByNameTiplocCrsIdPrioritiseOrrStations(loc.tiploc)
 
                       val optionString: String = timetableLocation.map(l => {
                         val crs = l.crs.headOption.getOrElse(loc.tiploc)
