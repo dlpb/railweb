@@ -1,7 +1,5 @@
 package controllers.plan.highlight.callingpoints.upload
 
-import java.time.format.DateTimeFormatter
-import java.time.{LocalDate, LocalTime}
 import java.util.Date
 
 import auth.JWTService
@@ -10,23 +8,18 @@ import com.google.common.base.Charsets
 import com.google.common.io.BaseEncoding
 import javax.inject.Inject
 import models.auth.roles.PlanUser
-import models.location.{Location, LocationsService, MapLocation}
-import models.plan.highlight.{HighlightTimetableService, LocationsCalledAtFromTimetable, TimetableFound, TrainPlanEntry, TrainPlanEntryFromLine}
+import models.location.{LocationsService, MapLocation}
+import models.plan.highlight._
 import models.plan.route.pointtopoint.PointToPointRouteFinderService
-import models.plan.timetable.TimetableDateTimeHelper
 import models.plan.timetable.location.LocationTimetableService
 import models.plan.timetable.trains.TrainTimetableService
 import models.srs.SrsService
-import models.timetable.model.train.IndividualTimetable
 import play.api.data.Form
 import play.api.data.Forms._
 import play.api.i18n.I18nSupport
-import play.api.libs.Files
 import play.api.mvc._
 
-import scala.concurrent.duration.Duration
-import scala.concurrent.{Await, Future}
-import scala.io.Source
+import scala.concurrent.Future
 
 class TrainCallingPointUploadController @Inject()(
                                                    cc: ControllerComponents,
@@ -69,22 +62,22 @@ class TrainCallingPointUploadController @Inject()(
 
       val dynamicForm = form.bindFromRequest()
       val data: Map[String, String] = dynamicForm.data.view.filterKeys(_.contains("trainPlan")).toMap
+      val token = jwtService.createToken(request.user, new Date())
 
-      val trainPlans: List[TrainPlanEntry] = data.get("trainPlan").map(text =>
+      try {
+        val trainPlans: List[TrainPlanEntryParseResult] = data.get("trainPlan").map(text =>
         text
           .split(System.lineSeparator())
           .toList
-      )
+        )
         .getOrElse(List.empty)
-        .flatMap(entry => TrainPlanEntryFromLine(entry)(locationsService, timetableService))
+        .map(entry => TrainPlanEntryFromLine(entry)(locationsService, timetableService))
 
-      val token = jwtService.createToken(request.user, new Date())
-      try {
 
-        val timetablesF = highlightTimetableService.getTimetablesFutureFromTrainPlan(trainPlans)
-        val formDataToReturn = highlightTimetableService.makeReturnFormDataFromTrainPlans(trainPlans)
+        val timetablesF = highlightTimetableService.getTimetablesFutureFromTrainPlan(trainPlans.flatMap(_.entry))
+        val formDataToReturn = highlightTimetableService.makeReturnFormDataFromTrainPlans(trainPlans.flatMap(_.entry))
 
-        generateResponse(request, token, data, formDataToReturn, timetablesF)
+        generateResponse(request, token, data, formDataToReturn, timetablesF, trainPlans.flatMap(_.errors))
       }
       catch {
         case e: Exception =>
@@ -102,7 +95,7 @@ class TrainCallingPointUploadController @Inject()(
             0,
             0,
             0.0,
-            List("Work In Progress - Plan - Highlight Locations", s"Something went wrong processing the train plan: ${e.getMessage}"),
+            List("Work In Progress - Plan - Highlight Locations", s"Error: ${e.getMessage}"),
             controllers.plan.highlight.callingpoints.routes.TrainCallingPointHighlightController.post())
           (request.request))
       }
@@ -112,7 +105,13 @@ class TrainCallingPointUploadController @Inject()(
     }
   }
 
-  private def generateResponse(request: WebUserContext[AnyContent], token: String, data: Map[String, String], formDataToReturn: List[Map[String, (String, String)]], timetablesF: List[Future[Option[TimetableFound]]]) = {
+  private def generateResponse(
+                                request: WebUserContext[AnyContent],
+                                token: String,
+                                data: Map[String, String],
+                                formDataToReturn: List[Map[String, (String, String)]],
+                                timetablesF: List[Future[Option[TimetableFound]]],
+                                errors: List[Throwable]) = {
     val locationsCalledAtF: List[Future[Option[LocationsCalledAtFromTimetable]]] = highlightTimetableService.getLocationsCalledAtFuture(timetablesF)
     val mapLocationsCalledAt: List[MapLocation] = highlightTimetableService.getMapLocationsForLocationsCalledAt(locationsCalledAtF)
 
@@ -136,7 +135,7 @@ class TrainCallingPointUploadController @Inject()(
       mapLocationsCalledAt.size,
       0,
       0.0,
-      List("Work In Progress - Plan - Highlight Locations"),
+      List("Work In Progress - Plan - Highlight Locations") ++ errors.map(_.getMessage),
       controllers.plan.highlight.callingpoints.routes.TrainCallingPointHighlightController.post())
     (request.request))
   }
