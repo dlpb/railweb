@@ -138,6 +138,7 @@ messages: List[String]
                     <div class="dest">Destination</div>
                     <div class="plat">Platform</div>
                     <div class="dep">Departs</div>
+                    <div class="operator">Operator</div>
                 </div>
             </div>
         </div>
@@ -183,6 +184,13 @@ messages: List[String]
                     @dep(tt.departure, tt.departureLabel)
                 </a>
             </div>
+            <div class="operator">
+                <a href="@tt.trainUrl">
+                    <span class="tocBadge badge badge-light">
+                        <slot name="tocBadge">@tt.toc</slot>
+                    </span>
+                </a>
+            </div>
         </div>
     </div>
 </div>
@@ -202,3 +210,13 @@ messages: List[String]
 }
 
 @pad(num: Int) = {@if(num < 10) {0@num} else {@num}}
+<script>
+    const els = document.querySelectorAll(".tocBadge");
+    els.forEach(function(el) {
+    console.log(el.textContent.trim);
+        const tocInfo = findTocData(el.textContent.trim());
+
+        el.style.backgroundColor = tocInfo["colour"];
+        el.style.color = tocInfo["textColour"];
+    });
+</script>

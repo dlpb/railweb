@@ -34,10 +34,13 @@
 }
 .plat {
     order: 5;
-    text-align: right !important;
 }
 .arr {
     order: 1;
+}
+
+.operator {
+    order: 6;
 }
 
 @media screen and (min-width: 768px) { /* Screens larger than 525px wide */

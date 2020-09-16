@@ -11,6 +11,7 @@ object DisplaySimpleLocationTimetable {
     val arrival = simpleTimetable.pubArr.map(_.toString).getOrElse("")
     val departure = simpleTimetable.pubDep.map(_.toString).getOrElse("")
     val platform = simpleTimetable.platform.map(_.toString).getOrElse("")
+    val toc = simpleTimetable.toc.getOrElse("")
 
     DisplaySimpleLocationTimetable(
       arrival,
@@ -21,7 +22,8 @@ object DisplaySimpleLocationTimetable {
       TrainTimetableServiceUrlHelper.createUrlForDisplayingTrainSimpleTimetable(simpleTimetable.uid, year, month, day),
       if(arrival != "") "Arr." else "",
       if(departure != "") "Dep." else "",
-      if(platform != "") "Platform" else ""
+      if(platform != "") "Platform" else "",
+      if(toc != "") toc else ""
     )
   }
 }
@@ -35,5 +37,6 @@ case class DisplaySimpleLocationTimetable(
                                     trainUrl: String,
                                     arrivalLabel: String,
                                     departureLabel: String,
-                                    platformLabel: String
+                                    platformLabel: String,
+                                    toc: String
                                   ) extends SortableDisplayTimetable
