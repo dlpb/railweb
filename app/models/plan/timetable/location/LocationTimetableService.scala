@@ -106,7 +106,7 @@ class LocationTimetableService @Inject()(
           }
       }).toSeq
 
-      val timetables = Future.sequence(allTimetables).map(_.flatten)
+      val timetables: Future[Seq[M]] = Future.sequence(allTimetables).map(_.flatten)
 
       resultFn(timetables, allTiplocResults.headOption.map(_.year).getOrElse(y), allTiplocResults.headOption.map(_.month).getOrElse(m), allTiplocResults.headOption.map(_.day).getOrElse(d), allTiplocResults.headOption.map(_.from).getOrElse(from), allTiplocResults.headOption.map(_.to).getOrElse(to), locations)
     }

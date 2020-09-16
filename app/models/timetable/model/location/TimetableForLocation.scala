@@ -1,9 +1,9 @@
 package models.timetable.model.location
 
-import java.util.Date
+import java.time.LocalTime
 
-import models.timetable.model.location.TimetableForLocationTypes.{Platform, Time, Tiploc, TrainUid}
-import models.timetable.model.train.{BankHolidayRunning, StpIndicator}
+import models.timetable.model.location.TimetableForLocationTypes.TrainUid
+import models.timetable.model.train.StpIndicator
 
 object TimetableForLocationTypes {
   type TrainUid = String
@@ -19,13 +19,13 @@ case class TimetableForLocation(
                                  publicStop: Boolean,
                                  origin: Option[String],
                                  destination: Option[String],
-                                 arr: Option[Time],
-                                 dep: Option[Time],
-                                 pass: Option[Time],
+                                 arr: Option[LocalTime],
+                                 dep: Option[LocalTime],
+                                 pass: Option[LocalTime],
                                  path: Option[String],
                                  platform: Option[String],
-                                 pubArr: Option[Time],
-                                 pubDep: Option[Time],
+                                 pubArr: Option[LocalTime],
+                                 pubDep: Option[LocalTime],
                                  stpIndicator: StpIndicator,
                                  toc: Option[String]
                                )

@@ -7,7 +7,7 @@ import models.location
 import models.location.LocationsService
 import models.plan.highlight
 import models.plan.timetable.trains.TrainTimetableService
-import models.timetable.model.train.{IndividualTimetable, Location}
+import models.timetable.model.train.{IndividualTimetable, IndividualTimetableLocation}
 
 import scala.collection.mutable.ListBuffer
 import scala.concurrent.duration.Duration

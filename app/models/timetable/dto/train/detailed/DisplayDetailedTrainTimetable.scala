@@ -56,15 +56,15 @@ object DisplayDetailedTrainTimetable {
           val arrival: String =
             if(l.pass.isDefined) "pass"
             else if(!public && l.arrival.isDefined)
-              s"${l.arrival.map(TimetableHelper.time).getOrElse("")}${if(l.arrivalHalfMinute.isDefined) "½" else ""}"
-            else if(l.publicArrival.isDefined) l.publicArrival.map(TimetableHelper.time).getOrElse("")
+              s"${l.arrival.map(_.toString).getOrElse("")}${if(l.arrivalHalfMinute.isDefined) ":30" else ""}"
+            else if(l.publicArrival.isDefined) l.publicArrival.map(_.toString).getOrElse("")
             else ""
 
           val departure =
-            if(l.pass.isDefined) l.pass.map(TimetableHelper.time).getOrElse("")
+            if(l.pass.isDefined) l.pass.map(_.toString).getOrElse("")
             else if(!public && l.departure.isDefined)
-              s"${l.departure.map(TimetableHelper.time).getOrElse("")}${if(l.departureHalfMinute.isDefined) "½" else ""}"
-            else if(l.publicDeparture.isDefined) l.publicDeparture.map(TimetableHelper.time).getOrElse("")
+              s"${l.departure.map(_.toString).getOrElse("")}${if(l.departureHalfMinute.isDefined) ":30" else ""}"
+            else if(l.publicDeparture.isDefined) l.publicDeparture.map(_.toString).getOrElse("")
             else ""
 
           val platform =
@@ -75,9 +75,9 @@ object DisplayDetailedTrainTimetable {
           val performanceAllowance = s"${l.performanceAllowance}${if(l.performanceAllowanceHalfMinute && l.performanceAllowanceHalfMinute) "½" else ""}"
           val engineeringAllowance = s"${l.engineeringAllowance}${if(l.engineeringAllowanceHalfMinute && l.engineeringAllowanceHalfMinute) "½" else ""}"
 
-          val (hour, minute) = if(l.pass.isDefined) TimetableDateTimeHelper.hourMinute(l.pass.get)
-          else if (l.publicArrival.isDefined) TimetableDateTimeHelper.hourMinute(l.publicArrival.get)
-          else if (l.publicDeparture.isDefined) TimetableDateTimeHelper.hourMinute(l.publicDeparture.get)
+          val (hour, minute) = if(l.pass.isDefined) (l.pass.get.getHour, l.pass.get.getMinute)
+          else if (l.publicArrival.isDefined) (l.publicArrival.get.getHour, l.publicArrival.get.getMinute)
+          else if (l.publicDeparture.isDefined) (l.publicDeparture.get.getHour, l.publicDeparture.get.getMinute)
           else (0,0)
 
           val from = date.atTime(hour, minute).minusMinutes(15)

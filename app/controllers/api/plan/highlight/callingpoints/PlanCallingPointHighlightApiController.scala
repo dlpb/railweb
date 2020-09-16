@@ -1,5 +1,7 @@
 package controllers.api.plan.highlight.callingpoints
 
+import java.time.LocalTime
+
 import auth.api.AuthorizedAction
 import javax.inject.{Inject, Singleton}
 import models.auth.roles.PlanUser
@@ -9,7 +11,7 @@ import models.plan.timetable.TimetableDateTimeHelper
 import models.plan.timetable.location.LocationTimetableService
 import models.plan.timetable.trains.TrainTimetableService
 import models.route.RoutesService
-import models.timetable.model.train.Location
+import models.timetable.model.train.IndividualTimetableLocation
 import org.json4s.DefaultFormats
 import org.json4s.jackson.Serialization.write
 import play.api.Environment
@@ -63,10 +65,10 @@ class PlanCallingPointHighlightApiController @Inject()(
                     t.uid,
                     t.origin.flatMap(locationsService.findLocationByNameTiplocCrsOrId).map(_.name).getOrElse(t.origin.getOrElse("")),
                     t.destination.flatMap(locationsService.findLocationByNameTiplocCrsOrId).map(_.name).getOrElse(t.destination.getOrElse("")),
-                    t.pubArr.getOrElse(t.arr.getOrElse("")),
-                    t.pubDep.getOrElse(t.dep.getOrElse("")),
+                    t.pubArr.map(_.toString).getOrElse(t.arr.map(_.toString).getOrElse("")),
+                    t.pubDep.map(_.toString).getOrElse(t.dep.map(_.toString).getOrElse("")),
                     t.platform.getOrElse(""),
-                    t.pubDep.getOrElse(t.dep.getOrElse(t.pubArr.getOrElse(t.arr.getOrElse(""))))
+                    t.pubDep.map(_.toString).getOrElse(t.dep.map(_.toString).getOrElse(t.pubArr.map(_.toString).getOrElse(t.arr.map(_.toString).getOrElse(""))))
                   ))
             })
               .toSeq)
@@ -108,8 +110,8 @@ class PlanCallingPointHighlightApiController @Inject()(
                     .filter(l => l.publicArrival.isDefined || l.publicDeparture.isDefined)
                     .map {
                     loc =>
-                      val dep = loc.publicDeparture.getOrElse(loc.departure.getOrElse(-1))
-                      val arr = loc.publicArrival.getOrElse(loc.arrival.getOrElse(-1))
+                      val dep = loc.publicDeparture.getOrElse(loc.departure.getOrElse(LocalTime.MIDNIGHT))
+                      val arr = loc.publicArrival.getOrElse(loc.arrival.getOrElse(LocalTime.MIDNIGHT))
                       val timetableLocation = locationsService.findLocationByNameTiplocCrsIdPrioritiseOrrStations(loc.tiploc)
 
                       val optionString: String = timetableLocation.map(l => {
@@ -121,8 +123,8 @@ class PlanCallingPointHighlightApiController @Inject()(
                       HighlightTrainTimetableEntry(
                         loc.tiploc,
                         optionString,
-                        TimetableDateTimeHelper.padTime(dep),
-                        TimetableDateTimeHelper.padTime(arr),
+                        dep.toString,
+                        arr.toString,
                         (loc.publicDeparture, loc.publicArrival) match {
                           case (Some(_), None) => "Terminus"
                           case (None, Some(_)) => "Origin"

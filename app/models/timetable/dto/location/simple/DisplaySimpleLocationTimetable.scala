@@ -2,6 +2,7 @@ package models.timetable.dto.location.simple
 
 import models.location.LocationsService
 import models.plan.timetable.trains.TrainTimetableServiceUrlHelper
+import models.timetable.dto.location.SortableDisplayTimetable
 import models.timetable.model.location.TimetableForLocation
 
 object DisplaySimpleLocationTimetable {
@@ -35,4 +36,4 @@ case class DisplaySimpleLocationTimetable(
                                     arrivalLabel: String,
                                     departureLabel: String,
                                     platformLabel: String
-                                  )
+                                  ) extends SortableDisplayTimetable

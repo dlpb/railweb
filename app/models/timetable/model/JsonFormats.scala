@@ -1,5 +1,9 @@
 package models.timetable.model
 
+import java.time.LocalTime
+import java.time.format.DateTimeFormatter
+
+import models.plan.timetable.TimetableDateTimeHelper
 import org.json4s.CustomSerializer
 import org.json4s.JsonAST.{JInt, JObject, JString}
 import models.timetable.model.train._
@@ -20,9 +24,19 @@ object JsonFormats {
     SeatingSerializer,
     SleepersSerializer,
     ReservationsSerializer,
-    CateringSerializer
+    CateringSerializer,
+    LocalTimeSerializer
   )
 }
+case object LocalTimeSerializer extends CustomSerializer[LocalTime](format => ({
+  case JString(time) =>
+    LocalTime.parse(time, DateTimeFormatter.ofPattern("HHmm"))
+  case JInt(time) =>
+    LocalTime.parse(TimetableDateTimeHelper.padTime(time.toInt), DateTimeFormatter.ofPattern("HHmm"))
+}, {
+  case time: LocalTime =>
+    JString(time.format(DateTimeFormatter.ofPattern("HHmm")))
+}))
 
 case object TransactionTypeSerializer extends CustomSerializer[TransactionType](format => ( {
   case JString(transactionType) => transactionType match {

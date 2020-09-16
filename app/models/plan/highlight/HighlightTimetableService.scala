@@ -114,9 +114,9 @@ class HighlightTimetableService @Inject()(
           val timetable = l.timetable
           val boardTimetableEntry = timetable.locations.find(_.tiploc.equals(l.board))
           val alightTimetableEntry = timetable.locations.find(_.tiploc.equals(l.alight))
-          val boardTime = TimetableDateTimeHelper.padTime(boardTimetableEntry.map(l => l.publicDeparture.getOrElse(l.departure.getOrElse(0))).getOrElse(0))
+          val boardTime: LocalTime = boardTimetableEntry.map(l => l.publicDeparture.getOrElse(l.departure.getOrElse(LocalTime.MIDNIGHT))).getOrElse(LocalTime.MIDNIGHT)
           val boardPlatform = boardTimetableEntry.map(_.platform).getOrElse("")
-          val alightTime = TimetableDateTimeHelper.padTime(alightTimetableEntry.map(l => l.publicArrival.getOrElse(l.arrival.getOrElse(0))).getOrElse(0))
+          val alightTime: LocalTime = alightTimetableEntry.map(l => l.publicArrival.getOrElse(l.arrival.getOrElse(LocalTime.MIDNIGHT))).getOrElse(LocalTime.MIDNIGHT)
           val alightPlatform = alightTimetableEntry.map(_.platform).getOrElse("")
           val boardLocationOpt = boardTimetableEntry.flatMap(l => locationsService.findLocationByNameTiplocCrsIdPrioritiseOrrStations(l.tiploc))
           val alightLocationOpt = alightTimetableEntry.flatMap(l => locationsService.findLocationByNameTiplocCrsIdPrioritiseOrrStations(l.tiploc))
@@ -128,11 +128,11 @@ class HighlightTimetableService @Inject()(
                 date,
                 boardLocation.id,
                 boardLocation,
-                LocalTime.parse(boardTime, DateTimeFormatter.ofPattern("HHmm")),
+                boardTime,
                 boardPlatform,
                 alightLocation.id,
                 alightLocation,
-                LocalTime.parse(alightTime, DateTimeFormatter.ofPattern("HHmm")),
+                alightTime,
                 alightPlatform,
                 l.trainId,
                 calledAtLocations,

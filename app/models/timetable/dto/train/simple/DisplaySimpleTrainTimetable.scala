@@ -25,9 +25,9 @@ object DisplaySimpleTrainTimetable {
         }
         .map {
           l =>
-            val (hour, minute) = if (l.pass.isDefined) TimetableDateTimeHelper.hourMinute(l.pass.get)
-            else if (l.publicArrival.isDefined) TimetableDateTimeHelper.hourMinute(l.publicArrival.get)
-            else if (l.publicDeparture.isDefined) TimetableDateTimeHelper.hourMinute(l.publicDeparture.get)
+            val (hour, minute) = if (l.pass.isDefined) (l.pass.get.getHour, l.pass.get.getMinute)
+            else if (l.publicArrival.isDefined) (l.publicArrival.get.getHour, l.publicArrival.get.getMinute)
+            else if (l.publicDeparture.isDefined) (l.publicDeparture.get.getHour, l.publicDeparture.get.getMinute)
             else (0, 0)
 
             val from = date.atTime(hour, minute).minusMinutes(15)
@@ -41,9 +41,9 @@ object DisplaySimpleTrainTimetable {
             val loc = locationsService.findLocationByTiploc(l.tiploc)
             DisplaySimpleTrainTimetableCallingPoint(
               loc.map(_.name).getOrElse(""),
-              arrival map TimetableHelper.time getOrElse "",
+              arrival.map(_.toString).getOrElse(""),
               if (arrival.isDefined) "Arr." else "",
-              departure map TimetableHelper.time getOrElse "",
+              departure.map(_.toString).getOrElse(""),
               if (departure.isDefined) "Dep." else "",
               platform,
               if (platform != "") "Platform" else "",

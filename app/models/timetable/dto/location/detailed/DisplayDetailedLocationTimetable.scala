@@ -2,6 +2,7 @@ package models.timetable.dto.location.detailed
 
 import models.location.LocationsService
 import models.plan.timetable.trains.TrainTimetableServiceUrlHelper
+import models.timetable.dto.location.SortableDisplayTimetable
 import models.timetable.model.location.TimetableForLocation
 
 object DisplayDetailedLocationTimetable {
@@ -12,14 +13,14 @@ object DisplayDetailedLocationTimetable {
 
     val arrival: String =
       if (simpleTimetable.pass.isDefined) "pass"
-      else if (!public && simpleTimetable.arr.isDefined) simpleTimetable.arr.getOrElse("")
-      else if (simpleTimetable.pubArr.isDefined) simpleTimetable.pubArr.getOrElse("")
+      else if (!public && simpleTimetable.arr.isDefined) simpleTimetable.arr.map(_.toString).getOrElse("")
+      else if (simpleTimetable.pubArr.isDefined) simpleTimetable.pubArr.map(_.toString).getOrElse("")
       else ""
 
     val departure =
-      if (simpleTimetable.pass.isDefined) simpleTimetable.pass.getOrElse("")
-      else if (!public && simpleTimetable.dep.isDefined) simpleTimetable.dep.getOrElse("")
-      else if (simpleTimetable.pubDep.isDefined) simpleTimetable.pubDep.getOrElse("")
+      if (simpleTimetable.pass.isDefined) simpleTimetable.pass.map(_.toString).getOrElse("")
+      else if (!public && simpleTimetable.dep.isDefined) simpleTimetable.dep.map(_.toString).getOrElse("")
+      else if (simpleTimetable.pubDep.isDefined) simpleTimetable.pubDep.map(_.toString).getOrElse("")
       else ""
 
     val platform =
@@ -62,4 +63,4 @@ case class DisplayDetailedLocationTimetable(
                                     arrivalLabel: String,
                                     departureLabel: String,
                                     platformLabel: String
-                                  )
+                                  ) extends SortableDisplayTimetable

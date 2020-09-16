@@ -10,7 +10,7 @@ import models.plan.timetable.reader.{Reader, WebZipInputStream}
 import models.route.MapRoute
 import models.timetable.dto.train.detailed.DisplayDetailedTrainTimetable
 import models.timetable.dto.train.simple.DisplaySimpleTrainTimetable
-import models.timetable.model.JsonFormats
+import models.timetable.model.{JsonFormats, LocalTimeSerializer}
 import models.timetable.model.train._
 import org.json4s.DefaultFormats
 import org.json4s.native.JsonMethods.parse

@@ -6,7 +6,7 @@ import java.util.{Date, UUID}
 case class IndividualTimetable(
                                 basicSchedule: BasicSchedule,
                                 basicScheduleExtraDetails: BasicScheduleExtraDetails,
-                                locations: List[Location],
+                                locations: List[IndividualTimetableLocation],
                                 associations: List[Association] = List.empty,
                                 id: String = UUID.randomUUID().toString) {
 

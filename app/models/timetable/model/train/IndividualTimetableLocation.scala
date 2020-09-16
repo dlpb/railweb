@@ -1,6 +1,8 @@
 package models.timetable.model.train
 
-case class Location(
+import java.time.LocalTime
+
+case class IndividualTimetableLocation(
   tiploc: String,
   platform: String,
   line: String,
@@ -9,13 +11,14 @@ case class Location(
   pathingAllowance: Int,
   pathingAllowanceHalfMinute: Boolean,
   performanceAllowance: Int,
-   performanceAllowanceHalfMinute: Boolean,
-  arrival: Option[Int],
+  performanceAllowanceHalfMinute: Boolean,
+  arrival: Option[LocalTime],
   arrivalHalfMinute: Option[Boolean],
-  departure: Option[Int],
+  departure: Option[LocalTime],
   departureHalfMinute: Option[Boolean],
-  pass: Option[Int],
+  pass: Option[LocalTime],
   passHalfMinute: Option[Boolean],
   path: String,
-  publicArrival: Option[Int], publicDeparture: Option[Int])
+  publicArrival: Option[LocalTime],
+  publicDeparture: Option[LocalTime])
 
