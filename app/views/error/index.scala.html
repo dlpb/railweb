@@ -1,0 +1,15 @@
+@(title: String, code: Int, message: String, details: String)
+
+@templates.main("Oops, Soemthing went wrong!", "Home", None){
+
+
+        <div class="row">
+            <div class="col-sm">
+                <h1>@title</h1>
+                <h2>HTTP Error Code @code</h2>
+                <p>@message</p>
+                <p><pre>@details</pre></p>
+            </div>
+        </div>
+
+}

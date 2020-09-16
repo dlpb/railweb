@@ -12,6 +12,7 @@ class AboutController @Inject()(
                                ) extends MessagesAbstractController(cc) {
 
   def about = Action { implicit request =>
+    throw new Exception("foobar")
     Ok(views.html.about.index())
   }
 
