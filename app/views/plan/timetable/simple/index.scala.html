@@ -60,9 +60,9 @@ messages: List[String]
     </div>
 </div>
 <div class="container card-body">
-    <div class="toolbar">
-        <a class="btn btn-primary" href="@routeLink" role="button">Show Route Details (Visit)</a>
-        <a class="btn btn-primary" href="/plan/timetables/train/@timetable.uid/detailed/@timetable.runningOn.toString.replaceAll("-", "/")" role="button">Show Detailed Timetable</a>
+    <div class="">
+        <a class="btn btn-primary" href="@routeLink" role="button">Visit Route</a>
+        <a class="btn btn-primary" href="/plan/timetables/train/@timetable.uid/detailed/@timetable.runningOn.toString.replaceAll("-", "/")" role="button">Detailed Timetable</a>
     </div>
 </div>
 <div class="container card-body">
@@ -72,10 +72,10 @@ messages: List[String]
                 <table class="table table-hover">
                     <thead>
                     <tr>
-                        <td>Arrival</td>
-                        <td>Station</td>
-                        <td>Platform</td>
-                        <td>Departure</td>
+                        <td><div class="d-block d-lg-none">Arr.</div><div class="d-none d-lg-block">Arrival</div></td>
+                        <td>Location</td>
+                        <td><div class="d-block d-lg-none">Pl.</div><div class="d-none d-lg-block">Platform</div></td>
+                        <td><div class="d-block d-lg-none">Dep.</div><div class="d-none d-lg-block">Departure</div></td>
                     </tr>
                     </thead>
                    @for(l <- timetable.locations){
@@ -169,9 +169,9 @@ messages: List[String]
     @l.platform }
 
 @arr(l: models.timetable.dto.train.simple.DisplaySimpleTrainTimetableCallingPoint) = {
-    @l.arrival <br/> <small>@l.arrivalLabel</small>
+    @l.arrival
 }
 
 @dep(l: models.timetable.dto.train.simple.DisplaySimpleTrainTimetableCallingPoint) = {
-    @l.departure  <br/> <small>@l.departureLabel</small>
+    @l.departure
 }

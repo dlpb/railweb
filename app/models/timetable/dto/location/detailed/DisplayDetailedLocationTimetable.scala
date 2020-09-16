@@ -41,9 +41,9 @@ object DisplayDetailedLocationTimetable {
       toc,
       simpleTimetable.stpIndicator.toString,
       TrainTimetableServiceUrlHelper.createUrlForDisplayingDetailedTrainTimetable(simpleTimetable.uid, year, month, day),
-      "",
-      "",
-      ""
+      "Arr.",
+      "Dep.",
+      "Platform"
     )
   }
 }

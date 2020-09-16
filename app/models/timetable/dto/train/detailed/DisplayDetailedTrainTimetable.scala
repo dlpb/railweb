@@ -83,6 +83,10 @@ object DisplayDetailedTrainTimetable {
           val from = date.atTime(hour, minute).minusMinutes(15)
           val to = date.atTime(hour, minute).plusMinutes(45)
 
+          println(s"${loc.get.name} Pathing Allowance: $pathAllowance (${l.pathingAllowance})")
+          println(s"${loc.get.name} performanceAllowance Allowance: $performanceAllowance (${l.performanceAllowance})")
+          println(s"${loc.get.name} engineeringAllowance Allowance: $engineeringAllowance (${l.engineeringAllowance})")
+
           DisplayDetailedTrainTimetableCallingPoint(
             loc.map(_.id).getOrElse(l.tiploc),
             loc.map(_.name).getOrElse(l.tiploc),
@@ -90,9 +94,9 @@ object DisplayDetailedTrainTimetable {
             isPass,
             arrival,
             departure,
-            if(pathAllowance == "0") "-" else pathAllowance,
-            if(performanceAllowance == "0") "-" else performanceAllowance,
-            if(engineeringAllowance == "0") "-" else engineeringAllowance,
+            if(pathAllowance == "0") "" else s"$pathAllowance minutes Pathing Allowance",
+            if(performanceAllowance == "0") "" else s"$performanceAllowance minutes Performance Allowance",
+            if(engineeringAllowance == "0") "" else s"$engineeringAllowance minutes Engineering Allowance",
             l.path,
             l.line,
             LocationTimetableServiceUrlHelper.createUrlForDisplayingLocationDetailedTimetables(

@@ -110,10 +110,10 @@ messages: List[String]
                 <a href="/plan/timetables/location/simple?loc=@locationId&year=@year&month=@month&day=@day&from=@f&to=@t&hasCalledAt=@hasCalledAt&willCallAt=@willCallAt" class="btn btn-primary" role="button" aria-disabled="true">Switch to Simple Search</a>
             </p>
             <p>
-                <a href="/plan/timetables/location/simple?loc=@locationId&year=@oneDayEarlier.year&month=@oneDayEarlier.month&day=@oneDayEarlier.day&from=@oneDayEarlier.from&to=@oneDayEarlier.to&hasCalledAt=@hasCalledAt&willCallAt=@willCallAt" class="btn btn-secondary" role="button" aria-disabled="true">-1 Day</a>
-                <a href="/plan/timetables/location/simple?loc=@locationId&year=@oneHourEarlier.year&month=@oneHourEarlier.month&day=@oneHourEarlier.day&from=@oneHourEarlier.from&to=@oneHourEarlier.to&hasCalledAt=@hasCalledAt&willCallAt=@willCallAt" class="btn btn-secondary" role="button" aria-disabled="true">-1 Hour</a>
-                <a href="/plan/timetables/location/simple?loc=@locationId&year=@oneHourLater.year&month=@oneHourLater.month&day=@oneHourLater.day&from=@oneHourLater.from&to=@oneHourLater.to&hasCalledAt=@hasCalledAt&willCallAt=@willCallAt" class="btn btn-secondary" role="button" aria-disabled="true">+1 Hour</a>
-                <a href="/plan/timetables/location/simple?loc=@locationId&year=@oneDayLater.year&month=@oneDayLater.month&day=@oneDayLater.day&from=@oneDayLater.from&to=@oneDayLater.to&hasCalledAt=@hasCalledAt&willCallAt=@willCallAt" class="btn btn-secondary" role="button" aria-disabled="true">+1 Day</a>
+                <a href="/plan/timetables/location/detailed?loc=@locationId&year=@oneDayEarlier.year&month=@oneDayEarlier.month&day=@oneDayEarlier.day&from=@oneDayEarlier.from&to=@oneDayEarlier.to&hasCalledAt=@hasCalledAt&willCallAt=@willCallAt" class="btn btn-secondary" role="button" aria-disabled="true">-1 Day</a>
+                <a href="/plan/timetables/location/detailed?loc=@locationId&year=@oneHourEarlier.year&month=@oneHourEarlier.month&day=@oneHourEarlier.day&from=@oneHourEarlier.from&to=@oneHourEarlier.to&hasCalledAt=@hasCalledAt&willCallAt=@willCallAt" class="btn btn-secondary" role="button" aria-disabled="true">-1 Hour</a>
+                <a href="/plan/timetables/location/detailed?loc=@locationId&year=@oneHourLater.year&month=@oneHourLater.month&day=@oneHourLater.day&from=@oneHourLater.from&to=@oneHourLater.to&hasCalledAt=@hasCalledAt&willCallAt=@willCallAt" class="btn btn-secondary" role="button" aria-disabled="true">+1 Hour</a>
+                <a href="/plan/timetables/location/detailed?loc=@locationId&year=@oneDayLater.year&month=@oneDayLater.month&day=@oneDayLater.day&from=@oneDayLater.from&to=@oneDayLater.to&hasCalledAt=@hasCalledAt&willCallAt=@willCallAt" class="btn btn-secondary" role="button" aria-disabled="true">+1 Day</a>
             </p>
             <div class="collapse" id="filters">
                 <div class="card card-body">
@@ -166,7 +166,7 @@ messages: List[String]
                 <div class="dest">Destination</div>
                 <div class="plat">Platform</div>
                 <div class="dep">Departs</div>
-                <div class="toc">TOC</div>
+                <div class="toc">Operator</div>
                 <div class="stp">STP</div>
             </div>
         </div>
@@ -225,7 +225,7 @@ messages: List[String]
             </div>
             <div class="stp">
                 <a href="@tt.trainUrl">
-                    @tt.stpIndicator
+                    <span class="d-md-none">STP Indicator</span> @tt.stpIndicator
                 </a>
             </div>
         </div>
@@ -235,16 +235,16 @@ messages: List[String]
 
 
 @platform(platform: String, label: String) = {
-@platform <br/> <small>@label</small>
+    <span class="d-md-none">@label</span> @platform
 
 }
 
 @arr(arrival: String, label: String) = {
-@arrival <br/> <small>@label</small>
+    <span class="d-md-none">@label</span> @arrival <br/>
 }
 
 @dep(departure: String, label: String) = {
-@departure <br/> <small>@label</small>
+    <span class="d-md-none">@label</span> @departure
 }
 
 @pad(num: Int) = {@if(num < 10) {0@num} else {@num}}

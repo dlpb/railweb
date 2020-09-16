@@ -218,16 +218,16 @@ messages: List[String]
 }
 
 @platform(platform: String, label: String) = {
-    @platform <span class="d-md-none">@label</span>
+<span class="d-md-none">@label</span> @platform
 
 }
 
 @arr(arrival: String, label: String) = {
-    @arrival <span class="d-md-none">@label</span>
+<span class="d-md-none">@label</span> @arrival
 }
 
 @dep(departure: String, label: String) = {
-    @departure <span class="d-md-none">@label</span>
+<span class="d-md-none">@label</span> @departure
 }
 
 @pad(num: Int) = {@if(num < 10) {0@num} else {@num}}

@@ -67,51 +67,25 @@ messages: List[String]
 </div>
 <div class="container card-body">
     <div class="toolbar">
-        <a class="btn btn-primary" href="@routeLink" role="button">Show Route Details (Visit)</a>
-        <a class="btn btn-primary" href="/plan/timetables/train/@timetable.uid/simple/@timetable.runningOn.toString.replaceAll("-", "/")" role="button">Show Simple Timetable</a>
+        <a class="btn btn-primary" href="@routeLink" role="button">Visit Route</a>
+        <a class="btn btn-primary" href="/plan/timetables/train/@timetable.uid/simple/@timetable.runningOn.toString.replaceAll("-", "/")" role="button">Simple Timetable</a>
     </div>
 </div>
 <div class="container card-body">
-    <div class="row d-none d-lg-block">
+    <div class="">
         <div class="col-sm">
             <div class="table-responsive">
                 <table class="table table-hover">
                     <thead>
                     <tr>
-                        <td>Arrival</td>
+                        <td><div class="d-block d-lg-none">Arr.</div><div class="d-none d-lg-block">Arrival</div></td>
                         <td>Location</td>
-                        <td>Platform</td>
-                        <td>Departure</td>
-                        <td>Path</td>
-                        <td>Perf</td>
-                        <td>Eng</td>
-                        <td>Path</td>
-                        <td>Line</td>
+                        <td><div class="d-block d-lg-none">Pl.</div><div class="d-none d-lg-block">Platform</div></td>
+                        <td><div class="d-block d-lg-none">Dep.</div><div class="d-none d-lg-block">Departure</div></td>
                     </tr>
                     </thead>
                    @for(l <- timetable.locations){
                         @location(l)
-                    }
-                </table>
-            </div>
-        </div>
-    </div>
-
-    <div class="row d-block d-lg-none">
-        <div class="col-sm">
-            <div class="table-responsive">
-                <table class="table table-hover" style="font-size: 0.7rem;">
-                    <thead>
-                    <tr>
-                        <td>Location</td>
-                        <td>Pfm.</td>
-                        <td>TT<br/>Arr.<br/>Dep.</td>
-                        <td colspan="3">Allowances</td>
-                        <td colspan="2">Route</td>
-                    </tr>
-                    </thead>
-                    @for(l <- timetable.locations){
-                    @locationsmall(l)
                     }
                 </table>
             </div>
@@ -180,8 +154,17 @@ messages: List[String]
         <td>
             <a href="@l.url">
                 @l.label <br/>
-                @l.id @l.crs
+                @l.id @l.crs <br/>
             </a>
+            <div>
+                @if(!l.pathAllowance.isBlank){l.pathAllowance <br/>}
+                @if(!l.performanceAllowance.isBlank){l.performanceAllowance <br/>}
+                @if(!l.engineeringAllowance.isBlank){l.engineeringAllowance} <br/>
+            </div>
+            <div>
+                @if(null != l.path && !l.path.isBlank){Path: @l.path, }
+                @if(null != l.line && !l.line.isBlank){Line: @l.line}
+            </div>
         </td>
         <td>
             <a href="@l.url">
@@ -193,83 +176,7 @@ messages: List[String]
                 @dep(l)
             </a>
         </td>
-        <td>
-            <a href="@l.url">
-                @l.pathAllowance
-            </a>
-        </td>
-        <td>
-            <a href="@l.url">
-                @l.performanceAllowance
-            </a>
-        </td>
-        <td>
-            <a href="@l.url">
-                @l.engineeringAllowance
-            </a>
-        </td>
-        <td>
-            <a href="@l.url">
-                @l.path
-            </a>
-        </td>
-        <td>
-            <a href="@l.url">
-                @l.line
-            </a>
-        </td>
     </tr>
-}
-
-
-@locationsmall(l: models.timetable.dto.train.detailed.DisplayDetailedTrainTimetableCallingPoint) = {
-@if(l.isPass) { <tr class="pass  table-light">
-    } else { <tr>
-    }
-
-    <td>
-        <a href="@l.url">
-            @l.label <br/>
-            @l.id @l.crs
-        </a>
-    </td>
-    <td>
-        <a href="@l.url">
-            @platform(l)
-        </a>
-    </td>
-    <td>
-        <a href="@l.url">
-            @arr(l) <br/>
-            @dep(l)
-        </a>
-    </td>
-    <td>
-        <a href="@l.url">
-            @l.pathAllowance
-        </a>
-    </td>
-    <td>
-        <a href="@l.url">
-            @l.performanceAllowance
-        </a>
-    </td>
-    <td>
-        <a href="@l.url">
-            @l.engineeringAllowance
-        </a>
-    </td>
-    <td>
-        <a href="@l.url">
-            @l.path
-        </a>
-    </td>
-    <td>
-        <a href="@l.url">
-            @l.line
-        </a>
-    </td>
-</tr>
 }
 
 @platform(l: models.timetable.dto.train.detailed.DisplayDetailedTrainTimetableCallingPoint) = {
