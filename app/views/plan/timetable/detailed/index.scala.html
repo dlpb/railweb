@@ -50,11 +50,7 @@ messages: List[String]
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col col-sm">
-            @bs(basicSchedule)
-        </div>
-    </div>
+    @bs(basicSchedule)
     <div class="row">
         <div class="col col-sm">
             <div id="map" class="map"></div>
@@ -126,7 +122,7 @@ messages: List[String]
 
 @bs(bs: models.timetable.model.train.BasicSchedule) = {
 <div class="row">
-    <div class="col col-sm">
+    <div class="col-lg">
         <h4>Date Information</h4>
         <ul>
             <li>Runs @if(bs.validMonday) { M }
@@ -140,7 +136,7 @@ messages: List[String]
             <li>Bank Holiday: @bs.bankHolidayRunning</li>
         </ul>
     </div>
-    <div class="col col-sm">
+    <div class="col-lg">
         <h4>Train Identity</h4>
         <ul>
             <li>Train Status: @bs.trainStatus</li>
@@ -150,7 +146,7 @@ messages: List[String]
             <li>STP Indicator: @bs.stpIndicator</li>
         </ul>
     </div>
-    <div class="col col-sm">
+    <div class="col-lg">
         <h4>Traction Information</h4>
         <ul>
             <li>Power Type: @bs.powerType</li>
@@ -159,7 +155,7 @@ messages: List[String]
             <li>Operating Characteristics: @bs.operatingCharacteristics</li>
         </ul>
     </div>
-    <div class="col col-sm">
+    <div class="col-lg">
         <h4>Passenger Information</h4>
         <ul>
             <li>Seating: @bs.seating</li>
