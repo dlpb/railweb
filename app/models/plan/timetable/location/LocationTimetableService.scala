@@ -96,7 +96,7 @@ class LocationTimetableService @Inject()(
     val locations = locationsService.findAllLocationsMatchingCrs(loc)
 
     if (locations.nonEmpty) {
-      val allTiplocResults = locations.map(location => getTrainsForLocation(location.id, y, m, d, from, to, hasCalledAt, willCallAt))
+      val allTiplocResults: Set[LocationTimetableResult] = getAllTimetables(from, to, hasCalledAt, willCallAt, y, m, d, locations)
 
       val allTimetables: Seq[Future[Seq[TimetableForLocation]]] = allTiplocResults.map(result => result.timetables map {
         f =>
@@ -113,6 +113,20 @@ class LocationTimetableService @Inject()(
     }
     else {
       resultFn(Future.successful(Seq.empty), y, m, d, from, to, locations)
+    }
+  }
+
+  private def getAllTimetables[R, M](from: Int, to: Int, hasCalledAt: Option[String], willCallAt: Option[String], y: Int, m: Int, d: Int, locations: Set[Location]) = {
+    if(from < to){
+      locations.map(location => getTrainsForLocation(location.id, y, m, d, from, to, hasCalledAt, willCallAt))
+    } else {
+      def midnightBefore = 2359
+//      def midnightAfter = 0
+
+      val beforeMidnightTimetables: Set[LocationTimetableResult] = locations.map(location => getTrainsForLocation(location.id, y, m, d, from, midnightBefore, hasCalledAt, willCallAt))
+//      val afterMidnightTimetables: Set[LocationTimetableResult] = locations.map(location => getTrainsForLocation(location.id, y, m, d, midnightAfter, to, hasCalledAt, willCallAt))
+
+      beforeMidnightTimetables// ++ afterMidnightTimetables
     }
   }
 
@@ -142,6 +156,8 @@ class LocationTimetableService @Inject()(
 
     (year, month, day, from, to) match {
       case (_, _, _, -1, -1) => getTrainsForLocationAroundNow(loc, hasCalledAt, willCallAt)
+      case (_, _, _, _, -1) => getTrainsForLocationAroundNow(loc, hasCalledAt, willCallAt)
+      case (_, _, _, -1, _) => getTrainsForLocationAroundNow(loc, hasCalledAt, willCallAt)
       case _ => LocationTimetableResult(readTimetable(loc, year, month, day, from, to, hasCalledAt, willCallAt), year, month, day, from, to)
     }
   }

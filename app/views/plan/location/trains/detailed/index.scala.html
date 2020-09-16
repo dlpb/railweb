@@ -11,6 +11,10 @@ t: String,
 hasCalledAt: String,
 willCallAt: String,
 locations: List[models.location.Location],
+oneHourEarlier: controllers.plan.timetable.location.simple.SimpleTimeShift,
+oneDayEarlier: controllers.plan.timetable.location.simple.SimpleTimeShift,
+oneDayLater: controllers.plan.timetable.location.simple.SimpleTimeShift,
+oneHourLater: controllers.plan.timetable.location.simple.SimpleTimeShift,
 messages: List[String]
 )(implicit request: Request[AnyContent])
 <head>
@@ -86,6 +90,17 @@ messages: List[String]
             </div>
         </div>
     </div>
+    @if(messages.nonEmpty){
+    <div class="row">
+        <div class="col col-sm">
+            <div class="alert alert-info">
+                <ul>
+                    @for(message <- messages){<li>@message</li>}
+                </ul>
+            </div>
+        </div>
+    </div>
+    }
     <div class="row">
         <div class="col col-sm">
             <p>
@@ -93,6 +108,12 @@ messages: List[String]
                     Filters
                 </button>
                 <a href="/plan/timetables/location/simple?loc=@locationId&year=@year&month=@month&day=@day&from=@f&to=@t&hasCalledAt=@hasCalledAt&willCallAt=@willCallAt" class="btn btn-primary" role="button" aria-disabled="true">Switch to Simple Search</a>
+            </p>
+            <p>
+                <a href="/plan/timetables/location/simple?loc=@locationId&year=@oneDayEarlier.year&month=@oneDayEarlier.month&day=@oneDayEarlier.day&from=@oneDayEarlier.from&to=@oneDayEarlier.to&hasCalledAt=@hasCalledAt&willCallAt=@willCallAt" class="btn btn-secondary" role="button" aria-disabled="true">-1 Day</a>
+                <a href="/plan/timetables/location/simple?loc=@locationId&year=@oneHourEarlier.year&month=@oneHourEarlier.month&day=@oneHourEarlier.day&from=@oneHourEarlier.from&to=@oneHourEarlier.to&hasCalledAt=@hasCalledAt&willCallAt=@willCallAt" class="btn btn-secondary" role="button" aria-disabled="true">-1 Hour</a>
+                <a href="/plan/timetables/location/simple?loc=@locationId&year=@oneHourLater.year&month=@oneHourLater.month&day=@oneHourLater.day&from=@oneHourLater.from&to=@oneHourLater.to&hasCalledAt=@hasCalledAt&willCallAt=@willCallAt" class="btn btn-secondary" role="button" aria-disabled="true">+1 Hour</a>
+                <a href="/plan/timetables/location/simple?loc=@locationId&year=@oneDayLater.year&month=@oneDayLater.month&day=@oneDayLater.day&from=@oneDayLater.from&to=@oneDayLater.to&hasCalledAt=@hasCalledAt&willCallAt=@willCallAt" class="btn btn-secondary" role="button" aria-disabled="true">+1 Day</a>
             </p>
             <div class="collapse" id="filters">
                 <div class="card card-body">
