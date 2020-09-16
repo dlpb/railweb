@@ -28,5 +28,36 @@ case class TimetableForLocation(
                                  pubDep: Option[LocalTime],
                                  stpIndicator: StpIndicator,
                                  toc: Option[String]
-                               )
+                               ) extends Ordered[TimetableForLocation] {
+  override def compare(that: TimetableForLocation): Int = {
+    (pubDep, pubArr, pass, dep, arr, that.pubDep, that.pubArr, that.pass, that.dep, that.arr) match {
+      case (Some(a), _, _, _, _, Some(b), _, _, _, _) => a.compareTo(b)
+      case (Some(a), _, _, _, _, _, Some(b), _, _, _) => a.compareTo(b)
+      case (Some(a), _, _, _, _, _, _, Some(b), _, _) => a.compareTo(b)
+      case (Some(a), _, _, _, _, _, _, _, Some(b), _) => a.compareTo(b)
+      case (Some(a), _, _, _, _, _, _, _, _, Some(b)) => a.compareTo(b)
+      case (_, Some(a), _, _, _, Some(b), _, _, _, _) => a.compareTo(b)
+      case (_, Some(a), _, _, _, _, Some(b), _, _, _) => a.compareTo(b)
+      case (_, Some(a), _, _, _, _, _, Some(b), _, _) => a.compareTo(b)
+      case (_, Some(a), _, _, _, _, _, _, Some(b), _) => a.compareTo(b)
+      case (_, Some(a), _, _, _, _, _, _, _, Some(b)) => a.compareTo(b)
+      case (_, _, Some(a), _, _, Some(b), _, _, _, _) => a.compareTo(b)
+      case (_, _, Some(a), _, _, _, Some(b), _, _, _) => a.compareTo(b)
+      case (_, _, Some(a), _, _, _, _, Some(b), _, _) => a.compareTo(b)
+      case (_, _, Some(a), _, _, _, _, _, Some(b), _) => a.compareTo(b)
+      case (_, _, Some(a), _, _, _, _, _, _, Some(b)) => a.compareTo(b)
+      case (_, _, _, Some(a), _, Some(b), _, _, _, _) => a.compareTo(b)
+      case (_, _, _, Some(a), _, _, Some(b), _, _, _) => a.compareTo(b)
+      case (_, _, _, Some(a), _, _, _, Some(b), _, _) => a.compareTo(b)
+      case (_, _, _, Some(a), _, _, _, _, Some(b), _) => a.compareTo(b)
+      case (_, _, _, Some(a), _, _, _, _, _, Some(b)) => a.compareTo(b)
+      case (_, _, _, _, Some(a), Some(b), _, _, _, _) => a.compareTo(b)
+      case (_, _, _, _, Some(a), _, Some(b), _, _, _) => a.compareTo(b)
+      case (_, _, _, _, Some(a), _, _, Some(b), _, _) => a.compareTo(b)
+      case (_, _, _, _, Some(a), _, _, _, Some(b), _) => a.compareTo(b)
+      case (_, _, _, _, Some(a), _, _, _, _, Some(b)) => a.compareTo(b)
+      case _ => 0
+    }
+  }
+}
 

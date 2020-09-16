@@ -98,17 +98,18 @@ class LocationTimetableService @Inject()(
     if (locations.nonEmpty) {
       val allTiplocResults = locations.map(location => getTrainsForLocation(location.id, y, m, d, from, to, hasCalledAt, willCallAt))
 
-      val allTimetables: Seq[Future[Seq[M]]] = allTiplocResults.map(result => result.timetables map {
+      val allTimetables: Seq[Future[Seq[TimetableForLocation]]] = allTiplocResults.map(result => result.timetables map {
         f =>
-          f.filter(tt => tt.publicStop && tt.publicTrain) map {
-            t =>
-              mappingFn(locationsService, t, result.year, result.month, result.day)
-          }
+          f.filter(tt => tt.publicStop && tt.publicTrain)
       }).toSeq
 
-      val timetables: Future[Seq[M]] = Future.sequence(allTimetables).map(_.flatten)
+      val timetables: Future[Seq[TimetableForLocation]] = Future.sequence(allTimetables)
+        .map(_.flatten)
+        .map(_.sorted)
 
-      resultFn(timetables, allTiplocResults.headOption.map(_.year).getOrElse(y), allTiplocResults.headOption.map(_.month).getOrElse(m), allTiplocResults.headOption.map(_.day).getOrElse(d), allTiplocResults.headOption.map(_.from).getOrElse(from), allTiplocResults.headOption.map(_.to).getOrElse(to), locations)
+      val mappedTimetables = timetables.map(tt => tt.map(t => mappingFn(locationsService, t, year, month, day)))
+
+      resultFn(mappedTimetables, allTiplocResults.headOption.map(_.year).getOrElse(y), allTiplocResults.headOption.map(_.month).getOrElse(m), allTiplocResults.headOption.map(_.day).getOrElse(d), allTiplocResults.headOption.map(_.from).getOrElse(from), allTiplocResults.headOption.map(_.to).getOrElse(to), locations)
     }
     else {
       resultFn(Future.successful(Seq.empty), y, m, d, from, to, locations)
