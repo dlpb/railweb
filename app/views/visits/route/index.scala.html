@@ -42,7 +42,7 @@ mapRoutes: List[models.route.MapRoute]
                         }
                         <ul>
                             @for(v <- value){
-                            <li>@v</li>
+                            <li><a href="/profile/visits/by/event/@v">@v</a></li>
                             }
                         </ul>
                     </li>

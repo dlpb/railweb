@@ -25,7 +25,7 @@ mapLocations: List[models.location.MapLocation]
                         <a href="/location/detail/@key" target="_blank">@key</a> - visited @value.size times
                         <ul>
                             @for(v <- value){
-                            <li>@v</li>
+                            <li><a href="/profile/visits/by/event/@v">@v</a></li>
                             }
                         </ul>
                     </li>
