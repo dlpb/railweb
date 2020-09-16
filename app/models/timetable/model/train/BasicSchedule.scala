@@ -3,7 +3,7 @@ package models.timetable.model.train
 import java.util.Date
 
 
-sealed trait BankHolidayRunning
+sealed trait BankHolidayRunning extends FormattedToString
 
 case object NotOnSpecifiedBankHolidayMondays extends BankHolidayRunning
 
@@ -13,7 +13,7 @@ case object RunsOnBankHolidays extends BankHolidayRunning
 
 
 
-sealed trait TrainStatus
+sealed trait TrainStatus extends FormattedToString
 
 case object BusPermanent extends TrainStatus
 
@@ -39,7 +39,7 @@ case object NoTrainStatus extends TrainStatus
 
 
 
-sealed trait TrainCategory
+sealed trait TrainCategory extends FormattedToString
 
 case object OrdinaryLondonUndergroundMetroService extends TrainCategory
 
@@ -153,7 +153,7 @@ case class OtherTrainCategory(category: String) extends TrainCategory
 
 
 
-sealed trait PowerType
+sealed trait PowerType extends FormattedToString
 
 case object Diesel extends PowerType
 
@@ -175,7 +175,7 @@ case object NoTrainPowerType extends PowerType
 
 
 
-sealed trait Timing
+sealed trait Timing extends FormattedToString
 
 case object DMUPowerCarAndTrailer extends Timing
 
@@ -187,15 +187,19 @@ case object EmuAcceleratedTimings extends Timing
 
 case object ElectricParcelsUnit extends Timing
 
-case class Hauled(load: Int) extends Timing
+case class Hauled(load: Int) extends Timing {
+  override def toString: String = s"Hauled, trailing load ${load} tons"
+}
 
-case class Class(unitClass: String*) extends Timing
+case class Class(unitClass: String*) extends Timing {
+  override def toString: String = unitClass.map(classs => s"Class ${classs}").mkString(",")
+}
 
 case object NoTiming extends Timing
 
 
 
-sealed trait OperatingCharacteristics
+sealed trait OperatingCharacteristics extends FormattedToString
 
 case object VacuumBraked extends OperatingCharacteristics
 
@@ -225,14 +229,14 @@ case object NoOperatingCharacteristics extends OperatingCharacteristics
 
 
 
-sealed trait Seating
+sealed trait Seating extends FormattedToString
 
 case object FirstAndStandardSeating extends Seating
 
 case object StandardOnlySeating extends Seating
 
 
-sealed trait Sleepers
+sealed trait Sleepers extends FormattedToString
 
 case object FirstAndStandardClassSleeper extends Sleepers
 
@@ -242,7 +246,8 @@ case object StandardClassOnlySleeper extends Sleepers
 
 case object NoSleeper extends Sleepers
 
-sealed trait Reservations
+
+sealed trait Reservations extends FormattedToString
 
 case object ReservationsCompulsory extends Reservations
 
@@ -254,7 +259,7 @@ case object ReservationsPossibleFromAnyStation extends Reservations
 
 case object NoReservations extends Reservations
 
-sealed trait Catering
+sealed trait Catering extends FormattedToString
 
 case object BuffetServiceCatering extends Catering
 

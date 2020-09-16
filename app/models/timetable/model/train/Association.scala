@@ -23,7 +23,8 @@ case class Association(transactionType: TransactionType,
                        stpIndicator: StpIndicator
                       )
 
-sealed trait TransactionType
+
+sealed trait TransactionType extends FormattedToString
 
 case object NewTransaction extends TransactionType
 
@@ -33,7 +34,7 @@ case object ReviseTransaction extends TransactionType
 
 
 
-sealed trait Category
+sealed trait Category extends FormattedToString
 
 case object Join extends Category
 
@@ -45,7 +46,7 @@ case object NoCategory extends Category
 
 
 
-sealed trait DateIndicator
+sealed trait DateIndicator extends FormattedToString
 
 case object StandardDaytimeOnly extends DateIndicator
 
@@ -56,7 +57,7 @@ case object OverPreviousMidnight extends DateIndicator
 case object NoDateIndicator extends DateIndicator
 
 
-sealed trait AssociationType
+sealed trait AssociationType extends FormattedToString
 
 case object Passenger extends AssociationType
 
@@ -65,7 +66,7 @@ case object Operating extends AssociationType
 case object NoAssociationType extends AssociationType
 
 
-sealed trait StpIndicator
+sealed trait StpIndicator extends FormattedToString
 
 case object Cancellation extends StpIndicator
 
