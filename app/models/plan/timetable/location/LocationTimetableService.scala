@@ -49,7 +49,8 @@ class LocationTimetableService @Inject()(
       hasCalledAt,
       willCallAt,
       DisplayDetailedLocationTimetable.apply,
-      LocationDetailedTimetableResult.apply)
+      LocationDetailedTimetableResult.apply,
+      showDetailedResults = true)
   }
 
   def getSimpleTimetablesForLocation(loc: String,
@@ -87,7 +88,8 @@ class LocationTimetableService @Inject()(
                                                       hasCalledAt: Option[String],
                                                       willCallAt: Option[String],
                                                       mappingFn: (LocationsService, TimetableForLocation, Int, Int, Int) => M,
-                                                      resultFn: (Future[Seq[M]], Int, Int, Int, Int, Int, Set[Location]) => R) = {
+                                                      resultFn: (Future[Seq[M]], Int, Int, Int, Int, Int, Set[Location]) => R,
+                                                      showDetailedResults: Boolean = false): R = {
     val (y, m, d): (Int, Int, Int) = if (date.contains("-")) {
       val dateParts = date.split("-").map(_.toInt)
       (dateParts(0), dateParts(1), dateParts(2))
@@ -100,7 +102,8 @@ class LocationTimetableService @Inject()(
 
       val allTimetables: Seq[Future[Seq[TimetableForLocation]]] = allTiplocResults.map(result => result.timetables map {
         f =>
-          f.filter(tt => tt.publicStop && tt.publicTrain)
+          if(showDetailedResults) f
+          else f.filter(tt => tt.publicStop && tt.publicTrain)
       }).toSeq
 
       val timetables: Future[Seq[TimetableForLocation]] = Future.sequence(allTimetables)

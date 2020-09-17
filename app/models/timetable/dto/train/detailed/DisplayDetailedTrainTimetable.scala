@@ -83,10 +83,6 @@ object DisplayDetailedTrainTimetable {
           val from = date.atTime(hour, minute).minusMinutes(15)
           val to = date.atTime(hour, minute).plusMinutes(45)
 
-          println(s"${loc.get.name} Pathing Allowance: $pathAllowance (${l.pathingAllowance})")
-          println(s"${loc.get.name} performanceAllowance Allowance: $performanceAllowance (${l.performanceAllowance})")
-          println(s"${loc.get.name} engineeringAllowance Allowance: $engineeringAllowance (${l.engineeringAllowance})")
-
           DisplayDetailedTrainTimetableCallingPoint(
             loc.map(_.id).getOrElse(l.tiploc),
             loc.map(_.name).getOrElse(l.tiploc),

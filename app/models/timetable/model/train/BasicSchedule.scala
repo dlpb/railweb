@@ -192,7 +192,7 @@ case class Hauled(load: Int) extends Timing {
 }
 
 case class Class(unitClass: String*) extends Timing {
-  override def toString: String = unitClass.map(classs => s"Class ${classs}").mkString(",")
+  override def toString: String = unitClass.map(classs => s"Class ${classs}").mkString(", ")
 }
 
 case object NoTiming extends Timing
