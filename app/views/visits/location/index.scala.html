@@ -2,7 +2,7 @@
 
 @(
 user: models.auth.User,
-locationVisits: Map[String, List[String]],
+locationVisits: List[(models.location.Location, List[String], Option[Int])],
 mapLocations: List[models.location.MapLocation]
 )(implicit request: Request[AnyContent])
 @templates.main("All Visits by Location", "Profile", Some(user)){
@@ -19,13 +19,14 @@ mapLocations: List[models.location.MapLocation]
         </div>
         <div class="row">
             <div class="col-sm">
-                @for((key, value) <- locationVisits) {
+                @for((location, visits, index) <- locationVisits) {
                 <ul>
                     <li>
-                        <a href="/location/detail/@key" target="_blank">@key</a> - visited @value.size times
+                        <a href="/location/detail/@location.id" target="_blank">@location.name</a> [@location.crs.mkString(" ")] (@location.id)<br/>
+                        <span class="badge badge-info">Visited @visits.size times</span> @if(index.getOrElse(0) > 0) {<span class="badge badge-dark">Location @index</span>}
                         <ul>
-                            @for(v <- value){
-                            <li><a href="/profile/visits/by/event/@v">@v</a></li>
+                            @for(visit <- visits){
+                            <li><a href="/profile/visits/by/event/@visit">@visit</a></li>
                             }
                         </ul>
                     </li>

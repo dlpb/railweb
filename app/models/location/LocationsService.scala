@@ -75,7 +75,6 @@ class LocationsService @Inject() ( config: Config,
       }
     }
     val result = List(PathElementLocation(startingPoint, findAdjacentLocations0(startingPoint, orrStationMaxDepth, nonOrrStationMaxDepth, countNonOrrStations, List(PathElementLocation(startingPoint, List.empty)), List(startingPoint.id))))
-    println(result)
     result
   }
 
@@ -278,32 +277,33 @@ class LocationsService @Inject() ( config: Config,
 
 
   def getStationVisitNumber(user: User, locationId: String): Option[Int] = {
-    findLocationByTiploc(locationId).map(_.isOrrStation) map( _ => {
-      val visits = getVisitsForUser(user)
-        .getOrElse(Map.empty)
-
-      val stationVisits: List[(String, String)] = visits
-        .flatMap(visitsForLocation => visitsForLocation._2.map(v => (visitsForLocation._1, v)))
-        .toList
-
-      val sortedStationVisits: List[(String, String)] = stationVisits
-        .sortBy(_._2)
-        .map(v => {
-          locationTiplocToCrs.get(v._1).flatten -> v._2
-        })
-        .filterNot(_._1.isEmpty)
-        .map(v => v._1.head -> v._2)
-        .distinctBy(_._1)
-
-
-      val indexOfStation =
-        locationTiplocToCrs.get(locationId).flatten.map(crs => {
-          sortedStationVisits
-            .indexWhere(v => v._1.equals(crs)) + 1
-        }).getOrElse(0)
-
-     indexOfStation
-    })
+//    findLocationByTiploc(locationId).map(_.isOrrStation) map( _ => {
+//      val visits = getVisitsForUser(user)
+//        .getOrElse(Map.empty)
+//
+//      val stationVisits: List[(String, String)] = visits
+//        .flatMap(visitsForLocation => visitsForLocation._2.map(v => (visitsForLocation._1, v)))
+//        .toList
+//
+//      val sortedStationVisits: List[(String, String)] = stationVisits
+//        .sortBy(_._2)
+//        .map(v => {
+//          locationTiplocToCrs.get(v._1).flatten -> v._2
+//        })
+//        .filterNot(_._1.isEmpty)
+//        .map(v => v._1.head -> v._2)
+//        .distinctBy(_._1)
+//
+//
+//      val indexOfStation =
+//        locationTiplocToCrs.get(locationId).flatten.map(crs => {
+//          sortedStationVisits
+//            .indexWhere(v => v._1.equals(crs)) + 1
+//        }).getOrElse(0)
+//
+//     indexOfStation
+//    })
+    None
   }
 
   def visitLocation(location: Location, user: User): Unit = {
