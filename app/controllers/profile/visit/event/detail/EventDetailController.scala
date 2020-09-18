@@ -42,7 +42,16 @@ class EventDetailController @Inject()(
       }
       .sortBy(r => r.from.id + " - " + r.to.id)
 
-    Ok(views.html.visits.event.detail.index(request.user, visitedMapRoutes, visitedLocations, event, distance))
+      val firstVisits: Map[String, Boolean] = visitedLocations
+          .map(l => l.id -> locationsService.isVisitFirstVisitForLocation(event, request.user, l.id))
+          .toMap
+
+      val locationVisitIndex = visitedLocations
+          .flatMap(l => locationsService.findLocationByTiploc(l.id))
+          .map(l => l.id -> locationsService.getStationVisitNumber(request.user, l.id))
+          .toMap
+
+    Ok(views.html.visits.event.detail.index(request.user, visitedMapRoutes, visitedLocations, firstVisits, locationVisitIndex, event, distance))
 
   }
 

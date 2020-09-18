@@ -10,6 +10,7 @@ import models.route.{RoutePoint, RoutesService}
 import org.json4s._
 import org.json4s.jackson.JsonMethods._
 
+import scala.collection.immutable
 import scala.io.Source
   case class PathElementLocation(location: Location, adjacentPathElements: List[PathElementLocation]){
     override def toString: String = {
@@ -248,6 +249,63 @@ class LocationsService @Inject() ( config: Config,
       .flatMap { location => getLocation(location._1)}
       .toList
   }
+
+  def isVisitFirstVisitForLocation(event: String, user: User, locationId: String): Boolean = {
+   val visits = getVisitsForUser(user)
+     .getOrElse(Map.empty)
+
+    val thisVisit: Map[String, List[String]] = visits
+     .filter(_._2.contains(event))
+    val thisLocation: Map[String, List[String]] = thisVisit
+     .filter(_._1.equals(locationId))
+    val visitsToThisLocation: Iterable[String] =
+      thisLocation
+        .values
+        .flatten
+        .toList
+        .sorted
+    val firstVisitAtThisLocation = visitsToThisLocation.headOption.getOrElse("")
+    val isThisFirstVisit = firstVisitAtThisLocation.equals(event)
+
+    isThisFirstVisit
+
+  }
+
+  val locationTiplocToCrs = locations
+    .filterNot(_.crs.isEmpty)
+    .map(l => l.id -> l.crs.headOption)
+    .toMap
+
+
+  def getStationVisitNumber(user: User, locationId: String): Option[Int] = {
+    findLocationByTiploc(locationId).map(_.isOrrStation) map( _ => {
+      val visits = getVisitsForUser(user)
+        .getOrElse(Map.empty)
+
+      val stationVisits: List[(String, String)] = visits
+        .flatMap(visitsForLocation => visitsForLocation._2.map(v => (visitsForLocation._1, v)))
+        .toList
+
+      val sortedStationVisits: List[(String, String)] = stationVisits
+        .sortBy(_._2)
+        .map(v => {
+          locationTiplocToCrs.get(v._1).flatten -> v._2
+        })
+        .filterNot(_._1.isEmpty)
+        .map(v => v._1.head -> v._2)
+        .distinctBy(_._1)
+
+
+      val indexOfStation =
+        locationTiplocToCrs.get(locationId).flatten.map(crs => {
+          sortedStationVisits
+            .indexWhere(v => v._1.equals(crs)) + 1
+        }).getOrElse(0)
+
+     indexOfStation
+    })
+  }
+
   def visitLocation(location: Location, user: User): Unit = {
     dataProvider.saveVisit(location, user)
   }

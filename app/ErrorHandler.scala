@@ -18,7 +18,11 @@ class ErrorHandler extends HttpErrorHandler {
   }
 
   def onServerError(request: RequestHeader, exception: Throwable): Future[Result] = {
-    Future.successful(InternalServerError(views.html.error.index("Oops! Something went wrong!", 500, exception.getMessage, exception.getClass.getName.split("\\.").last)))
+    Future.successful(InternalServerError(views.html.error.index(
+      "Oops! Something went wrong!",
+      500,
+      exception.getMessage,
+      exception.getClass.getName.split("\\.").last + "\n" + exception.getStackTrace.toList.map(_.toString).mkString("\n"))))
 
   }
 }

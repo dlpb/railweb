@@ -4,6 +4,8 @@
 user: models.auth.User,
 routeList: List[models.route.MapRoute],
 locations: List[models.location.MapLocation],
+firstLocationVisits: Map[String, Boolean],
+locationVisitIndex: Map[String, Option[Int]],
 event: String,
 distance: Long
 )(implicit request: Request[AnyContent])
@@ -28,7 +30,14 @@ distance: Long
                 <h2>Locations</h2>
                 <ul>
                     @for(location <- locations) {
-                    <li><a href="/location/detail/@location.id" target="_blank">@location.name</a></li>
+                    <li><a href="/location/detail/@location.id" target="_blank">@location.name</a>
+                        @if(locationVisitIndex(location.id).getOrElse(0) > 0) {
+                        <span class="badge badge-light float-right">@locationVisitIndex(location.id)</span>
+                        }
+                        @if(firstLocationVisits.getOrElse(location.id, false)) {
+                        <span class="badge badge-success float-right">First Visit</span>
+                        }
+                    </li>
                     }
                 </ul>
             </div>
