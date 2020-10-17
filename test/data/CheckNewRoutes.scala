@@ -5,11 +5,12 @@ import java.io.InputStream
 import models.route.{Route, RoutePoint}
 import org.json4s.DefaultFormats
 import org.json4s.jackson.JsonMethods.parse
-import org.scalatest.{FlatSpec, Matchers}
+import org.scalatest.flatspec.AnyFlatSpec
+import org.scalatest.matchers.should.Matchers
 
 import scala.io.Source
 
-class CheckNewRoutes extends FlatSpec with Matchers {
+class CheckNewRoutes extends AnyFlatSpec with Matchers {
   it should "work" in {
     def makeRoutes(routes: String) = {
       implicit val formats = DefaultFormats

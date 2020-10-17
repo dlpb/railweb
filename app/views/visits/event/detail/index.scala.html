@@ -1,8 +1,9 @@
 @import helper._
 
+@import models.route.display.map.MapRoute
 @(
 user: models.auth.User,
-routeList: List[models.route.MapRoute],
+routeList: List[MapRoute],
 locations: List[models.location.MapLocation],
 firstLocationVisits: Map[String, Boolean],
 locationVisitIndex: Map[String, Option[Int]],

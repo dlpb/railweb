@@ -6,9 +6,10 @@ import java.util.Date
 import com.typesafe.config.{ConfigFactory, ConfigValueFactory}
 import models.auth.roles.{MapUser, VisitUser}
 import models.auth.{FileBasedUserDao, User, UserAuthService}
-import org.scalatest.{FlatSpec, Matchers}
+import org.scalatest.flatspec.AnyFlatSpec
+import org.scalatest.matchers.should.Matchers
 
-class UserApiAuthServiceTest extends FlatSpec with Matchers{
+class UserApiAuthServiceTest extends AnyFlatSpec with Matchers {
 
   "UserApiAuthService" should "find a user if the id is in the claim list and is valid" in {
     val dao = new FileBasedUserDao(config)

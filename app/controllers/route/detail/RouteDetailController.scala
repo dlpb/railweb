@@ -6,7 +6,7 @@ import auth.JWTService
 import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject.{Inject, Singleton}
 import models.auth.roles.MapUser
-import models.route.{ListRoute, RoutesService}
+import models.route.RoutesService
 import play.api.mvc._
 
 import scala.collection.immutable.ListMap

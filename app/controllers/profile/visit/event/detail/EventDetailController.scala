@@ -6,7 +6,8 @@ import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject.{Inject, Singleton}
 import models.auth.UserDao
 import models.location.{LocationsService, MapLocation}
-import models.route.{MapRoute, Route, RoutesService}
+import models.route.display.map.MapRoute
+import models.route.{Route, RoutesService}
 import models.visits.Event
 import play.api.mvc.{AbstractController, AnyContent, ControllerComponents}
 

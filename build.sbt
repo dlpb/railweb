@@ -22,6 +22,11 @@ libraryDependencies ++= Seq(
 libraryDependencies += ws
 libraryDependencies += ehcache
 
+libraryDependencies ++= Seq (
+  "org.mockito" %% "mockito-scala" % "1.15.0" % "test",
+  "org.mockito" % "mockito-core" % "3.5.13" % "test"
+)
+
 scalacOptions ++= Seq(
   "-feature",
   "-deprecation",

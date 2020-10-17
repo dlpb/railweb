@@ -6,7 +6,7 @@ import models.auth.roles.{PlanUser, VisitUser}
 import models.location.{LocationsService, MapLocation}
 import models.plan.timetable.location.LocationTimetableService
 import models.plan.timetable.trains.TrainTimetableService
-import models.route.{MapRoute, RoutesService}
+import models.route.RoutesService
 import org.json4s.DefaultFormats
 import org.json4s.jackson.Serialization.write
 import play.api.Environment

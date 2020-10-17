@@ -8,6 +8,8 @@ import models.auth.User
 import models.data.RouteDataProvider
 import models.data.postgres.RouteDataIdConverter
 import models.location.{Location, LocationsService}
+import models.route.display.list.ListRoute
+import models.route.display.map.MapRoute
 import org.json4s.DefaultFormats
 import org.json4s.jackson.JsonMethods.parse
 

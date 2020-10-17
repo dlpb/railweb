@@ -1,10 +1,11 @@
 @import helper._
 
+@import models.route.display.map.MapRoute
 @(
 user: models.auth.User,
 routeVisits: Map[(String, String), List[String]],
 invalidRoutes: Set[(String, String)],
-mapRoutes: List[models.route.MapRoute]
+mapRoutes: List[MapRoute]
 )(implicit request: Request[AnyContent])
 
 @templates.main("All Visits by Route", "Profile", Some(user)){

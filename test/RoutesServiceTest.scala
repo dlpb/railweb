@@ -3,11 +3,12 @@ import data.RouteMapBasedDataProvider
 import models.auth.User
 import models.data.postgres.RouteDataIdConverter
 import models.route.{Route, RoutePoint, RoutesService}
-import org.scalatest.{FlatSpec, Matchers}
+import org.scalatest.flatspec.AnyFlatSpec
+import org.scalatest.matchers.should.Matchers
 
 import scala.collection.immutable
 
-class RoutesServiceTest extends FlatSpec with Matchers{
+class RoutesServiceTest extends AnyFlatSpec with Matchers {
 
   val route = Route(RoutePoint(0.0, 0.0, "HWM", "Harlow Mill", ""), RoutePoint(0.0, 0.0, "SAW", "Sawbridgeworth", ""), "", "", "", "", "", "")
   val route2 = Route(RoutePoint(0.0, 0.0, "SAW", "Sawbridgeworth", ""), RoutePoint(0.0, 0.0, "BIS", "Bishops Stortford", ""), "", "", "", "", "", "")

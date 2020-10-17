@@ -6,12 +6,14 @@ import models.auth.User
 import models.data.{LocationJsonFileDataProvider, RouteJsonFileDataProvider}
 import models.location.{Location, SpatialLocation}
 import models.route.{Route, RoutePoint}
-import org.scalatest.{FlatSpec, Matchers}
+import org.scalatest.flatspec.AnyFlatSpec
+import org.scalatest.FlatSpec
+import org.scalatest.matchers.should.Matchers
 
-class FileBasedDataStorageTests extends FlatSpec with Matchers {
+class FileBasedDataStorageTests extends AnyFlatSpec with Matchers {
 
-  val location = Location("LST", "Liverpool Street", "", "", SpatialLocation(0.0, 0.0),None, true, Set(), Set())
-  val location2 = Location("KGX", "Kings Cross", "", "", SpatialLocation(0.0, 0.0),None, true, Set(), Set())
+  val location = Location("LST", "Liverpool Street", "", "", SpatialLocation(0.0, 0.0, None, None, None),None, true, Set(), Set())
+  val location2 = Location("KGX", "Kings Cross", "", "", SpatialLocation(0.0, 0.0, None, None, None),None, true, Set(), Set())
   val user = User(1, "user", Set())
   val user2 = User(2, "user", Set())
 

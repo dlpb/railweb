@@ -1,10 +1,11 @@
+@import models.route.display.map.MapRoute
 @(
 user: models.auth.User,
 token: String,
 timetable: models.timetable.dto.train.detailed.DisplayDetailedTrainTimetable,
 basicSchedule: models.timetable.model.train.BasicSchedule,
 locations: List[models.location.MapLocation],
-routeList: List[models.route.MapRoute],
+routeList: List[MapRoute],
 routeLink: String,
 messages: List[String]
 )(implicit request: Request[AnyContent])

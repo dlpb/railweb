@@ -1,6 +1,7 @@
+@import models.route.display.list.ListRoute
 @(
 user: models.auth.User,
-routeList: Map[String, models.route.ListRoute],
+routeList: Map[String, ListRoute],
 visits: Map[String, Boolean],
 visitCalls: Map[String, Call],
 token: String,

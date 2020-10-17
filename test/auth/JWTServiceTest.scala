@@ -5,9 +5,10 @@ import java.util.{Calendar, Date}
 
 import models.auth.User
 import models.auth.roles.MapUser
-import org.scalatest.{FlatSpec, Matchers}
+import org.scalatest.flatspec.AnyFlatSpec
+import org.scalatest.matchers.should.Matchers
 
-class JWTServiceTest extends FlatSpec with Matchers{
+class JWTServiceTest extends AnyFlatSpec with Matchers {
   "JWTService" should "mint a token for a user created at a specific date" in {
     val service = new JWTService()
     val date: Date = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").parse("2000-01-01 00:00:00")

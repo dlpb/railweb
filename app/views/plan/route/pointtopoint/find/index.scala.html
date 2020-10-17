@@ -1,8 +1,9 @@
+@import models.route.display.map.MapRoute
 @(
 user: models.auth.User,
 token: String,
 locations: List[models.location.MapLocation],
-routeList: List[models.route.MapRoute],
+routeList: List[MapRoute],
 waypoints: String,
 followFreightLinks: Boolean,
 followFixedLinks: Boolean,

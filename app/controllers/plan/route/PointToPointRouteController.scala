@@ -9,7 +9,8 @@ import javax.inject.{Inject, Singleton}
 import models.auth.roles.MapUser
 import models.location.{LocationsService, MapLocation}
 import models.plan.route.pointtopoint.PointToPointRouteFinderService
-import models.route.{MapRoute, RoutesService}
+import models.route.display.map.MapRoute
+import models.route.RoutesService
 import play.api.mvc.{AbstractController, AnyContent, ControllerComponents}
 
 @Singleton
