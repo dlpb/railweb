@@ -8,18 +8,20 @@ import controllers.routes
 import javax.inject.{Inject, Singleton}
 import models.auth.roles.MapUser
 import models.route.display.list.ListRoute
-import models.route.RoutesService
+import models.visits.route.RouteVisitService
 import play.api.mvc._
+import services.route.RouteService
 
 import scala.collection.immutable.ListMap
 
 
 @Singleton
 class RouteController @Inject()(
-                                       cc: ControllerComponents,
-                                       authenticatedUserAction: AuthorizedWebAction,
-                                       routeService: RoutesService,
-                                       jwtService: JWTService
+                                 cc: ControllerComponents,
+                                 authenticatedUserAction: AuthorizedWebAction,
+                                 routeService: RouteService,
+                                 routeVisitService: RouteVisitService,
+                                 jwtService: JWTService
 
 ) extends AbstractController(cc) {
 
@@ -31,7 +33,7 @@ class RouteController @Inject()(
           else a.from.name < b.from.name
         else a.srs < b.srs
       }
-      val routeList: List[ListRoute] = routeService.defaultListRoutes.toList.filter({
+      val routeList: List[ListRoute] = routeService.listRoutes.toList.filter({
         r =>
           val nrFlag = if(nrRoutes) r.srs.contains(".") else true
           val srsFlag = if(!srs.equals("all")) r.srs.toLowerCase.contains(srs.toLowerCase) else true
@@ -39,7 +41,7 @@ class RouteController @Inject()(
           val idFlag = if(!id.equals("all"))  r.from.id.toLowerCase.contains(id.toLowerCase) || r.to.id.toLowerCase.contains(id.toLowerCase) else true
           nrFlag && srsFlag && nameFlag && idFlag
       })
-      val visited = routeService.getVisitedRoutes(request.user)
+      val visited = routeVisitService.getVisitedRoutes(request.user)
 
       def makeRouteKey(r: ListRoute) = {
         s"from:${r.from.id}-to:${r.to.id}"

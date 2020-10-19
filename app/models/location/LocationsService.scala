@@ -6,9 +6,10 @@ import com.typesafe.config.Config
 import javax.inject.{Inject, Singleton}
 import models.auth.User
 import models.data.LocationDataProvider
-import models.route.{RoutePoint, RoutesService}
+import models.route.RoutePoint
 import org.json4s._
 import org.json4s.jackson.JsonMethods._
+import services.route.RouteService
 
 import scala.collection.immutable
 import scala.io.Source
@@ -19,9 +20,9 @@ import scala.io.Source
   }
 
 @Singleton
-class LocationsService @Inject() ( config: Config,
-                                   routesService: RoutesService,
-                                   dataProvider: LocationDataProvider) {
+class LocationsService @Inject() (config: Config,
+                                  routesService: RouteService,
+                                  dataProvider: LocationDataProvider) {
 
   def findLocationByTiploc(tiploc: String) = locations.find(_.id.equalsIgnoreCase(tiploc))
 
@@ -46,7 +47,7 @@ class LocationsService @Inject() ( config: Config,
         path
       }
       else {
-        val routesForLocation = routesService.findRoutesForLocation(startingPoint.id)
+        val routesForLocation = routesService.findRoutesForLocation(startingPoint)
         val endPoints: List[RoutePoint] = routesForLocation
           .map(r => {
             if (r.from.id.equals(startingPoint.id)) r.to else r.from

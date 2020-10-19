@@ -6,8 +6,8 @@ import models.auth.roles.{PlanUser, VisitUser}
 import models.location.{LocationsService, MapLocation}
 import models.plan.timetable.location.LocationTimetableService
 import models.plan.timetable.trains.TrainTimetableService
-import models.route.RoutesService
 import models.route.display.map.MapRoute
+import models.visits.route.RouteVisitService
 import org.json4s.DefaultFormats
 import org.json4s.jackson.Serialization.write
 import play.api.Environment
@@ -22,7 +22,7 @@ class PlanRoutesApiController @Inject()(
                                          env: Environment,
                                          cc: ControllerComponents,
                                          locationService: LocationsService,
-                                         routeService: RoutesService,
+                                         routeService: RouteVisitService,
                                          trainService: LocationTimetableService,
                                          timetableService: TrainTimetableService,
                                          authAction: AuthorizedAction // NEW - add the action as a constructor argument

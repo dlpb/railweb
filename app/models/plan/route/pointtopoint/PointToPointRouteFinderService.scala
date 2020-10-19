@@ -2,14 +2,15 @@ package models.plan.route.pointtopoint
 
 import javax.inject.{Inject, Singleton}
 import models.location.{Location, LocationsService}
-import models.route.{Route, RoutesService}
+import models.route.Route
+import services.route.RouteService
 
 import scala.collection.mutable
 
 @Singleton
 class PointToPointRouteFinderService @Inject()(
-                             routesService: RoutesService,
-                             locationsService: LocationsService
+                                                routesService: RouteService,
+                                                locationsService: LocationsService
                            ) {
 
   def findRouteForWaypoints(waypoints: List[String], followFixedLinks: Boolean = false, followFreightLinks: Boolean = false, followUnknownLinks: Boolean = false): Path = {
@@ -19,8 +20,8 @@ class PointToPointRouteFinderService @Inject()(
           case Nil => accumulator
           case head :: _ =>
             val route: List[Route] = {
-              val ft = routesService.getRoute(current.id, head.id)
-              val tf = routesService.getRoute(head.id, current.id)
+              val ft = routesService.findRoute(current.id, head.id)
+              val tf = routesService.findRoute(head.id, current.id)
               if (ft.isEmpty)
                 if (tf.isEmpty) List()
                 else List(tf.get)
@@ -136,8 +137,8 @@ class PointToPointRouteFinderService @Inject()(
   }
 
   def getCostBetween(from: Location, to: Location): Int = {
-    val route: Option[Route] = routesService.getRoute(from.id, to.id) match {
-      case None => routesService.getRoute(to.id, from.id)
+    val route: Option[Route] = routesService.findRoute(from.id, to.id) match {
+      case None => routesService.findRoute(to.id, from.id)
       case x => x
     }
     route map {_.distance.toInt} getOrElse Int.MaxValue
@@ -165,7 +166,7 @@ class PointToPointRouteFinderService @Inject()(
       unknownLinkAllowed
     }
 
-    val siblingRoutes: Set[Route] = routesService.getRoutes.filter ({
+    val siblingRoutes: Set[Route] = routesService.routes.filter ({
 
       r =>
         val fixedLinksAllowed: Boolean = fixedLinkFilter(r)

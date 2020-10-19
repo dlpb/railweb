@@ -9,8 +9,9 @@ import javax.inject.{Inject, Singleton}
 import models.auth.UserDao
 import models.data.postgres.RouteDataIdConverter
 import models.location.{Location, LocationsService, MapLocation}
-import models.route.{Route, RoutesService}
+import models.route.Route
 import models.visits.Event
+import models.visits.route.RouteVisitService
 import play.api.mvc.{AbstractController, AnyContent, ControllerComponents}
 
 import scala.concurrent.duration.Duration
@@ -22,7 +23,7 @@ class LocationVisitsController @Inject()(
                                           jwtService: JWTService,
                                           cc: ControllerComponents,
                                           locationsService: LocationsService,
-                                          routesService: RoutesService,
+                                          routesService: RouteVisitService,
                                           authenticatedUserAction: AuthorizedWebAction,
                                           authorizedAction: AuthorizedAction
                                         ) extends AbstractController(cc) {

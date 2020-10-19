@@ -8,7 +8,7 @@ import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject._
 import models.auth.UserDao
 import models.location.LocationsService
-import models.route.RoutesService
+import models.visits.route.RouteVisitService
 import models.web.forms.ChangePassword
 import play.api.data.Form
 import play.api.data.Forms.{mapping, nonEmptyText}
@@ -16,13 +16,13 @@ import play.api.mvc._
 
 @Singleton
 class ProfileController @Inject()(
-                                             userDao: UserDao,
-                                             jwtService: JWTService,
-                                             cc: ControllerComponents,
-                                             locationsService: LocationsService,
-                                             routesService: RoutesService,
-                                             authenticatedUserAction: AuthorizedWebAction,
-                                             authorizedAction: AuthorizedAction
+                                   userDao: UserDao,
+                                   jwtService: JWTService,
+                                   cc: ControllerComponents,
+                                   locationsService: LocationsService,
+                                   routesService: RouteVisitService,
+                                   authenticatedUserAction: AuthorizedWebAction,
+                                   authorizedAction: AuthorizedAction
                                            ) extends AbstractController(cc) {
 
   val form: Form[ChangePassword] = Form(

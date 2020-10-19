@@ -6,7 +6,7 @@ import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject.{Inject, Singleton}
 import models.auth.UserDao
 import models.location.LocationsService
-import models.route.RoutesService
+import models.visits.route.RouteVisitService
 import play.api.mvc.{AbstractController, AnyContent, ControllerComponents}
 
 @Singleton
@@ -15,7 +15,7 @@ class VisitsController @Inject()(
                                   jwtService: JWTService,
                                   cc: ControllerComponents,
                                   locationsService: LocationsService,
-                                  routesService: RoutesService,
+                                  routesService: RouteVisitService,
                                   authenticatedUserAction: AuthorizedWebAction,
                                   authorizedAction: AuthorizedAction
                                 ) extends AbstractController(cc) {

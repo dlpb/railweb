@@ -1,6 +1,7 @@
 package services.route
 
 import com.typesafe.config.Config
+import models.location.{Location, SpatialLocation}
 import models.route.display.list.{ListRoute, ListRoutePoint}
 import models.route.display.map.{MapRoute, MapRoutePoint}
 import org.mockito.MockitoSugar
@@ -72,6 +73,24 @@ class RouteServiceTest
 
     routes.size should be(1)
     routes.head should be(ListRoute(ListRoutePoint("DRN", "Duirinish"), ListRoutePoint("KYL","Kyle of Lochalsh"), "P.12"))
+  }
+
+  it should "find routes for location" in {
+    val service = getRouteServiceWith(singleRoute)
+
+    val location = Location("KYL", "Kyle of Localsh", "SR", "NR", SpatialLocation(57.2797712,-5.713812582, None, None, None), None, true, Set("KYL"), Set("KYL"), None)
+    val routesForLocation = service.findRoutesForLocation(location)
+
+    routesForLocation.size should be(1)
+  }
+
+  it should "not find routes for location if there are no routes for that location" in {
+    val service = getRouteServiceWith(singleRoute)
+
+    val location = Location("RMF", "Romford", "LE", "NR", SpatialLocation(57.2797712,-5.713812582, None, None, None), None, true, Set("RMF"), Set("RMF"), None)
+    val routesForLocation = service.findRoutesForLocation(location)
+
+    routesForLocation.size should be(0)
   }
 
   private def getRouteServiceWith(routePath: String) = {

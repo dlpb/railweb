@@ -11,7 +11,8 @@ import models.auth.UserDao
 import models.auth.roles.AdminUser
 import models.data.VisitJsonUtils
 import models.location.{LocationsService, MapLocation}
-import models.route.{Route, RoutePoint, RoutesService}
+import models.route.{Route, RoutePoint}
+import models.visits.route.RouteVisitService
 import org.json4s.DefaultFormats
 import play.api.mvc._
 
@@ -21,7 +22,7 @@ class DeleteUserController @Inject()(
                                       jwtService: JWTService,
                                       cc: ControllerComponents,
                                       locationsService: LocationsService,
-                                      routesService: RoutesService,
+                                      routesService: RouteVisitService,
                                       authenticatedUserAction: AuthorizedWebAction,
                                       authorizedAction: AuthorizedAction
                                     ) extends AbstractController(cc) {

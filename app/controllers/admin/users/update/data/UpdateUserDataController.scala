@@ -10,7 +10,7 @@ import models.auth.UserDao
 import models.auth.roles.AdminUser
 import models.data.VisitJsonUtils
 import models.location.LocationsService
-import models.route.RoutesService
+import models.visits.route.RouteVisitService
 import play.api.mvc.{AbstractController, Action, AnyContent, ControllerComponents}
 
 class UpdateUserDataController @Inject()(
@@ -18,7 +18,7 @@ class UpdateUserDataController @Inject()(
                                           jwtService: JWTService,
                                           cc: ControllerComponents,
                                           locationsService: LocationsService,
-                                          routesService: RoutesService,
+                                          routesService: RouteVisitService,
                                           authenticatedUserAction: AuthorizedWebAction,
                                           authorizedAction: AuthorizedAction
                                         ) extends AbstractController(cc) {

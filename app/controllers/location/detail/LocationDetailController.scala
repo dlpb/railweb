@@ -7,7 +7,7 @@ import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject.{Inject, Singleton}
 import models.auth.roles.MapUser
 import models.location.{GroupedListLocation, ListLocation, Location, LocationsService}
-import models.route.RoutesService
+import models.visits.route.RouteVisitService
 import play.api.mvc._
 
 

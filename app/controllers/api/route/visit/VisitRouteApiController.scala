@@ -6,12 +6,13 @@ import models.auth.roles.{PlanUser, VisitUser}
 import models.location.{LocationsService, MapLocation}
 import models.plan.timetable.location.LocationTimetableService
 import models.plan.timetable.trains.TrainTimetableService
-import models.route.RoutesService
+import models.visits.route.RouteVisitService
 import org.json4s.DefaultFormats
 import org.json4s.jackson.Serialization.write
 import play.api.Environment
 import play.api.libs.json.Json
 import play.api.mvc.{AbstractController, AnyContent, ControllerComponents}
+import services.route.RouteService
 
 import scala.concurrent.duration.Duration
 import scala.concurrent.{Await, Future, TimeoutException}
@@ -21,7 +22,8 @@ class VisitRouteApiController @Inject()(
                                          env: Environment,
                                          cc: ControllerComponents,
                                          locationService: LocationsService,
-                                         routeService: RoutesService,
+                                         routeService: RouteService,
+                                         routeVisitService: RouteVisitService,
                                          trainService: LocationTimetableService,
                                          timetableService: TrainTimetableService,
                                          authAction: AuthorizedAction // NEW - add the action as a constructor argument
@@ -40,8 +42,8 @@ class VisitRouteApiController @Inject()(
 
           (from, to) match {
             case (Some(f), Some(t)) =>
-              routeService.getRoute(f, t) match {
-                case Some(r) => routeService.visitRoute(r, request.user)
+              routeService.findRoute(f, t) match {
+                case Some(r) => routeVisitService.visitRoute(r, request.user)
                   Ok(s"Route found ${r.from.id}, ${r.to.id}, visiting")
                 case None => NotFound
               }
@@ -55,8 +57,8 @@ class VisitRouteApiController @Inject()(
       authAction { implicit request =>
         if (!request.user.roles.contains(VisitUser)) Unauthorized("User does not have the right role")
         else {
-          routeService.getRoute(from, to) match {
-            case Some(r) => routeService.visitRoute(r, request.user)
+          routeService.findRoute(from, to) match {
+            case Some(r) => routeVisitService.visitRoute(r, request.user)
               Redirect(controllers.route.detail.routes.RouteDetailController.index(from, to))
             case None => NotFound
           }
@@ -68,8 +70,8 @@ class VisitRouteApiController @Inject()(
       authAction { implicit request =>
         if (!request.user.roles.contains(VisitUser)) Unauthorized("User does not have the right role")
         else {
-          routeService.getRoute(from, to) match {
-            case Some(r) => routeService.visitRoute(r, request.user)
+          routeService.findRoute(from, to) match {
+            case Some(r) => routeVisitService.visitRoute(r, request.user)
               Redirect(controllers.route.routes.RouteController.index())
             case None => NotFound
           }
@@ -79,17 +81,17 @@ class VisitRouteApiController @Inject()(
 
     def getAllVisitsForRoutes() = {
       authAction { implicit request =>
-        val visits = routeService.getVisitedRoutes(request.user)
+        val visits = routeVisitService.getVisitedRoutes(request.user)
         Ok(Json.toJson(visits))
       }
     }
 
     def getAllVisitsForRoute(from: String, to: String) = {
       authAction { implicit request =>
-        val route = routeService.getRoute(from, to)
+        val route = routeService.findRoute(from, to)
         route match {
           case Some(r) =>
-            val visits: List[String] = routeService.getVisitsForRoute(r, request.user)
+            val visits: List[String] = routeVisitService.getVisitsForRoute(r, request.user)
             Ok(Json.toJson(visits))
           case None => NotFound
         }
@@ -100,9 +102,9 @@ class VisitRouteApiController @Inject()(
       authAction { implicit request =>
         if (!request.user.roles.contains(VisitUser)) Unauthorized("User does not have the right role")
         else {
-          routeService.getRoute(from, to) match {
+          routeService.findRoute(from, to) match {
             case Some(r) =>
-              routeService.deleteLastVisit(r, request.user)
+              routeVisitService.deleteLastVisit(r, request.user)
               Redirect(controllers.route.detail.routes.RouteDetailController.index(from, to))
             case None => NotFound
           }
@@ -114,9 +116,9 @@ class VisitRouteApiController @Inject()(
       authAction { implicit request =>
         if (!request.user.roles.contains(VisitUser)) Unauthorized("User does not have the right role")
         else {
-          routeService.getRoute(from, to) match {
+          routeService.findRoute(from, to) match {
             case Some(r) =>
-              routeService.deleteAllVisits(r, request.user)
+              routeVisitService.deleteAllVisits(r, request.user)
               Redirect(controllers.route.detail.routes.RouteDetailController.index(from, to))
             case None => NotFound
           }

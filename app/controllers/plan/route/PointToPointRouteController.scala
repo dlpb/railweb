@@ -10,7 +10,7 @@ import models.auth.roles.MapUser
 import models.location.{LocationsService, MapLocation}
 import models.plan.route.pointtopoint.PointToPointRouteFinderService
 import models.route.display.map.MapRoute
-import models.route.RoutesService
+import models.visits.route.RouteVisitService
 import play.api.mvc.{AbstractController, AnyContent, ControllerComponents}
 
 @Singleton
@@ -19,7 +19,7 @@ class PointToPointRouteController @Inject()(
                                              authenticatedUserAction: AuthorizedWebAction,
                                              pathService: PointToPointRouteFinderService,
                                              locationsService: LocationsService,
-                                             routesService: RoutesService,
+                                             routesService: RouteVisitService,
                                              jwtService: JWTService
 
                               ) extends AbstractController(cc) {

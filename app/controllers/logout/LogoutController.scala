@@ -6,18 +6,18 @@ import auth.web.AuthorizedWebAction
 import javax.inject._
 import models.auth.UserDao
 import models.location.LocationsService
-import models.route.RoutesService
+import models.visits.route.RouteVisitService
 import play.api.mvc._
 
 @Singleton
 class LogoutController@Inject()(
-                                             userDao: UserDao,
-                                             jwtService: JWTService,
-                                             cc: ControllerComponents,
-                                             locationsService: LocationsService,
-                                             routesService: RoutesService,
-                                             authenticatedUserAction: AuthorizedWebAction,
-                                             authorizedAction: AuthorizedAction
+                                 userDao: UserDao,
+                                 jwtService: JWTService,
+                                 cc: ControllerComponents,
+                                 locationsService: LocationsService,
+                                 routesService: RouteVisitService,
+                                 authenticatedUserAction: AuthorizedWebAction,
+                                 authorizedAction: AuthorizedAction
                                            ) extends AbstractController(cc) {
 
 
