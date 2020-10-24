@@ -1,13 +1,13 @@
 package models.timetable.dto.location.detailed
 
-import models.location.LocationsService
 import models.plan.timetable.trains.TrainTimetableServiceUrlHelper
 import models.timetable.dto.location.SortableDisplayTimetable
 import models.timetable.model.location.TimetableForLocation
+import services.location.LocationService
 
 object DisplayDetailedLocationTimetable {
 
-  def apply(locationsService: LocationsService, simpleTimetable: TimetableForLocation, year: Int, month: Int, day: Int): DisplayDetailedLocationTimetable = {
+  def apply(locationsService: LocationService, simpleTimetable: TimetableForLocation, year: Int, month: Int, day: Int): DisplayDetailedLocationTimetable = {
 
     val public = simpleTimetable.publicTrain
 
@@ -35,8 +35,8 @@ object DisplayDetailedLocationTimetable {
       simpleTimetable.uid,
       arrival,
       departure,
-      simpleTimetable.origin.flatMap(o => locationsService.findLocationByTiploc(o).map(_.name)).getOrElse(simpleTimetable.origin.getOrElse("")),
-      simpleTimetable.destination.flatMap(d => locationsService.findLocationByTiploc(d).map(_.name)).getOrElse(simpleTimetable.destination.getOrElse("")),
+      simpleTimetable.origin.flatMap(o => locationsService.findFirstLocationByTiploc(o).map(_.name)).getOrElse(simpleTimetable.origin.getOrElse("")),
+      simpleTimetable.destination.flatMap(d => locationsService.findFirstLocationByTiploc(d).map(_.name)).getOrElse(simpleTimetable.destination.getOrElse("")),
       platform,
       toc,
       simpleTimetable.stpIndicator.toString,

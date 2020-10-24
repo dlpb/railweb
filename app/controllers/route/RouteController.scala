@@ -8,7 +8,7 @@ import controllers.routes
 import javax.inject.{Inject, Singleton}
 import models.auth.roles.MapUser
 import models.route.display.list.ListRoute
-import models.visits.route.RouteVisitService
+import services.visit.route.RouteVisitService
 import play.api.mvc._
 import services.route.RouteService
 

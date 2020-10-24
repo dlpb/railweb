@@ -1,29 +1,21 @@
 package controllers.api.locations.visit
 
-import auth.api.{AuthorizedAction, UserRequest}
+import auth.api.AuthorizedAction
 import javax.inject.{Inject, Singleton}
-import models.auth.roles.{PlanUser, VisitUser}
-import models.location.{LocationsService, MapLocation}
-import models.plan.timetable.location.LocationTimetableService
-import models.plan.timetable.trains.TrainTimetableService
-import models.visits.route.RouteVisitService
+import models.auth.roles.VisitUser
 import org.json4s.DefaultFormats
-import org.json4s.jackson.Serialization.write
 import play.api.Environment
 import play.api.libs.json.Json
-import play.api.mvc.{AbstractController, AnyContent, ControllerComponents}
-
-import scala.concurrent.duration.Duration
-import scala.concurrent.{Await, Future, TimeoutException}
+import play.api.mvc.{AbstractController, ControllerComponents}
+import services.location.LocationService
+import services.visit.location.LocationVisitService
 
 @Singleton
 class VisitLocationsApiController @Inject()(
                                              env: Environment,
                                              cc: ControllerComponents,
-                                             locationService: LocationsService,
-                                             routeService: RouteVisitService,
-                                             trainService: LocationTimetableService,
-                                             timetableService: TrainTimetableService,
+                                             locationService: LocationService,
+                                             locationVisitService: LocationVisitService,
                                              authAction: AuthorizedAction // NEW - add the action as a constructor argument
                                           )
   extends AbstractController(cc) {
@@ -39,9 +31,9 @@ class VisitLocationsApiController @Inject()(
 
           id match {
             case Some(loc) =>
-              locationService.getLocation(loc) match {
+              locationService.findFirstLocationByNameTiplocCrsOrId(loc) match {
                 case Some(l) =>
-                  locationService.visitLocation(l, request.user)
+                  locationVisitService.visitLocation(l, request.user)
                   Ok(s"Loc found ${l.id}, visiting")
                 case None => NotFound
               }
@@ -56,9 +48,9 @@ class VisitLocationsApiController @Inject()(
         if (!request.user.roles.contains(VisitUser)) Unauthorized("User does not have the right role")
         else {
 
-          locationService.getLocation(id) match {
+          locationService.findFirstLocationByNameTiplocCrsOrId(id) match {
             case Some(l) =>
-              locationService.visitLocation(l, request.user)
+              locationVisitService.visitLocation(l, request.user)
               Redirect(controllers.location.detail.routes.LocationDetailController.index(id))
             case None => NotFound
           }
@@ -70,9 +62,9 @@ class VisitLocationsApiController @Inject()(
       authAction { implicit request =>
         if (!request.user.roles.contains(VisitUser)) Unauthorized("User does not have the right role")
         else {
-          locationService.getLocation(id) match {
+          locationService.findFirstLocationByNameTiplocCrsOrId(id) match {
             case Some(l) =>
-              locationService.visitLocation(l, request.user)
+              locationVisitService.visitLocation(l, request.user)
               Redirect(controllers.location.list.crs.routes.LocationsByCrsController.index())
             case None => NotFound
           }
@@ -84,9 +76,9 @@ class VisitLocationsApiController @Inject()(
       authAction { implicit request =>
         if (!request.user.roles.contains(VisitUser)) Unauthorized("User does not have the right role")
         else {
-          locationService.getLocation(id) match {
+          locationService.findFirstLocationByNameTiplocCrsOrId(id) match {
             case Some(l) =>
-              locationService.visitLocation(l, request.user)
+              locationVisitService.visitLocation(l, request.user)
               Redirect(controllers.location.list.tiploc.routes.LocationsByTiplocController.index())
             case None => NotFound
           }
@@ -97,10 +89,10 @@ class VisitLocationsApiController @Inject()(
 
     def getAllVisitsForLocation(id: String) = {
       authAction { implicit request =>
-        val location = locationService.getLocation(id)
+        val location = locationService.findFirstLocationByNameTiplocCrsOrId(id)
         location match {
           case Some(loc) =>
-            val visits: List[String] = locationService.getVisitsForLocation(loc, request.user)
+            val visits: List[String] = locationVisitService.getVisitsForLocation(loc, request.user)
             Ok(Json.toJson(visits))
           case None => NotFound
         }
@@ -109,7 +101,7 @@ class VisitLocationsApiController @Inject()(
 
     def getAllVisitsForLocations() = {
       authAction { implicit request =>
-        Ok(Json.toJson(locationService.getVisitedLocations(request.user)))
+        Ok(Json.toJson(locationVisitService.getVisitedLocations(request.user)))
       }
     }
 
@@ -117,9 +109,9 @@ class VisitLocationsApiController @Inject()(
       authAction { implicit request =>
         if (!request.user.roles.contains(VisitUser)) Unauthorized("User does not have the right role")
         else {
-          locationService.getLocation(id) match {
+          locationService.findFirstLocationByNameTiplocCrsOrId(id) match {
             case Some(l) =>
-              locationService.deleteLastVisit(l, request.user)
+              locationVisitService.deleteLastVisit(l, request.user)
               Redirect(controllers.location.detail.routes.LocationDetailController.index(id))
             case None => NotFound
           }
@@ -131,9 +123,9 @@ class VisitLocationsApiController @Inject()(
       authAction { implicit request =>
         if (!request.user.roles.contains(VisitUser)) Unauthorized("User does not have the right role")
         else {
-          locationService.getLocation(id) match {
+          locationService.findFirstLocationByNameTiplocCrsOrId(id) match {
             case Some(l) =>
-              locationService.deleteAllVisits(l, request.user)
+              locationVisitService.deleteAllVisits(l, request.user)
               Redirect(controllers.location.detail.routes.LocationDetailController.index(id))
             case None => NotFound
           }

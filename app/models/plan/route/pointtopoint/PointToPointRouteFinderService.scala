@@ -1,8 +1,9 @@
 package models.plan.route.pointtopoint
 
 import javax.inject.{Inject, Singleton}
-import models.location.{Location, LocationsService}
+import models.location.Location
 import models.route.Route
+import services.location.LocationService
 import services.route.RouteService
 
 import scala.collection.mutable
@@ -10,7 +11,7 @@ import scala.collection.mutable
 @Singleton
 class PointToPointRouteFinderService @Inject()(
                                                 routesService: RouteService,
-                                                locationsService: LocationsService
+                                                locationsService: LocationService
                            ) {
 
   def findRouteForWaypoints(waypoints: List[String], followFixedLinks: Boolean = false, followFreightLinks: Boolean = false, followUnknownLinks: Boolean = false): Path = {
@@ -40,7 +41,7 @@ class PointToPointRouteFinderService @Inject()(
       for (i <- 0 until waypoints.size - 1 ) {
         val from = waypoints(i).trim.toUpperCase()
         val to = waypoints(i + 1).trim.toUpperCase()
-        (locationsService.getLocationByIdOrOrrId(from.toUpperCase), locationsService.getLocationByIdOrOrrId(to.toUpperCase)) match {
+        (locationsService.findFirstLocationByIdOrCrs(from.toUpperCase), locationsService.findFirstLocationByIdOrCrs(to.toUpperCase)) match {
           case (Some(f), Some(t)) =>
             val routeLocations: List[Location] = list(f, t, followFixedLinks, followFreightLinks, followUnknownLinks)
             if(i == 0) {
@@ -179,7 +180,7 @@ class PointToPointRouteFinderService @Inject()(
     val locs: Set[Location] =
       (siblingRoutes.map(_.from.id) ++ siblingRoutes.map {_.to.id})
         .filterNot(_.equals(location.id))
-        .flatMap(l => locationsService.getLocationByIdOrOrrId(l))
+        .flatMap(l => locationsService.findFirstLocationByIdOrCrs(l))
 
     locs
   }

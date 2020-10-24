@@ -1,13 +1,13 @@
 package models.timetable.dto.location.simple
 
-import models.location.LocationsService
 import models.plan.timetable.trains.TrainTimetableServiceUrlHelper
 import models.timetable.dto.location.SortableDisplayTimetable
 import models.timetable.model.location.TimetableForLocation
+import services.location.LocationService
 
 object DisplaySimpleLocationTimetable {
 
-  def apply(locationsService: LocationsService, simpleTimetable: TimetableForLocation, year: Int, month: Int, day: Int): DisplaySimpleLocationTimetable = {
+  def apply(locationsService: LocationService, simpleTimetable: TimetableForLocation, year: Int, month: Int, day: Int): DisplaySimpleLocationTimetable = {
     val arrival = simpleTimetable.pubArr.map(_.toString).getOrElse("")
     val departure = simpleTimetable.pubDep.map(_.toString).getOrElse("")
     val platform = simpleTimetable.platform.map(_.toString).getOrElse("")
@@ -16,8 +16,8 @@ object DisplaySimpleLocationTimetable {
     DisplaySimpleLocationTimetable(
       arrival,
       departure,
-      simpleTimetable.origin.flatMap({ o => locationsService.findLocationByTiploc(o).map(_.name)}).getOrElse(simpleTimetable.origin.getOrElse("")),
-      simpleTimetable.destination.flatMap({ o => locationsService.findLocationByTiploc(o).map(_.name)}).getOrElse(simpleTimetable.destination.getOrElse("")),
+      simpleTimetable.origin.flatMap({ o => locationsService.findFirstLocationByTiploc(o).map(_.name)}).getOrElse(simpleTimetable.origin.getOrElse("")),
+      simpleTimetable.destination.flatMap({ o => locationsService.findFirstLocationByTiploc(o).map(_.name)}).getOrElse(simpleTimetable.destination.getOrElse("")),
       platform,
       TrainTimetableServiceUrlHelper.createUrlForDisplayingTrainSimpleTimetable(simpleTimetable.uid, year, month, day),
       if(arrival != "") "Arr." else "",

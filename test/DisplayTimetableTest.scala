@@ -3,7 +3,7 @@
 //
 //import com.typesafe.config.{ConfigFactory, ConfigValueFactory}
 //import data.{LocationMapBasedDataProvider, RouteMapBasedDataProvider}
-//import models.location.LocationsService
+//import services.visit.location.LocationsService
 //import models.plan.TrainService
 //import models.plan.route.pointtopoint.PointToPointRouteFinderService
 //import models.route.RoutesService

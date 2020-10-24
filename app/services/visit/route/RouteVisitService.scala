@@ -1,4 +1,4 @@
-package models.visits.route
+package services.visit.route
 
 import com.typesafe.config.Config
 import javax.inject.{Inject, Singleton}

@@ -1,18 +1,15 @@
 package controllers.profile.visit.location
 
-import java.util.concurrent.TimeoutException
-
 import auth.JWTService
 import auth.api.AuthorizedAction
 import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject.{Inject, Singleton}
 import models.auth.UserDao
-import models.data.postgres.RouteDataIdConverter
-import models.location.{Location, LocationsService, MapLocation}
-import models.route.Route
-import models.visits.Event
-import models.visits.route.RouteVisitService
+import models.location.{Location, MapLocation}
 import play.api.mvc.{AbstractController, AnyContent, ControllerComponents}
+import services.location.LocationService
+import services.visit.location.LocationVisitService
+import services.visit.route.RouteVisitService
 
 import scala.concurrent.duration.Duration
 import scala.concurrent.{Await, Future}
@@ -22,8 +19,8 @@ class LocationVisitsController @Inject()(
                                           userDao: UserDao,
                                           jwtService: JWTService,
                                           cc: ControllerComponents,
-                                          locationsService: LocationsService,
-                                          routesService: RouteVisitService,
+                                          locationsService: LocationService,
+                                          locationVisitsService: LocationVisitService,
                                           authenticatedUserAction: AuthorizedWebAction,
                                           authorizedAction: AuthorizedAction
                                         ) extends AbstractController(cc) {
@@ -31,20 +28,21 @@ class LocationVisitsController @Inject()(
 
   def index = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     val visits: Map[String, List[String]] =
-      locationsService
+      locationVisitsService
         .getVisitsForUser(request.user)
         .getOrElse(Map.empty[String, List[String]])
 
     val visitedLocations: Map[String, Location] = visits
       .keySet
-      .map(v => v -> locationsService.getLocation(v))
+      .map(v => v -> locationsService.findFirstLocationByTiploc(v))
       .filter(_._2.nonEmpty)
       .map(v => v._1 -> v._2.get)
       .toMap
 
     val locationsAndVisits: List[(Location, List[String])] = visits
-      .map(visit => {
-        (visitedLocations(visit._1), visit._2)
+      .keys
+      .map(key => {
+        (visitedLocations(key), visits(key))
       })
       .toList
 
@@ -75,7 +73,7 @@ class LocationVisitsController @Inject()(
       println("Trying to get indexes")
       val locationsAndVisitIndexFF: List[Future[(String, Option[Int])]] = visits
         .keys
-        .map(visit => Future(visit -> locationsService.getStationVisitNumber(request.user, visit)))
+        .map(visit => Future(visit -> locationVisitsService.getStationVisitNumber(request.user, visit)))
         .toList
 
 

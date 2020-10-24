@@ -5,17 +5,13 @@ import java.time.LocalTime
 import auth.api.AuthorizedAction
 import javax.inject.{Inject, Singleton}
 import models.auth.roles.PlanUser
-import models.location
-import models.location.{LocationsService, MapLocation}
-import models.plan.timetable.TimetableDateTimeHelper
 import models.plan.timetable.location.LocationTimetableService
 import models.plan.timetable.trains.TrainTimetableService
-import models.timetable.model.train.IndividualTimetableLocation
-import models.visits.route.RouteVisitService
 import org.json4s.DefaultFormats
 import org.json4s.jackson.Serialization.write
 import play.api.Environment
 import play.api.mvc.{AbstractController, ControllerComponents}
+import services.location.LocationService
 
 import scala.concurrent.duration.{Duration, FiniteDuration}
 import scala.concurrent.{Await, Future, TimeoutException}
@@ -23,8 +19,8 @@ import scala.concurrent.{Await, Future, TimeoutException}
 @Singleton
 class PlanCallingPointHighlightApiController @Inject()(
                                                         env: Environment,
+                                                        locationsService: LocationService,
                                                         cc: ControllerComponents,
-                                                        locationsService: LocationsService,
                                                         trainTimetableService: TrainTimetableService,
                                                         locationTimetableService: LocationTimetableService,
                                                         authAction: AuthorizedAction // NEW - add the action as a constructor argument
@@ -49,13 +45,13 @@ class PlanCallingPointHighlightApiController @Inject()(
             (dateParts(0), dateParts(1), dateParts(2))
           } else (0, 0, 0)
 
-          val locs = locationsService.findAllLocationsMatchingCrs(location).flatMap(l => locationsService.findAllLocationsMatchingCrs(l.crs.mkString))
+          val locs = locationsService.findAllLocationsByCrs(location).flatMap(l => locationsService.findAllLocationsByCrs(l.crs.mkString))
           if(locs.isEmpty) BadRequest(s"location $location not found")
           println(s"trying to get timetable for location $location (${locs.map(_.id)}) on date $y $m $d with hasCalledAt $hasCalledAt and willCallAt $willCallAt")
 
 
-          val willCallAtLoc = if(!willCallAt.isBlank) locationsService.findLocationByNameTiplocCrsOrId(willCallAt).map(_.id) else None
-          val hasCalledAtLoc = if(!hasCalledAt.isBlank) locationsService.findLocationByNameTiplocCrsOrId(hasCalledAt).map(_.id) else None
+          val willCallAtLoc = if(!willCallAt.isBlank) locationsService.findFirstLocationByNameTiplocCrsOrId(willCallAt).map(_.id) else None
+          val hasCalledAtLoc = if(!hasCalledAt.isBlank) locationsService.findFirstLocationByNameTiplocCrsOrId(hasCalledAt).map(_.id) else None
 
           val eventualResult: Future[Seq[HighlightLocationTimetableEntry]] = Future.sequence(locs.map(l => locationTimetableService.getTrainsForLocation(l.id, y, m, d, 0, 2400, hasCalledAtLoc, willCallAtLoc).timetables.map {
               timetables =>
@@ -63,8 +59,8 @@ class PlanCallingPointHighlightApiController @Inject()(
                   .filter(t => t.publicTrain && t.publicStop)
                   .map(t => HighlightLocationTimetableEntry(
                     t.uid,
-                    t.origin.flatMap(locationsService.findLocationByNameTiplocCrsOrId).map(_.name).getOrElse(t.origin.getOrElse("")),
-                    t.destination.flatMap(locationsService.findLocationByNameTiplocCrsOrId).map(_.name).getOrElse(t.destination.getOrElse("")),
+                    t.origin.flatMap(locationsService.findFirstLocationByNameTiplocCrsOrId).map(_.name).getOrElse(t.origin.getOrElse("")),
+                    t.destination.flatMap(locationsService.findFirstLocationByNameTiplocCrsOrId).map(_.name).getOrElse(t.destination.getOrElse("")),
                     t.pubArr.map(_.toString).getOrElse(t.arr.map(_.toString).getOrElse("")),
                     t.pubDep.map(_.toString).getOrElse(t.dep.map(_.toString).getOrElse("")),
                     t.platform.getOrElse(""),

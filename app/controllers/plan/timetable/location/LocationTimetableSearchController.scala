@@ -4,21 +4,15 @@ import auth.JWTService
 import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject.Inject
 import models.auth.roles.PlanUser
-import models.location.LocationsService
-import models.plan.route.pointtopoint.PointToPointRouteFinderService
-import models.plan.timetable.location.LocationTimetableService
-import models.plan.timetable.trains.TrainTimetableService
 import models.timetable.dto.TimetableHelper
 import play.api.i18n.I18nSupport
 import play.api.mvc.{AbstractController, Action, AnyContent, ControllerComponents}
+import services.location.LocationService
 
 class LocationTimetableSearchController @Inject()(
                                                    cc: ControllerComponents,
                                                    authenticatedUserAction: AuthorizedWebAction,
-                                                   locationsService: LocationsService,
-                                                   pathService: PointToPointRouteFinderService,
-                                                   locationTrainService: LocationTimetableService,
-                                                   timetableService: TrainTimetableService,
+                                                   locationsService: LocationService,
                                                    jwtService: JWTService
 
                                                  ) extends AbstractController(cc) with I18nSupport {
@@ -26,7 +20,7 @@ class LocationTimetableSearchController @Inject()(
   def index(): Action[AnyContent] = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     if (request.user.roles.contains(PlanUser)) {
 
-      Ok(views.html.plan.search.index(request.user, locationsService.getLocations, TimetableHelper.defaultDate, List())(request.request))
+      Ok(views.html.plan.search.index(request.user, locationsService.locations.toList, TimetableHelper.defaultDate, List())(request.request))
     }
     else {
       Forbidden("User not authorized to view page")

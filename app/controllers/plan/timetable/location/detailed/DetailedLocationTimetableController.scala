@@ -1,7 +1,7 @@
 package controllers.plan.timetable.location.detailed
 
-import java.time.{LocalDate, LocalDateTime, ZonedDateTime}
 import java.time.format.DateTimeFormatter
+import java.time.{LocalDate, LocalDateTime}
 import java.util.Date
 
 import auth.JWTService
@@ -9,15 +9,13 @@ import auth.web.{AuthorizedWebAction, WebUserContext}
 import controllers.plan.timetable.location.simple.SimpleTimeShift
 import javax.inject.Inject
 import models.auth.roles.PlanUser
-import models.location.LocationsService
-import models.plan.route.pointtopoint.PointToPointRouteFinderService
 import models.plan.timetable.TimetableDateTimeHelper
 import models.plan.timetable.location.LocationTimetableService
-import models.plan.timetable.trains.TrainTimetableService
 import models.timetable.dto.TimetableHelper
 import models.timetable.dto.location.detailed.DisplayDetailedLocationTimetable
 import play.api.i18n.I18nSupport
 import play.api.mvc._
+import services.location.LocationService
 
 import scala.concurrent.duration.Duration
 import scala.concurrent.{Await, Future, TimeoutException}
@@ -25,10 +23,8 @@ import scala.concurrent.{Await, Future, TimeoutException}
 class DetailedLocationTimetableController @Inject()(
                                                      cc: ControllerComponents,
                                                      authenticatedUserAction: AuthorizedWebAction,
-                                                     locationsService: LocationsService,
-                                                     pathService: PointToPointRouteFinderService,
-                                                     trainService: LocationTimetableService,
-                                                     timetableService: TrainTimetableService,
+                                                     locationsService: LocationService,
+                                                     locationTimetableService: LocationTimetableService,
                                                      jwtService: JWTService
 
                                                ) extends AbstractController(cc) with I18nSupport {
@@ -44,8 +40,8 @@ class DetailedLocationTimetableController @Inject()(
 
       println(s"Fetching Detailed trains for $loc on $year-$month-$day (date $date) from $from to $to having called at $hasCalledAt and will call at $willCallAt")
 
-      val hca = if(!hasCalledAt.isBlank) locationsService.findLocationByNameTiplocCrsOrId(hasCalledAt).map(_.id) else None
-      val wca = if(!willCallAt.isBlank) locationsService.findLocationByNameTiplocCrsOrId(willCallAt).map(_.id) else None
+      val hca = if(!hasCalledAt.isBlank) locationsService.findFirstLocationByNameTiplocCrsOrId(hasCalledAt).map(_.id) else None
+      val wca = if(!willCallAt.isBlank) locationsService.findFirstLocationByNameTiplocCrsOrId(willCallAt).map(_.id) else None
 
       val actualDate = if(date.isBlank) {
         if(year == 0 || month == 0 || day == 0)
@@ -57,7 +53,7 @@ class DetailedLocationTimetableController @Inject()(
       val actualMonth = if(month == 0) LocalDate.now.getMonthValue else month
       val actualDay = if(day == 0) LocalDate.now.getDayOfMonth else day
 
-      val result = trainService.getDetailedTimetablesForLocation(loc, actualYear, actualMonth, actualDay, from, to, actualDate, hca, wca)
+      val result = locationTimetableService.getDetailedTimetablesForLocation(loc, actualYear, actualMonth, actualDay, from, to, actualDate, hca, wca)
 
       val now = s"$actualYear-$actualMonth-$actualDay ${TimetableDateTimeHelper.padTime(result.from)}"
       val requestedDateTime =
@@ -94,7 +90,7 @@ class DetailedLocationTimetableController @Inject()(
               TimetableHelper.time(result.to),
               hasCalledAt,
               willCallAt,
-              locationsService.getLocations,
+              locationsService.locations.toList,
               oneHourEarlier,
               oneDayEarlier,
               oneDayLater,
@@ -106,7 +102,7 @@ class DetailedLocationTimetableController @Inject()(
         }
         catch {
           case e: TimeoutException =>
-            InternalServerError(views.html.plan.search.index(request.user, locationsService.getLocations, TimetableHelper.defaultDate,
+            InternalServerError(views.html.plan.search.index(request.user, locationsService.locations.toList, TimetableHelper.defaultDate,
               List(s"Could not get details for $loc on $year-$month-$day",
                 "Timed out producing the page"
               ))
@@ -114,7 +110,7 @@ class DetailedLocationTimetableController @Inject()(
         }
       }
       else {
-        NotFound(views.html.plan.search.index(request.user, locationsService.getLocations, TimetableHelper.defaultDate,
+        NotFound(views.html.plan.search.index(request.user, locationsService.locations.toList, TimetableHelper.defaultDate,
           List(s"Could not get details for $loc on $year-$month-$day",
             s"Could not find location ${loc}"
           ))

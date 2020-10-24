@@ -9,15 +9,13 @@ import controllers.admin.AdminHelpers
 import javax.inject.Inject
 import models.auth.UserDao
 import models.auth.roles.AdminUser
-import models.location.LocationsService
-import models.visits.route.RouteVisitService
+import services.visit.route.RouteVisitService
 import play.api.mvc._
 
 class UpdateUserController @Inject()(
                                       userDao: UserDao,
                                       jwtService: JWTService,
                                       cc: ControllerComponents,
-                                      locationsService: LocationsService,
                                       routesService: RouteVisitService,
                                       authenticatedUserAction: AuthorizedWebAction,
                                       authorizedAction: AuthorizedAction

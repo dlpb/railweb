@@ -1,17 +1,16 @@
 package controllers.api.plan.locations
 
-import auth.api.{AuthorizedAction, UserRequest}
+import auth.api.AuthorizedAction
 import javax.inject.{Inject, Singleton}
-import models.auth.roles.{PlanUser, VisitUser}
-import models.location.{LocationsService, MapLocation}
+import models.auth.roles.PlanUser
+import models.location.MapLocation
 import models.plan.timetable.location.LocationTimetableService
 import models.plan.timetable.trains.TrainTimetableService
-import models.visits.route.RouteVisitService
 import org.json4s.DefaultFormats
 import org.json4s.jackson.Serialization.write
 import play.api.Environment
-import play.api.libs.json.Json
-import play.api.mvc.{AbstractController, AnyContent, ControllerComponents}
+import play.api.mvc.{AbstractController, ControllerComponents}
+import services.visit.route.RouteVisitService
 
 import scala.concurrent.duration.Duration
 import scala.concurrent.{Await, Future, TimeoutException}
@@ -20,7 +19,6 @@ import scala.concurrent.{Await, Future, TimeoutException}
 class PlanLocationsApiController @Inject()(
                                             env: Environment,
                                             cc: ControllerComponents,
-                                            locationService: LocationsService,
                                             routeService: RouteVisitService,
                                             trainService: LocationTimetableService,
                                             timetableService: TrainTimetableService,

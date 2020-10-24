@@ -110,8 +110,8 @@ function populatePointsWithHighlighting(map, token, highlighting) {
 }
 
  function addLocation(location, colourSource){
-    let lat = location.location.lat;
-    let lon = location.location.lon;
+    let lat = services.visit.location.lat;
+    let lon = services.visit.location.lon;
 
     var locationPointFeature = new ol.Feature({
         geometry: new ol.geom.Point(ol.proj.fromLonLat([lon, lat])),

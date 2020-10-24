@@ -4,17 +4,13 @@ import java.io.InputStream
 
 import com.typesafe.config.Config
 import javax.inject.{Inject, Singleton}
-import models.location.LocationsService
-import models.visits.route.RouteVisitService
 import org.json4s.DefaultFormats
 import org.json4s.jackson.JsonMethods.parse
 
 import scala.io.Source
 
 @Singleton
-class SrsService @Inject()(locationService: LocationsService,
-                           routesService: RouteVisitService,
-                           config: Config) {
+class SrsService @Inject()(config: Config) {
 
 
   private var srs: Set[Srs] = makeSrs(readSrsFromFile)

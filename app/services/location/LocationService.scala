@@ -1,0 +1,122 @@
+package services.location
+
+import java.io.InputStream
+
+import com.typesafe.config.Config
+import javax.inject.Inject
+import models.helpers.JsonFileReader
+import models.location.{GroupedListLocation, ListLocation, Location, MapLocation}
+import org.json4s.DefaultFormats
+import org.json4s.jackson.JsonMethods.parse
+
+import scala.io.Source
+
+class LocationService @Inject() (config: Config) {
+
+  def findFirstLocationByTiploc(tiploc: String): Option[Location] = findSingleLocationBy(_.id.equalsIgnoreCase(tiploc))
+
+  def findFirstLocationByCrs(crs: String): Option[Location] = findSingleLocationBy(l => l.orrId.isDefined && l.orrId.get.equals(crs))
+
+  def findAllLocationsByCrs(crs: String): Set[Location] = findAllLocationsBy(_.crs.contains(crs))
+
+  def findFirstLocationByIdOrCrs(key: String): Option[Location] =
+    findSingleLocationBy(l =>
+      l.id.equals(key) ||
+        l.orrId.isDefined && l.orrId.get.equals(key)
+    )
+
+  def findFirstLocationByNameTiplocCrsOrId(key: String): Option[Location] = {
+    findSingleLocationBy(l =>
+        l.name.toUpperCase.equals(key.toUpperCase) ||
+        l.id.toUpperCase.equals(key.toUpperCase) ||
+        l.tiploc.map(_.toUpperCase).contains(key.toUpperCase) ||
+        l.crs.map(_.toUpperCase).contains(key.toUpperCase)
+    )
+  }
+
+  def findLocationByNameTiplocCrsIdPrioritiseOrrStations(key: String): Option[Location] = {
+    val matchingLocsIncludingNonOrrStations = findAllLocationsBy(l =>
+            l.name.toUpperCase.equals(key.toUpperCase) ||
+            l.id.toUpperCase.equals(key.toUpperCase) ||
+            l.tiploc.map(_.toUpperCase).contains(key.toUpperCase) ||
+            l.crs.map(_.toUpperCase).contains(key.toUpperCase)
+      )
+
+    val matchingOrrLocations = matchingLocsIncludingNonOrrStations.filter(_.isOrrStation)
+    if(matchingOrrLocations.nonEmpty) matchingOrrLocations.headOption
+    else matchingLocsIncludingNonOrrStations.headOption
+  }
+
+  def findAllLocationsMatchingCrs(location: Location): Set[Location] = {
+    location.crs.flatMap({ crs =>
+      findAllLocationsBy(l => l.crs.contains(crs) && l.isOrrStation)
+    })
+  }
+
+  private val locationFileReader = new JsonFileReader
+
+  val locations: Set[Location] = locationFileReader.readAndParse[Set[Location]](config.getString("data.locations.path"))
+
+  val mapLocations: Set[MapLocation] = locations.map(MapLocation(_))
+
+  val sortedListLocationsGroupedByTiploc: List[ListLocation] = {
+    def sortLocations(a: ListLocation, b: ListLocation): Boolean = {
+      if(a.operator.equals(b.operator)) {
+        if(a.srs.equals(b.srs))
+          a.name < b.name
+        else a.srs < b.srs
+      }
+      else a.operator < b.operator
+    }
+
+    val listItems = locations map { l => ListLocation(l) }
+    listItems.toList.sortWith(sortLocations)
+  }
+
+  val sortedListLocationsGroupedByCrs: List[GroupedListLocation] = {
+    def sortLocations(a: GroupedListLocation, b: GroupedListLocation): Boolean = {
+      if(a.operator.equals(b.operator)) {
+        if(a.srs.equals(b.srs))
+          a.name < b.name
+        else a.srs < b.srs
+      }
+      else a.operator < b.operator
+    }
+
+    val groupedLocations: Map[String, List[Location]] = locations.toList
+      .filter(_.orrId.isDefined)
+      .groupBy(_.orrId.get)
+
+    val groupedListLocations: List[GroupedListLocation] = groupedLocations.keySet.map({
+      locationKey =>
+        val locationsInGroup = groupedLocations(locationKey)
+        val name = locationsInGroup.map(_.name).sortBy(_.length).headOption.getOrElse("")
+        val toc = locationsInGroup.map(_.operator).headOption.getOrElse("XX")
+        val `type` = locationsInGroup.map(_.`type`).headOption.getOrElse("")
+        val orrStation = locationsInGroup.forall(_.orrStation)
+        val srs = locationsInGroup.flatMap(_.nrInfo.map(_.srs)).headOption.getOrElse("")
+        val relatedLocations = locationsInGroup.map(ListLocation(_))
+
+        val groupedLocation = GroupedListLocation(locationKey, name, toc, `type`,  orrStation, srs, relatedLocations)
+        groupedLocation
+    }).toList
+
+    val groupedLocationsSorted = groupedListLocations.sortWith(sortLocations)
+    groupedLocationsSorted
+  }
+
+
+  def findSingleLocationBy(predicate: Location => Boolean): Option[Location] = locations.find(predicate)
+
+  def findAllLocationsBy(predicate: Location => Boolean): Set[Location] = locations.filter(predicate)
+
+  def readLocationsFromFile: String = {
+    val path = "/data/static/locations.json"
+    val data: InputStream = getClass().getResourceAsStream(path)
+    Source.fromInputStream(data).mkString  }
+
+  def makeLocations(locations: String): Set[Location] = {
+    implicit val formats = DefaultFormats
+    parse(locations).extract[Set[Location]]
+  }
+}

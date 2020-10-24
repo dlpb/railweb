@@ -8,10 +8,8 @@ import com.google.common.base.Charsets
 import com.google.common.io.BaseEncoding
 import javax.inject.Inject
 import models.auth.roles.PlanUser
-import models.location.{Location, LocationsService, MapLocation}
+import models.location.{Location, MapLocation}
 import models.plan.highlight.{HighlightTimetableService, LocationsCalledAtFromTimetable, TimetableFound, TrainPlanEntry}
-import models.plan.route.pointtopoint.PointToPointRouteFinderService
-import models.plan.timetable.location.LocationTimetableService
 import models.plan.timetable.trains.TrainTimetableService
 import models.srs.SrsService
 import models.timetable.model.train.IndividualTimetable
@@ -19,6 +17,7 @@ import play.api.data.Form
 import play.api.data.Forms._
 import play.api.i18n.I18nSupport
 import play.api.mvc._
+import services.location.LocationService
 
 import scala.concurrent.duration.Duration
 import scala.concurrent.{Await, Future}
@@ -26,9 +25,7 @@ import scala.concurrent.{Await, Future}
 class TrainCallingPointHighlightController @Inject()(
                                                       cc: ControllerComponents,
                                                       authenticatedUserAction: AuthorizedWebAction,
-                                                      locationsService: LocationsService,
-                                                      pathService: PointToPointRouteFinderService,
-                                                      trainService: LocationTimetableService,
+                                                      locationsService: LocationService,
                                                       timetableService: TrainTimetableService,
                                                       highlightTimetableService: HighlightTimetableService,
                                                       srsService: SrsService,
@@ -45,7 +42,7 @@ class TrainCallingPointHighlightController @Inject()(
       Ok(views.html.plan.location.highlight.trains.newView(
         request.user,
         token,
-        locationsService.getLocations.filter(_.isOrrStation).sortBy(_.name),
+        locationsService.locations.filter(_.isOrrStation).toList.sortBy(_.name),
         List.empty,
         List.empty,
         List.empty,
@@ -82,8 +79,8 @@ class TrainCallingPointHighlightController @Inject()(
       val locationsToHighlight: List[Location] = locationsToHighlightKeys
         .map(loc => loc.trim)
         .flatMap(loc => {
-          if(loc.contains(".")) locationsService.getLocations.filter(_.nrInfo.map(_.srs).contains(loc))
-          else locationsService.findLocationByNameTiplocCrsOrId(loc)
+          if(loc.contains(".")) locationsService.locations.filter(_.nrInfo.map(_.srs).contains(loc))
+          else locationsService.findFirstLocationByNameTiplocCrsOrId(loc)
         })
 
       val groupedDataByRow: Map[String, Map[String, String]] = highlightTimetableService.getTrainDataFromFormEntryGroupedByRow(data)
@@ -120,7 +117,7 @@ class TrainCallingPointHighlightController @Inject()(
     Ok(views.html.plan.location.highlight.trains.newView(
       request.user,
       token,
-      locationsService.getLocations.filter(_.isOrrStation).sortBy(_.name),
+      locationsService.locations.filter(_.isOrrStation).toList.sortBy(_.name),
       formDataToReturn,
       mapLocationsCalledAt,
       List.empty,
@@ -144,19 +141,21 @@ class TrainCallingPointHighlightController @Inject()(
         else locations
           .replaceAll("\\s+", ",")
           .split(",")
+          .toList
           .flatMap {
-            locationsService.findLocationByNameTiplocCrsIdPrioritiseOrrStations
+            locationsService.findFirstLocationByNameTiplocCrsOrId
           }
           .map {
             MapLocation(_)
-          }.toList
+          }
 
       val srs = srsLocations
         .replaceAll("\\s+", ",")
         .split(",")
 
       val srsMapLocations: List[MapLocation] = if(srsLocations.isEmpty) List.empty[MapLocation] else locationsService
-        .getLocations
+        .locations
+        .toList
         .filter {
           loc =>
             srs.contains(loc.nrInfo.map {

@@ -1,13 +1,11 @@
 package controllers.tocs.all
 
 import javax.inject.Inject
-import models.location.LocationsService
 import models.toc.{PresentationTocData, TocService}
 import play.api.mvc.{AbstractController, ControllerComponents}
 
 class AllTocController @Inject()(
                                              cc: ControllerComponents,
-                                             locationsService: LocationsService,
                                              tocService: TocService
                                            ) extends AbstractController(cc){
 

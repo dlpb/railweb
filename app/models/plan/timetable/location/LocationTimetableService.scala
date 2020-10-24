@@ -3,11 +3,10 @@ package models.plan.timetable.location
 import java.io.FileNotFoundException
 
 import javax.inject.Inject
-import models.location.{Location, LocationsService}
+import models.location.Location
 import models.plan.route.pointtopoint.PointToPointRouteFinderService
 import models.plan.timetable.TimetableDateTimeHelper
 import models.plan.timetable.reader.{Reader, WebZipInputStream}
-import models.timetable.dto.TimetableHelper
 import models.timetable.dto.location.detailed.DisplayDetailedLocationTimetable
 import models.timetable.dto.location.simple.DisplaySimpleLocationTimetable
 import models.timetable.model.JsonFormats
@@ -15,13 +14,13 @@ import models.timetable.model.location.TimetableForLocation
 import org.json4s.DefaultFormats
 import org.json4s.native.JsonMethods.parse
 import play.api.libs.ws.{WSClient, WSRequest}
-import play.api.mvc.Result
+import services.location.LocationService
 
-import scala.concurrent.{Await, Future, TimeoutException}
+import scala.concurrent.Future
 import scala.concurrent.duration.Duration
 
 class LocationTimetableService @Inject()(
-                                          locationsService: LocationsService,
+                                          locationsService: LocationService,
                                           pathService: PointToPointRouteFinderService,
                                           ws: WSClient,
                                           reader: Reader = new WebZipInputStream) {
@@ -87,7 +86,7 @@ class LocationTimetableService @Inject()(
                                                       date: String,
                                                       hasCalledAt: Option[String],
                                                       willCallAt: Option[String],
-                                                      mappingFn: (LocationsService, TimetableForLocation, Int, Int, Int) => M,
+                                                      mappingFn: (LocationService, TimetableForLocation, Int, Int, Int) => M,
                                                       resultFn: (Future[Seq[M]], Int, Int, Int, Int, Int, Set[Location]) => R,
                                                       showDetailedResults: Boolean = false): R = {
     val (y, m, d): (Int, Int, Int) = if (date.contains("-")) {
@@ -95,7 +94,7 @@ class LocationTimetableService @Inject()(
       (dateParts(0), dateParts(1), dateParts(2))
     } else (year, month, day)
 
-    val locations = locationsService.findAllLocationsMatchingCrs(loc)
+    val locations = locationsService.findAllLocationsByCrs(loc)
 
     if (locations.nonEmpty) {
       val allTiplocResults: Set[LocationTimetableResult] = getAllTimetables(from, to, hasCalledAt, willCallAt, y, m, d, locations)

@@ -5,11 +5,8 @@ import java.util.Date
 import auth.JWTService
 import auth.api.AuthorizedAction
 import auth.web.{AuthorizedWebAction, WebUserContext}
-import controllers.routes
 import javax.inject._
 import models.auth.UserDao
-import models.location.LocationsService
-import models.visits.route.RouteVisitService
 import models.web.forms.ChangePassword
 import play.api.data.Form
 import play.api.data.Forms.{mapping, nonEmptyText}
@@ -20,8 +17,6 @@ class PasswordController @Inject()(
                                     userDao: UserDao,
                                     jwtService: JWTService,
                                     cc: ControllerComponents,
-                                    locationsService: LocationsService,
-                                    routesService: RouteVisitService,
                                     authenticatedUserAction: AuthorizedWebAction,
                                     authorizedAction: AuthorizedAction
                                            ) extends AbstractController(cc) {

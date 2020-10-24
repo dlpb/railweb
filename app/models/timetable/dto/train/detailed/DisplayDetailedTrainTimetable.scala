@@ -3,14 +3,12 @@ package models.timetable.dto.train.detailed
 import java.time.{LocalDate, ZoneId}
 import java.util.Date
 
-import models.location.LocationsService
-import models.plan.timetable.TimetableDateTimeHelper
 import models.plan.timetable.location.{LocationTimetableFilters, LocationTimetableServiceUrlHelper}
-import models.timetable.dto.TimetableHelper
 import models.timetable.model.train.IndividualTimetable
+import services.location.LocationService
 
 object DisplayDetailedTrainTimetable {
-  def apply(locationsService: LocationsService, tt: IndividualTimetable, year: Int, month: Int, day: Int) : DisplayDetailedTrainTimetable = {
+  def apply(locationsService: LocationService, tt: IndividualTimetable, year: Int, month: Int, day: Int) : DisplayDetailedTrainTimetable = {
     val date = LocalDate.of(year, month, day)
     val m = if(tt.basicSchedule.validMonday) "M" else ""
     val t = if(tt.basicSchedule.validTuesday) "T" else ""
@@ -24,8 +22,8 @@ object DisplayDetailedTrainTimetable {
 
 
     DisplayDetailedTrainTimetable(
-      tt.locations.headOption.flatMap(l => locationsService.findLocationByTiploc(l.tiploc).map(l => l.name)).getOrElse(""),
-      tt.locations.lastOption.flatMap(l => locationsService.findLocationByTiploc(l.tiploc).map(l => l.name)).getOrElse(""),
+      tt.locations.headOption.flatMap(l => locationsService.findFirstLocationByTiploc(l.tiploc).map(l => l.name)).getOrElse(""),
+      tt.locations.lastOption.flatMap(l => locationsService.findFirstLocationByTiploc(l.tiploc).map(l => l.name)).getOrElse(""),
       tt.basicScheduleExtraDetails.atocCode,
       tt.basicSchedule.trainIdentity,
       tt.basicSchedule.trainUid,
@@ -48,7 +46,7 @@ object DisplayDetailedTrainTimetable {
       tt.basicSchedule.stpIndicator.toString,
       tt.locations map {
         l =>
-          val loc = locationsService.findLocationByTiploc(l.tiploc)
+          val loc = locationsService.findFirstLocationByTiploc(l.tiploc)
           val isPass = l.pass.isDefined
 
           val public = LocationTimetableFilters.isPublicCategory(tt.basicSchedule.trainCategory)

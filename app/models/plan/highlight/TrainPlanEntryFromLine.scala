@@ -4,17 +4,16 @@ import java.time.format.DateTimeFormatter
 import java.time.{LocalDate, LocalTime}
 
 import models.location
-import models.location.LocationsService
 import models.plan.highlight
 import models.plan.timetable.trains.TrainTimetableService
-import models.timetable.model.train.{IndividualTimetable, IndividualTimetableLocation}
+import models.timetable.model.train.IndividualTimetable
+import services.location.LocationService
 
-import scala.collection.mutable.ListBuffer
 import scala.concurrent.duration.Duration
 import scala.concurrent.{Await, Future}
 
 object TrainPlanEntryFromLine {
-  def apply(line: String)(implicit locationsService: LocationsService, trainTimetableService: TrainTimetableService): TrainPlanEntryParseResult = {
+  def apply(line: String)(implicit locationsService: LocationService, trainTimetableService: TrainTimetableService): TrainPlanEntryParseResult = {
     if (line.startsWith("#")) TrainPlanEntryParseResult(None, List.empty)
     else {
 
@@ -37,7 +36,7 @@ object TrainPlanEntryFromLine {
   }
 
 
-  private def extractTimetablePlanEntryWithFixedWidthFormatting(trainTimetableService: TrainTimetableService, locationsService: LocationsService, line: String): TrainPlanEntryParseResult = {
+  private def extractTimetablePlanEntryWithFixedWidthFormatting(trainTimetableService: TrainTimetableService, locationsService: LocationService, line: String): TrainPlanEntryParseResult = {
 
     try {
       val boardDateStr = line.substring(0, 10)
@@ -67,7 +66,7 @@ object TrainPlanEntryFromLine {
     }
   }
 
-  private def extractFullTimetablePlanLine(trainTimetableService: TrainTimetableService, locationsService: LocationsService, lineParts: List[String]): TrainPlanEntryParseResult = {
+  private def extractFullTimetablePlanLine(trainTimetableService: TrainTimetableService, locationsService: LocationService, lineParts: List[String]): TrainPlanEntryParseResult = {
 
 
     if(lineParts != 10) {
@@ -107,7 +106,7 @@ object TrainPlanEntryFromLine {
 
   private def getTrainPlanEntryResult(
                                        trainTimetableService: TrainTimetableService,
-                                       locationsService: LocationsService,
+                                       locationsService: LocationService,
                                        boardLocationCrs: String,
                                        boardPlatform: String,
                                        alightPlatform: String,
@@ -139,10 +138,10 @@ object TrainPlanEntryFromLine {
       crs contains alightCrs
     })
 
-    val boardLocation = if(boardTiplocFromTimetable.isDefined) boardTiplocFromTimetable.get._2 else locationsService.findAllLocationsMatchingCrs(boardLocationCrs).head
-    val boardLocationTiploc = if(boardTiplocFromTimetable.isDefined) boardTiplocFromTimetable.get._1 else locationsService.findAllLocationsMatchingCrs(boardLocationCrs).map(_.id).headOption.getOrElse(boardLocationCrs)
-    val alightLocation = if(alightTiplocFromTimetable.isDefined) alightTiplocFromTimetable.get._2 else locationsService.findAllLocationsMatchingCrs(alightCrs).head
-    val alightLocationTiploc = if(alightTiplocFromTimetable.isDefined) alightTiplocFromTimetable.get._1 else locationsService.findAllLocationsMatchingCrs(alightCrs).map(_.id).headOption.getOrElse(boardLocationCrs)
+    val boardLocation = if(boardTiplocFromTimetable.isDefined) boardTiplocFromTimetable.get._2 else locationsService.findFirstLocationByCrs(boardLocationCrs).head
+    val boardLocationTiploc = if(boardTiplocFromTimetable.isDefined) boardTiplocFromTimetable.get._1 else locationsService.findFirstLocationByCrs(boardLocationCrs).map(_.id).getOrElse(boardLocationCrs)
+    val alightLocation = if(alightTiplocFromTimetable.isDefined) alightTiplocFromTimetable.get._2 else locationsService.findFirstLocationByCrs(alightCrs).head
+    val alightLocationTiploc = if(alightTiplocFromTimetable.isDefined) alightTiplocFromTimetable.get._1 else locationsService.findFirstLocationByCrs(alightCrs).map(_.id).getOrElse(boardLocationCrs)
 
     val boardAlightError: Option[IllegalArgumentException] = if (boardTiplocFromTimetable.isEmpty || alightTiplocFromTimetable.isEmpty) {
       val errorMsg = s"Could not find board location for $boardLocationCrs or alight location for $alightCrs in train $trainId on $boardDate with calling points ${callingPointsFromTimetable.map(c => s"${c._2.name}[${c._2.id}] [${c._2.crs}]")}"

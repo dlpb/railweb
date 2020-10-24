@@ -6,15 +6,18 @@ import auth.JWTService
 import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject.{Inject, Singleton}
 import models.auth.roles.MapUser
-import models.location.{GroupedListLocation, ListLocation, Location, LocationsService}
+import models.location.ListLocation
 import play.api.mvc._
+import services.location.LocationService
+import services.visit.location.LocationVisitService
 
 
 @Singleton
 class LocationsByTiplocController @Inject()(
                                              cc: ControllerComponents,
                                              authenticatedUserAction: AuthorizedWebAction,
-                                             locationService: LocationsService,
+                                             locationService: LocationService,
+                                             locationVisitService: LocationVisitService,
                                              jwtService: JWTService
 
                                            ) extends AbstractController(cc) {
@@ -23,7 +26,7 @@ class LocationsByTiplocController @Inject()(
   def index(orr: Boolean, operator: String, name: String, id: String, srs: String) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     if (request.user.roles.contains(MapUser)) {
       val token = jwtService.createToken(request.user, new Date())
-      val locations: List[ListLocation] = locationService.defaultListLocations
+      val locations: List[ListLocation] = locationService.sortedListLocationsGroupedByTiploc
         .filter({
           loc =>
             val orrFlag = if (orr) loc.orrStation else true
@@ -33,7 +36,7 @@ class LocationsByTiplocController @Inject()(
             val srsFlag = if (!srs.equals("all")) loc.srs.toLowerCase.contains(srs.toLowerCase) else true
             orrFlag && operatorFlag && nameFlag && idFlag && srsFlag
         })
-      val visited = locationService.getVisitedLocations(request.user)
+      val visited = locationVisitService.getVisitedLocations(request.user)
 
       val visits: Map[String, Boolean] = locations.map({
         l =>

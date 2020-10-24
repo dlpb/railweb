@@ -1,3 +1,4 @@
+@import services.visit.location.PathElementLocation
 @(
 user: models.auth.User,
 location: models.location.Location,
@@ -6,7 +7,7 @@ token: String,
 visitUrl: Call,
 removeLast: Call,
 removeAll: Call,
-nearestLocations: List[models.location.PathElementLocation]
+nearestLocations: List[PathElementLocation]
 )(implicit request: Request[AnyContent])
 
 @templates.main(location.name, "Locations", Some(user)){
@@ -189,7 +190,7 @@ nearestLocations: List[models.location.PathElementLocation]
     }
 </style>
 
-@listLocation(l: List[models.location.PathElementLocation], nestedDepth: Int = 0) = {
+@listLocation(l: List[PathElementLocation], nestedDepth: Int = 0) = {
 <ul class="adjacentRoutes" >
     @for(locationWithIndex <- l.zipWithIndex){
     <li class="adjacentRoutes">

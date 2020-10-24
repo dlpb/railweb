@@ -7,18 +7,19 @@ import auth.JWTService
 import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject.{Inject, Singleton}
 import models.auth.roles.MapUser
-import models.location.{LocationsService, MapLocation}
+import models.location.MapLocation
 import models.plan.route.pointtopoint.PointToPointRouteFinderService
 import models.route.display.map.MapRoute
-import models.visits.route.RouteVisitService
 import play.api.mvc.{AbstractController, AnyContent, ControllerComponents}
+import services.visit.location.LocationVisitService
+import services.visit.route.RouteVisitService
 
 @Singleton
 class PointToPointRouteController @Inject()(
                                              cc: ControllerComponents,
                                              authenticatedUserAction: AuthorizedWebAction,
                                              pathService: PointToPointRouteFinderService,
-                                             locationsService: LocationsService,
+                                             locationsService: LocationVisitService,
                                              routesService: RouteVisitService,
                                              jwtService: JWTService
 

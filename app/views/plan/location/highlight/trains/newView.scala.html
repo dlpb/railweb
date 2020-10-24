@@ -269,7 +269,7 @@ $("document").ready(function() {
 
 function enableLocation(element){
         var $this=$(element);
-        $this.parent().parent().parent().find('.location')[0].removeAttribute("disabled");
+        $this.parent().parent().parent().find('.services.visit.location')[0].removeAttribute("disabled");
         $this.parent().parent().parent().find('.search')[0].removeAttribute("disabled");
         $this.parent().parent().parent().find('.willCallAt')[0].removeAttribute("disabled");
         $this.parent().parent().parent().find('.hasCalledAt')[0].removeAttribute("disabled");
@@ -374,8 +374,8 @@ function addLocationSuggestion(element){
         $this.attr("disabled", "disabled");
         console.log("setting location suggestions");
 
-        var location = $this.parent().parent().parent().find('.location')[0].value;
-        $this.parent().parent().parent().find('.location')[0].setAttribute("disabled", "disabled");
+        var location = $this.parent().parent().parent().find('.services.visit.location')[0].value;
+        $this.parent().parent().parent().find('.services.visit.location')[0].setAttribute("disabled", "disabled");
         $this.parent().parent().parent().find('.search')[0].setAttribute("disabled", "disabled");
 
         $this.parent().parent().parent().find('.willCallAt')[0].setAttribute("disabled", "disabled");
@@ -427,7 +427,7 @@ function addLocationSuggestion(element){
             });
 
             $this.removeAttr("disabled");
-            $this.parent().parent().parent().find('.location')[0].removeAttribute("disabled");
+            $this.parent().parent().parent().find('.services.visit.location')[0].removeAttribute("disabled");
             $this.parent().parent().parent().find('.train-id')[0].removeAttribute("disabled");
             $this.parent().parent().parent().find('.search')[0].removeAttribute("disabled");
             $this.parent().parent().parent().find('.willCallAt')[0].removeAttribute("disabled");

@@ -5,7 +5,7 @@ import data.RouteMapBasedDataProvider
 import models.auth.User
 import models.data.postgres.RouteDataIdConverter
 import models.route.{Route, RoutePoint}
-import models.visits.route.RouteVisitService
+import services.visit.route.RouteVisitService
 import org.mockito.MockitoSugar
 import org.scalatest.BeforeAndAfterAll
 import org.scalatest.flatspec.AnyFlatSpec

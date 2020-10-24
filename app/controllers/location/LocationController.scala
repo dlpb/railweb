@@ -1,13 +1,9 @@
 package controllers.location
 
-import java.util.Date
-
 import auth.JWTService
 import auth.web.{AuthorizedWebAction, WebUserContext}
-import controllers.routes
 import javax.inject.{Inject, Singleton}
 import models.auth.roles.MapUser
-import models.location.{GroupedListLocation, ListLocation, Location, LocationsService}
 import play.api.mvc._
 
 
@@ -15,7 +11,6 @@ import play.api.mvc._
 class LocationController @Inject()(
                                        cc: ControllerComponents,
                                        authenticatedUserAction: AuthorizedWebAction,
-                                       locationService: LocationsService,
                                        jwtService: JWTService
 
                                      ) extends AbstractController(cc) {

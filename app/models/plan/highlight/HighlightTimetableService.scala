@@ -1,18 +1,17 @@
 package models.plan.highlight
 
 import java.time.{LocalDate, LocalTime}
-import java.time.format.DateTimeFormatter
 import java.util.UUID
 
 import javax.inject.{Inject, Singleton}
-import models.location.{Location, LocationsService, MapLocation}
+import models.location.{Location, MapLocation}
 import models.plan.highlight
 import models.plan.highlight.FormKeyTypes.{KeyName, KeyValue, TypeOfKey}
-import models.plan.timetable.TimetableDateTimeHelper
 import models.plan.timetable.location.LocationTimetableService
 import models.plan.timetable.trains.TrainTimetableService
 import models.timetable.model.train.IndividualTimetable
 import play.api.mvc.ControllerComponents
+import services.location.LocationService
 
 import scala.concurrent.{Await, ExecutionContext, Future}
 import scala.concurrent.duration.Duration
@@ -20,7 +19,7 @@ import scala.concurrent.duration.Duration
 @Singleton
 class HighlightTimetableService @Inject()(
                                            cc: ControllerComponents,
-                                           locationsService: LocationsService,
+                                           locationsService: LocationService,
                                            trainService: LocationTimetableService,
                                            timetableService: TrainTimetableService
                                          ) {

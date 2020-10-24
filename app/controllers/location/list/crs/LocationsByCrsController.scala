@@ -6,15 +6,18 @@ import auth.JWTService
 import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject.{Inject, Singleton}
 import models.auth.roles.MapUser
-import models.location.{GroupedListLocation, ListLocation, Location, LocationsService}
+import models.location.GroupedListLocation
 import play.api.mvc._
+import services.location.LocationService
+import services.visit.location.LocationVisitService
 
 
 @Singleton
 class LocationsByCrsController @Inject()(
                                           cc: ControllerComponents,
                                           authenticatedUserAction: AuthorizedWebAction,
-                                          locationService: LocationsService,
+                                          locationService: LocationService,
+                                          locationVisitService: LocationVisitService,
                                           jwtService: JWTService
 
                                         ) extends AbstractController(cc) {
@@ -22,8 +25,8 @@ class LocationsByCrsController @Inject()(
   def index(orr: Boolean, operator: String, name: String, id: String, srs: String) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     if (request.user.roles.contains(MapUser)) {
       val token = jwtService.createToken(request.user, new Date())
-      val locationTiplocs = locationService.defaultListLocations.map(_.id)
-      val locations: List[GroupedListLocation] = locationService.groupedByCrsListLocations
+      val locationTiplocs = locationService.sortedListLocationsGroupedByCrs.map(_.id)
+      val locations: List[GroupedListLocation] = locationService.sortedListLocationsGroupedByCrs
         .filter({
           loc =>
             val orrFlag = if (orr) loc.orrStation else true
@@ -34,8 +37,8 @@ class LocationsByCrsController @Inject()(
             orrFlag && operatorFlag && nameFlag && idFlag && srsFlag
         })
 
-      val visited = locationService.getVisitedLocations(request.user)
-      val groupedVisited: List[String] = locationService.getVisitedLocationsByCrs(request.user)
+      val visited = locationVisitService.getVisitedLocations(request.user)
+      val groupedVisited: List[String] = locationVisitService.getVisitedLocationsByCrs(request.user)
 
       val groupVisits: Map[String, Boolean] = locations.map {
         l =>

@@ -1,15 +1,13 @@
 package controllers.plan.timetable.location.simple
 
-import java.time.{LocalDate, LocalDateTime}
 import java.time.format.DateTimeFormatter
+import java.time.{LocalDate, LocalDateTime}
 import java.util.Date
 
 import auth.JWTService
 import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject.Inject
 import models.auth.roles.PlanUser
-import models.location.LocationsService
-import models.plan.route.pointtopoint.PointToPointRouteFinderService
 import models.plan.timetable.TimetableDateTimeHelper
 import models.plan.timetable.location.{LocationSimpleTimetableResult, LocationTimetableService}
 import models.plan.timetable.trains.TrainTimetableService
@@ -17,6 +15,7 @@ import models.timetable.dto.TimetableHelper
 import models.timetable.dto.location.simple.DisplaySimpleLocationTimetable
 import play.api.i18n.I18nSupport
 import play.api.mvc._
+import services.location.LocationService
 
 import scala.concurrent.duration.Duration
 import scala.concurrent.{Await, Future, TimeoutException}
@@ -24,8 +23,7 @@ import scala.concurrent.{Await, Future, TimeoutException}
 class SimpleLocationTimetableController @Inject()(
                                                    cc: ControllerComponents,
                                                    authenticatedUserAction: AuthorizedWebAction,
-                                                   locationsService: LocationsService,
-                                                   pathService: PointToPointRouteFinderService,
+                                                   locationsService: LocationService,
                                                    locationTrainService: LocationTimetableService,
                                                    timetableService: TrainTimetableService,
                                                    jwtService: JWTService
@@ -42,8 +40,8 @@ class SimpleLocationTimetableController @Inject()(
     if (request.user.roles.contains(PlanUser)) {
       val token = jwtService.createToken(request.user, new Date())
 
-      val hca = if(!hasCalledAt.isBlank) locationsService.findLocationByNameTiplocCrsOrId(hasCalledAt).map(_.id) else None
-      val wca = if(!willCallAt.isBlank) locationsService.findLocationByNameTiplocCrsOrId(willCallAt).map(_.id) else None
+      val hca = if(!hasCalledAt.isBlank) locationsService.findFirstLocationByNameTiplocCrsOrId(hasCalledAt).map(_.id) else None
+      val wca = if(!willCallAt.isBlank) locationsService.findFirstLocationByNameTiplocCrsOrId(willCallAt).map(_.id) else None
 
       val actualDate = if(date.isBlank) {
         if(year == 0 || month == 0 || day == 0)
@@ -91,7 +89,7 @@ class SimpleLocationTimetableController @Inject()(
               TimetableHelper.time(result.to),
               hasCalledAt,
               willCallAt,
-              locationsService.getLocations,
+              locationsService.locations.toList,
               oneHourEarlier,
               oneDayEarlier,
               oneDayLater,
@@ -103,7 +101,7 @@ class SimpleLocationTimetableController @Inject()(
         }
         catch {
           case e: TimeoutException =>
-            InternalServerError(views.html.plan.search.index(request.user, locationsService.getLocations, TimetableHelper.defaultDate,
+            InternalServerError(views.html.plan.search.index(request.user, locationsService.locations.toList, TimetableHelper.defaultDate,
               List(s"Could not get details for location $loc on ${result.year}-${result.month}-${result.day}",
                 "Timed out producing the page"
               ))
@@ -112,7 +110,7 @@ class SimpleLocationTimetableController @Inject()(
       }
       else
       {
-        NotFound(views.html.plan.search.index(request.user, locationsService.getLocations, TimetableHelper.defaultDate,
+        NotFound(views.html.plan.search.index(request.user, locationsService.locations.toList, TimetableHelper.defaultDate,
           List(s"Could not get details for location $loc on ${year}-${month}-${day}",
             s"Location ${loc} not found"
           ))(request.request))

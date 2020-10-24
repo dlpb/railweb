@@ -1,26 +1,26 @@
 package models.plan.timetable.trains
 
 import java.io.FileNotFoundException
-import java.time.ZonedDateTime
 
 import javax.inject.{Inject, Singleton}
-import models.location.{LocationsService, MapLocation}
+import models.location.MapLocation
 import models.plan.route.pointtopoint.PointToPointRouteFinderService
 import models.plan.timetable.reader.{Reader, WebZipInputStream}
 import models.route.display.map.MapRoute
 import models.timetable.dto.train.detailed.DisplayDetailedTrainTimetable
 import models.timetable.dto.train.simple.DisplaySimpleTrainTimetable
-import models.timetable.model.{JsonFormats, LocalTimeSerializer}
+import models.timetable.model.JsonFormats
 import models.timetable.model.train._
 import org.json4s.DefaultFormats
 import org.json4s.native.JsonMethods.parse
 import play.api.libs.ws.{WSClient, WSRequest}
+import services.location.LocationService
 
 import scala.concurrent.duration.Duration
 import scala.concurrent.{Await, Future, TimeoutException}
 
 @Singleton
-class TrainTimetableService @Inject()(locationsService: LocationsService, pathService: PointToPointRouteFinderService, ws: WSClient, reader: Reader = new WebZipInputStream) {
+class TrainTimetableService @Inject()(locationsService: LocationService, pathService: PointToPointRouteFinderService, ws: WSClient, reader: Reader = new WebZipInputStream) {
 
   import scala.concurrent.ExecutionContext.Implicits.global
 
@@ -53,7 +53,7 @@ class TrainTimetableService @Inject()(locationsService: LocationsService, pathSe
 
   def createSimpleMapRoutes(tt: IndividualTimetable): List[MapRoute] = {
     val waypoints = tt.locations
-      .flatMap { l => locationsService.findLocationByTiploc(l.tiploc) }
+      .flatMap { l => locationsService.findFirstLocationByTiploc(l.tiploc) }
       .map(_.id)
 
     val routeParts: Iterator[Future[List[MapRoute]]] = waypoints.sliding(2).map { w => Future {
@@ -74,13 +74,13 @@ class TrainTimetableService @Inject()(locationsService: LocationsService, pathSe
   def createSimpleMapLocations(tt: IndividualTimetable): List[MapLocation] = {
     tt.locations
       .filter(l => l.publicArrival.isDefined || l.publicDeparture.isDefined)
-      .flatMap(l => locationsService.findLocationByTiploc(l.tiploc))
+      .flatMap(l => locationsService.findFirstLocationByTiploc(l.tiploc))
       .map(l => MapLocation(l))
   }
 
   def createDetailedMapLocations(tt: IndividualTimetable): List[MapLocation] = {
     tt.locations
-      .flatMap(l => locationsService.findLocationByTiploc(l.tiploc))
+      .flatMap(l => locationsService.findFirstLocationByTiploc(l.tiploc))
       .map(l => MapLocation(l))
   }
 

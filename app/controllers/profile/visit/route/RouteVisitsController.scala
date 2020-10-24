@@ -6,11 +6,8 @@ import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject.{Inject, Singleton}
 import models.auth.UserDao
 import models.data.postgres.RouteDataIdConverter
-import models.location.{LocationsService, MapLocation}
 import models.route.display.map.MapRoute
-import models.route.Route
-import models.visits.Event
-import models.visits.route.RouteVisitService
+import services.visit.route.RouteVisitService
 import play.api.mvc.{AbstractController, AnyContent, ControllerComponents}
 import services.route.RouteService
 
@@ -19,7 +16,6 @@ class RouteVisitsController @Inject()(
                                        userDao: UserDao,
                                        jwtService: JWTService,
                                        cc: ControllerComponents,
-                                       locationsService: LocationsService,
                                        routesService: RouteService,
                                        routeVisitService: RouteVisitService,
                                        authenticatedUserAction: AuthorizedWebAction,

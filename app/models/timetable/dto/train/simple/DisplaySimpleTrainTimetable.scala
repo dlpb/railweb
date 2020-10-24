@@ -2,22 +2,20 @@ package models.timetable.dto.train.simple
 
 import java.time.LocalDate
 
-import models.location.LocationsService
-import models.plan.timetable.TimetableDateTimeHelper
 import models.plan.timetable.location.LocationTimetableServiceUrlHelper
-import models.timetable.dto.TimetableHelper
 import models.timetable.model.train.IndividualTimetable
+import services.location.LocationService
 
 object DisplaySimpleTrainTimetable {
 
 
-  def apply(locationsService: LocationsService, tt: IndividualTimetable, year: Int, month: Int, day: Int): DisplaySimpleTrainTimetable = {
+  def apply(locationsService: LocationService, tt: IndividualTimetable, year: Int, month: Int, day: Int): DisplaySimpleTrainTimetable = {
     val date = LocalDate.of(year, month, day)
 
     DisplaySimpleTrainTimetable(
       tt.basicScheduleExtraDetails.atocCode,
-      tt.locations.headOption.flatMap(l => locationsService.findLocationByTiploc(l.tiploc).map(l => l.name)).getOrElse(""),
-      tt.locations.lastOption.flatMap(l => locationsService.findLocationByTiploc(l.tiploc).map(l => l.name)).getOrElse(""),
+      tt.locations.headOption.flatMap(l => locationsService.findFirstLocationByTiploc(l.tiploc).map(l => l.name)).getOrElse(""),
+      tt.locations.lastOption.flatMap(l => locationsService.findFirstLocationByTiploc(l.tiploc).map(l => l.name)).getOrElse(""),
       date,
       tt.locations
         .filter {
@@ -38,7 +36,7 @@ object DisplaySimpleTrainTimetable {
             val departure = l.departure
 
             val platform = l.platform
-            val loc = locationsService.findLocationByTiploc(l.tiploc)
+            val loc = locationsService.findFirstLocationByTiploc(l.tiploc)
             DisplaySimpleTrainTimetableCallingPoint(
               loc.map(_.name).getOrElse(""),
               arrival.map(_.toString).getOrElse(""),

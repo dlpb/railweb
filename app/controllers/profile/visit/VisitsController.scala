@@ -5,8 +5,7 @@ import auth.api.AuthorizedAction
 import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject.{Inject, Singleton}
 import models.auth.UserDao
-import models.location.LocationsService
-import models.visits.route.RouteVisitService
+import services.visit.route.RouteVisitService
 import play.api.mvc.{AbstractController, AnyContent, ControllerComponents}
 
 @Singleton
@@ -14,7 +13,6 @@ class VisitsController @Inject()(
                                   userDao: UserDao,
                                   jwtService: JWTService,
                                   cc: ControllerComponents,
-                                  locationsService: LocationsService,
                                   routesService: RouteVisitService,
                                   authenticatedUserAction: AuthorizedWebAction,
                                   authorizedAction: AuthorizedAction

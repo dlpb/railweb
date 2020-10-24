@@ -6,7 +6,7 @@ import auth.JWTService
 import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject.{Inject, Singleton}
 import models.auth.roles.MapUser
-import models.visits.route.RouteVisitService
+import services.visit.route.RouteVisitService
 import play.api.mvc._
 import services.route.RouteService
 

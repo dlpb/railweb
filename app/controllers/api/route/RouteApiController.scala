@@ -2,7 +2,6 @@ package controllers.api.route
 
 import auth.api.AuthorizedAction
 import javax.inject.{Inject, Singleton}
-import models.location.LocationsService
 import models.plan.timetable.location.LocationTimetableService
 import models.plan.timetable.trains.TrainTimetableService
 import org.json4s.DefaultFormats
@@ -15,7 +14,6 @@ import services.route.RouteService
 class RouteApiController @Inject()(
                                     env: Environment,
                                     cc: ControllerComponents,
-                                    locationService: LocationsService,
                                     routeService: RouteService,
                                     trainService: LocationTimetableService,
                                     timetableService: TrainTimetableService,

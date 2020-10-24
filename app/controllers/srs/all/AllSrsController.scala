@@ -1,13 +1,11 @@
 package controllers.srs.all
 
 import javax.inject.Inject
-import models.location.LocationsService
 import models.srs.{PresentationSrsData, SrsService}
 import play.api.mvc.{AbstractController, ControllerComponents}
 
 class AllSrsController @Inject()(
                                              cc: ControllerComponents,
-                                             locationsService: LocationsService,
                                              srsService: SrsService
                                            ) extends AbstractController(cc){
 

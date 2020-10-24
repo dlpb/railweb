@@ -8,25 +8,22 @@ import com.google.common.base.Charsets
 import com.google.common.io.BaseEncoding
 import javax.inject.Inject
 import models.auth.roles.PlanUser
-import models.location.{LocationsService, MapLocation}
+import models.location.MapLocation
 import models.plan.highlight._
-import models.plan.route.pointtopoint.PointToPointRouteFinderService
-import models.plan.timetable.location.LocationTimetableService
 import models.plan.timetable.trains.TrainTimetableService
 import models.srs.SrsService
 import play.api.data.Form
 import play.api.data.Forms._
 import play.api.i18n.I18nSupport
 import play.api.mvc._
+import services.location.LocationService
 
 import scala.concurrent.Future
 
 class TrainCallingPointUploadController @Inject()(
                                                    cc: ControllerComponents,
                                                    authenticatedUserAction: AuthorizedWebAction,
-                                                   locationsService: LocationsService,
-                                                   pathService: PointToPointRouteFinderService,
-                                                   trainService: LocationTimetableService,
+                                                   locationsService: LocationService,
                                                    timetableService: TrainTimetableService,
                                                    highlightTimetableService: HighlightTimetableService,
                                                    srsService: SrsService,
@@ -84,7 +81,7 @@ class TrainCallingPointUploadController @Inject()(
           BadRequest(views.html.plan.location.highlight.trains.newView(
             request.user,
             token,
-            locationsService.getLocations.filter(_.isOrrStation).sortBy(_.name),
+            locationsService.locations.filter(_.isOrrStation).toList.sortBy(_.name),
             List.empty,
             List.empty,
             List.empty,
@@ -124,7 +121,7 @@ class TrainCallingPointUploadController @Inject()(
     Ok(views.html.plan.location.highlight.trains.newView(
       request.user,
       token,
-      locationsService.getLocations.filter(_.isOrrStation).sortBy(_.name),
+      locationsService.locations.filter(_.isOrrStation).toList.sortBy(_.name),
       formDataToReturn,
       mapLocationsCalledAt,
       List.empty,

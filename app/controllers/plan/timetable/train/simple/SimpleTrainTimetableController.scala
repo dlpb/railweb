@@ -6,13 +6,11 @@ import auth.JWTService
 import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject.Inject
 import models.auth.roles.PlanUser
-import models.location.LocationsService
-import models.plan.route.pointtopoint.PointToPointRouteFinderService
-import models.plan.timetable.location.LocationTimetableService
 import models.plan.timetable.trains.TrainTimetableService
 import models.timetable.dto.TimetableHelper
 import play.api.i18n.I18nSupport
 import play.api.mvc._
+import services.location.LocationService
 
 import scala.concurrent.duration.Duration
 import scala.concurrent.{Await, TimeoutException}
@@ -20,9 +18,7 @@ import scala.concurrent.{Await, TimeoutException}
 class SimpleTrainTimetableController @Inject()(
                                                 cc: ControllerComponents,
                                                 authenticatedUserAction: AuthorizedWebAction,
-                                                locationsService: LocationsService,
-                                                pathService: PointToPointRouteFinderService,
-                                                trainService: LocationTimetableService,
+                                                locationsService: LocationService,
                                                 timetableService: TrainTimetableService,
                                                 jwtService: JWTService
 
@@ -39,7 +35,7 @@ class SimpleTrainTimetableController @Inject()(
           if(data.isDefined) {
             Ok(views.html.plan.timetable.simple.index(request.user, token, data.get.dst, data.get.basicSchedule ,data.get.mapLocations, data.get.routes, data.get.routeLink, List.empty)(request.request))
           }
-          else NotFound(views.html.plan.search.index(request.user,  locationsService.getLocations, TimetableHelper.defaultDate,
+          else NotFound(views.html.plan.search.index(request.user,  locationsService.locations.toList, TimetableHelper.defaultDate,
             List(s"Could not fnd train $train on $year-$month-$day. Please try searching again"
             )))
       }
@@ -48,7 +44,7 @@ class SimpleTrainTimetableController @Inject()(
       }
       catch{
         case e: TimeoutException =>
-          InternalServerError(views.html.plan.search.index(request.user,  locationsService.getLocations, TimetableHelper.defaultDate,
+          InternalServerError(views.html.plan.search.index(request.user,  locationsService.locations.toList, TimetableHelper.defaultDate,
             List(s"Could not get details for train $train on $year-$month-$day. Timed out producing the page"
             ))
           (request.request))
