@@ -63,7 +63,7 @@ class DetailedLocationTimetableController @Inject()(
       val requestedDateTime =
         LocalDateTime.parse(
           now,
-          DateTimeFormatter.ofPattern("yyyy-M-dd HHmm"))
+          DateTimeFormatter.ofPattern("yyyy-M-d HHmm"))
 
       val oneHourLaterTime = requestedDateTime.plusHours(1)
       val oneDayLaterTime = requestedDateTime.plusDays(1)
