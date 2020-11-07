@@ -45,15 +45,15 @@ class SimpleLocationTimetableController @Inject()(
       val hca = if(!hasCalledAt.isBlank) locationsService.findLocationByNameTiplocCrsOrId(hasCalledAt).map(_.id) else None
       val wca = if(!willCallAt.isBlank) locationsService.findLocationByNameTiplocCrsOrId(willCallAt).map(_.id) else None
 
-      val actualDate = if(date.isBlank) {
+      val (actualDate, actualYear, actualMonth, actualDay) = if(date.isBlank) {
         if(year == 0 || month == 0 || day == 0)
-          LocalDate.now().format(DateTimeFormatter.ofPattern("YYYY-MM-dd"))
+          (LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")), LocalDate.now.getYear, LocalDate.now.getMonthValue, LocalDate.now.getDayOfMonth)
         else
-          s"$year-$month-$day"
-      } else date
-      val actualYear = if(year == 0) LocalDate.now.getYear else year
-      val actualMonth = if(month == 0) LocalDate.now.getMonthValue else month
-      val actualDay = if(day == 0) LocalDate.now.getDayOfMonth else day
+          (s"$year-$month-$day", year, month, day)
+      } else {
+        val actualDateSupplied = LocalDate.parse(date, DateTimeFormatter.ofPattern("yyyy-MM-dd"))
+        (date, actualDateSupplied.getYear, actualDateSupplied.getMonthValue, actualDateSupplied.getDayOfMonth)
+      }
 
       val result: LocationSimpleTimetableResult = locationTrainService.getSimpleTimetablesForLocation(loc, actualYear, actualMonth, actualDay, from, to, actualDate, hca, wca)
 
