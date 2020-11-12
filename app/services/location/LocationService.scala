@@ -1,15 +1,9 @@
 package services.location
 
-import java.io.InputStream
-
 import com.typesafe.config.Config
 import javax.inject.Inject
 import models.helpers.JsonFileReader
 import models.location.{GroupedListLocation, ListLocation, Location, MapLocation}
-import org.json4s.DefaultFormats
-import org.json4s.jackson.JsonMethods.parse
-
-import scala.io.Source
 
 class LocationService @Inject() (config: Config) {
 
@@ -110,13 +104,4 @@ class LocationService @Inject() (config: Config) {
 
   def findAllLocationsBy(predicate: Location => Boolean): Set[Location] = locations.filter(predicate)
 
-  def readLocationsFromFile: String = {
-    val path = "/data/static/locations.json"
-    val data: InputStream = getClass().getResourceAsStream(path)
-    Source.fromInputStream(data).mkString  }
-
-  def makeLocations(locations: String): Set[Location] = {
-    implicit val formats = DefaultFormats
-    parse(locations).extract[Set[Location]]
-  }
 }

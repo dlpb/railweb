@@ -1,0 +1,85 @@
+[
+  {
+    "id":"LST",
+    "name":"London Liverpool Street",
+    "operator":"RT",
+    "type":"",
+    "location":{
+      "lat":51.51798916,
+      "lon":-0.08142601994,
+      "county":"London",
+      "district":"Greater London",
+      "postcode":"EC2M 7PY"
+    },
+    "nrInfo":{
+      "crp":"",
+      "route":"Anglia",
+      "srs":"D.10",
+      "changeTime":"",
+      "interchangeType":"3 - Large interchange point"
+    },
+    "orrStation":true,
+    "crs":[
+      "LST",
+      "LIX"
+    ],
+    "tiploc":[
+      "LIVST",
+      "LIVSTLL"
+    ]
+  },
+  {
+    "id":"KGX",
+    "name":"London Kings Cross original",
+    "operator":"RT",
+    "type":"",
+    "location":{
+      "lat":51.53088148,
+      "lon":-0.122925986,
+      "county":"London",
+      "district":"Greater London",
+      "postcode":"N1 9AL"
+    },
+    "nrInfo":{
+      "crp":"",
+      "route":"London North East and East Midlands",
+      "srs":"G.01",
+      "changeTime":"",
+      "interchangeType":"3 - Large interchange point"
+    },
+    "orrStation":false,
+    "crs":[
+      "KGX"
+    ],
+    "tiploc":[
+      "KNGX"
+    ]
+  },
+  {
+    "id":"KGX",
+    "name":"London Kings Cross Something Else",
+    "operator":"RT",
+    "type":"",
+    "location":{
+      "lat":51.53088148,
+      "lon":-0.122925986,
+      "county":"London",
+      "district":"Greater London",
+      "postcode":"N1 9AL"
+    },
+    "nrInfo":{
+      "crp":"",
+      "route":"London North East and East Midlands",
+      "srs":"G.01",
+      "changeTime":"",
+      "interchangeType":"3 - Large interchange point"
+    },
+    "orrStation":false,
+    "crs":[
+      "KGX"
+    ],
+    "tiploc":[
+      "KNGX"
+    ]
+  }
+]
