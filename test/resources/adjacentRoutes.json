@@ -1,0 +1,265 @@
+[ {
+  "from" : {
+    "lat" : 51.572334,
+    "lon" : 0.17272726,
+    "id" : "ROMF440",
+    "name" : "Romford Signal 440",
+    "type" : "Signal"
+  },
+  "to" : {
+    "lat" : 51.574637,
+    "lon" : 0.18236229,
+    "id" : "ROMFORD",
+    "name" : "Romford",
+    "type" : "Station"
+  },
+  "toc" : "FRGT",
+  "singleTrack" : "",
+  "electrification" : "",
+  "speed" : "",
+  "srsCode" : "",
+  "type" : "Unknown",
+  "distance" : 713
+}, {
+  "from" : {
+    "lat" : 51.568768003875505,
+    "lon" : 0.1365432143211365,
+    "id" : "CHDWHTT",
+    "name" : "Chadwell Heath Turnback",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.567929,
+    "lon" : 0.12797209,
+    "id" : "CHDWLHT",
+    "name" : "Chadwell Heath",
+    "type" : "Station"
+  },
+  "toc" : "NR",
+  "singleTrack" : "N",
+  "electrification" : " ",
+  "speed" : "",
+  "srsCode" : "",
+  "type" : "",
+  "distance" : 599
+}, {
+  "from" : {
+    "lat" : 51.571266,
+    "lon" : 0.16675963,
+    "id" : "ROMF438",
+    "name" : "Romford Signal 438",
+    "type" : "Signal"
+  },
+  "to" : {
+    "lat" : 51.574637,
+    "lon" : 0.18236229,
+    "id" : "ROMFORD",
+    "name" : "Romford",
+    "type" : "Station"
+  },
+  "toc" : "FRGT",
+  "singleTrack" : "",
+  "electrification" : "",
+  "speed" : "",
+  "srsCode" : "",
+  "type" : "Unknown",
+  "distance" : 1141
+}, {
+  "from" : {
+    "lat" : 51.58190207482915,
+    "lon" : 0.20596430843825325,
+    "id" : "GIDEAPK",
+    "name" : "Gidea Park",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.574637,
+    "lon" : 0.18236229,
+    "id" : "ROMFORD",
+    "name" : "Romford",
+    "type" : "Station"
+  },
+  "toc" : "XR",
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "speed" : "80-105",
+  "srsCode" : "D.10",
+  "type" : "NR",
+  "distance" : 1820
+}, {
+  "from" : {
+    "lat" : 51.571266,
+    "lon" : 0.16675963,
+    "id" : "ROMF107",
+    "name" : "Romford Signal L5107",
+    "type" : "Signal"
+  },
+  "to" : {
+    "lat" : 51.574637,
+    "lon" : 0.18236229,
+    "id" : "ROMFORD",
+    "name" : "Romford",
+    "type" : "Station"
+  },
+  "toc" : "LO",
+  "singleTrack" : "",
+  "electrification" : "",
+  "speed" : "",
+  "srsCode" : "",
+  "type" : "Unknown",
+  "distance" : 1141
+}, {
+  "from" : {
+    "lat" : 51.574637,
+    "lon" : 0.18236229,
+    "id" : "ROMFORD",
+    "name" : "Romford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.572424,
+    "lon" : 0.17414586,
+    "id" : "ROMFSDG",
+    "name" : "Romford Engineers Sidings",
+    "type" : "Point"
+  },
+  "toc" : "FRGT",
+  "singleTrack" : "",
+  "electrification" : "",
+  "speed" : "",
+  "srsCode" : "",
+  "type" : "Unknown",
+  "distance" : 618
+}, {
+  "from" : {
+    "lat" : 51.567929,
+    "lon" : 0.12797209,
+    "id" : "CHDWLHT",
+    "name" : "Chadwell Heath",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.565806,
+    "lon" : 0.11210185,
+    "id" : "GODMAYS",
+    "name" : "Goodmayes",
+    "type" : "Station"
+  },
+  "toc" : "XR",
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "speed" : "80-105",
+  "srsCode" : "D.10",
+  "type" : "NR",
+  "distance" : 1122
+}, {
+  "from" : {
+    "lat" : 51.565806,
+    "lon" : 0.11210185,
+    "id" : "GODMAYS",
+    "name" : "Goodmayes",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.563863,
+    "lon" : 0.096068296,
+    "id" : "SVNKNGS",
+    "name" : "Seven Kings",
+    "type" : "Station"
+  },
+  "toc" : "XR",
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "speed" : "80-105",
+  "srsCode" : "D.10",
+  "type" : "NR",
+  "distance" : 1129
+}, {
+  "from" : {
+    "lat" : 51.561286,
+    "lon" : 0.079170397,
+    "id" : "ILFEMUD",
+    "name" : "Ilford E.M.U.D.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.563863,
+    "lon" : 0.096068296,
+    "id" : "SVNKNGS",
+    "name" : "Seven Kings",
+    "type" : "Station"
+  },
+  "toc" : "LE",
+  "singleTrack" : "",
+  "electrification" : "",
+  "speed" : "",
+  "srsCode" : "",
+  "type" : "Unknown",
+  "distance" : 1202
+}, {
+  "from" : {
+    "lat" : 51.5608,
+    "lon" : 0.077662201,
+    "id" : "ILFELEJ",
+    "name" : "Ilford Lon End Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.563863,
+    "lon" : 0.096068296,
+    "id" : "SVNKNGS",
+    "name" : "Seven Kings",
+    "type" : "Station"
+  },
+  "toc" : "XR",
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "speed" : "80-105",
+  "srsCode" : "D.10",
+  "type" : "NR",
+  "distance" : 1317
+}, {
+  "from" : {
+    "lat" : 51.572334,
+    "lon" : 0.17272726,
+    "id" : "ROMF450",
+    "name" : "Romford Signal L450",
+    "type" : "Signal"
+  },
+  "to" : {
+    "lat" : 51.574637,
+    "lon" : 0.18236229,
+    "id" : "ROMFORD",
+    "name" : "Romford",
+    "type" : "Station"
+  },
+  "toc" : "LO",
+  "singleTrack" : "",
+  "electrification" : "",
+  "speed" : "",
+  "srsCode" : "",
+  "type" : "Unknown",
+  "distance" : 713
+}, {
+  "from" : {
+    "lat" : 51.56864,
+    "lon" : 0.2201709,
+    "id" : "EMRSPKH",
+    "name" : "Emerson Park",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.574637,
+    "lon" : 0.18236229,
+    "id" : "ROMFORD",
+    "name" : "Romford",
+    "type" : "Station"
+  },
+  "toc" : "LO",
+  "singleTrack" : "1",
+  "electrification" : "OHLE",
+  "speed" : "0-35",
+  "srsCode" : "D.17",
+  "type" : "NR",
+  "distance" : 2696
+}]
