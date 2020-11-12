@@ -1,7 +1,6 @@
 package services.location
 
 import com.typesafe.config.Config
-import models.location.Location
 import org.mockito.MockitoSugar
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
