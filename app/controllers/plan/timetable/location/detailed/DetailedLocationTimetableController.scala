@@ -43,15 +43,15 @@ class DetailedLocationTimetableController @Inject()(
       val hca = if(!hasCalledAt.isBlank) locationsService.findFirstLocationByNameTiplocCrsOrId(hasCalledAt).map(_.id) else None
       val wca = if(!willCallAt.isBlank) locationsService.findFirstLocationByNameTiplocCrsOrId(willCallAt).map(_.id) else None
 
-      val actualDate = if(date.isBlank) {
+      val (actualDate, actualYear, actualMonth, actualDay) = if(date.isBlank) {
         if(year == 0 || month == 0 || day == 0)
-          LocalDate.now().format(DateTimeFormatter.ofPattern("YYYY-MM-dd"))
+          (LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")), LocalDate.now.getYear, LocalDate.now.getMonthValue, LocalDate.now.getDayOfMonth)
         else
-          s"$year-$month-$day"
-      } else date
-      val actualYear = if(year == 0) LocalDate.now.getYear else year
-      val actualMonth = if(month == 0) LocalDate.now.getMonthValue else month
-      val actualDay = if(day == 0) LocalDate.now.getDayOfMonth else day
+          (s"$year-$month-$day", year, month, day)
+      } else {
+        val actualDateSupplied = LocalDate.parse(date, DateTimeFormatter.ofPattern("yyyy-MM-dd"))
+        (date, actualDateSupplied.getYear, actualDateSupplied.getMonthValue, actualDateSupplied.getDayOfMonth)
+      }
 
       val result = locationTimetableService.getDetailedTimetablesForLocation(loc, actualYear, actualMonth, actualDay, from, to, actualDate, hca, wca)
 
@@ -59,7 +59,7 @@ class DetailedLocationTimetableController @Inject()(
       val requestedDateTime =
         LocalDateTime.parse(
           now,
-          DateTimeFormatter.ofPattern("yyyy-M-dd HHmm"))
+          DateTimeFormatter.ofPattern("yyyy-M-d HHmm"))
 
       val oneHourLaterTime = requestedDateTime.plusHours(1)
       val oneDayLaterTime = requestedDateTime.plusDays(1)
