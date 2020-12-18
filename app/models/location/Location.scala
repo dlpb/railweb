@@ -66,7 +66,11 @@ case class ListLocation(id: String,
                         srs: String,
                         crs: Set[String],
                         orrId: Option[String]
-                      )
+                      ) {
+  def isOrrStation = orrStation && orrId.nonEmpty
+  def getLocationType = `type`
+}
+
 object ListLocation {
   def apply(location: Location): ListLocation = {
     new ListLocation(
@@ -87,5 +91,8 @@ case class GroupedListLocation(id: String,
                         operator: String,
                         `type`: String,
                         orrStation: Boolean,
+                        orrId: Option[String],
                         srs: String,
-                        relatedLocations: List[ListLocation])
+                        relatedLocations: List[ListLocation]) {
+  def isOrrStation = orrStation && orrId.nonEmpty
+}

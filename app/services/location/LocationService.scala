@@ -90,8 +90,9 @@ class LocationService @Inject() (config: Config) {
         val orrStation = locationsInGroup.forall(_.orrStation)
         val srs = locationsInGroup.flatMap(_.nrInfo.map(_.srs)).headOption.getOrElse("")
         val relatedLocations = locationsInGroup.map(ListLocation(_))
+        val orrId = locationsInGroup.flatMap(_.orrId).headOption
 
-        val groupedLocation = GroupedListLocation(locationKey, name, toc, `type`,  orrStation, srs, relatedLocations)
+        val groupedLocation = GroupedListLocation(locationKey, name, toc, `type`,  orrStation, orrId, srs, relatedLocations)
         groupedLocation
     }).toList
 
