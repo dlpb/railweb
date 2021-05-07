@@ -7,6 +7,7 @@ import auth.web.{AuthorizedWebAction, WebUserContext}
 import controllers.routes
 import javax.inject.{Inject, Singleton}
 import models.auth.roles.MapUser
+import models.route.Route
 import models.route.display.list.ListRoute
 import services.visit.route.RouteVisitService
 import play.api.mvc._
@@ -41,32 +42,35 @@ class RouteController @Inject()(
           val idFlag = if(!id.equals("all"))  r.from.id.toLowerCase.contains(id.toLowerCase) || r.to.id.toLowerCase.contains(id.toLowerCase) else true
           nrFlag && srsFlag && nameFlag && idFlag
       })
-      val visited = routeVisitService.getVisitedRoutes(request.user)
+      val visited: List[String] = routeVisitService
+        .getVisitedRoutes(request.user)
+        .distinct
+        .map(r => s"from:${r.from.id}-to:${r.to.id}")
 
-      def makeRouteKey(r: ListRoute) = {
+      def makeRouteKeyFromListRoute(r: ListRoute) = {
         s"from:${r.from.id}-to:${r.to.id}"
       }
 
       val token = jwtService.createToken(request.user, new Date())
       val visits: Map[String, Boolean] = routeList.map({
         r =>
-          val key = makeRouteKey(r)
+          val key = makeRouteKeyFromListRoute(r)
           key -> visited.contains(key)
       }).toMap
       val formActions: Map[String, Call] = routeList.map({
         r =>
-          val key = makeRouteKey(r)
+          val key = makeRouteKeyFromListRoute(r)
           key -> controllers.api.route.visit.routes.VisitRouteApiController.visitRouteFromList(r.from.id, r.to.id)
       }).toMap
       val routeMap: Map[String, ListRoute] = routeList.map({
         r =>
-          val key = makeRouteKey(r)
+          val key = makeRouteKeyFromListRoute(r)
           key -> r
       }).toMap
 
       val sortedRouteMap = ListMap(routeMap.toSeq.sortWith((a, b) => sortRoutes(a._2, b._2)) :_*)
 
-      val visitedCount = visited.count({ v => routeMap.keySet.contains(v) })
+      val visitedCount = visited.distinct.size
       val availableCount = routeMap.size
       val percentage = (visitedCount.toDouble / availableCount.toDouble) * 100.0
       val formattedPercentage: String = f"$percentage%1.1f"

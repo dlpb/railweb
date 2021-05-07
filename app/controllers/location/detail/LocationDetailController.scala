@@ -7,8 +7,10 @@ import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject.{Inject, Singleton}
 import models.auth.roles.MapUser
 import models.location.Location
+import models.data.Event
 import play.api.mvc._
 import services.location.{AdjacentLocationService, LocationService}
+import services.visit.event.EventService
 import services.visit.location.LocationVisitService
 
 
@@ -19,6 +21,7 @@ class LocationDetailController @Inject()(
                                           locationService: LocationService,
                                           adjacentLocationService: AdjacentLocationService,
                                           locationVisitService: LocationVisitService,
+                                          eventService: EventService,
                                           jwtService: JWTService,
                                         ) extends AbstractController(cc) {
 
@@ -31,10 +34,12 @@ class LocationDetailController @Inject()(
         case Some(loc) =>
           val value = adjacentLocationService.findAdjacentLocations(loc)
 
+          val events: List[Event] = locationVisitService.getEventsLocationWasVisited(loc, request.user)
+
           Ok(views.html.locations.detail.index(
           request.user,
           loc,
-          locationVisitService.getVisitsForLocation(loc, request.user),
+          events,
           token,
           controllers.api.locations.visit.routes.VisitLocationsApiController.visitLocationWithParams(id),
           controllers.api.locations.visit.routes.VisitLocationsApiController.removeLastVisitForLocation(id),

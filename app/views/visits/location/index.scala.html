@@ -2,7 +2,8 @@
 
 @(
 user: models.auth.User,
-locationVisits: List[(models.location.Location, List[String], Option[Int])],
+locationVisits: List[models.data.LocationVisit],
+locationVisitEvents: Map[String, List[models.data.Event]],
 mapLocations: List[models.location.MapLocation]
 )(implicit request: Request[AnyContent])
 @templates.main("All Visits by Location", "Profile", Some(user)){
@@ -19,14 +20,16 @@ mapLocations: List[models.location.MapLocation]
         </div>
         <div class="row">
             <div class="col-sm">
-                @for((location, visits, index) <- locationVisits) {
+                @for(visit <- locationVisits) {
                 <ul>
                     <li>
-                        <a href="/location/detail/@location.id" target="_blank">@location.name</a> [@location.crs.mkString(" ")] (@location.id)<br/>
-                        <span class="badge badge-info">Visited @visits.size times</span> @if(index.getOrElse(0) > 0) {<span class="badge badge-dark">Location @index</span>}
+                        <a href="/location/detail/@visit.visited.id" target="_blank">@visit.visited.name</a> [@visit.visited.crs.mkString(" ")] (@visit.visited.id)<br/>
+                        <span class="badge badge-info">Visited -1 times</span> @if(true) {<span class="badge badge-dark">Location -1</span>}
                         <ul>
-                            @for(visit <- visits){
-                            <li><a href="/profile/visits/by/event/@visit">@visit</a></li>
+                            @for(events <- locationVisitEvents.get(visit.visited.id) ){
+                              @for(event <- events) {
+                                  <li><a href="/profile/visits/by/event/@event.id">@event.name - (@event.startedAt - @event.endedAt)</a></li>
+                              }
                             }
                         </ul>
                     </li>

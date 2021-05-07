@@ -3,11 +3,14 @@ package controllers.api.locations.visit
 import auth.api.AuthorizedAction
 import javax.inject.{Inject, Singleton}
 import models.auth.roles.VisitUser
+import models.data.Event
 import org.json4s.DefaultFormats
+import org.json4s.jackson.Serialization.write
 import play.api.Environment
 import play.api.libs.json.Json
 import play.api.mvc.{AbstractController, ControllerComponents}
 import services.location.LocationService
+import services.visit.event.EventService
 import services.visit.location.LocationVisitService
 
 @Singleton
@@ -16,12 +19,11 @@ class VisitLocationsApiController @Inject()(
                                              cc: ControllerComponents,
                                              locationService: LocationService,
                                              locationVisitService: LocationVisitService,
+                                             eventService: EventService,
                                              authAction: AuthorizedAction // NEW - add the action as a constructor argument
                                           )
   extends AbstractController(cc) {
 
-
-    implicit val formats = DefaultFormats
 
     def visitLocation() = {
       authAction { implicit request =>
@@ -92,8 +94,10 @@ class VisitLocationsApiController @Inject()(
         val location = locationService.findFirstLocationByNameTiplocCrsOrId(id)
         location match {
           case Some(loc) =>
-            val visits: List[String] = locationVisitService.getVisitsForLocation(loc, request.user)
-            Ok(Json.toJson(visits))
+            implicit val formats = DefaultFormats ++ org.json4s.ext.JavaTimeSerializers.all
+
+            val visits: List[Event] = locationVisitService.getEventsLocationWasVisited(loc, request.user)
+            Ok(write(visits.map(_.id)))
           case None => NotFound
         }
       }
@@ -101,7 +105,8 @@ class VisitLocationsApiController @Inject()(
 
     def getAllVisitsForLocations() = {
       authAction { implicit request =>
-        Ok(Json.toJson(locationVisitService.getVisitedLocations(request.user)))
+        implicit val formats = DefaultFormats ++ org.json4s.ext.JavaTimeSerializers.all
+        Ok(write(locationVisitService.getVisitedLocations(request.user).map(_.id)))
       }
     }
 

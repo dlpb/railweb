@@ -4,17 +4,17 @@ import java.nio.file.{Files, Path, Paths}
 
 import com.typesafe.config.Config
 import models.auth.User
-import models.data.JsonDataProvider
+import models.data.{DataModelVisit, JsonVisitDataProvider, Visit}
 
 import scala.io.Source
 
-abstract class JsonFileBasedDataProvider[T](config: Config) extends JsonDataProvider[T]() {
+abstract class JsonFileBasedVisitDataProvider[TypeOfThingVisited, MemoryModelVisitType <: Visit[TypeOfThingVisited]](config: Config) extends JsonVisitDataProvider[TypeOfThingVisited, MemoryModelVisitType]() {
 
   def dataPath: String
 
   def root: String = config.getString("data.user.root")
 
-  def writeJson(visits: Map[String, List[String]], user: User): Unit = {
+  def writeJson(visits: List[DataModelVisit], user: User): Unit = {
     val path = Paths.get(getPathToFile(user))
     if(fileExists(path)){
       val json: String = modelToString(visits)
@@ -27,14 +27,14 @@ abstract class JsonFileBasedDataProvider[T](config: Config) extends JsonDataProv
     }
   }
 
-  def readJson(user: User): Option[Map[String, List[String]]] = {
+  def readJson(user: User): List[DataModelVisit] = {
     val path = Paths.get(getPathToFile(user))
     if(fileExists(path)){
       val contents = Source.fromFile(path.toFile).mkString
       stringToModel(contents)
     }
     else {
-      None
+      List.empty[DataModelVisit]
     }
   }
 

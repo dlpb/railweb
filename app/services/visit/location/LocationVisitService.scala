@@ -1,11 +1,14 @@
 package services.visit.location
 
+import java.time.LocalDateTime
+
 import com.typesafe.config.Config
 import javax.inject.{Inject, Singleton}
 import models.auth.User
-import models.data.LocationDataProvider
+import models.data.{DataModelVisit, Event, LocationDataProvider, LocationVisit, RouteVisit, Visit}
 import models.location.Location
 import services.location.LocationService
+import services.visit.event.EventService
   case class PathElementLocation(location: Location, adjacentPathElements: List[PathElementLocation]){
     override def toString: String = {
       location.id + "=>" + adjacentPathElements
@@ -15,92 +18,52 @@ import services.location.LocationService
 @Singleton
 class LocationVisitService @Inject() (config: Config,
                                       locationService: LocationService,
+                                      eventService: EventService,
                                   dataProvider: LocationDataProvider) {
 
-  def getVisitsForUser(user: User): Option[Map[String, List[String]]] = {
-    dataProvider.getVisits(user)
+  def getVisitsForUser(user: User): List[LocationVisit] = {
+    val visits: List[DataModelVisit] = dataProvider.getVisits(user)
+    visits.map(dataProvider.mapDataModelToMemoryModel)
   }
 
-  def saveVisits(visits: Option[Map[String, List[String]]], user: User) = {
-    dataProvider.saveVisits(visits, user)
+  def saveVisits(visits: List[LocationVisit], user: User) = {
+    dataProvider.saveVisits(visits.map(dataProvider.mapMemoryModelToDataModel), user)
   }
 
-  def getVisitedLocations(user: User): List[String] = {
-    dataProvider.getVisits(user).map {
+  def saveVisitsAsJson(json: String, user: User) = dataProvider.saveVisits(json, user)
+
+  def getVisitsAsJson(user: User) = {
+    dataProvider.getVisitsAsJson(user)
+  }
+
+  def getVisitedLocations(user: User): List[Location] = {
+    getVisitsForUser(user).map {
       data =>
-        data.keySet.toList
-    } .getOrElse(List())
+        data.visited
+    }
   }
 
   def getVisitedLocationsByCrs(user: User): List[String] = {
     val orrLocs = locationService.locations.filter(_.orrId.isDefined).groupBy(_.orrId)
 
-    dataProvider.getVisits(user).map {
-      data =>
-        val map: List[String] = data.keySet.toList.flatMap {
-          tiploc =>
-            val visitedTiplocForCrs: Set[String] = {
-              val crsForTiploc: Set[String] = locationService.locations.filter(_.id.equals(tiploc)).flatMap(_.orrId)
-              val locationsForTiploc: Set[Location] = crsForTiploc.flatMap { crs =>
-                orrLocs.get(Some(crs))
-              }.flatten
-              locationsForTiploc.flatMap {
-                _.crs
-              }
-            }
-
-            val result: Set[String] = if (visitedTiplocForCrs.nonEmpty) visitedTiplocForCrs else Set()
-            result
-        }
-        map
-    }.getOrElse(Set()).toList
+    getVisitsForUser(user).flatMap({
+      visit => visit.visited.orrId.toList
+    })
   }
 
-
-  def getVisitsForLocation(location: Location, user: User): List[String] = {
-    dataProvider.getVisits(user) flatMap {
-      _.get(dataProvider.idToString(location))
-    } match {
-      case Some(list) => list
-      case None => List()
-    }
+  def getVisitsForLocation(location: Location, user: User): List[Visit[Location]] = {
+    getVisitsForUser(user).filter(_.visited == location)
   }
 
-  def getLocationsVisitedForEvent(event: String, user: User): List[Location] = {
-    val filteredEvents: Map[String, List[String]] = getVisitsForUser(user)
-      .getOrElse(Map.empty)
-      .filter(_._2.contains(event))
+  def isVisitFirstVisitForLocation(visit: Visit[Location], user: User, locationId: String): Boolean = {
+    val visits = getVisitsForUser(user)
 
-    val locations: List[Location] = filteredEvents.keySet.flatMap({
-        eventKey =>
-         val locationIds = filteredEvents(eventKey)
-         val locations = locationIds.flatMap(locationService.findFirstLocationByTiploc)
-        locations
-      })
-      .toList
+    val visitsForLocation = visits.filter(_.visited.id.equals(locationId))
 
-    locations
-  }
-
-  def isVisitFirstVisitForLocation(event: String, user: User, locationId: String): Boolean = {
-   val visits = getVisitsForUser(user)
-     .getOrElse(Map.empty)
-
-    val thisVisit: Map[String, List[String]] = visits
-     .filter(_._2.contains(event))
-    val thisLocation: Map[String, List[String]] = thisVisit
-     .filter(_._1.equals(locationId))
-    val visitsToThisLocation: Iterable[String] =
-      thisLocation
-        .values
-        .flatten
-        .toList
-        .sorted
-    val firstVisitAtThisLocation = visitsToThisLocation.headOption.getOrElse("")
-    val isThisFirstVisit = firstVisitAtThisLocation.equals(event)
-
-    isThisFirstVisit
-
+    visitsForLocation
+      .sortBy(_.eventOccurredAt)
+      .headOption
+      .exists(_.visited.id.equals(locationId))
   }
 
   val locationTiplocToCrs = locationService.locations
@@ -110,46 +73,77 @@ class LocationVisitService @Inject() (config: Config,
 
 
   def getStationVisitNumber(user: User, locationId: String): Option[Int] = {
-//    findLocationByTiploc(locationId).map(_.isOrrStation) map( _ => {
-//      val visits = getVisitsForUser(user)
-//        .getOrElse(Map.empty)
-//
-//      val stationVisits: List[(String, String)] = visits
-//        .flatMap(visitsForLocation => visitsForLocation._2.map(v => (visitsForLocation._1, v)))
-//        .toList
-//
-//      val sortedStationVisits: List[(String, String)] = stationVisits
-//        .sortBy(_._2)
-//        .map(v => {
-//          locationTiplocToCrs.get(v._1).flatten -> v._2
-//        })
-//        .filterNot(_._1.isEmpty)
-//        .map(v => v._1.head -> v._2)
-//        .distinctBy(_._1)
-//
-//
-//      val indexOfStation =
-//        locationTiplocToCrs.get(locationId).flatten.map(crs => {
-//          sortedStationVisits
-//            .indexWhere(v => v._1.equals(crs)) + 1
-//        }).getOrElse(0)
-//
-//     indexOfStation
-//    })
+    //    findLocationByTiploc(locationId).map(_.isOrrStation) map( _ => {
+    //      val visits = getVisitsForUser(user)
+    //        .getOrElse(Map.empty)
+    //
+    //      val stationVisits: List[(String, String)] = visits
+    //        .flatMap(visitsForLocation => visitsForLocation._2.map(v => (visitsForLocation._1, v)))
+    //        .toList
+    //
+    //      val sortedStationVisits: List[(String, String)] = stationVisits
+    //        .sortBy(_._2)
+    //        .map(v => {
+    //          locationTiplocToCrs.get(v._1).flatten -> v._2
+    //        })
+    //        .filterNot(_._1.isEmpty)
+    //        .map(v => v._1.head -> v._2)
+    //        .distinctBy(_._1)
+    //
+    //
+    //      val indexOfStation =
+    //        locationTiplocToCrs.get(locationId).flatten.map(crs => {
+    //          sortedStationVisits
+    //            .indexWhere(v => v._1.equals(crs)) + 1
+    //        }).getOrElse(0)
+    //
+    //     indexOfStation
+    //    })
     None
   }
 
   def visitLocation(location: Location, user: User): Unit = {
-    dataProvider.saveVisit(location, user)
+    val visit = dataProvider.mapMemoryModelToDataModel(LocationVisit(location, LocalDateTime.now(), LocalDateTime.now(), "MANUAL_VISIT"))
+    eventService.ensureActiveEvent(user)
+    dataProvider.saveVisit(visit, user)
   }
 
   def deleteLastVisit(location: Location, user: User): Unit = {
-    dataProvider.removeLastVisit(location, user)
+    dataProvider.removeLastVisit(dataProvider.mapMemoryModelToDataModel(LocationVisit(location, LocalDateTime.MIN, LocalDateTime.MIN, "DELETE_LAST_VISIT")), user)
   }
 
   def deleteAllVisits(location: Location, user: User): Unit = {
-    dataProvider.removeAllVisits(location, user)
+    dataProvider.removeAllVisits(dataProvider.mapMemoryModelToDataModel(LocationVisit(location, LocalDateTime.MIN, LocalDateTime.MIN, "DELETE_ALL_VISIT")), user)
   }
 
+  def getLocationsVisitedForEvent(event: Event, user: User): List[Location] = {
+    val visits = getVisitsForUser(user)
+
+    eventService.ensureAllVisitsHaveAnEvent(visits, user)
+
+    visits
+      .filter(v => v.eventOccurredAt.isBefore(event.endedAt) || v.eventOccurredAt.isEqual(event.endedAt))
+      .filter(v => v.eventOccurredAt.isAfter(event.startedAt) || v.eventOccurredAt.isEqual(event.startedAt))
+      .sortBy(_.eventOccurredAt)
+      .map(_.visited)
+  }
+
+  def getEventsLocationWasVisited(location: Location, user: User): List[Event] = {
+
+    val events = eventService.getEventsForUser(user)
+    val locationVisits = getVisitsForLocation(location, user)
+
+    eventService.ensureAllVisitsHaveAnEvent(locationVisits, user)
+
+      val eventsForLocation: List[Event] = locationVisits
+        .filter(_.visited.equals(location))
+        .flatMap(v => {
+          events
+            .filter(e => v.eventOccurredAt.isBefore(e.endedAt) || v.eventOccurredAt.isEqual(e.endedAt))
+            .filter(e => v.eventOccurredAt.isAfter(e.startedAt) || v.eventOccurredAt.isEqual(e.startedAt))
+        })
+        .distinctBy(_.id)
+      eventsForLocation
+  }
 
 }

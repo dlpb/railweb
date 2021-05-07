@@ -2,10 +2,10 @@
 
 @import models.route.display.map.MapRoute
 @(
-user: models.auth.User,
-routeVisits: Map[(String, String), List[String]],
-invalidRoutes: Set[(String, String)],
-mapRoutes: List[MapRoute]
+        user: models.auth.User,
+        routeVisits: List[models.data.RouteVisit],
+        routeVisitEvents: Map[(String, String), List[models.data.Event]],
+        mapRoutes: List[MapRoute]
 )(implicit request: Request[AnyContent])
 
 @templates.main("All Visits by Route", "Profile", Some(user)){
@@ -31,21 +31,18 @@ mapRoutes: List[MapRoute]
         </div>
         <div class="row">
             <div class="col-sm">
-                @for((key, value) <- routeVisits) {
+                @for(visit <- routeVisits) {
                 <ul>
                     <li>
-                        <a href="/route/detail/@key._1/@key._2" target="_blank">@key._1 - @key._2</a> - visited @value.size times
-                        @if(invalidRoutes.contains(key._1, key._2)){
-                            <span class="badge badge-danger">Invalid Route</span>
-                            @if(user.roles.contains(models.auth.roles.AdminUser)){
-                                <a href="/admin/routes/migrate?from=@key._1&to=@key._2">Migrate Route</a>
-                            }
-                        }
-                        <ul>
-                            @for(v <- value){
-                            <li><a href="/profile/visits/by/event/@v">@v</a></li>
-                            }
-                        </ul>
+                        <a href="/route/detail/@visit.visited.from/@visit.visited.to" target="_blank">@visit.visited.from.name - @visit.visited.to.name</a> - visited times
+                          @for(events <- routeVisitEvents.get((visit.visited.from.id, visit.visited.to.id))) {
+                              <ul>
+                                @for(event <- events) {
+
+                                    <li><a href="/profile/visits/by/event/@event.id">@event.name (@event.startedAt-@event.endedAt)</a></li>
+                                }
+                              </ul>
+                          }
                     </li>
                 </ul>
 

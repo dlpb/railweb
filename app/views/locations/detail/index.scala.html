@@ -2,7 +2,7 @@
 @(
 user: models.auth.User,
 location: models.location.Location,
-visits: List[String],
+visits: List[models.data.Event],
 token: String,
 visitUrl: Call,
 removeLast: Call,
@@ -89,7 +89,7 @@ nearestLocations: List[PathElementLocation]
                 <h3>Visits</h3>
                 <ul>
                     @for(visit <- visits){
-                    <li><a href="/profile/visits/by/event/@visit">@visit</a></li>
+                    <li><a href="/profile/visits/by/event/@visit.id">@visit.name</a></li>
                     }
                 </ul>
             </div>

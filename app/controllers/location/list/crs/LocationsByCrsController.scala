@@ -6,9 +6,10 @@ import auth.JWTService
 import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject.{Inject, Singleton}
 import models.auth.roles.MapUser
-import models.location.{GroupedListLocation, ListLocation}
+import models.location.{GroupedListLocation, Location}
 import play.api.mvc._
 import services.location.LocationService
+import services.visit.event.EventService
 import services.visit.location.LocationVisitService
 @Singleton
 class LocationsByCrsController @Inject()(
@@ -16,6 +17,7 @@ class LocationsByCrsController @Inject()(
   authenticatedUserAction: AuthorizedWebAction,
   locationService: LocationService,
   locationVisitService: LocationVisitService,
+  eventService: EventService,
   jwtService: JWTService
 ) extends AbstractController(cc) {
 
@@ -34,14 +36,10 @@ class LocationsByCrsController @Inject()(
         filterByOrr && filterByOperator && filterByName && filterById && filterBySrs
       })
 
-  def getVisitStatus(locations: List[GroupedListLocation], visitedIds: List[String]): Map[String, Boolean] =
+  def getVisitStatus(locations: List[Location], visitedIds: List[String]): Map[String, Boolean] =
     locations
     .map({ l =>
-      l.id -> {
-        val relatedIds = l.relatedLocations.map(_.id)
-        val isRelatedIdVisited = relatedIds.exists(visitedIds.contains(_))
-        isRelatedIdVisited
-      }
+      l.id -> visitedIds.contains(l.id)
     })
     .toMap
 
@@ -77,39 +75,66 @@ class LocationsByCrsController @Inject()(
     implicit request: WebUserContext[AnyContent] =>
       if (request.user.roles.contains(MapUser)) {
         val token = jwtService.createToken(request.user, new Date())
-        val locationTiplocs =
-          locationService.sortedListLocationsGroupedByCrs.map(_.id)
-        val locations: List[GroupedListLocation] = getListOfLocations(orr, operator, name, id, srs)
-        val visited = locationVisitService.getVisitedLocations(request.user)
-        val groupedVisited: List[String] =
-          locationVisitService.getVisitedLocationsByCrs(request.user)
 
-        val groupVisits: Map[String, Boolean] = getVisitStatus(locations, groupedVisited)
-        val visits: Map[String, Boolean] = getVisitStatus(locations, visited)
-
-        val formActions: Map[String, Call] = locationTiplocs
+        val tiplocToCall: Map[String, Call] = locationService.locations
           .map({ loc =>
-            loc -> controllers.api.locations.visit.routes.VisitLocationsApiController
-              .visitLocationFromCrsList(loc)
+            if(loc.crs.nonEmpty)
+              loc.id -> Some(controllers.api.locations.visit.routes.VisitLocationsApiController
+                .visitLocationFromCrsList(loc.crs.head))
+            else
+              loc.id -> None
           })
+          .filter(_._2.nonEmpty)
+          .map(call => call._1 -> call._2.get)
           .toMap
-        val locIds = locations.map {
-          _.id
-        }
 
-        val visitedLocationIdCount: Int = getVisitedLocationIdCount(locations, groupedVisited)
 
-        val availableLocs = locations.size
-        val formattedPercentage: String = calculatePercentage(visitedLocationIdCount.toDouble, availableLocs.toDouble)
+        val locations = locationService.locations
+
+        val locationsGroupedByCrs = locationService.sortedListLocationsGroupedByCrs
+
+        val visitedLocationTiplocs = locationVisitService
+          .getVisitedLocations(request.user)
+          .map(_.id)
+
+        val visitedLocationGroupsByCrs: Map[GroupedListLocation, Boolean] = locationsGroupedByCrs
+            .map(groupedLocation => {
+              val tiplocsForGroup = groupedLocation.relatedLocations.map(_.id)
+              val hasAnyTiplocInGroupBeenVisited = tiplocsForGroup.map(visitedLocationTiplocs.contains(_))
+              val hasGroupBeenVisited = hasAnyTiplocInGroupBeenVisited.exists(visited => visited)
+              groupedLocation -> hasGroupBeenVisited
+            }).toMap
+
+        val crsGroupToVisitedStatus: Map[String, Boolean] = visitedLocationGroupsByCrs.iterator.map(visitedGroup => visitedGroup._1.id -> visitedGroup._2).toMap
+
+        val numberOfTiplocsInCrsGroupVisited: Map[String, Int] = locationsGroupedByCrs.map(group => {
+          val tiplocs = group.relatedLocations.map(_.id)
+          val visitedTiploc = tiplocs.map(visitedLocationTiplocs.contains(_))
+          val visitedCount = visitedTiploc.count(v => v)
+          group.id -> visitedCount
+        }).toMap
+
+        val tiplocToVisitedStatus = locations
+          .map(_.id)
+          .map(location => location -> visitedLocationTiplocs.contains(location))
+          .toMap
+
+        val visitedLocationCount = getVisitedLocationIdCount(locationsGroupedByCrs, visitedLocationTiplocs)
+
+        val availableLocs = locationsGroupedByCrs.size
+
+        val formattedPercentage = calculatePercentage(visitedLocationCount.toDouble, availableLocs.toDouble)
+
         Ok(
           views.html.locations.list.crs.index(
             request.user,
-            locations,
-            visits,
-            groupVisits,
-            formActions,
+            locationsGroupedByCrs,
+            tiplocToVisitedStatus,
+            crsGroupToVisitedStatus,
+            numberOfTiplocsInCrsGroupVisited,
+            tiplocToCall,
             token,
-            visitedLocationIdCount,
+            visitedLocationCount,
             availableLocs,
             formattedPercentage,
             orr,

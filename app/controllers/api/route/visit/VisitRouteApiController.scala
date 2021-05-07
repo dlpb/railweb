@@ -3,13 +3,16 @@ package controllers.api.route.visit
 import auth.api.AuthorizedAction
 import javax.inject.{Inject, Singleton}
 import models.auth.roles.VisitUser
+import models.data.Event
 import models.plan.timetable.location.LocationTimetableService
 import models.plan.timetable.trains.TrainTimetableService
 import org.json4s.DefaultFormats
+import org.json4s.jackson.Serialization.write
 import play.api.Environment
 import play.api.libs.json.Json
 import play.api.mvc.{AbstractController, ControllerComponents}
 import services.route.RouteService
+import services.visit.event.EventService
 import services.visit.route.RouteVisitService
 
 @Singleton
@@ -20,6 +23,7 @@ class VisitRouteApiController @Inject()(
                                          routeVisitService: RouteVisitService,
                                          trainService: LocationTimetableService,
                                          timetableService: TrainTimetableService,
+                                         eventService: EventService,
                                          authAction: AuthorizedAction // NEW - add the action as a constructor argument
                                           )
   extends AbstractController(cc) {
@@ -76,7 +80,7 @@ class VisitRouteApiController @Inject()(
     def getAllVisitsForRoutes() = {
       authAction { implicit request =>
         val visits = routeVisitService.getVisitedRoutes(request.user)
-        Ok(Json.toJson(visits))
+        Ok(write(visits.map(r => s"from:${r.from.id}-to:${r.to.id}")))
       }
     }
 
@@ -85,8 +89,8 @@ class VisitRouteApiController @Inject()(
         val route = routeService.findRoute(from, to)
         route match {
           case Some(r) =>
-            val visits: List[String] = routeVisitService.getVisitsForRoute(r, request.user)
-            Ok(Json.toJson(visits))
+            val visits: List[Event] = routeVisitService.getEventsRouteWasVisited(r, request.user)
+            Ok(write(visits.map(_.id)))
           case None => NotFound
         }
       }

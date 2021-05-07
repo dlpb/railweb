@@ -73,7 +73,7 @@ class LocationsByTiplocController @Inject()(
       if (request.user.roles.contains(MapUser)) {
         val token = jwtService.createToken(request.user, new Date())
         val locations: List[ListLocation] = getListOfLocations(orr, operator, name, id, srs)
-        val visited: List[String] = locationVisitService.getVisitedLocations(request.user)
+        val visited: List[String] = locationVisitService.getVisitedLocations(request.user).map(_.id)
 
         val visits: Map[String, Boolean] = getVisitStatus(locations, visited)
 

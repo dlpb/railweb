@@ -10,6 +10,7 @@ import models.route.Route
 import models.route.display.map.MapRoute
 import play.api.mvc.{AbstractController, AnyContent, ControllerComponents}
 import services.location.LocationService
+import services.visit.event.EventService
 import services.visit.location.LocationVisitService
 import services.visit.route.RouteVisitService
 
@@ -20,44 +21,80 @@ class EventDetailController @Inject()(
                                        cc: ControllerComponents,
                                        locationsService: LocationService,
                                        locationVisitService: LocationVisitService,
-                                       routesService: RouteVisitService,
+                                       routeVisitService: RouteVisitService,
                                        authenticatedUserAction: AuthorizedWebAction,
+                                       eventService: EventService,
                                        authorizedAction: AuthorizedAction
-                                     ) extends AbstractController(cc) {
+) extends AbstractController(cc) {
 
-    def index(event: String) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
-    val visitedRoutes: List[Route] = routesService.getRoutesVisitedForEvent(event, request.user)
-    val visitedLocations = locationVisitService
-      .getLocationsVisitedForEvent(event, request.user)
-      .map({
-        MapLocation(_)
-      })
-      .sortBy(_.name)
+  def index(id: String) = authenticatedUserAction {
+    implicit request: WebUserContext[AnyContent] =>
+      val eventOption = eventService.getEventFromId(id, request.user)
+      eventOption
+        .map({ event =>
+          val visitedLocations = locationVisitService
+            .getLocationsVisitedForEvent(event, request.user)
 
-    val distance: Long = visitedRoutes
-      .map({
-        _.distance
-      })
-      .sum
+          val visitedMapLocations = visitedLocations
+            .map({
+              MapLocation(_)
+            })
+            .sortBy(_.name)
 
-    val visitedMapRoutes = visitedRoutes
-      .map {
-        MapRoute(_)
-      }
-      .sortBy(r => r.from.id + " - " + r.to.id)
+          val visitedRoutes: List[Route] =
+            routeVisitService.getRoutesVisitedForEvent(event, request.user)
 
-      val firstVisits: Map[String, Boolean] = visitedLocations
-          .map(l => l.id -> locationVisitService.isVisitFirstVisitForLocation(event, request.user, l.id))
-          .toMap
+          val distance: Long = visitedRoutes
+            .map({
+              _.distance
+            })
+            .sum
 
-      val locationVisitIndex = visitedLocations
-          .flatMap(l => locationsService.findFirstLocationByTiploc(l.id))
-          .map(l => l.id -> locationVisitService.getStationVisitNumber(request.user, l.id))
-          .toMap
+          val visitedMapRoutes = visitedRoutes
+            .map {
+              MapRoute(_)
+            }
+            .sortBy(r => r.from.id + " - " + r.to.id)
 
-    Ok(views.html.visits.event.detail.index(request.user, visitedMapRoutes, visitedLocations, firstVisits, locationVisitIndex, event, distance))
+          val firstVisits: Map[String, Boolean] = visitedLocations
+            .map(l => l.id -> false)
+            .toMap
+
+          val locationVisitIndex = visitedLocations
+            .flatMap(l => locationsService.findFirstLocationByTiploc(l.id))
+            .map(
+              l =>
+                l.id -> locationVisitService
+                  .getStationVisitNumber(request.user, l.id)
+            )
+            .toMap
+
+          Ok(
+            views.html.visits.event.detail.index(
+              request.user,
+              visitedMapRoutes,
+              visitedMapLocations,
+              firstVisits,
+              locationVisitIndex,
+              event.name,
+              distance
+            )
+          )
+        })
+        .getOrElse(
+          NotFound(
+            views.html.visits.event.detail.index(
+              request.user,
+              List.empty,
+              List.empty,
+              Map.empty,
+              Map.empty,
+              s"$id not found",
+              0
+            )
+          )
+        )
 
   }
 
 }
-

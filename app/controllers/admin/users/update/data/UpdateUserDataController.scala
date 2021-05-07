@@ -8,7 +8,8 @@ import auth.web.AuthorizedWebAction
 import javax.inject.Inject
 import models.auth.UserDao
 import models.auth.roles.AdminUser
-import models.data.VisitJsonUtils
+import models.location.Location
+import models.route.Route
 import services.visit.route.RouteVisitService
 import play.api.mvc.{AbstractController, Action, AnyContent, ControllerComponents}
 import services.visit.location.LocationVisitService
@@ -17,8 +18,8 @@ class UpdateUserDataController @Inject()(
                                           userDao: UserDao,
                                           jwtService: JWTService,
                                           cc: ControllerComponents,
-                                          locationsService: LocationVisitService,
-                                          routesService: RouteVisitService,
+                                          locationVisitService: LocationVisitService,
+                                          routeVisitService: RouteVisitService,
                                           authenticatedUserAction: AuthorizedWebAction,
                                           authorizedAction: AuthorizedAction
                                         ) extends AbstractController(cc) {
@@ -32,9 +33,13 @@ class UpdateUserDataController @Inject()(
       else {
         userDao.findUserById(userId) match {
           case Some(user) =>
-            val locations = locationsService.getVisitsForUser(user)
-            val routes = routesService.getVisitsForUser(user)
-            Ok(views.html.admin.users.update.data.index(token, request.user, user.id, VisitJsonUtils.toJson(locations), VisitJsonUtils.toJson(routes), List()))
+            Ok(views.html.admin.users.update.data.index(
+              token,
+              request.user,
+              user.id,
+              locationVisitService.getVisitsAsJson(user),
+              routeVisitService.getVisitsAsJson(user),
+              List()))
           case None =>
             NotFound(views.html.admin.users.update.data.index(token, request.user, -1L, "", "", List(s"User with id $userId not found")))
         }
@@ -64,22 +69,9 @@ class UpdateUserDataController @Inject()(
                         case Some(user) =>
                           var messages: List[String] = List()
 
-                          VisitJsonUtils.fromJson(locations) match {
-                            case Right(json) =>
-                              locationsService.saveVisits(json, user)
-                              messages = "Saved Locations" :: messages
-                            case Left(msg) =>
-                              messages = msg :: messages
-                          }
+                          locationVisitService.saveVisitsAsJson(locations, user)
+                          routeVisitService.saveVisitsAsJson(routes, user)
 
-                          VisitJsonUtils.fromJson(routes) match {
-                            case Right(json) =>
-                              routesService.saveVisits(json, user)
-                              messages = "Saved Routes" :: messages
-                            case Left(msg) =>
-                              messages = msg :: messages
-
-                          }
                           Ok(views.html.admin.users.update.data.index(token, request.user, userId, locations, routes, messages))
                         case None =>
                           Ok(views.html.admin.users.update.data.index(token, request.user, userId, locations, routes, List("could not find user")))

@@ -26,7 +26,6 @@ class AuthorizedWebAction @Inject()(
   private val logger = play.api.Logger(this.getClass)
 
   override def invokeBlock[A](request: Request[A], block: WebUserContext[A] => Future[Result]) = {
-    logger.info("ENTERED AuthenticatedUserAction::invokeBlock ...")
     val maybeUsername = request.session.get(models.Global.SESSION_USERNAME_KEY)
     val maybeToken = jwtService.isValidToken(request.session.get(models.Global.SESSION_USER_TOKEN).getOrElse(""))
     val maybeUser: Option[User] = maybeUsername flatMap { id => userDao.findUserById(id.toLong)}

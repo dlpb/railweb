@@ -1,7 +1,7 @@
 @(
 user: models.auth.User,
 route: models.route.Route,
-visits: List[String],
+visits: List[models.data.Event],
 token: String,
 visitUrl: Call,
 removeLast: Call,
@@ -66,6 +66,7 @@ removeAll: Call
                     @if(!route.speed.isBlank){<li>Speed (MPH): @route.speed</li>}
                     @if(!route.srsCode.isBlank){<li>SRS Code: <a href="/srs/@route.srsCode">@route.srsCode</a></li>}
                     <li>Distance: @(route.distance/1000.0)km</li>
+                    <li>Approximate Travel Time: @route.travelTimeInSeconds.toMinutes minutes</li>
                 </ul>
             </div>
             @if(visits.nonEmpty){
@@ -73,7 +74,7 @@ removeAll: Call
                 <h3>Visits</h3>
                 <ul>
                     @for(visit <- visits){
-                    <li><a href="/profile/visits/by/event/@visit">@visit</a></li>
+                    <li><a href="/profile/visits/by/event/@visit.id">@visit.name</a></li>
                     }
                 </ul>
             </div>
