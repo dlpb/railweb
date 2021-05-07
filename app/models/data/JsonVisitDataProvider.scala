@@ -1,11 +1,7 @@
 package models.data
 
-import java.time.{LocalDateTime}
-import java.time.format.DateTimeFormatter
-
 import models.auth.User
-import org.json4s.JsonAST. JString
-import org.json4s.{CustomSerializer, DefaultFormats}
+import org.json4s.DefaultFormats
 
 abstract class JsonVisitDataProvider[TypeOfThingVisited, MemoryModelVisitType <: Visit[TypeOfThingVisited]]() extends DataProvider[TypeOfThingVisited, MemoryModelVisitType] {
 

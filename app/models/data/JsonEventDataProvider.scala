@@ -9,6 +9,10 @@ abstract class JsonEventDataProvider() extends EventDataProvider {
 
   def readJson(user: User): List[Event]
 
+  override def getEventsAsJson(user: User): String = modelToString(readJson(user))
+
+  override def saveEventsAsJson(events: String, user: User): Unit = writeJson(stringToModel(events), user)
+
   override def getEvents(user: User): List[Event] = {
     readJson(user)
   }

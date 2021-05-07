@@ -12,6 +12,7 @@ import models.location.Location
 import models.route.Route
 import services.visit.route.RouteVisitService
 import play.api.mvc.{AbstractController, Action, AnyContent, ControllerComponents}
+import services.visit.event.EventService
 import services.visit.location.LocationVisitService
 
 class UpdateUserDataController @Inject()(
@@ -20,6 +21,7 @@ class UpdateUserDataController @Inject()(
                                           cc: ControllerComponents,
                                           locationVisitService: LocationVisitService,
                                           routeVisitService: RouteVisitService,
+                                          eventService: EventService,
                                           authenticatedUserAction: AuthorizedWebAction,
                                           authorizedAction: AuthorizedAction
                                         ) extends AbstractController(cc) {
@@ -39,9 +41,10 @@ class UpdateUserDataController @Inject()(
               user.id,
               locationVisitService.getVisitsAsJson(user),
               routeVisitService.getVisitsAsJson(user),
+              eventService.getEventsAsJson(user),
               List()))
           case None =>
-            NotFound(views.html.admin.users.update.data.index(token, request.user, -1L, "", "", List(s"User with id $userId not found")))
+            NotFound(views.html.admin.users.update.data.index(token, request.user, -1L, "", "", "", List(s"User with id $userId not found")))
         }
       }
   }
@@ -57,8 +60,8 @@ class UpdateUserDataController @Inject()(
         val data = request.request.body.asFormUrlEncoded
         val token = jwtService.createToken(request.user, new Date())
 
-        (data.get("locations").headOption, data.get("routes").headOption) match {
-          case (Some(locations), Some(routes)) =>
+        (data.get("locations").headOption, data.get("routes").headOption, data.get("events").headOption) match {
+          case (Some(locations), Some(routes), Some(events)) =>
             data.get("confirmation").headOption match {
               case Some(confirmation) =>
                 userDao.getDaoUser(request.user) match {
@@ -71,22 +74,23 @@ class UpdateUserDataController @Inject()(
 
                           locationVisitService.saveVisitsAsJson(locations, user)
                           routeVisitService.saveVisitsAsJson(routes, user)
+                          eventService.saveEventsAsJson(events, user)
 
-                          Ok(views.html.admin.users.update.data.index(token, request.user, userId, locations, routes, messages))
+                          Ok(views.html.admin.users.update.data.index(token, request.user, userId, locations, routes, events, messages))
                         case None =>
-                          Ok(views.html.admin.users.update.data.index(token, request.user, userId, locations, routes, List("could not find user")))
+                          Ok(views.html.admin.users.update.data.index(token, request.user, userId, locations, routes, events, List("could not find user")))
                       }
                     }
                     else
-                      Ok(views.html.admin.users.update.data.index(token, request.user, userId, locations, routes, List("Invalid confirmation")))
+                      Ok(views.html.admin.users.update.data.index(token, request.user, userId, locations, routes, events, List("Invalid confirmation")))
                   case None =>
-                    Ok(views.html.admin.users.update.data.index(token, request.user, userId, locations, routes, List("Error finding admin user")))
+                    Ok(views.html.admin.users.update.data.index(token, request.user, userId, locations, routes, events, List("Error finding admin user")))
                 }
               case None =>
-                Ok(views.html.admin.users.update.data.index(token, request.user, userId, locations, routes, List("Please enter confirmation")))
+                Ok(views.html.admin.users.update.data.index(token, request.user, userId, locations, routes, events, List("Please enter confirmation")))
             }
           case _ =>
-            Ok(views.html.admin.users.update.data.index(token, request.user, userId, "", "", List("Saved")))
+            Ok(views.html.admin.users.update.data.index(token, request.user, userId, "", "", "", List("Saved")))
         }
       }
   }

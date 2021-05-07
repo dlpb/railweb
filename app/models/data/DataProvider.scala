@@ -1,8 +1,5 @@
 package models.data
 
-import java.time.LocalDateTime
-import java.util.UUID
-
 import models.auth.User
 import models.location.Location
 import models.route.Route
@@ -63,4 +60,6 @@ trait EventDataProvider {
   def saveEvents(events: List[Event], user: User): Unit
   def removeLastEvent(events: List[Event], user: User): Unit
   def removeAllEvents(events: List[Event], user: User): Unit
+  def getEventsAsJson(user: User): String
+  def saveEventsAsJson(events: String, user: User) : Unit
 }

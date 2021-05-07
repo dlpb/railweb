@@ -6,6 +6,7 @@ user: models.auth.User,
 editedUserId: Long,
 locationString: String,
 routeString: String,
+eventString: String,
 messages: List[String]
 )(implicit request: Request[AnyContent])
 
@@ -37,6 +38,8 @@ messages: List[String]
                     <textarea class="form-control" name="locations" id="locations">@locationString</textarea>
                     <label for="routes">Routes</label>
                     <textarea class="form-control" name="routes" id="routes">@routeString</textarea>
+                    <label for="events">Events</label>
+                    <textarea class="form-control" name="events" id="events">@eventString</textarea>
                     <label for="confirmation">Confirmation</label>
                     <input class="form-control" type="password" id="confirmation" name="confirmation"/>
                     <button class="btn btn-primary">Update</button>

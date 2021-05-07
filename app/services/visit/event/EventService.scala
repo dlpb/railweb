@@ -6,8 +6,6 @@ import com.typesafe.config.Config
 import javax.inject.{Inject, Singleton}
 import models.auth.User
 import models.data.{Event, EventDataProvider, Visit}
-import models.location.Location
-import models.route.Route
 import services.location.LocationService
 import services.route.RouteService
 
@@ -17,7 +15,9 @@ class EventService @Inject() (config: Config,
                                       locationService: LocationService,
                                       routeService: RouteService,
                                       eventDataProvider: EventDataProvider) {
+  def saveEventsAsJson(events: String, user: User) = eventDataProvider.saveEventsAsJson(events, user)
 
+  def getEventsAsJson(user: User): String = eventDataProvider.getEventsAsJson(user)
 
   def getEventsForUser(user: User): List[Event] = eventDataProvider.getEvents(user)
 
