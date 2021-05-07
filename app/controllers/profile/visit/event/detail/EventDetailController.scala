@@ -5,6 +5,7 @@ import auth.api.AuthorizedAction
 import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject.{Inject, Singleton}
 import models.auth.UserDao
+import models.data.Event
 import models.location.MapLocation
 import models.route.Route
 import models.route.display.map.MapRoute
@@ -76,7 +77,7 @@ class EventDetailController @Inject()(
               visitedMapLocations,
               firstVisits,
               locationVisitIndex,
-              event.name,
+              event,
               distance
             )
           )
@@ -89,7 +90,7 @@ class EventDetailController @Inject()(
               List.empty,
               Map.empty,
               Map.empty,
-              s"$id not found",
+              Event(name=s"Event not found for $id"),
               0
             )
           )

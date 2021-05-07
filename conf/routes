@@ -23,7 +23,8 @@ GET  /profile/visits/by/route                                       controllers.
 GET  /profile/visits/by/event                                       controllers.profile.visit.event.EventVisitsController.index()
 GET  /profile/visits/by/event/:evt                                  controllers.profile.visit.event.detail.EventDetailController.index(evt: String)
 
-
+GET  /profile/visits/by/event/:evt/edit                             controllers.profile.visit.event.detail.edit.EventDetailEditController.index(evt: String)
+POST /profile/visits/by/event/:evt/edit                             controllers.profile.visit.event.detail.edit.EventDetailEditController.post(evt: String)
 
 
 GET  /about                                                         controllers.about.AboutController.about()

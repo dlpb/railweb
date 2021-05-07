@@ -32,8 +32,9 @@ class EventVisitsController @Inject()(
     val eventsAndVisits = events.map(event => {
       val locationVisits = locationsService.getLocationsVisitedForEvent(event, request.user).size
       val routeVisits = routesService.getRoutesVisitedForEvent(event, request.user).size
-      Event(event.id, event.name, routeVisits, locationVisits)
+      Event(event, routeVisits, locationVisits)
     })
+      .sortBy(_.event.startedAt)
 
     Ok(views.html.visits.event.index(request.user, eventsAndVisits))
 

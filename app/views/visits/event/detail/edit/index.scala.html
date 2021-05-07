@@ -1,0 +1,52 @@
+@import helper._
+
+@import models.route.display.map.MapRoute
+@(
+user: models.auth.User,
+call: Call,
+token: String,
+event: models.data.Event,
+messages: List[String]
+)(implicit request: Request[AnyContent])
+@templates.main(event.name + " - Visit", "Profile", Some(user)){
+    @if(messages.size > 0){
+        <div class="alert alert-primary">
+            <h2>Messages</h2>
+            <ul>
+            @for(message <- messages){
+                <li>@message</li>
+            }
+            </ul>
+        </div>
+    }
+    @helper.form(call, Symbol("id") -> "edit-event", Symbol("style") -> "") {
+        @helper.CSRF.formField
+        <input type="hidden" id="Authorization" name="Authorization" value="@token"/>
+
+
+        <div class="row">
+            <h1>Event: @event.name</h1>
+        </div>
+        <div class="form-group row">
+            <label class="form-text text-muted" for="name">Event Name</label>
+            <input class="form-control" type="text" name="name" value="@event.name"/>
+        </div>
+        <div class="form-group row">
+            <label class="form-text text-muted" for="description">Event Description</label>
+            <textarea class="form-control" type="text" name="description">@event.details</textarea>
+        </div>
+        <div class="form-group row">
+            <label class="form-text text-muted" for="startTime">Event Start Time</label>
+            <input class="form-control" type="datetime-local" name="startTime" value="@event.startedAt"/>
+        </div>
+        <div class="form-group row">
+            <label class="form-text text-muted" for="endTime">Event End Time</label>
+            <input class="form-control" type="datetime-local" name="endTime" value="@event.endedAt"/>
+        </div>
+        <div class="row">
+            <input class="btn btn-primary" type="submit" text="Save" />
+        </div>
+
+    }
+
+}

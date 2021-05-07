@@ -41,13 +41,15 @@ class EventService @Inject() (config: Config,
 
     val filteredEvents = events
       .filter(event =>
-        (event.startedAt.isAfter(midnightBeforeNow) || event.startedAt.isEqual(midnightBeforeNow)) && event.endedAt.isBefore(midnightAfterNow))
+        (event.startedAt.isBefore(now) || event.startedAt.isEqual(now)) && (event.endedAt.isEqual(now) || event.endedAt.isAfter(now)))
 
 
     if(filteredEvents.isEmpty){
+      val latestEndOfEventOpt = events.sortBy(_.endedAt).map(_.endedAt).reverse.headOption
+      val latestEnd = latestEndOfEventOpt.map(end => {if(end.isBefore(midnightBeforeNow)) midnightBeforeNow else end}).getOrElse(midnightBeforeNow)
       val event = Event(
         name = s"${now.getYear}-${now.getMonthValue}-${now.getDayOfMonth}",
-        startedAt = midnightBeforeNow,
+        startedAt = latestEnd,
         endedAt = justBeforeMidnightAfterNow)
       saveEvent(event, user)
     }

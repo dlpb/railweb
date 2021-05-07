@@ -7,18 +7,23 @@ routeList: List[MapRoute],
 locations: List[models.location.MapLocation],
 firstLocationVisits: Map[String, Boolean],
 locationVisitIndex: Map[String, Option[Int]],
-event: String,
+event: models.data.Event,
 distance: Long
 )(implicit request: Request[AnyContent])
-@templates.main(event + " - Visit", "Profile", Some(user)){
+@templates.main(event.name + " - Visit", "Profile", Some(user)){
 
         <div class="row">
-            <h1>Event: @event</h1>
+            <h1>Event: @event.name</h1>
         </div>
         <div class="row">
             <div class="alert alert-light" role="alert">
+                <p>@event.details</p>
                 <p>Distance: @(distance/1000.0)km</p>
                 <p>Locations: @locations.size</p>
+                <p>Start time: @event.startedAt</p>
+                <p>End time: @event.endedAt</p>
+                <p>Created time: @event.created</p>
+                <a href="/profile/visits/by/event/@event.id/edit"><button class="btn btn-primary">Edit</button></a>
             </div>
         </div>
         <div class="row">
