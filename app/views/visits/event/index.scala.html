@@ -12,7 +12,7 @@ events: List[models.visits.Event],
                 <ul>
                     @for(event <- events) {
                         <li>
-                            <a href="/profile/visits/by/event/@event.event.id">@event.event.name</a>
+                            <a href="/profile/visits/by/event/@event.event.id">@event.event.name</a> @if(event.isActive) {<span class="badge badge-success">Active Event</span>}
                             <p>@event.event.details - @event.event.startedAt - @event.event.endedAt</p>
                             <ul>
                                 <li>@event.routesVisited Routes</li>

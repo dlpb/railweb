@@ -102,10 +102,14 @@ class LocationVisitService @Inject() (config: Config,
     None
   }
 
-  def visitLocation(location: Location, user: User): Unit = {
-    val visit = dataProvider.mapMemoryModelToDataModel(LocationVisit(location, LocalDateTime.now(), LocalDateTime.now(), "MANUAL_VISIT"))
+  def visitLocation(location: Location, created: LocalDateTime, eventOccuredAt: LocalDateTime, description: String, user: User): Unit = {
+    val visit = dataProvider.mapMemoryModelToDataModel(LocationVisit(location, created, eventOccuredAt, description))
     eventService.ensureActiveEvent(user)
     dataProvider.saveVisit(visit, user)
+  }
+
+  def visitLocation(location: Location, user: User): Unit = {
+    visitLocation(location, LocalDateTime.now(), LocalDateTime.now(), "MANUAL_VISIT", user)
   }
 
   def deleteLastVisit(location: Location, user: User): Unit = {
@@ -116,7 +120,7 @@ class LocationVisitService @Inject() (config: Config,
     dataProvider.removeAllVisits(dataProvider.mapMemoryModelToDataModel(LocationVisit(location, LocalDateTime.MIN, LocalDateTime.MIN, "DELETE_ALL_VISIT")), user)
   }
 
-  def getLocationsVisitedForEvent(event: Event, user: User): List[Location] = {
+  def getLocationsVisitedForEvent(event: Event, user: User): List[LocationVisit] = {
     val visits = getVisitsForUser(user)
 
     eventService.ensureAllVisitsHaveAnEvent(visits, user)
@@ -125,7 +129,6 @@ class LocationVisitService @Inject() (config: Config,
       .filter(v => v.eventOccurredAt.isBefore(event.endedAt) || v.eventOccurredAt.isEqual(event.endedAt))
       .filter(v => v.eventOccurredAt.isAfter(event.startedAt) || v.eventOccurredAt.isEqual(event.startedAt))
       .sortBy(_.eventOccurredAt)
-      .map(_.visited)
   }
 
   def getEventsLocationWasVisited(location: Location, user: User): List[Event] = {

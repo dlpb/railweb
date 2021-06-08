@@ -19,7 +19,7 @@ object TrainTimetableServiceUrlHelper {
 
   def buildRouteLink(tt: IndividualTimetable, locService: LocationService): String = {
     val ids = tt.locations.flatMap(l => locService.findFirstLocationByTiploc(l.tiploc).map(_.id)).mkString("%0D%0A")
-    val url = controllers.plan.route.routes.PointToPointRouteController.index(ids).url
+    val url = controllers.plan.route.find.pointtopoint.routes.PointToPointRouteController.index().url //TODO FIXME
     url
   }
 

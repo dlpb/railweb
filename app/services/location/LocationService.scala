@@ -6,12 +6,15 @@ import models.helpers.JsonFileReader
 import models.location.{GroupedListLocation, ListLocation, Location, MapLocation}
 
 class LocationService @Inject() (config: Config) {
+  def findAllLocationsByCrsIdOrName(search: String): Set[Location] = if(search.isBlank) Set.empty else findAllLocationsBy(
+    loc => loc.id.equalsIgnoreCase(search) || loc.name.equalsIgnoreCase(search) || loc.crs.map(_.toLowerCase()).contains(search.toLowerCase()))
 
-  def findFirstLocationByTiploc(tiploc: String): Option[Location] = findSingleLocationBy(_.id.equalsIgnoreCase(tiploc))
 
-  def findFirstLocationByCrs(crs: String): Option[Location] = findSingleLocationBy(l => l.orrId.isDefined && l.orrId.get.equals(crs))
+  def findFirstLocationByTiploc(tiploc: String): Option[Location] = if(tiploc.isBlank) None else findSingleLocationBy(_.id.equalsIgnoreCase(tiploc))
 
-  def findAllLocationsByCrs(crs: String): Set[Location] = findAllLocationsBy(_.crs.contains(crs))
+  def findFirstLocationByCrs(crs: String): Option[Location] = if(crs.isBlank) None else findSingleLocationBy(l => l.orrId.isDefined && l.orrId.get.equals(crs))
+
+  def findAllLocationsByCrs(crs: String): Set[Location] = if(crs.isBlank) Set.empty else findAllLocationsBy(_.crs.contains(crs))
 
   def findFirstLocationByIdOrCrs(key: String): Option[Location] =
     findSingleLocationBy(l =>

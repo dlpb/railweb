@@ -41,9 +41,13 @@ class RouteVisitService @Inject()(config: Config,
     getVisitsForUser(user).filter(_.visited == route)
   }
 
-  def visitRoute(route: Route, user: User): Unit = {
+  def visitRoute(route: Route, created: LocalDateTime, eventOccurredAt: LocalDateTime, description: String,  user: User): Unit = {
     eventService.ensureActiveEvent(user)
-    dataProvider.saveVisit(dataProvider.mapMemoryModelToDataModel(RouteVisit(route, LocalDateTime.now(), LocalDateTime.now(), "MANUAL_VISIT")), user)
+    dataProvider.saveVisit(dataProvider.mapMemoryModelToDataModel(RouteVisit(route, created, eventOccurredAt, description)), user)
+  }
+
+  def visitRoute(route: Route, user: User): Unit = {
+    visitRoute(route, LocalDateTime.now(), LocalDateTime.now(), "MANUAL_VISIT", user)
   }
 
   def deleteLastVisit(route: Route, user: User): Unit = {
@@ -55,7 +59,7 @@ class RouteVisitService @Inject()(config: Config,
   }
 
 
-  def getRoutesVisitedForEvent(event: Event, user: User): List[Route] = {
+  def getRoutesVisitedForEvent(event: Event, user: User): List[RouteVisit] = {
 
     val visits = getVisitsForUser(user)
 
@@ -65,7 +69,6 @@ class RouteVisitService @Inject()(config: Config,
         .filter(v => v.eventOccurredAt.isBefore(event.endedAt) || v.eventOccurredAt.isEqual(event.endedAt))
         .filter(v => v.eventOccurredAt.isAfter(event.startedAt) || v.eventOccurredAt.isEqual(event.startedAt))
         .sortBy(_.eventOccurredAt)
-        .map(_.visited)
     }
 
   def getEventsRouteWasVisited(route: Route, user: User): List[Event] = {

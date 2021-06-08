@@ -31,6 +31,28 @@ class EventService @Inject() (config: Config,
 
   def getEventFromId(id: String, user: User): Option[Event] = getEventsForUser(user).find(_.id.equals(id))
 
+  def hasActiveEvent(user: User): Boolean = {
+    val events = getEventsForUser(user)
+    val now = LocalDateTime.now()
+
+    val filteredEvents = events
+      .filter(event =>
+        (event.startedAt.isBefore(now) || event.startedAt.isEqual(now)) && (event.endedAt.isEqual(now) || event.endedAt.isAfter(now)))
+
+    filteredEvents.nonEmpty
+  }
+
+  def getActiveEvent(user: User): Option[Event] = {
+    val events = getEventsForUser(user)
+    val now = LocalDateTime.now()
+
+    val filteredEvents = events
+      .filter(event =>
+        (event.startedAt.isBefore(now) || event.startedAt.isEqual(now)) && (event.endedAt.isEqual(now) || event.endedAt.isAfter(now)))
+
+    filteredEvents.headOption
+  }
+
 
   def ensureActiveEvent(user: User) = {
     val events = getEventsForUser(user)

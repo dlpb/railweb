@@ -29,10 +29,13 @@ class EventVisitsController @Inject()(
 
     val events: List[data.Event] = eventService.getEventsForUser(request.user)
 
+    val currentEvent = eventService.getActiveEvent(request.user)
+
     val eventsAndVisits = events.map(event => {
       val locationVisits = locationsService.getLocationsVisitedForEvent(event, request.user).size
       val routeVisits = routesService.getRoutesVisitedForEvent(event, request.user).size
-      Event(event, routeVisits, locationVisits)
+      val isActive: Boolean = currentEvent.exists(_.id.equals(event.id))
+      Event(event, routeVisits, locationVisits, isActive)
     })
       .sortBy(_.event.startedAt)
 

@@ -14,7 +14,7 @@ case class Route(
                 distance: Long = 0,
                 ){
 
-  val travelTimeInSeconds = {
+  val travelTimeInSeconds: Duration = {
     averageTravelTime
 
   }
@@ -52,20 +52,20 @@ case class Route(
           .group(2)
           .toIntOption
 
-        val midPoint: Option[Double] = lowerBound.flatMap(l => upperBound.map(u => l + (u - l)))
+        val midPoint: Option[Int] = lowerBound.flatMap(l => upperBound.map(u => {
+               l + ((u - l) / 2)
+        }))
 
-              //assume 1 mile = 1609.34 meters
+        //assume 1 mile = 1609.34 meters
         //convert miles per hour into meters per hour
         //1 hour is 3600s so divide
         val speedInMetersPerSecond: Option[Double] = midPoint
           .map(_ * 1609.34)
           .map(_ / 3600)
 
-
         // get the speed or else fall back to the walking speed
         val calculatedTime = speedInMetersPerSecond.map(distance / _)
           .getOrElse(distance / 1.38888)
-
 
         calculatedTime
       }

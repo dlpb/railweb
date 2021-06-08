@@ -5,8 +5,10 @@
 user: models.auth.User,
 routeList: List[MapRoute],
 locations: List[models.location.MapLocation],
-firstLocationVisits: Map[String, Boolean],
-locationVisitIndex: Map[String, Option[Int]],
+locationToVisitCount: Map[String, Int],
+routeToVisitCount: Map[models.route.display.map.MapRoute, Int],
+locationFirstVisits: List[String],
+routeFirstVisits: List[models.route.display.map.MapRoute],
 event: models.data.Event,
 distance: Long
 )(implicit request: Request[AnyContent])
@@ -37,10 +39,10 @@ distance: Long
                 <ul>
                     @for(location <- locations) {
                     <li><a href="/location/detail/@location.id" target="_blank">@location.name</a>
-                        @if(locationVisitIndex(location.id).getOrElse(0) > 0) {
-                        <span class="badge badge-light float-right">@locationVisitIndex(location.id)</span>
+                        @if(locationToVisitCount(location.id) > 0) {
+                        <span class="badge badge-light float-right">Visited @locationToVisitCount(location.id) times</span>
                         }
-                        @if(firstLocationVisits.getOrElse(location.id, false)) {
+                        @if(locationFirstVisits.contains(location.id)) {
                         <span class="badge badge-success float-right">First Visit</span>
                         }
                     </li>
@@ -51,6 +53,12 @@ distance: Long
                 <h2>Routes</h2>
                 <ul>
                     @for(route <- routeList){
+                        @if(routeToVisitCount(route) > 0) {
+                            <span class="badge badge-light float-right">Visited @routeToVisitCount(route) times</span>
+                        }
+                        @if(routeFirstVisits.contains(route)) {
+                            <span class="badge badge-success float-right">First Visit</span>
+                        }
                     <li><a href="/route/detail/@route.from.id/@route.to.id" target="_blank">@route.from.name - @route.to.name</a></li>
                     }
                 </ul>

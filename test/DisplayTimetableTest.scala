@@ -5,7 +5,7 @@
 //import data.{LocationMapBasedDataProvider, RouteMapBasedDataProvider}
 //import services.visit.location.LocationsService
 //import models.plan.TrainService
-//import models.plan.route.pointtopoint.PointToPointRouteFinderService
+//import services.plan.pointtopoint.PointToPointRouteFinderService
 //import models.route.RoutesService
 //import models.timetable._
 //import org.scalatest.mockito.MockitoSugar

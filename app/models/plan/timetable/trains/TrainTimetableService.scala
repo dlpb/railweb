@@ -4,7 +4,7 @@ import java.io.FileNotFoundException
 
 import javax.inject.{Inject, Singleton}
 import models.location.MapLocation
-import models.plan.route.pointtopoint.PointToPointRouteFinderService
+import services.plan.pointtopoint.PointToPointRouteFinderService
 import models.plan.timetable.reader.{Reader, WebZipInputStream}
 import models.route.display.map.MapRoute
 import models.timetable.dto.train.detailed.DisplayDetailedTrainTimetable

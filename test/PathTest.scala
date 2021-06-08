@@ -2,7 +2,7 @@
 //import data.{LocationMapBasedDataProvider, RouteMapBasedDataProvider}
 //import models.data.{LocationDataProvider, RouteDataProvider}
 //import services.visit.location.LocationsService
-//import models.plan.route.pointtopoint.PointToPointRouteFinderService
+//import services.plan.pointtopoint.PointToPointRouteFinderService
 //import models.route.{Route, RoutePoint, RoutesService}
 //import org.scalatest.{FlatSpec, Matchers}
 //

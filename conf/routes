@@ -18,8 +18,8 @@ GET  /profile/changePassword                                        controllers.
 POST /profile/changePassword                                        controllers.profile.visit.PasswordController.changePassword()
 
 GET  /profile/visits                                                controllers.profile.visit.VisitsController.index()
-GET  /profile/visits/by/location                                    controllers.profile.visit.location.LocationVisitsController.index()
-GET  /profile/visits/by/route                                       controllers.profile.visit.route.RouteVisitsController.index()
+GET  /profile/visits/by/location                                    controllers.profile.visit.location.LocationVisitsController.index(sortField: String ?= "date", sortOrder: String ?= "asc")
+GET  /profile/visits/by/route                                       controllers.profile.visit.route.RouteVisitsController.index(sortField: String ?= "date", sortOrder: String ?= "asc")
 GET  /profile/visits/by/event                                       controllers.profile.visit.event.EventVisitsController.index()
 GET  /profile/visits/by/event/:evt                                  controllers.profile.visit.event.detail.EventDetailController.index(evt: String)
 
@@ -66,7 +66,14 @@ GET  /plan/timetables/location/detailed                             controllers.
 GET  /plan/timetables/train/:train/simple/:year/:month/:day         controllers.plan.timetable.train.simple.SimpleTrainTimetableController.index(train: String, year: Int, month: Int, day: Int)
 GET  /plan/timetables/train/:train/detailed/:year/:month/:day       controllers.plan.timetable.train.detailed.DetailedTrainTimetableController.index(train: String, year: Int, month: Int, day: Int)
 
-GET  /plan/routes/point-to-point/find                               controllers.plan.route.PointToPointRouteController.index(waypoints: String ?= "", followFreightLinks: Boolean ?=false, followFixedLinks: Boolean ?= false, followUnknownLinks: Boolean ?= false, visitAllRoutes: Boolean ?= false, visitAllStations: Boolean ?= false)
+GET  /plan/routes/find                                              controllers.plan.route.find.FindRouteController.index()
+GET  /plan/routes/find/point-to-point                               controllers.plan.route.find.pointtopoint.PointToPointRouteController.index(waypoints: String ?= "", followFixedLinks: Boolean ?= false, followFreightLinks: Boolean ?= false, followUnknownLinks: Boolean ?= false)
+POST /plan/routes/find/point-to-point/result                        controllers.plan.route.find.result.pointtopoint.PointToPointFindRouteResultController.pointtopoint()
+POST /plan/routes/find/point-to-point/result/visit                  controllers.plan.route.find.result.visit.FindRouteResultVisitController.visit()
+GET  /plan/routes/find/timetable                                    controllers.plan.route.find.timetable.TimetableRouteController.index(trainUid: String ?= "", date: String ?= "")
+POST /plan/routes/find/timetable/result                             controllers.plan.route.find.result.timetable.TimetableFindRouteResultController.timetable()
+#POST /plan/routes/find/timetable/result/visit
+
 
 
 GET  /api/plan/train/map/locations/simple/:train/:year/:month/:day  controllers.api.plan.locations.PlanLocationsApiController.getSimpleMapLocationsForTrain(train: String, year: Int, month: Int, day: Int)

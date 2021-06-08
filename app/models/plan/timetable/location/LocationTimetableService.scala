@@ -4,7 +4,7 @@ import java.io.FileNotFoundException
 
 import javax.inject.Inject
 import models.location.Location
-import models.plan.route.pointtopoint.PointToPointRouteFinderService
+import services.plan.pointtopoint.PointToPointRouteFinderService
 import models.plan.timetable.TimetableDateTimeHelper
 import models.plan.timetable.reader.{Reader, WebZipInputStream}
 import models.timetable.dto.location.detailed.DisplayDetailedLocationTimetable
@@ -94,7 +94,7 @@ class LocationTimetableService @Inject()(
       (dateParts(0), dateParts(1), dateParts(2))
     } else (year, month, day)
 
-    val locations = locationsService.findAllLocationsByCrs(loc)
+    val locations = locationsService.findAllLocationsByCrsIdOrName(loc)
 
     if (locations.nonEmpty) {
       val allTiplocResults: Set[LocationTimetableResult] = getAllTimetables(from, to, hasCalledAt, willCallAt, y, m, d, locations)

@@ -1,0 +1,52 @@
+@import models.route.display.map.MapRoute
+@(
+        user: models.auth.User,
+        token: String,
+        model: controllers.plan.route.find.result.ResultViewModel,
+        messages: List[String]
+)(implicit request: Request[AnyContent])
+
+@templates.main("Route Finder by Timetable", "Plan",  Some(user)){
+
+
+    <style>
+        td {
+            padding: 0px;
+        }
+
+        .route-td {
+            background-image: url("/assets/images/line.svg");
+            background-size: 32px;
+            background-repeat: repeat-y;
+        }
+        button {
+            display: block;
+        }
+        td div {
+            display: block;
+        }
+
+
+    </style>
+
+
+
+        @if(messages.size > 0){
+        <div class="alert alert-primary">
+            <h2>Messages</h2>
+            <ul>
+                @for(message <- messages){
+                <li>@message</li>
+                }
+            </ul>
+        </div>
+        }
+        <div class="row">
+            <div class="col-sm">
+                <div class="card card-body">
+                    @for(l <- model.mapLocationsList) {
+                      <li>@l.id</li>
+                    }
+            </div>
+        </div>
+}

@@ -1,4 +1,4 @@
-package models.plan.route.pointtopoint
+package services.plan.pointtopoint
 
 import javax.inject.{Inject, Singleton}
 import models.location.Location
@@ -41,7 +41,7 @@ class PointToPointRouteFinderService @Inject()(
       for (i <- 0 until waypoints.size - 1 ) {
         val from = waypoints(i).trim.toUpperCase()
         val to = waypoints(i + 1).trim.toUpperCase()
-        (locationsService.findFirstLocationByIdOrCrs(from.toUpperCase), locationsService.findFirstLocationByIdOrCrs(to.toUpperCase)) match {
+        (locationsService.findFirstLocationByNameTiplocCrsOrId(from.toUpperCase), locationsService.findFirstLocationByNameTiplocCrsOrId(to.toUpperCase)) match {
           case (Some(f), Some(t)) =>
             val routeLocations: List[Location] = list(f, t, followFixedLinks, followFreightLinks, followUnknownLinks)
             if(i == 0) {
@@ -57,7 +57,7 @@ class PointToPointRouteFinderService @Inject()(
       }
     }
 
-    Path(routes, locations)
+    Path(routes, locations, followFixedLinks, followFreightLinks, followUnknownLinks)
   }
 
   def list(beginning: Location,
@@ -188,4 +188,4 @@ class PointToPointRouteFinderService @Inject()(
 
 }
 
-case class Path(routes: List[Route], locations: List[Location])
+case class Path(routes: List[Route], locations: List[Location], followFixedLinks: Boolean, followFreightLinks: Boolean, followUnknownLinks: Boolean)
