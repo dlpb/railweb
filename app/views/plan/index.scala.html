@@ -1,0 +1,37 @@
+@(
+user: models.auth.User
+)(implicit request: Request[AnyContent])
+@templates.main("Plan", "Plan",  Some(user)){
+<div class="row">
+            <div class="col-sm">
+                <div class="card card-body">
+                    <a href="/plan/highlight/locations">Highlight Locations</a>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card card-body">
+                    <a href="/plan/highlight/trains/callingpoints">Highlight Train Calling Points</a>
+                </div>
+            </div>
+
+            <div class="col-sm">
+                <div class="card card-body">
+                    <h3>
+                        <a href="/plan/timetables/location">Search Trains</a>
+                    </h3>
+                </div>
+            </div>
+
+            <div class="col-sm">
+                <div class="card card-body">
+                    <a href="/plan/location/timetables/{train}/simple/{year}/{month}/{day}">URL For specific train: /plan/location/timetables/{train}/simple/{year}/{month}/{day}</a>
+                </div>
+            </div>
+
+            <div class="col-sm">
+                <div class="card card-body">
+                    <a href="/plan/routes/find">Find Routes</a>
+                </div>
+            </div>
+        </div>
+}

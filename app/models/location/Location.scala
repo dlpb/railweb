@@ -9,12 +9,19 @@ case class Location(
                    nrInfo: Option[NrInfo],
                    orrStation: Boolean,
                    crs: Set[String],
-                   tiploc: Set[String]
-                   )
+                   tiploc: Set[String],
+                   orrId: Option[String] = None
+                   ) {
+  def isOrrStation = orrStation && orrId.nonEmpty
+  def getLocationType = `type`
+}
 
 case class SpatialLocation(
                           lat: Double,
-                          lon: Double
+                          lon: Double,
+                          county: Option[String],
+                          district: Option[String],
+                          postcode: Option[String]
                           )
 
 case class NrInfo(
@@ -32,7 +39,8 @@ case class MapLocation(id: String,
                        location: SpatialLocation,
                        orrStation: Boolean,
                        crs: Set[String],
-                       tiploc: Set[String]
+                       tiploc: Set[String],
+                       srs: String
                       )
 object MapLocation {
   def apply(location: Location): MapLocation = {
@@ -44,7 +52,8 @@ object MapLocation {
       location.location,
       location.orrStation,
       location.crs,
-      location.tiploc
+      location.tiploc,
+      location.nrInfo.map(_.srs).getOrElse("")
     )
   }
 }
@@ -54,8 +63,14 @@ case class ListLocation(id: String,
                        operator: String,
                        `type`: String,
                        orrStation: Boolean,
-                        srs: String
-                      )
+                        srs: String,
+                        crs: Set[String],
+                        orrId: Option[String]
+                      ) {
+  def isOrrStation = orrStation && orrId.nonEmpty
+  def getLocationType = `type`
+}
+
 object ListLocation {
   def apply(location: Location): ListLocation = {
     new ListLocation(
@@ -64,7 +79,20 @@ object ListLocation {
       location.operator,
       location.`type`,
       location.orrStation,
-      location.nrInfo.map {_.srs}.getOrElse("")
+      location.nrInfo.map {_.srs}.getOrElse(""),
+      location.crs,
+      location.orrId
     )
   }
+}
+
+case class GroupedListLocation(id: String,
+                        name: String,
+                        operator: String,
+                        `type`: String,
+                        orrStation: Boolean,
+                        orrId: Option[String],
+                        srs: String,
+                        relatedLocations: List[ListLocation]) {
+  def isOrrStation = orrStation && orrId.nonEmpty
 }

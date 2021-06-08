@@ -1,0 +1,178 @@
+@import models.route.display.map.MapRoute
+@(
+user: models.auth.User,
+token: String,
+timetable: models.timetable.dto.train.simple.DisplaySimpleTrainTimetable,
+bs: models.timetable.model.train.BasicSchedule,
+locations: List[models.location.MapLocation],
+routeList: List[MapRoute],
+routeLink: String,
+messages: List[String]
+)(implicit request: Request[AnyContent])
+@templates.main(timetable.origin+" to "+timetable.destination+" - Simple Search", "Plan",  Some(user)){
+
+
+<style>
+    tr.pass {
+        display: none;
+       font-style: italic;
+       color: gray;
+    }
+    tr.pass a {
+        color:gray;
+    }
+</style>
+
+
+
+<div class="container card-body">
+    <div class="row">
+        <div class="col-sm">
+            <div id='title' class="alert alert-secondary">
+                <h3>
+                    <strong><span id="operator-name"></span></strong> Service from <strong>@timetable.origin</strong> to <strong>@timetable.destination</strong>
+                </h3> running on <strong>@timetable.runningOn</strong>
+                <script>
+                    const tocInfo = findTocData('@timetable.operator');
+                    const element = document.getElementById('title');
+
+                    element.style.backgroundColor = tocInfo["colour"];
+                    element.style.color = tocInfo["textColour"];
+
+                    const title = document.getElementById('operator-name');
+                    title.textContent = tocInfo["name"];
+                </script>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col col-sm">
+            <div id="map" class="map"></div>
+            <script type="text/javascript">
+
+                const token = "@token";
+                createMap();
+
+                populateSimpleTrainCallingPoints(map, token, "@timetable.uid", @timetable.day, @timetable.month, @timetable.year)
+                populateTrainConnections(map, token, "@timetable.uid", @timetable.day, @timetable.month, @timetable.year)
+        </script>
+
+        </div>
+    </div>
+</div>
+<div class="container card-body">
+    <div class="">
+        <a class="btn btn-primary" href="@routeLink" role="button">Visit Route</a>
+        <a class="btn btn-primary" href="/plan/timetables/train/@timetable.uid/detailed/@timetable.runningOn.toString.replaceAll("-", "/")" role="button">Detailed Timetable</a>
+    </div>
+</div>
+<div class="container card-body">
+    <div class="row">
+        <div class="col-sm">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <td><div class="d-block d-lg-none">Arr.</div><div class="d-none d-lg-block">Arrival</div></td>
+                        <td>Location</td>
+                        <td><div class="d-block d-lg-none">Pl.</div><div class="d-none d-lg-block">Platform</div></td>
+                        <td><div class="d-block d-lg-none">Dep.</div><div class="d-none d-lg-block">Departure</div></td>
+                    </tr>
+                    </thead>
+                   @for(l <- timetable.locations){
+                        @displayLocation(l)
+                    }
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+}
+@bs(bs: models.timetable.model.train.BasicSchedule) = {
+<div class="row">
+    <div class="col col-sm">
+        <h4>Date Information</h4>
+        <ul>
+            <li> Runs on:
+                @if(bs.validMonday) { M }
+                @if(bs.validTuesday) { T }
+                @if(bs.validWednesday) { W }
+                @if(bs.validThursday) { Th }
+                @if(bs.validFriday) { F }
+                @if(bs.validSaturday) { S }
+                @if(bs.validSunday) { Su }
+            </li>
+            <li>Runs between @bs.runsFrom and @bs.runsTo</li>
+            <li>Bank Holiday: @bs.bankHolidayRunning</li>
+        </ul>
+    </div>
+    <div class="col col-sm">
+        <h4>Train Identity</h4>
+        <ul>
+            <li>Train Status: @bs.trainStatus</li>
+            <li>Train Category: @bs.trainCategory</li>
+            <li>Identity: @bs.trainIdentity</li>
+            <li>Train UID: @bs.trainUid</li>
+            <li>Headcode: @bs.headcode</li>
+            <li>Service Code: @bs.trainServiceCode</li>
+            <li>STP Indicator@bs.stpIndicator</li>
+        </ul>
+    </div>
+    <div class="col col-sm">
+        <h4>Traction Information</h4>
+        <ul>
+            <li>Power Type: @bs.powerType</li>
+            <li>Timing: @bs.timing</li>
+            <li>Max Speed: @bs.speed mph</li>
+            <li>Operating Characteristics: @bs.operatingCharacteristics</li>
+        </ul>
+    </div>
+    <div class="col col-sm">
+        <h4>Passenger Information</h4>
+        <ul>
+            <li>Seating: @bs.seating</li>
+            <li>Sleeper: @bs.sleepers</li>
+            <li>Reservations: @bs.reservations</li>
+            <li>Catering: @bs.catering</li>
+            <li>Branding: @bs.branding</li>
+        </ul>
+    </div>
+</div>
+}
+
+@displayLocation(l: models.timetable.dto.train.simple.DisplaySimpleTrainTimetableCallingPoint) = {
+        <tr>
+        <td>
+            <a href="@l.url">
+                @arr(l)
+            </a>
+        </td>
+        <td>
+            <a href="@l.url">
+                @l.name
+            </a>
+        </td>
+        <td>
+            <a href="@l.url">
+                @platform(l)
+            </a>
+        </td>
+        <td>
+            <a href="@l.url">
+                @dep(l)
+            </a>
+        </td>
+    </tr>
+}
+
+@platform(l: models.timetable.dto.train.simple.DisplaySimpleTrainTimetableCallingPoint) = {
+    @l.platform }
+
+@arr(l: models.timetable.dto.train.simple.DisplaySimpleTrainTimetableCallingPoint) = {
+    @l.arrival
+}
+
+@dep(l: models.timetable.dto.train.simple.DisplaySimpleTrainTimetableCallingPoint) = {
+    @l.departure
+}

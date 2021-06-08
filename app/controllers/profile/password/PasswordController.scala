@@ -1,0 +1,66 @@
+package controllers.profile.visit
+
+import java.util.Date
+
+import auth.JWTService
+import auth.api.AuthorizedAction
+import auth.web.{AuthorizedWebAction, WebUserContext}
+import javax.inject._
+import models.auth.UserDao
+import models.web.forms.ChangePassword
+import play.api.data.Form
+import play.api.data.Forms.{mapping, nonEmptyText}
+import play.api.mvc._
+
+@Singleton
+class PasswordController @Inject()(
+                                    userDao: UserDao,
+                                    jwtService: JWTService,
+                                    cc: ControllerComponents,
+                                    authenticatedUserAction: AuthorizedWebAction,
+                                    authorizedAction: AuthorizedAction
+                                           ) extends AbstractController(cc) {
+
+  val form: Form[ChangePassword] = Form(
+    mapping(
+      "oldPassword" -> nonEmptyText,
+      "newPassword" -> nonEmptyText,
+      "confirmPassword" -> nonEmptyText,
+    )(ChangePassword.apply)(ChangePassword.unapply)
+  )
+
+  def index = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
+    val token = jwtService.createToken(request.user, new Date())
+    Ok(views.html.profile.password.change.index(token, request.user, form, List()))
+  }
+
+
+
+  def changePassword = authorizedAction { implicit request =>
+
+    val token = jwtService.createToken(request.user, new Date())
+    val data = request.request.body.asFormUrlEncoded
+    (data.get("oldPassword").headOption, data.get("newPassword").headOption, data.get("confirmPassword").headOption) match {
+      case (Some(oldPassword), Some(newPassword), Some(confirmPassword)) =>
+        userDao.getDaoUser(request.user) match {
+          case Some(daoUser) =>
+            val encryptedOldPassword = userDao.encryptPassword(oldPassword)
+            if (encryptedOldPassword.equals(daoUser.password)) {
+              if (newPassword.equals(confirmPassword)) {
+                val newDaoUser = daoUser.copy(password = userDao.encryptPassword(newPassword))
+                userDao.updateUser(newDaoUser)
+                Ok(views.html.profile.index(token, request.user, form, List()))
+              } else
+                Ok(views.html.profile.index(token, request.user, form, List("Passwords do not match")))
+            }
+            else
+              Ok(views.html.profile.index(token, request.user, form, List("Password was not correct")))
+          case None =>
+            Ok(views.html.profile.index(token, request.user, form, List("Something went wrong, please try again. Error 2")))
+        }
+      case _ =>
+        Ok(views.html.profile.index(token, request.user, form, List("Something went wrong, please try again. Error 1")))
+    }
+  }
+
+}

@@ -1,0 +1,58 @@
+@(
+form: Form[models.web.forms.LoginUser],
+postUrl: Call
+)(implicit request: MessagesRequestHeader)
+
+@templates.main("Login", "Home", None){
+
+        <div class="text-center">
+            <img src="/assets/images/toy-train.svg" width="128" height="128" alt="location icon"/>
+        </div>
+
+        <div id="user-login-form">
+
+            <h1>User Login</h1>
+
+            @request.flash.data.map{ case (name, value) =>
+            <div>@name: @value</div>
+            }
+
+            @* Global errors are not tied to any particular form field *@
+            @if(form.hasGlobalErrors) {
+            @form.globalErrors.map { error: FormError =>
+            <div>
+                Error: @error.key: @error.message
+            </div>
+            }
+            }
+
+            @helper.form(postUrl, Symbol("id") -> "user-login-form") {
+
+            @helper.CSRF.formField
+
+            @helper.inputText(
+            form("username"),
+            Symbol("_label") -> "Username",
+            Symbol("placeholder") -> "username",
+            Symbol("id") -> "username",
+            Symbol("class") -> "form-control",
+            Symbol("size") -> 60
+            )
+
+            @helper.inputPassword(
+            form("password"),
+            Symbol("_label") -> "Password",
+            Symbol("placeholder") -> "password",
+            Symbol("class") -> "form-control",
+            Symbol("id") -> "password",
+            Symbol("size") -> 60
+            )
+
+            <button class="btn btn-primary">Login</button>
+
+            }
+
+        </div>
+
+
+}

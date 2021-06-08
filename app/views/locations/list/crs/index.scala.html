@@ -1,0 +1,186 @@
+@(
+user: models.auth.User,
+locationsGroupedByCrs: List[models.location.GroupedListLocation],
+tiplocToVisitedStatus: Map[String, Boolean],
+crsGroupToVisitStatus: Map[String, Boolean],
+numberOfTiplocsInCrsGroupVisited: Map[String, Int],
+tiplocToCall: Map[String, Call],
+token: String,
+visited: Int,
+total: Int,
+percentage: String,
+orr: Boolean,
+name: String,
+id: String,
+operator: String,
+srs: String)(implicit request: Request[AnyContent])
+
+@templates.main("All Locations Grouped by CRS", "Locations", Some(user)){
+
+<script type="text/javascript">
+    const token = "@token";
+
+</script>
+        <h1>
+            Locations
+        </h1>
+        <div class="row">
+            <div class="col-sm">
+                <div class="card" style="height: 150px">
+                    <div class="card-body">
+                        <h4>Visited</h4>
+                        <p>@visited / @total (@percentage%)</p>
+                        <span>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: @percentage%"
+                                     aria-valuenow="@visited" aria-valuemin="0" aria-valuemax="@total"></div>
+                            </div>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card" style="height: 150px">
+                    <h4><a class="btn btn-link" data-toggle="collapse" href="#filters" role="button"
+                           aria-expanded="false"
+                           aria-controls="filters">
+                        Filters
+                    </a></h4>
+                    <div class="collapse" id="filters">
+                        <div class="card card-body">
+                            <form method="GET" action="">
+                                <div class="form-check form-check-inline">
+                                    @if(orr){
+                                    <input class="form-check-input" type="radio" name="orrStations" id="orrStations1"
+                                           value="true" checked>
+                                    } else {
+                                    <input class="form-check-input" type="radio" name="orrStations" id="orrStations1"
+                                           value="true">
+                                    }
+                                    <label class="form-check-label" for="orrStations1">Show only ORR Locations</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    @if(orr){
+                                    <input class="form-check-input" type="radio" name="orrStations" id="orrStations2"
+                                           value="false">
+                                    } else {
+                                    <input class="form-check-input" type="radio" name="orrStations" id="orrStations2"
+                                           value="false" checked>
+                                    }
+                                    <label class="form-check-label" for="orrStations2">Show All</label>
+                                </div>
+                                <br/>
+                                <label for="name">Name contains</label>
+                                <input type="text" class="form-control" name="name" id="name" value="@name">
+                                <label for="id">ID contains</label>
+                                <input type="text" class="form-control" name="id" id="id" value="@id">
+                                <label for="operator">Operator contains</label>
+                                <input type="text" class="form-control" name="operator" id="operator" value="@operator">
+                                <label for="srs">SRS contains</label>
+                                <input type="text" class="form-control" name="srs" id="srs" value="@srs">
+                                <div style="padding-top:3px">
+                                    <button type="submit" class="btn btn-primary">Filter</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @for(location <- locationsGroupedByCrs){
+        <div style="padding:1px">
+            @if(location.relatedLocations.size > 1){
+                @if(crsGroupToVisitStatus(location.id)) {
+                    <span class="badge badge-success">
+                        Visited (@numberOfTiplocsInCrsGroupVisited.get(location.id) / @location.relatedLocations.size)
+                    </span>
+                } else {
+                    <span class="badge badge-primary">
+                        Not yet visited (0 / @location.relatedLocations.size)
+                    </span>
+                }
+
+                @location.name
+
+                <span class="tocBadge badge badge-light float-right">
+                    <slot name="tocBadge">@location.operator</slot>
+                </span>
+                @if(location.srs != ""){
+                    <span class="srsBadge badge badge-light float-right">
+                        @location.srs
+                    </span>
+                }
+                <ul>
+                    @for(relatedLocation <- location.relatedLocations) {
+                        <li style="list-style-type: none;">
+                            <div style="padding: 1px;">
+                                @helper.form(tiplocToCall(relatedLocation.id), Symbol("id") -> "visit-form-@related.id", Symbol("style") -> "display: inline") {
+                                    @helper.CSRF.formField
+                                    <input type="hidden" id="Authorization-@relatedLocation.id" name="Authorization" value="@token"/>
+                                    @if(tiplocToVisitedStatus(relatedLocation.id)){
+                                        <button id="visited-@relatedLocation.id" class="btn btn-success btn-sm">Visit</button>
+                                    } else {
+                                        <button id="visit-@relatedLocation.id" class="btn btn-primary btn-sm">Visit</button>
+                                    }
+                                }
+                            <a href="/location/detail/@relatedLocation.id" target="_blank">
+                            @relatedLocation.name
+                            </a>
+                            <br/>
+                            <a href="/location/detail/@relatedLocation.id" target="_blank">
+                                <span class="badge badge-light">@relatedLocation.crs.head</span> <span class="badge badge-light">@relatedLocation.id</span>
+                            </a>
+                            </div>
+                        </li>
+                    }
+                </ul>
+
+            } else {
+                @helper.form(tiplocToCall(location.relatedLocations.head.id), Symbol("id") -> "visit-form-@location.relatedLocations.head.id", Symbol("style") -> "display: inline") {
+                    @helper.CSRF.formField
+                    <input type="hidden" id="Authorization-@location.relatedLocations.head.id" name="Authorization" value="@token"/>
+                    @if(tiplocToVisitedStatus(location.relatedLocations.head.id)){
+                        <button id="visited-@location.relatedLocations.head.id" class="btn btn-success btn-sm">Visit</button>
+                    } else {
+                        <button id="visit-@location.relatedLocations.head.id" class="btn btn-primary btn-sm">Visit</button>
+                    }
+                }
+                <a href="/location/detail/@location.relatedLocations.head.id" target="_blank">
+                    @location.name
+                </a>
+                <span class="tocBadge badge badge-light float-right">
+                        <slot name="tocBadge">@location.operator</slot>
+                    </span>
+                @if(location.srs != ""){
+                     <span class="srsBadge badge badge-light float-right">
+                        @location.srs
+                    </span>
+                }
+                <br/>
+                <a href="/location/detail/@location.relatedLocations.head.id" target="_blank">
+                    <span class="badge badge-light">@location.id</span> <span class="badge badge-light">@location.relatedLocations.head.id</span>
+                </a>
+            }
+        </div>
+        }
+    <script>
+    const els = document.querySelectorAll(".tocBadge");
+    els.forEach(function(el) {
+        const tocInfo = findTocData(el.textContent.trim());
+
+        el.style.backgroundColor = tocInfo["colour"];
+        el.style.color = tocInfo["textColour"];
+    });
+
+    const srs = document.querySelectorAll(".srsBadge");
+    srs.forEach(function(el) {
+        const srsInfo = findSrsData(el.textContent.trim());
+
+        el.style.backgroundColor = srsInfo["colour"];
+        el.style.color = srsInfo["textColour"];
+    });
+
+
+    </script>
+}

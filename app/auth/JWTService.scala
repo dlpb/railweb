@@ -47,7 +47,7 @@ class JWTService {
   }
 
   private def toScalaMap(claims: util.Map[String, Claim]): Map[String, Claim] = {
-    import scala.collection.JavaConverters._
+    import scala.jdk.CollectionConverters._
     claims.asScala.toMap
   }
 //  def decodePayload(token: String): Option[String] = {

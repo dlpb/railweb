@@ -1,0 +1,87 @@
+@(user: models.auth.User)(implicit request: Request[AnyContent])
+
+@templates.main("Home", "Home", Some(user)){
+
+        <div class="row text-center">
+            <div class="col-sm">
+                <div class="card card-body">
+                    <a href="/map">
+                        <div>
+                            <img src="/assets/images/map-color.svg" width="92" height="92" alt="map icon"/>
+                        </div>
+                        <h2>Map</h2>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-sm">
+                <div class="card card-body">
+                    <a href="/locations">
+                        <div>
+                            <img src="/assets/images/placeholder-color.svg" width="92" height="92" alt="location icon"/>
+                        </div>
+                        <h2>Locations</h2>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-sm">
+                <div class="card card-body">
+                    <a href="/routes">
+                        <div>
+                            <img src="/assets/images/route-color.svg" width="92" height="92" alt="route icon"/>
+                        </div>
+                        <h2>Routes</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-sm">
+                <div class="card card-body">
+                    <a href="/plan/routes/find">
+                        <div>
+                            <img src="/assets/images/search-route.svg" alt="search routes" width="92" height="92">
+                        </div>
+                        <h2>Find Route</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card card-body">
+                    <a href="/profile/visits">
+                        <div>
+                            <img src="/assets/images/visits.svg" alt="visits" width="92" height="92">
+                        </div>
+                        <h2>Visits</h2>
+                    </a>
+                </div>
+            </div>
+            @if(user.roles.contains(models.auth.roles.PlanUser)){
+            <div class="col-sm">
+                <div class="card card-body">
+                    <a href="/plan">
+                        <h2>Plan (Alpha)</h2>
+                    </a>
+                </div>
+            </div>
+            }
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <div class="card card-body">
+                    <a href="/toc/all">
+                        <h2>All Operators</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card card-body">
+                    <a href="/srs/all">
+                        <h2>All SRSs</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+}

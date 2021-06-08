@@ -1,0 +1,54 @@
+@import helper._
+
+@(id: String,
+name: String,
+route: String,
+region: String,
+foreground: String,
+background: String,
+opacity: Double)(implicit request: Request[AnyContent])
+@templates.main("SRS " + name, "SRS", None){
+
+
+        <div class="row">
+            <div class="col-sm">
+                <h1>@name</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                <div class="btn-group mr-2" role="group" aria-label="First group">
+                    <a href="/locations/by/crs?srs=@id" role="button" class="btn btn-primary">Locations for SRS</a>
+                    <a href="/routes?srs=@id" role="button" class="btn btn-primary">Routes for SRS</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-sm">
+                <legend>ID & Name</legend>
+                <div class="form-row">
+                    <div class="col form-group">
+                            ID: @id
+                    </div>
+                    <div class="col form-group">
+                        Name: @name
+                    </div>
+                </div>
+                <legend>Route & Region</legend>
+                <div class="form-row">
+                    <div class="col form-group">
+                        Route: @route
+                    </div>
+                    <div class="col form-group">
+                        Region: @region
+                    </div>
+                </div>
+                <legend>Display</legend>
+                <div class="alert alert-primary" style="background-color:@background; color:@foreground;">
+                    This is a sample of the colour
+                </div>
+
+            </div>
+        </div>
+
+}

@@ -1,0 +1,249 @@
+[ {
+  "id" : "CHDWHTT",
+  "name" : "Chadwell Heath Turnback",
+  "operator" : "NR",
+  "type" : "Point",
+  "location" : {
+    "lat" : 51.568768003875505,
+    "lon" : 0.1365432143211365
+  },
+  "nrInfo" : {
+    "crp" : "",
+    "route" : "",
+    "srs" : "",
+    "changeTime" : "",
+    "interchangeType" : ""
+  },
+  "orrStation" : false,
+  "crs" : [ "" ],
+  "tiploc" : [ "CHDWHTT" ]
+}, {
+  "id" : "CHDWLHT",
+  "name" : "Chadwell Heath",
+  "operator" : "XR",
+  "type" : "Station",
+  "location" : {
+    "lat" : 51.567929,
+    "lon" : 0.12797209,
+    "county" : "London",
+    "district" : "Greater London",
+    "postcode" : "RM6 4BU"
+  },
+  "nrInfo" : {
+    "crp" : "",
+    "route" : "Anglia",
+    "srs" : "D.10",
+    "changeTime" : "Set(None)",
+    "interchangeType" : "1 - Small interchange point"
+  },
+  "orrStation" : true,
+  "crs" : [ "CTH" ],
+  "tiploc" : [ "CHDWLHT" ],
+  "orrId" : "CTH"
+},  {
+  "id" : "EMRSPKH",
+  "name" : "Emerson Park",
+  "operator" : "LO",
+  "type" : "Station",
+  "location" : {
+    "lat" : 51.56864,
+    "lon" : 0.2201709,
+    "county" : "London",
+    "district" : "Greater London",
+    "postcode" : "RM11 2JP"
+  },
+  "nrInfo" : {
+    "crp" : "",
+    "route" : "Anglia",
+    "srs" : "D.17",
+    "changeTime" : "Set(None)",
+    "interchangeType" : "0 - Not an interchange point"
+  },
+  "orrStation" : true,
+  "crs" : [ "EMP" ],
+  "tiploc" : [ "EMRSPKH" ],
+  "orrId" : "EMP"
+}, {
+  "id" : "GIDEAPK",
+  "name" : "Gidea Park",
+  "operator" : "RT",
+  "type" : "Station",
+  "location" : {
+    "lat" : 51.58190207482915,
+    "lon" : 0.20596430843825325,
+    "county" : "London",
+    "district" : "Greater London",
+    "postcode" : "RM2 6BX"
+  },
+  "nrInfo" : {
+    "crp" : "",
+    "route" : "Anglia",
+    "srs" : "D.10",
+    "changeTime" : "Set(None)",
+    "interchangeType" : "1 - Small interchange point"
+  },
+  "orrStation" : true,
+  "crs" : [ "GDP" ],
+  "tiploc" : [ "GIDEAPK" ],
+  "orrId" : "GDP"
+}, {
+  "id" : "GODMAYS",
+  "name" : "Goodmayes",
+  "operator" : "XR",
+  "type" : "Station",
+  "location" : {
+    "lat" : 51.565806,
+    "lon" : 0.11210185,
+    "county" : "London",
+    "district" : "Greater London",
+    "postcode" : "IG3 9UH"
+  },
+  "nrInfo" : {
+    "crp" : "",
+    "route" : "Anglia",
+    "srs" : "D.10",
+    "changeTime" : "Set(None)",
+    "interchangeType" : "0 - Not an interchange point"
+  },
+  "orrStation" : true,
+  "crs" : [ "GMY" ],
+  "tiploc" : [ "GODMAYS" ],
+  "orrId" : "GMY"
+}, {
+  "id" : "ILFELEJ",
+  "name" : "Ilford Lon End Junction",
+  "operator" : "XX",
+  "type" : "Point",
+  "location" : {
+    "lat" : 51.5608,
+    "lon" : 0.077662201
+  },
+  "nrInfo" : {
+    "crp" : "",
+    "route" : "",
+    "srs" : "",
+    "changeTime" : "",
+    "interchangeType" : ""
+  },
+  "orrStation" : false,
+  "crs" : [ ],
+  "tiploc" : [ "ILFELEJ" ]
+}, {
+  "id" : "ILFEMUD",
+  "name" : "Ilford E.M.U.D.",
+  "operator" : "XX",
+  "type" : "Point",
+  "location" : {
+    "lat" : 51.561286,
+    "lon" : 0.079170397
+  },
+  "nrInfo" : {
+    "crp" : "",
+    "route" : "",
+    "srs" : "",
+    "changeTime" : "",
+    "interchangeType" : ""
+  },
+  "orrStation" : false,
+  "crs" : [ ],
+  "tiploc" : [ "ILFEMUD" ]
+}, {
+  "id" : "ROMF107",
+  "name" : "Romford Signal L5107",
+  "operator" : "RT",
+  "type" : "Signal",
+  "location" : {
+    "lat" : 51.571266,
+    "lon" : 0.16675963
+  },
+  "nrInfo" : {
+    "crp" : "",
+    "route" : "",
+    "srs" : "",
+    "changeTime" : "",
+    "interchangeType" : ""
+  },
+  "orrStation" : false,
+  "crs" : [ ],
+  "tiploc" : [ "ROMF107" ]
+}, {
+  "id" : "ROMF438",
+  "name" : "Romford Signal 438",
+  "operator" : "RT",
+  "type" : "Signal",
+  "location" : {
+    "lat" : 51.571266,
+    "lon" : 0.16675963
+  },
+  "nrInfo" : {
+    "crp" : "",
+    "route" : "",
+    "srs" : "",
+    "changeTime" : "",
+    "interchangeType" : ""
+  },
+  "orrStation" : false,
+  "crs" : [ ],
+  "tiploc" : [ "ROMF438" ]
+}, {
+  "id" : "ROMF440",
+  "name" : "Romford Signal 440",
+  "operator" : "RT",
+  "type" : "Signal",
+  "location" : {
+    "lat" : 51.572334,
+    "lon" : 0.17272726
+  },
+  "nrInfo" : {
+    "crp" : "",
+    "route" : "",
+    "srs" : "",
+    "changeTime" : "",
+    "interchangeType" : ""
+  },
+  "orrStation" : false,
+  "crs" : [ ],
+  "tiploc" : [ "ROMF440" ]
+}, {
+  "id" : "ROMF450",
+  "name" : "Romford Signal L450",
+  "operator" : "RT",
+  "type" : "Signal",
+  "location" : {
+    "lat" : 51.572334,
+    "lon" : 0.17272726
+  },
+  "nrInfo" : {
+    "crp" : "",
+    "route" : "",
+    "srs" : "",
+    "changeTime" : "",
+    "interchangeType" : ""
+  },
+  "orrStation" : false,
+  "crs" : [ ],
+  "tiploc" : [ "ROMF450" ]
+}, {
+  "id" : "SVNKNGS",
+  "name" : "Seven Kings",
+  "operator" : "XR",
+  "type" : "Station",
+  "location" : {
+    "lat" : 51.563863,
+    "lon" : 0.096068296,
+    "county" : "London",
+    "district" : "Greater London",
+    "postcode" : "IG3 8RE"
+  },
+  "nrInfo" : {
+    "crp" : "",
+    "route" : "Anglia",
+    "srs" : "D.10",
+    "changeTime" : "Set(None)",
+    "interchangeType" : "0 - Not an interchange point"
+  },
+  "orrStation" : true,
+  "crs" : [ "SVK" ],
+  "tiploc" : [ "SVNKNGS" ],
+  "orrId" : "SVK"
+} ]

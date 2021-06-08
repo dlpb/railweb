@@ -26,13 +26,12 @@ class AuthorizedWebAction @Inject()(
   private val logger = play.api.Logger(this.getClass)
 
   override def invokeBlock[A](request: Request[A], block: WebUserContext[A] => Future[Result]) = {
-    logger.info("ENTERED AuthenticatedUserAction::invokeBlock ...")
     val maybeUsername = request.session.get(models.Global.SESSION_USERNAME_KEY)
     val maybeToken = jwtService.isValidToken(request.session.get(models.Global.SESSION_USER_TOKEN).getOrElse(""))
     val maybeUser: Option[User] = maybeUsername flatMap { id => userDao.findUserById(id.toLong)}
     maybeUser match {
       case None => {
-        Future.successful(Redirect(routes.UserController.showLoginForm)
+        Future.successful(Redirect(controllers.login.routes.LoginController.index())
           .flashing("error" -> "Invalid username/password."))
       }
       case Some(user: User) => {
@@ -44,12 +43,12 @@ class AuthorizedWebAction @Inject()(
                 val res: Future[Result] = block(WebUserContext(user, request))
                 res
               case None =>
-                Future.successful(Redirect(routes.UserController.showLoginForm)
+                Future.successful(Redirect(controllers.login.routes.LoginController.index())
                   .flashing("error" -> "User logged out. Please log in again.").withNewSession)
 
             }
           case _ =>
-            Future.successful(Redirect(routes.UserController.showLoginForm)
+            Future.successful(Redirect(controllers.login.routes.LoginController.index())
               .flashing("error" -> "User logged out. Please log in again.").withNewSession)
         }
       }

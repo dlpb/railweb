@@ -1,0 +1,128 @@
+@import models.route.display.list.ListRoute
+@(
+user: models.auth.User,
+routeList: Map[String, ListRoute],
+visits: Map[String, Boolean],
+visitCalls: Map[String, Call],
+token: String,
+visited: Int,
+total: Int,
+percentage: String,
+nrRoutes: Boolean,
+id: String,
+name: String,
+srs: String)(implicit request: Request[AnyContent])
+@templates.main("Routes", "Routes",  Some(user)){
+
+
+        <h1>
+            Routes
+        </h1>
+        <div class="row">
+            <div class="col-sm">
+                <div class="card" style="height: 150px">
+                    <div class="card-body">
+                        <h4>Visited</h4>
+                        <p>@visited / @total (@percentage%)</p>
+                        <span>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: @percentage%"
+                                     aria-valuenow="@visited" aria-valuemin="0" aria-valuemax="@total"></div>
+                            </div>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card" style="height: 150px">
+                    <div class="card-body text-center">
+                        <a href="/plan/routes/find">
+                            <img src="/assets/images/search-route.svg" width="64" height="64" alt="search routes"/>
+                            <h4>Find Route</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card" style="height: 150px">
+
+                    <h4><a class="btn btn-link" data-toggle="collapse" href="#filters" role="button"
+                           aria-expanded="false"
+                           aria-controls="filters">
+                        Filters
+                    </a></h4>
+                    <div class="collapse" id="filters">
+                        <div class="card card-body">
+                            <form method="GET" action="/routes">
+                                <form method="GET" action="/locations">
+                                    <div class="form-check form-check-inline">
+                                        @if(nrRoutes){
+                                        <input class="form-check-input" type="radio" name="nrRoutes" id="nrRoutes1"
+                                               value="true" checked>
+                                        } else {
+                                        <input class="form-check-input" type="radio" name="nrRoutes" id="nrRoutes1"
+                                               value="true">
+                                        }
+                                        <label class="form-check-label" for="nrRoutes1">Show only NR Locations</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        @if(nrRoutes){
+                                        <input class="form-check-input" type="radio" name="nrRoutes" id="nrRoutes2"
+                                               value="false">
+                                        } else {
+                                        <input class="form-check-input" type="radio" name="nrRoutes" id="nrRoutes2"
+                                               value="false" checked>
+                                        }
+                                        <label class="form-check-label" for="nrRoutes2">Show All</label>
+                                    </div>
+                                    <br/>
+                                    <label for="name">Name contains</label>
+                                    <input type="text" class="form-control" name="name" id="name" value="@name">
+                                    <label for="id">ID contains</label>
+                                    <input type="text" class="form-control" name="id" id="id" value="@id">
+                                    <label for="srs">SRS contains</label>
+                                    <input type="text" class="form-control" name="srs" id="srs" value="@srs">
+                                    <div style="padding-top:3px">
+                                        <button type="submit" class="btn btn-primary">Filter</button>
+                                    </div>
+                                </form>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        @for((key, route) <- routeList){
+        <div style="padding:1px">
+            @helper.form(visitCalls(key), Symbol("id") -> "visit-form-@key", Symbol("style") -> "display: inline") {
+            @helper.CSRF.formField
+            <input type="hidden" id="Authorization-@key" name="Authorization" value="@token"/>
+            @if(visits(key)){
+            <button id="visited-@key" class="btn btn-success btn-sm">Visit</button>
+            } else {
+            <button id="visit-@key" class="btn btn-primary btn-sm">Visit</button>
+            }
+            }
+            <a href="/route/detail/@route.from.id/@route.to.id" target="_blank">
+                @route.from.name - @route.to.name (@route.from.id-@route.to.id)
+            </a>
+            <span class="tocBadge badge badge-light float-right">
+                <slot name="tocBadge">@route.srs</slot>
+            </span>
+        </div>
+        }
+    <script>
+    const els = document.querySelectorAll(".tocBadge");
+    els.forEach(function(el) {
+        const srsData = findSrsData(el.textContent.trim());
+
+        el.style.backgroundColor = srsData["colour"];
+        el.style.color = srsData["textColour"];
+    });
+
+
+    </script>
+}

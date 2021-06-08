@@ -1,0 +1,103 @@
+@import helper._
+
+@import models.route.display.map.MapRoute
+@(
+user: models.auth.User,
+routeList: List[MapRoute],
+locations: List[models.location.MapLocation],
+locationToVisitCount: Map[String, Int],
+routeToVisitCount: Map[models.route.display.map.MapRoute, Int],
+locationFirstVisits: List[String],
+routeFirstVisits: List[models.route.display.map.MapRoute],
+event: models.data.Event,
+distance: Long
+)(implicit request: Request[AnyContent])
+@templates.main(event.name + " - Visit", "Profile", Some(user)){
+
+        <div class="row">
+            <h1>Event: @event.name</h1>
+        </div>
+        <div class="row">
+            <div class="alert alert-light" role="alert">
+                <p>@event.details</p>
+                <p>Distance: @(distance/1000.0)km</p>
+                <p>Locations: @locations.size</p>
+                <p>Start time: @event.startedAt</p>
+                <p>End time: @event.endedAt</p>
+                <p>Created time: @event.created</p>
+                <a href="/profile/visits/by/event/@event.id/edit"><button class="btn btn-primary">Edit</button></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <div id="map" class="map"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <h2>Locations</h2>
+                <ul>
+                    @for(location <- locations) {
+                    <li><a href="/location/detail/@location.id" target="_blank">@location.name</a>
+                        @if(locationToVisitCount(location.id) > 0) {
+                        <span class="badge badge-light float-right">Visited @locationToVisitCount(location.id) times</span>
+                        }
+                        @if(locationFirstVisits.contains(location.id)) {
+                        <span class="badge badge-success float-right">First Visit</span>
+                        }
+                    </li>
+                    }
+                </ul>
+            </div>
+            <div class="col-sm">
+                <h2>Routes</h2>
+                <ul>
+                    @for(route <- routeList){
+                        @if(routeToVisitCount(route) > 0) {
+                            <span class="badge badge-light float-right">Visited @routeToVisitCount(route) times</span>
+                        }
+                        @if(routeFirstVisits.contains(route)) {
+                            <span class="badge badge-success float-right">First Visit</span>
+                        }
+                    <li><a href="/route/detail/@route.from.id/@route.to.id" target="_blank">@route.from.name - @route.to.name</a></li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<script type="text/javascript">
+        createMap();
+        @for(route <- routeList) {
+            addSingleConnection(
+            {
+                "from": {
+                    "lat":@route.from.lat,
+                    "lon":@route.from.lon
+                },
+                "to": {
+                    "lat":@route.to.lat,
+                    "lon":@route.to.lon
+                },
+                "srs":"@route.srsCode",
+                "toc":"@route.toc"
+            })
+        }
+
+
+        @for(location <- locations){
+
+            addLocation(
+            {
+                "location": {
+                    "lat":@location.location.lat,
+                    "lon":@location.location.lon
+                },
+                "operator":"@location.operator"
+            })
+        }
+
+
+</script>
+
+}

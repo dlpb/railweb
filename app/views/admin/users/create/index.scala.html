@@ -1,0 +1,49 @@
+@import helper._
+
+@(
+token: String,
+user: models.auth.User,
+users: Set[models.auth.DaoUser],
+messages: List[String]
+)(implicit request: Request[AnyContent])
+@templates.main("Create User", "Admin", Some(user)){
+
+<script type="text/javascript">
+    const token = "@token";
+</script>
+
+
+        <div class="row">
+            <div class="col-sm">
+                <h1>Create User</h1>
+                @if(user.roles.contains(models.auth.roles.AdminUser)) {
+                    @if(messages.size > 0){
+                        <div class="alert alert-primary">
+                            <h2>Messages</h2>
+                            <ul>
+                            @for(message <- messages){
+                                <li>@message</li>
+                            }
+                            </ul>
+                        </div>
+                    }
+
+                <form method="POST" action="/admin/users/create">
+                    @helper.CSRF.formField
+
+                    <input type="hidden" name="Authorization" id="Authorization" value="@token"/>
+                    <label for="username">Username</label>
+                    <input class="form-control" type="text" name="username" id="username"/>
+                    <label for="Password">Password</label>
+                    <input class="form-control" type="password" name="password" id="password"/>
+                    <label for="roles">Roles</label>
+                    <input class="form-control" type="text" name="roles" id="roles"/>
+                    <label for="confirmation">Confirmation</label>
+                    <input class="form-control" type="password" name="confirmation" id="confirmation"/>
+                    <button type="submit" class="btn btn-primary">Create User</button>
+                </form>
+                }
+            </div>
+        </div>
+
+}

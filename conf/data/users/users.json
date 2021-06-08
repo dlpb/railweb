@@ -3,6 +3,6 @@
     "id":1,
     "username":"daniel",
     "password":"4cd010ef88b76d9f0ccbdd8ab8608d8872f9159918d270a00492d14c720e8578",
-    "roles": ["MapUser","VisitUser"]
+    "roles": ["MapUser","VisitUser", "AdminUser", "PlanUser"]
   }
 ]

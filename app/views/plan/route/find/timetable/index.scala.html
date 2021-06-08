@@ -1,0 +1,69 @@
+@import models.route.display.map.MapRoute
+@(
+user: models.auth.User,
+token: String,
+trainUid: String,
+date: String,
+call: Call,
+messages: List[String]
+)(implicit request: Request[AnyContent])
+
+@templates.main("Route Finder by Timetable", "Plan",  Some(user)){
+
+
+    <style>
+        td {
+            padding: 0px;
+        }
+
+        .route-td {
+            background-image: url("/assets/images/line.svg");
+            background-size: 32px;
+            background-repeat: repeat-y;
+        }
+        button {
+            display: block;
+        }
+        td div {
+            display: block;
+        }
+
+
+    </style>
+
+
+
+        @if(messages.size > 0){
+        <div class="alert alert-primary">
+            <h2>Messages</h2>
+            <ul>
+                @for(message <- messages){
+                <li>@message</li>
+                }
+            </ul>
+        </div>
+        }
+        <div class="row">
+            <div class="col-sm">
+                <div class="card card-body">
+                    <h4>Options</h4>
+                    @helper.form(call){
+                      @helper.CSRF.formField
+
+                        <div class="form-group>
+                            <label for="followFixedLinks">Train UID</label><br>
+                            <input type="text" id="trainUid" name="trainUid" value="@trainUid" class="form-control" >
+                        </div>
+                        <div class="form-group">
+                            <label for="followFreightLinks">Follow Freight Links</label><br>
+                            <input type="date" id="date" name="date" value="@date" class="form-control" >
+                        </div>
+
+                        <div style="padding-top:3px">
+                            <button class="btn btn-primary" type="submit">Find Route for Timetable</button>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+}

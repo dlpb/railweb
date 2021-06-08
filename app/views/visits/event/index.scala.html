@@ -1,0 +1,26 @@
+@import helper._
+
+@(
+user: models.auth.User,
+events: List[models.visits.Event],
+)(implicit request: Request[AnyContent])
+@templates.main("All Visits by Event", "Profile", Some(user)){
+
+        <div class="row">
+            <div class="col-sm">
+                <h1>Events</h1>
+                <ul>
+                    @for(event <- events) {
+                        <li>
+                            <a href="/profile/visits/by/event/@event.event.id">@event.event.name</a> @if(event.isActive) {<span class="badge badge-success">Active Event</span>}
+                            <p>@event.event.details - @event.event.startedAt - @event.event.endedAt</p>
+                            <ul>
+                                <li>@event.routesVisited Routes</li>
+                                <li>@event.locationsVisited Locations</li>
+                            </ul>
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>
+}

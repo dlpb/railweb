@@ -7,65 +7,125 @@
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
 
 # user/admin stuff
-GET /                               controllers.LandingPageController.showLandingPage
-GET  /login                         controllers.UserController.showLoginForm
-POST /doLogin                       controllers.UserController.processLoginAttempt
-GET /welcome                        controllers.LandingPageController.showLandingPage
-GET /logout                         controllers.AuthenticatedUserController.logout
-GET /profile                        controllers.AuthenticatedUserController.profile
-GET /profile/changePassword         controllers.AuthenticatedUserController.changePasswordView
-GET /profile/visits                 controllers.AuthenticatedUserController.visits
-POST /profile/changePassword        controllers.AuthenticatedUserController.changePassword
-GET /about                          controllers.UserController.about
+GET  /                                                              controllers.landing.LandingPageController.showLandingPage()
+GET  /login                                                         controllers.login.LoginController.index()
+POST /doLogin                                                       controllers.login.LoginController.processLoginAttempt()
+GET  /welcome                                                       controllers.landing.LandingPageController.showLandingPage()
+GET  /logout                                                        controllers.logout.LogoutController.logout()
 
-GET /admin                          controllers.AdminController.admin
-GET /admin/users                    controllers.AdminController.adminUsers
-GET /admin/users/create             controllers.AdminController.adminUsersCreateView
-GET /admin/users/update             controllers.AdminController.adminUsersUpdateView
-GET /admin/users/update/data/:id    controllers.AdminController.adminUpdateUserDataView(id: Long)
-GET /admin/users/delete             controllers.AdminController.adminUsersDeleteView
-GET /admin/routes/migrate           controllers.AdminController.adminMigrateRouteView(from: String ?="", to: String ?= "")
-POST /admin/users/update            controllers.AdminController.adminUpdateUser
-POST /admin/users/create            controllers.AdminController.adminCreateUser
-POST /admin/users/delete            controllers.AdminController.adminDeleteUser
-POST /admin/users/update/data/:id   controllers.AdminController.adminUpdateUserData(id: Long)
-POST /admin/routes/migrate          controllers.AdminController.adminMigrateRoute
+GET  /profile                                                       controllers.profile.ProfileController.index()
+GET  /profile/changePassword                                        controllers.profile.visit.PasswordController.index()
+POST /profile/changePassword                                        controllers.profile.visit.PasswordController.changePassword()
+
+GET  /profile/visits                                                controllers.profile.visit.VisitsController.index()
+GET  /profile/visits/by/location                                    controllers.profile.visit.location.LocationVisitsController.index(sortField: String ?= "date", sortOrder: String ?= "asc")
+GET  /profile/visits/by/route                                       controllers.profile.visit.route.RouteVisitsController.index(sortField: String ?= "date", sortOrder: String ?= "asc")
+GET  /profile/visits/by/event                                       controllers.profile.visit.event.EventVisitsController.index()
+GET  /profile/visits/by/event/:evt                                  controllers.profile.visit.event.detail.EventDetailController.index(evt: String)
+
+GET  /profile/visits/by/event/:evt/edit                             controllers.profile.visit.event.detail.edit.EventDetailEditController.index(evt: String)
+POST /profile/visits/by/event/:evt/edit                             controllers.profile.visit.event.detail.edit.EventDetailEditController.post(evt: String)
 
 
-GET /map                            controllers.MapController.showMapPage
-GET /routes                         controllers.RouteController.showRouteListPage(nrRoutes: Boolean ?=true, srs: String ?= "all", name: String ?= "all", id: String ?= "all")
-GET /route/detail/:from/:to         controllers.RouteController.showRouteDetailPage(from: String, to: String)
-GET /locations                      controllers.LocationController.showLocationListPage(orrStations: Boolean ?=true, operator: String ?= "all", name: String ?= "all", id: String ?= "all", srs: String ?= "all")
-GET /location/detail/:id            controllers.LocationController.showLocationDetailPage(id: String)
-GET /routes/find                    controllers.ListController.showListPage(waypoints: String ?= "", followFreightLinks: Boolean ?=false, followFixedLinks: Boolean ?= false)
+GET  /about                                                         controllers.about.AboutController.about()
 
-GET /api/location/map               controllers.ApiAuthenticatedController.getLocationsForMap
-GET /api/location/list/default      controllers.ApiAuthenticatedController.getLocationsForList
-GET /api/location/:id               controllers.ApiAuthenticatedController.getLocation(id: String)
+GET  /admin                                                         controllers.admin.AdminController.index()
+GET  /admin/users                                                   controllers.admin.users.UserAdminController.index()
+GET  /admin/users/create                                            controllers.admin.users.create.CreateUserController.index()
+POST /admin/users/create                                            controllers.admin.users.create.CreateUserController.createUser()
+GET  /admin/users/update                                            controllers.admin.users.update.UpdateUserController.index()
+POST /admin/users/update                                            controllers.admin.users.update.UpdateUserController.updateUser()
+GET  /admin/users/update/data/:id                                   controllers.admin.users.update.data.UpdateUserDataController.index(id: Long)
+POST /admin/users/update/data/:id                                   controllers.admin.users.update.data.UpdateUserDataController.updateUserData(id: Long)
+GET  /admin/users/delete                                            controllers.admin.users.delete.DeleteUserController.index()
+POST /admin/users/delete                                            controllers.admin.users.delete.DeleteUserController.deleteUser()
 
-GET /api/route/map                  controllers.ApiAuthenticatedController.getRoutesForMap
-GET /api/route/list/default         controllers.ApiAuthenticatedController.getRoutesForList
-GET /api/route/:from/:to            controllers.ApiAuthenticatedController.getRoute(from: String, to: String)
 
-GET /api/visit/locations             controllers.ApiAuthenticatedController.getAllVisitsForLocations()
-GET /api/visit/location/:id         controllers.ApiAuthenticatedController.getAllVisitsForLocation(id: String)
-POST /api/visit/location            controllers.ApiAuthenticatedController.visitLocation
-POST /api/visit/location/:id        controllers.ApiAuthenticatedController.visitLocationWithParams(id: String)
-POST /api/visit/location/list/:id        controllers.ApiAuthenticatedController.visitLocationFromList(id: String)
-POST /api/visit/location/delete/last/:id controllers.ApiAuthenticatedController.removeLastVisitForLocation(id: String)
-POST /api/visit/location/delete/all/:id  controllers.ApiAuthenticatedController.removeAllVisitsForLocation(id: String)
+GET  /map                                                           controllers.map.MapController.index(colour: String ?= "toc")
+GET  /routes                                                        controllers.route.RouteController.index(nrRoutes: Boolean ?=true, srs: String ?= "all", name: String ?= "all", id: String ?= "all")
+GET  /route/detail/:from/:to                                        controllers.route.detail.RouteDetailController.index(from: String, to: String)
 
-GET /api/visit/route                    controllers.ApiAuthenticatedController.getAllVisitsForRoutes()
-GET /api/visit/route/:from/:to          controllers.ApiAuthenticatedController.getAllVisitsForRoute(from: String, to: String)
-POST /api/visit/route                   controllers.ApiAuthenticatedController.visitRoute
-POST /api/visit/route/:from/:to         controllers.ApiAuthenticatedController.visitRouteWithParams(from: String, to: String)
-POST /api/visit/route/list/:from/:to         controllers.ApiAuthenticatedController.visitRouteFromList(from: String, to: String)
-POST /api/visit/route/delete/last/:from/:to    controllers.ApiAuthenticatedController.removeLastVisitForRoute(from: String, to: String)
-POST /api/visit/route/delete/all/:from/:to     controllers.ApiAuthenticatedController.removeAllVisitsForRoute(from: String, to: String)
+GET  /locations                                                     controllers.location.LocationController.index()
+GET  /locations/by/tiploc                                           controllers.location.list.tiploc.LocationsByTiplocController.index(orrStations: Boolean ?=true, operator: String ?= "all", name: String ?= "all", id: String ?= "all", srs: String ?= "all")
+GET  /locations/by/crs                                              controllers.location.list.crs.LocationsByCrsController.index(orrStations: Boolean ?=true, operator: String ?= "all", name: String ?= "all", id: String ?= "all", srs: String ?= "all")
+GET  /location/detail/:id                                           controllers.location.detail.LocationDetailController.index(id: String)
 
-GET /favicon.ico                    controllers.Assets.at(path="/public/favicon", file="favicon.ico")
-GET /apple-touch-icon.png           controllers.Assets.at(path="/public/favicon", file="/apple-touch-icon.png")
-GET /favicon-32x32.png              controllers.Assets.at(path="/public/favicon", file="/favicon-32x32.png")
-GET /favicon-16x16.png              controllers.Assets.at(path="/public/favicon", file="/favicon-16x16.png")
-GET /site.webmanifest               controllers.Assets.at(path="/public/favicon", file="/site.webmanifest")
-GET /safari-pinned-tab.svg          controllers.Assets.at(path="/public/favicon", file="/safari-pinned-tab.svg")
+GET  /plan                                                          controllers.plan.PlanController.index()
+
+GET  /plan/highlight/locations                                      controllers.plan.highlight.locations.LocationHighlightController.index(locations: String ?= "")
+GET  /plan/highlight/trains/callingpoints                           controllers.plan.highlight.callingpoints.TrainCallingPointHighlightController.index(trainsAndStations: String ?= "", srsLocations: String ?= "", locations: String ?= "", year: Int ?= 0, month: Int ?= 0, day: Int ?= 0)
+GET  /plan/highlight/trains/callingpoints/new                       controllers.plan.highlight.callingpoints.TrainCallingPointHighlightController.newView()
+POST /plan/highlight/trains/callingpoints/new                       controllers.plan.highlight.callingpoints.TrainCallingPointHighlightController.post()
+GET  /plan/highlight/trains/callingpoints/upload                    controllers.plan.highlight.callingpoints.upload.TrainCallingPointUploadController.index()
+POST /plan/highlight/trains/callingpoints/upload                    controllers.plan.highlight.callingpoints.upload.TrainCallingPointUploadController.post()
+
+GET  /plan/timetables/location                                      controllers.plan.timetable.location.LocationTimetableSearchController.index()
+GET  /plan/timetables/location/simple                               controllers.plan.timetable.location.simple.SimpleLocationTimetableController.index(loc: String, year: Int ?= 0, month: Int ?= 0, day: Int ?= 0, from: Int ?= -1, to: Int ?= -1 , date: String ?= "", hasCalledAt: String ?= "", willCallAt: String ?= "")
+GET  /plan/timetables/location/detailed                             controllers.plan.timetable.location.detailed.DetailedLocationTimetableController.index(loc: String, year: Int ?=0, month: Int ?=0, day: Int ?=0, from: Int ?= -1, to: Int ?= -1, date: String ?= "", hasCalledAt: String ?= "", willCallAt: String ?= "")
+
+GET  /plan/timetables/train/:train/simple/:year/:month/:day         controllers.plan.timetable.train.simple.SimpleTrainTimetableController.index(train: String, year: Int, month: Int, day: Int)
+GET  /plan/timetables/train/:train/detailed/:year/:month/:day       controllers.plan.timetable.train.detailed.DetailedTrainTimetableController.index(train: String, year: Int, month: Int, day: Int)
+
+GET  /plan/routes/find                                              controllers.plan.route.find.FindRouteController.index()
+GET  /plan/routes/find/point-to-point                               controllers.plan.route.find.pointtopoint.PointToPointRouteController.index(waypoints: String ?= "", followFixedLinks: Boolean ?= false, followFreightLinks: Boolean ?= false, followUnknownLinks: Boolean ?= false)
+POST /plan/routes/find/point-to-point/result                        controllers.plan.route.find.result.pointtopoint.PointToPointFindRouteResultController.pointtopoint()
+POST /plan/routes/find/point-to-point/result/visit                  controllers.plan.route.find.result.visit.FindRouteResultVisitController.visit()
+GET  /plan/routes/find/timetable                                    controllers.plan.route.find.timetable.TimetableRouteController.index(trainUid: String ?= "", date: String ?= "")
+POST /plan/routes/find/timetable/result                             controllers.plan.route.find.result.timetable.TimetableFindRouteResultController.timetable()
+#POST /plan/routes/find/timetable/result/visit
+
+
+
+GET  /api/plan/train/map/locations/simple/:train/:year/:month/:day  controllers.api.plan.locations.PlanLocationsApiController.getSimpleMapLocationsForTrain(train: String, year: Int, month: Int, day: Int)
+GET  /api/plan/train/map/locations/detailed/:train/:year/:month/:day controllers.api.plan.locations.PlanLocationsApiController.getDetailedMapLocationsForTrain(train: String, year: Int, month: Int, day: Int)
+GET  /api/plan/train/map/route/:train/:year/:month/:day             controllers.api.plan.route.PlanRoutesApiController.createMapRouteForTrain(train: String, year: Int, month: Int, day: Int)
+
+GET  /api/plan/highlight/trains/callingpoints/:train/:date          controllers.api.plan.highlight.callingpoints.PlanCallingPointHighlightApiController.getTrainTimetableCallingPoints(train: String, date: String)
+GET  /api/plan/highlight/trains/location/:location/:date            controllers.api.plan.highlight.callingpoints.PlanCallingPointHighlightApiController.getTrainsAtStationForToday(location: String, date: String, hasCalledAt: String ?= "", willCallAt: String ?= "")
+
+GET  /api/location/map                                              controllers.api.locations.map.MapLocationsApiController.getLocationsForMap()
+GET  /api/location/list/default                                     controllers.api.locations.LocationsApiController.getLocationsForList()
+GET  /api/location/:id                                              controllers.api.locations.LocationsApiController.getLocation(id: String)
+
+GET  /api/route/map                                                 controllers.api.route.map.MapRouteApiController.getRoutesForMap()
+GET  /api/route/list/default                                        controllers.api.route.RouteApiController.getRoutesForList()
+GET  /api/route/:from/:to                                           controllers.api.route.RouteApiController.getRoute(from: String, to: String)
+
+GET  /api/visit/locations                                           controllers.api.locations.visit.VisitLocationsApiController.getAllVisitsForLocations()
+GET  /api/visit/location/:id                                        controllers.api.locations.visit.VisitLocationsApiController.getAllVisitsForLocation(id: String)
+POST /api/visit/location                                            controllers.api.locations.visit.VisitLocationsApiController.visitLocation()
+POST /api/visit/location/:id                                        controllers.api.locations.visit.VisitLocationsApiController.visitLocationWithParams(id: String)
+POST /api/visit/location/list/crs/:id                               controllers.api.locations.visit.VisitLocationsApiController.visitLocationFromCrsList(id: String)
+POST /api/visit/location/list/tiploc/:id                            controllers.api.locations.visit.VisitLocationsApiController.visitLocationFromTiplocList(id: String)
+POST /api/visit/location/delete/last/:id                            controllers.api.locations.visit.VisitLocationsApiController.removeLastVisitForLocation(id: String)
+POST /api/visit/location/delete/all/:id                             controllers.api.locations.visit.VisitLocationsApiController.removeAllVisitsForLocation(id: String)
+
+GET  /api/visit/route                                               controllers.api.route.visit.VisitRouteApiController.getAllVisitsForRoutes()
+GET  /api/visit/route/:from/:to                                     controllers.api.route.visit.VisitRouteApiController.getAllVisitsForRoute(from: String, to: String)
+POST /api/visit/route                                               controllers.api.route.visit.VisitRouteApiController.visitRoute()
+POST /api/visit/route/:from/:to                                     controllers.api.route.visit.VisitRouteApiController.visitRouteWithParams(from: String, to: String)
+POST /api/visit/route/list/:from/:to                                controllers.api.route.visit.VisitRouteApiController.visitRouteFromList(from: String, to: String)
+POST /api/visit/route/delete/last/:from/:to                         controllers.api.route.visit.VisitRouteApiController.removeLastVisitForRoute(from: String, to: String)
+POST /api/visit/route/delete/all/:from/:to                          controllers.api.route.visit.VisitRouteApiController.removeAllVisitsForRoute(from: String, to: String)
+
+GET  /favicon.ico                                                   controllers.Assets.at(path="/public/favicon", file="favicon.ico")
+GET  /apple-touch-icon.png                                          controllers.Assets.at(path="/public/favicon", file="/apple-touch-icon.png")
+GET  /favicon-32x32.png                                             controllers.Assets.at(path="/public/favicon", file="/favicon-32x32.png")
+GET  /favicon-16x16.png                                             controllers.Assets.at(path="/public/favicon", file="/favicon-16x16.png")
+GET  /site.webmanifest                                              controllers.Assets.at(path="/public/favicon", file="/site.webmanifest")
+GET  /safari-pinned-tab.svg                                         controllers.Assets.at(path="/public/favicon", file="/safari-pinned-tab.svg")
+GET /toc/all                                                        controllers.tocs.all.AllTocController.index(q: String ?= "")
+GET /toc/:id                                                        controllers.tocs.view.ViewTocController.index(id: String)
+
+GET /srs/all                                                        controllers.srs.all.AllSrsController.index(q: String ?= "")
+GET /srs/:id                                                        controllers.srs.view.ViewSrsController.index(id: String)
+
+GET /javascripts/srsData.js                     controllers.srs.all.AllSrsController.js()
+GET /javascripts/tocData.js                     controllers.tocs.all.AllTocController.js()
+
+GET /favicon.ico                                controllers.Assets.at(path="/public/favicon", file="favicon.ico")
+GET /apple-touch-icon.png                       controllers.Assets.at(path="/public/favicon", file="/apple-touch-icon.png")
+GET /favicon-32x32.png                          controllers.Assets.at(path="/public/favicon", file="/favicon-32x32.png")
+GET /favicon-16x16.png                          controllers.Assets.at(path="/public/favicon", file="/favicon-16x16.png")
+GET /site.webmanifest                           controllers.Assets.at(path="/public/favicon", file="/site.webmanifest")
+GET /safari-pinned-tab.svg                      controllers.Assets.at(path="/public/favicon", file="/safari-pinned-tab.svg")

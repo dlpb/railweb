@@ -1,0 +1,32 @@
+@import helper._
+
+@(
+token: String,
+user: models.auth.User
+)(implicit request: Request[AnyContent])
+
+@templates.main("User Management", "Admin", Some(user)){
+
+
+@if(user.roles.contains(models.auth.roles.AdminUser)) {
+        <h1>User Management</h1>
+        <div class="row">
+            <div class="col-sm">
+                <div class="card">
+                    <h2><a href="/admin/users/create">Create</a></h2>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card">
+                    <h2><a href="/admin/users/update">Update</a></h2>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card">
+                    <h2><a href="/admin/users/delete">Delete</a></h2>
+                </div>
+            </div>
+        </div>
+
+}
+}

@@ -37,7 +37,7 @@ function createMap() {
 /**
 * Add all points to the map
 */
-function populatePoints(map, token) {
+function populatePoints(map, token, colourSource) {
     jQuery.when(
         jQuery.ajax({
           url: "/api/location/map",
@@ -51,6 +51,56 @@ function populatePoints(map, token) {
     .done(function(locations, visits){
         locations[0].forEach(function(loc){
             loc.visited = findLocationVisit(loc, visits[0]);
+            addLocation(loc, colourSource);
+        });
+    });
+    function findLocationVisit(loc, visits){
+        return visits.includes(loc.id);
+    }
+}
+
+/**
+* Add simple train calling points to map
+*/
+function populateSimpleTrainCallingPoints(map, token, train, day, month, year) {
+    jQuery.ajax({
+      url: "/api/plan/train/map/locations/simple/" + train+ "/" + year + "/" + month + "/" + day,
+      headers: { "Authorization": "Bearer " + token }
+    })
+  .done(function(locations, visits){
+        JSON.parse(locations).forEach(function(loc){
+            addLocation(loc);
+        });
+    });
+}
+/**
+* Add detailed train calling points to map
+*/
+function populateDetailedTrainCallingPoints(map, token, train, day, month, year) {
+    jQuery.ajax({
+      url: "/api/plan/train/map/locations/detailed/" + train + "/" + year + "/" + month + "/" + day,
+      headers: { "Authorization": "Bearer " + token }
+    })
+    .done(function(locations, visits){
+        JSON.parse(locations).forEach(function(loc){
+            addLocation(loc);
+        });
+    });
+}
+
+/**
+* Add all points but with specific highlighting
+*/
+function populatePointsWithHighlighting(map, token, highlighting) {
+    jQuery.when(
+        jQuery.ajax({
+          url: "/api/location/map",
+          headers: { "Authorization": "Bearer " + token }
+        })
+    )
+    .done(function(locations, visits){
+        locations.forEach(function(loc){
+            loc.visited = findLocationVisit(loc, highlighting);
             addLocation(loc);
         });
     });
@@ -59,8 +109,7 @@ function populatePoints(map, token) {
     }
 }
 
-
- function addLocation(location){
+ function addLocation(location, colourSource){
     let lat = location.location.lat;
     let lon = location.location.lon;
 
@@ -74,12 +123,14 @@ function populatePoints(map, token) {
     });
     locationPointFeature.setId(location.id);
 
+    let colour = (colourSource === "srs") ? findSrsData(location.srs) : findTocData(location.operator)
+
     let icon = location.visited ?
         '/assets/images/dot-visited.png':
         '/assets/images/dot-not-visited.png'
     locationPointFeature.setStyle(new ol.style.Style({
         image: new ol.style.Icon(/** @type {olx.style.IconOptions} */({
-            color: findTocData(location.operator).colour,
+            color: colour.colour,
             crossOrigin: 'anonymous',
             src: icon
         })),
@@ -101,7 +152,7 @@ function populatePoints(map, token) {
 /**
 * Add all connections to the map
 */
-function populateConnections(map, token){
+function populateConnections(map, token, colourSource){
     jQuery.when(
         jQuery.ajax({
           url: "/api/route/map",
@@ -125,6 +176,38 @@ function populateConnections(map, token){
         routes[0].forEach(function (connection) {
 
            const visited = findRouteVisit(connection, visits[0]);
+           addRoute(connection, visited, vectorLine, vectorLineLayer, vectorLinksLine, vectorLinksLineLayer, vectorMetroLine, vectorMetroLineLayer, colourSource);
+        });
+
+        map.addLayer(vectorLineLayer);
+        map.addLayer(vectorLinksLineLayer);
+        map.addLayer(vectorMetroLineLayer);
+
+        vectorLinksLineLayer.setVisible(false);
+
+    });
+}
+
+/**
+* Add train connections to the map
+*/
+function populateTrainConnections(map, token, train, day, month, year){
+    jQuery.ajax({
+      url: "/api/plan/train/map/route/" + train + "/" + year + "/" + month + "/" + day,
+      headers: { "Authorization": "Bearer " + token }
+    })
+    .done(function(routes, visits){
+        var vectorLineLayer = new ol.layer.Vector({'id':'lines'});
+        var vectorLinksLineLayer = new ol.layer.Vector({'id':'links'});
+        var vectorMetroLineLayer = new ol.layer.Vector({'id':'metro'});
+
+        var vectorLine = new ol.source.Vector({});
+        var vectorLinksLine = new ol.source.Vector({});
+        var vectorMetroLine = new ol.source.Vector({});
+
+        JSON.parse(routes).forEach(function (connection) {
+
+           const visited = findRouteVisit(connection, visits[0]);
            addRoute(connection, visited, vectorLine, vectorLineLayer, vectorLinksLine, vectorLinksLineLayer, vectorMetroLine, vectorMetroLineLayer);
         });
 
@@ -137,20 +220,22 @@ function populateConnections(map, token){
     });
 }
 
-function addRoute(connection, visited, vectorLine, vectorLineLayer, vectorLinksLine, vectorLinksLineLayer, vectorMetroLine, vectorMetroLineLayer){
+function addRoute(connection, visited, vectorLine, vectorLineLayer, vectorLinksLine, vectorLinksLineLayer, vectorMetroLine, vectorMetroLineLayer, colourSource){
    connection.visited = visited;
 
+   let colour = (colourSource === "srs") ? findSrsData(connection.srsCode).colour : findTocData(connection.toc).colour
+
    if(connection.srsCode == "Link"){
-       addConnection(connection, vectorLinksLine, vectorLinksLineLayer, findTocData(connection.toc).colour);
+       addConnection(connection, vectorLinksLine, vectorLinksLineLayer, colour);
    }
    else if(connection.type==="Light Rail"
         || connection.type === "Underground"
         || connection.type==="Metro"
         || connection.type==="Tram"){
-            addConnection(connection, vectorMetroLine, vectorMetroLineLayer, findTocData(connection.toc).colour);
+            addConnection(connection, vectorMetroLine, vectorMetroLineLayer, colour);
    }
    else{
-       addConnection(connection, vectorLine, vectorLineLayer, findTocData(connection.toc).colour);
+       addConnection(connection, vectorLine, vectorLineLayer, colour);
    }
 }
 
@@ -238,8 +323,6 @@ function registerMapHandler(map){
             let content = document.getElementById("content-placeholder");
 
             jQuery(content).empty();
-            console.log(feature);
-            console.log(feature.get("visited"));
 
             let name = feature.get('name');
             let id = feature.get("id");

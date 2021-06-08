@@ -1,0 +1,75 @@
+@import helper._
+
+@(
+query: String,
+srs: List[models.srs.Srs])(implicit request: Request[AnyContent])
+@templates.main("All SRS", "SRS", None){
+
+        <div class="row">
+            <div class="col-sm">
+                <h1>All SRS</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-sm">
+                <form>
+                    <label for="q">Filter srs based on value</label>
+                    <input id="q" class="form-control" type="text" name="q" value="@query">
+                    <button type="submit" class="btn btn-primary">Filter</button>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-sm">
+                <div class="alert alert-secondary" role="alert">
+                    Showing @(srs.size) SRS
+                </div>
+            </div>
+        </div>
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">SRS ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Route</th>
+                <th scope="col">Region</th>
+                <th scope="col">Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            @for(s <- srs){
+            <tr>
+                <td style="width: 1em;">
+                    <div class="badge badge-dark" style="background-color:@s.colour.backgroundColour; color: @s.colour.foregroundColour">
+                            @s.id
+                    </div>
+                </td>
+                <td style="width: 1em;">
+                    <a href="/srs/@s.id">
+                        @s.name
+                    </a>
+                </td>
+                <td style="width: 1em;">
+                    <a href="/srs/@s.id">
+                        @s.route
+                    </a>
+                </td>
+                <td style="width: 1em;">
+                    <a href="/srs/@s.id">
+                        @s.region
+                    </a>
+                </td>
+                <td style="width: 1em;">
+                    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups" style="display: inline">
+                        <div class="btn-group mr-2" role="group" aria-label="First group">
+                            <a href="/locations/by/crs?srs=@s.id" role="button" class="btn btn-primary">Locations for SRS</a>
+                            <a href="/routes?srs=@s.id" role="button" class="btn btn-primary">Routes for SRS</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            }
+            </tbody>
+        </table>
+
+}

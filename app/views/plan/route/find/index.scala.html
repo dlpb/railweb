@@ -1,0 +1,30 @@
+@import models.route.display.map.MapRoute
+@(
+user: models.auth.User,
+token: String
+)(implicit request: Request[AnyContent])
+
+@templates.main("Route Finder", "Plan",  Some(user)){
+
+
+        <div class="row">
+            <div class="col-sm">
+                <div class="card card-body">
+                    <div class="row">
+                        <div class="col col-sm">
+                            <a href="/plan/routes/find/point-to-point">
+                                <h3>Point to Point</h3>
+                                Find a route by waypoints
+                            </a>
+                        </div>
+                        <div class="col col-sm">
+                            <a href="/plan/routes/find/timetable">
+                                <h3>By Timetable</h3>
+                                Find a route by searching for a timetable
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+}

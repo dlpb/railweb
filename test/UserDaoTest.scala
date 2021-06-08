@@ -2,11 +2,12 @@ import com.typesafe.config.{ConfigFactory, ConfigValueFactory}
 import models.auth.roles.{MapUser, VisitUser}
 import models.auth.{DaoUser, FileBasedUserDao, User, UserDao}
 import models.web.forms.LoginUser
-import org.scalatest.{FlatSpec, Matchers}
+import org.scalatest.flatspec.AnyFlatSpec
+import org.scalatest.matchers.should.Matchers
 
 import scala.io.Source
 
-class UserDaoTest extends FlatSpec with Matchers {
+class UserDaoTest extends AnyFlatSpec with Matchers {
 
   "UserDao" should "Return true for foo login user" in {
     val foundUser = new FileBasedUserDao(config).lookupUser(LoginUser("foo", "foo"))

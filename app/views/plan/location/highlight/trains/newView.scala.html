@@ -1,0 +1,518 @@
+@import helper._
+
+
+@(
+user: models.auth.User,
+token: String,
+stations: List[models.location.Location],
+formData: List[Map[String, (String, String)]],
+callingPoints: List[models.location.MapLocation],
+notCalledAt: List[models.location.MapLocation],
+highlightPoints: List[models.location.MapLocation],
+highlightKeys: List[String],
+srs: List[(String, String)],
+trainDataPlan: String,
+totalCalledAt: Int,
+totalHighlighted: Int,
+percentageCalledAt: Double,
+messages: List[String],
+formSubmitRoute: Call
+)(implicit request: Request[AnyContent])
+@templates.main("Highlight Trains", "Plan",  Some(user)){
+
+<style>
+    td{
+        display:block;
+    }
+
+</style>
+
+<script type="text/javascript">
+    const token = "@token";
+
+</script>
+
+@if(messages.size > 0){
+<div class="alert alert-primary">
+    <h2>Messages</h2>
+    <ul>
+        @for(message <- messages){
+        <li>@message</li>
+        }
+    </ul>
+</div>
+}
+
+@if(formData.nonEmpty){
+<div class="row">
+    <div class="col col-sm">
+        <a class="btn btn-info" role="button" download="plan.tsv" href="data:text/tab-separated-values;base64,@trainDataPlan">Download this Train Plan</a>
+        <hr/>
+    </div>
+</div>
+} else {
+<div class="row">
+    <div class="col col-sm">
+        <a class="btn btn-info" role="button"  href="/plan/highlight/trains/callingpoints/upload">Upload Existing Train Plan</a>
+        <hr/>
+    </div>
+</div>
+}
+
+@helper.form(action = formSubmitRoute) {
+@helper.CSRF.formField
+<div class="row">
+    <div class="col col-sm">
+
+        <datalist id="stations">
+            @for(s <- stations) {
+            <option value="@s.name">@s.name [@s.id] [@s.crs.mkString]</option>
+            }
+        </datalist>
+        <div id="container">
+            <div class="row">
+                <div class="col col-sm">
+                    <div class="form-group">
+                        <label for="locationsToHighlight">Locations / SRS to Highlight</label>
+
+                        <input type="text" name="locationsToHighlight" id="locationsToHighlight" class="form-control" list="locationsToHighlightList" value='@highlightKeys.mkString(",")'>
+                        <datalist id="locationsToHighlightList">
+                            @for(s <- srs) {
+                            <option value="@s._1">@s._2 [@s._1]</option>
+                            }
+                            @for(s <- stations) {
+                            <option value="@s.name">@s.name [@s.id] [@s.crs.mkString]</option>
+                            }
+                        </datalist>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            @for(data <- formData){
+            <div class="row">
+                <div class="col col-sm">
+                    <div class="form-group">
+                        <label for='@data("date")._1'>Date</label>
+                        <div class="input-group mb-2">
+                            <input id='@data("date")._1' name='@data("date")._1' class="form-control" type="date" value='@data("date")._2'>
+                            <div class="input-group-append">
+                                <button type="button" class="btn btn-outline-primary btn-sm date" onclick="enableLocation(this)">Set Date</button>
+                            </div>
+                        </div>
+
+                        <label for='@data("location")._1'>Location to Search for Trains at</label>
+                        <input id='@data("location")._1' name='@data("location")._1' class="form-control location" list="stations"
+                           value='@data("location")._2' disabled="disabled"/>
+                        <label for='@data("hasCalledAt")._1'>Train should have called at</label>
+
+                        <input id='@data("hasCalledAt")._1' name='@data("hasCalledAt")._1' class="form-control hasCalledAt" list="stations"
+                               value='@data("hasCalledAt")._2' disabled="disabled"/>
+
+                        <label for='@data("willCallAt")._1'>Train should call at</label>
+                        <input id='@data("willCallAt")._1' name='@data("willCallAt")._1' class="form-control willCallAt" list="stations"
+                               value='@data("willCallAt")._2' disabled="disabled"/>
+                        <div class="input-group-append">
+                            <button type="button" class="btn btn-outline-primary btn-sm search" onclick="addLocationSuggestion(this)"  disabled="disabled">Search</button>
+                        </div>
+
+
+                        <label for='@data("trainId")._1'>Train ID</label>
+                        <datalist id="datalist-0"></datalist>
+                        <select id='@data("trainId")._1' name='@data("trainId")._1' class="form-control train-id" type="text"
+                               onchange="addTrain(this)" onfocusout="addTrain(this)" list="datalist-0" value='@data("trainId")._2' disabled="disabled">
+                            <option selected="selected">@data("trainId")._2</option>
+                        </select>
+
+                        <label for='@data("board")._1'>Board At</label>
+                        <select id='@data("board")._1' name='@data("board")._1' class="form-control" disabled="disabled">
+                            <option selected="selected">@data("board")._2</option>
+                        </select>
+
+                        <label for='@data("alight")._1'>Alight At</label>
+                        <select id='@data("alight")._1' name='@data("alight")._1' class="form-control" disabled="disabled">
+                            <option selected="selected">@data("alight")._2</option>
+                        </select>
+                        <br/>
+                        <a role="button" class="btn btn-danger remove"><span class="text-light">Remove</span></a>
+                        <hr/>
+                    </div>
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col col-sm">
+        <div class="card-body">
+            <a role="button" class="btn btn-secondary add"><span class="text-light">Add Train</span></a>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        <hr/>
+    </div>
+</div>
+<input type="hidden" id="serialized" name="serialized"/>
+}
+
+<div class="row">
+
+
+    <template>
+        <div class="alert alert-light alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                    aria-hidden="true">&times;</span></button>
+            <span class="title">
+                <slot name="info"></slot>
+            </span>
+            <span id="tocBadge" class="badge badge-danger">
+                <slot name="tocBadge"></slot>
+            </span>
+            <span id="typeBadge" class="badge badge-secondary">
+                <slot name="type"></slot>
+            </span><br/>
+            <slot name="data" id="data" style="display: none"></slot>
+            <a href="" target="_blank">More Details</a>
+            <span id="visit-form" style="display:none"><span id="location"></span><span id="visit"></span></span>
+        </div>
+    </template>
+
+    <template class="train-table-row">
+
+        <div class="row">
+            <div class="col col-sm">
+                <div class="form-group">
+                    <label id="date-label" for="date">Date</label>
+                    <div class="input-group mb-2">
+                        <input id="date" name="date" class="form-control" type="date">
+                        <div class="input-group-append">
+                            <button type="button" class="btn btn-outline-primary btn-sm date" onclick="enableLocation(this)">Set Date</button>
+                        </div>
+                    </div>
+
+                    <label id="location-label" for="location">Search for Trains at this Location</label>
+                    <input id="location" name="location" class="form-control location" list="stations" disabled="disabled"/>
+
+                    <label id="hasCalledAt-label" for="hasCalledAt">Train should have called at</label>
+                    <input id='hasCalledAt' name='hasCalledAt' class="form-control hasCalledAt" list="stations"
+                           disabled="disabled"/>
+
+                    <label id="willCallAt-label" for='willCallAt'>Train should call at</label>
+                    <input id='willCallAt' name='willCallAt' class="form-control willCallAt" list="stations"
+                           disabled="disabled"/>
+
+                    <div class="input-group-append">
+                        <button type="button" class="btn btn-outline-primary btn-sm search" onclick="addLocationSuggestion(this)"  disabled="disabled" >Search</button>
+                    </div>
+
+
+                    <label id="train-label" for="train-id">Train ID</label>
+                    <datalist id="datalist"></datalist>
+                    <select id="train-id" name="train-id" class="form-control train-id" type="text"
+                            onchange="addTrain(this)" onfocusout="addTrain(this)" list="datalist-0" disabled="disabled"></select>
+
+                    <label id="board-label" for="board">Board At</label>
+                    <select id="board" name="board" class="form-control" disabled="disabled"></select>
+
+                    <label id="alight-label" for="alight">Alight At</label>
+                    <select id="alight" name="alight" class="form-control" disabled="disabled"></select>
+                    <br/>
+                    <a role="button" class="btn btn-danger remove" onclick="removeRow(this)"><span class="text-light">Remove</span></a>
+                    <hr/>
+                </div>
+            </div>
+        </div>
+    </template>
+
+</div>
+<div class="row">
+    <div class="col col-sm">
+        <h3>Statistics</h3>
+        <ul class="list-group">
+            <li class="list-group-item">Total Stations Called At: @totalCalledAt</li>
+            <li class="list-group-item">Total Stations Highlighted: @totalHighlighted</li>
+            <li class="list-group-item">Percentage called at: @percentageCalledAt %</li>
+        </ul>
+    </div>
+</div>
+<hr/>
+<div class="row">
+    <div class="col col-sm">
+        <h3>Calling Points</h3>
+        <div id="content-placeholder"></div>
+
+        <div id="map" class="map"></div>
+    </div>
+
+</div>
+
+
+<script type="text/javascript">
+createMap();
+
+$("document").ready(function() {
+    setTimeout(function() {
+        var locations = document.getElementsByClassName("search");
+        for(var i=0; i<locations.length; i++) {
+            locations[i].dispatchEvent(new Event("click"));
+        }
+    },10);
+
+    setTimeout(function() {
+        var trainIds = document.getElementsByClassName("train-id");
+        for(var i=0; i<trainIds.length; i++) {
+            trainIds[i].dispatchEvent(new Event("change"));
+        }
+
+    },5000);
+
+});
+
+function enableLocation(element){
+        var $this=$(element);
+        $this.parent().parent().parent().find('.services.visit.location')[0].removeAttribute("disabled");
+        $this.parent().parent().parent().find('.search')[0].removeAttribute("disabled");
+        $this.parent().parent().parent().find('.willCallAt')[0].removeAttribute("disabled");
+        $this.parent().parent().parent().find('.hasCalledAt')[0].removeAttribute("disabled");
+}
+
+function uuidv4() {
+  return ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, c =>
+    (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
+  );
+}
+
+@for(loc <- callingPoints) {
+    addLocation({
+        "location": {
+            "lat": @loc.location.lat,
+            "lon": @loc.location.lon
+        },
+        "name":'@loc.name',
+        "id": '@loc.id',
+        "operator": '@loc.operator',
+        "visited": true
+    });
+}
+ @for(loc <- highlightPoints) {
+    addLocation({
+        "location": {
+            "lat": @loc.location.lat,
+            "lon": @loc.location.lon
+        },
+        "name":'@loc.name',
+        "id": '@loc.id',
+        "operator": '@loc.operator',
+        "visited": false
+    });
+}
+
+registerMapHandler(map);
+
+ $('.remove').click(function(){
+        console.log("remove");
+        removeRow(this);
+    });
+
+    function removeRow(el){
+        $(el).parent().parent().remove();
+    }
+
+ $('.add').click(function(){
+        console.log("add");
+        var rowNumber = uuidv4();
+        var container = document.querySelector("#container");
+        var template = document.querySelector('.train-table-row');
+
+
+        var clone = template.content.cloneNode(true);
+        container.appendChild(clone);
+
+        document.getElementById("date").name = "date_" + rowNumber;
+        document.getElementById("datalist").name = "datalist_" + rowNumber;
+        document.getElementById("location").name = "location_" + rowNumber;
+        document.getElementById("train-id").name = "train-id_" + rowNumber;
+        document.getElementById("board").name = "board_" + rowNumber;
+        document.getElementById("alight").name = "alight_" + rowNumber;
+        document.getElementById("hasCalledAt").name = "hasCalledAt_" + rowNumber;
+        document.getElementById("willCallAt").name = "willCallAt_" + rowNumber;
+
+        document.getElementById("date-label").setAttribute("for","date-label_" + rowNumber);
+        document.getElementById("location-label").setAttribute("for","location-label_" + rowNumber);
+        document.getElementById("train-label").setAttribute("for","train-id-label_" + rowNumber);
+        document.getElementById("board-label").setAttribute("for","board-label_" + rowNumber);
+        document.getElementById("alight-label").setAttribute("for","alight-label_" + rowNumber);
+        document.getElementById("hasCalledAt-label").name = "hasCalledAt-label_" + rowNumber;
+        document.getElementById("willCallAt-label").name = "willCallAt-label_" + rowNumber;
+
+        document.getElementById("date-label").setAttribute("id","date-label_" + rowNumber);
+        document.getElementById("location-label").setAttribute("id","location-label_" + rowNumber);
+        document.getElementById("train-label").setAttribute("id","train-id-label_" + rowNumber);
+        document.getElementById("board-label").setAttribute("id","board-label_" + rowNumber);
+        document.getElementById("alight-label").setAttribute("id","alight-label_" + rowNumber);
+        document.getElementById("hasCalledAt").setAttribute("id","hasCalledAt_" + rowNumber);
+        document.getElementById("willCallAt").setAttribute("id","willCallAt_" + rowNumber);
+
+        document.getElementById("date").id = "date_" + rowNumber;
+        document.getElementById("datalist").id = "datalist_" + rowNumber;
+        document.getElementById("location").id = "location_" + rowNumber;
+        document.getElementById("train-id").setAttribute("list", "datalist_" + rowNumber);
+        document.getElementById("train-id").id = "train-id_" + rowNumber;
+        document.getElementById("board").id = "board_" + rowNumber;
+        document.getElementById("alight").id = "alight_" + rowNumber;
+
+    });
+
+function removeOptions(el){
+    for(var i = el.length -1 ; i>= 0; i--){
+        el.remove(i);
+    }
+}
+
+function addLocationSuggestion(element){
+
+        var $this=$(element);
+        $this.attr("disabled", "disabled");
+        console.log("setting location suggestions");
+
+        var location = $this.parent().parent().parent().find('.services.visit.location')[0].value;
+        $this.parent().parent().parent().find('.services.visit.location')[0].setAttribute("disabled", "disabled");
+        $this.parent().parent().parent().find('.search')[0].setAttribute("disabled", "disabled");
+
+        $this.parent().parent().parent().find('.willCallAt')[0].setAttribute("disabled", "disabled");
+        $this.parent().parent().parent().find('.hasCalledAt')[0].setAttribute("disabled", "disabled");
+
+
+        var selects = $this.parent().parent().parent().find('select');
+        var trainIds = selects[0];
+        var previousTrainId = "";
+        if(typeof trainIds !== 'undefined') {
+           previousTrainId = trainIds.value;
+           removeOptions(trainIds);
+        }
+
+        var date = $this.parent().parent().parent().find('input[type=date]').val();
+        var callsAt = $this.parent().parent().parent().find('.willCallAt').val();
+        var calledAt = $this.parent().parent().parent().find('.hasCalledAt').val();
+
+        console.log(callsAt, calledAt);
+
+         jQuery.when(
+            jQuery.ajax({
+              url: "/api/plan/highlight/trains/location/" + location + "/" + date,
+              headers: { "Authorization": "Bearer " + token },
+              data: {
+                willCallAt: callsAt,
+                hasCalledAt: calledAt
+              }
+            })
+
+        )
+        .done(function(timetable){
+
+            var json = JSON.parse(timetable);
+
+            json.forEach(function(t) {
+                var option = document.createElement("option");
+                if(t.uid === previousTrainId) { option.selected = true; }
+                var arrStr = "";
+                var depStr = "";
+                var pfmStr = "";
+                if(t.arr != "")  arrStr = " a.";
+                if(t.dep != "") depStr = "d. ";
+                if(t.pfm != "") pfmStr = " - Pfm.:";
+                option.text=t.uid + " - " + t.dep + depStr + t.org + " to " + t.dst + pfmStr + t.pfm + arrStr + t.arr;
+                option.value=t.uid;
+                trainIds.appendChild(option);
+
+            });
+
+            $this.removeAttr("disabled");
+            $this.parent().parent().parent().find('.services.visit.location')[0].removeAttribute("disabled");
+            $this.parent().parent().parent().find('.train-id')[0].removeAttribute("disabled");
+            $this.parent().parent().parent().find('.search')[0].removeAttribute("disabled");
+            $this.parent().parent().parent().find('.willCallAt')[0].removeAttribute("disabled");
+            $this.parent().parent().parent().find('.hasCalledAt')[0].removeAttribute("disabled");
+
+        });
+}
+
+function addTrain(element){
+        var $this=$(element);
+
+        var selects = $this.parent().parent().find('select');
+        var board = selects[1];
+        var alight = selects[2];
+
+        console.log("disabling selects")
+
+        board.setAttribute("disabled", "disabled");
+        alight.setAttribute("disabled", "disabled");
+
+        var previousBoardValue = board.value;
+        var previousAlightValue = alight.value;
+
+        console.log(previousBoardValue, previousAlightValue);
+
+        removeOptions(board);
+        removeOptions(alight);
+
+        var date = $this.parent().parent().find('input[type=date]').val()
+        var trainId = $this.val();
+
+        console.log("making request for "+ trainId +", on date " + date);
+
+         jQuery.when(
+            jQuery.ajax({
+              url: "/api/plan/highlight/trains/callingpoints/" + trainId + "/" + date,
+              headers: { "Authorization": "Bearer " + token }
+            })
+
+        )
+        .done(function(timetable){
+            console.log("enabling selects");
+
+            var json = JSON.parse(timetable);
+            var depOptions = json.map(function(t) {
+                if(t.type !== "Origin") {
+                    var option = document.createElement("option");
+                    if(t.tiploc === previousBoardValue) { option.selected = true; }
+                    option.text=t.name + " - " + t.dep;
+                    option.value=t.tiploc;
+                    return option;
+                }
+            });
+
+            var arrOptions = json.map(function(t) {
+                if(t.type !== "Terminus"){
+                    var option = document.createElement("option");
+                    if(t.tiploc === previousAlightValue) { option.selected = true; }
+                    option.text=t.name + " - " + t.arr;
+                    option.value=t.tiploc;
+                    return option;
+                }
+            });
+
+
+
+            board.removeAttribute("disabled");
+            alight.removeAttribute("disabled");
+
+            depOptions.forEach(function(option){
+                if(option !== undefined){
+                    board.add(option);
+                }
+            });
+            arrOptions.forEach(function(option){
+                if(option !== undefined){
+                    alight.add(option);
+                }
+            });
+
+
+        });
+}
+
+
+
+</script>
+}

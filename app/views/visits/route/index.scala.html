@@ -1,0 +1,101 @@
+@import helper._
+
+@import models.route.display.map.MapRoute
+@(
+        user: models.auth.User,
+        routeVisits: List[models.data.RouteVisit],
+        routeVisitEvents: Map[(String, String), List[models.data.Event]],
+        mapRoutes: List[MapRoute],
+        routeVisitCount: Map[models.route.Route, Int],
+        routeVisitIndex: Map[models.route.Route, Int],
+        sortCall: Call,
+        sortField: String,
+        sortOrder: String
+)(implicit request: Request[AnyContent])
+
+@templates.main("All Visits by Route", "Profile", Some(user)){
+
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/profile">Profile</a></li>
+        <li class="breadcrumb-item"><a href="/profile/visits">Visits</a></li>
+        <li class="breadcrumb-item active" aria-current="page">By Route</li>
+    </ol>
+</nav>
+
+        <div class="row">
+            <div class="col-sm">
+                <h1>Routes</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <div id="map" class="map"></div>
+            </div>
+        </div>
+    <div class="row">
+        <div class="col col-sm">
+            <div id="form">
+            @helper.form(sortCall) {
+                <label for="sortField">Sort Locations By:</label>
+                <select name="sortField" id="sortField">
+                    <option value="name" @if(sortField.equals("name")) { selected="selected" } >Location Name</option>
+                    <option value="date" @if(sortField.equals("date")) { selected="selected" } >Fist Visit Date</option>
+                    <option value="count" @if(sortField.equals("count")) { selected="selected" } >Visit Count</option>
+                    <option value="id" @if(sortField.equals("id")) { selected="selected" } >Location ID</option>
+                </select>
+                <label for="sortOrder">Order Sort By:</label>
+                <select name="sortOrder" id="sortOrder">
+                    <option value="asc" @if(sortField.equals("asc")) { selected="selected" } >Ascending</option>
+                    <option value="desc" @if(sortField.equals("desc")) { selected="selected" } >Descending</option>
+                </select>
+                <button type="submit" class="btn btn-primary">Sort</button>
+            }
+            </div>
+        </div>
+    </div>
+        <div class="row">
+            <div class="col-sm">
+                @for(visit <- routeVisits) {
+                <ul>
+                    <li>
+                        <a href="/route/detail/@visit.visited.from/@visit.visited.to" target="_blank">@visit.visited.from.name - @visit.visited.to.name</a>
+                        <span class="badge badge-info">Visited @(routeVisitCount(visit.visited)) times</span> <span class="badge badge-dark">Route @(routeVisitIndex(visit.visited))</span>
+                          @for(events <- routeVisitEvents.get((visit.visited.from.id, visit.visited.to.id))) {
+                              <ul>
+                                @for(event <- events) {
+
+                                    <li><a href="/profile/visits/by/event/@event.id">@event.name</a></li>
+                                }
+                              </ul>
+                          }
+                    </li>
+                </ul>
+
+                }
+            </div>
+        </div>
+
+
+<script type="text/javascript">
+        createMap();
+        @for(route <- mapRoutes) {
+            addSingleConnection(
+            {
+                "from": {
+                    "lat":@route.from.lat,
+                    "lon":@route.from.lon
+                },
+                "to": {
+                    "lat":@route.to.lat,
+                    "lon":@route.to.lon
+                },
+                "srs":"@route.srsCode",
+                "toc":"@route.toc"
+            })
+        }
+
+</script>
+
+}

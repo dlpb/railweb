@@ -1,0 +1,50 @@
+@import helper._
+
+@(
+token: String,
+user: models.auth.User,
+editedUserId: Long,
+locationString: String,
+routeString: String,
+eventString: String,
+messages: List[String]
+)(implicit request: Request[AnyContent])
+
+@templates.main("Update Existing User's Data", "Admin", Some(user)){
+
+
+<script type="text/javascript">
+    const token = "@token";
+</script>
+
+        <div class="row">
+            <div class="col-sm">
+                <h1>Manage Existing Users</h1>
+                @if(user.roles.contains(models.auth.roles.AdminUser)) {
+                @if(messages.size > 0){
+                <div class="alert alert-primary">
+                    <h2>Messages</h2>
+                    <ul>
+                        @for(message <- messages){
+                        <li>@message</li>
+                        }
+                    </ul>
+                </div>
+                }
+                <form action="/admin/users/update/data/@editedUserId" method="POST">
+                    @helper.CSRF.formField
+                    <input type="hidden" name="Authorization" id="Authorization" value="@token"/>
+                    <label for="locations">Locations</label>
+                    <textarea class="form-control" name="locations" id="locations">@locationString</textarea>
+                    <label for="routes">Routes</label>
+                    <textarea class="form-control" name="routes" id="routes">@routeString</textarea>
+                    <label for="events">Events</label>
+                    <textarea class="form-control" name="events" id="events">@eventString</textarea>
+                    <label for="confirmation">Confirmation</label>
+                    <input class="form-control" type="password" id="confirmation" name="confirmation"/>
+                    <button class="btn btn-primary">Update</button>
+                </form>
+                }
+            </div>
+        </div>
+}

@@ -1,0 +1,84 @@
+@(
+user: models.auth.User,
+token: String,
+locations: List[String],
+messages: List[String]
+)(implicit request: Request[AnyContent])
+@templates.main("Highlight Locations", "Plan",  Some(user)){
+
+
+<script type="text/javascript">
+    const token = "@token";
+</script>
+
+        @if(messages.size > 0){
+        <div class="alert alert-primary">
+            <h2>Messages</h2>
+            <ul>
+                @for(message <- messages){
+                <li>@message</li>
+                }
+            </ul>
+        </div>
+        }
+
+        <div class="row">
+            <div class="col-sm">
+                <div class="card card-body">
+                    <form method="GET">
+                        <textarea id="locations" name="locations" class="form-control">@locations.mkString("\n")</textarea>
+                        <label for="locations">Locations</label>
+                        <div style="padding-top:3px">
+                            <button class="btn btn-primary" type="submit">Highlight Locations</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-sm">
+                <div class="card card-body">
+                </div>
+            </div>
+        </div>
+
+        <div id="content-placeholder"></div>
+
+<div class="row">
+    <div class="col col-sm">
+        <div id="map" class="map"></div>
+    </div>
+
+</div>
+        <template>
+            <div class="alert alert-light alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <span class="title">
+                <slot name="info"></slot>
+            </span>
+                <span id="tocBadge" class="badge badge-danger">
+                <slot name="tocBadge"></slot>
+            </span>
+                <span id="typeBadge" class="badge badge-secondary">
+                <slot name="type"></slot>
+            </span><br />
+                <slot name="data" id="data" style="display: none"></slot>
+                <a href="" target="_blank">More Details</a>
+                <span id="visit-form" style="display:none"><span id="location"></span><span id="visit"></span></span>
+            </div>
+        </template>
+
+
+        <script type="text/javascript">
+        createMap();
+
+        var highlighting = [];
+
+        @for(location <- locations) {
+            highlighting.push("@location")
+        }
+
+        populatePointsWithHighlighting(map, token, highlighting);
+        registerMapHandler(map);
+
+        </script>
+}

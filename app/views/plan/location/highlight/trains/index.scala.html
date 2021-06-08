@@ -1,0 +1,140 @@
+@(
+user: models.auth.User,
+token: String,
+callingPoints: List[models.location.MapLocation],
+notCalledAt: List[models.location.MapLocation],
+highlightPoints: List[models.location.MapLocation],
+percentage: Double,
+totalTrains: Int,
+trainsAndStations: String,
+srsLocations: String,
+locations: String,
+messages: List[String],
+year: Int,
+month: Int,
+day: Int
+)(implicit request: Request[AnyContent])
+@templates.main("Highlight Trains", "Plan",  Some(user)){
+
+
+<script type="text/javascript">
+    const token = "@token";
+</script>
+
+        @if(messages.size > 0){
+        <div class="alert alert-primary">
+            <h2>Messages</h2>
+            <ul>
+                <li>A new version is available at <a href="/plan/highlight/trains/callingpoints/new">/plan/highlight/trains/callingpoints/new</a> </li>
+                @for(message <- messages){
+                <li>@message</li>
+                }
+            </ul>
+        </div>
+        }
+
+        <div class="row">
+            <div class="col-sm">
+                <div class="card card-body">
+                    <form method="GET">
+                        <textarea id="trainsAndStations" name="trainsAndStations" class="form-control">@trainsAndStations</textarea>
+                        <label for="trainsAndStations">Trains and Stations, e.g. <pre>TrainUID,FromCRS,ToCRS</pre></label>
+                        <textarea id="locations" name="locations" class="form-control">@locations</textarea>
+                        <label for="locations">Locations</label>
+                        <textarea id="srsLocations" name="srsLocations" class="form-control">@srsLocations</textarea>
+                        <label for="srsLocations">SRS Locations</label>
+                        <input type="text" id="year" name="year" class="form-control" value="@year"/>
+                        <label for="year">Year</label>
+                        <input type="text" id="month" name="month" class="form-control" value="@month"/>
+                        <label for="month">Month</label>
+                        <input type="text" id="day" name="day" class="form-control" value="@day"/>
+                        <label for="day">Day</label>
+                        <div style="padding-top:3px">
+                            <button class="btn btn-primary" type="submit">Highlight Locations</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-sm">
+                <div class="card card-body">
+                    <div class="row">
+                        <h3>Stats</h3>
+                        <ul>
+                            <li>Total Stations called at: @callingPoints.size</li>
+                            <li>Total Highlighted Stations: @highlightPoints.size</li>
+                            <li>Percent Highlighted points called at: @percentage</li>
+                            <li>Number Of Trains: @totalTrains</li>
+                            <li>Called At: @callingPoints.map(_.id).mkString(", ")</li>
+                            <li>Not Called at: @notCalledAt.map(_.id).mkString(", ")</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div id="content-placeholder"></div>
+
+
+        <template>
+            <div class="alert alert-light alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <span class="title">
+                <slot name="info"></slot>
+            </span>
+                <span id="tocBadge" class="badge badge-danger">
+                <slot name="tocBadge"></slot>
+            </span>
+                <span id="typeBadge" class="badge badge-secondary">
+                <slot name="type"></slot>
+            </span><br />
+                <slot name="data" id="data" style="display: none"></slot>
+                <a href="" target="_blank">More Details</a>
+                <span id="visit-form" style="display:none"><span id="location"></span><span id="visit"></span></span>
+            </div>
+        </template>
+
+    </div>
+    <div class="row">
+        <div class="col col-sm">
+            <div id="map" class="map"></div>
+        </div>
+
+    </div>
+
+
+<script type="text/javascript">
+createMap();
+
+
+@for(loc <- callingPoints) {
+    addLocation({
+        "location": {
+            "lat": @loc.location.lat,
+            "lon": @loc.location.lon
+        },
+        "name":'@loc.name',
+        "id": '@loc.id',
+        "operator": '@loc.operator',
+        "visited": true
+    });
+}
+ @for(loc <- highlightPoints) {
+    addLocation({
+        "location": {
+            "lat": @loc.location.lat,
+            "lon": @loc.location.lon
+        },
+        "name":'@loc.name',
+        "id": '@loc.id',
+        "operator": '@loc.operator',
+        "visited": false
+    });
+}
+
+registerMapHandler(map);
+
+</script>
+}

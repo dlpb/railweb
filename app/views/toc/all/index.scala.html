@@ -1,0 +1,62 @@
+@import helper._
+
+@(
+query: String,
+tocs: List[models.toc.Operator])(implicit request: Request[AnyContent])
+@templates.main("All Operators", "Operators", None){
+
+        <div class="row">
+            <div class="col-sm">
+                <h1>All Operators</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-sm">
+                <form>
+                    <label for="query">Filter Operators based on value</label>
+                    <input id="query" class="form-control" type="text" name="query" value="@query">
+                    <button type="submit" class="btn btn-primary">Filter</button>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-sm">
+                <div class="alert alert-secondary" role="alert">
+                    Showing @(tocs.size) Operators
+                </div>
+            </div>
+        </div>
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">TOC ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            @for(t <- tocs){
+            <tr>
+                <td style="width: 1em;">
+                    <div class="badge badge-dark" style="background-color:@t.colour.backgroundColour; color: @t.colour.foregroundColour">
+                            @t.id
+                    </div>
+                </td>
+                <td style="width: 1em;">
+                    <a href="/toc/@t.id">
+                        @t.name
+                    </a>
+                </td>
+                <td style="width: 1em;">
+                    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups" style="display: inline">
+                        <div class="btn-group mr-2" role="group" aria-label="First group">
+                            <a href="/locations/by/crs?operator=@t.id" role="button" class="btn btn-primary">Locations for Operator</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            }
+            </tbody>
+        </table>
+
+}

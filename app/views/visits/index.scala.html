@@ -1,0 +1,52 @@
+@import helper._
+
+@(
+user: models.auth.User
+)(implicit request: Request[AnyContent])
+
+@templates.main("Visits", "Profile", Some(user)){
+
+        <div class="row">
+            <div class="col-sm">
+                <h1>Visits</h1>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-sm">
+                <div class="card card-body">
+                    <a href="/profile/visits/by/location">
+                        <div>
+                            <img src="/assets/images/placeholder-color.svg" alt="visits locations" width="92" height="92">
+                        </div>
+                        <h3>
+                        By Location
+                        </h3>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card card-body">
+                    <a href="/profile/visits/by/route">
+                        <div>
+                            <img src="/assets/images/route-color.svg" alt="visits route" width="92" height="92">
+                        </div>
+                        <h3>
+                        By Route
+                        </h3>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card card-body">
+                    <a href="/profile/visits/by/event">
+                        <div>
+                            <img src="/assets/images/event.svg" alt="visits events" width="92" height="92">
+                        </div>
+                        <h3>
+                        By Event
+                        </h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+}

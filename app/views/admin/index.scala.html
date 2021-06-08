@@ -1,0 +1,28 @@
+@import helper._
+
+@(
+token: String,
+user: models.auth.User
+)(implicit request: Request[AnyContent])
+
+@templates.main("Admin", "Admin", Some(user)){
+
+
+<script type="text/javascript">
+    const token = "@token";
+
+</script>
+
+@if(user.roles.contains(models.auth.roles.AdminUser)) {
+
+<h1>Admin</h1>
+<div class="row">
+    <div class="col-sm">
+        <div class="card card-body">
+            <h2><a href="/admin/users">User Management</a></h2>
+        </div>
+    </div>
+</div>
+
+}
+}

@@ -2,11 +2,13 @@ package models.data.postgres
 
 import java.net.URI
 import java.sql.{Connection, DriverManager}
+import java.util.concurrent.atomic.AtomicInteger
 
 import com.typesafe.config.Config
-import javax.inject.Inject
+import javax.inject.{Inject, Singleton}
 import models.auth.DaoUser
 
+@Singleton
 class PostgresDB @Inject() (config: Config) {
 
 
@@ -21,11 +23,17 @@ class PostgresDB @Inject() (config: Config) {
       |route_visits JSON
       |)""".stripMargin
 
+  private val alterTableToAddEvents =
+    """
+      |ALTER TABLE users
+      |ADD COLUMN IF NOT EXISTS event_visits JSON
+    """.stripMargin
+
   private val ensureAdminUser =
     """
       |INSERT INTO users
       |    (username, password, roles)
-      |SELECT 'admin', '226b92530c136015950c07ed4631257ff020ab807530aec6b9c0957374788fc', 'MapUser,VisitUser,AdminUser'
+      |SELECT 'admin', '281bb1b83baeac17a77ea6c03655d3c10a60a11dcd424e247bdb9a5b590682b', 'MapUser,VisitUser,AdminUser'
       |WHERE
       |    NOT EXISTS (
       |        SELECT username FROM users WHERE username='admin'
@@ -34,25 +42,33 @@ class PostgresDB @Inject() (config: Config) {
 
   private val updateLocationSql = "UPDATE users SET location_visits = ?::JSON where id = ?"
   private val updateRoutesSql = "UPDATE users SET route_visits = ?::JSON where id = ? "
+  private val updateEventsSql = "UPDATE users SET event_visits = ?::JSON where id = ? "
   private val getRoutesSql = "SELECT route_visits FROM users WHERE id = ?"
   private val getLocationsSql = "SELECT location_visits FROM users WHERE id = ?"
+  private val getEventsSql = "SELECT event_visits FROM users WHERE id = ?"
   private val getUsersSql = "SELECT id, username, password, roles FROM users"
   private val createUserSql = "INSERT INTO users (username, password, roles) VALUES (?, ?, ?)"
   private val updateUserSql = "UPDATE users SET username = ?, password = ?, roles = ? WHERE id = ?"
   private val deleteUserSql = "DELETE FROM users WHERE id = ?"
 
+  val count: AtomicInteger = new AtomicInteger(0)
   ensureDatabaseSetup()
 
+
   def ensureDatabaseSetup(): Unit = {
+    val start = System.currentTimeMillis()
     val connection = getConnection(config)
     val statement = connection.createStatement()
     statement.executeUpdate(createTableSQL)
+    statement.executeUpdate(alterTableToAddEvents)
     statement.executeUpdate(ensureAdminUser)
     statement.close()
     connection.close()
+    val end = System.currentTimeMillis()
   }
 
   def updateLocationsForUser(userId: Long, data: String): Unit = {
+
     try {
       val connection = getConnection(config)
       val statement = connection.prepareStatement(updateLocationSql)
@@ -82,6 +98,21 @@ class PostgresDB @Inject() (config: Config) {
     }
   }
 
+  def updateEventsForUser(userId: Long, data: String): Unit = {
+    try{
+      val connection = getConnection(config)
+      val statement = connection.prepareStatement(updateEventsSql)
+      statement.setObject(1, data)
+      statement.setLong(2, userId)
+      statement.executeUpdate()
+      statement.close()
+      connection.close()
+    }
+    catch {
+      case e:Exception => println(s"Exception saving route data $e")
+    }
+  }
+
   def getLocationsForUser(userId: Long): String = {
     val connection = getConnection(config)
     val statement = connection.prepareStatement(getLocationsSql)
@@ -93,7 +124,9 @@ class PostgresDB @Inject() (config: Config) {
     }
     statement.close()
     connection.close()
-    sb.toString()
+    val str = sb.toString()
+    str
+
   }
 
   def getRoutesForUser(userId: Long): String = {
@@ -109,6 +142,21 @@ class PostgresDB @Inject() (config: Config) {
     connection.close()
     sb.toString()
   }
+
+  def getEventsForUser(userId: Long): String = {
+    val connection = getConnection(config)
+    val statement = connection.prepareStatement(getEventsSql)
+    statement.setLong(1, userId)
+    val resultSet = statement.executeQuery()
+    val sb = new StringBuilder
+    while(resultSet.next()){
+      sb.append(resultSet.getString("event_visits"))
+    }
+    statement.close()
+    connection.close()
+    sb.toString()
+  }
+
   def createUser(user: DaoUser) = {
     val connection = getConnection(config)
     val statement = connection.prepareStatement(createUserSql)

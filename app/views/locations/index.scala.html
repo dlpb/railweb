@@ -1,0 +1,30 @@
+@(
+user: models.auth.User)(implicit request: Request[AnyContent])
+
+@templates.main("All Locations", "Locations", Some(user)){
+
+
+
+        <div class="row">
+            <div class="col col-sm">
+                <h1>Locations</h1>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col col-sm">
+                <div class="card card-body">
+                    <h3>
+                        <a href="locations/by/tiploc">Grouped By Tiploc</a>
+                    </h3>
+                </div>
+            </div>
+            <div class="col col-sm">
+                <div class="card card-body">
+                    <h3>
+                        <a href="locations/by/crs">Grouped By CRS</a>
+                    </h3>
+                </div>
+            </div>
+        </div>
+
+}

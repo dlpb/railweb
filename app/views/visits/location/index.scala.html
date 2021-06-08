@@ -1,0 +1,87 @@
+@import helper._
+
+@(
+user: models.auth.User,
+locationVisits: List[models.data.LocationVisit],
+locationVisitEvents: Map[String, List[models.data.Event]],
+mapLocations: List[models.location.MapLocation],
+locationVisitCount: Map[String, Int],
+locationVisitIndex: Map[String, Int],
+        sortCall: Call,
+        sortField: String,
+        sortOrder: String
+)(implicit request: Request[AnyContent])
+@templates.main("All Visits by Location", "Profile", Some(user)){
+
+        <div class="row">
+            <div class="col-sm">
+                <h1>Locations</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <div id="map" class="map"></div>
+            </div>
+        </div>
+  <div class="row">
+      <div class="col col-sm">
+          <div id="form">
+          @helper.form(sortCall) {
+            <label for="sortField">Sort Locations By:</label>
+            <select name="sortField" id="sortField">
+                <option value="name" @if(sortField.equals("name")) { selected="selected" } >Location Name</option>
+                <option value="date" @if(sortField.equals("date")) { selected="selected" } >Fist Visit Date</option>
+                <option value="count" @if(sortField.equals("count")) { selected="selected" } >Visit Count</option>
+                <option value="id" @if(sortField.equals("id")) { selected="selected" } >Location ID</option>
+            </select>
+              <label for="sortOrder">Order Sort By:</label>
+              <select name="sortOrder" id="sortOrder">
+                  <option value="asc" @if(sortField.equals("asc")) { selected="selected" } >Ascending</option>
+                  <option value="desc" @if(sortField.equals("desc")) { selected="selected" } >Descending</option>
+              </select>
+            <button type="submit" class="btn btn-primary">Sort</button>
+          }
+          </div>
+      </div>
+  </div>
+        <div class="row">
+            <div class="col-sm">
+                @for(visit <- locationVisits) {
+                <ul>
+                    <li>
+                        <a href="/location/detail/@visit.visited.id" target="_blank">@visit.visited.name</a> [@visit.visited.crs.mkString(" ")] (@visit.visited.id)<br/>
+                        <span class="badge badge-info">Visited @(locationVisitCount(visit.visited.id)) times</span> <span class="badge badge-dark">Location @(locationVisitIndex(visit.visited.id))</span>
+                        <ul>
+                            @for(events <- locationVisitEvents.get(visit.visited.id) ){
+                              @for(event <- events) {
+                                  <li>
+                                    <p>
+                                        <a href="/profile/visits/by/event/@event.id">@event.name</a>
+                                    </p>
+                                  </li>
+                              }
+                            }
+                        </ul>
+                    </li>
+                </ul>
+
+                }
+            </div>
+        </div>
+
+
+<script type="text/javascript">
+        createMap();
+        @for(location <- mapLocations){
+
+            addLocation(
+            {
+                "location": {
+                    "lat":@location.location.lat,
+                    "lon":@location.location.lon
+                },
+                "operator":"@location.operator"
+            })
+        }
+</script>
+}

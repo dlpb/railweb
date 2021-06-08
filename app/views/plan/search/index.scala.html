@@ -1,0 +1,54 @@
+@(
+user: models.auth.User,
+locations: List[models.location.Location],
+defaultDate: String,
+messages: List[String]
+)(implicit request: Request[AnyContent])
+@templates.main("Search", "Plan",  Some(user)){
+
+
+    @for(m <- messages) {
+        <div class="row">
+            <div class="col col-sm">
+
+                <div class="alert alert-primary">
+                    @m
+                </div>
+            </div>
+        </div>
+    }
+    <div class="row">
+        <div class="col col-sm">
+            <div id="filters">
+                <div class="card card-body">
+                    <h2>Search for Trains</h2>
+                    <form method="GET" action="/plan/timetables/location/simple">
+                        <datalist id="locations">
+                            @for(l <- locations){
+                            <option name="@l.name" value="@l.name">@l.name @if(l.crs.nonEmpty){(@l.crs)} [@l.id]</option>
+                            }
+                        </datalist>
+                        <label for="loc">Location</label>
+                        <input class="form-control" type="text" id="loc" name="loc" value="" list="locations">
+                        <input class="form-control" type="hidden" id="year" name="year" value="">
+                        <input class="form-control" type="hidden" id="month" name="month" value="">
+                        <input class="form-control" type="hidden" id="day" name="day" value="">
+                        <label for="date">Date</label>
+                        <input class="form-control" type="date" id="date" name="date" value="@defaultDate">
+                        <label for="year">From around (time)</label>
+                        <input class="form-control" type="text" id="from" name="from" value="">
+                        <label for="year">To around (time)</label>
+                        <input class="form-control" type="text" id="to" name="to" value="">
+                        <label for="hasCalledAt">Has Called at Previously</label>
+                        <input class="form-control" type="text" id="hasCalledAt" name="hasCalledAt" value="" list="locations">
+                        <label for="willCallAt">Will Call at Subsequently</label>
+                        <input class="form-control" type="text" id="willCallAt" name="willCallAt" value="" list="locations">
+                        <div style="padding-top:3px">
+                            <button type="submit" class="btn btn-primary">Filter</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+}

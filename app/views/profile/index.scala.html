@@ -1,0 +1,54 @@
+@import helper._
+
+@(
+token: String,
+user: models.auth.User,
+form: Form[models.web.forms.ChangePassword],
+errors: List[String]
+)(implicit request: Request[AnyContent])
+@templates.main("Profile", "Profile",  Some(user)){
+
+        <div class="row">
+            <div class="col-sm">
+                <h1>@user.username's Profile</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <h2>Roles</h2>
+                <ul>
+                    @for(role <- user.roles) {
+                    <li>@role</li>
+                    }
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <h2>Actions</h2>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-sm">
+                <div class="card card-body">
+                    <a href="/profile/changePassword">
+                        <div>
+                            <img src="/assets/images/password.svg" alt="change password" width="92" height="92">
+                        </div>
+                        <h3>
+                        Change Password
+                        </h3>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card card-body">
+                    <a href="/profile/visits">
+                        <div>
+                            <img src="/assets/images/visits.svg" alt="visits" width="92" height="92">
+                        </div>
+                        <h3>Visits</h3></a>
+                </div>
+            </div>
+        </div>
+}

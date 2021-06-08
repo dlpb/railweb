@@ -1,0 +1,220 @@
+@import services.visit.location.PathElementLocation
+@(
+user: models.auth.User,
+location: models.location.Location,
+visits: List[models.data.Event],
+token: String,
+visitUrl: Call,
+removeLast: Call,
+removeAll: Call,
+nearestLocations: List[PathElementLocation]
+)(implicit request: Request[AnyContent])
+
+@templates.main(location.name, "Locations", Some(user)){
+
+
+<script type="text/javascript">
+    const token = "@token";
+
+</script>
+
+
+        <div class="alert alert-primary" role="alert" id="@location.operator" style="padding-top:10px">
+            <h1>@location.name</h1>
+            <h3 id="@location.operator-name"></h3>
+        </div>
+        <script>
+        const tocInfo = findTocData('@location.operator');
+        const element = document.getElementById('@location.operator');
+
+        element.style.backgroundColor = tocInfo["colour"];
+        element.style.color = tocInfo["textColour"];
+
+        const title = document.getElementById('@location.operator-name');
+        title.textContent = tocInfo["name"];
+
+        </script>
+
+        <div class="row">
+            <div class="col-sm">
+                <h3>@if(location.isOrrStation) { Station } else { @location.getLocationType } Data</h3>
+                <ul>
+                    <li>ID: @location.id</li>
+                    <li>Operator: <a href="/toc/@location.operator">@location.operator</a></li>
+                    @if(location.crs.filterNot(_.isBlank).nonEmpty){
+                    <li>CRS:
+                        <ul>
+                            @for(crs <- location.crs) {
+                            <li>@crs</li>
+                            }
+                        </ul>
+                    </li>
+                    }
+                    <li>TIPLOCs:
+                        <ul>
+                            @for(tiploc <- location.tiploc) {
+                            <li>@tiploc</li>
+                            }
+                        </ul>
+                    </li>
+                    <li>ORR Station: @location.isOrrStation</li>
+                </ul>
+            </div>
+            <div class="col col-sm">
+                <h3>Location Data</h3>
+                <ul>
+                    <li>Lat: @location.location.lat</li>
+                    <li>Lon: @location.location.lon</li>
+                    @if(location.location.county.isDefined) {<li>County: @location.location.county</li> }
+                    @if(location.location.district.isDefined) {<li>District: @location.location.district</li> }
+                    @if(location.location.postcode.isDefined) {<li>Postcode: @location.location.postcode</li> }
+                </ul>
+            </div>
+            @for(nrInfo <- location.nrInfo){
+                @if(!nrInfo.route.isBlank || !nrInfo.srs.isBlank || !nrInfo.crp.isBlank || !nrInfo.interchangeType.isBlank || !nrInfo.changeTime.isBlank) {
+                <div class="col-sm">
+                    <h3>Route Info</h3>
+                    <ul>
+                        @if(!nrInfo.route.isBlank) {<li>Region: @nrInfo.route</li> }
+                        @if(!nrInfo.srs.isBlank) {<li>SRS: <a href="/srs/@nrInfo.srs">@nrInfo.srs</a></li> }
+                        @if(!nrInfo.crp.isBlank) { <li>CRP: @nrInfo.crp</li>}
+                        @if(!nrInfo.interchangeType.isBlank) {<li>Interchange Type: @nrInfo.interchangeType</li>}
+                        @if(!nrInfo.changeTime.isBlank) {<li>Change Time: @nrInfo.changeTime</li>}
+                    </ul>
+                </div>
+                }
+            }
+            @if(!visits.isEmpty){
+            <div class="col-sm">
+                <h3>Visits</h3>
+                <ul>
+                    @for(visit <- visits){
+                    <li><a href="/profile/visits/by/event/@visit.id">@visit.name</a></li>
+                    }
+                </ul>
+            </div>
+            }
+        </div>
+        <div class="row">
+            <div class="col-sm">
+
+                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups" style="display:block">
+                    <div class="btn-group mr-2" role="group" aria-label="First group">
+                        <div id="location-visit-form">
+                            @helper.form(visitUrl, Symbol("id") -> "visit-form") {
+                            @helper.CSRF.formField
+                            <input type="hidden" id="Authorization" name="Authorization" value="@token"/>
+                            <button id="visit" class="btn btn-primary">Visit</button>
+                            }
+                        </div>
+                    </div>
+
+                    <div class="btn-group mr-2" role="group" aria-label="Second group">
+                        <div id="location-remove-last-visit-form">
+                            @helper.form(removeLast, Symbol("id") -> "visit-form") {
+                            @helper.CSRF.formField
+                            <input type="hidden" id="Authorization-last-visit" name="Authorization" value="@token"/>
+                            <button id="remove-last-visit" class="btn btn-danger">Remove Last Visit</button>
+                            }
+                        </div>
+                    </div>
+                    <div class="btn-group mr-2" role="group" aria-label="Third group">
+                        <div id="location-remove-all-visit-form">
+                            @helper.form(removeAll, Symbol("id") -> "visit-form") {
+                            @helper.CSRF.formField
+                            <input type="hidden" id="Authorization-all-visit" name="Authorization" value="@token"/>
+                            <button id="remove-all-visit" class="btn btn-danger">Remove All Visit</button>
+                            }
+                        </div>
+                    </div>
+                    @if(user.roles.contains(models.auth.roles.PlanUser)) {
+                    <div class="btn-group mr-2 float-right" role="group" aria-label="Fourth group">
+                        <div id="timetable-btn-div">
+                            <a role="button" class="text-light btn btn-info float-right" href="/plan/timetables/location/simple?loc=@location.id">Timetables for @location.name for Today</a>
+                        </div>
+                    </div>
+                    }
+                </div>
+            </div>
+        </div>
+        <hr/>
+        <div class="row">
+            <div class="col col-sm">
+                <h3>Map</h3>
+                <div id="map" class="map"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col col-sm">
+                <h3>Adjacent Route Diagram</h3>
+                @listLocation(nearestLocations)
+            </div>
+        </div>
+
+        <script type="text/javascript">
+        const operator = "@location.operator";
+        const lat = @location.location.lat;
+        const lon = @location.location.lon;
+
+        createMap();
+        addLocation(
+        {
+            "location": {
+                "lat":lat,
+                "lon":lon
+            },
+            "operator":operator
+        })
+
+        </script>
+}
+
+<style>
+    ul .adjacentRoutes {
+        font-size: 0px;
+        list-style: None;
+        padding-left:0;
+    }
+    li .adjacentRoutes {
+        list-style: None;
+    }
+
+    .adjacentRoutes img {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+    .adjacentRoutes a {
+        font-size: 16px;
+    }
+</style>
+
+@listLocation(l: List[PathElementLocation], nestedDepth: Int = 0) = {
+<ul class="adjacentRoutes" >
+    @for(locationWithIndex <- l.zipWithIndex){
+    <li class="adjacentRoutes">
+        @for(_ <- 1 to nestedDepth) {
+        <img src="/assets/images/location-detail-pass-location.svg" width="32px" height="32px" alt="station"/>
+        <img src="/assets/images/blank.svg" width="32px" height="32px" alt="station"/>
+        }
+        @if(locationWithIndex._1.adjacentPathElements.isEmpty && locationWithIndex._2 + 1 == l.size) {
+            <img src="/assets/images/location-detail-end-on-new-line.svg" width="32px" height="32px" alt="station"/>
+            <img src="/assets/images/location-detail-adjacent-location-terminal.svg" width="32px" height="32px" alt="station"/>
+        } else {
+            <img src="/assets/images/location-detail-pass-branch-to-sublist.svg" width="32px" height="32px" alt="station"/>
+        @if(locationWithIndex._1.adjacentPathElements.isEmpty && locationWithIndex._2 + 1 != l.size) {
+                <img src="/assets/images/location-detail-adjacent-location-terminal.svg" width="32px" height="32px" alt="station"/>
+            } else {
+                <img src="/assets/images/location-detail-adjacent-location-intermediate.svg" width="32px" height="32px" alt="station"/>
+                <img src="/assets/images/location-detail-continue-on-new-line.svg" width="32px" height="32px" alt="station"/>
+            }
+        }
+        <a href="/location/detail/@locationWithIndex._1.location.id">@locationWithIndex._1.location.name</a>
+        <ul class="adjacentRoutes">
+            @listLocation(locationWithIndex._1.adjacentPathElements, nestedDepth + 1)
+        </ul>
+    </li>
+    }
+</ul>
+}
