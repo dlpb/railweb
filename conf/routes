@@ -69,11 +69,12 @@ GET  /plan/timetables/train/:train/detailed/:year/:month/:day       controllers.
 GET  /plan/routes/find                                              controllers.plan.route.find.FindRouteController.index()
 GET  /plan/routes/find/point-to-point                               controllers.plan.route.find.pointtopoint.PointToPointRouteController.index(waypoints: String ?= "", followFixedLinks: Boolean ?= false, followFreightLinks: Boolean ?= false, followUnknownLinks: Boolean ?= false)
 POST /plan/routes/find/point-to-point/result                        controllers.plan.route.find.result.pointtopoint.PointToPointFindRouteResultController.pointtopoint()
-POST /plan/routes/find/point-to-point/result/visit                  controllers.plan.route.find.result.visit.FindRouteResultVisitController.visit()
+POST /plan/routes/find/point-to-point/result/visit                  controllers.plan.route.find.result.pointtopoint.visit.FindPointToPointRouteResultVisitController.visit()
 GET  /plan/routes/find/timetable                                    controllers.plan.route.find.timetable.TimetableRouteController.index(trainUid: String ?= "", date: String ?= "")
-POST /plan/routes/find/timetable/result                             controllers.plan.route.find.result.timetable.TimetableFindRouteResultController.timetable()
-#POST /plan/routes/find/timetable/result/visit
-
+GET  /plan/routes/find/timetable/:trainUid/:date                    controllers.plan.route.find.timetable.TimetableRouteController.index(trainUid: String, date: String)
+POST /plan/routes/find/timetable/result                             controllers.plan.route.find.result.timetable.TimetableFindRouteResultController.redirect()
+GET /plan/routes/find/timetable/:trainUid/:date/result              controllers.plan.route.find.result.timetable.TimetableFindRouteResultController.timetable(trainUid: String, date: String)
+POST /plan/routes/find/timetable/:trainUid/:date/result/visit       controllers.plan.route.find.result.timetable.visit.FindTimetableRouteResultVisitController.visit(trainUid: String, date: String)
 
 
 GET  /api/plan/train/map/locations/simple/:train/:year/:month/:day  controllers.api.plan.locations.PlanLocationsApiController.getSimpleMapLocationsForTrain(train: String, year: Int, month: Int, day: Int)
@@ -114,6 +115,7 @@ GET  /favicon-32x32.png                                             controllers.
 GET  /favicon-16x16.png                                             controllers.Assets.at(path="/public/favicon", file="/favicon-16x16.png")
 GET  /site.webmanifest                                              controllers.Assets.at(path="/public/favicon", file="/site.webmanifest")
 GET  /safari-pinned-tab.svg                                         controllers.Assets.at(path="/public/favicon", file="/safari-pinned-tab.svg")
+
 GET /toc/all                                                        controllers.tocs.all.AllTocController.index(q: String ?= "")
 GET /toc/:id                                                        controllers.tocs.view.ViewTocController.index(id: String)
 
@@ -123,9 +125,4 @@ GET /srs/:id                                                        controllers.
 GET /javascripts/srsData.js                     controllers.srs.all.AllSrsController.js()
 GET /javascripts/tocData.js                     controllers.tocs.all.AllTocController.js()
 
-GET /favicon.ico                                controllers.Assets.at(path="/public/favicon", file="favicon.ico")
-GET /apple-touch-icon.png                       controllers.Assets.at(path="/public/favicon", file="/apple-touch-icon.png")
-GET /favicon-32x32.png                          controllers.Assets.at(path="/public/favicon", file="/favicon-32x32.png")
-GET /favicon-16x16.png                          controllers.Assets.at(path="/public/favicon", file="/favicon-16x16.png")
-GET /site.webmanifest                           controllers.Assets.at(path="/public/favicon", file="/site.webmanifest")
-GET /safari-pinned-tab.svg                      controllers.Assets.at(path="/public/favicon", file="/safari-pinned-tab.svg")
+

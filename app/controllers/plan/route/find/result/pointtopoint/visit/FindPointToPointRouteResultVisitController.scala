@@ -1,6 +1,5 @@
-package controllers.plan.route.find.result.visit
+package controllers.plan.route.find.result.pointtopoint.visit
 
-import java.net.URLDecoder
 import java.time.{LocalDate, LocalDateTime, LocalTime}
 import java.time.format.DateTimeFormatter
 import java.util.Date
@@ -17,13 +16,12 @@ import models.route.Route
 import models.route.display.map.MapRoute
 import services.plan.pointtopoint.{Path, PointToPointRouteFinderService}
 import play.api.mvc.{AbstractController, AnyContent, ControllerComponents}
-import play.api.mvc.Call
 import services.visit.event.EventService
 import services.visit.location.LocationVisitService
 import services.visit.route.RouteVisitService
 
 @Singleton
-class FindRouteResultVisitController @Inject()(
+class FindPointToPointRouteResultVisitController @Inject()(
                                      cc: ControllerComponents,
                                      authenticatedUserAction: AuthorizedWebAction,
                                      pathService: PointToPointRouteFinderService,
@@ -46,35 +44,20 @@ class FindRouteResultVisitController @Inject()(
       val followFreightLinks: Boolean = FindRouteResultHelper.extractBooleanFromData(data, "followFreightLinks")
       val followUnknownLinks: Boolean = FindRouteResultHelper.extractBooleanFromData(data, "followUnknownLinks")
 
-      println(s"Building results for ${locationStrToRouteVia.head} to ${locationStrToRouteVia.last} Options: follow freight: $followFreightLinks, follow fixed: $followFixedLinks, follow unknown: $followUnknownLinks")
-
       val path: Path = pathService.findRouteForWaypoints(locationStrToRouteVia, followFixedLinks, followFreightLinks, followUnknownLinks)
 
       val overrideStartTime = FindRouteResultHelper.extractBooleanFromData(data, "overrideStartDateAndTime")
       val setVisitDetails = FindRouteResultHelper.extractBooleanFromData(data, "overrideVisitDetails")
       val includeNonPublicStops = FindRouteResultHelper.extractBooleanFromData(data, "includeNonPublicStopsInVisit")
       val visitMode = FindRouteResultHelper.extractString(data, "visitMode")
-      val fromLocationIndex: Int = FindRouteResultHelper.extractInt(data, "from")
+      val fromLocationIndex: Int = FindRouteResultHelper.extractInt(data, "from") - 1
       val toLocationIndex: Int = FindRouteResultHelper.extractInt(data, "to")
       val startDate = FindRouteResultHelper.extractString(data, "startDate")
       val startTime = FindRouteResultHelper.extractString(data, "startTime")
       val visitName = FindRouteResultHelper.extractString(data, "visitName")
       val trainUid: Option[String] = FindRouteResultHelper.extractString(data, "trainUid")
       val trainHeadcode = FindRouteResultHelper.extractString(data, "trainHeadcode")
-
-
-      println(s"" +
-        s"Visit Options: " +
-        s"overrideStartTime: $overrideStartTime, " +
-        s"setVisitDetails: $setVisitDetails, " +
-        s"includeNonPublicStops: $includeNonPublicStops, " +
-        "visitMode: visitMode, " +
-        s"fromLocationIndex: $fromLocationIndex, " +
-        s"toLocationIndex: $toLocationIndex, " +
-        "visitName: visitName, " +
-        "trainUid: trainUid," +
-        "trainHeadcode: trainHeadcode")
-
+      val debug = FindRouteResultHelper.extractBooleanFromData(data, "debug")
 
       val eventDuration = path.routes.map(_.travelTimeInSeconds).map(_.getSeconds).sum
 
@@ -95,25 +78,96 @@ class FindRouteResultVisitController @Inject()(
         eventService.saveEvent(event, request.user)
       }
 
+      val debugStrBuf = new StringBuffer()
+      val debugInfo =
+        s"""
+           |*********************************
+           |* Way point based Visit Options *
+           |*********************************
+           |
+           |ROUTING OPTIONS
+           | FROM   : ${locationStrToRouteVia.head}
+           | TO     : ${locationStrToRouteVia.last}
+           | FREIGHT: $followFreightLinks
+           | FIXED  : $followFixedLinks
+           | UNKNOWN: $followUnknownLinks
+           |
+           |QUICK VISIT OPTIONS
+           | VISIT MODE         : $visitMode
+           | FROM LOCATION INDEX: $fromLocationIndex
+           | FROM LOCATION ID   : ${locationStrToRouteVia(fromLocationIndex)}
+           | TO LOCATION INDEX  : $toLocationIndex
+           | TO LOCATION ID     : ${locationStrToRouteVia(toLocationIndex)}
+           | INCLUDE NON PUBLIC : $includeNonPublicStops
+           |
+           |CALCULATED ROUTE VISIT DETAILS
+           | LOCATIONS TO VISIT : ${locationsToVisit.map(_.id).zipWithIndex}
+           | ROUTES TO VISIT    : ${routesToVisit.map(r => r.from.id + "-" + r.to.id).zipWithIndex}
+           |
+           |SET START DATE AND TIME
+           | OVERRIDE           : $overrideStartTime
+           | VISIT START TIME   : $visitStartTime
+           |
+           |SET VISIT DETAILS
+           | OVERRIDE           : $setVisitDetails
+           | VISIT NAME         : $visitName
+           | TRAIN UID          : $trainUid
+           | TRAIN HEADCODE     : $trainHeadcode
+           | """.stripMargin
 
+      debugStrBuf.append(debugInfo).append("\n")
 
 
       var lastVisitTime = visitStartTime
+
+      var remainingRoutesToVisit = routesToVisit
+      val nextLocationsToVisit: List[Location] = locationsToVisit.tail
+
       locationsToVisit.zipWithIndex.foreach(l => {
         val (nextLocation, index) = l
-        println(s"Visiting Index $index, lastVisitTime $lastVisitTime, nextLocation ${nextLocation.id}")
-        val nextRoute = if(index < routesToVisit.size) Some(routesToVisit(index)) else None
-        val travelTime: Long = nextRoute.map(_.travelTimeInSeconds.getSeconds).getOrElse(0)
-        val visitDescription =
-          s"""{
-                "visitType": "MANUAL_FROM_WAYPOINTS",
-                "trainUid":${"trainUid"},
-                "trainHeadcode":${"trainHeadcode"}
-              }""".stripMargin
-        locationsService.visitLocation(nextLocation, lastVisitTime, lastVisitTime, visitDescription , request.user)
-        nextRoute.foreach(r => routesService.visitRoute(r, lastVisitTime, lastVisitTime, visitDescription, request.user))
+        val routes = {
+          var routeVisitTime: LocalDateTime = lastVisitTime
+          val startLocation = nextLocation
+          val endLocation = if(index >= nextLocationsToVisit.size) nextLocation else nextLocationsToVisit(index)
+          val nextRoutes: List[Route] = {
+            var routes = List.empty[Route]
+            //get first element from route list
+            if(remainingRoutesToVisit.nonEmpty) {
+              val route = remainingRoutesToVisit.head
+              routes = routes :+ route
+              remainingRoutesToVisit = remainingRoutesToVisit.filterNot(r => r.equals(route))
+            }
 
-        lastVisitTime = lastVisitTime.plusSeconds(travelTime)
+            //get the rest of the routes if any
+            while(
+              remainingRoutesToVisit.nonEmpty
+                && !(remainingRoutesToVisit.head.from.id.equals(endLocation.id) || remainingRoutesToVisit.head.to.id.equals(endLocation.id))) {
+              val route = remainingRoutesToVisit.head
+              routes = routes :+ route
+              remainingRoutesToVisit = remainingRoutesToVisit.filterNot(r => r.equals(route))
+            }
+            routes.foreach(r => {
+              remainingRoutesToVisit = remainingRoutesToVisit.filterNot(rr => r.equals(rr))
+            })
+
+            routes.foreach(r => {
+              routesService.visitRoute(r, routeVisitTime, routeVisitTime, "", request.user)
+              val debugVisitRoute = s"VISIT ROUTE   : Visiting route ${r.from.id}-${r.to.id} with visit time $routeVisitTime"
+              debugStrBuf.append(debugVisitRoute).append("\n")
+              routeVisitTime = routeVisitTime.plusSeconds(r.travelTimeInSeconds.getSeconds)
+
+            })
+            routes
+
+          }
+          val travelTime = nextRoutes.map(_.travelTimeInSeconds).map(_.toSeconds).sum
+          val debugVisitLocation = s"VISIT LOCATION: Visiting Index $index, lastVisitTime $lastVisitTime, location ${nextLocation.id}, travelTime $travelTime"
+          debugStrBuf.append(debugVisitLocation).append("\n")
+          val visitDescription = ""
+          locationsService.visitLocation(nextLocation, lastVisitTime, lastVisitTime, visitDescription , request.user)
+
+          lastVisitTime = lastVisitTime.plusSeconds(travelTime)
+        }
 
       })
 
@@ -128,7 +182,7 @@ class FindRouteResultVisitController @Inject()(
       val time = path.routes.map(_.travelTimeInSeconds).map(_.getSeconds).sum
 
 
-      val messages = List()
+      val messages = if(debug) debugStrBuf.toString.split("\n").toList else List.empty
 
       play.api.mvc.Results.Ok(views.html.plan.route.find.pointtopoint.result.index(
         request.user,
@@ -152,7 +206,7 @@ class FindRouteResultVisitController @Inject()(
           None,
           visitMode.getOrElse("visitAllRoutesAndPublicStops"),
           fromLocationIndex,
-          toLocationIndex,
+          toLocationIndex - 1,
           includeNonPublicStops,
           overrideStartTime,
           startDate.getOrElse(""),
@@ -163,7 +217,7 @@ class FindRouteResultVisitController @Inject()(
           trainHeadcode.getOrElse(""),
           locationsToVisit,
           routesToVisit,
-          controllers.plan.route.find.result.visit.routes.FindRouteResultVisitController.visit(),
+          controllers.plan.route.find.result.pointtopoint.visit.routes.FindPointToPointRouteResultVisitController.visit(),
           controllers.plan.route.find.pointtopoint.routes.PointToPointRouteController.index(locationsToRouteVia.mkString("\n"), path.followFixedLinks, path.followFreightLinks, path.followUnknownLinks)
         ),
         messages))

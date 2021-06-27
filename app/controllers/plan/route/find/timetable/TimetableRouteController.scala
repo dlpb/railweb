@@ -1,5 +1,7 @@
 package controllers.plan.route.find.timetable
 
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
 import java.util.Date
 
 import auth.JWTService
@@ -28,16 +30,18 @@ class TimetableRouteController @Inject()(
 
       val token = jwtService.createToken(request.user, new Date())
 
-      val call = controllers.plan.route.find.result.timetable.routes.TimetableFindRouteResultController.timetable()
+      val call = controllers.plan.route.find.result.timetable.routes.TimetableFindRouteResultController.redirect()
 
       val messages = List()
+
+      val filledDate = if(date.isBlank) LocalDate.now.format(DateTimeFormatter.ISO_LOCAL_DATE) else date
 
 
       Ok(views.html.plan.route.find.timetable.index(
         request.user,
         token,
         trainUid,
-        date,
+        filledDate,
         call,
         messages))
 

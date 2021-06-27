@@ -1,0 +1,107 @@
+@(waypoints: List[controllers.plan.route.find.result.Waypoint],
+        visitCall: Call,
+        visitMode: String,
+        fromLocationIndex: Int,
+        toLocationIndex: Int,
+        followFixedLinks: Boolean,
+        followFreightLinks: Boolean,
+        followUnknownLinks: Boolean,
+        includeNonPublicStops: Boolean,
+        overrideDateAndTimeOfVisit: Boolean,
+        overriddenStartDate: String,
+        overriddenStartTime: String,
+        overrideVisitDetails: Boolean,
+        overriddenVisitName: String,
+        overriddenTrainUid: String,
+        overriddenTrainHeadcode: String
+
+)(implicit request: Request[AnyContent])
+
+@helper.form(visitCall){
+    @helper.CSRF.formField
+    <div class="form-check">
+        <input type="radio" class="form-check-input" id="visitAllPublicStops" name="visitMode" value="visitAllPublicStops" @if(visitMode.equals("visitAllPublicStops")) { checked="checked" }>
+        <label for="visitAllPublicStops" class="form-check-label">Visit All Public Stops</label>
+    </div>
+    <div class="form-check">
+
+        <input type="radio" class="form-check-input" id="visitAllRoutes" name="visitMode" value="visitAllRoutes" @if(visitMode.equals("visitAllRoutes")) { checked="checked" }>
+        <label for="visitAllRoutes" class="form-check-label">Visit All Routes</label>
+    </div>
+    <div class="form-check">
+
+        <input type="radio" class="form-check-input" id="visitAllRoutesAndPublicStops" name="visitMode" value="visitAllRoutesAndPublicStops" @if(visitMode.equals("visitAllRoutesAndPublicStops")) { checked="checked" }>
+        <label for="visitAllRoutesAndPublicStops" class="form-check-label">Visit All Routes and Public Stops</label>
+    </div>
+    <div class="form-check">
+
+        <input type="radio" class="form-check-input" id="visitAllRoutesAndPublicStopsBetweenLocations" name="visitMode" value="visitAllRoutesAndPublicStopsBetweenLocations" @if(visitMode.equals("visitAllRoutesAndPublicStopsBetweenLocations")) { checked="checked" } >
+        <label for="visitAllRoutesAndPublicStopsBetweenLocations" class="form-check-label">Visit All Routes and Public Stops between Locations</label>
+    </div>
+    <div class="form-group">
+
+        <label for="from">From Location</label>
+        <select name="from" id="from" class="form-control">
+        @for(w <- waypoints.dropRight(1).zipWithIndex) {
+            <option @if(w._2.equals(fromLocationIndex)) { selected="selected" } value="@w._2">@w._1.name</option>
+        }
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="to">To Location</label>
+        <select name="to" id="to" class="form-control">
+        @for(w <- waypoints.tail.zipWithIndex) {
+            <option @if(w._2.equals(toLocationIndex)) { selected="selected" } value="@w._2">@w._1.name</option>
+        }
+        </select>
+    </div>
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="includeNonPublicStopsInVisit" name="includeNonPublicStopsInVisit" value="true" @if(includeNonPublicStops) { checked="checked" }>
+        <label for="includeNonPublicStopsInVisit" class="form-check-label">Include Non Public Stops in Visit</label>
+    </div>
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input"  id="overrideStartDateAndTime" name="overrideStartDateAndTime" value="true" @if(overrideDateAndTimeOfVisit) { checked="checked" }>
+        <label for="overrideStartDateAndTime" class="form-check-label">Set specific Start Date and Time</label>
+    </div>
+    <div class="form-group">
+        <label for="startDate">Start Date</label>
+        <input type="date" class="form-control" id="startDate" name="startDate" value="@overriddenStartDate">
+    </div>
+    <div class="form-group">
+        <label for="startTime">Start Time</label>
+        <input type="text" class="form-control" id="startTime" name="startTime" value="@overriddenStartTime">
+    </div>
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="overrideVisitDetails" name="overrideVisitDetails" value="true" @if(overrideVisitDetails) { checked="checked" } >
+        <label for="overrideVisitDetails" class="form-check-label">Set visit details</label>
+    </div>
+    <div class="form-group">
+        <label for="visitName">Visit Name</label>
+        <input type="text" class="form-control" id="visitName" name="visitName" value="@overriddenVisitName">
+    </div>
+    <div class="form-group">
+        <label for="trainUid">Train UID</label>
+        <input type="text" class="form-control" id="trainUid" name="trainUid" value="@overriddenTrainUid">
+    </div>
+    <div class="form-group">
+        <label for="trainHeadcode">Train Headcode</label>
+        <input type="text" class="form-control" id="trainHeadcode" name="trainHeadcode" value="@overriddenTrainHeadcode">
+    </div>
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="debug" name="debug" value="true">
+        <label for="debug">Show Debug Output</label>
+    </div>
+
+
+
+    <input type="hidden" id="waypoints" name="waypoints" value="@waypoints.map(_.id).mkString("\n")">
+    <input type="hidden" id="followFixedLinks" name="followFixedLinks" value="@followFixedLinks">
+    <input type="hidden" id="followFreightLinks" name="followFreightLinks" value="@followFreightLinks">
+    <input type="hidden" id="followUnknownLinks" name="followUnknownLinks" value="@followUnknownLinks">
+
+
+    <div class="form-group">
+        <input type="submit" class="btn btn-small btn-primary" value="Visit Stations and Routes between Locations">
+    </div>
+
+}

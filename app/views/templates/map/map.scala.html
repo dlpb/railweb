@@ -1,0 +1,53 @@
+@(locations: List[models.location.MapLocation], routeList: List[models.route.display.map.MapRoute])
+<div id="map" class="map"></div>
+<script type="text/javascript">
+        createMap();
+        @for(loc <- locations) {
+        addLocation({
+            "location": {
+                "lat": @loc.location.lat,
+                "lon": @loc.location.lon
+            },
+            "name":'@loc.name',
+            "id": '@loc.id',
+            "operator": '@loc.operator',
+            "visited": false
+        });
+        }
+        var vectorLineLayer = new ol.layer.Vector({'id':'lines'});
+        var vectorLinksLineLayer = new ol.layer.Vector({'id':'links'});
+        var vectorMetroLineLayer = new ol.layer.Vector({'id':'metro'});
+
+        var vectorLine = new ol.source.Vector({});
+        var vectorLinksLine = new ol.source.Vector({});
+        var vectorMetroLine = new ol.source.Vector({});
+
+        @for(r <- routeList) {
+        addRoute({
+                    "from": {
+                        "lat": @r.from.lat,
+                        "lon": @r.from.lon
+                    },
+                    "to":{
+                        "lat": @r.to.lat,
+                        "lon": @r.to.lon
+                    },
+                    "toc":'@r.toc'
+                },
+                false,
+                vectorLine,
+                vectorLineLayer,
+                vectorLinksLine,
+                vectorLinksLineLayer,
+                vectorMetroLine,
+                vectorMetroLineLayer
+        );
+        }
+        map.addLayer(vectorLineLayer);
+        map.addLayer(vectorLinksLineLayer);
+        map.addLayer(vectorMetroLineLayer);
+
+        vectorLinksLineLayer.setVisible(false);
+
+
+</script>
