@@ -10,7 +10,7 @@ import controllers.plan.route.find.result.FindRouteResultHelper.mkTime
 import controllers.plan.route.find.result.{FindRouteResultHelper, ResultViewModel, Waypoint}
 import javax.inject.{Inject, Singleton}
 import models.auth.roles.MapUser
-import models.data.Event
+import models.data.{Event, Train}
 import models.location.{Location, MapLocation}
 import models.route.Route
 import models.route.display.map.MapRoute
@@ -71,7 +71,11 @@ class FindPointToPointRouteResultVisitController @Inject()(
         overrideStartTime,
         visitStartTime,
         visitName,
-        eventDuration)
+        eventDuration,
+        locationStrToRouteVia(fromLocationIndex),
+        locationStrToRouteVia(toLocationIndex),
+        trainUid.getOrElse("point-to-point")
+        )
 
 
       if(!(eventService.hasActiveEvent(request.user) && eventService.getActiveEvent(request.user).get.id == event.id)) {
@@ -151,7 +155,7 @@ class FindPointToPointRouteResultVisitController @Inject()(
             })
 
             routes.foreach(r => {
-              routesService.visitRoute(r, routeVisitTime, routeVisitTime, "", request.user)
+              routesService.visitRoute(r, routeVisitTime, routeVisitTime, None, None, request.user)
               val debugVisitRoute = s"VISIT ROUTE   : Visiting route ${r.from.id}-${r.to.id} with visit time $routeVisitTime"
               debugStrBuf.append(debugVisitRoute).append("\n")
               routeVisitTime = routeVisitTime.plusSeconds(r.travelTimeInSeconds.getSeconds)
@@ -163,8 +167,8 @@ class FindPointToPointRouteResultVisitController @Inject()(
           val travelTime = nextRoutes.map(_.travelTimeInSeconds).map(_.toSeconds).sum
           val debugVisitLocation = s"VISIT LOCATION: Visiting Index $index, lastVisitTime $lastVisitTime, location ${nextLocation.id}, travelTime $travelTime"
           debugStrBuf.append(debugVisitLocation).append("\n")
-          val visitDescription = ""
-          locationsService.visitLocation(nextLocation, lastVisitTime, lastVisitTime, visitDescription , request.user)
+          val visitDescription = None
+          locationsService.visitLocation(nextLocation, lastVisitTime, lastVisitTime, visitDescription, trainUid, request.user)
 
           lastVisitTime = lastVisitTime.plusSeconds(travelTime)
         }
@@ -302,30 +306,37 @@ class FindPointToPointRouteResultVisitController @Inject()(
                         setVisitTime: Boolean,
                         eventStartTime: LocalDateTime,
                         visitName: Option[String],
-                        eventDuration: Long): Event = {
+                        eventDuration: Long,
+                        boarded: String,
+                        alighted: String,
+                        trainUid: String): Event = {
     val defaultEventName = eventStartTime.format(DateTimeFormatter.ISO_DATE) + s" - $from to $to"
-    val defaultEventSummary = s"Visit from ${from} to ${to}"
+    val defaultEventSummary = ""
+    val train = Train(boarded, alighted, trainUid)
 
     if (setVisitDetails || setVisitTime) {
       makeEvent0(name = visitName.getOrElse(defaultEventName),
         startedAt = eventStartTime,
         endedAt = eventStartTime.plusSeconds(eventDuration),
-        details = defaultEventSummary)
+        details = defaultEventSummary,
+        train = train)
     } else if (eventService.hasActiveEvent(request.user)) {
       eventService.getActiveEvent(request.user).get
     } else {
       makeEvent0(name = defaultEventName,
         startedAt = eventStartTime,
         endedAt = eventStartTime.plusSeconds(eventDuration),
-        details = defaultEventSummary)
+        details = defaultEventSummary,
+        train = train)
     }
   }
 
-  def makeEvent0(name: String, startedAt: LocalDateTime, endedAt: LocalDateTime, details: String): Event =
+  def makeEvent0(name: String, startedAt: LocalDateTime, endedAt: LocalDateTime, details: String, train: Train): Event =
     Event(name = name,
     startedAt = startedAt,
     endedAt = endedAt,
-    details = details)
+    details = details,
+    trains = List(train))
 
 
 }

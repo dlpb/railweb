@@ -11,7 +11,7 @@ import controllers.plan.route.find.result.FindRouteResultHelper.mkTime
 import controllers.plan.route.find.result.{FindRouteResultHelper, ResultViewModel, Waypoint}
 import javax.inject.{Inject, Singleton}
 import models.auth.roles.MapUser
-import models.data.Event
+import models.data.{Event, Train}
 import models.location.{Location, MapLocation}
 import models.plan.timetable.trains.TrainTimetableService
 import models.route.Route
@@ -98,13 +98,13 @@ class FindTimetableRouteResultVisitController @Inject()(
 
         val timetable = timetableOpt.get
 
-        val departTime = timetable.locations.headOption.flatMap(_.departure).getOrElse(LocalTime.now)
+        val departTime = timetable.locations.headOption.flatMap(_.publicDeparture).getOrElse(LocalTime.now)
         val startDate = LocalDate.parse(date)
         val startDateTime = LocalDateTime.of(startDate, departTime)
 
 
         val eventDuration = {
-          val arrivalTime = timetable.locations.lastOption.flatMap(_.arrival).getOrElse(LocalTime.now)
+          val arrivalTime = timetable.locations.lastOption.flatMap(_.publicArrival).getOrElse(LocalTime.now)
           val endDate = if(arrivalTime.isBefore(departTime)) startDate.plusDays(1) else startDate
           val endDateTime = LocalDateTime.of(endDate, arrivalTime)
 
@@ -127,8 +127,11 @@ class FindTimetableRouteResultVisitController @Inject()(
           overrideStartTime,
           visitStartTime,
           visitName,
-          eventDuration.toSeconds)
-
+          eventDuration.toSeconds,
+          locationsToVisit.head,
+          locationsToVisit.last,
+          trainUid
+        )
 
         if(!(eventService.hasActiveEvent(request.user) && eventService.getActiveEvent(request.user).get.id == event.id)) {
           eventService.saveEvent(event, request.user)
@@ -179,6 +182,8 @@ class FindTimetableRouteResultVisitController @Inject()(
         var remainingRoutesToVisit = routesToVisit
         val nextLocationsToVisit: List[Location] = locationsToVisit.tail
 
+        val visitedTrainUid = if(overriddenTrainUid.isDefined) overriddenTrainUid else Some(trainUid)
+
         locationsToVisit.zipWithIndex.foreach(l => {
           val (nextLocation, index) = l
           val routes = {
@@ -207,7 +212,7 @@ class FindTimetableRouteResultVisitController @Inject()(
               })
 
               routes.foreach(r => {
-                routesService.visitRoute(r, routeVisitTime, routeVisitTime, "", request.user)
+                routesService.visitRoute(r, routeVisitTime, routeVisitTime, None, visitedTrainUid, request.user)
                 val debugVisitRoute = s"VISIT ROUTE   : Visiting route ${r.from.id}-${r.to.id} with visit time $routeVisitTime"
                 debugStrBuf.append(debugVisitRoute).append("\n")
                 routeVisitTime = routeVisitTime.plusSeconds(r.travelTimeInSeconds.getSeconds)
@@ -217,7 +222,6 @@ class FindTimetableRouteResultVisitController @Inject()(
 
             }
             val travelTime = nextRoutes.map(_.travelTimeInSeconds).map(_.toSeconds).sum
-            val visitDescription = ""
             //work out when the timetable says the train should arrive
             val timetableScheduledArrivalTimeOpt = timetable.locations.find(_.tiploc.equals(nextLocation.id)).flatMap(_.publicArrival)
             //if the arrival time is before the last visit time, we've probably crossed midnight so add one day
@@ -231,7 +235,8 @@ class FindTimetableRouteResultVisitController @Inject()(
             val locationVisitTime: LocalDateTime = timetableScheduledArrivalDateTimeOpt.getOrElse(lastVisitTime.plusSeconds(travelTime))
             val debugVisitLocation = s"VISIT LOCATION: Visiting Index $index,  location ${nextLocation.id}, VisitTime $locationVisitTime"
             debugStrBuf.append(debugVisitLocation).append("\n")
-            locationsService.visitLocation(nextLocation, locationVisitTime, locationVisitTime, visitDescription , request.user)
+            val visitDescription = None
+            locationsService.visitLocation(nextLocation, locationVisitTime, locationVisitTime, visitDescription, visitedTrainUid, request.user)
 
             lastVisitTime = locationVisitTime
           }
@@ -263,9 +268,9 @@ class FindTimetableRouteResultVisitController @Inject()(
             path.followUnknownLinks,
             distance,
             mkTime(time, " (timetabled)"),
+            false,
+            false,
             true,
-            false,
-            false,
             None,
             Some(LocalDate.now),
             None,
@@ -373,30 +378,37 @@ class FindTimetableRouteResultVisitController @Inject()(
                         setVisitTime: Boolean,
                         eventStartTime: LocalDateTime,
                         visitName: Option[String],
-                        eventDuration: Long): Event = {
+                        eventDuration: Long,
+                        boarded: Location,
+                        alighted: Location,
+                        trainId: String): Event = {
     val defaultEventName = eventStartTime.format(DateTimeFormatter.ISO_DATE) + s" - $from to $to"
-    val defaultEventSummary = s"Visit from ${from} to ${to}"
+    val defaultEventSummary = ""
+    val train = Train(boarded.id, alighted.id, trainId)
 
     if (setVisitDetails || setVisitTime) {
       makeEvent0(name = visitName.getOrElse(defaultEventName),
         startedAt = eventStartTime,
         endedAt = eventStartTime.plusSeconds(eventDuration),
-        details = defaultEventSummary)
+        details = defaultEventSummary,
+        train = train)
     } else if (eventService.hasActiveEvent(request.user)) {
       eventService.getActiveEvent(request.user).get
     } else {
       makeEvent0(name = defaultEventName,
         startedAt = eventStartTime,
         endedAt = eventStartTime.plusSeconds(eventDuration),
-        details = defaultEventSummary)
+        details = defaultEventSummary,
+        train = train)
     }
-  }
+}
 
-  def makeEvent0(name: String, startedAt: LocalDateTime, endedAt: LocalDateTime, details: String): Event =
+  def makeEvent0(name: String, startedAt: LocalDateTime, endedAt: LocalDateTime, details: String, train: Train): Event =
     Event(name = name,
     startedAt = startedAt,
     endedAt = endedAt,
-    details = details)
+    details = details,
+    trains = List(train))
 
 
 }

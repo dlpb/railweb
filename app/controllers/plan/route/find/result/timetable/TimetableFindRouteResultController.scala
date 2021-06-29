@@ -102,7 +102,7 @@ class TimetableFindRouteResultController @Inject()(
           token,
           trainUid,
           date,
-          controllers.plan.route.find.result.timetable.routes.TimetableFindRouteResultController.timetable(trainUid, date),
+          controllers.plan.route.find.result.timetable.routes.TimetableFindRouteResultController.redirect(),
           messages
         ))
       }

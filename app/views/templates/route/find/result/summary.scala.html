@@ -19,39 +19,50 @@
     <h2>Route from @waypoints.head.name to @waypoints.last.name</h2>
     <div class="card card-body">
         <h3>Summary</h3>
-        <p>Route from: <strong>@waypoints.head.name</strong> to <strong>@waypoints.last.name</strong></p>
-        <p>Route via: @waypointList(waypoints) @if(manuallyCreated) {
-            <a href="@editCall">Edit Route</a>
-        }</p>
-        <p>Total locations: <strong>@waypoints.size</strong></p>
-        <p>Total public stops: <strong>@waypoints.count(_.isPublicStop)</strong></p>
-        <p>Total distance: <strong>@{
-            distance / 1000
-        } km</strong></p>
-        <p>Approximate travel time: <strong>@time</strong></p>
-        @if(manuallyCreated) {
-            <p>Route source: <strong>Manually Created from Waypoints</strong></p>
-        }
-        @if(jsonCreated) {
-            <p>Route Source<strong>Uploaded Json Timetable</strong></p>
-        }
-        @if(timetableCreated) {
-            <p>Route Source<strong>
-                Timetable for train @timetableTrainUid running on @date from @{timetableTrainOrigin.map(_.name)} to @{timetableTrainDestination.map(_.name)}</strong> <a href="@editCall">
-                Choose different train timetable</a></p>
-        }
-        <p>Routing Options:</p>
-        <ul>
-            @if(followFixedLinks) {
-                <li>Following Fixed Links</li>
-            }
-            @if(followFreightLinks) {
-                <li>Following Freight Links</li>
-            }
-            @if(followUnknownLinks) {
-                <li>Following Unknown Links</li>
-            }
-        </ul>
+        <dl class="row">
+            <dd class="col-sm-3">Route From</dd>
+            <dt class="col-sm-9"><strong>@waypoints.head.name</strong> to <strong>@waypoints.last.name</strong></dt>
+            <dd class="col-sm-3">Route Via</dd>
+            <dt class="col-sm-9">@waypointList(waypoints) @if(manuallyCreated) {
+                <a href="@editCall">Edit Route</a>
+            }</dt>
+            <dd class="col-sm-3">Total Locations</dd>
+            <dt class="col-sm-9">@waypoints.size</dt>
+            <dd class="col-sm-3">Total Public Stops</dd>
+            <dt class="col-sm-9">@waypoints.count(_.isPublicStop)</dt>
+            <dd class="col-sm-3">Total Distance</dd>
+            <dt class="col-sm-9">@{
+                distance / 1000
+            } km</dt>
+            <dd class="col-sm-3">Approximate Travel Time</dd>
+            <dt class="col-sm-9">@time</dt>
+            <dd class="col-sm-3">Route Source
+            </dd>
+            <dt class="col-sm-9">
+                @if(manuallyCreated) {
+                    Manually Created from Waypoints
+                }
+                @if(jsonCreated) {
+                    Uploaded Json Timetable
+                }
+                @if(timetableCreated) {
+                        Timetable for train @timetableTrainUid running on @date from @{timetableTrainOrigin.map(_.name)} to @{timetableTrainDestination.map(_.name)} <a href="@editCall">
+                        Choose different train timetable</a>
+                }
+            </dt>
+            <dd class="col-sm-3">Routing Options</dd>
+            <dt class="col-sm-9"><ul>
+                @if(followFixedLinks) {
+                    <li>Following Fixed Links</li>
+                }
+                @if(followFreightLinks) {
+                    <li>Following Freight Links</li>
+                }
+                @if(followUnknownLinks) {
+                    <li>Following Unknown Links</li>
+                }
+            </ul></dt>
+        </dl>
     </div>
 }
 

@@ -102,22 +102,22 @@ class LocationVisitService @Inject() (config: Config,
     None
   }
 
-  def visitLocation(location: Location, created: LocalDateTime, eventOccuredAt: LocalDateTime, description: String, user: User): Unit = {
-    val visit = dataProvider.mapMemoryModelToDataModel(LocationVisit(location, created, eventOccuredAt, description))
+  def visitLocation(location: Location, created: LocalDateTime, eventOccuredAt: LocalDateTime, description: Option[String], trainUid: Option[String], user: User): Unit = {
+    val visit = dataProvider.mapMemoryModelToDataModel(LocationVisit(location, created, eventOccuredAt, description, trainUid))
     eventService.ensureActiveEvent(user)
     dataProvider.saveVisit(visit, user)
   }
 
   def visitLocation(location: Location, user: User): Unit = {
-    visitLocation(location, LocalDateTime.now(), LocalDateTime.now(), "MANUAL_VISIT", user)
+    visitLocation(location, LocalDateTime.now(), LocalDateTime.now(), None, None, user)
   }
 
   def deleteLastVisit(location: Location, user: User): Unit = {
-    dataProvider.removeLastVisit(dataProvider.mapMemoryModelToDataModel(LocationVisit(location, LocalDateTime.MIN, LocalDateTime.MIN, "DELETE_LAST_VISIT")), user)
+    dataProvider.removeLastVisit(dataProvider.mapMemoryModelToDataModel(LocationVisit(location, LocalDateTime.MIN, LocalDateTime.MIN, None, None)), user)
   }
 
   def deleteAllVisits(location: Location, user: User): Unit = {
-    dataProvider.removeAllVisits(dataProvider.mapMemoryModelToDataModel(LocationVisit(location, LocalDateTime.MIN, LocalDateTime.MIN, "DELETE_ALL_VISIT")), user)
+    dataProvider.removeAllVisits(dataProvider.mapMemoryModelToDataModel(LocationVisit(location, LocalDateTime.MIN, LocalDateTime.MIN, None, None)), user)
   }
 
   def getLocationsVisitedForEvent(event: Event, user: User): List[LocationVisit] = {
@@ -125,7 +125,7 @@ class LocationVisitService @Inject() (config: Config,
 
     eventService.ensureAllVisitsHaveAnEvent(visits, user)
 
-    visits
+        visits
       .filter(v => v.eventOccurredAt.isBefore(event.endedAt) || v.eventOccurredAt.isEqual(event.endedAt))
       .filter(v => v.eventOccurredAt.isAfter(event.startedAt) || v.eventOccurredAt.isEqual(event.startedAt))
       .sortBy(_.eventOccurredAt)

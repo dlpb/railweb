@@ -32,9 +32,9 @@ trait LocationDataProvider extends DataProvider[Location, LocationVisit] {
 
   override def getIdForData(data: Location): String = data.id
 
-  override def mapMemoryModelToDataModel(visit: LocationVisit): DataModelVisit = DataModelVisit(getIdForData(visit.visited), visit.created, visit.eventOccurredAt, visit.description)
+  override def mapMemoryModelToDataModel(visit: LocationVisit): DataModelVisit = DataModelVisit(getIdForData(visit.visited), visit.created, visit.eventOccurredAt, visit.description, visit.trainUid)
 
-  override def mapDataModelToMemoryModel(visit: DataModelVisit): LocationVisit = LocationVisit(getDataForId(visit.visited), visit.created, visit.eventOccurredAt, visit.description)
+  override def mapDataModelToMemoryModel(visit: DataModelVisit): LocationVisit = LocationVisit(getDataForId(visit.visited), visit.created, visit.eventOccurredAt, visit.description, visit.trainUid)
 }
 trait RouteDataProvider extends DataProvider[Route, RouteVisit] {
 
@@ -49,9 +49,9 @@ trait RouteDataProvider extends DataProvider[Route, RouteVisit] {
     routeService.findRoute(from, to).getOrElse(throw new IllegalArgumentException(s"Loading Route - could not find route from $from to $to"))
   }
 
-  override def mapMemoryModelToDataModel(visit: RouteVisit): DataModelVisit = DataModelVisit(getIdForData(visit.visited), visit.created, visit.eventOccurredAt, visit.description)
+  override def mapMemoryModelToDataModel(visit: RouteVisit): DataModelVisit = DataModelVisit(getIdForData(visit.visited), visit.created, visit.eventOccurredAt, visit.description, visit.trainUid)
 
-  override def mapDataModelToMemoryModel(visit: DataModelVisit): RouteVisit = RouteVisit(getDataForId(visit.visited), visit.created, visit.eventOccurredAt, visit.description)
+  override def mapDataModelToMemoryModel(visit: DataModelVisit): RouteVisit = RouteVisit(getDataForId(visit.visited), visit.created, visit.eventOccurredAt, visit.description, visit.trainUid)
 }
 
 trait EventDataProvider {
