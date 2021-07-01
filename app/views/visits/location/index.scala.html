@@ -12,7 +12,13 @@ locationVisitIndex: Map[String, Int],
         sortOrder: String
 )(implicit request: Request[AnyContent])
 @templates.main("All Visits by Location", "Profile", Some(user)){
-
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/profile">Profile</a></li>
+            <li class="breadcrumb-item"><a href="/profile/visits">Visits</a></li>
+            <li class="breadcrumb-item active" aria-current="page">By Location</li>
+        </ol>
+    </nav>
         <div class="row">
             <div class="col-sm">
                 <h1>Locations</h1>
@@ -25,32 +31,32 @@ locationVisitIndex: Map[String, Int],
         </div>
   <div class="row">
       <div class="col col-sm">
-          <div id="form">
-          @helper.form(sortCall) {
-            <label for="sortField">Sort Locations By:</label>
-            <select name="sortField" id="sortField">
-                <option value="name" @if(sortField.equals("name")) { selected="selected" } >Location Name</option>
-                <option value="date" @if(sortField.equals("date")) { selected="selected" } >Fist Visit Date</option>
-                <option value="count" @if(sortField.equals("count")) { selected="selected" } >Visit Count</option>
-                <option value="id" @if(sortField.equals("id")) { selected="selected" } >Location ID</option>
-            </select>
-              <label for="sortOrder">Order Sort By:</label>
-              <select name="sortOrder" id="sortOrder">
-                  <option value="asc" @if(sortField.equals("asc")) { selected="selected" } >Ascending</option>
-                  <option value="desc" @if(sortField.equals("desc")) { selected="selected" } >Descending</option>
-              </select>
-            <button type="submit" class="btn btn-primary">Sort</button>
-          }
+                <div id="form">
+                  @helper.form(sortCall) {
+                    <label for="sortField">Sort Locations By:</label>
+                    <select name="sortField" id="sortField">
+                        <option value="name" @if(sortField.equals("name")) { selected="selected" } >Location Name</option>
+                        <option value="date" @if(sortField.equals("date")) { selected="selected" } >Fist Visit Date</option>
+                        <option value="count" @if(sortField.equals("count")) { selected="selected" } >Visit Count</option>
+                        <option value="id" @if(sortField.equals("id")) { selected="selected" } >Location ID</option>
+                    </select>
+                      <label for="sortOrder">Order Sort By:</label>
+                      <select name="sortOrder" id="sortOrder">
+                          <option value="asc" @if(sortField.equals("asc")) { selected="selected" } >Ascending</option>
+                          <option value="desc" @if(sortField.equals("desc")) { selected="selected" } >Descending</option>
+                      </select>
+                    <button type="submit" class="btn btn-primary">Sort</button>
+                  }
           </div>
       </div>
   </div>
         <div class="row">
             <div class="col-sm">
                 @for(visit <- locationVisits) {
-                <ul>
-                    <li>
+                <ul class="list-unstyled">
+                    <li class="border-bottom">
                         <a href="/location/detail/@visit.visited.id" target="_blank">@visit.visited.name</a> [@visit.visited.crs.mkString(" ")] (@visit.visited.id)<br/>
-                        <span class="badge badge-info">Visited @(locationVisitCount(visit.visited.id)) times</span> <span class="badge badge-dark">Location @(locationVisitIndex(visit.visited.id))</span>
+                        <span class="badge badge-info float-right">Visited @(locationVisitCount(visit.visited.id)) times</span> <span class="badge badge-dark float-right">Location @(locationVisitIndex(visit.visited.id))</span>
                         <ul>
                             @for(events <- locationVisitEvents.get(visit.visited.id) ){
                               @for(event <- events) {

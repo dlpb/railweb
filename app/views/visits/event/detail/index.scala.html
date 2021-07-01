@@ -1,30 +1,55 @@
 @import helper._
 
 @import models.route.display.map.MapRoute
+@import models.data.LocationVisit
+@import java.time.format.DateTimeFormatter
+@import models.data.RouteVisit
+@import models.route.Route
 @(
 user: models.auth.User,
 routeList: List[MapRoute],
 locations: List[models.location.MapLocation],
 locationToVisitCount: Map[String, Int],
-routeToVisitCount: Map[models.route.display.map.MapRoute, Int],
+routeToVisitCount: Map[Route, Int],
 locationFirstVisits: List[String],
-routeFirstVisits: List[models.route.display.map.MapRoute],
+routeFirstVisits: List[Route],
+locationVisits: List[LocationVisit],
+routeVisits: List[RouteVisit],
 event: models.data.Event,
 distance: Long
 )(implicit request: Request[AnyContent])
 @templates.main(event.name + " - Visit", "Profile", Some(user)){
-
-        <div class="row">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/profile">Profile</a></li>
+            <li class="breadcrumb-item"><a href="/profile/visits">Visits</a></li>
+            <li class="breadcrumb-item"><a href="/profile/visits/by/event">By Event</a></li>
+            <li class="breadcrumb-item active" aria-current="page">@event.name</li>
+        </ol>
+    </nav>
+        <div class="row container" >
             <h1>Event: @event.name</h1>
         </div>
         <div class="row">
             <div class="alert alert-light" role="alert">
-                <p>@event.details</p>
-                <p>Distance: @(distance/1000.0)km</p>
-                <p>Locations: @locations.size</p>
-                <p>Start time: @event.startedAt</p>
-                <p>End time: @event.endedAt</p>
-                <p>Created time: @event.created</p>
+                <dl class="row">
+                    <dt class="col-sm-3">Details</dt>
+                    <dd class="col-sm-9">@event.details</dd>
+                    <dt class="col-sm-3">Distance</dt>
+                    <dd class="col-sm-9">@(distance/1000.0)km</dd>
+                    <dt class="col-sm-3">Locations</dt>
+                    <dd class="col-sm-9">@locations.size</dd>
+                    <dt class="col-sm-3">Trains</dt>
+                    <dd class="col-sm-9">@event.trains.map(train => s"${train.boarded},${train.alighted},${train.id}").mkString("\n")</dd>
+                    <dt class="col-sm-3">Start time</dt>
+                    <dd class="col-sm-9">@event.startedAt.format(DateTimeFormatter.ofPattern("HH:mm dd-MM-yyyy"))</dd>
+                    <dt class="col-sm-3">End time</dt>
+                    <dd class="col-sm-9">@event.endedAt.format(DateTimeFormatter.ofPattern("HH:mm dd-MM-yyyy"))</dd>
+                    <dt class="col-sm-3">Created time</dt>
+                    <dd class="col-sm-9">@event.created.format(DateTimeFormatter.ofPattern("HH:mm dd-MM-yyyy"))</dd>
+                    <dt class="col-sm-3">ID</dt>
+                    <dd class="col-sm-9">@event.id</dd>
+                </dl>
                 <a href="/profile/visits/by/event/@event.id/edit"><button class="btn btn-primary">Edit</button></a>
             </div>
         </div>
@@ -36,32 +61,70 @@ distance: Long
         <div class="row">
             <div class="col-sm">
                 <h2>Locations</h2>
-                <ul>
-                    @for(location <- locations) {
-                    <li><a href="/location/detail/@location.id" target="_blank">@location.name</a>
-                        @if(locationToVisitCount(location.id) > 0) {
-                        <span class="badge badge-light float-right">Visited @locationToVisitCount(location.id) times</span>
-                        }
-                        @if(locationFirstVisits.contains(location.id)) {
-                        <span class="badge badge-success float-right">First Visit</span>
-                        }
-                    </li>
+
+                    @for(location <- locationVisits) {
+                        <div class="row container">
+                          <div class="border-bottom">
+                            <a href="/location/detail/@location.visited.id" target="_blank">@location.visited.name</a>
+                            @if(locationToVisitCount(location.visited.id) > 0) {
+                                <span class="badge badge-light float-right">@locationToVisitCount(location.visited.id) visits</span>
+                            }
+                            @if(locationFirstVisits.contains(location.visited.id)) {
+                                <span class="badge badge-success float-right">First Visit</span>
+                            }
+                            <dl class="small row">
+                              <dt class="col-sm-3">Time</dt>
+                              <dd class="col-sm-9">@location.eventOccurredAt.format(DateTimeFormatter.ofPattern("HH:mm dd-MM-yyyy"))</dd>
+                              <dt class="col-sm-3">ID</dt>
+                              <dd class="col-sm-9">@location.id</dd>
+                              @if(location.description.isDefined){
+                                  <dt class="col-sm-3">Description</dt>
+                                  <dd class="col-sm-9">@location.description</dd>
+                              }
+                                @if(location.trainUid.isDefined){
+                                    <dt class="col-sm-3">Train</dt>
+                                    <dd class="col-sm-9"><a target="_blank" href="/plan/timetables/train/@location.trainUid/simple/@location.eventOccurredAt.getYear/@location.eventOccurredAt.getMonthValue/@location.eventOccurredAt.getDayOfMonth">@location.trainUid</a></dd>
+                                }
+                            </dl>
+
+                          </div>
+                        </div>
                     }
-                </ul>
+
             </div>
             <div class="col-sm">
                 <h2>Routes</h2>
-                <ul>
-                    @for(route <- routeList){
-                        @if(routeToVisitCount(route) > 0) {
-                            <span class="badge badge-light float-right">Visited @routeToVisitCount(route) times</span>
-                        }
-                        @if(routeFirstVisits.contains(route)) {
-                            <span class="badge badge-success float-right">First Visit</span>
-                        }
-                    <li><a href="/route/detail/@route.from.id/@route.to.id" target="_blank">@route.from.name - @route.to.name</a></li>
+
+                    @for(route <- routeVisits){
+
+                        <div class="row container">
+                            <div class="border-bottom">
+                                <a href="/route/detail/@route.visited.from.id/@route.visited.to.id" target="_blank">@route.visited.from.name - @route.visited.to.name</a>
+                                @if(routeToVisitCount(route.visited) > 0) {
+                                    <span class="badge badge-light float-right">@routeToVisitCount(route.visited) visits</span>
+                                }
+                                @if(routeFirstVisits.contains(route.visited)) {
+                                    <span class="badge badge-success float-right">First Visit</span>
+                                }
+                                <dl class="small row">
+                                    <dt class="col-sm-3">Time</dt>
+                                    <dd class="col-sm-9">@route.eventOccurredAt.format(DateTimeFormatter.ofPattern("HH:mm dd-MM-yyyy"))</dd>
+                                    <dt class="col-sm-3">ID</dt>
+                                    <dd class="col-sm-9">@route.id</dd>
+                                    @if(route.description.isDefined){
+                                        <dt class="col-sm-3">Description</dt>
+                                        <dd class="col-sm-9">@route.description</dd>
+                                    }
+                                    @if(route.trainUid.isDefined){
+                                        <dt class="col-sm-3">Train</dt>
+                                        <dd class="col-sm-9"><a target="_blank" href="/plan/timetables/train/@route.trainUid/simple/@route.eventOccurredAt.getYear/@route.eventOccurredAt.getMonthValue/@route.eventOccurredAt.getDayOfMonth">@route.trainUid</a></dd>
+                                    }
+                                </dl>
+                            </div>
+                        </div>
+
                     }
-                </ul>
+
             </div>
         </div>
     </div>

@@ -41,21 +41,21 @@ class RouteVisitService @Inject()(config: Config,
     getVisitsForUser(user).filter(_.visited == route)
   }
 
-  def visitRoute(route: Route, created: LocalDateTime, eventOccurredAt: LocalDateTime, description: String,  user: User): Unit = {
+  def visitRoute(route: Route, created: LocalDateTime, eventOccurredAt: LocalDateTime, description: Option[String], trainUid: Option[String],  user: User): Unit = {
     eventService.ensureActiveEvent(user)
-    dataProvider.saveVisit(dataProvider.mapMemoryModelToDataModel(RouteVisit(route, created, eventOccurredAt, description)), user)
+    dataProvider.saveVisit(dataProvider.mapMemoryModelToDataModel(RouteVisit(route, created, eventOccurredAt, description, trainUid)), user)
   }
 
   def visitRoute(route: Route, user: User): Unit = {
-    visitRoute(route, LocalDateTime.now(), LocalDateTime.now(), "MANUAL_VISIT", user)
+    visitRoute(route, LocalDateTime.now(), LocalDateTime.now(), None, None, user)
   }
 
   def deleteLastVisit(route: Route, user: User): Unit = {
-    dataProvider.removeLastVisit(dataProvider.mapMemoryModelToDataModel(RouteVisit(route, LocalDateTime.MIN, LocalDateTime.MIN, "DELETE_LAST_VISIT")), user)
+    dataProvider.removeLastVisit(dataProvider.mapMemoryModelToDataModel(RouteVisit(route, LocalDateTime.MIN, LocalDateTime.MIN, None, None)), user)
   }
 
   def deleteAllVisits(route: Route, user: User): Unit = {
-    dataProvider.removeAllVisits(dataProvider.mapMemoryModelToDataModel(RouteVisit(route, LocalDateTime.MIN, LocalDateTime.MIN, "DELETE_ALL_VISITS")), user)
+    dataProvider.removeAllVisits(dataProvider.mapMemoryModelToDataModel(RouteVisit(route, LocalDateTime.MIN, LocalDateTime.MIN, None, None)), user)
   }
 
 

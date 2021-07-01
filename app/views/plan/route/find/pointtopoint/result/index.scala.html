@@ -43,116 +43,45 @@ messages: List[String]
         }
 
 <div class="row">
-      <div class="col col-sm">
-            @if(model.waypoints.nonEmpty) {
-              <h2>Route from @model.waypoints.head.name to @model.waypoints.last.name</h2>
-          <div class="card card-body">
-              <h3>Summary</h3>
-              <p>Route from: <strong>@model.waypoints.head.name</strong> to <strong>@model.waypoints.last.name</strong></p>
-              <p>Route via: @model.waypoints.map(_.name).mkString(", ") <a href="@model.editCall">Edit Route</a></p>
-              <p>Total locations: <strong>@model.waypoints.size</strong></p>
-              <p>Total public stops: <strong>@model.waypoints.count(_.isPublicStop)</strong></p>
-              <p>Total distance: <strong>@{model.distance/1000} km</strong></p>
-              <p>Approximate travel time: <strong>@model.time</strong></p>
-              @if(model.manuallyCreated) {<p>Route source: <strong>Manually Created from Waypoints</strong></p>}
-              @if(model.jsonCreated){<p>Route Source<strong>Uploaded Json Timetable</strong></p>}
-              @if(model.timetableCreated){<p>Route Source<strong>Timetable for train @model.timetableTrainUid running on @model.date from @model.timetableTrainOrigin to @model.timetableTrainDestination</strong></p>}
-              <p>Routing Options:</p>
-              <ul>
-              @if(model.followFixedLinks ){<li>Following Fixed Links</li>}
-              @if(model.followFreightLinks ){<li>Following Freight Links</li>}
-              @if(model.followUnknownLinks ){<li>Following Unknown Links</li>}
-              </ul>
-          </div>
-            }
-      </div>
+  <div class="col col-sm">
+        @templates.route.find.result.summary(
+            model.waypoints,
+            model.manuallyCreated,
+            model.jsonCreated,
+            model.timetableCreated,
+            model.editCall,
+            model.distance,
+            model.time,
+            model.followFixedLinks,
+            model.followFreightLinks,
+            model.followUnknownLinks,
+            model.timetableTrainUid,
+            model.date,
+            model.timetableTrainOrigin,
+            model.timetableTrainDestination)
   </div>
+</div>
 <div class="row">
     <div class="col col-sm">
         <div class="card card-body">
             <h3>Quick Visit</h3>
-            @helper.form(model.visitCall){
-              @helper.CSRF.formField
-                <div class="form-check">
-                    <input type="radio" class="form-check-input" id="visitAllPublicStops" name="visitMode" value="visitAllPublicStops" @if(model.visitMode.equals("visitAllPublicStops")) { checked="checked" }>
-                    <label for="visitAllPublicStops" class="form-check-label">Visit All Public Stops</label>
-                </div>
-                <div class="form-check">
-
-                    <input type="radio" class="form-check-input" id="visitAllRoutes" name="visitMode" value="visitAllRoutes" @if(model.visitMode.equals("visitAllRoutes")) { checked="checked" }>
-                    <label for="visitAllRoutes" class="form-check-label">Visit All Routes</label>
-                </div>
-                <div class="form-check">
-
-                    <input type="radio" class="form-check-input" id="visitAllRoutesAndPublicStops" name="visitMode" value="visitAllRoutesAndPublicStops" @if(model.visitMode.equals("visitAllRoutesAndPublicStops")) { checked="checked" }>
-                    <label for="visitAllRoutesAndPublicStops" class="form-check-label">Visit All Routes and Public Stops</label>
-                </div>
-                <div class="form-check">
-
-                    <input type="radio" class="form-check-input" id="visitAllRoutesAndPublicStopsBetweenLocations" name="visitMode" value="visitAllRoutesAndPublicStopsBetweenLocations" @if(model.visitMode.equals("visitAllRoutesAndPublicStopsBetweenLocations")) { checked="checked" } >
-                    <label for="visitAllRoutesAndPublicStopsBetweenLocations" class="form-check-label">Visit All Routes and Public Stops between Locations</label>
-                </div>
-                <div class="form-group">
-
-                  <label for="from">From Location</label>
-                  <select name="from" id="from" class="form-control">
-                    @for(w <- model.waypoints.dropRight(1).zipWithIndex) {
-                        <option @if(w._2.equals(model.fromLocationIndex)) { selected="selected" } value="@w._2">@w._1.name</option>
-                    }
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label for="to">To Location</label>
-                  <select name="to" id="to" class="form-control">
-                    @for(w <- model.waypoints.tail.zipWithIndex) {
-                        <option @if(w._2.equals(model.toLocationIndex)) { selected="selected" } value="@w._2">@w._1.name</option>
-                    }
-                  </select>
-                </div>
-                <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="includeNonPublicStopsInVisit" name="includeNonPublicStopsInVisit" value="includeNonPublicStopsInVisit" @if(model.includeNonPublicStops) { checked="checked" }>
-                  <label for="includeNonPublicStopsInVisit" class="form-check-label">Include Non Public Stops in Visit</label>
-                </div>
-                <div class="form-check">
-                  <input type="checkbox" class="form-check-input"  id="overrideStartDateAndTime" name="overrideStartDateAndTime" value="overrideStartDateAndTime" @if(model.overrideDateAndTimeOfVisit) { checked="checked" }>
-                  <label for="overrideStartDateAndTime" class="form-check-label">Set specific Start Date and Time</label>
-                </div>
-                <div class="form-group">
-                  <label for="startDate">Start Date</label>
-                  <input type="date" class="form-control" id="startDate" name="startDate" value="@model.overriddenStartDate">
-                </div>
-                <div class="form-group">
-                  <label for="startTime">Start Time</label>
-                  <input type="text" class="form-control" id="startTime" name="startTime" value="@model.overriddenStartTime">
-                </div>
-                 <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="overrideVisitDetails" name="overrideVisitDetails" value="overrideVisitDetails" @if(model.overrideVisitDetails) { checked="checked" } >
-                  <label for="overrideVisitDetails" class="form-check-label">Set visit details</label>
-                </div>
-                <div class="form-group">
-                  <label for="visitName">Visit Name</label>
-                  <input type="text" class="form-control" id="visitName" name="visitName" value="@model.overriddenVisitName">
-                </div>
-                <div class="form-group">
-                  <label for="trainUid">Train UID</label>
-                  <input type="text" class="form-control" id="trainUid" name="trainUid" value="@model.overriddenTrainUid">
-                </div>
-                <div class="form-group">
-                  <label for="trainHeadcode">Train Headcode</label>
-                  <input type="text" class="form-control" id="trainHeadcode" name="trainHeadcode" value="@model.overriddenTrainHeadcode">
-                </div>
-
-              <input type="hidden" id="waypoints" name="waypoints" value="@model.waypoints.map(_.id).mkString("\n")">
-              <input type="hidden" id="followFixedLinks" name="followFixedLinks" value="@model.followFixedLinks">
-              <input type="hidden" id="followFreightLinks" name="followFreightLinks" value="@model.followFreightLinks">
-              <input type="hidden" id="followUnknownLinks" name="followUnknownLinks" value="@model.followUnknownLinks">
-
-
-                <div class="form-group">
-                  <input type="submit" class="btn btn-small btn-primary" value="Visit Stations and Routes between Locations">
-                </div>
-
-            }
+            @templates.route.find.result.quickVisit(
+                model.waypoints,
+                model.visitCall,
+                model.visitMode,
+                model.fromLocationIndex,
+                model.toLocationIndex,
+                model.followFixedLinks,
+                model.followFreightLinks,
+                model.followUnknownLinks,
+                model.includeNonPublicStops,
+                model.overrideDateAndTimeOfVisit,
+                model.overriddenStartDate,
+                model.overriddenStartTime,
+                model.overrideVisitDetails,
+                model.overriddenVisitName,
+                model.overriddenTrainUid,
+                model.overriddenTrainHeadcode)
 
         </div>
     </div>
@@ -162,176 +91,19 @@ messages: List[String]
         <div class="card card-body">
             <a id="map-container"/>
             <h4>Map of route</h4>
-            <div id="map" class="map"></div>
+            @templates.map.map(model.mapLocationsList, model.mapRouteList)
         </div>
     </div>
 </div>
 
 <div class="row">
     <div class="col col-sm">
-            <div class="card card-body">
-                @if(model.waypoints.nonEmpty){
-                    <h4>Route Details</h4>
-                    @helper.CSRF.formField
-                    <table>
-                        @for((l, i) <- model.waypoints.zipWithIndex) {
-                            <tr>
-                                <td></td>
-                                <td class="route-td">
-                                    @if(l.isPublicStop) {
-                                        <img src="/assets/images/station.svg" width="32px" height="32px" alt="station"/>
-                                    } else {
-                                        <img src="/assets/images/point.svg" width="32px" height="32px" alt="station"/>
-                                    }
-                                </td>
-                                <td>
-                                    <button type="button"
-                                        @if(model.locationsToVisit.map(_.id).contains(l.id)){
-                                          class="btn btn-success btn-sm"
-                                        } else {
-                                            @if(l.isPublicStop) {
-                                                class="btn btn-primary btn-sm"
-                                            } else {
-                                                class="btn btn-secondary btn-sm"
-                                            }
-                                        }
-                                            onclick="visitLocation('@l.id', this)">
-                                        Visit Location
-                                    </button>
-                                    <div>
-                                        <a href="/location/detail/@l.id" target="_blank" class="">@l.name</a>
-                                    </div>
-                                </td>
-                            </tr>
-                            @if(i < model.mapRouteList.size) {
-                            <tr>
-                                <td class="text-right">
-                                    <div>
-                                        <a href="/route/detail/@model.mapRouteList(i).from.id/@model.mapRouteList(i).to.id" target="_blank" class="">
-                                            @model.mapRouteList(i).from.name -
-                                            @model.mapRouteList(i).to.name</a>
-                                    </div>
-                                    <button type="button"
-                                        @if(model.routesToVisit.contains(model.routeList(i))) {
-                                            class="btn btn-success btn-sm"
-                                        } else {
-                                            class="btn btn-primary btn-sm"
-                                        }
-                                            onclick="visitRoute('@model.mapRouteList(i).from.id', '@model.mapRouteList(i).to.id', this)">Visit Route
-                                    </button>
-                                    <p>Travel Time: @model.routeList(i).travelTimeInSeconds.getSeconds s</p>
-                                </td>
-                                <td class="route-td">
-                                </td>
-                                <td>
-                                </td>
-                            </tr>
-                            }
-                        }
-                    </table>
-                } else {
-                    <h4>Route Finder</h4>
-                    <p>Please use the options to find a route</p>
-                }
-            </div>
+        <div class="card card-body">
+            @templates.route.find.result.routeList(model.waypoints, model.locationsToVisit, model.routesToVisit, model.mapRouteList, token)
         </div>
     </div>
-
-        <script>
-            function visitLocation(location, source) {
-                console.log(location);
-                let csrf = document.getElementsByName("csrfToken")[0].value;
-                let token = "@token";
-
-                jQuery.ajax({
-                  type: "POST",
-                  url: '/api/visit/location',
-                  data: {
-                    'csrfToken': csrf,
-                    'Authorization': token,
-                    'location': location
-                  },
-                  success: function() {
-                    source.classList.remove("btn-primary");
-                    source.classList.add("btn-success");
-                  }
-                });
-
-            }
-
-            function visitRoute(from, to, source){
-            console.log(from, to);
-                let csrf = document.getElementsByName("csrfToken")[0].value;
-                let token = "@token";
-
-                jQuery.ajax({
-                  type: "POST",
-                  url: '/api/visit/route',
-                  data: {
-                    'csrfToken': csrf,
-                    'Authorization': token,
-                    'from': from,
-                    'to': to
-                  },
-                  success: function() {
-                    source.classList.remove("btn-primary");
-                    source.classList.add("btn-success");
-                  }
-                });
-            }
+</div>
 
 
-        </script>
 
-        <script type="text/javascript">
-            createMap();
-            @for(loc <- model.mapLocationsList) {
-                addLocation({
-                    "location": {
-                        "lat": @loc.location.lat,
-                        "lon": @loc.location.lon
-                    },
-                    "name":'@loc.name',
-                    "id": '@loc.id',
-                    "operator": '@loc.operator',
-                    "visited": false
-                });
-            }
-            var vectorLineLayer = new ol.layer.Vector({'id':'lines'});
-            var vectorLinksLineLayer = new ol.layer.Vector({'id':'links'});
-            var vectorMetroLineLayer = new ol.layer.Vector({'id':'metro'});
-
-            var vectorLine = new ol.source.Vector({});
-            var vectorLinksLine = new ol.source.Vector({});
-            var vectorMetroLine = new ol.source.Vector({});
-
-            @for(r <- model.mapRouteList) {
-                addRoute({
-                    "from": {
-                        "lat": @r.from.lat,
-                        "lon": @r.from.lon
-                    },
-                    "to":{
-                        "lat": @r.to.lat,
-                        "lon": @r.to.lon
-                    },
-                    "toc":'@r.toc'
-                },
-                false,
-                vectorLine,
-                vectorLineLayer,
-                vectorLinksLine,
-                vectorLinksLineLayer,
-                vectorMetroLine,
-                vectorMetroLineLayer
-                );
-            }
-            map.addLayer(vectorLineLayer);
-            map.addLayer(vectorLinksLineLayer);
-            map.addLayer(vectorMetroLineLayer);
-
-            vectorLinksLineLayer.setVisible(false);
-
-
-        </script>
 }

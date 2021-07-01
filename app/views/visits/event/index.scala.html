@@ -5,22 +5,37 @@ user: models.auth.User,
 events: List[models.visits.Event],
 )(implicit request: Request[AnyContent])
 @templates.main("All Visits by Event", "Profile", Some(user)){
-
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/profile">Profile</a></li>
+            <li class="breadcrumb-item"><a href="/profile/visits">Visits</a></li>
+            <li class="breadcrumb-item active" aria-current="page">By Event</li>
+        </ol>
+    </nav>
         <div class="row">
             <div class="col-sm">
                 <h1>Events</h1>
-                <ul>
+
                     @for(event <- events) {
-                        <li>
+                      <div class="row container">
+                          <div class="border-bottom">
                             <a href="/profile/visits/by/event/@event.event.id">@event.event.name</a> @if(event.isActive) {<span class="badge badge-success">Active Event</span>}
-                            <p>@event.event.details - @event.event.startedAt - @event.event.endedAt</p>
-                            <ul>
-                                <li>@event.routesVisited Routes</li>
-                                <li>@event.locationsVisited Locations</li>
-                            </ul>
-                        </li>
+                              <dl class="row">
+                                  <dd class="col-sm-3"></dd>
+                                  <dt class="col-sm-9">@event.event.details</dt>
+                                  <dd class="col-sm-3">From</dd>
+                                  <dt class="col-sm-9">@event.event.startedAt</dt>
+                                  <dd class="col-sm-3">To</dd>
+                                  <dt class="col-sm-9">@event.event.endedAt</dt>
+                                  <dd class="col-sm-3">Routes Visited</dd>
+                                  <dt class="col-sm-9">@event.routesVisited</dt>
+                                  <dd class="col-sm-3">Locations Visited</dd>
+                                  <dt class="col-sm-9">@event.locationsVisited</dt>
+                              </dl>
+                          </div>
+                      </div>
                     }
-                </ul>
+
             </div>
         </div>
 }

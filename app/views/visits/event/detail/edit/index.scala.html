@@ -9,6 +9,17 @@ event: models.data.Event,
 messages: List[String]
 )(implicit request: Request[AnyContent])
 @templates.main(event.name + " - Visit", "Profile", Some(user)){
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/profile">Profile</a></li>
+            <li class="breadcrumb-item"><a href="/profile/visits">Visits</a></li>
+            <li class="breadcrumb-item"><a href="/profile/visits/by/event">By Event</a></li>
+            <li class="breadcrumb-item"><a href="/profile/visits/by/event/@event.id">@event.name</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Edit</li>
+        </ol>
+    </nav>
+  <div class="container">
+
     @if(messages.size > 0){
         <div class="alert alert-primary">
             <h2>Messages</h2>
@@ -36,6 +47,10 @@ messages: List[String]
             <textarea class="form-control" type="text" name="description">@event.details</textarea>
         </div>
         <div class="form-group row">
+            <label class="form-text text-muted" for="trains">Event Trains</label>
+            <textarea class="form-control" type="text" name="trains">@event.trains.map(train => s"${train.boarded},${train.alighted},${train.id}").mkString("\n")</textarea>
+        </div>
+        <div class="form-group row">
             <label class="form-text text-muted" for="startTime">Event Start Time</label>
             <input class="form-control" type="datetime-local" name="startTime" value="@event.startedAt"/>
         </div>
@@ -48,5 +63,6 @@ messages: List[String]
         </div>
 
     }
+  </div>
 
 }

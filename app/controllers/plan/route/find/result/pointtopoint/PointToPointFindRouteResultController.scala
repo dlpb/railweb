@@ -107,7 +107,7 @@ class PointToPointFindRouteResultController @Inject()(
           overriddenTrainHeadcode,
           locationsToVisit,
           routesToVisit,
-          controllers.plan.route.find.result.visit.routes.FindRouteResultVisitController.visit(),
+          controllers.plan.route.find.result.pointtopoint.visit.routes.FindPointToPointRouteResultVisitController.visit(),
           controllers.plan.route.find.pointtopoint.routes.PointToPointRouteController.index(locationsToRouteVia.mkString("\n"), path.followFixedLinks, path.followFreightLinks, path.followUnknownLinks)
         ),
         messages))

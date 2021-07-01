@@ -8,10 +8,7 @@ import auth.api.AuthorizedAction
 import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject.{Inject, Singleton}
 import models.auth.UserDao
-import models.data.Event
-import models.location.MapLocation
-import models.route.Route
-import models.route.display.map.MapRoute
+import models.data.{Event, Train}
 import play.api.mvc.{AbstractController, AnyContent, ControllerComponents}
 import services.location.LocationService
 import services.visit.event.EventService
@@ -81,6 +78,9 @@ class EventDetailEditController @Inject()(
           val description = data.get("description").headOption
           val startTime = data.get("startTime").headOption
           val endTime = data.get("endTime").headOption
+          val trainsStr = data.get("trains").headOption
+
+
 
           (eventOption, name, description, startTime, endTime) match {
             case (Some(ev), Some(n), Some(d), Some(s), Some(e)) =>
@@ -90,6 +90,7 @@ class EventDetailEditController @Inject()(
                 id,
                 n,
                 d,
+                Helper.stringToTrains(trainsStr),
                 ev.created,
                 LocalDateTime.parse(s),
                 LocalDateTime.parse(e)
@@ -137,4 +138,16 @@ class EventDetailEditController @Inject()(
       }
   }
 
+}
+
+object Helper {
+  def stringToTrains(str: Option[String]): List[Train] = {
+    str
+      .getOrElse("")
+      .split("\n")
+      .toList
+      .map(line => line.split(",").toList)
+      .filter(_.length == 3)
+      .map(parts => Train(parts(0), parts(1), parts(2)))
+  }
 }

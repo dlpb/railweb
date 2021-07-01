@@ -1,5 +1,8 @@
 package models.plan.timetable.trains
 
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
+
 import models.plan.timetable.TimetableDateTimeHelper
 import models.timetable.model.train.IndividualTimetable
 import services.location.LocationService
@@ -18,8 +21,7 @@ object TrainTimetableServiceUrlHelper {
   }
 
   def buildRouteLink(tt: IndividualTimetable, locService: LocationService): String = {
-    val ids = tt.locations.flatMap(l => locService.findFirstLocationByTiploc(l.tiploc).map(_.id)).mkString("%0D%0A")
-    val url = controllers.plan.route.find.pointtopoint.routes.PointToPointRouteController.index().url //TODO FIXME
+    val url = controllers.plan.route.find.result.timetable.routes.TimetableFindRouteResultController.timetable(tt.basicSchedule.trainUid, LocalDate.now.format(DateTimeFormatter.ISO_LOCAL_DATE)).url
     url
   }
 

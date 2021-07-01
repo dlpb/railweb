@@ -41,12 +41,67 @@
             </ul>
         </div>
         }
-        <div class="row">
-            <div class="col-sm">
-                <div class="card card-body">
-                    @for(l <- model.mapLocationsList) {
-                      <li>@l.id</li>
-                    }
+
+    <div class="row">
+        <div class="col col-sm">
+        @templates.route.find.result.summary(
+            model.waypoints,
+            model.manuallyCreated,
+            model.jsonCreated,
+            model.timetableCreated,
+            model.editCall,
+            model.distance,
+            model.time,
+            model.followFixedLinks,
+            model.followFreightLinks,
+            model.followUnknownLinks,
+            model.timetableTrainUid,
+            model.date,
+            model.timetableTrainOrigin,
+            model.timetableTrainDestination)
+        </div>
+    </div>
+    <div class="row">
+        <div class="col col-sm">
+            <div class="card card-body">
+                <h3>Quick Visit</h3>
+                @templates.route.find.result.quickVisit(
+                    model.waypoints,
+                    model.visitCall,
+                    model.visitMode,
+                    model.fromLocationIndex,
+                    model.toLocationIndex,
+                    model.followFixedLinks,
+                    model.followFreightLinks,
+                    model.followUnknownLinks,
+                    model.includeNonPublicStops,
+                    model.overrideDateAndTimeOfVisit,
+                    model.overriddenStartDate,
+                    model.overriddenStartTime,
+                    model.overrideVisitDetails,
+                    model.overriddenVisitName,
+                    model.overriddenTrainUid,
+                    model.overriddenTrainHeadcode
+                )
+
             </div>
         </div>
+    </div>
+    <div class="row">
+        <div class="col-sm">
+            <div class="card card-body">
+                <a id="map-container"/>
+                <h4>Map of route</h4>
+                @templates.map.map(model.mapLocationsList, model.mapRouteList)
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col col-sm">
+            <div class="card card-body">
+            @templates.route.find.result.routeList(model.waypoints, model.locationsToVisit, model.routesToVisit, model.mapRouteList, token)
+            </div>
+        </div>
+    </div>
 }

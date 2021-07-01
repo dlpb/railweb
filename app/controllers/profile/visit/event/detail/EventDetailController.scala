@@ -82,10 +82,10 @@ class EventDetailController @Inject()(
               route -> visitCount
             }).toMap
 
-          val routeToVisitCount: Map[MapRoute, Int] =
+          val routeToVisitCount: Map[Route, Int] =
             routesToVisits
               .iterator
-              .map(l => MapRoute(l._1) -> l._2.size)
+              .map(l => l._1 -> l._2.size)
               .toMap
 
           val locationFirstVisits: List[String] = allVisitedLocations
@@ -99,7 +99,7 @@ class EventDetailController @Inject()(
             .map(_.visited.id)
 
 
-          val routeFirstVisits: List[MapRoute] = allVisitedRoutes
+          val routeFirstVisits: List[Route] = allVisitedRoutes
             .groupBy(_.visited)
             .iterator
             .map(v => v._1 -> v._2.minBy(_.eventOccurredAt))
@@ -107,7 +107,7 @@ class EventDetailController @Inject()(
             .toList
             .filter(v => (v.eventOccurredAt.isEqual(event.startedAt) || v.eventOccurredAt.isAfter(event.startedAt) && (v.eventOccurredAt.isBefore(event.endedAt) || v.eventOccurredAt.isEqual(event.endedAt))))
             .sortBy(_.eventOccurredAt)
-            .map(r => MapRoute(r.visited))
+            .map(r => r.visited)
 
 
           Ok(
@@ -119,6 +119,8 @@ class EventDetailController @Inject()(
               routeToVisitCount,
               locationFirstVisits,
               routeFirstVisits,
+              visitedLocations,
+              visitedRoutes,
               event,
               distance
             )
@@ -132,6 +134,8 @@ class EventDetailController @Inject()(
               List.empty,
               Map.empty,
               Map.empty,
+              List.empty,
+              List.empty,
               List.empty,
               List.empty,
               Event(name=s"Event not found for $id"),

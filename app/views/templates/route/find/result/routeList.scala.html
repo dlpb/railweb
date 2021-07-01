@@ -1,0 +1,116 @@
+@(waypoints: List[controllers.plan.route.find.result.Waypoint],
+        locationsToVisit: List[models.location.Location],
+        routesToVisit: List[models.route.Route],
+        mapRouteList: List[models.route.display.map.MapRoute],
+        token: String)(implicit request: Request[AnyContent])
+
+@if(waypoints.nonEmpty){
+    <h4>Route Details</h4>
+    @helper.CSRF.formField
+    <table>
+    @for((l, i) <- waypoints.zipWithIndex) {
+        <tr>
+            <td></td>
+            <td class="route-td">
+            @if(l.isPublicStop) {
+                <img src="/assets/images/station.svg" width="32px" height="32px" alt="station"/>
+            } else {
+                <img src="/assets/images/point.svg" width="32px" height="32px" alt="station"/>
+            }
+            </td>
+            <td>
+                <button type="button"
+                    @if(locationsToVisit.map(_.id).contains(l.id)){
+                        class="btn btn-success btn-sm"
+                    } else {
+                        @if(l.isPublicStop) {
+                            class="btn btn-primary btn-sm"
+                        } else {
+                            class="btn btn-secondary btn-sm"
+                        }
+                    }
+                onclick="visitLocation('@l.id', this)">
+                                        Visit Location
+                </button>
+                <div>
+                  @if(!l.isPublicStop) { <i> }
+                    <a href="/location/detail/@l.id" target="_blank" class="">@l.name</a>
+                  @if(!l.isPublicStop) { </i> }
+                </div>
+            </td>
+        </tr>
+        @if(i < mapRouteList.size) {
+            <tr>
+                <td class="text-right">
+                    <div>
+                        <a href="/route/detail/@mapRouteList(i).from.id/@mapRouteList(i).to.id" target="_blank" class="">
+                            @mapRouteList(i).from.name -
+                            @mapRouteList(i).to.name</a>
+                    </div>
+                    <button type="button"
+                        @if(routesToVisit.contains(mapRouteList(i))) {
+                            class="btn btn-success btn-sm"
+                        } else {
+                            class="btn btn-primary btn-sm"
+                        }
+                    onclick="visitRoute('@mapRouteList(i).from.id', '@mapRouteList(i).to.id', this)">Visit Route
+                    </button>
+                </td>
+                <td class="route-td">
+                </td>
+                <td>
+                </td>
+            </tr>
+        }
+    }
+    </table>
+} else {
+    <h4>Route Finder</h4>
+    <p>Please use the options to find a route</p>
+}
+
+<script><script>
+        function visitLocation(location, source) {
+            console.log(location);
+            let csrf = document.getElementsByName("csrfToken")[0].value;
+            let token = "@token";
+
+            jQuery.ajax({
+                type: "POST",
+                url: '/api/visit/location',
+                data: {
+                    'csrfToken': csrf,
+                    'Authorization': token,
+                    'location': location
+                },
+                success: function() {
+                    source.classList.remove("btn-primary");
+                    source.classList.add("btn-success");
+                }
+            });
+
+        }
+
+        function visitRoute(from, to, source){
+            console.log(from, to);
+            let csrf = document.getElementsByName("csrfToken")[0].value;
+            let token = "@token";
+
+            jQuery.ajax({
+                type: "POST",
+                url: '/api/visit/route',
+                data: {
+                    'csrfToken': csrf,
+                    'Authorization': token,
+                    'from': from,
+                    'to': to
+                },
+                success: function() {
+                    source.classList.remove("btn-primary");
+                    source.classList.add("btn-success");
+                }
+            });
+        }
+
+
+</script>
