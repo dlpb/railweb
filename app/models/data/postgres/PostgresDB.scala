@@ -205,12 +205,13 @@ class PostgresDB @Inject() (config: Config) {
   }
 
   def getConnection(config: Config): Connection = {
-    println(s"Getting connection to ${config.getString("postgres.db.url")}")
     val dbUri = new URI(config.getString("postgres.db.url"))
     val username = dbUri.getUserInfo.split(":")(0)
     val password = dbUri.getUserInfo.split(":")(1)
     val dbUrl = s"jdbc:postgresql://${dbUri.getHost}${dbUri.getPath}?sslmode=require"
 
-    DriverManager.getConnection(dbUrl, username, password)
+    val conn = DriverManager.getConnection(dbUrl, username, password)
+    System.gc()
+    conn
   }
 }
