@@ -36,7 +36,6 @@ scalacOptions ++= Seq(
 )
 
 javaOptions += "--add-opens java.base/jdk.internal.misc=ALL-UNNAMED"
-javaOptions += "-Dio.netty.tryReflectionSetAccessible=true"
 
 javaOptions += "--illegal-access=warn"
 
