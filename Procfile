@@ -1,1 +1,1 @@
-web: target/universal/stage/bin/railweb -Dhttp.port=${PORT} -DapplyEvolutions.default=true -Ddb.default.driver=org.postgresql.Driver -Dpostgres.db.url=${DATABASE_URL}
+web: target/universal/stage/bin/railweb -XX:+UseG1GC -XX:+UseStringDeduplication -Dhttp.port=${PORT} -DapplyEvolutions.default=true -Ddb.default.driver=org.postgresql.Driver -Dpostgres.db.url=${DATABASE_URL}
