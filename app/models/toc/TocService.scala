@@ -12,8 +12,11 @@ import scala.io.Source
 @Singleton
 class TocService @Inject()(config: Config) {
 
-  private var toc: Set[Operator] = makeToc(readTocFromFile)
-
+  private var toc: Set[Operator] = {
+    val tocs = makeToc(readTocFromFile)
+    System.gc()
+    tocs;
+  }
   def get(id: String): Option[Operator] = toc.find(_.id.equalsIgnoreCase(id))
 
   def getAll: Set[Operator] = toc
