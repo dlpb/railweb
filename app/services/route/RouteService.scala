@@ -13,7 +13,11 @@ class RouteService @Inject() ( config: Config ) {
 
   val routeFileReader = new JsonFileReader
 
-  val routes: Set[Route] = routeFileReader.readAndParse[Set[Route]](config.getString("data.routes.path"))
+  val routes: Set[Route] = {
+    val routesSet = routeFileReader.readAndParse[Set[Route]](config.getString("data.routes.path"))
+    System.gc()
+    routesSet
+  }
 
   val mapRoutes: Set[MapRoute] = routes.map(r => MapRoute(r))
 

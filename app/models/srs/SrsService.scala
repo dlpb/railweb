@@ -13,7 +13,11 @@ import scala.io.Source
 class SrsService @Inject()(config: Config) {
 
 
-  private var srs: Set[Srs] = makeSrs(readSrsFromFile)
+  private var srs: Set[Srs] = {
+    val srss = makeSrs(readSrsFromFile)
+    System.gc()
+    srss
+  }
 
   def get(id: String): Option[Srs] = srs.find(_.id.equalsIgnoreCase(id))
 

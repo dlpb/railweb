@@ -52,7 +52,11 @@ class LocationService @Inject() (config: Config) {
 
   private val locationFileReader = new JsonFileReader
 
-  val locations: Set[Location] = locationFileReader.readAndParse[Set[Location]](config.getString("data.locations.path"))
+  val locations: Set[Location] = {
+    val locs = locationFileReader.readAndParse[Set[Location]](config.getString("data.locations.path"))
+    System.gc()
+    locs
+  }
 
   val mapLocations: Set[MapLocation] = locations.map(MapLocation(_))
 
