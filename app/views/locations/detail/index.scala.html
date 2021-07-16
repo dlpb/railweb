@@ -2,6 +2,7 @@
 @(
 user: models.auth.User,
 location: models.location.Location,
+locationDetails: Set[models.location.LocationDetail],
 visits: List[models.data.Event],
 token: String,
 visitUrl: Call,
@@ -38,61 +39,57 @@ nearestLocations: List[PathElementLocation]
         <div class="row">
             <div class="col-sm">
                 <h3>@if(location.isOrrStation) { Station } else { @location.getLocationType } Data</h3>
-                <ul>
-                    <li>ID: @location.id</li>
-                    <li>Operator: <a href="/toc/@location.operator">@location.operator</a></li>
-                    @if(location.crs.filterNot(_.isBlank).nonEmpty){
-                    <li>CRS:
-                        <ul>
-                            @for(crs <- location.crs) {
-                            <li>@crs</li>
-                            }
-                        </ul>
-                    </li>
-                    }
-                    <li>TIPLOCs:
-                        <ul>
-                            @for(tiploc <- location.tiploc) {
-                            <li>@tiploc</li>
-                            }
-                        </ul>
-                    </li>
-                    <li>ORR Station: @location.isOrrStation</li>
-                </ul>
+
+                <dl class="row">
+                    <dt class="col-sm-3">ID</dt>
+                    <dd class="col-sm-9">@location.id</dd>
+                    <dt class="col-sm-3">Operator</dt>
+                    <dd class="col-sm-9"><a href="/toc/@location.operator">@location.operator</a></dd>
+                    <dt class="col-sm-3">CRS</dt>
+                    <dd class="col-sm-9"><ul class="list-unstyled">@for(crs <- location.crs) { <li>@crs</li> }</ul></dd>
+                    <dt class="col-sm-3">TIPLOCs</dt>
+                    <dd class="col-sm-9"><ul class="list-unstyled">@for(tiploc <- location.tiploc) { <li>@tiploc</li> }</ul></dd>
+                    <dt class="col-sm-3">ORR Station</dt>
+                    <dd class="col-sm-9">@if(location.isOrrStation) { Yes } else { No }</dd>
+                </dl>
+
             </div>
             <div class="col col-sm">
                 <h3>Location Data</h3>
-                <ul>
-                    <li>Lat: @location.lat</li>
-                    <li>Lon: @location.lon</li>
-                    (location.location.county.isDefined) {<li>County: location.location.county</li> }
-                    if(location.location.district.isDefined) {<li>District: location.location.district</li> }
-                    if(location.location.postcode.isDefined) {<li>Postcode: location.location.postcode</li> }
-                </ul>
+                <dl class="row">
+                    <dt class="col-sm-3">Lat</dt>
+                    <dd class="col-sm-9">@location.lat</dd>
+                    <dt class="col-sm-3">Lon</dt>
+                    <dd class="col-sm-9">@location.lon</dd>
+                    @for(details <- locationDetails){
+                      @if(!details.county.isBlank) {
+                          <dt class="col-sm-3">County</dt>
+                          <dd class="col-sm-9">@details.county</dd>
+                      }
+                      @if(!details.district.isBlank) {
+                          <dt class="col-sm-3">District</dt>
+                          <dd class="col-sm-9">@details.district</dd>
+                      }
+                      @if(!details.postcode.isBlank) {
+                          <dt class="col-sm-3">Postcode</dt>
+                          <dd class="col-sm-9">@details.postcode</dd>
+                      }
+                    }
+                </dl>
             </div>
-            for(nrInfo <- location.nrInfo){
-                if(!nrInfo.route.isBlank || !nrInfo.srs.isBlank || !nrInfo.crp.isBlank || !nrInfo.interchangeType.isBlank || !nrInfo.changeTime.isBlank) {
+            @for(details <- locationDetails){
+                @if(!details.route.isBlank || !location.srs.isBlank || !details.crp.isBlank || !details.interchangeType.isBlank || !details.changeTime.isBlank) {
                 <div class="col-sm">
                     <h3>Route Info</h3>
-                    <ul>
-                        if(!nrInfo.route.isBlank) {<li>Region: nrInfo.route</li> }
-                        if(!nrInfo.srs.isBlank) {<li>SRS: <a href="/srs/nrInfo.srs">nrInfo.srs</a></li> }
-                        if(!nrInfo.crp.isBlank) { <li>CRP: nrInfo.crp</li>}
-                        if(!nrInfo.interchangeType.isBlank) {<li>Interchange Type: nrInfo.interchangeType</li>}
-                        if(!nrInfo.changeTime.isBlank) {<li>Change Time: nrInfo.changeTime</li>}
-                    </ul>
+                    <dl class="row">
+                        @if(!details.route.isBlank) { <dt class="col-sm-3">Region</dt><dd class="col-sm-9">@details.route</dd> }
+                        @if(!location.srs.isBlank) { <dt class="col-sm-3">SRS</dt><dd class="col-sm-9"><a href="/srs/@location.srs">@location.srs</a></dd> }
+                        @if(!details.crp.isBlank) { <dt class="col-sm-3">CRP</dt><dd class="col-sm-9">@details.crp</dd>}
+                        @if(!details.interchangeType.isBlank) { <dt class="col-sm-3">Interchange Type: </dt><dd class="col-sm-9">@details.interchangeType</dd>}
+                        @if(!details.changeTime.isBlank) { <dt class="col-sm-3">Change Time</dt><dd class="col-sm-9">@details.changeTime</dd>}
+                    </dl>
                 </div>
                 }
-            }
-            @if(!visits.isEmpty){
-            <div class="col-sm">
-                <h3>Visits</h3>
-                <ul>
-                    @for(visit <- visits){
-                    <li><a href="/profile/visits/by/event/@visit.id">@visit.name</a></li>
-                    }
-                </ul>
-            </div>
             }
         </div>
         <div class="row">
@@ -141,33 +138,27 @@ nearestLocations: List[PathElementLocation]
         <div class="row">
             <div class="col col-sm">
                 <h3>Map</h3>
-                <div id="map" class="map"></div>
+                @templates.map.map(List(location), List.empty)
             </div>
         </div>
-
+        <div class="row">
+        @if(!visits.isEmpty){
+            <div class="col-sm">
+                <h3>Visits</h3>
+                <ul>
+                @for(visit <- visits){
+                    <li><a href="/profile/visits/by/event/@visit.id">@visit.name</a></li>
+                }
+                </ul>
+            </div>
+        }
+        </div>
         <div class="row">
             <div class="col col-sm">
                 <h3>Adjacent Route Diagram</h3>
                 @listLocation(nearestLocations)
             </div>
         </div>
-
-        <script type="text/javascript">
-        const operator = "@location.operator";
-        const lat = @location.lat;
-        const lon = @location.lon;
-
-        createMap();
-        addLocation(
-        {
-            "location": {
-                "lat":lat,
-                "lon":lon
-            },
-            "operator":operator
-        })
-
-        </script>
 }
 
 <style>

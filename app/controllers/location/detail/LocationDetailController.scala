@@ -34,11 +34,14 @@ class LocationDetailController @Inject()(
         case Some(loc) =>
           val value = adjacentLocationService.findAdjacentLocations(loc)
 
+          val locationDetails = locationService.getAllLocationDetails(loc.id)
+
           val events: List[Event] = locationVisitService.getEventsLocationWasVisited(loc, request.user)
 
           Ok(views.html.locations.detail.index(
           request.user,
           loc,
+          locationDetails,
           events,
           token,
           controllers.api.locations.visit.routes.VisitLocationsApiController.visitLocationWithParams(id),

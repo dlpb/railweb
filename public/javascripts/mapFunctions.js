@@ -109,7 +109,7 @@ function populatePointsWithHighlighting(map, token, highlighting) {
     }
 }
 
- function addLocation(location, colourSource){
+ function addLocation(location, colourSource, bold){
     let lat = location.lat;
     let lon = location.lon;
 
@@ -125,7 +125,7 @@ function populatePointsWithHighlighting(map, token, highlighting) {
 
     let colour = (colourSource === "srs") ? findSrsData(location.srs) : findTocData(location.operator)
 
-    let icon = location.visited ?
+    let icon = location.visited || bold ?
         '/assets/images/dot-visited.png':
         '/assets/images/dot-not-visited.png'
     locationPointFeature.setStyle(new ol.style.Style({
@@ -220,22 +220,22 @@ function populateTrainConnections(map, token, train, day, month, year){
     });
 }
 
-function addRoute(connection, visited, vectorLine, vectorLineLayer, vectorLinksLine, vectorLinksLineLayer, vectorMetroLine, vectorMetroLineLayer, colourSource){
+function addRoute(connection, visited, vectorLine, vectorLineLayer, vectorLinksLine, vectorLinksLineLayer, vectorMetroLine, vectorMetroLineLayer, colourSource, bold){
    connection.visited = visited;
 
    let colour = (colourSource === "srs") ? findSrsData(connection.srsCode).colour : findTocData(connection.toc).colour
 
    if(connection.srsCode == "Link"){
-       addConnection(connection, vectorLinksLine, vectorLinksLineLayer, colour);
+       addConnection(connection, vectorLinksLine, vectorLinksLineLayer, colour, bold);
    }
    else if(connection.type==="Light Rail"
         || connection.type === "Underground"
         || connection.type==="Metro"
         || connection.type==="Tram"){
-            addConnection(connection, vectorMetroLine, vectorMetroLineLayer, colour);
+            addConnection(connection, vectorMetroLine, vectorMetroLineLayer, colour, bold);
    }
    else{
-       addConnection(connection, vectorLine, vectorLineLayer, colour);
+       addConnection(connection, vectorLine, vectorLineLayer, colour, bold);
    }
 }
 
@@ -245,7 +245,7 @@ function findRouteVisit(route, visits){
 }
 
 
- function addConnection(connection, line, layer, colour){
+ function addConnection(connection, line, layer, colour, bold){
     var points = [
         [connection.from.lon, connection.from.lat],
         [connection.to.lon, connection.to.lat]];
@@ -266,13 +266,23 @@ function findRouteVisit(route, visits){
     });
 
     let dash = connection.visited ? [1,0]: [10, 10];
-    featureLine.setStyle(new ol.style.Style({
-        stroke: new ol.style.Stroke({
-            color: colour,
-            width: 3,
-            lineDash: dash
-        })
-    }));
+    featureLine.setStyle([
+            new ol.style.Style({
+                stroke: new ol.style.Stroke({
+                    color: '#000000',
+                    width: bold ? 10 : 5,
+                    lineDash: bold? null : dash
+                })
+            }),
+            new ol.style.Style({
+                stroke: new ol.style.Stroke({
+                    color: colour,
+                    width: bold? 8 : 3,
+                    lineDash: bold? null : dash
+                })
+            })
+        ]
+    );
 
     line.addFeature(featureLine);
     layer.setSource(line);

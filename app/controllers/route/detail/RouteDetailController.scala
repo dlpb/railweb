@@ -31,9 +31,12 @@ class RouteDetailController @Inject()(
        case Some(r) =>
          val token = jwtService.createToken(request.user, new Date())
          val events = routeVisitService.getEventsRouteWasVisited(r, request.user)
+         val details = routeService.getRouteExtraDetails(r.from.id, r.to.id)
+         println(details)
          Ok(views.html.route.detail.index(
            request.user,
            r,
+           details,
            events,
            token,
            controllers.api.route.visit.routes.VisitRouteApiController.visitRouteWithParams(from, to),

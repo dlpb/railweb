@@ -30,10 +30,10 @@
         </div>
         <div class="row">
             <div class="col-sm">
-                @templates.map.map(List.empty, mapRoutes)
+                @templates.map.map(List.empty, mapRoutes, true)
             </div>
         </div>
-    <div class="row">
+    <div class="row alert">
         <div class="col col-sm">
             <div id="form">
             @helper.form(sortCall) {

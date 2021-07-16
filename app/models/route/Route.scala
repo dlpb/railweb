@@ -26,7 +26,9 @@ case class RouteDetail(
   electrification: String,
   `type`: String,
   speed: String
-                      )
+                      ) {
+  def getType = `type`
+}
 
 case class DetailedRoutePoint(
   lat: Double,
@@ -34,7 +36,9 @@ case class DetailedRoutePoint(
   id: String,
   name: String,
   `type`: String
-                             )
+                             ) {
+  def getType = `type`
+}
 
 
 

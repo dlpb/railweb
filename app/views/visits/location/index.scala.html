@@ -26,10 +26,10 @@ locationVisitIndex: Map[String, Int],
         </div>
         <div class="row">
             <div class="col-sm">
-                @templates.map.map(mapLocations, List.empty)
+                @templates.map.map(mapLocations, List.empty, true, true)
             </div>
         </div>
-  <div class="row">
+  <div class="row alert">
       <div class="col col-sm">
                 <div id="form">
                   @helper.form(sortCall) {

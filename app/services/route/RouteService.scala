@@ -33,15 +33,16 @@ class RouteService @Inject() ( config: Config ) {
     val permutation2 = s"$to-$from"
 
     val details: Set[RouteDetail] = try {
-      routeFileReader.readAndParse[Set[RouteDetail]](routesPath + permutation1)
+      routeFileReader.readAndParse[Set[RouteDetail]](routesPath + permutation1 + ".json")
     }
     catch {
-      case _: Exception =>
+      case e: Exception =>
         try {
-          routeFileReader.readAndParse[Set[RouteDetail]](routesPath + permutation2)
+          routeFileReader.readAndParse[Set[RouteDetail]](routesPath + permutation2 + ".json")
         }
       catch {
-        case _: Exception => Set.empty
+        case e: Exception =>
+          Set.empty
       }
     }
     System.gc()

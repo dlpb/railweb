@@ -53,13 +53,11 @@ messages: List[String]
     @bs(basicSchedule)
     <div class="row">
         <div class="col col-sm">
-            <div id="map" class="map"></div>
-            <script type="text/javascript">
+        @templates.map.map(List.empty, List.empty)
+        <script type="text/javascript">
 
-                createMap();
-
-                populateDetailedTrainCallingPoints(map, token, "@timetable.uid", @timetable.day, @timetable.month, @timetable.year)
-                populateTrainConnections(map, token, "@timetable.uid", @timetable.day, @timetable.month, @timetable.year)
+            populateDetailedTrainCallingPoints(map, token, "@timetable.uid", @timetable.day, @timetable.month, @timetable.year)
+            populateTrainConnections(map, token, "@timetable.uid", @timetable.day, @timetable.month, @timetable.year)
         </script>
 
         </div>
@@ -82,6 +80,7 @@ messages: List[String]
                         <td>Location</td>
                         <td><div class="d-block d-lg-none">Pl.</div><div class="d-none d-lg-block">Platform</div></td>
                         <td><div class="d-block d-lg-none">Dep.</div><div class="d-none d-lg-block">Departure</div></td>
+                        <td><div class="d-block d-lg-none"></div><div class="d-none d-lg-block">Distance</div></td>
                     </tr>
                     </thead>
                    @for(l <- timetable.locations){
@@ -98,46 +97,72 @@ messages: List[String]
 <div class="row">
     <div class="col-lg">
         <h4>Date Information</h4>
-        <ul>
-            <li>Runs @if(bs.validMonday) { M }
+        <dl class="row">
+            <dt class="col-sm-3">Runs</dt>
+            <dd class="col-sm-9">@if(bs.validMonday) { M }
                 @if(bs.validTuesday) { T }
                 @if(bs.validWednesday) { W }
                 @if(bs.validThursday) { Th }
                 @if(bs.validFriday) { F }
                 @if(bs.validSaturday) { S }
-                @if(bs.validSunday) { Su }</li>
-            <li>Runs between<br/>@timetable.from<br/> and <br/>@timetable.to</li>
-            <li>Bank Holiday: @bs.bankHolidayRunning</li>
-        </ul>
+                @if(bs.validSunday) { Su }</dd>
+            <dt class="col-sm-3">From</dt>
+            <dd class="col-sm-9">@timetable.from</dd>
+            <dt class="col-sm-3">To</dt>
+            <dd class="col-sm-9">@timetable.to</dd>
+            <dt class="col-sm-3"></dt>
+            <dd class="col-sm-9">@bs.bankHolidayRunning</dd>
+        </dl>
+
     </div>
     <div class="col-lg">
         <h4>Train Identity</h4>
-        <ul>
-            <li>Train Status: @bs.trainStatus</li>
-            <li>Train Category: @bs.trainCategory</li>
-            <li>Identity: @bs.trainIdentity</li>
-            <li>Train UID: @bs.trainUid</li>
-            <li>STP Indicator: @bs.stpIndicator</li>
-        </ul>
+        <dl class="row">
+            <dt class="col-sm-3">Status</dt>
+            <dd class="col-sm-9">@bs.trainStatus</dd>
+            <dt class="col-sm-3">Type</dt>
+            <dd class="col-sm-9">@bs.trainCategory</dd>
+            <dt class="col-sm-3">Identity</dt>
+            <dd class="col-sm-9">@bs.trainIdentity</dd>
+            <dt class="col-sm-3">UID</dt>
+            <dd class="col-sm-9">@bs.trainUid</dd>
+            <dt class="col-sm-3">Train Status</dt>
+            <dd class="col-sm-9">@bs.trainStatus</dd>
+            <dt class="col-sm-3">STP</dt>
+            <dd class="col-sm-9">@bs.stpIndicator</dd>
+        </dl>
     </div>
     <div class="col-lg">
         <h4>Traction Information</h4>
-        <ul>
-            <li>Power Type: @bs.powerType</li>
-            <li>Timing: @bs.timing</li>
-            <li>Max Speed: @bs.speed mph</li>
-            <li>Operating Characteristics: @bs.operatingCharacteristics.mkString(", ")</li>
-        </ul>
+        <dl class="row">
+            <dt class="col-sm-3">Power Type</dt>
+            <dd class="col-sm-9">@bs.powerType</dd>
+            <dt class="col-sm-3">Timing</dt>
+            <dd class="col-sm-9">@bs.timing</dd>
+            <dt class="col-sm-3">Max Speed</dt>
+            <dd class="col-sm-9">@bs.speed mph</dd>
+            <dt class="col-sm-3">More Info</dt>
+            <dd class="col-sm-9">@bs.operatingCharacteristics.mkString(", ")</dd>
+        </dl>
     </div>
     <div class="col-lg">
         <h4>Passenger Information</h4>
-        <ul>
-            <li>Seating: @bs.seating</li>
-            <li>Sleeper: @bs.sleepers</li>
-            <li>Reservations: @bs.reservations</li>
-            <li>Catering: @bs.catering</li>
-            <li>Branding: @bs.branding</li>
-        </ul>
+        <dl class="row">
+            <dt class="col-sm-3">Seating</dt>
+            <dd class="col-sm-9">@bs.seating</dd>
+            <dt class="col-sm-3"></dt>
+            <dd class="col-sm-9">@bs.reservations</dd>
+            <dt class="col-sm-3">Sleeper</dt>
+            <dd class="col-sm-9">@bs.sleepers</dd>
+            @if(bs.catering.nonEmpty) {
+                <dt class="col-sm-3">Catering</dt>
+                <dd class="col-sm-9">@bs.catering</dd>
+            }
+            @if(!bs.branding.isBlank) {
+                <dt class="col-sm-3">Branding</dt>
+                <dd class="col-sm-9">@bs.branding</dd>
+            }
+        </dl>
     </div>
 </div>
 }
@@ -146,6 +171,7 @@ messages: List[String]
     @if(l.isPass) { <tr class="pass  table-light">
     } else { <tr>
     }
+
         <td>
             <a href="@l.url">
                 @arr(l)
@@ -175,6 +201,9 @@ messages: List[String]
             <a href="@l.url">
                 @dep(l)
             </a>
+        </td>
+        <td>
+            @l.cumulativeDistance
         </td>
     </tr>
 }

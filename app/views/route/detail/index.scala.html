@@ -1,6 +1,8 @@
+@import models.route.RouteDetail
 @(
 user: models.auth.User,
 route: models.route.Route,
+routeDetails: Set[RouteDetail],
 visits: List[models.data.Event],
 token: String,
 visitUrl: Call,
@@ -38,47 +40,78 @@ removeAll: Call
         <div class="row">
             <div class="col-sm">
                 <h3>Location Data</h3>
-                <ul>
-                    <li>From
-                        <ul>
-                            <li>ID: <a href="/location/detail/@route.from.id">@route.from.id</a></li>
-                            <li>Name: <a href="/location/detail/@route.from.id">@route.from.name</a></li>
-                            <li>Lat: @route.from.lat</li>
-                            <li>Lon: @route.from.lon</li>
-                        </ul>
+                <ul class="list-unstyled">
+                    <li><h4>From</h4>
+                        <dl class="row">
+                            <dt class="col-sm-3">ID</dt>
+                            <dd class="col-sm-9"><a href="/location/detail/@route.from.id">@route.from.id</a></dd>
+                            <dt class="col-sm-3">Name</dt>
+                            <dd class="col-sm-9"><a href="/location/detail/@route.from.id">@route.from.name</a></dd>
+                            <dt class="col-sm-3">Lat</dt>
+                            <dd class="col-sm-9">@route.from.lat</dd>
+                            <dt class="col-sm-3">Lon</dt>
+                            <dd class="col-sm-9">@route.from.lon</dd>
+                            @if(!routeDetails.map(_.from.getType).mkString.isBlank) {
+                                <dt class="col-sm-3">Location Type</dt>
+                                <dd class="col-sm-9">@routeDetails.map(_.from.getType).mkString(",")</dd>
+                            }
+                        </dl>
                     </li>
-                    <li>To
-                        <ul>
-                            <li>ID:  <a href="/location/detail/@route.to.id">@route.to.id</a></li>
-                            <li>Name:  <a href="/location/detail/@route.to.id">@route.to.name</a></li>
-                            <li>Lat: @route.to.lat</li>
-                            <li>Lon: @route.to.lon</li>
-                        </ul>
+                    <li><h4>To</h4>
+                        <dl class="row">
+                            <dt class="col-sm-3">ID</dt>
+                            <dd class="col-sm-9"><a href="/location/detail/@route.to.id">@route.to.id</a></dd>
+                            <dt class="col-sm-3">Name</dt>
+                            <dd class="col-sm-9"><a href="/location/detail/@route.to.id">@route.to.name</a></dd>
+                            <dt class="col-sm-3">Lat</dt>
+                            <dd class="col-sm-9">@route.to.lat</dd>
+                            <dt class="col-sm-3">Lon</dt>
+                            <dd class="col-sm-9">@route.to.lon</dd>
+                            @if(!routeDetails.map(_.to.getType).mkString.isBlank) {
+                                <dt class="col-sm-3">Location Type</dt>
+                                <dd class="col-sm-9">@routeDetails.map(_.to.getType).mkString(",")</dd>
+                            }
+                        </dl>
                     </li>
                 </ul>
+
             </div>
             <div class="col-sm">
                 <h3>Route Data</h3>
-                <ul>
-                    @if(!route.toc.isBlank){<li>Primary Operator: <a href="/toc/@route.toc">@route.toc</a></li>}
-                    <li>Number of Tracks (Single Track): route.singleTrack</li>
-                    <li>Electrification: route .electrification</li>
-                    if(!route.speed.isBlank){<li>Speed (MPH): route.speed</li>}
-                    @if(!route.srsCode.isBlank){<li>SRS Code: <a href="/srs/@route.srsCode">@route.srsCode</a></li>}
-                    <li>Distance: @(route.distance/1000.0)km</li>
-                    <li>Approximate Travel Time: @(route.travelTimeInSeconds/60) minutes</li>
-                </ul>
-            </div>
-            @if(visits.nonEmpty){
-            <div class="col-sm">
-                <h3>Visits</h3>
-                <ul>
-                    @for(visit <- visits){
-                    <li><a href="/profile/visits/by/event/@visit.id">@visit.name</a></li>
+                <dl class="row">
+                @if(!route.toc.isBlank) {
+                    <dt class="col-sm-3">Primary Operator</dt>
+                    <dd class="col-sm-9"><a href="/toc/@route.toc">@route.toc</a></dd>
+                }
+                @if(!route.srsCode.isBlank) {
+                    <dt class="col-sm-3">SRS Code</dt>
+                    <dd class="col-sm-9"><a href="/srs/@route.srsCode">@route.srsCode</a></dd>
+                }
+                    <dt class="col-sm-3">Distance</dt>
+                    <dd class="col-sm-9">@(route.distance/1000.0)km</dd>
+                    <dt class="col-sm-3">Approximate Travel Time</dt>
+                    <dd class="col-sm-9">@(route.travelTimeInSeconds/60) minutes</dd>
+
+                    @for(details <- routeDetails){
+                        @if(!details.electrification.isBlank) {
+                            <dt class="col-sm-3">Electrification</dt>
+                            <dd class="col-sm-9">@details.electrification</dd>
+                        }
+                        @if(!details.singleTrack.isBlank) {
+                            <dt class="col-sm-3">Number of Tracks</dt>
+                            <dd class="col-sm-9">@details.singleTrack</dd>
+                        }
+                        @if(!details.`type`.isBlank) {
+                            <dt class="col-sm-3">Route Type</dt>
+                            <dd class="col-sm-9">@details.getType</dd>
+                        }
+                        @if(!details.speed.isBlank) {
+                            <dt class="col-sm-3">Speed</dt>
+                            <dd class="col-sm-9">@details.speed</dd>
+                        }
                     }
-                </ul>
+                </dl>
             </div>
-            }
         </div>
         <div class="row">
             <div class="col-sm">
@@ -118,26 +151,20 @@ removeAll: Call
         <hr/>
         <div class="row">
             <div class="col col-sm">
-                <div id="map" class="map"></div>
+                @templates.map.map(List.empty, List(route))
             </div>
         </div>
-
-        <script type="text/javascript">
-        createMap();
-        addSingleConnection(
-        {
-            "from": {
-                "lat":@route.from.lat,
-                "lon":@route.from.lon
-            },
-            "to": {
-                "lat":@route.to.lat,
-                "lon":@route.to.lon
-            },
-            "srs":"@route.srsCode",
-            "toc":"@route.toc"
-        })
-
-        </script>
+    <div class="row">
+    @if(visits.nonEmpty){
+        <div class="col-sm">
+            <h3>Visits</h3>
+            <ul>
+            @for(visit <- visits){
+                <li><a href="/profile/visits/by/event/@visit.id">@visit.name</a></li>
+            }
+            </ul>
+        </div>
+    }
+    </div>
 
 }

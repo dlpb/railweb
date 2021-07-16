@@ -6,9 +6,10 @@ import java.util.Date
 import models.plan.timetable.location.{LocationTimetableFilters, LocationTimetableServiceUrlHelper}
 import models.timetable.model.train.IndividualTimetable
 import services.location.LocationService
+import services.plan.pointtopoint.PointToPointRouteFinderService
 
 object DisplayDetailedTrainTimetable {
-  def apply(locationsService: LocationService, tt: IndividualTimetable, year: Int, month: Int, day: Int) : DisplayDetailedTrainTimetable = {
+  def apply(locationsService: LocationService, pathService: PointToPointRouteFinderService, tt: IndividualTimetable, year: Int, month: Int, day: Int) : DisplayDetailedTrainTimetable = {
     val date = LocalDate.of(year, month, day)
     val m = if(tt.basicSchedule.validMonday) "M" else ""
     val t = if(tt.basicSchedule.validTuesday) "T" else ""
@@ -19,7 +20,7 @@ object DisplayDetailedTrainTimetable {
     val su = if(tt.basicSchedule.validSunday) "Su" else ""
     val runningDays = s"$m$t$w$th$f$s$su"
 
-
+    val path = pathService.findRouteForWaypoints(tt.locations.map(_.tiploc))
 
     DisplayDetailedTrainTimetable(
       tt.locations.headOption.flatMap(l => locationsService.findFirstLocationByTiploc(l.tiploc).map(l => l.name)).getOrElse(""),
@@ -81,6 +82,15 @@ object DisplayDetailedTrainTimetable {
           val from = date.atTime(hour, minute).minusMinutes(15)
           val to = date.atTime(hour, minute).plusMinutes(45)
 
+
+          val toPoint = loc.map(_.id).getOrElse("")
+          val index = path.routes.indexWhere(l => l.from.id.equals(toPoint) || l.to.id.equals(toPoint))
+          val distance = path.routes.slice(0, index)
+            .map(_.distance)
+            .map(_.toDouble)
+            .map(_ / 1000)
+            .sum
+
           DisplayDetailedTrainTimetableCallingPoint(
             loc.map(_.id).getOrElse(l.tiploc),
             loc.map(_.name).getOrElse(l.tiploc),
@@ -100,7 +110,8 @@ object DisplayDetailedTrainTimetable {
               day,
               from.getHour*100+from.getMinute,
               to.getHour*100 + to.getMinute),
-              loc.map(_.crs.mkString(" ")).getOrElse("")
+              loc.map(_.crs.mkString(" ")).getOrElse(""),
+            "%.2f km".format(distance)
           )
       }
 
@@ -154,5 +165,6 @@ case class DisplayDetailedTrainTimetableCallingPoint(
                                                      path: String,
                                                      line: String,
                                                      url: String,
-                                                     crs: String
+                                                     crs: String,
+                                                     cumulativeDistance: String = ""
                                                      )

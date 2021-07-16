@@ -45,7 +45,7 @@ class TrainTimetableService @Inject()(locationsService: LocationService, pathSer
             val locations = List()
             val routes = List()
             val link = TrainTimetableServiceUrlHelper.buildRouteLink(tt, locationsService)
-            val ddt = DisplayDetailedTrainTimetable(locationsService, tt, year, month, day)
+            val ddt = DisplayDetailedTrainTimetable(locationsService, pathService, tt, year, month, day)
             DetailedTrainTimetableWrapper(ddt, tt.basicSchedule, locations, routes, link)
         }
     }

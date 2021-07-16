@@ -3,10 +3,22 @@ package services.location
 import com.typesafe.config.Config
 import javax.inject.{Inject, Singleton}
 import models.helpers.JsonFileReader
-import models.location.Location
+import models.location.{Location, LocationDetail}
+import models.timetable.model.location.TimetableForLocationTypes.Tiploc
 
 @Singleton
 class LocationService @Inject() (config: Config) {
+  def getAllLocationDetails(tiploc: String) : Set[LocationDetail] = {
+    val locationsListPath = config.getString("data.locations.path")
+    val locationDetails = config.getString("data.locations.details")
+
+    val locationsPath = s"$locationsListPath$locationDetails$tiploc.json"
+    println(s"Reading detail from $locationsPath")
+    val locs = locationFileReader.readAndParse[Set[LocationDetail]](locationsPath)
+    System.gc()
+    locs
+  }
+
   def findAllLocationsByCrsIdOrName(search: String): Set[Location] = if(search.isBlank) Set.empty else findAllLocationsBy(
     loc => loc.id.equalsIgnoreCase(search) || loc.name.equalsIgnoreCase(search) || loc.crs.map(_.toLowerCase()).contains(search.toLowerCase()))
 

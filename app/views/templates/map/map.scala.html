@@ -1,4 +1,4 @@
-@(locs: List[models.location.Location], routeList: List[models.route.Route])
+@(locs: List[models.location.Location], routeList: List[models.route.Route], useSrsColourInsteadOfToc: Boolean = false, bold: Boolean = false)
 <div id="map" class="map"></div>
 <script type="text/javascript">
         createMap();
@@ -9,8 +9,9 @@
             "name":'@loc.name',
             "id": '@loc.id',
             "operator": '@loc.operator',
-            "visited": false
-        });
+            "visited": false,
+            "srs": '@loc.srs'
+        }, @if(useSrsColourInsteadOfToc){ "srs" } else { "toc" }, @bold);
         }
         var vectorLineLayer = new ol.layer.Vector({'id':'lines'});
         var vectorLinksLineLayer = new ol.layer.Vector({'id':'links'});
@@ -30,7 +31,8 @@
                         "lat": @r.to.lat,
                         "lon": @r.to.lon
                     },
-                    "toc":'@r.toc'
+                    "toc":'@r.toc',
+                    "srsCode": '@r.srsCode'
                 },
                 false,
                 vectorLine,
@@ -38,7 +40,10 @@
                 vectorLinksLine,
                 vectorLinksLineLayer,
                 vectorMetroLine,
-                vectorMetroLineLayer
+                vectorMetroLineLayer,
+                @if(useSrsColourInsteadOfToc){ "srs" } else { "toc" },
+                @useSrsColourInsteadOfToc,
+                @bold
         );
         }
         map.addLayer(vectorLineLayer);

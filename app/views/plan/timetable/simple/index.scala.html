@@ -46,11 +46,11 @@ messages: List[String]
     </div>
     <div class="row">
         <div class="col col-sm">
-            <div id="map" class="map"></div>
+            @templates.map.map(List.empty, List.empty)
+
             <script type="text/javascript">
 
                 const token = "@token";
-                createMap();
 
                 populateSimpleTrainCallingPoints(map, token, "@timetable.uid", @timetable.day, @timetable.month, @timetable.year)
                 populateTrainConnections(map, token, "@timetable.uid", @timetable.day, @timetable.month, @timetable.year)
