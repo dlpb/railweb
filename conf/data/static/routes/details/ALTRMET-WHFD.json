@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 53.3875,
+    "lon" : -2.3472,
+    "id" : "ALTRMET",
+    "name" : "Altrincham Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.5514,
+    "lon" : -2.2953,
+    "id" : "WHFD",
+    "name" : "Whitefield Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "60 MINUTES"
+}, {
+  "from" : {
+    "lat" : 53.3875,
+    "lon" : -2.3472,
+    "id" : "ALTRMET",
+    "name" : "Altrincham Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.5514,
+    "lon" : -2.2953,
+    "id" : "WHFD",
+    "name" : "Whitefield Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "63 MINUTES"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.002372,
+    "lon" : -3.785452,
+    "id" : "FALKRKG",
+    "name" : "Falkirk Grahamston",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.001423,
+    "lon" : -3.7759143,
+    "id" : "GRNGMTJ",
+    "name" : "Grangemouth Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

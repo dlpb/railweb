@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.24696,
+    "lon" : -0.90792925,
+    "id" : "NMPTNN4",
+    "name" : "Northampton Dgl",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.243157,
+    "lon" : -0.90799329,
+    "id" : "NMPTNNJ",
+    "name" : "Northampton North Junction",
+    "type" : "Location"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

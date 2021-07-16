@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 53.488018,
+    "lon" : -2.2412763,
+    "id" : "MNCRVIC",
+    "name" : "Manchester Victoria",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.403,
+    "lon" : -2.2948,
+    "id" : "MRDMTLK",
+    "name" : "Moor Road Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "55 MINUTES"
+}, {
+  "from" : {
+    "lat" : 53.488018,
+    "lon" : -2.2412763,
+    "id" : "MNCRVIC",
+    "name" : "Manchester Victoria",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.403,
+    "lon" : -2.2948,
+    "id" : "MRDMTLK",
+    "name" : "Moor Road Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "52 MINUTES"
+} ]

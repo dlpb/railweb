@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.97455,
+    "lon" : -2.3451926,
+    "id" : "BRDNML",
+    "name" : "Bardon Mill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.975274,
+    "lon" : -2.2472758,
+    "id" : "HYDB",
+    "name" : "Haydon Bridge",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

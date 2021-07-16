@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.666834,
+    "lon" : -1.1997502,
+    "id" : "CLFHJN",
+    "name" : "Cliffe House Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.658229,
+    "lon" : -1.2004618,
+    "id" : "SETNCRW",
+    "name" : "Seaton Carew",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

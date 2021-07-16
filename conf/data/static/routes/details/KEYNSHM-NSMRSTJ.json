@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.418144,
+    "lon" : -2.4961197,
+    "id" : "KEYNSHM",
+    "name" : "Keynsham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.450729,
+    "lon" : -2.5639225,
+    "id" : "NSMRSTJ",
+    "name" : "North Somerset Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

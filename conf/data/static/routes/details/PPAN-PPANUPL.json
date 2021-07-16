@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.952992,
+    "lon" : -2.9744609,
+    "id" : "PPAN",
+    "name" : "Prestonpans",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.953716,
+    "lon" : -2.9714522,
+    "id" : "PPANUPL",
+    "name" : "Prestonpans U.P.L.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

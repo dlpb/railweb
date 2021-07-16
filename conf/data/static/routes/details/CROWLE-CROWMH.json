@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.589803,
+    "lon" : -0.81732639,
+    "id" : "CROWLE",
+    "name" : "Crowle",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.601632,
+    "lon" : -0.87224618,
+    "id" : "CROWMH",
+    "name" : "Medge Hall",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

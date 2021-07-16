@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.537757,
+    "lon" : -0.19136767,
+    "id" : "KLBRNHR",
+    "name" : "Kilburn High Road",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.536139,
+    "lon" : -0.19551242,
+    "id" : "KLBRUDG",
+    "name" : "Kilburn Up & Down Gds Lp",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

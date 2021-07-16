@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.813413,
+    "lon" : -0.81431056,
+    "id" : "AYLSBRY",
+    "name" : "Aylesbury",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.818947,
+    "lon" : -0.8326635,
+    "id" : "AYLSNL",
+    "name" : "Aylesbury North Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

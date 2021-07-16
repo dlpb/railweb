@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.910286,
+    "lon" : -1.3920401,
+    "id" : "NTHMJN",
+    "name" : "Northam Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.913044,
+    "lon" : -1.3915347,
+    "id" : "NTHMRCL",
+    "name" : "Northam Depot Recept Line",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

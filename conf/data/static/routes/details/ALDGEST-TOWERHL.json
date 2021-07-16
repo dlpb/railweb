@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.514326,
+    "lon" : -0.075757289,
+    "id" : "ALDGEST",
+    "name" : "Aldgate East",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 51.509649,
+    "lon" : -0.075680572,
+    "id" : "TOWERHL",
+    "name" : "Tower Hill Underground",
+    "type" : "Location"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

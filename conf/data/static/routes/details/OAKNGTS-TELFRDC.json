@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.692974,
+    "lon" : -2.4500864,
+    "id" : "OAKNGTS",
+    "name" : "Oakengates",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.680917,
+    "lon" : -2.4409542,
+    "id" : "TELFRDC",
+    "name" : "Telford Central",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

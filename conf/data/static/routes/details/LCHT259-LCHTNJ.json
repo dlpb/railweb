@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.687794,
+    "lon" : -1.8019557,
+    "id" : "LCHT259",
+    "name" : "Lichfield Tv Sig Ls4259",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.687794,
+    "lon" : -1.8019557,
+    "id" : "LCHTNJ",
+    "name" : "Lichfield North Jn (Ll)",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.339437,
+    "lon" : -0.11059946,
+    "id" : "PURLEY",
+    "name" : "Purley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.339437,
+    "lon" : -0.11059946,
+    "id" : "PURLUSL",
+    "name" : "Purley U.S.L.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

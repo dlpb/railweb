@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.492179,
+    "lon" : 0.15280766,
+    "id" : "BELVEDR",
+    "name" : "Belvedere",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.481836,
+    "lon" : 0.17481752,
+    "id" : "ERITH",
+    "name" : "Erith",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

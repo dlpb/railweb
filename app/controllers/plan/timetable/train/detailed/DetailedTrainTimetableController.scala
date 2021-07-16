@@ -33,7 +33,7 @@ class DetailedTrainTimetableController @Inject()(
       val eventualResult = timetableService.showDetailedTrainTimetable(train, year, month, day) map {
         data =>
           if(data.isDefined)
-            Ok(views.html.plan.timetable.detailed.index(request.user, token, data.get.dtt, data.get.basicSchedule, data.get.mapLocations, data.get.routes, data.get.routeLink, List.empty)(request.request))
+            Ok(views.html.plan.timetable.detailed.index(request.user, token, data.get.dtt, data.get.basicSchedule, data.get.locations, data.get.routes, data.get.routeLink, List.empty)(request.request))
           else NotFound(views.html.plan.search.index(request.user,  locationsService.locations.toList, TimetableHelper.defaultDate,
             List(s"Could not fnd train $train on $year-$month-$day. Please try searching again."
             ))

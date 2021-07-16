@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.858428,
+    "lon" : -1.8447189,
+    "id" : "CFLATTS",
+    "name" : "Crossflatts",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.86761,
+    "lon" : -1.9005706,
+    "id" : "KEIGHLY",
+    "name" : "Keighley",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

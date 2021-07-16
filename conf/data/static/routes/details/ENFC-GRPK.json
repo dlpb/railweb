@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.652904,
+    "lon" : -0.090812221,
+    "id" : "ENFC",
+    "name" : "Enfield Chase",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.643086,
+    "lon" : -0.097049319,
+    "id" : "GRPK",
+    "name" : "Grange Park",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

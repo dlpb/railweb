@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.402354,
+    "lon" : -2.9765595,
+    "id" : "LVRPCRS",
+    "name" : "Liverpool Central Revs Sdg",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.404227,
+    "lon" : -2.9795206,
+    "id" : "LVRPLCH",
+    "name" : "Liverpool Central",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

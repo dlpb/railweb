@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.315092,
+    "lon" : -0.94812569,
+    "id" : "RTFD",
+    "name" : "Retford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.311298,
+    "lon" : -0.93996383,
+    "id" : "RTFD134",
+    "name" : "Retford Sig D1341",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

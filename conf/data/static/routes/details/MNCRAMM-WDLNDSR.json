@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.5109,
+    "lon" : -2.2363,
+    "id" : "MNCRAMM",
+    "name" : "Abraham Mossmtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.502,
+    "lon" : -2.227,
+    "id" : "WDLNDSR",
+    "name" : "Queens Road Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.162284,
+    "lon" : -3.142997,
+    "id" : "GLNRTHS",
+    "name" : "Glenrothes With Thornton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.16905,
+    "lon" : -3.1282849,
+    "id" : "THRNTNJ",
+    "name" : "Thornton North Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

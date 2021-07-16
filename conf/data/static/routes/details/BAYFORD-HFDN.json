@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.75822,
+    "lon" : -0.095704685,
+    "id" : "BAYFORD",
+    "name" : "Bayford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.798584,
+    "lon" : -0.092293072,
+    "id" : "HFDN",
+    "name" : "Hertford North",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

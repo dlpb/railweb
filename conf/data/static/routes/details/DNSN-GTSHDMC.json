@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.949971,
+    "lon" : -1.6412489,
+    "id" : "DNSN",
+    "name" : "Dunston",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.958899,
+    "lon" : -1.6650156,
+    "id" : "GTSHDMC",
+    "name" : "Metro Centre",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

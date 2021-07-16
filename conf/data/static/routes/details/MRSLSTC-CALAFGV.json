@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 43.302933,
+    "lon" : 5.381104,
+    "id" : "MRSLSTC",
+    "name" : "Marseille St Charles",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 50.901561,
+    "lon" : 1.811651,
+    "id" : "CALAFGV",
+    "name" : "Calais Frethun",
+    "type" : "Location"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

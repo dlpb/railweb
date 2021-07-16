@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.358661,
+    "lon" : -0.82107523,
+    "id" : "WBTNWJ",
+    "name" : "West Burton West Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.3668,
+    "lon" : -0.80425859,
+    "id" : "WBTNFHH",
+    "name" : "West Burton Ps (Fhh)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

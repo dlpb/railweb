@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.489209,
+    "lon" : -2.5963506,
+    "id" : "HAYDKBJ",
+    "name" : "Haydock Branch Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.462462,
+    "lon" : -2.5992139,
+    "id" : "GOLBRNJ",
+    "name" : "Golborne Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

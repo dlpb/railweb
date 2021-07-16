@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.077558,
+    "lon" : -1.9905282,
+    "id" : "DINTON",
+    "name" : "Dinton",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.084862,
+    "lon" : -1.8560105,
+    "id" : "WILTON",
+    "name" : "Wilton",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

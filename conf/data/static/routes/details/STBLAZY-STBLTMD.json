@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.35511,
+    "lon" : -4.7108071,
+    "id" : "STBLAZY",
+    "name" : "St Blazey Signal Box",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.352815,
+    "lon" : -4.7097063,
+    "id" : "STBLTMD",
+    "name" : "St Blazey L I P",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

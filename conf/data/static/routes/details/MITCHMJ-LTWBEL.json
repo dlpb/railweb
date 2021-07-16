@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.392835,
+    "lon" : -0.15737312,
+    "id" : "MITCHMJ",
+    "name" : "Mitcham Junction",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.3895,
+    "lon" : -0.1429,
+    "id" : "LTWBEL",
+    "name" : "Beddington Lane",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

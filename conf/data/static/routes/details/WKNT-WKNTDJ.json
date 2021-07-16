@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.644617,
+    "lon" : -3.5592414,
+    "id" : "WKNT",
+    "name" : "Workington",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.651952,
+    "lon" : -3.5570887,
+    "id" : "WKNTDJ",
+    "name" : "Workington Derwent Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

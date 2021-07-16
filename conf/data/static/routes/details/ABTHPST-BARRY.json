@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.385242,
+    "lon" : -3.3966827,
+    "id" : "ABTHPST",
+    "name" : "Aberthaw Pwr Stn Fline Hvy",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.397156,
+    "lon" : -3.2843767,
+    "id" : "BARRY",
+    "name" : "Barry",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

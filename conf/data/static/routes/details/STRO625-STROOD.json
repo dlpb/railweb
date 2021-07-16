@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.398407,
+    "lon" : 0.50153966,
+    "id" : "STRO625",
+    "name" : "Strood Shunt Signal Nk1625",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.39653,
+    "lon" : 0.5001577,
+    "id" : "STROOD",
+    "name" : "Strood",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

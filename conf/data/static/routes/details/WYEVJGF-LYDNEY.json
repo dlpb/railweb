@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.6468,
+    "lon" : -2.6584174,
+    "id" : "WYEVJGF",
+    "name" : "Wye Valley Jn G.F.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.714116,
+    "lon" : -2.5308924,
+    "id" : "LYDNEY",
+    "name" : "Lydney",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

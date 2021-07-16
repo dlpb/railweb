@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.919376,
+    "lon" : -1.15741,
+    "id" : "NTL2COA",
+    "name" : "Compton Acres",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 52.925931,
+    "lon" : -1.156258,
+    "id" : "NTL2WIL",
+    "name" : "Wilford Lane",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.284733,
+    "lon" : -0.90701116,
+    "id" : "WNCFILD",
+    "name" : "Winchfield",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.285775,
+    "lon" : -0.89535703,
+    "id" : "WNCFILE",
+    "name" : "Winchfield London End",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

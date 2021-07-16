@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.842,
+    "lon" : -3.0544,
+    "id" : "BTPLOA",
+    "name" : "Lowther Avenue",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 53.8466,
+    "lon" : -3.0536,
+    "id" : "BTPCAR",
+    "name" : "Cavendish Road",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

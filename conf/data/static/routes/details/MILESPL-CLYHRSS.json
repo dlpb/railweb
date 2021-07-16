@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.496297,
+    "lon" : -2.2125776,
+    "id" : "MILESPL",
+    "name" : "Miles Platting",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.494454,
+    "lon" : -2.2174521,
+    "id" : "CLYHRSS",
+    "name" : "Collyhurst Street",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

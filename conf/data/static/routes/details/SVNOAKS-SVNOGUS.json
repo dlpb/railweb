@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.276438,
+    "lon" : 0.18182083,
+    "id" : "SVNOAKS",
+    "name" : "Sevenoaks",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.273867,
+    "lon" : 0.18275997,
+    "id" : "SVNOGUS",
+    "name" : "Sevenoaks Gusset Siding",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

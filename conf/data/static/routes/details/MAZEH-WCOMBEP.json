@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.48269,
+    "lon" : 0.003219507,
+    "id" : "MAZEH",
+    "name" : "Maze Hill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.484143,
+    "lon" : 0.017614302,
+    "id" : "WCOMBEP",
+    "name" : "Westcombe Park",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

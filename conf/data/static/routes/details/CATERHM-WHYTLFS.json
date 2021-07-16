@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.282585,
+    "lon" : -0.078603998,
+    "id" : "CATERHM",
+    "name" : "Caterham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.303541,
+    "lon" : -0.077083381,
+    "id" : "WHYTLFS",
+    "name" : "Whyteleafe South",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

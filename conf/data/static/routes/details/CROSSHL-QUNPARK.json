@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.833022,
+    "lon" : -4.2563649,
+    "id" : "CROSSHL",
+    "name" : "Crosshill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.835437,
+    "lon" : -4.2672528,
+    "id" : "QUNPARK",
+    "name" : "Queens Park (Glasgow)",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

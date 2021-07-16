@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.360601,
+    "lon" : -1.9928924,
+    "id" : "BGRN",
+    "name" : "Barnt Green",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.379965,
+    "lon" : -1.9843982,
+    "id" : "COFTONS",
+    "name" : "Cofton Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

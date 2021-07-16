@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.386794,
+    "lon" : 0.55084021,
+    "id" : "GLNGHMK",
+    "name" : "Gillingham (Kent)",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.387248,
+    "lon" : 0.55477515,
+    "id" : "GLNGREC",
+    "name" : "Gillingham Reception Road",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

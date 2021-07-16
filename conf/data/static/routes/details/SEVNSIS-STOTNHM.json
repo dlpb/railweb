@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 51.583423,
+    "lon" : -0.075062442,
+    "id" : "SEVNSIS",
+    "name" : "Seven Sisters",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.580429,
+    "lon" : -0.071811542,
+    "id" : "STOTNHM",
+    "name" : "South Tottenham",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : " 7"
+}, {
+  "from" : {
+    "lat" : 51.583423,
+    "lon" : -0.075062442,
+    "id" : "SEVNSIS",
+    "name" : "Seven Sisters",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.580429,
+    "lon" : -0.071811542,
+    "id" : "STOTNHM",
+    "name" : "South Tottenham",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "7 MINUTES"
+} ]

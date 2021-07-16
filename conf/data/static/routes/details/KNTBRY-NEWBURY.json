@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.403662,
+    "lon" : -1.4613287,
+    "id" : "KNTBRY",
+    "name" : "Kintbury",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.397479,
+    "lon" : -1.323223,
+    "id" : "NEWBURY",
+    "name" : "Newbury",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.38556,
+    "lon" : 0.51055512,
+    "id" : "RCHT",
+    "name" : "Rochester",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.393328,
+    "lon" : 0.49973871,
+    "id" : "RCHTBDJ",
+    "name" : "Rochester Bridge Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

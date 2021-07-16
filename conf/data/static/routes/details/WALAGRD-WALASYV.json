@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.428101,
+    "lon" : -3.0696944,
+    "id" : "WALAGRD",
+    "name" : "Wallasey Grove Road",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.423242,
+    "lon" : -3.0691962,
+    "id" : "WALASYV",
+    "name" : "Wallasey Village",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

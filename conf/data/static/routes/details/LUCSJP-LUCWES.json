@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.49971,
+    "lon" : -0.13394,
+    "id" : "LUCSJP",
+    "name" : "St. James's Park",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.50121,
+    "lon" : -0.12489,
+    "id" : "LUCWES",
+    "name" : "Westminster",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.647776,
+    "lon" : 0.75220318,
+    "id" : "ALTHORN",
+    "name" : "Althorne",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.633406,
+    "lon" : 0.81320301,
+    "id" : "BRNMONC",
+    "name" : "Burnham-On-Crouch",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

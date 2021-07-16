@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.74742,
+    "lon" : -0.010499264,
+    "id" : "BROXDPL",
+    "name" : "Broxbourne Down Pass Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.749293,
+    "lon" : -0.0090117212,
+    "id" : "BROXDSG",
+    "name" : "Broxbourne Down Tamper Sdg",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

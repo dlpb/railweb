@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.690443,
+    "lon" : -1.8385071,
+    "id" : "ELLAND",
+    "name" : "Elland",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.693811,
+    "lon" : -1.8575912,
+    "id" : "GRTLNDJ",
+    "name" : "Greetland Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

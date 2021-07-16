@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.804,
+    "lon" : -1.2747916,
+    "id" : "OXFDBRS",
+    "name" : "Oxford Banbury Road Sdgs",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.8042,
+    "lon" : -1.2745,
+    "id" : "OXFPWAY",
+    "name" : "Oxford Parkway",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

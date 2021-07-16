@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.6109,
+    "lon" : -0.4244,
+    "id" : "CATZZND",
+    "name" : "Northwood Und",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.506834,
+    "lon" : -0.12227171,
+    "id" : "CHRX",
+    "name" : "London Charing Cross",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "72 MINUTES"
+} ]

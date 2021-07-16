@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.05456,
+    "lon" : -1.4839319,
+    "id" : "AMBERGJ",
+    "name" : "Ambergate Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.060273,
+    "lon" : -1.4809093,
+    "id" : "AMBERGT",
+    "name" : "Ambergate",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

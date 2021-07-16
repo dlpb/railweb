@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 53.387813,
+    "lon" : -2.34707,
+    "id" : "ALTRNHM",
+    "name" : "Altrincham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.3919,
+    "lon" : -2.2798,
+    "id" : "MCFMTLK",
+    "name" : "Martinsctft Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "52 MINUTES"
+}, {
+  "from" : {
+    "lat" : 53.387813,
+    "lon" : -2.34707,
+    "id" : "ALTRNHM",
+    "name" : "Altrincham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.3919,
+    "lon" : -2.2798,
+    "id" : "MCFMTLK",
+    "name" : "Martinsctft Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "55 MINUTES"
+} ]

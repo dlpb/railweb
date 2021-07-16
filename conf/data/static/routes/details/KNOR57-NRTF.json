@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.414083,
+    "lon" : -1.9334728,
+    "id" : "KNOR57",
+    "name" : "Kings Norton Signal Sy57",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.408307,
+    "lon" : -1.9650428,
+    "id" : "NRTF",
+    "name" : "Northfield",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

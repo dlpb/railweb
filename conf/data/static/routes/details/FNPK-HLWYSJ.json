@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.564699,
+    "lon" : -0.10647041,
+    "id" : "FNPK",
+    "name" : "Finsbury Park",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.551371,
+    "lon" : -0.11592358,
+    "id" : "HLWYSJ",
+    "name" : "Holloway Sth. Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

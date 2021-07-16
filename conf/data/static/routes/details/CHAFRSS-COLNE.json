@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.837954,
+    "lon" : -2.2078022,
+    "id" : "CHAFRSS",
+    "name" : "Chaffers Lc (Tmo)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.854885,
+    "lon" : -2.1819053,
+    "id" : "COLNE",
+    "name" : "Colne",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

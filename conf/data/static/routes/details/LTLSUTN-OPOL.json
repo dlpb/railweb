@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.285292,
+    "lon" : -2.9428225,
+    "id" : "LTLSUTN",
+    "name" : "Little Sutton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.284066,
+    "lon" : -2.924946,
+    "id" : "OPOL",
+    "name" : "Overpool",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

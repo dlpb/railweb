@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.391929,
+    "lon" : -1.8514063,
+    "id" : "WHLE",
+    "name" : "Whitlocks End",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.380079,
+    "lon" : -1.8654757,
+    "id" : "WYTH",
+    "name" : "Wythall",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

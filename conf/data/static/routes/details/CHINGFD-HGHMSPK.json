@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.63308479094865,
+    "lon" : 0.009897045179767461,
+    "id" : "CHINGFD",
+    "name" : "Chingford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.608179,
+    "lon" : -3.3079128E-4,
+    "id" : "HGHMSPK",
+    "name" : "Highams Park",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

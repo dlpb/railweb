@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.18152,
+    "lon" : -3.40239,
+    "id" : "HWSRBLA",
+    "name" : "Blue Anchor",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 51.1929,
+    "lon" : -3.4381,
+    "id" : "HFRDUN",
+    "name" : "Dunster",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

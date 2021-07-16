@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.6183500964786,
+    "lon" : -2.8069004820388157,
+    "id" : "GALASLS",
+    "name" : "Galashiels",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.692097,
+    "lon" : -2.8594196,
+    "id" : "STOW",
+    "name" : "Stow",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

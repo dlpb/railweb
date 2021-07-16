@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.561286,
+    "lon" : 0.079170397,
+    "id" : "ILFEMUD",
+    "name" : "Ilford E.M.U.D.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.563863,
+    "lon" : 0.096068296,
+    "id" : "SVNKNGS",
+    "name" : "Seven Kings",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

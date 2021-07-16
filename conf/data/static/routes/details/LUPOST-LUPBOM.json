@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.481569,
+    "lon" : -0.35196,
+    "id" : "LUPOST",
+    "name" : "Osterley",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.495371,
+    "lon" : -0.325573,
+    "id" : "LUPBOM",
+    "name" : "Boston Manor",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

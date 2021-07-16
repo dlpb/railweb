@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.4744,
+    "lon" : -0.0225,
+    "id" : "DPTFBD",
+    "name" : "Deptford Bridge Dlr",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.468768,
+    "lon" : -0.016265,
+    "id" : "DSBLELR",
+    "name" : "Elverson Road",
+    "type" : "Light Rail"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Unknown",
+  "speed" : "OHLE"
+} ]

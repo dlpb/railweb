@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.443606,
+    "lon" : 0.68449578,
+    "id" : "GRAIN",
+    "name" : "Grain",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.440141,
+    "lon" : 0.68777505,
+    "id" : "GRAINGB",
+    "name" : "Grain Thamesport (Gbrf)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

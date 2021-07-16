@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.911855,
+    "lon" : -1.4395704,
+    "id" : "MBRKDX",
+    "name" : "Millbrook Dock Exit",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.908486,
+    "lon" : -1.4384872,
+    "id" : "SOTONDG",
+    "name" : "Southampton Dock Gates",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

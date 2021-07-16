@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.910789,
+    "lon" : -2.5793454,
+    "id" : "THFORD",
+    "name" : "Thornford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.895654,
+    "lon" : -2.5738681,
+    "id" : "YTMNSTR",
+    "name" : "Yetminster",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

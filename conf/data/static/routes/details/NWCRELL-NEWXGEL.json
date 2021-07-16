@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 51.476835,
+    "lon" : -0.032866186,
+    "id" : "NWCRELL",
+    "name" : "New Cross",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.475844,
+    "lon" : -0.04082905,
+    "id" : "NEWXGEL",
+    "name" : "New Cross Gate",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "7 MINUTES"
+}, {
+  "from" : {
+    "lat" : 51.476835,
+    "lon" : -0.032866186,
+    "id" : "NWCRELL",
+    "name" : "New Cross",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.475844,
+    "lon" : -0.04082905,
+    "id" : "NEWXGEL",
+    "name" : "New Cross Gate",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : " 7"
+} ]

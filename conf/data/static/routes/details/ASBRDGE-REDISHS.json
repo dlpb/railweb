@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.425323,
+    "lon" : -2.1681302,
+    "id" : "ASBRDGE",
+    "name" : "Ash Bridge Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.436113,
+    "lon" : -2.1584038,
+    "id" : "REDISHS",
+    "name" : "Reddish South",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

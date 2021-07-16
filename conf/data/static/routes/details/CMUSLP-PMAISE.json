@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.12751,
+    "lon" : -3.8450829,
+    "id" : "CMUSLP",
+    "name" : "Cambus Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.131935,
+    "lon" : -3.8917511,
+    "id" : "PMAISE",
+    "name" : "Polmaise",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

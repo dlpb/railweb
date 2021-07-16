@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.9982,
+    "lon" : -2.5138099,
+    "id" : "DUNBAR",
+    "name" : "Dunbar",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.987249,
+    "lon" : -2.6298068,
+    "id" : "STENTON",
+    "name" : "Stenton G.S.P.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

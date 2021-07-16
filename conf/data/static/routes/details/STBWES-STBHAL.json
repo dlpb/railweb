@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.33186,
+    "lon" : -1.343837,
+    "id" : "STBWES",
+    "name" : "Westfield",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 53.328496,
+    "lon" : -1.3443457,
+    "id" : "STBHAL",
+    "name" : "Halfway",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.22274,
+    "lon" : -2.3261572,
+    "id" : "GOOSTRY",
+    "name" : "Goostrey",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.199388,
+    "lon" : -2.3509489,
+    "id" : "HCHP",
+    "name" : "Holmes Chapel",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.847821,
+    "lon" : -1.6302578,
+    "id" : "HSFT",
+    "name" : "Horsforth",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.923213,
+    "lon" : -1.5812762,
+    "id" : "WEETON",
+    "name" : "Weeton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

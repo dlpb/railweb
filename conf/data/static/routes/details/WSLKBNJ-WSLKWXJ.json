@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.155205,
+    "lon" : -1.5690905,
+    "id" : "WSLKBNJ",
+    "name" : "West Sleekburn Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.155205,
+    "lon" : -1.5690905,
+    "id" : "WSLKWXJ",
+    "name" : "Winning Crossing Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

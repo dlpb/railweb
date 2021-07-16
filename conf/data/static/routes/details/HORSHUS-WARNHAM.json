@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.072419,
+    "lon" : -0.31975296,
+    "id" : "HORSHUS",
+    "name" : "Horsham Up T.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.093183,
+    "lon" : -0.32975386,
+    "id" : "WARNHAM",
+    "name" : "Warnham",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

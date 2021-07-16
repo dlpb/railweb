@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.114291,
+    "lon" : -0.16084562,
+    "id" : "THBD200",
+    "name" : "Three Bridges Signal T1200",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.118604,
+    "lon" : -0.16118875,
+    "id" : "THBDBRD",
+    "name" : "Three Bridges Back Road",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

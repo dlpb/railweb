@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.437236,
+    "lon" : -3.0491198,
+    "id" : "NBTN",
+    "name" : "New Brighton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.428101,
+    "lon" : -3.0696944,
+    "id" : "WALAGRD",
+    "name" : "Wallasey Grove Road",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

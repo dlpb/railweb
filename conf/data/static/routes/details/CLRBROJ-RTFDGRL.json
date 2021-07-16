@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.334374,
+    "lon" : -0.86295306,
+    "id" : "CLRBROJ",
+    "name" : "Clarborough Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.318727,
+    "lon" : -0.93231887,
+    "id" : "RTFDGRL",
+    "name" : "Retford Gringley Rd Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

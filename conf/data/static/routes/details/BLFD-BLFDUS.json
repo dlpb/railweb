@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.262854,
+    "lon" : -3.7754153,
+    "id" : "BLFD",
+    "name" : "Blackford",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.263134,
+    "lon" : -3.7803528,
+    "id" : "BLFDUS",
+    "name" : "Blackford Up Siding",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

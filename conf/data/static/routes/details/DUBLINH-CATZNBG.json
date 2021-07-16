@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.346451,
+    "lon" : -6.292662,
+    "id" : "DUBLINH",
+    "name" : "Dublin Heuston (Cie)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.1853,
+    "lon" : -6.8083,
+    "id" : "CATZNBG",
+    "name" : "Newbridge (Cie",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.609591,
+    "lon" : -4.9136164,
+    "id" : "ACHANLT",
+    "name" : "Achanalt",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 57.621744,
+    "lon" : -4.8091651,
+    "id" : "LCHLCHR",
+    "name" : "Lochluichart",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

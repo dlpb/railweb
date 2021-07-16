@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.705606,
+    "lon" : -0.35910853,
+    "id" : "BCWD",
+    "name" : "Bricket Wood",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.717331,
+    "lon" : -0.34494598,
+    "id" : "HOWWOOD",
+    "name" : "How Wood",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

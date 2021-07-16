@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.881078,
+    "lon" : -0.18959345,
+    "id" : "LNGY974",
+    "name" : "Langley Jn Sig Wl1974",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.883132,
+    "lon" : -0.19278017,
+    "id" : "LNGY972",
+    "name" : "Langley Jn Sig Wl1972",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

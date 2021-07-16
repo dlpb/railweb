@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.383104,
+    "lon" : -0.19952723,
+    "id" : "CNNGABR",
+    "name" : "Abbots Ripton",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.328153,
+    "lon" : -0.19268989,
+    "id" : "HNTNGDN",
+    "name" : "Huntingdon",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

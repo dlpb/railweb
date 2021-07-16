@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.55093,
+    "lon" : -0.31598,
+    "id" : "LUPSUT",
+    "name" : "Sudbury Town",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.556998,
+    "lon" : -0.335949,
+    "id" : "LUPSUH",
+    "name" : "Sudbury Hill",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

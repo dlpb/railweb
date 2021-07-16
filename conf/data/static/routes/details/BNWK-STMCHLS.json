@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.383194,
+    "lon" : -2.9760157,
+    "id" : "BNWK",
+    "name" : "Brunswick",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.375942,
+    "lon" : -2.9535725,
+    "id" : "STMCHLS",
+    "name" : "St Michaels",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

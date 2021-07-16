@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.767087,
+    "lon" : -1.500195,
+    "id" : "STRTJN",
+    "name" : "Stourton Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.767088,
+    "lon" : -1.5004984,
+    "id" : "STRTNDS",
+    "name" : "Stourton Down Siding",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

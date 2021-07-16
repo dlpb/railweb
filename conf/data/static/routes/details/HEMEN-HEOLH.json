@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.647165,
+    "lon" : 0.80677494,
+    "id" : "HEMEN",
+    "name" : "Mengapps",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 51.651806,
+    "lon" : 0.79982534,
+    "id" : "HEOLH",
+    "name" : "Old Heath",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.329197,
+    "lon" : 1.3166871,
+    "id" : "MINSTER",
+    "name" : "Minster",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.325847,
+    "lon" : 1.3225181,
+    "id" : "MINSTSJ",
+    "name" : "Minster South Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

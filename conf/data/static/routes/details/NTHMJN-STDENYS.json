@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.910286,
+    "lon" : -1.3920401,
+    "id" : "NTHMJN",
+    "name" : "Northam Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.921803,
+    "lon" : -1.3881057,
+    "id" : "STDENYS",
+    "name" : "St Denys",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

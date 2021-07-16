@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.562921,
+    "lon" : -1.9908547,
+    "id" : "BSCTSTA",
+    "name" : "Bescot Stadium",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.559333,
+    "lon" : -1.9838637,
+    "id" : "BSCTULP",
+    "name" : "Bescot Up Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.344502,
+    "lon" : 0.72350407,
+    "id" : "EJSTNGB",
+    "name" : "Eastern Jn (Sittingbourne)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.341762,
+    "lon" : 0.73724213,
+    "id" : "STNGDGL",
+    "name" : "Sittingbourne Dn Gds Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

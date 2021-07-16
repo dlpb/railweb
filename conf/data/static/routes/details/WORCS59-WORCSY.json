@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.191716,
+    "lon" : -2.2073163,
+    "id" : "WORCS59",
+    "name" : "Worcs Shrub Hill Sig 59",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.194547,
+    "lon" : -2.2083389,
+    "id" : "WORCSY",
+    "name" : "Worcester T.C.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

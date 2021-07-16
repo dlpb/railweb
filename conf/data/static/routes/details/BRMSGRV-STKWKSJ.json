@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.322276,
+    "lon" : -2.0473156,
+    "id" : "BRMSGRV",
+    "name" : "Bromsgrove",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.299656,
+    "lon" : -2.0806232,
+    "id" : "STKWKSJ",
+    "name" : "Stoke Works Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

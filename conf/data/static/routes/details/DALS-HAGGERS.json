@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.548666,
+    "lon" : -0.08218382,
+    "id" : "DALS",
+    "name" : "Dalston Junction",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.534619,
+    "lon" : -0.07663187,
+    "id" : "HAGGERS",
+    "name" : "Haggerston",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.466898,
+    "lon" : -0.24175391,
+    "id" : "BARNES",
+    "name" : "Barnes",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.460971,
+    "lon" : -0.21549418,
+    "id" : "PUTNEY",
+    "name" : "Putney",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

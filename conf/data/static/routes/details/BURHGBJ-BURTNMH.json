@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.810892,
+    "lon" : -1.6362168,
+    "id" : "BURHGBJ",
+    "name" : "Horninglow Bridge Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.808875,
+    "lon" : -1.6382067,
+    "id" : "BURTNMH",
+    "name" : "Burton Ot W Yd Maurice H",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

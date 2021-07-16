@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.986461,
+    "lon" : -3.3816087,
+    "id" : "DLMY",
+    "name" : "Dalmeny",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.012329,
+    "lon" : -3.3945463,
+    "id" : "NQNSFRY",
+    "name" : "North Queensferry",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

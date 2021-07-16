@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.073262,
+    "lon" : 0.31312086,
+    "id" : "WADHRST",
+    "name" : "Wadhurst",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.060528,
+    "lon" : 0.32082069,
+    "id" : "WADHTLS",
+    "name" : "Wadhurst Tunnel South",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "70-90"
+} ]

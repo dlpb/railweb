@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.9675,
+    "lon" : -8.304167,
+    "id" : "CATZBOQ",
+    "name" : "Boyle       (Cie",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.08833,
+    "lon" : -8.52112,
+    "id" : "CATZBAO",
+    "name" : "Ballymote   (Cie",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

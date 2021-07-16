@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.550922,
+    "lon" : 0.034804529,
+    "id" : "FRSTGTJ",
+    "name" : "Forest Gate Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.551303,
+    "lon" : 0.039307498,
+    "id" : "ILFE336",
+    "name" : "Ilford Signal L336",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 51.52774,
+    "lon" : -0.13303,
+    "id" : "LUNEUS",
+    "name" : "Euston",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.5302,
+    "lon" : -0.1241,
+    "id" : "CATEZKX",
+    "name" : "Kings Cross Und",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+}, {
+  "from" : {
+    "lat" : 51.52774,
+    "lon" : -0.13303,
+    "id" : "LUNEUS",
+    "name" : "Euston",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.5302,
+    "lon" : -0.1241,
+    "id" : "CATEZKX",
+    "name" : "Kings Cross Und",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.633891,
+    "lon" : -4.7846406,
+    "id" : "SLCT",
+    "name" : "Saltcoats",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.634276,
+    "lon" : -4.7500743,
+    "id" : "STVNSTN",
+    "name" : "Stevenston",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "75-90"
+} ]

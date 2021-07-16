@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 51.579142,
+    "lon" : -0.33615896,
+    "id" : "HAROOTH",
+    "name" : "Harrow-On-The-Hill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.6575,
+    "lon" : -0.4175,
+    "id" : "WATFLUL",
+    "name" : "Watford Met Und",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "20 MINUTES"
+}, {
+  "from" : {
+    "lat" : 51.579142,
+    "lon" : -0.33615896,
+    "id" : "HAROOTH",
+    "name" : "Harrow-On-The-Hill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.6575,
+    "lon" : -0.4175,
+    "id" : "WATFLUL",
+    "name" : "Watford Met Und",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "25 MINUTES"
+} ]

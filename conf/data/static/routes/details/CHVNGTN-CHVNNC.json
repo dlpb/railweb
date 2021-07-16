@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.275518,
+    "lon" : -1.6538737,
+    "id" : "CHVNGTN",
+    "name" : "Chevington Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.280885,
+    "lon" : -1.6548975,
+    "id" : "CHVNNC",
+    "name" : "Chevington Nrth Crossovers",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

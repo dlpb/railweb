@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.281568,
+    "lon" : -4.5634758,
+    "id" : "VALLEY",
+    "name" : "Valley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.280175,
+    "lon" : -4.5580217,
+    "id" : "VALLYNE",
+    "name" : "Valley Nuclear Electric",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

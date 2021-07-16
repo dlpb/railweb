@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.732361,
+    "lon" : -4.7145916,
+    "id" : "KILGETY",
+    "name" : "Kilgetty",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.799131,
+    "lon" : -4.7272478,
+    "id" : "NRBERTH",
+    "name" : "Narberth",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

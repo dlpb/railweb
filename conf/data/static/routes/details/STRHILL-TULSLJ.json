@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.438455,
+    "lon" : -0.12848744,
+    "id" : "STRHILL",
+    "name" : "Streatham Hill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.436934,
+    "lon" : -0.11214726,
+    "id" : "TULSLJ",
+    "name" : "Leigham Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

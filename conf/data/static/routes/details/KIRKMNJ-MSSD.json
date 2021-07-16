@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.788462,
+    "lon" : -2.8959664,
+    "id" : "KIRKMNJ",
+    "name" : "Kirkham North Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.764345,
+    "lon" : -2.9429659,
+    "id" : "MSSD",
+    "name" : "Moss Side",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

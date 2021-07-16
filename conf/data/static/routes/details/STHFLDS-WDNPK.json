@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.446341,
+    "lon" : -0.20671054,
+    "id" : "STHFLDS",
+    "name" : "Southfields",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.434486,
+    "lon" : -0.19944897,
+    "id" : "WDNPK",
+    "name" : "Wimbledon Park",
+    "type" : "Location"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

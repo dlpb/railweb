@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.681895,
+    "lon" : -2.1346674,
+    "id" : "WORGRTJ",
+    "name" : "Worgret Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.657317,
+    "lon" : -2.0992865,
+    "id" : "FRZBGCE",
+    "name" : "Furzebrook Oil Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

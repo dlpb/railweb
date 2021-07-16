@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.824081,
+    "lon" : -5.0914118,
+    "id" : "FRTWJN",
+    "name" : "Fort William Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.889901,
+    "lon" : -4.9213845,
+    "id" : "SPEANBD",
+    "name" : "Spean Bridge",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

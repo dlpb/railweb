@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.82792,
+    "lon" : -9.192579,
+    "id" : "CATZMAJ",
+    "name" : "Manulla Jn  (Cie",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.982778,
+    "lon" : -9.134167,
+    "id" : "CATZFXF",
+    "name" : "Foxford     (Cie",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

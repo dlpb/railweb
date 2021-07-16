@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.315684,
+    "lon" : -0.13789348,
+    "id" : "COLSDNS",
+    "name" : "Coulsdon South",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.32642,
+    "lon" : -0.12768397,
+    "id" : "SNSTJN",
+    "name" : "Stoats Nest Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.983447,
+    "lon" : -1.3849027,
+    "id" : "CSFD",
+    "name" : "Chandlers Ford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.99126,
+    "lon" : -1.4872158,
+    "id" : "ROMS883",
+    "name" : "Romsey Signal E883",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

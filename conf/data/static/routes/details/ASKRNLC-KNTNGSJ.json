@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.631243,
+    "lon" : -1.1614766,
+    "id" : "ASKRNLC",
+    "name" : "Norton Level Crossing",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.703156,
+    "lon" : -1.2504214,
+    "id" : "KNTNGSJ",
+    "name" : "Knottingley South Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

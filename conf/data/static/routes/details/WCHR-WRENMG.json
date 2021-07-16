@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.968067,
+    "lon" : -2.6716983,
+    "id" : "WCHR",
+    "name" : "Whitchurch (Shropshire)",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.007565,
+    "lon" : -2.6259326,
+    "id" : "WRENMG",
+    "name" : "Marley Green L.C.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

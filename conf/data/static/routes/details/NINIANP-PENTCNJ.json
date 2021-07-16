@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.47638,
+    "lon" : -3.2009388,
+    "id" : "NINIANP",
+    "name" : "Ninian Park",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.475057,
+    "lon" : -3.1975059,
+    "id" : "PENTCNJ",
+    "name" : "Penarth Curve North Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "45-75"
+} ]

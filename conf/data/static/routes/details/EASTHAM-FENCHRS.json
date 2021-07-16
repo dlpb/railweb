@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.539,
+    "lon" : 0.0516,
+    "id" : "EASTHAM",
+    "name" : "East Ham Und",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.511352,
+    "lon" : -0.077554354,
+    "id" : "FENCHRS",
+    "name" : "London Fenchurch Street",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "30 MINUTES"
+} ]

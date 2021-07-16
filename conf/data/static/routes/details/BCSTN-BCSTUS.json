@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.903414,
+    "lon" : -1.1497888,
+    "id" : "BCSTN",
+    "name" : "Bicester North",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.90489,
+    "lon" : -1.1537873,
+    "id" : "BCSTUS",
+    "name" : "Bicester North Turnback Sg",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

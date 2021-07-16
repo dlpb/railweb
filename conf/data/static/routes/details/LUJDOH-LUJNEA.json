@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.5525,
+    "lon" : -0.23884,
+    "id" : "LUJDOH",
+    "name" : "Dollis Hill",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.55427,
+    "lon" : -0.25042,
+    "id" : "LUJNEA",
+    "name" : "Neasden",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

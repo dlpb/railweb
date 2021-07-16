@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.141806,
+    "lon" : -1.1990076,
+    "id" : "MFLDTWN",
+    "name" : "Mansfield",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.114145,
+    "lon" : -1.2455673,
+    "id" : "STTNPWY",
+    "name" : "Sutton Parkway",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

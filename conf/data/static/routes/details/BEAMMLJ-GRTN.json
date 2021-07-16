@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.585519,
+    "lon" : -1.1650431,
+    "id" : "BEAMMLJ",
+    "name" : "Beam Mill Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.583096,
+    "lon" : -1.147955,
+    "id" : "GRTN",
+    "name" : "Grangetown (Cleveland)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

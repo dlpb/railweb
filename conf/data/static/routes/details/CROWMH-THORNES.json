@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.601632,
+    "lon" : -0.87224618,
+    "id" : "CROWMH",
+    "name" : "Medge Hall",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.603347,
+    "lon" : -0.95519942,
+    "id" : "THORNES",
+    "name" : "Thorne South",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

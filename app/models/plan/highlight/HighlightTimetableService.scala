@@ -4,7 +4,7 @@ import java.time.{LocalDate, LocalTime}
 import java.util.UUID
 
 import javax.inject.{Inject, Singleton}
-import models.location.{Location, MapLocation}
+import models.location.{Location}
 import models.plan.highlight
 import models.plan.highlight.FormKeyTypes.{KeyName, KeyValue, TypeOfKey}
 import models.plan.timetable.location.LocationTimetableService
@@ -145,12 +145,12 @@ class HighlightTimetableService @Inject()(
     )
   }
 
-   def getMapLocationsForLocationsCalledAt(locationsCalledAtF: List[Future[Option[LocationsCalledAtFromTimetable]]])(implicit executionContext: ExecutionContext): List[MapLocation] = {
-    val mapLocationsCalledAtF: Future[List[MapLocation]] = Future.sequence(locationsCalledAtF)
+   def getMapLocationsForLocationsCalledAt(LocationsCalledAtFromTimetableF: List[Future[Option[LocationsCalledAtFromTimetable]]])(implicit executionContext: ExecutionContext): List[Location] = {
+    val locationsCalledAtF: Future[List[Location]] = Future.sequence(LocationsCalledAtFromTimetableF)
       .map(_.flatten)
-      .map(_.flatMap(_.locations.map(MapLocation(_))))
+      .map(_.flatMap(_.locations))
 
-    val mapLocationsCalledAt = Await.result(mapLocationsCalledAtF, Duration(30, "seconds"))
+    val mapLocationsCalledAt = Await.result(locationsCalledAtF, Duration(30, "seconds"))
     mapLocationsCalledAt
   }
 

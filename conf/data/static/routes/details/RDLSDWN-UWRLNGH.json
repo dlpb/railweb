@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.332222,
+    "lon" : -0.099311406,
+    "id" : "RDLSDWN",
+    "name" : "Riddlesdown",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.307983,
+    "lon" : -0.077643751,
+    "id" : "UWRLNGH",
+    "name" : "Upper Warlingham",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

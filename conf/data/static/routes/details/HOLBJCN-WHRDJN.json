@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.791467,
+    "lon" : -1.5683653,
+    "id" : "HOLBJCN",
+    "name" : "Holbeck Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.791929,
+    "lon" : -1.5594652,
+    "id" : "WHRDJN",
+    "name" : "Whitehall Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "6",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

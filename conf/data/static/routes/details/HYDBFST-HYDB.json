@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.99867,
+    "lon" : -2.157975,
+    "id" : "HYDBFST",
+    "name" : "Fourstones",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.975274,
+    "lon" : -2.2472758,
+    "id" : "HYDB",
+    "name" : "Haydon Bridge",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

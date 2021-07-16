@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.045232,
+    "lon" : -2.4255539,
+    "id" : "LDBURY",
+    "name" : "Ledbury",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.078787,
+    "lon" : -2.6968886,
+    "id" : "SHIP",
+    "name" : "Shelwick Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

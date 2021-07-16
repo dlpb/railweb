@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.823562,
+    "lon" : -4.0867154,
+    "id" : "UDNGSTN",
+    "name" : "Uddingston",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.823688,
+    "lon" : -4.0834973,
+    "id" : "UDNGTNJ",
+    "name" : "Uddingston Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "120-125"
+} ]

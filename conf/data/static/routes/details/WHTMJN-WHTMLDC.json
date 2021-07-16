@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.562389,
+    "lon" : 0.087273866,
+    "id" : "WHTMJN",
+    "name" : "Whitemoor Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.564572,
+    "lon" : 0.087879201,
+    "id" : "WHTMLDC",
+    "name" : "Whitemoor Yard L.D.C Gbrf",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

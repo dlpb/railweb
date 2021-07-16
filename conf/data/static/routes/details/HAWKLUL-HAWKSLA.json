@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.458289,
+    "lon" : -1.4824066,
+    "id" : "HAWKLUL",
+    "name" : "Hawkesbury Lane Up Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.460497,
+    "lon" : -1.4775533,
+    "id" : "HAWKSLA",
+    "name" : "Hawkesbury Lane",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

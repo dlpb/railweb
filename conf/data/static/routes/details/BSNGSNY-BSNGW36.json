@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.269897,
+    "lon" : -1.0819868,
+    "id" : "BSNGSNY",
+    "name" : "Basingstoke North Yard",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.270291,
+    "lon" : -1.0795564,
+    "id" : "BSNGW36",
+    "name" : "Basingstoke Signal Be549",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.156696,
+    "lon" : -3.957296,
+    "id" : "BGOALAN",
+    "name" : "Bridge Of Allan",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.143528,
+    "lon" : -3.9471939,
+    "id" : "CORNTLC",
+    "name" : "Cornton Level Crosssing",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

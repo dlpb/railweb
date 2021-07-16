@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.700609,
+    "lon" : -2.4543043,
+    "id" : "BRKELEY",
+    "name" : "Berkeley C.E.G.B.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.721604,
+    "lon" : -2.4768521,
+    "id" : "SHRPNSD",
+    "name" : "Sharpness Docks",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

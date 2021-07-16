@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.650308,
+    "lon" : -3.8506406,
+    "id" : "JERSMJN",
+    "name" : "Jersey Marine Jn North",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.640553,
+    "lon" : -3.8447803,
+    "id" : "JERSMJS",
+    "name" : "Jersey Marine Jn South",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

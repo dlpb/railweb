@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.343873,
+    "lon" : 1.4128565,
+    "id" : "RAM5143",
+    "name" : "Rm Ek5143 Ramsgate",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.341156,
+    "lon" : 1.4054735,
+    "id" : "RAMSGTE",
+    "name" : "Ramsgate",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

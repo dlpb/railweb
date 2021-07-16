@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.503932,
+    "lon" : -0.43085587,
+    "id" : "DWLEYLP",
+    "name" : "Dawley Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.506995,
+    "lon" : -0.44820062,
+    "id" : "WDRYARC",
+    "name" : "West Drayton A.R.C.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.55603,
+    "lon" : -2.05784,
+    "id" : "WMTWBRL",
+    "name" : "Bradley Lane",
+    "type" : "Metro"
+  },
+  "to" : {
+    "lat" : 52.56007,
+    "lon" : -2.06589,
+    "id" : "WMTWLOX",
+    "name" : "Loxdale",
+    "type" : "Metro"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Metro",
+  "speed" : "OHLE"
+} ]

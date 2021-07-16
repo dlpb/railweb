@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.40431,
+    "lon" : -2.9792667,
+    "id" : "LVRPLCL",
+    "name" : "Liverpool Central",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.409552,
+    "lon" : -2.9889099,
+    "id" : "LVRPLSL",
+    "name" : "Liverpool Lime Street",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

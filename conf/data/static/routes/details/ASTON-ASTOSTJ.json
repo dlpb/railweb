@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.504634,
+    "lon" : -1.872286,
+    "id" : "ASTON",
+    "name" : "Aston",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.503221,
+    "lon" : -1.8710673,
+    "id" : "ASTOSTJ",
+    "name" : "Aston South Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

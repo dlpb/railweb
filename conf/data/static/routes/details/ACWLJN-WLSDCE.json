@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.522739,
+    "lon" : -0.2548693,
+    "id" : "ACWLJN",
+    "name" : "Acton Wells Junction",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 51.530164,
+    "lon" : -0.24623785,
+    "id" : "WLSDCE",
+    "name" : "Willesden Old Oak Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

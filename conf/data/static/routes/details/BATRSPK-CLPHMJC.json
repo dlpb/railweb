@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.482069,
+    "lon" : -0.1466063,
+    "id" : "BATRSPK",
+    "name" : "Battersea Park",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.463358,
+    "lon" : -0.17252917,
+    "id" : "CLPHMJC",
+    "name" : "Clapham Junction",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

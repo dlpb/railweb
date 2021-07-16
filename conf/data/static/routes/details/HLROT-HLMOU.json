@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.7048,
+    "lon" : -1.16,
+    "id" : "HLROT",
+    "name" : "Rothley",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.722365,
+    "lon" : -1.1573155,
+    "id" : "HLMOU",
+    "name" : "Mountsorrel",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

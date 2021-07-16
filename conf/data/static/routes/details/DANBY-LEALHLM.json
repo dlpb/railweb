@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.466152,
+    "lon" : -0.9109558,
+    "id" : "DANBY",
+    "name" : "Danby",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.460472,
+    "lon" : -0.82557984,
+    "id" : "LEALHLM",
+    "name" : "Lealholm",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

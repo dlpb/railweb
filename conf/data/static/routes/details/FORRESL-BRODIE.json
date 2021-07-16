@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.611341,
+    "lon" : -3.6216498,
+    "id" : "FORRESL",
+    "name" : "Forres Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 57.593313,
+    "lon" : -3.7113457,
+    "id" : "BRODIE",
+    "name" : "Brodie",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

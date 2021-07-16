@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.552912,
+    "lon" : -4.6487185,
+    "id" : "BARAFHH",
+    "name" : "Barassie Yard Fhh",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.560152,
+    "lon" : -4.6509981,
+    "id" : "BARASIJ",
+    "name" : "Barassie Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.54097,
+    "lon" : -0.30061,
+    "id" : "LUPALP",
+    "name" : "Alperton",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.55093,
+    "lon" : -0.31598,
+    "id" : "LUPSUT",
+    "name" : "Sudbury Town",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

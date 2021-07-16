@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.273417,
+    "lon" : 1.5235912,
+    "id" : "DARSHAM",
+    "name" : "Darsham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.346707,
+    "lon" : 1.5059673,
+    "id" : "HALSWTH",
+    "name" : "Halesworth",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

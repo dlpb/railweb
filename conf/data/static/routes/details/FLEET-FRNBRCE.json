@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.29069,
+    "lon" : -0.83110537,
+    "id" : "FLEET",
+    "name" : "Fleet",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.296616,
+    "lon" : -0.75857964,
+    "id" : "FRNBRCE",
+    "name" : "Farnborough Country End",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

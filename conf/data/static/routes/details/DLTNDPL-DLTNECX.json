@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.512621,
+    "lon" : -1.5479509,
+    "id" : "DLTNDPL",
+    "name" : "Darlington Sth Dn Pass Lp",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.43026,
+    "lon" : -1.5122475,
+    "id" : "DLTNECX",
+    "name" : "East Cowton Xovers",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

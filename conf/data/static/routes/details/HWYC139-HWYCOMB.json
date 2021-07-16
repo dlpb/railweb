@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.627675,
+    "lon" : -0.73929349,
+    "id" : "HWYC139",
+    "name" : "High Wycombe Signal Me139",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.629401,
+    "lon" : -0.74509706,
+    "id" : "HWYCOMB",
+    "name" : "High Wycombe",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

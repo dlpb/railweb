@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.24163,
+    "lon" : -2.5537027,
+    "id" : "HARTFD",
+    "name" : "Hartford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.249699,
+    "lon" : -2.5696034,
+    "id" : "HARTFDJ",
+    "name" : "Hartford Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.695719,
+    "lon" : -4.0492651,
+    "id" : "FRBN",
+    "name" : "Fairbourne",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.707747,
+    "lon" : -4.0316062,
+    "id" : "MFAM",
+    "name" : "Morfa Mawddach",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

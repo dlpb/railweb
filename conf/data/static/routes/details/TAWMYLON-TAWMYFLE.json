@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.0088,
+    "lon" : -1.5914,
+    "id" : "TAWMYLON",
+    "name" : "Longbenton",
+    "type" : "Metro"
+  },
+  "to" : {
+    "lat" : 55.01016,
+    "lon" : -1.5784357,
+    "id" : "TAWMYFLE",
+    "name" : "Four Lane Ends",
+    "type" : "Metro"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Metro",
+  "speed" : "OHLE"
+} ]

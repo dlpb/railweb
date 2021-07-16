@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.206347,
+    "lon" : 0.14647625,
+    "id" : "CLDHMLJ",
+    "name" : "Coldham Lane Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.189888,
+    "lon" : 0.17658322,
+    "id" : "CHRYHNT",
+    "name" : "Cherry Hinton",
+    "type" : "Point"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

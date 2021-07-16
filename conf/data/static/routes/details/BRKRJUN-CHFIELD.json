@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.701545,
+    "lon" : -2.407329,
+    "id" : "BRKRJUN",
+    "name" : "Berkeley Rd Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.631157,
+    "lon" : -2.4035916,
+    "id" : "CHFIELD",
+    "name" : "Charfield",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

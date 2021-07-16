@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.747928,
+    "lon" : -0.73159234,
+    "id" : "GLBRDYK",
+    "name" : "Gilberdyke",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.72202,
+    "lon" : -0.80927076,
+    "id" : "SLTMRSH",
+    "name" : "Saltmarshe",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

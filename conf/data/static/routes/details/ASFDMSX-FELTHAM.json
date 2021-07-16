@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.436279,
+    "lon" : -0.46931586,
+    "id" : "ASFDMSX",
+    "name" : "Ashford (Surrey)",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.44789655929224,
+    "lon" : -0.40983822608523196,
+    "id" : "FELTHAM",
+    "name" : "Feltham",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

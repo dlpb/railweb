@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.352613,
+    "lon" : -2.8970436,
+    "id" : "GRSTNCR",
+    "name" : "Garston Church Road",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.352917,
+    "lon" : -2.8996941,
+    "id" : "GRSTNFT",
+    "name" : "Garston F.L.T.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

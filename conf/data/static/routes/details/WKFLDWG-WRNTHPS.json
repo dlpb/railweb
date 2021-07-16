@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.681928,
+    "lon" : -1.5053971,
+    "id" : "WKFLDWG",
+    "name" : "Wakefield Westgate",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.689972,
+    "lon" : -1.5076652,
+    "id" : "WRNTHPS",
+    "name" : "Wrenthorpe Recp.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

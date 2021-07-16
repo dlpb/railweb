@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.949971,
+    "lon" : -1.6412489,
+    "id" : "DNSN",
+    "name" : "Dunston",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.948609,
+    "lon" : -1.6335797,
+    "id" : "NRWDJN",
+    "name" : "Norwood Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

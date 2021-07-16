@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.155695,
+    "lon" : -1.5384834,
+    "id" : "FREMNSX",
+    "name" : "Freemans L.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.131393,
+    "lon" : -1.403193,
+    "id" : "NBLYEWS",
+    "name" : "North Blyth (Dbs)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

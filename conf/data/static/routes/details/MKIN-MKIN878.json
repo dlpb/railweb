@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.200547,
+    "lon" : -3.1307409,
+    "id" : "MKIN",
+    "name" : "Markinch",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.200547,
+    "lon" : -3.1307409,
+    "id" : "MKIN878",
+    "name" : "Markinch Signal 878",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

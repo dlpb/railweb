@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.487112,
+    "lon" : -0.50271498,
+    "id" : "CNBKBAA",
+    "name" : "Colnbrook Baa Logistics",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.510013,
+    "lon" : -0.47534831,
+    "id" : "WDRYJN",
+    "name" : "West Drayton Jcn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

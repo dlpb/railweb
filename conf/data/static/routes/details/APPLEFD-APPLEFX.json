@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.63963949396766,
+    "lon" : -1.2421414376071958,
+    "id" : "APPLEFD",
+    "name" : "Appleford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.63948,
+    "lon" : -1.242462,
+    "id" : "APPLEFX",
+    "name" : "Appleford L.C.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

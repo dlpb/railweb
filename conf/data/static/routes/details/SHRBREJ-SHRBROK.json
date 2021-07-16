@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.204883,
+    "lon" : -1.2029377,
+    "id" : "SHRBREJ",
+    "name" : "Shirebrook East Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.204198,
+    "lon" : -1.202651,
+    "id" : "SHRBROK",
+    "name" : "Shirebrook",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.274072,
+    "lon" : -2.1928904,
+    "id" : "HWKRJN",
+    "name" : "Hawkeridge Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.270875,
+    "lon" : -2.1786,
+    "id" : "HWRDJN",
+    "name" : "Heywood Road Junction",
+    "type" : "Junction"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

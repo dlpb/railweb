@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.007565,
+    "lon" : -2.6259326,
+    "id" : "WRENMG",
+    "name" : "Marley Green L.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.019405,
+    "lon" : -2.5959466,
+    "id" : "WRENBRY",
+    "name" : "Wrenbury",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "70-90"
+} ]

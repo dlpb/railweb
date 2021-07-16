@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.416924,
+    "lon" : -1.4143786,
+    "id" : "MEADWHL",
+    "name" : "Meadowhall",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.414717,
+    "lon" : -1.4170869,
+    "id" : "WNCOJN",
+    "name" : "Wincobank Jn.",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

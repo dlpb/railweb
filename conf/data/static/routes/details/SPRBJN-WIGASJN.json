@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.527796,
+    "lon" : -2.6158247,
+    "id" : "SPRBJN",
+    "name" : "Springs Branch Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.541758,
+    "lon" : -2.6291408,
+    "id" : "WIGASJN",
+    "name" : "Wigan South Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

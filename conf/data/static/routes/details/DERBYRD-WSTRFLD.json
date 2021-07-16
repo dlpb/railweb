@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.05047,
+    "lon" : 1.1827395,
+    "id" : "DERBYRD",
+    "name" : "Derby Road",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.081085,
+    "lon" : 1.1663939,
+    "id" : "WSTRFLD",
+    "name" : "Westerfield",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

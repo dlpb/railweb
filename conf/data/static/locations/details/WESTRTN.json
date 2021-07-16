@@ -1,0 +1,10 @@
+[ {
+  "id" : "WESTRTN",
+  "crp" : "",
+  "route" : "Scotland",
+  "changeTime" : "Set(None)",
+  "interchangeType" : "1 - Small interchange point",
+  "county" : "Scotland",
+  "district" : "East Dunbartonshire",
+  "postcode" : "\"G61 1PA"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.432313,
+    "lon" : -0.50272314,
+    "id" : "STAINES",
+    "name" : "Staines",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.432575,
+    "lon" : -0.49645667,
+    "id" : "STAINSE",
+    "name" : "Staines Sidings Ent-Exit",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

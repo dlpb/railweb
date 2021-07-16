@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.5162,
+    "lon" : -0.1309,
+    "id" : "TOTCTRD",
+    "name" : "Tottenham Court Road Crossrail",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.5206,
+    "lon" : -0.13441,
+    "id" : "LUNGOS",
+    "name" : "Goodge Street",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

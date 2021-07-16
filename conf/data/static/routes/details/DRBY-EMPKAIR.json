@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.915292,
+    "lon" : -1.4623738,
+    "id" : "DRBY",
+    "name" : "Derby",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.831111,
+    "lon" : -1.327778,
+    "id" : "EMPKAIR",
+    "name" : "East Mids Aptbus",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

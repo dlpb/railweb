@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.731943,
+    "lon" : -2.7019184,
+    "id" : "FRNGTNC",
+    "name" : "Farington Curve Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.724308,
+    "lon" : -2.6871206,
+    "id" : "LSTH",
+    "name" : "Lostock Hall",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.808832,
+    "lon" : -2.1309505,
+    "id" : "STAFFNJ",
+    "name" : "Stafford North Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.803807,
+    "lon" : -2.1229995,
+    "id" : "STAFFRD",
+    "name" : "Stafford",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

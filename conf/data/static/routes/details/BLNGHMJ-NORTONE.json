@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.602455,
+    "lon" : -1.2943263,
+    "id" : "BLNGHMJ",
+    "name" : "Billingham Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.595746,
+    "lon" : -1.3330738,
+    "id" : "NORTONE",
+    "name" : "Norton East Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.526776,
+    "lon" : -1.4644893,
+    "id" : "NNTN",
+    "name" : "Nuneaton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.522242,
+    "lon" : -1.4460772,
+    "id" : "NNTN205",
+    "name" : "Nuneaton Signal Wn4205",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

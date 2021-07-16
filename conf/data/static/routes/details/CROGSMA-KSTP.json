@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.468166,
+    "lon" : -2.4126888,
+    "id" : "CROGSMA",
+    "name" : "Smardale Viaduct",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.454381,
+    "lon" : -2.368145,
+    "id" : "KSTP",
+    "name" : "Kirkby Stephen",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

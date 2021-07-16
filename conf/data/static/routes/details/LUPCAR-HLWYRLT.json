@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.5485,
+    "lon" : -0.11802,
+    "id" : "LUPCAR",
+    "name" : "Caledonian Road",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.5527,
+    "lon" : -0.11322,
+    "id" : "HLWYRLT",
+    "name" : "Holloway Rd Und",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

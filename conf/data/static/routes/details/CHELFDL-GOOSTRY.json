@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.259842,
+    "lon" : -2.2932504,
+    "id" : "CHELFDL",
+    "name" : "Chelford Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.22274,
+    "lon" : -2.3261572,
+    "id" : "GOOSTRY",
+    "name" : "Goostrey",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.392468,
+    "lon" : -0.089010455,
+    "id" : "SELHRST",
+    "name" : "Selhurst",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.399302,
+    "lon" : -0.10116108,
+    "id" : "THTH",
+    "name" : "Thornton Heath",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

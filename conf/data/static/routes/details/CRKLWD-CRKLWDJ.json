@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.558662,
+    "lon" : -0.21295688,
+    "id" : "CRKLWD",
+    "name" : "Cricklewood",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.571862,
+    "lon" : -0.23069377,
+    "id" : "CRKLWDJ",
+    "name" : "Cricklewood Depot Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

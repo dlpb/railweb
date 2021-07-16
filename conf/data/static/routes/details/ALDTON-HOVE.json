@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.836338,
+    "lon" : -0.18155086,
+    "id" : "ALDTON",
+    "name" : "Aldrington",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.835464,
+    "lon" : -0.17113209,
+    "id" : "HOVE",
+    "name" : "Hove",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

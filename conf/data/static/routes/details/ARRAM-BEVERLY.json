@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.884736,
+    "lon" : -0.42711829,
+    "id" : "ARRAM",
+    "name" : "Arram",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.842316,
+    "lon" : -0.42288727,
+    "id" : "BEVERLY",
+    "name" : "Beverley",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.94357,
+    "lon" : 1.0819345,
+    "id" : "MISTLEY",
+    "name" : "Mistley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.93949,
+    "lon" : 1.171162,
+    "id" : "WRABNES",
+    "name" : "Wrabness",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

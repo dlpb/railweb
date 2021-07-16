@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.896553,
+    "lon" : -0.54201053,
+    "id" : "AMLY",
+    "name" : "Amberley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.8475,
+    "lon" : -0.54667942,
+    "id" : "ARUNDEL",
+    "name" : "Arundel",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

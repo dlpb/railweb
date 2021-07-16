@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.402809,
+    "lon" : -2.9332058,
+    "id" : "EDGHDHS",
+    "name" : "Edge Hill Intercity Depot",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.401859,
+    "lon" : -2.9476394,
+    "id" : "EDGHDWG",
+    "name" : "Edge Hill Down Wapping",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

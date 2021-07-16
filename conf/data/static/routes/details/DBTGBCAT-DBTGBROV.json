@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.51388,
+    "lon" : 0.008876,
+    "id" : "DBTGBCAT",
+    "name" : "Canning Town",
+    "type" : "Light Rail"
+  },
+  "to" : {
+    "lat" : 51.509156,
+    "lon" : 0.018083,
+    "id" : "DBTGBROV",
+    "name" : "Royal Victoria",
+    "type" : "Light Rail"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Light Rail",
+  "speed" : "OHLE"
+} ]

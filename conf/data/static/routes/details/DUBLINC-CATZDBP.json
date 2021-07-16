@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.35121,
+    "lon" : -6.250185,
+    "id" : "DUBLINC",
+    "name" : "Dublin Connolly (Cie)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.3433,
+    "lon" : -6.2483,
+    "id" : "CATZDBP",
+    "name" : "Dublin Pearse (Cie)",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

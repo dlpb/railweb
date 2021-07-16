@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.57732,
+    "lon" : -2.0895959,
+    "id" : "SHCRPTN",
+    "name" : "Shaw & Crompton",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 53.600833,
+    "lon" : -2.094444,
+    "id" : "NHEY",
+    "name" : "Newhey Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

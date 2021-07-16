@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.667074,
+    "lon" : 0.38443642,
+    "id" : "INGTSTN",
+    "name" : "Ingatestone",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.630669,
+    "lon" : 0.32985507,
+    "id" : "SHENFLD",
+    "name" : "Shenfield",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

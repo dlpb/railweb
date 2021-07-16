@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.7536,
+    "lon" : -1.2965178,
+    "id" : "HORD137",
+    "name" : "Horden Signal Ns7137",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.710344,
+    "lon" : -1.2224395,
+    "id" : "CMTRYNH",
+    "name" : "Cemetery North Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

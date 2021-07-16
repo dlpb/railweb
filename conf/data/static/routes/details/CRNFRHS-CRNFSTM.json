@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.132027,
+    "lon" : -2.7718729,
+    "id" : "CRNFRHS",
+    "name" : "Carnforth H.S.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.132183,
+    "lon" : -2.7727635,
+    "id" : "CRNFSTM",
+    "name" : "Carnforth Steamtown",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.577293,
+    "lon" : -0.097864868,
+    "id" : "HRGYGL",
+    "name" : "Harringay Green Lanes",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.574184,
+    "lon" : -0.10916454,
+    "id" : "HRGYPJN",
+    "name" : "Harringay Park Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.430728,
+    "lon" : -2.7803716,
+    "id" : "ECPK",
+    "name" : "Eccleston Park",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.423413,
+    "lon" : -2.7991083,
+    "id" : "PRESCOT",
+    "name" : "Prescot",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

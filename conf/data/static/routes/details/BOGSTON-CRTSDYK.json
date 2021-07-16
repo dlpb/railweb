@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.937165,
+    "lon" : -4.7122584,
+    "id" : "BOGSTON",
+    "name" : "Bogston",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.942195,
+    "lon" : -4.7323422,
+    "id" : "CRTSDYK",
+    "name" : "Cartsdyke",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "75-90"
+} ]

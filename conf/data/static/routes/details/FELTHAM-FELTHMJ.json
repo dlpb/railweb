@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.44789655929224,
+    "lon" : -0.40983822608523196,
+    "id" : "FELTHAM",
+    "name" : "Feltham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.452084,
+    "lon" : -0.37743955,
+    "id" : "FELTHMJ",
+    "name" : "Feltham Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

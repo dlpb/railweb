@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.09853,
+    "lon" : -1.9475469,
+    "id" : "EVESHAM",
+    "name" : "Evesham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.103622,
+    "lon" : -1.8475905,
+    "id" : "HONYNJN",
+    "name" : "Honeybourne North Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.541705,
+    "lon" : -0.34237003,
+    "id" : "GFORDWJ",
+    "name" : "Greenford West Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.557018,
+    "lon" : -0.3992845,
+    "id" : "SRUISLP",
+    "name" : "South Ruislip",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

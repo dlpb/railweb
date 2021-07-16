@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.910092,
+    "lon" : -4.3061369,
+    "id" : "ABRYAFO",
+    "name" : "Afon Wen Lc",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.902857,
+    "lon" : -4.3385863,
+    "id" : "PENYCHN",
+    "name" : "Penychain",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

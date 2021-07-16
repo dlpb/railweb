@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.943337,
+    "lon" : -3.9769263,
+    "id" : "CMBRDRS",
+    "name" : "Cumbernauld D.R.S.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.941908,
+    "lon" : -3.9802803,
+    "id" : "CMBRNLD",
+    "name" : "Cumbernauld",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

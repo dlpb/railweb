@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.297815,
+    "lon" : -1.6462539,
+    "id" : "HATTBUD",
+    "name" : "Budbrook Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.296318,
+    "lon" : -1.6630699,
+    "id" : "HATTDGL",
+    "name" : "Hatton Down Goods Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

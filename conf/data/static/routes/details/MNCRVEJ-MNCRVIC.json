@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.488756,
+    "lon" : -2.2405571,
+    "id" : "MNCRVEJ",
+    "name" : "Manchester Vic.(East Jn)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.488018,
+    "lon" : -2.2412763,
+    "id" : "MNCRVIC",
+    "name" : "Manchester Victoria",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

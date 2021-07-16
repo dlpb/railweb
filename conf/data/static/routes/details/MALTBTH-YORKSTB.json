@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.069744,
+    "lon" : -0.91863377,
+    "id" : "MALTBTH",
+    "name" : "Barton Hill",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.040247,
+    "lon" : -1.0262178,
+    "id" : "YORKSTB",
+    "name" : "Strensall Sb",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

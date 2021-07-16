@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.974827,
+    "lon" : -2.0835162,
+    "id" : "CAVRSWL",
+    "name" : "Caverswall",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.989987,
+    "lon" : -2.1371894,
+    "id" : "LNTN",
+    "name" : "Longton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

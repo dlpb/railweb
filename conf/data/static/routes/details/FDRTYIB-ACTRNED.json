@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.597792,
+    "lon" : -4.4732312,
+    "id" : "FDRTYIB",
+    "name" : "Fodderty I.B.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 57.602778,
+    "lon" : -4.5286588,
+    "id" : "ACTRNED",
+    "name" : "Achterneed",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

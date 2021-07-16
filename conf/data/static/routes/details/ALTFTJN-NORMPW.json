@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.709833,
+    "lon" : -1.4148505,
+    "id" : "ALTFTJN",
+    "name" : "Altofts Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.7133,
+    "lon" : -1.4088479,
+    "id" : "NORMPW",
+    "name" : "Wakefield Europort",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

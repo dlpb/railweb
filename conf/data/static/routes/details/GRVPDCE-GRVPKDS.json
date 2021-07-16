@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.4428,
+    "lon" : 0.0093879544,
+    "id" : "GRVPDCE",
+    "name" : "Grove Park Dpt Ctry Ed Ext",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.43885,
+    "lon" : 0.017358697,
+    "id" : "GRVPKDS",
+    "name" : "Grove Park Down C.H.S.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

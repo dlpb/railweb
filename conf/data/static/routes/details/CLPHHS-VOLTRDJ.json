@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.465551,
+    "lon" : -0.13251875,
+    "id" : "CLPHHS",
+    "name" : "Clapham High Street",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.467267,
+    "lon" : -0.13522742,
+    "id" : "VOLTRDJ",
+    "name" : "Voltaire Road Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

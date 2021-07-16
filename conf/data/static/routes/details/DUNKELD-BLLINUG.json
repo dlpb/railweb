@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.556738,
+    "lon" : -3.5778976,
+    "id" : "DUNKELD",
+    "name" : "Dunkeld & Birnam",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.651924,
+    "lon" : -3.6696778,
+    "id" : "BLLINUG",
+    "name" : "Ballinluig",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-100"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.012337,
+    "lon" : -3.833876,
+    "id" : "LARBERJ",
+    "name" : "Larbert Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.021824,
+    "lon" : -3.829833,
+    "id" : "LARBERT",
+    "name" : "Larbert",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

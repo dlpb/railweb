@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.500556,
+    "lon" : -0.65952483,
+    "id" : "CORBBSC",
+    "name" : "Corby B.S.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.487749,
+    "lon" : -0.68879522,
+    "id" : "CORBY",
+    "name" : "Corby",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.560951,
+    "lon" : -4.4403685,
+    "id" : "CONONBR",
+    "name" : "Conon Bridge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 57.593909,
+    "lon" : -4.4222608,
+    "id" : "DINGWAL",
+    "name" : "Dingwall",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

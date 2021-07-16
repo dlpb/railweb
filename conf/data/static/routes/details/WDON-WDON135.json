@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.421879,
+    "lon" : -0.20474846,
+    "id" : "WDON",
+    "name" : "Wimbledon",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.4246,
+    "lon" : -0.20159241,
+    "id" : "WDON135",
+    "name" : "Wdon Pk D No.1 Ucs",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

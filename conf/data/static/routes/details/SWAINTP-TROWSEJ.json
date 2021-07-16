@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.562525,
+    "lon" : 1.2705332,
+    "id" : "SWAINTP",
+    "name" : "Swainsthorpe L.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.614096,
+    "lon" : 1.3115239,
+    "id" : "TROWSEJ",
+    "name" : "Trowse Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.447875,
+    "lon" : 0.0034367129,
+    "id" : "HTHRLCS",
+    "name" : "Hither Green Loco Sdgs",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.447634,
+    "lon" : 0.0033254263,
+    "id" : "LEESPRJ",
+    "name" : "Lee Spur Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

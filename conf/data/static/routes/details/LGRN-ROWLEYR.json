@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.493456,
+    "lon" : -2.00545,
+    "id" : "LGRN",
+    "name" : "Langley Green",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.477351,
+    "lon" : -2.0309191,
+    "id" : "ROWLEYR",
+    "name" : "Rowley Regis",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

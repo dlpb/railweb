@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.826988,
+    "lon" : -0.3234676,
+    "id" : "LNCG",
+    "name" : "Lancing",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.834387,
+    "lon" : -0.27091244,
+    "id" : "SHRHMBS",
+    "name" : "Shoreham-By-Sea",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

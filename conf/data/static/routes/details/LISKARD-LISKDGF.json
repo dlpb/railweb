@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.447066,
+    "lon" : -4.4701772,
+    "id" : "LISKARD",
+    "name" : "Liskeard",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.448726,
+    "lon" : -4.4652628,
+    "id" : "LISKDGF",
+    "name" : "Liskeard Graound Frame",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

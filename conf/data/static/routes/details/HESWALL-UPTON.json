@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.329593,
+    "lon" : -3.0733542,
+    "id" : "HESWALL",
+    "name" : "Heswall",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.386047,
+    "lon" : -3.0839459,
+    "id" : "UPTON",
+    "name" : "Upton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

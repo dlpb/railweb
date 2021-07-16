@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.155437,
+    "lon" : 0.11006657,
+    "id" : "COWDEN",
+    "name" : "Cowden",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.181416,
+    "lon" : 0.094697604,
+    "id" : "HEVER",
+    "name" : "Hever",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.18473,
+    "lon" : -2.4797585,
+    "id" : "CRANMOR",
+    "name" : "Cranmore",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.183799,
+    "lon" : -2.4839412,
+    "id" : "HSCRW",
+    "name" : "Cranmore West",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

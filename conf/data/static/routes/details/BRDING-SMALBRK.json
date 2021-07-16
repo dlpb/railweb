@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.678297,
+    "lon" : -1.1385963,
+    "id" : "BRDING",
+    "name" : "Brading",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.711448,
+    "lon" : -1.154971,
+    "id" : "SMALBRK",
+    "name" : "Smallbrook Junction",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

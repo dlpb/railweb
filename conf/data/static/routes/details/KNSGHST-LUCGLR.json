@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.499831,
+    "lon" : -0.19281185,
+    "id" : "KNSGHST",
+    "name" : "Kensington High St Underground",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 51.4947,
+    "lon" : -0.183,
+    "id" : "LUCGLR",
+    "name" : "Gloucester Road",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

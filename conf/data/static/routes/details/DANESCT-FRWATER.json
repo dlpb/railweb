@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.500378,
+    "lon" : -3.2339278,
+    "id" : "DANESCT",
+    "name" : "Danescourt",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.493798,
+    "lon" : -3.2337501,
+    "id" : "FRWATER",
+    "name" : "Fairwater",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

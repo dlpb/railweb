@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.50202,
+    "lon" : 0.06299,
+    "id" : "DBSIWAKGV",
+    "name" : "King George V",
+    "type" : "Light Rail"
+  },
+  "to" : {
+    "lat" : 51.489754,
+    "lon" : 0.069734354,
+    "id" : "WOLWCHA",
+    "name" : "Woolwich Arsenal",
+    "type" : "Station"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Unknown",
+  "speed" : "OHLE"
+} ]

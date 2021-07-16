@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.18366,
+    "lon" : -1.5732594,
+    "id" : "ASHGTNJ",
+    "name" : "Ashington Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.213426,
+    "lon" : -1.6123252,
+    "id" : "BUTRFHH",
+    "name" : "Butterwell Opencast (Flhh)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

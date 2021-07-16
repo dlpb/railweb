@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.512062,
+    "lon" : -0.59177858,
+    "id" : "SLOU538",
+    "name" : "Slough Sig T3538",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.512062,
+    "lon" : -0.59177858,
+    "id" : "SLOUGH",
+    "name" : "Slough",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

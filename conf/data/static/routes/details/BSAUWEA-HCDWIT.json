@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.657185,
+    "lon" : -1.677963,
+    "id" : "BSAUWEA",
+    "name" : "Bishop Auckland West",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.676436,
+    "lon" : -1.7665813,
+    "id" : "HCDWIT",
+    "name" : "Witton-Le-Wear",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

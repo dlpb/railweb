@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.215337,
+    "lon" : 1.49039,
+    "id" : "SXMNDHM",
+    "name" : "Saxmundham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.176282,
+    "lon" : 1.4733715,
+    "id" : "SNAPE",
+    "name" : "Snape",
+    "type" : "Point"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

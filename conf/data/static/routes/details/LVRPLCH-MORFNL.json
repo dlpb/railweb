@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.404227,
+    "lon" : -2.9795206,
+    "id" : "LVRPLCH",
+    "name" : "Liverpool Central",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.408425,
+    "lon" : -2.9903429,
+    "id" : "MORFNL",
+    "name" : "Moorfields",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

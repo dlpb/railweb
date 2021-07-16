@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.449696,
+    "lon" : 0.014195506,
+    "id" : "LEEE",
+    "name" : "Lee",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.440315,
+    "lon" : 0.049540359,
+    "id" : "MOTNGHM",
+    "name" : "Mottingham",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.364782,
+    "lon" : -1.8172131,
+    "id" : "EDALE",
+    "name" : "Edale",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.354937,
+    "lon" : -1.7428116,
+    "id" : "ERLESDG",
+    "name" : "Earles Sdgs S.B.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

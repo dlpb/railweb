@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.968726,
+    "lon" : -1.3499066,
+    "id" : "ELGH",
+    "name" : "Eastleigh",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.978756,
+    "lon" : -1.345707,
+    "id" : "ELGHENY",
+    "name" : "Eastleigh East Yard",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

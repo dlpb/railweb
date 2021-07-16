@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.572444,
+    "lon" : -0.41467332,
+    "id" : "BNTBFHH",
+    "name" : "Barnetby Dn Recp Sdg (Fhh)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.572426,
+    "lon" : -0.41470419,
+    "id" : "BNTBRSF",
+    "name" : "Barnetby East Eng Sdg Fp",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

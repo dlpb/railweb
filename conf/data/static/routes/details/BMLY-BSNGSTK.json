@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.330129,
+    "lon" : -1.0609056,
+    "id" : "BMLY",
+    "name" : "Bramley (Hampshire)",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.268626,
+    "lon" : -1.0873444,
+    "id" : "BSNGSTK",
+    "name" : "Basingstoke",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

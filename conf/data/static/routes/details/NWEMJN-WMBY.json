@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.564577,
+    "lon" : -0.30490588,
+    "id" : "NWEMJN",
+    "name" : "North Wembley Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.551642,
+    "lon" : -0.29591023,
+    "id" : "WMBY",
+    "name" : "Wembley Central",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE/DC",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.10164,
+    "lon" : -2.4284894,
+    "id" : "CREWSBG",
+    "name" : "Crewe Sydney Bridge",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.086797,
+    "lon" : -2.433896,
+    "id" : "CREWSGJ",
+    "name" : "Crewe Salop Goods Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

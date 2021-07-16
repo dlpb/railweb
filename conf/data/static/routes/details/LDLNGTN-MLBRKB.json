@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.041808,
+    "lon" : -0.55845302,
+    "id" : "LDLNGTN",
+    "name" : "Lidlington",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.054103,
+    "lon" : -0.53257764,
+    "id" : "MLBRKB",
+    "name" : "Millbrook (Bedfordshire)",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

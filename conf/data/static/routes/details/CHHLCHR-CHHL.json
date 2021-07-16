@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.501049,
+    "lon" : -1.663994,
+    "id" : "CHHLCHR",
+    "name" : "Christon Bank",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.536678,
+    "lon" : -1.7065023,
+    "id" : "CHHL",
+    "name" : "Chathill",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.680521,
+    "lon" : -1.100014,
+    "id" : "DONC866",
+    "name" : "Doncaster Sig D866",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.684719,
+    "lon" : -1.0977138,
+    "id" : "HCKPLSM",
+    "name" : "Heck Plasmor P S",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

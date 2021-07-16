@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.503204,
+    "lon" : -2.5638643,
+    "id" : "FILTNEW",
+    "name" : "Filton Abbey Wood",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.525664,
+    "lon" : -2.5622535,
+    "id" : "PATCHWY",
+    "name" : "Patchway",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

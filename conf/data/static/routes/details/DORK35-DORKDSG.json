@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.240894,
+    "lon" : -0.32376491,
+    "id" : "DORK35",
+    "name" : "Dorking Sig Cbk35",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.240894,
+    "lon" : -0.32376491,
+    "id" : "DORKDSG",
+    "name" : "Dorking Down Siding",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

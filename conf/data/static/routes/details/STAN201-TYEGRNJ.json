@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.885136,
+    "lon" : 0.25568689,
+    "id" : "STAN201",
+    "name" : "Stansted Airport Sig L1201",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.893205,
+    "lon" : 0.23149917,
+    "id" : "TYEGRNJ",
+    "name" : "Tye Green Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "1",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

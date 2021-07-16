@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.49323,
+    "lon" : -0.28438965,
+    "id" : "KEWEJ",
+    "name" : "Kew East Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.490241,
+    "lon" : -0.29337504,
+    "id" : "OKEWJN",
+    "name" : "Old Kew Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "NONE",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

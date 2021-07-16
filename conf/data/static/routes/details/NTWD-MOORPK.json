@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.610192,
+    "lon" : -0.42349762,
+    "id" : "NTWD",
+    "name" : "Northwood",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.629206,
+    "lon" : -0.43189768,
+    "id" : "MOORPK",
+    "name" : "Moor Park",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "750V DC 4th Rail",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.329482,
+    "lon" : -0.21433073,
+    "id" : "BANSTED",
+    "name" : "Banstead",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.344287,
+    "lon" : -0.19864989,
+    "id" : "BELM",
+    "name" : "Belmont",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

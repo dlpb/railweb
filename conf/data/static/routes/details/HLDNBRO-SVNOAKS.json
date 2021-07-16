@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.214617,
+    "lon" : 0.22771085,
+    "id" : "HLDNBRO",
+    "name" : "Hildenborough",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.276438,
+    "lon" : 0.18182083,
+    "id" : "SVNOAKS",
+    "name" : "Sevenoaks",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

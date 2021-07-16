@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.612868,
+    "lon" : -2.6025666,
+    "id" : "ADNL",
+    "name" : "Adlington (Lancashire)",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.591186,
+    "lon" : -2.5698216,
+    "id" : "BLRD",
+    "name" : "Blackrod",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.117137,
+    "lon" : -0.1611184,
+    "id" : "THBDGS",
+    "name" : "Three Bridges",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.144481,
+    "lon" : -0.16088974,
+    "id" : "TNSLYGJ",
+    "name" : "Tinsley Green",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

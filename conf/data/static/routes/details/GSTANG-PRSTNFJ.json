@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.887027,
+    "lon" : -2.7476935,
+    "id" : "GSTANG",
+    "name" : "Garstang & Catteral",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.760434,
+    "lon" : -2.7112976,
+    "id" : "PRSTNFJ",
+    "name" : "Preston Fylde Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

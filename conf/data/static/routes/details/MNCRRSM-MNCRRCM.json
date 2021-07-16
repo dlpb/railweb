@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.61,
+    "lon" : -2.1541,
+    "id" : "MNCRRSM",
+    "name" : "Rchdle Stn Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.6174,
+    "lon" : -2.1552,
+    "id" : "MNCRRCM",
+    "name" : "Rochdale Tc Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.562413,
+    "lon" : -0.029529483,
+    "id" : "CLTHRPS",
+    "name" : "Cleethorpes",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.574193,
+    "lon" : -0.059975278,
+    "id" : "NEWCLEE",
+    "name" : "New Clee",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

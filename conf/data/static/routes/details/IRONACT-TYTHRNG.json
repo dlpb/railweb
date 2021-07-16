@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.547403,
+    "lon" : -2.468596,
+    "id" : "IRONACT",
+    "name" : "Iron Acton",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.594878,
+    "lon" : -2.49481,
+    "id" : "TYTHRNG",
+    "name" : "Tytherington",
+    "type" : "Point"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

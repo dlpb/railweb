@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.68531,
+    "lon" : -0.31709452,
+    "id" : "RADLETT",
+    "name" : "Radlett",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.724427,
+    "lon" : -0.32094165,
+    "id" : "STALNAP",
+    "name" : "Napsbury",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

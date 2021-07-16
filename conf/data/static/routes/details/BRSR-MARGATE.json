@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.360947,
+    "lon" : 1.4334373,
+    "id" : "BRSR",
+    "name" : "Broadstairs",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.385193,
+    "lon" : 1.3710947,
+    "id" : "MARGATE",
+    "name" : "Margate",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

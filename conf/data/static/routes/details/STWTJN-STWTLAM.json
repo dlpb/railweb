@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.475938,
+    "lon" : -0.14270757,
+    "id" : "STWTJN",
+    "name" : "Stewarts Lane Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.472468,
+    "lon" : -0.14338126,
+    "id" : "STWTLAM",
+    "name" : "Stewarts Lane Marcon R M C",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

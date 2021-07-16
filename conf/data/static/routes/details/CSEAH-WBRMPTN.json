@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.47554,
+    "lon" : -0.18336079,
+    "id" : "CSEAH",
+    "name" : "Imperial Wharf",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.487114,
+    "lon" : -0.19564809,
+    "id" : "WBRMPTN",
+    "name" : "West Brompton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

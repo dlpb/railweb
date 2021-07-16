@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.182321,
+    "lon" : 0.38950922,
+    "id" : "PKWD",
+    "name" : "Paddock Wood",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.190316,
+    "lon" : 0.28188211,
+    "id" : "TONBPOS",
+    "name" : "Tonbridge P O Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

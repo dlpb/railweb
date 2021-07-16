@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.594196,
+    "lon" : -2.4055446,
+    "id" : "WCKWART",
+    "name" : "Wickwar Tunnel",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.541519,
+    "lon" : -2.4320545,
+    "id" : "YATE",
+    "name" : "Yate",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

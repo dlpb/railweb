@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.709872,
+    "lon" : -2.744797,
+    "id" : "SHRWAFS",
+    "name" : "Shrewsbury Abbey Frgte Cs",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.70959,
+    "lon" : -2.7410917,
+    "id" : "SHRWBAF",
+    "name" : "Shrewsbury Abbey Foregate",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

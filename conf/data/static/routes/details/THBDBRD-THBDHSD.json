@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.118604,
+    "lon" : -0.16118875,
+    "id" : "THBDBRD",
+    "name" : "Three Bridges Back Road",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.117137,
+    "lon" : -0.1611184,
+    "id" : "THBDHSD",
+    "name" : "Three Bridges Horsham Sdg",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

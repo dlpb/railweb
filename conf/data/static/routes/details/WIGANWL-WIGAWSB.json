@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.545188,
+    "lon" : -2.6349113,
+    "id" : "WIGANWL",
+    "name" : "Wigan Wallgate",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.545559,
+    "lon" : -2.6395349,
+    "id" : "WIGAWSB",
+    "name" : "Wigan Wallgate Signal Box",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

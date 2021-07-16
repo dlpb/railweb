@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.400873,
+    "lon" : -1.4374,
+    "id" : "ATTRMGS",
+    "name" : "Attercliffe M&G",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.409176,
+    "lon" : -1.4255116,
+    "id" : "BTSDSJN",
+    "name" : "Brightside Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

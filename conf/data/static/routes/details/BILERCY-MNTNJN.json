@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.628985,
+    "lon" : 0.41755137,
+    "id" : "BILERCY",
+    "name" : "Billericay",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.640226,
+    "lon" : 0.3515914,
+    "id" : "MNTNJN",
+    "name" : "Mountnessing Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

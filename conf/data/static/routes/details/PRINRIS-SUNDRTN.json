@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.717097,
+    "lon" : -0.84414658,
+    "id" : "PRINRIS",
+    "name" : "Princes Risborough",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.675864,
+    "lon" : -0.82535376,
+    "id" : "SUNDRTN",
+    "name" : "Saunderton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

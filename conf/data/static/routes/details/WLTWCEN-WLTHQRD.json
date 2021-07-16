@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 51.582892,
+    "lon" : -0.019946011,
+    "id" : "WLTWCEN",
+    "name" : "Walthamstow Central",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.581472,
+    "lon" : -0.023688402,
+    "id" : "WLTHQRD",
+    "name" : "Walthamstow Queens Road",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : " 7"
+}, {
+  "from" : {
+    "lat" : 51.582892,
+    "lon" : -0.019946011,
+    "id" : "WLTWCEN",
+    "name" : "Walthamstow Central",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.581472,
+    "lon" : -0.023688402,
+    "id" : "WLTHQRD",
+    "name" : "Walthamstow Queens Road",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "7 MINUTES"
+} ]

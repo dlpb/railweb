@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.664941,
+    "lon" : -0.255635,
+    "id" : "WRNGSJD",
+    "name" : "St. James Deeping",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.612374,
+    "lon" : -0.28726545,
+    "id" : "WRNGTNJ",
+    "name" : "Werrington Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

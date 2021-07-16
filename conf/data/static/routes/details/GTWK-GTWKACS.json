@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.156126,
+    "lon" : -0.16084145,
+    "id" : "GTWK",
+    "name" : "Gatwick Airport",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.152247,
+    "lon" : -0.16118159,
+    "id" : "GTWKACS",
+    "name" : "Gatwick Airport C.H.S.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

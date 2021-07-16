@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.553981,
+    "lon" : -0.20849556,
+    "id" : "CRKLWCJ",
+    "name" : "Cricklewood Curve Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.55619,
+    "lon" : -0.21061589,
+    "id" : "CRKLWSJ",
+    "name" : "Cricklewood South Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

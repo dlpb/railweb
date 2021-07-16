@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.543275,
+    "lon" : -0.15766222,
+    "id" : "CMDNJN",
+    "name" : "Camden Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.538996,
+    "lon" : -0.14859173,
+    "id" : "CMDNSTH",
+    "name" : "Camden South Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

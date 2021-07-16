@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.7403,
+    "lon" : -1.1878,
+    "id" : "HLQAW",
+    "name" : "Quorn And Woodhouse",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.7686,
+    "lon" : -1.1959,
+    "id" : "HLLOC",
+    "name" : "Loughborough Central",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "40-75"
+} ]

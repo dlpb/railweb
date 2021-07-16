@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.372625,
+    "lon" : -2.7748297,
+    "id" : "HOUGHGR",
+    "name" : "Hough Green",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.378627,
+    "lon" : -2.7339298,
+    "id" : "WIDNES",
+    "name" : "Widnes",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

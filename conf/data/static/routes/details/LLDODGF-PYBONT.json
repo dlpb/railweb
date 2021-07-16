@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.253709,
+    "lon" : -3.3740988,
+    "id" : "LLDODGF",
+    "name" : "Llandrindod Crossing",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.27433,
+    "lon" : -3.3217081,
+    "id" : "PYBONT",
+    "name" : "Pen-Y-Bont",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

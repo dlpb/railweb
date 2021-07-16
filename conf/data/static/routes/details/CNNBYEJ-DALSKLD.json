@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.54885,
+    "lon" : -0.091248404,
+    "id" : "CNNBYEJ",
+    "name" : "Canonbury East Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.548189,
+    "lon" : -0.076102877,
+    "id" : "DALSKLD",
+    "name" : "Dalston Kingsland",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

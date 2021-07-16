@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.338331,
+    "lon" : -4.8312435,
+    "id" : "BGLWJN",
+    "name" : "Burngullow Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.298178,
+    "lon" : -4.9652883,
+    "id" : "PROBUS",
+    "name" : "Probus",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

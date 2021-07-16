@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.778886,
+    "lon" : -1.2090861,
+    "id" : "GSCGDL",
+    "name" : "Gascoigne Wood Down Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.777855,
+    "lon" : -1.1853718,
+    "id" : "GSCGHAG",
+    "name" : "Hagg Lane Crossing",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

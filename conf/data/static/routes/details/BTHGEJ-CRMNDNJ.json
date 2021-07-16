@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.897988,
+    "lon" : -3.6386903,
+    "id" : "BTHGEJ",
+    "name" : "Bathgate East Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.899032,
+    "lon" : -3.5518545,
+    "id" : "CRMNDNJ",
+    "name" : "Carmondean Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

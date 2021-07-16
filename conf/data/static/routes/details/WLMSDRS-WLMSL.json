@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.324581,
+    "lon" : -2.226375,
+    "id" : "WLMSDRS",
+    "name" : "Wilmslow Down Rev Sdg",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.326388,
+    "lon" : -2.2260693,
+    "id" : "WLMSL",
+    "name" : "Wilmslow",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

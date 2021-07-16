@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.529075,
+    "lon" : -2.4778398,
+    "id" : "ATHERTN",
+    "name" : "Atherton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.533504,
+    "lon" : -2.4937614,
+    "id" : "HAGFOLD",
+    "name" : "Hag Fold",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

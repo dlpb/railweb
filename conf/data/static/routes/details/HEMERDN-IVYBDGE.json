@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.395942,
+    "lon" : -3.9951581,
+    "id" : "HEMERDN",
+    "name" : "Hemerdon",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.393410265239886,
+    "lon" : -3.904204063259927,
+    "id" : "IVYBDGE",
+    "name" : "Ivybridge",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

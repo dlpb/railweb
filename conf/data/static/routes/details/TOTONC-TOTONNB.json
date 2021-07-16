@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.911301,
+    "lon" : -1.2760404,
+    "id" : "TOTONC",
+    "name" : "Toton Centre",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.907006,
+    "lon" : -1.2718892,
+    "id" : "TOTONNB",
+    "name" : "Toton Up Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

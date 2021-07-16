@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.566907,
+    "lon" : -0.24241178,
+    "id" : "PBRO800",
+    "name" : "Peterborough Sig P800",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.566832,
+    "lon" : -0.24219346,
+    "id" : "PBROE",
+    "name" : "Peterborough East Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

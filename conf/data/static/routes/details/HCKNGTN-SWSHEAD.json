@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.977258,
+    "lon" : -0.29425951,
+    "id" : "HCKNGTN",
+    "name" : "Heckington",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.969658,
+    "lon" : -0.1871288,
+    "id" : "SWSHEAD",
+    "name" : "Swineshead",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

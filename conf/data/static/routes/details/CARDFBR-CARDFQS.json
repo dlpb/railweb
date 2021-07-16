@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.467579,
+    "lon" : -3.1668756,
+    "id" : "CARDFBR",
+    "name" : "Cardiff Bay",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.481753,
+    "lon" : -3.170204,
+    "id" : "CARDFQS",
+    "name" : "Cardiff Queen Street",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "45-75"
+} ]

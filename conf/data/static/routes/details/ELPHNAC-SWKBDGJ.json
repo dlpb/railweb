@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.493946,
+    "lon" : -0.098700145,
+    "id" : "ELPHNAC",
+    "name" : "Elephant & Castle",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.499537,
+    "lon" : -0.10021082,
+    "id" : "SWKBDGJ",
+    "name" : "Southwark Bridge Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

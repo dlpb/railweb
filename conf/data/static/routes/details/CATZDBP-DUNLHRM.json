@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.3433,
+    "lon" : -6.2483,
+    "id" : "CATZDBP",
+    "name" : "Dublin Pearse (Cie)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.2949,
+    "lon" : -6.1345,
+    "id" : "DUNLHRM",
+    "name" : "Dun Laoghaire (Civ)",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

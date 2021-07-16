@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.0775,
+    "lon" : -9.0696,
+    "id" : "CATZMIE",
+    "name" : "Millstreet  (Cie",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.085519,
+    "lon" : -9.215963,
+    "id" : "CATZRMR",
+    "name" : "Rathmore    (Cie",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

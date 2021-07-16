@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.919743,
+    "lon" : -1.3896833,
+    "id" : "NTHMFL",
+    "name" : "Southampton Up Yard (Fl)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.921803,
+    "lon" : -1.3881057,
+    "id" : "STDENYS",
+    "name" : "St Denys",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

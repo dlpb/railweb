@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.982313,
+    "lon" : -1.3465687,
+    "id" : "ELGHABK",
+    "name" : "Allbrook",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.978756,
+    "lon" : -1.345707,
+    "id" : "ELGHENY",
+    "name" : "Eastleigh East Yard",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

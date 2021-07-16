@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.450947,
+    "lon" : -2.5781434,
+    "id" : "BRSTHLS",
+    "name" : "Bristol High Level Siding",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.452717,
+    "lon" : -2.5711571,
+    "id" : "BRSTLCW",
+    "name" : "Bristol Barton Hill W.R.D.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

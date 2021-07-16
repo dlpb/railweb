@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.540709,
+    "lon" : -3.2633102,
+    "id" : "TAFFSWL",
+    "name" : "Taffs Well",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.568138,
+    "lon" : -3.2902005,
+    "id" : "TRFRSTE",
+    "name" : "Trefforest Estate",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "45-75"
+} ]

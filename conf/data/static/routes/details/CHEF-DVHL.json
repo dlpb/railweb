@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.312103,
+    "lon" : -1.9184775,
+    "id" : "CHEF",
+    "name" : "Chapel-En-Le-Frith",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.299954,
+    "lon" : -1.8898118,
+    "id" : "DVHL",
+    "name" : "Dove Holes",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

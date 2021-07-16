@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.050804,
+    "lon" : 1.1421794,
+    "id" : "IPSWCHS",
+    "name" : "Ipswich H.S.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.05059017669498,
+    "lon" : 1.1444255837190085,
+    "id" : "IPSWICH",
+    "name" : "Ipswich",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

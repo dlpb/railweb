@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.771283,
+    "lon" : -1.5174568,
+    "id" : "LEEDRMC",
+    "name" : "Leeds Stourton Rmc",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.774012,
+    "lon" : -1.5255887,
+    "id" : "STRT912",
+    "name" : "Stourton Neck Sig S912",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.615227,
+    "lon" : 1.3125845,
+    "id" : "TROWLKJ",
+    "name" : "Trowse Lakenham Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.614096,
+    "lon" : 1.3115239,
+    "id" : "TROWSEJ",
+    "name" : "Trowse Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

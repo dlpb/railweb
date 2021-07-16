@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.621434,
+    "lon" : -3.1453894,
+    "id" : "WELSFLC",
+    "name" : "Fron Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.65791,
+    "lon" : -3.1394681,
+    "id" : "WELSHPL",
+    "name" : "Welshpool",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

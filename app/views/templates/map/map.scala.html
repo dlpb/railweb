@@ -1,13 +1,11 @@
-@(locations: List[models.location.MapLocation], routeList: List[models.route.display.map.MapRoute])
+@(locs: List[models.location.Location], routeList: List[models.route.Route])
 <div id="map" class="map"></div>
 <script type="text/javascript">
         createMap();
-        @for(loc <- locations) {
+        @for(loc <- locs) {
         addLocation({
-            "location": {
-                "lat": @loc.location.lat,
-                "lon": @loc.location.lon
-            },
+            "lat": @loc.lat,
+            "lon": @loc.lon,
             "name":'@loc.name',
             "id": '@loc.id',
             "operator": '@loc.operator',

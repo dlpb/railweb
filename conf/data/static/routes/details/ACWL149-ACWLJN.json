@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.522739,
+    "lon" : -0.2548693,
+    "id" : "ACWL149",
+    "name" : "Acton Wells Jn Sig Aw149",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.522739,
+    "lon" : -0.2548693,
+    "id" : "ACWLJN",
+    "name" : "Acton Wells Junction",
+    "type" : "Location"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

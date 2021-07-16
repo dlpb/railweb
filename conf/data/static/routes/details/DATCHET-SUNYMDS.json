@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.48294,
+    "lon" : -0.57939728,
+    "id" : "DATCHET",
+    "name" : "Datchet",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.469894,
+    "lon" : -0.55889706,
+    "id" : "SUNYMDS",
+    "name" : "Sunnymeads",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

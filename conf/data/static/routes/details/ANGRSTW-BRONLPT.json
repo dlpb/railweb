@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.486861,
+    "lon" : 0.019549215,
+    "id" : "ANGRSTW",
+    "name" : "Angerstein Wharf",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.490688,
+    "lon" : 0.019761569,
+    "id" : "BRONLPT",
+    "name" : "Angerstein Wharf (Bardon)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

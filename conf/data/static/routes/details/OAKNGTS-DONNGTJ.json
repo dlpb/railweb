@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.692974,
+    "lon" : -2.4500864,
+    "id" : "OAKNGTS",
+    "name" : "Oakengates",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.699716,
+    "lon" : -2.497406,
+    "id" : "DONNGTJ",
+    "name" : "Donnington Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

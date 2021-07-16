@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.074688,
+    "lon" : -2.834722,
+    "id" : "BARELA",
+    "name" : "Bare Lane",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.091941,
+    "lon" : -2.8142749,
+    "id" : "HESTBNK",
+    "name" : "Hest Bank",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.041416,
+    "lon" : 1.1511903,
+    "id" : "IPSWGWF",
+    "name" : "Ipswich Griffin Wharf",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.039253,
+    "lon" : 1.1500171,
+    "id" : "IPSWHJN",
+    "name" : "Ipswich Halifax Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

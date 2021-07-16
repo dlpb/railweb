@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.667087,
+    "lon" : -4.8728306,
+    "id" : "LAMPHEY",
+    "name" : "Lamphey",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.673057,
+    "lon" : -4.906522,
+    "id" : "PEMBROK",
+    "name" : "Pembroke",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.269945,
+    "lon" : -1.0789326,
+    "id" : "BSNGSBM",
+    "name" : "Basingstoke Bartn Ml C.S.D",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.268626,
+    "lon" : -1.0873444,
+    "id" : "BSNGSTK",
+    "name" : "Basingstoke",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

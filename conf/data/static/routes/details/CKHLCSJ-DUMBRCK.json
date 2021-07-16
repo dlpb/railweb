@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.839124,
+    "lon" : -4.3172838,
+    "id" : "CKHLCSJ",
+    "name" : "Corkerhill Depot Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.844888,
+    "lon" : -4.3008857,
+    "id" : "DUMBRCK",
+    "name" : "Dumbreck",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

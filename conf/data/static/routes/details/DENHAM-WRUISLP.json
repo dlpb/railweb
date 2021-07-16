@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.578666,
+    "lon" : -0.49750017,
+    "id" : "DENHAM",
+    "name" : "Denham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.569282,
+    "lon" : -0.4365431,
+    "id" : "WRUISLP",
+    "name" : "West Ruislip",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

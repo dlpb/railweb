@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.509111,
+    "lon" : 0.071911,
+    "id" : "DBTGBGAR",
+    "name" : "Gallions Reach",
+    "type" : "Light Rail"
+  },
+  "to" : {
+    "lat" : 51.514411,
+    "lon" : 0.06164,
+    "id" : "DBTGBBEC",
+    "name" : "Beckton",
+    "type" : "Light Rail"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Light Rail",
+  "speed" : "OHLE"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.571992,
+    "lon" : -1.1799095,
+    "id" : "ADWICK",
+    "name" : "Adwick",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.54379,
+    "lon" : -1.1508759,
+    "id" : "BTLYSY",
+    "name" : "Bentley (South Yorkshire)",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

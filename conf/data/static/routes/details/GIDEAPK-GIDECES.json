@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.58190207482915,
+    "lon" : 0.20596430843825325,
+    "id" : "GIDEAPK",
+    "name" : "Gidea Park",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.587268,
+    "lon" : 0.21901469,
+    "id" : "GIDECES",
+    "name" : "Gidea Park Cntr'y End Spur",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

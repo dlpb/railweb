@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.446893,
+    "lon" : -0.23562726,
+    "id" : "CNNGSJN",
+    "name" : "Connington South Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.437354,
+    "lon" : -0.23447832,
+    "id" : "CNNGTNL",
+    "name" : "Connington Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

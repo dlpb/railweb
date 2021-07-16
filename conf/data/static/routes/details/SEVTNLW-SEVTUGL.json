@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.584333,
+    "lon" : -2.7711309,
+    "id" : "SEVTNLW",
+    "name" : "Severn Tunnel West",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.584781,
+    "lon" : -2.7603424,
+    "id" : "SEVTUGL",
+    "name" : "Severn Tunnel Ugl",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.716175,
+    "lon" : -2.6947159,
+    "id" : "FRNGTNJ",
+    "name" : "Farington Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.725744,
+    "lon" : -2.6811574,
+    "id" : "LSTHJN",
+    "name" : "Lostock Hall Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

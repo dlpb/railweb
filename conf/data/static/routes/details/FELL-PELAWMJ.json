@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.957499,
+    "lon" : -1.4853355,
+    "id" : "FELL",
+    "name" : "Fellgate (T & W Metro)",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 54.953679,
+    "lon" : -1.5318372,
+    "id" : "PELAWMJ",
+    "name" : "Pelaw Metro Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE/1500V DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.5324947720042,
+    "lon" : -0.24454788456345455,
+    "id" : "WLSDJHL",
+    "name" : "Willesden Junction",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.532029,
+    "lon" : -0.24342682,
+    "id" : "WLSDJHT",
+    "name" : "Willesden Jn Hl Turnback",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

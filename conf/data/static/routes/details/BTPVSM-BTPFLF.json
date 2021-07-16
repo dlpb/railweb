@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.9249,
+    "lon" : -3.0086,
+    "id" : "BTPVSM",
+    "name" : "Victoria Street (Market)",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 53.9276,
+    "lon" : -3.008,
+    "id" : "BTPFLF",
+    "name" : "Fleetwood Ferry",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

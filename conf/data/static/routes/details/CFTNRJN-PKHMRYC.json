@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.469294,
+    "lon" : -0.078127742,
+    "id" : "CFTNRJN",
+    "name" : "Crofton Road Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.470174,
+    "lon" : -0.069840377,
+    "id" : "PKHMRYC",
+    "name" : "Peckham Rye",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

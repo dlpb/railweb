@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.49109,
+    "lon" : -4.5282963,
+    "id" : "ANNBANK",
+    "name" : "Annbank",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.472781,
+    "lon" : -4.6129711,
+    "id" : "AYRR335",
+    "name" : "Ayr Sig. Pa335",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.524461,
+    "lon" : -2.049332,
+    "id" : "DUDLPT",
+    "name" : "Dudley Port",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.526984,
+    "lon" : -2.0571469,
+    "id" : "WTLN",
+    "name" : "Watery Lane",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

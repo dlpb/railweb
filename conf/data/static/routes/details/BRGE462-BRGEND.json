@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.506795,
+    "lon" : -3.575039,
+    "id" : "BRGE462",
+    "name" : "Port Talbot Sig 3462",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.506795,
+    "lon" : -3.575039,
+    "id" : "BRGEND",
+    "name" : "Bridgend",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

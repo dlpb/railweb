@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.469355,
+    "lon" : -2.0912677,
+    "id" : "CRADLYH",
+    "name" : "Cradley Heath",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.470815,
+    "lon" : -2.0563672,
+    "id" : "OLHL",
+    "name" : "Old Hill",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

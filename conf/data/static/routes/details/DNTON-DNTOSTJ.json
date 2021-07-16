@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.45753,
+    "lon" : -2.1306827,
+    "id" : "DNTON",
+    "name" : "Denton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.453121,
+    "lon" : -2.1351415,
+    "id" : "DNTOSTJ",
+    "name" : "Denton Station Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

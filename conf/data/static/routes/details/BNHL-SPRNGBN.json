@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.877804,
+    "lon" : -4.2234385,
+    "id" : "BNHL",
+    "name" : "Barnhill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.88164,
+    "lon" : -4.2295099,
+    "id" : "SPRNGBN",
+    "name" : "Springburn",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

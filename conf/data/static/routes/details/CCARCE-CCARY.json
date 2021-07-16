@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.100606,
+    "lon" : -2.5184759,
+    "id" : "CCARCE",
+    "name" : "Castle Cary (Ce)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.099824,
+    "lon" : -2.5224231,
+    "id" : "CCARY",
+    "name" : "Castle Cary",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

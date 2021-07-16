@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.842188,
+    "lon" : -4.365498,
+    "id" : "CROKSTN",
+    "name" : "Crookston",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.842081,
+    "lon" : -4.3993393,
+    "id" : "HWKHEAD",
+    "name" : "Hawkhead",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

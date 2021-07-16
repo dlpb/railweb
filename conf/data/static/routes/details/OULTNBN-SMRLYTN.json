@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.477728,
+    "lon" : 1.7158407,
+    "id" : "OULTNBN",
+    "name" : "Oulton Broad North",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.510312,
+    "lon" : 1.6518985,
+    "id" : "SMRLYTN",
+    "name" : "Somerleyton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

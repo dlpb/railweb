@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.902842,
+    "lon" : -2.9624489,
+    "id" : "POWELL",
+    "name" : "Powell",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.945143,
+    "lon" : -2.8740103,
+    "id" : "PONTRLS",
+    "name" : "Pontrilas",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "70-90"
+} ]

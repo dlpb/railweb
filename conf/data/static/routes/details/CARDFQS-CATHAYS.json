@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.481753,
+    "lon" : -3.170204,
+    "id" : "CARDFQS",
+    "name" : "Cardiff Queen Street",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.488939,
+    "lon" : -3.1790012,
+    "id" : "CATHAYS",
+    "name" : "Cathays",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "45-75"
+} ]

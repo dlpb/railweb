@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.001531,
+    "lon" : -2.1762218,
+    "id" : "STOKOTJ",
+    "name" : "Stoke Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.057672,
+    "lon" : -2.1473417,
+    "id" : "STOKMIL",
+    "name" : "Milton",
+    "type" : "Point"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

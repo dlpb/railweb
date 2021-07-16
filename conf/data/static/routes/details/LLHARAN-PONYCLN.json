@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.537638,
+    "lon" : -3.4415009,
+    "id" : "LLHARAN",
+    "name" : "Llanharan",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.523771,
+    "lon" : -3.3917503,
+    "id" : "PONYCLN",
+    "name" : "Pontyclun",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

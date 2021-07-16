@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.635277,
+    "lon" : -2.5486665,
+    "id" : "NWBIBG",
+    "name" : "New Biggin British Gypsum",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.635973,
+    "lon" : -2.5496829,
+    "id" : "NWBIKTH",
+    "name" : "Kirkby Thore Signal Box",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

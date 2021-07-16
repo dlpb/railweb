@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.614096,
+    "lon" : 1.3115239,
+    "id" : "TROWSEJ",
+    "name" : "Trowse Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.615811,
+    "lon" : 1.313264,
+    "id" : "TROWSEY",
+    "name" : "Trowse Yard Redland Siding",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

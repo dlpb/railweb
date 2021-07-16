@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.413482,
+    "lon" : -1.5229649,
+    "id" : "COVNCRD",
+    "name" : "Coundon Rd Lc",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.439077,
+    "lon" : -1.5012112,
+    "id" : "THREESJ",
+    "name" : "Three Spires Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.725838,
+    "lon" : -3.5439667,
+    "id" : "EXET679",
+    "name" : "Exeter Sig 679",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.729828,
+    "lon" : -3.544863,
+    "id" : "EXETRFP",
+    "name" : "Exeter St Davids Fp",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

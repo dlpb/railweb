@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 51.503428,
+    "lon" : -0.084040543,
+    "id" : "LNDNBDG",
+    "name" : "London Bridge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.6475,
+    "lon" : -0.4413,
+    "id" : "CRXLEY",
+    "name" : "Croxley Und",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "71 MINUTES"
+}, {
+  "from" : {
+    "lat" : 51.503428,
+    "lon" : -0.084040543,
+    "id" : "LNDNBDG",
+    "name" : "London Bridge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.6475,
+    "lon" : -0.4413,
+    "id" : "CRXLEY",
+    "name" : "Croxley Und",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "66 MINUTES"
+} ]

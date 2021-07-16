@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.516587,
+    "lon" : -2.568699,
+    "id" : "FILTNWJ",
+    "name" : "Filton West Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.525664,
+    "lon" : -2.5622535,
+    "id" : "PATCHWY",
+    "name" : "Patchway",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

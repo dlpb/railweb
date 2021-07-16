@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.400727,
+    "lon" : -2.0572934,
+    "id" : "MARPLE",
+    "name" : "Marple",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.374759,
+    "lon" : -2.0335999,
+    "id" : "STRINES",
+    "name" : "Strines",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

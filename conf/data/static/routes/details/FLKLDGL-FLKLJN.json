@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.477313,
+    "lon" : -4.6263439,
+    "id" : "FLKLDGL",
+    "name" : "Falkland Dgl",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.481522,
+    "lon" : -4.6253736,
+    "id" : "FLKLJN",
+    "name" : "Falkland Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

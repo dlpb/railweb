@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.032845,
+    "lon" : 0.81611817,
+    "id" : "APDR",
+    "name" : "Appledore (Kent)",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.95718,
+    "lon" : 0.91662592,
+    "id" : "LYDDTWN",
+    "name" : "Lydd Town",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

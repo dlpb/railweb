@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.235241,
+    "lon" : -0.57438663,
+    "id" : "PYEWIPJ",
+    "name" : "Pyewipe Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.267225,
+    "lon" : -0.66441372,
+    "id" : "SAXILBY",
+    "name" : "Saxilby",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

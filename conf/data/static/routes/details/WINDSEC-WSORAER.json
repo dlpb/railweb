@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.48341,
+    "lon" : -0.61113885,
+    "id" : "WINDSEC",
+    "name" : "Windsor & Eton Central",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.485789,
+    "lon" : -0.60622731,
+    "id" : "WSORAER",
+    "name" : "Windsor & Eton Riverside",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "10 MINUTES"
+} ]

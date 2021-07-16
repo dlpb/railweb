@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.471459,
+    "lon" : 0.25236958,
+    "id" : "PRFLFYM",
+    "name" : "Purfleet Foster Yeoman",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.481405,
+    "lon" : 0.236887,
+    "id" : "PURFLET",
+    "name" : "Purfleet",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

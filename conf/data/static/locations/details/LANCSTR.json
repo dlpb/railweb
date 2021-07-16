@@ -1,0 +1,10 @@
+[ {
+  "id" : "LANCSTR",
+  "crp" : "",
+  "route" : "London North Western",
+  "changeTime" : "Set(None)",
+  "interchangeType" : "3 - Large interchange point",
+  "county" : "North West",
+  "district" : "Lancashire",
+  "postcode" : "\"LA1 5NW"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.62248,
+    "lon" : 1.3175809,
+    "id" : "NRCHTMD",
+    "name" : "Norwich C.Pt. T.&R.S.M.D",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.6188,
+    "lon" : 1.3156918,
+    "id" : "TRWSSBJ",
+    "name" : "Trowse Swing Bridge",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

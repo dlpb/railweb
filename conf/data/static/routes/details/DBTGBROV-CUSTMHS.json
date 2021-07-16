@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.509156,
+    "lon" : 0.018083,
+    "id" : "DBTGBROV",
+    "name" : "Royal Victoria",
+    "type" : "Light Rail"
+  },
+  "to" : {
+    "lat" : 51.509639,
+    "lon" : 0.025894,
+    "id" : "CUSTMHS",
+    "name" : "Custom House Crossrail",
+    "type" : "Point"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Unknown",
+  "speed" : "OHLE"
+} ]

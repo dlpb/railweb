@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.903993,
+    "lon" : -4.2244414,
+    "id" : "BSHB",
+    "name" : "Bishopbriggs",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.915186,
+    "lon" : -4.1815389,
+    "id" : "CDDRUPL",
+    "name" : "Cadder Up Passenger Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

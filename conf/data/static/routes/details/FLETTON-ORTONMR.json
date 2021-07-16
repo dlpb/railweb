@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 52.556337,
+    "lon" : -0.24386684,
+    "id" : "FLETTON",
+    "name" : "Fletton Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.562926,
+    "lon" : -0.27374531,
+    "id" : "ORTONMR",
+    "name" : "Orton Mere",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+}, {
+  "from" : {
+    "lat" : 52.556337,
+    "lon" : -0.24386684,
+    "id" : "FLETTON",
+    "name" : "Fletton Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.562926,
+    "lon" : -0.27374531,
+    "id" : "ORTONMR",
+    "name" : "Orton Mere",
+    "type" : "Point"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

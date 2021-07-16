@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.2257,
+    "lon" : -8.735,
+    "id" : "CATZ001",
+    "name" : "Craughwell  (Cie",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.16,
+    "lon" : -8.81,
+    "id" : "CATZ",
+    "name" : "Ardrahan    (Cie",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

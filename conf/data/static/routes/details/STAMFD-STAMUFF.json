@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.647855,
+    "lon" : -0.47993698,
+    "id" : "STAMFD",
+    "name" : "Stamford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.646675,
+    "lon" : -0.41726026,
+    "id" : "STAMUFF",
+    "name" : "Uffington Sb (Lincs)",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

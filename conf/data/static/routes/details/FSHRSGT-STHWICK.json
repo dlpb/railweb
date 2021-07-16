@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.834298,
+    "lon" : -0.21957697,
+    "id" : "FSHRSGT",
+    "name" : "Fishersgate",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.832487,
+    "lon" : -0.237099,
+    "id" : "STHWICK",
+    "name" : "Southwick",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

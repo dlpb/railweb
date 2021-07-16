@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.463203,
+    "lon" : -0.35966943,
+    "id" : "HOUN443",
+    "name" : "Hounslow Signal F443",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.462179,
+    "lon" : -0.36166395,
+    "id" : "HOUNSLW",
+    "name" : "Hounslow",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

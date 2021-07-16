@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.374834,
+    "lon" : -0.092374329,
+    "id" : "ECROYDN",
+    "name" : "East Croydon",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.3739,
+    "lon" : -0.099,
+    "id" : "LTCLGES",
+    "name" : "George Street",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

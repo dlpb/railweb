@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.445409,
+    "lon" : 0.47561211,
+    "id" : "CLFFBM",
+    "name" : "Cliffe Brett Marine",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.43647,
+    "lon" : 0.44643679,
+    "id" : "HOOJ502",
+    "name" : "Hoo Junction Signal Nk502",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

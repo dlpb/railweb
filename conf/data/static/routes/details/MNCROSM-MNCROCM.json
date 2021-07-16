@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.5402,
+    "lon" : -2.1169,
+    "id" : "MNCROSM",
+    "name" : "Oldham K St Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.5405,
+    "lon" : -2.1116,
+    "id" : "MNCROCM",
+    "name" : "Oldham Ctrl Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

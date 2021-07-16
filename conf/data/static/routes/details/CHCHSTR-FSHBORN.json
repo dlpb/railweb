@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.831871,
+    "lon" : -0.78256302,
+    "id" : "CHCHSTR",
+    "name" : "Chichester",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.839099,
+    "lon" : -0.81553743,
+    "id" : "FSHBORN",
+    "name" : "Fishbourne (West Sussex)",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

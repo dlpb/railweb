@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.807683,
+    "lon" : -3.9559997,
+    "id" : "CARFIN",
+    "name" : "Carfin",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.810414,
+    "lon" : -3.9679143,
+    "id" : "HOLYTNJ",
+    "name" : "Holytown Jn",
+    "type" : "Junction"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

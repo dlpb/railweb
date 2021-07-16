@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.502204,
+    "lon" : -1.1143024,
+    "id" : "DONCPCJ",
+    "name" : "Potteric Carr Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.505696,
+    "lon" : -1.1258545,
+    "id" : "DONCRPF",
+    "name" : "Doncaster Ept (F'liners)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

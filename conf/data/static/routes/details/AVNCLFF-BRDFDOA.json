@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.33954,
+    "lon" : -2.2818988,
+    "id" : "AVNCLFF",
+    "name" : "Avoncliff",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.344795,
+    "lon" : -2.2527567,
+    "id" : "BRDFDOA",
+    "name" : "Bradford-On-Avon",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.794417,
+    "lon" : -3.9974646,
+    "id" : "MOTH402",
+    "name" : "Motherwell Signal M402",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.791687,
+    "lon" : -3.9950757,
+    "id" : "MOTHWCS",
+    "name" : "Motherwell Weighs C.H.S.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

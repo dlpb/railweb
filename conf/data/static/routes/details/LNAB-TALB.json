@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.741412,
+    "lon" : -4.0771566,
+    "id" : "LNAB",
+    "name" : "Llanaber",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.772676,
+    "lon" : -4.0969841,
+    "id" : "TALB",
+    "name" : "Talybont",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

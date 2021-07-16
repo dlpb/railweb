@@ -61,12 +61,12 @@ removeAll: Call
                 <h3>Route Data</h3>
                 <ul>
                     @if(!route.toc.isBlank){<li>Primary Operator: <a href="/toc/@route.toc">@route.toc</a></li>}
-                    @if(!route.singleTrack.isBlank){<li>Number of Tracks (Single Track): @route.singleTrack</li>}
-                    @if(!route.electrification.isBlank){<li>Electrification: @route.electrification</li>}
-                    @if(!route.speed.isBlank){<li>Speed (MPH): @route.speed</li>}
+                    <li>Number of Tracks (Single Track): route.singleTrack</li>
+                    <li>Electrification: route .electrification</li>
+                    if(!route.speed.isBlank){<li>Speed (MPH): route.speed</li>}
                     @if(!route.srsCode.isBlank){<li>SRS Code: <a href="/srs/@route.srsCode">@route.srsCode</a></li>}
                     <li>Distance: @(route.distance/1000.0)km</li>
-                    <li>Approximate Travel Time: @route.travelTimeInSeconds.toMinutes minutes</li>
+                    <li>Approximate Travel Time: @(route.travelTimeInSeconds/60) minutes</li>
                 </ul>
             </div>
             @if(visits.nonEmpty){

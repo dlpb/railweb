@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.199811,
+    "lon" : -4.8362883,
+    "id" : "PINMORE",
+    "name" : "Pinmore",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.246483,
+    "lon" : -4.8483306,
+    "id" : "GIRVAN",
+    "name" : "Girvan",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

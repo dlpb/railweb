@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.258319,
+    "lon" : -3.2157596,
+    "id" : "FOXFILD",
+    "name" : "Foxfield",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.232871,
+    "lon" : -3.1872423,
+    "id" : "KRKBYIF",
+    "name" : "Kirkby-In-Furness",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

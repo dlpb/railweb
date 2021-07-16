@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.513534,
+    "lon" : -4.0452995,
+    "id" : "MCHYYNY",
+    "name" : "Ynyslas",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.553294,
+    "lon" : -3.929687,
+    "id" : "MCHYGLA",
+    "name" : "Glandyfi",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

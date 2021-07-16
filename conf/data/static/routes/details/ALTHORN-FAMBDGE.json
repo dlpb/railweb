@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.647776,
+    "lon" : 0.75220318,
+    "id" : "ALTHORN",
+    "name" : "Althorne",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.648627,
+    "lon" : 0.68206623,
+    "id" : "FAMBDGE",
+    "name" : "North Fambridge",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

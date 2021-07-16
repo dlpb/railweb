@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.583786,
+    "lon" : -3.2288976,
+    "id" : "ERGNCHP",
+    "name" : "Energlyn & Churchill Park",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.603686,
+    "lon" : -3.2330737,
+    "id" : "LLBRDCH",
+    "name" : "Llanbradach",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "45-75"
+} ]

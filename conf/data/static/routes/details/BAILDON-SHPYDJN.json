@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.850088,
+    "lon" : -1.7538954,
+    "id" : "BAILDON",
+    "name" : "Baildon",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.835728,
+    "lon" : -1.7684608,
+    "id" : "SHPYDJN",
+    "name" : "Dockfield Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "1",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

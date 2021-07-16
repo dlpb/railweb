@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.7959,
+    "lon" : -3.0564,
+    "id" : "BTPSOP",
+    "name" : "South Pier",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 53.7989,
+    "lon" : -3.0559,
+    "id" : "BTPWAR",
+    "name" : "Waterloo Road",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

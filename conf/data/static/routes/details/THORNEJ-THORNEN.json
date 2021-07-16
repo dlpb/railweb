@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.601101,
+    "lon" : -0.99102446,
+    "id" : "THORNEJ",
+    "name" : "Thorne Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.616126,
+    "lon" : -0.97248039,
+    "id" : "THORNEN",
+    "name" : "Thorne North",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

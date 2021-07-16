@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.41438903604857,
+    "lon" : -1.7883905561976081,
+    "id" : "SOLIHUL",
+    "name" : "Solihull",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.396104,
+    "lon" : -1.7742814,
+    "id" : "WDNYMNR",
+    "name" : "Widney Manor",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

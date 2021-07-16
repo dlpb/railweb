@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 51.472267,
+    "lon" : -0.45087667,
+    "id" : "HTRWUND",
+    "name" : "Heathrow Underground",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.52339,
+    "lon" : -0.16320752,
+    "id" : "MARYLBN",
+    "name" : "London Marylebone",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "61 MINUTES"
+}, {
+  "from" : {
+    "lat" : 51.472267,
+    "lon" : -0.45087667,
+    "id" : "HTRWUND",
+    "name" : "Heathrow Underground",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.52339,
+    "lon" : -0.16320752,
+    "id" : "MARYLBN",
+    "name" : "London Marylebone",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "66 MINUTES"
+} ]

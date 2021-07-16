@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.989704,
+    "lon" : -1.190075,
+    "id" : "NTL1HIV",
+    "name" : "Highbury Vale",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 52.984901,
+    "lon" : -1.182211,
+    "id" : "NTL1DAL",
+    "name" : "David Lane",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

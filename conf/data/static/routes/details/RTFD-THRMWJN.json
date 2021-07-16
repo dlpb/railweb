@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.315092,
+    "lon" : -0.94812569,
+    "id" : "RTFD",
+    "name" : "Retford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.3109,
+    "lon" : -0.96940659,
+    "id" : "THRMWJN",
+    "name" : "Thrumpton West Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

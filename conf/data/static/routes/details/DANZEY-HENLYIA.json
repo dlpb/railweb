@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.324811,
+    "lon" : -1.8208625,
+    "id" : "DANZEY",
+    "name" : "Danzey",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.291,
+    "lon" : -1.784184,
+    "id" : "HENLYIA",
+    "name" : "Henley-In-Arden",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

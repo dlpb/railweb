@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.347712,
+    "lon" : -1.1846301,
+    "id" : "WEEDKGF",
+    "name" : "Kilsby G.F.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.307623,
+    "lon" : -1.1265949,
+    "id" : "WEEDWEL",
+    "name" : "Welton",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

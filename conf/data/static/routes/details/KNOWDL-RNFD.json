@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.494169,
+    "lon" : -2.8740725,
+    "id" : "KNOWDL",
+    "name" : "Dale Lane G.F.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.517046,
+    "lon" : -2.7887742,
+    "id" : "RNFD",
+    "name" : "Rainford",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

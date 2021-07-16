@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.400036,
+    "lon" : 0.043900537,
+    "id" : "BICKLEY",
+    "name" : "Bickley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.400023,
+    "lon" : 0.018697581,
+    "id" : "BROMLYS",
+    "name" : "Bromley South",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

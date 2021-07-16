@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.672615,
+    "lon" : -3.1124014,
+    "id" : "WELSBUT",
+    "name" : "Buttington",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.65791,
+    "lon" : -3.1394681,
+    "id" : "WELSHPL",
+    "name" : "Welshpool",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

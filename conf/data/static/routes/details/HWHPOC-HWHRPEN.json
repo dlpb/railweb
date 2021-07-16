@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.95058,
+    "lon" : -4.0968,
+    "id" : "HWHPOC",
+    "name" : "Pont Croesor",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.93415,
+    "lon" : -4.12392,
+    "id" : "HWHRPEN",
+    "name" : "Pen-Y-Mount",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

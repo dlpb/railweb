@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.727208,
+    "lon" : -1.8642198,
+    "id" : "BOMO",
+    "name" : "Bournemouth",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.72713,
+    "lon" : -1.8586662,
+    "id" : "BOMO011",
+    "name" : "Bournemouth Sig Bc1011",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

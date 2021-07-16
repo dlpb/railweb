@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.507725,
+    "lon" : -0.016503,
+    "id" : "DSBLPOP",
+    "name" : "Poplar",
+    "type" : "Light Rail"
+  },
+  "to" : {
+    "lat" : 51.506723,
+    "lon" : -0.01988,
+    "id" : "DSBLWIQ",
+    "name" : "West India Quay",
+    "type" : "Light Rail"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Light Rail",
+  "speed" : "OHLE"
+} ]

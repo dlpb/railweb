@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.378932,
+    "lon" : -1.7603101,
+    "id" : "BNHTX",
+    "name" : "Bentley Heath Crossing",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.396104,
+    "lon" : -1.7742814,
+    "id" : "WDNYMNR",
+    "name" : "Widney Manor",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

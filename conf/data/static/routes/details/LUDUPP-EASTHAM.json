@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.53514,
+    "lon" : 0.03373,
+    "id" : "LUDUPP",
+    "name" : "Upton Park",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.539,
+    "lon" : 0.0516,
+    "id" : "EASTHAM",
+    "name" : "East Ham Und",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

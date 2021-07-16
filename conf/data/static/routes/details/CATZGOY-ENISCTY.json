@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.6712,
+    "lon" : -6.2922,
+    "id" : "CATZGOY",
+    "name" : "Gorey       (Cie",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.5044,
+    "lon" : -6.5662,
+    "id" : "ENISCTY",
+    "name" : "Enniscorthy (Cie",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

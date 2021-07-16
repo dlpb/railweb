@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.917061,
+    "lon" : -4.3322401,
+    "id" : "BSDN",
+    "name" : "Bearsden",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.920278,
+    "lon" : -4.3198851,
+    "id" : "HLFT",
+    "name" : "Hillfoot",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

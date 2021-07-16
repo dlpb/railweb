@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.322277,
+    "lon" : -2.965284,
+    "id" : "UPHILLJ",
+    "name" : "Uphill Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.352981,
+    "lon" : -2.9211391,
+    "id" : "WORLEJ",
+    "name" : "Worle Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

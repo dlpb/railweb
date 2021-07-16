@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.292816,
+    "lon" : 0.29463511,
+    "id" : "BORWDNL",
+    "name" : "Borough Green Down Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.297263,
+    "lon" : 0.24715954,
+    "id" : "KEMSING",
+    "name" : "Kemsing",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

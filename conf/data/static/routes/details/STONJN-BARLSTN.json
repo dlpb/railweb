@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.909016,
+    "lon" : -2.1559209,
+    "id" : "STONJN",
+    "name" : "Stone Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.942816,
+    "lon" : -2.1682597,
+    "id" : "BARLSTN",
+    "name" : "Barlaston",
+    "type" : "Location"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

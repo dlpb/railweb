@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.866831,
+    "lon" : 0.59151882,
+    "id" : "OREE",
+    "name" : "Ore",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.867821,
+    "lon" : 0.59434532,
+    "id" : "OREESDG",
+    "name" : "Ore Up Siding",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.645175,
+    "lon" : -3.3269293,
+    "id" : "ABRC187",
+    "name" : "Abercynon Signal A187",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.643314,
+    "lon" : -3.3293174,
+    "id" : "ABRCYNS",
+    "name" : "Abercynon",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

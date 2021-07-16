@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.498333,
+    "lon" : -0.05,
+    "id" : "CNDAW",
+    "name" : "Canada Water",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.5008146339941,
+    "lon" : -0.052048573249960046,
+    "id" : "RTHERHI",
+    "name" : "Rotherhithe",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

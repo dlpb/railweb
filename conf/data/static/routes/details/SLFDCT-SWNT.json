@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.486226,
+    "lon" : -2.275747,
+    "id" : "SLFDCT",
+    "name" : "Salford Crescent",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.51476,
+    "lon" : -2.3369176,
+    "id" : "SWNT",
+    "name" : "Swinton (Manchester)",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

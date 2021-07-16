@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.030577,
+    "lon" : -0.11008861,
+    "id" : "ASHWELC",
+    "name" : "Ashwell & Morden",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.993031,
+    "lon" : -0.18693092,
+    "id" : "BALDOCK",
+    "name" : "Baldock",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

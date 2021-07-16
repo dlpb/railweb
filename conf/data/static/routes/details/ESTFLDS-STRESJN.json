@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.40747,
+    "lon" : -0.15480058,
+    "id" : "ESTFLDS",
+    "name" : "Mitcham Eastfields",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.42539,
+    "lon" : -0.1325023,
+    "id" : "STRESJN",
+    "name" : "Streatham South Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

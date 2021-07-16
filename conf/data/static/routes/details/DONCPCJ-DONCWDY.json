@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.502204,
+    "lon" : -1.1143024,
+    "id" : "DONCPCJ",
+    "name" : "Potteric Carr Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.509023,
+    "lon" : -1.1333556,
+    "id" : "DONCWDY",
+    "name" : "Doncaster Wood Yard",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

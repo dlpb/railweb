@@ -63,23 +63,23 @@ nearestLocations: List[PathElementLocation]
             <div class="col col-sm">
                 <h3>Location Data</h3>
                 <ul>
-                    <li>Lat: @location.location.lat</li>
-                    <li>Lon: @location.location.lon</li>
-                    @if(location.location.county.isDefined) {<li>County: @location.location.county</li> }
-                    @if(location.location.district.isDefined) {<li>District: @location.location.district</li> }
-                    @if(location.location.postcode.isDefined) {<li>Postcode: @location.location.postcode</li> }
+                    <li>Lat: @location.lat</li>
+                    <li>Lon: @location.lon</li>
+                    (location.location.county.isDefined) {<li>County: location.location.county</li> }
+                    if(location.location.district.isDefined) {<li>District: location.location.district</li> }
+                    if(location.location.postcode.isDefined) {<li>Postcode: location.location.postcode</li> }
                 </ul>
             </div>
-            @for(nrInfo <- location.nrInfo){
-                @if(!nrInfo.route.isBlank || !nrInfo.srs.isBlank || !nrInfo.crp.isBlank || !nrInfo.interchangeType.isBlank || !nrInfo.changeTime.isBlank) {
+            for(nrInfo <- location.nrInfo){
+                if(!nrInfo.route.isBlank || !nrInfo.srs.isBlank || !nrInfo.crp.isBlank || !nrInfo.interchangeType.isBlank || !nrInfo.changeTime.isBlank) {
                 <div class="col-sm">
                     <h3>Route Info</h3>
                     <ul>
-                        @if(!nrInfo.route.isBlank) {<li>Region: @nrInfo.route</li> }
-                        @if(!nrInfo.srs.isBlank) {<li>SRS: <a href="/srs/@nrInfo.srs">@nrInfo.srs</a></li> }
-                        @if(!nrInfo.crp.isBlank) { <li>CRP: @nrInfo.crp</li>}
-                        @if(!nrInfo.interchangeType.isBlank) {<li>Interchange Type: @nrInfo.interchangeType</li>}
-                        @if(!nrInfo.changeTime.isBlank) {<li>Change Time: @nrInfo.changeTime</li>}
+                        if(!nrInfo.route.isBlank) {<li>Region: nrInfo.route</li> }
+                        if(!nrInfo.srs.isBlank) {<li>SRS: <a href="/srs/nrInfo.srs">nrInfo.srs</a></li> }
+                        if(!nrInfo.crp.isBlank) { <li>CRP: nrInfo.crp</li>}
+                        if(!nrInfo.interchangeType.isBlank) {<li>Interchange Type: nrInfo.interchangeType</li>}
+                        if(!nrInfo.changeTime.isBlank) {<li>Change Time: nrInfo.changeTime</li>}
                     </ul>
                 </div>
                 }
@@ -154,8 +154,8 @@ nearestLocations: List[PathElementLocation]
 
         <script type="text/javascript">
         const operator = "@location.operator";
-        const lat = @location.location.lat;
-        const lon = @location.location.lon;
+        const lat = @location.lat;
+        const lon = @location.lon;
 
         createMap();
         addLocation(

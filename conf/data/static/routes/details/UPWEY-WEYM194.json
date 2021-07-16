@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.648216,
+    "lon" : -2.4660385,
+    "id" : "UPWEY",
+    "name" : "Upwey",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.618224,
+    "lon" : -2.4572608,
+    "id" : "WEYM194",
+    "name" : "Weymouth Signal Dr 194",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

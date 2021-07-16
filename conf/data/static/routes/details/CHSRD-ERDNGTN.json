@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.53595,
+    "lon" : -1.8323897,
+    "id" : "CHSRD",
+    "name" : "Chester Road",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.528731,
+    "lon" : -1.839065,
+    "id" : "ERDNGTN",
+    "name" : "Erdington",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

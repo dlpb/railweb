@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.57146,
+    "lon" : -0.42157,
+    "id" : "LUMRUI",
+    "name" : "Ruislip",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.56147,
+    "lon" : -0.44257,
+    "id" : "LUMICK",
+    "name" : "Ickenham",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.180868,
+    "lon" : -0.32125007,
+    "id" : "HLMW",
+    "name" : "Holmwood",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.151261,
+    "lon" : -0.33617996,
+    "id" : "OCKLYAC",
+    "name" : "Ockley",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.961322,
+    "lon" : -1.1058818,
+    "id" : "YORKEY",
+    "name" : "York Engineers Yard",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.968407,
+    "lon" : -1.1183371,
+    "id" : "YORKYN",
+    "name" : "York Yard Nth R.S.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

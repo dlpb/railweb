@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.896739,
+    "lon" : -4.3031876,
+    "id" : "MRYHPKJ",
+    "name" : "Maryhill Park Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.897458,
+    "lon" : -4.3012787,
+    "id" : "MRYHILL",
+    "name" : "Maryhill",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

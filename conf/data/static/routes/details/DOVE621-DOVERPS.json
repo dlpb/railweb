@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.126134,
+    "lon" : 1.3048387,
+    "id" : "DOVE621",
+    "name" : "Dover Signal Ye 621",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.12605,
+    "lon" : 1.3027456,
+    "id" : "DOVERPS",
+    "name" : "Dover Priory Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

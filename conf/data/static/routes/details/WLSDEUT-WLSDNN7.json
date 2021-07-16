@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.543411,
+    "lon" : -0.27909962,
+    "id" : "WLSDEUT",
+    "name" : "Willesden Euroterminal",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.535748,
+    "lon" : -0.25830817,
+    "id" : "WLSDNN7",
+    "name" : "Willesden No7",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

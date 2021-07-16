@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.860786,
+    "lon" : -1.5456289,
+    "id" : "NSJDRBY",
+    "name" : "North Stafford Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.865336,
+    "lon" : -1.5342476,
+    "id" : "STSNJN",
+    "name" : "Stenson Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

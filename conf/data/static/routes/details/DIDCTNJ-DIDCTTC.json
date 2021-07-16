@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.621339,
+    "lon" : -1.244483,
+    "id" : "DIDCTNJ",
+    "name" : "Didcot North Jn",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.616426,
+    "lon" : -1.2467599,
+    "id" : "DIDCTTC",
+    "name" : "Didcot T.C.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

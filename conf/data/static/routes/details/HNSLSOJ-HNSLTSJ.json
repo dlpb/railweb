@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.77283,
+    "lon" : -1.522264,
+    "id" : "HNSLSOJ",
+    "name" : "Hunslet South Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.777995,
+    "lon" : -1.5351343,
+    "id" : "HNSLTSJ",
+    "name" : "Hunslet Station Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

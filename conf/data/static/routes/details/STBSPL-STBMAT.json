@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.366299,
+    "lon" : -1.4387455,
+    "id" : "STBSPL",
+    "name" : "Spring Lane",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 53.360278,
+    "lon" : -1.4283016,
+    "id" : "STBMAT",
+    "name" : "Manor Top",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

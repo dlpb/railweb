@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.371554,
+    "lon" : -1.7525212,
+    "id" : "DORIDGE",
+    "name" : "Dorridge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.341665,
+    "lon" : -1.7258416,
+    "id" : "LAPWRTH",
+    "name" : "Lapworth",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

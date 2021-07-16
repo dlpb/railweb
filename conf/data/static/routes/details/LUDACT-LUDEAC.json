@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.5025,
+    "lon" : -0.278126,
+    "id" : "LUDACT",
+    "name" : "Acton Town",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.491521,
+    "lon" : -0.193906,
+    "id" : "LUDEAC",
+    "name" : "Earl's Court",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

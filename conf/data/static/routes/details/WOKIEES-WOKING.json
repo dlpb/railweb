@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.320343,
+    "lon" : -0.55227987,
+    "id" : "WOKIEES",
+    "name" : "Woking East End Sidings",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.323095,
+    "lon" : -0.54576369,
+    "id" : "WOKING",
+    "name" : "Woking",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

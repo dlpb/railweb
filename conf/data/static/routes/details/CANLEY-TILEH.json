@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.399179,
+    "lon" : -1.5483984,
+    "id" : "CANLEY",
+    "name" : "Canley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.395184,
+    "lon" : -1.5970387,
+    "id" : "TILEH",
+    "name" : "Tile Hill",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

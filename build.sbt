@@ -38,5 +38,7 @@ scalacOptions ++= Seq(
 javaOptions += "--add-opens java.base/jdk.internal.misc=ALL-UNNAMED"
 
 javaOptions += "--illegal-access=warn"
+javaOptions += "-Xmx300M"
+javaOptions += "-Xss512k"
 
 mappings in Universal ++= directory(baseDirectory.value / "resources")

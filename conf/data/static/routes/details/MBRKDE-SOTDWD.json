@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.911882,
+    "lon" : -1.4395417,
+    "id" : "MBRKDE",
+    "name" : "Millbrook Dock Entrance",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.908055,
+    "lon" : -1.4386204,
+    "id" : "SOTDWD",
+    "name" : "Southampton Western Docks",
+    "type" : "Location"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

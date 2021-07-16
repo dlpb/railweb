@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.470554,
+    "lon" : -1.913397,
+    "id" : "FIVEWYS",
+    "name" : "Five Ways",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.451618,
+    "lon" : -1.9361681,
+    "id" : "UNVRSYB",
+    "name" : "University",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

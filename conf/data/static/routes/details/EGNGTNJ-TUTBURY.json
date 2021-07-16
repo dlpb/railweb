@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.862477,
+    "lon" : -1.6199968,
+    "id" : "EGNGTNJ",
+    "name" : "Egginton Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.863941,
+    "lon" : -1.6809144,
+    "id" : "TUTBURY",
+    "name" : "Tutbury & Hatton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

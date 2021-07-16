@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.129724,
+    "lon" : -3.1882692,
+    "id" : "ROOSPHF",
+    "name" : "Park House Farm",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.114688,
+    "lon" : -3.1944785,
+    "id" : "ROOSE",
+    "name" : "Roose",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

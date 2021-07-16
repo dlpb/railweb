@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.109215,
+    "lon" : -0.36795449,
+    "id" : "MTHRSCP",
+    "name" : "Scopwick",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.041286,
+    "lon" : -0.38045549,
+    "id" : "RSKNGTN",
+    "name" : "Ruskington",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

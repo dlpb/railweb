@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.501649,
+    "lon" : -2.447006,
+    "id" : "WSTLGHM",
+    "name" : "Westerleigh Murco",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.541519,
+    "lon" : -2.4320545,
+    "id" : "YATE",
+    "name" : "Yate",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

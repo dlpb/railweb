@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.194004,
+    "lon" : -2.4401721,
+    "id" : "MDLW",
+    "name" : "Middlewich",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.256872,
+    "lon" : -2.4974784,
+    "id" : "NTHWCSJ",
+    "name" : "Northwich South Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

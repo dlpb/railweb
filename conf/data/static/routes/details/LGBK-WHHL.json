@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.924664,
+    "lon" : -4.5864368,
+    "id" : "LGBK",
+    "name" : "Langbank",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.931422,
+    "lon" : -4.6565686,
+    "id" : "WHHL",
+    "name" : "Woodhall",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "75-90"
+} ]

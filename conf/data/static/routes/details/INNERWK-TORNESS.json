@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.957257,
+    "lon" : -2.4052555,
+    "id" : "INNERWK",
+    "name" : "Innerwick G.S.P.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.969812,
+    "lon" : -2.4359711,
+    "id" : "TORNESS",
+    "name" : "Torness Power Station",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

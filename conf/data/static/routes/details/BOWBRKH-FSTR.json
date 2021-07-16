@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.00415,
+    "lon" : -0.6964609,
+    "id" : "BOWBRKH",
+    "name" : "Bow Brickhill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.000007,
+    "lon" : -0.71709157,
+    "id" : "FSTR",
+    "name" : "Fenny Stratford",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

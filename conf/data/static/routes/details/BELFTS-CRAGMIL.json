@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.597883,
+    "lon" : -1.8043076,
+    "id" : "BELFTS",
+    "name" : "Belford Tamper Sidings",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.606104,
+    "lon" : -1.8153298,
+    "id" : "CRAGMIL",
+    "name" : "Crag Mill Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

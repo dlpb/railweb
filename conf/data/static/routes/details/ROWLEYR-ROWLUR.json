@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.477351,
+    "lon" : -2.0309191,
+    "id" : "ROWLEYR",
+    "name" : "Rowley Regis",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.477351,
+    "lon" : -2.0309191,
+    "id" : "ROWLUR",
+    "name" : "Up Rowley Regis Goods Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

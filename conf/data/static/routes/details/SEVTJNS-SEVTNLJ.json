@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.584035,
+    "lon" : -2.7875939,
+    "id" : "SEVTJNS",
+    "name" : "Severn Tunnel Jcn Sidings",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.584159,
+    "lon" : -2.7770888,
+    "id" : "SEVTNLJ",
+    "name" : "Severn Tunnel Junction",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.459051,
+    "lon" : -0.97251935,
+    "id" : "RDNGSTN",
+    "name" : "Reading",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.459868,
+    "lon" : -0.98689503,
+    "id" : "RDNGTRS",
+    "name" : "Reading Triangle Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

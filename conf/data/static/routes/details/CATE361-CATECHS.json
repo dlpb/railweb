@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.286205,
+    "lon" : -0.080001729,
+    "id" : "CATE361",
+    "name" : "Caterham Signal T1361",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.282585,
+    "lon" : -0.078603998,
+    "id" : "CATECHS",
+    "name" : "Caterham Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

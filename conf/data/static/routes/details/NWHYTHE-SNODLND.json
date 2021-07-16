@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.312634,
+    "lon" : 0.45528301,
+    "id" : "NWHYTHE",
+    "name" : "New Hythe",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.330415,
+    "lon" : 0.44836601,
+    "id" : "SNODLND",
+    "name" : "Snodland",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

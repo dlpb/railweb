@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.795243,
+    "lon" : -3.9968331,
+    "id" : "AMMANFD",
+    "name" : "Ammanford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.82096,
+    "lon" : -4.0037455,
+    "id" : "LLDYBIE",
+    "name" : "Llandybie",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

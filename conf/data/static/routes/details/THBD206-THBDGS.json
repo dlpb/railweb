@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.114291,
+    "lon" : -0.16084562,
+    "id" : "THBD206",
+    "name" : "Three Bridges Signal 1206",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.117137,
+    "lon" : -0.1611184,
+    "id" : "THBDGS",
+    "name" : "Three Bridges",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

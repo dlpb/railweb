@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.501248,
+    "lon" : -0.226776,
+    "id" : "LUH&CGOR",
+    "name" : "Goldhawk Road",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.506063,
+    "lon" : -0.226231,
+    "id" : "LUH&CSBM",
+    "name" : "Shepherd's Bush Market",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

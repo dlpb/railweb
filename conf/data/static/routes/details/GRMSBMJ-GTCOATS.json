@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.571743,
+    "lon" : -0.11705631,
+    "id" : "GRMSBMJ",
+    "name" : "Grimsby Marsh Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.575712,
+    "lon" : -0.12991507,
+    "id" : "GTCOATS",
+    "name" : "Great Coates",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.317879,
+    "lon" : -1.4329776,
+    "id" : "LNGLNDJ",
+    "name" : "Longlands Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.332919,
+    "lon" : -1.4416288,
+    "id" : "NLRTN",
+    "name" : "Northallerton",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

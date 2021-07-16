@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.961422,
+    "lon" : -1.3446261,
+    "id" : "ELGHSJN",
+    "name" : "Eastleigh South Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.960992,
+    "lon" : -1.3514669,
+    "id" : "ELGHTMD",
+    "name" : "Eastleigh Trsmd",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.830713,
+    "lon" : -0.64016831,
+    "id" : "BRHM",
+    "name" : "Barnham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.830813,
+    "lon" : -0.62421877,
+    "id" : "BRHM115",
+    "name" : "Barnham Signal Bh115",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.461475,
+    "lon" : -2.1800814,
+    "id" : "BLLVUE",
+    "name" : "Belle Vue",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.456721,
+    "lon" : -2.1734199,
+    "id" : "RYDRBRW",
+    "name" : "Ryder Brow",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

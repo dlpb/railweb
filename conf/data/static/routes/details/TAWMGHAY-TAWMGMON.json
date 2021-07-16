@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.9774,
+    "lon" : -1.6139,
+    "id" : "TAWMGHAY",
+    "name" : "Haymarket",
+    "type" : "Metro"
+  },
+  "to" : {
+    "lat" : 54.9737,
+    "lon" : -1.6131,
+    "id" : "TAWMGMON",
+    "name" : "Monument",
+    "type" : "Metro"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Metro",
+  "speed" : "OHLE"
+} ]

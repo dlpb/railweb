@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.474538,
+    "lon" : -0.14177084,
+    "id" : "LINFST",
+    "name" : "Linford Street Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.470884,
+    "lon" : -0.13932754,
+    "id" : "FACTRYJ",
+    "name" : "Factory Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

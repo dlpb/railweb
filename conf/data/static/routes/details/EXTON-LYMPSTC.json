@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.668452,
+    "lon" : -3.4442989,
+    "id" : "EXTON",
+    "name" : "Exton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.662326,
+    "lon" : -3.4408141,
+    "id" : "LYMPSTC",
+    "name" : "Lympstone Commando",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

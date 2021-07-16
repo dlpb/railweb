@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.579624,
+    "lon" : -1.1971162,
+    "id" : "ADWICKJ",
+    "name" : "Adwick Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.594881,
+    "lon" : -1.2856242,
+    "id" : "SELMSAL",
+    "name" : "South Elmsall",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

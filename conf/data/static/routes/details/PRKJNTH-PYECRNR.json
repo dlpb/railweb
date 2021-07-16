@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.572329,
+    "lon" : -3.03109,
+    "id" : "PRKJNTH",
+    "name" : "Park North Jcn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.580281,
+    "lon" : -3.0398571,
+    "id" : "PYECRNR",
+    "name" : "Pye Corner",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "30-50"
+} ]

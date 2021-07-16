@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.825965,
+    "lon" : 0.38915634,
+    "id" : "NRMNSBY",
+    "name" : "Normans Bay",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.817616,
+    "lon" : 0.34268728,
+    "id" : "PVNSYBY",
+    "name" : "Pevensey Bay",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

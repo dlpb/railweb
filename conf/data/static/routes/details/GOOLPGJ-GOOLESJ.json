@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.701089,
+    "lon" : -0.88340415,
+    "id" : "GOOLPGJ",
+    "name" : "Potters Grange Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.69333,
+    "lon" : -0.89784568,
+    "id" : "GOOLESJ",
+    "name" : "Engine Shed Jn Goole",
+    "type" : "Point"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

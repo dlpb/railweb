@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.814552,
+    "lon" : -0.3513678,
+    "id" : "HRPNDN",
+    "name" : "Harpenden",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.812562,
+    "lon" : -0.34988817,
+    "id" : "HRPNDNJ",
+    "name" : "Harpenden Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

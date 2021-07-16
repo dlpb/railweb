@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.911855,
+    "lon" : -1.4395704,
+    "id" : "MBRKDX",
+    "name" : "Millbrook Dock Exit",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.909026,
+    "lon" : -1.4274863,
+    "id" : "SOTODGL",
+    "name" : "Southampton Down Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

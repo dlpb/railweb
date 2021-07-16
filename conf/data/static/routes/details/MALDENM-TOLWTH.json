@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.384736,
+    "lon" : -0.26117309,
+    "id" : "MALDENM",
+    "name" : "Malden Manor",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.376745,
+    "lon" : -0.27972434,
+    "id" : "TOLWTH",
+    "name" : "Tolworth",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

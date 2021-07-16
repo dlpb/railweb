@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.637429,
+    "lon" : -3.4627071,
+    "id" : "ALVES",
+    "name" : "Alves Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 57.609825,
+    "lon" : -3.6256832,
+    "id" : "FORRES",
+    "name" : "Forres",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

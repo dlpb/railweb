@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.765096,
+    "lon" : -0.21587388,
+    "id" : "HATFILD",
+    "name" : "Hatfield",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.801145,
+    "lon" : -0.20347191,
+    "id" : "WLWYNGC",
+    "name" : "Welwyn Garden City",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

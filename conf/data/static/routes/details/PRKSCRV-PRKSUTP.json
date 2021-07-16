@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.943658,
+    "lon" : 1.2455617,
+    "id" : "PRKSCRV",
+    "name" : "Parkeston Carless Crv Hsht",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.945489,
+    "lon" : 1.2398287,
+    "id" : "PRKSUTP",
+    "name" : "Harwich Up Tip Sidings Gbf",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

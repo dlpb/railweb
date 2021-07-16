@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.741521,
+    "lon" : -2.9932931,
+    "id" : "ANSDELL",
+    "name" : "Ansdell & Fairhaven",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.753112,
+    "lon" : -3.0289648,
+    "id" : "STAS",
+    "name" : "St Annes-On-The-Sea",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

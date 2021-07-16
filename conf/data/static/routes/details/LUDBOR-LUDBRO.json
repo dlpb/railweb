@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.52709,
+    "lon" : -0.02482,
+    "id" : "LUDBOR",
+    "name" : "Bow Road",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.52466,
+    "lon" : -0.01282,
+    "id" : "LUDBRO",
+    "name" : "Bromley-By-Bow",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.086134,
+    "lon" : -1.309183,
+    "id" : "PINXTON",
+    "name" : "Pinxton",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.085114,
+    "lon" : -1.3240099,
+    "id" : "SLEIESB",
+    "name" : "Sleights East Signal Box",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.451487,
+    "lon" : -2.5706813,
+    "id" : "BRSTLKR",
+    "name" : "Bristol Kingsland Road",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.45167,
+    "lon" : -2.5737345,
+    "id" : "BRSTLEJ",
+    "name" : "Bristol East Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

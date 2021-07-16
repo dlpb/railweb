@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.547018,
+    "lon" : -0.059623677,
+    "id" : "HAKNLEJ",
+    "name" : "Hackney Downs Londn End Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.545243,
+    "lon" : -0.05883388,
+    "id" : "RDGLNJ",
+    "name" : "Reading Lane Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

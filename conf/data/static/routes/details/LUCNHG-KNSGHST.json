@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.509028,
+    "lon" : -0.1962847,
+    "id" : "LUCNHG",
+    "name" : "Notting Hill Gate",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.499831,
+    "lon" : -0.19281185,
+    "id" : "KNSGHST",
+    "name" : "Kensington High St Underground",
+    "type" : "Location"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

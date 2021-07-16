@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.956104,
+    "lon" : -2.9603488,
+    "id" : "PPAN831",
+    "name" : "Prestonpans Signal Ea831",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.953716,
+    "lon" : -2.9714522,
+    "id" : "PPANUPL",
+    "name" : "Prestonpans U.P.L.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.383084,
+    "lon" : -3.0161551,
+    "id" : "GNLN",
+    "name" : "Green Lane",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.372889,
+    "lon" : -3.0110273,
+    "id" : "ROCKFRY",
+    "name" : "Rock Ferry",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.480185,
+    "lon" : -0.13326039,
+    "id" : "NINELMJ",
+    "name" : "Nine Elms Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.486508,
+    "lon" : -0.12266035,
+    "id" : "VAUXHLM",
+    "name" : "Vauxhall",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

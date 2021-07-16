@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.408059,
+    "lon" : -3.0998949,
+    "id" : "LEASOWE",
+    "name" : "Leasowe",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.407251,
+    "lon" : -3.113443,
+    "id" : "MOTO",
+    "name" : "Moreton (Merseyside)",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.129941,
+    "lon" : 0.26301045,
+    "id" : "TUNWELL",
+    "name" : "Tunbridge Wells",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.140033,
+    "lon" : 0.26850768,
+    "id" : "TUNWTJN",
+    "name" : "Wells Tunnel Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

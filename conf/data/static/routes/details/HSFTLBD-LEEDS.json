@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.866111,
+    "lon" : -1.660833,
+    "id" : "HSFTLBD",
+    "name" : "Leeds Brd Airbus",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.794832,
+    "lon" : -1.5452104,
+    "id" : "LEEDS",
+    "name" : "Leeds",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

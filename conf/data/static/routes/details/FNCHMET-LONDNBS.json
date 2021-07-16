@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.5472,
+    "lon" : -0.18027,
+    "id" : "FNCHMET",
+    "name" : "Finchley Road Und",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.5231577,
+    "lon" : -0.156863,
+    "id" : "LONDNBS",
+    "name" : "Baker Street Und",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

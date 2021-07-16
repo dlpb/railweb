@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.483066,
+    "lon" : -1.8553408,
+    "id" : "ADERLYP",
+    "name" : "Adderley Park",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.485197,
+    "lon" : -1.8111121,
+    "id" : "STECHFD",
+    "name" : "Stechford",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.543428,
+    "lon" : -0.024471936,
+    "id" : "HACKNYW",
+    "name" : "Hackney Wick",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.543288,
+    "lon" : -0.016171069,
+    "id" : "LEAJ",
+    "name" : "Lea Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

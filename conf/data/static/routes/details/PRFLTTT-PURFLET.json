@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.471506,
+    "lon" : 0.25228547,
+    "id" : "PRFLTTT",
+    "name" : "Purfleet Deep Wtr Wf (Rfd)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.481405,
+    "lon" : 0.236887,
+    "id" : "PURFLET",
+    "name" : "Purfleet",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

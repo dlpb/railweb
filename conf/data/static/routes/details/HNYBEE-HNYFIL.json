@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.289,
+    "lon" : -1.588,
+    "id" : "HNYBEE",
+    "name" : "Beedale",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 54.30586,
+    "lon" : -1.7182,
+    "id" : "HNYFIL",
+    "name" : "Finghall Lane",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

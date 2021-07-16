@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.374742,
+    "lon" : -2.6044899,
+    "id" : "WRGTWOJ",
+    "name" : "Walton Old Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.370478,
+    "lon" : -2.6086227,
+    "id" : "WRGTWOM",
+    "name" : "Walton Old Jn.M.S.C.Sdgs",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

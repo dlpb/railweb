@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.8611,
+    "lon" : -8.1933,
+    "id" : "CATZNEN",
+    "name" : "Nenagh      (Cie",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.936111,
+    "lon" : -8.024167,
+    "id" : "CATZCLZ",
+    "name" : "Cloughjordn (Cie",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

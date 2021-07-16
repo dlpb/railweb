@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.499444,
+    "lon" : -8.201111,
+    "id" : "LIMERCJ",
+    "name" : "Limerick Junction (Cie",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.346389,
+    "lon" : -8.654167,
+    "id" : "CATZCHJ",
+    "name" : "Charleville (Cie",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

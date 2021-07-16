@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.810069,
+    "lon" : -4.2738688,
+    "id" : "MUIREND",
+    "name" : "Muirend",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.794093,
+    "lon" : -4.2896564,
+    "id" : "WMWD",
+    "name" : "Williamwood",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

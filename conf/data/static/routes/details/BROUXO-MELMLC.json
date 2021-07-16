@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.726072,
+    "lon" : -0.57370674,
+    "id" : "BROUXO",
+    "name" : "Brough Crossover",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.718783,
+    "lon" : -0.53209613,
+    "id" : "MELMLC",
+    "name" : "Melton Lane L.C.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

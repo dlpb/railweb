@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.702717,
+    "lon" : -2.7433283,
+    "id" : "COLHACE",
+    "name" : "Coleham Isu (Ce)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.703502,
+    "lon" : -2.7427941,
+    "id" : "SHRW34",
+    "name" : "Sutton Bridge Jn Sig 34",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

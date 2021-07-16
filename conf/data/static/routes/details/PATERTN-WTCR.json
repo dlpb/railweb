@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.790583,
+    "lon" : -4.3352808,
+    "id" : "PATERTN",
+    "name" : "Patterton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.790307,
+    "lon" : -4.3099165,
+    "id" : "WTCR",
+    "name" : "Whitecraigs",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.446893,
+    "lon" : -0.23562726,
+    "id" : "CNNGSJN",
+    "name" : "Connington South Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.471267,
+    "lon" : -0.2373763,
+    "id" : "HOLME",
+    "name" : "Holme Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

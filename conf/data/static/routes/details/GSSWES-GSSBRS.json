@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.85,
+    "lon" : -4.265278,
+    "id" : "GSSWES",
+    "name" : "West Street",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 55.851667,
+    "lon" : -4.258611,
+    "id" : "GSSBRS",
+    "name" : "Bridge Street",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

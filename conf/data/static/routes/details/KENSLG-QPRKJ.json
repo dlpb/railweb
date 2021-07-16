@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.530598,
+    "lon" : -0.22426356,
+    "id" : "KENSLG",
+    "name" : "Kensal Green",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.533256,
+    "lon" : -0.20982841,
+    "id" : "QPRKJ",
+    "name" : "Queen's Park Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

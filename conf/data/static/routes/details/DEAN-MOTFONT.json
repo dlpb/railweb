@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.042275,
+    "lon" : -1.6334136,
+    "id" : "DEAN",
+    "name" : "Dean",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.033824,
+    "lon" : -1.546772,
+    "id" : "MOTFONT",
+    "name" : "Mottisfont & Dunbridge",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

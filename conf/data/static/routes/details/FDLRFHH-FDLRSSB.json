@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.367345,
+    "lon" : -2.6826687,
+    "id" : "FDLRFHH",
+    "name" : "Fiddlers Ferry P Stn Flhh",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.369415,
+    "lon" : -2.6726772,
+    "id" : "FDLRSSB",
+    "name" : "Fiddlers Ferry S.B.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

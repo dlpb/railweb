@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.797041,
+    "lon" : -1.0708613,
+    "id" : "FRAT554",
+    "name" : "Fratton Shunt Signal Ht554",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.796125,
+    "lon" : -1.0756044,
+    "id" : "FRATTSH",
+    "name" : "Fratton Staff Halt",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

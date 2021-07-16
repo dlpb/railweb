@@ -1,6 +1,6 @@
 @(
 user: models.auth.User,
-locationsGroupedByCrs: List[models.location.GroupedListLocation],
+locationsGroupedByCrs: List[(models.location.Location, List[models.location.Location])],
 tiplocToVisitedStatus: Map[String, Boolean],
 crsGroupToVisitStatus: Map[String, Boolean],
 numberOfTiplocsInCrsGroupVisited: Map[String, Int],
@@ -90,29 +90,29 @@ srs: String)(implicit request: Request[AnyContent])
         </div>
         @for(location <- locationsGroupedByCrs){
         <div style="padding:1px">
-            @if(location.relatedLocations.size > 1){
-                @if(crsGroupToVisitStatus(location.id)) {
+            @if(location._2.size > 1){
+                @if(crsGroupToVisitStatus(location._1.id)) {
                     <span class="badge badge-success">
-                        Visited (@numberOfTiplocsInCrsGroupVisited.get(location.id) / @location.relatedLocations.size)
+                        Visited (@numberOfTiplocsInCrsGroupVisited.get(location._1.id) / @location._2.size)
                     </span>
                 } else {
                     <span class="badge badge-primary">
-                        Not yet visited (0 / @location.relatedLocations.size)
+                        Not yet visited (0 / @location._2.size)
                     </span>
                 }
 
-                @location.name
+                @location._1.name
 
                 <span class="tocBadge badge badge-light float-right">
-                    <slot name="tocBadge">@location.operator</slot>
+                    <slot name="tocBadge">@location._1.operator</slot>
                 </span>
-                @if(location.srs != ""){
+                @if(location._1.srs != ""){
                     <span class="srsBadge badge badge-light float-right">
-                        @location.srs
+                        @location._1.srs
                     </span>
                 }
                 <ul>
-                    @for(relatedLocation <- location.relatedLocations) {
+                    @for(relatedLocation <- location._2) {
                         <li style="list-style-type: none;">
                             <div style="padding: 1px;">
                                 @helper.form(tiplocToCall(relatedLocation.id), Symbol("id") -> "visit-form-@related.id", Symbol("style") -> "display: inline") {
@@ -137,29 +137,29 @@ srs: String)(implicit request: Request[AnyContent])
                 </ul>
 
             } else {
-                @helper.form(tiplocToCall(location.relatedLocations.head.id), Symbol("id") -> "visit-form-@location.relatedLocations.head.id", Symbol("style") -> "display: inline") {
+                @helper.form(tiplocToCall(location._2.head.id), Symbol("id") -> "visit-form-@location.relatedLocations.head.id", Symbol("style") -> "display: inline") {
                     @helper.CSRF.formField
-                    <input type="hidden" id="Authorization-@location.relatedLocations.head.id" name="Authorization" value="@token"/>
-                    @if(tiplocToVisitedStatus(location.relatedLocations.head.id)){
-                        <button id="visited-@location.relatedLocations.head.id" class="btn btn-success btn-sm">Visit</button>
+                    <input type="hidden" id="Authorization-@location._2.head.id" name="Authorization" value="@token"/>
+                    @if(tiplocToVisitedStatus(location._2.head.id)){
+                        <button id="visited-@location._2.head.id" class="btn btn-success btn-sm">Visit</button>
                     } else {
-                        <button id="visit-@location.relatedLocations.head.id" class="btn btn-primary btn-sm">Visit</button>
+                        <button id="visit-@location._2.head.id" class="btn btn-primary btn-sm">Visit</button>
                     }
                 }
-                <a href="/location/detail/@location.relatedLocations.head.id" target="_blank">
-                    @location.name
+                <a href="/location/detail/@location._2.head.id" target="_blank">
+                    @location._1.name
                 </a>
                 <span class="tocBadge badge badge-light float-right">
-                        <slot name="tocBadge">@location.operator</slot>
+                        <slot name="tocBadge">@location._1.operator</slot>
                     </span>
-                @if(location.srs != ""){
+                @if(location._1.srs != ""){
                      <span class="srsBadge badge badge-light float-right">
-                        @location.srs
+                        @location._1.srs
                     </span>
                 }
                 <br/>
-                <a href="/location/detail/@location.relatedLocations.head.id" target="_blank">
-                    <span class="badge badge-light">@location.id</span> <span class="badge badge-light">@location.relatedLocations.head.id</span>
+                <a href="/location/detail/@location._2.head.id" target="_blank">
+                    <span class="badge badge-light">@location._1.id</span> <span class="badge badge-light">@location._2.head.id</span>
                 </a>
             }
         </div>

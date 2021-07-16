@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.952908,
+    "lon" : -1.145485,
+    "id" : "NTL1LAM",
+    "name" : "Lace Market",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 52.947342,
+    "lon" : -1.1426111,
+    "id" : "NTNG",
+    "name" : "Nottingham",
+    "type" : "Station"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

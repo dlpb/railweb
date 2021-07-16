@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.689949,
+    "lon" : -3.5204861,
+    "id" : "FLIMBY",
+    "name" : "Flimby",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.663823,
+    "lon" : -3.5543645,
+    "id" : "SIDICKJ",
+    "name" : "Siddick Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

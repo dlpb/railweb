@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.503103,
+    "lon" : -0.40277361,
+    "id" : "HAYEHLP",
+    "name" : "Hayes & Harlington Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.502934,
+    "lon" : -0.41950758,
+    "id" : "HAYESAH",
+    "name" : "Hayes & Harlington",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

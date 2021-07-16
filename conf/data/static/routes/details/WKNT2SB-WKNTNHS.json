@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.642181,
+    "lon" : -3.5620615,
+    "id" : "WKNT2SB",
+    "name" : "Workington Main No.2 Sb",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.62507,
+    "lon" : -3.5688408,
+    "id" : "WKNTNHS",
+    "name" : "Workington H.S.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

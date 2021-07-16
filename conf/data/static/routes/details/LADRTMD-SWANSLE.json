@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.640117,
+    "lon" : -3.9399022,
+    "id" : "LADRTMD",
+    "name" : "Landore T.M.D.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.633611,
+    "lon" : -3.9363587,
+    "id" : "SWANSLE",
+    "name" : "Swansea Loop East",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

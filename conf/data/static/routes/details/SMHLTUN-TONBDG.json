@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.184263,
+    "lon" : 0.27771946,
+    "id" : "SMHLTUN",
+    "name" : "Somerhill Tunnel",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.191624,
+    "lon" : 0.26966686,
+    "id" : "TONBDG",
+    "name" : "Tonbridge",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "70-90"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.522188,
+    "lon" : -0.20465513,
+    "id" : "PRTOBJP",
+    "name" : "Portobello Jn (London)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.518955,
+    "lon" : -0.19087302,
+    "id" : "ROYAOSD",
+    "name" : "Royal Oak Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

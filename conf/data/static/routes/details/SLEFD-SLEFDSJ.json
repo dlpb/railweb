@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.995422,
+    "lon" : -0.41003587,
+    "id" : "SLEFD",
+    "name" : "Sleaford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.991676,
+    "lon" : -0.38418942,
+    "id" : "SLEFDSJ",
+    "name" : "Sleaford South Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

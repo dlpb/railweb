@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.578741,
+    "lon" : 1.5132789,
+    "id" : "CNTLEY",
+    "name" : "Cantley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.564486,
+    "lon" : 1.559281,
+    "id" : "RDHAMN",
+    "name" : "Reedham (Norfolk)",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

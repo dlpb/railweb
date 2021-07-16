@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.451431,
+    "lon" : 0.24360358,
+    "id" : "THRDRVE",
+    "name" : "Third Drove",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.497763,
+    "lon" : 0.1778373,
+    "id" : "MANEA",
+    "name" : "Manea",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

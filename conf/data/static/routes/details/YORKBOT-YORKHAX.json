@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.985599,
+    "lon" : -1.0808849,
+    "id" : "YORKBOT",
+    "name" : "Bootham",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.016152,
+    "lon" : -1.0649653,
+    "id" : "YORKHAX",
+    "name" : "Haxby",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

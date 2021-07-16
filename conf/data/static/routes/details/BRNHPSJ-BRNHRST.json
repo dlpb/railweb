@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.464121,
+    "lon" : 0.1882427,
+    "id" : "BRNHPSJ",
+    "name" : "Perry Street Fork Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.464973,
+    "lon" : 0.16028043,
+    "id" : "BRNHRST",
+    "name" : "Barnehurst",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

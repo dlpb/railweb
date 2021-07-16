@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.476835,
+    "lon" : -0.032866186,
+    "id" : "NWCROSS",
+    "name" : "New Cross",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.470251,
+    "lon" : -0.025302123,
+    "id" : "NWCRTHJ",
+    "name" : "Tanners Hill Junction (Nx)",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

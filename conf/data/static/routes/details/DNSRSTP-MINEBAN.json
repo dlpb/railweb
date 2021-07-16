@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.1825,
+    "lon" : -3.4459,
+    "id" : "DNSRSTP",
+    "name" : "Dunster Bus",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.205782,
+    "lon" : -3.4778955,
+    "id" : "MINEBAN",
+    "name" : "Minehead Bus",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

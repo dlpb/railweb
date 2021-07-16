@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.597922,
+    "lon" : -2.8054211,
+    "id" : "HOSCAR",
+    "name" : "Hoscar",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.590892,
+    "lon" : -2.7713551,
+    "id" : "PARBOLD",
+    "name" : "Parbold",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.393328,
+    "lon" : 0.49973871,
+    "id" : "RCHTBDJ",
+    "name" : "Rochester Bridge Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.383306,
+    "lon" : 0.37764541,
+    "id" : "SOLEST",
+    "name" : "Sole Street",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

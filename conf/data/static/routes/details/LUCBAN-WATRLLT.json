@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.5134047,
+    "lon" : -0.08905843,
+    "id" : "LUCBAN",
+    "name" : "Bank",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.503577,
+    "lon" : -0.11097923,
+    "id" : "WATRLLT",
+    "name" : "Waterloo Underground",
+    "type" : "Location"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

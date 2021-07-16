@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.485982,
+    "lon" : -1.9032941,
+    "id" : "BHAMSHT",
+    "name" : "Birmingham Snow Hill T/B S",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.484281,
+    "lon" : -1.9004853,
+    "id" : "BHAMSNH",
+    "name" : "Birmingham Snow Hill",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

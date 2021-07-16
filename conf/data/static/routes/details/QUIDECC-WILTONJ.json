@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.080498,
+    "lon" : -1.8397928,
+    "id" : "QUIDECC",
+    "name" : "Quidhampton Sdgs E.C.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.081001,
+    "lon" : -1.8465434,
+    "id" : "WILTONJ",
+    "name" : "Wilton Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

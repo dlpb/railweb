@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.462628,
+    "lon" : -2.2886074,
+    "id" : "TRFDPEJ",
+    "name" : "Trafford Park East Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.454823,
+    "lon" : -2.3114293,
+    "id" : "TRFDPK",
+    "name" : "Trafford Park",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

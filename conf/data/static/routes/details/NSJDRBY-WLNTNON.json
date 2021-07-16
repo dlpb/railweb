@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.860786,
+    "lon" : -1.5456289,
+    "id" : "NSJDRBY",
+    "name" : "North Stafford Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.85326,
+    "lon" : -1.5643148,
+    "id" : "WLNTNON",
+    "name" : "Willington",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

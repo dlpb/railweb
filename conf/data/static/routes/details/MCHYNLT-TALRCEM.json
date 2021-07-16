@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.595436,
+    "lon" : -3.8542743,
+    "id" : "MCHYNLT",
+    "name" : "Machynlleth",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.624573,
+    "lon" : -3.7443872,
+    "id" : "TALRCEM",
+    "name" : "Cemmes Road",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

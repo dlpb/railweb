@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.512062,
+    "lon" : -0.59177858,
+    "id" : "SLOUGH",
+    "name" : "Slough",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.516522,
+    "lon" : -0.61213539,
+    "id" : "SLOUGHY",
+    "name" : "Slough U.G.L.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

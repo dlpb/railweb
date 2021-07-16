@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.731032,
+    "lon" : -3.8487864,
+    "id" : "CRLK",
+    "name" : "Carluke",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.75576,
+    "lon" : -3.8751038,
+    "id" : "LAWJUPL",
+    "name" : "Law Jn U.P.L.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

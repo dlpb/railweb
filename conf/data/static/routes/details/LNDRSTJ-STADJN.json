@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.485138,
+    "lon" : -1.8668643,
+    "id" : "LNDRSTJ",
+    "name" : "Landor Street Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.478559,
+    "lon" : -1.8682681,
+    "id" : "STADJN",
+    "name" : "St Andrews Jn (West Mids)",
+    "type" : "Junction"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

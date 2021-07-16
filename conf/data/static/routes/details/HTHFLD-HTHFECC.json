@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.568995,
+    "lon" : -3.6397868,
+    "id" : "HTHFLD",
+    "name" : "Heathfield Platform",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.571156,
+    "lon" : -3.6434912,
+    "id" : "HTHFECC",
+    "name" : "Heathfield E.C.C.",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.799131,
+    "lon" : -4.7272478,
+    "id" : "NRBERTH",
+    "name" : "Narberth",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.817967,
+    "lon" : -4.6147208,
+    "id" : "WHLAND",
+    "name" : "Whitland",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

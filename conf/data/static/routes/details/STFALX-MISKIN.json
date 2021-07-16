@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.48453,
+    "lon" : -3.2696778,
+    "id" : "STFALX",
+    "name" : "St Fagans L C",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.503547,
+    "lon" : -3.3541625,
+    "id" : "MISKIN",
+    "name" : "Miskin",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

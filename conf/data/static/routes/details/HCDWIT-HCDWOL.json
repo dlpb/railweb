@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.676436,
+    "lon" : -1.7665813,
+    "id" : "HCDWIT",
+    "name" : "Witton-Le-Wear",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 54.726222,
+    "lon" : -1.8844905,
+    "id" : "HCDWOL",
+    "name" : "Wolsingham",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

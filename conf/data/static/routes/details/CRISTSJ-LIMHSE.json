@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.511494,
+    "lon" : -0.062661195,
+    "id" : "CRISTSJ",
+    "name" : "Christian Street Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.512658,
+    "lon" : -0.039624643,
+    "id" : "LIMHSE",
+    "name" : "Limehouse",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

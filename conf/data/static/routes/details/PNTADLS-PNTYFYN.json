@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.717402,
+    "lon" : -4.0450992,
+    "id" : "PNTADLS",
+    "name" : "Pontarddulais",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.778648,
+    "lon" : -3.9976078,
+    "id" : "PNTYFYN",
+    "name" : "Pantyffynnon",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.796337106104,
+    "lon" : -1.0739827022988337,
+    "id" : "FRATGSA",
+    "name" : "Fratton Bus",
+    "type" : "Bus"
+  },
+  "to" : {
+    "lat" : 50.827953,
+    "lon" : -1.0589884,
+    "id" : "HILSEA",
+    "name" : "Hilsea",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

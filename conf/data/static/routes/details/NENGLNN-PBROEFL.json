@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.597821,
+    "lon" : -0.26646772,
+    "id" : "NENGLNN",
+    "name" : "New England Nth Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.583461,
+    "lon" : -0.25534404,
+    "id" : "PBROEFL",
+    "name" : "P'boro Eastfield Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.516233,
+    "lon" : -1.7028888,
+    "id" : "COLESHL",
+    "name" : "Coleshill Parkway",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.517018,
+    "lon" : -1.7005699,
+    "id" : "HMSHBRF",
+    "name" : "Hams Hall Gbrf",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

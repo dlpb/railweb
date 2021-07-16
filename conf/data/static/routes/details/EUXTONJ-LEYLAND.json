@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.678728,
+    "lon" : -2.6777187,
+    "id" : "EUXTONJ",
+    "name" : "Euxton Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.698711,
+    "lon" : -2.6867641,
+    "id" : "LEYLAND",
+    "name" : "Leyland",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

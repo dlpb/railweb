@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.549079,
+    "lon" : 0.045136197,
+    "id" : "WDGRNPK",
+    "name" : "Woodgrange Park",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.551736,
+    "lon" : 0.026214988,
+    "id" : "WNSTDPK",
+    "name" : "Wanstead Park",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

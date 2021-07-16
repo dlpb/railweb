@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.421831,
+    "lon" : -2.2153053,
+    "id" : "BAGE",
+    "name" : "Burnage",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.392976,
+    "lon" : -2.2308133,
+    "id" : "GATLEY",
+    "name" : "Gatley",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

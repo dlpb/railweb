@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.635973,
+    "lon" : -2.5496829,
+    "id" : "NWBIKTH",
+    "name" : "Kirkby Thore Signal Box",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.631731,
+    "lon" : -2.5417873,
+    "id" : "NWBIT55",
+    "name" : "Kirkby Thore Sig. Kt55",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

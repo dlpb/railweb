@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.439272,
+    "lon" : -0.053301272,
+    "id" : "FORESTH",
+    "name" : "Forest Hill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.427438,
+    "lon" : -0.054394087,
+    "id" : "SYDENHM",
+    "name" : "Sydenham",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

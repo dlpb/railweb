@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.97521,
+    "lon" : -1.93314,
+    "id" : "HGHAH",
+    "name" : "Hayles Abbey Halt",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 51.96645,
+    "lon" : -1.96345,
+    "id" : "HGWIN",
+    "name" : "Winchecombe",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

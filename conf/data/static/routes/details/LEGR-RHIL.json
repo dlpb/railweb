@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.42658,
+    "lon" : -2.7254853,
+    "id" : "LEGR",
+    "name" : "Lea Green",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.417137,
+    "lon" : -2.7665811,
+    "id" : "RHIL",
+    "name" : "Rainhill",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

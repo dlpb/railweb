@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.805777,
+    "lon" : -0.20118452,
+    "id" : "WLWY184",
+    "name" : "Welwyn Gdn City Sig K184",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.801145,
+    "lon" : -0.20347191,
+    "id" : "WLWYNGC",
+    "name" : "Welwyn Garden City",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

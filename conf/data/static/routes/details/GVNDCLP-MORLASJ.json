@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.70357,
+    "lon" : -4.054968,
+    "id" : "GVNDCLP",
+    "name" : "Grovesend Colly Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.698736,
+    "lon" : -4.0691189,
+    "id" : "MORLASJ",
+    "name" : "Morlais Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.900921,
+    "lon" : 0.89031447,
+    "id" : "CLCHCSD",
+    "name" : "Colchester C.S.D.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.900858,
+    "lon" : 0.88923455,
+    "id" : "CLCHUSS",
+    "name" : "Colchester Sudbury Dock",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

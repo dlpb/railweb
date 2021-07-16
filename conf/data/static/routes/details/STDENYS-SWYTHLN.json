@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.921803,
+    "lon" : -1.3881057,
+    "id" : "STDENYS",
+    "name" : "St Denys",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.941102,
+    "lon" : -1.3765088,
+    "id" : "SWYTHLN",
+    "name" : "Swaythling",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

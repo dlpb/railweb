@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.758238,
+    "lon" : -2.7087578,
+    "id" : "PRSTNCS",
+    "name" : "Preston C S (Ferry)",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 53.761163,
+    "lon" : -2.712751,
+    "id" : "PRSTSHL",
+    "name" : "Preston Shunt Line",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

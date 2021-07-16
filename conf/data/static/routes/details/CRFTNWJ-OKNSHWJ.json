@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.663221,
+    "lon" : -1.4591714,
+    "id" : "CRFTNWJ",
+    "name" : "Crofton West Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.668094,
+    "lon" : -1.4714745,
+    "id" : "OKNSHWJ",
+    "name" : "Oakenshaw Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

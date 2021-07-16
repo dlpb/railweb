@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.282542,
+    "lon" : -2.3636458,
+    "id" : "DENT",
+    "name" : "Dent",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.321284,
+    "lon" : -2.3267367,
+    "id" : "GARSDLE",
+    "name" : "Garsdale",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

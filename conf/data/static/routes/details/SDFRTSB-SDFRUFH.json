@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.703615,
+    "lon" : -1.195198,
+    "id" : "SDFRTSB",
+    "name" : "Sudforth Lane Signal Box",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.703481,
+    "lon" : -1.1952006,
+    "id" : "SDFRUFH",
+    "name" : "Sudforth Lane Up Rs (Flhh)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

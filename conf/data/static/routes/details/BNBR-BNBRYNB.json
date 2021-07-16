@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.0607,
+    "lon" : -1.3277768,
+    "id" : "BNBR",
+    "name" : "Banbury",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.062371,
+    "lon" : -1.3291521,
+    "id" : "BNBRYNB",
+    "name" : "Banbury North S.B.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.238153,
+    "lon" : 0.91231864,
+    "id" : "ELMSWEL",
+    "name" : "Elmswell",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.249888,
+    "lon" : 0.80889462,
+    "id" : "THUSTON",
+    "name" : "Thurston",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

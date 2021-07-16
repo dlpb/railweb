@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.335974,
+    "lon" : -1.9140921,
+    "id" : "CHNLYEJ",
+    "name" : "Chinley East Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.337759,
+    "lon" : -1.9215975,
+    "id" : "CHNLYNJ",
+    "name" : "Chinley North Jn",
+    "type" : "Junction"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

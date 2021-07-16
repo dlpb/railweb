@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.947342,
+    "lon" : -1.1426111,
+    "id" : "NTNG",
+    "name" : "Nottingham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.943375,
+    "lon" : -1.156655,
+    "id" : "NTL1MWW",
+    "name" : "Meadows Way West",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

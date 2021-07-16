@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.497814,
+    "lon" : -1.8593727,
+    "id" : "WSHWDH1",
+    "name" : "Washwood Heath West Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.503787,
+    "lon" : -1.8408207,
+    "id" : "WSHWUGL",
+    "name" : "Washwood Heath Ugl",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

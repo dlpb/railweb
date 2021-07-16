@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.749337,
+    "lon" : -1.1452726,
+    "id" : "BAROWOS",
+    "name" : "Barrow Upon Soar",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.775663,
+    "lon" : -1.189348,
+    "id" : "LOGHBSJ",
+    "name" : "Loughborough South Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

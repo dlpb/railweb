@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.918616,
+    "lon" : -4.8431464,
+    "id" : "DUNROD",
+    "name" : "Dunrod",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.905838,
+    "lon" : -4.8743266,
+    "id" : "INVERKP",
+    "name" : "Inverkip",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "75-90"
+} ]

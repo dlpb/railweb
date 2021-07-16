@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.526938,
+    "lon" : -1.1397633,
+    "id" : "DONCMRG",
+    "name" : "Donc. Marshgate Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.521849,
+    "lon" : -1.1408015,
+    "id" : "DONCWY",
+    "name" : "Doncaster West Yard",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.020321,
+    "lon" : -0.756719,
+    "id" : "DNBGHNJ",
+    "name" : "Denbigh Hall North Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.009128,
+    "lon" : -0.74326064,
+    "id" : "DNBGHSJ",
+    "name" : "Denbigh Hall South Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

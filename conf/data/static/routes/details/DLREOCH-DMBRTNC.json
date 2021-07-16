@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.947417,
+    "lon" : -4.5777189,
+    "id" : "DLREOCH",
+    "name" : "Dalreoch",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.946511,
+    "lon" : -4.5677119,
+    "id" : "DMBRTNC",
+    "name" : "Dumbarton Central",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

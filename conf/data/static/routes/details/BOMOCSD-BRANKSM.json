@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.727311,
+    "lon" : -1.9158614,
+    "id" : "BOMOCSD",
+    "name" : "Bournemouth T&R.S.M.D",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.727079,
+    "lon" : -1.919163,
+    "id" : "BRANKSM",
+    "name" : "Branksome",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.824114,
+    "lon" : -2.2364147,
+    "id" : "BRIERFL",
+    "name" : "Brierfield",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.793709,
+    "lon" : -2.2446989,
+    "id" : "BURNLYC",
+    "name" : "Burnley Central",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

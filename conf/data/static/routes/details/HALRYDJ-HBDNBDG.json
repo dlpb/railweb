@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.716882,
+    "lon" : -2.0862564,
+    "id" : "HALRYDJ",
+    "name" : "Hall Royd Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.737856,
+    "lon" : -2.00965,
+    "id" : "HBDNBDG",
+    "name" : "Hebden Bridge",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

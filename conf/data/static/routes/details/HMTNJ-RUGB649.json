@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.3702,
+    "lon" : -1.2265467,
+    "id" : "HMTNJ",
+    "name" : "Hillmorton Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.365088,
+    "lon" : -1.2162235,
+    "id" : "RUGB649",
+    "name" : "Rugby Signal Kr9649",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

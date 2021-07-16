@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.56864,
+    "lon" : 0.2201709,
+    "id" : "EMRSPKH",
+    "name" : "Emerson Park",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.574637,
+    "lon" : 0.18236229,
+    "id" : "ROMFORD",
+    "name" : "Romford",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

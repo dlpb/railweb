@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.3936638,
+    "lon" : -2.6377601,
+    "id" : "WRGTWST",
+    "name" : "Warrington West",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.391963,
+    "lon" : -2.5921478,
+    "id" : "WRGT",
+    "name" : "Warrington Central",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

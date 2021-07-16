@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.932573,
+    "lon" : -0.69750177,
+    "id" : "ALNGEJN",
+    "name" : "Allington East Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.915106,
+    "lon" : -0.6483672,
+    "id" : "GTHMNBJ",
+    "name" : "Nottingham Branch Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

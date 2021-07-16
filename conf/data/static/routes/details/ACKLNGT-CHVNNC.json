@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.307087,
+    "lon" : -1.6517402,
+    "id" : "ACKLNGT",
+    "name" : "Acklington",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.280885,
+    "lon" : -1.6548975,
+    "id" : "CHVNNC",
+    "name" : "Chevington Nrth Crossovers",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

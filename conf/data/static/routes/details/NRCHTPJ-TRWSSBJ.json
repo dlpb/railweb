@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.623535,
+    "lon" : 1.3139366,
+    "id" : "NRCHTPJ",
+    "name" : "Thorpe Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.6188,
+    "lon" : 1.3156918,
+    "id" : "TRWSSBJ",
+    "name" : "Trowse Swing Bridge",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

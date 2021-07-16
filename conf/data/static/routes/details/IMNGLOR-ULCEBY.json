@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.639333,
+    "lon" : -0.24091726,
+    "id" : "IMNGLOR",
+    "name" : "Lindsey Oil Refinery",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.61919,
+    "lon" : -0.30081201,
+    "id" : "ULCEBY",
+    "name" : "Ulceby",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

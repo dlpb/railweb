@@ -3,7 +3,7 @@ package controllers.api.plan.locations
 import auth.api.AuthorizedAction
 import javax.inject.{Inject, Singleton}
 import models.auth.roles.PlanUser
-import models.location.MapLocation
+import models.location.Location
 import models.plan.timetable.location.LocationTimetableService
 import models.plan.timetable.trains.TrainTimetableService
 import org.json4s.DefaultFormats
@@ -33,11 +33,11 @@ class PlanLocationsApiController @Inject()(
       authAction { implicit request =>
         if (!request.user.roles.contains(PlanUser)) Unauthorized("User does not have the right role")
         else {
-          val eventualResult: Future[Option[List[MapLocation]]] = timetableService.getTrain(train, year.toString, month.toString, day.toString).map {
+          val eventualResult: Future[Option[List[Location]]] = timetableService.getTrain(train, year.toString, month.toString, day.toString).map {
             f =>
               f map {
                 t =>
-                  timetableService.createSimpleMapLocations(t)
+                  timetableService.createSimpleLocations(t)
               }
           }(scala.concurrent.ExecutionContext.Implicits.global)
           try {
@@ -57,11 +57,11 @@ class PlanLocationsApiController @Inject()(
       authAction { implicit request =>
         if (!request.user.roles.contains(PlanUser)) Unauthorized("User does not have the right role")
         else {
-          val eventualResult: Future[Option[List[MapLocation]]] = timetableService.getTrain(train,  year.toString, month.toString, day.toString).map {
+          val eventualResult: Future[Option[List[Location]]] = timetableService.getTrain(train,  year.toString, month.toString, day.toString).map {
             f =>
               f map {
                 t =>
-                  timetableService.createDetailedMapLocations(t)
+                  timetableService.createDetailedLocations(t)
               }
           }(scala.concurrent.ExecutionContext.Implicits.global)
           try {

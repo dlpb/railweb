@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.399712,
+    "lon" : 0.28444027,
+    "id" : "FAWKHMJ",
+    "name" : "Fawkham Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.412458,
+    "lon" : 0.36586954,
+    "id" : "SNGWLP",
+    "name" : "Singlewell Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

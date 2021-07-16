@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.604945,
+    "lon" : -1.1236983,
+    "id" : "REDCROJ",
+    "name" : "Redcar Ore Terminal Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.610034,
+    "lon" : -1.1190835,
+    "id" : "REDCTPJ",
+    "name" : "Tod Point Jcn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

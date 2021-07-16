@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.524041,
+    "lon" : -2.6755414,
+    "id" : "HLNMOOR",
+    "name" : "Hallen Moor",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.524283,
+    "lon" : -2.689469,
+    "id" : "HLNMJN",
+    "name" : "Hallen Marsh Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

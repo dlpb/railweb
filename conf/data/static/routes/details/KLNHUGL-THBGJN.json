@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.47943,
+    "lon" : -1.300538,
+    "id" : "KLNHUGL",
+    "name" : "Kilnhurst Up Gds Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.462897,
+    "lon" : -1.3077534,
+    "id" : "THBGJN",
+    "name" : "Thrybergh Jn",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

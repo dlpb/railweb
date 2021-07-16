@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.537757,
+    "lon" : -0.19136767,
+    "id" : "KLBRNHR",
+    "name" : "Kilburn High Road",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.541422,
+    "lon" : -0.17889254,
+    "id" : "SHMPSTD",
+    "name" : "South Hampstead",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

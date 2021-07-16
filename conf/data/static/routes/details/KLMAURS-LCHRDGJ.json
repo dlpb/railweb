@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.636811,
+    "lon" : -4.5304966,
+    "id" : "KLMAURS",
+    "name" : "Kilmaurs",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.666264,
+    "lon" : -4.5240176,
+    "id" : "LCHRDGJ",
+    "name" : "Lochridge Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

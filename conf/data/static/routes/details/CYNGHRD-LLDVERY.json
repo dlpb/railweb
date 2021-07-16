@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.051502,
+    "lon" : -3.7484003,
+    "id" : "CYNGHRD",
+    "name" : "Cynghordy",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.995346,
+    "lon" : -3.802903,
+    "id" : "LLDVERY",
+    "name" : "Llandovery",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

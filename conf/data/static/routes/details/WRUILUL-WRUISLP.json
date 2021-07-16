@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.564906,
+    "lon" : -0.42605983,
+    "id" : "WRUILUL",
+    "name" : "West Ruislip L.U.L. Depot",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.569282,
+    "lon" : -0.4365431,
+    "id" : "WRUISLP",
+    "name" : "West Ruislip",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

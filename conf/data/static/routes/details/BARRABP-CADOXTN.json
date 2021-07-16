@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.401881,
+    "lon" : -3.2516023,
+    "id" : "BARRABP",
+    "name" : "Barry Docks Abp Shipment",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.412016,
+    "lon" : -3.2489601,
+    "id" : "CADOXTN",
+    "name" : "Cadoxton",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.743962,
+    "lon" : -0.36676557,
+    "id" : "HULLARJ",
+    "name" : "Anlaby Road Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.743754,
+    "lon" : -0.3483644,
+    "id" : "HULL",
+    "name" : "Hull",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

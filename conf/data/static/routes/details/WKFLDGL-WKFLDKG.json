@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.678542,
+    "lon" : -1.4889656,
+    "id" : "WKFLDGL",
+    "name" : "Wakefield Kirkgate Gd Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.678542,
+    "lon" : -1.4889656,
+    "id" : "WKFLDKG",
+    "name" : "Wakefield Kirkgate",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.477351,
+    "lon" : -2.0309191,
+    "id" : "ROWLUR",
+    "name" : "Up Rowley Regis Goods Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.493456,
+    "lon" : -2.00545,
+    "id" : "LGRN",
+    "name" : "Langley Green",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.066946,
+    "lon" : -2.4792581,
+    "id" : "NANTWLC",
+    "name" : "Willaston L.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.063489,
+    "lon" : -2.5190477,
+    "id" : "NANTWCH",
+    "name" : "Nantwich",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "70-90"
+} ]

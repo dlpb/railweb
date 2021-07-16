@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.6088,
+    "lon" : -3.1662473,
+    "id" : "ORBLTON",
+    "name" : "Orbliston",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 57.543065,
+    "lon" : -3.0769218,
+    "id" : "MULBEN",
+    "name" : "Mulben",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

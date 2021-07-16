@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.633563,
+    "lon" : -0.22999522,
+    "id" : "IMNGHRJ",
+    "name" : "Humber Road Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.632508,
+    "lon" : -0.19250038,
+    "id" : "IMNGSS",
+    "name" : "Immingham Sorting Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

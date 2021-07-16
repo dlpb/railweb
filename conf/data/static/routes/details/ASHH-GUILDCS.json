@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.249686,
+    "lon" : -0.71283158,
+    "id" : "ASHH",
+    "name" : "Ash",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.237419,
+    "lon" : -0.58194394,
+    "id" : "GUILDCS",
+    "name" : "Guildford U.C.H.S.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

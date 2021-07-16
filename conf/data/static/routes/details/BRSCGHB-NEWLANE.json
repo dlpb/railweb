@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.60542,
+    "lon" : -2.8416992,
+    "id" : "BRSCGHB",
+    "name" : "Burscough Bridge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.611513,
+    "lon" : -2.8670327,
+    "id" : "NEWLANE",
+    "name" : "New Lane",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

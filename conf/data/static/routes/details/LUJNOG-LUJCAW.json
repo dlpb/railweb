@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.50056,
+    "lon" : 0.0036,
+    "id" : "LUJNOG",
+    "name" : "North Greenwich",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.50362,
+    "lon" : -0.01987,
+    "id" : "LUJCAW",
+    "name" : "Canary Wharf",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

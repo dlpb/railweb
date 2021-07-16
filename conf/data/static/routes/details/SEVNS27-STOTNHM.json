@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.58068,
+    "lon" : -0.075062879,
+    "id" : "SEVNS27",
+    "name" : "Seven Sisters Sig L1327",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.580429,
+    "lon" : -0.071811542,
+    "id" : "STOTNHM",
+    "name" : "South Tottenham",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

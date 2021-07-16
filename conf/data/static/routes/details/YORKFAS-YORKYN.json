@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.958537,
+    "lon" : -1.1012777,
+    "id" : "YORKFAS",
+    "name" : "York Gr Shed",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.968407,
+    "lon" : -1.1183371,
+    "id" : "YORKYN",
+    "name" : "York Yard Nth R.S.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

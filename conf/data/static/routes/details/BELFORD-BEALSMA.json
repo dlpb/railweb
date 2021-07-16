@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.595542,
+    "lon" : -1.8012725,
+    "id" : "BELFORD",
+    "name" : "Belford L.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.635052,
+    "lon" : -1.8536492,
+    "id" : "BEALSMA",
+    "name" : "Smeafield",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

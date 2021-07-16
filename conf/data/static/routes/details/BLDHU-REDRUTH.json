@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.240508,
+    "lon" : -5.12175,
+    "id" : "BLDHU",
+    "name" : "Baldhu",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.233211,
+    "lon" : -5.2257722,
+    "id" : "REDRUTH",
+    "name" : "Redruth",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.513295,
+    "lon" : -0.32316741,
+    "id" : "WEALJN",
+    "name" : "West Ealing Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.513469,
+    "lon" : -0.32082633,
+    "id" : "WEALING",
+    "name" : "West Ealing",
+    "type" : "Station"
+  },
+  "singleTrack" : "6",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

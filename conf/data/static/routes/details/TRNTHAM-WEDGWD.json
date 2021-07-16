@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.974484,
+    "lon" : -2.1754266,
+    "id" : "TRNTHAM",
+    "name" : "Trentham",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.951119,
+    "lon" : -2.1707924,
+    "id" : "WEDGWD",
+    "name" : "Wedgwood",
+    "type" : "Location"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

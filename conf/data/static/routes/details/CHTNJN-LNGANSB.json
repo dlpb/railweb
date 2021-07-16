@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.063608,
+    "lon" : -3.4568858,
+    "id" : "CHTNJN",
+    "name" : "Charlestown Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.051109,
+    "lon" : -3.6933663,
+    "id" : "LNGANSB",
+    "name" : "Longannet S.B.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

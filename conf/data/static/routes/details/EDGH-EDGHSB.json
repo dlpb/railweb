@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.402548,
+    "lon" : -2.9469327,
+    "id" : "EDGH",
+    "name" : "Edge Hill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.40319,
+    "lon" : -2.9384335,
+    "id" : "EDGHSB",
+    "name" : "Edge Hill S.B.",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

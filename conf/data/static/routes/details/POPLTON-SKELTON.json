@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.975957,
+    "lon" : -1.1483514,
+    "id" : "POPLTON",
+    "name" : "Poppleton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.971175,
+    "lon" : -1.1207332,
+    "id" : "SKELTON",
+    "name" : "Skelton Jn. (York)",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.548376,
+    "lon" : -0.093085558,
+    "id" : "CNNBELL",
+    "name" : "Canonbury",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.546175290908955,
+    "lon" : -0.103763713575122,
+    "id" : "HIGHBYE",
+    "name" : "Highbury & Islington",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

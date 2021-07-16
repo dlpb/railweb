@@ -1,0 +1,10 @@
+[ {
+  "id" : "BRHM",
+  "crp" : "",
+  "route" : "South East",
+  "changeTime" : "Set(Some(ChangeTime(BAA,SN,SN,2,(Barnham))))",
+  "interchangeType" : "2 - Medium interchange point",
+  "county" : "South East",
+  "district" : "West Sussex",
+  "postcode" : "\"PO22 0ES"
+} ]

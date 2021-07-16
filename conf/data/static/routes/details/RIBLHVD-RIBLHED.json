@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.208295,
+    "lon" : -2.3674239,
+    "id" : "RIBLHVD",
+    "name" : "Ribblehead Viaduct",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.205637,
+    "lon" : -2.3608233,
+    "id" : "RIBLHED",
+    "name" : "Ribblehead",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

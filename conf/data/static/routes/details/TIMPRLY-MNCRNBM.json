@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 53.4041,
+    "lon" : -2.3387,
+    "id" : "TIMPRLY",
+    "name" : "Timperley",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.6133,
+    "lon" : -2.1355,
+    "id" : "MNCRNBM",
+    "name" : "Newbold Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "63 MINUTES"
+}, {
+  "from" : {
+    "lat" : 53.4041,
+    "lon" : -2.3387,
+    "id" : "TIMPRLY",
+    "name" : "Timperley",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.6133,
+    "lon" : -2.1355,
+    "id" : "MNCRNBM",
+    "name" : "Newbold Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "66 MINUTES"
+} ]

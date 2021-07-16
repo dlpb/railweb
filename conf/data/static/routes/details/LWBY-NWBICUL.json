@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.694357,
+    "lon" : -2.6635441,
+    "id" : "LWBY",
+    "name" : "Langwathby",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.656248,
+    "lon" : -2.6061296,
+    "id" : "NWBICUL",
+    "name" : "Culgaith Signal Box Lc",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

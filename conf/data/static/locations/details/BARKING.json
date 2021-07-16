@@ -1,0 +1,10 @@
+[ {
+  "id" : "BARKING",
+  "crp" : "",
+  "route" : "Anglia",
+  "changeTime" : "Set(None)",
+  "interchangeType" : "1 - Small interchange point",
+  "county" : "London",
+  "district" : "Greater London",
+  "postcode" : "\"IG11 8TU"
+} ]

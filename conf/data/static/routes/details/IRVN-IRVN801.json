@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.611159,
+    "lon" : -4.6747996,
+    "id" : "IRVN",
+    "name" : "Irvine",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.611159,
+    "lon" : -4.6747996,
+    "id" : "IRVN801",
+    "name" : "Irvine Sig 801",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

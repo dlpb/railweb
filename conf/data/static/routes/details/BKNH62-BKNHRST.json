@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.806776,
+    "lon" : -1.5807895,
+    "id" : "BKNH62",
+    "name" : "Brockenhurst Signal Bh62",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.816525,
+    "lon" : -1.5736474,
+    "id" : "BKNHRST",
+    "name" : "Brockenhurst",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

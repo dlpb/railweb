@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.703502,
+    "lon" : -2.7427941,
+    "id" : "SHRW34",
+    "name" : "Sutton Bridge Jn Sig 34",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.701173,
+    "lon" : -2.7443232,
+    "id" : "SHRWSBJ",
+    "name" : "Sutton Bridge Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

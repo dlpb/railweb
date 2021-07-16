@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.3918,
+    "lon" : -2.2888,
+    "id" : "RDHMTLK",
+    "name" : "Roundthorn Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.3919,
+    "lon" : -2.2798,
+    "id" : "MCFMTLK",
+    "name" : "Martinsctft Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

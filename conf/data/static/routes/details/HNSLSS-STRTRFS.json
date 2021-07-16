@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.773726,
+    "lon" : -1.5259106,
+    "id" : "HNSLSS",
+    "name" : "Hunslet S.S.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.769583,
+    "lon" : -1.5126972,
+    "id" : "STRTRFS",
+    "name" : "Stourton Flt C&W Rfs Eng",
+    "type" : "Point"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

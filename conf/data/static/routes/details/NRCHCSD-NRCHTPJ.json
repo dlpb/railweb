@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.62519,
+    "lon" : 1.3100713,
+    "id" : "NRCHCSD",
+    "name" : "Norwich Stn C.S.D.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.623535,
+    "lon" : 1.3139366,
+    "id" : "NRCHTPJ",
+    "name" : "Thorpe Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

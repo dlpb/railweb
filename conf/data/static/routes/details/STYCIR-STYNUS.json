@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.38403,
+    "lon" : -1.4463133,
+    "id" : "STYCIR",
+    "name" : "Cricket Inn Road",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 53.385526,
+    "lon" : -1.4415438,
+    "id" : "STYNUS",
+    "name" : "Nunnery Square",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

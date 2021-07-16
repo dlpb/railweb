@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.218575,
+    "lon" : -2.3738335,
+    "id" : "BLEMOR",
+    "name" : "Blea Moor",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.208295,
+    "lon" : -2.3674239,
+    "id" : "RIBLHVD",
+    "name" : "Ribblehead Viaduct",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

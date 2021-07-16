@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.487283,
+    "lon" : -0.32209093,
+    "id" : "BRNTGBF",
+    "name" : "Brentford Town Days Gbrf",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.504492,
+    "lon" : -0.38599639,
+    "id" : "STHATC",
+    "name" : "Southall T.C.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

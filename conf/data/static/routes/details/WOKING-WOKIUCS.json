@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.323095,
+    "lon" : -0.54576369,
+    "id" : "WOKING",
+    "name" : "Woking",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.320343,
+    "lon" : -0.55229422,
+    "id" : "WOKIUCS",
+    "name" : "Woking Up C.H.S.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.484379,
+    "lon" : 0.024264615,
+    "id" : "ANGRSTJ",
+    "name" : "Angerstein Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.486662,
+    "lon" : 0.030040903,
+    "id" : "CRLN",
+    "name" : "Charlton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

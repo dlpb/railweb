@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.48294,
+    "lon" : -0.57939728,
+    "id" : "DATCHET",
+    "name" : "Datchet",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.485789,
+    "lon" : -0.60622731,
+    "id" : "WSORAER",
+    "name" : "Windsor & Eton Riverside",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

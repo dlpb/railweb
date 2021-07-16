@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.456019,
+    "lon" : -1.8446129,
+    "id" : "TYSLSJ",
+    "name" : "Tyseley South Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.455777,
+    "lon" : -1.8453201,
+    "id" : "TYSLUDS",
+    "name" : "Tyseley Up & Dwn Thro Sdgs",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

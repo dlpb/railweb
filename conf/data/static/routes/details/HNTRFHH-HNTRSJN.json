@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.721178,
+    "lon" : -4.8610715,
+    "id" : "HNTRFHH",
+    "name" : "Hunterston High Level Fhh",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.716377,
+    "lon" : -4.8595578,
+    "id" : "HNTRSJN",
+    "name" : "Hunterston Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

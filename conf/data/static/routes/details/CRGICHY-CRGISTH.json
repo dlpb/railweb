@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.128482,
+    "lon" : -2.0910958,
+    "id" : "CRGICHY",
+    "name" : "Aberdeen Craiginches T.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 57.130045,
+    "lon" : -2.0777856,
+    "id" : "CRGISTH",
+    "name" : "Craiginches South",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

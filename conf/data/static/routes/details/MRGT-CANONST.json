@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.518374,
+    "lon" : -0.088991509,
+    "id" : "MRGT",
+    "name" : "Moorgate",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.509749,
+    "lon" : -0.091125012,
+    "id" : "CANONST",
+    "name" : "London Cannon Street",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "18 MINUTES"
+} ]

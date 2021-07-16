@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.082821,
+    "lon" : 1.1682212,
+    "id" : "FLKSTNC",
+    "name" : "Folkestone Central",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.087819,
+    "lon" : 1.1894866,
+    "id" : "FLKSTNE",
+    "name" : "Folkestone East",
+    "type" : "Location"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

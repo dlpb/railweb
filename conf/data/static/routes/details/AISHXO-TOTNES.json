@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.423079,
+    "lon" : -3.8458286,
+    "id" : "AISHXO",
+    "name" : "Aish Emergency Crossover",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.435742,
+    "lon" : -3.6890259,
+    "id" : "TOTNES",
+    "name" : "Totnes",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

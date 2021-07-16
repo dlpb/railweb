@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.307623,
+    "lon" : -1.1265949,
+    "id" : "WEEDWEL",
+    "name" : "Welton",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.265687,
+    "lon" : -1.0938772,
+    "id" : "WEEDWIL",
+    "name" : "Wilton Marina",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

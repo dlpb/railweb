@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.578203,
+    "lon" : -1.9924897,
+    "id" : "WALSESD",
+    "name" : "Walsall Tamper Sidings",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.574005,
+    "lon" : -1.9944529,
+    "id" : "WALSPJ",
+    "name" : "Pleck Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

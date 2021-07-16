@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.864145,
+    "lon" : -2.2156077,
+    "id" : "BNWDJN",
+    "name" : "Barnwood Jn.",
+    "type" : "Junction"
+  },
+  "to" : {
+    "lat" : 51.891829,
+    "lon" : -2.1110145,
+    "id" : "CHLTLDL",
+    "name" : "Cheltenham Lansdown Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

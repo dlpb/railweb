@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.941,
+    "lon" : -3.32,
+    "id" : "EDINGWY",
+    "name" : "Edinburgh Gateway",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.936558,
+    "lon" : -3.299547,
+    "id" : "STHGYLE",
+    "name" : "South Gyle",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

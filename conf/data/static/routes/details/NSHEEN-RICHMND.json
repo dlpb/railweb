@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.465422,
+    "lon" : -0.28599423,
+    "id" : "NSHEEN",
+    "name" : "North Sheen",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.46299,
+    "lon" : -0.30055325,
+    "id" : "RICHMND",
+    "name" : "Richmond",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

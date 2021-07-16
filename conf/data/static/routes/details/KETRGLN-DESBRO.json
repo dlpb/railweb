@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.434273,
+    "lon" : -0.74935443,
+    "id" : "KETRGLN",
+    "name" : "Glendon",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.44635,
+    "lon" : -0.82778969,
+    "id" : "DESBRO",
+    "name" : "Desborough Summit",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

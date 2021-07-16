@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.011157,
+    "lon" : -2.2279988,
+    "id" : "HELILOP",
+    "name" : "Hellifield Goods Loops",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.016657,
+    "lon" : -2.2551788,
+    "id" : "LPRESTN",
+    "name" : "Long Preston",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

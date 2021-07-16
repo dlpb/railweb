@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.41236,
+    "lon" : -0.045413758,
+    "id" : "KENTHOS",
+    "name" : "Kent House",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.419671,
+    "lon" : -0.054594471,
+    "id" : "PNGEE",
+    "name" : "Penge East",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

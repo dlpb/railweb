@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.506723,
+    "lon" : -0.01988,
+    "id" : "DSBLWIQ",
+    "name" : "West India Quay",
+    "type" : "Light Rail"
+  },
+  "to" : {
+    "lat" : 51.505946,
+    "lon" : -0.020493,
+    "id" : "DSBLCAW",
+    "name" : "Canary Wharf",
+    "type" : "Light Rail"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Light Rail",
+  "speed" : "OHLE"
+} ]

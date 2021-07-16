@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.1063,
+    "lon" : -4.2017,
+    "id" : "HWHWAU",
+    "name" : "Waunfawr",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 53.082917,
+    "lon" : -4.169806,
+    "id" : "HWHRPLA",
+    "name" : "Plas-Y-Nant",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.216568,
+    "lon" : -5.1120965,
+    "id" : "PERANWL",
+    "name" : "Perranwell",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.259213,
+    "lon" : -5.0730747,
+    "id" : "PNWTHRJ",
+    "name" : "Penwithers Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "15-50"
+} ]

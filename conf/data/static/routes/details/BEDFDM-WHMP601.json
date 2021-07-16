@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.135628,
+    "lon" : -0.47940292,
+    "id" : "BEDFDM",
+    "name" : "Bedford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.120294,
+    "lon" : -0.47842033,
+    "id" : "WHMP601",
+    "name" : "West Hampstead Signal 601",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

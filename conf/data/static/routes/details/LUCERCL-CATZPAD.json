@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.520195,
+    "lon" : -0.166986,
+    "id" : "LUCERCL",
+    "name" : "Edgware Road (Circle Line)",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.51543,
+    "lon" : -0.175409,
+    "id" : "CATZPAD",
+    "name" : "Paddington Und",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

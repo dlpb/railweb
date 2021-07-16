@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.440045,
+    "lon" : -2.6245779,
+    "id" : "ASHJN",
+    "name" : "Ashton Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.432779,
+    "lon" : -2.6092592,
+    "id" : "PARSNST",
+    "name" : "Parson Street",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.403034,
+    "lon" : -2.9954521,
+    "id" : "MANIJN",
+    "name" : "Mann Island Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.404861,
+    "lon" : -2.9919449,
+    "id" : "JAMESST",
+    "name" : "James Street",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

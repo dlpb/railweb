@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.515425,
+    "lon" : -0.17546164,
+    "id" : "PADTLUL",
+    "name" : "Paddington (Bakerloo Line)",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 51.520195,
+    "lon" : -0.166986,
+    "id" : "LUCERCL",
+    "name" : "Edgware Road (Circle Line)",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

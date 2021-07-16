@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.902653,
+    "lon" : -0.45405317,
+    "id" : "LEAG591",
+    "name" : "Leagrave Shunt Sig 591",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.860638,
+    "lon" : -2.0803404,
+    "id" : "LEAGSDG",
+    "name" : "Leagrave Tamper Sdg",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

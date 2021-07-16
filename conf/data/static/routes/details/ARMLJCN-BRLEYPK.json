@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.797427,
+    "lon" : -1.5737392,
+    "id" : "ARMLJCN",
+    "name" : "Armley Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.812182,
+    "lon" : -1.5779786,
+    "id" : "BRLEYPK",
+    "name" : "Burley Park",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

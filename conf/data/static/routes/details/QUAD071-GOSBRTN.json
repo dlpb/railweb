@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.878773,
+    "lon" : -0.19543952,
+    "id" : "QUAD071",
+    "name" : "Quadring Signal Ws7071",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.855309,
+    "lon" : -0.18604581,
+    "id" : "GOSBRTN",
+    "name" : "Gosberton S.B.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

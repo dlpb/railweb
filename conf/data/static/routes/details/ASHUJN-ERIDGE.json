@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.109781,
+    "lon" : 0.1727617,
+    "id" : "ASHUJN",
+    "name" : "Ashurst Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.089483,
+    "lon" : 0.20062809,
+    "id" : "ERIDGE",
+    "name" : "Eridge",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.561676,
+    "lon" : -1.7953384,
+    "id" : "SDON212",
+    "name" : "Swindon Signal Sw1212",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.555752,
+    "lon" : -1.8070194,
+    "id" : "RUSHEYP",
+    "name" : "Rushey Platt",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.412016,
+    "lon" : -3.2489601,
+    "id" : "CADOXTN",
+    "name" : "Cadoxton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.431434,
+    "lon" : -3.2187482,
+    "id" : "DINASP",
+    "name" : "Dinas Powys",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "45-75"
+} ]

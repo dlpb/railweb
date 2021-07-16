@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.703433,
+    "lon" : -1.19352,
+    "id" : "SDFRTLA",
+    "name" : "Sudforth Lane Down (Ews)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.699123,
+    "lon" : -1.158856,
+    "id" : "WHTBDGE",
+    "name" : "Whitley Bridge",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

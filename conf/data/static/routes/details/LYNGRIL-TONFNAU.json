@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.666778,
+    "lon" : -4.0877823,
+    "id" : "LYNGRIL",
+    "name" : "Llwyngwril",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.613945,
+    "lon" : -4.1237027,
+    "id" : "TONFNAU",
+    "name" : "Tonfanau",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.570839,
+    "lon" : -1.7669308,
+    "id" : "HGHWTHJ",
+    "name" : "Highworth Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.565714,
+    "lon" : -1.7856254,
+    "id" : "SDON",
+    "name" : "Swindon",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

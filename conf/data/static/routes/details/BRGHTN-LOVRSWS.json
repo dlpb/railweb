@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.829844,
+    "lon" : -0.14099136,
+    "id" : "BRGHTN",
+    "name" : "Brighton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.835674,
+    "lon" : -0.14625593,
+    "id" : "LOVRSWS",
+    "name" : "Lovers Walk T&R.S.M.D",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

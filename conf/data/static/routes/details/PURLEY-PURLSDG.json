@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.339437,
+    "lon" : -0.11059946,
+    "id" : "PURLEY",
+    "name" : "Purley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.339796,
+    "lon" : -0.10999603,
+    "id" : "PURLSDG",
+    "name" : "Purley Down Siding",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

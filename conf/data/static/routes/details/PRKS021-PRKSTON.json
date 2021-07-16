@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.946619,
+    "lon" : 1.2503748,
+    "id" : "PRKS021",
+    "name" : "Parkeston Sig P21",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.947171,
+    "lon" : 1.2557708,
+    "id" : "PRKSTON",
+    "name" : "Harwich International",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

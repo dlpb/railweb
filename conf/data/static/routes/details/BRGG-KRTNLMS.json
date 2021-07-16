@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.54893,
+    "lon" : -0.48626822,
+    "id" : "BRGG",
+    "name" : "Brigg",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.499875,
+    "lon" : -0.56948967,
+    "id" : "KRTNLMS",
+    "name" : "Kirton Lime Sdgs",
+    "type" : "Point"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

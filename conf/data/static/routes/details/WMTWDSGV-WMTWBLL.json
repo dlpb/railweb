@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.52512,
+    "lon" : -2.00851,
+    "id" : "WMTWDSGV",
+    "name" : "Dudley Street Guns Village",
+    "type" : "Metro"
+  },
+  "to" : {
+    "lat" : 52.53096,
+    "lon" : -2.01114,
+    "id" : "WMTWBLL",
+    "name" : "Black Lake",
+    "type" : "Metro"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Metro",
+  "speed" : "OHLE"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.274036,
+    "lon" : 0.51752039,
+    "id" : "KENETRS",
+    "name" : "Kennett Redland Siding",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.273956,
+    "lon" : 0.51786772,
+    "id" : "KENNTGF",
+    "name" : "Kennet Redland Ground Frme",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.651952,
+    "lon" : -3.5570887,
+    "id" : "WKNTDJ",
+    "name" : "Workington Derwent Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.650064,
+    "lon" : -3.5598995,
+    "id" : "WKNTDKS",
+    "name" : "Workington Docks (Ccc)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

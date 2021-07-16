@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.491029,
+    "lon" : 0.11967829,
+    "id" : "ABWD",
+    "name" : "Abbey Wood",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.490036,
+    "lon" : 0.088833924,
+    "id" : "PLMSTCS",
+    "name" : "Plumstead C.H.S.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

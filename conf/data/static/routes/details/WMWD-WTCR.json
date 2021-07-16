@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.794093,
+    "lon" : -4.2896564,
+    "id" : "WMWD",
+    "name" : "Williamwood",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.790307,
+    "lon" : -4.3099165,
+    "id" : "WTCR",
+    "name" : "Whitecraigs",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

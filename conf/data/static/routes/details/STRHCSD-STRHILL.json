@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.439663,
+    "lon" : -0.13599223,
+    "id" : "STRHCSD",
+    "name" : "Streatham Hill C.S.D.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.438455,
+    "lon" : -0.12848744,
+    "id" : "STRHILL",
+    "name" : "Streatham Hill",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

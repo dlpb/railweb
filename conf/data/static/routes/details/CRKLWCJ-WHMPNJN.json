@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.553981,
+    "lon" : -0.20849556,
+    "id" : "CRKLWCJ",
+    "name" : "Cricklewood Curve Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.548774,
+    "lon" : -0.19670006,
+    "id" : "WHMPNJN",
+    "name" : "West Hampstead North Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

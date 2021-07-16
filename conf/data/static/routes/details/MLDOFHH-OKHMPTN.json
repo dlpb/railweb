@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.714122,
+    "lon" : -4.0325954,
+    "id" : "MLDOFHH",
+    "name" : "Meldon Quarry Fhh",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.732274,
+    "lon" : -3.997089,
+    "id" : "OKHMPTN",
+    "name" : "Okehampton",
+    "type" : "Station"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

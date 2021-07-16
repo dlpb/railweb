@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.53472,
+    "lon" : -0.17428,
+    "id" : "LUJSJW",
+    "name" : "St. John's Wood",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.54333,
+    "lon" : -0.17436,
+    "id" : "LUJSWC",
+    "name" : "Swiss Cottage",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

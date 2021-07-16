@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.52671,
+    "lon" : -0.28417,
+    "id" : "LUPPAR",
+    "name" : "Park Royal",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.54097,
+    "lon" : -0.30061,
+    "id" : "LUPALP",
+    "name" : "Alperton",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

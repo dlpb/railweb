@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.711852,
+    "lon" : -1.3481759,
+    "id" : "BARDONH",
+    "name" : "Bardon Hill",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.718478,
+    "lon" : -1.3614012,
+    "id" : "COALJN",
+    "name" : "Coalville Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

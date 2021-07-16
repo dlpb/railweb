@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.105403,
+    "lon" : 0.16561749,
+    "id" : "WTLEDGL",
+    "name" : "Whittlesford Dn Goods Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.103334,
+    "lon" : 0.16566327,
+    "id" : "WTLESFD",
+    "name" : "Whittlesford Parkway",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

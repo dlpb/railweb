@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.185738,
+    "lon" : -5.4196246,
+    "id" : "HAYLE",
+    "name" : "Hayle",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.170731,
+    "lon" : -5.4439891,
+    "id" : "STERTH",
+    "name" : "St Erth",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

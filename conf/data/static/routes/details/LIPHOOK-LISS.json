@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.071314437912584,
+    "lon" : -0.8002284526369142,
+    "id" : "LIPHOOK",
+    "name" : "Liphook",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.043936,
+    "lon" : -0.89263017,
+    "id" : "LISS",
+    "name" : "Liss",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

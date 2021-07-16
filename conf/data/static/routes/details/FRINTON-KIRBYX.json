@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.837804,
+    "lon" : 1.2432666,
+    "id" : "FRINTON",
+    "name" : "Frinton-On-Sea",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.841388,
+    "lon" : 1.2139901,
+    "id" : "KIRBYX",
+    "name" : "Kirby Cross",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

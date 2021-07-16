@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.451336,
+    "lon" : -2.6371693,
+    "id" : "ERLSTWN",
+    "name" : "Earlestown",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.453105,
+    "lon" : -2.6134331,
+    "id" : "NWTNLW",
+    "name" : "Newton-Le-Willows",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

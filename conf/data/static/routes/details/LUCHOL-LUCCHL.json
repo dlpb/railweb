@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.51711,
+    "lon" : -0.12055,
+    "id" : "LUCHOL",
+    "name" : "Holborn",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.51836,
+    "lon" : -0.11115,
+    "id" : "LUCCHL",
+    "name" : "Chancery Lane",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

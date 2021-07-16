@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.527567,
+    "lon" : 0.0045976702,
+    "id" : "WHAMLT",
+    "name" : "West Ham Lt",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.51388,
+    "lon" : 0.008876,
+    "id" : "DBTGBCAT",
+    "name" : "Canning Town",
+    "type" : "Light Rail"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

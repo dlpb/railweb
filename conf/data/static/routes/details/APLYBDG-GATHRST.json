@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.578668,
+    "lon" : -2.7194182,
+    "id" : "APLYBDG",
+    "name" : "Appley Bridge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.559465,
+    "lon" : -2.6941527,
+    "id" : "GATHRST",
+    "name" : "Gathurst",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

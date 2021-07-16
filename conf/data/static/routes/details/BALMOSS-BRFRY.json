@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.474721,
+    "lon" : -2.8383748,
+    "id" : "BALMOSS",
+    "name" : "Balmossie",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.46763,
+    "lon" : -2.8738935,
+    "id" : "BRFRY",
+    "name" : "Broughty Ferry",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

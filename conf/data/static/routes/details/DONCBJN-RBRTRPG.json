@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.514742,
+    "lon" : -1.1399198,
+    "id" : "DONCBJN",
+    "name" : "Bridge Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.507692,
+    "lon" : -1.131723,
+    "id" : "RBRTRPG",
+    "name" : "Doncaster Roberts Rd Rp Gb",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

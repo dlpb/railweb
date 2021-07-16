@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.46153,
+    "lon" : -2.9629908,
+    "id" : "ORELPKH",
+    "name" : "Orrell Park",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.456373,
+    "lon" : -2.9660518,
+    "id" : "WALTONM",
+    "name" : "Walton (Merseyside)",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

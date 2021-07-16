@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.832194,
+    "lon" : -0.1473879,
+    "id" : "BRGH280",
+    "name" : "Brighton Signal T1280",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.831633,
+    "lon" : -0.14380305,
+    "id" : "BRGHWS",
+    "name" : "Brighton Wall Siding",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

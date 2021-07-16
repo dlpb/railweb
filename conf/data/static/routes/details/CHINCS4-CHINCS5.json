@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.630504,
+    "lon" : 0.0072831835,
+    "id" : "CHINCS4",
+    "name" : "Chingford London End Sdgs",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.632755,
+    "lon" : 0.0092033017,
+    "id" : "CHINCS5",
+    "name" : "Chingford Country End Sdgs",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : ""
+} ]

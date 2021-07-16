@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.597799,
+    "lon" : -2.840233,
+    "id" : "BRSCGHJ",
+    "name" : "Burscough Junction",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.634181,
+    "lon" : -2.8080929,
+    "id" : "RUFDORD",
+    "name" : "Rufford",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

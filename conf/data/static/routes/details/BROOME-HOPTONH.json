@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.423099,
+    "lon" : -2.8844641,
+    "id" : "BROOME",
+    "name" : "Broome",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.391505,
+    "lon" : -2.9120027,
+    "id" : "HOPTONH",
+    "name" : "Hopton Heath",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.156126,
+    "lon" : -0.16084145,
+    "id" : "GTWK",
+    "name" : "Gatwick Airport",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.144481,
+    "lon" : -0.16088974,
+    "id" : "TNSLYGJ",
+    "name" : "Tinsley Green",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

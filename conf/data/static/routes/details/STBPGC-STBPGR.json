@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.370109,
+    "lon" : -1.4585236,
+    "id" : "STBPGC",
+    "name" : "Park Grange Croft",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 53.367307,
+    "lon" : -1.4547514,
+    "id" : "STBPGR",
+    "name" : "Park Grange Road",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

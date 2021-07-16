@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.560152,
+    "lon" : -4.6509981,
+    "id" : "BARASIJ",
+    "name" : "Barassie Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.612701,
+    "lon" : -4.4999764,
+    "id" : "KILMRNK",
+    "name" : "Kilmarnock",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

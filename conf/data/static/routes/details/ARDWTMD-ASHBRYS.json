@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.47134,
+    "lon" : -2.2099519,
+    "id" : "ARDWTMD",
+    "name" : "Ardwick T.M.D",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.471805,
+    "lon" : -2.1954766,
+    "id" : "ASHBRYS",
+    "name" : "Ashburys",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

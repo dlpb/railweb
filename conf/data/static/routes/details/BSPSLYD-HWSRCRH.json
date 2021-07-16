@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.052859,
+    "lon" : -3.1933579,
+    "id" : "BSPSLYD",
+    "name" : "Bishops Lydeard",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 51.100784,
+    "lon" : -3.233546,
+    "id" : "HWSRCRH",
+    "name" : "Crowcombe Heathfield",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

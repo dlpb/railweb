@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.185573,
+    "lon" : -3.9655504,
+    "id" : "DUNANE",
+    "name" : "Dunblane",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.248638,
+    "lon" : -3.8770867,
+    "id" : "GRNLNNG",
+    "name" : "Greenloaning",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

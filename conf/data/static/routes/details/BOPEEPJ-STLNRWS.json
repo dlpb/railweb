@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.853141,
+    "lon" : 0.54208017,
+    "id" : "BOPEEPJ",
+    "name" : "Bopeep Jn S.B.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.855748,
+    "lon" : 0.56023975,
+    "id" : "STLNRWS",
+    "name" : "St Leonards Warrior Square",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.789788,
+    "lon" : -2.2722744,
+    "id" : "HARSLP",
+    "name" : "Haresfield Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.772962,
+    "lon" : -2.2817963,
+    "id" : "STNDSHJ",
+    "name" : "Standish Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.462462,
+    "lon" : -2.5992139,
+    "id" : "GOLBRNJ",
+    "name" : "Golborne Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.457738,
+    "lon" : -2.5984997,
+    "id" : "LOWTONJ",
+    "name" : "Lowton Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

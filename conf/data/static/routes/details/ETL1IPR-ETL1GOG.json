@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.9404,
+    "lon" : -3.3542,
+    "id" : "ETL1IPR",
+    "name" : "Ingliston Park & Ride",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 55.938196,
+    "lon" : -3.330665,
+    "id" : "ETL1GOG",
+    "name" : "Gogarburn",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

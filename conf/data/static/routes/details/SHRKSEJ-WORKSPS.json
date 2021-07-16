@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.318123,
+    "lon" : -1.1453329,
+    "id" : "SHRKSEJ",
+    "name" : "Shireoaks East Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.318311,
+    "lon" : -1.1439331,
+    "id" : "WORKSPS",
+    "name" : "Worksop Down Reception",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

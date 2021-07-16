@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.005469,
+    "lon" : -3.8036062,
+    "id" : "SWGBGE",
+    "name" : "Swing Bridge East",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.002372,
+    "lon" : -3.785452,
+    "id" : "FALKRKG",
+    "name" : "Falkirk Grahamston",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.718783,
+    "lon" : -0.53209613,
+    "id" : "MELMLC",
+    "name" : "Melton Lane L.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.717012,
+    "lon" : -0.5080779,
+    "id" : "FERRIBY",
+    "name" : "Ferriby",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

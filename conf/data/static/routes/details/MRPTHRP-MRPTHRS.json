@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.162507,
+    "lon" : -1.6821788,
+    "id" : "MRPTHRP",
+    "name" : "Morpeth",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.16304,
+    "lon" : -1.6763984,
+    "id" : "MRPTHRS",
+    "name" : "Morpeth Reversing Siding",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

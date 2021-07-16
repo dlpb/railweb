@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.051502,
+    "lon" : -3.7484003,
+    "id" : "CYNGHRD",
+    "name" : "Cynghordy",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.082043,
+    "lon" : -3.6857289,
+    "id" : "SGRLOAF",
+    "name" : "Sugar Loaf",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

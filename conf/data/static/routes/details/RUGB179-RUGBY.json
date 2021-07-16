@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.380735,
+    "lon" : -1.2629149,
+    "id" : "RUGB179",
+    "name" : "Rugby Signal Rn4179",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.378914,
+    "lon" : -1.2491946,
+    "id" : "RUGBY",
+    "name" : "Rugby",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

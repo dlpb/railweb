@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.8118,
+    "lon" : -3.0556,
+    "id" : "BTPCEP",
+    "name" : "Central Pier",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 53.8145,
+    "lon" : -3.0558,
+    "id" : "BTPTOW",
+    "name" : "Tower",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

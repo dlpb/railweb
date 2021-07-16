@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.54199,
+    "lon" : -1.3097388,
+    "id" : "HKLTNSB",
+    "name" : "Hickleton S.B.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.545416,
+    "lon" : -1.3084153,
+    "id" : "TRNO",
+    "name" : "Thurnscoe",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

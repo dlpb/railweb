@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.598006,
+    "lon" : -0.12043389,
+    "id" : "ALEXNDP",
+    "name" : "Alexandra Palace",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.575438,
+    "lon" : -0.10495615,
+    "id" : "HRGYURV",
+    "name" : "Harringay Up Rev Sdgs",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

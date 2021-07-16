@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.141525,
+    "lon" : 0.8795791,
+    "id" : "ASHFKDY",
+    "name" : "Ashford Down Yard",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.146814,
+    "lon" : 0.86568016,
+    "id" : "ASHFKY",
+    "name" : "Ashford International",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

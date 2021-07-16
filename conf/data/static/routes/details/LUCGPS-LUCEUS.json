@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.52391,
+    "lon" : -0.14397,
+    "id" : "LUCGPS",
+    "name" : "Great Portland Street",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.52584,
+    "lon" : -0.1357,
+    "id" : "LUCEUS",
+    "name" : "Euston Square",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

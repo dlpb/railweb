@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.559741,
+    "lon" : -0.280981,
+    "id" : "HCORM",
+    "name" : "Orton Mere",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.562926,
+    "lon" : -0.27374531,
+    "id" : "ORTONMR",
+    "name" : "Orton Mere",
+    "type" : "Point"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

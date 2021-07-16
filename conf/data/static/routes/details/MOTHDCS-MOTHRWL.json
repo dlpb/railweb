@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.796813,
+    "lon" : -3.9993103,
+    "id" : "MOTHDCS",
+    "name" : "Motherwell Derby C.S.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.791877,
+    "lon" : -3.9950535,
+    "id" : "MOTHRWL",
+    "name" : "Motherwell",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.459868,
+    "lon" : -0.98689503,
+    "id" : "RDNGTCC",
+    "name" : "Reading Depot Entry C",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.459868,
+    "lon" : -0.98689503,
+    "id" : "RDNGTCD",
+    "name" : "Reading Traincare Depot",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

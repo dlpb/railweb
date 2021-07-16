@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.943331,
+    "lon" : 1.0790512,
+    "id" : "MISTDL",
+    "name" : "Mistley Down Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.94357,
+    "lon" : 1.0819345,
+    "id" : "MISTLEY",
+    "name" : "Mistley",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

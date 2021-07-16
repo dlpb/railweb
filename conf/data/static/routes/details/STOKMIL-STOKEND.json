@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.057672,
+    "lon" : -2.1473417,
+    "id" : "STOKMIL",
+    "name" : "Milton",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.075485,
+    "lon" : -2.1084744,
+    "id" : "STOKEND",
+    "name" : "Endon",
+    "type" : "Point"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

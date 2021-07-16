@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.546321,
+    "lon" : -1.1352352,
+    "id" : "ARKSEYL",
+    "name" : "Arksey Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.558629,
+    "lon" : -1.1306818,
+    "id" : "BTLYXO",
+    "name" : "Bentley Crossover",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

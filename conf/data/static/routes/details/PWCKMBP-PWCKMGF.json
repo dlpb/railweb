@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.516181,
+    "lon" : -4.6183511,
+    "id" : "PWCKMBP",
+    "name" : "Prestwick B.P.Oil",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.517223,
+    "lon" : -4.6192124,
+    "id" : "PWCKMGF",
+    "name" : "Monkton Sdg Ground Frame",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

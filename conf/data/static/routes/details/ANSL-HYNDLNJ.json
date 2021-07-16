@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.88985,
+    "lon" : -4.3216188,
+    "id" : "ANSL",
+    "name" : "Anniesland",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.884911,
+    "lon" : -4.3246979,
+    "id" : "HYNDLNJ",
+    "name" : "Hyndland North Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

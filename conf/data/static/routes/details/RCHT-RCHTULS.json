@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.38556,
+    "lon" : 0.51055512,
+    "id" : "RCHT",
+    "name" : "Rochester",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.388237,
+    "lon" : 0.507755,
+    "id" : "RCHTULS",
+    "name" : "Rochester Up Layby Sdgs",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

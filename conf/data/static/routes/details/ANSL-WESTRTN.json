@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.88985,
+    "lon" : -4.3216188,
+    "id" : "ANSL",
+    "name" : "Anniesland",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.904818,
+    "lon" : -4.3351527,
+    "id" : "WESTRTN",
+    "name" : "Westerton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

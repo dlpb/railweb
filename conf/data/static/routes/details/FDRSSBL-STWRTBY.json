@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.074745,
+    "lon" : -0.51662354,
+    "id" : "FDRSSBL",
+    "name" : "Forders Signal Box/Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.069266,
+    "lon" : -0.52059848,
+    "id" : "STWRTBY",
+    "name" : "Stewartby",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

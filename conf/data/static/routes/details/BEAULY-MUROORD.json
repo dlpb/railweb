@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.477321,
+    "lon" : -4.4679492,
+    "id" : "BEAULY",
+    "name" : "Beauly",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 57.517372,
+    "lon" : -4.4601508,
+    "id" : "MUROORD",
+    "name" : "Muir Of Ord",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.399902,
+    "lon" : -0.71162401,
+    "id" : "GTHLAND",
+    "name" : "Goathland",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 54.436764,
+    "lon" : -0.72457533,
+    "id" : "GROSNYM",
+    "name" : "Grosmont",
+    "type" : "Station"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

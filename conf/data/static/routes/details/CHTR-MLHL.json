@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.733183,
+    "lon" : -2.5185494,
+    "id" : "CHTR",
+    "name" : "Cherry Tree",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.735312,
+    "lon" : -2.50187,
+    "id" : "MLHL",
+    "name" : "Mill Hill (Lancashire)",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

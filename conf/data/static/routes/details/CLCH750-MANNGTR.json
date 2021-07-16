@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.949524,
+    "lon" : 1.0488233,
+    "id" : "CLCH750",
+    "name" : "Colchester Signal 750",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.949216,
+    "lon" : 1.0457606,
+    "id" : "MANNGTR",
+    "name" : "Manningtree",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

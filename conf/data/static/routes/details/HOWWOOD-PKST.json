@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.717331,
+    "lon" : -0.34494598,
+    "id" : "HOWWOOD",
+    "name" : "How Wood",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.725669,
+    "lon" : -0.34002264,
+    "id" : "PKST",
+    "name" : "Park Street",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

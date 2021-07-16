@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.005782,
+    "lon" : -5.8298553,
+    "id" : "MLAIG",
+    "name" : "Mallaig",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.968903,
+    "lon" : -5.8220974,
+    "id" : "MORAR",
+    "name" : "Morar",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

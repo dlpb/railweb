@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.765096,
+    "lon" : -0.21587388,
+    "id" : "HATFILD",
+    "name" : "Hatfield",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.799023,
+    "lon" : -0.20404937,
+    "id" : "WLWYNGY",
+    "name" : "Welwyn G.C. F.D.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

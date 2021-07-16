@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.4619,
+    "lon" : -2.277,
+    "id" : "TFBMTLK",
+    "name" : "Traffrd Bar Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.4515,
+    "lon" : -2.2778,
+    "id" : "MNCRRFW",
+    "name" : "Firswood Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

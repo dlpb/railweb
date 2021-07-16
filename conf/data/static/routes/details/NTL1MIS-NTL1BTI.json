@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.927943,
+    "lon" : -1.20871,
+    "id" : "NTL1MIS",
+    "name" : "Middle Street",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 52.925225,
+    "lon" : -1.214703,
+    "id" : "NTL1BTI",
+    "name" : "Beeston Transport Interchange",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

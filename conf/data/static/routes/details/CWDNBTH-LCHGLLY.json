@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.111983,
+    "lon" : -3.3431016,
+    "id" : "CWDNBTH",
+    "name" : "Cowdenbeath",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.134947,
+    "lon" : -3.313345,
+    "id" : "LCHGLLY",
+    "name" : "Lochgelly",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

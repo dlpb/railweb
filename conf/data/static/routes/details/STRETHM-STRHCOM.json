@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.425886,
+    "lon" : -0.13148953,
+    "id" : "STRETHM",
+    "name" : "Streatham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.418693,
+    "lon" : -0.13605443,
+    "id" : "STRHCOM",
+    "name" : "Streatham Common",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

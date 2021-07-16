@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.290888,
+    "lon" : -3.3937708,
+    "id" : "BOOTLE",
+    "name" : "Bootle",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.242895,
+    "lon" : -3.3580226,
+    "id" : "SILCWIT",
+    "name" : "Whitbeck",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

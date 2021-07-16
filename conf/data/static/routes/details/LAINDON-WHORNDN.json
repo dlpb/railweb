@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.567487,
+    "lon" : 0.42466227,
+    "id" : "LAINDON",
+    "name" : "Laindon",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.567852,
+    "lon" : 0.34072553,
+    "id" : "WHORNDN",
+    "name" : "West Horndon",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

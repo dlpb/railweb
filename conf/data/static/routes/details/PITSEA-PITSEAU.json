@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.560298,
+    "lon" : 0.50740074,
+    "id" : "PITSEA",
+    "name" : "Pitsea",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.560135,
+    "lon" : 0.50957042,
+    "id" : "PITSEAU",
+    "name" : "Pitsea Up Siding",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.383773,
+    "lon" : -3.0164873,
+    "id" : "BRKN717",
+    "name" : "Birkenhead Central Sig 717",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.387637,
+    "lon" : -3.0208947,
+    "id" : "BRKNCDS",
+    "name" : "Birkenhead Central C.S.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

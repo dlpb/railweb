@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.959047,
+    "lon" : 0.963109,
+    "id" : "HRHADRROS",
+    "name" : "Romney Sands",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 50.985792,
+    "lon" : 0.95414,
+    "id" : "HRHADRNER",
+    "name" : "New Romney",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

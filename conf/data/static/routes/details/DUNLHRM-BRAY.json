@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.2949,
+    "lon" : -6.1345,
+    "id" : "DUNLHRM",
+    "name" : "Dun Laoghaire (Civ)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.204167,
+    "lon" : -6.100278,
+    "id" : "BRAY",
+    "name" : "Bray        (Cie",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

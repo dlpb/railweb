@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.813477,
+    "lon" : -0.9938995,
+    "id" : "HADMASH",
+    "name" : "Ashendon Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.771188,
+    "lon" : -0.9423177,
+    "id" : "HADMATP",
+    "name" : "Haddenham & Thame Parkway",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.475494,
+    "lon" : -0.86300558,
+    "id" : "TWYFORD",
+    "name" : "Twyford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.49814,
+    "lon" : -0.87656034,
+    "id" : "WARGRAV",
+    "name" : "Wargrave",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

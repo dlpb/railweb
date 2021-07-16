@@ -1,0 +1,58 @@
+[ {
+  "from" : {
+    "lat" : 51.514,
+    "lon" : -0.15,
+    "id" : "BONDST",
+    "name" : "Bond Street Crossrail",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.503428,
+    "lon" : -0.084040543,
+    "id" : "LNDNBDG",
+    "name" : "London Bridge",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "25 MINUTES"
+}, {
+  "from" : {
+    "lat" : 51.514,
+    "lon" : -0.15,
+    "id" : "BONDST",
+    "name" : "Bond Street Crossrail",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.503428,
+    "lon" : -0.084040543,
+    "id" : "LNDNBDG",
+    "name" : "London Bridge",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "30 MINUTES"
+}, {
+  "from" : {
+    "lat" : 51.514,
+    "lon" : -0.15,
+    "id" : "BONDST",
+    "name" : "Bond Street Crossrail",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.503428,
+    "lon" : -0.084040543,
+    "id" : "LNDNBDG",
+    "name" : "London Bridge",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "20 MINUTES"
+} ]

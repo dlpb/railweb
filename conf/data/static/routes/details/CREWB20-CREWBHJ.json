@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.063644,
+    "lon" : -2.4179946,
+    "id" : "CREWB20",
+    "name" : "Crewe Basford Hall Sig 20",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.063644,
+    "lon" : -2.4179946,
+    "id" : "CREWBHJ",
+    "name" : "Crewe Basford Hall Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

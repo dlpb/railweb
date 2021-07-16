@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.405708,
+    "lon" : -4.4663925,
+    "id" : "CAUSLND",
+    "name" : "Causeland",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.422862,
+    "lon" : -4.4633417,
+    "id" : "STKEYNE",
+    "name" : "St Keyne Wishing Well Halt",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

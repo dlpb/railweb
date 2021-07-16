@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.207026,
+    "lon" : -2.1770213,
+    "id" : "WRMNSTR",
+    "name" : "Warminster",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.206283,
+    "lon" : -2.1751289,
+    "id" : "WSTB753",
+    "name" : "Westbury Ground Signal 753",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

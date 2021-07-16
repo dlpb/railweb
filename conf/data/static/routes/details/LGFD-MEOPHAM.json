@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.396127,
+    "lon" : 0.3003628,
+    "id" : "LGFD",
+    "name" : "Longfield",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.386459,
+    "lon" : 0.35692463,
+    "id" : "MEOPHAM",
+    "name" : "Meopham",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

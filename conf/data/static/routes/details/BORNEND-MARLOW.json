@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.576843,
+    "lon" : -0.71098634,
+    "id" : "BORNEND",
+    "name" : "Bourne End",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.571044,
+    "lon" : -0.76629946,
+    "id" : "MARLOW",
+    "name" : "Marlow",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

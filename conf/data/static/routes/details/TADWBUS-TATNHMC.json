@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.29163567610228,
+    "lon" : -0.23596466097434754,
+    "id" : "TADWBUS",
+    "name" : "Tadworth (Avenue",
+    "type" : "Bus"
+  },
+  "to" : {
+    "lat" : 51.308807,
+    "lon" : -0.24222186,
+    "id" : "TATNHMC",
+    "name" : "Tattenham Corner",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.918572,
+    "lon" : -1.3773931,
+    "id" : "BITERNE",
+    "name" : "Bitterne",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.899012,
+    "lon" : -1.3770993,
+    "id" : "WOLSTON",
+    "name" : "Woolston",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

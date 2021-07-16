@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.453889,
+    "lon" : -1.748056,
+    "id" : "BHAMNEC",
+    "name" : "Coles Bus Necbia",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.516233,
+    "lon" : -1.7028888,
+    "id" : "COLESHL",
+    "name" : "Coleshill Parkway",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

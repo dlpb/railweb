@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.182321,
+    "lon" : 0.38950922,
+    "id" : "PKWD",
+    "name" : "Paddock Wood",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.19194,
+    "lon" : 0.26634764,
+    "id" : "TONBDLP",
+    "name" : "Tonbridge Down Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

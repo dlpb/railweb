@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.971061,
+    "lon" : -1.4469214,
+    "id" : "BRWHBNJ",
+    "name" : "Boldon North Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.979655,
+    "lon" : -1.4574437,
+    "id" : "JARRGBF",
+    "name" : "Tyne Coal Terminal Gbrf",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

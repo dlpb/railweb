@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.379966,
+    "lon" : -1.2549651,
+    "id" : "RUGB184",
+    "name" : "Rugby Udt Signal Rn4184",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.380775,
+    "lon" : -1.2650151,
+    "id" : "RUGBTVJ",
+    "name" : "Rugby Trent Valley Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

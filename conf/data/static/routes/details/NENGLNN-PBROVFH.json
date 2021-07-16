@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.597821,
+    "lon" : -0.26646772,
+    "id" : "NENGLNN",
+    "name" : "New England Nth Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.594457,
+    "lon" : -0.26268799,
+    "id" : "PBROVFH",
+    "name" : "Peterborough Vq Fhh",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

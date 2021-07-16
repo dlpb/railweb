@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.261009,
+    "lon" : -5.0711556,
+    "id" : "TRUR14",
+    "name" : "Truro Signal 14",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.264083,
+    "lon" : -5.0644489,
+    "id" : "TRURO",
+    "name" : "Truro",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

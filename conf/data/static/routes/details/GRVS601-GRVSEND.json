@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.44131,
+    "lon" : 0.36620941,
+    "id" : "GRVS601",
+    "name" : "Gravesend Signal Nk1601",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.44131,
+    "lon" : 0.36620941,
+    "id" : "GRVSEND",
+    "name" : "Gravesend",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

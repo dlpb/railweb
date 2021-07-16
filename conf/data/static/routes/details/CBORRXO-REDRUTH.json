@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.211615,
+    "lon" : -5.2938612,
+    "id" : "CBORRXO",
+    "name" : "Roskear Crossover",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.233211,
+    "lon" : -5.2257722,
+    "id" : "REDRUTH",
+    "name" : "Redruth",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

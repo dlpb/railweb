@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.867433,
+    "lon" : -4.0300125,
+    "id" : "SUNSJN",
+    "name" : "Sunnyside Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.856348,
+    "lon" : -4.0221003,
+    "id" : "WHIFLTL",
+    "name" : "Whifflet Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

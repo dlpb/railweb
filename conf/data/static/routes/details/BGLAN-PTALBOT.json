@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.614502,
+    "lon" : -3.8095489,
+    "id" : "BGLAN",
+    "name" : "Baglan",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.591741,
+    "lon" : -3.7808532,
+    "id" : "PTALBOT",
+    "name" : "Port Talbot Parkway",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

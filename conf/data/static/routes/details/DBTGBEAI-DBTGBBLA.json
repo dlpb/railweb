@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.509516,
+    "lon" : -0.002128,
+    "id" : "DBTGBEAI",
+    "name" : "East India",
+    "type" : "Light Rail"
+  },
+  "to" : {
+    "lat" : 51.507903,
+    "lon" : -0.007438,
+    "id" : "DBTGBBLA",
+    "name" : "Blackwall",
+    "type" : "Light Rail"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Light Rail",
+  "speed" : "OHLE"
+} ]

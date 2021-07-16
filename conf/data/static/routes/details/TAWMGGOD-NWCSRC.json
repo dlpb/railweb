@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.011046,
+    "lon" : -1.6084027,
+    "id" : "TAWMGGOD",
+    "name" : "Gosforth Depot",
+    "type" : "Metro"
+  },
+  "to" : {
+    "lat" : 55.011416,
+    "lon" : -1.6167611,
+    "id" : "NWCSRC",
+    "name" : "Regent Centre (Bus)",
+    "type" : "Location"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "Y",
+  "type" : "Unknown",
+  "speed" : "OHLE"
+} ]

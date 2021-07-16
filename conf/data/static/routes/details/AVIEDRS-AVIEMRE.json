@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.19176,
+    "lon" : -3.8278031,
+    "id" : "AVIEDRS",
+    "name" : "Aviemore Down Refuge Sdg",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 57.188547,
+    "lon" : -3.8288524,
+    "id" : "AVIEMRE",
+    "name" : "Aviemore",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

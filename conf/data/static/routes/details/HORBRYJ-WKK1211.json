@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.659183,
+    "lon" : -1.5311607,
+    "id" : "HORBRYJ",
+    "name" : "Horbury Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.675636,
+    "lon" : -1.4968573,
+    "id" : "WKK1211",
+    "name" : "Wakefield West Sig K1211",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

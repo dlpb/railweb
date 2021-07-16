@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.654874,
+    "lon" : -0.5195573,
+    "id" : "CHRW",
+    "name" : "Chorleywood",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.66821,
+    "lon" : -0.56160764,
+    "id" : "CHLFNAL",
+    "name" : "Chalfont & Latimer",
+    "type" : "Station"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

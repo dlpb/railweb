@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.871235,
+    "lon" : -2.8250722,
+    "id" : "HEWISH",
+    "name" : "Hewish",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.87364,
+    "lon" : -2.7787962,
+    "id" : "CRKRN",
+    "name" : "Crewkerne",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

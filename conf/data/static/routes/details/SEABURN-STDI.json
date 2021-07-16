@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.929731,
+    "lon" : -1.3865811,
+    "id" : "SEABURN",
+    "name" : "Seaburn (T & W Metro)",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 54.918389,
+    "lon" : -1.3828533,
+    "id" : "STDI",
+    "name" : "Stadium Of Light (T & W Metro)",
+    "type" : "Location"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE/1500V DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.59088,
+    "lon" : 0.02726,
+    "id" : "LUCSOW",
+    "name" : "South Woodford",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.60582,
+    "lon" : 0.03328,
+    "id" : "LUCWOO",
+    "name" : "Woodford",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

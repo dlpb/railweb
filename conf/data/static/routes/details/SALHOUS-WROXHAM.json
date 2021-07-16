@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.6756,
+    "lon" : 1.3914176,
+    "id" : "SALHOUS",
+    "name" : "Salhouse",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.715414,
+    "lon" : 1.4081034,
+    "id" : "WROXHAM",
+    "name" : "Hoveton & Wroxham",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

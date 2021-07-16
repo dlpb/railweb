@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.871944,
+    "lon" : -4.433056,
+    "id" : "GLGAPT",
+    "name" : "Glasgow Airport",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.847382,
+    "lon" : -4.4246202,
+    "id" : "PSLYGST",
+    "name" : "Paisley Gilmour Street",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

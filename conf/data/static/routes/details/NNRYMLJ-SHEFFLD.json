@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.383132,
+    "lon" : -1.4574185,
+    "id" : "NNRYMLJ",
+    "name" : "Nunnery Main Line Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.378119,
+    "lon" : -1.462067,
+    "id" : "SHEFFLD",
+    "name" : "Sheffield",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

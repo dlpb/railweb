@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.244564,
+    "lon" : 0.0039165517,
+    "id" : "HRSTGRN",
+    "name" : "Hurst Green",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.257436,
+    "lon" : -0.0041230231,
+    "id" : "OXTED",
+    "name" : "Oxted",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

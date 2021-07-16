@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.901739,
+    "lon" : -3.5431174,
+    "id" : "LVNSTNN",
+    "name" : "Livingston North",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.918976,
+    "lon" : -3.5022449,
+    "id" : "UPHALL",
+    "name" : "Uphall",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

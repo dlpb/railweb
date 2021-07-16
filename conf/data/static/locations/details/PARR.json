@@ -1,0 +1,10 @@
+[ {
+  "id" : "PARR",
+  "crp" : "",
+  "route" : "Western",
+  "changeTime" : "Set(Some(ChangeTime(PAR,GW,GW,5,(Par))))",
+  "interchangeType" : "1 - Small interchange point",
+  "county" : "South West",
+  "district" : "Cornwall And Isles Of Scilly",
+  "postcode" : "\"PL24 2LT"
+} ]

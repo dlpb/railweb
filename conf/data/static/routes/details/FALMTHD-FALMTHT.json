@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.150747,
+    "lon" : -5.0558486,
+    "id" : "FALMTHD",
+    "name" : "Falmouth Docks",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.148323,
+    "lon" : -5.0648777,
+    "id" : "FALMTHT",
+    "name" : "Falmouth Town",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "15-50"
+} ]

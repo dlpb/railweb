@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.527,
+    "lon" : -2.1451,
+    "id" : "MNCRSCM",
+    "name" : "Sth Chadtn Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.5378,
+    "lon" : -2.1379,
+    "id" : "MNCRFHM",
+    "name" : "Freehold Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

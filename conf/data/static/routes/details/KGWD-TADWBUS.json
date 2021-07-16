@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.294852,
+    "lon" : -0.21084094,
+    "id" : "KGWD",
+    "name" : "Kingswood",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.29163567610228,
+    "lon" : -0.23596466097434754,
+    "id" : "TADWBUS",
+    "name" : "Tadworth (Avenue",
+    "type" : "Bus"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

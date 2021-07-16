@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.642021,
+    "lon" : -3.0026911,
+    "id" : "SOUT112",
+    "name" : "Southport Signal 112",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.646074,
+    "lon" : -3.0017434,
+    "id" : "SOUTHPT",
+    "name" : "Southport",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

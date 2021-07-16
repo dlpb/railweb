@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.449344,
+    "lon" : -3.0063225,
+    "id" : "RGNTSRX",
+    "name" : "Regents Road L.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.45351,
+    "lon" : -3.0100654,
+    "id" : "SFRTMDH",
+    "name" : "Seaforth C.T. Mdhc (Ews)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.6628,
+    "lon" : -1.5807275,
+    "id" : "HLYMLS",
+    "name" : "Healey Mills S.S.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.659293,
+    "lon" : -1.5701396,
+    "id" : "HORBUGL",
+    "name" : "Horbury Up Goods Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

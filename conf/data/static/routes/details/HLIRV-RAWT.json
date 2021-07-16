@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.67689,
+    "lon" : -2.31599,
+    "id" : "HLIRV",
+    "name" : "Irwell Vale",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 53.698409,
+    "lon" : -2.2924155,
+    "id" : "RAWT",
+    "name" : "Rawtenstall (E.Lancs Rly)",
+    "type" : "Point"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

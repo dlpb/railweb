@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.587922,
+    "lon" : -1.5307257,
+    "id" : "DRTN",
+    "name" : "Darton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.597587,
+    "lon" : -1.5382946,
+    "id" : "WOLEYCS",
+    "name" : "Woolley Coal Sdgs S.B.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

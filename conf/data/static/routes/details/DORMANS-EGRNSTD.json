@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.156166,
+    "lon" : -0.0041776547,
+    "id" : "DORMANS",
+    "name" : "Dormans",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.126167,
+    "lon" : -0.018076081,
+    "id" : "EGRNSTD",
+    "name" : "East Grinstead",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

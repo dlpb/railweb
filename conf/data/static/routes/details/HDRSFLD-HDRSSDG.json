@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.649138,
+    "lon" : -1.7843844,
+    "id" : "HDRSFLD",
+    "name" : "Huddersfield",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.649274,
+    "lon" : -1.784777,
+    "id" : "HDRSSDG",
+    "name" : "Huddersfield Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

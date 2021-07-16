@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.529911,
+    "lon" : -0.13591268,
+    "id" : "EUSTON",
+    "name" : "London Euston",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.534933,
+    "lon" : -0.14355139,
+    "id" : "EUSTUCS",
+    "name" : "Euston Up Carriage Shed",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

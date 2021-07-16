@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.879899,
+    "lon" : -4.3145332,
+    "id" : "HYNDLDL",
+    "name" : "Hyndland Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.882039,
+    "lon" : -4.3211683,
+    "id" : "HYNDLEJ",
+    "name" : "Hyndland East Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

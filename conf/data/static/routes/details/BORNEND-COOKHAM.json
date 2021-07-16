@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.576843,
+    "lon" : -0.71098634,
+    "id" : "BORNEND",
+    "name" : "Bourne End",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.556935,
+    "lon" : -0.72246884,
+    "id" : "COOKHAM",
+    "name" : "Cookham",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

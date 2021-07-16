@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.099324,
+    "lon" : -1.8216636,
+    "id" : "HONYHUT",
+    "name" : "Honeybourne Staff Hut",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.103622,
+    "lon" : -1.8475905,
+    "id" : "HONYNJN",
+    "name" : "Honeybourne North Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

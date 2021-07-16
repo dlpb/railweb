@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.581407,
+    "lon" : -0.316548,
+    "id" : "KTON",
+    "name" : "Kenton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.570049,
+    "lon" : -0.30838191,
+    "id" : "SKENTON",
+    "name" : "South Kenton",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE/DC",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

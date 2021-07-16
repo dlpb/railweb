@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.227402,
+    "lon" : -0.54465595,
+    "id" : "EHOLMSB",
+    "name" : "East Holmes S B",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.230533,
+    "lon" : -0.55818308,
+    "id" : "WHOLMSJ",
+    "name" : "West Holmes Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

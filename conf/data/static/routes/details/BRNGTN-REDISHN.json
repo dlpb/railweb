@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.432008,
+    "lon" : -2.1342917,
+    "id" : "BRNGTN",
+    "name" : "Brinnington",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.449554,
+    "lon" : -2.1563308,
+    "id" : "REDISHN",
+    "name" : "Reddish North",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

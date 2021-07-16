@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.238819,
+    "lon" : -0.32391196,
+    "id" : "DEPDENE",
+    "name" : "Dorking Deepdene",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.236208,
+    "lon" : -0.33883314,
+    "id" : "DRKGW",
+    "name" : "Dorking West",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

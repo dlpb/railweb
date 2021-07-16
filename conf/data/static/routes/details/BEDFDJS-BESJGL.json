@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.130752,
+    "lon" : -0.47159186,
+    "id" : "BEDFDJS",
+    "name" : "Bedford Jowett Sidings",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.130483,
+    "lon" : -0.47095823,
+    "id" : "BESJGL",
+    "name" : "Bedford St Johns G.L.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

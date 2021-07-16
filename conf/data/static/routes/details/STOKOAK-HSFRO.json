@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.003218,
+    "lon" : -1.9345413,
+    "id" : "STOKOAK",
+    "name" : "Oakamoor",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.0208,
+    "lon" : -1.964,
+    "id" : "HSFRO",
+    "name" : "Froghall",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

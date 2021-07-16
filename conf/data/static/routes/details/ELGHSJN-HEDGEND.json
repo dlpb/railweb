@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.961422,
+    "lon" : -1.3446261,
+    "id" : "ELGHSJN",
+    "name" : "Eastleigh South Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.932944,
+    "lon" : -1.29549,
+    "id" : "HEDGEND",
+    "name" : "Hedge End",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

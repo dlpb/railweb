@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.872573,
+    "lon" : -4.2308924,
+    "id" : "GLGWWKS",
+    "name" : "Glasgow Works",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.88164,
+    "lon" : -4.2295099,
+    "id" : "SPRNGBN",
+    "name" : "Springburn",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.524972,
+    "lon" : -0.21677009,
+    "id" : "LDBRKJ",
+    "name" : "Ladbroke Grove",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.522188,
+    "lon" : -0.20465513,
+    "id" : "PRTOBJP",
+    "name" : "Portobello Jn (London)",
+    "type" : "Point"
+  },
+  "singleTrack" : "6",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

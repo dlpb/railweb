@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.018417,
+    "lon" : 1.2608871,
+    "id" : "TRIM617",
+    "name" : "Levington Signal Co617",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.976714,
+    "lon" : 1.319288,
+    "id" : "TRIMLEY",
+    "name" : "Trimley",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

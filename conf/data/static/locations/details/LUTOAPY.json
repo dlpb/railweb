@@ -1,0 +1,10 @@
+[ {
+  "id" : "LUTOAPY",
+  "crp" : "",
+  "route" : "London North East and East Midlands",
+  "changeTime" : "Set(Some(ChangeTime(LTN,TL,TL,4,(Luton Airport Parkway))))",
+  "interchangeType" : "2 - Medium interchange point",
+  "county" : "East",
+  "district" : "Luton",
+  "postcode" : "\"LU1 3JW"
+} ]

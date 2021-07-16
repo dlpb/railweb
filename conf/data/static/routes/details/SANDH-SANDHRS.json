@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.429662,
+    "lon" : -2.9919203,
+    "id" : "SANDH",
+    "name" : "Sandhills",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.427975,
+    "lon" : -2.9926035,
+    "id" : "SANDHRS",
+    "name" : "Sandhills Reversing Sdg",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

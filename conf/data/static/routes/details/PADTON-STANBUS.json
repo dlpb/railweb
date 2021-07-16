@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.517444,
+    "lon" : -0.17806184,
+    "id" : "PADTON",
+    "name" : "London Paddington",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.888589131846814,
+    "lon" : 0.2608155053439712,
+    "id" : "STANBUS",
+    "name" : "Stansted Air Bus",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

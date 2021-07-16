@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.900419,
+    "lon" : -3.3188743,
+    "id" : "CURRIEH",
+    "name" : "Curriehill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.91446,
+    "lon" : -3.2834479,
+    "id" : "WHAILES",
+    "name" : "Wester Hailes",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

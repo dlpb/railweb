@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.286426,
+    "lon" : -1.8630867,
+    "id" : "PEAKFSB",
+    "name" : "Peak Forest S.B.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.292552,
+    "lon" : -1.8676878,
+    "id" : "PEAKRMC",
+    "name" : "Peak Forest Cemex Sdgs",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

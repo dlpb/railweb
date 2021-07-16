@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.882446,
+    "lon" : -0.41394801,
+    "id" : "LUTON",
+    "name" : "Luton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.883618,
+    "lon" : -0.42021267,
+    "id" : "LUTONNJ",
+    "name" : "Luton North Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

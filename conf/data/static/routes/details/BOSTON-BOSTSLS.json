@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.978539,
+    "lon" : -0.031101883,
+    "id" : "BOSTON",
+    "name" : "Boston",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.96985,
+    "lon" : -0.029724684,
+    "id" : "BOSTSLS",
+    "name" : "Boston Sleaford Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

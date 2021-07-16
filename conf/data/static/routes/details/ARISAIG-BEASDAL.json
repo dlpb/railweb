@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.912964,
+    "lon" : -5.8394822,
+    "id" : "ARISAIG",
+    "name" : "Arisaig",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.90009,
+    "lon" : -5.7632803,
+    "id" : "BEASDAL",
+    "name" : "Beasdale",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

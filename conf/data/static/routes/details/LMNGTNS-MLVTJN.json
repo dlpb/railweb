@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.284511,
+    "lon" : -1.5372359,
+    "id" : "LMNGTNS",
+    "name" : "Leamington Spa",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.293209,
+    "lon" : -1.554784,
+    "id" : "MLVTJN",
+    "name" : "Milverton Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

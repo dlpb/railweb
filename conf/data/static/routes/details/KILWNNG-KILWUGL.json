@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.655529,
+    "lon" : -4.7103392,
+    "id" : "KILWNNG",
+    "name" : "Kilwinning",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.661809,
+    "lon" : -4.7100897,
+    "id" : "KILWUGL",
+    "name" : "Kilwinning Up Goods Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

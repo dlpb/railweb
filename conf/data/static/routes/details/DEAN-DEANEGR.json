@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.042275,
+    "lon" : -1.6334136,
+    "id" : "DEAN",
+    "name" : "Dean",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.043066,
+    "lon" : -1.6792805,
+    "id" : "DEANEGR",
+    "name" : "Dean East Grimstead G.F.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

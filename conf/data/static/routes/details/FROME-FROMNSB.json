@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.227458,
+    "lon" : -2.3099551,
+    "id" : "FROME",
+    "name" : "Frome",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.231251,
+    "lon" : -2.3070875,
+    "id" : "FROMNSB",
+    "name" : "Frome North",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

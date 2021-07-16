@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.283889,
+    "lon" : -0.63443633,
+    "id" : "WLNGIRC",
+    "name" : "Irchester",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.303752,
+    "lon" : -0.6764318,
+    "id" : "WLNGBRO",
+    "name" : "Wellingborough",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

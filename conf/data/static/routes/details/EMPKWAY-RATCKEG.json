@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.866214,
+    "lon" : -1.263674,
+    "id" : "EMPKWAY",
+    "name" : "East Midlands Parkway",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.83592,
+    "lon" : -1.2579219,
+    "id" : "RATCKEG",
+    "name" : "Kegworth",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

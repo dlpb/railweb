@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.509471,
+    "lon" : 0.033473,
+    "id" : "DBTGBPRR",
+    "name" : "Prince Regent",
+    "type" : "Light Rail"
+  },
+  "to" : {
+    "lat" : 51.508456,
+    "lon" : 0.046148,
+    "id" : "DBTGBROA",
+    "name" : "Royal Albert",
+    "type" : "Light Rail"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Light Rail",
+  "speed" : "OHLE"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.541187,
+    "lon" : -0.0031247991,
+    "id" : "STFDLL",
+    "name" : "Stratford Low Level",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.545761,
+    "lon" : -0.0098437071,
+    "id" : "DBSIWASTI",
+    "name" : "Stratford International",
+    "type" : "Light Rail"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Unknown",
+  "speed" : "OHLE"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.638281,
+    "lon" : -1.6698047,
+    "id" : "AMNGTNJ",
+    "name" : "Amington Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.6375,
+    "lon" : -1.6865529,
+    "id" : "TMWTHLL",
+    "name" : "Tamworth",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

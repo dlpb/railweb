@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.911385,
+    "lon" : -1.4335878,
+    "id" : "MBRK",
+    "name" : "Millbrook (Hampshire)",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.919604,
+    "lon" : -1.4698364,
+    "id" : "REDBDGE",
+    "name" : "Redbridge",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

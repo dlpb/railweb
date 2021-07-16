@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.595746,
+    "lon" : -1.3330738,
+    "id" : "NORTONE",
+    "name" : "Norton East Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.59441,
+    "lon" : -1.341871,
+    "id" : "NORTONW",
+    "name" : "Norton West Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

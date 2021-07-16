@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.667459,
+    "lon" : -1.133348,
+    "id" : "HLLEN",
+    "name" : "Leicester North",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.7048,
+    "lon" : -1.16,
+    "id" : "HLROT",
+    "name" : "Rothley",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "40-75"
+} ]

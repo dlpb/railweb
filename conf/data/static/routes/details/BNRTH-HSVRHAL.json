@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.529577,
+    "lon" : -2.4201845,
+    "id" : "BNRTH",
+    "name" : "Bridgnorth",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.473792,
+    "lon" : -2.377033,
+    "id" : "HSVRHAL",
+    "name" : "Hampton Loade",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

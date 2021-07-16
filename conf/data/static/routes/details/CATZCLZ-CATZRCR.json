@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.936111,
+    "lon" : -8.024167,
+    "id" : "CATZCLZ",
+    "name" : "Cloughjordn (Cie",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.9606,
+    "lon" : -7.7945,
+    "id" : "CATZRCR",
+    "name" : "Roscrea     (Cie",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

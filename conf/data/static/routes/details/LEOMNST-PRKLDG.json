@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.225662,
+    "lon" : -2.73037,
+    "id" : "LEOMNST",
+    "name" : "Leominster",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.282431,
+    "lon" : -2.7428546,
+    "id" : "PRKLDG",
+    "name" : "Park Lodge",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "70-90"
+} ]

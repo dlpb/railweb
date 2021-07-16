@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.364188,
+    "lon" : -0.080703,
+    "id" : "LTALLP",
+    "name" : "Lloyd Park",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 51.359798,
+    "lon" : -0.0601,
+    "id" : "LTACOL",
+    "name" : "Coombe Lane",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

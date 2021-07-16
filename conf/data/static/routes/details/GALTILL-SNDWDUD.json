@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.502364,
+    "lon" : -1.9809379,
+    "id" : "GALTILL",
+    "name" : "Smethwick Galton Bridge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.508028,
+    "lon" : -2.0101372,
+    "id" : "SNDWDUD",
+    "name" : "Sandwell & Dudley",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.537386,
+    "lon" : -0.1468402,
+    "id" : "EUST610",
+    "name" : "Euston Sig Wm610",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.529911,
+    "lon" : -0.13591268,
+    "id" : "EUSTON",
+    "name" : "London Euston",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

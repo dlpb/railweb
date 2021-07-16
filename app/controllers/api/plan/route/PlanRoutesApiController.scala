@@ -5,7 +5,7 @@ import javax.inject.{Inject, Singleton}
 import models.auth.roles.PlanUser
 import models.plan.timetable.location.LocationTimetableService
 import models.plan.timetable.trains.TrainTimetableService
-import models.route.display.map.MapRoute
+import models.route.Route
 import org.json4s.DefaultFormats
 import org.json4s.jackson.Serialization.write
 import play.api.Environment
@@ -33,7 +33,7 @@ class PlanRoutesApiController @Inject()(
       authAction { implicit request =>
         if (!request.user.roles.contains(PlanUser)) Unauthorized("User does not have the right role")
         else {
-          val eventualResult: Future[Option[List[MapRoute]]] = timetableService.getTrain(train,  year.toString, month.toString, day.toString).map {
+          val eventualResult: Future[Option[List[Route]]] = timetableService.getTrain(train,  year.toString, month.toString, day.toString).map {
             f =>
               f map {
                 t =>

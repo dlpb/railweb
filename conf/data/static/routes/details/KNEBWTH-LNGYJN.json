@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.867002,
+    "lon" : -0.18703588,
+    "id" : "KNEBWTH",
+    "name" : "Knebworth",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.890014,
+    "lon" : -0.20004632,
+    "id" : "LNGYJN",
+    "name" : "Langley Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

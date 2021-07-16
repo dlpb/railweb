@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.542428,
+    "lon" : -2.5747045,
+    "id" : "HINDLEY",
+    "name" : "Hindley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.539101,
+    "lon" : -2.6128955,
+    "id" : "INCE",
+    "name" : "Ince",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

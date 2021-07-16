@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.70357,
+    "lon" : -4.054968,
+    "id" : "GVNDCLP",
+    "name" : "Grovesend Colly Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.710522,
+    "lon" : -4.0538791,
+    "id" : "HENDYJ",
+    "name" : "Hendy Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

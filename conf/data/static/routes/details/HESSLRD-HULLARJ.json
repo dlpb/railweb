@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.733029,
+    "lon" : -0.38189477,
+    "id" : "HESSLRD",
+    "name" : "Hessle Road Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.743962,
+    "lon" : -0.36676557,
+    "id" : "HULLARJ",
+    "name" : "Anlaby Road Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.318123,
+    "lon" : -1.1453329,
+    "id" : "SHRKSEJ",
+    "name" : "Shireoaks East Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.322738,
+    "lon" : -1.1610945,
+    "id" : "SHRKSWJ",
+    "name" : "Shireoaks West Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

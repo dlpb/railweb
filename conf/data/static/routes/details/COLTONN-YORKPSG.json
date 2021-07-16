@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.900579,
+    "lon" : -1.1540549,
+    "id" : "COLTONN",
+    "name" : "Colton North Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.956074,
+    "lon" : -1.0963321,
+    "id" : "YORKPSG",
+    "name" : "York Parcels Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

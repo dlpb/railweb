@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.357376,
+    "lon" : -2.8779113,
+    "id" : "HUNTXWJ",
+    "name" : "Hunts Cross West Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.357048,
+    "lon" : -2.8906458,
+    "id" : "LVRPSPY",
+    "name" : "Liverpool South Parkway",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

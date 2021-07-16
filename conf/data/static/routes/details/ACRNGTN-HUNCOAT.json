@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.752834,
+    "lon" : -2.3699409,
+    "id" : "ACRNGTN",
+    "name" : "Accrington",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.772569,
+    "lon" : -2.3466272,
+    "id" : "HUNCOAT",
+    "name" : "Huncoat",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

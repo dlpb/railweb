@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.133856,
+    "lon" : -6.662937,
+    "id" : "CATZCEI",
+    "name" : "Coleraine Ni",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.992069,
+    "lon" : -7.313788,
+    "id" : "LDRY",
+    "name" : "Londonderry Ni",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

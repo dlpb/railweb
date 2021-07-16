@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.700511,
+    "lon" : -0.88504023,
+    "id" : "GOOLEGG",
+    "name" : "Goole Glassworks Gbrf",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.701089,
+    "lon" : -0.88340415,
+    "id" : "GOOLPGJ",
+    "name" : "Potters Grange Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

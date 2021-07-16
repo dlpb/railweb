@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.481219,
+    "lon" : -0.97518017,
+    "id" : "COMONDL",
+    "name" : "Commondale",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.47773,
+    "lon" : -1.0682675,
+    "id" : "KLDL",
+    "name" : "Kildale",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

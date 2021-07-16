@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.92111,
+    "lon" : 0.98403147,
+    "id" : "ARDEGH",
+    "name" : "Ardleigh",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.949216,
+    "lon" : 1.0457606,
+    "id" : "MANNGTR",
+    "name" : "Manningtree",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

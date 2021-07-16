@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.449015,
+    "lon" : -1.3341035,
+    "id" : "ALDW738",
+    "name" : "Aldwarke Jn Sig S738",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.458387,
+    "lon" : -1.3222548,
+    "id" : "ALDWGBF",
+    "name" : "Aldwarke Ues Gbrf",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.312806,
+    "lon" : 0.19723553,
+    "id" : "OTFORD",
+    "name" : "Otford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.331528,
+    "lon" : 0.18871327,
+    "id" : "SHRMKT",
+    "name" : "Shoreham (Kent)",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "70-90"
+} ]

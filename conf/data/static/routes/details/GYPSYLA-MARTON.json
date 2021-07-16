@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.533482,
+    "lon" : -1.1805702,
+    "id" : "GYPSYLA",
+    "name" : "Gypsy Lane",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.544251,
+    "lon" : -1.1983939,
+    "id" : "MARTON",
+    "name" : "Marton",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

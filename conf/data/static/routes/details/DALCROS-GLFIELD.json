@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.527161,
+    "lon" : -4.0694845,
+    "id" : "DALCROS",
+    "name" : "Dalcross",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 57.55345,
+    "lon" : -3.9874044,
+    "id" : "GLFIELD",
+    "name" : "Gollanfield",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.54087,
+    "lon" : -0.12277459,
+    "id" : "KNGXBEL",
+    "name" : "Belle Isle",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.532306,
+    "lon" : -0.12762538,
+    "id" : "STPXBOX",
+    "name" : "London St Pancras (Intl)",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

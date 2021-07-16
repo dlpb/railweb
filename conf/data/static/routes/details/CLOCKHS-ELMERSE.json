@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.408044,
+    "lon" : -0.041140297,
+    "id" : "CLOCKHS",
+    "name" : "Clock House",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.398184,
+    "lon" : -0.049511514,
+    "id" : "ELMERSE",
+    "name" : "Elmers End",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

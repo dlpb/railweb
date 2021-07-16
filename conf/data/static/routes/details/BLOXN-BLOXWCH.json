@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.625264,
+    "lon" : -2.0175366,
+    "id" : "BLOXN",
+    "name" : "Bloxwich North",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.618315,
+    "lon" : -2.0116108,
+    "id" : "BLOXWCH",
+    "name" : "Bloxwich",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

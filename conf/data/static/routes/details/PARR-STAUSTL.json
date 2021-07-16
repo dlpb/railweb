@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.355688,
+    "lon" : -4.7045131,
+    "id" : "PARR",
+    "name" : "Par",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.3395149118652,
+    "lon" : -4.78935876298188,
+    "id" : "STAUSTL",
+    "name" : "St Austell",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

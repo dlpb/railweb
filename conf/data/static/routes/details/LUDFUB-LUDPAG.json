@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.48033,
+    "lon" : -0.19488,
+    "id" : "LUDFUB",
+    "name" : "Fulham Broadway",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.47488,
+    "lon" : -0.20205,
+    "id" : "LUDPAG",
+    "name" : "Parsons Green",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

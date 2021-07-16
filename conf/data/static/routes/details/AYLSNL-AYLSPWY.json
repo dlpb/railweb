@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.818947,
+    "lon" : -0.8326635,
+    "id" : "AYLSNL",
+    "name" : "Aylesbury North Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.830655,
+    "lon" : -0.8593969,
+    "id" : "AYLSPWY",
+    "name" : "Aylesbury Vale Parkway",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

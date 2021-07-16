@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.531767,
+    "lon" : -0.057475165,
+    "id" : "CAMHTH",
+    "name" : "Cambridge Heath",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.540885,
+    "lon" : -0.0579666,
+    "id" : "LONFLDS",
+    "name" : "London Fields",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

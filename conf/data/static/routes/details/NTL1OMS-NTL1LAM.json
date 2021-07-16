@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.95308,
+    "lon" : -1.150133,
+    "id" : "NTL1OMS",
+    "name" : "Old Market Square",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 52.952908,
+    "lon" : -1.145485,
+    "id" : "NTL1LAM",
+    "name" : "Lace Market",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

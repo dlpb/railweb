@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.638317,
+    "lon" : -2.2694933,
+    "id" : "ALBRGHT",
+    "name" : "Albrighton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.644831,
+    "lon" : -2.3006589,
+    "id" : "COSFORD",
+    "name" : "Cosford",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

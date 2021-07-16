@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.008919,
+    "lon" : -3.7398476,
+    "id" : "FOLDBSJ",
+    "name" : "Fouldubs Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.016963,
+    "lon" : -3.6748817,
+    "id" : "GRNGMOT",
+    "name" : "Grangemouth Ineos",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

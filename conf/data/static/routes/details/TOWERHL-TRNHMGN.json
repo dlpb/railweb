@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.509649,
+    "lon" : -0.075680572,
+    "id" : "TOWERHL",
+    "name" : "Tower Hill Underground",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 51.494047,
+    "lon" : -0.25560513,
+    "id" : "TRNHMGN",
+    "name" : "Turnham Green Underground",
+    "type" : "Location"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

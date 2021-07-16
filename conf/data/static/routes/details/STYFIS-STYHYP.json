@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.383189,
+    "lon" : -1.4638089,
+    "id" : "STYFIS",
+    "name" : "Fitzalan Square",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 53.384617,
+    "lon" : -1.4521086,
+    "id" : "STYHYP",
+    "name" : "Hyde Park",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

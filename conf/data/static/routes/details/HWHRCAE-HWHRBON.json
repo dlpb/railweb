@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.1375,
+    "lon" : -4.271944,
+    "id" : "HWHRCAE",
+    "name" : "Caernarfon",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 53.115972,
+    "lon" : -4.274778,
+    "id" : "HWHRBON",
+    "name" : "Bontnewydd",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

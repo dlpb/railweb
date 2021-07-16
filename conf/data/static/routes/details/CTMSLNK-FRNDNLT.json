@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.51522,
+    "lon" : -0.10356507,
+    "id" : "CTMSLNK",
+    "name" : "City Thameslink",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.521027,
+    "lon" : -0.10564459,
+    "id" : "FRNDNLT",
+    "name" : "Farringdon Underground",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

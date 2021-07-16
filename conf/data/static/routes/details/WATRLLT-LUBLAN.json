@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.503577,
+    "lon" : -0.11097923,
+    "id" : "WATRLLT",
+    "name" : "Waterloo Underground",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 51.49894,
+    "lon" : -0.11216,
+    "id" : "LUBLAN",
+    "name" : "Lambeth North",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

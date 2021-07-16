@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.364633,
+    "lon" : -3.4312319,
+    "id" : "HILTONJ",
+    "name" : "Hilton Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.381883,
+    "lon" : -3.4321542,
+    "id" : "PERTHDL",
+    "name" : "Perth Down Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

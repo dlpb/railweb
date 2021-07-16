@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.496244,
+    "lon" : -3.1386235,
+    "id" : "PENGAMS",
+    "name" : "Pengam Sidings",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.498227,
+    "lon" : -3.1353883,
+    "id" : "RUMNYRB",
+    "name" : "Rumney River Bridge Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

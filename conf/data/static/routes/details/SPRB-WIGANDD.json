@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.526152,
+    "lon" : -2.6157103,
+    "id" : "SPRB",
+    "name" : "Springs Branch",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.529147,
+    "lon" : -2.6154219,
+    "id" : "WIGANDD",
+    "name" : "Wigan L.I.P.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

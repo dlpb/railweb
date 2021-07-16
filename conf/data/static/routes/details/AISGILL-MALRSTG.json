@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.360638,
+    "lon" : -2.3399756,
+    "id" : "AISGILL",
+    "name" : "Ais Gill",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.405569,
+    "lon" : -2.3447842,
+    "id" : "MALRSTG",
+    "name" : "Mallerstang",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

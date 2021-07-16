@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.912504,
+    "lon" : -2.2587175,
+    "id" : "NTNBSB",
+    "name" : "Standon Bridge",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.86587,
+    "lon" : -2.1903024,
+    "id" : "NTNB",
+    "name" : "Norton Bridge",
+    "type" : "Location"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

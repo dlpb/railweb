@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.461025,
+    "lon" : -3.5432576,
+    "id" : "TORQUAY",
+    "name" : "Torquay",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.472838,
+    "lon" : -3.5462776,
+    "id" : "TORRE",
+    "name" : "Torre",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "30-60"
+} ]

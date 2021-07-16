@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.09853,
+    "lon" : -1.9475469,
+    "id" : "EVESHAM",
+    "name" : "Evesham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.130679,
+    "lon" : -2.0721067,
+    "id" : "PERSHOR",
+    "name" : "Pershore",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

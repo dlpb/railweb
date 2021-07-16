@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.330365,
+    "lon" : -2.9902604,
+    "id" : "BRMBRK",
+    "name" : "Bromborough Rake",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.340696,
+    "lon" : -2.9943147,
+    "id" : "SPITAL",
+    "name" : "Spital",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

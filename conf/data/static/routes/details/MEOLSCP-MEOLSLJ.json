@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.645898,
+    "lon" : -2.9751144,
+    "id" : "MEOLSCP",
+    "name" : "Meols Cop",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.64365,
+    "lon" : -2.989539,
+    "id" : "MEOLSLJ",
+    "name" : "St Lukes Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

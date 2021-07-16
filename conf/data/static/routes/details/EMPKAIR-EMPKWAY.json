@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.831111,
+    "lon" : -1.327778,
+    "id" : "EMPKAIR",
+    "name" : "East Mids Aptbus",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.866214,
+    "lon" : -1.263674,
+    "id" : "EMPKWAY",
+    "name" : "East Midlands Parkway",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

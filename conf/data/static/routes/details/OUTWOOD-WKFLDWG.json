@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.715438,
+    "lon" : -1.5103833,
+    "id" : "OUTWOOD",
+    "name" : "Outwood",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.681928,
+    "lon" : -1.5053971,
+    "id" : "WKFLDWG",
+    "name" : "Wakefield Westgate",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

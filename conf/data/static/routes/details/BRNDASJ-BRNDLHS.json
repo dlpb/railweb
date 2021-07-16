@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.499087,
+    "lon" : -2.291433,
+    "id" : "BRNDASJ",
+    "name" : "Agecroft South Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.503008,
+    "lon" : -2.2944299,
+    "id" : "BRNDLHS",
+    "name" : "Brindle Heath Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

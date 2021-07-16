@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.691263,
+    "lon" : -3.668928,
+    "id" : "CRSTRS",
+    "name" : "Carstairs",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.690867,
+    "lon" : -3.6669861,
+    "id" : "CRSTUPL",
+    "name" : "Carstairs U.P.L.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

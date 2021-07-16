@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.952734,
+    "lon" : -3.1268842,
+    "id" : "CRGNTNY",
+    "name" : "Craigentinny T.&R.S.M.D",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.955792,
+    "lon" : -3.1373357,
+    "id" : "CRGNTYJ",
+    "name" : "Craigentinny Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

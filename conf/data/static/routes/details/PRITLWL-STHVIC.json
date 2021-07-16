@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.55067,
+    "lon" : 0.71058853,
+    "id" : "PRITLWL",
+    "name" : "Prittlewell",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.542194,
+    "lon" : 0.71151253,
+    "id" : "STHVIC",
+    "name" : "Southend Victoria",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.012474,
+    "lon" : -3.4245574,
+    "id" : "RUTHWEL",
+    "name" : "Ruthwell",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.046865,
+    "lon" : -3.4995941,
+    "id" : "WTHH",
+    "name" : "Wath",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

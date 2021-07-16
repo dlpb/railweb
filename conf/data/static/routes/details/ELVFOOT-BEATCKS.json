@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 55.437235,
+    "lon" : -3.6544744,
+    "id" : "ELVFOOT",
+    "name" : "Elvanfoot",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.421858,
+    "lon" : -3.5901704,
+    "id" : "BEATCKS",
+    "name" : "Beattock Summit",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+}, {
+  "from" : {
+    "lat" : 55.437235,
+    "lon" : -3.6544744,
+    "id" : "ELVFOOT",
+    "name" : "Elvanfoot",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.421858,
+    "lon" : -3.5901704,
+    "id" : "BEATCKS",
+    "name" : "Beattock Summit",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

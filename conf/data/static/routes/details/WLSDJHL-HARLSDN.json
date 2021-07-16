@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.5324947720042,
+    "lon" : -0.24454788456345455,
+    "id" : "WLSDJHL",
+    "name" : "Willesden Junction",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.5364,
+    "lon" : -0.2579949,
+    "id" : "HARLSDN",
+    "name" : "Harlesden",
+    "type" : "Station"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

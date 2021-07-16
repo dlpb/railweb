@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.503428,
+    "lon" : -0.084040543,
+    "id" : "LNDNBDG",
+    "name" : "London Bridge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.503,
+    "lon" : -0.105,
+    "id" : "CATZZSO",
+    "name" : "Southwark Lt",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

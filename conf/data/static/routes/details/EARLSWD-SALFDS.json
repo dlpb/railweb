@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.227381,
+    "lon" : -0.17086387,
+    "id" : "EARLSWD",
+    "name" : "Earlswood (Surrey)",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.201382,
+    "lon" : -0.16217446,
+    "id" : "SALFDS",
+    "name" : "Salfords",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

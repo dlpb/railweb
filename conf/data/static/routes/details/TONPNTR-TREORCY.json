@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.647613,
+    "lon" : -3.4859355,
+    "id" : "TONPNTR",
+    "name" : "Ton Pentre",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.657366,
+    "lon" : -3.5059452,
+    "id" : "TREORCY",
+    "name" : "Treorchy",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "45-75"
+} ]

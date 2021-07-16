@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.182321,
+    "lon" : 0.38950922,
+    "id" : "PKWD",
+    "name" : "Paddock Wood",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.186366,
+    "lon" : 0.39753217,
+    "id" : "PKWD086",
+    "name" : "Paddock Wood Sig 2086",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.546232,
+    "lon" : -0.28753113,
+    "id" : "WLSD34",
+    "name" : "Willesden Wm830 & 934",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.543187,
+    "lon" : -0.28037714,
+    "id" : "WLSDNBJ",
+    "name" : "Willesden Sudbury Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

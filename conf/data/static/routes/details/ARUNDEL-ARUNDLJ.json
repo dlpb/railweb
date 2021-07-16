@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.8475,
+    "lon" : -0.54667942,
+    "id" : "ARUNDEL",
+    "name" : "Arundel",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.827422,
+    "lon" : -0.56442697,
+    "id" : "ARUNDLJ",
+    "name" : "Arundel Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

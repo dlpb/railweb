@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.540905,
+    "lon" : -0.27253188,
+    "id" : "WLSDBSJ",
+    "name" : "Wembley Yard South Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.537756,
+    "lon" : -0.26146153,
+    "id" : "WLSDHLS",
+    "name" : "Willesden Railnet Receptn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

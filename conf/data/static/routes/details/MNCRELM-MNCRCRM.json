@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.481,
+    "lon" : -2.1657,
+    "id" : "MNCRELM",
+    "name" : "Edge Lane Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.4799,
+    "lon" : -2.1549,
+    "id" : "MNCRCRM",
+    "name" : "Cemetery Rd Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

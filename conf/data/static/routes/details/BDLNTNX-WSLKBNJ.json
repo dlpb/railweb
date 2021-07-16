@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.141678,
+    "lon" : -1.5707735,
+    "id" : "BDLNTNX",
+    "name" : "Bedlington Nth. L.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.155205,
+    "lon" : -1.5690905,
+    "id" : "WSLKBNJ",
+    "name" : "West Sleekburn Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.797041,
+    "lon" : -1.0708613,
+    "id" : "FRAT460",
+    "name" : "Fratton Signal 460",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.800834,
+    "lon" : -1.0683596,
+    "id" : "FRATTNE",
+    "name" : "Fratton East",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

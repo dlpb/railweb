@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.449287,
+    "lon" : 0.0018721955,
+    "id" : "HTHRGRS",
+    "name" : "Hither Green Down Recp.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.447775,
+    "lon" : 0.0035186715,
+    "id" : "HTHRPAD",
+    "name" : "Hither Green P.A.D.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

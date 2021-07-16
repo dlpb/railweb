@@ -1,0 +1,10 @@
+[ {
+  "id" : "LEYLAND",
+  "crp" : "",
+  "route" : "London North Western",
+  "changeTime" : "Set(None)",
+  "interchangeType" : "2 - Medium interchange point",
+  "county" : "North West",
+  "district" : "Lancashire",
+  "postcode" : "\"PR5 2NN"
+} ]

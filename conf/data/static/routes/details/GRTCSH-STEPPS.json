@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.88556,
+    "lon" : -4.0789771,
+    "id" : "GRTCSH",
+    "name" : "Gartcosh",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.89011,
+    "lon" : -4.1406941,
+    "id" : "STEPPS",
+    "name" : "Stepps",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

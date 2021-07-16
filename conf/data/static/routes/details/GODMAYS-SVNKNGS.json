@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.565806,
+    "lon" : 0.11210185,
+    "id" : "GODMAYS",
+    "name" : "Goodmayes",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.563863,
+    "lon" : 0.096068296,
+    "id" : "SVNKNGS",
+    "name" : "Seven Kings",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

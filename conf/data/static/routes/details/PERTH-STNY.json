@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.391779,
+    "lon" : -3.439605,
+    "id" : "PERTH",
+    "name" : "Perth",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.486277,
+    "lon" : -3.4457159,
+    "id" : "STNY",
+    "name" : "Stanley",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-100"
+} ]

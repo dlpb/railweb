@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.957507,
+    "lon" : -1.0945332,
+    "id" : "YORK",
+    "name" : "York",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.950222,
+    "lon" : -1.1046868,
+    "id" : "YORKGBF",
+    "name" : "York Holgate Siding (Gbrf)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

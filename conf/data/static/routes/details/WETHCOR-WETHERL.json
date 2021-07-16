@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.884771,
+    "lon" : -2.8254971,
+    "id" : "WETHCOR",
+    "name" : "Corby Gates S.B.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.883731,
+    "lon" : -2.8316486,
+    "id" : "WETHERL",
+    "name" : "Wetheral",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

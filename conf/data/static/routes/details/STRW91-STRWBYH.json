@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.443595,
+    "lon" : -0.33893136,
+    "id" : "STRW91",
+    "name" : "Strawberry Hill Sig. F91",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.439491,
+    "lon" : -0.33931046,
+    "id" : "STRWBYH",
+    "name" : "Strawberry Hill",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

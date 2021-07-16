@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.731391,
+    "lon" : -4.3110271,
+    "id" : "KIDWJCN",
+    "name" : "Kidwelly Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.684044,
+    "lon" : -4.2489662,
+    "id" : "PMBRYBP",
+    "name" : "Pembrey & Burry Port",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

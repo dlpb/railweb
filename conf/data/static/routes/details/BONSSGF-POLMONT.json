@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.978016,
+    "lon" : -3.659655,
+    "id" : "BONSSGF",
+    "name" : "Bo'ness G.F.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.984473,
+    "lon" : -3.7144643,
+    "id" : "POLMONT",
+    "name" : "Polmont",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.414525,
+    "lon" : -3.4940812,
+    "id" : "ABTH433",
+    "name" : "Aberthaw Sig Cf3433",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.40957,
+    "lon" : -3.4812807,
+    "id" : "LLNWTMR",
+    "name" : "Llantwit Major",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "45-75"
+} ]

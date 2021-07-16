@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.0136,
+    "lon" : -1.644,
+    "id" : "TAWMGFAW",
+    "name" : "Fawdon",
+    "type" : "Metro"
+  },
+  "to" : {
+    "lat" : 55.0143,
+    "lon" : -1.6358,
+    "id" : "TAWMGWAR",
+    "name" : "Wansbeck Road",
+    "type" : "Metro"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Metro",
+  "speed" : "OHLE"
+} ]

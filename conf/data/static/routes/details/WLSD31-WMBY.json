@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.546205,
+    "lon" : -0.28756097,
+    "id" : "WLSD31",
+    "name" : "Wembley Signal 829/931",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.551642,
+    "lon" : -0.29591023,
+    "id" : "WMBY",
+    "name" : "Wembley Central",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

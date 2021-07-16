@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.378227,
+    "lon" : 0.084802874,
+    "id" : "ORPNDSG",
+    "name" : "Orpington Down Sdgs",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.373579,
+    "lon" : 0.088772936,
+    "id" : "ORPNGTN",
+    "name" : "Orpington",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

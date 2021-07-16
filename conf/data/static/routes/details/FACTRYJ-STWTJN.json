@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 51.470884,
+    "lon" : -0.13932754,
+    "id" : "FACTRYJ",
+    "name" : "Factory Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.475938,
+    "lon" : -0.14270757,
+    "id" : "STWTJN",
+    "name" : "Stewarts Lane Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+}, {
+  "from" : {
+    "lat" : 51.470884,
+    "lon" : -0.13932754,
+    "id" : "FACTRYJ",
+    "name" : "Factory Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.475938,
+    "lon" : -0.14270757,
+    "id" : "STWTJN",
+    "name" : "Stewarts Lane Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

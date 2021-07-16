@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.577421,
+    "lon" : -0.1052489,
+    "id" : "HRGY",
+    "name" : "Harringay",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.598006,
+    "lon" : -0.12043389,
+    "id" : "ALEXNDP",
+    "name" : "Alexandra Palace",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "20 MINUTES"
+} ]

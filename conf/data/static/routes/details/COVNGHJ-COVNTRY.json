@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.396041,
+    "lon" : -1.5096617,
+    "id" : "COVNGHJ",
+    "name" : "Gibbet Hill Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.400741,
+    "lon" : -1.5136956,
+    "id" : "COVNTRY",
+    "name" : "Coventry",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

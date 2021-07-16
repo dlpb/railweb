@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.039253,
+    "lon" : 1.1500171,
+    "id" : "IPSWHJN",
+    "name" : "Ipswich Halifax Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.05059017669498,
+    "lon" : 1.1444255837190085,
+    "id" : "IPSWICH",
+    "name" : "Ipswich",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

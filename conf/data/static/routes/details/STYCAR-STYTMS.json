@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.405669,
+    "lon" : -1.4107634,
+    "id" : "STYCAR",
+    "name" : "Carbrook",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 53.414377,
+    "lon" : -1.4050705,
+    "id" : "STYTMS",
+    "name" : "Tinsley Meadowhall South",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

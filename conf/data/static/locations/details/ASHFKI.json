@@ -1,0 +1,10 @@
+[ {
+  "id" : "ASHFKI",
+  "crp" : "",
+  "route" : "South East",
+  "changeTime" : "Set(Some(ChangeTime(AFK,SN,SE,6,)), None)",
+  "interchangeType" : "1 - Small interchange point",
+  "county" : "South East",
+  "district" : "Kent",
+  "postcode" : "\"TN23 1EZ"
+} ]

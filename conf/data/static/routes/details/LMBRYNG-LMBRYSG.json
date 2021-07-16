@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.896173,
+    "lon" : -0.44334619,
+    "id" : "LMBRYNG",
+    "name" : "Limbury Road North G.F.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.893782,
+    "lon" : -0.43934504,
+    "id" : "LMBRYSG",
+    "name" : "Limbury Road South G.F.",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

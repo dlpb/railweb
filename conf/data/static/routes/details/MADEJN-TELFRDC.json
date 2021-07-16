@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.673329,
+    "lon" : -2.4163279,
+    "id" : "MADEJN",
+    "name" : "Madeley Jn (Salop)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.680917,
+    "lon" : -2.4409542,
+    "id" : "TELFRDC",
+    "name" : "Telford Central",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

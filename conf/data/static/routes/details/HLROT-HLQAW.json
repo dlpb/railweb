@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.7048,
+    "lon" : -1.16,
+    "id" : "HLROT",
+    "name" : "Rothley",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.7403,
+    "lon" : -1.1878,
+    "id" : "HLQAW",
+    "name" : "Quorn And Woodhouse",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "40-75"
+} ]

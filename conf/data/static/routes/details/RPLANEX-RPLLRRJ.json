@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.529075,
+    "lon" : 0.11782633,
+    "id" : "RPLANEX",
+    "name" : "Ripple Lane Exch Sdgs",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.529308,
+    "lon" : 0.11689998,
+    "id" : "RPLLRRJ",
+    "name" : "Ripple Lane Renwick Rd Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.533408,
+    "lon" : -0.25150559,
+    "id" : "ACTNLRG",
+    "name" : "Acton Lane Rec Sdgs Gbrf",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.535748,
+    "lon" : -0.25830817,
+    "id" : "WLSDNN7",
+    "name" : "Willesden No7",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

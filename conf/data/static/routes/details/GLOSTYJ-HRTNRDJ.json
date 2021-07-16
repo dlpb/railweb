@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.85442,
+    "lon" : -2.2279314,
+    "id" : "GLOSTYJ",
+    "name" : "Gloucester Yard Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.862516,
+    "lon" : -2.2304701,
+    "id" : "HRTNRDJ",
+    "name" : "Horton Road Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

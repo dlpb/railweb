@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.489057,
+    "lon" : -1.2317285,
+    "id" : "CONBCAD",
+    "name" : "Cadeby Up Goods Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.504684,
+    "lon" : -1.1744693,
+    "id" : "DONCHJN",
+    "name" : "Hexthorpe Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

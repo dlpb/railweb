@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.776239,
+    "lon" : -3.0497887,
+    "id" : "SQUIRES",
+    "name" : "Squires Gate",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.753112,
+    "lon" : -3.0289648,
+    "id" : "STAS",
+    "name" : "St Annes-On-The-Sea",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

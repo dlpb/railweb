@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.386885,
+    "lon" : -2.1762177,
+    "id" : "ADSWDRD",
+    "name" : "Adswood Road Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.397517,
+    "lon" : -2.1644412,
+    "id" : "STKPE1",
+    "name" : "Edgeley Jn No1",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

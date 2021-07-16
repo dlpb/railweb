@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.007249,
+    "lon" : -0.49828389,
+    "id" : "FLITWCJ",
+    "name" : "Flitwick Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.003299,
+    "lon" : -0.49461371,
+    "id" : "FLITWCK",
+    "name" : "Flitwick",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

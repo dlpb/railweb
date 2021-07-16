@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.196006,
+    "lon" : -2.8776784,
+    "id" : "CHST",
+    "name" : "Chester",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.199954,
+    "lon" : -2.8859927,
+    "id" : "CHSTRDD",
+    "name" : "Chester D.M.U.D.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

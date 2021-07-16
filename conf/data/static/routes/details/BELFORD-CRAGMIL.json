@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.595542,
+    "lon" : -1.8012725,
+    "id" : "BELFORD",
+    "name" : "Belford L.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.606104,
+    "lon" : -1.8153298,
+    "id" : "CRAGMIL",
+    "name" : "Crag Mill Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

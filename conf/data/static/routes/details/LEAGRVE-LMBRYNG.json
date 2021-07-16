@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.905428,
+    "lon" : -0.45856606,
+    "id" : "LEAGRVE",
+    "name" : "Leagrave",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.896173,
+    "lon" : -0.44334619,
+    "id" : "LMBRYNG",
+    "name" : "Limbury Road North G.F.",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

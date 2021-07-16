@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.471104,
+    "lon" : -2.1841747,
+    "id" : "ASHBRSY",
+    "name" : "Ashburys S.S.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.471805,
+    "lon" : -2.1954766,
+    "id" : "ASHBRYS",
+    "name" : "Ashburys",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

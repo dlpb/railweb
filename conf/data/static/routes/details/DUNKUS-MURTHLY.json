@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.55631,
+    "lon" : -3.5762202,
+    "id" : "DUNKUS",
+    "name" : "Dunkeld & Birnam Up Sdg",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.52845,
+    "lon" : -3.4628649,
+    "id" : "MURTHLY",
+    "name" : "Murthly",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

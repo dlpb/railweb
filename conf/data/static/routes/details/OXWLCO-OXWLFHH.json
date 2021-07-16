@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.981121,
+    "lon" : -2.475602,
+    "id" : "OXWLCO",
+    "name" : "Oxwellmains Crossover",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.979427,
+    "lon" : -2.4674725,
+    "id" : "OXWLFHH",
+    "name" : "Oxwellmains Lafarge",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

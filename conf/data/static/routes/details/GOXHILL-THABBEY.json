@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.676987,
+    "lon" : -0.33765426,
+    "id" : "GOXHILL",
+    "name" : "Goxhill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.654446,
+    "lon" : -0.32312164,
+    "id" : "THABBEY",
+    "name" : "Thornton Abbey",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

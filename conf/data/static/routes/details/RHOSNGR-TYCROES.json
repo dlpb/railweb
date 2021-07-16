@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.23455,
+    "lon" : -4.505696,
+    "id" : "RHOSNGR",
+    "name" : "Rhosneigr",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.222396,
+    "lon" : -4.4729257,
+    "id" : "TYCROES",
+    "name" : "Ty Croes",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

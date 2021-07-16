@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.550948,
+    "lon" : -3.7488827,
+    "id" : "MRGMTC",
+    "name" : "Margam T.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.579787,
+    "lon" : -3.7958434,
+    "id" : "PTLBFHH",
+    "name" : "Port Talbot Grange Sdg Fhh",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

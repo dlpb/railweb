@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.587318,
+    "lon" : -1.6905115,
+    "id" : "CLYTNWJ",
+    "name" : "Clayton West Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.572737,
+    "lon" : -1.663134,
+    "id" : "DNDL",
+    "name" : "Denby Dale",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

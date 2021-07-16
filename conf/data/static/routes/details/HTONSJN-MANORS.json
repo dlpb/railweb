@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.980996,
+    "lon" : -1.5782071,
+    "id" : "HTONSJN",
+    "name" : "Heaton Sth. Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.972739,
+    "lon" : -1.6054442,
+    "id" : "MANORS",
+    "name" : "Manors",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

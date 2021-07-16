@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.571156,
+    "lon" : -3.6434912,
+    "id" : "HTHFECC",
+    "name" : "Heathfield E.C.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.576981,
+    "lon" : -3.6570128,
+    "id" : "HTHFLDO",
+    "name" : "Heathfield Gulf Oil",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

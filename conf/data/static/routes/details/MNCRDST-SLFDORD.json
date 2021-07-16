@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.483975,
+    "lon" : -2.2534295,
+    "id" : "MNCRDST",
+    "name" : "Deal Street Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.482639,
+    "lon" : -2.2560888,
+    "id" : "SLFDORD",
+    "name" : "Salford Central",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

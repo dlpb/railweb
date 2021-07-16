@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.608,
+    "lon" : -2.1117,
+    "id" : "MILNROW",
+    "name" : "Milnrow Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.6113,
+    "lon" : -2.1247,
+    "id" : "MNCRKBM",
+    "name" : "Kingsway Bp Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

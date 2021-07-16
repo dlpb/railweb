@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.525655,
+    "lon" : -1.4894864,
+    "id" : "NNTN242",
+    "name" : "Nuneaton Sig Nw4242",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.529557,
+    "lon" : -1.4793143,
+    "id" : "NNTNABJ",
+    "name" : "Nuneaton Abbey Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.745929,
+    "lon" : -1.7097593,
+    "id" : "BTNUNSJ",
+    "name" : "Barton Under Needwood S Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.743722,
+    "lon" : -1.7115515,
+    "id" : "WICHBW",
+    "name" : "Barton & Walton",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

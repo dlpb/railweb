@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.857584,
+    "lon" : -4.2312953,
+    "id" : "GLGHSJN",
+    "name" : "High St Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.859279,
+    "lon" : -4.2398779,
+    "id" : "GLGHST",
+    "name" : "High Street",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

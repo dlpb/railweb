@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.853654,
+    "lon" : -4.1599383,
+    "id" : "SHTLSTN",
+    "name" : "Shettleston",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.85335,
+    "lon" : -4.1460053,
+    "id" : "SHTLTNL",
+    "name" : "Shettleston Loop",
+    "type" : "Location"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

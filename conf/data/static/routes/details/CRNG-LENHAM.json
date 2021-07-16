@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.208193,
+    "lon" : 0.78973554,
+    "id" : "CRNG",
+    "name" : "Charing",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.234412,
+    "lon" : 0.7077691,
+    "id" : "LENHAM",
+    "name" : "Lenham",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "70-90"
+} ]

@@ -1,0 +1,10 @@
+[ {
+  "id" : "KENDAL",
+  "crp" : "Lakes Line",
+  "route" : "London North Western",
+  "changeTime" : "Set(None)",
+  "interchangeType" : "0 - Not an interchange point",
+  "county" : "North West",
+  "district" : "Cumbria",
+  "postcode" : "\"LA9 6BT"
+} ]

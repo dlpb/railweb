@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.947235,
+    "lon" : -1.1290997,
+    "id" : "NTNGSLC",
+    "name" : "Sneinton L.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.947342,
+    "lon" : -1.1426111,
+    "id" : "NTNG",
+    "name" : "Nottingham",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.447334,
+    "lon" : 0.21969224,
+    "id" : "DARTFD",
+    "name" : "Dartford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.451419,
+    "lon" : 0.26327187,
+    "id" : "STCR",
+    "name" : "Stone Crossing",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

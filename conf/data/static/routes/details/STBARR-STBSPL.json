@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.363452,
+    "lon" : -1.4476072,
+    "id" : "STBARR",
+    "name" : "Arbourthorne Road",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 53.366299,
+    "lon" : -1.4387455,
+    "id" : "STBSPL",
+    "name" : "Spring Lane",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

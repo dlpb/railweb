@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.782867,
+    "lon" : -4.4268938,
+    "id" : "NEILSTN",
+    "name" : "Neilston",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.790583,
+    "lon" : -4.3352808,
+    "id" : "PATERTN",
+    "name" : "Patterton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

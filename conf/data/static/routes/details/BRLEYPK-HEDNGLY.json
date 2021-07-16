@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.812182,
+    "lon" : -1.5779786,
+    "id" : "BRLEYPK",
+    "name" : "Burley Park",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.817926,
+    "lon" : -1.5938087,
+    "id" : "HEDNGLY",
+    "name" : "Headingley",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

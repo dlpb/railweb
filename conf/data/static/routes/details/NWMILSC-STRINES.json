@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.364849,
+    "lon" : -2.0057312,
+    "id" : "NWMILSC",
+    "name" : "New Mills Central",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.374759,
+    "lon" : -2.0335999,
+    "id" : "STRINES",
+    "name" : "Strines",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

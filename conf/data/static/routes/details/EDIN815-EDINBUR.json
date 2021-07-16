@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.953195,
+    "lon" : -3.1803887,
+    "id" : "EDIN815",
+    "name" : "Edinburgh Signal E815",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.951559,
+    "lon" : -3.1916293,
+    "id" : "EDINBUR",
+    "name" : "Edinburgh",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

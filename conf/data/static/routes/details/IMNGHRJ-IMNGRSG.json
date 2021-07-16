@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.633563,
+    "lon" : -0.22999522,
+    "id" : "IMNGHRJ",
+    "name" : "Humber Road Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.629291,
+    "lon" : -0.21839294,
+    "id" : "IMNGRSG",
+    "name" : "Immingham Recep Sdgs Gbrf",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

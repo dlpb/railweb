@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.450651,
+    "lon" : -1.7250042,
+    "id" : "BHAMINT",
+    "name" : "Birmingham International",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.446359,
+    "lon" : -1.7198961,
+    "id" : "BHAMISJ",
+    "name" : "Birmingham Inter South Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

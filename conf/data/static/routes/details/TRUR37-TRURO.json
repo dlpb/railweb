@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.265088,
+    "lon" : -5.0594192,
+    "id" : "TRUR37",
+    "name" : "Truro Shunt Signal 37",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.264083,
+    "lon" : -5.0644489,
+    "id" : "TRURO",
+    "name" : "Truro",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

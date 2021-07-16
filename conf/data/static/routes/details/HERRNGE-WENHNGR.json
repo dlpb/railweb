@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.103364,
+    "lon" : 0.98239706,
+    "id" : "HERRNGE",
+    "name" : "Herringe",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.09507,
+    "lon" : 1.0372569,
+    "id" : "WENHNGR",
+    "name" : "Westenhanger",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

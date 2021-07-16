@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.891891,
+    "lon" : -1.1661447,
+    "id" : "COLTONJ",
+    "name" : "Colton Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.950204,
+    "lon" : -1.1046872,
+    "id" : "YORKHLG",
+    "name" : "York Loop (Holgate)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

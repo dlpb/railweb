@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.77917,
+    "lon" : -3.0047635,
+    "id" : "AXMNSWJ",
+    "name" : "Axminster West Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.759969,
+    "lon" : -3.0587539,
+    "id" : "SETONJN",
+    "name" : "Seaton Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

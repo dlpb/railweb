@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.866293,
+    "lon" : 1.3493501,
+    "id" : "GUNTON",
+    "name" : "Gunton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.816983,
+    "lon" : 1.384462,
+    "id" : "NWALSHM",
+    "name" : "North Walsham",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

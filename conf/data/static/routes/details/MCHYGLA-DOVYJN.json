@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.553294,
+    "lon" : -3.929687,
+    "id" : "MCHYGLA",
+    "name" : "Glandyfi",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.564773,
+    "lon" : -3.9237875,
+    "id" : "DOVYJN",
+    "name" : "Dovey Junction",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

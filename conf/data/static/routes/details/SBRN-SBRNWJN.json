@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.583383,
+    "lon" : -0.97582118,
+    "id" : "SBRN",
+    "name" : "Saltburn",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.582954,
+    "lon" : -0.99000517,
+    "id" : "SBRNWJN",
+    "name" : "Saltburn West Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

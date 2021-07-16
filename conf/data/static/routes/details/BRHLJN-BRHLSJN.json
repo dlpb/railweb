@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.272602,
+    "lon" : -1.3809332,
+    "id" : "BRHLJN",
+    "name" : "Barrow Hill North Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.27093,
+    "lon" : -1.3967317,
+    "id" : "BRHLSJN",
+    "name" : "Barrow Hill South Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

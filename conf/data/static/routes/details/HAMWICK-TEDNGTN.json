@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.414509,
+    "lon" : -0.31213054,
+    "id" : "HAMWICK",
+    "name" : "Hampton Wick",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.424405,
+    "lon" : -0.33257921,
+    "id" : "TEDNGTN",
+    "name" : "Teddington",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.241896,
+    "lon" : -0.2039994,
+    "id" : "REIGATE",
+    "name" : "Reigate",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.241896,
+    "lon" : -0.2039994,
+    "id" : "REIGCHS",
+    "name" : "Reigate C.H.S.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

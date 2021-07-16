@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.203286,
+    "lon" : -4.723173,
+    "id" : "ARCHRAT",
+    "name" : "Arrochar & Tarbet",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.160591,
+    "lon" : -4.7784899,
+    "id" : "GLDL",
+    "name" : "Glen Douglas",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

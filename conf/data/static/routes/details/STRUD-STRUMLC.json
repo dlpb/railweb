@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.744306,
+    "lon" : -2.2188887,
+    "id" : "STRUD",
+    "name" : "Stroud",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.718822,
+    "lon" : -2.1662191,
+    "id" : "STRUMLC",
+    "name" : "St. Mary's Level Crossing",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

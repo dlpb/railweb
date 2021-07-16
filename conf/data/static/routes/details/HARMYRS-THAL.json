@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.761914,
+    "lon" : -4.2202948,
+    "id" : "HARMYRS",
+    "name" : "Hairmyres",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.768561,
+    "lon" : -4.2511076,
+    "id" : "THAL",
+    "name" : "Thorntonhall",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

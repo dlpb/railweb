@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.414097,
+    "lon" : -1.1165753,
+    "id" : "UFTNXGL",
+    "name" : "Ufton Crossing Goods Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.424782,
+    "lon" : -1.0933855,
+    "id" : "THEA834",
+    "name" : "Theale Signal T2834",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

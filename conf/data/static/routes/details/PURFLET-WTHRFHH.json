@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.481405,
+    "lon" : 0.236887,
+    "id" : "PURFLET",
+    "name" : "Purfleet",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.474402,
+    "lon" : 0.29352754,
+    "id" : "WTHRFHH",
+    "name" : "West Thurrock Sidings Fhh",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.388414,
+    "lon" : 0.074759138,
+    "id" : "PETSWD",
+    "name" : "Petts Wood",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.392975,
+    "lon" : 0.070092508,
+    "id" : "PETSWDJ",
+    "name" : "Petts Wood Jn",
+    "type" : "Junction"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

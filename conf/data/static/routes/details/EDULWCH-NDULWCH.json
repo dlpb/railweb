@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.461269,
+    "lon" : -0.080624281,
+    "id" : "EDULWCH",
+    "name" : "East Dulwich",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.454737,
+    "lon" : -0.087576958,
+    "id" : "NDULWCH",
+    "name" : "North Dulwich",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

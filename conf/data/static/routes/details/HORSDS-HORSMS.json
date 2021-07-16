@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.062767,
+    "lon" : -0.32207186,
+    "id" : "HORSDS",
+    "name" : "Horsham Carriage Sidings",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.062767,
+    "lon" : -0.32207186,
+    "id" : "HORSMS",
+    "name" : "Horsham Down Sidings South",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

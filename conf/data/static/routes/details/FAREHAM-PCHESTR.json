@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.853683,
+    "lon" : -1.1926226,
+    "id" : "FAREHAM",
+    "name" : "Fareham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.848845,
+    "lon" : -1.1251614,
+    "id" : "PCHESTR",
+    "name" : "Portchester",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

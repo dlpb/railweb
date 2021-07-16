@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.37817,
+    "lon" : -2.9146878,
+    "id" : "MSLH",
+    "name" : "Mossley Hill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.394624,
+    "lon" : -2.9269812,
+    "id" : "WVRTREJ",
+    "name" : "Wavertree Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

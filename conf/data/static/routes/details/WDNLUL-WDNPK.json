@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.421711,
+    "lon" : -0.20612143,
+    "id" : "WDNLUL",
+    "name" : "Wimbledon",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.434486,
+    "lon" : -0.19944897,
+    "id" : "WDNPK",
+    "name" : "Wimbledon Park",
+    "type" : "Location"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

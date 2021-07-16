@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.09887,
+    "lon" : -1.6318315,
+    "id" : "MRPTPX",
+    "name" : "Plessey Crossovers",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.162507,
+    "lon" : -1.6821788,
+    "id" : "MRPTHRP",
+    "name" : "Morpeth",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

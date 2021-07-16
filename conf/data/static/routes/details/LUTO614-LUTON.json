@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.883136,
+    "lon" : -0.41775955,
+    "id" : "LUTO614",
+    "name" : "Luton Signal 614",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.882446,
+    "lon" : -0.41394801,
+    "id" : "LUTON",
+    "name" : "Luton",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.781234,
+    "lon" : -1.199593,
+    "id" : "LOGH675",
+    "name" : "Loughborough Signal 675",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.78254,
+    "lon" : -1.2012296,
+    "id" : "LOGHBSH",
+    "name" : "Loughborough Brush",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.396087,
+    "lon" : -1.1784853,
+    "id" : "MIDGHAM",
+    "name" : "Midgham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.393883,
+    "lon" : -1.2424564,
+    "id" : "THATCHM",
+    "name" : "Thatcham",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

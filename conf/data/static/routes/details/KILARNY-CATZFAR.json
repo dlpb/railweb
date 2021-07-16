@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.0592,
+    "lon" : -9.50264,
+    "id" : "KILARNY",
+    "name" : "Killarney   (Cie",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.1737,
+    "lon" : -9.552043,
+    "id" : "CATZFAR",
+    "name" : "Farranfore  (Cie",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

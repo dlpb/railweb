@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.196947,
+    "lon" : -0.60466956,
+    "id" : "FRNCMB",
+    "name" : "Farncombe",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.186416,
+    "lon" : -0.61902475,
+    "id" : "GDLMING",
+    "name" : "Godalming",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.813902,
+    "lon" : 1.3862263,
+    "id" : "NWALBPL",
+    "name" : "North Walsham Gbrf",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.777318,
+    "lon" : 1.4040284,
+    "id" : "WORSTED",
+    "name" : "Worstead",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

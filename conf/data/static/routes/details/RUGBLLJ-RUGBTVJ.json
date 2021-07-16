@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.378695,
+    "lon" : -1.2863805,
+    "id" : "RUGBLLJ",
+    "name" : "Rugby Long Lawford Junc",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.380775,
+    "lon" : -1.2650151,
+    "id" : "RUGBTVJ",
+    "name" : "Rugby Trent Valley Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

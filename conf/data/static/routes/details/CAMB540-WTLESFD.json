@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.112508,
+    "lon" : 0.16165326,
+    "id" : "CAMB540",
+    "name" : "Whittlesford Sig Ca540",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.103334,
+    "lon" : 0.16566327,
+    "id" : "WTLESFD",
+    "name" : "Whittlesford Parkway",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

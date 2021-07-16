@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.725421,
+    "lon" : -4.1080854,
+    "id" : "DELNY",
+    "name" : "Delny",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 57.68909,
+    "lon" : -4.1742742,
+    "id" : "IVRGRD",
+    "name" : "Invergordon",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

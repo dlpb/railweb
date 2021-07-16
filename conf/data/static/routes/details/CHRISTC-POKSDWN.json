@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.738276,
+    "lon" : -1.7849141,
+    "id" : "CHRISTC",
+    "name" : "Christchurch",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.731214,
+    "lon" : -1.8265043,
+    "id" : "POKSDWN",
+    "name" : "Pokesdown",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

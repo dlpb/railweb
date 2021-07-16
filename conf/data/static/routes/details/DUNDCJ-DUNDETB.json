@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.454237,
+    "lon" : -2.9793246,
+    "id" : "DUNDCJ",
+    "name" : "Dundee Central Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.455988,
+    "lon" : -2.9727008,
+    "id" : "DUNDETB",
+    "name" : "Dundee",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

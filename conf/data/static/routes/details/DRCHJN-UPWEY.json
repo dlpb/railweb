@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.70522,
+    "lon" : -2.4410283,
+    "id" : "DRCHJN",
+    "name" : "Dorchester Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.648216,
+    "lon" : -2.4660385,
+    "id" : "UPWEY",
+    "name" : "Upwey",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

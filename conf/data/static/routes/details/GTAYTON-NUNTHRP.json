@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.489324,
+    "lon" : -1.1150418,
+    "id" : "GTAYTON",
+    "name" : "Great Ayton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.528043,
+    "lon" : -1.1698009,
+    "id" : "NUNTHRP",
+    "name" : "Nunthorpe",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

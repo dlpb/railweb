@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.556935,
+    "lon" : -0.72246884,
+    "id" : "COOKHAM",
+    "name" : "Cookham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.533575,
+    "lon" : -0.72832755,
+    "id" : "FURZEP",
+    "name" : "Furze Platt",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.7998,
+    "lon" : -3.3607,
+    "id" : "HMTPON",
+    "name" : "Pontsticill",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 51.8209,
+    "lon" : -3.3685,
+    "id" : "HMTDOL",
+    "name" : "Dol-Y-Gaer",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

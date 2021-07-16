@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.787373,
+    "lon" : -1.5548988,
+    "id" : "ESJLEDS",
+    "name" : "Engine Shed Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.787736,
+    "lon" : -1.5559878,
+    "id" : "HOLBSDG",
+    "name" : "Holbeck Loco Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.46466,
+    "lon" : -0.17066319,
+    "id" : "CLPHMYM",
+    "name" : "Clapham Yard",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.466488,
+    "lon" : -0.16681799,
+    "id" : "CLPHS47",
+    "name" : "Clapham Jn Signal W1047",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

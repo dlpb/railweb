@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.6109,
+    "lon" : -0.4244,
+    "id" : "CATZZND",
+    "name" : "Northwood Und",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.503428,
+    "lon" : -0.084040543,
+    "id" : "LNDNBDG",
+    "name" : "London Bridge",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "78 MINUTES"
+} ]

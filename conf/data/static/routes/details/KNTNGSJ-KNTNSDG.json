@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.703156,
+    "lon" : -1.2504214,
+    "id" : "KNTNGSJ",
+    "name" : "Knottingley South Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.706103,
+    "lon" : -1.2589585,
+    "id" : "KNTNSDG",
+    "name" : "Knottingley Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

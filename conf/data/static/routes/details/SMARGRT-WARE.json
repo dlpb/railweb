@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.788332,
+    "lon" : 7.97989E-4,
+    "id" : "SMARGRT",
+    "name" : "St Margarets (Hertfordshire)",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.808031,
+    "lon" : -0.029314974,
+    "id" : "WARE",
+    "name" : "Ware",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

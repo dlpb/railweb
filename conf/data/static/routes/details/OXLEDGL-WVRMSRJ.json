@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.606244,
+    "lon" : -2.1371072,
+    "id" : "OXLEDGL",
+    "name" : "Oxley Down Goods Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.601844,
+    "lon" : -2.1324277,
+    "id" : "WVRMSRJ",
+    "name" : "Stafford Road Jn Wvrmptn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

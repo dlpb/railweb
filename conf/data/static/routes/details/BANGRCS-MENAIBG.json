@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.222455,
+    "lon" : -4.1356938,
+    "id" : "BANGRCS",
+    "name" : "Bangor C.S.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.216333,
+    "lon" : -4.1861957,
+    "id" : "MENAIBG",
+    "name" : "Menai Bridge",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

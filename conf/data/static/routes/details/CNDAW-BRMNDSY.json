@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.498333,
+    "lon" : -0.05,
+    "id" : "CNDAW",
+    "name" : "Canada Water",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.498056,
+    "lon" : -0.063889,
+    "id" : "BRMNDSY",
+    "name" : "Bermondsey Lrt",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

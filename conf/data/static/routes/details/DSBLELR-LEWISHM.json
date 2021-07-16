@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.468768,
+    "lon" : -0.016265,
+    "id" : "DSBLELR",
+    "name" : "Elverson Road",
+    "type" : "Light Rail"
+  },
+  "to" : {
+    "lat" : 51.465685,
+    "lon" : -0.014240611,
+    "id" : "LEWISHM",
+    "name" : "Lewisham",
+    "type" : "Station"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Unknown",
+  "speed" : "OHLE"
+} ]

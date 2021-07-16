@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.473908,
+    "lon" : -2.9563104,
+    "id" : "AINTREE",
+    "name" : "Aintree",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.46153,
+    "lon" : -2.9629908,
+    "id" : "ORELPKH",
+    "name" : "Orrell Park",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

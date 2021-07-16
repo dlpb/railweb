@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.195079,
+    "lon" : -2.8730492,
+    "id" : "CHSTREJ",
+    "name" : "Chester East Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.216685,
+    "lon" : -2.8320352,
+    "id" : "MIKLTRF",
+    "name" : "Mickle Trafford",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

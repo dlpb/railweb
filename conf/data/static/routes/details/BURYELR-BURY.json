@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.591895,
+    "lon" : -2.301076,
+    "id" : "BURYELR",
+    "name" : "Bury East Lancs Railway",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.5914,
+    "lon" : -2.297,
+    "id" : "BURY",
+    "name" : "Bury Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

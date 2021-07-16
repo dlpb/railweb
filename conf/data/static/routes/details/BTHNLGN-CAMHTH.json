@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.52646,
+    "lon" : -0.056273853,
+    "id" : "BTHNLGN",
+    "name" : "Bethnal Green North Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.531767,
+    "lon" : -0.057475165,
+    "id" : "CAMHTH",
+    "name" : "Cambridge Heath",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.958218,
+    "lon" : -2.0249269,
+    "id" : "SKPT",
+    "name" : "Skipton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.957812,
+    "lon" : -2.0316474,
+    "id" : "SKPTSNJ",
+    "name" : "Skipton Down Shipley Slow",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

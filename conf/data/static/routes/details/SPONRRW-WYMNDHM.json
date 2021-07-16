@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.534756,
+    "lon" : 1.0856624,
+    "id" : "SPONRRW",
+    "name" : "Spooner Row",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.565379,
+    "lon" : 1.1182003,
+    "id" : "WYMNDHM",
+    "name" : "Wymondham",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

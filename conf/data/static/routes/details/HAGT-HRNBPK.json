@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.99294,
+    "lon" : -1.5372596,
+    "id" : "HAGT",
+    "name" : "Harrogate",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.979976,
+    "lon" : -1.5270345,
+    "id" : "HRNBPK",
+    "name" : "Hornbeam Park",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

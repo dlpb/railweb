@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.96458,
+    "lon" : -1.6228139,
+    "id" : "FRTHBKL",
+    "name" : "Forth Banks Line",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.968228,
+    "lon" : -1.6169534,
+    "id" : "NWCSTLE",
+    "name" : "Newcastle",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

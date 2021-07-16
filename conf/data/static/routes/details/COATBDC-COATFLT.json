@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.863009,
+    "lon" : -4.0323226,
+    "id" : "COATBDC",
+    "name" : "Coatbridge Central",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.872508,
+    "lon" : -4.041019,
+    "id" : "COATFLT",
+    "name" : "Coatbridge F.L.T.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

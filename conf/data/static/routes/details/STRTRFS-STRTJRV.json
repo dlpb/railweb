@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.769583,
+    "lon" : -1.5126972,
+    "id" : "STRTRFS",
+    "name" : "Stourton Flt C&W Rfs Eng",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.767087,
+    "lon" : -1.500195,
+    "id" : "STRTJRV",
+    "name" : "Stourton Jn Reverse",
+    "type" : "Point"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

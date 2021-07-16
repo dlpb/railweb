@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.6081,
+    "lon" : -0.29487,
+    "id" : "LUJCAP",
+    "name" : "Canons Park",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.619444,
+    "lon" : -0.302778,
+    "id" : "STNMORE",
+    "name" : "Stanmore Und",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

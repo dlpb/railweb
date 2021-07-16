@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.70345,
+    "lon" : -3.4726352,
+    "id" : "NWCOURT",
+    "name" : "Newcourt",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.685585,
+    "lon" : -3.4636811,
+    "id" : "TOPSHAM",
+    "name" : "Topsham",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

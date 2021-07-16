@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.767923,
+    "lon" : -1.5877222,
+    "id" : "COTNGLY",
+    "name" : "Cottingley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.749556,
+    "lon" : -1.5917385,
+    "id" : "MRLY",
+    "name" : "Morley",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

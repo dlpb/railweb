@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.866462,
+    "lon" : -4.0430672,
+    "id" : "BLAIRHL",
+    "name" : "Blairhill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.859847,
+    "lon" : -4.1070534,
+    "id" : "ESHS",
+    "name" : "Easterhouse",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

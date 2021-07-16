@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.987377,
+    "lon" : -3.0430699,
+    "id" : "RUABON",
+    "name" : "Ruabon",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.045878,
+    "lon" : -3.0036994,
+    "id" : "CROESNF",
+    "name" : "Croes Newydd North Fork",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

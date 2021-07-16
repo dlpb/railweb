@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.55986,
+    "lon" : -2.5888545,
+    "id" : "ARBROTH",
+    "name" : "Arbroath",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.56374,
+    "lon" : -2.5891751,
+    "id" : "ARBRURS",
+    "name" : "Arbroath U.R.S.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

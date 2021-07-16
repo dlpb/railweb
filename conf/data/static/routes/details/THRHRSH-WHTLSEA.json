@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.553204,
+    "lon" : -0.0332204,
+    "id" : "THRHRSH",
+    "name" : "Three Horse Shoes",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.549613,
+    "lon" : -0.11701093,
+    "id" : "WHTLSEA",
+    "name" : "Whittlesea",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

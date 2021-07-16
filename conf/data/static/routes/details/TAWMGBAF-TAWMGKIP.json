@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.0140295,
+    "lon" : -1.6781107,
+    "id" : "TAWMGBAF",
+    "name" : "Bank Foot",
+    "type" : "Metro"
+  },
+  "to" : {
+    "lat" : 55.0144,
+    "lon" : -1.6661,
+    "id" : "TAWMGKIP",
+    "name" : "Kingston Park",
+    "type" : "Metro"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Metro",
+  "speed" : "OHLE"
+} ]

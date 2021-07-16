@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.902028,
+    "lon" : 0.87929246,
+    "id" : "CLCHUP",
+    "name" : "Colchester Up Passngr Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.900858,
+    "lon" : 0.88923455,
+    "id" : "CLCHUSS",
+    "name" : "Colchester Sudbury Dock",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

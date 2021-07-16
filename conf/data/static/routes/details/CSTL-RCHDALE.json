@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.592394,
+    "lon" : -2.1779341,
+    "id" : "CSTL",
+    "name" : "Castleton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.610486,
+    "lon" : -2.153026,
+    "id" : "RCHDALE",
+    "name" : "Rochdale",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.940303,
+    "lon" : -3.893049,
+    "id" : "LLGADOG",
+    "name" : "Llangadog",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.962422,
+    "lon" : -3.8723366,
+    "id" : "LLWRDA",
+    "name" : "Llanwrda",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

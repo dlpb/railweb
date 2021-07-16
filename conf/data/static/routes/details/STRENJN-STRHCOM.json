@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.425383,
+    "lon" : -0.1388461,
+    "id" : "STRENJN",
+    "name" : "Streatham North Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.418693,
+    "lon" : -0.13605443,
+    "id" : "STRHCOM",
+    "name" : "Streatham Common",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

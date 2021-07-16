@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.339493,
+    "lon" : -0.50541904,
+    "id" : "WBYFLET",
+    "name" : "West Byfleet",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.323095,
+    "lon" : -0.54576369,
+    "id" : "WOKING",
+    "name" : "Woking",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

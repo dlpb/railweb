@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.750923,
+    "lon" : -0.37627804,
+    "id" : "HULLWLN",
+    "name" : "Walton Street Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.747413,
+    "lon" : -0.36675302,
+    "id" : "HULLWPN",
+    "name" : "West Parade North Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

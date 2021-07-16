@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.8024,
+    "lon" : -3.0556,
+    "id" : "BTPSCR",
+    "name" : "St. Chad's Road",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 53.808,
+    "lon" : -3.0555,
+    "id" : "BTPMAS",
+    "name" : "Manchester Square",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

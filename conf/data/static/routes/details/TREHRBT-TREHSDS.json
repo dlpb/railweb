@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.671589,
+    "lon" : -3.5353114,
+    "id" : "TREHRBT",
+    "name" : "Treherbert",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.671589,
+    "lon" : -3.5353114,
+    "id" : "TREHSDS",
+    "name" : "Treherbert Siding",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

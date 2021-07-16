@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.200547,
+    "lon" : -3.1307409,
+    "id" : "MKIN",
+    "name" : "Markinch",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.171571,
+    "lon" : -3.126716,
+    "id" : "THRNDPL",
+    "name" : "Thornton North D.P.L.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

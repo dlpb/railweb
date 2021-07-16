@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.278414,
+    "lon" : -0.40698496,
+    "id" : "SCARBRO",
+    "name" : "Scarborough",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.240509,
+    "lon" : -0.41714648,
+    "id" : "SEAMER",
+    "name" : "Seamer",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

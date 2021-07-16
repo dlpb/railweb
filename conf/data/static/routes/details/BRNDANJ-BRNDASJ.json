@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.506715,
+    "lon" : -2.2965665,
+    "id" : "BRNDANJ",
+    "name" : "Agecroft North Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.499087,
+    "lon" : -2.291433,
+    "id" : "BRNDASJ",
+    "name" : "Agecroft South Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

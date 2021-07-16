@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.425309,
+    "lon" : -0.18810091,
+    "id" : "HYDNSRD",
+    "name" : "Haydons Road",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.419762,
+    "lon" : -0.16044695,
+    "id" : "TOOTING",
+    "name" : "Tooting",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

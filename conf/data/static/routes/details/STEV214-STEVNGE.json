@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.905023,
+    "lon" : -0.20895362,
+    "id" : "STEV214",
+    "name" : "Stevenage Sig K214",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.90145,
+    "lon" : -0.20695896,
+    "id" : "STEVNGE",
+    "name" : "Stevenage",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

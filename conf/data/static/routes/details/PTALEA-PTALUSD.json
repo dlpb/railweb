@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.580236,
+    "lon" : -3.7674279,
+    "id" : "PTALEA",
+    "name" : "Port Talbot East",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.59016,
+    "lon" : -3.7784238,
+    "id" : "PTALUSD",
+    "name" : "Port Talbot Up Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

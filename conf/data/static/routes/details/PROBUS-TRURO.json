@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.298178,
+    "lon" : -4.9652883,
+    "id" : "PROBUS",
+    "name" : "Probus",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.264083,
+    "lon" : -5.0644489,
+    "id" : "TRURO",
+    "name" : "Truro",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

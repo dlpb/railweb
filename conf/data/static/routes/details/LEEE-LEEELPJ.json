@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.449696,
+    "lon" : 0.014195506,
+    "id" : "LEEE",
+    "name" : "Lee",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.449696,
+    "lon" : 0.014195506,
+    "id" : "LEEELPJ",
+    "name" : "Lee Loop Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

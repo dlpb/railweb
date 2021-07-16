@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.42539,
+    "lon" : -0.1325023,
+    "id" : "STRESJN",
+    "name" : "Streatham South Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.419762,
+    "lon" : -0.16044695,
+    "id" : "TOOTING",
+    "name" : "Tooting",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

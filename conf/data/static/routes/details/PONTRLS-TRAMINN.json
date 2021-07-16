@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.945143,
+    "lon" : -2.8740103,
+    "id" : "PONTRLS",
+    "name" : "Pontrilas",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.998386,
+    "lon" : -2.7821602,
+    "id" : "TRAMINN",
+    "name" : "Tram Inn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "70-90"
+} ]

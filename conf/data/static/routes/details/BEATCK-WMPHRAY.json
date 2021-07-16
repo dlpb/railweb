@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.306894,
+    "lon" : -3.4549917,
+    "id" : "BEATCK",
+    "name" : "Beattock",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.240079,
+    "lon" : -3.3956622,
+    "id" : "WMPHRAY",
+    "name" : "Wamphray G.F.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

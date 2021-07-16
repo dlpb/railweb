@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.487615,
+    "lon" : -3.0403102,
+    "id" : "BLNDLAC",
+    "name" : "Blundellsands & Crosby",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.474507,
+    "lon" : -3.024983,
+    "id" : "WLOO",
+    "name" : "Waterloo (Merseyside)",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

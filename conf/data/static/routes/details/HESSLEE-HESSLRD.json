@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 53.722858,
+    "lon" : -0.40503516,
+    "id" : "HESSLEE",
+    "name" : "Hessle East Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.733029,
+    "lon" : -0.38189477,
+    "id" : "HESSLRD",
+    "name" : "Hessle Road Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+}, {
+  "from" : {
+    "lat" : 53.722858,
+    "lon" : -0.40503516,
+    "id" : "HESSLEE",
+    "name" : "Hessle East Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.733029,
+    "lon" : -0.38189477,
+    "id" : "HESSLRD",
+    "name" : "Hessle Road Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

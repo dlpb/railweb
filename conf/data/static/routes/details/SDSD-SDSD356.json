@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.348494,
+    "lon" : -0.093482794,
+    "id" : "SDSD",
+    "name" : "Sanderstead",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.346851,
+    "lon" : -0.094211529,
+    "id" : "SDSD356",
+    "name" : "Sanderstead Signal T1356",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

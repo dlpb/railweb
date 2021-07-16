@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.971061,
+    "lon" : -1.4469214,
+    "id" : "BRWHBNJ",
+    "name" : "Boldon North Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.959256,
+    "lon" : -1.4636684,
+    "id" : "BRWHBWJ",
+    "name" : "Boldon West Jcn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

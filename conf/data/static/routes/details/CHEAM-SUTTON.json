@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.355695,
+    "lon" : -0.21428831,
+    "id" : "CHEAM",
+    "name" : "Cheam",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.359772,
+    "lon" : -0.1904728,
+    "id" : "SUTTON",
+    "name" : "Sutton (Surrey)",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

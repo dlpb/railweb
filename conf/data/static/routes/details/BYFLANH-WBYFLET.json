@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.349797,
+    "lon" : -0.48085836,
+    "id" : "BYFLANH",
+    "name" : "Byfleet & New Haw",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.339493,
+    "lon" : -0.50541904,
+    "id" : "WBYFLET",
+    "name" : "West Byfleet",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

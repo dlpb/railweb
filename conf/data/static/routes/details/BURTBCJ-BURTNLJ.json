@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.794409,
+    "lon" : -1.6494938,
+    "id" : "BURTBCJ",
+    "name" : "Birmingham Curve Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.802169,
+    "lon" : -1.6470878,
+    "id" : "BURTNLJ",
+    "name" : "Burton Leicester Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

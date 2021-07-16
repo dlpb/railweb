@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.607349,
+    "lon" : -0.30827068,
+    "id" : "BKBY",
+    "name" : "Brocklesby Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.574942,
+    "lon" : -0.40985249,
+    "id" : "BNTBY",
+    "name" : "Barnetby",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

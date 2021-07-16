@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.67246,
+    "lon" : 0.10354,
+    "id" : "LUCTHB",
+    "name" : "Theydon Bois",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.69365,
+    "lon" : 0.11495,
+    "id" : "LUCEPP",
+    "name" : "Epping",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

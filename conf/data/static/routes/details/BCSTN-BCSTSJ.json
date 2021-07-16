@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.903414,
+    "lon" : -1.1497888,
+    "id" : "BCSTN",
+    "name" : "Bicester North",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.896221,
+    "lon" : -1.1297035,
+    "id" : "BCSTSJ",
+    "name" : "Bicester South Junction",
+    "type" : "Location"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "PassengerAndParcelsPermanent",
+  "speed" : "80-105"
+} ]

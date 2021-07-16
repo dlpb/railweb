@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.887391,
+    "lon" : -4.3638826,
+    "id" : "GSCD",
+    "name" : "Garscadden",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.88824,
+    "lon" : -4.3711308,
+    "id" : "YOKERCS",
+    "name" : "Yoker Carriage Sidings",
+    "type" : "Sidings"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

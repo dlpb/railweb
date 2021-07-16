@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.751868,
+    "lon" : -2.4685673,
+    "id" : "BLKBDJN",
+    "name" : "Daisyfield Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.763813,
+    "lon" : -2.4202335,
+    "id" : "RISHTON",
+    "name" : "Rishton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

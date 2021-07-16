@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.518374,
+    "lon" : -0.088991509,
+    "id" : "MRGT",
+    "name" : "Moorgate",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.521027,
+    "lon" : -0.10564459,
+    "id" : "FNTLSR",
+    "name" : "Farringdon Underground",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "13 MINUTES"
+} ]

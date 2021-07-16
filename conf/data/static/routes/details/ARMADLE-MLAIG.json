@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.062454,
+    "lon" : -5.905501,
+    "id" : "ARMADLE",
+    "name" : "Skye (Armadale)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 57.005782,
+    "lon" : -5.8298553,
+    "id" : "MLAIG",
+    "name" : "Mallaig",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

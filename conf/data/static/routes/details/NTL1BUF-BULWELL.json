@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.005876,
+    "lon" : -1.190277,
+    "id" : "NTL1BUF",
+    "name" : "Bulwell Forest",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 52.999428,
+    "lon" : -1.1954457,
+    "id" : "BULWELL",
+    "name" : "Bulwell",
+    "type" : "Station"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

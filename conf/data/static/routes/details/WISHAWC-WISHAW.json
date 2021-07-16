@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.775604,
+    "lon" : -3.9352904,
+    "id" : "WISHAWC",
+    "name" : "Wishaw Central Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.772394,
+    "lon" : -3.9268089,
+    "id" : "WISHAW",
+    "name" : "Wishaw",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

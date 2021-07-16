@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.357881,
+    "lon" : -3.0031592,
+    "id" : "BEBNGTN",
+    "name" : "Bebington",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.348332,
+    "lon" : -2.9981729,
+    "id" : "PSLT",
+    "name" : "Port Sunlight",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

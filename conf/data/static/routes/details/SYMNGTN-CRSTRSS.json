@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.596404,
+    "lon" : -3.6047474,
+    "id" : "SYMNGTN",
+    "name" : "Symington G.F.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.687415,
+    "lon" : -3.6604919,
+    "id" : "CRSTRSS",
+    "name" : "Carstairs South Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

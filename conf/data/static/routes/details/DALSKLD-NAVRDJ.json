@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.548189,
+    "lon" : -0.076102877,
+    "id" : "DALSKLD",
+    "name" : "Dalston Kingsland",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.547339,
+    "lon" : -0.063230209,
+    "id" : "NAVRDJ",
+    "name" : "Navarino Road Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

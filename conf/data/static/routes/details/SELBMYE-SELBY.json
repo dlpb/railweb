@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.787298,
+    "lon" : -1.0402498,
+    "id" : "SELBMYE",
+    "name" : "Selby Potter Group",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.782521,
+    "lon" : -1.0635641,
+    "id" : "SELBY",
+    "name" : "Selby",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

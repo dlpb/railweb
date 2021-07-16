@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.182551,
+    "lon" : -1.2603747,
+    "id" : "MCHLDVR",
+    "name" : "Micheldever",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.185065,
+    "lon" : -1.2596763,
+    "id" : "MCHLELF",
+    "name" : "Micheldever Oil Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

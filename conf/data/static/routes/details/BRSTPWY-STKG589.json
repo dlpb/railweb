@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.513817,
+    "lon" : -2.542293,
+    "id" : "BRSTPWY",
+    "name" : "Bristol Parkway",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.514836,
+    "lon" : -2.5492656,
+    "id" : "STKG589",
+    "name" : "Stoke Gifford Sig B589",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.188201,
+    "lon" : 0.22887692,
+    "id" : "FULBRNE",
+    "name" : "Fulbourne",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.184936,
+    "lon" : 0.29507194,
+    "id" : "SIXMBTM",
+    "name" : "Six Mile Bottom",
+    "type" : "Point"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

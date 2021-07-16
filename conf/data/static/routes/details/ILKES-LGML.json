@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.97833,
+    "lon" : -1.2946991,
+    "id" : "ILKES",
+    "name" : "Ilkeston",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.018256,
+    "lon" : -1.3311817,
+    "id" : "LGML",
+    "name" : "Langley Mill",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

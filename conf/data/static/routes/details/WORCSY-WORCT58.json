@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.194547,
+    "lon" : -2.2083389,
+    "id" : "WORCSY",
+    "name" : "Worcester T.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.200058,
+    "lon" : -2.2080721,
+    "id" : "WORCT58",
+    "name" : "Worcester Tun Jn Sig 58",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

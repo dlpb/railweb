@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.060273,
+    "lon" : -1.4809093,
+    "id" : "AMBERGT",
+    "name" : "Ambergate",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.083375,
+    "lon" : -1.5041751,
+    "id" : "WATSTND",
+    "name" : "Whatstandwell",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

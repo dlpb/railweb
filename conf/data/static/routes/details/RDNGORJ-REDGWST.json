@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.455901,
+    "lon" : -0.9898326,
+    "id" : "RDNGORJ",
+    "name" : "Oxford Road Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.454601,
+    "lon" : -0.99027866,
+    "id" : "REDGWST",
+    "name" : "Reading West",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

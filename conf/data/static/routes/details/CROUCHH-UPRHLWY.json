@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.571396,
+    "lon" : -0.11697168,
+    "id" : "CROUCHH",
+    "name" : "Crouch Hill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.563339,
+    "lon" : -0.12988571,
+    "id" : "UPRHLWY",
+    "name" : "Upper Holloway",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

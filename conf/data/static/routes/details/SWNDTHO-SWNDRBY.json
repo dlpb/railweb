@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.187779,
+    "lon" : -0.65191685,
+    "id" : "SWNDTHO",
+    "name" : "Thorpe-On-The-Hill",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.16918,
+    "lon" : -0.70296003,
+    "id" : "SWNDRBY",
+    "name" : "Swinderby",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

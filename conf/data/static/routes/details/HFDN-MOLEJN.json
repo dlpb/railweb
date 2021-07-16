@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.798584,
+    "lon" : -0.092293072,
+    "id" : "HFDN",
+    "name" : "Hertford North",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.828161,
+    "lon" : -0.098459473,
+    "id" : "MOLEJN",
+    "name" : "Molewood Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

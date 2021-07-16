@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.521884,
+    "lon" : -0.046546,
+    "id" : "LUDSTG",
+    "name" : "Stepney Green",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.525306,
+    "lon" : -0.033471,
+    "id" : "LUCMIE",
+    "name" : "Mile End",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

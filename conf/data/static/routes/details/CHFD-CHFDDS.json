@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.238333,
+    "lon" : -1.4195449,
+    "id" : "CHFD",
+    "name" : "Chesterfield",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.236008,
+    "lon" : -1.4201757,
+    "id" : "CHFDDS",
+    "name" : "Chesterfield Down Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

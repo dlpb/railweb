@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.44131,
+    "lon" : 0.36620941,
+    "id" : "GRVSEND",
+    "name" : "Gravesend",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.436358,
+    "lon" : 0.4389053,
+    "id" : "HOOJSFH",
+    "name" : "Hoo Jn Staff Halt",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

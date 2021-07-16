@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.471826,
+    "lon" : -1.877121,
+    "id" : "BRDS",
+    "name" : "Bordesley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.463318,
+    "lon" : -1.8584816,
+    "id" : "SMLHTH",
+    "name" : "Small Heath",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

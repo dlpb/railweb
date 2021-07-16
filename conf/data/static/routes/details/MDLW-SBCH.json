@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.194004,
+    "lon" : -2.4401721,
+    "id" : "MDLW",
+    "name" : "Middlewich",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.150373,
+    "lon" : -2.3935522,
+    "id" : "SBCH",
+    "name" : "Sandbach",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

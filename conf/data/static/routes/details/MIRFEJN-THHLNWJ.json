@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.67169,
+    "lon" : -1.669914,
+    "id" : "MIRFEJN",
+    "name" : "Mirfield East Jn",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.674589,
+    "lon" : -1.6589167,
+    "id" : "THHLNWJ",
+    "name" : "Thornhill L.N.W. Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

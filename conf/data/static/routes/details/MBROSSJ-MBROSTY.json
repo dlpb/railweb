@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.413003,
+    "lon" : -1.3664402,
+    "id" : "MBROSSJ",
+    "name" : "Masbro S.S. Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.41647,
+    "lon" : -1.369458,
+    "id" : "MBROSTY",
+    "name" : "Masborough F.D.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

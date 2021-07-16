@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.0015,
+    "lon" : -1.4658,
+    "id" : "TAWMYMEW",
+    "name" : "Meadow Well",
+    "type" : "Metro"
+  },
+  "to" : {
+    "lat" : 54.9996,
+    "lon" : -1.4746,
+    "id" : "TAWMYPEM",
+    "name" : "Percy Main",
+    "type" : "Metro"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Metro",
+  "speed" : "OHLE"
+} ]

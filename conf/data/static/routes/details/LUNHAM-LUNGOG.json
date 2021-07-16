@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.55645,
+    "lon" : -0.17851,
+    "id" : "LUNHAM",
+    "name" : "Hampstead",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.57249,
+    "lon" : -0.1941,
+    "id" : "LUNGOG",
+    "name" : "Golders Green",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

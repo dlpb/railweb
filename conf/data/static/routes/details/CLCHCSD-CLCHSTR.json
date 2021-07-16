@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.900921,
+    "lon" : 0.89031447,
+    "id" : "CLCHCSD",
+    "name" : "Colchester C.S.D.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.900618,
+    "lon" : 0.89129816,
+    "id" : "CLCHSTR",
+    "name" : "Colchester",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

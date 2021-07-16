@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.510484,
+    "lon" : -0.18705,
+    "id" : "LUCQUE",
+    "name" : "Queensway",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.512083,
+    "lon" : -0.175067,
+    "id" : "LUCLAG",
+    "name" : "Lancaster Gate",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

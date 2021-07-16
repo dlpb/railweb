@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.317776,
+    "lon" : -0.30779053,
+    "id" : "ASHD",
+    "name" : "Ashtead",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.299003,
+    "lon" : -0.33308176,
+    "id" : "LETHRHD",
+    "name" : "Leatherhead",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

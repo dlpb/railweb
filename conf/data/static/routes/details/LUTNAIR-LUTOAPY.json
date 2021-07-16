@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.874722,
+    "lon" : -0.368333,
+    "id" : "LUTNAIR",
+    "name" : "Luton Airport",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.872643,
+    "lon" : -0.39588817,
+    "id" : "LUTOAPY",
+    "name" : "Luton Airport Parkway",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

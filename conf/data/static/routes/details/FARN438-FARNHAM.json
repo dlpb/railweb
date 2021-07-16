@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.207882,
+    "lon" : -0.80190896,
+    "id" : "FARN438",
+    "name" : "Farnham Signal Wk438",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.211698,
+    "lon" : -0.79260432,
+    "id" : "FARNHAM",
+    "name" : "Farnham",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

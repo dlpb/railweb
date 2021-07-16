@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.698814,
+    "lon" : -1.3040714,
+    "id" : "PTFTMHL",
+    "name" : "Pontefract Monkhill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.694045,
+    "lon" : -1.3187344,
+    "id" : "PTFTTSF",
+    "name" : "Pontefract Tanshelf",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

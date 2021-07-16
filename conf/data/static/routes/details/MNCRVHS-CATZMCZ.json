@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.488018,
+    "lon" : -2.2412763,
+    "id" : "MNCRVHS",
+    "name" : "Manchester Victoria H.S.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.476111,
+    "lon" : -2.2475,
+    "id" : "CATZMCZ",
+    "name" : "Manchester Ctlz",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

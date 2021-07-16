@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.544774,
+    "lon" : 0.0017194592,
+    "id" : "MRYLEJN",
+    "name" : "Maryland East Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.5422,
+    "lon" : -0.0033,
+    "id" : "STFD",
+    "name" : "Stratford (London)",
+    "type" : "Station"
+  },
+  "singleTrack" : "5",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

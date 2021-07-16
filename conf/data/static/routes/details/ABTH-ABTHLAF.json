@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.389365,
+    "lon" : -3.3880124,
+    "id" : "ABTH",
+    "name" : "Aberthaw",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.394558,
+    "lon" : -3.3906706,
+    "id" : "ABTHLAF",
+    "name" : "Aberthaw Cement Wks Lafarg",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

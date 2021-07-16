@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.839389,
+    "lon" : -4.1774293,
+    "id" : "EDERTON",
+    "name" : "Edderton",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 57.814369,
+    "lon" : -4.0517432,
+    "id" : "TAIN",
+    "name" : "Tain",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

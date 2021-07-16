@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.843075,
+    "lon" : -2.0753474,
+    "id" : "BUMOUTH",
+    "name" : "Burnmouth",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.845866,
+    "lon" : -2.175133,
+    "id" : "RESTON",
+    "name" : "Reston",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

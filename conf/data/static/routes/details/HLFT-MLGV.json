@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.920278,
+    "lon" : -4.3198851,
+    "id" : "HLFT",
+    "name" : "Hillfoot",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.941435,
+    "lon" : -4.3146326,
+    "id" : "MLGV",
+    "name" : "Milngavie",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

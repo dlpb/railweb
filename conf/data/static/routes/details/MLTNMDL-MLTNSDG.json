@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.761123,
+    "lon" : -0.88059114,
+    "id" : "MLTNMDL",
+    "name" : "Melton Mowbray Down Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.761003,
+    "lon" : -0.88592923,
+    "id" : "MLTNSDG",
+    "name" : "Melton Mowbray",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

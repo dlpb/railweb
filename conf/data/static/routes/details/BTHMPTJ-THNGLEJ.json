@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.397936,
+    "lon" : -2.3221749,
+    "id" : "BTHMPTJ",
+    "name" : "Bathampton Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.437129,
+    "lon" : -2.1414123,
+    "id" : "THNGLEJ",
+    "name" : "Thingley East Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

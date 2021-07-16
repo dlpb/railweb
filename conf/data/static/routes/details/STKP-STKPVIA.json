@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.40541,
+    "lon" : -2.1634789,
+    "id" : "STKP",
+    "name" : "Stockport",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.40938,
+    "lon" : -2.1657205,
+    "id" : "STKPVIA",
+    "name" : "Stockport Viaduct",
+    "type" : "Point"
+  },
+  "singleTrack" : "6",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

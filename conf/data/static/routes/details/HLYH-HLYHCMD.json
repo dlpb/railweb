@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.30713,
+    "lon" : -4.6311635,
+    "id" : "HLYH",
+    "name" : "Holyhead",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.308392,
+    "lon" : -4.632232,
+    "id" : "HLYHCMD",
+    "name" : "Holyhead Car. M.D.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

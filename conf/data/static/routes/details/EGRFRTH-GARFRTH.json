@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.792224,
+    "lon" : -1.3715047,
+    "id" : "EGRFRTH",
+    "name" : "East Garforth",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.796622,
+    "lon" : -1.3825063,
+    "id" : "GARFRTH",
+    "name" : "Garforth",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

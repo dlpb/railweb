@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.0889,
+    "lon" : -0.71928414,
+    "id" : "HASLEMR",
+    "name" : "Haslemere",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.133038,
+    "lon" : -0.64610103,
+    "id" : "WITLEY",
+    "name" : "Witley",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

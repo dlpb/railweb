@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.813414,
+    "lon" : -4.3247412,
+    "id" : "KENISHD",
+    "name" : "Kennishead",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.812024,
+    "lon" : -4.3429975,
+    "id" : "PHLD",
+    "name" : "Priesthill & Darnley",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

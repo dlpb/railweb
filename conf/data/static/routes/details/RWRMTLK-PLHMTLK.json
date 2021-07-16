@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.3763,
+    "lon" : -2.2586,
+    "id" : "RWRMTLK",
+    "name" : "Robinswd Rd Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.3735,
+    "lon" : -2.2501,
+    "id" : "PLHMTLK",
+    "name" : "Peel Hall Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.804603,
+    "lon" : -2.4493247,
+    "id" : "LGHO",
+    "name" : "Langho",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.824214,
+    "lon" : -2.4120575,
+    "id" : "WHALLEY",
+    "name" : "Whalley",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

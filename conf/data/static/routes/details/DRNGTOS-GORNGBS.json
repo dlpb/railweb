@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.817453,
+    "lon" : -0.41137181,
+    "id" : "DRNGTOS",
+    "name" : "Durrington-On-Sea",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.817667,
+    "lon" : -0.43254539,
+    "id" : "GORNGBS",
+    "name" : "Goring-By-Sea",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

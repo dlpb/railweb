@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.553635,
+    "lon" : -1.3189642,
+    "id" : "BOWSFLD",
+    "name" : "Bowesfield Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.559118,
+    "lon" : -1.3017238,
+    "id" : "TABY",
+    "name" : "Thornaby",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

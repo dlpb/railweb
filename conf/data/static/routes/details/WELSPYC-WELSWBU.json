@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.704527,
+    "lon" : -3.015487,
+    "id" : "WELSPYC",
+    "name" : "Plas-Y-Court L.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.69253,
+    "lon" : -2.9687932,
+    "id" : "WELSWBU",
+    "name" : "Westbury (Salop) Up",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.959432,
+    "lon" : -0.2696326,
+    "id" : "HITC232",
+    "name" : "Hitchin Sig K.232",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.955802,
+    "lon" : -0.2667889,
+    "id" : "HITCHDY",
+    "name" : "Hitchin Down Yard",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

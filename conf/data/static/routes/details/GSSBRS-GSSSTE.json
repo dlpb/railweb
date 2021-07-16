@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.851667,
+    "lon" : -4.258611,
+    "id" : "GSSBRS",
+    "name" : "Bridge Street",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 55.856944,
+    "lon" : -4.255833,
+    "id" : "GSSSTE",
+    "name" : "St Enoch",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

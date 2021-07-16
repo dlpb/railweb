@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.509639,
+    "lon" : 0.025894,
+    "id" : "CUSTMHS",
+    "name" : "Custom House Crossrail",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.509471,
+    "lon" : 0.033473,
+    "id" : "DBTGBPRR",
+    "name" : "Prince Regent",
+    "type" : "Light Rail"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Unknown",
+  "speed" : "OHLE"
+} ]

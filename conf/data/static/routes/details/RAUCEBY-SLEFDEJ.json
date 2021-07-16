@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.985065,
+    "lon" : -0.45638765,
+    "id" : "RAUCEBY",
+    "name" : "Rauceby",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.996091,
+    "lon" : -0.4170146,
+    "id" : "SLEFDEJ",
+    "name" : "Sleaford East Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.790421,
+    "lon" : 0.13213624,
+    "id" : "HRLWMIL",
+    "name" : "Harlow Mill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.789435,
+    "lon" : 0.12846462,
+    "id" : "HRLWMLY",
+    "name" : "Harlow Mill Recp.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

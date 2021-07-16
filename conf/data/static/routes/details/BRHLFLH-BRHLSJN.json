@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.271674,
+    "lon" : -1.3874244,
+    "id" : "BRHLFLH",
+    "name" : "Barrow Hill Up Sdg No 1",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.27093,
+    "lon" : -1.3967317,
+    "id" : "BRHLSJN",
+    "name" : "Barrow Hill South Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

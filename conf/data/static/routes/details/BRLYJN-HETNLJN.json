@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.676053,
+    "lon" : -1.7410283,
+    "id" : "BRLYJN",
+    "name" : "Bradley Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.679596,
+    "lon" : -1.7177376,
+    "id" : "HETNLJN",
+    "name" : "Heaton Lodge Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

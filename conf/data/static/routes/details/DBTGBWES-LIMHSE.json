@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.509576,
+    "lon" : -0.02699,
+    "id" : "DBTGBWES",
+    "name" : "Westferry",
+    "type" : "Light Rail"
+  },
+  "to" : {
+    "lat" : 51.512658,
+    "lon" : -0.039624643,
+    "id" : "LIMHSE",
+    "name" : "Limehouse",
+    "type" : "Station"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Unknown",
+  "speed" : "OHLE"
+} ]

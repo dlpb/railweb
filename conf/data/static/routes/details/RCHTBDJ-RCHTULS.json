@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.393328,
+    "lon" : 0.49973871,
+    "id" : "RCHTBDJ",
+    "name" : "Rochester Bridge Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.388237,
+    "lon" : 0.507755,
+    "id" : "RCHTULS",
+    "name" : "Rochester Up Layby Sdgs",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.541888,
+    "lon" : -0.1392737,
+    "id" : "CMDNRCJ",
+    "name" : "Camden Road Central Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.541123,
+    "lon" : -0.13128693,
+    "id" : "CMDNREJ",
+    "name" : "Camden Rd. E. Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

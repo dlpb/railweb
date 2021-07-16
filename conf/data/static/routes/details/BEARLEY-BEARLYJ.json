@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.245046,
+    "lon" : -1.7496073,
+    "id" : "BEARLEY",
+    "name" : "Bearley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.237039,
+    "lon" : -1.755583,
+    "id" : "BEARLYJ",
+    "name" : "Bearley Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

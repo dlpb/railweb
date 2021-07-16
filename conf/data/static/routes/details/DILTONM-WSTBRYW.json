@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.249579,
+    "lon" : -2.2081472,
+    "id" : "DILTONM",
+    "name" : "Dilton Marsh",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.266444,
+    "lon" : -2.1996667,
+    "id" : "WSTBRYW",
+    "name" : "Westbury",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

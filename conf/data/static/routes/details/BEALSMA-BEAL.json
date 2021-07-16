@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.635052,
+    "lon" : -1.8536492,
+    "id" : "BEALSMA",
+    "name" : "Smeafield",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.677601,
+    "lon" : -1.9034686,
+    "id" : "BEAL",
+    "name" : "Beal L.C.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

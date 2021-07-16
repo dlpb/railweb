@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.360601,
+    "lon" : -1.9928924,
+    "id" : "BGRN",
+    "name" : "Barnt Green",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.348411,
+    "lon" : -2.00618,
+    "id" : "BLACKWL",
+    "name" : "Blackwell",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

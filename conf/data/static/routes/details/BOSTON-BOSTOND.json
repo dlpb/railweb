@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.978539,
+    "lon" : -0.031101883,
+    "id" : "BOSTON",
+    "name" : "Boston",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.968825,
+    "lon" : -0.028669266,
+    "id" : "BOSTOND",
+    "name" : "Boston Docks",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.517046,
+    "lon" : -2.7887742,
+    "id" : "RNFD",
+    "name" : "Rainford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.528379,
+    "lon" : -2.7411635,
+    "id" : "UPHOLND",
+    "name" : "Upholland",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

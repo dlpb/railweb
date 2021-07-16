@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.460914,
+    "lon" : -3.714959,
+    "id" : "HDSTB",
+    "name" : "Staverton Bridge",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 50.48293,
+    "lon" : -3.7684751,
+    "id" : "BUCFAST",
+    "name" : "Buckfastleigh",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

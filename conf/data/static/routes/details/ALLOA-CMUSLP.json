@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.117421,
+    "lon" : -3.7980007,
+    "id" : "ALLOA",
+    "name" : "Alloa",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.12751,
+    "lon" : -3.8450829,
+    "id" : "CMUSLP",
+    "name" : "Cambus Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.376838,
+    "lon" : -3.0128045,
+    "id" : "ROCK722",
+    "name" : "Rock Ferry Signal 722",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.372889,
+    "lon" : -3.0110273,
+    "id" : "ROCKFRY",
+    "name" : "Rock Ferry",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

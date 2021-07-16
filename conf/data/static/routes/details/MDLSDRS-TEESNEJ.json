@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.584626,
+    "lon" : -1.2438668,
+    "id" : "MDLSDRS",
+    "name" : "Middlesbrough Ayrton Drs",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.572403,
+    "lon" : -1.2583395,
+    "id" : "TEESNEJ",
+    "name" : "Newport East Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

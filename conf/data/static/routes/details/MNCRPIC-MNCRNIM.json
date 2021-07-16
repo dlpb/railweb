@@ -1,0 +1,58 @@
+[ {
+  "from" : {
+    "lat" : 53.477002,
+    "lon" : -2.2301094,
+    "id" : "MNCRPIC",
+    "name" : "Manchester Piccadilly",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.4812,
+    "lon" : -2.2193,
+    "id" : "MNCRNIM",
+    "name" : "New Islngtn Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "19 MINUTES"
+}, {
+  "from" : {
+    "lat" : 53.477002,
+    "lon" : -2.2301094,
+    "id" : "MNCRPIC",
+    "name" : "Manchester Piccadilly",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.4812,
+    "lon" : -2.2193,
+    "id" : "MNCRNIM",
+    "name" : "New Islngtn Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+}, {
+  "from" : {
+    "lat" : 53.477002,
+    "lon" : -2.2301094,
+    "id" : "MNCRPIC",
+    "name" : "Manchester Piccadilly",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.4812,
+    "lon" : -2.2193,
+    "id" : "MNCRNIM",
+    "name" : "New Islngtn Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "16 MINUTES"
+} ]

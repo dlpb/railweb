@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.727208,
+    "lon" : -1.8642198,
+    "id" : "BOMO",
+    "name" : "Bournemouth",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.731214,
+    "lon" : -1.8265043,
+    "id" : "POKSDWN",
+    "name" : "Pokesdown",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

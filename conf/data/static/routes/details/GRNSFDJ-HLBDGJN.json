@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.963447,
+    "lon" : -1.608159,
+    "id" : "GRNSFDJ",
+    "name" : "Greensfield Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.966213,
+    "lon" : -1.6076479,
+    "id" : "HLBDGJN",
+    "name" : "High Level Bridge Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

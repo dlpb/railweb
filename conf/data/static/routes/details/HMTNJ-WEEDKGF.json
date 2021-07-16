@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.3702,
+    "lon" : -1.2265467,
+    "id" : "HMTNJ",
+    "name" : "Hillmorton Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.347712,
+    "lon" : -1.1846301,
+    "id" : "WEEDKGF",
+    "name" : "Kilsby G.F.",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

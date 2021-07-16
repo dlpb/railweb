@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.613564,
+    "lon" : 0.30069602,
+    "id" : "BRTWOOD",
+    "name" : "Brentwood",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.623846,
+    "lon" : 0.32654361,
+    "id" : "SHENLEJ",
+    "name" : "Shenfield London End Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

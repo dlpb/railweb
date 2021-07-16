@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.378883,
+    "lon" : -3.4492851,
+    "id" : "DRIGBNF",
+    "name" : "Drigg Bnf",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.416735,
+    "lon" : -3.5106007,
+    "id" : "SELAFLD",
+    "name" : "Sellafield",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

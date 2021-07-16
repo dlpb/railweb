@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.802197,
+    "lon" : -4.0832431,
+    "id" : "DLNCRDH",
+    "name" : "Dalnacardoch",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.831877,
+    "lon" : -4.2243695,
+    "id" : "DLNSPDL",
+    "name" : "Dalnaspidal",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-100"
+} ]

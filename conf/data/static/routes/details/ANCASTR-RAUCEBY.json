@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.987685,
+    "lon" : -0.53554926,
+    "id" : "ANCASTR",
+    "name" : "Ancaster",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.985065,
+    "lon" : -0.45638765,
+    "id" : "RAUCEBY",
+    "name" : "Rauceby",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

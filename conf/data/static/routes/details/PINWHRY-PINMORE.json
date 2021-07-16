@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.143699,
+    "lon" : -4.8315348,
+    "id" : "PINWHRY",
+    "name" : "Pinwherry",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.199811,
+    "lon" : -4.8362883,
+    "id" : "PINMORE",
+    "name" : "Pinmore",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

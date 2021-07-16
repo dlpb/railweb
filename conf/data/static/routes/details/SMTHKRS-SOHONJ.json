@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.49623,
+    "lon" : -1.9693042,
+    "id" : "SMTHKRS",
+    "name" : "Smethwick Rolfe Street",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.49518,
+    "lon" : -1.9480212,
+    "id" : "SOHONJ",
+    "name" : "Soho North Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

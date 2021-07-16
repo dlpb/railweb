@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.357218,
+    "lon" : -0.16907215,
+    "id" : "CRSHLTB",
+    "name" : "Carshalton Beeches",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.359772,
+    "lon" : -0.1904728,
+    "id" : "SUTTON",
+    "name" : "Sutton (Surrey)",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

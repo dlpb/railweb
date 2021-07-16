@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.947342,
+    "lon" : -1.1426111,
+    "id" : "NTNG",
+    "name" : "Nottingham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.947476,
+    "lon" : -1.1350629,
+    "id" : "NTNGPCS",
+    "name" : "Eastcroft Down Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

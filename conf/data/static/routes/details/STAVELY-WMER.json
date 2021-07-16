@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.375575,
+    "lon" : -2.8189711,
+    "id" : "STAVELY",
+    "name" : "Staveley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.379512,
+    "lon" : -2.903374,
+    "id" : "WMER",
+    "name" : "Windermere",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

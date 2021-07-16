@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.525121,
+    "lon" : -1.5452018,
+    "id" : "DLTNN",
+    "name" : "Darlington North Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.592298,
+    "lon" : -1.5599919,
+    "id" : "FYHLAYC",
+    "name" : "Aycliffe",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

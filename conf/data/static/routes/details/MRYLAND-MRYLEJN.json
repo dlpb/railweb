@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.546019,
+    "lon" : 0.0056970695,
+    "id" : "MRYLAND",
+    "name" : "Maryland",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.544774,
+    "lon" : 0.0017194592,
+    "id" : "MRYLEJN",
+    "name" : "Maryland East Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "5",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

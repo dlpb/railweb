@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.080237,
+    "lon" : -2.4357856,
+    "id" : "CREWEGL",
+    "name" : "Crewe Gresty Lane",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.080609,
+    "lon" : -2.434819,
+    "id" : "CREWL37",
+    "name" : "Gresty Lane Sig. Gl37",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

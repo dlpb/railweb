@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.357182,
+    "lon" : -2.9481519,
+    "id" : "BKNELL",
+    "name" : "Bucknell",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.345032,
+    "lon" : -3.0425177,
+    "id" : "KNIGHTN",
+    "name" : "Knighton",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

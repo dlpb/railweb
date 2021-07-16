@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.374742,
+    "lon" : -2.6044899,
+    "id" : "WRGTWOJ",
+    "name" : "Walton Old Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.370848,
+    "lon" : -2.6084777,
+    "id" : "WRGWOJN",
+    "name" : "Walton Canal Sidings Fhh",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

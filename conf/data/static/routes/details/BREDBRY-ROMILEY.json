@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.422936,
+    "lon" : -2.1102317,
+    "id" : "BREDBRY",
+    "name" : "Bredbury",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.413983,
+    "lon" : -2.0892963,
+    "id" : "ROMILEY",
+    "name" : "Romiley",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

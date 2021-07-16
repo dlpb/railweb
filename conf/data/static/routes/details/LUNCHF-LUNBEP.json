@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.5439,
+    "lon" : -0.15384,
+    "id" : "LUNCHF",
+    "name" : "Chalk Farm",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.55036,
+    "lon" : -0.16465,
+    "id" : "LUNBEP",
+    "name" : "Belsize Park",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

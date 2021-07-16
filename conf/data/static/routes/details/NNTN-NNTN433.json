@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.526776,
+    "lon" : -1.4644893,
+    "id" : "NNTN",
+    "name" : "Nuneaton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.521537,
+    "lon" : -1.4569776,
+    "id" : "NNTN433",
+    "name" : "Nuneaton Sig Rn5433",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

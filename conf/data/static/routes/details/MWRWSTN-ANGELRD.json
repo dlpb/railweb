@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.6083,
+    "lon" : -0.0509,
+    "id" : "MWRWSTN",
+    "name" : "Meridian Water",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.612802,
+    "lon" : -0.048990965,
+    "id" : "ANGELRD",
+    "name" : "Angel Road",
+    "type" : "Station"
+  },
+  "singleTrack" : "3",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

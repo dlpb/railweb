@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.458718,
+    "lon" : -0.97043975,
+    "id" : "RDNG4AB",
+    "name" : "Reading",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.457925,
+    "lon" : -0.95101205,
+    "id" : "RDNGSTJ",
+    "name" : "Reading Southern Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

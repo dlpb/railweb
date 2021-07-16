@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.903637,
+    "lon" : -1.983115,
+    "id" : "CONOKIL",
+    "name" : "Kildwick",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.899859,
+    "lon" : -1.9440958,
+    "id" : "STEETON",
+    "name" : "Steeton & Silsden",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

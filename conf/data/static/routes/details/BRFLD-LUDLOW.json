@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.392974,
+    "lon" : -2.7545411,
+    "id" : "BRFLD",
+    "name" : "Bromfield",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.370991,
+    "lon" : -2.715889,
+    "id" : "LUDLOW",
+    "name" : "Ludlow",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "70-90"
+} ]

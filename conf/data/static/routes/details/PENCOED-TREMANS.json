@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.524836,
+    "lon" : -3.5000541,
+    "id" : "PENCOED",
+    "name" : "Pencoed",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.502727,
+    "lon" : -3.5584589,
+    "id" : "TREMANS",
+    "name" : "Tremains",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

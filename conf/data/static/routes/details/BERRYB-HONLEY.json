@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.621103,
+    "lon" : -1.793719,
+    "id" : "BERRYB",
+    "name" : "Berry Brow",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.608317,
+    "lon" : -1.78098,
+    "id" : "HONLEY",
+    "name" : "Honley",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

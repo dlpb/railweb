@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.398655,
+    "lon" : -4.1840263,
+    "id" : "STBDXJN",
+    "name" : "St Budeaux Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.402149,
+    "lon" : -4.1876066,
+    "id" : "STBDXVR",
+    "name" : "St Budeaux Victoria Road",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "10-55"
+} ]

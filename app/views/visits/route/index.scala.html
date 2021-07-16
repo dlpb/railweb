@@ -1,11 +1,10 @@
 @import helper._
 
-@import models.route.display.map.MapRoute
 @(
         user: models.auth.User,
         routeVisits: List[models.data.RouteVisit],
         routeVisitEvents: Map[(String, String), List[models.data.Event]],
-        mapRoutes: List[MapRoute],
+        mapRoutes: List[models.route.Route],
         routeVisitCount: Map[models.route.Route, Int],
         routeVisitIndex: Map[models.route.Route, Int],
         sortCall: Call,
@@ -31,7 +30,7 @@
         </div>
         <div class="row">
             <div class="col-sm">
-                <div id="map" class="map"></div>
+                @templates.map.map(List.empty, mapRoutes)
             </div>
         </div>
     <div class="row">
@@ -76,26 +75,5 @@
                 }
             </div>
         </div>
-
-
-<script type="text/javascript">
-        createMap();
-        @for(route <- mapRoutes) {
-            addSingleConnection(
-            {
-                "from": {
-                    "lat":@route.from.lat,
-                    "lon":@route.from.lon
-                },
-                "to": {
-                    "lat":@route.to.lat,
-                    "lon":@route.to.lon
-                },
-                "srs":"@route.srsCode",
-                "toc":"@route.toc"
-            })
-        }
-
-</script>
 
 }

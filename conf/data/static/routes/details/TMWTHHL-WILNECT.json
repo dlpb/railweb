@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.637383,
+    "lon" : -1.6863912,
+    "id" : "TMWTHHL",
+    "name" : "Tamworth",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.610539,
+    "lon" : -1.6796862,
+    "id" : "WILNECT",
+    "name" : "Wilnecote",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

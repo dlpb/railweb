@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.795243,
+    "lon" : -3.9968331,
+    "id" : "AMMANFD",
+    "name" : "Ammanford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.778999,
+    "lon" : -3.9975798,
+    "id" : "PNTYLC",
+    "name" : "Pantyffynnon Level Xg",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

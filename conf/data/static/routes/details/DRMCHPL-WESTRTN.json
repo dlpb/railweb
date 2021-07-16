@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.904712,
+    "lon" : -4.3628408,
+    "id" : "DRMCHPL",
+    "name" : "Drumchapel",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.904818,
+    "lon" : -4.3351527,
+    "id" : "WESTRTN",
+    "name" : "Westerton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

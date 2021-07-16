@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.754492,
+    "lon" : -3.2844515,
+    "id" : "RYMYSGF",
+    "name" : "Rhymney South Gf",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.758835634710806,
+    "lon" : -3.2892982965808906,
+    "id" : "RHYMNEY",
+    "name" : "Rhymney",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "45-75"
+} ]

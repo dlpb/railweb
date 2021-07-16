@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.267964,
+    "lon" : -1.0971045,
+    "id" : "BSNGSDR",
+    "name" : "Basingstoke Down Yard",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.268626,
+    "lon" : -1.0873444,
+    "id" : "BSNGSTK",
+    "name" : "Basingstoke",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

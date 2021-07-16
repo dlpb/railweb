@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.701173,
+    "lon" : -2.7443232,
+    "id" : "SHRWSBJ",
+    "name" : "Sutton Bridge Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.681193,
+    "lon" : -2.8289488,
+    "id" : "WELSHAN",
+    "name" : "Hanwood",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

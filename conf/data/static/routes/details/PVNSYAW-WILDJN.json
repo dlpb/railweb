@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.815789,
+    "lon" : 0.32524708,
+    "id" : "PVNSYAW",
+    "name" : "Pevensey & Westham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.80321,
+    "lon" : 0.27674904,
+    "id" : "WILDJN",
+    "name" : "Willingdon Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

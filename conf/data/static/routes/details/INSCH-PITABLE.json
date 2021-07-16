@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.337319,
+    "lon" : -2.6167271,
+    "id" : "INSCH",
+    "name" : "Insch",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 57.321247,
+    "lon" : -2.4598595,
+    "id" : "PITABLE",
+    "name" : "Pitcaple",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

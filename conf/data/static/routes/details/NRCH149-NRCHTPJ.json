@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.623741,
+    "lon" : 1.323913,
+    "id" : "NRCH149",
+    "name" : "Norwich Crown Pt Si Cp1498",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.623535,
+    "lon" : 1.3139366,
+    "id" : "NRCHTPJ",
+    "name" : "Thorpe Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

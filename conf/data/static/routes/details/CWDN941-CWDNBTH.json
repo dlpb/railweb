@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.109642,
+    "lon" : -3.3444351,
+    "id" : "CWDN941",
+    "name" : "Cowdenbeath Sig Ec941",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.111983,
+    "lon" : -3.3431016,
+    "id" : "CWDNBTH",
+    "name" : "Cowdenbeath",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

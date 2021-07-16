@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.859114,
+    "lon" : 0.070188492,
+    "id" : "GLYNDE",
+    "name" : "Glynde",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.861217,
+    "lon" : 0.028304503,
+    "id" : "STHRHMJ",
+    "name" : "Southerham Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

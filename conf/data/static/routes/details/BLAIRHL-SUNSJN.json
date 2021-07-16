@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.866462,
+    "lon" : -4.0430672,
+    "id" : "BLAIRHL",
+    "name" : "Blairhill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.867433,
+    "lon" : -4.0300125,
+    "id" : "SUNSJN",
+    "name" : "Sunnyside Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

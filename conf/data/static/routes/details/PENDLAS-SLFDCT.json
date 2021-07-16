@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.492918,
+    "lon" : -2.2813522,
+    "id" : "PENDLAS",
+    "name" : "Pendleton (Brindle Heath)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.486226,
+    "lon" : -2.275747,
+    "id" : "SLFDCT",
+    "name" : "Salford Crescent",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

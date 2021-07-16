@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.587398,
+    "lon" : -1.0199934,
+    "id" : "MRSK",
+    "name" : "Marske",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.582954,
+    "lon" : -0.99000517,
+    "id" : "SBRNWJN",
+    "name" : "Saltburn West Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

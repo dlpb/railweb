@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.433148,
+    "lon" : -0.33968435,
+    "id" : "SHCK413",
+    "name" : "Shacklegate Jn Signal F413",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.434628,
+    "lon" : -0.34009106,
+    "id" : "STRWBHD",
+    "name" : "Strawberry Hill C.S.D.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 53.387813,
+    "lon" : -2.34707,
+    "id" : "ALTRNHM",
+    "name" : "Altrincham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.47,
+    "lon" : -2.2675,
+    "id" : "MNCRCBK",
+    "name" : "Cornbrook Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "31 MINUTES"
+}, {
+  "from" : {
+    "lat" : 53.387813,
+    "lon" : -2.34707,
+    "id" : "ALTRNHM",
+    "name" : "Altrincham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.47,
+    "lon" : -2.2675,
+    "id" : "MNCRCBK",
+    "name" : "Cornbrook Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "28 MINUTES"
+} ]

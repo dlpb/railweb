@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.440938,
+    "lon" : -2.5927644,
+    "id" : "BDMNSTR",
+    "name" : "Bedminster",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.432779,
+    "lon" : -2.6092592,
+    "id" : "PARSNST",
+    "name" : "Parson Street",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.311467,
+    "lon" : -1.1224569,
+    "id" : "WORKSOP",
+    "name" : "Worksop",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.311182,
+    "lon" : -1.1215172,
+    "id" : "WORKSUR",
+    "name" : "Worksop Up Receptions",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.61095262813155,
+    "lon" : -1.2428934666610905,
+    "id" : "DIDCOTP",
+    "name" : "Didcot Parkway",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.60977,
+    "lon" : -1.2379165,
+    "id" : "DIDCTEJ",
+    "name" : "Didcot East Jn",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

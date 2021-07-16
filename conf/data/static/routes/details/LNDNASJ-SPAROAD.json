@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.496797,
+    "lon" : -0.070632035,
+    "id" : "LNDNASJ",
+    "name" : "Abbey Street Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.49416,
+    "lon" : -0.064548705,
+    "id" : "SPAROAD",
+    "name" : "Spa Road Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

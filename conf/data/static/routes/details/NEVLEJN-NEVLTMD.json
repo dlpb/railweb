@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.794202,
+    "lon" : -1.495516,
+    "id" : "NEVLEJN",
+    "name" : "Neville H. East Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.792116,
+    "lon" : -1.5039355,
+    "id" : "NEVLTMD",
+    "name" : "Neville Hill T&R.S.M.D",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

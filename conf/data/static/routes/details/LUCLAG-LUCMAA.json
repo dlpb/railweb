@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.512083,
+    "lon" : -0.175067,
+    "id" : "LUCLAG",
+    "name" : "Lancaster Gate",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.513597,
+    "lon" : -0.15869195,
+    "id" : "LUCMAA",
+    "name" : "Marble Arch",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

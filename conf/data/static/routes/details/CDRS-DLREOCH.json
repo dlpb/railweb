@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.960363,
+    "lon" : -4.6533125,
+    "id" : "CDRS",
+    "name" : "Cardross",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.947417,
+    "lon" : -4.5777189,
+    "id" : "DLREOCH",
+    "name" : "Dalreoch",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

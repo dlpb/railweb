@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.359613,
+    "lon" : -4.4564509,
+    "id" : "LOOE",
+    "name" : "Looe",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.387671,
+    "lon" : -4.4648089,
+    "id" : "SDPLACE",
+    "name" : "Sandplace",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

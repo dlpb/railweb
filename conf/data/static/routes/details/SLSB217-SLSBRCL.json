@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.071563,
+    "lon" : -1.8012586,
+    "id" : "SLSB217",
+    "name" : "Salisbury Signal Sy217",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.070929,
+    "lon" : -1.8093824,
+    "id" : "SLSBRCL",
+    "name" : "Salisbury Reception Line",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

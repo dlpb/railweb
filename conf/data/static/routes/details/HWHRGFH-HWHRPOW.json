@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.93115,
+    "lon" : -4.12861,
+    "id" : "HWHRGFH",
+    "name" : "Gelert's Farm Halt",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.93085,
+    "lon" : -4.13265,
+    "id" : "HWHRPOW",
+    "name" : "Porthmadog (Whr)",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

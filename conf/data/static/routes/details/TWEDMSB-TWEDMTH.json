@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.761577,
+    "lon" : -2.0120692,
+    "id" : "TWEDMSB",
+    "name" : "Tweedmouth S.B.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.760113,
+    "lon" : -2.0058063,
+    "id" : "TWEDMTH",
+    "name" : "Tweedmouth F.D.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

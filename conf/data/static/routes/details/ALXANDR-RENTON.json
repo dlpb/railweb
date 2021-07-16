@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.985336,
+    "lon" : -4.5773408,
+    "id" : "ALXANDR",
+    "name" : "Alexandria",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.970308,
+    "lon" : -4.5863579,
+    "id" : "RENTON",
+    "name" : "Renton",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

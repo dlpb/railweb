@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.23455,
+    "lon" : -4.505696,
+    "id" : "RHOSNGR",
+    "name" : "Rhosneigr",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.281568,
+    "lon" : -4.5634758,
+    "id" : "VALLEY",
+    "name" : "Valley",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

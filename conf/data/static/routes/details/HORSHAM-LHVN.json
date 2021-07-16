@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.065906,
+    "lon" : -0.31898973,
+    "id" : "HORSHAM",
+    "name" : "Horsham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.07945,
+    "lon" : -0.30837694,
+    "id" : "LHVN",
+    "name" : "Littlehaven",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.541888,
+    "lon" : -0.1392737,
+    "id" : "CMDNRIJ",
+    "name" : "Camden Road Incline Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.542734,
+    "lon" : -0.12235178,
+    "id" : "KNGXFTJ",
+    "name" : "Copenhagen Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

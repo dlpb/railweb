@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.5021,
+    "lon" : -1.95229,
+    "id" : "WMTWHBS",
+    "name" : "Handsworth Booth Street",
+    "type" : "Metro"
+  },
+  "to" : {
+    "lat" : 52.505497,
+    "lon" : -1.9644949,
+    "id" : "HNDSHWT",
+    "name" : "The Hawthorns",
+    "type" : "Station"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Unknown",
+  "speed" : "OHLE"
+} ]

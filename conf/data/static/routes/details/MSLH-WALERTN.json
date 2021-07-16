@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.37817,
+    "lon" : -2.9146878,
+    "id" : "MSLH",
+    "name" : "Mossley Hill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.369025,
+    "lon" : -2.9068269,
+    "id" : "WALERTN",
+    "name" : "West Allerton",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

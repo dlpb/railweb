@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.254196,
+    "lon" : -1.259699,
+    "id" : "OVTN",
+    "name" : "Overton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.237561,
+    "lon" : -1.3377897,
+    "id" : "WHTCHRH",
+    "name" : "Whitchurch (Hampshire)",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

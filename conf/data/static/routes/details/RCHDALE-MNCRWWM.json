@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 53.610486,
+    "lon" : -2.153026,
+    "id" : "RCHDALE",
+    "name" : "Rochdale",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.5423,
+    "lon" : -2.1261,
+    "id" : "MNCRWWM",
+    "name" : "Westwood Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "39 MINUTES"
+}, {
+  "from" : {
+    "lat" : 53.610486,
+    "lon" : -2.153026,
+    "id" : "RCHDALE",
+    "name" : "Rochdale",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.5423,
+    "lon" : -2.1261,
+    "id" : "MNCRWWM",
+    "name" : "Westwood Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "42 MINUTES"
+} ]

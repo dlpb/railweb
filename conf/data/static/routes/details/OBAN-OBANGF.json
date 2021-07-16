@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.41232,
+    "lon" : -5.4743704,
+    "id" : "OBAN",
+    "name" : "Oban",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.411512,
+    "lon" : -5.4765672,
+    "id" : "OBANGF",
+    "name" : "Oban G.F.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

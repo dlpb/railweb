@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.215334,
+    "lon" : 0.40543801,
+    "id" : "EPCKHMT",
+    "name" : "East Peckham Tip",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.226715,
+    "lon" : 0.41219061,
+    "id" : "YALDING",
+    "name" : "Yalding",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

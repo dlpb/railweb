@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.112508,
+    "lon" : 0.16165326,
+    "id" : "CAMB540",
+    "name" : "Whittlesford Sig Ca540",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.110163,
+    "lon" : 0.16349684,
+    "id" : "WTLEFDR",
+    "name" : "Whittlesford Recp.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

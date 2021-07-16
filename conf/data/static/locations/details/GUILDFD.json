@@ -1,0 +1,10 @@
+[ {
+  "id" : "GUILDFD",
+  "crp" : "",
+  "route" : "Wessex",
+  "changeTime" : "Set(Some(ChangeTime(GLD,GW,GW,4,(Guildford))))",
+  "interchangeType" : "2 - Medium interchange point",
+  "county" : "South East",
+  "district" : "Surrey",
+  "postcode" : "\"GU1 4UT"
+} ]

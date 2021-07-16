@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.82286,
+    "lon" : -4.2591609,
+    "id" : "CCRTNJN",
+    "name" : "Cathcart North Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.819776,
+    "lon" : -4.2513674,
+    "id" : "CCRTEJN",
+    "name" : "Cathcart East Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.377,
+    "lon" : -0.1179,
+    "id" : "LTWWAM",
+    "name" : "Waddon Marsh",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 51.3735,
+    "lon" : -0.1134,
+    "id" : "LTWWAP",
+    "name" : "Wandle Park",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

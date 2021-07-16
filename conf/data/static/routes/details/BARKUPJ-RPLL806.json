@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.537426,
+    "lon" : 0.087412551,
+    "id" : "BARKUPJ",
+    "name" : "Barking Upney Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.529784,
+    "lon" : 0.11294276,
+    "id" : "RPLL806",
+    "name" : "Ripple Lane Signal 806",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

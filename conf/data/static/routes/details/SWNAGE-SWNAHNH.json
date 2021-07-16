@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.606159,
+    "lon" : -1.9659894,
+    "id" : "SWNAGE",
+    "name" : "Swanage",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 50.606159,
+    "lon" : -1.9659894,
+    "id" : "SWNAHNH",
+    "name" : "Herston Halt (Swanage R)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

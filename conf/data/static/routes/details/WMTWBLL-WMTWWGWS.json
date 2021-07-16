@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.53096,
+    "lon" : -2.01114,
+    "id" : "WMTWBLL",
+    "name" : "Black Lake",
+    "type" : "Metro"
+  },
+  "to" : {
+    "lat" : 52.54892,
+    "lon" : -2.02563,
+    "id" : "WMTWWGWS",
+    "name" : "Wednesbury Great Western Street",
+    "type" : "Metro"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Metro",
+  "speed" : "OHLE"
+} ]

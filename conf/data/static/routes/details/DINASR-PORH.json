@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.617328,
+    "lon" : -3.436904,
+    "id" : "DINASR",
+    "name" : "Dinas Rhondda",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.612352,
+    "lon" : -3.4074426,
+    "id" : "PORH",
+    "name" : "Porth",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "45-75"
+} ]

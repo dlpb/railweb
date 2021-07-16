@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.769592,
+    "lon" : -1.5127426,
+    "id" : "LEEDFLT",
+    "name" : "Leeds F.L.T.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.767087,
+    "lon" : -1.500195,
+    "id" : "STRTJN",
+    "name" : "Stourton Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

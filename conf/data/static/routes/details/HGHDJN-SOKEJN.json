@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.85634,
+    "lon" : -0.61040426,
+    "id" : "HGHDJN",
+    "name" : "Highdyke Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.839063,
+    "lon" : -0.58011974,
+    "id" : "SOKEJN",
+    "name" : "Stoke Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

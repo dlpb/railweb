@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.742362,
+    "lon" : 0.48936783,
+    "id" : "CHLMABL",
+    "name" : "Chelmsford Arbour Lane",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.780172,
+    "lon" : 0.5923879,
+    "id" : "HFLPEVL",
+    "name" : "Hatfield Peverel",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

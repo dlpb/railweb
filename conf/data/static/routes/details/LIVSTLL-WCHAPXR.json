@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.51798916063051,
+    "lon" : -0.08142601994463783,
+    "id" : "LIVSTLL",
+    "name" : "London Liverpool Street Xrail",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.51946719200348,
+    "lon" : -0.059757120098615765,
+    "id" : "WCHAPXR",
+    "name" : "Whitechapel Crossrail",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

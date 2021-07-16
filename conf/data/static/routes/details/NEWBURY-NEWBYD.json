@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.397479,
+    "lon" : -1.323223,
+    "id" : "NEWBURY",
+    "name" : "Newbury",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.398165,
+    "lon" : -1.3175493,
+    "id" : "NEWBYD",
+    "name" : "Newbury Yard",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

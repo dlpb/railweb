@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.654446,
+    "lon" : -0.32312164,
+    "id" : "THABBEY",
+    "name" : "Thornton Abbey",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.61919,
+    "lon" : -0.30081201,
+    "id" : "ULCEBY",
+    "name" : "Ulceby",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

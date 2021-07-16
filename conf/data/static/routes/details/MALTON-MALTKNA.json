@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.131894,
+    "lon" : -0.7971355,
+    "id" : "MALTON",
+    "name" : "Malton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.17824,
+    "lon" : -0.66439059,
+    "id" : "MALTKNA",
+    "name" : "Knapton",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

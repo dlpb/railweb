@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.583096,
+    "lon" : -1.147955,
+    "id" : "GRTN",
+    "name" : "Grangetown (Cleveland)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.597565,
+    "lon" : -1.1360072,
+    "id" : "GRTNSHJ",
+    "name" : "Shell Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

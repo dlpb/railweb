@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.757939,
+    "lon" : -1.5294647,
+    "id" : "LMTNPIR",
+    "name" : "Lymington Pier",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.760991,
+    "lon" : -1.5370761,
+    "id" : "LMTNTWN",
+    "name" : "Lymington Town",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

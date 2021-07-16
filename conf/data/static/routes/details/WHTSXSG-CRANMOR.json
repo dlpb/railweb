@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.185644,
+    "lon" : -2.4558592,
+    "id" : "WHTSXSG",
+    "name" : "Whites Crossing Sdg",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.18473,
+    "lon" : -2.4797585,
+    "id" : "CRANMOR",
+    "name" : "Cranmore",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

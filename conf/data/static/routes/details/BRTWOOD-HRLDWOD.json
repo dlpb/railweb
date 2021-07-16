@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.613564,
+    "lon" : 0.30069602,
+    "id" : "BRTWOOD",
+    "name" : "Brentwood",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.593177,
+    "lon" : 0.23411621,
+    "id" : "HRLDWOD",
+    "name" : "Harold Wood",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

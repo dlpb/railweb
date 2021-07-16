@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.454657,
+    "lon" : -0.035417499,
+    "id" : "CFPK",
+    "name" : "Crofton Park",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.46693,
+    "lon" : -0.053103333,
+    "id" : "NUNHEDJ",
+    "name" : "Nunhead Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.69333,
+    "lon" : -0.89784568,
+    "id" : "GOOLESJ",
+    "name" : "Engine Shed Jn Goole",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.688916,
+    "lon" : -0.96112365,
+    "id" : "RAWCLIF",
+    "name" : "Rawcliffe",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

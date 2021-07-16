@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.3881,
+    "lon" : -2.2566,
+    "id" : "BENMTLK",
+    "name" : "Benchill Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.3826,
+    "lon" : -2.2563,
+    "id" : "CSAMTLK",
+    "name" : "Crossacres Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

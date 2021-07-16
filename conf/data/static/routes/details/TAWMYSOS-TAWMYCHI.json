@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.9985,
+    "lon" : -1.4335,
+    "id" : "TAWMYSOS",
+    "name" : "South Shields",
+    "type" : "Metro"
+  },
+  "to" : {
+    "lat" : 54.9865,
+    "lon" : -1.432,
+    "id" : "TAWMYCHI",
+    "name" : "Chichester",
+    "type" : "Metro"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Metro",
+  "speed" : "OHLE"
+} ]

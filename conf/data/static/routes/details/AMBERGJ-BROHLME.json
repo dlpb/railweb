@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.05456,
+    "lon" : -1.4839319,
+    "id" : "AMBERGJ",
+    "name" : "Ambergate Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.039687,
+    "lon" : -1.4828865,
+    "id" : "BROHLME",
+    "name" : "Broadholme",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

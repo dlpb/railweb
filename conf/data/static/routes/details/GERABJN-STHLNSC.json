@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.460898,
+    "lon" : -2.7300768,
+    "id" : "GERABJN",
+    "name" : "Gerards Bridge Jcn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.45253,
+    "lon" : -2.7300537,
+    "id" : "STHLNSC",
+    "name" : "St Helens Central",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.27093,
+    "lon" : -1.3967317,
+    "id" : "BRHLSJN",
+    "name" : "Barrow Hill South Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.242562,
+    "lon" : -1.4185887,
+    "id" : "TAPTONJ",
+    "name" : "Tapton Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

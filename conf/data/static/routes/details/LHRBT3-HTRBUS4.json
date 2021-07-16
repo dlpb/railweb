@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 51.4715,
+    "lon" : -0.4532,
+    "id" : "LHRBT3",
+    "name" : "Heathrow T3 Bus",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.45932887671939,
+    "lon" : -0.44696755900678276,
+    "id" : "HTRBUS4",
+    "name" : "Heathrow Terminal 4 Buses Only",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "9 MINUTES"
+}, {
+  "from" : {
+    "lat" : 51.4715,
+    "lon" : -0.4532,
+    "id" : "LHRBT3",
+    "name" : "Heathrow T3 Bus",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.45932887671939,
+    "lon" : -0.44696755900678276,
+    "id" : "HTRBUS4",
+    "name" : "Heathrow Terminal 4 Buses Only",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : " 9"
+} ]

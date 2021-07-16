@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.04,
+    "lon" : -1.4427,
+    "id" : "TAWMYWHB",
+    "name" : "Whitley Bay",
+    "type" : "Metro"
+  },
+  "to" : {
+    "lat" : 55.035,
+    "lon" : -1.4363,
+    "id" : "TAWMYCUL",
+    "name" : "Cullercoats",
+    "type" : "Metro"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Metro",
+  "speed" : "OHLE"
+} ]

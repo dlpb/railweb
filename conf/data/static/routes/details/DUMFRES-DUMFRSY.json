@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.072643,
+    "lon" : -3.6044164,
+    "id" : "DUMFRES",
+    "name" : "Dumfries",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.068743,
+    "lon" : -3.5927494,
+    "id" : "DUMFRSY",
+    "name" : "Dumfries Yard",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

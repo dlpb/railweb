@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.117137,
+    "lon" : -0.1611184,
+    "id" : "THBDGS",
+    "name" : "Three Bridges",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.112753,
+    "lon" : -0.163164,
+    "id" : "THBDWRS",
+    "name" : "Three Bridges Voyager M.D.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

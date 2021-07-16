@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.864095,
+    "lon" : -3.9817194,
+    "id" : "AIRDRIE",
+    "name" : "Airdrie",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.866085,
+    "lon" : -3.9539647,
+    "id" : "DRMGLCH",
+    "name" : "Drumgelloch",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

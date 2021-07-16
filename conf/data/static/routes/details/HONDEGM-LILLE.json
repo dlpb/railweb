@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.764303,
+    "lon" : 2.521142,
+    "id" : "HONDEGM",
+    "name" : "Hondeghem",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.639598,
+    "lon" : 3.075945,
+    "id" : "LILLE",
+    "name" : "Lille Europe",
+    "type" : "Location"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

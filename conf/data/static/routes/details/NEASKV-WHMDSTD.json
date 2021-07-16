@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.54631,
+    "lon" : -0.19668211,
+    "id" : "NEASKV",
+    "name" : "Kilburn Viaduct",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.547476,
+    "lon" : -0.19128513,
+    "id" : "WHMDSTD",
+    "name" : "West Hampstead",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

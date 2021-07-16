@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.612868,
+    "lon" : -2.6025666,
+    "id" : "ADNL",
+    "name" : "Adlington (Lancashire)",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.652948,
+    "lon" : -2.6269224,
+    "id" : "CHORLEY",
+    "name" : "Chorley",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

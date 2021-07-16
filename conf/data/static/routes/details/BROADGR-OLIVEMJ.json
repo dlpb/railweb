@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.406474,
+    "lon" : -2.8935736,
+    "id" : "BROADGR",
+    "name" : "Broad Green",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.405487,
+    "lon" : -2.9182823,
+    "id" : "OLIVEMJ",
+    "name" : "Olive Mount Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

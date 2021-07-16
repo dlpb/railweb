@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.430667,
+    "lon" : -0.87774099,
+    "id" : "WINERSH",
+    "name" : "Winnersh",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.411227,
+    "lon" : -0.84264362,
+    "id" : "WOKNGHM",
+    "name" : "Wokingham",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

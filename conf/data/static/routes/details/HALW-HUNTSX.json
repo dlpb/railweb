@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.364488,
+    "lon" : -2.8299688,
+    "id" : "HALW",
+    "name" : "Halewood",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.360767,
+    "lon" : -2.8553812,
+    "id" : "HUNTSX",
+    "name" : "Hunts Cross",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.520995,
+    "lon" : -0.201778,
+    "id" : "LUH&CWEP",
+    "name" : "Westbourne Park",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.519383,
+    "lon" : -0.187785,
+    "id" : "LUH&CROO",
+    "name" : "Royal Oak",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.454737,
+    "lon" : -0.087576958,
+    "id" : "NDULWCH",
+    "name" : "North Dulwich",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.439946,
+    "lon" : -0.10488611,
+    "id" : "TULSEH",
+    "name" : "Tulse Hill",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

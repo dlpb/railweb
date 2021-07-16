@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.329927,
+    "lon" : -2.6534366,
+    "id" : "ACGJNLX",
+    "name" : "Norton Lc (Acton Grange)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.294684,
+    "lon" : -2.6346247,
+    "id" : "WEAVERJ",
+    "name" : "Weaver Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

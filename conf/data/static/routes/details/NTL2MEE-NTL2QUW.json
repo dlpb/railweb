@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.939009,
+    "lon" : -1.153695,
+    "id" : "NTL2MEE",
+    "name" : "Meadows Embankment",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 52.942564,
+    "lon" : -1.15053,
+    "id" : "NTL2QUW",
+    "name" : "Queens Walk",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

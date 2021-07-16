@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.79149,
+    "lon" : -3.869684,
+    "id" : "GWCG",
+    "name" : "Gwaun-Cae-Gurwen Opencast",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.778648,
+    "lon" : -3.9976078,
+    "id" : "PNTYFYN",
+    "name" : "Pantyffynnon",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

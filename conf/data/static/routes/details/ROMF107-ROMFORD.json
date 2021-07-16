@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.571266,
+    "lon" : 0.16675963,
+    "id" : "ROMF107",
+    "name" : "Romford Signal L5107",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.574637,
+    "lon" : 0.18236229,
+    "id" : "ROMFORD",
+    "name" : "Romford",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

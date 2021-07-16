@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.375278,
+    "lon" : -2.306111,
+    "id" : "HSVRBEW",
+    "name" : "Bewdley",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.380547,
+    "lon" : -2.240756,
+    "id" : "KDRMSVR",
+    "name" : "Kidderminster S.V.R.",
+    "type" : "Point"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

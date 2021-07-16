@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.593909,
+    "lon" : -4.4222608,
+    "id" : "DINGWAL",
+    "name" : "Dingwall",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 57.597792,
+    "lon" : -4.4732312,
+    "id" : "FDRTYIB",
+    "name" : "Fodderty I.B.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

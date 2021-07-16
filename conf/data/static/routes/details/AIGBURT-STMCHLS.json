@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.36446,
+    "lon" : -2.9265365,
+    "id" : "AIGBURT",
+    "name" : "Aigburth",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.375942,
+    "lon" : -2.9535725,
+    "id" : "STMCHLS",
+    "name" : "St Michaels",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.985336,
+    "lon" : -4.5773408,
+    "id" : "ALXANDR",
+    "name" : "Alexandria",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.002635,
+    "lon" : -4.5835136,
+    "id" : "BALLOCH",
+    "name" : "Balloch",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

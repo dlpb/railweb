@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.454124,
+    "lon" : -1.839322,
+    "id" : "TYSL",
+    "name" : "Tyseley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.456019,
+    "lon" : -1.8446129,
+    "id" : "TYSLSJ",
+    "name" : "Tyseley South Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

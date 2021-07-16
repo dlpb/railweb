@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.553033,
+    "lon" : -0.10578648,
+    "id" : "DRYP",
+    "name" : "Drayton Park",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.564699,
+    "lon" : -0.10647041,
+    "id" : "FNPK",
+    "name" : "Finsbury Park",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

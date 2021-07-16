@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.95701,
+    "lon" : -3.9510924,
+    "id" : "PRTSMTA",
+    "name" : "Portsmouth Arms",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.99629,
+    "lon" : -3.9827391,
+    "id" : "UMBRLGH",
+    "name" : "Umberleigh",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

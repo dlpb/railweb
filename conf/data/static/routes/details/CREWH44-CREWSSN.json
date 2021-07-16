@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.074354,
+    "lon" : -2.4245166,
+    "id" : "CREWH44",
+    "name" : "Crewe Sig.Nh43/44",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.092256,
+    "lon" : -2.434706,
+    "id" : "CREWSSN",
+    "name" : "Crewe Ssn Signal Box",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.421879,
+    "lon" : -0.20474846,
+    "id" : "WDON",
+    "name" : "Wimbledon",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.434237,
+    "lon" : -0.19436575,
+    "id" : "WDONEMU",
+    "name" : "Wimbledon E.M.U.D.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

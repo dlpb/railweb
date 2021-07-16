@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.37651,
+    "lon" : -0.08614,
+    "id" : "LTBLER",
+    "name" : "Lebanon Road",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 51.37501,
+    "lon" : -0.0782,
+    "id" : "LTBSAN",
+    "name" : "Sandilands",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

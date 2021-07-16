@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.361871,
+    "lon" : 0.20403639,
+    "id" : "EYNSFD",
+    "name" : "Eynsford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.393057,
+    "lon" : 0.16754233,
+    "id" : "SWLY",
+    "name" : "Swanley",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "70-90"
+} ]

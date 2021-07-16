@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.72519,
+    "lon" : -2.0193853,
+    "id" : "HMWTHY",
+    "name" : "Hamworthy",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.710821,
+    "lon" : -1.9976251,
+    "id" : "HMWTTC",
+    "name" : "Hamworthy T.C.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,10 @@
+[ {
+  "id" : "VICTRIE",
+  "crp" : "",
+  "route" : "South East",
+  "changeTime" : "Set(Some(ChangeTime(VIC,SN,SN,10,)))",
+  "interchangeType" : "9 - Subsidiary TIPLOC for station",
+  "county" : "London",
+  "district" : "Greater London",
+  "postcode" : "\"SW1V 1JU"
+} ]

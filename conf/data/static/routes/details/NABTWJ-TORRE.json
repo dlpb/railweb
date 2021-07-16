@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.521992,
+    "lon" : -3.5940007,
+    "id" : "NABTWJ",
+    "name" : "Newton Abbot West Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.472838,
+    "lon" : -3.5462776,
+    "id" : "TORRE",
+    "name" : "Torre",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "30-60"
+} ]

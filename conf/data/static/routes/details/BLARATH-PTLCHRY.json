@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.765291,
+    "lon" : -3.8497246,
+    "id" : "BLARATH",
+    "name" : "Blair Atholl",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.702415,
+    "lon" : -3.7358277,
+    "id" : "PTLCHRY",
+    "name" : "Pitlochry",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-100"
+} ]

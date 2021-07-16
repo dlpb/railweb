@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.566595,
+    "lon" : -1.9940733,
+    "id" : "DIGGLEJ",
+    "name" : "Diggle Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.538659,
+    "lon" : -2.0144469,
+    "id" : "GFLD",
+    "name" : "Greenfield",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.774398,
+    "lon" : -1.7483444,
+    "id" : "BWLGJN",
+    "name" : "Bowling Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.74924,
+    "lon" : -1.750517,
+    "id" : "LOWMOOR",
+    "name" : "Low Moor",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

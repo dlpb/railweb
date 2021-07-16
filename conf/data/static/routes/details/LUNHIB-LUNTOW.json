@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.6506519,
+    "lon" : -0.194138166,
+    "id" : "LUNHIB",
+    "name" : "High Barnet",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.63022,
+    "lon" : -0.17917,
+    "id" : "LUNTOW",
+    "name" : "Totteridge & Whetstone",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.397156,
+    "lon" : -3.2843767,
+    "id" : "BARRY",
+    "name" : "Barry",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.392396,
+    "lon" : -3.2739666,
+    "id" : "BARRYIS",
+    "name" : "Barry Island",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "45-75"
+} ]

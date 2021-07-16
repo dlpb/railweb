@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.884959,
+    "lon" : -1.2875061,
+    "id" : "LNGEATN",
+    "name" : "Long Eaton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.895149,
+    "lon" : -1.3301494,
+    "id" : "LNGEDRY",
+    "name" : "Draycott",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

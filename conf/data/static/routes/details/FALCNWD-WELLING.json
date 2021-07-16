@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.459362,
+    "lon" : 0.080163339,
+    "id" : "FALCNWD",
+    "name" : "Falconwood",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.464825,
+    "lon" : 0.10164764,
+    "id" : "WELLING",
+    "name" : "Welling",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

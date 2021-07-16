@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.64771,
+    "lon" : -0.052725218,
+    "id" : "SBURY",
+    "name" : "Southbury",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.672769,
+    "lon" : -0.047152641,
+    "id" : "TURKYST",
+    "name" : "Turkey Street",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

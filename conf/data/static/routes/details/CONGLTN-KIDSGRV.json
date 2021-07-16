@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.157817,
+    "lon" : -2.1923555,
+    "id" : "CONGLTN",
+    "name" : "Congleton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.08641,
+    "lon" : -2.2454122,
+    "id" : "KIDSGRV",
+    "name" : "Kidsgrove",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

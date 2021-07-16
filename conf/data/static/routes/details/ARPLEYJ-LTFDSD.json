@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.385478,
+    "lon" : -2.5967637,
+    "id" : "ARPLEYJ",
+    "name" : "Arpley Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.384833,
+    "lon" : -2.59256,
+    "id" : "LTFDSD",
+    "name" : "Latchford Sdgs",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

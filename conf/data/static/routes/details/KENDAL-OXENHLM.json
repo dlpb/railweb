@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.332199,
+    "lon" : -2.7401252,
+    "id" : "KENDAL",
+    "name" : "Kendal",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.305241,
+    "lon" : -2.7217527,
+    "id" : "OXENHLM",
+    "name" : "Oxenholme Lake District",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

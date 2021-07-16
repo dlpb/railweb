@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.458948,
+    "lon" : -1.3212971,
+    "id" : "ALDWRKJ",
+    "name" : "Aldwarke Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.458387,
+    "lon" : -1.3222548,
+    "id" : "ALDWRML",
+    "name" : "Roundwood B.S.C. 11 Mill",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

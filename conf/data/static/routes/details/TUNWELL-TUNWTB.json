@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.129941,
+    "lon" : 0.26301045,
+    "id" : "TUNWELL",
+    "name" : "Tunbridge Wells",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.140033,
+    "lon" : 0.26850768,
+    "id" : "TUNWTB",
+    "name" : "Tunbridge Wells Turnback",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "70-90"
+} ]

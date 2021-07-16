@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.135628,
+    "lon" : -0.47940292,
+    "id" : "BEDFDM",
+    "name" : "Bedford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.138163,
+    "lon" : -0.48149382,
+    "id" : "BEDFDNS",
+    "name" : "Bedford North Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.532396,
+    "lon" : -0.24453728,
+    "id" : "WLSDNJL",
+    "name" : "Willesden Junction",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.531359,
+    "lon" : -0.24013656,
+    "id" : "WLSDTMD",
+    "name" : "Willesden T.M.D",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

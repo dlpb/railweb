@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.404005,
+    "lon" : -0.25559715,
+    "id" : "NEWMLDN",
+    "name" : "New Malden",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.412304,
+    "lon" : -0.28412765,
+    "id" : "NRBITON",
+    "name" : "Norbiton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

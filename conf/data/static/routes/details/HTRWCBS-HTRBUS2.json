@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.47109359569301,
+    "lon" : -0.45330649494245706,
+    "id" : "HTRWCBS",
+    "name" : "Heathrow Central Bus Stn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.4715,
+    "lon" : -0.4532,
+    "id" : "HTRBUS2",
+    "name" : "Heathrow T2 Bus",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "15 MINUTES"
+} ]

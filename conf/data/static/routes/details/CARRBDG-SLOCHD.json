@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.279352,
+    "lon" : -3.8278968,
+    "id" : "CARRBDG",
+    "name" : "Carrbridge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 57.306818,
+    "lon" : -3.9371035,
+    "id" : "SLOCHD",
+    "name" : "Slochd",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-100"
+} ]

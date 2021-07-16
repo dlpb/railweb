@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.777353,
+    "lon" : -3.9576527,
+    "id" : "SHILDMR",
+    "name" : "Shieldmuir",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.774175,
+    "lon" : -3.9506374,
+    "id" : "SHILDMT",
+    "name" : "Shieldmuir Mail Terminal",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.453968,
+    "lon" : -2.1337487,
+    "id" : "STRBHDS",
+    "name" : "Stourbridge Jn Headshunt",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.449743,
+    "lon" : -2.133986,
+    "id" : "STRBJGL",
+    "name" : "Stourbridge Jn Goods Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.915292,
+    "lon" : -1.4623738,
+    "id" : "DRBY",
+    "name" : "Derby",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.910866,
+    "lon" : -1.4615809,
+    "id" : "DRBYALL",
+    "name" : "Derby Adtranz Litchurch Ln",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

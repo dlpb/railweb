@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.811392,
+    "lon" : -1.2374502,
+    "id" : "RATCHRN",
+    "name" : "Hathern",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.783807,
+    "lon" : -1.2039197,
+    "id" : "LOGHBNJ",
+    "name" : "Loughborough North Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

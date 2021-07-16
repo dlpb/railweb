@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.377002,
+    "lon" : -0.38883178,
+    "id" : "HERSHAM",
+    "name" : "Hersham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.372792,
+    "lon" : -0.41442427,
+    "id" : "WONT",
+    "name" : "Walton-On-Thames",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

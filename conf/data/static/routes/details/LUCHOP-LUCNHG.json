@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.50722,
+    "lon" : -0.20553,
+    "id" : "LUCHOP",
+    "name" : "Holland Park",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.509028,
+    "lon" : -0.1962847,
+    "id" : "LUCNHG",
+    "name" : "Notting Hill Gate",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

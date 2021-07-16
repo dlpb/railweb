@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.571495,
+    "lon" : -3.217614,
+    "id" : "CRPHLY",
+    "name" : "Caerphilly",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.544272,
+    "lon" : -3.1855794,
+    "id" : "LTHH",
+    "name" : "Lisvane & Thornhill",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "45-75"
+} ]

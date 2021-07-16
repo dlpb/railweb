@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.970142,
+    "lon" : -1.17041,
+    "id" : "NTL1BES",
+    "name" : "Beaconsfield Street",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 52.967203,
+    "lon" : -1.168579,
+    "id" : "NTL1NOS",
+    "name" : "Noel Street",
+    "type" : "Tram"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

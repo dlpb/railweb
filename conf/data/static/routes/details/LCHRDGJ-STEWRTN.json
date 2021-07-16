@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.666264,
+    "lon" : -4.5240176,
+    "id" : "LCHRDGJ",
+    "name" : "Lochridge Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.682188,
+    "lon" : -4.5180756,
+    "id" : "STEWRTN",
+    "name" : "Stewarton",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

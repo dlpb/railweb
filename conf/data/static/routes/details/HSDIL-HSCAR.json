@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.0,
+    "lon" : -2.046944,
+    "id" : "HSDIL",
+    "name" : "Dilhorne",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.975556,
+    "lon" : -2.065,
+    "id" : "HSCAR",
+    "name" : "Caverswall Road",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

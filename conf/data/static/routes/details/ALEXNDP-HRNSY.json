@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.598006,
+    "lon" : -0.12043389,
+    "id" : "ALEXNDP",
+    "name" : "Alexandra Palace",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.586076,
+    "lon" : -0.11161564,
+    "id" : "HRNSY",
+    "name" : "Hornsey",
+    "type" : "Station"
+  },
+  "singleTrack" : "6",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

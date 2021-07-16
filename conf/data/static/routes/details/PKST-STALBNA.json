@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.725669,
+    "lon" : -0.34002264,
+    "id" : "PKST",
+    "name" : "Park Street",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.744521,
+    "lon" : -0.34231568,
+    "id" : "STALBNA",
+    "name" : "St Albans Abbey",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

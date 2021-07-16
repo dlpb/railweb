@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.748188,
+    "lon" : -2.7058742,
+    "id" : "PRSTRJN",
+    "name" : "Ribble Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.736382,
+    "lon" : -2.7036145,
+    "id" : "PRSTSKB",
+    "name" : "Skew Bridge",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

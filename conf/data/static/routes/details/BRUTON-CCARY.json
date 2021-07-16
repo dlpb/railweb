@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.111728,
+    "lon" : -2.4469601,
+    "id" : "BRUTON",
+    "name" : "Bruton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.099824,
+    "lon" : -2.5224231,
+    "id" : "CCARY",
+    "name" : "Castle Cary",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

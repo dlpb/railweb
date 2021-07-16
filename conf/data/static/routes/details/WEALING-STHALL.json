@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.513469,
+    "lon" : -0.32082633,
+    "id" : "WEALING",
+    "name" : "West Ealing",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.506064,
+    "lon" : -0.37742491,
+    "id" : "STHALL",
+    "name" : "Southall",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "50 MINUTES"
+} ]

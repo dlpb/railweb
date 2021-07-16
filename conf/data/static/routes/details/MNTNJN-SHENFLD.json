@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.640226,
+    "lon" : 0.3515914,
+    "id" : "MNTNJN",
+    "name" : "Mountnessing Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.630669,
+    "lon" : 0.32985507,
+    "id" : "SHENFLD",
+    "name" : "Shenfield",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

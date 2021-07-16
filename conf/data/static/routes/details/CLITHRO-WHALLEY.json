@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.873978,
+    "lon" : -2.394037,
+    "id" : "CLITHRO",
+    "name" : "Clitheroe",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.824214,
+    "lon" : -2.4120575,
+    "id" : "WHALLEY",
+    "name" : "Whalley",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

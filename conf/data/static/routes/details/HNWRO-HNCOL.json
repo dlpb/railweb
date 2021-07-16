@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.7168,
+    "lon" : 1.4084,
+    "id" : "HNWRO",
+    "name" : "Wroxham",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.7336,
+    "lon" : 1.35933,
+    "id" : "HNCOL",
+    "name" : "Coltishall",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

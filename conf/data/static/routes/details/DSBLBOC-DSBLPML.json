@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.5289,
+    "lon" : -0.021,
+    "id" : "DSBLBOC",
+    "name" : "Bow Church",
+    "type" : "Light Rail"
+  },
+  "to" : {
+    "lat" : 51.5339,
+    "lon" : -0.0142,
+    "id" : "DSBLPML",
+    "name" : "Pudding Mill Lane",
+    "type" : "Light Rail"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "Y",
+  "type" : "Light Rail",
+  "speed" : "OHLE"
+} ]

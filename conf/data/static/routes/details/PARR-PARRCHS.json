@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.355688,
+    "lon" : -4.7045131,
+    "id" : "PARR",
+    "name" : "Par",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.353557,
+    "lon" : -4.704884,
+    "id" : "PARRCHS",
+    "name" : "Par Chapel Siding",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

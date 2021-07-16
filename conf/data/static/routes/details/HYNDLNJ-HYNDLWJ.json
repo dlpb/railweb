@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.884911,
+    "lon" : -4.3246979,
+    "id" : "HYNDLNJ",
+    "name" : "Hyndland North Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.882743,
+    "lon" : -4.3285978,
+    "id" : "HYNDLWJ",
+    "name" : "Hyndland West Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

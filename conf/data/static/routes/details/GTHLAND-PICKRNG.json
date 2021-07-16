@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.399902,
+    "lon" : -0.71162401,
+    "id" : "GTHLAND",
+    "name" : "Goathland",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 54.246567,
+    "lon" : -0.77879266,
+    "id" : "PICKRNG",
+    "name" : "Pickering",
+    "type" : "Location"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

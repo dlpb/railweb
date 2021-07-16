@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.039967,
+    "lon" : -2.5619122,
+    "id" : "WRENRF",
+    "name" : "Reeds Farm L.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.019405,
+    "lon" : -2.5959466,
+    "id" : "WRENBRY",
+    "name" : "Wrenbury",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "70-90"
+} ]

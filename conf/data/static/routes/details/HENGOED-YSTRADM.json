@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.646979,
+    "lon" : -3.2255617,
+    "id" : "HENGOED",
+    "name" : "Hengoed",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.64035,
+    "lon" : -3.2419875,
+    "id" : "YSTRADM",
+    "name" : "Ystrad Mynach",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "45-75"
+} ]

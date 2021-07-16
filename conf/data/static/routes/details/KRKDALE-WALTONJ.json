@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.440617,
+    "lon" : -2.9812609,
+    "id" : "KRKDALE",
+    "name" : "Kirkdale",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.455117,
+    "lon" : -2.9668516,
+    "id" : "WALTONJ",
+    "name" : "Walton Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

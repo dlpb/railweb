@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.860447,
+    "lon" : -2.2214565,
+    "id" : "GLOS339",
+    "name" : "Gloucester Sig. G339",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.85442,
+    "lon" : -2.2279314,
+    "id" : "GLOSTYJ",
+    "name" : "Gloucester Yard Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

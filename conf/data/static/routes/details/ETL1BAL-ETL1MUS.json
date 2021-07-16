@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.938493,
+    "lon" : -3.251132,
+    "id" : "ETL1BAL",
+    "name" : "Balgreen",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 55.941957,
+    "lon" : -3.23718,
+    "id" : "ETL1MUS",
+    "name" : "Murrayfield Stadium",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

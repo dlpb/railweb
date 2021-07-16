@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.389279,
+    "lon" : -0.081539927,
+    "id" : "NORWDFJ",
+    "name" : "Norwood Fork Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.39199,
+    "lon" : -0.078508599,
+    "id" : "SDEPFA",
+    "name" : "Sel. D. Fork Arrival",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

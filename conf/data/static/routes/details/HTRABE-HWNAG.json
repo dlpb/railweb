@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.638611,
+    "lon" : -3.966111,
+    "id" : "HTRABE",
+    "name" : "Abergynolwyn",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.6406,
+    "lon" : -3.951487,
+    "id" : "HWNAG",
+    "name" : "Nant Gwernol",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

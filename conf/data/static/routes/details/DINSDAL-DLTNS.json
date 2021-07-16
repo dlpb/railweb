@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.514989,
+    "lon" : -1.4672624,
+    "id" : "DINSDAL",
+    "name" : "Dinsdale",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.516897,
+    "lon" : -1.5475175,
+    "id" : "DLTNS",
+    "name" : "Darlington South Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

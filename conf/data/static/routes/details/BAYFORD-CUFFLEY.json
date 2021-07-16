@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.75822,
+    "lon" : -0.095704685,
+    "id" : "BAYFORD",
+    "name" : "Bayford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.708838,
+    "lon" : -0.1098364,
+    "id" : "CUFFLEY",
+    "name" : "Cuffley",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

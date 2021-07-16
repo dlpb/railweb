@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.851657,
+    "lon" : -0.93930948,
+    "id" : "EMSWTH",
+    "name" : "Emsworth",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.848275273875615,
+    "lon" : -0.9081067437912493,
+    "id" : "SBOUBUS",
+    "name" : "Southbourne Bus",
+    "type" : "Bus"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

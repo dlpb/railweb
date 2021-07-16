@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.430667,
+    "lon" : -0.87774099,
+    "id" : "WINERSH",
+    "name" : "Winnersh",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.436707,
+    "lon" : -0.89167772,
+    "id" : "WINETGL",
+    "name" : "Winnersh Triangle",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

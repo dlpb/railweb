@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.804989,
+    "lon" : -1.4507594,
+    "id" : "CSGT",
+    "name" : "Cross Gates",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.794202,
+    "lon" : -1.495516,
+    "id" : "NEVLEJN",
+    "name" : "Neville H. East Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

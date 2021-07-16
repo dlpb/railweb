@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.198025,
+    "lon" : -2.8831386,
+    "id" : "CHSTRWJ",
+    "name" : "Chester West Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.204658,
+    "lon" : -2.8892637,
+    "id" : "CHSTRNJ",
+    "name" : "Chester North Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

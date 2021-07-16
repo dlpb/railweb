@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.888844,
+    "lon" : -4.24849,
+    "id" : "ASFIELD",
+    "name" : "Ashfield",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.888666,
+    "lon" : -4.2444656,
+    "id" : "CWLRSNJ",
+    "name" : "Cowlairs North Junction",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

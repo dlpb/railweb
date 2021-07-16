@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.432154,
+    "lon" : -0.4987003,
+    "id" : "STAI467",
+    "name" : "Staines Signal F467",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.432313,
+    "lon" : -0.50272314,
+    "id" : "STAINES",
+    "name" : "Staines",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

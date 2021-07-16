@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.054338,
+    "lon" : 0.20096915,
+    "id" : "GTCHSFL",
+    "name" : "Great Chesterford Up Gdslp",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.059729,
+    "lon" : 0.19347333,
+    "id" : "GTCHSFD",
+    "name" : "Great Chesterford",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

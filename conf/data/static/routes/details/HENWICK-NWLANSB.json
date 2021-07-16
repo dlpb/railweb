@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.190638,
+    "lon" : -2.2358658,
+    "id" : "HENWICK",
+    "name" : "Henwick",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.146308,
+    "lon" : -2.3019781,
+    "id" : "NWLANSB",
+    "name" : "Newland East Signal Box",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

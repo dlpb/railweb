@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.790913,
+    "lon" : -2.2579341,
+    "id" : "BURNLYB",
+    "name" : "Burnley Barracks",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.788807,
+    "lon" : -2.2674685,
+    "id" : "GANNOWJ",
+    "name" : "Gannow Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

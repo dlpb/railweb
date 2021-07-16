@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.534042,
+    "lon" : -0.076569661,
+    "id" : "HOXTON",
+    "name" : "Hoxton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.52337337876631,
+    "lon" : -0.07524617751528465,
+    "id" : "SHRDHST",
+    "name" : "Shoreditch High Street",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

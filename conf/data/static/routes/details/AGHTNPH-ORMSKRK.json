@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.5544,
+    "lon" : -2.895058,
+    "id" : "AGHTNPH",
+    "name" : "Aughton Park",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.569633,
+    "lon" : -2.880823,
+    "id" : "ORMSKRK",
+    "name" : "Ormskirk",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

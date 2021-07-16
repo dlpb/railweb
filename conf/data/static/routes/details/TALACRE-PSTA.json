@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.344008,
+    "lon" : -3.3257535,
+    "id" : "TALACRE",
+    "name" : "Talacre",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.336208,
+    "lon" : -3.4071673,
+    "id" : "PSTA",
+    "name" : "Prestatyn",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

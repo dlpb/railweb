@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.312215,
+    "lon" : 0.87831826,
+    "id" : "FAV4327",
+    "name" : "Fv Ek4327 Sig Faversham",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.311506,
+    "lon" : 0.89101758,
+    "id" : "FAVRSHM",
+    "name" : "Faversham",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

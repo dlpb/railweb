@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.487749,
+    "lon" : -0.68879522,
+    "id" : "CORBY",
+    "name" : "Corby",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.457797,
+    "lon" : -0.71292427,
+    "id" : "KETRGED",
+    "name" : "Geddington",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

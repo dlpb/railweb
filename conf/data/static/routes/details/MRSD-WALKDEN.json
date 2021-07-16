@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.516351,
+    "lon" : -2.3527049,
+    "id" : "MRSD",
+    "name" : "Moorside",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.519776,
+    "lon" : -2.3955518,
+    "id" : "WALKDEN",
+    "name" : "Walkden",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

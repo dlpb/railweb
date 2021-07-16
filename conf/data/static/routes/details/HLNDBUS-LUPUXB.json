@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.5538,
+    "lon" : -0.45,
+    "id" : "HLNDBUS",
+    "name" : "Hillingdon Und",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.54687,
+    "lon" : -0.47725,
+    "id" : "LUPUXB",
+    "name" : "Uxbridge",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

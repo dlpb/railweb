@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.5514,
+    "lon" : -2.2953,
+    "id" : "WHFD",
+    "name" : "Whitefield Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.5419,
+    "lon" : -2.286,
+    "id" : "BSTBARN",
+    "name" : "Besses O' Th' Barn Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

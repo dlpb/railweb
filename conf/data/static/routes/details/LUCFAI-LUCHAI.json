@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.59634,
+    "lon" : 0.09125,
+    "id" : "LUCFAI",
+    "name" : "Fairlop",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.60288,
+    "lon" : 0.09332,
+    "id" : "LUCHAI",
+    "name" : "Hainault",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

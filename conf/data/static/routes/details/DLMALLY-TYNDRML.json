@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.401002,
+    "lon" : -4.9830673,
+    "id" : "DLMALLY",
+    "name" : "Dalmally",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.433661,
+    "lon" : -4.7137245,
+    "id" : "TYNDRML",
+    "name" : "Tyndrum Lower",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

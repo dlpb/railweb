@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.50868,
+    "lon" : -1.98251,
+    "id" : "WMTWKEP",
+    "name" : "Kenrick Park",
+    "type" : "Metro"
+  },
+  "to" : {
+    "lat" : 52.51187,
+    "lon" : -1.98823,
+    "id" : "WMTWTRW",
+    "name" : "Trinity Way",
+    "type" : "Metro"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Metro",
+  "speed" : "OHLE"
+} ]

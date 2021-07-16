@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.378119,
+    "lon" : -1.462067,
+    "id" : "SHEFFLD",
+    "name" : "Sheffield",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.375016,
+    "lon" : -1.4614968,
+    "id" : "STBGRTSC",
+    "name" : "Granville Road / The Sheffield College",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.574507,
+    "lon" : -3.0081375,
+    "id" : "ALXNJTC",
+    "name" : "Alexandra Dock Jn. T.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.568679,
+    "lon" : -3.0071429,
+    "id" : "EBBWJ",
+    "name" : "Ebbw Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

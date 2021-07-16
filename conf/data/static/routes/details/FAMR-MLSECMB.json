@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.861998,
+    "lon" : -0.08717764,
+    "id" : "FAMR",
+    "name" : "Falmer",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.846552,
+    "lon" : -0.11897645,
+    "id" : "MLSECMB",
+    "name" : "Moulsecoomb",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.613715,
+    "lon" : -2.4109863,
+    "id" : "BRMCRSS",
+    "name" : "Bromley Cross",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.597079,
+    "lon" : -2.4132574,
+    "id" : "HITW",
+    "name" : "Hall I' Th' Wood",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

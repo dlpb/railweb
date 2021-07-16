@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.127883,
+    "lon" : -5.2925885,
+    "id" : "HCTRE",
+    "name" : "Trevarno",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 50.1209,
+    "lon" : -5.2837,
+    "id" : "HCTRH",
+    "name" : "Truthall Halt",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

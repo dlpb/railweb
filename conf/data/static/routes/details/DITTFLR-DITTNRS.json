@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.356057,
+    "lon" : -2.7512408,
+    "id" : "DITTFLR",
+    "name" : "Ditton (Oconnor) Fliner",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.355855,
+    "lon" : -2.7730079,
+    "id" : "DITTNRS",
+    "name" : "Ditton Reception Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

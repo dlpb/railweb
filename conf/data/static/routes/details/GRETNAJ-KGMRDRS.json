@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.99826,
+    "lon" : -3.0453804,
+    "id" : "GRETNAJ",
+    "name" : "Gretna Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.909031,
+    "lon" : -2.9604761,
+    "id" : "KGMRDRS",
+    "name" : "Carlisle Kingmoor Sdg(Drs)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

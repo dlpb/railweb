@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.473255,
+    "lon" : -0.14938264,
+    "id" : "LNGHDGJ",
+    "name" : "Longhedge Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.471069,
+    "lon" : -0.16935572,
+    "id" : "LTCHMRJ",
+    "name" : "Latchmere Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

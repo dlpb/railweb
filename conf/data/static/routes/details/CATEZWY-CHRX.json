@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.5636,
+    "lon" : -0.2794,
+    "id" : "CATEZWY",
+    "name" : "Wembley Park Und",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.506834,
+    "lon" : -0.12227171,
+    "id" : "CHRX",
+    "name" : "London Charing Cross",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "37 MINUTES"
+} ]

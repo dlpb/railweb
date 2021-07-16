@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.468323,
+    "lon" : -2.5881094,
+    "id" : "MONPELR",
+    "name" : "Montpelier",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.468404,
+    "lon" : -2.5987925,
+    "id" : "REDLAND",
+    "name" : "Redland",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "15-50"
+} ]

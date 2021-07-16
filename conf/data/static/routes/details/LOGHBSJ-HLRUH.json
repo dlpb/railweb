@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.775663,
+    "lon" : -1.189348,
+    "id" : "LOGHBSJ",
+    "name" : "Loughborough South Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.843889,
+    "lon" : -1.182222,
+    "id" : "HLRUH",
+    "name" : "Rushcliffe Halt",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

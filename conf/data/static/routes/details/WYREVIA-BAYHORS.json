@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.938051,
+    "lon" : -2.7704956,
+    "id" : "WYREVIA",
+    "name" : "Wyre Viaduct",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.968481,
+    "lon" : -2.7738162,
+    "id" : "BAYHORS",
+    "name" : "Bay Horse",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.458488,
+    "lon" : -0.96163604,
+    "id" : "RDNGNJN",
+    "name" : "Reading New Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.457925,
+    "lon" : -0.95101205,
+    "id" : "RDNGSJN",
+    "name" : "Reading Spur Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.206365,
+    "lon" : 0.14644787,
+    "id" : "CAMBTGB",
+    "name" : "Cambridge T.C. Gbrf",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.195605,
+    "lon" : 0.13836437,
+    "id" : "CAMBDGE",
+    "name" : "Cambridge",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

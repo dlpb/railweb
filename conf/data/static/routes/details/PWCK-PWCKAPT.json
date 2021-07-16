@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.501669,
+    "lon" : -4.6143467,
+    "id" : "PWCK",
+    "name" : "Prestwick Town",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.508909,
+    "lon" : -4.61413,
+    "id" : "PWCKAPT",
+    "name" : "Prestwick Intl Airport",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "75-90"
+} ]

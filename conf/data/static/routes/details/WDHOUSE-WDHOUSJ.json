@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.363931,
+    "lon" : -1.3575807,
+    "id" : "WDHOUSE",
+    "name" : "Woodhouse",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.359744,
+    "lon" : -1.347967,
+    "id" : "WDHOUSJ",
+    "name" : "Woodhouse Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

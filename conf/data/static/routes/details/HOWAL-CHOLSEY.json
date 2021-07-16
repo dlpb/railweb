@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.597544,
+    "lon" : -1.1353965,
+    "id" : "HOWAL",
+    "name" : "Wallingford",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 51.570313,
+    "lon" : -1.1586124,
+    "id" : "CHOLSEY",
+    "name" : "Cholsey",
+    "type" : "Station"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

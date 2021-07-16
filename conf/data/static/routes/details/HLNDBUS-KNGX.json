@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.5538,
+    "lon" : -0.45,
+    "id" : "HLNDBUS",
+    "name" : "Hillingdon Und",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.532256,
+    "lon" : -0.1233741,
+    "id" : "KNGX",
+    "name" : "London Kings Cross",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "66 MINUTES"
+} ]

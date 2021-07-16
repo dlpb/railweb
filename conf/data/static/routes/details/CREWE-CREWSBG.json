@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.088144,
+    "lon" : -2.4318491,
+    "id" : "CREWE",
+    "name" : "Crewe",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.10164,
+    "lon" : -2.4284894,
+    "id" : "CREWSBG",
+    "name" : "Crewe Sydney Bridge",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

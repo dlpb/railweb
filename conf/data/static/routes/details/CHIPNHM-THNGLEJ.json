@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.462558,
+    "lon" : -2.1153941,
+    "id" : "CHIPNHM",
+    "name" : "Chippenham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.437129,
+    "lon" : -2.1414123,
+    "id" : "THNGLEJ",
+    "name" : "Thingley East Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

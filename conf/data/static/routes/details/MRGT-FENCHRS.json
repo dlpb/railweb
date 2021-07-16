@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.518374,
+    "lon" : -0.088991509,
+    "id" : "MRGT",
+    "name" : "Moorgate",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.511352,
+    "lon" : -0.077554354,
+    "id" : "FENCHRS",
+    "name" : "London Fenchurch Street",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "25 MINUTES"
+} ]

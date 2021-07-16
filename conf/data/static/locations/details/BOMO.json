@@ -1,0 +1,10 @@
+[ {
+  "id" : "BOMO",
+  "crp" : "",
+  "route" : "Wessex",
+  "changeTime" : "Set(Some(ChangeTime(BMH,SW,SW,3,(Bournemouth))))",
+  "interchangeType" : "1 - Small interchange point",
+  "county" : "South West",
+  "district" : "Bournemouth",
+  "postcode" : "\"BH8 8HX"
+} ]

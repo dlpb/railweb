@@ -1,0 +1,10 @@
+[ {
+  "id" : "BANSBUS",
+  "crp" : "",
+  "route" : "South East",
+  "changeTime" : "Set(None)",
+  "interchangeType" : "9 - Subsidiary TIPLOC for station",
+  "county" : "South East",
+  "district" : "Surrey",
+  "postcode" : "\"SM7 1PZ"
+} ]

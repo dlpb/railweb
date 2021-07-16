@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.561029,
+    "lon" : 0.084376547,
+    "id" : "MRCHWJN",
+    "name" : "March West Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.562389,
+    "lon" : 0.087273866,
+    "id" : "WHTMJN",
+    "name" : "Whitemoor Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

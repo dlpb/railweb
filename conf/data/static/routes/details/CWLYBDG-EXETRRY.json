@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.746686,
+    "lon" : -3.5479269,
+    "id" : "CWLYBDG",
+    "name" : "Cowley Bridge Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.73758,
+    "lon" : -3.5461952,
+    "id" : "EXETRRY",
+    "name" : "Exeter Riverside N.Y.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

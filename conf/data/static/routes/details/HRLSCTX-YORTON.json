@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.737923,
+    "lon" : -2.7285533,
+    "id" : "HRLSCTX",
+    "name" : "Harlescott X",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.809064,
+    "lon" : -2.7363739,
+    "id" : "YORTON",
+    "name" : "Yorton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "70-90"
+} ]

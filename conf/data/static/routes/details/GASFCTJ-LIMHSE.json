@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.523301,
+    "lon" : -0.023829569,
+    "id" : "GASFCTJ",
+    "name" : "Gas Factory Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.512658,
+    "lon" : -0.039624643,
+    "id" : "LIMHSE",
+    "name" : "Limehouse",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

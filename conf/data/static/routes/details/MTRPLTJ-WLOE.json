@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.504167,
+    "lon" : -0.097410149,
+    "id" : "MTRPLTJ",
+    "name" : "Metropolitan Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.504259,
+    "lon" : -0.1080692,
+    "id" : "WLOE",
+    "name" : "London Waterloo East",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

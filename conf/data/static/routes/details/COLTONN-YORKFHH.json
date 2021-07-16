@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.900579,
+    "lon" : -1.1540549,
+    "id" : "COLTONN",
+    "name" : "Colton North Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.950186,
+    "lon" : -1.1047333,
+    "id" : "YORKFHH",
+    "name" : "York Holgate Siding (Flhh)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

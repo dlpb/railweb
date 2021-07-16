@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.421831,
+    "lon" : -2.2153053,
+    "id" : "BAGE",
+    "name" : "Burnage",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.433986,
+    "lon" : -2.208744,
+    "id" : "MLDTHRD",
+    "name" : "Mauldeth Road",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

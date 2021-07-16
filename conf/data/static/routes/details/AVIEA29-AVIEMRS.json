@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.188547,
+    "lon" : -3.8288524,
+    "id" : "AVIEA29",
+    "name" : "Aviemore Signal A29",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 57.191476,
+    "lon" : -3.8275905,
+    "id" : "AVIEMRS",
+    "name" : "Aviemore (Speyside)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.508456,
+    "lon" : 0.046148,
+    "id" : "DBTGBROA",
+    "name" : "Royal Albert",
+    "type" : "Light Rail"
+  },
+  "to" : {
+    "lat" : 51.508758,
+    "lon" : 0.054778,
+    "id" : "DBTGBBEP",
+    "name" : "Beckton Park",
+    "type" : "Light Rail"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Light Rail",
+  "speed" : "OHLE"
+} ]

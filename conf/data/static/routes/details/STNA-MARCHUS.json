@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.518301,
+    "lon" : 0.14924115,
+    "id" : "STNA",
+    "name" : "Stonea",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.559318,
+    "lon" : 0.094711183,
+    "id" : "MARCHUS",
+    "name" : "March Up R.S.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

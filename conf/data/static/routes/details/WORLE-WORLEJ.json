@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.357921,
+    "lon" : -2.9091311,
+    "id" : "WORLE",
+    "name" : "Worle",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.352981,
+    "lon" : -2.9211391,
+    "id" : "WORLEJ",
+    "name" : "Worle Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

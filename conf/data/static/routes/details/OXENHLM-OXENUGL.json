@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.305241,
+    "lon" : -2.7217527,
+    "id" : "OXENHLM",
+    "name" : "Oxenholme Lake District",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.300919,
+    "lon" : -2.7259336,
+    "id" : "OXENUGL",
+    "name" : "Oxenholme Up Goods Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.443482,
+    "lon" : 0.47356507,
+    "id" : "CLFFD12",
+    "name" : "Cliffe Signal Nk509",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.43647,
+    "lon" : 0.44643679,
+    "id" : "HOOJ611",
+    "name" : "Hoo Junction Signal Nk1611",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

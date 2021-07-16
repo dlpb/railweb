@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.462894,
+    "lon" : -0.11313479,
+    "id" : "BRIXTON",
+    "name" : "Brixton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.47224,
+    "lon" : -0.1227,
+    "id" : "LUNSTO",
+    "name" : "Stockwell",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

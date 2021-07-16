@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.901957,
+    "lon" : 0.8862229,
+    "id" : "CLCHGL",
+    "name" : "Colchester Goods Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.900618,
+    "lon" : 0.89129816,
+    "id" : "CLCHSTR",
+    "name" : "Colchester",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

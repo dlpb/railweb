@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.260083,
+    "lon" : -0.73283507,
+    "id" : "ALDRSJN",
+    "name" : "Aldershot North Junction",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 51.272628,
+    "lon" : -0.72130822,
+    "id" : "ASHVALE",
+    "name" : "Ash Vale",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

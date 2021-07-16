@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.586599,
+    "lon" : -0.041466928,
+    "id" : "BLCHSRD",
+    "name" : "Blackhorse Road",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.581472,
+    "lon" : -0.023688402,
+    "id" : "WLTHQRD",
+    "name" : "Walthamstow Queens Road",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

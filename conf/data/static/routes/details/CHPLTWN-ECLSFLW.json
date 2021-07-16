@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.462479,
+    "lon" : -1.466409,
+    "id" : "CHPLTWN",
+    "name" : "Chapeltown",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.441077,
+    "lon" : -1.4466245,
+    "id" : "ECLSFLW",
+    "name" : "Ecclesfield West S.B.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

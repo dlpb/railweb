@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.441901,
+    "lon" : -0.14672203,
+    "id" : "BALHJN",
+    "name" : "Balham Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.425383,
+    "lon" : -0.1388461,
+    "id" : "STRENJN",
+    "name" : "Streatham North Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

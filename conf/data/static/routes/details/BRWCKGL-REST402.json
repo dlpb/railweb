@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.777328,
+    "lon" : -2.0080887,
+    "id" : "BRWCKGL",
+    "name" : "Berwick Upon Tweed Gds Lp",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.813648,
+    "lon" : -2.0413184,
+    "id" : "REST402",
+    "name" : "Reston Signal Eg402",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

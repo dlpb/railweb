@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.4041,
+    "lon" : -2.3387,
+    "id" : "TIMPRLY",
+    "name" : "Timperley",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.395797,
+    "lon" : -2.3432551,
+    "id" : "NAVGTNR",
+    "name" : "Navigation Road",
+    "type" : "Station"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

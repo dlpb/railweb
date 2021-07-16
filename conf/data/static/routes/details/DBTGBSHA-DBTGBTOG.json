@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.51163,
+    "lon" : -0.05625,
+    "id" : "DBTGBSHA",
+    "name" : "Shadwell",
+    "type" : "Light Rail"
+  },
+  "to" : {
+    "lat" : 51.510911,
+    "lon" : -0.073466,
+    "id" : "DBTGBTOG",
+    "name" : "Tower Gateway",
+    "type" : "Light Rail"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Light Rail",
+  "speed" : "OHLE"
+} ]

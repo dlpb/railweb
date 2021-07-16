@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.494423,
+    "lon" : -3.1418769,
+    "id" : "PENGAMJ",
+    "name" : "Pengam Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.496244,
+    "lon" : -3.1386235,
+    "id" : "PENGAMS",
+    "name" : "Pengam Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.942564,
+    "lon" : -1.15053,
+    "id" : "NTL2QUW",
+    "name" : "Queens Walk",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 52.947342,
+    "lon" : -1.1426111,
+    "id" : "NTNG",
+    "name" : "Nottingham",
+    "type" : "Station"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

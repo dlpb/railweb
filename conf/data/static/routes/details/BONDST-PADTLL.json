@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.514,
+    "lon" : -0.15,
+    "id" : "BONDST",
+    "name" : "Bond Street Crossrail",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.5173,
+    "lon" : -0.1774,
+    "id" : "PADTLL",
+    "name" : "London Paddington Crossrl",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

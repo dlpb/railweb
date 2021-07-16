@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.998261,
+    "lon" : -0.10787411,
+    "id" : "HYWR225",
+    "name" : "Haywards Heath Sig 1225",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.005107,
+    "lon" : -0.10521517,
+    "id" : "HYWRDSH",
+    "name" : "Haywards Heath",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

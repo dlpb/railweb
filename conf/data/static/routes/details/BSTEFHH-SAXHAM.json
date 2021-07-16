@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.25293,
+    "lon" : 0.7099883,
+    "id" : "BSTEFHH",
+    "name" : "Bury St Edmunds Fhh",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.257435,
+    "lon" : 0.63816402,
+    "id" : "SAXHAM",
+    "name" : "Saxham",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

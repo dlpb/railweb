@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.463584,
+    "lon" : -0.170392,
+    "id" : "CLPHMJM",
+    "name" : "Clapham Junction",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.470452,
+    "lon" : -0.15754484,
+    "id" : "WLNDNJW",
+    "name" : "West London Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

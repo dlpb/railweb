@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.081709,
+    "lon" : -0.79961701,
+    "id" : "NEWANG",
+    "name" : "Newark North Gate",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.079536,
+    "lon" : -0.79806515,
+    "id" : "NEWANSH",
+    "name" : "Newark Shunt Sdg Northgate",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

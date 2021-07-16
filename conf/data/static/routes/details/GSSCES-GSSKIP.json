@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.8525,
+    "lon" : -4.295833,
+    "id" : "GSSCES",
+    "name" : "Cessnock",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 55.850833,
+    "lon" : -4.288056,
+    "id" : "GSSKIP",
+    "name" : "Kinning Park",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

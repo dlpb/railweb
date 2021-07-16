@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.591828,
+    "lon" : -0.56197139,
+    "id" : "GERDXSS",
+    "name" : "Gerrards Cross Siding",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.588821,
+    "lon" : -0.5550508,
+    "id" : "GERRDSX",
+    "name" : "Gerrards Cross",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

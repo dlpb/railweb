@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.374834,
+    "lon" : -0.092374329,
+    "id" : "ECROYDN",
+    "name" : "East Croydon",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.37651,
+    "lon" : -0.08614,
+    "id" : "LTBLER",
+    "name" : "Lebanon Road",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

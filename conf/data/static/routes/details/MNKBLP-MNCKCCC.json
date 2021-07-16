@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.582585,
+    "lon" : -1.4315925,
+    "id" : "MNKBLP",
+    "name" : "Monk Bretton Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.610475,
+    "lon" : -1.444776,
+    "id" : "MNCKCCC",
+    "name" : "Royston Monckton C.C.C.",
+    "type" : "Point"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

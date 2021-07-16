@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.957621,
+    "lon" : -2.2935668,
+    "id" : "MADEWH",
+    "name" : "Whitmore",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.912504,
+    "lon" : -2.2587175,
+    "id" : "NTNBSB",
+    "name" : "Standon Bridge",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

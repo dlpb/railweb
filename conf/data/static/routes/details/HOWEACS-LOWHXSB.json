@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.85633,
+    "lon" : -2.8344492,
+    "id" : "HOWEACS",
+    "name" : "Howe & Co Sdgs",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.831069,
+    "lon" : -2.7690897,
+    "id" : "LOWHXSB",
+    "name" : "Low House Crossing S.B.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

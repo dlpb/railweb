@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.517028,
+    "lon" : -1.7007172,
+    "id" : "HMSHREC",
+    "name" : "Hams Hall Reception Line",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.520163,
+    "lon" : -1.6791938,
+    "id" : "WACRJN",
+    "name" : "Whitacre Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

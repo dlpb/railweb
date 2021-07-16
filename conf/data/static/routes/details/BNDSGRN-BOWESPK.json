@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.601395,
+    "lon" : -0.12370181,
+    "id" : "BNDSGRN",
+    "name" : "Bounds Green T&R.S.M.D",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.606958,
+    "lon" : -0.12067077,
+    "id" : "BOWESPK",
+    "name" : "Bowes Park",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

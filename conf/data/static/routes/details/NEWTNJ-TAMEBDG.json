@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.553929,
+    "lon" : -1.9776563,
+    "id" : "NEWTNJ",
+    "name" : "Newton Jn. (West Midlands)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.552248,
+    "lon" : -1.9760054,
+    "id" : "TAMEBDG",
+    "name" : "Tame Bridge Parkway",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

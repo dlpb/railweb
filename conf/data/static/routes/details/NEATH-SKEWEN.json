@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.662015,
+    "lon" : -3.8073643,
+    "id" : "NEATH",
+    "name" : "Neath",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.661342,
+    "lon" : -3.8471719,
+    "id" : "SKEWEN",
+    "name" : "Skewen",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

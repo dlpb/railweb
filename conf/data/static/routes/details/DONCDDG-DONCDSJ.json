@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.500536,
+    "lon" : -1.108744,
+    "id" : "DONCDDG",
+    "name" : "Doncaster Down Decoy Gbrf",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.498415,
+    "lon" : -1.1051855,
+    "id" : "DONCDSJ",
+    "name" : "Doncaster Decoy South Jcn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

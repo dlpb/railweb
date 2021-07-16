@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.4712899,
+    "lon" : -0.4527438,
+    "id" : "LUPHT1",
+    "name" : "Heathrow Terminals 1-2-3",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.466368,
+    "lon" : -0.46456615,
+    "id" : "HTRWTM5",
+    "name" : "Heathrow Airport T5",
+    "type" : "Station"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

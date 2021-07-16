@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.560601,
+    "lon" : -0.41010706,
+    "id" : "WANSYML",
+    "name" : "Yarwell Mill (Nene Valley)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.568325,
+    "lon" : -0.38954,
+    "id" : "HCWAN",
+    "name" : "Wansford",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

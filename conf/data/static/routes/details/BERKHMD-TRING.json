@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.763612,
+    "lon" : -0.56298311,
+    "id" : "BERKHMD",
+    "name" : "Berkhamsted",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.800321,
+    "lon" : -0.62204605,
+    "id" : "TRING",
+    "name" : "Tring",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

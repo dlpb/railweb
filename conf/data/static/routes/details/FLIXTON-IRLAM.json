@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.443828,
+    "lon" : -2.3830874,
+    "id" : "FLIXTON",
+    "name" : "Flixton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.434202,
+    "lon" : -2.4328527,
+    "id" : "IRLAM",
+    "name" : "Irlam",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

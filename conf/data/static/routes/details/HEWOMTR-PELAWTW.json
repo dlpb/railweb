@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 54.951455,
+    "lon" : -1.5570789,
+    "id" : "HEWOMTR",
+    "name" : "Heworth (T & W Metro)",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 54.952691,
+    "lon" : -1.5414045,
+    "id" : "PELAWTW",
+    "name" : "Pelaw (T & W Metro)",
+    "type" : "Location"
+  },
+  "singleTrack" : "TWGREEN",
+  "electrification" : "METRO",
+  "type" : "Unknown",
+  "speed" : "N"
+}, {
+  "from" : {
+    "lat" : 54.951455,
+    "lon" : -1.5570789,
+    "id" : "HEWOMTR",
+    "name" : "Heworth (T & W Metro)",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 54.952691,
+    "lon" : -1.5414045,
+    "id" : "PELAWTW",
+    "name" : "Pelaw (T & W Metro)",
+    "type" : "Location"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

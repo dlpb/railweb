@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.499592,
+    "lon" : -2.6478577,
+    "id" : "BRYN",
+    "name" : "Bryn",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.48797,
+    "lon" : -2.6721108,
+    "id" : "GARW",
+    "name" : "Garswood",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

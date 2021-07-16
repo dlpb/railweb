@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.473689,
+    "lon" : -0.386471,
+    "id" : "LUPHOW",
+    "name" : "Hounslow West",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.47129,
+    "lon" : -0.365853,
+    "id" : "LUPHOC",
+    "name" : "Hounslow Central",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

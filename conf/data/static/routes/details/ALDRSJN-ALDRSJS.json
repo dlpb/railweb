@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.260083,
+    "lon" : -0.73283507,
+    "id" : "ALDRSJN",
+    "name" : "Aldershot North Junction",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 51.258799,
+    "lon" : -0.72391324,
+    "id" : "ALDRSJS",
+    "name" : "Aldershot South Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.829835,
+    "lon" : -4.2086759,
+    "id" : "RTHGNCJ",
+    "name" : "Rutherglen Central Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.830478,
+    "lon" : -4.21989,
+    "id" : "RTHGNWJ",
+    "name" : "Rutherglen West Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "120-125"
+} ]

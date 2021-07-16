@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.471765,
+    "lon" : -2.1982484,
+    "id" : "ASHBRWJ",
+    "name" : "Ashburys W Jn. (Sig As998)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.471805,
+    "lon" : -2.1954766,
+    "id" : "ASHBRYS",
+    "name" : "Ashburys",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

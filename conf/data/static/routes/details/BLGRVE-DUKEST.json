@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.856673,
+    "lon" : -4.2240526,
+    "id" : "BLGRVE",
+    "name" : "Bellgrove",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.85863,
+    "lon" : -4.2126911,
+    "id" : "DUKEST",
+    "name" : "Duke Street",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

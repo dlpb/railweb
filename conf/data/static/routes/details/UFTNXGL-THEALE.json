@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.414097,
+    "lon" : -1.1165753,
+    "id" : "UFTNXGL",
+    "name" : "Ufton Crossing Goods Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.433415,
+    "lon" : -1.073938,
+    "id" : "THEALE",
+    "name" : "Theale",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

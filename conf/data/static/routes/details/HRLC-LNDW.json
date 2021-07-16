@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.861555,
+    "lon" : -4.1094986,
+    "id" : "HRLC",
+    "name" : "Harlech",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.83621,
+    "lon" : -4.1236066,
+    "id" : "LNDW",
+    "name" : "Llandanwg",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

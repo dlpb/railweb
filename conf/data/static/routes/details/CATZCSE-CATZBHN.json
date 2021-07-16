@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.761389,
+    "lon" : -8.485833,
+    "id" : "CATZCSE",
+    "name" : "Castlerea   (Cie",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.761631,
+    "lon" : -8.758509,
+    "id" : "CATZBHN",
+    "name" : "Ballyhaunis (Cie",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

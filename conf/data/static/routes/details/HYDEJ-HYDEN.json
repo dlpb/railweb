@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.466406,
+    "lon" : -2.0866049,
+    "id" : "HYDEJ",
+    "name" : "Hyde Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.464538,
+    "lon" : -2.0851099,
+    "id" : "HYDEN",
+    "name" : "Hyde North",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

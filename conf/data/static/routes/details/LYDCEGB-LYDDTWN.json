@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.935871,
+    "lon" : 0.95206077,
+    "id" : "LYDCEGB",
+    "name" : "Dungeness British Energy",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.95718,
+    "lon" : 0.91662592,
+    "id" : "LYDDTWN",
+    "name" : "Lydd Town",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

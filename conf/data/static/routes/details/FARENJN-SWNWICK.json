@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.855761,
+    "lon" : -1.1939932,
+    "id" : "FARENJN",
+    "name" : "Fareham North Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.875657,
+    "lon" : -1.2655825,
+    "id" : "SWNWICK",
+    "name" : "Swanwick",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

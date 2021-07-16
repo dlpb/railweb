@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.52016522721183,
+    "lon" : -0.10520466394888697,
+    "id" : "FRNDXR",
+    "name" : "Farringdon Crossrail",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.51798916063051,
+    "lon" : -0.08142601994463783,
+    "id" : "LIVSTLL",
+    "name" : "London Liverpool Street Xrail",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

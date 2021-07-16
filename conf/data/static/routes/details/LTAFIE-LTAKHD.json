@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.350931,
+    "lon" : -0.024205,
+    "id" : "LTAFIE",
+    "name" : "Fieldway",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 51.345453,
+    "lon" : -0.020352,
+    "id" : "LTAKHD",
+    "name" : "King Henry's Drive",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

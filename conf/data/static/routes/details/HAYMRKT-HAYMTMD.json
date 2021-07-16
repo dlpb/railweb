@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.945225,
+    "lon" : -3.2190396,
+    "id" : "HAYMRKT",
+    "name" : "Haymarket",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.942321,
+    "lon" : -3.2345911,
+    "id" : "HAYMTMD",
+    "name" : "Haymarket Depot",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

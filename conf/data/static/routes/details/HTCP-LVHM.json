@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.426097,
+    "lon" : -2.1794049,
+    "id" : "HTCP",
+    "name" : "Heaton Chapel",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.444664,
+    "lon" : -2.1929128,
+    "id" : "LVHM",
+    "name" : "Levenshulme",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

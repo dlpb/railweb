@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.146814,
+    "lon" : 0.86568016,
+    "id" : "ASHFKY",
+    "name" : "Ashford International",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.124634,
+    "lon" : 0.90752836,
+    "id" : "SVNGTNS",
+    "name" : "Sevington Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

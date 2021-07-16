@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.204167,
+    "lon" : -6.100278,
+    "id" : "BRAY",
+    "name" : "Bray        (Cie",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.1435,
+    "lon" : -6.0606,
+    "id" : "CATZGSO",
+    "name" : "Greystones  (Cie",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

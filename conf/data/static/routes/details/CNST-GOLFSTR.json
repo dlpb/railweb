@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.500602,
+    "lon" : -2.7058214,
+    "id" : "CNST",
+    "name" : "Carnoustie",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.49796,
+    "lon" : -2.7200502,
+    "id" : "GOLFSTR",
+    "name" : "Golf Street",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

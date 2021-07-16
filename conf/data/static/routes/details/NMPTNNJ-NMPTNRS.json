@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.243157,
+    "lon" : -0.90799329,
+    "id" : "NMPTNNJ",
+    "name" : "Northampton North Junction",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 52.238047,
+    "lon" : -0.90757686,
+    "id" : "NMPTNRS",
+    "name" : "Northampton River Sdgs",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

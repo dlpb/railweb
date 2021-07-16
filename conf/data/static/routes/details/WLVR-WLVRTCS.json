@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.0654,
+    "lon" : -0.80435262,
+    "id" : "WLVR",
+    "name" : "Wolverton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.059173,
+    "lon" : -0.80202465,
+    "id" : "WLVRTCS",
+    "name" : "Wolverton Centre Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

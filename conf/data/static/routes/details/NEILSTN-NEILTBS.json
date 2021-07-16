@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.782867,
+    "lon" : -4.4268938,
+    "id" : "NEILSTN",
+    "name" : "Neilston",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.781688,
+    "lon" : -4.4305844,
+    "id" : "NEILTBS",
+    "name" : "Neilston Turnback Siding",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

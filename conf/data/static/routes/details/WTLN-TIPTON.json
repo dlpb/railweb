@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.526984,
+    "lon" : -2.0571469,
+    "id" : "WTLN",
+    "name" : "Watery Lane",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.530638,
+    "lon" : -2.066011,
+    "id" : "TIPTON",
+    "name" : "Tipton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

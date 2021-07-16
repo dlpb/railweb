@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.690959,
+    "lon" : -1.3496706,
+    "id" : "BAGWTHJ",
+    "name" : "Bagworth Jcn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.711852,
+    "lon" : -1.3481759,
+    "id" : "BARDONH",
+    "name" : "Bardon Hill",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

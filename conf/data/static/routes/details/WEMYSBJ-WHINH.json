@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.93547,
+    "lon" : -4.7010585,
+    "id" : "WEMYSBJ",
+    "name" : "Wemyss Bay Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.938405,
+    "lon" : -4.7463604,
+    "id" : "WHINH",
+    "name" : "Whinhill",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "75-90"
+} ]

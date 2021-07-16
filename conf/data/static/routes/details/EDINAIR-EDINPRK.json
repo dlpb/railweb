@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.95,
+    "lon" : -3.3725,
+    "id" : "EDINAIR",
+    "name" : "Edb Apt Bus/Tram",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.927605,
+    "lon" : -3.3074739,
+    "id" : "EDINPRK",
+    "name" : "Edinburgh Park",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "24 MINUTES"
+} ]

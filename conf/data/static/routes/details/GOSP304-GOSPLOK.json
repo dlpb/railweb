@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.555511,
+    "lon" : -0.14717108,
+    "id" : "GOSP304",
+    "name" : "Gospel Oak Signal 1304",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.555487,
+    "lon" : -0.15135541,
+    "id" : "GOSPLOK",
+    "name" : "Gospel Oak",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.43545074209875,
+    "lon" : 0.12573707258458985,
+    "id" : "ALBNHRC",
+    "name" : "Albany Park Hurst Road Bus",
+    "type" : "Bus"
+  },
+  "to" : {
+    "lat" : 51.433969,
+    "lon" : 0.10420204,
+    "id" : "SIDCUP",
+    "name" : "Sidcup",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

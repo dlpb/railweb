@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.790178,
+    "lon" : 0.05493903,
+    "id" : "NEWHVNH",
+    "name" : "Newhaven Harbour",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.794852,
+    "lon" : 0.055087279,
+    "id" : "NEWHVNT",
+    "name" : "Newhaven Town",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

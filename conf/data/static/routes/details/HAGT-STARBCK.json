@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.99294,
+    "lon" : -1.5372596,
+    "id" : "HAGT",
+    "name" : "Harrogate",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.998995,
+    "lon" : -1.5006415,
+    "id" : "STARBCK",
+    "name" : "Starbeck",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

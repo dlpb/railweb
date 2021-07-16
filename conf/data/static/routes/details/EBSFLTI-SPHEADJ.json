@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.442971247900026,
+    "lon" : 0.32092084452941283,
+    "id" : "EBSFLTI",
+    "name" : "Ebbsfleet Intciv",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.441493,
+    "lon" : 0.33060256,
+    "id" : "SPHEADJ",
+    "name" : "Springhead Junction (Ctrl)",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "130-155"
+} ]

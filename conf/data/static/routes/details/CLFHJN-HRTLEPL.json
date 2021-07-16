@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.666834,
+    "lon" : -1.1997502,
+    "id" : "CLFHJN",
+    "name" : "Cliffe House Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.686843,
+    "lon" : -1.2072214,
+    "id" : "HRTLEPL",
+    "name" : "Hartlepool",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

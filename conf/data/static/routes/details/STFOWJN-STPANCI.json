@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.544879,
+    "lon" : -0.013448186,
+    "id" : "STFOWJN",
+    "name" : "Stratford Intl W Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.531223,
+    "lon" : -0.12684799,
+    "id" : "STPANCI",
+    "name" : "London St Pancras (Intl)",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "130-155"
+} ]

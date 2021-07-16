@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.896662,
+    "lon" : -1.192695,
+    "id" : "NTL2CLS",
+    "name" : "Clifton South",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 52.896962,
+    "lon" : -1.187937,
+    "id" : "NTL2SUL",
+    "name" : "Summerwood Lane",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

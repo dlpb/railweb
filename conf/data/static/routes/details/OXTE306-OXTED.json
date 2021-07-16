@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.255385,
+    "lon" : -0.0025350494,
+    "id" : "OXTE306",
+    "name" : "Oxted Signal 306",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.257436,
+    "lon" : -0.0041230231,
+    "id" : "OXTED",
+    "name" : "Oxted",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

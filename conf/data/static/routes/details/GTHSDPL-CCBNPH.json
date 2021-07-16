@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.883549,
+    "lon" : -2.3149359,
+    "id" : "GTHSDPL",
+    "name" : "Grantshouse D.P.L.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.937433,
+    "lon" : -2.3602428,
+    "id" : "CCBNPH",
+    "name" : "Cockburnpath",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

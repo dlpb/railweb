@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.5206,
+    "lon" : -0.13441,
+    "id" : "LUNGOS",
+    "name" : "Goodge Street",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.5245,
+    "lon" : -0.1381,
+    "id" : "LUNWAS",
+    "name" : "Warren Street",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

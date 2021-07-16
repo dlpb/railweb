@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.498333,
+    "lon" : -0.05,
+    "id" : "CNDAW",
+    "name" : "Canada Water",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.475844,
+    "lon" : -0.04082905,
+    "id" : "NEWXDHS",
+    "name" : "New Cross Gate Dpt Hdshunt",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

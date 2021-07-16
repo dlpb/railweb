@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.95168,
+    "lon" : -0.7196497,
+    "id" : "LEDBSH",
+    "name" : "Stoke Hammond",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.979221,
+    "lon" : -0.73132832,
+    "id" : "BLTCHSJ",
+    "name" : "Bletchley South Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

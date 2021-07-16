@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.69253,
+    "lon" : -2.9687932,
+    "id" : "WELSWBU",
+    "name" : "Westbury (Salop) Up",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.686364,
+    "lon" : -2.8835473,
+    "id" : "WELSYOK",
+    "name" : "Yockleton",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

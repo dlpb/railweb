@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.521482,
+    "lon" : -3.2028026,
+    "id" : "BCHGRV",
+    "name" : "Birchgrove",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.521701,
+    "lon" : -3.1971726,
+    "id" : "TYGLAS",
+    "name" : "Ty Glas",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

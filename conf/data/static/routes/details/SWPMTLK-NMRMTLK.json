@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.4275,
+    "lon" : -2.2922,
+    "id" : "SWPMTLK",
+    "name" : "Sale W Park Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.4146,
+    "lon" : -2.2879,
+    "id" : "NMRMTLK",
+    "name" : "Northern Mr Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

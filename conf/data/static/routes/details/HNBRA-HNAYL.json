@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.76709,
+    "lon" : 1.29076,
+    "id" : "HNBRA",
+    "name" : "Brampton",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.7905,
+    "lon" : 1.25393,
+    "id" : "HNAYL",
+    "name" : "Aylsham",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

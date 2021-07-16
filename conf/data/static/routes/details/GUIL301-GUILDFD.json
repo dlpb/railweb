@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.24402,
+    "lon" : -0.58199885,
+    "id" : "GUIL301",
+    "name" : "Guildford Signal Gd1301",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.237908,
+    "lon" : -0.58152778,
+    "id" : "GUILDFD",
+    "name" : "Guildford",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

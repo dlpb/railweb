@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.54919,
+    "lon" : -0.22106,
+    "id" : "LUJWIG",
+    "name" : "Willesden Green",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.5525,
+    "lon" : -0.23884,
+    "id" : "LUJDOH",
+    "name" : "Dollis Hill",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

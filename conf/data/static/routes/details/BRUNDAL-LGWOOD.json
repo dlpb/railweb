@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.619651,
+    "lon" : 1.4387358,
+    "id" : "BRUNDAL",
+    "name" : "Brundall",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.622032,
+    "lon" : 1.4898208,
+    "id" : "LGWOOD",
+    "name" : "Lingwood",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

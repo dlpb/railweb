@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.482764,
+    "lon" : -2.4248284,
+    "id" : "CROGAR",
+    "name" : "Crosby Garrett",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.527584,
+    "lon" : -2.4587152,
+    "id" : "HELTNL",
+    "name" : "Helm Tunnel",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

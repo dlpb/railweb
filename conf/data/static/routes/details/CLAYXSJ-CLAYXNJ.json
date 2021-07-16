@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.180678,
+    "lon" : -1.4015146,
+    "id" : "CLAYXSJ",
+    "name" : "Clay Cross South Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.185106,
+    "lon" : -1.4007197,
+    "id" : "CLAYXNJ",
+    "name" : "Clay Cross North Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

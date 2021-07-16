@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.578067,
+    "lon" : -2.5400279,
+    "id" : "HORWICH",
+    "name" : "Horwich Parkway",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.572871,
+    "lon" : -2.4945071,
+    "id" : "LOSTCKP",
+    "name" : "Lostock",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

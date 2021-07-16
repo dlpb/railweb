@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.7533,
+    "lon" : 0.4088511,
+    "id" : "KLYNNTC",
+    "name" : "Kings Lynn T.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.732475,
+    "lon" : 0.47649228,
+    "id" : "MDTT",
+    "name" : "Middleton Towers",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.55036,
+    "lon" : -0.16465,
+    "id" : "LUNBEP",
+    "name" : "Belsize Park",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.55645,
+    "lon" : -0.17851,
+    "id" : "LUNHAM",
+    "name" : "Hampstead",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

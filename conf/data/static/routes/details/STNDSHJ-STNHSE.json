@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.772962,
+    "lon" : -2.2817963,
+    "id" : "STNDSHJ",
+    "name" : "Standish Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.745994,
+    "lon" : -2.2795571,
+    "id" : "STNHSE",
+    "name" : "Stonehouse",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

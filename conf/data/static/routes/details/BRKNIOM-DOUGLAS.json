@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.40136,
+    "lon" : -3.01732,
+    "id" : "BRKNIOM",
+    "name" : "Birkenhead 12 Quays",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.145,
+    "lon" : -4.482,
+    "id" : "DOUGLAS",
+    "name" : "Douglas Iom",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.491185,
+    "lon" : -0.014595,
+    "id" : "DSBLMUD",
+    "name" : "Mudchute",
+    "type" : "Light Rail"
+  },
+  "to" : {
+    "lat" : 51.488001,
+    "lon" : -0.011039,
+    "id" : "DSBLISG",
+    "name" : "Island Gardens",
+    "type" : "Light Rail"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Light Rail",
+  "speed" : "OHLE"
+} ]

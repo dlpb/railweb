@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.498056,
+    "lon" : -0.063889,
+    "id" : "BRMNDSY",
+    "name" : "Bermondsey Lrt",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.503428,
+    "lon" : -0.084040543,
+    "id" : "LNDNBDG",
+    "name" : "London Bridge",
+    "type" : "Station"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

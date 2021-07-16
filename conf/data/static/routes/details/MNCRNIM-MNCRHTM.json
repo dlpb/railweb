@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.4812,
+    "lon" : -2.2193,
+    "id" : "MNCRNIM",
+    "name" : "New Islngtn Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.4829,
+    "lon" : -2.2127,
+    "id" : "MNCRHTM",
+    "name" : "Holt Town Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

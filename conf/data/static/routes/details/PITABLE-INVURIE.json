@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.321247,
+    "lon" : -2.4598595,
+    "id" : "PITABLE",
+    "name" : "Pitcaple",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 57.286553,
+    "lon" : -2.3736122,
+    "id" : "INVURIE",
+    "name" : "Inverurie",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

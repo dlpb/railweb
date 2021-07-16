@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.727079,
+    "lon" : -1.919163,
+    "id" : "BRANKSM",
+    "name" : "Branksome",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.722905,
+    "lon" : -1.9481691,
+    "id" : "PSTONE",
+    "name" : "Parkstone (Dorset)",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

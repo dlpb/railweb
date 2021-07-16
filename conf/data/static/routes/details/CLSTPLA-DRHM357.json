@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.823365,
+    "lon" : -1.5805197,
+    "id" : "CLSTPLA",
+    "name" : "Plawsworth",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.787478,
+    "lon" : -1.5743443,
+    "id" : "DRHM357",
+    "name" : "Durham Sig.Ty357",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.678027,
+    "lon" : -3.0175366,
+    "id" : "PANTEG",
+    "name" : "Panteg",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.69733,
+    "lon" : -3.0134697,
+    "id" : "PONTYPL",
+    "name" : "Pontypool & New Inn",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "70-90"
+} ]

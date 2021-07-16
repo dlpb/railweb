@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.274128,
+    "lon" : -3.1215425,
+    "id" : "LADYBNK",
+    "name" : "Ladybank",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.200547,
+    "lon" : -3.1307409,
+    "id" : "MKIN",
+    "name" : "Markinch",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

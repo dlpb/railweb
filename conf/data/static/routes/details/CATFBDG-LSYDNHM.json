@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.444911,
+    "lon" : -0.024884467,
+    "id" : "CATFBDG",
+    "name" : "Catford Bridge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.424846,
+    "lon" : -0.033287216,
+    "id" : "LSYDNHM",
+    "name" : "Lower Sydenham",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

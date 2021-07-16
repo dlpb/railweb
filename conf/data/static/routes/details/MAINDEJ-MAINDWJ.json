@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.590112,
+    "lon" : -2.9831927,
+    "id" : "MAINDEJ",
+    "name" : "Maindee East Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.591921,
+    "lon" : -2.9904351,
+    "id" : "MAINDWJ",
+    "name" : "Maindee West Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

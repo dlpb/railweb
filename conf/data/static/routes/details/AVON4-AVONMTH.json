@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.502722,
+    "lon" : -2.7014616,
+    "id" : "AVON4",
+    "name" : "Avonmouth Signal Sa4",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.499896,
+    "lon" : -2.6990268,
+    "id" : "AVONMTH",
+    "name" : "Avonmouth",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

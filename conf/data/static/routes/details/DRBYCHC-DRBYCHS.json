@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.920504,
+    "lon" : -1.4539356,
+    "id" : "DRBYCHC",
+    "name" : "Chaddesden Curve",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.914886,
+    "lon" : -1.4500951,
+    "id" : "DRBYCHS",
+    "name" : "Chaddesden Sdgs",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

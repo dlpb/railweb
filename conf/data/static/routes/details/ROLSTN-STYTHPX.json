@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.065089,
+    "lon" : -0.90023183,
+    "id" : "ROLSTN",
+    "name" : "Rolleston",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.073231,
+    "lon" : -0.87788851,
+    "id" : "STYTHPX",
+    "name" : "Staythorpe X",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.003299,
+    "lon" : -0.49461371,
+    "id" : "FLITWCK",
+    "name" : "Flitwick",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.961436,
+    "lon" : -0.49536152,
+    "id" : "HRLG",
+    "name" : "Harlington",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

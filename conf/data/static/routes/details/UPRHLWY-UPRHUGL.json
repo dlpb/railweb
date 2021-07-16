@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.563339,
+    "lon" : -0.12988571,
+    "id" : "UPRHLWY",
+    "name" : "Upper Holloway",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.559876,
+    "lon" : -0.13494729,
+    "id" : "UPRHUGL",
+    "name" : "Upper Holloway Up Gds Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

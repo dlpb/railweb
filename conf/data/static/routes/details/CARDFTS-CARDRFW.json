@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.477336,
+    "lon" : -3.1421412,
+    "id" : "CARDFTS",
+    "name" : "Cardiff Tidal T.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.468238,
+    "lon" : -3.1465065,
+    "id" : "CARDRFW",
+    "name" : "Cardiff Docks Ryans F.W.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.4563,
+    "lon" : -2.2848,
+    "id" : "OLDTRFD",
+    "name" : "Old Traffrd Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.4466,
+    "lon" : -2.3086,
+    "id" : "SFRD",
+    "name" : "Stretford Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

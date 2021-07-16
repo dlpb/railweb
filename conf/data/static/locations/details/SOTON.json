@@ -1,0 +1,10 @@
+[ {
+  "id" : "SOTON",
+  "crp" : "",
+  "route" : "Wessex",
+  "changeTime" : "Set(Some(ChangeTime(SOU,SW,SW,4,)))",
+  "interchangeType" : "2 - Medium interchange point",
+  "county" : "South East",
+  "district" : "Southampton",
+  "postcode" : "\"SO15 1AL"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.396023,
+    "lon" : -4.7803631,
+    "id" : "GNBARWJ",
+    "name" : "Goonbarrow Junction",
+    "type" : "Junction"
+  },
+  "to" : {
+    "lat" : 50.390329,
+    "lon" : -4.7482169,
+    "id" : "LUXULYN",
+    "name" : "Luxulyan",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "15-50"
+} ]

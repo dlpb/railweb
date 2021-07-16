@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.453884,
+    "lon" : -0.10262491,
+    "id" : "HERNEH",
+    "name" : "Herne Hill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.465962,
+    "lon" : -0.10212394,
+    "id" : "LBGHJN",
+    "name" : "Loughborough Junction",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

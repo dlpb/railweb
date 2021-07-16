@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.590999,
+    "lon" : -3.1265417,
+    "id" : "MACHENQ",
+    "name" : "Machen Quarry",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.572329,
+    "lon" : -3.03109,
+    "id" : "PRKJNTH",
+    "name" : "Park North Jcn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

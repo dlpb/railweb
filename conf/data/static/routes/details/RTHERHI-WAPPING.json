@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.5008146339941,
+    "lon" : -0.052048573249960046,
+    "id" : "RTHERHI",
+    "name" : "Rotherhithe",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.50438617978932,
+    "lon" : -0.055930892717841074,
+    "id" : "WAPPING",
+    "name" : "Wapping",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

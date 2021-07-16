@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.847269,
+    "lon" : -4.2946683,
+    "id" : "SHLDNO1",
+    "name" : "Shields Jn No.1 Line",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.844888,
+    "lon" : -4.3008857,
+    "id" : "DUMBRCK",
+    "name" : "Dumbreck",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

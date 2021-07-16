@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.381162,
+    "lon" : -1.2621585,
+    "id" : "RUGBUSQ",
+    "name" : "Rugby Up Sdgs - Vrtual Qy",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.378914,
+    "lon" : -1.2491946,
+    "id" : "RUGBY",
+    "name" : "Rugby",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

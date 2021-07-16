@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.615427,
+    "lon" : -0.066847448,
+    "id" : "SIVRST",
+    "name" : "Silver Street",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.604893,
+    "lon" : -0.071006298,
+    "id" : "WHHRTLA",
+    "name" : "White Hart Lane",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

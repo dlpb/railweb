@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.494169,
+    "lon" : -2.8740725,
+    "id" : "KNOWDL",
+    "name" : "Dale Lane G.F.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.492666,
+    "lon" : -2.8682536,
+    "id" : "KNOWFT",
+    "name" : "Knowsley Freight Terminal",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

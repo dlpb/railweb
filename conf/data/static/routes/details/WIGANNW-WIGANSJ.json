@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.542679,
+    "lon" : -2.6317651,
+    "id" : "WIGANNW",
+    "name" : "Wigan North Western",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.541821,
+    "lon" : -2.6292021,
+    "id" : "WIGANSJ",
+    "name" : "Wigan Station Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

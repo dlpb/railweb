@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.493175,
+    "lon" : -3.6856919,
+    "id" : "ABINGTN",
+    "name" : "Abington",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.437235,
+    "lon" : -3.6544744,
+    "id" : "ELVFOOT",
+    "name" : "Elvanfoot",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.55913,
+    "lon" : -0.2135733,
+    "id" : "CRKLDER",
+    "name" : "Cricklewood Depot Exit Rd",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.55619,
+    "lon" : -0.21061589,
+    "id" : "CRKLWSJ",
+    "name" : "Cricklewood South Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

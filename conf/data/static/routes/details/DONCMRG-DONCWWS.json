@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.526938,
+    "lon" : -1.1397633,
+    "id" : "DONCMRG",
+    "name" : "Donc. Marshgate Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.523919,
+    "lon" : -1.1412122,
+    "id" : "DONCWWS",
+    "name" : "Doncaster Works Wagn Shops",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

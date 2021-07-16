@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.385242,
+    "lon" : -3.3966827,
+    "id" : "ABTHPST",
+    "name" : "Aberthaw Pwr Stn Fline Hvy",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.40957,
+    "lon" : -3.4812807,
+    "id" : "LLNWTMR",
+    "name" : "Llantwit Major",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

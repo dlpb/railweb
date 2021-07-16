@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.463358,
+    "lon" : -0.17252917,
+    "id" : "CLPHMJW",
+    "name" : "Clapham Junction",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.466488,
+    "lon" : -0.16681799,
+    "id" : "CLPHS49",
+    "name" : "Clapham Jn Signal 1049",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

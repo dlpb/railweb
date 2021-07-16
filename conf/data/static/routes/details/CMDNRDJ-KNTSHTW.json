@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.541888,
+    "lon" : -0.1392737,
+    "id" : "CMDNRDJ",
+    "name" : "Camden Road Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.546926,
+    "lon" : -0.1467699,
+    "id" : "KNTSHTW",
+    "name" : "Kentish Town West",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

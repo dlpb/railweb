@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.814576,
+    "lon" : -3.9946191,
+    "id" : "MOSENDS",
+    "name" : "Mossend South Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.791687,
+    "lon" : -3.9950757,
+    "id" : "MOTHWCS",
+    "name" : "Motherwell Weighs C.H.S.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

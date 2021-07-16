@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.704967,
+    "lon" : -0.87421202,
+    "id" : "GOOLE",
+    "name" : "Goole",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.701089,
+    "lon" : -0.88340415,
+    "id" : "GOOLPGJ",
+    "name" : "Potters Grange Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

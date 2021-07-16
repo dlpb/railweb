@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.531096,
+    "lon" : -0.020550743,
+    "id" : "BOWJ",
+    "name" : "Bow Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.526709,
+    "lon" : -0.04312985,
+    "id" : "MEND",
+    "name" : "Mile End",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

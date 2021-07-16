@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.343069,
+    "lon" : -1.4197989,
+    "id" : "STBWHL",
+    "name" : "White Lane",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 53.340416,
+    "lon" : -1.3993057,
+    "id" : "STBBIL",
+    "name" : "Birley Lane",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.183282,
+    "lon" : 1.0080729,
+    "id" : "STWMDGL",
+    "name" : "Stowmarket D.G.L.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.189953,
+    "lon" : 1.0000362,
+    "id" : "STWMRKT",
+    "name" : "Stowmarket",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

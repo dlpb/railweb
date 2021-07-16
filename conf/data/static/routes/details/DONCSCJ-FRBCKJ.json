@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.489081,
+    "lon" : -1.1058341,
+    "id" : "DONCSCJ",
+    "name" : "St.Catherines Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.434056,
+    "lon" : -1.1308772,
+    "id" : "FRBCKJ",
+    "name" : "Firbeck Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

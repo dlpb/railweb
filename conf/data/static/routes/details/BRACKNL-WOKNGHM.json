@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.41295,
+    "lon" : -0.75205254,
+    "id" : "BRACKNL",
+    "name" : "Bracknell",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.411227,
+    "lon" : -0.84264362,
+    "id" : "WOKNGHM",
+    "name" : "Wokingham",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

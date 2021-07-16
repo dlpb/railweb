@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.612788,
+    "lon" : 0.52312037,
+    "id" : "WIKF515",
+    "name" : "Wickford Signal 5150",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.614072,
+    "lon" : 0.52192045,
+    "id" : "WIKFORD",
+    "name" : "Wickford",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

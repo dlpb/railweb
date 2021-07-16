@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.44635,
+    "lon" : -0.82778969,
+    "id" : "DESBRO",
+    "name" : "Desborough Summit",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.454005,
+    "lon" : -0.86046243,
+    "id" : "MRKTBRY",
+    "name" : "Braybrook",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

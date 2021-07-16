@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.651673,
+    "lon" : -3.32265,
+    "id" : "HWLLC",
+    "name" : "Llanfair Caereinion",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.663544,
+    "lon" : -3.297949,
+    "id" : "HWHEN",
+    "name" : "Heniarth",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

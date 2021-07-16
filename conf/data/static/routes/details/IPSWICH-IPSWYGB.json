@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.05059017669498,
+    "lon" : 1.1444255837190085,
+    "id" : "IPSWICH",
+    "name" : "Ipswich",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.056192,
+    "lon" : 1.1296605,
+    "id" : "IPSWYGB",
+    "name" : "Ipswich Reception Gbrf",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

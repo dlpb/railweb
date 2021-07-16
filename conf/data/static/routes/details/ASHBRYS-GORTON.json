@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.471805,
+    "lon" : -2.1954766,
+    "id" : "ASHBRYS",
+    "name" : "Ashburys",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.468917,
+    "lon" : -2.1677905,
+    "id" : "GORTON",
+    "name" : "Gorton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

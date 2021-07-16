@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.514647,
+    "lon" : -0.30021684,
+    "id" : "EALINGB",
+    "name" : "Ealing Broadway",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.509749,
+    "lon" : -0.091125012,
+    "id" : "CANONST",
+    "name" : "London Cannon Street",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "65 MINUTES"
+} ]

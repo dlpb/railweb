@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.621893,
+    "lon" : -3.994976,
+    "id" : "HWDOL",
+    "name" : "Dolgoch",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.626484,
+    "lon" : -3.989275,
+    "id" : "HWQUS",
+    "name" : "Quarry Siding",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.881477,
+    "lon" : -4.3621246,
+    "id" : "ARDGAY",
+    "name" : "Ardgay",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 57.839389,
+    "lon" : -4.1774293,
+    "id" : "EDERTON",
+    "name" : "Edderton",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

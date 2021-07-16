@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.522784,
+    "lon" : -0.33149656,
+    "id" : "CBARPAR",
+    "name" : "Castle Bar Park",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.516363,
+    "lon" : -0.33017464,
+    "id" : "DRAYGRN",
+    "name" : "Drayton Green",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.883255,
+    "lon" : -4.2385249,
+    "id" : "CWLRSWJ",
+    "name" : "Cowlairs West Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.89017,
+    "lon" : -4.2407943,
+    "id" : "EFLDPL",
+    "name" : "Eastfield Passenger Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

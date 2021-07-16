@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.6083,
+    "lon" : -0.0509,
+    "id" : "MWRWSTN",
+    "name" : "Meridian Water",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.601174,
+    "lon" : -0.054326861,
+    "id" : "NMBRLPK",
+    "name" : "Northumberland Park",
+    "type" : "Station"
+  },
+  "singleTrack" : "3",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.84143,
+    "lon" : -1.9416,
+    "id" : "HWYOAK",
+    "name" : "Oakworth",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 53.8459,
+    "lon" : -1.9245,
+    "id" : "HWYDAM",
+    "name" : "Damems",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

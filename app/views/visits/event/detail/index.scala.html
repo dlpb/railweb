@@ -1,14 +1,13 @@
 @import helper._
 
-@import models.route.display.map.MapRoute
 @import models.data.LocationVisit
 @import java.time.format.DateTimeFormatter
 @import models.data.RouteVisit
 @import models.route.Route
 @(
 user: models.auth.User,
-routeList: List[MapRoute],
-locations: List[models.location.MapLocation],
+routeList: List[models.route.Route],
+locations: List[models.location.Location],
 locationToVisitCount: Map[String, Int],
 routeToVisitCount: Map[Route, Int],
 locationFirstVisits: List[String],
@@ -55,7 +54,7 @@ distance: Long
         </div>
         <div class="row">
             <div class="col-sm">
-                <div id="map" class="map"></div>
+            @templates.map.map(locations, routeList)
             </div>
         </div>
         <div class="row">
@@ -128,39 +127,5 @@ distance: Long
             </div>
         </div>
     </div>
-
-<script type="text/javascript">
-        createMap();
-        @for(route <- routeList) {
-            addSingleConnection(
-            {
-                "from": {
-                    "lat":@route.from.lat,
-                    "lon":@route.from.lon
-                },
-                "to": {
-                    "lat":@route.to.lat,
-                    "lon":@route.to.lon
-                },
-                "srs":"@route.srsCode",
-                "toc":"@route.toc"
-            })
-        }
-
-
-        @for(location <- locations){
-
-            addLocation(
-            {
-                "location": {
-                    "lat":@location.location.lat,
-                    "lon":@location.location.lon
-                },
-                "operator":"@location.operator"
-            })
-        }
-
-
-</script>
 
 }

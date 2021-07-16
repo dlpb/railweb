@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.978056,
+    "lon" : 4.128333,
+    "id" : "HOEKVHL",
+    "name" : "Hoek Van Holland",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.947171,
+    "lon" : 1.2557708,
+    "id" : "PRKSTON",
+    "name" : "Harwich International",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

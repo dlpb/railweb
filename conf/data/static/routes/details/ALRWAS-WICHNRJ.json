@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.73075,
+    "lon" : -1.7387958,
+    "id" : "ALRWAS",
+    "name" : "Alrewas L.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.741327,
+    "lon" : -1.7134484,
+    "id" : "WICHNRJ",
+    "name" : "Wichnor Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

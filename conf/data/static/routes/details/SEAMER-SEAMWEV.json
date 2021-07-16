@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.240509,
+    "lon" : -0.41714648,
+    "id" : "SEAMER",
+    "name" : "Seamer",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.190104,
+    "lon" : -0.53528061,
+    "id" : "SEAMWEV",
+    "name" : "Weaverthorpe Lc",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

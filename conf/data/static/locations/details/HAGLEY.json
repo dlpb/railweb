@@ -1,0 +1,10 @@
+[ {
+  "id" : "HAGLEY",
+  "crp" : "",
+  "route" : "London North Western",
+  "changeTime" : "Set(None)",
+  "interchangeType" : "0 - Not an interchange point",
+  "county" : "West Midlands",
+  "district" : "Worcestershire",
+  "postcode" : "\"DY9 0NX"
+} ]

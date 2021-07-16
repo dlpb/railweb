@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.565379,
+    "lon" : 1.1182003,
+    "id" : "WYMNDHM",
+    "name" : "Wymondham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.57,
+    "lon" : 1.104,
+    "id" : "HNWYA",
+    "name" : "Wymondham Abbey",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

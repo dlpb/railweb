@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.431977,
+    "lon" : -0.19710194,
+    "id" : "WDONCSD",
+    "name" : "Wimbledon Park C.S.D.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.431977,
+    "lon" : -0.19710194,
+    "id" : "WDONPDS",
+    "name" : "Wimbledon Park Depot Sdgs",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

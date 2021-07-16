@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.094418,
+    "lon" : -2.3242087,
+    "id" : "MLVRNWL",
+    "name" : "Malvern Wells",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.097219,
+    "lon" : -2.3223751,
+    "id" : "MLVRWLP",
+    "name" : "Malvern Wells Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

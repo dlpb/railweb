@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.485138,
+    "lon" : -1.8668643,
+    "id" : "LNDRSTJ",
+    "name" : "Landor Street Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.486837,
+    "lon" : -1.8666677,
+    "id" : "SLTLYPB",
+    "name" : "Saltley P.S.B.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

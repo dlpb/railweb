@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.680333,
+    "lon" : -1.8247977,
+    "id" : "LCHC",
+    "name" : "Lichfield City",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.68104,
+    "lon" : -1.8229607,
+    "id" : "LCHCCS",
+    "name" : "Lichfield City C.S.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

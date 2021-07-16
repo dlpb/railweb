@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.765291,
+    "lon" : -3.8497246,
+    "id" : "BLARATH",
+    "name" : "Blair Atholl",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.802197,
+    "lon" : -4.0832431,
+    "id" : "DLNCRDH",
+    "name" : "Dalnacardoch",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-100"
+} ]

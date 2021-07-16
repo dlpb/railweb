@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.458959,
+    "lon" : -0.21090875,
+    "id" : "EPUTNEY",
+    "name" : "East Putney",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 51.434486,
+    "lon" : -0.19944897,
+    "id" : "WDNPK",
+    "name" : "Wimbledon Park",
+    "type" : "Location"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

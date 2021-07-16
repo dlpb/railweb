@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.216568,
+    "lon" : -5.1120965,
+    "id" : "PERANWL",
+    "name" : "Perranwell",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.171071,
+    "lon" : -5.1119249,
+    "id" : "PRYN",
+    "name" : "Penryn",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "15-50"
+} ]

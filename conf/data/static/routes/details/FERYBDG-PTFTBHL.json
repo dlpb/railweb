@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.711876,
+    "lon" : -1.2711295,
+    "id" : "FERYBDG",
+    "name" : "Ferrybridge North Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.691897,
+    "lon" : -1.3031405,
+    "id" : "PTFTBHL",
+    "name" : "Pontefract Baghill",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.396708,
+    "lon" : -2.6014476,
+    "id" : "DALAMBR",
+    "name" : "Dallam Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.402916,
+    "lon" : -2.6002867,
+    "id" : "WRGTRMT",
+    "name" : "Warrington Royal Mail(Dbs)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

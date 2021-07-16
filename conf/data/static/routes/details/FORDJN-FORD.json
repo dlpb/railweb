@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.827367,
+    "lon" : -0.57236593,
+    "id" : "FORDJN",
+    "name" : "Ford Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.82943,
+    "lon" : -0.57857925,
+    "id" : "FORD",
+    "name" : "Ford",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

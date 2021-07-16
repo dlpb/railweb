@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.551303,
+    "lon" : 0.039307498,
+    "id" : "ILFE336",
+    "name" : "Ilford Signal L336",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.558994,
+    "lon" : 0.068966977,
+    "id" : "ILFORD",
+    "name" : "Ilford",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

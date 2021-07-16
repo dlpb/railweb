@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.68891692667935,
+    "lon" : -0.4434367199825904,
+    "id" : "BRTHMBR",
+    "name" : "Barton-On-Humber",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.744461,
+    "lon" : -0.3470647,
+    "id" : "HULLBS",
+    "name" : "Hull Bus Stn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.790525,
+    "lon" : -1.7492347,
+    "id" : "BRADIN",
+    "name" : "Bradford Interchange",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.774398,
+    "lon" : -1.7483444,
+    "id" : "BWLGJN",
+    "name" : "Bowling Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 58.209,
+    "lon" : -6.387,
+    "id" : "STWY",
+    "name" : "Stornoway",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 57.9,
+    "lon" : -5.166,
+    "id" : "ULLAPOL",
+    "name" : "Ullapool",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

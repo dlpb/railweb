@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.361111,
+    "lon" : -7.699722,
+    "id" : "CLONMEL",
+    "name" : "Clonmel     (Cie",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.349084,
+    "lon" : -7.404536,
+    "id" : "CARICOS",
+    "name" : "Carrick-On-Suir (Cie)",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

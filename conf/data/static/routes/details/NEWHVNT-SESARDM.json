@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.794852,
+    "lon" : 0.055087279,
+    "id" : "NEWHVNT",
+    "name" : "Newhaven Town",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.831047,
+    "lon" : 0.030660269,
+    "id" : "SESARDM",
+    "name" : "Southease",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

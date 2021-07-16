@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.389265,
+    "lon" : -0.083940852,
+    "id" : "SLHRSTF",
+    "name" : "Selhurst Depot Field Sdgs",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.389265,
+    "lon" : -0.083940852,
+    "id" : "SLHRTS2",
+    "name" : "Selhurst Depot Sig S2",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.488471,
+    "lon" : -1.8654405,
+    "id" : "BHAMSYJ",
+    "name" : "Duddeston Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.497814,
+    "lon" : -1.8593727,
+    "id" : "WSHWDH1",
+    "name" : "Washwood Heath West Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.540619,
+    "lon" : -0.21028936,
+    "id" : "BRBYPK",
+    "name" : "Brondesbury Park",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.534517,
+    "lon" : -0.22003056,
+    "id" : "KENR",
+    "name" : "Kensal Rise",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

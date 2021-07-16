@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.598006,
+    "lon" : -0.12043389,
+    "id" : "ALEXNDP",
+    "name" : "Alexandra Palace",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.580916,
+    "lon" : -0.1083511,
+    "id" : "FRMPRSG",
+    "name" : "Ferme Park Rec Ln Gbrf",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.538029,
+    "lon" : -0.26354196,
+    "id" : "WLSDBRS",
+    "name" : "Willesden Brent Sidings",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.543187,
+    "lon" : -0.28037714,
+    "id" : "WLSDNBJ",
+    "name" : "Willesden Sudbury Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

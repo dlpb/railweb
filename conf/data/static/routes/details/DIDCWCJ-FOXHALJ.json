@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.617022,
+    "lon" : -1.2470967,
+    "id" : "DIDCWCJ",
+    "name" : "Didcot West Curve Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.614434,
+    "lon" : -1.2543319,
+    "id" : "FOXHALJ",
+    "name" : "Foxhall Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

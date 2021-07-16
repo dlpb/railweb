@@ -11,9 +11,8 @@ import controllers.plan.route.find.result.{FindRouteResultHelper, ResultViewMode
 import javax.inject.{Inject, Singleton}
 import models.auth.roles.MapUser
 import models.data.{Event, Train}
-import models.location.{Location, MapLocation}
+import models.location.Location
 import models.route.Route
-import models.route.display.map.MapRoute
 import services.plan.pointtopoint.{Path, PointToPointRouteFinderService}
 import play.api.mvc.{AbstractController, AnyContent, ControllerComponents}
 import services.visit.event.EventService
@@ -59,7 +58,7 @@ class FindPointToPointRouteResultVisitController @Inject()(
       val trainHeadcode = FindRouteResultHelper.extractString(data, "trainHeadcode")
       val debug = FindRouteResultHelper.extractBooleanFromData(data, "debug")
 
-      val eventDuration = path.routes.map(_.travelTimeInSeconds).map(_.getSeconds).sum
+      val eventDuration = path.routes.map(_.travelTimeInSeconds).sum
 
       val visitStartTime = makeVisitStartDateAndTime(overrideStartTime, startDate, startTime)
       val (locationsToVisit, routesToVisit) = calculateRoutesAndLocationsToVisit(visitMode, path, fromLocationIndex, toLocationIndex, includeNonPublicStops)
@@ -158,13 +157,13 @@ class FindPointToPointRouteResultVisitController @Inject()(
               routesService.visitRoute(r, routeVisitTime, routeVisitTime, None, None, request.user)
               val debugVisitRoute = s"VISIT ROUTE   : Visiting route ${r.from.id}-${r.to.id} with visit time $routeVisitTime"
               debugStrBuf.append(debugVisitRoute).append("\n")
-              routeVisitTime = routeVisitTime.plusSeconds(r.travelTimeInSeconds.getSeconds)
+              routeVisitTime = routeVisitTime.plusSeconds(r.travelTimeInSeconds)
 
             })
             routes
 
           }
-          val travelTime = nextRoutes.map(_.travelTimeInSeconds).map(_.toSeconds).sum
+          val travelTime = nextRoutes.map(_.travelTimeInSeconds).sum
           val debugVisitLocation = s"VISIT LOCATION: Visiting Index $index, lastVisitTime $lastVisitTime, location ${nextLocation.id}, travelTime $travelTime"
           debugStrBuf.append(debugVisitLocation).append("\n")
           val visitDescription = None
@@ -175,15 +174,13 @@ class FindPointToPointRouteResultVisitController @Inject()(
 
       })
 
-      val mapLocationList = path.locations.map(MapLocation(_))
       val locationsToRouteVia = path.locations.map(_.id)
 
-      val mapRouteList = path.routes.map(r => MapRoute(r))
       val routeList = path.routes
       val waypoints = path.locations.map(l => Waypoint(l.id, l.name, l.isOrrStation))
 
       val distance = path.routes.map(_.distance).sum
-      val time = path.routes.map(_.travelTimeInSeconds).map(_.getSeconds).sum
+      val time = path.routes.map(_.travelTimeInSeconds).sum
 
 
       val messages = if(debug) debugStrBuf.toString.split("\n").toList else List.empty
@@ -192,8 +189,7 @@ class FindPointToPointRouteResultVisitController @Inject()(
         request.user,
         token,
         ResultViewModel(
-          mapLocationList,
-          mapRouteList,
+          path.locations,
           routeList,
           waypoints,
           path.followFreightLinks,

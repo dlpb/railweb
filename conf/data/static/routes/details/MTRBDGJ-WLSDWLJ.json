@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.526517,
+    "lon" : -0.23569569,
+    "id" : "MTRBDGJ",
+    "name" : "Mitre Bridge Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.530936,
+    "lon" : -0.24130627,
+    "id" : "WLSDWLJ",
+    "name" : "Willesden Junction",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.998821,
+    "lon" : -2.1087743,
+    "id" : "ASHCHRC",
+    "name" : "Ashchurch For Tewkesbury",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.064854,
+    "lon" : -2.1132529,
+    "id" : "ECKNGTL",
+    "name" : "Eckington Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

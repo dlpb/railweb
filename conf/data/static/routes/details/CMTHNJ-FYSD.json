@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.845875,
+    "lon" : -4.3115895,
+    "id" : "CMTHNJ",
+    "name" : "Carmarthen Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.768503,
+    "lon" : -4.3693493,
+    "id" : "FYSD",
+    "name" : "Ferryside",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.379673,
+    "lon" : -2.3848796,
+    "id" : "TWERTON",
+    "name" : "Twerton",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.379194,
+    "lon" : -2.3801053,
+    "id" : "OLDFLDP",
+    "name" : "Oldfield Park",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

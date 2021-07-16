@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.655061,
+    "lon" : -0.030840022,
+    "id" : "BRIMSDN",
+    "name" : "Brimsdown",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.642718,
+    "lon" : -0.034843621,
+    "id" : "PNDRSEN",
+    "name" : "Ponders End",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

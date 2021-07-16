@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.467936,
+    "lon" : 0.19006666,
+    "id" : "SLADEGN",
+    "name" : "Slade Green",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.466286,
+    "lon" : 0.19174419,
+    "id" : "SLADGD",
+    "name" : "Slade Green Dep London End",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

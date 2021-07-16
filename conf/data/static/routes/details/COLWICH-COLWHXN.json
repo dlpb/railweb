@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.78866,
+    "lon" : -1.9859304,
+    "id" : "COLWICH",
+    "name" : "Colwich",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.822083,
+    "lon" : -2.0064725,
+    "id" : "COLWHXN",
+    "name" : "Hixon",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

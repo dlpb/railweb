@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.182551,
+    "lon" : -1.2603747,
+    "id" : "MCHL229",
+    "name" : "Micheldever Signal E229",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.182551,
+    "lon" : -1.2603747,
+    "id" : "MCHLDVR",
+    "name" : "Micheldever",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

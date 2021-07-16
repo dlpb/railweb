@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.588786,
+    "lon" : -1.0233605,
+    "id" : "HTFLASF",
+    "name" : "Hatfield & Stainforth",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.592372,
+    "lon" : -1.0145602,
+    "id" : "HTFLMBC",
+    "name" : "Hatfield Main Mining",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

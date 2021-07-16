@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.077829,
+    "lon" : -4.0530363,
+    "id" : "KGUSSIE",
+    "name" : "Kingussie",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 57.059231,
+    "lon" : -4.1187674,
+    "id" : "NWTM",
+    "name" : "Newtonmore",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-100"
+} ]

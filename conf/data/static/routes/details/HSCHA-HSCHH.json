@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.673333,
+    "lon" : -1.943056,
+    "id" : "HSCHA",
+    "name" : "Chasetown",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.676111,
+    "lon" : -1.94694,
+    "id" : "HSCHH",
+    "name" : "Chasewater Heaths",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

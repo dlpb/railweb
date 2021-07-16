@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.095935,
+    "lon" : -0.26311689,
+    "id" : "FAYGATE",
+    "name" : "Faygate",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.115598,
+    "lon" : -0.2138729,
+    "id" : "IFIELD",
+    "name" : "Ifield",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

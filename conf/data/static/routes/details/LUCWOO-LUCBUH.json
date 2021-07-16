@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.60582,
+    "lon" : 0.03328,
+    "id" : "LUCWOO",
+    "name" : "Woodford",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.62611,
+    "lon" : 0.04705,
+    "id" : "LUCBUH",
+    "name" : "Buckhurst Hill",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

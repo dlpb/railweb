@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.53051,
+    "lon" : -3.0572041,
+    "id" : "MSHFILD",
+    "name" : "Marshfield",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.498227,
+    "lon" : -3.1353883,
+    "id" : "RUMNYRB",
+    "name" : "Rumney River Bridge Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

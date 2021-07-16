@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.744709,
+    "lon" : -1.1293792,
+    "id" : "MOUNGBR",
+    "name" : "Mountsorell Gbrf",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.73483,
+    "lon" : -1.1137734,
+    "id" : "SILEBYJ",
+    "name" : "Sileby Jn",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

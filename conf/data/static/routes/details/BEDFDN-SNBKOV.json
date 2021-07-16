@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.14227,
+    "lon" : -0.4862059,
+    "id" : "BEDFDN",
+    "name" : "Bedford North Jn.",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.178582,
+    "lon" : -0.52210777,
+    "id" : "SNBKOV",
+    "name" : "Oakley Viaduct",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.754,
+    "lon" : -1.2704785,
+    "id" : "OXFD",
+    "name" : "Oxford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.750252,
+    "lon" : -1.2692786,
+    "id" : "OXFDUDP",
+    "name" : "Oxford Up & Dn Passenger",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

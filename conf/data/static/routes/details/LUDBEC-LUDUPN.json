@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.54029,
+    "lon" : 0.1262,
+    "id" : "LUDBEC",
+    "name" : "Becontree",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.53824,
+    "lon" : 0.09998,
+    "id" : "LUDUPN",
+    "name" : "Upney",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

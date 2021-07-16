@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.51308,
+    "lon" : -0.12427,
+    "id" : "LUPCOG",
+    "name" : "Covent Garden",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.51711,
+    "lon" : -0.12055,
+    "id" : "LUCHOL",
+    "name" : "Holborn",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

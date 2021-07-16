@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.062371,
+    "lon" : -1.3291521,
+    "id" : "BNBRYNB",
+    "name" : "Banbury North S.B.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.075652,
+    "lon" : -1.3279025,
+    "id" : "BNBRYRA",
+    "name" : "Banbury Reservoir Rland A",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

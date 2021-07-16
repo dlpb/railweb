@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.57765,
+    "lon" : -1.2278291,
+    "id" : "GUSBROJ",
+    "name" : "Guisborough Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.551965,
+    "lon" : -1.2084469,
+    "id" : "JAMCOK",
+    "name" : "James Cook",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.363812,
+    "lon" : -0.24803176,
+    "id" : "STLEIGH",
+    "name" : "Stoneleigh",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.381509,
+    "lon" : -0.24498499,
+    "id" : "WRCSTRP",
+    "name" : "Worcester Park",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

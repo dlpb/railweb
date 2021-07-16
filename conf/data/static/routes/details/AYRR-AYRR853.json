@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.458234,
+    "lon" : -4.6257235,
+    "id" : "AYRR",
+    "name" : "Ayr",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.465228,
+    "lon" : -4.6210466,
+    "id" : "AYRR853",
+    "name" : "Ayr Sig. Pa853",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

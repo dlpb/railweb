@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.399712,
+    "lon" : 0.28444027,
+    "id" : "FAWKHMJ",
+    "name" : "Fawkham Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.401612,
+    "lon" : 0.23626907,
+    "id" : "FRNNGRD",
+    "name" : "Farningham Road",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

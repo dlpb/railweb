@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.785461,
+    "lon" : -3.9771659,
+    "id" : "DALZBSC",
+    "name" : "Dalzell B.S.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.7842,
+    "lon" : -3.9751244,
+    "id" : "MOTHUGL",
+    "name" : "Motherwell U.G.L",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

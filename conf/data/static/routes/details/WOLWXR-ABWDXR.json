@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.491578,
+    "lon" : 0.071819,
+    "id" : "WOLWXR",
+    "name" : "Woolwich Crossrail",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.49106055880448,
+    "lon" : 0.12139403194956183,
+    "id" : "ABWDXR",
+    "name" : "Abbey Wood Crossrail",
+    "type" : "Station"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

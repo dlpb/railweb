@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.605983,
+    "lon" : -0.26875464,
+    "id" : "HABRO",
+    "name" : "Habrough",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.586975,
+    "lon" : -0.18299199,
+    "id" : "SBROUGH",
+    "name" : "Stallingborough",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

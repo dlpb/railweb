@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.48079,
+    "lon" : -2.262994,
+    "id" : "HOPSPPS",
+    "name" : "Hope St Peakstone P.Sdgs",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.482639,
+    "lon" : -2.2560888,
+    "id" : "SLFDORD",
+    "name" : "Salford Central",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

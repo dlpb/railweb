@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.093747,
+    "lon" : -2.2922683,
+    "id" : "ALSAUDG",
+    "name" : "Alsager Up & Dn Gds Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.08641,
+    "lon" : -2.2454122,
+    "id" : "KIDSGRV",
+    "name" : "Kidsgrove",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.804268,
+    "lon" : -4.3966128,
+    "id" : "BRHD",
+    "name" : "Barrhead",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.811889,
+    "lon" : -4.3599399,
+    "id" : "NITSH",
+    "name" : "Nitshill",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

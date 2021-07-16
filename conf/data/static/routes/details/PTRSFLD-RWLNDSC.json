@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.006267,
+    "lon" : -0.9422589,
+    "id" : "PTRSFLD",
+    "name" : "Petersfield",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.892385,
+    "lon" : -0.95736638,
+    "id" : "RWLNDSC",
+    "name" : "Rowlands Castle",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

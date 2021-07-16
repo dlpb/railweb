@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.523611,
+    "lon" : -0.259722,
+    "id" : "NACTON",
+    "name" : "North Acton Underground",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.53,
+    "lon" : -0.2929,
+    "id" : "LUCHAL",
+    "name" : "Hanger Lane",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

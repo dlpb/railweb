@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.37501,
+    "lon" : -0.0782,
+    "id" : "LTBSAN",
+    "name" : "Sandilands",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 51.3799,
+    "lon" : -0.0732,
+    "id" : "LTBADD",
+    "name" : "Addiscombe",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.803872,
+    "lon" : -4.2929754,
+    "id" : "GIFNOCK",
+    "name" : "Giffnock",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.811009,
+    "lon" : -4.3116379,
+    "id" : "THLB",
+    "name" : "Thornliebank",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

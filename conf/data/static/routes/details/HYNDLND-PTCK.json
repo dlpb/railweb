@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.8797,
+    "lon" : -4.3145853,
+    "id" : "HYNDLND",
+    "name" : "Hyndland",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.869823,
+    "lon" : -4.309298,
+    "id" : "PTCK",
+    "name" : "Partick",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

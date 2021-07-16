@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.51652,
+    "lon" : -1.99466,
+    "id" : "WMTWWBC",
+    "name" : "West Bromwich Central",
+    "type" : "Metro"
+  },
+  "to" : {
+    "lat" : 52.51865,
+    "lon" : -1.99987,
+    "id" : "WMTWLRWBTH",
+    "name" : "Lodge Road West Bromwich Town Hall",
+    "type" : "Metro"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Metro",
+  "speed" : "OHLE"
+} ]

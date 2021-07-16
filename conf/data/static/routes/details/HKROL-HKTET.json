@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.064098,
+    "lon" : 0.65985493,
+    "id" : "HKROL",
+    "name" : "Rolversham",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 51.070279,
+    "lon" : 0.6851345,
+    "id" : "HKTET",
+    "name" : "Tenterden Town",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.426691,
+    "lon" : 0.46634244,
+    "id" : "HIGM",
+    "name" : "Higham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.436568,
+    "lon" : 0.43742007,
+    "id" : "HOOJ",
+    "name" : "Hoo Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

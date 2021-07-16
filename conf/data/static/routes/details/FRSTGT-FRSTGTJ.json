@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.549202,
+    "lon" : 0.022986859,
+    "id" : "FRSTGT",
+    "name" : "Forest Gate",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.550922,
+    "lon" : 0.034804529,
+    "id" : "FRSTGTJ",
+    "name" : "Forest Gate Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.390687,
+    "lon" : -0.02712,
+    "id" : "EDPK",
+    "name" : "Eden Park",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.381457,
+    "lon" : -0.01468382,
+    "id" : "WWICKHM",
+    "name" : "West Wickham",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

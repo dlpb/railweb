@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.633333,
+    "lon" : -8.183333,
+    "id" : "CATZRCM",
+    "name" : "Roscommon   (Cie",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.761389,
+    "lon" : -8.485833,
+    "id" : "CATZCSE",
+    "name" : "Castlerea   (Cie",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.961436,
+    "lon" : -0.49536152,
+    "id" : "HRLG",
+    "name" : "Harlington",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.93556,
+    "lon" : -0.49624176,
+    "id" : "LEAGSAN",
+    "name" : "Sandon (Beds)",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

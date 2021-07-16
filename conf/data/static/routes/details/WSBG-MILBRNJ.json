@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.482068,
+    "lon" : -4.2163212,
+    "id" : "WSBG",
+    "name" : "Welshs Bridge",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 57.482414,
+    "lon" : -4.2104531,
+    "id" : "MILBRNJ",
+    "name" : "Millburn Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-100"
+} ]

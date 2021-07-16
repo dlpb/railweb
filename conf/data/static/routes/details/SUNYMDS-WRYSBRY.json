@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.469894,
+    "lon" : -0.55889706,
+    "id" : "SUNYMDS",
+    "name" : "Sunnymeads",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.458061,
+    "lon" : -0.54221287,
+    "id" : "WRYSBRY",
+    "name" : "Wraysbury",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

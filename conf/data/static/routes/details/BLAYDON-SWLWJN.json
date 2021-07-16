@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.965931,
+    "lon" : -1.712689,
+    "id" : "BLAYDON",
+    "name" : "Blaydon",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.961823,
+    "lon" : -1.6730655,
+    "id" : "SWLWJN",
+    "name" : "Swalwell Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

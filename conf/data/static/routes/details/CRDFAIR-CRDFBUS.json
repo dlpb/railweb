@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.396667,
+    "lon" : -3.343333,
+    "id" : "CRDFAIR",
+    "name" : "Cardiff Air Bus",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.47643,
+    "lon" : -3.17905,
+    "id" : "CRDFBUS",
+    "name" : "Cardiff Central Bus Stn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

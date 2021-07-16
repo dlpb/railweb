@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.458948,
+    "lon" : -1.3212971,
+    "id" : "ALDWRKJ",
+    "name" : "Aldwarke Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.485446,
+    "lon" : -1.3055328,
+    "id" : "SWINTN",
+    "name" : "Swinton (South Yorkshire)",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

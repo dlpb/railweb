@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.249579,
+    "lon" : -2.2081472,
+    "id" : "DILTONM",
+    "name" : "Dilton Marsh",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.207026,
+    "lon" : -2.1770213,
+    "id" : "WRMNSTR",
+    "name" : "Warminster",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

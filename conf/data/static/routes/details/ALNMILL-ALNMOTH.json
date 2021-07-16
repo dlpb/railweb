@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.452572,
+    "lon" : -1.6416857,
+    "id" : "ALNMILL",
+    "name" : "Little Mill Lc",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.392866,
+    "lon" : -1.6367631,
+    "id" : "ALNMOTH",
+    "name" : "Alnmouth",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

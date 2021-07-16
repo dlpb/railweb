@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.484141,
+    "lon" : -0.040617488,
+    "id" : "NKENTEJ",
+    "name" : "North Kent East Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.476835,
+    "lon" : -0.032866186,
+    "id" : "NWCROSS",
+    "name" : "New Cross",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

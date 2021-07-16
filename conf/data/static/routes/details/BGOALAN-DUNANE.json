@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.156696,
+    "lon" : -3.957296,
+    "id" : "BGOALAN",
+    "name" : "Bridge Of Allan",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.185573,
+    "lon" : -3.9655504,
+    "id" : "DUNANE",
+    "name" : "Dunblane",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.406163,
+    "lon" : -0.67678443,
+    "id" : "ASCOT",
+    "name" : "Ascot",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.392158,
+    "lon" : -0.63330728,
+    "id" : "SUNNGDL",
+    "name" : "Sunningdale",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

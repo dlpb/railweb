@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.644504,
+    "lon" : -3.0002691,
+    "id" : "SOUTCHS",
+    "name" : "Southport C.H.S.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.646074,
+    "lon" : -3.0017434,
+    "id" : "SOUTHPT",
+    "name" : "Southport",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

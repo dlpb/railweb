@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.735708,
+    "lon" : -5.0240659,
+    "id" : "HRBRNSJ",
+    "name" : "Herbrandston Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.735674,
+    "lon" : -5.0590467,
+    "id" : "ROBSTNS",
+    "name" : "Robeston Sdgs",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

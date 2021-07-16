@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.04626,
+    "lon" : -2.2202884,
+    "id" : "LNGPJN",
+    "name" : "Longport Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.046226,
+    "lon" : -2.2193336,
+    "id" : "LNGPTPS",
+    "name" : "Pinnox Branch Esso Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.644792,
+    "lon" : -0.38496505,
+    "id" : "BUSHEY",
+    "name" : "Bushey",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.659909,
+    "lon" : -0.3910061,
+    "id" : "WATFJSJ",
+    "name" : "Watford South Jcn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE/DC",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

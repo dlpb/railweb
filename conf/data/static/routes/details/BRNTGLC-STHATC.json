@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.489708,
+    "lon" : -0.32627998,
+    "id" : "BRNTGLC",
+    "name" : "Brentfd Tn W.Waste R.T.S",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.504492,
+    "lon" : -0.38599639,
+    "id" : "STHATC",
+    "name" : "Southall T.C.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

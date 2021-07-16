@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.776463,
+    "lon" : -1.1466431,
+    "id" : "HAMBLEJ",
+    "name" : "Hambleton East Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.777437,
+    "lon" : -1.1740747,
+    "id" : "HAMBLWJ",
+    "name" : "Hambleton West Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

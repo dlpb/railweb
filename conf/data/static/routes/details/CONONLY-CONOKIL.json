@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.917236,
+    "lon" : -2.0118392,
+    "id" : "CONONLY",
+    "name" : "Cononley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.903637,
+    "lon" : -1.983115,
+    "id" : "CONOKIL",
+    "name" : "Kildwick",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

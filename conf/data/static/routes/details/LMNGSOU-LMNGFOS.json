@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.235415,
+    "lon" : -1.4341313,
+    "id" : "LMNGSOU",
+    "name" : "Southam Road",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.250874,
+    "lon" : -1.4989584,
+    "id" : "LMNGFOS",
+    "name" : "Fosse Road (Leamington)",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

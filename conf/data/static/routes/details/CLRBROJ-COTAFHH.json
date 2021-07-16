@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.334374,
+    "lon" : -0.86295306,
+    "id" : "CLRBROJ",
+    "name" : "Clarborough Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.307198,
+    "lon" : -0.77907488,
+    "id" : "COTAFHH",
+    "name" : "Cottam Power Station (Fhh)",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.025493,
+    "lon" : -0.26648636,
+    "id" : "ARLSEY",
+    "name" : "Arlesey",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.084519,
+    "lon" : -0.26075552,
+    "id" : "BIGLSWD",
+    "name" : "Biggleswade",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

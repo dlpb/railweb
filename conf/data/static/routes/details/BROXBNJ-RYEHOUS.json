@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.762618,
+    "lon" : 0.005356042,
+    "id" : "BROXBNJ",
+    "name" : "Broxbourne Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.769233,
+    "lon" : 0.0055477903,
+    "id" : "RYEHOUS",
+    "name" : "Rye House",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

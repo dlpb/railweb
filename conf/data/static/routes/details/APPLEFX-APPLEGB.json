@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.63948,
+    "lon" : -1.242462,
+    "id" : "APPLEFX",
+    "name" : "Appleford L.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.63948,
+    "lon" : -1.242462,
+    "id" : "APPLEGB",
+    "name" : "Appleford Sdgs (Gbrf)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

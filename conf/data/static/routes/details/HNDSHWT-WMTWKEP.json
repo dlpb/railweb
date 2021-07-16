@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.505497,
+    "lon" : -1.9644949,
+    "id" : "HNDSHWT",
+    "name" : "The Hawthorns",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.50868,
+    "lon" : -1.98251,
+    "id" : "WMTWKEP",
+    "name" : "Kenrick Park",
+    "type" : "Metro"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Unknown",
+  "speed" : "OHLE"
+} ]

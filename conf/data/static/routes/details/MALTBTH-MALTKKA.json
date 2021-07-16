@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.069744,
+    "lon" : -0.91863377,
+    "id" : "MALTBTH",
+    "name" : "Barton Hill",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.082259,
+    "lon" : -0.88067386,
+    "id" : "MALTKKA",
+    "name" : "Kirkham Abbey Sb",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

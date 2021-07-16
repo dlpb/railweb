@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.563181,
+    "lon" : -1.9915923,
+    "id" : "BSCTJN",
+    "name" : "Bescot Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.561185,
+    "lon" : -1.9884359,
+    "id" : "BSCTYD",
+    "name" : "Bescot Down Side",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

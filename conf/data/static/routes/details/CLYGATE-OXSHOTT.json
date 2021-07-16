@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.362168,
+    "lon" : -0.34844322,
+    "id" : "CLYGATE",
+    "name" : "Claygate",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.336524,
+    "lon" : -0.36202708,
+    "id" : "OXSHOTT",
+    "name" : "Oxshott",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

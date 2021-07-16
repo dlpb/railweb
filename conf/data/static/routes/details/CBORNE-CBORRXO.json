@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.210118,
+    "lon" : -5.2980898,
+    "id" : "CBORNE",
+    "name" : "Camborne",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.211615,
+    "lon" : -5.2938612,
+    "id" : "CBORRXO",
+    "name" : "Roskear Crossover",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

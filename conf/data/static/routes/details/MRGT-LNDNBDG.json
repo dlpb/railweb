@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.518374,
+    "lon" : -0.088991509,
+    "id" : "MRGT",
+    "name" : "Moorgate",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.503428,
+    "lon" : -0.084040543,
+    "id" : "LNDNBDG",
+    "name" : "London Bridge",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "21 MINUTES"
+} ]

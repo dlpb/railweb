@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.899444,
+    "lon" : -7.6025,
+    "id" : "CATZBBY",
+    "name" : "Ballybrophy (Cie",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.036667,
+    "lon" : -7.301944,
+    "id" : "CATZPTO",
+    "name" : "Portlaoise  (Cie",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

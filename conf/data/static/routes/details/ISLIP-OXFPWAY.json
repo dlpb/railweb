@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.826126,
+    "lon" : -1.2376965,
+    "id" : "ISLIP",
+    "name" : "Islip",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.8042,
+    "lon" : -1.2745,
+    "id" : "OXFPWAY",
+    "name" : "Oxford Parkway",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

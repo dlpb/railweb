@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.685922,
+    "lon" : -2.7819313,
+    "id" : "PLPNLAS",
+    "name" : "Long Ashes",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.661857,
+    "lon" : -2.7589902,
+    "id" : "PNTH",
+    "name" : "Penrith",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

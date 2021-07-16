@@ -1,0 +1,10 @@
+[ {
+  "id" : "TULSEH",
+  "crp" : "",
+  "route" : "South East",
+  "changeTime" : "Set(Some(ChangeTime(TUH,TL,TL,4,(Tulse Hill))))",
+  "interchangeType" : "2 - Medium interchange point",
+  "county" : "London",
+  "district" : "Greater London",
+  "postcode" : "\"SE27 9BW"
+} ]

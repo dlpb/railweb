@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.813413,
+    "lon" : -0.81431056,
+    "id" : "AYLSBRY",
+    "name" : "Aylesbury",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.810587,
+    "lon" : -0.80869848,
+    "id" : "AYLSDMU",
+    "name" : "Aylesbury D.M.U. Depot",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

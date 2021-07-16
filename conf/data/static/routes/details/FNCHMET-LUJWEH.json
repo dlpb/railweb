@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.5472,
+    "lon" : -0.18027,
+    "id" : "FNCHMET",
+    "name" : "Finchley Road Und",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.54678865,
+    "lon" : -0.191016868,
+    "id" : "LUJWEH",
+    "name" : "West Hampstead",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

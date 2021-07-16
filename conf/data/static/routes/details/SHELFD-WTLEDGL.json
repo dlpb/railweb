@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.149215,
+    "lon" : 0.1398826,
+    "id" : "SHELFD",
+    "name" : "Shelford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.105403,
+    "lon" : 0.16561749,
+    "id" : "WTLEDGL",
+    "name" : "Whittlesford Dn Goods Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

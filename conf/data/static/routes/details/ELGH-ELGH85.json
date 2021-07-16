@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.968726,
+    "lon" : -1.3499066,
+    "id" : "ELGH",
+    "name" : "Eastleigh",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.964193,
+    "lon" : -1.3514224,
+    "id" : "ELGH85",
+    "name" : "Eastleigh Signal E85",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.726019,
+    "lon" : -1.2489944,
+    "id" : "KNNGGLP",
+    "name" : "Kennington Goods Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.724021,
+    "lon" : -1.2473626,
+    "id" : "KNNGTNJ",
+    "name" : "Kennington Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.265469,
+    "lon" : 0.5500414,
+    "id" : "HIHAM",
+    "name" : "Highams (Suffolk)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.277345,
+    "lon" : 0.48954544,
+    "id" : "KENNETT",
+    "name" : "Kennett",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

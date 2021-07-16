@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.44805,
+    "lon" : -3.0052379,
+    "id" : "LVRPEMR",
+    "name" : "Liverpool Euro Metal(Mdhc)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.449344,
+    "lon" : -3.0063225,
+    "id" : "RGNTSRX",
+    "name" : "Regents Road L.C.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

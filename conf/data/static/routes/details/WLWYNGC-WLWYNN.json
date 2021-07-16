@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.801145,
+    "lon" : -0.20347191,
+    "id" : "WLWYNGC",
+    "name" : "Welwyn Garden City",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.823713,
+    "lon" : -0.19215543,
+    "id" : "WLWYNN",
+    "name" : "Welwyn North",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

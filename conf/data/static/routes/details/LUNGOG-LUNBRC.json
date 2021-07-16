@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.57249,
+    "lon" : -0.1941,
+    "id" : "LUNGOG",
+    "name" : "Golders Green",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.57693,
+    "lon" : -0.21414,
+    "id" : "LUNBRC",
+    "name" : "Brent Cross",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

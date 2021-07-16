@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.875159,
+    "lon" : -1.3419277,
+    "id" : "NETLEY",
+    "name" : "Netley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.896561,
+    "lon" : -1.3644768,
+    "id" : "SHOLING",
+    "name" : "Sholing",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.567705,
+    "lon" : -0.247766,
+    "id" : "HCPNV",
+    "name" : "Peterborough Nene Valley",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.562926,
+    "lon" : -0.27374531,
+    "id" : "ORTONMR",
+    "name" : "Orton Mere",
+    "type" : "Point"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

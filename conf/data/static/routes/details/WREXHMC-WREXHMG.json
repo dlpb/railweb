@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.046308,
+    "lon" : -2.9996072,
+    "id" : "WREXHMC",
+    "name" : "Wrexham Central",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.050776,
+    "lon" : -3.0016352,
+    "id" : "WREXHMG",
+    "name" : "Wrexham General",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

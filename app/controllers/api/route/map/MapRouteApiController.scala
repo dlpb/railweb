@@ -26,7 +26,7 @@ class MapRouteApiController @Inject()(
 
     def getRoutesForMap() = {
       authAction { implicit request =>
-        Ok(write(routeService.mapRoutes)).as(JSON)
+        Ok(write(routeService.routes)).as(JSON)
       }
     }
 

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.539,
+    "lon" : 0.0516,
+    "id" : "EASTHAM",
+    "name" : "East Ham Und",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.539725,
+    "lon" : 0.080494811,
+    "id" : "BARKGLT",
+    "name" : "Barking Underground",
+    "type" : "Location"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

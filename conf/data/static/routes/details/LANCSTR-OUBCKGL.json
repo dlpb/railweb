@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.048871,
+    "lon" : -2.8076742,
+    "id" : "LANCSTR",
+    "name" : "Lancaster",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.007041,
+    "lon" : -2.7942299,
+    "id" : "OUBCKGL",
+    "name" : "Oubeck Goods Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

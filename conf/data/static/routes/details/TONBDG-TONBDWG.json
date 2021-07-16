@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.191624,
+    "lon" : 0.26966686,
+    "id" : "TONBDG",
+    "name" : "Tonbridge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.192751,
+    "lon" : 0.25927412,
+    "id" : "TONBDWG",
+    "name" : "Tonbridge West Yard Gbrf",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.448306,
+    "lon" : 0.17889423,
+    "id" : "CRFD",
+    "name" : "Crayford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.451209,
+    "lon" : 0.19777231,
+    "id" : "CRFDSPB",
+    "name" : "Crayford Spur B",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

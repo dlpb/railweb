@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.583983,
+    "lon" : -1.2148823,
+    "id" : "PRTCGBR",
+    "name" : "Port Clarence (Gbrf)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.584428,
+    "lon" : -1.2183397,
+    "id" : "PRTCPHL",
+    "name" : "Phillips Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

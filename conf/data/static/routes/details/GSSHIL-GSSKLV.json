@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.875833,
+    "lon" : -4.292222,
+    "id" : "GSSHIL",
+    "name" : "Hillhead",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 55.871111,
+    "lon" : -4.300556,
+    "id" : "GSSKLV",
+    "name" : "Kelvinhall",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.379686,
+    "lon" : -0.091583422,
+    "id" : "ECRO065",
+    "name" : "East Croydon Signal T1065",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.378984,
+    "lon" : -0.092072476,
+    "id" : "ECROUS",
+    "name" : "East Croydon Up Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.835636,
+    "lon" : -1.3390282,
+    "id" : "SEAHDAW",
+    "name" : "Dawdon Sb",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.836957,
+    "lon" : -1.3424942,
+    "id" : "SEAHPOL",
+    "name" : "Dawdon Polka Siding",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

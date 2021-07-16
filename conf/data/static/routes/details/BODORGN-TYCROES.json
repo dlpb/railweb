@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.204081,
+    "lon" : -4.4159542,
+    "id" : "BODORGN",
+    "name" : "Bodorgan",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.222396,
+    "lon" : -4.4729257,
+    "id" : "TYCROES",
+    "name" : "Ty Croes",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.518873,
+    "lon" : -1.311502,
+    "id" : "BLTNODR",
+    "name" : "Bolton-On-Dearne",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.533667,
+    "lon" : -1.3129368,
+    "id" : "GLDTHRP",
+    "name" : "Goldthorpe",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

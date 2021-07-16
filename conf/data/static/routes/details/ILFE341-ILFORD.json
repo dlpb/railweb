@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.558265,
+    "lon" : 0.065399377,
+    "id" : "ILFE341",
+    "name" : "Ilford Sig L341",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.558994,
+    "lon" : 0.068966977,
+    "id" : "ILFORD",
+    "name" : "Ilford",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

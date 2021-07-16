@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.519383,
+    "lon" : -0.187785,
+    "id" : "LUH&CROO",
+    "name" : "Royal Oak",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.515425,
+    "lon" : -0.17546164,
+    "id" : "PADTLUL",
+    "name" : "Paddington (Bakerloo Line)",
+    "type" : "Location"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

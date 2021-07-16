@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.538,
+    "lon" : -4.938,
+    "id" : "PDSTWBT",
+    "name" : "Padstow Bus",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.517,
+    "lon" : -4.835,
+    "id" : "WDBDGBS",
+    "name" : "Wadebridge Bus",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

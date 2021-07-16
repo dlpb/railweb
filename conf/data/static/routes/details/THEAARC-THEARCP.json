@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.430528,
+    "lon" : -1.086511,
+    "id" : "THEAARC",
+    "name" : "Theale A.R.C",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.433549,
+    "lon" : -1.0738346,
+    "id" : "THEARCP",
+    "name" : "Theale Reception Sdgs",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

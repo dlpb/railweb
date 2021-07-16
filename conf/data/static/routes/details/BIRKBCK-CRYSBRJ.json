@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.4034,
+    "lon" : -0.056550293,
+    "id" : "BIRKBCK",
+    "name" : "Birkbeck",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.40713,
+    "lon" : -0.071662401,
+    "id" : "CRYSBRJ",
+    "name" : "Bromley Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

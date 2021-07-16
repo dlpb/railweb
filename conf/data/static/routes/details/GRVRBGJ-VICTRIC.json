@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.489935,
+    "lon" : -0.14817432,
+    "id" : "GRVRBGJ",
+    "name" : "Grosvenor Bridge Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.49314,
+    "lon" : -0.14608529,
+    "id" : "VICTRIC",
+    "name" : "London Victoria",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.901164,
+    "lon" : -2.0978116,
+    "id" : "ALSTONS",
+    "name" : "Alstone C. Sidings",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.896793,
+    "lon" : -2.1003017,
+    "id" : "CHLTNHM",
+    "name" : "Cheltenham Spa",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.740237,
+    "lon" : -0.67213066,
+    "id" : "BRFT",
+    "name" : "Broomfleet",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.747928,
+    "lon" : -0.73159234,
+    "id" : "GLBRDYK",
+    "name" : "Gilberdyke",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

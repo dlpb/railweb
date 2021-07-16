@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.863939,
+    "lon" : -3.9819671,
+    "id" : "AIRDCS",
+    "name" : "Airdrie C.S.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.864316,
+    "lon" : -4.0046955,
+    "id" : "COATDYK",
+    "name" : "Coatdyke",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

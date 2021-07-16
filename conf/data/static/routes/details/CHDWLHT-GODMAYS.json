@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.567929,
+    "lon" : 0.12797209,
+    "id" : "CHDWLHT",
+    "name" : "Chadwell Heath",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.565806,
+    "lon" : 0.11210185,
+    "id" : "GODMAYS",
+    "name" : "Goodmayes",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

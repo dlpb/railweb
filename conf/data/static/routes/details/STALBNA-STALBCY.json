@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.744521,
+    "lon" : -0.34231568,
+    "id" : "STALBNA",
+    "name" : "St Albans Abbey",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.7505,
+    "lon" : -0.32763866,
+    "id" : "STALBCY",
+    "name" : "St Albans",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "33 MINUTES"
+} ]

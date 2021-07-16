@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.461673,
+    "lon" : -2.5637264,
+    "id" : "LAWRNGF",
+    "name" : "Lawrence Hill G.F.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.467272,
+    "lon" : -2.566142,
+    "id" : "STPLTNR",
+    "name" : "Stapleton Road",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

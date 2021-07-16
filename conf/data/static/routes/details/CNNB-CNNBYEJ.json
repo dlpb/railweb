@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.548376,
+    "lon" : -0.093085558,
+    "id" : "CNNB",
+    "name" : "Canonbury",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.54885,
+    "lon" : -0.091248404,
+    "id" : "CNNBYEJ",
+    "name" : "Canonbury East Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

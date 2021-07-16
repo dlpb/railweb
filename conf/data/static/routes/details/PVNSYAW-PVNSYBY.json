@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.815789,
+    "lon" : 0.32524708,
+    "id" : "PVNSYAW",
+    "name" : "Pevensey & Westham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.817616,
+    "lon" : 0.34268728,
+    "id" : "PVNSYBY",
+    "name" : "Pevensey Bay",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

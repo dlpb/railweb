@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.966875,
+    "lon" : -3.0074982,
+    "id" : "FLORSTN",
+    "name" : "Floriston",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.99826,
+    "lon" : -3.0453804,
+    "id" : "GRETNAJ",
+    "name" : "Gretna Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

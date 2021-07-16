@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.5636,
+    "lon" : -0.2794,
+    "id" : "CATEZWY",
+    "name" : "Wembley Park Und",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.5472,
+    "lon" : -0.18027,
+    "id" : "FNCHMET",
+    "name" : "Finchley Road Und",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.442537,
+    "lon" : -2.9595953,
+    "id" : "WAANFLD",
+    "name" : "Walton & Anfield",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.405487,
+    "lon" : -2.9182823,
+    "id" : "OLIVEMJ",
+    "name" : "Olive Mount Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

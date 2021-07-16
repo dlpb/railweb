@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.996895,
+    "lon" : -1.1957758,
+    "id" : "BULWLSJ",
+    "name" : "Bulwell South Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.981464,
+    "lon" : -1.1779805,
+    "id" : "BASFORD",
+    "name" : "Basford",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

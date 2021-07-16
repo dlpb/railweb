@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.3774,
+    "lon" : -1.722,
+    "id" : "DLTNCGT",
+    "name" : "Catterick Garrison Bus",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.403,
+    "lon" : -1.737,
+    "id" : "DLTNRIM",
+    "name" : "Richmond Yks Bus",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

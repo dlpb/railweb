@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.032367,
+    "lon" : -2.913479,
+    "id" : "HEYMCEG",
+    "name" : "Heysham Harbour P.S.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.070304,
+    "lon" : -2.8686354,
+    "id" : "MORCAME",
+    "name" : "Morecambe",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

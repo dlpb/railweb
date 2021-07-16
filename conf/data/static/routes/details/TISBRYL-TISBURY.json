@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.062652,
+    "lon" : -2.075666,
+    "id" : "TISBRYL",
+    "name" : "Tisbury Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.060599,
+    "lon" : -2.0792442,
+    "id" : "TISBURY",
+    "name" : "Tisbury",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

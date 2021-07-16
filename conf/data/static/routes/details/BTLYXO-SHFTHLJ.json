@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.558629,
+    "lon" : -1.1306818,
+    "id" : "BTLYXO",
+    "name" : "Bentley Crossover",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.582372,
+    "lon" : -1.1238055,
+    "id" : "SHFTHLJ",
+    "name" : "Shaftholme Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

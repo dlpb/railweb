@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.568104505575526,
+    "lon" : 0.4567888692282308,
+    "id" : "BASILDN",
+    "name" : "Basildon",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.560298,
+    "lon" : 0.50740074,
+    "id" : "PITSEA",
+    "name" : "Pitsea",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.822083,
+    "lon" : -2.0064725,
+    "id" : "COLWHXN",
+    "name" : "Hixon",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.860638,
+    "lon" : -2.0803404,
+    "id" : "STONSAN",
+    "name" : "Sandon",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

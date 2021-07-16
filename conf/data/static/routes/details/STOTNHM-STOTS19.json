@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.580429,
+    "lon" : -0.071811542,
+    "id" : "STOTNHM",
+    "name" : "South Tottenham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.584081,
+    "lon" : -0.060975327,
+    "id" : "STOTS19",
+    "name" : "South Tottenham Sig S19",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

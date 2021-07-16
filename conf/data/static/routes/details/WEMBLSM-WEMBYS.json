@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.554242,
+    "lon" : -0.28495121,
+    "id" : "WEMBLSM",
+    "name" : "Wembley Stadium",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.554435,
+    "lon" : -0.28950221,
+    "id" : "WEMBYS",
+    "name" : "Wembley Siding",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

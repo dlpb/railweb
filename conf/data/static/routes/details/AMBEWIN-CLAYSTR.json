@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.071856,
+    "lon" : -1.4500984,
+    "id" : "AMBEWIN",
+    "name" : "Wingfield",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.149491,
+    "lon" : -1.4226271,
+    "id" : "CLAYSTR",
+    "name" : "Stretton",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

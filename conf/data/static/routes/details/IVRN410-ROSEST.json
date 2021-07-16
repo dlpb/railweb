@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.481921,
+    "lon" : -4.2180139,
+    "id" : "IVRN410",
+    "name" : "Inverness Signal I410",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 57.48245,
+    "lon" : -4.2247357,
+    "id" : "ROSEST",
+    "name" : "Rose Street",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

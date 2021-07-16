@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.804418,
+    "lon" : -3.910488,
+    "id" : "CLELAND",
+    "name" : "Cleland",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.811215,
+    "lon" : -3.8389742,
+    "id" : "HRTW",
+    "name" : "Hartwood",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

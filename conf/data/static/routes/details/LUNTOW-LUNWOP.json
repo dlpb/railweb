@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.63022,
+    "lon" : -0.17917,
+    "id" : "LUNTOW",
+    "name" : "Totteridge & Whetstone",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.61817173,
+    "lon" : -0.1855788879,
+    "id" : "LUNWOP",
+    "name" : "Woodside Park",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

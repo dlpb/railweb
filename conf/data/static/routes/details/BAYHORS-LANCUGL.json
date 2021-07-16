@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.968481,
+    "lon" : -2.7738162,
+    "id" : "BAYHORS",
+    "name" : "Bay Horse",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.044357,
+    "lon" : -2.8065939,
+    "id" : "LANCUGL",
+    "name" : "Lancaster South Jn Ugl",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

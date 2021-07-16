@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.255192,
+    "lon" : 0.48385228,
+    "id" : "EFARLGH",
+    "name" : "East Farleigh",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.249602,
+    "lon" : 0.42230195,
+    "id" : "WTRNGBY",
+    "name" : "Wateringbury",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

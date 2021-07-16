@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.625232,
+    "lon" : -1.9800313,
+    "id" : "MINTYX",
+    "name" : "Minety Crossing",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.592861,
+    "lon" : -1.8587726,
+    "id" : "PURTON",
+    "name" : "Purton",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

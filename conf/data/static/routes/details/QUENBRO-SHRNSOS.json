@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.416056,
+    "lon" : 0.74973452,
+    "id" : "QUENBRO",
+    "name" : "Queenborough",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.440418,
+    "lon" : 0.75787561,
+    "id" : "SHRNSOS",
+    "name" : "Sheerness-On-Sea",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

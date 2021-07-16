@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 58.513453,
+    "lon" : -3.4520102,
+    "id" : "GRGMASJ",
+    "name" : "Georgemas Junction",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 58.504629,
+    "lon" : -3.4906892,
+    "id" : "GRGMHLC",
+    "name" : "Halkirk",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

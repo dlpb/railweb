@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.296318,
+    "lon" : -1.6630699,
+    "id" : "HATTDGL",
+    "name" : "Hatton Down Goods Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.295132,
+    "lon" : -1.6728589,
+    "id" : "HATTON",
+    "name" : "Hatton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 51.511352,
+    "lon" : -0.077554354,
+    "id" : "FENCHRS",
+    "name" : "London Fenchurch Street",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.7052,
+    "lon" : -0.6113,
+    "id" : "CHSM",
+    "name" : "Chesham Und",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "94 MINUTES"
+}, {
+  "from" : {
+    "lat" : 51.511352,
+    "lon" : -0.077554354,
+    "id" : "FENCHRS",
+    "name" : "London Fenchurch Street",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.7052,
+    "lon" : -0.6113,
+    "id" : "CHSM",
+    "name" : "Chesham Und",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "99 MINUTES"
+} ]

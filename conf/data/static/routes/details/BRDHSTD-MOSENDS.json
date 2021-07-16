@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.799003,
+    "lon" : -3.9961997,
+    "id" : "BRDHSTD",
+    "name" : "Braidhurst Down Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.814576,
+    "lon" : -3.9946191,
+    "id" : "MOSENDS",
+    "name" : "Mossend South Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

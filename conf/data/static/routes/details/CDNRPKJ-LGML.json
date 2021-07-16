@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.061566,
+    "lon" : -1.3440157,
+    "id" : "CDNRPKJ",
+    "name" : "Codnor Park Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.018256,
+    "lon" : -1.3311817,
+    "id" : "LGML",
+    "name" : "Langley Mill",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

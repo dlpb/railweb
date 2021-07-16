@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.773726,
+    "lon" : -1.5259106,
+    "id" : "HNSLSS",
+    "name" : "Hunslet S.S.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.76901,
+    "lon" : -1.5131742,
+    "id" : "STRTDFS",
+    "name" : "Stourton D & F Steels",
+    "type" : "Point"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.616737,
+    "lon" : -2.4556774,
+    "id" : "WEYMTH",
+    "name" : "Weymouth",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.608787,
+    "lon" : -2.44657,
+    "id" : "WEYMTHQ",
+    "name" : "Weymouth Quay (Bus)",
+    "type" : "Location"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "30 MINUTES"
+} ]

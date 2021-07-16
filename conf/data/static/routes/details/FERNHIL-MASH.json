@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.686628,
+    "lon" : -3.3959301,
+    "id" : "FERNHIL",
+    "name" : "Fernhill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.682114,
+    "lon" : -3.377609,
+    "id" : "MASH",
+    "name" : "Mountain Ash",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "45-75"
+} ]

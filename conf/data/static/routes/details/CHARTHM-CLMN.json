@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.257375,
+    "lon" : 1.018964,
+    "id" : "CHARTHM",
+    "name" : "Chartham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.244432,
+    "lon" : 0.9761421,
+    "id" : "CLMN",
+    "name" : "Chilham",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

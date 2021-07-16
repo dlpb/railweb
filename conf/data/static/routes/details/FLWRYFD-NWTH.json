@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.461341,
+    "lon" : -2.0800729,
+    "id" : "FLWRYFD",
+    "name" : "Flowery Field",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.456693,
+    "lon" : -2.0675194,
+    "id" : "NWTH",
+    "name" : "Newton For Hyde",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

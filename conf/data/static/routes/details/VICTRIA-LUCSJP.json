@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.49314,
+    "lon" : -0.14608529,
+    "id" : "VICTRIA",
+    "name" : "London Victoria",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.49971,
+    "lon" : -0.13394,
+    "id" : "LUCSJP",
+    "name" : "St. James's Park",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

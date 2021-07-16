@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.263177,
+    "lon" : -2.4878969,
+    "id" : "NTHWCSG",
+    "name" : "Northwich T.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.264511,
+    "lon" : -2.4781221,
+    "id" : "NTHWLW",
+    "name" : "Lostock Works",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

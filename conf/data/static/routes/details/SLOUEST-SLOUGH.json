@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.516704,
+    "lon" : -0.61234603,
+    "id" : "SLOUEST",
+    "name" : "Slough Estates",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.512062,
+    "lon" : -0.59177858,
+    "id" : "SLOUGH",
+    "name" : "Slough",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.524972,
+    "lon" : -0.21677009,
+    "id" : "LDBRKJ",
+    "name" : "Ladbroke Grove",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.524972,
+    "lon" : -0.24116127,
+    "id" : "OLDOKCW",
+    "name" : "Old Oak Common West",
+    "type" : "Point"
+  },
+  "singleTrack" : "6",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

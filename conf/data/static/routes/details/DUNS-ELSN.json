@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.7717,
+    "lon" : -2.339,
+    "id" : "DUNS",
+    "name" : "Duns",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.6369,
+    "lon" : -2.6758,
+    "id" : "ELSN",
+    "name" : "Earlston",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

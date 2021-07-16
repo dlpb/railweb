@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.572531,
+    "lon" : -0.076740659,
+    "id" : "GRMS100",
+    "name" : "Grimsby Pasture St Sig1000",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.563403,
+    "lon" : -0.086607528,
+    "id" : "GRMSBYT",
+    "name" : "Grimsby Town",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

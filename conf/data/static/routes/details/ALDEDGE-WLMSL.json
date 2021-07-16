@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.303986,
+    "lon" : -2.2365601,
+    "id" : "ALDEDGE",
+    "name" : "Alderley Edge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.326388,
+    "lon" : -2.2260693,
+    "id" : "WLMSL",
+    "name" : "Wilmslow",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

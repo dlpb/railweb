@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.652849,
+    "lon" : -2.7646409,
+    "id" : "SHRWCON",
+    "name" : "Condover",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.671462,
+    "lon" : -2.7543328,
+    "id" : "BSTNGF",
+    "name" : "Bayston Hill G.F.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "70-90"
+} ]

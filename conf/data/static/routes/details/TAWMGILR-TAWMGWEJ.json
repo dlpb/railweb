@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.0,
+    "lon" : -1.6108,
+    "id" : "TAWMGILR",
+    "name" : "Ilford Road",
+    "type" : "Metro"
+  },
+  "to" : {
+    "lat" : 54.9936,
+    "lon" : -1.6099,
+    "id" : "TAWMGWEJ",
+    "name" : "West Jesmond",
+    "type" : "Metro"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Metro",
+  "speed" : "OHLE"
+} ]

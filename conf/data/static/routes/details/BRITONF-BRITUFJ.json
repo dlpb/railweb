@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.63561,
+    "lon" : -3.8210393,
+    "id" : "BRITONF",
+    "name" : "Briton Ferry Yard",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.634007,
+    "lon" : -3.8211485,
+    "id" : "BRITUFJ",
+    "name" : "Briton Ferry U.F.L. Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

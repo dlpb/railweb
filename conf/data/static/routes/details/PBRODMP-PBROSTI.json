@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.681698,
+    "lon" : 0.9404396,
+    "id" : "PBRODMP",
+    "name" : "Dereham Market Place",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.652893,
+    "lon" : 0.684285,
+    "id" : "PBROSTI",
+    "name" : "Swaffham (Coach)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.311182,
+    "lon" : -1.1215172,
+    "id" : "WORK621",
+    "name" : "Worksop Signal Wp621",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.318311,
+    "lon" : -1.1439331,
+    "id" : "WORKSPS",
+    "name" : "Worksop Down Reception",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.442105,
+    "lon" : -2.8375166,
+    "id" : "CRAVE16",
+    "name" : "Craven Arms Signal Ca16",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.442105,
+    "lon" : -2.8375166,
+    "id" : "CRAVSDG",
+    "name" : "Craven Arms Up Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

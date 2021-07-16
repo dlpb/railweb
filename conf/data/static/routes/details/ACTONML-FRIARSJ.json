@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.516961,
+    "lon" : -0.26786008,
+    "id" : "ACTONML",
+    "name" : "Acton Main Line",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.520825,
+    "lon" : -0.25554787,
+    "id" : "FRIARSJ",
+    "name" : "Friars Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "6",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

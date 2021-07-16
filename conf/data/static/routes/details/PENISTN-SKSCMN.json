@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.525796,
+    "lon" : -1.6227936,
+    "id" : "PENISTN",
+    "name" : "Penistone",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.535292,
+    "lon" : -1.5630824,
+    "id" : "SKSCMN",
+    "name" : "Silkstone Common",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

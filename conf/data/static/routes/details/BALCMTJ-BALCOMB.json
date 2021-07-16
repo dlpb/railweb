@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.082732,
+    "lon" : -0.16072681,
+    "id" : "BALCMTJ",
+    "name" : "Balcombe Tunnel Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.055929,
+    "lon" : -0.13721699,
+    "id" : "BALCOMB",
+    "name" : "Balcombe",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.162609,
+    "lon" : -3.0551673,
+    "id" : "BCKY",
+    "name" : "Buckley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.185079,
+    "lon" : -3.0319693,
+    "id" : "HAWARDN",
+    "name" : "Hawarden",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

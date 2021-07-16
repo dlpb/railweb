@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.68021,
+    "lon" : -0.62738704,
+    "id" : "AMERMWD",
+    "name" : "Mantles Wood",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.674011,
+    "lon" : -0.60725493,
+    "id" : "AMERSHM",
+    "name" : "Amersham",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "750V DC 4th Rail",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

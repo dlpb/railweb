@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.535155,
+    "lon" : -1.3712133,
+    "id" : "HINCKLY",
+    "name" : "Hinckley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.52232,
+    "lon" : -1.4455309,
+    "id" : "NNTNMYJ",
+    "name" : "Nuneaton Midland Yard Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

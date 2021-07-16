@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.79258,
+    "lon" : -1.5557393,
+    "id" : "LEEDSWJ",
+    "name" : "Leeds West Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.791929,
+    "lon" : -1.5594652,
+    "id" : "WHRDJN",
+    "name" : "Whitehall Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "6",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

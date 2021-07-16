@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.932347,
+    "lon" : -1.202174,
+    "id" : "NTL1UNB",
+    "name" : "University Boulevard",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 52.927943,
+    "lon" : -1.20871,
+    "id" : "NTL1MIS",
+    "name" : "Middle Street",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.663221,
+    "lon" : -1.4591714,
+    "id" : "CRFTNWJ",
+    "name" : "Crofton West Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.65172,
+    "lon" : -1.4309509,
+    "id" : "HAREPKJ",
+    "name" : "Hare Park Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

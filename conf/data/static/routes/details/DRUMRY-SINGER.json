@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.904642,
+    "lon" : -4.3851553,
+    "id" : "DRUMRY",
+    "name" : "Drumry",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.907356,
+    "lon" : -4.4050025,
+    "id" : "SINGER",
+    "name" : "Singer",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

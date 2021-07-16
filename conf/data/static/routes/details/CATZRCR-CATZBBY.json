@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.9606,
+    "lon" : -7.7945,
+    "id" : "CATZRCR",
+    "name" : "Roscrea     (Cie",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.899444,
+    "lon" : -7.6025,
+    "id" : "CATZBBY",
+    "name" : "Ballybrophy (Cie",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

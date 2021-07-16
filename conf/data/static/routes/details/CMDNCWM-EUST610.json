@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.54176,
+    "lon" : -0.15335386,
+    "id" : "CMDNCWM",
+    "name" : "Camden W.M.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.537386,
+    "lon" : -0.1468402,
+    "id" : "EUST610",
+    "name" : "Euston Sig Wm610",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,10 @@
+[ {
+  "id" : "CLPHMJ1",
+  "crp" : "",
+  "route" : "Wessex",
+  "changeTime" : "Set(Some(ChangeTime(CLJ,SN,SN,5,(Clapham Junction))))",
+  "interchangeType" : "9 - Subsidiary TIPLOC for station",
+  "county" : "London",
+  "district" : "Greater London",
+  "postcode" : "\"SW11 1SP"
+} ]

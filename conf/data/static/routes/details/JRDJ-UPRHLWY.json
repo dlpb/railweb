@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.558587,
+    "lon" : -0.13814498,
+    "id" : "JRDJ",
+    "name" : "Junction Road Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.563339,
+    "lon" : -0.12988571,
+    "id" : "UPRHLWY",
+    "name" : "Upper Holloway",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

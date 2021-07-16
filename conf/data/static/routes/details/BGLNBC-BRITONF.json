@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.62131,
+    "lon" : -3.8228936,
+    "id" : "BGLNBC",
+    "name" : "Baglan Bay (Colas)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.63561,
+    "lon" : -3.8210393,
+    "id" : "BRITONF",
+    "name" : "Briton Ferry Yard",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

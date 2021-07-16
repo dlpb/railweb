@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.153151,
+    "lon" : 0.85920816,
+    "id" : "ASHF119",
+    "name" : "Ashford Signal Ad2119",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.146814,
+    "lon" : 0.86568016,
+    "id" : "ASHFKY",
+    "name" : "Ashford International",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

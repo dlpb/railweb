@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.830655,
+    "lon" : -0.8593969,
+    "id" : "AYLSPWY",
+    "name" : "Aylesbury Vale Parkway",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.863719,
+    "lon" : -0.92654166,
+    "id" : "QUNTRD",
+    "name" : "Quainton Road",
+    "type" : "Location"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

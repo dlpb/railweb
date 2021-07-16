@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.77283,
+    "lon" : -1.522264,
+    "id" : "HNSLSOJ",
+    "name" : "Hunslet South Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.774762,
+    "lon" : -1.5266424,
+    "id" : "LEEDFHH",
+    "name" : "Leeds Balm Rd Loco (Fhh)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

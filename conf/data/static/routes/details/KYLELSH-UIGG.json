@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.280595,
+    "lon" : -5.7139122,
+    "id" : "KYLELSH",
+    "name" : "Kyle Of Lochalsh",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.020536,
+    "lon" : -4.9773655,
+    "id" : "UIGG",
+    "name" : "Uig Bus",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

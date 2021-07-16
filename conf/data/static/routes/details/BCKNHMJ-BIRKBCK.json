@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.411303,
+    "lon" : -0.026894082,
+    "id" : "BCKNHMJ",
+    "name" : "Beckenham Junction",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.4034,
+    "lon" : -0.056550293,
+    "id" : "BIRKBCK",
+    "name" : "Birkbeck",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

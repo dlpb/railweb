@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.2439,
+    "lon" : -0.776,
+    "id" : "YORKPCK",
+    "name" : "Pickering Bus",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.48460825807038,
+    "lon" : -0.6154029094098699,
+    "id" : "YORKWHT",
+    "name" : "Whitby Bus",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

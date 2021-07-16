@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.550767,
+    "lon" : -0.25117185,
+    "id" : "NEAS34",
+    "name" : "Neasden South Jn Sig Me34",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.554242,
+    "lon" : -0.28495121,
+    "id" : "WEMBLSM",
+    "name" : "Wembley Stadium",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

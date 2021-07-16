@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.4914,
+    "lon" : -0.69645,
+    "id" : "PBROCOR",
+    "name" : "Corby Pboro Bus",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.39312,
+    "lon" : -0.72292,
+    "id" : "PBROKET",
+    "name" : "Kettering Pb Bus",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.471357,
+    "lon" : -2.1444946,
+    "id" : "FRFD",
+    "name" : "Fairfield",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.474545,
+    "lon" : -2.1132433,
+    "id" : "GIDB",
+    "name" : "Guide Bridge",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

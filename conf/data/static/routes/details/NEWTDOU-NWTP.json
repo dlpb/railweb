@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.51135,
+    "lon" : -3.3677857,
+    "id" : "NEWTDOU",
+    "name" : "Dought's Level Crossing",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.512287,
+    "lon" : -3.3112583,
+    "id" : "NWTP",
+    "name" : "Newtown (Powys)",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

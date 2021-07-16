@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.92087,
+    "lon" : 1.812274,
+    "id" : "CALAFT",
+    "name" : "Calais Frethun (Tunnel)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.088329,
+    "lon" : 1.1293926,
+    "id" : "CHUNCTR",
+    "name" : "Eurotunnel Boundary (Ctrl)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

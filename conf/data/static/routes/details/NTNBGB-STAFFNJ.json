@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.839529,
+    "lon" : -2.1746885,
+    "id" : "NTNBGB",
+    "name" : "Great Bridgeford",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.808832,
+    "lon" : -2.1309505,
+    "id" : "STAFFNJ",
+    "name" : "Stafford North Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

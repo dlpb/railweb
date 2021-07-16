@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.474545,
+    "lon" : -2.1132433,
+    "id" : "GIDB",
+    "name" : "Guide Bridge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.46961,
+    "lon" : -2.0927577,
+    "id" : "GIDBURL",
+    "name" : "Guide Bridge Up & Down Pl",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

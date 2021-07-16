@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.253618,
+    "lon" : 0.71253593,
+    "id" : "BSTED19",
+    "name" : "Bury St Edmunds Sig By19",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.253618,
+    "lon" : 0.71253593,
+    "id" : "BSTEDMS",
+    "name" : "Bury St Edmunds",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

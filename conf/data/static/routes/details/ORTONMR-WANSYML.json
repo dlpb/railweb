@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.562926,
+    "lon" : -0.27374531,
+    "id" : "ORTONMR",
+    "name" : "Orton Mere",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.560601,
+    "lon" : -0.41010706,
+    "id" : "WANSYML",
+    "name" : "Yarwell Mill (Nene Valley)",
+    "type" : "Point"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

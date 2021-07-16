@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.818833,
+    "lon" : -4.1334249,
+    "id" : "NWTL",
+    "name" : "Newton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.818023,
+    "lon" : -4.146885,
+    "id" : "NWTLWJ",
+    "name" : "Newton West Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "120-125"
+} ]

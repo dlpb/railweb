@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.819855,
+    "lon" : -1.7685786,
+    "id" : "FRZNGHL",
+    "name" : "Frizinghall",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.833363,
+    "lon" : -1.7725916,
+    "id" : "SHPY",
+    "name" : "Shipley",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

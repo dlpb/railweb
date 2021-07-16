@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.435351,
+    "lon" : 0.12581874,
+    "id" : "ALBNYPK",
+    "name" : "Albany Park",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.433969,
+    "lon" : 0.10420204,
+    "id" : "SIDCUP",
+    "name" : "Sidcup",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

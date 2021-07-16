@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.81705,
+    "lon" : -4.0246899,
+    "id" : "BLSHL",
+    "name" : "Bellshill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.817791,
+    "lon" : -4.0046641,
+    "id" : "MOSENDW",
+    "name" : "Mossend West Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

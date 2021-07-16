@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.48301,
+    "lon" : -2.7540397,
+    "id" : "PTBRCAL",
+    "name" : "Portbury Coal Terminal Fhh",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.483843,
+    "lon" : -2.6933663,
+    "id" : "PTBRLOP",
+    "name" : "Portbury Dock Stop Board",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

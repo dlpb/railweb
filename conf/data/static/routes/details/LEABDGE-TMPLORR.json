@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.565867,
+    "lon" : -0.035302274,
+    "id" : "LEABDGE",
+    "name" : "Lea Bridge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.558288,
+    "lon" : -0.020986018,
+    "id" : "TMPLORR",
+    "name" : "Orient Way Reception Road",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : ""
+} ]

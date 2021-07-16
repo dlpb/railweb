@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.8404,
+    "lon" : -3.0468,
+    "id" : "GOREBRG",
+    "name" : "Gorebridge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.692097,
+    "lon" : -2.8594196,
+    "id" : "STOW",
+    "name" : "Stow",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

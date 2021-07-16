@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.77283,
+    "lon" : -1.522264,
+    "id" : "HNSLSOJ",
+    "name" : "Hunslet South Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.767088,
+    "lon" : -1.5004984,
+    "id" : "STRTNDS",
+    "name" : "Stourton Down Siding",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

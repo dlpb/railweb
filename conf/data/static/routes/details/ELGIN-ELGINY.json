@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.642777,
+    "lon" : -3.3108726,
+    "id" : "ELGIN",
+    "name" : "Elgin",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 57.643162,
+    "lon" : -3.3058271,
+    "id" : "ELGINY",
+    "name" : "Elgin Yard",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

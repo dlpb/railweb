@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.613945,
+    "lon" : -4.1237027,
+    "id" : "TONFNAU",
+    "name" : "Tonfanau",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.585361,
+    "lon" : -4.0934013,
+    "id" : "TYWYN",
+    "name" : "Tywyn",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

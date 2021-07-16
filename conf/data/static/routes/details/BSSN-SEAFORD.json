@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.77991,
+    "lon" : 0.082618974,
+    "id" : "BSSN",
+    "name" : "Bishopstone",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.77294,
+    "lon" : 0.099670014,
+    "id" : "SEAFORD",
+    "name" : "Seaford",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

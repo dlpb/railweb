@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.119294,
+    "lon" : 0.056779288,
+    "id" : "FOXTON",
+    "name" : "Foxton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.157018,
+    "lon" : 0.13499379,
+    "id" : "SHPRTBJ",
+    "name" : "Shepreth Branch Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

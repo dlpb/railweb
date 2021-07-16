@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.575484,
+    "lon" : -0.25089398,
+    "id" : "PBRO",
+    "name" : "Peterborough",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.569148,
+    "lon" : -0.24618819,
+    "id" : "PBRO466",
+    "name" : "Peterborough Signal 466",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

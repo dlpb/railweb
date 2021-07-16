@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.7994,
+    "lon" : -0.071751004,
+    "id" : "HERTFDE",
+    "name" : "Hertford East",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.808031,
+    "lon" : -0.029314974,
+    "id" : "WARE",
+    "name" : "Ware",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

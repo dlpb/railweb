@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.651924,
+    "lon" : -3.6696778,
+    "id" : "BLLINUG",
+    "name" : "Ballinluig",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.702415,
+    "lon" : -3.7358277,
+    "id" : "PTLCHRY",
+    "name" : "Pitlochry",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-100"
+} ]

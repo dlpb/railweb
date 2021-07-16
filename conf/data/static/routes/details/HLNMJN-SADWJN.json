@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.524283,
+    "lon" : -2.689469,
+    "id" : "HLNMJN",
+    "name" : "Hallen Marsh Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.504561,
+    "lon" : -2.7007407,
+    "id" : "SADWJN",
+    "name" : "St Andrews Jn (Avon)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

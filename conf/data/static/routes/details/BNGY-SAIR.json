@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.848603,
+    "lon" : -1.8370487,
+    "id" : "BNGY",
+    "name" : "Bingley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.838483,
+    "lon" : -1.790602,
+    "id" : "SAIR",
+    "name" : "Saltaire",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

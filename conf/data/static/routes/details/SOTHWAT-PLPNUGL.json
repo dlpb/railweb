@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.800358,
+    "lon" : -2.8592733,
+    "id" : "SOTHWAT",
+    "name" : "Southwaite",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.728095,
+    "lon" : -2.7988302,
+    "id" : "PLPNUGL",
+    "name" : "Plumpton U.G.L.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

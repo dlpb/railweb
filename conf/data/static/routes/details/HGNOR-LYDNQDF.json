@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.73625,
+    "lon" : -2.53939,
+    "id" : "HGNOR",
+    "name" : "Norchard",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 51.748,
+    "lon" : -2.544,
+    "id" : "LYDNQDF",
+    "name" : "Dean Forest Railway",
+    "type" : "Point"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

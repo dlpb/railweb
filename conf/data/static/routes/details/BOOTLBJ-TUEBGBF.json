@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.404599,
+    "lon" : -2.9284014,
+    "id" : "BOOTLBJ",
+    "name" : "Bootle Branch Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.404049,
+    "lon" : -2.9355644,
+    "id" : "TUEBGBF",
+    "name" : "Tuebrook Sdgs Gbrf",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

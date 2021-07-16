@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.372744,
+    "lon" : 1.1228248,
+    "id" : "DISS",
+    "name" : "Diss",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.329502,
+    "lon" : 1.0800828,
+    "id" : "MELLIS",
+    "name" : "Mellis",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

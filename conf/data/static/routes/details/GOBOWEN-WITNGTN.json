@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.892792,
+    "lon" : -3.0363824,
+    "id" : "GOBOWEN",
+    "name" : "Gobowen",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.872979,
+    "lon" : -3.0102214,
+    "id" : "WITNGTN",
+    "name" : "Whittington",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

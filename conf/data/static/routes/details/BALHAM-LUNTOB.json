@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.44282,
+    "lon" : -0.15137592,
+    "id" : "BALHAM",
+    "name" : "Balham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.42780008,
+    "lon" : -0.167910811,
+    "id" : "LUNTOB",
+    "name" : "Tooting Broadway",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

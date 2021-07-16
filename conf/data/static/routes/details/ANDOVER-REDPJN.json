@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.211441,
+    "lon" : -1.4930644,
+    "id" : "ANDOVER",
+    "name" : "Andover",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.204366,
+    "lon" : -1.5255629,
+    "id" : "REDPJN",
+    "name" : "Red Post Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

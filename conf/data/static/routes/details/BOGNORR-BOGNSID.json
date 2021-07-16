@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.787496,
+    "lon" : -0.67572613,
+    "id" : "BOGNORR",
+    "name" : "Bognor Regis",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.787496,
+    "lon" : -0.67572613,
+    "id" : "BOGNSID",
+    "name" : "Bognor Regis Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

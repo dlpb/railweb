@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 45.615766,
+    "lon" : 6.772674,
+    "id" : "BORGSTM",
+    "name" : "Bourg St Maurice",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 50.901561,
+    "lon" : 1.811651,
+    "id" : "CALAFGV",
+    "name" : "Calais Frethun",
+    "type" : "Location"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

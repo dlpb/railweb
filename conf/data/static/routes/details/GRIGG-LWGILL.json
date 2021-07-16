@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.359067,
+    "lon" : -2.6161788,
+    "id" : "GRIGG",
+    "name" : "Grayrigg",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.372922,
+    "lon" : -2.5824286,
+    "id" : "LWGILL",
+    "name" : "Lowgill",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

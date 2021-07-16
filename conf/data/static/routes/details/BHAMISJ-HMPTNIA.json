@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.446359,
+    "lon" : -1.7198961,
+    "id" : "BHAMISJ",
+    "name" : "Birmingham Inter South Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.428356,
+    "lon" : -1.699391,
+    "id" : "HMPTNIA",
+    "name" : "Hampton-In-Arden",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

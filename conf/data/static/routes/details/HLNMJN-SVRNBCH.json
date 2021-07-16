@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.524283,
+    "lon" : -2.689469,
+    "id" : "HLNMJN",
+    "name" : "Hallen Marsh Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.56002508745658,
+    "lon" : -2.664476705132391,
+    "id" : "SVRNBCH",
+    "name" : "Severn Beach",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "15-50"
+} ]

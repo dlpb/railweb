@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.29684,
+    "lon" : -6.13244,
+    "id" : "DUBLINF",
+    "name" : "Dublin Fypt I.F",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.30713,
+    "lon" : -4.6311635,
+    "id" : "HLYH",
+    "name" : "Holyhead",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

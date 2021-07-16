@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.355968,
+    "lon" : -2.7651971,
+    "id" : "DITTCFL",
+    "name" : "Ditton Reception (Fl)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.35627,
+    "lon" : -2.7671858,
+    "id" : "DITTON",
+    "name" : "Ditton East Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

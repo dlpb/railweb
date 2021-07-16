@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.592011,
+    "lon" : -0.33431733,
+    "id" : "HROW307",
+    "name" : "Harrow D.C. Turnback Ws307",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.59216686045377,
+    "lon" : -0.3345714670242,
+    "id" : "HROWDC",
+    "name" : "Harrow & Wealdstone",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

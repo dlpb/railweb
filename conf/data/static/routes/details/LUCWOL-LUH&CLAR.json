@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.509797,
+    "lon" : -0.224167,
+    "id" : "LUCWOL",
+    "name" : "Wood Lane",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.513125,
+    "lon" : -0.218428,
+    "id" : "LUH&CLAR",
+    "name" : "Latimer Road",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.812518,
+    "lon" : -3.9734628,
+    "id" : "HOLYTWN",
+    "name" : "Holytown",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.816992,
+    "lon" : -3.9874483,
+    "id" : "MOSENDE",
+    "name" : "Mossend East Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

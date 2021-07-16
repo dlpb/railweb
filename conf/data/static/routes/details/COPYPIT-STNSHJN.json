@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.742724,
+    "lon" : -2.1760374,
+    "id" : "COPYPIT",
+    "name" : "Copy Pit",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.718781,
+    "lon" : -2.0950037,
+    "id" : "STNSHJN",
+    "name" : "Stansfield Hall Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

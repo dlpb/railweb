@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.320026,
+    "lon" : -5.691105,
+    "id" : "DUIRNSH",
+    "name" : "Duirinish",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 57.280595,
+    "lon" : -5.7139122,
+    "id" : "KYLELSH",
+    "name" : "Kyle Of Lochalsh",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

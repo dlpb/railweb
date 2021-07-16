@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.399179,
+    "lon" : -1.5483984,
+    "id" : "CANLEY",
+    "name" : "Canley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.401487,
+    "lon" : -1.5201692,
+    "id" : "COVNNJN",
+    "name" : "Coventry North Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

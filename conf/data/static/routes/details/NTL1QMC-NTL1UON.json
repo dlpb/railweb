@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.942577,
+    "lon" : -1.183767,
+    "id" : "NTL1QMC",
+    "name" : "Queen's Medical Centre",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 52.937402,
+    "lon" : -1.188184,
+    "id" : "NTL1UON",
+    "name" : "University Of Nottingham",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

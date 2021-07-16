@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.277411,
+    "lon" : -1.8565469,
+    "id" : "GTRCKSJ",
+    "name" : "Great Rocks Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.286399,
+    "lon" : -1.8630868,
+    "id" : "PEAKFRS",
+    "name" : "Peak Forest South S.S.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

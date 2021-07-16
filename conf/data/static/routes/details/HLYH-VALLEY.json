@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.30713,
+    "lon" : -4.6311635,
+    "id" : "HLYH",
+    "name" : "Holyhead",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.281568,
+    "lon" : -4.5634758,
+    "id" : "VALLEY",
+    "name" : "Valley",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

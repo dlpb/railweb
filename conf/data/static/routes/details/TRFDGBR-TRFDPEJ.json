@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.461664,
+    "lon" : -2.3002585,
+    "id" : "TRFDGBR",
+    "name" : "Trafford Pk Recep Gbrf",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.462628,
+    "lon" : -2.2886074,
+    "id" : "TRFDPEJ",
+    "name" : "Trafford Park East Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

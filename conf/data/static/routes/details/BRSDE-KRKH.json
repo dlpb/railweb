@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.816927,
+    "lon" : -4.2027885,
+    "id" : "BRSDE",
+    "name" : "Burnside",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.814157,
+    "lon" : -4.1679961,
+    "id" : "KRKH",
+    "name" : "Kirkhill",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.487054,
+    "lon" : -0.14734043,
+    "id" : "VICTGCS",
+    "name" : "Victoria Grosvenor Shed",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.489046,
+    "lon" : -0.14821037,
+    "id" : "VICTGEE",
+    "name" : "Victoria Grosvenor Ent-Ext",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

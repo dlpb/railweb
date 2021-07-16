@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.319821,
+    "lon" : -2.2141335,
+    "id" : "TRWBRDG",
+    "name" : "Trowbridge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.274072,
+    "lon" : -2.1928904,
+    "id" : "HWKRJN",
+    "name" : "Hawkeridge Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

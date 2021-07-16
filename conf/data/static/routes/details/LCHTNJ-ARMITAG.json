@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.687794,
+    "lon" : -1.8019557,
+    "id" : "LCHTNJ",
+    "name" : "Lichfield North Jn (Ll)",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.745633,
+    "lon" : -1.8830792,
+    "id" : "ARMITAG",
+    "name" : "Armitage Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

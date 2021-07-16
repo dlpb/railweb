@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.628985,
+    "lon" : 0.41755137,
+    "id" : "BILERCY",
+    "name" : "Billericay",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.614072,
+    "lon" : 0.52192045,
+    "id" : "WIKFORD",
+    "name" : "Wickford",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

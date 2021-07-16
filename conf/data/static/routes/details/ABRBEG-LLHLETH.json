@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.711101,
+    "lon" : -3.1450831,
+    "id" : "ABRBEG",
+    "name" : "Aberbeeg",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.699893,
+    "lon" : -3.1335278,
+    "id" : "LLHLETH",
+    "name" : "Llanhilleth",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "30-50"
+} ]

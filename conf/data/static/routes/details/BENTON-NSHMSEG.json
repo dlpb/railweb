@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.013658,
+    "lon" : -1.5597717,
+    "id" : "BENTON",
+    "name" : "Benton Nth Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.068991,
+    "lon" : -1.5440694,
+    "id" : "NSHMSEG",
+    "name" : "Seghill North",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

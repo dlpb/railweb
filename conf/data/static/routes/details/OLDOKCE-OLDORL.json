@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.525489,
+    "lon" : -0.23667247,
+    "id" : "OLDOKCE",
+    "name" : "Old Oak Common East",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.525503,
+    "lon" : -0.23762335,
+    "id" : "OLDORL",
+    "name" : "Old Oak Common Recp Line",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

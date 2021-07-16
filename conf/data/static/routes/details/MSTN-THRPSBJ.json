@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.523275,
+    "lon" : -2.1710675,
+    "id" : "MSTN",
+    "name" : "Moston",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.502746,
+    "lon" : -2.1937346,
+    "id" : "THRPSBJ",
+    "name" : "Thorpes Bridge Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

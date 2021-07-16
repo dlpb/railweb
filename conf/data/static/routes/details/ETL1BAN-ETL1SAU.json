@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.928718,
+    "lon" : -3.293474,
+    "id" : "ETL1BAN",
+    "name" : "Bankhead",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 55.932484,
+    "lon" : -3.274907,
+    "id" : "ETL1SAU",
+    "name" : "Saughton",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

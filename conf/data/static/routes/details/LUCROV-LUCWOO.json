@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.61691,
+    "lon" : 0.04264,
+    "id" : "LUCROV",
+    "name" : "Roding Valley",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.60582,
+    "lon" : 0.03328,
+    "id" : "LUCWOO",
+    "name" : "Woodford",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

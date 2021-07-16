@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.024544,
+    "lon" : -3.1399439,
+    "id" : "NTNFTZN",
+    "name" : "Norton Fitzwarren",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.024758,
+    "lon" : -3.1234088,
+    "id" : "TAUNGDS",
+    "name" : "Taunton Gds Recp",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

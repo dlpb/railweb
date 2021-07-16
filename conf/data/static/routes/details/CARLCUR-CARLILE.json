@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.880687,
+    "lon" : -2.9374814,
+    "id" : "CARLCUR",
+    "name" : "Currock Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.891278,
+    "lon" : -2.9345781,
+    "id" : "CARLILE",
+    "name" : "Carlisle",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

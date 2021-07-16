@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.097346,
+    "lon" : -4.7821183,
+    "id" : "BRRHL",
+    "name" : "Barrhill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.143699,
+    "lon" : -4.8315348,
+    "id" : "PINWHRY",
+    "name" : "Pinwherry",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

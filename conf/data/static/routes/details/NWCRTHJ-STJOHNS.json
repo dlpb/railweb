@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.470251,
+    "lon" : -0.025302123,
+    "id" : "NWCRTHJ",
+    "name" : "Tanners Hill Junction (Nx)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.469201,
+    "lon" : -0.02222302,
+    "id" : "STJOHNS",
+    "name" : "St Johns",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

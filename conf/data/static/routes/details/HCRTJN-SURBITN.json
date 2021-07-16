@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.3828,
+    "lon" : -0.330887,
+    "id" : "HCRTJN",
+    "name" : "Hampton Court Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.392422,
+    "lon" : -0.30397425,
+    "id" : "SURBITN",
+    "name" : "Surbiton",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

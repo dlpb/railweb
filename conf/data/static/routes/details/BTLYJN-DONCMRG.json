@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.540131,
+    "lon" : -1.1257491,
+    "id" : "BTLYJN",
+    "name" : "Bentley Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.526938,
+    "lon" : -1.1397633,
+    "id" : "DONCMRG",
+    "name" : "Donc. Marshgate Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

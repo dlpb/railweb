@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.659994,
+    "lon" : -2.6717131,
+    "id" : "EUXT",
+    "name" : "Euxton Balshaw Lane",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.678728,
+    "lon" : -2.6777187,
+    "id" : "EUXTONJ",
+    "name" : "Euxton Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

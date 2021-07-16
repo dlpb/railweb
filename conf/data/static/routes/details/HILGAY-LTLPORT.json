@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.535668,
+    "lon" : 0.34049991,
+    "id" : "HILGAY",
+    "name" : "Hilgay Ahb",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.461915,
+    "lon" : 0.31635823,
+    "id" : "LTLPORT",
+    "name" : "Littleport",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

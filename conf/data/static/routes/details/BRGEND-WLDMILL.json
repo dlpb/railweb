@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.506795,
+    "lon" : -3.575039,
+    "id" : "BRGEND",
+    "name" : "Bridgend",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.519827,
+    "lon" : -3.5802595,
+    "id" : "WLDMILL",
+    "name" : "Wildmill",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.891891,
+    "lon" : -1.1661447,
+    "id" : "COLTONJ",
+    "name" : "Colton Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.856275,
+    "lon" : -1.1771149,
+    "id" : "HAMBRYV",
+    "name" : "Ryther Viaducts",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

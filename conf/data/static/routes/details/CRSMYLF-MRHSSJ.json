@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.833615,
+    "lon" : -4.2851284,
+    "id" : "CRSMYLF",
+    "name" : "Crossmyloof",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.837497,
+    "lon" : -4.2740007,
+    "id" : "MRHSSJ",
+    "name" : "Muirhouse South Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

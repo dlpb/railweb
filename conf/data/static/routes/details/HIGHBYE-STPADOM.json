@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 51.546175290908955,
+    "lon" : -0.103763713575122,
+    "id" : "HIGHBYE",
+    "name" : "Highbury & Islington",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.531223,
+    "lon" : -0.12684799,
+    "id" : "STPADOM",
+    "name" : "St Pancras Intl (Domestic)",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "17 MINUTES"
+}, {
+  "from" : {
+    "lat" : 51.546175290908955,
+    "lon" : -0.103763713575122,
+    "id" : "HIGHBYE",
+    "name" : "Highbury & Islington",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.531223,
+    "lon" : -0.12684799,
+    "id" : "STPADOM",
+    "name" : "St Pancras Intl (Domestic)",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "12 MINUTES"
+} ]

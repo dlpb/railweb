@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.133119,
+    "lon" : -0.47728212,
+    "id" : "BEDFDCS",
+    "name" : "Bedford C S",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.135628,
+    "lon" : -0.47940292,
+    "id" : "BEDFDM",
+    "name" : "Bedford",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.010883,
+    "lon" : -4.9860499,
+    "id" : "FGDHBR",
+    "name" : "Fishguard Harbour",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.013333,
+    "lon" : -4.9848431,
+    "id" : "FGDHGWK",
+    "name" : "Fishguard & Goodwick",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

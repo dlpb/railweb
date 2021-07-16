@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.575484,
+    "lon" : -0.25089398,
+    "id" : "PBRO",
+    "name" : "Peterborough",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.583461,
+    "lon" : -0.25534404,
+    "id" : "PBROE44",
+    "name" : "Peterboro Eastfld Sig E44",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

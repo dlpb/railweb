@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.479084,
+    "lon" : -0.053939529,
+    "id" : "OLDKRDJ",
+    "name" : "Old Kent Road Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.48764,
+    "lon" : -0.054194601,
+    "id" : "SBRMNDS",
+    "name" : "South Bermondsey",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

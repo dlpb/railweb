@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.222713,
+    "lon" : -4.1358714,
+    "id" : "BANGOR",
+    "name" : "Bangor (Gwynedd)",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.240386,
+    "lon" : -4.017354,
+    "id" : "LANFABR",
+    "name" : "Aber Ground Frame",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

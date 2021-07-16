@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 51.444949,
+    "lon" : -0.026034114,
+    "id" : "CATFORD",
+    "name" : "Catford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.444911,
+    "lon" : -0.024884467,
+    "id" : "CATFBDG",
+    "name" : "Catford Bridge",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "6 MINUTES"
+}, {
+  "from" : {
+    "lat" : 51.444949,
+    "lon" : -0.026034114,
+    "id" : "CATFORD",
+    "name" : "Catford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.444911,
+    "lon" : -0.024884467,
+    "id" : "CATFBDG",
+    "name" : "Catford Bridge",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : " 6"
+} ]

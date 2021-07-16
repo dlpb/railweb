@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.618828,
+    "lon" : -0.11005409,
+    "id" : "PALMRSG",
+    "name" : "Palmers Green",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.63396,
+    "lon" : -0.10098613,
+    "id" : "WNMHILL",
+    "name" : "Winchmore Hill",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

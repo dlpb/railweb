@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.269418,
+    "lon" : -1.081767,
+    "id" : "BSNG109",
+    "name" : "Basingstoke Signal B5109",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.268626,
+    "lon" : -1.0873444,
+    "id" : "BSNGSTK",
+    "name" : "Basingstoke",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

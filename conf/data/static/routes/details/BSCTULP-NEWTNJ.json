@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.559333,
+    "lon" : -1.9838637,
+    "id" : "BSCTULP",
+    "name" : "Bescot Up Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.553929,
+    "lon" : -1.9776563,
+    "id" : "NEWTNJ",
+    "name" : "Newton Jn. (West Midlands)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

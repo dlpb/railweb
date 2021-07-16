@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.53051,
+    "lon" : -3.0572041,
+    "id" : "MSHFILD",
+    "name" : "Marshfield",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.516286,
+    "lon" : -3.0875863,
+    "id" : "WENTLOG",
+    "name" : "Wentloog (Freightliners)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

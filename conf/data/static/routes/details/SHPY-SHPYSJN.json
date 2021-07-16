@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.833363,
+    "lon" : -1.7725916,
+    "id" : "SHPY",
+    "name" : "Shipley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.831147,
+    "lon" : -1.7747003,
+    "id" : "SHPYSJN",
+    "name" : "Shipley South Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

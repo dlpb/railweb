@@ -1,0 +1,10 @@
+[ {
+  "id" : "PRST",
+  "crp" : "Preston and Ormskirk",
+  "route" : "London North Western",
+  "changeTime" : "Set(None)",
+  "interchangeType" : "3 - Large interchange point",
+  "county" : "North West",
+  "district" : "Lancashire",
+  "postcode" : "\"PR1 8AP"
+} ]

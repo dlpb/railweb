@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.644831,
+    "lon" : -2.3006589,
+    "id" : "COSFDGL",
+    "name" : "Cosford Down Goods Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.644831,
+    "lon" : -2.3006589,
+    "id" : "COSFORD",
+    "name" : "Cosford",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

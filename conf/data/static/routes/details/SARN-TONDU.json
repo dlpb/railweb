@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.538745,
+    "lon" : -3.5896964,
+    "id" : "SARN",
+    "name" : "Sarn",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.547554,
+    "lon" : -3.5951956,
+    "id" : "TONDU",
+    "name" : "Tondu",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

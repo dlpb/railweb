@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.603119,
+    "lon" : -4.041379,
+    "id" : "HWTYN",
+    "name" : "Tynllwynhen",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.607865,
+    "lon" : -4.026831,
+    "id" : "HWBRY",
+    "name" : "Brynglas",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

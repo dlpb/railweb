@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.389538,
+    "lon" : -2.2712869,
+    "id" : "WTCMTLK",
+    "name" : "Wythnshw Tc Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.3881,
+    "lon" : -2.2566,
+    "id" : "BENMTLK",
+    "name" : "Benchill Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

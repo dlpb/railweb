@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.490069,
+    "lon" : 0.019705377,
+    "id" : "ANGRGBR",
+    "name" : "Angerstein Wharf Gbrf",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.486861,
+    "lon" : 0.019549215,
+    "id" : "ANGRSTW",
+    "name" : "Angerstein Wharf",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

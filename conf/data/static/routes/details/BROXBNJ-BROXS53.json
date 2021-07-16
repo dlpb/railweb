@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.762618,
+    "lon" : 0.005356042,
+    "id" : "BROXBNJ",
+    "name" : "Broxbourne Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.74397,
+    "lon" : -0.012809201,
+    "id" : "BROXS53",
+    "name" : "Broxbourne Sig L5331",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

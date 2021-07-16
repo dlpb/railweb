@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.385411,
+    "lon" : -2.5974243,
+    "id" : "ARPLEYS",
+    "name" : "Arpley Sidings",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.384302,
+    "lon" : -2.6017086,
+    "id" : "WRGTNBQ",
+    "name" : "Warrington Bank Quay",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.108822,
+    "lon" : -3.2031663,
+    "id" : "BAROSHJ",
+    "name" : "Salthouse Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.099752,
+    "lon" : -3.212217,
+    "id" : "BAROWRD",
+    "name" : "Barrow Marine Terminal",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

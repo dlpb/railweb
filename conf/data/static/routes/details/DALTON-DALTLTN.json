@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.154181,
+    "lon" : -3.1790012,
+    "id" : "DALTON",
+    "name" : "Dalton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.165807,
+    "lon" : -3.1554065,
+    "id" : "DALTLTN",
+    "name" : "Lindal Tunnel",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

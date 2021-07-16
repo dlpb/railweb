@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 55.814576,
+    "lon" : -3.9946191,
+    "id" : "MOSENDS",
+    "name" : "Mossend South Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.791877,
+    "lon" : -3.9950535,
+    "id" : "MOTHRWL",
+    "name" : "Motherwell",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+}, {
+  "from" : {
+    "lat" : 55.814576,
+    "lon" : -3.9946191,
+    "id" : "MOSENDS",
+    "name" : "Mossend South Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.791877,
+    "lon" : -3.9950535,
+    "id" : "MOTHRWL",
+    "name" : "Motherwell",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

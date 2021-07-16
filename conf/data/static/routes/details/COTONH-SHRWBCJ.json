@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.718674,
+    "lon" : -2.7532968,
+    "id" : "COTONH",
+    "name" : "Coton Hill T.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.71292,
+    "lon" : -2.7504739,
+    "id" : "SHRWBCJ",
+    "name" : "Shrewsbury Crewe Jn S.B.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

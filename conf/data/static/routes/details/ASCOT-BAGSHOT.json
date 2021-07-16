@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.406163,
+    "lon" : -0.67678443,
+    "id" : "ASCOT",
+    "name" : "Ascot",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.364517,
+    "lon" : -0.68847092,
+    "id" : "BAGSHOT",
+    "name" : "Bagshot",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

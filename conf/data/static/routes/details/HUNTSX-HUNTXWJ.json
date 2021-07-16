@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.360767,
+    "lon" : -2.8553812,
+    "id" : "HUNTSX",
+    "name" : "Hunts Cross",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.357376,
+    "lon" : -2.8779113,
+    "id" : "HUNTXWJ",
+    "name" : "Hunts Cross West Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

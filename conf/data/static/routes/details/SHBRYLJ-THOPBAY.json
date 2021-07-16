@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.534716,
+    "lon" : 0.78425371,
+    "id" : "SHBRYLJ",
+    "name" : "Shoeburyness Depot L.E.J.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.537634,
+    "lon" : 0.76202033,
+    "id" : "THOPBAY",
+    "name" : "Thorpe Bay",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

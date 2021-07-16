@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.958892,
+    "lon" : -4.7954016,
+    "id" : "FRTMTLD",
+    "name" : "Fort Matilda",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.961237,
+    "lon" : -4.8155535,
+    "id" : "GOUROCK",
+    "name" : "Gourock",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "75-90"
+} ]

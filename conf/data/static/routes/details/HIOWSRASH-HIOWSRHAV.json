@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.695849,
+    "lon" : -1.182244,
+    "id" : "HIOWSRASH",
+    "name" : "Ashey",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 50.705056,
+    "lon" : -1.213243,
+    "id" : "HIOWSRHAV",
+    "name" : "Havenstreet",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

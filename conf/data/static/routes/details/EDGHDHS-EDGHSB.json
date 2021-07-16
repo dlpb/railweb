@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.402809,
+    "lon" : -2.9332058,
+    "id" : "EDGHDHS",
+    "name" : "Edge Hill Intercity Depot",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.40319,
+    "lon" : -2.9384335,
+    "id" : "EDGHSB",
+    "name" : "Edge Hill S.B.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

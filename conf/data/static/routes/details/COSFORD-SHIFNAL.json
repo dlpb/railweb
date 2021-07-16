@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.644831,
+    "lon" : -2.3006589,
+    "id" : "COSFORD",
+    "name" : "Cosford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.665989,
+    "lon" : -2.3716764,
+    "id" : "SHIFNAL",
+    "name" : "Shifnal",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

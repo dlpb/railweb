@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.662326,
+    "lon" : -3.4408141,
+    "id" : "LYMPSTC",
+    "name" : "Lympstone Commando",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.6483,
+    "lon" : -3.4310493,
+    "id" : "LYMPSTN",
+    "name" : "Lympstone Village",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

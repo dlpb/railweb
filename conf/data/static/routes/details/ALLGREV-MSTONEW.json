@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.292483,
+    "lon" : 0.50309206,
+    "id" : "ALLGREV",
+    "name" : "Allington A.R.C. Reverse",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.270564,
+    "lon" : 0.51575019,
+    "id" : "MSTONEW",
+    "name" : "Maidstone West",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.20213,
+    "lon" : 0.14349243,
+    "id" : "CAMBDCS",
+    "name" : "Cambridge C.S.D.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.223629,
+    "lon" : 0.158234,
+    "id" : "CAMBDNJ",
+    "name" : "Cambridge North",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

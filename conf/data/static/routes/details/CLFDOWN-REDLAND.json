@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.464446,
+    "lon" : -2.6113077,
+    "id" : "CLFDOWN",
+    "name" : "Clifton Down",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.468404,
+    "lon" : -2.5987925,
+    "id" : "REDLAND",
+    "name" : "Redland",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "15-50"
+} ]

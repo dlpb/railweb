@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.441281,
+    "lon" : -2.6253861,
+    "id" : "ASHJ335",
+    "name" : "Ashton Jn Signal B335",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.440045,
+    "lon" : -2.6245779,
+    "id" : "ASHJN",
+    "name" : "Ashton Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

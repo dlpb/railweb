@@ -1,7 +1,7 @@
 @(waypoints: List[controllers.plan.route.find.result.Waypoint],
         locationsToVisit: List[models.location.Location],
         routesToVisit: List[models.route.Route],
-        mapRouteList: List[models.route.display.map.MapRoute],
+        mapRouteList: List[models.route.Route],
         token: String)(implicit request: Request[AnyContent])
 
 @if(waypoints.nonEmpty){

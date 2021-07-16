@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.844526,
+    "lon" : -4.1136998,
+    "id" : "BALISTN",
+    "name" : "Baillieston",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.840342,
+    "lon" : -4.1332457,
+    "id" : "MNTVRNN",
+    "name" : "Mount Vernon",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

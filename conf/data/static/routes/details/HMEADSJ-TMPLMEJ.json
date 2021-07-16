@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.544967,
+    "lon" : -0.012276144,
+    "id" : "HMEADSJ",
+    "name" : "High Meads Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.550064,
+    "lon" : -0.0058516525,
+    "id" : "TMPLMEJ",
+    "name" : "Temple Mills East Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

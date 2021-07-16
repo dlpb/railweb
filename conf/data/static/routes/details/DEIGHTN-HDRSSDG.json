@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.668311,
+    "lon" : -1.7523363,
+    "id" : "DEIGHTN",
+    "name" : "Deighton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.649274,
+    "lon" : -1.784777,
+    "id" : "HDRSSDG",
+    "name" : "Huddersfield Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

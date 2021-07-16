@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.366492,
+    "lon" : -0.81927938,
+    "id" : "CRWTHRN",
+    "name" : "Crowthorne",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.346755,
+    "lon" : -0.80422175,
+    "id" : "SNDHRST",
+    "name" : "Sandhurst",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

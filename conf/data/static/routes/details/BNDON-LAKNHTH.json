@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.453899,
+    "lon" : 0.62506398,
+    "id" : "BNDON",
+    "name" : "Brandon",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.447646,
+    "lon" : 0.5341816,
+    "id" : "LAKNHTH",
+    "name" : "Lakenheath",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

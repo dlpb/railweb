@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.849731,
+    "lon" : -4.3105022,
+    "id" : "IBROXJN",
+    "name" : "Ibrox Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.848397,
+    "lon" : -4.2973069,
+    "id" : "GWSTJN",
+    "name" : "Gower Street Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "75-90"
+} ]

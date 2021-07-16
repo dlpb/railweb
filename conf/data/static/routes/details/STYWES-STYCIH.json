@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.380634,
+    "lon" : -1.4769564,
+    "id" : "STYWES",
+    "name" : "West Street",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 53.3821,
+    "lon" : -1.4722073,
+    "id" : "STYCIH",
+    "name" : "City Hall",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

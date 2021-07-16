@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.064407,
+    "lon" : -2.7140819,
+    "id" : "HEREFDY",
+    "name" : "Hereford Yard",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.061295,
+    "lon" : -2.708256,
+    "id" : "HEREFRD",
+    "name" : "Hereford",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

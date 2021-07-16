@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.996677,
+    "lon" : 0.53982074,
+    "id" : "HESBOD",
+    "name" : "Bodiam",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 51.009428,
+    "lon" : 0.61399251,
+    "id" : "HESNOR",
+    "name" : "Northiam",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

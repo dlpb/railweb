@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.576437,
+    "lon" : -2.1077373,
+    "id" : "MNMRGRN",
+    "name" : "Monmore Green",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.581407,
+    "lon" : -2.1093729,
+    "id" : "WVRMTST",
+    "name" : "Wolverhampton Steel Term",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

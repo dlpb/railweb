@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.78866,
+    "lon" : -1.9859304,
+    "id" : "COLWICH",
+    "name" : "Colwich",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.790353,
+    "lon" : -2.0373853,
+    "id" : "MFDB",
+    "name" : "Milford And Brocton",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

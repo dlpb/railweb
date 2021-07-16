@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.832388,
+    "lon" : -0.73894033,
+    "id" : "DRYTON",
+    "name" : "Drayton",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.831871,
+    "lon" : -0.78256302,
+    "id" : "CHCHSTR",
+    "name" : "Chichester",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

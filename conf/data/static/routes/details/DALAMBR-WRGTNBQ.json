@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.396708,
+    "lon" : -2.6014476,
+    "id" : "DALAMBR",
+    "name" : "Dallam Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.384302,
+    "lon" : -2.6017086,
+    "id" : "WRGTNBQ",
+    "name" : "Warrington Bank Quay",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.424342,
+    "lon" : -0.015659382,
+    "id" : "BCKNHMH",
+    "name" : "Beckenham Hill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.413451,
+    "lon" : -0.0071142543,
+    "id" : "RBRN",
+    "name" : "Ravensbourne",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

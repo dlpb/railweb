@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.441901,
+    "lon" : -0.14672203,
+    "id" : "BALHJN",
+    "name" : "Balham Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.438455,
+    "lon" : -0.12848744,
+    "id" : "STRHILL",
+    "name" : "Streatham Hill",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

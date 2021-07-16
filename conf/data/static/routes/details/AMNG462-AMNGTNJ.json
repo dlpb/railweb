@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.638281,
+    "lon" : -1.6698047,
+    "id" : "AMNG462",
+    "name" : "Amington Jn Sig Nl9462",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.638281,
+    "lon" : -1.6698047,
+    "id" : "AMNGTNJ",
+    "name" : "Amington Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

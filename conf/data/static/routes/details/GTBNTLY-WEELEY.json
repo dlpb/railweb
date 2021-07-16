@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.851823,
+    "lon" : 1.0657823,
+    "id" : "GTBNTLY",
+    "name" : "Great Bentley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.852964,
+    "lon" : 1.1150803,
+    "id" : "WEELEY",
+    "name" : "Weeley",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.749293,
+    "lon" : -0.0090117212,
+    "id" : "BROXBNR",
+    "name" : "Broxbourne Recp.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.747021,
+    "lon" : -0.010821024,
+    "id" : "BROXBRN",
+    "name" : "Broxbourne",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

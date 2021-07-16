@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.93649,
+    "lon" : -3.2372391,
+    "id" : "GORGIEJ",
+    "name" : "Gorgie Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.939088,
+    "lon" : -3.2469437,
+    "id" : "HAYMRWJ",
+    "name" : "Haymarket West Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

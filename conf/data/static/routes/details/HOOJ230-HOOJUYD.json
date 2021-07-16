@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.439197,
+    "lon" : 0.42822097,
+    "id" : "HOOJ230",
+    "name" : "Signal D 230",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.435121,
+    "lon" : 0.44518479,
+    "id" : "HOOJUYD",
+    "name" : "Hoo Junction Up Yard",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

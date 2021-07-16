@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.8802,
+    "lon" : -3.0391,
+    "id" : "BTPWED",
+    "name" : "West Drive",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 53.8833,
+    "lon" : -3.0395,
+    "id" : "BTPTHG",
+    "name" : "Thornton Gate",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

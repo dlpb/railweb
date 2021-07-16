@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 51.531223,
+    "lon" : -0.12684799,
+    "id" : "STPADOM",
+    "name" : "St Pancras Intl (Domestic)",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.7052,
+    "lon" : -0.6113,
+    "id" : "CHSM",
+    "name" : "Chesham Und",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "71 MINUTES"
+}, {
+  "from" : {
+    "lat" : 51.531223,
+    "lon" : -0.12684799,
+    "id" : "STPADOM",
+    "name" : "St Pancras Intl (Domestic)",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.7052,
+    "lon" : -0.6113,
+    "id" : "CHSM",
+    "name" : "Chesham Und",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "66 MINUTES"
+} ]

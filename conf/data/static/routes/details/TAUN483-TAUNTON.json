@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.023945,
+    "lon" : -3.1097008,
+    "id" : "TAUN483",
+    "name" : "Taunton Signal E483",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.024852,
+    "lon" : -3.1239529,
+    "id" : "TAUNTON",
+    "name" : "Taunton",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

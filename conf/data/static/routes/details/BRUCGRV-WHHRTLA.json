@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.593229,
+    "lon" : -0.070403264,
+    "id" : "BRUCGRV",
+    "name" : "Bruce Grove",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.604893,
+    "lon" : -0.071006298,
+    "id" : "WHHRTLA",
+    "name" : "White Hart Lane",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

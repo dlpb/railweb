@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.906,
+    "lon" : -0.64216762,
+    "id" : "GTHM",
+    "name" : "Grantham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.85634,
+    "lon" : -0.61040426,
+    "id" : "HGHDJN",
+    "name" : "Highdyke Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

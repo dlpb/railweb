@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.16905,
+    "lon" : -3.1282849,
+    "id" : "THRNTNJ",
+    "name" : "Thornton North Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.165592,
+    "lon" : -3.1301159,
+    "id" : "THRNUPL",
+    "name" : "Thornton North U.P.L.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

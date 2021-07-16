@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.396082,
+    "lon" : -4.6286881,
+    "id" : "CRNLRHL",
+    "name" : "Crianlarich Lower",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.433661,
+    "lon" : -4.7137245,
+    "id" : "TYNDRML",
+    "name" : "Tyndrum Lower",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.273417,
+    "lon" : 1.5235912,
+    "id" : "DARSHAM",
+    "name" : "Darsham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.219808,
+    "lon" : 1.4961302,
+    "id" : "SXMNDHJ",
+    "name" : "Saxmundham Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

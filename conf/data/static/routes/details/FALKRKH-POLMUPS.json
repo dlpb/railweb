@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.991599,
+    "lon" : -3.79217,
+    "id" : "FALKRKH",
+    "name" : "Falkirk High",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.985702,
+    "lon" : -3.726878,
+    "id" : "POLMUPS",
+    "name" : "Polmont U.P.L. (South)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

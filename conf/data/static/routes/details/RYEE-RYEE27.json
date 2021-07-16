@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.953201,
+    "lon" : 0.73201125,
+    "id" : "RYEE",
+    "name" : "Rye",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.953201,
+    "lon" : 0.73201125,
+    "id" : "RYEE27",
+    "name" : "Rye Signal Ry27",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

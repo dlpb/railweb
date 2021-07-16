@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.341045,
+    "lon" : -1.155763,
+    "id" : "DVNTYSJ",
+    "name" : "Daventry South Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.326485,
+    "lon" : -1.1241693,
+    "id" : "LNGBWL",
+    "name" : "Watford Lodge (Longbuckby)",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

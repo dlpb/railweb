@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.785161,
+    "lon" : -2.2492934,
+    "id" : "BURNMR",
+    "name" : "Burnley Manchester Road",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.788807,
+    "lon" : -2.2674685,
+    "id" : "GANNOWJ",
+    "name" : "Gannow Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

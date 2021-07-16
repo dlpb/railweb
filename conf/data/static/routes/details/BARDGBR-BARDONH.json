@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.710428,
+    "lon" : -1.3457104,
+    "id" : "BARDGBR",
+    "name" : "Bardon Hill Gbrf",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.711852,
+    "lon" : -1.3481759,
+    "id" : "BARDONH",
+    "name" : "Bardon Hill",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

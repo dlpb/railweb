@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.386895,
+    "lon" : -3.4205506,
+    "id" : "BHLP",
+    "name" : "Barnhill (Perth)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.391779,
+    "lon" : -3.439605,
+    "id" : "PERTH",
+    "name" : "Perth",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

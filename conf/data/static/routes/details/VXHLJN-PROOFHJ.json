@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.485047,
+    "lon" : -1.8742716,
+    "id" : "VXHLJN",
+    "name" : "Vauxhall Jn (West Mids)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.480841,
+    "lon" : -1.8842078,
+    "id" : "PROOFHJ",
+    "name" : "Proof House Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

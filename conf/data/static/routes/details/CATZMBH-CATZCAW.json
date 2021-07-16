@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.699098,
+    "lon" : -6.952521,
+    "id" : "CATZMBH",
+    "name" : "Muine Bheag (Cie",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.8409,
+    "lon" : -6.9226,
+    "id" : "CATZCAW",
+    "name" : "Carlow Cie",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

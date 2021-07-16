@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.024965,
+    "lon" : -2.205062,
+    "id" : "ETRUGJN",
+    "name" : "Grange Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.01964,
+    "lon" : -2.2018317,
+    "id" : "ETRURIA",
+    "name" : "Etruria",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

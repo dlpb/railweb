@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.364154,
+    "lon" : -0.30055123,
+    "id" : "CHSSN",
+    "name" : "Chessington North",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.356897,
+    "lon" : -0.30797239,
+    "id" : "CHSSS",
+    "name" : "Chessington South",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

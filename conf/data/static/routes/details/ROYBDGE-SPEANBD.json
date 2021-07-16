@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.888421,
+    "lon" : -4.8374435,
+    "id" : "ROYBDGE",
+    "name" : "Roy Bridge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.889901,
+    "lon" : -4.9213845,
+    "id" : "SPEANBD",
+    "name" : "Spean Bridge",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.828918,
+    "lon" : -4.0002072,
+    "id" : "MOSEPDS",
+    "name" : "Mossend Pd Stlg Gbrf",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.823854,
+    "lon" : -3.9977122,
+    "id" : "MSSNDET",
+    "name" : "Mossend Down Yard Gbrf",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

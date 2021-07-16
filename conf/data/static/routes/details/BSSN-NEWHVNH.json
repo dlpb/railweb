@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.77991,
+    "lon" : 0.082618974,
+    "id" : "BSSN",
+    "name" : "Bishopstone",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.790178,
+    "lon" : 0.05493903,
+    "id" : "NEWHVNH",
+    "name" : "Newhaven Harbour",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

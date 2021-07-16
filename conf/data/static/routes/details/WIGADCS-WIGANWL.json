@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.54727,
+    "lon" : -2.6440431,
+    "id" : "WIGADCS",
+    "name" : "Wigan Wallgate Dn Carr Sdg",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.545188,
+    "lon" : -2.6349113,
+    "id" : "WIGANWL",
+    "name" : "Wigan Wallgate",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

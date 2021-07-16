@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 51.378418,
+    "lon" : -2.372843,
+    "id" : "BATHSPA",
+    "name" : "Bath Spa",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.3786,
+    "lon" : -2.3579,
+    "id" : "BATHBUS",
+    "name" : "Bath Bus Station",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "2 MINUTES"
+}, {
+  "from" : {
+    "lat" : 51.378418,
+    "lon" : -2.372843,
+    "id" : "BATHSPA",
+    "name" : "Bath Spa",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.3786,
+    "lon" : -2.3579,
+    "id" : "BATHBUS",
+    "name" : "Bath Bus Station",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : " 2"
+} ]

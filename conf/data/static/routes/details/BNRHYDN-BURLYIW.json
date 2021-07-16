@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.925731,
+    "lon" : -1.7977498,
+    "id" : "BNRHYDN",
+    "name" : "Ben Rhydding",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.907879,
+    "lon" : -1.75313,
+    "id" : "BURLYIW",
+    "name" : "Burley-In-Wharfedale",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

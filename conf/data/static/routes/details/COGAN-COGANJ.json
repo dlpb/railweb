@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.446017,
+    "lon" : -3.1891337,
+    "id" : "COGAN",
+    "name" : "Cogan",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.44872,
+    "lon" : -3.1895349,
+    "id" : "COGANJ",
+    "name" : "Cogan Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "45-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.385996,
+    "lon" : -0.76927385,
+    "id" : "GBGHLRD",
+    "name" : "Gainsborough Lea Road",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.323016,
+    "lon" : -0.71546083,
+    "id" : "SAXISTO",
+    "name" : "Stow Park",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

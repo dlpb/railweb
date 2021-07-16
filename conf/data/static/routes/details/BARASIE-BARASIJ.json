@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.560938,
+    "lon" : -4.6512572,
+    "id" : "BARASIE",
+    "name" : "Barassie",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.560152,
+    "lon" : -4.6509981,
+    "id" : "BARASIJ",
+    "name" : "Barassie Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "75-90"
+} ]

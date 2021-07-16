@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.391963,
+    "lon" : -2.5921478,
+    "id" : "WRGT",
+    "name" : "Warrington Central",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.393421,
+    "lon" : -2.5863485,
+    "id" : "WRGTCCS",
+    "name" : "Warrington Central C.S.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

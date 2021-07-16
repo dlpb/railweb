@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.90009,
+    "lon" : -5.7632803,
+    "id" : "BEASDAL",
+    "name" : "Beasdale",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.881348,
+    "lon" : -5.6634326,
+    "id" : "LCHALRT",
+    "name" : "Lochailort",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

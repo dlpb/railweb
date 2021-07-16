@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.587823,
+    "lon" : -2.2035353,
+    "id" : "CSTLHGF",
+    "name" : "Castleton Hopwood Gf",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.5889,
+    "lon" : -2.2069,
+    "id" : "HLHEY",
+    "name" : "Heywood",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

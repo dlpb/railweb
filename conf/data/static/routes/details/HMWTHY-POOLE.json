@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.72519,
+    "lon" : -2.0193853,
+    "id" : "HMWTHY",
+    "name" : "Hamworthy",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.71939,
+    "lon" : -1.9836292,
+    "id" : "POOLE",
+    "name" : "Poole",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

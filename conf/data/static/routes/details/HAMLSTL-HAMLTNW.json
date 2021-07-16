@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.782432,
+    "lon" : -4.0630499,
+    "id" : "HAMLSTL",
+    "name" : "Hamilton Steele E.G.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.779034,
+    "lon" : -4.0550565,
+    "id" : "HAMLTNW",
+    "name" : "Hamilton West",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

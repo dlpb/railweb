@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.502934,
+    "lon" : -0.41950758,
+    "id" : "HAYESAH",
+    "name" : "Hayes & Harlington",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.503018,
+    "lon" : -0.41039861,
+    "id" : "HAYESTS",
+    "name" : "Hayes & H'ton Tarmac Sdgs",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

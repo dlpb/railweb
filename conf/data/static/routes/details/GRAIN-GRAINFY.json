@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.443606,
+    "lon" : 0.68449578,
+    "id" : "GRAIN",
+    "name" : "Grain",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.439872,
+    "lon" : 0.69203333,
+    "id" : "GRAINFY",
+    "name" : "Grain Foster Yeoman",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

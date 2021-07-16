@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.33954,
+    "lon" : -2.2818988,
+    "id" : "AVNCLFF",
+    "name" : "Avoncliff",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.341777,
+    "lon" : -2.3005761,
+    "id" : "FRESHFD",
+    "name" : "Freshford",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

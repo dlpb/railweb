@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.88093688949532,
+    "lon" : 0.7833273987947587,
+    "id" : "MRKSTEY",
+    "name" : "Marks Tey",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.882153,
+    "lon" : 0.78782026,
+    "id" : "MRKSTUL",
+    "name" : "Marks Tey Up Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

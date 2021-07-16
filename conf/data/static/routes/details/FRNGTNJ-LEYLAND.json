@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 53.716175,
+    "lon" : -2.6947159,
+    "id" : "FRNGTNJ",
+    "name" : "Farington Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.698711,
+    "lon" : -2.6867641,
+    "id" : "LEYLAND",
+    "name" : "Leyland",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+}, {
+  "from" : {
+    "lat" : 53.716175,
+    "lon" : -2.6947159,
+    "id" : "FRNGTNJ",
+    "name" : "Farington Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.698711,
+    "lon" : -2.6867641,
+    "id" : "LEYLAND",
+    "name" : "Leyland",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

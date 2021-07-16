@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.555487,
+    "lon" : -0.15135541,
+    "id" : "GOSPLOK",
+    "name" : "Gospel Oak",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.55537,
+    "lon" : -0.16507865,
+    "id" : "HMPSTDH",
+    "name" : "Hampstead Heath",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.558821,
+    "lon" : -0.21274869,
+    "id" : "CRKLUGL",
+    "name" : "Cricklewood U.G.L.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.571862,
+    "lon" : -0.23069377,
+    "id" : "CRKLWDJ",
+    "name" : "Cricklewood Depot Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

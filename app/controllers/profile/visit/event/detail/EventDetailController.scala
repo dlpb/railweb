@@ -6,9 +6,8 @@ import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject.{Inject, Singleton}
 import models.auth.UserDao
 import models.data.{Event, LocationVisit, RouteVisit}
-import models.location.{Location, MapLocation}
+import models.location.Location
 import models.route.Route
-import models.route.display.map.MapRoute
 import play.api.mvc.{AbstractController, AnyContent, ControllerComponents}
 import services.location.LocationService
 import services.visit.event.EventService
@@ -33,36 +32,36 @@ class EventDetailController @Inject()(
       val eventOption = eventService.getEventFromId(id, request.user)
       eventOption
         .map({ event =>
-          val visitedLocations = locationVisitService
+          val visitLocationEvents = locationVisitService
             .getLocationsVisitedForEvent(event, request.user)
 
-          val visitedMapLocations = visitedLocations
+          val visitedLocationList = visitLocationEvents
               .sortBy(_.eventOccurredAt)
               .map({
-                v => MapLocation(v.visited)
+                v => v.visited
               })
 
 
-          val visitedRoutes: List[RouteVisit] =
+          val visitRouteEvents: List[RouteVisit] =
             routeVisitService
             .getRoutesVisitedForEvent(event, request.user)
             .sortBy(_.eventOccurredAt)
 
-          val distance: Long = visitedRoutes
+          val distance: Long = visitRouteEvents
             .map({
               _.visited.distance
             })
             .sum
 
-          val visitedMapRoutes = visitedRoutes
+          val visitedRouteList = visitRouteEvents
             .map {
-              v => MapRoute(v.visited)
+              v => v.visited
             }
 
           val allVisitedLocations = locationVisitService.getVisitsForUser(request.user)
           val allVisitedRoutes = routeVisitService.getVisitsForUser(request.user)
 
-          val locationToVisits: Map[Location, List[LocationVisit]] = visitedLocations
+          val locationToVisits: Map[Location, List[LocationVisit]] = visitLocationEvents
             .map(locationVisit => {
               val location = locationVisit.visited
               val visitCount = allVisitedLocations.filter(_.visited.id.equals(location.id))
@@ -75,7 +74,7 @@ class EventDetailController @Inject()(
               .map(l => l._1.id -> l._2.size)
               .toMap
 
-          val routesToVisits: Map[Route, List[RouteVisit]] = visitedRoutes
+          val routesToVisits: Map[Route, List[RouteVisit]] = visitRouteEvents
             .map(routeVisit => {
               val route = routeVisit.visited
               val visitCount = allVisitedRoutes.filter(_.visited.equals(route))
@@ -113,14 +112,14 @@ class EventDetailController @Inject()(
           Ok(
             views.html.visits.event.detail.index(
               request.user,
-              visitedMapRoutes,
-              visitedMapLocations,
+              visitedRouteList,
+              visitedLocationList,
               locationIdToVisitCount,
               routeToVisitCount,
               locationFirstVisits,
               routeFirstVisits,
-              visitedLocations,
-              visitedRoutes,
+              visitLocationEvents,
+              visitRouteEvents,
               event,
               distance
             )

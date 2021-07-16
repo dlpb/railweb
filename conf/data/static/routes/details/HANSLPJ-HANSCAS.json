@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.114218,
+    "lon" : -0.85753486,
+    "id" : "HANSLPJ",
+    "name" : "Hanslope Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.09216,
+    "lon" : -0.83780874,
+    "id" : "HANSCAS",
+    "name" : "Castlethorpe",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

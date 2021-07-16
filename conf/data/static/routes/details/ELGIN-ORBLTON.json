@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.642777,
+    "lon" : -3.3108726,
+    "id" : "ELGIN",
+    "name" : "Elgin",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 57.6088,
+    "lon" : -3.1662473,
+    "id" : "ORBLTON",
+    "name" : "Orbliston",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

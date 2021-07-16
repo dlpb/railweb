@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.944971,
+    "lon" : 1.2380594,
+    "id" : "PRKSGJN",
+    "name" : "Parkeston Goods Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.93949,
+    "lon" : 1.171162,
+    "id" : "WRABNES",
+    "name" : "Wrabness",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

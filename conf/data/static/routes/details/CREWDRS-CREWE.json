@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.076221,
+    "lon" : -2.425356,
+    "id" : "CREWDRS",
+    "name" : "Crewe Down Refuge Siding",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.088144,
+    "lon" : -2.4318491,
+    "id" : "CREWE",
+    "name" : "Crewe",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

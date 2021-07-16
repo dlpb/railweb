@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.11964,
+    "lon" : -0.47858867,
+    "id" : "BEDFDS",
+    "name" : "Bedford South Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.097848,
+    "lon" : -0.48230843,
+    "id" : "ELSTOW",
+    "name" : "Elstow",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

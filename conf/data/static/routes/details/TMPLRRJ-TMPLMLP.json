@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.556814,
+    "lon" : -0.017299237,
+    "id" : "TMPLRRJ",
+    "name" : "Ruckholt Road Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.560042,
+    "lon" : -0.024747468,
+    "id" : "TMPLMLP",
+    "name" : "Temple Mills Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "1",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

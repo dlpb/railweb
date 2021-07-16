@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.844526,
+    "lon" : -4.1136998,
+    "id" : "BALISTN",
+    "name" : "Baillieston",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.85133,
+    "lon" : -4.0735857,
+    "id" : "BRGDDIE",
+    "name" : "Bargeddie",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

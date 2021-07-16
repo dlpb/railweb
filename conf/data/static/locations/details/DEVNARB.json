@@ -1,0 +1,10 @@
+[ {
+  "id" : "DEVNARB",
+  "crp" : "Tamar Valley Line",
+  "route" : "Western",
+  "changeTime" : "Set(None)",
+  "interchangeType" : "9 - Subsidiary TIPLOC for station",
+  "county" : "South West",
+  "district" : "Plymouth",
+  "postcode" : "\"PL1 4QN"
+} ]

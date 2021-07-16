@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.891278,
+    "lon" : -2.9345781,
+    "id" : "CARLILE",
+    "name" : "Carlisle",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.88108,
+    "lon" : -2.9213114,
+    "id" : "CARLUJN",
+    "name" : "Upperby Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

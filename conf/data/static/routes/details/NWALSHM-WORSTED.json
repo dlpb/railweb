@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.816983,
+    "lon" : 1.384462,
+    "id" : "NWALSHM",
+    "name" : "North Walsham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.777318,
+    "lon" : 1.4040284,
+    "id" : "WORSTED",
+    "name" : "Worstead",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

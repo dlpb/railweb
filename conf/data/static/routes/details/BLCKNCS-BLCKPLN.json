@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.82767,
+    "lon" : -3.0436906,
+    "id" : "BLCKNCS",
+    "name" : "Blackpool North Car. M.D.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.822999,
+    "lon" : -3.0484358,
+    "id" : "BLCKPLN",
+    "name" : "Blackpool North",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

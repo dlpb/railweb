@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.380695,
+    "lon" : 0.52016219,
+    "id" : "CHATHAM",
+    "name" : "Chatham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.386794,
+    "lon" : 0.55084021,
+    "id" : "GLNGHMK",
+    "name" : "Gillingham (Kent)",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

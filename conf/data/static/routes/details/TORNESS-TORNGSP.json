@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.969812,
+    "lon" : -2.4359711,
+    "id" : "TORNESS",
+    "name" : "Torness Power Station",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.969812,
+    "lon" : -2.4359711,
+    "id" : "TORNGSP",
+    "name" : "Torness Gsp",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.186366,
+    "lon" : 0.39753217,
+    "id" : "PKWD086",
+    "name" : "Paddock Wood Sig 2086",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.182461,
+    "lon" : 0.39233546,
+    "id" : "PKWDKSD",
+    "name" : "Paddock Wood Keylands Sdgs",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

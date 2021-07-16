@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.338907,
+    "lon" : -1.6887069,
+    "id" : "BAMFORD",
+    "name" : "Bamford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.345955,
+    "lon" : -1.7294671,
+    "id" : "HOPD",
+    "name" : "Hope (Derbyshire)",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

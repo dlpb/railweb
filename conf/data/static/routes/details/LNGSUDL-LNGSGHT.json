@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.463344,
+    "lon" : -2.2028784,
+    "id" : "LNGSUDL",
+    "name" : "Longsight Up & Dwn Gds Lp",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.463553,
+    "lon" : -2.2013581,
+    "id" : "LNGSGHT",
+    "name" : "Longsight",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

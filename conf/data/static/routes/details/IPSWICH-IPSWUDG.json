@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.05059017669498,
+    "lon" : 1.1444255837190085,
+    "id" : "IPSWICH",
+    "name" : "Ipswich",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.051216,
+    "lon" : 1.1405307,
+    "id" : "IPSWUDG",
+    "name" : "Ipswich Down And Up Goods",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

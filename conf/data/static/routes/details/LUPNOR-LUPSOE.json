@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.499856,
+    "lon" : -0.313188,
+    "id" : "LUPNOR",
+    "name" : "Northfields",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.500801,
+    "lon" : -0.307856,
+    "id" : "LUPSOE",
+    "name" : "South Ealing",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

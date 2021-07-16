@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.83592,
+    "lon" : -1.2579219,
+    "id" : "RATCKEG",
+    "name" : "Kegworth",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.811392,
+    "lon" : -1.2374502,
+    "id" : "RATCHRN",
+    "name" : "Hathern",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

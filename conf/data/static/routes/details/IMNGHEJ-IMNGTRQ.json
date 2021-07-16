@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.617711,
+    "lon" : -0.18239795,
+    "id" : "IMNGHEJ",
+    "name" : "Immingham East Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.627367,
+    "lon" : -0.18726078,
+    "id" : "IMNGTRQ",
+    "name" : "Immingham Transit Quay",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

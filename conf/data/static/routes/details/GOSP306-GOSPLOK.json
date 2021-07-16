@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.555487,
+    "lon" : -0.15135541,
+    "id" : "GOSP306",
+    "name" : "Gospel Oak Sig Nl 1306",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.555487,
+    "lon" : -0.15135541,
+    "id" : "GOSPLOK",
+    "name" : "Gospel Oak",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

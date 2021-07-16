@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.897321,
+    "lon" : -4.2825715,
+    "id" : "LAMBH",
+    "name" : "Gilshochill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.898836,
+    "lon" : -4.2919704,
+    "id" : "SUMRSTN",
+    "name" : "Summerston",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

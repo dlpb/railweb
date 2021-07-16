@@ -1,0 +1,58 @@
+[ {
+  "from" : {
+    "lat" : 51.51946719200348,
+    "lon" : -0.059757120098615765,
+    "id" : "WCHAPEL",
+    "name" : "Whitechapel",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.49314,
+    "lon" : -0.14608529,
+    "id" : "VICTRIA",
+    "name" : "London Victoria",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "19 MINUTES"
+}, {
+  "from" : {
+    "lat" : 51.51946719200348,
+    "lon" : -0.059757120098615765,
+    "id" : "WCHAPEL",
+    "name" : "Whitechapel",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.49314,
+    "lon" : -0.14608529,
+    "id" : "VICTRIA",
+    "name" : "London Victoria",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "24 MINUTES"
+}, {
+  "from" : {
+    "lat" : 51.51946719200348,
+    "lon" : -0.059757120098615765,
+    "id" : "WCHAPEL",
+    "name" : "Whitechapel",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.49314,
+    "lon" : -0.14608529,
+    "id" : "VICTRIA",
+    "name" : "London Victoria",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "14 MINUTES"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.423099,
+    "lon" : -2.8844641,
+    "id" : "BROOME",
+    "name" : "Broome",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.442105,
+    "lon" : -2.8375166,
+    "id" : "CRAVENA",
+    "name" : "Craven Arms",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

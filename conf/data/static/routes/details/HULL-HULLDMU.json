@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.743754,
+    "lon" : -0.3483644,
+    "id" : "HULL",
+    "name" : "Hull",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.74798,
+    "lon" : -0.36154439,
+    "id" : "HULLDMU",
+    "name" : "Botanic Gardens D.M.U.D.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

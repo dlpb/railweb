@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.952245,
+    "lon" : 0.46679319,
+    "id" : "MNTFGBR",
+    "name" : "Mountfield Sidings (Gbrf)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.955503,
+    "lon" : 0.46495797,
+    "id" : "MNTFLDT",
+    "name" : "Mountfield Tunnel",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

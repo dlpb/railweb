@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.837462,
+    "lon" : -4.334386,
+    "id" : "CKHL",
+    "name" : "Corkerhill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.839124,
+    "lon" : -4.3172838,
+    "id" : "CKHLCSJ",
+    "name" : "Corkerhill Depot Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

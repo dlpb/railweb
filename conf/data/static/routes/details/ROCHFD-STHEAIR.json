@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.581641,
+    "lon" : 0.70212492,
+    "id" : "ROCHFD",
+    "name" : "Rochford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.567177,
+    "lon" : 0.70497563,
+    "id" : "STHEAIR",
+    "name" : "Southend Airport",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

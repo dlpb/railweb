@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.799023,
+    "lon" : -0.20404937,
+    "id" : "WLWYNGY",
+    "name" : "Welwyn G.C. F.D.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.791546,
+    "lon" : -0.20846455,
+    "id" : "WLWYREV",
+    "name" : "Welwyn G.C. Rev. Sdgs.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

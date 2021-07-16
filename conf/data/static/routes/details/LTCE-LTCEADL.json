@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.980412,
+    "lon" : -0.22866397,
+    "id" : "LTCE",
+    "name" : "Letchworth Garden City",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.982825,
+    "lon" : -0.21994794,
+    "id" : "LTCEADL",
+    "name" : "Letchworth A/D Line",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

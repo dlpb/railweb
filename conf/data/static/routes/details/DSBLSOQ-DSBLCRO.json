@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.500413,
+    "lon" : -0.018636,
+    "id" : "DSBLSOQ",
+    "name" : "South Quay",
+    "type" : "Light Rail"
+  },
+  "to" : {
+    "lat" : 51.495086,
+    "lon" : -0.014543,
+    "id" : "DSBLCRO",
+    "name" : "Crossharbour",
+    "type" : "Light Rail"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Light Rail",
+  "speed" : "OHLE"
+} ]

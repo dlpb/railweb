@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.9602,
+    "lon" : -3.9686,
+    "id" : "HFRDDU",
+    "name" : "Dduallt",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.9858,
+    "lon" : -3.96303,
+    "id" : "HWTAN",
+    "name" : "Tanygrisiau",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

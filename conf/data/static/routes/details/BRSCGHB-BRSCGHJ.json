@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.60542,
+    "lon" : -2.8416992,
+    "id" : "BRSCGHB",
+    "name" : "Burscough Bridge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.597799,
+    "lon" : -2.840233,
+    "id" : "BRSCGHJ",
+    "name" : "Burscough Junction",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "16 MINUTES"
+} ]

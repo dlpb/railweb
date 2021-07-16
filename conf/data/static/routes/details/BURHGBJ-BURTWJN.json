@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.810892,
+    "lon" : -1.6362168,
+    "id" : "BURHGBJ",
+    "name" : "Horninglow Bridge Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.819936,
+    "lon" : -1.6248491,
+    "id" : "BURTWJN",
+    "name" : "Burton Wetmore Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

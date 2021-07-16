@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 51.49141,
+    "lon" : -0.27552695,
+    "id" : "GNRSBRY",
+    "name" : "Gunnersbury",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.476991,
+    "lon" : -0.28504223,
+    "id" : "KEWGRDN",
+    "name" : "Kew Gardens",
+    "type" : "Station"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+}, {
+  "from" : {
+    "lat" : 51.49141,
+    "lon" : -0.27552695,
+    "id" : "GNRSBRY",
+    "name" : "Gunnersbury",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.476991,
+    "lon" : -0.28504223,
+    "id" : "KEWGRDN",
+    "name" : "Kew Gardens",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

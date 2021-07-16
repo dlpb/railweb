@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.454237,
+    "lon" : -2.9793246,
+    "id" : "DUNDCJ",
+    "name" : "Dundee Central Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.455988,
+    "lon" : -2.9727008,
+    "id" : "DUNDHSH",
+    "name" : "Dundee Head Shunt",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

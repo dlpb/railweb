@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.253102,
+    "lon" : -0.58533776,
+    "id" : "SNBKWYM",
+    "name" : "Wymington Tunnel",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.283889,
+    "lon" : -0.63443633,
+    "id" : "WLNGIRC",
+    "name" : "Irchester",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

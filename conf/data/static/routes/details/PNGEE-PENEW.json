@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.419671,
+    "lon" : -0.054594471,
+    "id" : "PNGEE",
+    "name" : "Penge East",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.417515,
+    "lon" : -0.060697707,
+    "id" : "PENEW",
+    "name" : "Penge West",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "15 MINUTES"
+} ]

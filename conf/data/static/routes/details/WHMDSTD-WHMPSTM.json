@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 51.547476,
+    "lon" : -0.19128513,
+    "id" : "WHMDSTD",
+    "name" : "West Hampstead",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.54842,
+    "lon" : -0.19238715,
+    "id" : "WHMPSTM",
+    "name" : "West Hampstead Thameslink",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : " 5"
+}, {
+  "from" : {
+    "lat" : 51.547476,
+    "lon" : -0.19128513,
+    "id" : "WHMDSTD",
+    "name" : "West Hampstead",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.54842,
+    "lon" : -0.19238715,
+    "id" : "WHMPSTM",
+    "name" : "West Hampstead Thameslink",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "5 MINUTES"
+} ]

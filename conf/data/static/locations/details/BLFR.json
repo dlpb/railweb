@@ -1,0 +1,10 @@
+[ {
+  "id" : "BLFR",
+  "crp" : "",
+  "route" : "South East",
+  "changeTime" : "Set(Some(ChangeTime(BFR,SE,SE,5,(London Blackfriars))))",
+  "interchangeType" : "3 - Large interchange point",
+  "county" : "London",
+  "district" : "Greater London",
+  "postcode" : "\"EC4V 4DY"
+} ]

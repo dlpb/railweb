@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.657553,
+    "lon" : 0.83343917,
+    "id" : "SMINCGB",
+    "name" : "Southminster C.E.G.B.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.660583,
+    "lon" : 0.83534913,
+    "id" : "SMINSTR",
+    "name" : "Southminster",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

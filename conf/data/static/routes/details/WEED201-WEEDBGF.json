@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.184406,
+    "lon" : -0.94594156,
+    "id" : "WEED201",
+    "name" : "Weedon Sig Kr1201",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.184746,
+    "lon" : -0.94678188,
+    "id" : "WEEDBGF",
+    "name" : "Blisworth Ground Frame",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

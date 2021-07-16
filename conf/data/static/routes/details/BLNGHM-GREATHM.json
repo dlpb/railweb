@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.606103,
+    "lon" : -1.2788284,
+    "id" : "BLNGHM",
+    "name" : "Billingham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.634302,
+    "lon" : -1.2289564,
+    "id" : "GREATHM",
+    "name" : "Greatham",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

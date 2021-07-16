@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.745994,
+    "lon" : -2.2795571,
+    "id" : "STNHSE",
+    "name" : "Stonehouse",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.744306,
+    "lon" : -2.2188887,
+    "id" : "STRUD",
+    "name" : "Stroud",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

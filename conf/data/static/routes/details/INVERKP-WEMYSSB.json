@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.905838,
+    "lon" : -4.8743266,
+    "id" : "INVERKP",
+    "name" : "Inverkip",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.877067,
+    "lon" : -4.8891485,
+    "id" : "WEMYSSB",
+    "name" : "Wemyss Bay",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "75-90"
+} ]

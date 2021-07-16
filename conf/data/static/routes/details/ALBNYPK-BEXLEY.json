@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.435351,
+    "lon" : 0.12581874,
+    "id" : "ALBNYPK",
+    "name" : "Albany Park",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.440175,
+    "lon" : 0.147771,
+    "id" : "BEXLEY",
+    "name" : "Bexley",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

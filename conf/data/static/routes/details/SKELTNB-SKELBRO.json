@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.990793,
+    "lon" : -1.1390652,
+    "id" : "SKELTNB",
+    "name" : "Skelton Bridge Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.021013,
+    "lon" : -1.1661903,
+    "id" : "SKELBRO",
+    "name" : "Beningbrough",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

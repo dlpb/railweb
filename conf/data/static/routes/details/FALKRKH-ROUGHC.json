@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.991599,
+    "lon" : -3.79217,
+    "id" : "FALKRKH",
+    "name" : "Falkirk High",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.996225,
+    "lon" : -3.8513124,
+    "id" : "ROUGHC",
+    "name" : "Roughcastle",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

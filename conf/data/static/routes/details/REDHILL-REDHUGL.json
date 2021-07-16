@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.24006,
+    "lon" : -0.16561897,
+    "id" : "REDHILL",
+    "name" : "Redhill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.236789,
+    "lon" : -0.16690943,
+    "id" : "REDHUGL",
+    "name" : "Redhill Up Tonbridge Sidin",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

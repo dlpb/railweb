@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.466,
+    "lon" : -4.718,
+    "id" : "BODMNMF",
+    "name" : "Bodmin Mount Folly",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.517,
+    "lon" : -4.835,
+    "id" : "WDBDGBS",
+    "name" : "Wadebridge Bus",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

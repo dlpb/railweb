@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.588064,
+    "lon" : -1.126375,
+    "id" : "WGSTNNJ",
+    "name" : "Wigston North Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.582401,
+    "lon" : -1.133867,
+    "id" : "WGSTS",
+    "name" : "South Wigston",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

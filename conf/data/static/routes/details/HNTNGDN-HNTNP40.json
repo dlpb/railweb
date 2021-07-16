@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.328153,
+    "lon" : -0.19268989,
+    "id" : "HNTNGDN",
+    "name" : "Huntingdon",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.335046,
+    "lon" : -0.19072093,
+    "id" : "HNTNP40",
+    "name" : "Huntingdon Sig P40",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

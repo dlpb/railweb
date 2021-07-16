@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.51517,
+    "lon" : -0.14119,
+    "id" : "LUBOXC",
+    "name" : "Oxford Circus",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.513131,
+    "lon" : -0.13538713,
+    "id" : "PICDYCR",
+    "name" : "Piccadilly Circus Underground",
+    "type" : "Location"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

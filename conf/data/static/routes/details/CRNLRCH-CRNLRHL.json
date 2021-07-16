@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.390375,
+    "lon" : -4.618459,
+    "id" : "CRNLRCH",
+    "name" : "Crianlarich",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.396082,
+    "lon" : -4.6286881,
+    "id" : "CRNLRHL",
+    "name" : "Crianlarich Lower",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

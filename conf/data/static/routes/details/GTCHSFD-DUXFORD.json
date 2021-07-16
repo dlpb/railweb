@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.059729,
+    "lon" : 0.19347333,
+    "id" : "GTCHSFD",
+    "name" : "Great Chesterford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.089288,
+    "lon" : 0.16956667,
+    "id" : "DUXFORD",
+    "name" : "Duxford",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.5378,
+    "lon" : -2.1379,
+    "id" : "MNCRFHM",
+    "name" : "Freehold Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.5423,
+    "lon" : -2.1261,
+    "id" : "MNCRWWM",
+    "name" : "Westwood Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

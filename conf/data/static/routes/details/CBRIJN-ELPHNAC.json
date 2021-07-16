@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.465591,
+    "lon" : -0.098612074,
+    "id" : "CBRIJN",
+    "name" : "Cambria Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.493946,
+    "lon" : -0.098700145,
+    "id" : "ELPHNAC",
+    "name" : "Elephant & Castle",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

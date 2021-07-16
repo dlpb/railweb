@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.114218,
+    "lon" : -0.85753486,
+    "id" : "HANSLPJ",
+    "name" : "Hanslope Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.184746,
+    "lon" : -0.94678188,
+    "id" : "WEEDBGF",
+    "name" : "Blisworth Ground Frame",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

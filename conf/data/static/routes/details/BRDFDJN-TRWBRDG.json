@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.335286,
+    "lon" : -2.2094973,
+    "id" : "BRDFDJN",
+    "name" : "Bradford Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.319821,
+    "lon" : -2.2141335,
+    "id" : "TRWBRDG",
+    "name" : "Trowbridge",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

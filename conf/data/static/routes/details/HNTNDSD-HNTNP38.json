@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.331585,
+    "lon" : -0.19188957,
+    "id" : "HNTNDSD",
+    "name" : "Huntingdon Down Sidings",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.326652,
+    "lon" : -0.19330872,
+    "id" : "HNTNP38",
+    "name" : "Huntingon Sig P38",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

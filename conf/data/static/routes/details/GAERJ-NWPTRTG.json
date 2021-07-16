@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.578437,
+    "lon" : -3.0069112,
+    "id" : "GAERJ",
+    "name" : "Gaer Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.589189,
+    "lon" : -2.9998305,
+    "id" : "NWPTRTG",
+    "name" : "Newport (South Wales)",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

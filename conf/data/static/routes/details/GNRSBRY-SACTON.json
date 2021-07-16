@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.49141,
+    "lon" : -0.27552695,
+    "id" : "GNRSBRY",
+    "name" : "Gunnersbury",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.499523,
+    "lon" : -0.27019253,
+    "id" : "SACTON",
+    "name" : "South Acton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

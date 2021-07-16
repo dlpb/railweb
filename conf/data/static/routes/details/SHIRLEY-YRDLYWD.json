@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.403392,
+    "lon" : -1.8451503,
+    "id" : "SHIRLEY",
+    "name" : "Shirley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.421034,
+    "lon" : -1.854573,
+    "id" : "YRDLYWD",
+    "name" : "Yardley Wood",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

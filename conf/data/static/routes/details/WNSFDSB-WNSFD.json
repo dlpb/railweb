@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.207174,
+    "lon" : -2.5098684,
+    "id" : "WNSFDSB",
+    "name" : "Winsford S.B.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.190403,
+    "lon" : -2.4943287,
+    "id" : "WNSFD",
+    "name" : "Winsford",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.88821,
+    "lon" : -1.4539429,
+    "id" : "MCHWOOD",
+    "name" : "Marchwood",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.916875,
+    "lon" : -1.4891429,
+    "id" : "TOTTYD",
+    "name" : "Totton Yard",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

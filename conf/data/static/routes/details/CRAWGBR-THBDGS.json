@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.135074,
+    "lon" : -0.16089187,
+    "id" : "CRAWGBR",
+    "name" : "Crawley New Yard (Gbrf)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.117137,
+    "lon" : -0.1611184,
+    "id" : "THBDGS",
+    "name" : "Three Bridges",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

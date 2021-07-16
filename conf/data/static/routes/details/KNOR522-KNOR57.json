@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.414083,
+    "lon" : -1.9334728,
+    "id" : "KNOR522",
+    "name" : "Kings Norton Signal Sy522",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.414083,
+    "lon" : -1.9334728,
+    "id" : "KNOR57",
+    "name" : "Kings Norton Signal Sy57",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

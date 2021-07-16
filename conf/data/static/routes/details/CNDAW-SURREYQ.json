@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.498333,
+    "lon" : -0.05,
+    "id" : "CNDAW",
+    "name" : "Canada Water",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.49319447779276,
+    "lon" : -0.04751865829118127,
+    "id" : "SURREYQ",
+    "name" : "Surrey Quays",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.307983,
+    "lon" : -0.077643751,
+    "id" : "UWRLNGH",
+    "name" : "Upper Warlingham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.289603,
+    "lon" : -0.051620603,
+    "id" : "WLDNGHM",
+    "name" : "Woldingham",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

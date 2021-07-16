@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.947533,
+    "lon" : 1.0537967,
+    "id" : "MANNTEJ",
+    "name" : "Manningtree East Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.943331,
+    "lon" : 1.0790512,
+    "id" : "MISTDL",
+    "name" : "Mistley Down Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

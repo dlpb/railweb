@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.935095,
+    "lon" : -4.2462926,
+    "id" : "DALWHIN",
+    "name" : "Dalwhinnie",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.979394,
+    "lon" : -4.1824417,
+    "id" : "INCLEA",
+    "name" : "Inchlea",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-100"
+} ]

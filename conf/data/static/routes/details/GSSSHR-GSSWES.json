@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.850278,
+    "lon" : -4.274444,
+    "id" : "GSSSHR",
+    "name" : "Shields Road",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 55.85,
+    "lon" : -4.265278,
+    "id" : "GSSWES",
+    "name" : "West Street",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

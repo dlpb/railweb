@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 58.504629,
+    "lon" : -3.4906892,
+    "id" : "GRGMHLC",
+    "name" : "Halkirk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 58.482891,
+    "lon" : -3.5520797,
+    "id" : "SCSCLDR",
+    "name" : "Scotscalder",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

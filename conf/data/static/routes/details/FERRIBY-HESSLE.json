@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.717012,
+    "lon" : -0.5080779,
+    "id" : "FERRIBY",
+    "name" : "Ferriby",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.717349,
+    "lon" : -0.44203857,
+    "id" : "HESSLE",
+    "name" : "Hessle",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

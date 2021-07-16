@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.624573,
+    "lon" : -3.7443872,
+    "id" : "TALRCEM",
+    "name" : "Cemmes Road",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.614139,
+    "lon" : -3.6311239,
+    "id" : "TALRLLA",
+    "name" : "Llanbrynmair",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

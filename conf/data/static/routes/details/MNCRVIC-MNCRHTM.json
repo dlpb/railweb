@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 53.488018,
+    "lon" : -2.2412763,
+    "id" : "MNCRVIC",
+    "name" : "Manchester Victoria",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.4829,
+    "lon" : -2.2127,
+    "id" : "MNCRHTM",
+    "name" : "Holt Town Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "31 MINUTES"
+}, {
+  "from" : {
+    "lat" : 53.488018,
+    "lon" : -2.2412763,
+    "id" : "MNCRVIC",
+    "name" : "Manchester Victoria",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.4829,
+    "lon" : -2.2127,
+    "id" : "MNCRHTM",
+    "name" : "Holt Town Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "28 MINUTES"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.508318,
+    "lon" : -1.4464585,
+    "id" : "ATLBRJN",
+    "name" : "Attleborough Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.455596,
+    "lon" : -1.4084013,
+    "id" : "ATLBSHI",
+    "name" : "Shilton",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

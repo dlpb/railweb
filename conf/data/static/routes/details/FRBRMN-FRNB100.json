@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.296813,
+    "lon" : -0.7559782,
+    "id" : "FRBRMN",
+    "name" : "Farnborough (Main)",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.296616,
+    "lon" : -0.75857964,
+    "id" : "FRNB100",
+    "name" : "Farnborough Sig Be5100",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

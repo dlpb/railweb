@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.303986,
+    "lon" : -2.2365601,
+    "id" : "ALDEDGE",
+    "name" : "Alderley Edge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.270858,
+    "lon" : -2.2798309,
+    "id" : "CHELFD",
+    "name" : "Chelford",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

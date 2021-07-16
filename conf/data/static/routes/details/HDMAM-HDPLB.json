@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.394314,
+    "lon" : -4.0821746,
+    "id" : "HDMAM",
+    "name" : "Marsh Mills",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 50.409651,
+    "lon" : -4.0789948,
+    "id" : "HDPLB",
+    "name" : "Plym Bridge",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

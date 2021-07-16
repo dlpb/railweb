@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.983447,
+    "lon" : -1.3849027,
+    "id" : "CSFD",
+    "name" : "Chandlers Ford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.968726,
+    "lon" : -1.3499066,
+    "id" : "ELGH",
+    "name" : "Eastleigh",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

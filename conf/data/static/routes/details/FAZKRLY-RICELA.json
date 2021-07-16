@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.46922,
+    "lon" : -2.9364701,
+    "id" : "FAZKRLY",
+    "name" : "Fazakerley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.457357,
+    "lon" : -2.9633783,
+    "id" : "RICELA",
+    "name" : "Rice Lane",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

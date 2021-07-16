@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.353615,
+    "lon" : 0.66636014,
+    "id" : "NEWNGTN",
+    "name" : "Newington",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.366987,
+    "lon" : 0.610557,
+    "id" : "RAINHMK",
+    "name" : "Rainham (Kent)",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.284158,
+    "lon" : 1.0750376,
+    "id" : "CNTBW",
+    "name" : "Canterbury West",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.284158,
+    "lon" : 1.0750376,
+    "id" : "CNTBW25",
+    "name" : "Canterbury West Shnt Sg 25",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

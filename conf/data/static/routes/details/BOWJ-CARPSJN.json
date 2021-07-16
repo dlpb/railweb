@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.531096,
+    "lon" : -0.020550743,
+    "id" : "BOWJ",
+    "name" : "Bow Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.538569,
+    "lon" : -0.0078106386,
+    "id" : "CARPSJN",
+    "name" : "Carpenters Rd South Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "7",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

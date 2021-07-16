@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.481705,
+    "lon" : -4.2201027,
+    "id" : "IVRNTMD",
+    "name" : "Inverness T.M.D.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 57.48245,
+    "lon" : -4.2247357,
+    "id" : "ROSEST",
+    "name" : "Rose Street",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

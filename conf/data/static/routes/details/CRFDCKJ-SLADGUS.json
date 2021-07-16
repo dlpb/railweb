@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.462806,
+    "lon" : 0.19460076,
+    "id" : "CRFDCKJ",
+    "name" : "Crayford Creek Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.464996,
+    "lon" : 0.19247419,
+    "id" : "SLADGUS",
+    "name" : "Slade Green Up C.H.S.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

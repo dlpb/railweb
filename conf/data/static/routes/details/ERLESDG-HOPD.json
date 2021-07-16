@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.354937,
+    "lon" : -1.7428116,
+    "id" : "ERLESDG",
+    "name" : "Earles Sdgs S.B.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.345955,
+    "lon" : -1.7294671,
+    "id" : "HOPD",
+    "name" : "Hope (Derbyshire)",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

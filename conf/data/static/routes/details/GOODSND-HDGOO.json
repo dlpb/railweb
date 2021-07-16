@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.428093,
+    "lon" : -3.5638547,
+    "id" : "GOODSND",
+    "name" : "Goodrington Sands",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.424567,
+    "lon" : -3.561682,
+    "id" : "HDGOO",
+    "name" : "Goodrington",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.703615,
+    "lon" : -1.195198,
+    "id" : "SDFRTSB",
+    "name" : "Sudforth Lane Signal Box",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.699123,
+    "lon" : -1.158856,
+    "id" : "WHTBDGE",
+    "name" : "Whitley Bridge",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.50674,
+    "lon" : -0.14276,
+    "id" : "LUJGRP",
+    "name" : "Green Park",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.514,
+    "lon" : -0.15,
+    "id" : "BONDST",
+    "name" : "Bond Street Crossrail",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

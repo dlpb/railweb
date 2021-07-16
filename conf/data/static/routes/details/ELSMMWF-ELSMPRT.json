@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.28482,
+    "lon" : -2.9039925,
+    "id" : "ELSMMWF",
+    "name" : "Ellesmere Port M Wharf Fhh",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.282068,
+    "lon" : -2.8957751,
+    "id" : "ELSMPRT",
+    "name" : "Ellesmere Port",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

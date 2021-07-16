@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.52845,
+    "lon" : -3.4628649,
+    "id" : "MURTHLY",
+    "name" : "Murthly",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.486277,
+    "lon" : -3.4457159,
+    "id" : "STNY",
+    "name" : "Stanley",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-100"
+} ]

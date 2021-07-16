@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.44189,
+    "lon" : -1.9356231,
+    "id" : "SELYOAK",
+    "name" : "Selly Oak",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.451618,
+    "lon" : -1.9361681,
+    "id" : "UNVRSYB",
+    "name" : "University",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

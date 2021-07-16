@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.812625,
+    "lon" : -1.6051592,
+    "id" : "KRKSXO",
+    "name" : "Kirkstall Crossover",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.797453,
+    "lon" : -1.5736478,
+    "id" : "KRKSLUL",
+    "name" : "Kirkstall Up Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

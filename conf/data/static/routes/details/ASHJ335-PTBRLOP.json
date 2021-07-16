@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.441281,
+    "lon" : -2.6253861,
+    "id" : "ASHJ335",
+    "name" : "Ashton Jn Signal B335",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.483843,
+    "lon" : -2.6933663,
+    "id" : "PTBRLOP",
+    "name" : "Portbury Dock Stop Board",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

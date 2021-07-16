@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.384859,
+    "lon" : -0.78115453,
+    "id" : "GBROTJ",
+    "name" : "Gainsborough Trent Jns",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.36665,
+    "lon" : -0.80451829,
+    "id" : "WBTNGBF",
+    "name" : "West Burton Ps (Gbrf)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

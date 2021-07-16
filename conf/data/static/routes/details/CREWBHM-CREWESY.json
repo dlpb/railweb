@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.069652,
+    "lon" : -2.4223212,
+    "id" : "CREWBHM",
+    "name" : "Crewe Bas Hall S.S.M.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.08134,
+    "lon" : -2.429258,
+    "id" : "CREWESY",
+    "name" : "Crewe South Yard",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

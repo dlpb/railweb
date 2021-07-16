@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.588821,
+    "lon" : -0.5550508,
+    "id" : "GERRDSX",
+    "name" : "Gerrards Cross",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.609742,
+    "lon" : -0.60761943,
+    "id" : "SEERGRN",
+    "name" : "Seer Green",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.71292,
+    "lon" : -2.7504739,
+    "id" : "SHRWBCJ",
+    "name" : "Shrewsbury Crewe Jn S.B.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.710661,
+    "lon" : -2.7479928,
+    "id" : "SHRWBY",
+    "name" : "Shrewsbury",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

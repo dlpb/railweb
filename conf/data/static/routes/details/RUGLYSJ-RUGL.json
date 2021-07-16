@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.767549,
+    "lon" : -1.9276168,
+    "id" : "RUGLYSJ",
+    "name" : "Rugeley South Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.769771,
+    "lon" : -1.9301032,
+    "id" : "RUGL",
+    "name" : "Rugeley Trent Valley",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

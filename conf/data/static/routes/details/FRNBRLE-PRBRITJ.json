@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.298261,
+    "lon" : -0.7458268,
+    "id" : "FRNBRLE",
+    "name" : "Farnborough London End",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.299979,
+    "lon" : -0.67407309,
+    "id" : "PRBRITJ",
+    "name" : "Pirbright Junction",
+    "type" : "Location"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

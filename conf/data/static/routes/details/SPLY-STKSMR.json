@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.588883,
+    "lon" : -1.7052745,
+    "id" : "SPLY",
+    "name" : "Shepley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.594121,
+    "lon" : -1.7232023,
+    "id" : "STKSMR",
+    "name" : "Stocksmoor",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

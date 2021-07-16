@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.397936,
+    "lon" : -2.3221749,
+    "id" : "BTHMPTJ",
+    "name" : "Bathampton Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.341777,
+    "lon" : -2.3005761,
+    "id" : "FRESHFD",
+    "name" : "Freshford",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

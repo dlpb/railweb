@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.462948,
+    "lon" : -2.2028464,
+    "id" : "LNGSDGL",
+    "name" : "Longsight Down Goods Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.463553,
+    "lon" : -2.2013581,
+    "id" : "LNGSGHT",
+    "name" : "Longsight",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

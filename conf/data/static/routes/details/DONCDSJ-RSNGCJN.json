@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.498415,
+    "lon" : -1.1051855,
+    "id" : "DONCDSJ",
+    "name" : "Doncaster Decoy South Jcn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.483999,
+    "lon" : -1.0736158,
+    "id" : "RSNGCJN",
+    "name" : "Rossington Colliery Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.989001,
+    "lon" : -1.200724,
+    "id" : "NTL2CIN",
+    "name" : "Cinderhill",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 52.988841,
+    "lon" : -1.206683,
+    "id" : "NTL2PHP",
+    "name" : "Phoenix Park",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

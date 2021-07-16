@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.413983,
+    "lon" : -2.0892963,
+    "id" : "ROMILEY",
+    "name" : "Romiley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.429378,
+    "lon" : -2.09273,
+    "id" : "WOODLEY",
+    "name" : "Woodley",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

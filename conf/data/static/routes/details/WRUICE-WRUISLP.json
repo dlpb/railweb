@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.571189,
+    "lon" : -0.44203316,
+    "id" : "WRUICE",
+    "name" : "West Ruislip Isu (Ce)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.569282,
+    "lon" : -0.4365431,
+    "id" : "WRUISLP",
+    "name" : "West Ruislip",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

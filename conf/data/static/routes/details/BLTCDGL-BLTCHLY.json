@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.997901,
+    "lon" : -0.73683083,
+    "id" : "BLTCDGL",
+    "name" : "Bletchley Up&Down Relief 1",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.995432,
+    "lon" : -0.73634681,
+    "id" : "BLTCHLY",
+    "name" : "Bletchley",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

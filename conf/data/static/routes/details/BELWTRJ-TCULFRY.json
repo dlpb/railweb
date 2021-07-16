@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.110511,
+    "lon" : 0.12373673,
+    "id" : "BELWTRJ",
+    "name" : "Bellwater Jn. S.B.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.148048,
+    "lon" : 0.17792961,
+    "id" : "TCULFRY",
+    "name" : "Firsby",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.722144,
+    "lon" : -4.7180772,
+    "id" : "SDRSFOT",
+    "name" : "Saundersfoot",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.672925,
+    "lon" : -4.7066948,
+    "id" : "TENBY",
+    "name" : "Tenby",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

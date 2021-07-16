@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.126744,
+    "lon" : -5.5202039,
+    "id" : "PONSNDN",
+    "name" : "Ponsandane",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.122492,
+    "lon" : -5.5319399,
+    "id" : "PENZNCE",
+    "name" : "Penzance",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

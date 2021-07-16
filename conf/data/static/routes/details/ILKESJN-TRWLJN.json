@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.973723,
+    "lon" : -1.2924361,
+    "id" : "ILKESJN",
+    "name" : "Ilkeston Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.956754,
+    "lon" : -1.2882622,
+    "id" : "TRWLJN",
+    "name" : "Trowell Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

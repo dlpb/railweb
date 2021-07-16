@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.490241,
+    "lon" : -0.29337504,
+    "id" : "OKEWJN",
+    "name" : "Old Kew Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.489699,
+    "lon" : -0.28823854,
+    "id" : "KEWBDGE",
+    "name" : "Kew Bridge",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.941957,
+    "lon" : -3.23718,
+    "id" : "ETL1MUS",
+    "name" : "Murrayfield Stadium",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 55.945225,
+    "lon" : -3.2190396,
+    "id" : "HAYMRKT",
+    "name" : "Haymarket",
+    "type" : "Station"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

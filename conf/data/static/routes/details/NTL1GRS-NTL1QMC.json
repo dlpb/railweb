@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.943898,
+    "lon" : -1.177245,
+    "id" : "NTL1GRS",
+    "name" : "Gregory Street",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 52.942577,
+    "lon" : -1.183767,
+    "id" : "NTL1QMC",
+    "name" : "Queen's Medical Centre",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

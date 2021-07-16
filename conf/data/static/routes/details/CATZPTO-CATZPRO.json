@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.036667,
+    "lon" : -7.301944,
+    "id" : "CATZPTO",
+    "name" : "Portlaoise  (Cie",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.146111,
+    "lon" : -7.181111,
+    "id" : "CATZPRO",
+    "name" : "Portarlngtn (Cie",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

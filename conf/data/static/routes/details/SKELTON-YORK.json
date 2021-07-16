@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.971175,
+    "lon" : -1.1207332,
+    "id" : "SKELTON",
+    "name" : "Skelton Jn. (York)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.957507,
+    "lon" : -1.0945332,
+    "id" : "YORK",
+    "name" : "York",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

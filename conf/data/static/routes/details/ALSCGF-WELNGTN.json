@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.709593,
+    "lon" : -2.5698826,
+    "id" : "ALSCGF",
+    "name" : "Allscott Gf",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.701405,
+    "lon" : -2.5166782,
+    "id" : "WELNGTN",
+    "name" : "Wellington (Shropshire)",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

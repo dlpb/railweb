@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 53.387813,
+    "lon" : -2.34707,
+    "id" : "ALTRNHM",
+    "name" : "Altrincham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.4427,
+    "lon" : -2.2734,
+    "id" : "MNCRCHM",
+    "name" : "Chorlton Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "36 MINUTES"
+}, {
+  "from" : {
+    "lat" : 53.387813,
+    "lon" : -2.34707,
+    "id" : "ALTRNHM",
+    "name" : "Altrincham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.4427,
+    "lon" : -2.2734,
+    "id" : "MNCRCHM",
+    "name" : "Chorlton Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "39 MINUTES"
+} ]

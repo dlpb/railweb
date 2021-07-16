@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.91183,
+    "lon" : -1.4456728,
+    "id" : "MBRK758",
+    "name" : "Millbrook Sig. E758",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.911385,
+    "lon" : -1.4335878,
+    "id" : "MBRK",
+    "name" : "Millbrook (Hampshire)",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

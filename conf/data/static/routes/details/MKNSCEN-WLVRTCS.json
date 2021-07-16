@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.033488,
+    "lon" : -0.77340987,
+    "id" : "MKNSCEN",
+    "name" : "Milton Keynes Central",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.059173,
+    "lon" : -0.80202465,
+    "id" : "WLVRTCS",
+    "name" : "Wolverton Centre Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

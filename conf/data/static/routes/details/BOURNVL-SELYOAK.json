@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.427474,
+    "lon" : -1.9267024,
+    "id" : "BOURNVL",
+    "name" : "Bournville",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.44189,
+    "lon" : -1.9356231,
+    "id" : "SELYOAK",
+    "name" : "Selly Oak",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

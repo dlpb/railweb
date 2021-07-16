@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.84613,
+    "lon" : -0.88382472,
+    "id" : "NUTBORN",
+    "name" : "Nutbourne",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.848186,
+    "lon" : -0.90719971,
+    "id" : "SBOURNE",
+    "name" : "Southbourne",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

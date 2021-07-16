@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.408803,
+    "lon" : -3.0684579,
+    "id" : "BRKN577",
+    "name" : "Birkenhead North Signl 577",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.404566,
+    "lon" : -3.0577169,
+    "id" : "BRKNHDN",
+    "name" : "Birkenhead North",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.40319,
+    "lon" : -2.9384335,
+    "id" : "EDGHSB",
+    "name" : "Edge Hill S.B.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.394624,
+    "lon" : -2.9269812,
+    "id" : "WVRTREJ",
+    "name" : "Wavertree Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

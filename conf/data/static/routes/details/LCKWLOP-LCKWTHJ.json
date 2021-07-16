@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.478122,
+    "lon" : -3.2064277,
+    "id" : "LCKWLOP",
+    "name" : "Leckwith Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.479308,
+    "lon" : -3.2091087,
+    "id" : "LCKWTHJ",
+    "name" : "Leckwith North Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

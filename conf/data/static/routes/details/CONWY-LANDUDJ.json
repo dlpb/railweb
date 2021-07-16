@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.280089,
+    "lon" : -3.8306737,
+    "id" : "CONWY",
+    "name" : "Conwy",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.283996,
+    "lon" : -3.8096741,
+    "id" : "LANDUDJ",
+    "name" : "Llandudno Junction",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

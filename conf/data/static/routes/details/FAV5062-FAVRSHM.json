@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.313645,
+    "lon" : 0.90993855,
+    "id" : "FAV5062",
+    "name" : "Faversham Signal Ek5062",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.311506,
+    "lon" : 0.89101758,
+    "id" : "FAVRSHM",
+    "name" : "Faversham",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

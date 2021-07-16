@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.596653,
+    "lon" : -3.6426121,
+    "id" : "GRTHMG",
+    "name" : "Garth (Mid Glamorgan)",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.547554,
+    "lon" : -3.5951956,
+    "id" : "TONDU",
+    "name" : "Tondu",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

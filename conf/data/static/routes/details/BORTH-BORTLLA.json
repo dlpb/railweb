@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.490845,
+    "lon" : -4.0496669,
+    "id" : "BORTH",
+    "name" : "Borth",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.462866,
+    "lon" : -4.0244747,
+    "id" : "BORTLLA",
+    "name" : "Llandre",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

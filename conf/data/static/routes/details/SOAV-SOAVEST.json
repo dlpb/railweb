@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.194786,
+    "lon" : -1.7163728,
+    "id" : "SOAV",
+    "name" : "Stratford-Upon-Avon",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.196621,
+    "lon" : -1.7165221,
+    "id" : "SOAVEST",
+    "name" : "Stratford Upon Avon East",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

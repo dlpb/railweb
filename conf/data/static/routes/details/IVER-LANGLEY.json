@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.508567,
+    "lon" : -0.50694001,
+    "id" : "IVER",
+    "name" : "Iver",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.507818,
+    "lon" : -0.54108662,
+    "id" : "LANGLEY",
+    "name" : "Langley",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

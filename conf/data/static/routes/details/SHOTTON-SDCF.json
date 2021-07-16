@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.214018,
+    "lon" : -3.037966,
+    "id" : "SHOTTON",
+    "name" : "Shotton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.197724,
+    "lon" : -2.9963911,
+    "id" : "SDCF",
+    "name" : "Sandycroft",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.499988,
+    "lon" : -4.1465565,
+    "id" : "IVRNESS",
+    "name" : "Inverness",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 57.9,
+    "lon" : -5.166,
+    "id" : "ULLAPOL",
+    "name" : "Ullapool",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

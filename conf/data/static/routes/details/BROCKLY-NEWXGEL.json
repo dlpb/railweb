@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.464423,
+    "lon" : -0.037546328,
+    "id" : "BROCKLY",
+    "name" : "Brockley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.475844,
+    "lon" : -0.04082905,
+    "id" : "NEWXGEL",
+    "name" : "New Cross Gate",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.217558,
+    "lon" : -0.9174331,
+    "id" : "NMPTHHT",
+    "name" : "Hunsbury Hill Tunnel",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.236297,
+    "lon" : -0.90699012,
+    "id" : "NMPTNSJ",
+    "name" : "Northampton South Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

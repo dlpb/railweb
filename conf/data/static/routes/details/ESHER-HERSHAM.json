@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.380014,
+    "lon" : -0.35389377,
+    "id" : "ESHER",
+    "name" : "Esher",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.377002,
+    "lon" : -0.38883178,
+    "id" : "HERSHAM",
+    "name" : "Hersham",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

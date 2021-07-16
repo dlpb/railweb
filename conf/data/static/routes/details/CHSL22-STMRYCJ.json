@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.405429,
+    "lon" : 0.057397958,
+    "id" : "CHSL22",
+    "name" : "Up Chatham Loop Sig Ad22",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.396093,
+    "lon" : 0.076328523,
+    "id" : "STMRYCJ",
+    "name" : "St Mary Cray Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

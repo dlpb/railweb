@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.264012,
+    "lon" : -0.50341082,
+    "id" : "CLANDON",
+    "name" : "Clandon",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.240894,
+    "lon" : -0.56530485,
+    "id" : "LRDGFD",
+    "name" : "London Road (Guildford)",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.351354,
+    "lon" : -3.5702014,
+    "id" : "DMTHKWR",
+    "name" : "Kingswear",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 50.431869,
+    "lon" : -3.565345,
+    "id" : "PAIGXGF",
+    "name" : "Paignton Xover G.F. P&Dsr",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

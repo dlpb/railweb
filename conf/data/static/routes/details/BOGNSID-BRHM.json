@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.787496,
+    "lon" : -0.67572613,
+    "id" : "BOGNSID",
+    "name" : "Bognor Regis Sidings",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.830713,
+    "lon" : -0.64016831,
+    "id" : "BRHM",
+    "name" : "Barnham",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.516961,
+    "lon" : -0.26786008,
+    "id" : "ACTONML",
+    "name" : "Acton Main Line",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.523611,
+    "lon" : -0.259722,
+    "id" : "NACTON",
+    "name" : "North Acton Underground",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "20 MINUTES"
+} ]

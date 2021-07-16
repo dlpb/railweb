@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.706425,
+    "lon" : -1.2645429,
+    "id" : "KNTNGWJ",
+    "name" : "Knottingley West Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.705576,
+    "lon" : -1.2817214,
+    "id" : "PTFTMGJ",
+    "name" : "Pontefract East Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

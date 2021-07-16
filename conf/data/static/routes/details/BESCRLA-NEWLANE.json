@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.623712,
+    "lon" : -2.9139574,
+    "id" : "BESCRLA",
+    "name" : "Bescar Lane",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.611513,
+    "lon" : -2.8670327,
+    "id" : "NEWLANE",
+    "name" : "New Lane",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

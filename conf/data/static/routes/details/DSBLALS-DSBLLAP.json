@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.510301,
+    "lon" : -0.012832,
+    "id" : "DSBLALS",
+    "name" : "All Saints",
+    "type" : "Light Rail"
+  },
+  "to" : {
+    "lat" : 51.515199,
+    "lon" : -0.014164746,
+    "id" : "DSBLLAP",
+    "name" : "Langdon Park",
+    "type" : "Light Rail"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Light Rail",
+  "speed" : "OHLE"
+} ]

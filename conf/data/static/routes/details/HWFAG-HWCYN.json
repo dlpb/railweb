@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.5956,
+    "lon" : -4.060225,
+    "id" : "HWFAG",
+    "name" : "Fach Goch",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.598423,
+    "lon" : -4.052974,
+    "id" : "HWCYN",
+    "name" : "Cynfal",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

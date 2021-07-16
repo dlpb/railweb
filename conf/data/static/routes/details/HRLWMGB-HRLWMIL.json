@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.788499,
+    "lon" : 0.12456347,
+    "id" : "HRLWMGB",
+    "name" : "Harlow Mill Rec (Gbrf)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.790421,
+    "lon" : 0.13213624,
+    "id" : "HRLWMIL",
+    "name" : "Harlow Mill",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

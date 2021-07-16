@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.012653,
+    "lon" : -2.1921259,
+    "id" : "STOKCV",
+    "name" : "Cliffe Vale",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.00796,
+    "lon" : -2.1811512,
+    "id" : "STOKEOT",
+    "name" : "Stoke-On-Trent",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

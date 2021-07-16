@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.411359,
+    "lon" : -0.12168513,
+    "id" : "NORBURY",
+    "name" : "Norbury",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.399302,
+    "lon" : -0.10116108,
+    "id" : "THTH",
+    "name" : "Thornton Heath",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

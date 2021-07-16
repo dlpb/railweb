@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.968726,
+    "lon" : -1.3499066,
+    "id" : "ELGH",
+    "name" : "Eastleigh",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.965843,
+    "lon" : -1.3506162,
+    "id" : "ELGHBRM",
+    "name" : "Eastleigh Arlington (Zg)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

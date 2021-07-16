@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.44714,
+    "lon" : -1.4946022,
+    "id" : "COVAREN",
+    "name" : "Coventry Arena",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.439077,
+    "lon" : -1.5012112,
+    "id" : "THREESJ",
+    "name" : "Three Spires Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

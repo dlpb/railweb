@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.400741,
+    "lon" : -1.5136956,
+    "id" : "COVNTRY",
+    "name" : "Coventry",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.378695,
+    "lon" : -1.2863805,
+    "id" : "RUGBLLJ",
+    "name" : "Rugby Long Lawford Junc",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

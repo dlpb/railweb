@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.68021,
+    "lon" : -0.62738704,
+    "id" : "AMERMWD",
+    "name" : "Mantles Wood",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.703084,
+    "lon" : -0.70906654,
+    "id" : "GTMSNDN",
+    "name" : "Great Missenden",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

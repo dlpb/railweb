@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.491173,
+    "lon" : -2.0935735,
+    "id" : "ASHONUL",
+    "name" : "Ashton-Under-Lyne",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.484209,
+    "lon" : -2.0640671,
+    "id" : "SBYD",
+    "name" : "Stalybridge",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

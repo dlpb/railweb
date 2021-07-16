@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.498627,
+    "lon" : -2.2062428,
+    "id" : "BREWRYS",
+    "name" : "Brewery Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.502746,
+    "lon" : -2.1937346,
+    "id" : "THRPSBJ",
+    "name" : "Thorpes Bridge Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

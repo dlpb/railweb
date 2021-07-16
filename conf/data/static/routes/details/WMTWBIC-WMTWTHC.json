@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.56546,
+    "lon" : -2.0747,
+    "id" : "WMTWBIC",
+    "name" : "Bilston Central",
+    "type" : "Metro"
+  },
+  "to" : {
+    "lat" : 52.56795,
+    "lon" : -2.08086,
+    "id" : "WMTWTHC",
+    "name" : "The Crescent",
+    "type" : "Metro"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Metro",
+  "speed" : "OHLE"
+} ]

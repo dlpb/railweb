@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.0889636957593,
+    "lon" : 0.20143172133156884,
+    "id" : "ERIDBUS",
+    "name" : "Eridge A26 Bus S",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.112274,
+    "lon" : 0.1881214,
+    "id" : "HTWGRO",
+    "name" : "Groombridge",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

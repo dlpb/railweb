@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.043936,
+    "lon" : -0.89263017,
+    "id" : "LISS",
+    "name" : "Liss",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.006267,
+    "lon" : -0.9422589,
+    "id" : "PTRSFLD",
+    "name" : "Petersfield",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

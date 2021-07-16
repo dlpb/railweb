@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.458959,
+    "lon" : -0.21090875,
+    "id" : "EPUTNEY",
+    "name" : "East Putney",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 51.446341,
+    "lon" : -0.20671054,
+    "id" : "STHFLDS",
+    "name" : "Southfields",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

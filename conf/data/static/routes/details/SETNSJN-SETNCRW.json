@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.648679,
+    "lon" : -1.2062904,
+    "id" : "SETNSJN",
+    "name" : "Seaton Snook Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.658229,
+    "lon" : -1.2004618,
+    "id" : "SETNCRW",
+    "name" : "Seaton Carew",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

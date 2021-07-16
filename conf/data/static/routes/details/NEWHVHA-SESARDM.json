@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.798994,
+    "lon" : 0.052728763,
+    "id" : "NEWHVHA",
+    "name" : "Newhaven Day Aggregates",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.831047,
+    "lon" : 0.030660269,
+    "id" : "SESARDM",
+    "name" : "Southease",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

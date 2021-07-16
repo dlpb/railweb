@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.669117,
+    "lon" : -3.2957867,
+    "id" : "TRELEWS",
+    "name" : "Trelewis",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.64035,
+    "lon" : -3.2419875,
+    "id" : "YSTRDMS",
+    "name" : "Ystrad Mynach South",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

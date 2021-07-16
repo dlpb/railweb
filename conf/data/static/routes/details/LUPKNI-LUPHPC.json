@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.50169,
+    "lon" : -0.1603,
+    "id" : "LUPKNI",
+    "name" : "Knightsbridge",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.50313,
+    "lon" : -0.15278,
+    "id" : "LUPHPC",
+    "name" : "Hyde Park Corner",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

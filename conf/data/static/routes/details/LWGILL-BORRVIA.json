@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.372922,
+    "lon" : -2.5824286,
+    "id" : "LWGILL",
+    "name" : "Lowgill",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.406823,
+    "lon" : -2.6042002,
+    "id" : "BORRVIA",
+    "name" : "Borrow Brook Viaduct",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

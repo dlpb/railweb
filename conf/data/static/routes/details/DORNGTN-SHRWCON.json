@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.625984,
+    "lon" : -2.7706727,
+    "id" : "DORNGTN",
+    "name" : "Dorrington",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.652849,
+    "lon" : -2.7646409,
+    "id" : "SHRWCON",
+    "name" : "Condover",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "70-90"
+} ]

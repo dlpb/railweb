@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.348436,
+    "lon" : -1.988379,
+    "id" : "FURNESV",
+    "name" : "Furness Vale",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.330251,
+    "lon" : -1.9847351,
+    "id" : "WHALYBG",
+    "name" : "Whaley Bridge",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

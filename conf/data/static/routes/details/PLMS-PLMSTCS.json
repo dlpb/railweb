@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.489705,
+    "lon" : 0.083676197,
+    "id" : "PLMS",
+    "name" : "Plumstead",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.490036,
+    "lon" : 0.088833924,
+    "id" : "PLMSTCS",
+    "name" : "Plumstead C.H.S.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

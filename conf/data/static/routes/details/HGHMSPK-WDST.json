@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.608179,
+    "lon" : -3.3079128E-4,
+    "id" : "HGHMSPK",
+    "name" : "Highams Park",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.586762,
+    "lon" : -0.0020653506,
+    "id" : "WDST",
+    "name" : "Wood Street",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

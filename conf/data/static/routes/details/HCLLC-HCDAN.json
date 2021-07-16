@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.907821,
+    "lon" : -4.3188091,
+    "id" : "HCLLC",
+    "name" : "Llwyfan Cerrig",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 51.907215,
+    "lon" : -4.3307476,
+    "id" : "HCDAN",
+    "name" : "Danycoed",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.904135,
+    "lon" : -0.0098550361,
+    "id" : "COKSBDG",
+    "name" : "Cooksbridge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.870755,
+    "lon" : 0.013467866,
+    "id" : "LEWES",
+    "name" : "Lewes",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

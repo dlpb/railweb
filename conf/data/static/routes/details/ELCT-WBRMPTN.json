@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.490829,
+    "lon" : -0.1951125,
+    "id" : "ELCT",
+    "name" : "Earl's Court Underground",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 51.487114,
+    "lon" : -0.19564809,
+    "id" : "WBRMPTN",
+    "name" : "West Brompton",
+    "type" : "Station"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

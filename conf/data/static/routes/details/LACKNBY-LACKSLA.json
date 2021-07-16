@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.600275,
+    "lon" : -1.1292009,
+    "id" : "LACKNBY",
+    "name" : "Lackenby B.S.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.591064,
+    "lon" : -1.1443624,
+    "id" : "LACKSLA",
+    "name" : "Slag Road Lc",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

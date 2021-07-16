@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.439579,
+    "lon" : -3.5421578,
+    "id" : "BRYSTNS",
+    "name" : "Braystones",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.416735,
+    "lon" : -3.5106007,
+    "id" : "SELAFLD",
+    "name" : "Sellafield",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

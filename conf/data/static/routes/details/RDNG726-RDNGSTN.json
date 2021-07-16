@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.46049,
+    "lon" : -0.98385849,
+    "id" : "RDNG726",
+    "name" : "Reading Sig. T1726",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.459051,
+    "lon" : -0.97251935,
+    "id" : "RDNGSTN",
+    "name" : "Reading",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

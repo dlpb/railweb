@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.360263,
+    "lon" : -2.7132387,
+    "id" : "WIDNCJN",
+    "name" : "Widnes Carterhouse Jn S.B.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.369415,
+    "lon" : -2.6726772,
+    "id" : "FDLRSSB",
+    "name" : "Fiddlers Ferry S.B.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

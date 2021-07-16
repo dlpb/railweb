@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.542877,
+    "lon" : -0.13131602,
+    "id" : "DOKJNSP",
+    "name" : "Dock Jn North",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.540187,
+    "lon" : -0.13014276,
+    "id" : "DOKJSSP",
+    "name" : "Dock Jn South",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

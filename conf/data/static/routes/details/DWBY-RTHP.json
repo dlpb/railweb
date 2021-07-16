@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.691969,
+    "lon" : -1.6333501,
+    "id" : "DWBY",
+    "name" : "Dewsbury",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.675702,
+    "lon" : -1.6552746,
+    "id" : "RTHP",
+    "name" : "Ravensthorpe",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.968726,
+    "lon" : -1.3499066,
+    "id" : "ELGH",
+    "name" : "Eastleigh",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.941102,
+    "lon" : -1.3765088,
+    "id" : "SWYTHLN",
+    "name" : "Swaythling",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

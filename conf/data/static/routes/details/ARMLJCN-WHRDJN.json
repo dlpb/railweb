@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.797427,
+    "lon" : -1.5737392,
+    "id" : "ARMLJCN",
+    "name" : "Armley Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.791929,
+    "lon" : -1.5594652,
+    "id" : "WHRDJN",
+    "name" : "Whitehall Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

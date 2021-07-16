@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.57128,
+    "lon" : -1.2030217,
+    "id" : "NARBRO",
+    "name" : "Narborough",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.582115,
+    "lon" : -1.1366177,
+    "id" : "WGSTGPJ",
+    "name" : "Glen Parva Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

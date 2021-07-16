@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.436568,
+    "lon" : 0.43742007,
+    "id" : "HOOJ",
+    "name" : "Hoo Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.43647,
+    "lon" : 0.44643679,
+    "id" : "HOOJ611",
+    "name" : "Hoo Junction Signal Nk1611",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

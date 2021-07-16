@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.294946,
+    "lon" : -3.2634182,
+    "id" : "DOLAU",
+    "name" : "Dolau",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.336126,
+    "lon" : -3.213486,
+    "id" : "LLBSTRD",
+    "name" : "Llanbister Road",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.783263,
+    "lon" : -3.6469464,
+    "id" : "CREDITN",
+    "name" : "Crediton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.778667,
+    "lon" : -3.5886284,
+    "id" : "NSTCYRE",
+    "name" : "Newton St Cyres",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

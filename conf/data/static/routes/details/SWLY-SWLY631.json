@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.393057,
+    "lon" : 0.16754233,
+    "id" : "SWLY",
+    "name" : "Swanley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.393057,
+    "lon" : 0.16754233,
+    "id" : "SWLY631",
+    "name" : "Swanley Signal Vs631",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.487114,
+    "lon" : -0.19564809,
+    "id" : "WBRMPTN",
+    "name" : "West Brompton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.48033,
+    "lon" : -0.19488,
+    "id" : "LUDFUB",
+    "name" : "Fulham Broadway",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

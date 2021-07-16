@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.409204,
+    "lon" : 0.017707119,
+    "id" : "BROMLYN",
+    "name" : "Bromley North",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.400023,
+    "lon" : 0.018697581,
+    "id" : "BROMLYS",
+    "name" : "Bromley South",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "14 MINUTES"
+} ]

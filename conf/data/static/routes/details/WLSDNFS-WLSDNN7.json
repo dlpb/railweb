@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.539684,
+    "lon" : -0.27145333,
+    "id" : "WLSDNFS",
+    "name" : "Willesden 'F' Sidings",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.535748,
+    "lon" : -0.25830817,
+    "id" : "WLSDNN7",
+    "name" : "Willesden No7",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

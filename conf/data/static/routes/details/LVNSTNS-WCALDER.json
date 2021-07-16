@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.871622,
+    "lon" : -3.5013906,
+    "id" : "LVNSTNS",
+    "name" : "Livingston South",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.853778,
+    "lon" : -3.5667761,
+    "id" : "WCALDER",
+    "name" : "West Calder",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

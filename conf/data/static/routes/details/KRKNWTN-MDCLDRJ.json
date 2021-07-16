@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.889025,
+    "lon" : -3.4330515,
+    "id" : "KRKNWTN",
+    "name" : "Kirknewton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.883054,
+    "lon" : -3.4563165,
+    "id" : "MDCLDRJ",
+    "name" : "Midcalder Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

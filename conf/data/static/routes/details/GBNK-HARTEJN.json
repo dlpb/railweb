@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.251409,
+    "lon" : -2.5343449,
+    "id" : "GBNK",
+    "name" : "Greenbank",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.252327,
+    "lon" : -2.5220061,
+    "id" : "HARTEJN",
+    "name" : "Hartford East Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

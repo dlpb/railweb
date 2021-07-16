@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.900569,
+    "lon" : -4.4041504,
+    "id" : "CLYBANK",
+    "name" : "Clydebank",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.89295,
+    "lon" : -4.3873966,
+    "id" : "YOKER",
+    "name" : "Yoker",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.419581,
+    "lon" : -1.9264655,
+    "id" : "LIFODWJ",
+    "name" : "Lifford West Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.414083,
+    "lon" : -1.9334728,
+    "id" : "KNORTON",
+    "name" : "Kings Norton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

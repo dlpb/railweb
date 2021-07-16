@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.506064,
+    "lon" : -0.37742491,
+    "id" : "STHALL",
+    "name" : "Southall",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.503329,
+    "lon" : -0.39887544,
+    "id" : "STHALWJ",
+    "name" : "Southall West Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

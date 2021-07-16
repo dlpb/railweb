@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.400909,
+    "lon" : -1.4373694,
+    "id" : "ATTREWS",
+    "name" : "Attercliffe Sdgs Ews",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.40756,
+    "lon" : -1.4277898,
+    "id" : "BTSDLOP",
+    "name" : "Brightside Up/Dn East Slow",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

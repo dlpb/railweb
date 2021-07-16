@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.442971247900026,
+    "lon" : 0.32092084452941283,
+    "id" : "EBSFEJN",
+    "name" : "Ebbsfleet International",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.412458,
+    "lon" : 0.36586954,
+    "id" : "SNGWLP",
+    "name" : "Singlewell Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

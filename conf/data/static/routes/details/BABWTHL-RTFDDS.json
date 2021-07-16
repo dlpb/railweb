@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.312014,
+    "lon" : -0.95801756,
+    "id" : "BABWTHL",
+    "name" : "Babworth Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.314799,
+    "lon" : -0.94762251,
+    "id" : "RTFDDS",
+    "name" : "Retford Down Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

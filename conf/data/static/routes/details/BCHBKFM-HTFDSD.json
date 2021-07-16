@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.166194,
+    "lon" : 0.84887091,
+    "id" : "BCHBKFM",
+    "name" : "Beechbrook Farm Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.182304,
+    "lon" : 0.83065965,
+    "id" : "HTFDSD",
+    "name" : "Hothfield Siding",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "70-90"
+} ]

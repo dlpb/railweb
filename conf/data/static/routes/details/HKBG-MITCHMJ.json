@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.377868,
+    "lon" : -0.15374959,
+    "id" : "HKBG",
+    "name" : "Hackbridge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.392835,
+    "lon" : -0.15737312,
+    "id" : "MITCHMJ",
+    "name" : "Mitcham Junction",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

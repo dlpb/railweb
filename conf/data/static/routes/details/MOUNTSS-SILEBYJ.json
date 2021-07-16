@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.745506,
+    "lon" : -1.132652,
+    "id" : "MOUNTSS",
+    "name" : "Mountsorrel Sdgs",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.73483,
+    "lon" : -1.1137734,
+    "id" : "SILEBYJ",
+    "name" : "Sileby Jn",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

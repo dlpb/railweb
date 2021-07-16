@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.405429,
+    "lon" : 0.057397958,
+    "id" : "CHSL22",
+    "name" : "Up Chatham Loop Sig Ad22",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.405429,
+    "lon" : 0.057397958,
+    "id" : "CHSLHRS",
+    "name" : "Chislehurst",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

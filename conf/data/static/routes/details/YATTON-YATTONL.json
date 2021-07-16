@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.390896,
+    "lon" : -2.8276761,
+    "id" : "YATTON",
+    "name" : "Yatton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.387197,
+    "lon" : -2.8369936,
+    "id" : "YATTONL",
+    "name" : "Yatton Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

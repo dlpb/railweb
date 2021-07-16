@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.712922,
+    "lon" : -2.4722064,
+    "id" : "MONTRSE",
+    "name" : "Montrose",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.690492,
+    "lon" : -2.4619014,
+    "id" : "USAN",
+    "name" : "Usan",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

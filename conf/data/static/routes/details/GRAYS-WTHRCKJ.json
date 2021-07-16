@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.47644,
+    "lon" : 0.32110755,
+    "id" : "GRAYS",
+    "name" : "Grays",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.47526,
+    "lon" : 0.30115986,
+    "id" : "WTHRCKJ",
+    "name" : "West Thurrock Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

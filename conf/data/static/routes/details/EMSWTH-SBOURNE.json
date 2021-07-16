@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.851657,
+    "lon" : -0.93930948,
+    "id" : "EMSWTH",
+    "name" : "Emsworth",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.848186,
+    "lon" : -0.90719971,
+    "id" : "SBOURNE",
+    "name" : "Southbourne",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

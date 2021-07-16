@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 51.291754,
+    "lon" : -0.23606052,
+    "id" : "TADWTH",
+    "name" : "Tadworth",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.29163567610228,
+    "lon" : -0.23596466097434754,
+    "id" : "TADWBUS",
+    "name" : "Tadworth (Avenue",
+    "type" : "Bus"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : " 4"
+}, {
+  "from" : {
+    "lat" : 51.291754,
+    "lon" : -0.23606052,
+    "id" : "TADWTH",
+    "name" : "Tadworth",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.29163567610228,
+    "lon" : -0.23596466097434754,
+    "id" : "TADWBUS",
+    "name" : "Tadworth (Avenue",
+    "type" : "Bus"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "4 MINUTES"
+} ]

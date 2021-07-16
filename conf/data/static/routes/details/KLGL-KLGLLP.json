@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.706249,
+    "lon" : -0.43791902,
+    "id" : "KLGL",
+    "name" : "Kings Langley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.694728,
+    "lon" : -0.43371451,
+    "id" : "KLGLLP",
+    "name" : "Kings Langley Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

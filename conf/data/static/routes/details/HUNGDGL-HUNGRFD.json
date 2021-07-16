@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.414689,
+    "lon" : -1.5114409,
+    "id" : "HUNGDGL",
+    "name" : "Hungerford Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.414689,
+    "lon" : -1.5114409,
+    "id" : "HUNGRFD",
+    "name" : "Hungerford",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

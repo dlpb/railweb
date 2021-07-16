@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.426771,
+    "lon" : 0.27910938,
+    "id" : "CHTISHM",
+    "name" : "Chettisham",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.451431,
+    "lon" : 0.24360358,
+    "id" : "THRDRVE",
+    "name" : "Third Drove",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

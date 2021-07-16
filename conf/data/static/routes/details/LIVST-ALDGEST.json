@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.518944,
+    "lon" : -0.080939088,
+    "id" : "LIVST",
+    "name" : "London Liverpool Street",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.514326,
+    "lon" : -0.075757289,
+    "id" : "ALDGEST",
+    "name" : "Aldgate East",
+    "type" : "Location"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

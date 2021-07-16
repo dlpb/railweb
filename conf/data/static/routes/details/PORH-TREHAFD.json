@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.612352,
+    "lon" : -3.4074426,
+    "id" : "PORH",
+    "name" : "Porth",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.610106,
+    "lon" : -3.380771,
+    "id" : "TREHAFD",
+    "name" : "Trehafod",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "45-75"
+} ]

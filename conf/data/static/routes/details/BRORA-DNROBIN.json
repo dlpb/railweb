@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 58.013021,
+    "lon" : -3.8522865,
+    "id" : "BRORA",
+    "name" : "Brora",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 57.985883,
+    "lon" : -3.9471638,
+    "id" : "DNROBIN",
+    "name" : "Dunrobin Castle",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

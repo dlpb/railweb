@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.816475,
+    "lon" : -0.4887016,
+    "id" : "ANGMRNG",
+    "name" : "Angmering",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.827422,
+    "lon" : -0.56442697,
+    "id" : "ARUNDLJ",
+    "name" : "Arundel Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

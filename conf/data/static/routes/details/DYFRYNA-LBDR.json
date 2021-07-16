@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.78874,
+    "lon" : -4.1047717,
+    "id" : "DYFRYNA",
+    "name" : "Dyffryn Ardudwy",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.820302,
+    "lon" : -4.1096069,
+    "id" : "LBDR",
+    "name" : "Llanbedr",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

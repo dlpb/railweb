@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.993819,
+    "lon" : -4.7061395,
+    "id" : "CRGDRNJ",
+    "name" : "Craigendoran Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.012478,
+    "lon" : -4.7310476,
+    "id" : "HLNSBRU",
+    "name" : "Helensburgh Upper",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

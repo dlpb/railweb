@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.976357,
+    "lon" : -3.5961847,
+    "id" : "LNLTHGW",
+    "name" : "Linlithgow",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.969329,
+    "lon" : -3.4698752,
+    "id" : "WNCBROJ",
+    "name" : "Winchburgh Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

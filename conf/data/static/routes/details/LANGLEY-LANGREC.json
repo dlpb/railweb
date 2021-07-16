@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.507818,
+    "lon" : -0.54108662,
+    "id" : "LANGLEY",
+    "name" : "Langley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.507811,
+    "lon" : -0.53761413,
+    "id" : "LANGREC",
+    "name" : "Langley Reception Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

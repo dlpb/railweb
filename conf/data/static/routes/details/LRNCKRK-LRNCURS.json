@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.839212,
+    "lon" : -2.4607981,
+    "id" : "LRNCKRK",
+    "name" : "Laurencekirk",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.839403,
+    "lon" : -2.4602432,
+    "id" : "LRNCURS",
+    "name" : "Laurencekirk U.R.S.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

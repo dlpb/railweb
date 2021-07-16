@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.351539,
+    "lon" : -1.5671622,
+    "id" : "KENLSTN",
+    "name" : "Kenilworth",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.351539,
+    "lon" : -1.5671622,
+    "id" : "KENLWTH",
+    "name" : "Kenilworth",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.866424,
+    "lon" : -2.5729832,
+    "id" : "CHETNOL",
+    "name" : "Chetnole",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.83522,
+    "lon" : -2.5801556,
+    "id" : "EVERSHT",
+    "name" : "Evershot",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

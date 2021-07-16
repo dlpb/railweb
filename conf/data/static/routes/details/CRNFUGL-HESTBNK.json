@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.127272,
+    "lon" : -2.7748297,
+    "id" : "CRNFUGL",
+    "name" : "Carnforth D&U.G.L.",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 54.091941,
+    "lon" : -2.8142749,
+    "id" : "HESTBNK",
+    "name" : "Hest Bank",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

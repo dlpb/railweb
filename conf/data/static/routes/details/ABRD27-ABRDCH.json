@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.142087,
+    "lon" : -2.0973093,
+    "id" : "ABRD27",
+    "name" : "Aberdeen Sig A27",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 57.141125,
+    "lon" : -2.0983147,
+    "id" : "ABRDCH",
+    "name" : "Aberdeen Clayhills Car.M.D",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

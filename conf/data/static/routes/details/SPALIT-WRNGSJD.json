@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.721132,
+    "lon" : -0.21209684,
+    "id" : "SPALIT",
+    "name" : "Littleworth",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.664941,
+    "lon" : -0.255635,
+    "id" : "WRNGSJD",
+    "name" : "St. James Deeping",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

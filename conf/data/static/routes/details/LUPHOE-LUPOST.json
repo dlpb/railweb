@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.47354,
+    "lon" : -0.356,
+    "id" : "LUPHOE",
+    "name" : "Hounslow East",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.481569,
+    "lon" : -0.35196,
+    "id" : "LUPOST",
+    "name" : "Osterley",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

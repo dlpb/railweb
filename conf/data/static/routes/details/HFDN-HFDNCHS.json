@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.798584,
+    "lon" : -0.092293072,
+    "id" : "HFDN",
+    "name" : "Hertford North",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.795005,
+    "lon" : -0.091733534,
+    "id" : "HFDNCHS",
+    "name" : "Hertford Nth C.H.S.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

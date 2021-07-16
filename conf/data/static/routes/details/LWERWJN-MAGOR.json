@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.58293,
+    "lon" : -2.9445885,
+    "id" : "LWERWJN",
+    "name" : "Llanwern West Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.577798,
+    "lon" : -2.8289321,
+    "id" : "MAGOR",
+    "name" : "Magor",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

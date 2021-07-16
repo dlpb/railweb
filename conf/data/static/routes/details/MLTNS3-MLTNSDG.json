@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.761003,
+    "lon" : -0.88592923,
+    "id" : "MLTNS3",
+    "name" : "Melton Mowbray Shunt Sig 3",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.761003,
+    "lon" : -0.88592923,
+    "id" : "MLTNSDG",
+    "name" : "Melton Mowbray",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

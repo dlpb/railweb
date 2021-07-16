@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.547875,
+    "lon" : -0.28366184,
+    "id" : "STNBPKD",
+    "name" : "Stonebridge Park Depot",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.544982,
+    "lon" : -0.27833366,
+    "id" : "STNBS34",
+    "name" : "Stnbridge Park Signal Ws34",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

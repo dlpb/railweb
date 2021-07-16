@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.221505,
+    "lon" : 0.15697279,
+    "id" : "CESTGBR",
+    "name" : "Chesterton Junction Gbrf",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.229444,
+    "lon" : 0.16290759,
+    "id" : "CESTRNJ",
+    "name" : "Chesterton Junction Yd Nth",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

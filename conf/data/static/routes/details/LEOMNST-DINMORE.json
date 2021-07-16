@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.225662,
+    "lon" : -2.73037,
+    "id" : "LEOMNST",
+    "name" : "Leominster",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.160675,
+    "lon" : -2.7191161,
+    "id" : "DINMORE",
+    "name" : "Dinmore Tunnels",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "70-90"
+} ]

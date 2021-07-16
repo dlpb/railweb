@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.425383,
+    "lon" : -0.1388461,
+    "id" : "STRENJN",
+    "name" : "Streatham North Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.42539,
+    "lon" : -0.1325023,
+    "id" : "STRESJN",
+    "name" : "Streatham South Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

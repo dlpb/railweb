@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.579769,
+    "lon" : -1.8280613,
+    "id" : "FOUROKS",
+    "name" : "Four Oaks",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.564671,
+    "lon" : -1.8253467,
+    "id" : "SUTCO",
+    "name" : "Sutton Coldfield",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

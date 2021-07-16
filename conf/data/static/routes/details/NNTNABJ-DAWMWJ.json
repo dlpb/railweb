@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.529557,
+    "lon" : -1.4793143,
+    "id" : "NNTNABJ",
+    "name" : "Nuneaton Abbey Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.509878,
+    "lon" : -1.6296588,
+    "id" : "DAWMWJ",
+    "name" : "Daw Mill West Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

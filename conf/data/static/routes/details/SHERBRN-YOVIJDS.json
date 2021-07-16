@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.943849,
+    "lon" : -2.5132137,
+    "id" : "SHERBRN",
+    "name" : "Sherborne",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.924912,
+    "lon" : -2.6118753,
+    "id" : "YOVIJDS",
+    "name" : "Yeovil Jn Dn Sdgs 1&2",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

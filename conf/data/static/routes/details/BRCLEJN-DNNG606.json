@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.32855,
+    "lon" : -1.190425,
+    "id" : "BRCLEJN",
+    "name" : "Brancliffe East Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.353407,
+    "lon" : -1.2273784,
+    "id" : "DNNG606",
+    "name" : "Dinnington Sig Wp606",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.296502,
+    "lon" : 0.17118161,
+    "id" : "DTNG",
+    "name" : "Dunton Green",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.276438,
+    "lon" : 0.18182083,
+    "id" : "SVNOAKS",
+    "name" : "Sevenoaks",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

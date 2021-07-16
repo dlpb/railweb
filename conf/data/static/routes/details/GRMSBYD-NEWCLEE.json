@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.574144,
+    "lon" : -0.075866931,
+    "id" : "GRMSBYD",
+    "name" : "Grimsby Docks",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.574193,
+    "lon" : -0.059975278,
+    "id" : "NEWCLEE",
+    "name" : "New Clee",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

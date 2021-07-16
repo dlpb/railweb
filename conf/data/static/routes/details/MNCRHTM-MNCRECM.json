@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.4829,
+    "lon" : -2.2127,
+    "id" : "MNCRHTM",
+    "name" : "Holt Town Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.4853,
+    "lon" : -2.2002,
+    "id" : "MNCRECM",
+    "name" : "Etihad Camp Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

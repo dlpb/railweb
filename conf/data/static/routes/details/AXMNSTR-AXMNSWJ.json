@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.77917,
+    "lon" : -3.0047635,
+    "id" : "AXMNSTR",
+    "name" : "Axminster",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.77917,
+    "lon" : -3.0047635,
+    "id" : "AXMNSWJ",
+    "name" : "Axminster West Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

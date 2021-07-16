@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.791877,
+    "lon" : -3.9950535,
+    "id" : "MOTH185",
+    "name" : "Motherwell Signal M185",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.823688,
+    "lon" : -4.0834973,
+    "id" : "UDNGTNJ",
+    "name" : "Uddingston Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

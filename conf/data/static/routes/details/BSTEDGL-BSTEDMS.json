@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.254036,
+    "lon" : 0.70331526,
+    "id" : "BSTEDGL",
+    "name" : "Bury St Edmunds Dgl",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.253618,
+    "lon" : 0.71253593,
+    "id" : "BSTEDMS",
+    "name" : "Bury St Edmunds",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

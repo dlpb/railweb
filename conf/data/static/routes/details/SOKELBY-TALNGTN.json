@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.743134,
+    "lon" : -0.49318581,
+    "id" : "SOKELBY",
+    "name" : "Little Bytham",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.665188,
+    "lon" : -0.38475338,
+    "id" : "TALNGTN",
+    "name" : "Tallington Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

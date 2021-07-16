@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.690643,
+    "lon" : -2.120026,
+    "id" : "WARH242",
+    "name" : "Wareham Signal Pw5242",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.692833,
+    "lon" : -2.1153738,
+    "id" : "WARHAM",
+    "name" : "Wareham",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

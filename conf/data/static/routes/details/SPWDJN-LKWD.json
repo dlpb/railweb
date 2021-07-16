@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.643564,
+    "lon" : -1.7935037,
+    "id" : "SPWDJN",
+    "name" : "Springwood Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.634795,
+    "lon" : -1.8008056,
+    "id" : "LKWD",
+    "name" : "Lockwood",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

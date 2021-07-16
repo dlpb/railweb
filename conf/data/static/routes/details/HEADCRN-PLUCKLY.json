@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.165633,
+    "lon" : 0.62740571,
+    "id" : "HEADCRN",
+    "name" : "Headcorn",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.156477,
+    "lon" : 0.74639503,
+    "id" : "PLUCKLY",
+    "name" : "Pluckley",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

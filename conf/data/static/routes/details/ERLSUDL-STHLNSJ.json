@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.45061,
+    "lon" : -2.6400947,
+    "id" : "ERLSUDL",
+    "name" : "Earlstown Up & Down Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.433742,
+    "lon" : -2.7001995,
+    "id" : "STHLNSJ",
+    "name" : "St Helens Junction",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

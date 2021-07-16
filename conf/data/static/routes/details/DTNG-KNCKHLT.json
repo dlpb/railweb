@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.296502,
+    "lon" : 0.17118161,
+    "id" : "DTNG",
+    "name" : "Dunton Green",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.34585,
+    "lon" : 0.13039043,
+    "id" : "KNCKHLT",
+    "name" : "Knockholt",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

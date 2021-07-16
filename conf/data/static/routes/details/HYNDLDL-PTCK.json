@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.879899,
+    "lon" : -4.3145332,
+    "id" : "HYNDLDL",
+    "name" : "Hyndland Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.869823,
+    "lon" : -4.309298,
+    "id" : "PTCK",
+    "name" : "Partick",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

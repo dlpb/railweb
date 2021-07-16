@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.930041,
+    "lon" : 1.2910799,
+    "id" : "CMER",
+    "name" : "Cromer",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.935489,
+    "lon" : 1.2460948,
+    "id" : "WRUNTON",
+    "name" : "West Runton",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

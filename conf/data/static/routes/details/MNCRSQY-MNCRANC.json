@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.4703,
+    "lon" : -2.284,
+    "id" : "MNCRSQY",
+    "name" : "Salford Qys Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.4743,
+    "lon" : -2.286,
+    "id" : "MNCRANC",
+    "name" : "Anchorage Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

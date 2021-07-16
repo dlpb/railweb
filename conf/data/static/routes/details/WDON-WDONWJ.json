@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.421879,
+    "lon" : -0.20474846,
+    "id" : "WDON",
+    "name" : "Wimbledon",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.416067,
+    "lon" : -0.21403636,
+    "id" : "WDONWJ",
+    "name" : "Wimbledon West Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.332919,
+    "lon" : -1.4416288,
+    "id" : "NLRTN",
+    "name" : "Northallerton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.332919,
+    "lon" : -1.4416288,
+    "id" : "NLRTNUS",
+    "name" : "Northallerton Up Sdgs",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

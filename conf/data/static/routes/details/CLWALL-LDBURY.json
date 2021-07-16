@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.079849,
+    "lon" : -2.356731,
+    "id" : "CLWALL",
+    "name" : "Colwall",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.045232,
+    "lon" : -2.4255539,
+    "id" : "LDBURY",
+    "name" : "Ledbury",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

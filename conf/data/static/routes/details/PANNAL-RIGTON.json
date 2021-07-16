@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.958312,
+    "lon" : -1.5329489,
+    "id" : "PANNAL",
+    "name" : "Pannal",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.937823,
+    "lon" : -1.5600023,
+    "id" : "RIGTON",
+    "name" : "Rigton S.B.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

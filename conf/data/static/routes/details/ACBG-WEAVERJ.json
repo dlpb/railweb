@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.266167,
+    "lon" : -2.602537,
+    "id" : "ACBG",
+    "name" : "Acton Bridge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.294684,
+    "lon" : -2.6346247,
+    "id" : "WEAVERJ",
+    "name" : "Weaver Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

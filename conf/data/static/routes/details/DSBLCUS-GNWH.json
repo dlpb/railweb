@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.481713,
+    "lon" : -0.010811,
+    "id" : "DSBLCUS",
+    "name" : "Cutty Sark",
+    "type" : "Light Rail"
+  },
+  "to" : {
+    "lat" : 51.478202,
+    "lon" : -0.015295487,
+    "id" : "GNWH",
+    "name" : "Greenwich",
+    "type" : "Station"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Unknown",
+  "speed" : "OHLE"
+} ]

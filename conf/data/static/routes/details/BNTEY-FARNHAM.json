@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.181181,
+    "lon" : -0.86850007,
+    "id" : "BNTEY",
+    "name" : "Bentley (Hampshire)",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.211698,
+    "lon" : -0.79260432,
+    "id" : "FARNHAM",
+    "name" : "Farnham",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

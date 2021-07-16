@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.900618,
+    "lon" : 0.89129816,
+    "id" : "CLCHSTR",
+    "name" : "Colchester",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.902028,
+    "lon" : 0.87929246,
+    "id" : "CLCHUP",
+    "name" : "Colchester Up Passngr Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

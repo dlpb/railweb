@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.382274,
+    "lon" : -4.1759588,
+    "id" : "DOCKYDP",
+    "name" : "Dockyard",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.38983,
+    "lon" : -4.1797657,
+    "id" : "KEYHAM",
+    "name" : "Keyham",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.6188,
+    "lon" : 1.3156918,
+    "id" : "TRWSSBJ",
+    "name" : "Trowse Swing Bridge",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.623526,
+    "lon" : 1.3219607,
+    "id" : "WNSUMJN",
+    "name" : "Wensum Jnuction",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

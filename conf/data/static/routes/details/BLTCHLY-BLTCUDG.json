@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.995432,
+    "lon" : -0.73634681,
+    "id" : "BLTCHLY",
+    "name" : "Bletchley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.999697,
+    "lon" : -0.73749404,
+    "id" : "BLTCUDG",
+    "name" : "Bletchley Up & Down Goods",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.491051,
+    "lon" : -0.057593058,
+    "id" : "BLUANCR",
+    "name" : "Blue Anchor (Kent)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.484141,
+    "lon" : -0.040617488,
+    "id" : "NKENTEJ",
+    "name" : "North Kent East Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

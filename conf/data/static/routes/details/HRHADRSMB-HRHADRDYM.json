@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.011439,
+    "lon" : 0.974546,
+    "id" : "HRHADRSMB",
+    "name" : "St Mary's Bay",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 51.025171,
+    "lon" : 0.990344,
+    "id" : "HRHADRDYM",
+    "name" : "Dymchurch",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

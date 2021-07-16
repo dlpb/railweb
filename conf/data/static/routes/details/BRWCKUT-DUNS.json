@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.774336,
+    "lon" : -2.010798,
+    "id" : "BRWCKUT",
+    "name" : "Berwick-Upon-Tweed",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.7717,
+    "lon" : -2.339,
+    "id" : "DUNS",
+    "name" : "Duns",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.67359,
+    "lon" : -3.7731622,
+    "id" : "LANARK",
+    "name" : "Lanark",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.690503,
+    "lon" : -3.7322138,
+    "id" : "LANARKJ",
+    "name" : "Lanark Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

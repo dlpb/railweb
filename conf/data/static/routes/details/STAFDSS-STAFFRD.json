@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.799649,
+    "lon" : -2.1187014,
+    "id" : "STAFDSS",
+    "name" : "Stafford Salop Sdgs",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.803807,
+    "lon" : -2.1229995,
+    "id" : "STAFFRD",
+    "name" : "Stafford",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

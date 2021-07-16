@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.01344,
+    "lon" : -1.1871213,
+    "id" : "BSTWDPJ",
+    "name" : "Bestwood Park Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.999428,
+    "lon" : -1.1954457,
+    "id" : "BULWELL",
+    "name" : "Bulwell",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

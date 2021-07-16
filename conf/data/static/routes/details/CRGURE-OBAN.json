@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.469722,
+    "lon" : -5.696667,
+    "id" : "CRGURE",
+    "name" : "Craignure",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.41232,
+    "lon" : -5.4743704,
+    "id" : "OBAN",
+    "name" : "Oban",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

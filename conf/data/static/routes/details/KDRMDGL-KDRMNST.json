@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.376264,
+    "lon" : -2.2426717,
+    "id" : "KDRMDGL",
+    "name" : "Kidderminster Dn Gds Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.384508,
+    "lon" : -2.2383974,
+    "id" : "KDRMNST",
+    "name" : "Kidderminster",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

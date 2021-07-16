@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.786538,
+    "lon" : -1.5202567,
+    "id" : "HNSLFHH",
+    "name" : "Hunslet Yard (Flhh)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.792269,
+    "lon" : -1.5567141,
+    "id" : "LEED929",
+    "name" : "Leeds Sig L929",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

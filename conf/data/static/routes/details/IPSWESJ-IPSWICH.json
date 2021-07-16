@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.057496,
+    "lon" : 1.1276215,
+    "id" : "IPSWESJ",
+    "name" : "Ipswich East Suffolk Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.05059017669498,
+    "lon" : 1.1444255837190085,
+    "id" : "IPSWICH",
+    "name" : "Ipswich",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.84138,
+    "lon" : -1.703065,
+    "id" : "APERLYB",
+    "name" : "Apperley Bridge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.835728,
+    "lon" : -1.7684608,
+    "id" : "SHPYDJN",
+    "name" : "Dockfield Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

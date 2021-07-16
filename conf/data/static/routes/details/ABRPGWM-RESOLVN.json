@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.728541,
+    "lon" : -3.6547314,
+    "id" : "ABRPGWM",
+    "name" : "Aberpergwm",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.710209,
+    "lon" : -3.695502,
+    "id" : "RESOLVN",
+    "name" : "Resolven",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

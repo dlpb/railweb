@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.445895,
+    "lon" : 0.32406259,
+    "id" : "NRTHFLT",
+    "name" : "Northfleet",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.449468,
+    "lon" : 0.30708776,
+    "id" : "SWNSCMB",
+    "name" : "Swanscombe",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

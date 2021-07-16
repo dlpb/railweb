@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.55847,
+    "lon" : -0.10561,
+    "id" : "LUPARS",
+    "name" : "Arsenal",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.57038,
+    "lon" : -0.09601,
+    "id" : "LUPMAH",
+    "name" : "Manor House",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

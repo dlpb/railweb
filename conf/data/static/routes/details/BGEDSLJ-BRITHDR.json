@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.695401,
+    "lon" : -3.2313984,
+    "id" : "BGEDSLJ",
+    "name" : "Bargoed Single Line Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.709939,
+    "lon" : -3.2281025,
+    "id" : "BRITHDR",
+    "name" : "Brithdir",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "45-75"
+} ]

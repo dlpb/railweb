@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.688563,
+    "lon" : -1.3504311,
+    "id" : "BAGWJRS",
+    "name" : "Bagworth Jn Refuge Sdgs",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.690959,
+    "lon" : -1.3496706,
+    "id" : "BAGWTHJ",
+    "name" : "Bagworth Jcn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

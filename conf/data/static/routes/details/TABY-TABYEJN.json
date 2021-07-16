@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.559118,
+    "lon" : -1.3017238,
+    "id" : "TABY",
+    "name" : "Thornaby",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.558971,
+    "lon" : -1.3027778,
+    "id" : "TABYEJN",
+    "name" : "Thornaby East Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

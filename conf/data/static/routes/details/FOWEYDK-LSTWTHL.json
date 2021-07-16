@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.346617,
+    "lon" : -4.6377884,
+    "id" : "FOWEYDK",
+    "name" : "Fowey Dock Carne Point",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.407074,
+    "lon" : -4.6660866,
+    "id" : "LSTWTHL",
+    "name" : "Lostwithiel",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

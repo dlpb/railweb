@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.854444,
+    "lon" : -4.305278,
+    "id" : "GSSIBR",
+    "name" : "Ibrox",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 55.8525,
+    "lon" : -4.295833,
+    "id" : "GSSCES",
+    "name" : "Cessnock",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

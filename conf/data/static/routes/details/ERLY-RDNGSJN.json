@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.441004,
+    "lon" : -0.91747245,
+    "id" : "ERLY",
+    "name" : "Earley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.457925,
+    "lon" : -0.95101205,
+    "id" : "RDNGSJN",
+    "name" : "Reading Spur Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

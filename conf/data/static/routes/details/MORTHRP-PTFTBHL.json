@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.594967,
+    "lon" : -1.3048568,
+    "id" : "MORTHRP",
+    "name" : "Moorthorpe",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.691897,
+    "lon" : -1.3031405,
+    "id" : "PTFTBHL",
+    "name" : "Pontefract Baghill",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

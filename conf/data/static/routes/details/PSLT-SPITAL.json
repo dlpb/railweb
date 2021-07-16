@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.348332,
+    "lon" : -2.9981729,
+    "id" : "PSLT",
+    "name" : "Port Sunlight",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.340696,
+    "lon" : -2.9943147,
+    "id" : "SPITAL",
+    "name" : "Spital",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

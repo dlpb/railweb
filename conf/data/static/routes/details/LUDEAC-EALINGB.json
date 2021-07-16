@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.491521,
+    "lon" : -0.193906,
+    "id" : "LUDEAC",
+    "name" : "Earl's Court",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.514647,
+    "lon" : -0.30021684,
+    "id" : "EALINGB",
+    "name" : "Ealing Broadway",
+    "type" : "Station"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

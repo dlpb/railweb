@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.761123,
+    "lon" : -0.88059114,
+    "id" : "MLTNMUL",
+    "name" : "Melton Mowbray Up Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.764915,
+    "lon" : -0.7976455,
+    "id" : "MLTNSAX",
+    "name" : "Saxby",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

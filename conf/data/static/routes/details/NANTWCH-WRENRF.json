@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.063489,
+    "lon" : -2.5190477,
+    "id" : "NANTWCH",
+    "name" : "Nantwich",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.039967,
+    "lon" : -2.5619122,
+    "id" : "WRENRF",
+    "name" : "Reeds Farm L.C.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "70-90"
+} ]

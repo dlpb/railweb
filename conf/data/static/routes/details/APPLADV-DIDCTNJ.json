@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.633443,
+    "lon" : -1.2433861,
+    "id" : "APPLADV",
+    "name" : "Appleford (Advenza)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.621339,
+    "lon" : -1.244483,
+    "id" : "DIDCTNJ",
+    "name" : "Didcot North Jn",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

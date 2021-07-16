@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.546966,
+    "lon" : 0.71130589,
+    "id" : "SEVCDSN",
+    "name" : "Southend Victoria Dsn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.542194,
+    "lon" : 0.71151253,
+    "id" : "STHVIC",
+    "name" : "Southend Victoria",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

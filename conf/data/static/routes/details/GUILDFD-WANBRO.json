@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.237908,
+    "lon" : -0.58152778,
+    "id" : "GUILDFD",
+    "name" : "Guildford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.244634,
+    "lon" : -0.66716904,
+    "id" : "WANBRO",
+    "name" : "Wanborough",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

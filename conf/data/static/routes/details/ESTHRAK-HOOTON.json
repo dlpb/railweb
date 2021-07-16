@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.307733,
+    "lon" : -2.981317,
+    "id" : "ESTHRAK",
+    "name" : "Eastham Rake",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.296845,
+    "lon" : -2.9771513,
+    "id" : "HOOTON",
+    "name" : "Hooton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

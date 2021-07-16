@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.4947,
+    "lon" : -0.183,
+    "id" : "LUCGLR",
+    "name" : "Gloucester Road",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.494066,
+    "lon" : -0.172791,
+    "id" : "LUCSOK",
+    "name" : "South Kensington",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

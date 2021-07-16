@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.437552,
+    "lon" : -0.10754631,
+    "id" : "TULS178",
+    "name" : "Tulse Hill Signal Vc178",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.431567,
+    "lon" : -0.10334825,
+    "id" : "WNORWDJ",
+    "name" : "West Norwood Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

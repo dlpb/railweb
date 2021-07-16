@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.457738,
+    "lon" : -2.5984997,
+    "id" : "LOWTONJ",
+    "name" : "Lowton Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.453105,
+    "lon" : -2.6134331,
+    "id" : "NWTNLW",
+    "name" : "Newton-Le-Willows",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

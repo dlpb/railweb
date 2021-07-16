@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.032185,
+    "lon" : -1.5820192,
+    "id" : "BENTKIL",
+    "name" : "Killingworth",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.013658,
+    "lon" : -1.5597717,
+    "id" : "BENTON",
+    "name" : "Benton Nth Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

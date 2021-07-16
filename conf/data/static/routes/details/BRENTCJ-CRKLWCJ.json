@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.569912,
+    "lon" : -0.22835973,
+    "id" : "BRENTCJ",
+    "name" : "Brent Curve Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.553981,
+    "lon" : -0.20849556,
+    "id" : "CRKLWCJ",
+    "name" : "Cricklewood Curve Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

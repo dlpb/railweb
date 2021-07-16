@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.440774,
+    "lon" : -2.0161293,
+    "id" : "BRBM",
+    "name" : "Broadbottom",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.449707,
+    "lon" : -1.9707199,
+    "id" : "DNTG",
+    "name" : "Dinting",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

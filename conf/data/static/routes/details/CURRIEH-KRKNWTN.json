@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.900419,
+    "lon" : -3.3188743,
+    "id" : "CURRIEH",
+    "name" : "Curriehill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.889025,
+    "lon" : -3.4330515,
+    "id" : "KRKNWTN",
+    "name" : "Kirknewton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

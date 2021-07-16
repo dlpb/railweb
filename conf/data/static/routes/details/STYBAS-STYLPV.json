@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.398899,
+    "lon" : -1.4926192,
+    "id" : "STYBAS",
+    "name" : "Bamforth Street",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 53.395767,
+    "lon" : -1.4893709,
+    "id" : "STYLPV",
+    "name" : "Langsett Primrose View",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.557041,
+    "lon" : 0.062386535,
+    "id" : "ALDB337",
+    "name" : "Aldersbrook Signal 337/354",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.558994,
+    "lon" : 0.068966977,
+    "id" : "ILFORD",
+    "name" : "Ilford",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

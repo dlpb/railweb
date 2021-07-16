@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.852036,
+    "lon" : -2.9788018,
+    "id" : "WITNDLC",
+    "name" : "Decoy L.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.833663,
+    "lon" : -2.926984,
+    "id" : "HGTNSD",
+    "name" : "Haughton Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

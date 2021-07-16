@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.23271,
+    "lon" : -1.2092526,
+    "id" : "LGWITH",
+    "name" : "Langwith-Whaley Thorns",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.207628,
+    "lon" : -1.1968228,
+    "id" : "WARSOPJ",
+    "name" : "Warsop Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

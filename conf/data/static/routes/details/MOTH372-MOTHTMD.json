@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.791877,
+    "lon" : -3.9950535,
+    "id" : "MOTH372",
+    "name" : "Motherwell Sig M372",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.799844,
+    "lon" : -3.9958599,
+    "id" : "MOTHTMD",
+    "name" : "Motherwell T.M.D.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

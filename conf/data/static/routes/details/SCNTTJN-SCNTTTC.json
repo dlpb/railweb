@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.592833,
+    "lon" : -0.62946409,
+    "id" : "SCNTTJN",
+    "name" : "Scunthorpe Trent Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.595311,
+    "lon" : -0.62143585,
+    "id" : "SCNTTTC",
+    "name" : "Scunthorpe Trent T.C.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

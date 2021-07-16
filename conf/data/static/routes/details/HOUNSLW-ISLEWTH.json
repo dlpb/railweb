@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.462179,
+    "lon" : -0.36166395,
+    "id" : "HOUNSLW",
+    "name" : "Hounslow",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.474789,
+    "lon" : -0.33699217,
+    "id" : "ISLEWTH",
+    "name" : "Isleworth",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

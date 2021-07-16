@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.520163,
+    "lon" : -1.6791938,
+    "id" : "WACRDAL",
+    "name" : "Whitacre Down Arley Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.520163,
+    "lon" : -1.6791938,
+    "id" : "WACRTS",
+    "name" : "Whitacre Tamper Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

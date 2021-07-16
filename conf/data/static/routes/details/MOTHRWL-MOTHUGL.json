@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.791877,
+    "lon" : -3.9950535,
+    "id" : "MOTHRWL",
+    "name" : "Motherwell",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.7842,
+    "lon" : -3.9751244,
+    "id" : "MOTHUGL",
+    "name" : "Motherwell U.G.L",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

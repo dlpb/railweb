@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.915064,
+    "lon" : -4.18134,
+    "id" : "CDDRDPL",
+    "name" : "Cadder Down Passenger Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.921236,
+    "lon" : -4.154382,
+    "id" : "LENZIE",
+    "name" : "Lenzie",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

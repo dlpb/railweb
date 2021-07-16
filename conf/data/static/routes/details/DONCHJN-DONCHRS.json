@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.504684,
+    "lon" : -1.1744693,
+    "id" : "DONCHJN",
+    "name" : "Hexthorpe Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.514683,
+    "lon" : -1.1479742,
+    "id" : "DONCHRS",
+    "name" : "Hexthorpe R.S.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

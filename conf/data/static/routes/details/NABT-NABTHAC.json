@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.53,
+    "lon" : -3.5997,
+    "id" : "NABT",
+    "name" : "Newton Abbot",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.53697,
+    "lon" : -3.5924453,
+    "id" : "NABTHAC",
+    "name" : "Newton Abbot Hackney Yard",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

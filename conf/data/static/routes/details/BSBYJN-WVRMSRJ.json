@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.609477,
+    "lon" : -2.1243287,
+    "id" : "BSBYJN",
+    "name" : "Bushbury Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.601844,
+    "lon" : -2.1324277,
+    "id" : "WVRMSRJ",
+    "name" : "Stafford Road Jn Wvrmptn",
+    "type" : "Point"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

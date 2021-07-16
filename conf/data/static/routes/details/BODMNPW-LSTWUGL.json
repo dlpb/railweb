@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.446097,
+    "lon" : -4.6624485,
+    "id" : "BODMNPW",
+    "name" : "Bodmin Parkway",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.410081,
+    "lon" : -4.6651857,
+    "id" : "LSTWUGL",
+    "name" : "Lostwithiel Up Goods Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

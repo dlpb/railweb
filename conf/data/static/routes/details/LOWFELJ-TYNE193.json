@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.931431,
+    "lon" : -1.6089851,
+    "id" : "LOWFELJ",
+    "name" : "Low Fell Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.918633,
+    "lon" : -1.6027752,
+    "id" : "TYNE193",
+    "name" : "Tyne Yard Sig T193",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

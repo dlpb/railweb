@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.915292,
+    "lon" : -1.4623738,
+    "id" : "DRBY",
+    "name" : "Derby",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.909285,
+    "lon" : -1.4539279,
+    "id" : "DRBYRTC",
+    "name" : "Derby R.T.C.(Network Rail)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

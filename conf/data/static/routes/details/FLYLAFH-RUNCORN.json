@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.33241,
+    "lon" : -2.7535431,
+    "id" : "FLYLAFH",
+    "name" : "Runcorn Folly Lane (Flhh)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.338128,
+    "lon" : -2.7391062,
+    "id" : "RUNCORN",
+    "name" : "Runcorn",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

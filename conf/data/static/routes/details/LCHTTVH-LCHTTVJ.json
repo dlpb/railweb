@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.687054,
+    "lon" : -1.8001986,
+    "id" : "LCHTTVH",
+    "name" : "Lichfield Trent Valley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.687614,
+    "lon" : -1.7962904,
+    "id" : "LCHTTVJ",
+    "name" : "Lichfield T.V. Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

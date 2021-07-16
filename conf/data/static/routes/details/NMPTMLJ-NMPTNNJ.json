@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.257501,
+    "lon" : -0.91221221,
+    "id" : "NMPTMLJ",
+    "name" : "Northampton Mill Lane Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.243157,
+    "lon" : -0.90799329,
+    "id" : "NMPTNNJ",
+    "name" : "Northampton North Junction",
+    "type" : "Location"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

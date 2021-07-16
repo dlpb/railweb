@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.208911,
+    "lon" : -1.8515499,
+    "id" : "BRIGSSC",
+    "name" : "Briggs Sdgs Steetley Coy",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.220036,
+    "lon" : -1.8722991,
+    "id" : "HNDL",
+    "name" : "Hindlow",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

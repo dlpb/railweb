@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.025493,
+    "lon" : -0.26648636,
+    "id" : "ARLSEY",
+    "name" : "Arlesey",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.955802,
+    "lon" : -0.2667889,
+    "id" : "HITCHDY",
+    "name" : "Hitchin Down Yard",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

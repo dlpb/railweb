@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.580916,
+    "lon" : -0.1083511,
+    "id" : "FRMPRSG",
+    "name" : "Ferme Park Rec Ln Gbrf",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.577421,
+    "lon" : -0.1052489,
+    "id" : "HRGY",
+    "name" : "Harringay",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

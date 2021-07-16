@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.185573,
+    "lon" : -3.9655504,
+    "id" : "DUNANE",
+    "name" : "Dunblane",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.187238,
+    "lon" : -3.9665057,
+    "id" : "DUNANSB",
+    "name" : "Dunblane S.B.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

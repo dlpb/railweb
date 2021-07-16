@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.718478,
+    "lon" : -1.3614012,
+    "id" : "COALJN",
+    "name" : "Coalville Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.73016,
+    "lon" : -1.3757577,
+    "id" : "MNTLLAS",
+    "name" : "Mantle Lane T.C.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

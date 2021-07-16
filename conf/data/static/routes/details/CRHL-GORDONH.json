@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.684895,
+    "lon" : -0.10728947,
+    "id" : "CRHL",
+    "name" : "Crews Hill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.663006,
+    "lon" : -0.094378434,
+    "id" : "GORDONH",
+    "name" : "Gordon Hill",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

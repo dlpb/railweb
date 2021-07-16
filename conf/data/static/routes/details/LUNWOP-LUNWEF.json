@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.61817173,
+    "lon" : -0.1855788879,
+    "id" : "LUNWOP",
+    "name" : "Woodside Park",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.60922281,
+    "lon" : -0.1887111523,
+    "id" : "LUNWEF",
+    "name" : "West Finchley",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

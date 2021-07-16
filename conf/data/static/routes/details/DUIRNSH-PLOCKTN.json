@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.320026,
+    "lon" : -5.691105,
+    "id" : "DUIRNSH",
+    "name" : "Duirinish",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 57.333555,
+    "lon" : -5.6659812,
+    "id" : "PLOCKTN",
+    "name" : "Plockton",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

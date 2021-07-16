@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.215334,
+    "lon" : 0.40543801,
+    "id" : "EPCKHMR",
+    "name" : "East Peckham Reverse",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.204672,
+    "lon" : 0.40345072,
+    "id" : "BLTRNAB",
+    "name" : "Beltring",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

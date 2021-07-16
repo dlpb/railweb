@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.449219,
+    "lon" : -0.33282677,
+    "id" : "TWCKNMJ",
+    "name" : "Twickenham Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.44935,
+    "lon" : -0.35676952,
+    "id" : "WHTTON",
+    "name" : "Whitton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

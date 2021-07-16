@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.89312,
+    "lon" : -1.1486315,
+    "id" : "BCSTRTN",
+    "name" : "Bicester Village",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.826126,
+    "lon" : -1.2376965,
+    "id" : "ISLIP",
+    "name" : "Islip",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

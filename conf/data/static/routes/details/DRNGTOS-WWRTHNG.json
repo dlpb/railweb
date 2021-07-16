@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.817453,
+    "lon" : -0.41137181,
+    "id" : "DRNGTOS",
+    "name" : "Durrington-On-Sea",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.818397,
+    "lon" : -0.39299784,
+    "id" : "WWRTHNG",
+    "name" : "West Worthing",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

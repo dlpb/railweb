@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.237908,
+    "lon" : -0.58152778,
+    "id" : "GUILDFD",
+    "name" : "Guildford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.2878,
+    "lon" : -0.58245786,
+    "id" : "WRPLSDN",
+    "name" : "Worplesdon",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

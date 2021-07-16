@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.022077,
+    "lon" : -1.3275606,
+    "id" : "SHAWFD",
+    "name" : "Shawford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.067309,
+    "lon" : -1.3199696,
+    "id" : "WNCHSTR",
+    "name" : "Winchester",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

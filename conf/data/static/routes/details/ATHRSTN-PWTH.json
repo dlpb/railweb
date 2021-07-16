@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.578536,
+    "lon" : -1.5523878,
+    "id" : "ATHRSTN",
+    "name" : "Atherstone",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.626056,
+    "lon" : -1.6107893,
+    "id" : "PWTH",
+    "name" : "Polesworth",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

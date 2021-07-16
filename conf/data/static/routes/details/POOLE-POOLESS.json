@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.71939,
+    "lon" : -1.9836292,
+    "id" : "POOLE",
+    "name" : "Poole",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.721701,
+    "lon" : -1.9830334,
+    "id" : "POOLESS",
+    "name" : "Poole S. S.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

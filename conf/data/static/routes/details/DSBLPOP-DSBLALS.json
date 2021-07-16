@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.507725,
+    "lon" : -0.016503,
+    "id" : "DSBLPOP",
+    "name" : "Poplar",
+    "type" : "Light Rail"
+  },
+  "to" : {
+    "lat" : 51.510301,
+    "lon" : -0.012832,
+    "id" : "DSBLALS",
+    "name" : "All Saints",
+    "type" : "Light Rail"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Light Rail",
+  "speed" : "OHLE"
+} ]

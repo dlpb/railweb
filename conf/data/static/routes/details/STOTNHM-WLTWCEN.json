@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.580429,
+    "lon" : -0.071811542,
+    "id" : "STOTNHM",
+    "name" : "South Tottenham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.582892,
+    "lon" : -0.019946011,
+    "id" : "WLTWCEN",
+    "name" : "Walthamstow Central",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "27 MINUTES"
+} ]

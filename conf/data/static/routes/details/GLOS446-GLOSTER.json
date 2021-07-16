@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.86282,
+    "lon" : -2.2313284,
+    "id" : "GLOS446",
+    "name" : "Gloucester Ground Sig 446",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.866131,
+    "lon" : -2.239362,
+    "id" : "GLOSTER",
+    "name" : "Gloucester",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

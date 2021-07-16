@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.146814,
+    "lon" : 0.86568016,
+    "id" : "ASHFKY",
+    "name" : "Ashford International",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.14715,
+    "lon" : 0.86445688,
+    "id" : "ASHFWJN",
+    "name" : "Ashford West Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

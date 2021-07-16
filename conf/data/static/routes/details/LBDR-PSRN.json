@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.820302,
+    "lon" : -4.1096069,
+    "id" : "LBDR",
+    "name" : "Llanbedr",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.830317,
+    "lon" : -4.1112056,
+    "id" : "PSRN",
+    "name" : "Pensarn",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

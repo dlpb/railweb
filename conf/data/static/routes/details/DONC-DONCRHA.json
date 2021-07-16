@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.521925,
+    "lon" : -1.1400911,
+    "id" : "DONC",
+    "name" : "Doncaster",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.475278,
+    "lon" : -1.004167,
+    "id" : "DONCRHA",
+    "name" : "Doncaster Airport Bus",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

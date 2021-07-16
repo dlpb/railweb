@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.0461,
+    "lon" : -0.0446,
+    "id" : "HBRHOK",
+    "name" : "Horsted Keynes",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 50.995642,
+    "lon" : -0.001072,
+    "id" : "HBRSHP",
+    "name" : "Sheffield Park",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

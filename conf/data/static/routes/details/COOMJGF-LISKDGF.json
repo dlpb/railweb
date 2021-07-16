@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.443433,
+    "lon" : -4.4802984,
+    "id" : "COOMJGF",
+    "name" : "Coombe No. 1 G.F.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.448726,
+    "lon" : -4.4652628,
+    "id" : "LISKDGF",
+    "name" : "Liskeard Graound Frame",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

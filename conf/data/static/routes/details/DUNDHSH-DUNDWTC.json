@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.455988,
+    "lon" : -2.9727008,
+    "id" : "DUNDHSH",
+    "name" : "Dundee Head Shunt",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.455198,
+    "lon" : -2.9771427,
+    "id" : "DUNDWTC",
+    "name" : "Dundee West T.C.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

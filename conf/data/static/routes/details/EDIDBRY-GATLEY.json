@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.409415,
+    "lon" : -2.2219217,
+    "id" : "EDIDBRY",
+    "name" : "East Didsbury",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.392976,
+    "lon" : -2.2308133,
+    "id" : "GATLEY",
+    "name" : "Gatley",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

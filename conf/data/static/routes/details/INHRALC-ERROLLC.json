@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.371209,
+    "lon" : -3.3229842,
+    "id" : "INHRALC",
+    "name" : "Inchyra Level Crossing",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.407053,
+    "lon" : -3.2110473,
+    "id" : "ERROLLC",
+    "name" : "Errol",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

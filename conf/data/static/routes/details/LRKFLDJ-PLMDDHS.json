@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.842038,
+    "lon" : -4.258261,
+    "id" : "LRKFLDJ",
+    "name" : "Larkfield Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.834102,
+    "lon" : -4.2365932,
+    "id" : "PLMDDHS",
+    "name" : "Polmadie D.H.S.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

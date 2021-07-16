@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.136294,
+    "lon" : -1.9892874,
+    "id" : "WYLYGF",
+    "name" : "Wylye Ground Frame",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.118458,
+    "lon" : -1.8906384,
+    "id" : "WYLYAHB",
+    "name" : "Wylye Ahb",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

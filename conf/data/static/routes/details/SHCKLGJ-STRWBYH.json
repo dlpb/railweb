@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.433148,
+    "lon" : -0.33968435,
+    "id" : "SHCKLGJ",
+    "name" : "Shacklegate Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.439491,
+    "lon" : -0.33931046,
+    "id" : "STRWBYH",
+    "name" : "Strawberry Hill",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

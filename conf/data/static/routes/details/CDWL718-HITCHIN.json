@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.97866,
+    "lon" : -0.27110503,
+    "id" : "CDWL718",
+    "name" : "Cadwell Sig K718",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.953075,
+    "lon" : -0.26293579,
+    "id" : "HITCHIN",
+    "name" : "Hitchin",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

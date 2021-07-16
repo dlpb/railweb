@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.099324,
+    "lon" : -1.8216636,
+    "id" : "HONYHUT",
+    "name" : "Honeybourne Staff Hut",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.122574,
+    "lon" : -1.7789067,
+    "id" : "LNGMSTN",
+    "name" : "Long Marston",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

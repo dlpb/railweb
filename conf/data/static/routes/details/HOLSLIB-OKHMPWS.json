@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.8167,
+    "lon" : -4.35,
+    "id" : "HOLSLIB",
+    "name" : "Holsworthy Bus",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.7323785320102,
+    "lon" : -3.9962148243654285,
+    "id" : "OKHMPWS",
+    "name" : "Okehampton Bus",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

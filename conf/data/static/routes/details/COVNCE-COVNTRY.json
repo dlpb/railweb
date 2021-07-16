@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.398627,
+    "lon" : -1.5089716,
+    "id" : "COVNCE",
+    "name" : "Coventry Ce Sdgs",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.400741,
+    "lon" : -1.5136956,
+    "id" : "COVNTRY",
+    "name" : "Coventry",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

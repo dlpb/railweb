@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.0920646818009,
+    "lon" : -3.800861272935723,
+    "id" : "BETSYCD",
+    "name" : "Betws-Y-Coed",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.06524,
+    "lon" : -3.8626059,
+    "id" : "PNYPANT",
+    "name" : "Pont-Y-Pant",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "30-50"
+} ]

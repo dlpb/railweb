@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.7569,
+    "lon" : -3.879302,
+    "id" : "LAWJ",
+    "name" : "Law Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.755632,
+    "lon" : -3.875257,
+    "id" : "LAWJDPL",
+    "name" : "Law Jn Down Passenger Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

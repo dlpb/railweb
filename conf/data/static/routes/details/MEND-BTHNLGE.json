@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.526709,
+    "lon" : -0.04312985,
+    "id" : "MEND",
+    "name" : "Mile End",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.523863,
+    "lon" : -0.058546787,
+    "id" : "BTHNLGE",
+    "name" : "Bethnal Green East Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

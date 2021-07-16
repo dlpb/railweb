@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.700609,
+    "lon" : -2.4543043,
+    "id" : "BRKELEY",
+    "name" : "Berkeley C.E.G.B.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.701545,
+    "lon" : -2.407329,
+    "id" : "BRKRJUN",
+    "name" : "Berkeley Rd Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

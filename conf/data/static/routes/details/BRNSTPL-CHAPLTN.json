@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.073321,
+    "lon" : -4.0625741,
+    "id" : "BRNSTPL",
+    "name" : "Barnstaple",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.016107,
+    "lon" : -4.0244038,
+    "id" : "CHAPLTN",
+    "name" : "Chapleton",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

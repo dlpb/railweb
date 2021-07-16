@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.563371,
+    "lon" : -1.0750082,
+    "id" : "KKSNJN",
+    "name" : "Kirk Sandall Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.489788,
+    "lon" : -1.1054425,
+    "id" : "LWELRSJ",
+    "name" : "Low Ellers Curve Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

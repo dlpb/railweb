@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.033716,
+    "lon" : -3.3952534,
+    "id" : "IVRKSJN",
+    "name" : "Inverkeithing South Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.012329,
+    "lon" : -3.3945463,
+    "id" : "NQNSFRY",
+    "name" : "North Queensferry",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

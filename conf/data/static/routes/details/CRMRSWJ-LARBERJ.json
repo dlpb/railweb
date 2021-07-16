@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.004712,
+    "lon" : -3.837813,
+    "id" : "CRMRSWJ",
+    "name" : "Carmuirs West Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.012337,
+    "lon" : -3.833876,
+    "id" : "LARBERJ",
+    "name" : "Larbert Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

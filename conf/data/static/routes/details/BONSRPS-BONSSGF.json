@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.018091,
+    "lon" : -3.5994304,
+    "id" : "BONSRPS",
+    "name" : "Bo'ness Jn Exchange Sdg",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.978016,
+    "lon" : -3.659655,
+    "id" : "BONSSGF",
+    "name" : "Bo'ness G.F.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

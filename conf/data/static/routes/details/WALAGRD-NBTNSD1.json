@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.428101,
+    "lon" : -3.0696944,
+    "id" : "WALAGRD",
+    "name" : "Wallasey Grove Road",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.437236,
+    "lon" : -3.0491198,
+    "id" : "NBTNSD1",
+    "name" : "New Brighton Siding No 1",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

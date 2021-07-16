@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.580373,
+    "lon" : -2.4865069,
+    "id" : "APBY",
+    "name" : "Appleby",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.533709,
+    "lon" : -2.3797539,
+    "id" : "WARCOP",
+    "name" : "Warcop",
+    "type" : "Point"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

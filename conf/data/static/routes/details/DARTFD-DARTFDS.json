@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.447334,
+    "lon" : 0.21969224,
+    "id" : "DARTFD",
+    "name" : "Dartford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.447279,
+    "lon" : 0.22540321,
+    "id" : "DARTFDS",
+    "name" : "Dartford Down Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.082917,
+    "lon" : -4.169806,
+    "id" : "HWHRPLA",
+    "name" : "Plas-Y-Nant",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 53.07375,
+    "lon" : -4.143444,
+    "id" : "HWHSNR",
+    "name" : "Snowdon Ranger",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

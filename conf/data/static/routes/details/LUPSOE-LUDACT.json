@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.500801,
+    "lon" : -0.307856,
+    "id" : "LUPSOE",
+    "name" : "South Ealing",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.5025,
+    "lon" : -0.278126,
+    "id" : "LUDACT",
+    "name" : "Acton Town",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

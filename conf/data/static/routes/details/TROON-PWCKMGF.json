@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.542864,
+    "lon" : -4.6556836,
+    "id" : "TROON",
+    "name" : "Troon",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.517223,
+    "lon" : -4.6192124,
+    "id" : "PWCKMGF",
+    "name" : "Monkton Sdg Ground Frame",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "75-90"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 58.004665,
+    "lon" : -4.261779,
+    "id" : "ACHLDH",
+    "name" : "Acheildh",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 57.988643,
+    "lon" : -4.1584684,
+    "id" : "ROGART",
+    "name" : "Rogart",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

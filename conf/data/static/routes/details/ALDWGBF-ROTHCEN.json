@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.458387,
+    "lon" : -1.3222548,
+    "id" : "ALDWGBF",
+    "name" : "Aldwarke Ues Gbrf",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.431689,
+    "lon" : -1.3610451,
+    "id" : "ROTHCEN",
+    "name" : "Rotherham Central",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

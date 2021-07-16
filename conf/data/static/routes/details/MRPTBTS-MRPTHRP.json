@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.162912,
+    "lon" : -1.6754891,
+    "id" : "MRPTBTS",
+    "name" : "Morpeth Barmoor Thru Sdg",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.162507,
+    "lon" : -1.6821788,
+    "id" : "MRPTHRP",
+    "name" : "Morpeth",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

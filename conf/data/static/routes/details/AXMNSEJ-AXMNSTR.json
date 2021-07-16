@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.77917,
+    "lon" : -3.0047635,
+    "id" : "AXMNSEJ",
+    "name" : "Axminster East Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.77917,
+    "lon" : -3.0047635,
+    "id" : "AXMNSTR",
+    "name" : "Axminster",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

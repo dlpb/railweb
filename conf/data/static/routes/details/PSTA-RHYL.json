@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.336208,
+    "lon" : -3.4071673,
+    "id" : "PSTA",
+    "name" : "Prestatyn",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.318135,
+    "lon" : -3.4889151,
+    "id" : "RHYL",
+    "name" : "Rhyl",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

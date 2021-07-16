@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.788786,
+    "lon" : -1.3259742,
+    "id" : "MCKLFLD",
+    "name" : "Micklefield",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.782325,
+    "lon" : -1.2505141,
+    "id" : "SMILFD",
+    "name" : "South Milford",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

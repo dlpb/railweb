@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.363767,
+    "lon" : 1.1091496,
+    "id" : "HNB5077",
+    "name" : "Herne Bay Signal Ek5077",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.364431,
+    "lon" : 1.1176862,
+    "id" : "HRNEBAY",
+    "name" : "Herne Bay",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

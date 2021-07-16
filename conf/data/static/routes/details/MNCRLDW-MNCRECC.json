@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.484,
+    "lon" : -2.3268,
+    "id" : "MNCRLDW",
+    "name" : "Ladywell Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.483,
+    "lon" : -2.3348,
+    "id" : "MNCRECC",
+    "name" : "Eccles Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

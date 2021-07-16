@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.020321,
+    "lon" : -0.756719,
+    "id" : "DNBGHNJ",
+    "name" : "Denbigh Hall North Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.033488,
+    "lon" : -0.77340987,
+    "id" : "MKNSCEN",
+    "name" : "Milton Keynes Central",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

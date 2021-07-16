@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.454005,
+    "lon" : -0.86046243,
+    "id" : "MRKTBRY",
+    "name" : "Braybrook",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.479898,
+    "lon" : -0.90915112,
+    "id" : "MRKTHRB",
+    "name" : "Market Harborough",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

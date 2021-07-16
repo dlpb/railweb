@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.024965,
+    "lon" : -2.205062,
+    "id" : "ETRUGJN",
+    "name" : "Grange Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.042248,
+    "lon" : -2.2169121,
+    "id" : "LNGP",
+    "name" : "Longport",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

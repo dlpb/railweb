@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.253859,
+    "lon" : -0.32859575,
+    "id" : "BOXHAWH",
+    "name" : "Boxhill & Westhumble",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.240894,
+    "lon" : -0.32376491,
+    "id" : "DORKING",
+    "name" : "Dorking",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

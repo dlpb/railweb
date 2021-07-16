@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.475928,
+    "lon" : -3.1887595,
+    "id" : "CANT637",
+    "name" : "Canton Signal C637",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.475572,
+    "lon" : -3.1794772,
+    "id" : "CRDFCEN",
+    "name" : "Cardiff Central",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "45-75"
+} ]

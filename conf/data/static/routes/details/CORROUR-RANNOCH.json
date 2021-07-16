@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.760191,
+    "lon" : -4.6907459,
+    "id" : "CORROUR",
+    "name" : "Corrour",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.685879,
+    "lon" : -4.5770542,
+    "id" : "RANNOCH",
+    "name" : "Rannoch",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

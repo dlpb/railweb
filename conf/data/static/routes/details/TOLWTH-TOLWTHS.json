@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.376745,
+    "lon" : -0.27972434,
+    "id" : "TOLWTH",
+    "name" : "Tolworth",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.376216,
+    "lon" : -0.28041951,
+    "id" : "TOLWTHS",
+    "name" : "Tolworth Sdgs",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.938301,
+    "lon" : -3.318375,
+    "id" : "ETL1GYC",
+    "name" : "Gyle Centre",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 55.930966,
+    "lon" : -3.314143,
+    "id" : "ETL1EPC",
+    "name" : "Edinburgh Park Central",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

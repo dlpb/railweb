@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.842038,
+    "lon" : -4.258261,
+    "id" : "LRKFLDJ",
+    "name" : "Larkfield Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.836093,
+    "lon" : -4.2398217,
+    "id" : "PLMDCMD",
+    "name" : "Polmadie Car M.D.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

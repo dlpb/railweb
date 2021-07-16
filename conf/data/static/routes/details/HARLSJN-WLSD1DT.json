@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.535013,
+    "lon" : -0.25539483,
+    "id" : "HARLSJN",
+    "name" : "Harlesden Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.540814,
+    "lon" : -0.27311212,
+    "id" : "WLSD1DT",
+    "name" : "Wembley 781/783 & 756/758",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

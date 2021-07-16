@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.854884,
+    "lon" : -4.1793877,
+    "id" : "CNTY",
+    "name" : "Carntyne",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.853654,
+    "lon" : -4.1599383,
+    "id" : "SHTLSTN",
+    "name" : "Shettleston",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

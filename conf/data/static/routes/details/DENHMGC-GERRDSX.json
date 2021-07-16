@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.580602,
+    "lon" : -0.51826275,
+    "id" : "DENHMGC",
+    "name" : "Denham Golf Club",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.588821,
+    "lon" : -0.5550508,
+    "id" : "GERRDSX",
+    "name" : "Gerrards Cross",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

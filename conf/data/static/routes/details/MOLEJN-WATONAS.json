@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.828161,
+    "lon" : -0.098459473,
+    "id" : "MOLEJN",
+    "name" : "Molewood Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.856536,
+    "lon" : -0.1194669,
+    "id" : "WATONAS",
+    "name" : "Watton-At-Stone",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

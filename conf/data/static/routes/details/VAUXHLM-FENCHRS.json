@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.486508,
+    "lon" : -0.12266035,
+    "id" : "VAUXHLM",
+    "name" : "Vauxhall",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.511352,
+    "lon" : -0.077554354,
+    "id" : "FENCHRS",
+    "name" : "London Fenchurch Street",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "40 MINUTES"
+} ]

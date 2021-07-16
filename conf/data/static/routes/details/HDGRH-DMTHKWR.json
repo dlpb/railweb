@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.386521,
+    "lon" : -3.572825,
+    "id" : "HDGRH",
+    "name" : "Greenway Halt",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 50.351354,
+    "lon" : -3.5702014,
+    "id" : "DMTHKWR",
+    "name" : "Kingswear",
+    "type" : "Location"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

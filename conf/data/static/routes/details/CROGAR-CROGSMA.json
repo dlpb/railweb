@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.482764,
+    "lon" : -2.4248284,
+    "id" : "CROGAR",
+    "name" : "Crosby Garrett",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.468166,
+    "lon" : -2.4126888,
+    "id" : "CROGSMA",
+    "name" : "Smardale Viaduct",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

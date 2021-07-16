@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.5334,
+    "lon" : -2.2823,
+    "id" : "PWCH",
+    "name" : "Prestwich Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.5304,
+    "lon" : -2.2667,
+    "id" : "HTPK",
+    "name" : "Heaton Park Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

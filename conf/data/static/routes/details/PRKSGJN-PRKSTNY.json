@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.944971,
+    "lon" : 1.2380594,
+    "id" : "PRKSGJN",
+    "name" : "Parkeston Goods Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.941933,
+    "lon" : 1.2630315,
+    "id" : "PRKSTNY",
+    "name" : "Parkeston S.S.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

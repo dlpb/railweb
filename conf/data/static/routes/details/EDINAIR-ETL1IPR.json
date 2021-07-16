@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.95,
+    "lon" : -3.3725,
+    "id" : "EDINAIR",
+    "name" : "Edb Apt Bus/Tram",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.9404,
+    "lon" : -3.3542,
+    "id" : "ETL1IPR",
+    "name" : "Ingliston Park & Ride",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

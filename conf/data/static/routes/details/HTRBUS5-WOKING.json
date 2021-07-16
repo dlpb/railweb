@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.47124897944876,
+    "lon" : -0.48936883239726786,
+    "id" : "HTRBUS5",
+    "name" : "Heathrow T5 Bus",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.323095,
+    "lon" : -0.54576369,
+    "id" : "WOKING",
+    "name" : "Woking",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

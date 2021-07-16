@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.34388,
+    "lon" : -1.1587036,
+    "id" : "DIRFTFL",
+    "name" : "Daventry Int Rft Recep Fl",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.348508,
+    "lon" : -1.1723864,
+    "id" : "DVNTYNJ",
+    "name" : "Daventry North Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

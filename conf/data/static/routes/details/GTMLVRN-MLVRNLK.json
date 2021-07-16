@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.109323,
+    "lon" : -2.3181111,
+    "id" : "GTMLVRN",
+    "name" : "Great Malvern",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.125592,
+    "lon" : -2.3195124,
+    "id" : "MLVRNLK",
+    "name" : "Malvern Link",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

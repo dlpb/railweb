@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.56423,
+    "lon" : 1.1150638,
+    "id" : "WYMN32",
+    "name" : "Wymondham Sig W32",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.565379,
+    "lon" : 1.1182003,
+    "id" : "WYMNDHM",
+    "name" : "Wymondham",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

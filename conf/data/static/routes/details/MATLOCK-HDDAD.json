@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.137973,
+    "lon" : -1.558407,
+    "id" : "MATLOCK",
+    "name" : "Matlock",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.1601,
+    "lon" : -1.5937,
+    "id" : "HDDAD",
+    "name" : "Darley Dale",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

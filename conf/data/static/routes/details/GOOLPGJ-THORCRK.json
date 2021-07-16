@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.701089,
+    "lon" : -0.88340415,
+    "id" : "GOOLPGJ",
+    "name" : "Potters Grange Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.662431,
+    "lon" : -0.92395564,
+    "id" : "THORCRK",
+    "name" : "Creykes",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

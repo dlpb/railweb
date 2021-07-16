@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.561989,
+    "lon" : -2.588855,
+    "id" : "ARBRCVR",
+    "name" : "Arbroath Crossover",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.55986,
+    "lon" : -2.5888545,
+    "id" : "ARBROTH",
+    "name" : "Arbroath",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

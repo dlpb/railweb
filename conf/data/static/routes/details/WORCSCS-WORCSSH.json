@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.198067,
+    "lon" : -2.2103452,
+    "id" : "WORCSCS",
+    "name" : "Worcester L.M.D.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.193925,
+    "lon" : -2.2088481,
+    "id" : "WORCSSH",
+    "name" : "Worcester Shrub Hill",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

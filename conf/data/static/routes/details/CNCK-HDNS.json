@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.686114,
+    "lon" : -2.0223691,
+    "id" : "CNCK",
+    "name" : "Cannock",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.709903,
+    "lon" : -2.0019852,
+    "id" : "HDNS",
+    "name" : "Hednesford",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

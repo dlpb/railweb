@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.220036,
+    "lon" : -1.8722991,
+    "id" : "HNDL",
+    "name" : "Hindlow",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.263018,
+    "lon" : -1.9092157,
+    "id" : "BUXTNO1",
+    "name" : "Buxton S.B.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

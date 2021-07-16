@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.463535,
+    "lon" : 0.13372217,
+    "id" : "BXLYHTH",
+    "name" : "Bexleyheath",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.464825,
+    "lon" : 0.10164764,
+    "id" : "WELLING",
+    "name" : "Welling",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

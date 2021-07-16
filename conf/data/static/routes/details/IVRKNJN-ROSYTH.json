@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.040282,
+    "lon" : -3.3962288,
+    "id" : "IVRKNJN",
+    "name" : "Inverkeithing North Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.045332,
+    "lon" : -3.4260952,
+    "id" : "ROSYTH",
+    "name" : "Rosyth",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

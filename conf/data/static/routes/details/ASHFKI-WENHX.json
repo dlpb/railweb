@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.146814,
+    "lon" : 0.86568016,
+    "id" : "ASHFKI",
+    "name" : "Ashford International",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.09481,
+    "lon" : 1.0399681,
+    "id" : "WENHX",
+    "name" : "Westenhanger Crossovers",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "130-155"
+} ]

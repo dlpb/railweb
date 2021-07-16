@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.145,
+    "lon" : -4.482,
+    "id" : "DOUGLAS",
+    "name" : "Douglas Iom",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.405,
+    "lon" : -2.995,
+    "id" : "LVRPLSG",
+    "name" : "Liverpool Lnd Sg",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.516,
+    "lon" : -2.922,
+    "id" : "MAGHNTH",
+    "name" : "Maghull North",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.506658,
+    "lon" : -2.9308118,
+    "id" : "MAGHULL",
+    "name" : "Maghull",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

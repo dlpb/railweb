@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.550922,
+    "lon" : 0.034804529,
+    "id" : "FRSTGTJ",
+    "name" : "Forest Gate Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.552241,
+    "lon" : 0.045306892,
+    "id" : "MANRPK",
+    "name" : "Manor Park",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

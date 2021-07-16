@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.981756,
+    "lon" : -1.1784607,
+    "id" : "NTL1BAS",
+    "name" : "Basford",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 52.972,
+    "lon" : -1.178268,
+    "id" : "NTL1WIS",
+    "name" : "Wilkinson Street",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

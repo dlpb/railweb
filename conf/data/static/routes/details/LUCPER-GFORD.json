@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.536673,
+    "lon" : -0.32391,
+    "id" : "LUCPER",
+    "name" : "Perivale",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.542186,
+    "lon" : -0.34520789,
+    "id" : "GFORD",
+    "name" : "Greenford",
+    "type" : "Station"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

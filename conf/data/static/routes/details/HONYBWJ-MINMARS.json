@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.101146,
+    "lon" : -1.8312772,
+    "id" : "HONYBWJ",
+    "name" : "Honeybourne West Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.99236,
+    "lon" : -1.7003944,
+    "id" : "MINMARS",
+    "name" : "Moreton-In-Marsh",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

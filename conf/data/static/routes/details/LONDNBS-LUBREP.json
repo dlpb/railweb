@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.5231577,
+    "lon" : -0.156863,
+    "id" : "LONDNBS",
+    "name" : "Baker Street Und",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.52344,
+    "lon" : -0.14713,
+    "id" : "LUBREP",
+    "name" : "Regent's Park",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

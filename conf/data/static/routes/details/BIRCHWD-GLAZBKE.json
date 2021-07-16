@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.412725,
+    "lon" : -2.5253381,
+    "id" : "BIRCHWD",
+    "name" : "Birchwood",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.429839,
+    "lon" : -2.4532619,
+    "id" : "GLAZBKE",
+    "name" : "Glazebrook East Jn & Sdgs",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

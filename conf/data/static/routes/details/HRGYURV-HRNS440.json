@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.575438,
+    "lon" : -0.10495615,
+    "id" : "HRGYURV",
+    "name" : "Harringay Up Rev Sdgs",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.585291,
+    "lon" : -0.11147496,
+    "id" : "HRNS440",
+    "name" : "Hornsey Sig K440",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

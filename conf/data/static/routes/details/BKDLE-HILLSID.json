@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.633586,
+    "lon" : -3.0148771,
+    "id" : "BKDLE",
+    "name" : "Birkdale",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.621713,
+    "lon" : -3.0252663,
+    "id" : "HILLSID",
+    "name" : "Hillside",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

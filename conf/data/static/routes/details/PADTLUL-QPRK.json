@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.515425,
+    "lon" : -0.17546164,
+    "id" : "PADTLUL",
+    "name" : "Paddington (Bakerloo Line)",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 51.533992,
+    "lon" : -0.20561817,
+    "id" : "QPRK",
+    "name" : "Queens Park (London)",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.635277,
+    "lon" : -2.5486665,
+    "id" : "NWBIBG",
+    "name" : "New Biggin British Gypsum",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.631731,
+    "lon" : -2.5417873,
+    "id" : "NWBIT55",
+    "name" : "Kirkby Thore Sig. Kt55",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

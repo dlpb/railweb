@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.551642,
+    "lon" : -0.29591023,
+    "id" : "WMBY",
+    "name" : "Wembley Central",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.54347,
+    "lon" : -0.28068373,
+    "id" : "WMBYHS",
+    "name" : "Wembley H.S.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

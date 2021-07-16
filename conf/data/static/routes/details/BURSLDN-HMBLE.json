@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.8834,
+    "lon" : -1.3052355,
+    "id" : "BURSLDN",
+    "name" : "Bursledon",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.871254,
+    "lon" : -1.3288369,
+    "id" : "HMBLE",
+    "name" : "Hamble",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.30066,
+    "lon" : -0.33264875,
+    "id" : "LETH195",
+    "name" : "Leatherhead Signal W1195",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.299003,
+    "lon" : -0.33308176,
+    "id" : "LETHRHD",
+    "name" : "Leatherhead",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

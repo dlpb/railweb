@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.502142,
+    "lon" : -1.1156153,
+    "id" : "DONCDNJ",
+    "name" : "Decoy Nth Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.500797,
+    "lon" : -1.1112562,
+    "id" : "DONCRSG",
+    "name" : "Doncaster Robert Rds Shed",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

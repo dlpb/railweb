@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.89312,
+    "lon" : -1.1486315,
+    "id" : "BCSTRTN",
+    "name" : "Bicester Village",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.896221,
+    "lon" : -1.1297035,
+    "id" : "BCSTSJ",
+    "name" : "Bicester South Junction",
+    "type" : "Location"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "PassengerAndParcelsPermanent",
+  "speed" : "80-105"
+} ]

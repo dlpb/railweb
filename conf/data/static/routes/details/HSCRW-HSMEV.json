@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.183799,
+    "lon" : -2.4839412,
+    "id" : "HSCRW",
+    "name" : "Cranmore West",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 51.180067,
+    "lon" : -2.517273,
+    "id" : "HSMEV",
+    "name" : "Mendip Vale",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

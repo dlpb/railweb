@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.824836,
+    "lon" : -2.9612178,
+    "id" : "SNGLSB",
+    "name" : "Singleton Sb",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.803928,
+    "lon" : -2.9477869,
+    "id" : "PLTNT67",
+    "name" : "Poulton-Le-Fylde Sig. Pt67",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

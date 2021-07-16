@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.367388,
+    "lon" : -0.1173937,
+    "id" : "WADDON",
+    "name" : "Waddon",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.360246,
+    "lon" : -0.15059435,
+    "id" : "WALNGTN",
+    "name" : "Wallington",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.521067,
+    "lon" : -3.214236,
+    "id" : "RHIWBNA",
+    "name" : "Rhiwbina",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.520787,
+    "lon" : -3.2221703,
+    "id" : "WHCH",
+    "name" : "Whitchurch (Glamorgan)",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

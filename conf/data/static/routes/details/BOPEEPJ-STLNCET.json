@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.853141,
+    "lon" : 0.54208017,
+    "id" : "BOPEEPJ",
+    "name" : "Bopeep Jn S.B.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.849406,
+    "lon" : 0.52647595,
+    "id" : "STLNCET",
+    "name" : "St Leonards Cet Point",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

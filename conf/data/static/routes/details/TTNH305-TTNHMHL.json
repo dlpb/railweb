@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.588882,
+    "lon" : -0.0598037,
+    "id" : "TTNH305",
+    "name" : "Tottenham Hale Sig L5305",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.588882,
+    "lon" : -0.0598037,
+    "id" : "TTNHMHL",
+    "name" : "Tottenham Hale",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

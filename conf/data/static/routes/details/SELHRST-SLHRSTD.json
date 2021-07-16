@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.392468,
+    "lon" : -0.089010455,
+    "id" : "SELHRST",
+    "name" : "Selhurst",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.389265,
+    "lon" : -0.083940852,
+    "id" : "SLHRSTD",
+    "name" : "Selhurst T&R.S.M.D",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

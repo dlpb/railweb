@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.409204,
+    "lon" : 0.017707119,
+    "id" : "BROMLYN",
+    "name" : "Bromley North",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.413539,
+    "lon" : 0.021335035,
+    "id" : "SNDP",
+    "name" : "Sundridge Park",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.429567,
+    "lon" : -0.54603998,
+    "id" : "EGHAM",
+    "name" : "Egham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.432313,
+    "lon" : -0.50272314,
+    "id" : "STAINES",
+    "name" : "Staines",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

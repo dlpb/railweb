@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.135286,
+    "lon" : -2.0976053,
+    "id" : "ABRDFJN",
+    "name" : "Aberdeen Ferryhill Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 57.141691,
+    "lon" : -2.0984484,
+    "id" : "CRGIDRS",
+    "name" : "Aberdeen Craiginches (Drs)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

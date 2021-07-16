@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.965322,
+    "lon" : -1.1705153,
+    "id" : "NTL1THF",
+    "name" : "The Forest",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 52.962285,
+    "lon" : -1.161405,
+    "id" : "NTL1HIS",
+    "name" : "High School",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

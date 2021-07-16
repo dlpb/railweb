@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.67764,
+    "lon" : -1.5009512,
+    "id" : "WKFLWSJ",
+    "name" : "Wakefield Westgate Sth Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.681928,
+    "lon" : -1.5053971,
+    "id" : "WKFLDWG",
+    "name" : "Wakefield Westgate",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

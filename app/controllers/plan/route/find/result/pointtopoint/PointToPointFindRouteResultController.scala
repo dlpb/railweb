@@ -1,6 +1,5 @@
 package controllers.plan.route.find.result.pointtopoint
 
-import java.net.URLDecoder
 import java.time.format.DateTimeFormatter
 import java.time.{LocalDate, LocalTime}
 import java.util.Date
@@ -11,9 +10,8 @@ import controllers.plan.route.find.result.FindRouteResultHelper.mkTime
 import controllers.plan.route.find.result.{FindRouteResultHelper, ResultViewModel, Waypoint}
 import javax.inject.{Inject, Singleton}
 import models.auth.roles.MapUser
-import models.location.{Location, MapLocation}
+import models.location.Location
 import models.route.Route
-import models.route.display.map.MapRoute
 import play.api.mvc.{AbstractController, AnyContent, ControllerComponents}
 import services.plan.pointtopoint.{Path, PointToPointRouteFinderService}
 import services.visit.location.LocationVisitService
@@ -61,15 +59,14 @@ class PointToPointFindRouteResultController @Inject()(
       val path: Path = pathService.findRouteForWaypoints(locationStrToRouteVia, followFixedLinks, followFreightLinks, followUnknownLinks)
 
 
-      val mapLocationList = path.locations.map(MapLocation(_))
+      val locationsList = path.locations
       val locationsToRouteVia = path.locations.map(_.id)
 
-      val mapRouteList = path.routes.map(r => MapRoute(r))
       val routeList = path.routes
       val waypoints = path.locations.map(l => Waypoint(l.id, l.name, l.isOrrStation))
 
       val distance = path.routes.map(_.distance).sum
-      val time = path.routes.map(_.travelTimeInSeconds).map(_.getSeconds).sum
+      val time = path.routes.map(_.travelTimeInSeconds).sum
 
 
       val messages = List()
@@ -78,8 +75,7 @@ class PointToPointFindRouteResultController @Inject()(
         request.user,
         token,
         ResultViewModel(
-          mapLocationList,
-          mapRouteList,
+          locationsList,
           routeList,
           waypoints,
           path.followFreightLinks,

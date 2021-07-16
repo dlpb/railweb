@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.51753,
+    "lon" : -0.24827,
+    "id" : "LUCEAA",
+    "name" : "East Acton",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.512206,
+    "lon" : -0.224226,
+    "id" : "LUCWHC",
+    "name" : "White City",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

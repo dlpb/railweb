@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.8698,
+    "lon" : -4.3092,
+    "id" : "GSSPAR",
+    "name" : "Partick",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 55.8625,
+    "lon" : -4.311389,
+    "id" : "GSSGOV",
+    "name" : "Govan",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

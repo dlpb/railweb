@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.477313,
+    "lon" : -4.6263439,
+    "id" : "FLKLDGL",
+    "name" : "Falkland Dgl",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.473781,
+    "lon" : -4.6258715,
+    "id" : "NWTOA",
+    "name" : "Newton-On-Ayr",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

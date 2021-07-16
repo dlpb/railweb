@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.07414,
+    "lon" : -1.3404663,
+    "id" : "PYEBDGJ",
+    "name" : "Pye Bridge Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.061566,
+    "lon" : -1.3440157,
+    "id" : "CDNRPKJ",
+    "name" : "Codnor Park Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

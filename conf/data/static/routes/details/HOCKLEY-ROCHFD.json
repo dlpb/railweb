@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.603794,
+    "lon" : 0.65836516,
+    "id" : "HOCKLEY",
+    "name" : "Hockley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.581641,
+    "lon" : 0.70212492,
+    "id" : "ROCHFD",
+    "name" : "Rochford",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

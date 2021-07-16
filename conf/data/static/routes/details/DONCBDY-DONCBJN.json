@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.503743,
+    "lon" : -1.1230451,
+    "id" : "DONCBDY",
+    "name" : "Belmont Down Yard",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.514742,
+    "lon" : -1.1399198,
+    "id" : "DONCBJN",
+    "name" : "Bridge Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

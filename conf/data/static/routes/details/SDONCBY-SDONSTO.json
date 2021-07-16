@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.567539,
+    "lon" : -1.7807548,
+    "id" : "SDONCBY",
+    "name" : "Swindon Cocklebury",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.564675,
+    "lon" : -1.7880107,
+    "id" : "SDONSTO",
+    "name" : "Swindon Stores",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

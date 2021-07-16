@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.392976,
+    "lon" : -2.2308133,
+    "id" : "GATLEY",
+    "name" : "Gatley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.369531,
+    "lon" : -2.2366379,
+    "id" : "HLDG",
+    "name" : "Heald Green",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

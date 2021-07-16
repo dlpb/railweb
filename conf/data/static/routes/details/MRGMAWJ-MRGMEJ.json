@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.547812,
+    "lon" : -3.7463106,
+    "id" : "MRGMAWJ",
+    "name" : "Margam Abbey West Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.564738,
+    "lon" : -3.7557315,
+    "id" : "MRGMEJ",
+    "name" : "Margam East Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

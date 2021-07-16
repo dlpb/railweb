@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.403946,
+    "lon" : -1.5258311,
+    "id" : "COVN532",
+    "name" : "Coventry Sig Cb1532",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.400741,
+    "lon" : -1.5136956,
+    "id" : "COVNTRY",
+    "name" : "Coventry",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

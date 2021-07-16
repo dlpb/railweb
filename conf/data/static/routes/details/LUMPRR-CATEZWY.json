@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.57229051,
+    "lon" : -0.295813875,
+    "id" : "LUMPRR",
+    "name" : "Preston Road",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.5636,
+    "lon" : -0.2794,
+    "id" : "CATEZWY",
+    "name" : "Wembley Park Und",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.409331,
+    "lon" : -3.0787611,
+    "id" : "BDSTNDJ",
+    "name" : "Bidston Dee Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.408059,
+    "lon" : -3.0998949,
+    "id" : "LEASOWE",
+    "name" : "Leasowe",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

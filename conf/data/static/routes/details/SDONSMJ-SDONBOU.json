@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.579371,
+    "lon" : -1.7287454,
+    "id" : "SDONSMJ",
+    "name" : "Swindon South Marston Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.585876,
+    "lon" : -1.6770786,
+    "id" : "SDONBOU",
+    "name" : "Bourton",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

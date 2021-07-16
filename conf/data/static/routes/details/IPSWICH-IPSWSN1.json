@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.05059017669498,
+    "lon" : 1.1444255837190085,
+    "id" : "IPSWICH",
+    "name" : "Ipswich",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.051722,
+    "lon" : 1.1387573,
+    "id" : "IPSWSN1",
+    "name" : "Ipswich Shunt Neck 1",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

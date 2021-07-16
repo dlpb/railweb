@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.05047,
+    "lon" : 1.1827395,
+    "id" : "DERBYRD",
+    "name" : "Derby Road",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.027543,
+    "lon" : 1.2299843,
+    "id" : "ROUTESX",
+    "name" : "Routes L.C. No.8",
+    "type" : "Point"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

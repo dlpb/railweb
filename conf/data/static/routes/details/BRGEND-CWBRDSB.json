@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.506795,
+    "lon" : -3.575039,
+    "id" : "BRGEND",
+    "name" : "Bridgend",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.502271,
+    "lon" : -3.5690909,
+    "id" : "CWBRDSB",
+    "name" : "Cowbridge Road",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "45-75"
+} ]

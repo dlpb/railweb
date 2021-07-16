@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.663041,
+    "lon" : -1.4813593,
+    "id" : "SABR",
+    "name" : "Sandal & Agbrigg",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.67764,
+    "lon" : -1.5009512,
+    "id" : "WKFLWSJ",
+    "name" : "Wakefield Westgate Sth Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

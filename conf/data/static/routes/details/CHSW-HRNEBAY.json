@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.360355,
+    "lon" : 1.0683606,
+    "id" : "CHSW",
+    "name" : "Chestfield & Swalecliffe",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.364431,
+    "lon" : 1.1176862,
+    "id" : "HRNEBAY",
+    "name" : "Herne Bay",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

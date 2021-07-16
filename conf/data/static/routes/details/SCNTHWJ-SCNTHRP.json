@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.587917,
+    "lon" : -0.64136179,
+    "id" : "SCNTHWJ",
+    "name" : "Scunthorpe West Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.586072,
+    "lon" : -0.65154261,
+    "id" : "SCNTHRP",
+    "name" : "Scunthorpe",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

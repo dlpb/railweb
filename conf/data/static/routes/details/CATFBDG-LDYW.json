@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.444911,
+    "lon" : -0.024884467,
+    "id" : "CATFBDG",
+    "name" : "Catford Bridge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.456003,
+    "lon" : -0.019238184,
+    "id" : "LDYW",
+    "name" : "Ladywell",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

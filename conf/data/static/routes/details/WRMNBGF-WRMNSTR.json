@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.204995,
+    "lon" : -2.1578328,
+    "id" : "WRMNBGF",
+    "name" : "Beechgrove Gf",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.207026,
+    "lon" : -2.1770213,
+    "id" : "WRMNSTR",
+    "name" : "Warminster",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

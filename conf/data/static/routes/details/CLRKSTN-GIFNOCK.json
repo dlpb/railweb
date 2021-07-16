@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.789282,
+    "lon" : -4.2752889,
+    "id" : "CLRKSTN",
+    "name" : "Clarkston",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.803872,
+    "lon" : -4.2929754,
+    "id" : "GIFNOCK",
+    "name" : "Giffnock",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.89962,
+    "lon" : -3.6409823,
+    "id" : "BTHGATE",
+    "name" : "Bathgate",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.899032,
+    "lon" : -3.5518545,
+    "id" : "CRMNDNJ",
+    "name" : "Carmondean Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

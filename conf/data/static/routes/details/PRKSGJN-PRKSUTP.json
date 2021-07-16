@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.944971,
+    "lon" : 1.2380594,
+    "id" : "PRKSGJN",
+    "name" : "Parkeston Goods Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.945489,
+    "lon" : 1.2398287,
+    "id" : "PRKSUTP",
+    "name" : "Harwich Up Tip Sidings Gbf",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

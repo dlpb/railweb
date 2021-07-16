@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.037,
+    "lon" : -1.5044,
+    "id" : "TAWMYSHI",
+    "name" : "Shiremoor",
+    "type" : "Metro"
+  },
+  "to" : {
+    "lat" : 55.0403,
+    "lon" : -1.4766,
+    "id" : "TAWMYWEM",
+    "name" : "West Monkseaton",
+    "type" : "Metro"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Metro",
+  "speed" : "OHLE"
+} ]

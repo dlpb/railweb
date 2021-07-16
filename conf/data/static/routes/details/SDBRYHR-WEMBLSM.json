@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.554324,
+    "lon" : -0.31600462,
+    "id" : "SDBRYHR",
+    "name" : "Sudbury & Harrow Road",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.554242,
+    "lon" : -0.28495121,
+    "id" : "WEMBLSM",
+    "name" : "Wembley Stadium",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

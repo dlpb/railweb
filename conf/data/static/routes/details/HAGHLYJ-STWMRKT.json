@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.222117,
+    "lon" : 0.9871659,
+    "id" : "HAGHLYJ",
+    "name" : "Haughley Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.189953,
+    "lon" : 1.0000362,
+    "id" : "STWMRKT",
+    "name" : "Stowmarket",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

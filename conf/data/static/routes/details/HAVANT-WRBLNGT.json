@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.854484,
+    "lon" : -0.98209323,
+    "id" : "HAVANT",
+    "name" : "Havant",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.853468,
+    "lon" : -0.9668149,
+    "id" : "WRBLNGT",
+    "name" : "Warblington",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

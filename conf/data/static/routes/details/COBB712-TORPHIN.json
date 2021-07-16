@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.80965,
+    "lon" : -3.570763,
+    "id" : "COBB712",
+    "name" : "Cobbinshaw Sig Ej712",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.832247,
+    "lon" : -3.541162,
+    "id" : "TORPHIN",
+    "name" : "Torphin",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

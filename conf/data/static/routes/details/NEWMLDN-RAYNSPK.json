@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.404005,
+    "lon" : -0.25559715,
+    "id" : "NEWMLDN",
+    "name" : "New Malden",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.409086,
+    "lon" : -0.23041299,
+    "id" : "RAYNSPK",
+    "name" : "Raynes Park",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

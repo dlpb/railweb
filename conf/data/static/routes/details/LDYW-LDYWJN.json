@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.456003,
+    "lon" : -0.019238184,
+    "id" : "LDYW",
+    "name" : "Ladywell",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.456003,
+    "lon" : -0.019238184,
+    "id" : "LDYWJN",
+    "name" : "Ladywell Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

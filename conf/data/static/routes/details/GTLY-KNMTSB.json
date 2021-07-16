@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.379344,
+    "lon" : -2.795585,
+    "id" : "GTLY",
+    "name" : "Gartly",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 57.351749,
+    "lon" : -2.7471758,
+    "id" : "KNMTSB",
+    "name" : "Kennethmont",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

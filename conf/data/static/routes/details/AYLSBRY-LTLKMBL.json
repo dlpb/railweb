@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.813413,
+    "lon" : -0.81431056,
+    "id" : "AYLSBRY",
+    "name" : "Aylesbury",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.752357,
+    "lon" : -0.80856494,
+    "id" : "LTLKMBL",
+    "name" : "Little Kimble",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

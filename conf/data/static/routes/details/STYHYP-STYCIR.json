@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.384617,
+    "lon" : -1.4521086,
+    "id" : "STYHYP",
+    "name" : "Hyde Park",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 53.38403,
+    "lon" : -1.4463133,
+    "id" : "STYCIR",
+    "name" : "Cricket Inn Road",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

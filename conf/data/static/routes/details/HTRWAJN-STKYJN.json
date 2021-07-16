@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.503057,
+    "lon" : -0.42324952,
+    "id" : "HTRWAJN",
+    "name" : "Heathrow Airport Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.505882,
+    "lon" : -0.44361307,
+    "id" : "STKYJN",
+    "name" : "Stockley Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

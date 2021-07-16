@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.471602,
+    "lon" : -0.25202654,
+    "id" : "BNSBDGE",
+    "name" : "Barnes Bridge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.480798,
+    "lon" : -0.26757432,
+    "id" : "CHISWCK",
+    "name" : "Chiswick",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

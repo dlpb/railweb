@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.897502,
+    "lon" : -1.4723901,
+    "id" : "PEARTRE",
+    "name" : "Peartree",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.896788,
+    "lon" : -1.4734394,
+    "id" : "MELBRNJ",
+    "name" : "Melbourne Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

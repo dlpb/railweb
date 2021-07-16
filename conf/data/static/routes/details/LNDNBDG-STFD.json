@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 51.503428,
+    "lon" : -0.084040543,
+    "id" : "LNDNBDG",
+    "name" : "London Bridge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.5422,
+    "lon" : -0.0033,
+    "id" : "STFD",
+    "name" : "Stratford (London)",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "32 MINUTES"
+}, {
+  "from" : {
+    "lat" : 51.503428,
+    "lon" : -0.084040543,
+    "id" : "LNDNBDG",
+    "name" : "London Bridge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.5422,
+    "lon" : -0.0033,
+    "id" : "STFD",
+    "name" : "Stratford (London)",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "27 MINUTES"
+} ]

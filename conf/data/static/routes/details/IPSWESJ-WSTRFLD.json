@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.057496,
+    "lon" : 1.1276215,
+    "id" : "IPSWESJ",
+    "name" : "Ipswich East Suffolk Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.081085,
+    "lon" : 1.1663939,
+    "id" : "WSTRFLD",
+    "name" : "Westerfield",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.484281,
+    "lon" : -1.9004853,
+    "id" : "BHAMSNH",
+    "name" : "Birmingham Snow Hill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.4845,
+    "lon" : -1.90032,
+    "id" : "WMTWBUS",
+    "name" : "Bull Street",
+    "type" : "Metro"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Unknown",
+  "speed" : "OHLE"
+} ]

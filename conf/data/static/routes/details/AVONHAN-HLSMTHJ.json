@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.518842,
+    "lon" : -2.6943158,
+    "id" : "AVONHAN",
+    "name" : "Avonmouth Hansons Siding",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.522073,
+    "lon" : -2.6921741,
+    "id" : "HLSMTHJ",
+    "name" : "Holesmouth Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

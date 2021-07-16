@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.3735,
+    "lon" : -0.1134,
+    "id" : "LTWWAP",
+    "name" : "Wandle Park",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 51.3748,
+    "lon" : -0.1063,
+    "id" : "LTWREC",
+    "name" : "Reeves Corner",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.834938,
+    "lon" : -3.030575,
+    "id" : "LAYTON",
+    "name" : "Layton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.84311,
+    "lon" : -3.014513,
+    "id" : "LAYTCLX",
+    "name" : "Carleton Crossing L.C.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

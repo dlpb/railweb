@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.864167,
+    "lon" : -6.284722,
+    "id" : "CATZBMA",
+    "name" : "Ballymena Ni",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.133856,
+    "lon" : -6.662937,
+    "id" : "CATZCEI",
+    "name" : "Coleraine Ni",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

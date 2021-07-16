@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.871622,
+    "lon" : -3.5013906,
+    "id" : "LVNSTNS",
+    "name" : "Livingston South",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.883054,
+    "lon" : -3.4563165,
+    "id" : "MDCLDRJ",
+    "name" : "Midcalder Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

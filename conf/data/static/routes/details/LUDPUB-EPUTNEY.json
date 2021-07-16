@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.46868,
+    "lon" : -0.2088141,
+    "id" : "LUDPUB",
+    "name" : "Putney Bridge",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.458959,
+    "lon" : -0.21090875,
+    "id" : "EPUTNEY",
+    "name" : "East Putney",
+    "type" : "Location"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

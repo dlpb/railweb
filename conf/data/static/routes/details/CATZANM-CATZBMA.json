@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.7182,
+    "lon" : -6.2115,
+    "id" : "CATZANM",
+    "name" : "Antrim Ni",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.864167,
+    "lon" : -6.284722,
+    "id" : "CATZBMA",
+    "name" : "Ballymena Ni",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

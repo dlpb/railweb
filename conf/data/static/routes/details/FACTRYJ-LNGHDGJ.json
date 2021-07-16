@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.470884,
+    "lon" : -0.13932754,
+    "id" : "FACTRYJ",
+    "name" : "Factory Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.473255,
+    "lon" : -0.14938264,
+    "id" : "LNGHDGJ",
+    "name" : "Longhedge Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.3739,
+    "lon" : -0.099,
+    "id" : "LTCLGES",
+    "name" : "George Street",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 51.37375,
+    "lon" : -0.10455,
+    "id" : "LTCLCHS",
+    "name" : "Church Street",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

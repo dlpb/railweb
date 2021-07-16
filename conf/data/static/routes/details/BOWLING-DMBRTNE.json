@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.931067,
+    "lon" : -4.4925919,
+    "id" : "BOWLING",
+    "name" : "Bowling",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.942621,
+    "lon" : -4.5542094,
+    "id" : "DMBRTNE",
+    "name" : "Dumbarton East",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

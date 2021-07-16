@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.845761,
+    "lon" : -1.1784367,
+    "id" : "LOGHBGM",
+    "name" : "Hotchley Hill East Leake",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.892089,
+    "lon" : -1.1594814,
+    "id" : "HLRUD",
+    "name" : "Ruddington",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

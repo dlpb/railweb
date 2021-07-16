@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.60582,
+    "lon" : -3.0920209,
+    "id" : "RISCA",
+    "name" : "Risca & Pontymister",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.599768,
+    "lon" : -3.0725573,
+    "id" : "RISCASJ",
+    "name" : "Risca South Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "30-50"
+} ]

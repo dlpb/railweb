@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.384528,
+    "lon" : -1.4124025,
+    "id" : "DARNALL",
+    "name" : "Darnall",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.363931,
+    "lon" : -1.3575807,
+    "id" : "WDHOUSE",
+    "name" : "Woodhouse",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

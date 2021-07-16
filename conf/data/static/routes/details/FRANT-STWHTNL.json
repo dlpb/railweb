@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.10392,
+    "lon" : 0.29448063,
+    "id" : "FRANT",
+    "name" : "Frant",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.11992,
+    "lon" : 0.27609615,
+    "id" : "STWHTNL",
+    "name" : "Strawberry Hill Tunnel",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "70-90"
+} ]

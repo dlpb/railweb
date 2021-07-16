@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.325596,
+    "lon" : -2.7201822,
+    "id" : "HALTONJ",
+    "name" : "Halton Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.294684,
+    "lon" : -2.6346247,
+    "id" : "WEAVERJ",
+    "name" : "Weaver Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

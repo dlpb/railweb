@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.554048,
+    "lon" : -0.38926275,
+    "id" : "NTHOLTS",
+    "name" : "Northolt Sidings",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.557018,
+    "lon" : -0.3992845,
+    "id" : "SRUISLP",
+    "name" : "South Ruislip",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

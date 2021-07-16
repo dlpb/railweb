@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.362644,
+    "lon" : -2.246367,
+    "id" : "HLDGWJ",
+    "name" : "Heald Green West Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.365287,
+    "lon" : -2.2709674,
+    "id" : "MNCRIAP",
+    "name" : "Manchester Airport",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

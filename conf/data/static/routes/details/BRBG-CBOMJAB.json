@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.505782,
+    "lon" : -1.8273036,
+    "id" : "BRBG",
+    "name" : "Bromford Bridge",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.5091,
+    "lon" : -1.8103762,
+    "id" : "CBOMJAB",
+    "name" : "Castle Bromwich Jaguar",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

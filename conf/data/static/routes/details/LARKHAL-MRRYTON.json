@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.738575,
+    "lon" : -3.9750168,
+    "id" : "LARKHAL",
+    "name" : "Larkhall",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.748751,
+    "lon" : -3.9776343,
+    "id" : "MRRYTON",
+    "name" : "Merryton",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -6,9 +6,9 @@ user: models.auth.User,
 token: String,
 stations: List[models.location.Location],
 formData: List[Map[String, (String, String)]],
-callingPoints: List[models.location.MapLocation],
-notCalledAt: List[models.location.MapLocation],
-highlightPoints: List[models.location.MapLocation],
+callingPoints: List[models.location.Location],
+notCalledAt: List[models.location.Location],
+highlightPoints: List[models.location.Location],
 highlightKeys: List[String],
 srs: List[(String, String)],
 trainDataPlan: String,
@@ -284,8 +284,8 @@ function uuidv4() {
 @for(loc <- callingPoints) {
     addLocation({
         "location": {
-            "lat": @loc.location.lat,
-            "lon": @loc.location.lon
+            "lat": @loc.lat,
+            "lon": @loc.lon
         },
         "name":'@loc.name',
         "id": '@loc.id',
@@ -296,8 +296,8 @@ function uuidv4() {
  @for(loc <- highlightPoints) {
     addLocation({
         "location": {
-            "lat": @loc.location.lat,
-            "lon": @loc.location.lon
+            "lat": @loc.lat,
+            "lon": @loc.lon
         },
         "name":'@loc.name',
         "id": '@loc.id',

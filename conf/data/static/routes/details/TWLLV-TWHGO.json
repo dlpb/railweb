@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.327252,
+    "lon" : -3.8356172,
+    "id" : "TWLLV",
+    "name" : "Llandudno Victoria",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 53.330626,
+    "lon" : -3.8438711,
+    "id" : "TWHGO",
+    "name" : "Halfway (Great Orme)",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

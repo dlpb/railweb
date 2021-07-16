@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.856944,
+    "lon" : -4.255833,
+    "id" : "GSSSTE",
+    "name" : "St Enoch",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 55.8624566,
+    "lon" : -4.2534051,
+    "id" : "GSSBUS",
+    "name" : "Buchanan Street",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

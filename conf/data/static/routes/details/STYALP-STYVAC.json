@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.398239,
+    "lon" : -1.4205381,
+    "id" : "STYALP",
+    "name" : "Arena/Olympic Legacy Park",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 53.402341,
+    "lon" : -1.412625,
+    "id" : "STYVAC",
+    "name" : "Valley Centertainment",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

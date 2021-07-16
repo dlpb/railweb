@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.985237,
+    "lon" : -1.4842963,
+    "id" : "DUFIELD",
+    "name" : "Duffield",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.018081,
+    "lon" : -1.546964,
+    "id" : "HDSHO",
+    "name" : "Shottle",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

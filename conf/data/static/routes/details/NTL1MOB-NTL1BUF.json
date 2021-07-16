@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.014445,
+    "lon" : -1.187051,
+    "id" : "NTL1MOB",
+    "name" : "Moor Bridge",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 53.005876,
+    "lon" : -1.190277,
+    "id" : "NTL1BUF",
+    "name" : "Bulwell Forest",
+    "type" : "Tram"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

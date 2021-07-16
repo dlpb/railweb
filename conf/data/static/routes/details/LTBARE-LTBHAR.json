@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.391564,
+    "lon" : -0.058324,
+    "id" : "LTBARE",
+    "name" : "Arena",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 51.3997,
+    "lon" : -0.0605,
+    "id" : "LTBHAR",
+    "name" : "Harrington Road",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

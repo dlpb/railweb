@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.343662,
+    "lon" : -1.1583848,
+    "id" : "DIRFBRF",
+    "name" : "Daventry Gbrf",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.341045,
+    "lon" : -1.155763,
+    "id" : "DVNTYSJ",
+    "name" : "Daventry South Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

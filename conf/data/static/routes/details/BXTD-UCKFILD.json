@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.990225,
+    "lon" : 0.13152,
+    "id" : "BXTD",
+    "name" : "Buxted",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.968782,
+    "lon" : 0.096881425,
+    "id" : "UCKFILD",
+    "name" : "Uckfield",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

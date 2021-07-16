@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.726038,
+    "lon" : -4.6947742,
+    "id" : "BROWUPL",
+    "name" : "Brownhill U.P.L.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.738948,
+    "lon" : -4.6749519,
+    "id" : "GLGN",
+    "name" : "Glengarnock",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

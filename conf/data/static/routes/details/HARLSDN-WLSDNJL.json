@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.5364,
+    "lon" : -0.2579949,
+    "id" : "HARLSDN",
+    "name" : "Harlesden",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.532396,
+    "lon" : -0.24453728,
+    "id" : "WLSDNJL",
+    "name" : "Willesden Junction",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.237871,
+    "lon" : -0.16764003,
+    "id" : "REDH322",
+    "name" : "Redhill Signal T1322",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.24006,
+    "lon" : -0.16561897,
+    "id" : "REDHILL",
+    "name" : "Redhill",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

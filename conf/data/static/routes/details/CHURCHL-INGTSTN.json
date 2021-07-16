@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.67752,
+    "lon" : 0.40490398,
+    "id" : "CHURCHL",
+    "name" : "Church Lane L Xing",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.667074,
+    "lon" : 0.38443642,
+    "id" : "INGTSTN",
+    "name" : "Ingatestone",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

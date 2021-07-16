@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.655061,
+    "lon" : -0.030840022,
+    "id" : "BRIMSDN",
+    "name" : "Brimsdown",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.685004,
+    "lon" : -0.026488458,
+    "id" : "WALHAMX",
+    "name" : "Waltham Cross",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

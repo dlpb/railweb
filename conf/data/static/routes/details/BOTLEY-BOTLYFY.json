@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.916572,
+    "lon" : -1.2596044,
+    "id" : "BOTLEY",
+    "name" : "Botley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.918454,
+    "lon" : -1.2628181,
+    "id" : "BOTLYFY",
+    "name" : "Botley Aggregate Sdgs.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

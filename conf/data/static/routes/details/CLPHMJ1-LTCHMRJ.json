@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.463358,
+    "lon" : -0.17252917,
+    "id" : "CLPHMJ1",
+    "name" : "Clapham Junction",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.471069,
+    "lon" : -0.16935572,
+    "id" : "LTCHMRJ",
+    "name" : "Latchmere Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

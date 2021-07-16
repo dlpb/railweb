@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.491521,
+    "lon" : -0.193906,
+    "id" : "LUDEAC",
+    "name" : "Earl's Court",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.51807,
+    "lon" : -0.28838,
+    "id" : "LUPNOE",
+    "name" : "North Ealing",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.612701,
+    "lon" : -4.4999764,
+    "id" : "KILMRNK",
+    "name" : "Kilmarnock",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.597036,
+    "lon" : -4.4932808,
+    "id" : "RICCRTN",
+    "name" : "Riccarton",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.366544,
+    "lon" : -1.8613605,
+    "id" : "ELWD",
+    "name" : "Earlswood (West Midlands)",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.359142,
+    "lon" : -1.8447321,
+    "id" : "THELAKS",
+    "name" : "The Lakes",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.89678,
+    "lon" : -1.8568087,
+    "id" : "UTOXETR",
+    "name" : "Uttoxeter",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.894806,
+    "lon" : -1.867577,
+    "id" : "UTOXSB",
+    "name" : "Uttoxeter Signal Box",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

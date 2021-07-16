@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.887449,
+    "lon" : -1.262393,
+    "id" : "TRENSD",
+    "name" : "Trent Sidings",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.889936,
+    "lon" : -1.2590512,
+    "id" : "TRENTL",
+    "name" : "Down Trent Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

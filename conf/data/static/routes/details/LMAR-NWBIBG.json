@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.616995,
+    "lon" : -2.5186422,
+    "id" : "LMAR",
+    "name" : "Long Marton",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.635277,
+    "lon" : -2.5486665,
+    "id" : "NWBIBG",
+    "name" : "New Biggin British Gypsum",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

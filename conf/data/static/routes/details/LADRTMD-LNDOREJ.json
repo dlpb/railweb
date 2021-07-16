@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.640117,
+    "lon" : -3.9399022,
+    "id" : "LADRTMD",
+    "name" : "Landore T.M.D.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.643407,
+    "lon" : -3.9383227,
+    "id" : "LNDOREJ",
+    "name" : "Landore Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

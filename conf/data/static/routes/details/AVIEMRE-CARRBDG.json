@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.188547,
+    "lon" : -3.8288524,
+    "id" : "AVIEMRE",
+    "name" : "Aviemore",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 57.279352,
+    "lon" : -3.8278968,
+    "id" : "CARRBDG",
+    "name" : "Carrbridge",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-100"
+} ]

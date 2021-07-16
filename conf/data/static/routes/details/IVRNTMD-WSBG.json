@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.481705,
+    "lon" : -4.2201027,
+    "id" : "IVRNTMD",
+    "name" : "Inverness T.M.D.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 57.482068,
+    "lon" : -4.2163212,
+    "id" : "WSBG",
+    "name" : "Welshs Bridge",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

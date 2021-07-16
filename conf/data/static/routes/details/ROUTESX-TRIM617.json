@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.027543,
+    "lon" : 1.2299843,
+    "id" : "ROUTESX",
+    "name" : "Routes L.C. No.8",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.018417,
+    "lon" : 1.2608871,
+    "id" : "TRIM617",
+    "name" : "Levington Signal Co617",
+    "type" : "Point"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

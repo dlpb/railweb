@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.104629,
+    "lon" : -3.6320874,
+    "id" : "LLWRTYW",
+    "name" : "Llanwrtyd",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.082043,
+    "lon" : -3.6857289,
+    "id" : "SGRLOAF",
+    "name" : "Sugar Loaf",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

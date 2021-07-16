@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.966213,
+    "lon" : -1.6076479,
+    "id" : "HLBDGJN",
+    "name" : "High Level Bridge Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.968228,
+    "lon" : -1.6169534,
+    "id" : "NWCSTLE",
+    "name" : "Newcastle",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

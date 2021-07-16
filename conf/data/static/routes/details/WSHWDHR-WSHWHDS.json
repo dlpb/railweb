@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.499822,
+    "lon" : -1.8545935,
+    "id" : "WSHWDHR",
+    "name" : "Washwood Heath R.M.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.500915,
+    "lon" : -1.8515406,
+    "id" : "WSHWHDS",
+    "name" : "Washwood Heath Down Sdgs",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.920277,
+    "lon" : -1.242928,
+    "id" : "NTL1ESD",
+    "name" : "Eskdale Drive",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 52.918433,
+    "lon" : -1.262369,
+    "id" : "NTL1TOL",
+    "name" : "Toton Lane",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.301745,
+    "lon" : -4.7214638,
+    "id" : "ARDLUI",
+    "name" : "Ardlui",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.329095,
+    "lon" : -4.7280219,
+    "id" : "SUCOTHV",
+    "name" : "Succoth Viaduct",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

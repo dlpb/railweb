@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.6194,
+    "lon" : -2.8033,
+    "id" : "BRWCGAL",
+    "name" : "Galashiels V Bwk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.5966,
+    "lon" : -2.7211,
+    "id" : "MELROSE",
+    "name" : "Melrose",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

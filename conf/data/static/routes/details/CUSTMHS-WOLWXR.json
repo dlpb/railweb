@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 51.509639,
+    "lon" : 0.025894,
+    "id" : "CUSTMHS",
+    "name" : "Custom House Crossrail",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.491578,
+    "lon" : 0.071819,
+    "id" : "WOLWXR",
+    "name" : "Woolwich Crossrail",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+}, {
+  "from" : {
+    "lat" : 51.509639,
+    "lon" : 0.025894,
+    "id" : "CUSTMHS",
+    "name" : "Custom House Crossrail",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.491578,
+    "lon" : 0.071819,
+    "id" : "WOLWXR",
+    "name" : "Woolwich Crossrail",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.983307,
+    "lon" : -1.0411337,
+    "id" : "BRTJYC",
+    "name" : "Burton Joyce",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.00631,
+    "lon" : -0.9983737,
+    "id" : "LOWDHAM",
+    "name" : "Lowdham",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

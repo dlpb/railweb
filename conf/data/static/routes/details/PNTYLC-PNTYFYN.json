@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.778999,
+    "lon" : -3.9975798,
+    "id" : "PNTYLC",
+    "name" : "Pantyffynnon Level Xg",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.778648,
+    "lon" : -3.9976078,
+    "id" : "PNTYFYN",
+    "name" : "Pantyffynnon",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

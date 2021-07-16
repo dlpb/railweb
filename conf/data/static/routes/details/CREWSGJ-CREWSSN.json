@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.086797,
+    "lon" : -2.433896,
+    "id" : "CREWSGJ",
+    "name" : "Crewe Salop Goods Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.092256,
+    "lon" : -2.434706,
+    "id" : "CREWSSN",
+    "name" : "Crewe Ssn Signal Box",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

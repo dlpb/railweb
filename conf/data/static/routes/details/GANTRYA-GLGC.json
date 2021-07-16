@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.857128,
+    "lon" : -4.2582578,
+    "id" : "GANTRYA",
+    "name" : "Glasgow Central Gantry A",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.858674,
+    "lon" : -4.2582357,
+    "id" : "GLGC",
+    "name" : "Glasgow Central",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

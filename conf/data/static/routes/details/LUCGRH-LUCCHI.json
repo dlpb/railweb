@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.61326,
+    "lon" : 0.09258,
+    "id" : "LUCGRH",
+    "name" : "Grange Hill",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.61795,
+    "lon" : 0.07511,
+    "id" : "LUCCHI",
+    "name" : "Chigwell",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

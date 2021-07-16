@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.402864,
+    "lon" : -1.4122101,
+    "id" : "BRGLJN",
+    "name" : "Broughton Lane Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.412462,
+    "lon" : -1.4045707,
+    "id" : "TINSLSJ",
+    "name" : "Tinsley South Jn",
+    "type" : "Junction"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

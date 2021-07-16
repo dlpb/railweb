@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.511282158326736,
+    "lon" : -0.05693436773841817,
+    "id" : "SHADWEL",
+    "name" : "Shadwell",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.51946719200348,
+    "lon" : -0.059757120098615765,
+    "id" : "WCHAPEL",
+    "name" : "Whitechapel",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

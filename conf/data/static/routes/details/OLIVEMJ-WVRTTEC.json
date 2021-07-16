@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.405487,
+    "lon" : -2.9182823,
+    "id" : "OLIVEMJ",
+    "name" : "Olive Mount Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.40519,
+    "lon" : -2.9229239,
+    "id" : "WVRTTEC",
+    "name" : "Wavertree Tech Park",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.46466,
+    "lon" : -0.17066319,
+    "id" : "CLPHMYM",
+    "name" : "Clapham Yard",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.46415,
+    "lon" : -0.17372124,
+    "id" : "CLPHMYS",
+    "name" : "Clapham Yard Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

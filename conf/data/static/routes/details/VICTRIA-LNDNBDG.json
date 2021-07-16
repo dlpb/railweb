@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.49314,
+    "lon" : -0.14608529,
+    "id" : "VICTRIA",
+    "name" : "London Victoria",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.503428,
+    "lon" : -0.084040543,
+    "id" : "LNDNBDG",
+    "name" : "London Bridge",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "30 MINUTES"
+} ]

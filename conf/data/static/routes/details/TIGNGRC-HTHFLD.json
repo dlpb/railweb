@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.55635,
+    "lon" : -3.6256961,
+    "id" : "TIGNGRC",
+    "name" : "Teigngrace",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.568995,
+    "lon" : -3.6397868,
+    "id" : "HTHFLD",
+    "name" : "Heathfield Platform",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

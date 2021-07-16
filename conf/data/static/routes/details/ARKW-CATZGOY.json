@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.793889,
+    "lon" : -6.159722,
+    "id" : "ARKW",
+    "name" : "Arklow      (Cie",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.6712,
+    "lon" : -6.2922,
+    "id" : "CATZGOY",
+    "name" : "Gorey       (Cie",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

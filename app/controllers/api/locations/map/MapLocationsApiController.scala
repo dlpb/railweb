@@ -21,7 +21,7 @@ class MapLocationsApiController @Inject()(
 
     def getLocationsForMap() = {
       authAction { implicit request: UserRequest[AnyContent] =>
-        Ok(write(locationService.mapLocations)).as(JSON)
+        Ok(write(locationService.locations)).as(JSON)
       }
     }
   }

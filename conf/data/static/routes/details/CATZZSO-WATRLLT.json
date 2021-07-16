@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.503,
+    "lon" : -0.105,
+    "id" : "CATZZSO",
+    "name" : "Southwark Lt",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.503577,
+    "lon" : -0.11097923,
+    "id" : "WATRLLT",
+    "name" : "Waterloo Underground",
+    "type" : "Location"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

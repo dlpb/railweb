@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.324746,
+    "lon" : -0.10079744,
+    "id" : "KNLY",
+    "name" : "Kenley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.339437,
+    "lon" : -0.11059946,
+    "id" : "PURLEY",
+    "name" : "Purley",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

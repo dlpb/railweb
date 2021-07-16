@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.834303,
+    "lon" : -1.775671,
+    "id" : "SHPYWJN",
+    "name" : "Shipley West Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.833363,
+    "lon" : -1.7725916,
+    "id" : "SHPY",
+    "name" : "Shipley",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

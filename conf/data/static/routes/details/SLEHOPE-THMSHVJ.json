@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.51395,
+    "lon" : 0.42294183,
+    "id" : "SLEHOPE",
+    "name" : "Stanford-Le-Hope",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.504378,
+    "lon" : 0.42399021,
+    "id" : "THMSHVJ",
+    "name" : "Thames Haven Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

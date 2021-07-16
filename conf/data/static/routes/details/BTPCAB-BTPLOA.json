@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.8381,
+    "lon" : -3.0548,
+    "id" : "BTPCAB",
+    "name" : "Cabin",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 53.842,
+    "lon" : -3.0544,
+    "id" : "BTPLOA",
+    "name" : "Lowther Avenue",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.412458,
+    "lon" : 0.36586954,
+    "id" : "SNGWLP",
+    "name" : "Singlewell Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.407092,
+    "lon" : 0.3834808,
+    "id" : "SNGWX",
+    "name" : "Singlewell Crossover",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "130-155"
+} ]

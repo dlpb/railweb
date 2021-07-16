@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.802976,
+    "lon" : 0.63453099,
+    "id" : "WITH763",
+    "name" : "Witham Signal L763",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.805836,
+    "lon" : 0.63934005,
+    "id" : "WITHAME",
+    "name" : "Witham",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

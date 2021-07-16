@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.408,
+    "lon" : -1.5014,
+    "id" : "STYHIP",
+    "name" : "Hillsborough Park",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 53.4017,
+    "lon" : -1.4989,
+    "id" : "STYHII",
+    "name" : "Hillsborough Interchange",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

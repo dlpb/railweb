@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 51.5061,
+    "lon" : -0.01578,
+    "id" : "CANWHRF",
+    "name" : "Canary Wharf Crossrail",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.509639,
+    "lon" : 0.025894,
+    "id" : "CUSTMHS",
+    "name" : "Custom House Crossrail",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "0-35"
+}, {
+  "from" : {
+    "lat" : 51.5061,
+    "lon" : -0.01578,
+    "id" : "CANWHRF",
+    "name" : "Canary Wharf Crossrail",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.509639,
+    "lon" : 0.025894,
+    "id" : "CUSTMHS",
+    "name" : "Custom House Crossrail",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

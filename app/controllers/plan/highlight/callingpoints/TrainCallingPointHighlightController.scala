@@ -8,7 +8,7 @@ import com.google.common.base.Charsets
 import com.google.common.io.BaseEncoding
 import javax.inject.Inject
 import models.auth.roles.PlanUser
-import models.location.{Location, MapLocation}
+import models.location.{Location}
 import models.plan.highlight.{HighlightTimetableService, LocationsCalledAtFromTimetable, TimetableFound, TrainPlanEntry}
 import models.plan.timetable.trains.TrainTimetableService
 import models.srs.SrsService
@@ -79,7 +79,7 @@ class TrainCallingPointHighlightController @Inject()(
       val locationsToHighlight: List[Location] = locationsToHighlightKeys
         .map(loc => loc.trim)
         .flatMap(loc => {
-          if(loc.contains(".")) locationsService.locations.filter(_.nrInfo.map(_.srs).contains(loc))
+          if(loc.contains(".")) locationsService.locations.filter(_.srs.contains(loc))
           else locationsService.findFirstLocationByNameTiplocCrsOrId(loc)
         })
 
@@ -105,8 +105,8 @@ class TrainCallingPointHighlightController @Inject()(
                                 locationsToHighlightKeys: List[String]
                               ) = {
     val locationsCalledAtF: List[Future[Option[LocationsCalledAtFromTimetable]]] = highlightTimetableService.getLocationsCalledAtFuture(timetablesF)
-    val mapLocationsCalledAt: List[MapLocation] = highlightTimetableService.getMapLocationsForLocationsCalledAt(locationsCalledAtF)
-    val mapLocationsToHighlight = locationsToHighlight.map(MapLocation(_))
+    val mapLocationsCalledAt: List[Location] = highlightTimetableService.getMapLocationsForLocationsCalledAt(locationsCalledAtF)
+    val mapLocationsToHighlight = locationsToHighlight
 
     val trainDataPlanF: List[Future[Option[TrainPlanEntry]]] = highlightTimetableService.getTrainPlanEntriesFuture(locationsCalledAtF)
     val dataPlanEntriesF: Future[List[TrainPlanEntry]] = highlightTimetableService.getSortedTrainPlanEntries(trainDataPlanF)
@@ -136,8 +136,8 @@ class TrainCallingPointHighlightController @Inject()(
   def index(trainsAndStations: String, srsLocations: String, locations: String, year: Int, month: Int, day: Int) = authenticatedUserAction { implicit request: WebUserContext[AnyContent] =>
     if (request.user.roles.contains(PlanUser)) {
       val token = jwtService.createToken(request.user, new Date())
-      val mapLocations: List[MapLocation] =
-        if(locations.isEmpty) { List.empty[MapLocation] }
+      val mapLocations: List[Location] =
+        if(locations.isEmpty) { List.empty[Location] }
         else locations
           .replaceAll("\\s+", ",")
           .split(",")
@@ -145,29 +145,20 @@ class TrainCallingPointHighlightController @Inject()(
           .flatMap {
             locationsService.findFirstLocationByNameTiplocCrsOrId
           }
-          .map {
-            MapLocation(_)
-          }
 
       val srs = srsLocations
         .replaceAll("\\s+", ",")
         .split(",")
 
-      val srsMapLocations: List[MapLocation] = if(srsLocations.isEmpty) List.empty[MapLocation] else locationsService
+      val srsMapLocations: List[Location] = if(srsLocations.isEmpty) List.empty[Location] else locationsService
         .locations
         .toList
         .filter {
           loc =>
-            srs.contains(loc.nrInfo.map {
-              _.srs
-            }.getOrElse(" ")) ||
-              srs.contains(loc.nrInfo.map {
-                _.srs + " "
-              }.getOrElse(" ").substring(0, 1))
+            srs.contains(loc.srs) ||
+              srs.contains(loc.srs + " ")
         }
-        .map {
-          MapLocation(_)
-        }
+
 
       val allStations = (srsMapLocations.toSet ++ mapLocations.toSet).toList
 
@@ -179,12 +170,12 @@ class TrainCallingPointHighlightController @Inject()(
             (parts(0), parts(1), parts(2))
         }.toList
 
-      val trainsF: List[Future[List[MapLocation]]] = trainIdStationList map {
+      val trainsF: List[Future[List[Location]]] = trainIdStationList map {
         tsl =>
           val (train, from, to) = tsl
           Future {
             val tt = timetableService.getTrain(train, year.toString, month.toString, day.toString)
-            val result: Future[List[MapLocation]] = tt.map {
+            val result: Future[List[Location]] = tt.map {
               _.map {
                 t: IndividualTimetable =>
                   val locs = t
@@ -206,9 +197,6 @@ class TrainCallingPointHighlightController @Inject()(
 
                   val sliced = locs
                     .slice(fromIndex, toIndex)
-                    .map {
-                      l => MapLocation(l)
-                    }
                   sliced
 
 
@@ -218,7 +206,7 @@ class TrainCallingPointHighlightController @Inject()(
 
           }.flatten
       }
-      val calledAt: List[MapLocation] = Await.result(Future.sequence(trainsF), Duration(30, "second")).flatten.distinct
+      val calledAt: List[Location] = Await.result(Future.sequence(trainsF), Duration(30, "second")).flatten.distinct
       val notCalledAt = allStations.diff(calledAt)
       val percentage = if(allStations.nonEmpty) calledAt.size*1.0d / allStations.size*1.0d else 100.0d
       Ok(views.html.plan.location.highlight.trains.index(request.user, token, calledAt, notCalledAt, allStations, percentage, trainsF.size, trainsAndStations, srsLocations, locations, List("Work In Progress - Plan - Highlight Locations"), year, month, day)(request.request))

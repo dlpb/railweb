@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.58107,
+    "lon" : -2.11711,
+    "id" : "WMTWTHR",
+    "name" : "The Royal",
+    "type" : "Metro"
+  },
+  "to" : {
+    "lat" : 52.58401,
+    "lon" : -2.12451,
+    "id" : "WMTWWSG",
+    "name" : "Wolverhampton St Georges",
+    "type" : "Metro"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Metro",
+  "speed" : "OHLE"
+} ]

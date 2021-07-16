@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.0403,
+    "lon" : -1.4766,
+    "id" : "TAWMYWEM",
+    "name" : "West Monkseaton",
+    "type" : "Metro"
+  },
+  "to" : {
+    "lat" : 55.0423,
+    "lon" : -1.458,
+    "id" : "TAWMYMON",
+    "name" : "Monkseaton",
+    "type" : "Metro"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Metro",
+  "speed" : "OHLE"
+} ]

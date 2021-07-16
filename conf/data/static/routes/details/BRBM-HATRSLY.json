@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.440774,
+    "lon" : -2.0161293,
+    "id" : "BRBM",
+    "name" : "Broadbottom",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.445119,
+    "lon" : -2.0399491,
+    "id" : "HATRSLY",
+    "name" : "Hattersley",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

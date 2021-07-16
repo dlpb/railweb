@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.480552,
+    "lon" : -1.7861742,
+    "id" : "LEAHALL",
+    "name" : "Lea Hall",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.485197,
+    "lon" : -1.8111121,
+    "id" : "STECHFD",
+    "name" : "Stechford",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

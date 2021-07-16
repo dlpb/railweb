@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.774193,
+    "lon" : -1.0698797,
+    "id" : "SELBYCJ",
+    "name" : "Selby Canal Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.779318,
+    "lon" : -1.0748047,
+    "id" : "SELBYWJ",
+    "name" : "Selby West Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

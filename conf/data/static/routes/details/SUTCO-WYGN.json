@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.564671,
+    "lon" : -1.8253467,
+    "id" : "SUTCO",
+    "name" : "Sutton Coldfield",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.54626,
+    "lon" : -1.8313772,
+    "id" : "WYGN",
+    "name" : "Wylde Green",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

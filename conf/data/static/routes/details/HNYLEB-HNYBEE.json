@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.305326,
+    "lon" : -1.560705,
+    "id" : "HNYLEB",
+    "name" : "Leeming Barmouth",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 54.289,
+    "lon" : -1.588,
+    "id" : "HNYBEE",
+    "name" : "Beedale",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

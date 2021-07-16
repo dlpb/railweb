@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.609825,
+    "lon" : -3.6256832,
+    "id" : "FORRES",
+    "name" : "Forres",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 57.593313,
+    "lon" : -3.7113457,
+    "id" : "BRODIE",
+    "name" : "Brodie",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.318135,
+    "lon" : -3.4889151,
+    "id" : "RHYL",
+    "name" : "Rhyl",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.318135,
+    "lon" : -3.4889151,
+    "id" : "RHYLCE",
+    "name" : "Rhyl Civil Engineers Sdg",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

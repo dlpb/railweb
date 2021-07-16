@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.709833,
+    "lon" : -1.4148505,
+    "id" : "ALTFTJN",
+    "name" : "Altofts Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.700642,
+    "lon" : -1.4232027,
+    "id" : "NORMNTN",
+    "name" : "Normanton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

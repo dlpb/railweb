@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.41823649,
+    "lon" : -0.17800983,
+    "id" : "LUNCOW",
+    "name" : "Colliers Wood",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.41543048,
+    "lon" : -0.192262754,
+    "id" : "LUNSOW",
+    "name" : "South Wimbledon",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.9303,
+    "lon" : -6.2262,
+    "id" : "CATZRDU",
+    "name" : "Rathdrum    (Cie",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.793889,
+    "lon" : -6.159722,
+    "id" : "ARKW",
+    "name" : "Arklow      (Cie",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

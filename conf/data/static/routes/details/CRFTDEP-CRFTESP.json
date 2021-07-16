@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.666647,
+    "lon" : -1.4437809,
+    "id" : "CRFTDEP",
+    "name" : "Crofton Depot",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.668062,
+    "lon" : -1.4387979,
+    "id" : "CRFTESP",
+    "name" : "Crofton East Spur",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

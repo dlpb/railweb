@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.855084,
+    "lon" : -1.5050332,
+    "id" : "BLIEURD",
+    "name" : "Beaulieu Road",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.889525,
+    "lon" : -1.5265913,
+    "id" : "LYNDHRD",
+    "name" : "Ashurst New Forest",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

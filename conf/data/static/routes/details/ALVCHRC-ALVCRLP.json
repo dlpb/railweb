@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.346779,
+    "lon" : -1.9678949,
+    "id" : "ALVCHRC",
+    "name" : "Alvechurch",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.352728,
+    "lon" : -1.9614274,
+    "id" : "ALVCRLP",
+    "name" : "Alvechurch Red Lion",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "10 MINUTES"
+} ]

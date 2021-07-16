@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.0148,
+    "lon" : -3.6258,
+    "id" : "HLKIN",
+    "name" : "Kinneil",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 56.018091,
+    "lon" : -3.5994304,
+    "id" : "BONSRPS",
+    "name" : "Bo'ness Jn Exchange Sdg",
+    "type" : "Point"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

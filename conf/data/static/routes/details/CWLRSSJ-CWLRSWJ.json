@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.880945,
+    "lon" : -4.2390633,
+    "id" : "CWLRSSJ",
+    "name" : "Cowlairs South Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.883255,
+    "lon" : -4.2385249,
+    "id" : "CWLRSWJ",
+    "name" : "Cowlairs West Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

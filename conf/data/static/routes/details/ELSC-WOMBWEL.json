@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.498551,
+    "lon" : -1.4277267,
+    "id" : "ELSC",
+    "name" : "Elsecar",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.517444,
+    "lon" : -1.4162969,
+    "id" : "WOMBWEL",
+    "name" : "Wombwell",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

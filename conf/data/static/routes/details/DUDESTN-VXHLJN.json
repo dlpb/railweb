@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.488226,
+    "lon" : -1.8715381,
+    "id" : "DUDESTN",
+    "name" : "Duddeston",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.485047,
+    "lon" : -1.8742716,
+    "id" : "VXHLJN",
+    "name" : "Vauxhall Jn (West Mids)",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

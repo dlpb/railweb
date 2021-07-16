@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.674155,
+    "lon" : -1.6193361,
+    "id" : "DWBYEJN",
+    "name" : "Dewsbury East Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.671296,
+    "lon" : -1.6077372,
+    "id" : "HLYMAJN",
+    "name" : "Healey Mills A Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

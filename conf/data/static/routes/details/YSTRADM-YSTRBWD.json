@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.64035,
+    "lon" : -3.2419875,
+    "id" : "YSTRADM",
+    "name" : "Ystrad Mynach",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.67027,
+    "lon" : -3.19808,
+    "id" : "YSTRBWD",
+    "name" : "Blackwood Bus Linc",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

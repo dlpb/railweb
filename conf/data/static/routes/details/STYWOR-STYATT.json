@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.38901,
+    "lon" : -1.4344711,
+    "id" : "STYWOR",
+    "name" : "Woodbourn Road",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 53.392327,
+    "lon" : -1.4299643,
+    "id" : "STYATT",
+    "name" : "Attercliffe",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.429077,
+    "lon" : -1.0883955,
+    "id" : "THEALEM",
+    "name" : "Theale Murco",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.433549,
+    "lon" : -1.0738346,
+    "id" : "THEALGL",
+    "name" : "Theale Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

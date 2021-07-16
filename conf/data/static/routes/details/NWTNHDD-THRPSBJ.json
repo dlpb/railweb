@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.503931,
+    "lon" : -2.1893979,
+    "id" : "NWTNHDD",
+    "name" : "Newton Heath T.M.D.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.502746,
+    "lon" : -2.1937346,
+    "id" : "THRPSBJ",
+    "name" : "Thorpes Bridge Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

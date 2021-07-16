@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.16464,
+    "lon" : -0.81600237,
+    "id" : "CRLTOTL",
+    "name" : "Carlton On Trent Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.090634,
+    "lon" : -0.80481908,
+    "id" : "NWRKFC",
+    "name" : "Newark F.C.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

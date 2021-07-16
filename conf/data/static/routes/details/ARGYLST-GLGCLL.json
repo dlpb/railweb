@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.857592,
+    "lon" : -4.2501193,
+    "id" : "ARGYLST",
+    "name" : "Argyle Street",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.858491,
+    "lon" : -4.2584168,
+    "id" : "GLGCLL",
+    "name" : "Glasgow Central",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

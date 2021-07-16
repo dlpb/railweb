@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.966875,
+    "lon" : -3.0074982,
+    "id" : "FLORSTN",
+    "name" : "Floriston",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.985523,
+    "lon" : -3.0299844,
+    "id" : "MSBD",
+    "name" : "Mossband",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

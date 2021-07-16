@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.649602,
+    "lon" : -2.6687793,
+    "id" : "BALSHWL",
+    "name" : "Balshaw Lane",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.571803,
+    "lon" : -2.6399008,
+    "id" : "WIGANBH",
+    "name" : "Wigan Boars Head G.F.",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

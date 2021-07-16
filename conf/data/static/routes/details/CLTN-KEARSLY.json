@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.522301,
+    "lon" : -2.3141265,
+    "id" : "CLTN",
+    "name" : "Clifton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.544416,
+    "lon" : -2.375273,
+    "id" : "KEARSLY",
+    "name" : "Kearsley",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.355968,
+    "lon" : -2.7652572,
+    "id" : "DITTAHC",
+    "name" : "Ditton Foundry Ln(Ahc-Ews)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.355855,
+    "lon" : -2.7730079,
+    "id" : "DITTNRS",
+    "name" : "Ditton Reception Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

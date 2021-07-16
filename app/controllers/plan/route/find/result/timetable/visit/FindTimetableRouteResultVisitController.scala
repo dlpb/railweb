@@ -12,10 +12,9 @@ import controllers.plan.route.find.result.{FindRouteResultHelper, ResultViewMode
 import javax.inject.{Inject, Singleton}
 import models.auth.roles.MapUser
 import models.data.{Event, Train}
-import models.location.{Location, MapLocation}
+import models.location.{Location}
 import models.plan.timetable.trains.TrainTimetableService
 import models.route.Route
-import models.route.display.map.MapRoute
 import models.timetable.model.train.IndividualTimetableLocation
 import play.api.mvc.{AbstractController, AnyContent, ControllerComponents}
 import services.plan.pointtopoint.{Path, PointToPointRouteFinderService}
@@ -215,13 +214,13 @@ class FindTimetableRouteResultVisitController @Inject()(
                 routesService.visitRoute(r, routeVisitTime, routeVisitTime, None, visitedTrainUid, request.user)
                 val debugVisitRoute = s"VISIT ROUTE   : Visiting route ${r.from.id}-${r.to.id} with visit time $routeVisitTime"
                 debugStrBuf.append(debugVisitRoute).append("\n")
-                routeVisitTime = routeVisitTime.plusSeconds(r.travelTimeInSeconds.getSeconds)
+                routeVisitTime = routeVisitTime.plusSeconds(r.travelTimeInSeconds)
 
               })
               routes
 
             }
-            val travelTime = nextRoutes.map(_.travelTimeInSeconds).map(_.toSeconds).sum
+            val travelTime = nextRoutes.map(_.travelTimeInSeconds).sum
             //work out when the timetable says the train should arrive
             val timetableScheduledArrivalTimeOpt = timetable.locations.find(_.tiploc.equals(nextLocation.id)).flatMap(_.publicArrival)
             //if the arrival time is before the last visit time, we've probably crossed midnight so add one day
@@ -243,9 +242,8 @@ class FindTimetableRouteResultVisitController @Inject()(
 
         })
 
-        val mapLocationList = path.locations.map(MapLocation(_))
+        val locationsList = path.locations
 
-        val mapRouteList = routes.map(r => MapRoute(r))
         val routeList = routes
         val waypoints = locations.map(l => Waypoint(l.id, l.name, timetable.locations.find(tl => tl.tiploc.equals(l.id)).exists(tl => tl.publicDeparture.isDefined || tl.publicArrival.isDefined)))
 
@@ -259,8 +257,7 @@ class FindTimetableRouteResultVisitController @Inject()(
           request.user,
           token,
           ResultViewModel(
-            mapLocationList,
-            mapRouteList,
+            locationsList,
             routeList,
             waypoints,
             path.followFreightLinks,

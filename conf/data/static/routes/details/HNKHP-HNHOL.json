@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.932174,
+    "lon" : 1.137592,
+    "id" : "HNKHP",
+    "name" : "Kelling Heath Park",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.9145,
+    "lon" : 1.1133,
+    "id" : "HNHOL",
+    "name" : "Holt",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

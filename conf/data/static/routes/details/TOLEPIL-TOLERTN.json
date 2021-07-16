@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.157291,
+    "lon" : -1.2965123,
+    "id" : "TOLEPIL",
+    "name" : "Pilmoor",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.073181,
+    "lon" : -1.2132548,
+    "id" : "TOLERTN",
+    "name" : "Tollerton Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.96083,
+    "lon" : -0.12289497,
+    "id" : "KEYMERJ",
+    "name" : "Keymer Jn",
+    "type" : "Junction"
+  },
+  "to" : {
+    "lat" : 50.92867,
+    "lon" : -0.060664616,
+    "id" : "PLMPTON",
+    "name" : "Plumpton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.176282,
+    "lon" : 1.4733715,
+    "id" : "SNAPE",
+    "name" : "Snape",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.151052,
+    "lon" : 1.3987497,
+    "id" : "WCKHMMR",
+    "name" : "Wickham Market",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

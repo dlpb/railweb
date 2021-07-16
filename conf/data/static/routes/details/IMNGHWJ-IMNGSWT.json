@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.633841,
+    "lon" : -0.20944388,
+    "id" : "IMNGHWJ",
+    "name" : "Immingham West Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.632508,
+    "lon" : -0.19250038,
+    "id" : "IMNGSWT",
+    "name" : "Immingham Storage W Tml",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

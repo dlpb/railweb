@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.383098,
+    "lon" : -1.465895,
+    "id" : "STYCAS",
+    "name" : "Castle Square",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 53.383189,
+    "lon" : -1.4638089,
+    "id" : "STYFIS",
+    "name" : "Fitzalan Square",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

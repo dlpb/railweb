@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.47,
+    "lon" : -2.2675,
+    "id" : "MNCRCBK",
+    "name" : "Cornbrook Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.4652,
+    "lon" : -2.2781,
+    "id" : "MNCRPOM",
+    "name" : "Pomona Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

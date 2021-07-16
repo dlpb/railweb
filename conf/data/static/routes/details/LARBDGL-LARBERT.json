@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.028221,
+    "lon" : -3.8311468,
+    "id" : "LARBDGL",
+    "name" : "Larbert North D.G.L.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.021824,
+    "lon" : -3.829833,
+    "id" : "LARBERT",
+    "name" : "Larbert",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

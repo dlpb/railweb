@@ -1,0 +1,58 @@
+[ {
+  "from" : {
+    "lat" : 51.518944,
+    "lon" : -0.080939088,
+    "id" : "LIVST",
+    "name" : "London Liverpool Street",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.49314,
+    "lon" : -0.14608529,
+    "id" : "VICTRIA",
+    "name" : "London Victoria",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "37 MINUTES"
+}, {
+  "from" : {
+    "lat" : 51.518944,
+    "lon" : -0.080939088,
+    "id" : "LIVST",
+    "name" : "London Liverpool Street",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.49314,
+    "lon" : -0.14608529,
+    "id" : "VICTRIA",
+    "name" : "London Victoria",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "32 MINUTES"
+}, {
+  "from" : {
+    "lat" : 51.518944,
+    "lon" : -0.080939088,
+    "id" : "LIVST",
+    "name" : "London Liverpool Street",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.49314,
+    "lon" : -0.14608529,
+    "id" : "VICTRIA",
+    "name" : "London Victoria",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "27 MINUTES"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.908172,
+    "lon" : -2.1551001,
+    "id" : "STONEMS",
+    "name" : "Stone Meaford Sdgs",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.909016,
+    "lon" : -2.1559209,
+    "id" : "STONJN",
+    "name" : "Stone Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

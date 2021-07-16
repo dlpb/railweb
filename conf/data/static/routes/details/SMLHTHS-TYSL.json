@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.460587,
+    "lon" : -1.8521617,
+    "id" : "SMLHTHS",
+    "name" : "Small Heath South Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.454124,
+    "lon" : -1.839322,
+    "id" : "TYSL",
+    "name" : "Tyseley",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.147301,
+    "lon" : -2.163092,
+    "id" : "ABTSWDJ",
+    "name" : "Abbotswood Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.156962,
+    "lon" : -2.172,
+    "id" : "NRTNJN",
+    "name" : "Norton Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

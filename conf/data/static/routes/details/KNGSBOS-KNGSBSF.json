@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.576323,
+    "lon" : -1.6728966,
+    "id" : "KNGSBOS",
+    "name" : "Kingsbury Oil Sdgs",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.571278,
+    "lon" : -1.6788212,
+    "id" : "KNGSBSF",
+    "name" : "Kingsbury S.F.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

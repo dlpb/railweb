@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.792224,
+    "lon" : -1.3715047,
+    "id" : "EGRFRTH",
+    "name" : "East Garforth",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.789088,
+    "lon" : -1.3333767,
+    "id" : "PECKFSB",
+    "name" : "Peckfield Crossover",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

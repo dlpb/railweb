@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.498163,
+    "lon" : -0.073311757,
+    "id" : "LNDNBCJ",
+    "name" : "Brunswick Court Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.503428,
+    "lon" : -0.084040543,
+    "id" : "LNDNBDC",
+    "name" : "London Bridge",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.627841,
+    "lon" : -0.69717072,
+    "id" : "MANTMJ7",
+    "name" : "Manton Jn Sig Mj7",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.627841,
+    "lon" : -0.69717072,
+    "id" : "MANTSDG",
+    "name" : "Manton Jn Ace Sdg",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

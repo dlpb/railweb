@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.796125,
+    "lon" : -1.0756044,
+    "id" : "FRATTSH",
+    "name" : "Fratton Staff Halt",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.797454,
+    "lon" : -1.0833115,
+    "id" : "PSEABKR",
+    "name" : "Portsmouth & S.S. Back  Rd",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

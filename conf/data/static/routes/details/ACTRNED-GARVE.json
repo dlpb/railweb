@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.602778,
+    "lon" : -4.5286588,
+    "id" : "ACTRNED",
+    "name" : "Achterneed",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 57.613014,
+    "lon" : -4.6883262,
+    "id" : "GARVE",
+    "name" : "Garve",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

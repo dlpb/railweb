@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.442105,
+    "lon" : -2.8375166,
+    "id" : "CRAVENA",
+    "name" : "Craven Arms",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.503687,
+    "lon" : -2.8235862,
+    "id" : "MSHBRKX",
+    "name" : "Marsh Brook Level Crossing",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

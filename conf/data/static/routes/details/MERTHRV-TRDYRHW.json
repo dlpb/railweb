@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.686665,
+    "lon" : -3.3370536,
+    "id" : "MERTHRV",
+    "name" : "Merthyr Vale",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.711935,
+    "lon" : -3.3462373,
+    "id" : "TRDYRHW",
+    "name" : "Troed-Y-Rhiw",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "45-75"
+} ]

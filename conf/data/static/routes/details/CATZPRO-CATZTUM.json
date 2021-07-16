@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.146111,
+    "lon" : -7.181111,
+    "id" : "CATZPRO",
+    "name" : "Portarlngtn (Cie",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.270278,
+    "lon" : -7.499722,
+    "id" : "CATZTUM",
+    "name" : "Tullamore   (Cie",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

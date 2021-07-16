@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.210118,
+    "lon" : -5.2980898,
+    "id" : "CBORNE",
+    "name" : "Camborne",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.185738,
+    "lon" : -5.4196246,
+    "id" : "HAYLE",
+    "name" : "Hayle",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

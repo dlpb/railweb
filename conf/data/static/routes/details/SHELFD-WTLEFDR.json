@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.149215,
+    "lon" : 0.1398826,
+    "id" : "SHELFD",
+    "name" : "Shelford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.110163,
+    "lon" : 0.16349684,
+    "id" : "WTLEFDR",
+    "name" : "Whittlesford Recp.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.921025,
+    "lon" : -4.0565153,
+    "id" : "LNDC",
+    "name" : "Llandecwyn",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.928725,
+    "lon" : -4.0645726,
+    "id" : "PRHN",
+    "name" : "Penrhyndeudraeth",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.503204,
+    "lon" : -2.5638643,
+    "id" : "FILTNEW",
+    "name" : "Filton Abbey Wood",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.516587,
+    "lon" : -2.568699,
+    "id" : "FILTNWJ",
+    "name" : "Filton West Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

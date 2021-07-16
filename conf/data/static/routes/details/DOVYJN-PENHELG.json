@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.564773,
+    "lon" : -3.9237875,
+    "id" : "DOVYJN",
+    "name" : "Dovey Junction",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.545619,
+    "lon" : -4.0351991,
+    "id" : "PENHELG",
+    "name" : "Penhelig",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.400067,
+    "lon" : -4.7913941,
+    "id" : "BUGLE",
+    "name" : "Bugle",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.418621,
+    "lon" : -4.8305824,
+    "id" : "RCHE",
+    "name" : "Roche",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "15-50"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.192785,
+    "lon" : -2.208199,
+    "id" : "WORCHER",
+    "name" : "Worcester Hereford Sidings",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.189525,
+    "lon" : -2.2061066,
+    "id" : "WORCS67",
+    "name" : "Worcester Signal 67",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

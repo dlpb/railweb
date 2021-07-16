@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.810414,
+    "lon" : -0.54682271,
+    "id" : "LTLHMPT",
+    "name" : "Littlehampton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.810414,
+    "lon" : -0.54682271,
+    "id" : "LTLHOSH",
+    "name" : "Littlehampton O. Shed",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

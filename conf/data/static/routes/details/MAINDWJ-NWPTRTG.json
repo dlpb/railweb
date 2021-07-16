@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.591921,
+    "lon" : -2.9904351,
+    "id" : "MAINDWJ",
+    "name" : "Maindee West Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.589189,
+    "lon" : -2.9998305,
+    "id" : "NWPTRTG",
+    "name" : "Newport (South Wales)",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

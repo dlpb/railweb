@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.922636,
+    "lon" : -1.231485,
+    "id" : "NTL1CAL",
+    "name" : "Cator Lane",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 52.921587,
+    "lon" : -1.236616,
+    "id" : "NTL1BRL",
+    "name" : "Bramcote Lane",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

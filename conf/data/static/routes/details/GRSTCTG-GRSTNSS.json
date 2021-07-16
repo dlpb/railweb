@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.353215,
+    "lon" : -2.8692171,
+    "id" : "GRSTCTG",
+    "name" : "Garston Car Terminal Gbrf",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.353185,
+    "lon" : -2.8843454,
+    "id" : "GRSTNSS",
+    "name" : "Garston(Speke) T.C.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

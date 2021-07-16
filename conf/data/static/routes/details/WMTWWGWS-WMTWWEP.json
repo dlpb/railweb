@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.54892,
+    "lon" : -2.02563,
+    "id" : "WMTWWGWS",
+    "name" : "Wednesbury Great Western Street",
+    "type" : "Metro"
+  },
+  "to" : {
+    "lat" : 52.54968,
+    "lon" : -2.03202,
+    "id" : "WMTWWEP",
+    "name" : "Wednesbury Parkway",
+    "type" : "Metro"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Metro",
+  "speed" : "OHLE"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.341741,
+    "lon" : -1.3703528,
+    "id" : "STBDOW",
+    "name" : "Donetsk Way",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 53.342177,
+    "lon" : -1.3626492,
+    "id" : "STBMOW",
+    "name" : "Moss Way",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

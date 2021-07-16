@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.475076,
+    "lon" : -0.14681775,
+    "id" : "QTRDBAT",
+    "name" : "Queenstown Road Battersea",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.470452,
+    "lon" : -0.15754484,
+    "id" : "WLNDNJN",
+    "name" : "West London Junction",
+    "type" : "Location"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.559203,
+    "lon" : 0.25146579,
+    "id" : "UPMNSDG",
+    "name" : "Upminster Tamper Siding",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.558782,
+    "lon" : 0.25233947,
+    "id" : "UPMNSTR",
+    "name" : "Upminster",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.612817,
+    "lon" : -0.24894695,
+    "id" : "MLHB",
+    "name" : "Mill Hill Broadway",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.592424,
+    "lon" : -0.23643487,
+    "id" : "SLKSTRJ",
+    "name" : "Silkstream Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

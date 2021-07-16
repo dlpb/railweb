@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.7331,
+    "lon" : -4.8721561,
+    "id" : "HNTRGBF",
+    "name" : "Hunterston (Gbrf)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.716377,
+    "lon" : -4.8595578,
+    "id" : "HNTRSJN",
+    "name" : "Hunterston Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.962285,
+    "lon" : -1.161405,
+    "id" : "NTL1HIS",
+    "name" : "High School",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 52.958003,
+    "lon" : -1.155193,
+    "id" : "NTL1NTU",
+    "name" : "Nottingham Trent University",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

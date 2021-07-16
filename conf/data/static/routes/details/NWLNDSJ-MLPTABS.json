@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.539804,
+    "lon" : -3.7326797,
+    "id" : "NWLNDSJ",
+    "name" : "Newlands Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.539346,
+    "lon" : -3.6699929,
+    "id" : "MLPTABS",
+    "name" : "Aberaiden South",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

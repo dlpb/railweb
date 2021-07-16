@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.253709,
+    "lon" : -3.3740988,
+    "id" : "LLDODGF",
+    "name" : "Llandrindod Crossing",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.242147,
+    "lon" : -3.3795122,
+    "id" : "LLDODW",
+    "name" : "Llandrindod",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

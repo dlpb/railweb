@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.536989,
+    "lon" : -0.33824446,
+    "id" : "GFORDSJ",
+    "name" : "Greenford South Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.533268,
+    "lon" : -0.33646237,
+    "id" : "SGFORD",
+    "name" : "South Greenford",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.001063,
+    "lon" : -2.1059976,
+    "id" : "ASHCMOD",
+    "name" : "Ashchurch Mod (Army)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.998821,
+    "lon" : -2.1087743,
+    "id" : "ASHCHRC",
+    "name" : "Ashchurch For Tewkesbury",
+    "type" : "Station"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

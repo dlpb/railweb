@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.413512,
+    "lon" : -5.0745803,
+    "id" : "NEWQUAY",
+    "name" : "Newquay",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.404182,
+    "lon" : -5.0290625,
+    "id" : "QNTRLDW",
+    "name" : "Quintrell Downs",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "15-50"
+} ]

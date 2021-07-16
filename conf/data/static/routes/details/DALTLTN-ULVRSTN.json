@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.165807,
+    "lon" : -3.1554065,
+    "id" : "DALTLTN",
+    "name" : "Lindal Tunnel",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.191702,
+    "lon" : -3.0976731,
+    "id" : "ULVRSTN",
+    "name" : "Ulverston",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

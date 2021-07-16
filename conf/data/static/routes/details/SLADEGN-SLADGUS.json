@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.467936,
+    "lon" : 0.19006666,
+    "id" : "SLADEGN",
+    "name" : "Slade Green",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.464996,
+    "lon" : 0.19247419,
+    "id" : "SLADGUS",
+    "name" : "Slade Green Up C.H.S.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

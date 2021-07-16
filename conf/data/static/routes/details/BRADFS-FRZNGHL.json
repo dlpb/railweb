@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.797724,
+    "lon" : -1.7534882,
+    "id" : "BRADFS",
+    "name" : "Bradford Forster Square",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.819855,
+    "lon" : -1.7685786,
+    "id" : "FRZNGHL",
+    "name" : "Frizinghall",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

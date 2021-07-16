@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.866831,
+    "lon" : 0.59151882,
+    "id" : "OREE",
+    "name" : "Ore",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.900977,
+    "lon" : 0.61312866,
+    "id" : "THOK",
+    "name" : "Three Oaks",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

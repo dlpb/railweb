@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.703433,
+    "lon" : -1.19352,
+    "id" : "SDFRDGB",
+    "name" : "Sudforth Lane Down (Gbrf)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.703615,
+    "lon" : -1.195198,
+    "id" : "SDFRTSB",
+    "name" : "Sudforth Lane Signal Box",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

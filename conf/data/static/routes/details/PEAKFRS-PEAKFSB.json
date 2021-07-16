@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.286399,
+    "lon" : -1.8630868,
+    "id" : "PEAKFRS",
+    "name" : "Peak Forest South S.S.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.286426,
+    "lon" : -1.8630867,
+    "id" : "PEAKFSB",
+    "name" : "Peak Forest S.B.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

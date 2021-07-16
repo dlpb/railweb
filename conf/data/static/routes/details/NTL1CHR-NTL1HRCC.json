@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.922726,
+    "lon" : -1.220222,
+    "id" : "NTL1CHR",
+    "name" : "Chilwell Road",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 52.921237,
+    "lon" : -1.223084,
+    "id" : "NTL1HRCC",
+    "name" : "High Road – Central College",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

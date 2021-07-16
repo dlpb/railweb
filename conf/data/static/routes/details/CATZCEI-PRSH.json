@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.133856,
+    "lon" : -6.662937,
+    "id" : "CATZCEI",
+    "name" : "Coleraine Ni",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.202554,
+    "lon" : -6.653696,
+    "id" : "PRSH",
+    "name" : "Portrush Ni",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

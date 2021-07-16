@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.55004,
+    "lon" : -0.18378415,
+    "id" : "FNCHLYR",
+    "name" : "Finchley Road & Frognal",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.55537,
+    "lon" : -0.16507865,
+    "id" : "HMPSTDH",
+    "name" : "Hampstead Heath",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

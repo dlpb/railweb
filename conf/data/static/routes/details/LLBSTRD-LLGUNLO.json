@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.336126,
+    "lon" : -3.213486,
+    "id" : "LLBSTRD",
+    "name" : "Llanbister Road",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.349768,
+    "lon" : -3.1613436,
+    "id" : "LLGUNLO",
+    "name" : "Llangynllo",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

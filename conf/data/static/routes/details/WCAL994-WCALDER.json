@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.853314,
+    "lon" : -3.5686106,
+    "id" : "WCAL994",
+    "name" : "West Calder Sig Ej994",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.853778,
+    "lon" : -3.5667761,
+    "id" : "WCALDER",
+    "name" : "West Calder",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

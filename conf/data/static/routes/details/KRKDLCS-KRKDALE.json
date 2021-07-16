@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.43767,
+    "lon" : -2.9855134,
+    "id" : "KRKDLCS",
+    "name" : "Kirkdale C.S.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.440617,
+    "lon" : -2.9812609,
+    "id" : "KRKDALE",
+    "name" : "Kirkdale",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

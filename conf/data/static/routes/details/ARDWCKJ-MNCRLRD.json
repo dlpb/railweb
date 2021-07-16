@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.471135,
+    "lon" : -2.2088813,
+    "id" : "ARDWCKJ",
+    "name" : "Ardwick Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.474609,
+    "lon" : -2.2218101,
+    "id" : "MNCRLRD",
+    "name" : "Manchester London Road",
+    "type" : "Point"
+  },
+  "singleTrack" : "6",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

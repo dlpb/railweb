@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.006823,
+    "lon" : -2.7740868,
+    "id" : "DREMJ",
+    "name" : "Drem",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.05701,
+    "lon" : -2.7303879,
+    "id" : "NBERWCK",
+    "name" : "North Berwick",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

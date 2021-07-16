@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.941228,
+    "lon" : -4.7715774,
+    "id" : "DRMFCHR",
+    "name" : "Drumfrochar",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.938405,
+    "lon" : -4.7463604,
+    "id" : "WHINH",
+    "name" : "Whinhill",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "75-90"
+} ]

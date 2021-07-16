@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.142611,
+    "lon" : -3.0548116,
+    "id" : "PNYF",
+    "name" : "Penyffordd",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.150348,
+    "lon" : -3.0551508,
+    "id" : "PNYFCGF",
+    "name" : "Penyffordd Cement Sdgs Gf",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

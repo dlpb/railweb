@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.76419,
+    "lon" : -4.2107321,
+    "id" : "HARMYRL",
+    "name" : "Hairmyres Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.761914,
+    "lon" : -4.2202948,
+    "id" : "HARMYRS",
+    "name" : "Hairmyres",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

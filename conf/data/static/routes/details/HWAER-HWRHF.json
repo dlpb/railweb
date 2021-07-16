@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.390553,
+    "lon" : -3.930085,
+    "id" : "HWAER",
+    "name" : "Aberffrwd",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.3917,
+    "lon" : -3.9003,
+    "id" : "HWRHF",
+    "name" : "Rheidol Falls",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

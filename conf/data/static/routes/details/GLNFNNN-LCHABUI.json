@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.872494,
+    "lon" : -5.449497,
+    "id" : "GLNFNNN",
+    "name" : "Glenfinnan",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.87402,
+    "lon" : -5.5235836,
+    "id" : "LCHABUI",
+    "name" : "Leachabhuidh",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

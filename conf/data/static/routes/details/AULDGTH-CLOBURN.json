@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.160544,
+    "lon" : -3.7033052,
+    "id" : "AULDGTH",
+    "name" : "Auldgirth",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.213185,
+    "lon" : -3.7349933,
+    "id" : "CLOBURN",
+    "name" : "Closeburn (Dumfries)",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

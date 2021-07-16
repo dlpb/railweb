@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.918488,
+    "lon" : -1.3904111,
+    "id" : "STDE704",
+    "name" : "St Denys Signal E704",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.921803,
+    "lon" : -1.3881057,
+    "id" : "STDENYS",
+    "name" : "St Denys",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

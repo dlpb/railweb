@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.465556,
+    "lon" : -0.16646661,
+    "id" : "CLPH147",
+    "name" : "Clapham Junction Sig Vc147",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.463358,
+    "lon" : -0.17252917,
+    "id" : "CLPHMJC",
+    "name" : "Clapham Junction",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

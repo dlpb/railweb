@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.459911,
+    "lon" : -2.1162824,
+    "id" : "LYEE",
+    "name" : "Lye",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.449743,
+    "lon" : -2.133986,
+    "id" : "STRBJGL",
+    "name" : "Stourbridge Jn Goods Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.18228,
+    "lon" : -2.9147183,
+    "id" : "SLNYJN",
+    "name" : "Saltney Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.153837,
+    "lon" : -2.9356324,
+    "id" : "SLNYBAL",
+    "name" : "Balderton Tunnel & Lc",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

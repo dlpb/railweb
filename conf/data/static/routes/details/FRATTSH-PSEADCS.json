@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.796125,
+    "lon" : -1.0756044,
+    "id" : "FRATTSH",
+    "name" : "Fratton Staff Halt",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.797907,
+    "lon" : -1.0859986,
+    "id" : "PSEADCS",
+    "name" : "Portsmouth & S'sea D.C.S",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

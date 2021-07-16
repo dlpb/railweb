@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.466286,
+    "lon" : 0.19174419,
+    "id" : "SLADGEH",
+    "name" : "Slade Green Dpt East Hshnt",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.466286,
+    "lon" : 0.19174419,
+    "id" : "SLADGEX",
+    "name" : "Slade Green Country Exit",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

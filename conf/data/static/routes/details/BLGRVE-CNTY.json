@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.856673,
+    "lon" : -4.2240526,
+    "id" : "BLGRVE",
+    "name" : "Bellgrove",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.854884,
+    "lon" : -4.1793877,
+    "id" : "CNTY",
+    "name" : "Carntyne",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

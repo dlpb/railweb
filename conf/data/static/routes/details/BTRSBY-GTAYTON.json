@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.457689,
+    "lon" : -1.0932338,
+    "id" : "BTRSBY",
+    "name" : "Battersby",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.489324,
+    "lon" : -1.1150418,
+    "id" : "GTAYTON",
+    "name" : "Great Ayton",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

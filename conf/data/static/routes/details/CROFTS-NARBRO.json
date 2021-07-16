@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.558616,
+    "lon" : -1.2376056,
+    "id" : "CROFTS",
+    "name" : "Croft",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.57128,
+    "lon" : -1.2030217,
+    "id" : "NARBRO",
+    "name" : "Narborough",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

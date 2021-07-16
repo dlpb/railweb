@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.770324,
+    "lon" : -2.5120127,
+    "id" : "CRAIGO",
+    "name" : "Craigo",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.839212,
+    "lon" : -2.4607981,
+    "id" : "LRNCKRK",
+    "name" : "Laurencekirk",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

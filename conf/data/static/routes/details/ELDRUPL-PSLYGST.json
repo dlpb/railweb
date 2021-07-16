@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.838938,
+    "lon" : -4.4739924,
+    "id" : "ELDRUPL",
+    "name" : "Elderslie U.P.L.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.847382,
+    "lon" : -4.4246202,
+    "id" : "PSLYGST",
+    "name" : "Paisley Gilmour Street",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.569523,
+    "lon" : -0.22766776,
+    "id" : "CRKLSHN",
+    "name" : "Cricklewood Rdp Shunt Neck",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.571862,
+    "lon" : -0.23069377,
+    "id" : "CRKLWDJ",
+    "name" : "Cricklewood Depot Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

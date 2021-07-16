@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.338331,
+    "lon" : -4.8312435,
+    "id" : "BGLWJN",
+    "name" : "Burngullow Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.377033,
+    "lon" : -4.8902929,
+    "id" : "PRKADIL",
+    "name" : "Parkandillack",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

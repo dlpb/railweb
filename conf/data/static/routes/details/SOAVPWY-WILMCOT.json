@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.209817,
+    "lon" : -1.739078,
+    "id" : "SOAVPWY",
+    "name" : "Stratford Parkway",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.222529,
+    "lon" : -1.7557504,
+    "id" : "WILMCOT",
+    "name" : "Wilmcote",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

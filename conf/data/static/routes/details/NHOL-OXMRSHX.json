@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.701863,
+    "lon" : -0.3600187,
+    "id" : "NHOL",
+    "name" : "New Holland",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.700043,
+    "lon" : -0.35709008,
+    "id" : "OXMRSHX",
+    "name" : "Oxmarsh L.C.",
+    "type" : "Point"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

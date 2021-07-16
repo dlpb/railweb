@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.6162,
+    "lon" : -2.1250124,
+    "id" : "BSBYJDG",
+    "name" : "Bushbury Jn D G L",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.609477,
+    "lon" : -2.1243287,
+    "id" : "BSBYJN",
+    "name" : "Bushbury Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

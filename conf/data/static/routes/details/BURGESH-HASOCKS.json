@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.952853,
+    "lon" : -0.12788645,
+    "id" : "BURGESH",
+    "name" : "Burgess Hill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.924646,
+    "lon" : -0.14569566,
+    "id" : "HASOCKS",
+    "name" : "Hassocks",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

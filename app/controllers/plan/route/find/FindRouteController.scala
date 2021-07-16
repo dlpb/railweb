@@ -1,15 +1,12 @@
 package controllers.plan.route.find
 
-import java.net.URLDecoder
 import java.util.Date
 
 import auth.JWTService
 import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject.{Inject, Singleton}
 import models.auth.roles.MapUser
-import models.location.MapLocation
 import services.plan.pointtopoint.PointToPointRouteFinderService
-import models.route.display.map.MapRoute
 import play.api.mvc.{AbstractController, AnyContent, ControllerComponents}
 import services.visit.location.LocationVisitService
 import services.visit.route.RouteVisitService

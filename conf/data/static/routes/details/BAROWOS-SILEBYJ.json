@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.749337,
+    "lon" : -1.1452726,
+    "id" : "BAROWOS",
+    "name" : "Barrow Upon Soar",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.73483,
+    "lon" : -1.1137734,
+    "id" : "SILEBYJ",
+    "name" : "Sileby Jn",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.360617,
+    "lon" : -0.18697777,
+    "id" : "SUTT193",
+    "name" : "Sutton Signal Vc193",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.359772,
+    "lon" : -0.1904728,
+    "id" : "SUTTON",
+    "name" : "Sutton (Surrey)",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

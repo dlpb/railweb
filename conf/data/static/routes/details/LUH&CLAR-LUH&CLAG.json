@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.513125,
+    "lon" : -0.218428,
+    "id" : "LUH&CLAR",
+    "name" : "Latimer Road",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.5173,
+    "lon" : -0.21114,
+    "id" : "LUH&CLAG",
+    "name" : "Ladbroke Grove",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

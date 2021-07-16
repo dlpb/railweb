@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.090116,
+    "lon" : -0.71539517,
+    "id" : "HASL23",
+    "name" : "Haslemere Signal Ew23",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.0889,
+    "lon" : -0.71928414,
+    "id" : "HASLEMR",
+    "name" : "Haslemere",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

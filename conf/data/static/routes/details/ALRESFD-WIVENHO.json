@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.854007,
+    "lon" : 0.99678341,
+    "id" : "ALRESFD",
+    "name" : "Alresford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.856659,
+    "lon" : 0.95598636,
+    "id" : "WIVENHO",
+    "name" : "Wivenhoe",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.958892,
+    "lon" : -4.7954016,
+    "id" : "FRTMTLD",
+    "name" : "Fort Matilda",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.947175,
+    "lon" : -4.7677576,
+    "id" : "GRENCKW",
+    "name" : "Greenock West",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "75-90"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.856275,
+    "lon" : -1.1771149,
+    "id" : "HAMBRYV",
+    "name" : "Ryther Viaducts",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.78117,
+    "lon" : -1.1590073,
+    "id" : "HAMBLNJ",
+    "name" : "Hambleton North Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

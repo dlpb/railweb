@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.268345,
+    "lon" : -2.1583783,
+    "id" : "DRTWCHS",
+    "name" : "Droitwich Spa",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.33426,
+    "lon" : -2.2210003,
+    "id" : "HBRY",
+    "name" : "Hartlebury",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

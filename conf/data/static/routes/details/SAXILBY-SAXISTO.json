@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.267225,
+    "lon" : -0.66441372,
+    "id" : "SAXILBY",
+    "name" : "Saxilby",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.323016,
+    "lon" : -0.71546083,
+    "id" : "SAXISTO",
+    "name" : "Stow Park",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

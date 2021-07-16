@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.397166,
+    "lon" : -1.3298396,
+    "id" : "NEWB844",
+    "name" : "Newbury Signal T6844",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.397479,
+    "lon" : -1.323223,
+    "id" : "NEWBURY",
+    "name" : "Newbury",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

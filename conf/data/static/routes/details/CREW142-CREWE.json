@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.094033,
+    "lon" : -2.438822,
+    "id" : "CREW142",
+    "name" : "Crewe Sig. Ce142",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.088144,
+    "lon" : -2.4318491,
+    "id" : "CREWE",
+    "name" : "Crewe",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

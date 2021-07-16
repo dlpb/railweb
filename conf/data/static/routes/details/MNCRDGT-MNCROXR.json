@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.474074,
+    "lon" : -2.2511256,
+    "id" : "MNCRDGT",
+    "name" : "Deansgate",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.473751,
+    "lon" : -2.2421445,
+    "id" : "MNCROXR",
+    "name" : "Manchester Oxford Road",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

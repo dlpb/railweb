@@ -1,4 +1,3 @@
-@import models.route.display.map.MapRoute
 @(
 user: models.auth.User,
 token: String,
@@ -91,7 +90,7 @@ messages: List[String]
         <div class="card card-body">
             <a id="map-container"/>
             <h4>Map of route</h4>
-            @templates.map.map(model.mapLocationsList, model.mapRouteList)
+            @templates.map.map(model.locationsList, model.routeList)
         </div>
     </div>
 </div>
@@ -99,7 +98,7 @@ messages: List[String]
 <div class="row">
     <div class="col col-sm">
         <div class="card card-body">
-            @templates.route.find.result.routeList(model.waypoints, model.locationsToVisit, model.routesToVisit, model.mapRouteList, token)
+            @templates.route.find.result.routeList(model.waypoints, model.locationsToVisit, model.routesToVisit, model.routeList, token)
         </div>
     </div>
 </div>

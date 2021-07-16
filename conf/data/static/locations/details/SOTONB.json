@@ -1,0 +1,10 @@
+[ {
+  "id" : "SOTONB",
+  "crp" : "",
+  "route" : "Wessex",
+  "changeTime" : "Set(Some(ChangeTime(SOU,SW,SW,4,)))",
+  "interchangeType" : "9 - Subsidiary TIPLOC for station",
+  "county" : "South East",
+  "district" : "Southampton",
+  "postcode" : "\"SO15 1AL"
+} ]

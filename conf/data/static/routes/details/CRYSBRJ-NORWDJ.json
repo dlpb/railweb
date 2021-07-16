@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.40713,
+    "lon" : -0.071662401,
+    "id" : "CRYSBRJ",
+    "name" : "Bromley Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.396662,
+    "lon" : -0.074963344,
+    "id" : "NORWDJ",
+    "name" : "Norwood Junction",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

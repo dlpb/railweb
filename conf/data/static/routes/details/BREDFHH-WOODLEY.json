@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.422936,
+    "lon" : -2.1102317,
+    "id" : "BREDFHH",
+    "name" : "Bredbury R.T.S. (Flhh)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.429378,
+    "lon" : -2.09273,
+    "id" : "WOODLEY",
+    "name" : "Woodley",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.833663,
+    "lon" : -2.926984,
+    "id" : "HGTNSD",
+    "name" : "Haughton Sidings",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.798881,
+    "lon" : -2.847827,
+    "id" : "BASCSDG",
+    "name" : "Baschurch Lc",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

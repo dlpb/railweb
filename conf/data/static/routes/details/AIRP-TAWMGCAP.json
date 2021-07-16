@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.019807,
+    "lon" : -1.6955225,
+    "id" : "AIRP",
+    "name" : "Newcastle Airport",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 55.0279,
+    "lon" : -1.7036,
+    "id" : "TAWMGCAP",
+    "name" : "Callerton Parkway",
+    "type" : "Metro"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Unknown",
+  "speed" : "OHLE"
+} ]

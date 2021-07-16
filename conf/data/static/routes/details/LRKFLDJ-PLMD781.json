@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.842038,
+    "lon" : -4.258261,
+    "id" : "LRKFLDJ",
+    "name" : "Larkfield Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.835919,
+    "lon" : -4.2400033,
+    "id" : "PLMD781",
+    "name" : "Polmadie Signal G781",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

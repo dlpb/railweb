@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.322277,
+    "lon" : -2.965284,
+    "id" : "UPHILLJ",
+    "name" : "Uphill Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.344561,
+    "lon" : -2.9716389,
+    "id" : "WSMARE",
+    "name" : "Weston-Super-Mare",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

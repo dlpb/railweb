@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.517252,
+    "lon" : -1.9072488,
+    "id" : "PRYBRSJ",
+    "name" : "Perry Barr South Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.521431,
+    "lon" : -1.9170407,
+    "id" : "PRYBRNJ",
+    "name" : "Perry Barr North Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.522739,
+    "lon" : -0.2548693,
+    "id" : "ACWLJN",
+    "name" : "Acton Wells Junction",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 51.530931,
+    "lon" : -0.24401692,
+    "id" : "WLSDHLJ",
+    "name" : "Willesden Jn.H.L.Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

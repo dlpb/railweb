@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.210878,
+    "lon" : -3.270871,
+    "id" : "MLLM",
+    "name" : "Millom",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.226291,
+    "lon" : -3.3350198,
+    "id" : "SILCRFT",
+    "name" : "Silecroft",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.521482,
+    "lon" : -3.2028026,
+    "id" : "BCHGRV",
+    "name" : "Birchgrove",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.521067,
+    "lon" : -3.214236,
+    "id" : "RHIWBNA",
+    "name" : "Rhiwbina",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

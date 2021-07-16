@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 53.387813,
+    "lon" : -2.34707,
+    "id" : "ALTRNHM",
+    "name" : "Altrincham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.4904,
+    "lon" : -2.0976,
+    "id" : "MNCRALM",
+    "name" : "Ashton U L Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "66 MINUTES"
+}, {
+  "from" : {
+    "lat" : 53.387813,
+    "lon" : -2.34707,
+    "id" : "ALTRNHM",
+    "name" : "Altrincham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.4904,
+    "lon" : -2.0976,
+    "id" : "MNCRALM",
+    "name" : "Ashton U L Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "69 MINUTES"
+} ]

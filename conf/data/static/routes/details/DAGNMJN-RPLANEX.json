@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.543982,
+    "lon" : 0.16527563,
+    "id" : "DAGNMJN",
+    "name" : "Dagenham Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.529075,
+    "lon" : 0.11782633,
+    "id" : "RPLANEX",
+    "name" : "Ripple Lane Exch Sdgs",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

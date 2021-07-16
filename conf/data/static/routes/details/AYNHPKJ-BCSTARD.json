@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.989656,
+    "lon" : -1.264778,
+    "id" : "AYNHPKJ",
+    "name" : "Aynho Park Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.96167,
+    "lon" : -1.2608697,
+    "id" : "BCSTARD",
+    "name" : "Ardley",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

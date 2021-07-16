@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.536139,
+    "lon" : -0.19551242,
+    "id" : "KLBRUDG",
+    "name" : "Kilburn Up & Down Gds Lp",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.533992,
+    "lon" : -0.20561817,
+    "id" : "QPRK",
+    "name" : "Queens Park (London)",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.736533,
+    "lon" : -1.2637651,
+    "id" : "HINKSEY",
+    "name" : "Hinksey Sdgs",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.724021,
+    "lon" : -1.2473626,
+    "id" : "KNNGTNJ",
+    "name" : "Kennington Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

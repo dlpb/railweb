@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.913372,
+    "lon" : -4.4309478,
+    "id" : "DALM898",
+    "name" : "Dalmuir Signal Yy898",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.911954,
+    "lon" : -4.4267304,
+    "id" : "DALMUIR",
+    "name" : "Dalmuir",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

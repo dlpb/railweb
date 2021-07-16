@@ -6,7 +6,7 @@ import auth.JWTService
 import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject.{Inject, Singleton}
 import models.auth.roles.MapUser
-import models.location.ListLocation
+import models.location.Location
 import play.api.mvc._
 import services.location.LocationService
 import services.visit.location.LocationVisitService
@@ -23,8 +23,8 @@ class LocationsByTiplocController @Inject()(
                          filterOperator: String = "all",
                          filterName: String = "all",
                          filterId: String = "all",
-                         filterSrs: String = "all"): List[ListLocation] =
-    locationService.sortedListLocationsGroupedByTiploc
+                         filterSrs: String = "all"): List[Location] =
+    locationService.sortedLocationsGroupedByTiploc
       .filter({ location =>
         val filterByOrr = if (filterOrr) location.isOrrStation else true
         val filterByOperator = if(!filterOperator.equals("all")) location.operator.toLowerCase.contains(filterOperator.toLowerCase()) else true
@@ -34,13 +34,13 @@ class LocationsByTiplocController @Inject()(
         filterByOrr && filterByOperator && filterByName && filterById && filterBySrs
       })
 
-  def getVisitStatus(locations: List[ListLocation], visitedIds: List[String]): Map[String, Boolean] = locations
+  def getVisitStatus(locations: List[Location], visitedIds: List[String]): Map[String, Boolean] = locations
     .map({ l =>
       l.id -> visitedIds.contains(l.id)
     })
     .toMap
 
-  def getVisitedLocationIdCount(locations: List[ListLocation], visitedLocationIds: List[String]) = {
+  def getVisitedLocationIdCount(locations: List[Location], visitedLocationIds: List[String]) = {
 
     val locIds = locations.map {
       _.id
@@ -72,7 +72,7 @@ class LocationsByTiplocController @Inject()(
     implicit request: WebUserContext[AnyContent] =>
       if (request.user.roles.contains(MapUser)) {
         val token = jwtService.createToken(request.user, new Date())
-        val locations: List[ListLocation] = getListOfLocations(orr, operator, name, id, srs)
+        val locations: List[Location] = getListOfLocations(orr, operator, name, id, srs)
         val visited: List[String] = locationVisitService.getVisitedLocations(request.user).map(_.id)
 
         val visits: Map[String, Boolean] = getVisitStatus(locations, visited)

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.424846,
+    "lon" : -0.033287216,
+    "id" : "LSYDNHM",
+    "name" : "Lower Sydenham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.416839,
+    "lon" : -0.035212937,
+    "id" : "NBCKNHM",
+    "name" : "New Beckenham",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

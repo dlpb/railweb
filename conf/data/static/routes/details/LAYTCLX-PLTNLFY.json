@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.84311,
+    "lon" : -3.014513,
+    "id" : "LAYTCLX",
+    "name" : "Carleton Crossing L.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.848314,
+    "lon" : -2.9898162,
+    "id" : "PLTNLFY",
+    "name" : "Poulton-Le-Fylde",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.994473,
+    "lon" : -4.711173,
+    "id" : "CRGDRN",
+    "name" : "Craigendoran",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.003816,
+    "lon" : -4.7313184,
+    "id" : "HLNSBRC",
+    "name" : "Helensburgh Central",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

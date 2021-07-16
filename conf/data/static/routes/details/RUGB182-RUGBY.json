@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.379585,
+    "lon" : -1.2529001,
+    "id" : "RUGB182",
+    "name" : "Rugby Ugl Signal Rn4182",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.378914,
+    "lon" : -1.2491946,
+    "id" : "RUGBY",
+    "name" : "Rugby",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.547606,
+    "lon" : -2.6897897,
+    "id" : "SHAPHNS",
+    "name" : "Shap Harrisons Sdgs Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.493375,
+    "lon" : -2.6646836,
+    "id" : "SHAPSMT",
+    "name" : "Shap Summit",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.186617,
+    "lon" : -8.494781,
+    "id" : "CATZCOU",
+    "name" : "Collooney   (Cie",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.272,
+    "lon" : -8.481,
+    "id" : "CATZSLI",
+    "name" : "Sligo       (Cie",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

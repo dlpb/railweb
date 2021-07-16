@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.818901,
+    "lon" : -4.1274266,
+    "id" : "NWTKSDG",
+    "name" : "Newton Turnback Siding",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.818833,
+    "lon" : -4.1334249,
+    "id" : "NWTL",
+    "name" : "Newton",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

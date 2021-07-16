@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.387813,
+    "lon" : -2.34707,
+    "id" : "ALTRNHM",
+    "name" : "Altrincham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.378832,
+    "lon" : -2.347508,
+    "id" : "HALE",
+    "name" : "Hale",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

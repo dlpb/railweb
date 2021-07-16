@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.497412,
+    "lon" : -2.0016797,
+    "id" : "ROODEG",
+    "name" : "Rood End Goods",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.493456,
+    "lon" : -2.00545,
+    "id" : "LGRN",
+    "name" : "Langley Green",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

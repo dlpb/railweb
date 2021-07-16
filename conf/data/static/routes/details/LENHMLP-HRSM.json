@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.234862,
+    "lon" : 0.70581844,
+    "id" : "LENHMLP",
+    "name" : "Lenham Passenger Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.244932,
+    "lon" : 0.67270611,
+    "id" : "HRSM",
+    "name" : "Harrietsham",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

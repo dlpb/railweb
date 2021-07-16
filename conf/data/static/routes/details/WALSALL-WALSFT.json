@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.584244,
+    "lon" : -1.9851092,
+    "id" : "WALSALL",
+    "name" : "Walsall",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.57503,
+    "lon" : -1.9934936,
+    "id" : "WALSFT",
+    "name" : "Walsall Freight Terminal",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

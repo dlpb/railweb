@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.63684,
+    "lon" : -0.52314555,
+    "id" : "KETTK3",
+    "name" : "Ketton Sig K3",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.647855,
+    "lon" : -0.47993698,
+    "id" : "STAMFD",
+    "name" : "Stamford",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

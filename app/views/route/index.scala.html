@@ -1,7 +1,6 @@
-@import models.route.display.list.ListRoute
 @(
 user: models.auth.User,
-routeList: Map[String, ListRoute],
+routeList: Map[String, models.route.Route],
 visits: Map[String, Boolean],
 visitCalls: Map[String, Call],
 token: String,
@@ -110,7 +109,7 @@ srs: String)(implicit request: Request[AnyContent])
                 @route.from.name - @route.to.name (@route.from.id-@route.to.id)
             </a>
             <span class="tocBadge badge badge-light float-right">
-                <slot name="tocBadge">@route.srs</slot>
+                <slot name="tocBadge">@route.srsCode</slot>
             </span>
         </div>
         }

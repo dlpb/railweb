@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.058041,
+    "lon" : -2.2270777,
+    "id" : "CHTV",
+    "name" : "Chatterley Valley",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.08641,
+    "lon" : -2.2454122,
+    "id" : "KIDSGRV",
+    "name" : "Kidsgrove",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

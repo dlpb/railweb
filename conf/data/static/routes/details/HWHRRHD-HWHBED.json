@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.051444,
+    "lon" : -4.133194,
+    "id" : "HWHRRHD",
+    "name" : "Rhyd Ddu",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 53.01211,
+    "lon" : -4.10851,
+    "id" : "HWHBED",
+    "name" : "Beddgelert",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

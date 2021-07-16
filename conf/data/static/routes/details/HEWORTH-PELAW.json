@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.951608,
+    "lon" : -1.5571709,
+    "id" : "HEWORTH",
+    "name" : "Heworth",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.953256,
+    "lon" : -1.5365576,
+    "id" : "PELAW",
+    "name" : "Pelaw Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

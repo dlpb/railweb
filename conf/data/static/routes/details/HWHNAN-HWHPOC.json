@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.99357,
+    "lon" : -4.08919,
+    "id" : "HWHNAN",
+    "name" : "Nantmor",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.95058,
+    "lon" : -4.0968,
+    "id" : "HWHPOC",
+    "name" : "Pont Croesor",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

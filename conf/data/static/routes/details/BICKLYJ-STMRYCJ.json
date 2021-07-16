@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.400708,
+    "lon" : 0.058925691,
+    "id" : "BICKLYJ",
+    "name" : "Bickley Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.396093,
+    "lon" : 0.076328523,
+    "id" : "STMRYCJ",
+    "name" : "St Mary Cray Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

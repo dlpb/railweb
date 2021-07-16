@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.573635,
+    "lon" : -2.4922961,
+    "id" : "LOSTCKJ",
+    "name" : "Lostock Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.555814,
+    "lon" : -2.5233511,
+    "id" : "WSTHOTN",
+    "name" : "Westhoughton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

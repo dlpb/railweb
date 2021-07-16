@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.717097,
+    "lon" : -0.84414658,
+    "id" : "PRINRIS",
+    "name" : "Princes Risborough",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.702,
+    "lon" : -0.911,
+    "id" : "CHNRLOW",
+    "name" : "Chinnor Bus",
+    "type" : "Point"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

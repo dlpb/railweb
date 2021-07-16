@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.334203,
+    "lon" : -0.27004805,
+    "id" : "EPSM",
+    "name" : "Epsom",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.345251,
+    "lon" : -0.24140219,
+    "id" : "EWELLE",
+    "name" : "Ewell East",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.854007,
+    "lon" : 0.99678341,
+    "id" : "ALRESFD",
+    "name" : "Alresford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.851823,
+    "lon" : 1.0657823,
+    "id" : "GTBNTLY",
+    "name" : "Great Bentley",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

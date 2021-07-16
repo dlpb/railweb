@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.759969,
+    "lon" : -3.0587539,
+    "id" : "SETONJN",
+    "name" : "Seaton Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.796648,
+    "lon" : -3.1870743,
+    "id" : "HONITON",
+    "name" : "Honiton",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

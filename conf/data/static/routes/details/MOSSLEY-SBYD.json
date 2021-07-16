@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.514887,
+    "lon" : -2.041508,
+    "id" : "MOSSLEY",
+    "name" : "Mossley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.484209,
+    "lon" : -2.0640671,
+    "id" : "SBYD",
+    "name" : "Stalybridge",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

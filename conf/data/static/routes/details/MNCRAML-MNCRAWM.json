@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.4836,
+    "lon" : -2.122,
+    "id" : "MNCRAML",
+    "name" : "Ashton Moss Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.4903,
+    "lon" : -2.1092,
+    "id" : "MNCRAWM",
+    "name" : "Ashton West Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.577293,
+    "lon" : -0.097864868,
+    "id" : "HRGYGL",
+    "name" : "Harringay Green Lanes",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.580429,
+    "lon" : -0.071811542,
+    "id" : "STOTNHM",
+    "name" : "South Tottenham",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

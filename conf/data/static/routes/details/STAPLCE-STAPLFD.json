@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.922401,
+    "lon" : -1.2830543,
+    "id" : "STAPLCE",
+    "name" : "Stapleford & S C C E Sdg",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.937806,
+    "lon" : -1.2811482,
+    "id" : "STAPLFD",
+    "name" : "Stapleford & Sandiacre",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

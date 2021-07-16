@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.11256,
+    "lon" : -1.5487325,
+    "id" : "CROMFD",
+    "name" : "Cromford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.083375,
+    "lon" : -1.5041751,
+    "id" : "WATSTND",
+    "name" : "Whatstandwell",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.437929,
+    "lon" : -2.9878979,
+    "id" : "BNKHALL",
+    "name" : "Bank Hall",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.443477,
+    "lon" : -2.9941693,
+    "id" : "BOOTLEJ",
+    "name" : "Bootle Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.775245,
+    "lon" : -3.6073395,
+    "id" : "ACHNGRY",
+    "name" : "Auchengray",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.832247,
+    "lon" : -3.541162,
+    "id" : "TORPHIN",
+    "name" : "Torphin",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

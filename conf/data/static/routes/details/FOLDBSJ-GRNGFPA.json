@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.008919,
+    "lon" : -3.7398476,
+    "id" : "FOLDBSJ",
+    "name" : "Fouldubs Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.021023,
+    "lon" : -3.720015,
+    "id" : "GRNGFPA",
+    "name" : "Grangemouth Docks F.P.A.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

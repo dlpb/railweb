@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.810892,
+    "lon" : -1.6362168,
+    "id" : "BURHGBJ",
+    "name" : "Horninglow Bridge Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.805357,
+    "lon" : -1.6430124,
+    "id" : "BURTNOT",
+    "name" : "Burton-On-Trent",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

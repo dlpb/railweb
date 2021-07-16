@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.784282,
+    "lon" : -3.8943088,
+    "id" : "NTAWTN",
+    "name" : "North Tawton",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.770436,
+    "lon" : -3.9486072,
+    "id" : "SAMPCRT",
+    "name" : "Sampford Courtenay",
+    "type" : "Station"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

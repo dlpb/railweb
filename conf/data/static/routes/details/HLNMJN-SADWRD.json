@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.524283,
+    "lon" : -2.689469,
+    "id" : "HLNMJN",
+    "name" : "Hallen Marsh Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.5132,
+    "lon" : -2.6962,
+    "id" : "SADWRD",
+    "name" : "St Andrews Road",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "15-50"
+} ]

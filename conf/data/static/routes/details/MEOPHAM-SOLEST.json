@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.386459,
+    "lon" : 0.35692463,
+    "id" : "MEOPHAM",
+    "name" : "Meopham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.383306,
+    "lon" : 0.37764541,
+    "id" : "SOLEST",
+    "name" : "Sole Street",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

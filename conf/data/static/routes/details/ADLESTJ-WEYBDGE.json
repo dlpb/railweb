@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.361752,
+    "lon" : -0.47283569,
+    "id" : "ADLESTJ",
+    "name" : "Addlestone Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.361676,
+    "lon" : -0.45679378,
+    "id" : "WEYBDGE",
+    "name" : "Weybridge",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

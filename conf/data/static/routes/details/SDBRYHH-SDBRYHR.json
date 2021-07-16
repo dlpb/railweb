@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.55856,
+    "lon" : -0.33623216,
+    "id" : "SDBRYHH",
+    "name" : "Sudbury Hill Harrow",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.554324,
+    "lon" : -0.31600462,
+    "id" : "SDBRYHR",
+    "name" : "Sudbury & Harrow Road",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

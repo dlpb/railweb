@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.225859,
+    "lon" : -0.53907576,
+    "id" : "LINCLNC",
+    "name" : "Lincoln Central",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.225181,
+    "lon" : -0.53656724,
+    "id" : "PELHMST",
+    "name" : "Pelham Street Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

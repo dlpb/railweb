@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.5061,
+    "lon" : -0.01578,
+    "id" : "CANWHRF",
+    "name" : "Canary Wharf Crossrail",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.51946719200348,
+    "lon" : -0.059757120098615765,
+    "id" : "WCHAPXR",
+    "name" : "Whitechapel Crossrail",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

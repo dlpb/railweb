@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.22745,
+    "lon" : -2.234388,
+    "id" : "PITMDN",
+    "name" : "Pitmedden",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 57.235473,
+    "lon" : -2.3399468,
+    "id" : "BOKNTRE",
+    "name" : "Boat Of Kintore",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

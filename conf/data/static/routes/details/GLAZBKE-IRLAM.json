@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.429839,
+    "lon" : -2.4532619,
+    "id" : "GLAZBKE",
+    "name" : "Glazebrook East Jn & Sdgs",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.434202,
+    "lon" : -2.4328527,
+    "id" : "IRLAM",
+    "name" : "Irlam",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

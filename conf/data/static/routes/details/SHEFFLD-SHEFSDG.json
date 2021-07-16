@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.378119,
+    "lon" : -1.462067,
+    "id" : "SHEFFLD",
+    "name" : "Sheffield",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.378073,
+    "lon" : -1.4618421,
+    "id" : "SHEFSDG",
+    "name" : "Sheffield Station Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

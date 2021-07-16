@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.246483,
+    "lon" : -4.8483306,
+    "id" : "GIRVAN",
+    "name" : "Girvan",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.286524,
+    "lon" : -4.7351289,
+    "id" : "DAILLY",
+    "name" : "Dailly",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.398726,
+    "lon" : -2.2500046,
+    "id" : "NTHNDNJ",
+    "name" : "Northenden Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.398713,
+    "lon" : -2.2474478,
+    "id" : "NTHNFHH",
+    "name" : "Northenden R.T.S. (Flhh)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

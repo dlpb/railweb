@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.750778,
+    "lon" : -0.3835484,
+    "id" : "HULLSBN",
+    "name" : "Spring Bank North Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.7457,
+    "lon" : -0.39097689,
+    "id" : "HULLSBS",
+    "name" : "Spring Bank South Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.90758,
+    "lon" : -1.3922317,
+    "id" : "NTHM842",
+    "name" : "Northam Sig. E842",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.911981,
+    "lon" : -1.391193,
+    "id" : "NTHMDEP",
+    "name" : "Northam C.S.D.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

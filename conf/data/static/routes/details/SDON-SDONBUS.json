@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 51.565714,
+    "lon" : -1.7856254,
+    "id" : "SDON",
+    "name" : "Swindon",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.563803,
+    "lon" : -1.7832134,
+    "id" : "SDONBUS",
+    "name" : "Swindon Bus Stn",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : " 4"
+}, {
+  "from" : {
+    "lat" : 51.565714,
+    "lon" : -1.7856254,
+    "id" : "SDON",
+    "name" : "Swindon",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.563803,
+    "lon" : -1.7832134,
+    "id" : "SDONBUS",
+    "name" : "Swindon Bus Stn",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "4 MINUTES"
+} ]

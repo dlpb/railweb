@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.949216,
+    "lon" : 1.0457606,
+    "id" : "MANNGTR",
+    "name" : "Manningtree",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.951196,
+    "lon" : 1.0550646,
+    "id" : "MANNTNJ",
+    "name" : "Manningtree North Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

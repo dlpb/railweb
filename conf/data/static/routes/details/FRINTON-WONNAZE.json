@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.837804,
+    "lon" : 1.2432666,
+    "id" : "FRINTON",
+    "name" : "Frinton-On-Sea",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.846192,
+    "lon" : 1.2677441,
+    "id" : "WONNAZE",
+    "name" : "Walton-On-The-Naze",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

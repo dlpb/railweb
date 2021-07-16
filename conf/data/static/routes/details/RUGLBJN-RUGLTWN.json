@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.759377,
+    "lon" : -1.9274969,
+    "id" : "RUGLBJN",
+    "name" : "Rugeley B Power Stn Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.754582,
+    "lon" : -1.9370171,
+    "id" : "RUGLTWN",
+    "name" : "Rugeley Town",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.389365,
+    "lon" : -3.3880124,
+    "id" : "ABTH",
+    "name" : "Aberthaw",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.40957,
+    "lon" : -3.4812807,
+    "id" : "LLNWTMR",
+    "name" : "Llantwit Major",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "45-75"
+} ]

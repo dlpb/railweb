@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.504209,
+    "lon" : -2.183851,
+    "id" : "MNCRDLF",
+    "name" : "Dean Lane R.T.S. (Flhh)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.504209,
+    "lon" : -2.183851,
+    "id" : "MNCRDLN",
+    "name" : "Dean Lane",
+    "type" : "Location"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

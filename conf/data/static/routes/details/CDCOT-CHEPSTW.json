@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.584487,
+    "lon" : -2.7599045,
+    "id" : "CDCOT",
+    "name" : "Caldicot",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.639804,
+    "lon" : -2.6711193,
+    "id" : "CHEPSTW",
+    "name" : "Chepstow",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

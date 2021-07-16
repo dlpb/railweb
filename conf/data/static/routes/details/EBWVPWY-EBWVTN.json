@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.759267,
+    "lon" : -3.1975498,
+    "id" : "EBWVPWY",
+    "name" : "Ebbw Vale Parkway",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.776,
+    "lon" : -3.202,
+    "id" : "EBWVTN",
+    "name" : "Ebbw Vale Town",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "30-50"
+} ]

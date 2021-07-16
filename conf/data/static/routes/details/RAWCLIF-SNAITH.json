@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.688916,
+    "lon" : -0.96112365,
+    "id" : "RAWCLIF",
+    "name" : "Rawcliffe",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.69319,
+    "lon" : -1.0280491,
+    "id" : "SNAITH",
+    "name" : "Snaith",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

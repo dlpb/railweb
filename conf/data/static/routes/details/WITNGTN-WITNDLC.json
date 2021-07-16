@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.872979,
+    "lon" : -3.0102214,
+    "id" : "WITNGTN",
+    "name" : "Whittington",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.852036,
+    "lon" : -2.9788018,
+    "id" : "WITNDLC",
+    "name" : "Decoy L.C.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

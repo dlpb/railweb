@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.480185,
+    "lon" : -0.13326039,
+    "id" : "NINELMJ",
+    "name" : "Nine Elms Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.475076,
+    "lon" : -0.14681775,
+    "id" : "QTRDBAT",
+    "name" : "Queenstown Road Battersea",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

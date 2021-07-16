@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.548336,
+    "lon" : -0.18582797,
+    "id" : "WHMPSJN",
+    "name" : "West Hampstead South Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.54842,
+    "lon" : -0.19238715,
+    "id" : "WHMPSTM",
+    "name" : "West Hampstead Thameslink",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

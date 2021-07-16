@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.797427,
+    "lon" : -1.5737392,
+    "id" : "ARMLJCN",
+    "name" : "Armley Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.807923,
+    "lon" : -1.5994177,
+    "id" : "KRKSLDL",
+    "name" : "Kirkstall Down Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

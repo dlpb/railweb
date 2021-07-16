@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.932977,
+    "lon" : -3.0906953,
+    "id" : "NCRAGHA",
+    "name" : "Newcraighall",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.917371,
+    "lon" : -3.090361,
+    "id" : "SHWFAIR",
+    "name" : "Shawfair",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

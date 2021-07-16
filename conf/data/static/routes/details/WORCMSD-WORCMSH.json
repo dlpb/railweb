@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.194249,
+    "lon" : -2.2089227,
+    "id" : "WORCMSD",
+    "name" : "Worcester Middle Siding",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.195515,
+    "lon" : -2.2095139,
+    "id" : "WORCMSH",
+    "name" : "Worcs Middle Sdg Headshunt",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

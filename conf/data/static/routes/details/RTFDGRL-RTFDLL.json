@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.318727,
+    "lon" : -0.93231887,
+    "id" : "RTFDGRL",
+    "name" : "Retford Gringley Rd Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.313874,
+    "lon" : -0.94462822,
+    "id" : "RTFDLL",
+    "name" : "Retford",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

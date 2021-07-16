@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.6109,
+    "lon" : -0.4244,
+    "id" : "CATZZND",
+    "name" : "Northwood Und",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.511352,
+    "lon" : -0.077554354,
+    "id" : "FENCHRS",
+    "name" : "London Fenchurch Street",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "90 MINUTES"
+} ]

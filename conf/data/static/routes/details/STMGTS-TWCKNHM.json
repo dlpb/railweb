@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.45478,
+    "lon" : -0.32110956,
+    "id" : "STMGTS",
+    "name" : "St Margarets (London)",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.450438,
+    "lon" : -0.32938588,
+    "id" : "TWCKNHM",
+    "name" : "Twickenham",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

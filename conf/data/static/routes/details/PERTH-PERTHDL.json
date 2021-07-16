@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.391779,
+    "lon" : -3.439605,
+    "id" : "PERTH",
+    "name" : "Perth",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.381883,
+    "lon" : -3.4321542,
+    "id" : "PERTHDL",
+    "name" : "Perth Down Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

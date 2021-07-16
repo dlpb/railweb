@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.508758,
+    "lon" : 0.054778,
+    "id" : "DBTGBBEP",
+    "name" : "Beckton Park",
+    "type" : "Light Rail"
+  },
+  "to" : {
+    "lat" : 51.50836,
+    "lon" : 0.06399,
+    "id" : "DBTGBCYP",
+    "name" : "Cyprus",
+    "type" : "Light Rail"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Light Rail",
+  "speed" : "OHLE"
+} ]

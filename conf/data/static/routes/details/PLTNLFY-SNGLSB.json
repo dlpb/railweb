@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.848314,
+    "lon" : -2.9898162,
+    "id" : "PLTNLFY",
+    "name" : "Poulton-Le-Fylde",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.824836,
+    "lon" : -2.9612178,
+    "id" : "SNGLSB",
+    "name" : "Singleton Sb",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

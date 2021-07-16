@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.041808,
+    "lon" : -0.55845302,
+    "id" : "LDLNGTN",
+    "name" : "Lidlington",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.026361,
+    "lon" : -0.59493724,
+    "id" : "RIDGMNT",
+    "name" : "Ridgmont",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

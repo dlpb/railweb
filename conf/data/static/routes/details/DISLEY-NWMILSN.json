@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.358028,
+    "lon" : -2.0429922,
+    "id" : "DISLEY",
+    "name" : "Disley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.359456,
+    "lon" : -2.0083449,
+    "id" : "NWMILSN",
+    "name" : "New Mills Newtown",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

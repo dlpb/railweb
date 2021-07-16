@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.401606,
+    "lon" : -0.34250882,
+    "id" : "HCRT",
+    "name" : "Hampton Court",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.38868,
+    "lon" : -0.33903786,
+    "id" : "TDITTON",
+    "name" : "Thames Ditton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

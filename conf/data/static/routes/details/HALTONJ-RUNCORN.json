@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.325596,
+    "lon" : -2.7201822,
+    "id" : "HALTONJ",
+    "name" : "Halton Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.338128,
+    "lon" : -2.7391062,
+    "id" : "RUNCORN",
+    "name" : "Runcorn",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

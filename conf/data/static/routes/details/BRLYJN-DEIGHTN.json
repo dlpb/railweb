@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.676053,
+    "lon" : -1.7410283,
+    "id" : "BRLYJN",
+    "name" : "Bradley Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.668311,
+    "lon" : -1.7523363,
+    "id" : "DEIGHTN",
+    "name" : "Deighton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

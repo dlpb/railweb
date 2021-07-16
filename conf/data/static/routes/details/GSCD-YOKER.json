@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.887391,
+    "lon" : -4.3638826,
+    "id" : "GSCD",
+    "name" : "Garscadden",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.89295,
+    "lon" : -4.3873966,
+    "id" : "YOKER",
+    "name" : "Yoker",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

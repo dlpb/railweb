@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.81879,
+    "lon" : -0.37200167,
+    "id" : "WORT201",
+    "name" : "Worthing Signal Lg201",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.818672,
+    "lon" : -0.37578209,
+    "id" : "WORTHNG",
+    "name" : "Worthing",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

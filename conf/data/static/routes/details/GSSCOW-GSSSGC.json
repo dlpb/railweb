@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.868333,
+    "lon" : -4.259167,
+    "id" : "GSSCOW",
+    "name" : "Cowcaddens",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 55.871944,
+    "lon" : -4.269722,
+    "id" : "GSSSGC",
+    "name" : "St George's Cross",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.471153,
+    "lon" : 0.96989126,
+    "id" : "ECLR",
+    "name" : "Eccles Road",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.453798,
+    "lon" : 0.90907591,
+    "id" : "HRLNGRD",
+    "name" : "Harling Road",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

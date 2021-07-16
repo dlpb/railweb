@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.358486,
+    "lon" : -2.8894738,
+    "id" : "ALERTN",
+    "name" : "Liverpool South Parkway",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.357955,
+    "lon" : -2.8883809,
+    "id" : "ALERTNJ",
+    "name" : "Allerton Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.243157,
+    "lon" : -0.90799329,
+    "id" : "NMPTNNJ",
+    "name" : "Northampton North Junction",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 52.248612,
+    "lon" : -0.90769826,
+    "id" : "NMPTUR",
+    "name" : "Northampton Up Reception",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

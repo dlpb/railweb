@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.898339,
+    "lon" : -4.3750394,
+    "id" : "ABRE",
+    "name" : "Abererch",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.8882,
+    "lon" : -4.4159002,
+    "id" : "PWLHELI",
+    "name" : "Pwllheli",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

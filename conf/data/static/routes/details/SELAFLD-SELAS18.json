@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.416735,
+    "lon" : -3.5106007,
+    "id" : "SELAFLD",
+    "name" : "Sellafield",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.416735,
+    "lon" : -3.5106007,
+    "id" : "SELAS18",
+    "name" : "Sellafield Signal Sd18",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

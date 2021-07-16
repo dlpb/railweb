@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.49258474,
+    "lon" : -0.156090904,
+    "id" : "LUCSLS",
+    "name" : "Sloane Square",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.49314,
+    "lon" : -0.14608529,
+    "id" : "VICTRIA",
+    "name" : "London Victoria",
+    "type" : "Station"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

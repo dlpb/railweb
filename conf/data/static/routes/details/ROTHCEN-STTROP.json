@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.431689,
+    "lon" : -1.3610451,
+    "id" : "ROTHCEN",
+    "name" : "Rotherham Central",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.442989,
+    "lon" : -1.3432881,
+    "id" : "STTROP",
+    "name" : "Rotherham Parkgate",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

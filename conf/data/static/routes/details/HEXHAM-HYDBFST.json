@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.973547,
+    "lon" : -2.0948573,
+    "id" : "HEXHAM",
+    "name" : "Hexham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.99867,
+    "lon" : -2.157975,
+    "id" : "HYDBFST",
+    "name" : "Fourstones",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

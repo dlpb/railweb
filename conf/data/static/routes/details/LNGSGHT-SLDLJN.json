@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.463553,
+    "lon" : -2.2013581,
+    "id" : "LNGSGHT",
+    "name" : "Longsight",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.452803,
+    "lon" : -2.1961723,
+    "id" : "SLDLJN",
+    "name" : "Slade Lane Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

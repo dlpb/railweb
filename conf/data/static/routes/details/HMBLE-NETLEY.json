@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.871254,
+    "lon" : -1.3288369,
+    "id" : "HMBLE",
+    "name" : "Hamble",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.875159,
+    "lon" : -1.3419277,
+    "id" : "NETLEY",
+    "name" : "Netley",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.214681,
+    "lon" : 1.2139342,
+    "id" : "SNWDNAN",
+    "name" : "Snowdown",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.188399,
+    "lon" : 1.2295238,
+    "id" : "SWELL",
+    "name" : "Shepherds Well",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

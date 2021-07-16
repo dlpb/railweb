@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.541187,
+    "lon" : -0.0031247991,
+    "id" : "STFDLL",
+    "name" : "Stratford Low Level",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.527567,
+    "lon" : 0.0045976702,
+    "id" : "WHAMLT",
+    "name" : "West Ham Lt",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

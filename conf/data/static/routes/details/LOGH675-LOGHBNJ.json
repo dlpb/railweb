@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.781234,
+    "lon" : -1.199593,
+    "id" : "LOGH675",
+    "name" : "Loughborough Signal 675",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.783807,
+    "lon" : -1.2039197,
+    "id" : "LOGHBNJ",
+    "name" : "Loughborough North Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

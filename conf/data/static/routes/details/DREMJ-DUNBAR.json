@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.006823,
+    "lon" : -2.7740868,
+    "id" : "DREMJ",
+    "name" : "Drem",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.9982,
+    "lon" : -2.5138099,
+    "id" : "DUNBAR",
+    "name" : "Dunbar",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

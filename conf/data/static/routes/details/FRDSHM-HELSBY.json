@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.295741,
+    "lon" : -2.7237156,
+    "id" : "FRDSHM",
+    "name" : "Frodsham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.275424,
+    "lon" : -2.7713006,
+    "id" : "HELSBY",
+    "name" : "Helsby",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

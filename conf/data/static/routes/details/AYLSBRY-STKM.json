@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.813413,
+    "lon" : -0.81431056,
+    "id" : "AYLSBRY",
+    "name" : "Aylesbury",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.78755,
+    "lon" : -0.78402031,
+    "id" : "STKM",
+    "name" : "Stoke Mandeville",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

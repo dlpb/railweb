@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.479308,
+    "lon" : -3.2091087,
+    "id" : "LCKWTHJ",
+    "name" : "Leckwith North Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.48453,
+    "lon" : -3.2696778,
+    "id" : "STFALX",
+    "name" : "St Fagans L C",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

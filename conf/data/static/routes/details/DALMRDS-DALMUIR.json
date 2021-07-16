@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.913507,
+    "lon" : -4.4313564,
+    "id" : "DALMRDS",
+    "name" : "Dalmuir Down Siding",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.911954,
+    "lon" : -4.4267304,
+    "id" : "DALMUIR",
+    "name" : "Dalmuir",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.58190207482915,
+    "lon" : 0.20596430843825325,
+    "id" : "GIDEAPK",
+    "name" : "Gidea Park",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.58462,
+    "lon" : 0.21254855,
+    "id" : "GIDEPKM",
+    "name" : "Gidea Park Middle Siding",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

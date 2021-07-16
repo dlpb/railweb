@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.010882,
+    "lon" : 0.44171818,
+    "id" : "ETCHNGM",
+    "name" : "Etchingham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.98487,
+    "lon" : 0.46872218,
+    "id" : "RBRTSBD",
+    "name" : "Robertsbridge",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "70-90"
+} ]

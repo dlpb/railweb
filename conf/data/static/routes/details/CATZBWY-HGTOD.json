@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.04293,
+    "lon" : -1.87196,
+    "id" : "CATZBWY",
+    "name" : "Broadway",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.9891,
+    "lon" : -1.92813,
+    "id" : "HGTOD",
+    "name" : "Toddington",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.037373,
+    "lon" : -3.3960274,
+    "id" : "IVRKTGL",
+    "name" : "Inverkeithing G.L.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.034756,
+    "lon" : -3.3954033,
+    "id" : "IVRKTHG",
+    "name" : "Inverkeithing",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

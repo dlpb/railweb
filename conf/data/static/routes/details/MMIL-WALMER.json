@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.170716,
+    "lon" : 1.3480911,
+    "id" : "MMIL",
+    "name" : "Martin Mill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.203423,
+    "lon" : 1.3827673,
+    "id" : "WALMER",
+    "name" : "Walmer",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

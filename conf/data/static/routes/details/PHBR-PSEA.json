@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.783533,
+    "lon" : -1.0971447,
+    "id" : "PHBR",
+    "name" : "Portsmouth Harbour",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.79831,
+    "lon" : -1.089297,
+    "id" : "PSEA",
+    "name" : "Portsmouth & Southsea",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

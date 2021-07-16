@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.187051,
+    "lon" : 0.13252628,
+    "id" : "CAMB147",
+    "name" : "Cambridge Signal 147",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.157018,
+    "lon" : 0.13499379,
+    "id" : "SHPRTBJ",
+    "name" : "Shepreth Branch Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "1",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

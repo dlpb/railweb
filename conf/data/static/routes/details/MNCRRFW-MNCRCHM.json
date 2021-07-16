@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.4515,
+    "lon" : -2.2778,
+    "id" : "MNCRRFW",
+    "name" : "Firswood Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.4427,
+    "lon" : -2.2734,
+    "id" : "MNCRCHM",
+    "name" : "Chorlton Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

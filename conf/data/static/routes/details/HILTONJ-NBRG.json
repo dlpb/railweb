@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.364633,
+    "lon" : -3.4312319,
+    "id" : "HILTONJ",
+    "name" : "Hilton Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.348165,
+    "lon" : -3.2500685,
+    "id" : "NBRG",
+    "name" : "Newburgh",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.270497,
+    "lon" : -2.1956133,
+    "id" : "WSTB722",
+    "name" : "Westbury Ground Signal 722",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.266444,
+    "lon" : -2.1996667,
+    "id" : "WSTBRYW",
+    "name" : "Westbury",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

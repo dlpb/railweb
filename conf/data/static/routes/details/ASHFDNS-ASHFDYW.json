@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.1416,
+    "lon" : 0.87945508,
+    "id" : "ASHFDNS",
+    "name" : "Ashford Down Sidings",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.1416,
+    "lon" : 0.87945508,
+    "id" : "ASHFDYW",
+    "name" : "Ashford Down Yd Washer Rd",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

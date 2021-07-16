@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 58.609722,
+    "lon" : -3.5525,
+    "id" : "SCRBSTR",
+    "name" : "Scrabster",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 58.96,
+    "lon" : -3.3,
+    "id" : "SNSS",
+    "name" : "Stromness Orkney",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

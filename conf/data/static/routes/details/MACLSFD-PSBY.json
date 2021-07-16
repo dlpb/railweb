@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.259242,
+    "lon" : -2.1219065,
+    "id" : "MACLSFD",
+    "name" : "Macclesfield",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.293112,
+    "lon" : -2.1453916,
+    "id" : "PSBY",
+    "name" : "Prestbury",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

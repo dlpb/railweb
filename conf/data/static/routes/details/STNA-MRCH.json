@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.518301,
+    "lon" : 0.14924115,
+    "id" : "STNA",
+    "name" : "Stonea",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.560202,
+    "lon" : 0.090976419,
+    "id" : "MRCH",
+    "name" : "March",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

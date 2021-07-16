@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.670832,
+    "lon" : -4.1125502,
+    "id" : "LLDEGEN",
+    "name" : "Genwen Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.670165,
+    "lon" : -4.1195768,
+    "id" : "TROSWKJ",
+    "name" : "Trostre Works Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

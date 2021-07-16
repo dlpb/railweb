@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.58293,
+    "lon" : -2.9445885,
+    "id" : "LWERWJN",
+    "name" : "Llanwern West Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.579956,
+    "lon" : -2.9031941,
+    "id" : "LWERXSG",
+    "name" : "Llanwern Exchange Sdgs",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

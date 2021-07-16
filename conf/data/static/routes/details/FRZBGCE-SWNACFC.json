@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.657317,
+    "lon" : -2.0992865,
+    "id" : "FRZBGCE",
+    "name" : "Furzebrook Oil Sidings",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.606159,
+    "lon" : -1.9659894,
+    "id" : "SWNACFC",
+    "name" : "Corfe Castle",
+    "type" : "Station"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

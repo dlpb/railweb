@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.94832,
+    "lon" : -4.061103,
+    "id" : "GTSRUPL",
+    "name" : "Gartshore U.P.L.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.921236,
+    "lon" : -4.154382,
+    "id" : "LENZIE",
+    "name" : "Lenzie",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.998261,
+    "lon" : -0.10787411,
+    "id" : "HYWR226",
+    "name" : "Haywards Heath Sig 1226",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.003144,
+    "lon" : -0.10617886,
+    "id" : "HYWRUS",
+    "name" : "Haywards Heath Up Siding",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

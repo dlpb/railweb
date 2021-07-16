@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.595368,
+    "lon" : -3.8534151,
+    "id" : "MCHYNCS",
+    "name" : "Machynlleth Carr. Sdgs",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.595436,
+    "lon" : -3.8542743,
+    "id" : "MCHYNLT",
+    "name" : "Machynlleth",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

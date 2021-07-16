@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.4807,
+    "lon" : -2.2962,
+    "id" : "MNCRLWY",
+    "name" : "Langworthy Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.480345,
+    "lon" : -2.3063425,
+    "id" : "MNCRWST",
+    "name" : "Weaste Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

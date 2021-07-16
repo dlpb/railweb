@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.268345,
+    "lon" : -2.1583783,
+    "id" : "DRTW68",
+    "name" : "Droitwich Signal 68",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.268345,
+    "lon" : -2.1583783,
+    "id" : "DRTWCHS",
+    "name" : "Droitwich Spa",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

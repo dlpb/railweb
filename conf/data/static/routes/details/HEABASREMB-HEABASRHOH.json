@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.975391,
+    "lon" : -1.99124,
+    "id" : "HEABASREMB",
+    "name" : "Embsay",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 53.975954,
+    "lon" : -1.9604,
+    "id" : "HEABASRHOH",
+    "name" : "Holywell Halt",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

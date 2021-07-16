@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.130483,
+    "lon" : -0.47095823,
+    "id" : "BESJGL",
+    "name" : "Bedford St Johns G.L.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.129325,
+    "lon" : -0.46762308,
+    "id" : "BESJOHN",
+    "name" : "Bedford St Johns",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

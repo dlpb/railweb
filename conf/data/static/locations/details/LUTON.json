@@ -1,0 +1,10 @@
+[ {
+  "id" : "LUTON",
+  "crp" : "",
+  "route" : "London North East and East Midlands",
+  "changeTime" : "Set(Some(ChangeTime(LUT,TL,TL,4,(Luton))))",
+  "interchangeType" : "2 - Medium interchange point",
+  "county" : "East",
+  "district" : "Luton",
+  "postcode" : "\"LU1 2LT"
+} ]

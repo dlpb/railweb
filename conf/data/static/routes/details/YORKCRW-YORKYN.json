@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.95734,
+    "lon" : -1.1058298,
+    "id" : "YORKCRW",
+    "name" : "York Thrall Europa",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.968407,
+    "lon" : -1.1183371,
+    "id" : "YORKYN",
+    "name" : "York Yard Nth R.S.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

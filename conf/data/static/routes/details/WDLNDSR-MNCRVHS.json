@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.502,
+    "lon" : -2.227,
+    "id" : "WDLNDSR",
+    "name" : "Queens Road Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.488018,
+    "lon" : -2.2412763,
+    "id" : "MNCRVHS",
+    "name" : "Manchester Victoria H.S.",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

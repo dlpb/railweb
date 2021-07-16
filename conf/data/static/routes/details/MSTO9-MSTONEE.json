@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.278066,
+    "lon" : 0.51359336,
+    "id" : "MSTO9",
+    "name" : "Maidstone East Signal Me9",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.277707,
+    "lon" : 0.52024164,
+    "id" : "MSTONEE",
+    "name" : "Maidstone East",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

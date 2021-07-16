@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.997901,
+    "lon" : -0.73683083,
+    "id" : "BLTCDGL",
+    "name" : "Bletchley Up&Down Relief 1",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.009128,
+    "lon" : -0.74326064,
+    "id" : "DNBGHSJ",
+    "name" : "Denbigh Hall South Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

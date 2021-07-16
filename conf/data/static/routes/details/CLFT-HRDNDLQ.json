@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.618452,
+    "lon" : -2.7127613,
+    "id" : "CLFT",
+    "name" : "Clifton & Lowther",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.511877,
+    "lon" : -2.6683821,
+    "id" : "HRDNDLQ",
+    "name" : "Hardendale Quarry",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

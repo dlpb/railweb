@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.677284,
+    "lon" : -1.4933104,
+    "id" : "WKFLDWJ",
+    "name" : "Wakefield West Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.675636,
+    "lon" : -1.4968573,
+    "id" : "WKK1211",
+    "name" : "Wakefield West Sig K1211",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

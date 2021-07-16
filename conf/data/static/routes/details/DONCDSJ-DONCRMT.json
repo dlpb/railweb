@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.498415,
+    "lon" : -1.1051855,
+    "id" : "DONCDSJ",
+    "name" : "Doncaster Decoy South Jcn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.500797,
+    "lon" : -1.1112562,
+    "id" : "DONCRMT",
+    "name" : "Doncaster Royal Mail Terml",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

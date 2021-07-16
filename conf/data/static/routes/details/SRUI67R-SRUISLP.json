@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.549579,
+    "lon" : -0.37361286,
+    "id" : "SRUI67R",
+    "name" : "South Ruislip Sig Me67r",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.557018,
+    "lon" : -0.3992845,
+    "id" : "SRUISLP",
+    "name" : "South Ruislip",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

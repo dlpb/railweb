@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.830356,
+    "lon" : -1.6111638,
+    "id" : "CLMLJN",
+    "name" : "Clay Mills Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.85326,
+    "lon" : -1.5643148,
+    "id" : "WLNTNON",
+    "name" : "Willington",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

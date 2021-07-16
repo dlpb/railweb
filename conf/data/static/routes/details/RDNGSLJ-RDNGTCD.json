@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.464509,
+    "lon" : -1.0122435,
+    "id" : "RDNGSLJ",
+    "name" : "Scours Lane Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.459868,
+    "lon" : -0.98689503,
+    "id" : "RDNGTCD",
+    "name" : "Reading Traincare Depot",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

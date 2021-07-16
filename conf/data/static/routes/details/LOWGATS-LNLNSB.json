@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.345645,
+    "lon" : -1.4395181,
+    "id" : "LOWGATS",
+    "name" : "Low Gates L.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.384024,
+    "lon" : -1.4010715,
+    "id" : "LNLNSB",
+    "name" : "Long Lane S.B.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

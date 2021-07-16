@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.984473,
+    "lon" : -3.7144643,
+    "id" : "POLMONT",
+    "name" : "Polmont",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.985785,
+    "lon" : -3.7247978,
+    "id" : "POLMUPN",
+    "name" : "Polmont U.P.L. (North)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.948848,
+    "lon" : -5.0046433,
+    "id" : "LTRSTNJ",
+    "name" : "Letterston Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.013333,
+    "lon" : -4.9848431,
+    "id" : "FGDHGWK",
+    "name" : "Fishguard & Goodwick",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.434628,
+    "lon" : -0.34009106,
+    "id" : "STRWBHD",
+    "name" : "Strawberry Hill C.S.D.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.439491,
+    "lon" : -0.33931046,
+    "id" : "STRWBYH",
+    "name" : "Strawberry Hill",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.475844,
+    "lon" : -0.04082905,
+    "id" : "NEWX584",
+    "name" : "New Cross Gate Sig L1584",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.475844,
+    "lon" : -0.04082905,
+    "id" : "NEWXGTE",
+    "name" : "New Cross Gate",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

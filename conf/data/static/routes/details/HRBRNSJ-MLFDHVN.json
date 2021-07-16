@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.735708,
+    "lon" : -5.0240659,
+    "id" : "HRBRNSJ",
+    "name" : "Herbrandston Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.71567,
+    "lon" : -5.0414352,
+    "id" : "MLFDHVN",
+    "name" : "Milford Haven",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

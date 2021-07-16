@@ -1,0 +1,58 @@
+[ {
+  "from" : {
+    "lat" : 51.529911,
+    "lon" : -0.13591268,
+    "id" : "EUSTON",
+    "name" : "London Euston",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.518944,
+    "lon" : -0.080939088,
+    "id" : "LIVST",
+    "name" : "London Liverpool Street",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "18 MINUTES"
+}, {
+  "from" : {
+    "lat" : 51.529911,
+    "lon" : -0.13591268,
+    "id" : "EUSTON",
+    "name" : "London Euston",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.518944,
+    "lon" : -0.080939088,
+    "id" : "LIVST",
+    "name" : "London Liverpool Street",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "23 MINUTES"
+}, {
+  "from" : {
+    "lat" : 51.529911,
+    "lon" : -0.13591268,
+    "id" : "EUSTON",
+    "name" : "London Euston",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.518944,
+    "lon" : -0.080939088,
+    "id" : "LIVST",
+    "name" : "London Liverpool Street",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "13 MINUTES"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.680333,
+    "lon" : -1.8247977,
+    "id" : "LCHC",
+    "name" : "Lichfield City",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.639106,
+    "lon" : -1.8444094,
+    "id" : "SHNS",
+    "name" : "Shenstone",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

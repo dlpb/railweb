@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.516961,
+    "lon" : -0.26786008,
+    "id" : "ACTONML",
+    "name" : "Acton Main Line",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.522739,
+    "lon" : -0.2548693,
+    "id" : "ACWLJN",
+    "name" : "Acton Wells Junction",
+    "type" : "Location"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.51187,
+    "lon" : -1.98823,
+    "id" : "WMTWTRW",
+    "name" : "Trinity Way",
+    "type" : "Metro"
+  },
+  "to" : {
+    "lat" : 52.51652,
+    "lon" : -1.99466,
+    "id" : "WMTWWBC",
+    "name" : "West Bromwich Central",
+    "type" : "Metro"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Metro",
+  "speed" : "OHLE"
+} ]

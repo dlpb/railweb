@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.5608,
+    "lon" : 0.077662201,
+    "id" : "ILFELEJ",
+    "name" : "Ilford Lon End Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.563863,
+    "lon" : 0.096068296,
+    "id" : "SVNKNGS",
+    "name" : "Seven Kings",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.163701,
+    "lon" : -0.63670821,
+    "id" : "MLFORD",
+    "name" : "Milford (Surrey)",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.133038,
+    "lon" : -0.64610103,
+    "id" : "WITLEY",
+    "name" : "Witley",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

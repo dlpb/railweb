@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.548376,
+    "lon" : -0.093085558,
+    "id" : "CNNB",
+    "name" : "Canonbury",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.548666,
+    "lon" : -0.08218382,
+    "id" : "DALS",
+    "name" : "Dalston Junction",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

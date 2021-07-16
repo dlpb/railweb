@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.493798,
+    "lon" : -3.2337501,
+    "id" : "FRWATER",
+    "name" : "Fairwater",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.488114,
+    "lon" : -3.2295205,
+    "id" : "WAUNGRN",
+    "name" : "Waun-Gron Park",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "45-75"
+} ]

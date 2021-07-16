@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.276438,
+    "lon" : 0.18182083,
+    "id" : "SVNOAKS",
+    "name" : "Sevenoaks",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.274822,
+    "lon" : 0.18263321,
+    "id" : "SVNOCHS",
+    "name" : "Sevenoaks C.H.S.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

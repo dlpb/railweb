@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.355695,
+    "lon" : -0.21428831,
+    "id" : "CHEAM",
+    "name" : "Cheam",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.334203,
+    "lon" : -0.27004805,
+    "id" : "EPSM",
+    "name" : "Epsom",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.128452,
+    "lon" : -2.7730154,
+    "id" : "CRNFNJN",
+    "name" : "Carnforth North Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.091941,
+    "lon" : -2.8142749,
+    "id" : "HESTBNK",
+    "name" : "Hest Bank",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

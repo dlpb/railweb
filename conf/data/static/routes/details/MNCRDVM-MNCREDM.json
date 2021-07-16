@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.4166,
+    "lon" : -2.2284,
+    "id" : "MNCRDVM",
+    "name" : "Didsbury Village Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.411591,
+    "lon" : -2.216216,
+    "id" : "MNCREDM",
+    "name" : "E Didsbury Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 53.4041,
+    "lon" : -2.3387,
+    "id" : "TIMPRLY",
+    "name" : "Timperley",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.600833,
+    "lon" : -2.094444,
+    "id" : "NHEY",
+    "name" : "Newhey Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "59 MINUTES"
+}, {
+  "from" : {
+    "lat" : 53.4041,
+    "lon" : -2.3387,
+    "id" : "TIMPRLY",
+    "name" : "Timperley",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.600833,
+    "lon" : -2.094444,
+    "id" : "NHEY",
+    "name" : "Newhey Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "56 MINUTES"
+} ]

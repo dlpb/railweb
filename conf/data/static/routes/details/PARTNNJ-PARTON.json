@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.58568,
+    "lon" : -3.5817027,
+    "id" : "PARTNNJ",
+    "name" : "Parton North Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.570303,
+    "lon" : -3.5808751,
+    "id" : "PARTON",
+    "name" : "Parton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

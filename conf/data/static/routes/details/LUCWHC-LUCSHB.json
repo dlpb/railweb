@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.512206,
+    "lon" : -0.224226,
+    "id" : "LUCWHC",
+    "name" : "White City",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.50474,
+    "lon" : -0.21881,
+    "id" : "LUCSHB",
+    "name" : "Shepherd's Bush",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

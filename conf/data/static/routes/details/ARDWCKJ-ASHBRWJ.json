@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.471135,
+    "lon" : -2.2088813,
+    "id" : "ARDWCKJ",
+    "name" : "Ardwick Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.471765,
+    "lon" : -2.1982484,
+    "id" : "ASHBRWJ",
+    "name" : "Ashburys W Jn. (Sig As998)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.532472,
+    "lon" : -2.3780368,
+    "id" : "CHPSDBY",
+    "name" : "Chipping Sodbury",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.530204,
+    "lon" : -2.2754788,
+    "id" : "BADMTN",
+    "name" : "Badmington",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

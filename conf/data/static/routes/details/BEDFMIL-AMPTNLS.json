@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.0527,
+    "lon" : -0.51386806,
+    "id" : "BEDFMIL",
+    "name" : "Millbrook",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.033551,
+    "lon" : -0.51333681,
+    "id" : "AMPTNLS",
+    "name" : "Ampthill Tunnels",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.929032,
+    "lon" : -3.230071,
+    "id" : "CRLORTJ",
+    "name" : "Craiglockhart Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.92652,
+    "lon" : -3.2439153,
+    "id" : "SLATEFD",
+    "name" : "Slateford",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

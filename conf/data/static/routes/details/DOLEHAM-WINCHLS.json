@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.918568,
+    "lon" : 0.60998796,
+    "id" : "DOLEHAM",
+    "name" : "Doleham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.933495,
+    "lon" : 0.70183329,
+    "id" : "WINCHLS",
+    "name" : "Winchelsea",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

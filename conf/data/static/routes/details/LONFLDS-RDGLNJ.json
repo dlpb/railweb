@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.540885,
+    "lon" : -0.0579666,
+    "id" : "LONFLDS",
+    "name" : "London Fields",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.545243,
+    "lon" : -0.05883388,
+    "id" : "RDGLNJ",
+    "name" : "Reading Lane Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

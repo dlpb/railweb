@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.598998,
+    "lon" : -3.4434855,
+    "id" : "DAWLSHW",
+    "name" : "Dawlish Warren",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.627795924647245,
+    "lon" : -3.447704174620955,
+    "id" : "STRCROS",
+    "name" : "Starcross",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

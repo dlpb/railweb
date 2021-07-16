@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.843834,
+    "lon" : -5.0959283,
+    "id" : "BANAVIE",
+    "name" : "Banavie",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.842742,
+    "lon" : -5.1217034,
+    "id" : "CORPACH",
+    "name" : "Corpach",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

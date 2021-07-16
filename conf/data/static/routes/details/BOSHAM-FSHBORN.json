@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.842749,
+    "lon" : -0.84682037,
+    "id" : "BOSHAM",
+    "name" : "Bosham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.839099,
+    "lon" : -0.81553743,
+    "id" : "FSHBORN",
+    "name" : "Fishbourne (West Sussex)",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

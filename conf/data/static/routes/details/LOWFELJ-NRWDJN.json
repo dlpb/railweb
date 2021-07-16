@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.931431,
+    "lon" : -1.6089851,
+    "id" : "LOWFELJ",
+    "name" : "Low Fell Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.948609,
+    "lon" : -1.6335797,
+    "id" : "NRWDJN",
+    "name" : "Norwood Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

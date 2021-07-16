@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.76798,
+    "lon" : -4.92029,
+    "id" : "CUMBRAE",
+    "name" : "Cumbrae",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.792617,
+    "lon" : -4.8671404,
+    "id" : "LARGS",
+    "name" : "Largs",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

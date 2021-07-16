@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.440175,
+    "lon" : 0.147771,
+    "id" : "BEXLEY",
+    "name" : "Bexley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.448306,
+    "lon" : 0.17889423,
+    "id" : "CRFD",
+    "name" : "Crayford",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

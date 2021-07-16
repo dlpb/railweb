@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.791277,
+    "lon" : -1.2334443,
+    "id" : "SHBNSJN",
+    "name" : "Sherburn Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.771532,
+    "lon" : -1.2380371,
+    "id" : "MILFCDS",
+    "name" : "Milford Down Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

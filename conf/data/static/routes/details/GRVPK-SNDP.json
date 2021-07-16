@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.430464,
+    "lon" : 0.022355316,
+    "id" : "GRVPK",
+    "name" : "Grove Park",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.413539,
+    "lon" : 0.021335035,
+    "id" : "SNDP",
+    "name" : "Sundridge Park",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

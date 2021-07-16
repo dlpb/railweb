@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.5042,
+    "lon" : -2.1843,
+    "id" : "MNCRNMM",
+    "name" : "Newtnh&Mostnmtkl",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.5104,
+    "lon" : -2.1634,
+    "id" : "FALSWTH",
+    "name" : "Failsworth Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

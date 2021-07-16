@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.864145,
+    "lon" : -2.2156077,
+    "id" : "BNWDJN",
+    "name" : "Barnwood Jn.",
+    "type" : "Junction"
+  },
+  "to" : {
+    "lat" : 51.860447,
+    "lon" : -2.2214565,
+    "id" : "GLOS339",
+    "name" : "Gloucester Sig. G339",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.415887,
+    "lon" : -0.37203431,
+    "id" : "HAMPTON",
+    "name" : "Hampton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.421152,
+    "lon" : -0.40909817,
+    "id" : "KMPTNPK",
+    "name" : "Kempton Park",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

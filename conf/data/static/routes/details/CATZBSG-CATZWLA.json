@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.336255,
+    "lon" : -8.2408,
+    "id" : "CATZBSG",
+    "name" : "Ballinasloe (Cie",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.3431,
+    "lon" : -8.4714,
+    "id" : "CATZWLA",
+    "name" : "Woodlawn    (Cie",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

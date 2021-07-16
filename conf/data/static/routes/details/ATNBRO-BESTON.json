@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.906514,
+    "lon" : -1.2309344,
+    "id" : "ATNBRO",
+    "name" : "Attenborough",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.920681,
+    "lon" : -1.2076146,
+    "id" : "BESTON",
+    "name" : "Beeston",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

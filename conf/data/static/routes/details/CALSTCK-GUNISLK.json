@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.497953,
+    "lon" : -4.2087269,
+    "id" : "CALSTCK",
+    "name" : "Calstock",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.518237,
+    "lon" : -4.22048,
+    "id" : "GUNISLK",
+    "name" : "Gunnislake",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "10-55"
+} ]

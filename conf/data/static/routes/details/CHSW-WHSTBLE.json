@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.360355,
+    "lon" : 1.0683606,
+    "id" : "CHSW",
+    "name" : "Chestfield & Swalecliffe",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.357567,
+    "lon" : 1.0335092,
+    "id" : "WHSTBLE",
+    "name" : "Whitstable",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

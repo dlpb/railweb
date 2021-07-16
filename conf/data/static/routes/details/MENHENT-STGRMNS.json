@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.426494,
+    "lon" : -4.4093773,
+    "id" : "MENHENT",
+    "name" : "Menheniot",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.394411,
+    "lon" : -4.3087064,
+    "id" : "STGRMNS",
+    "name" : "St Germans",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

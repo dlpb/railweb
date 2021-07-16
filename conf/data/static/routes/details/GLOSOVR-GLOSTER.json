@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.873681,
+    "lon" : -2.2695131,
+    "id" : "GLOSOVR",
+    "name" : "Gloucester Over Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.866131,
+    "lon" : -2.239362,
+    "id" : "GLOSTER",
+    "name" : "Gloucester",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

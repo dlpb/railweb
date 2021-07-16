@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.645839,
+    "lon" : -0.38526028,
+    "id" : "BUSHYDC",
+    "name" : "Bushey",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.652179,
+    "lon" : -0.39256636,
+    "id" : "WATFDHS",
+    "name" : "Watford High Street",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

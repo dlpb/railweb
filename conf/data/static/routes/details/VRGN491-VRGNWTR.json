@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.403962,
+    "lon" : -0.56174661,
+    "id" : "VRGN491",
+    "name" : "Virginia Water Signal F491",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.401197,
+    "lon" : -0.56210649,
+    "id" : "VRGNWTR",
+    "name" : "Virginia Water",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

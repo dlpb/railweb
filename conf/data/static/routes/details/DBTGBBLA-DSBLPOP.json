@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.507903,
+    "lon" : -0.007438,
+    "id" : "DBTGBBLA",
+    "name" : "Blackwall",
+    "type" : "Light Rail"
+  },
+  "to" : {
+    "lat" : 51.507725,
+    "lon" : -0.016503,
+    "id" : "DSBLPOP",
+    "name" : "Poplar",
+    "type" : "Light Rail"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Light Rail",
+  "speed" : "OHLE"
+} ]

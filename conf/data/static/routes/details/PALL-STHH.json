@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 54.912746,
+    "lon" : -1.4174595,
+    "id" : "PALL",
+    "name" : "Pallion (T & W Metro)",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 54.904153,
+    "lon" : -1.4479476,
+    "id" : "STHH",
+    "name" : "South Hylton (T & W Metro)",
+    "type" : "Location"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE/1500V DC",
+  "type" : "NR",
+  "speed" : "40-75"
+}, {
+  "from" : {
+    "lat" : 54.912746,
+    "lon" : -1.4174595,
+    "id" : "PALL",
+    "name" : "Pallion (T & W Metro)",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 54.904153,
+    "lon" : -1.4479476,
+    "id" : "STHH",
+    "name" : "South Hylton (T & W Metro)",
+    "type" : "Location"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Unknown",
+  "speed" : "OHLE"
+} ]

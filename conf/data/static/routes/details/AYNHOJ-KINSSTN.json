@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.998913,
+    "lon" : -1.2802704,
+    "id" : "AYNHOJ",
+    "name" : "Aynho Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.021108,
+    "lon" : -1.281051,
+    "id" : "KINSSTN",
+    "name" : "Kings Sutton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

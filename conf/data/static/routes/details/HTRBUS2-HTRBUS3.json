@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.4715,
+    "lon" : -0.4532,
+    "id" : "HTRBUS2",
+    "name" : "Heathrow T2 Bus",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.4715,
+    "lon" : -0.4532,
+    "id" : "HTRBUS3",
+    "name" : "Heathrow T3 Bus",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

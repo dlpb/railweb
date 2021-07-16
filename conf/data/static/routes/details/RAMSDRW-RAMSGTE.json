@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.340275,
+    "lon" : 1.4026651,
+    "id" : "RAMSDRW",
+    "name" : "Rm Dws Dept Receptwest",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.341156,
+    "lon" : 1.4054735,
+    "id" : "RAMSGTE",
+    "name" : "Ramsgate",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

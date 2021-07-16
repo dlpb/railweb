@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.454529,
+    "lon" : -1.7305279,
+    "id" : "BHAMINJ",
+    "name" : "Birmingham Inter North Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.466944,
+    "lon" : -1.7552402,
+    "id" : "MRSTNGR",
+    "name" : "Marston Green",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

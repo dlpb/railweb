@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.470728,
+    "lon" : -2.4484852,
+    "id" : "ASTLEY",
+    "name" : "Astley",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.484824,
+    "lon" : -2.3570847,
+    "id" : "PTRCRFT",
+    "name" : "Patricroft",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.57618,
+    "lon" : 0.04542,
+    "id" : "LUCRED",
+    "name" : "Redbridge",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.57649,
+    "lon" : 0.06637,
+    "id" : "LUCGAH",
+    "name" : "Gants Hill",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

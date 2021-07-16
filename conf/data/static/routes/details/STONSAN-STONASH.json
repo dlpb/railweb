@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.860638,
+    "lon" : -2.0803404,
+    "id" : "STONSAN",
+    "name" : "Sandon",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.891828,
+    "lon" : -2.1254489,
+    "id" : "STONASH",
+    "name" : "Ashton By Stone",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

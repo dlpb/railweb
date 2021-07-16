@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.033551,
+    "lon" : -0.51333681,
+    "id" : "AMPTNLS",
+    "name" : "Ampthill Tunnels",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.007249,
+    "lon" : -0.49828389,
+    "id" : "FLITWCJ",
+    "name" : "Flitwick Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.414722,
+    "lon" : -2.1700893,
+    "id" : "HTNOJN",
+    "name" : "Heaton Norris Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.40938,
+    "lon" : -2.1657205,
+    "id" : "STKPVIA",
+    "name" : "Stockport Viaduct",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.720761,
+    "lon" : -1.8536512,
+    "id" : "HLFX",
+    "name" : "Halifax",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.74924,
+    "lon" : -1.750517,
+    "id" : "LOWMOOR",
+    "name" : "Low Moor",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

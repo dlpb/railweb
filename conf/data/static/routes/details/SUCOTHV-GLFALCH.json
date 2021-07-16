@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.329095,
+    "lon" : -4.7280219,
+    "id" : "SUCOTHV",
+    "name" : "Succoth Viaduct",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.344699,
+    "lon" : -4.7251387,
+    "id" : "GLFALCH",
+    "name" : "Glen Falloch",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

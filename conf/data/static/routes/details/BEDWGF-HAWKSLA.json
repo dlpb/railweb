@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.466571,
+    "lon" : -1.4685907,
+    "id" : "BEDWGF",
+    "name" : "Bedworth Ground Frame",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.460497,
+    "lon" : -1.4775533,
+    "id" : "HAWKSLA",
+    "name" : "Hawkesbury Lane",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

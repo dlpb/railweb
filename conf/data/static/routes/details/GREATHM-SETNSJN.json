@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.634302,
+    "lon" : -1.2289564,
+    "id" : "GREATHM",
+    "name" : "Greatham",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.648679,
+    "lon" : -1.2062904,
+    "id" : "SETNSJN",
+    "name" : "Seaton Snook Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

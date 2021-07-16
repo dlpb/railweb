@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.859279,
+    "lon" : -4.2398779,
+    "id" : "GLGHST",
+    "name" : "High Street",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.862405,
+    "lon" : -4.2508132,
+    "id" : "GLGQLL",
+    "name" : "Glasgow Queen Street",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

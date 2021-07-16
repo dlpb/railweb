@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.460587,
+    "lon" : -1.8521617,
+    "id" : "SMLHTHS",
+    "name" : "Small Heath South Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.456019,
+    "lon" : -1.8446129,
+    "id" : "TYSLSDG",
+    "name" : "Tyseley L.M.D.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

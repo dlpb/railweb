@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.53253,
+    "lon" : -0.10579,
+    "id" : "LUNANG",
+    "name" : "Angel",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.521453,
+    "lon" : -0.08981395,
+    "id" : "OLDST",
+    "name" : "Old Street",
+    "type" : "Station"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

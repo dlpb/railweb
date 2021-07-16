@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.42141,
+    "lon" : -0.74030689,
+    "id" : "KETRGNJ",
+    "name" : "Kettering North Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.434273,
+    "lon" : -0.74935443,
+    "id" : "KETRGLN",
+    "name" : "Glendon",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

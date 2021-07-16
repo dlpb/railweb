@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.854175,
+    "lon" : -4.0486052,
+    "id" : "KRKWOOD",
+    "name" : "Kirkwood",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.854583,
+    "lon" : -4.0391842,
+    "id" : "LGLNJN",
+    "name" : "Langloan Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.654438,
+    "lon" : -1.2363728,
+    "id" : "CULHAM",
+    "name" : "Culham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.685529,
+    "lon" : -1.2402764,
+    "id" : "RDLEY",
+    "name" : "Radley",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

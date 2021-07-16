@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.983807,
+    "lon" : -3.3794784,
+    "id" : "DLMYDPL",
+    "name" : "Dalmeny D.P.L.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.981129,
+    "lon" : -3.3771071,
+    "id" : "DLMYJN",
+    "name" : "Dalmeny Jn",
+    "type" : "Junction"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.901786,
+    "lon" : -8.458829,
+    "id" : "CORK",
+    "name" : "Cork City   (Cie",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.9112,
+    "lon" : -8.3251,
+    "id" : "CATZ002",
+    "name" : "Glounthaune (Cie",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

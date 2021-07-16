@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.595614,
+    "lon" : -4.617284,
+    "id" : "GRTONIB",
+    "name" : "Gorton (Tayside)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.685879,
+    "lon" : -4.5770542,
+    "id" : "RANNOCH",
+    "name" : "Rannoch",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

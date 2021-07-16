@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.427528,
+    "lon" : -1.3731171,
+    "id" : "MBROBPS",
+    "name" : "Masboro Booths P S",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.427295,
+    "lon" : -1.3802089,
+    "id" : "ROTHHJN",
+    "name" : "Holmes Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

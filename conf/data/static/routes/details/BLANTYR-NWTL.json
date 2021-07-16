@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.797255,
+    "lon" : -4.0868074,
+    "id" : "BLANTYR",
+    "name" : "Blantyre",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.818833,
+    "lon" : -4.1334249,
+    "id" : "NWTL",
+    "name" : "Newton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

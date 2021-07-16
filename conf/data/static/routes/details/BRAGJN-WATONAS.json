@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.862181,
+    "lon" : -0.12671101,
+    "id" : "BRAGJN",
+    "name" : "Bragbury Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.856536,
+    "lon" : -0.1194669,
+    "id" : "WATONAS",
+    "name" : "Watton-At-Stone",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

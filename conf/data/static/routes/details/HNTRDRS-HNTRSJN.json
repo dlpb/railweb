@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.716714,
+    "lon" : -4.8597576,
+    "id" : "HNTRDRS",
+    "name" : "Hunterston Ll Drs",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.716377,
+    "lon" : -4.8595578,
+    "id" : "HNTRSJN",
+    "name" : "Hunterston Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

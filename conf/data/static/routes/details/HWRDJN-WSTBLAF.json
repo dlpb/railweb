@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.270875,
+    "lon" : -2.1786,
+    "id" : "HWRDJN",
+    "name" : "Heywood Road Junction",
+    "type" : "Junction"
+  },
+  "to" : {
+    "lat" : 51.271696,
+    "lon" : -2.1708051,
+    "id" : "WSTBLAF",
+    "name" : "Westbury Lafarge",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

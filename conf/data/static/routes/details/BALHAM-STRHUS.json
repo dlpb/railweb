@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.44282,
+    "lon" : -0.15137592,
+    "id" : "BALHAM",
+    "name" : "Balham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.439663,
+    "lon" : -0.13599223,
+    "id" : "STRHUS",
+    "name" : "Streatham Hill Up Siding",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

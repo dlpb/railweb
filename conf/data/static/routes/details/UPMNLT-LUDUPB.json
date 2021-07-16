@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.559066,
+    "lon" : 0.25156003,
+    "id" : "UPMNLT",
+    "name" : "Upminster Underground",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 51.55847,
+    "lon" : 0.23509,
+    "id" : "LUDUPB",
+    "name" : "Upminster Bridge",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

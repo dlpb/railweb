@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.388655,
+    "lon" : -1.4779879,
+    "id" : "STYSHA",
+    "name" : "Shalesmoor",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 53.384709,
+    "lon" : -1.4825383,
+    "id" : "STYNER",
+    "name" : "Netherthorpe Road",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

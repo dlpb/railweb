@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.443595,
+    "lon" : -0.33893136,
+    "id" : "STRW91",
+    "name" : "Strawberry Hill Sig. F91",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.449219,
+    "lon" : -0.33282677,
+    "id" : "TWCKNMJ",
+    "name" : "Twickenham Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

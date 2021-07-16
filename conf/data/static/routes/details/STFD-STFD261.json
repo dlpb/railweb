@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.5422,
+    "lon" : -0.0033,
+    "id" : "STFD",
+    "name" : "Stratford (London)",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.546369,
+    "lon" : -0.0037921178,
+    "id" : "STFD261",
+    "name" : "Stratford Signal L261",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

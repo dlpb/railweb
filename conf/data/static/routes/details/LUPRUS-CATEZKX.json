@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.523243,
+    "lon" : -0.124336,
+    "id" : "LUPRUS",
+    "name" : "Russell Square",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.5302,
+    "lon" : -0.1241,
+    "id" : "CATEZKX",
+    "name" : "Kings Cross Und",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

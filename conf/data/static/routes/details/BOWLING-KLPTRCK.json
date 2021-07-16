@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.931067,
+    "lon" : -4.4925919,
+    "id" : "BOWLING",
+    "name" : "Bowling",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.924013,
+    "lon" : -4.4526961,
+    "id" : "KLPTRCK",
+    "name" : "Kilpatrick",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

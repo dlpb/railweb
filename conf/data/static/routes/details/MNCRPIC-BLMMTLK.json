@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 53.477002,
+    "lon" : -2.2301094,
+    "id" : "MNCRPIC",
+    "name" : "Manchester Piccadilly",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.4326,
+    "lon" : -2.2699,
+    "id" : "BLMMTLK",
+    "name" : "Barlow M Rd Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "34 MINUTES"
+}, {
+  "from" : {
+    "lat" : 53.477002,
+    "lon" : -2.2301094,
+    "id" : "MNCRPIC",
+    "name" : "Manchester Piccadilly",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.4326,
+    "lon" : -2.2699,
+    "id" : "BLMMTLK",
+    "name" : "Barlow M Rd Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "37 MINUTES"
+} ]

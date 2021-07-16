@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.542055,
+    "lon" : -0.012388611,
+    "id" : "CHNELSJ",
+    "name" : "Channelsea Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.5422,
+    "lon" : -0.0033,
+    "id" : "STFD",
+    "name" : "Stratford (London)",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

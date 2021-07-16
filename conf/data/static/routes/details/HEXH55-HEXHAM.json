@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.972579,
+    "lon" : -2.0924024,
+    "id" : "HEXH55",
+    "name" : "Hexham Sig He55 Rev",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.973547,
+    "lon" : -2.0948573,
+    "id" : "HEXHAM",
+    "name" : "Hexham",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.913044,
+    "lon" : -1.3915347,
+    "id" : "NTHMRCL",
+    "name" : "Northam Depot Recept Line",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.921803,
+    "lon" : -1.3881057,
+    "id" : "STDENYS",
+    "name" : "St Denys",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

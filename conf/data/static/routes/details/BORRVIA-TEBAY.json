@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.406823,
+    "lon" : -2.6042002,
+    "id" : "BORRVIA",
+    "name" : "Borrow Brook Viaduct",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.426894,
+    "lon" : -2.5982993,
+    "id" : "TEBAY",
+    "name" : "Tebay",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

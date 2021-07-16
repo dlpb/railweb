@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.903606,
+    "lon" : -1.1769789,
+    "id" : "NTL2CLC",
+    "name" : "Clifton Centre",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 52.906883,
+    "lon" : -1.1769789,
+    "id" : "NTL2RIV",
+    "name" : "Rivergreen",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

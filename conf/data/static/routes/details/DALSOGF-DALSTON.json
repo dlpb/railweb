@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.845774,
+    "lon" : -2.9927355,
+    "id" : "DALSOGF",
+    "name" : "Dalston Oil Terminal(Gf)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.846121,
+    "lon" : -2.988835,
+    "id" : "DALSTON",
+    "name" : "Dalston",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

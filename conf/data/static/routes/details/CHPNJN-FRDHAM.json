@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.264774,
+    "lon" : 0.42908815,
+    "id" : "CHPNJN",
+    "name" : "Chippenham Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.303386,
+    "lon" : 0.37032647,
+    "id" : "FRDHAM",
+    "name" : "Fordham",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.398661,
+    "lon" : -1.3070486,
+    "id" : "NEWBRYR",
+    "name" : "Newbury Racecourse",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.397479,
+    "lon" : -1.323223,
+    "id" : "NEWBURY",
+    "name" : "Newbury",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

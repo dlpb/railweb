@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.509749,
+    "lon" : -0.091125012,
+    "id" : "CANONST",
+    "name" : "London Cannon Street",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.510165,
+    "lon" : -0.085991,
+    "id" : "LUCMOL",
+    "name" : "Monument (Lul)",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.146814,
+    "lon" : 0.86568016,
+    "id" : "ASHFKY",
+    "name" : "Ashford International",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.20084,
+    "lon" : 0.76418039,
+    "id" : "CRNGX",
+    "name" : "Charing Crossover (Ctrl)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

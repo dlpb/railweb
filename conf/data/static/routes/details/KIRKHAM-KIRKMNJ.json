@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.786968,
+    "lon" : -2.8816973,
+    "id" : "KIRKHAM",
+    "name" : "Kirkham & Wesham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.788462,
+    "lon" : -2.8959664,
+    "id" : "KIRKMNJ",
+    "name" : "Kirkham North Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

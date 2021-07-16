@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.497749,
+    "lon" : -0.10531328,
+    "id" : "LRDDEAC",
+    "name" : "London Road Depot",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 51.533992,
+    "lon" : -0.20561817,
+    "id" : "QPRK",
+    "name" : "Queens Park (London)",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

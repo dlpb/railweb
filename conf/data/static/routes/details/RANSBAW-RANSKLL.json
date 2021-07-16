@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.448151,
+    "lon" : -1.0271157,
+    "id" : "RANSBAW",
+    "name" : "Bawtry Crossover",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.377062,
+    "lon" : -1.0047748,
+    "id" : "RANSKLL",
+    "name" : "Ranskill Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

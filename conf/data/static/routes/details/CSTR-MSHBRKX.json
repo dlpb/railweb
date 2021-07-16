@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.537393,
+    "lon" : -2.8036054,
+    "id" : "CSTR",
+    "name" : "Church Stretton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.503687,
+    "lon" : -2.8235862,
+    "id" : "MSHBRKX",
+    "name" : "Marsh Brook Level Crossing",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "70-90"
+} ]

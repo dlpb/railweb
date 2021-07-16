@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.992879,
+    "lon" : -0.73555936,
+    "id" : "BLTCSOF",
+    "name" : "Bletchley Smt Of Flyover",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.988664,
+    "lon" : -0.74923646,
+    "id" : "BLTCWER",
+    "name" : "Bletchley Water Eaton Rd",
+    "type" : "Point"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

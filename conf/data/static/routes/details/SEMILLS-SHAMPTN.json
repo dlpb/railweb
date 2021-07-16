@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.479472,
+    "lon" : -2.6495963,
+    "id" : "SEMILLS",
+    "name" : "Sea Mills",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.484251,
+    "lon" : -2.6790143,
+    "id" : "SHAMPTN",
+    "name" : "Shirehampton",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "15-50"
+} ]

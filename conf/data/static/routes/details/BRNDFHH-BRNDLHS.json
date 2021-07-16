@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.49889,
+    "lon" : -2.2914467,
+    "id" : "BRNDFHH",
+    "name" : "Brindle Heath R.T.S. Flhh",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.503008,
+    "lon" : -2.2944299,
+    "id" : "BRNDLHS",
+    "name" : "Brindle Heath Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

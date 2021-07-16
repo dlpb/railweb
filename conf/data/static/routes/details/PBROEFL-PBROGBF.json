@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.583461,
+    "lon" : -0.25534404,
+    "id" : "PBROEFL",
+    "name" : "P'boro Eastfield Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.589897,
+    "lon" : -0.25947296,
+    "id" : "PBROGBF",
+    "name" : "Peterboro Maint Shed Gbrf",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

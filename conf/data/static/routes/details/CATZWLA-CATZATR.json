@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.3431,
+    "lon" : -8.4714,
+    "id" : "CATZWLA",
+    "name" : "Woodlawn    (Cie",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.300833,
+    "lon" : -8.749722,
+    "id" : "CATZATR",
+    "name" : "Athenry     (Cie",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.068203,
+    "lon" : -3.4520954,
+    "id" : "DNFRMLE",
+    "name" : "Dunfermline Town",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.080313,
+    "lon" : -3.4213778,
+    "id" : "DNFRMQM",
+    "name" : "Dunfermline Queen Margaret",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.413623,
+    "lon" : -4.0812267,
+    "id" : "ABRYSTH",
+    "name" : "Aberystwyth",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.405748,
+    "lon" : -4.061228,
+    "id" : "HWLBA",
+    "name" : "Llanbadarn",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

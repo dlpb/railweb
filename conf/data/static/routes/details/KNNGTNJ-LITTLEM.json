@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.724021,
+    "lon" : -1.2473626,
+    "id" : "KNNGTNJ",
+    "name" : "Kennington Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.720039,
+    "lon" : -1.2280594,
+    "id" : "LITTLEM",
+    "name" : "Littlemore",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

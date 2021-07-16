@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.475572,
+    "lon" : -3.1794772,
+    "id" : "CRDFCEN",
+    "name" : "Cardiff Central",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.476157,
+    "lon" : -3.1749997,
+    "id" : "CRDFE",
+    "name" : "Cardiff East",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

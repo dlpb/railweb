@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.088144,
+    "lon" : -2.4318491,
+    "id" : "CREWE",
+    "name" : "Crewe",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.082019,
+    "lon" : -2.4279809,
+    "id" : "CREWLNW",
+    "name" : "Crewe C.S. (L&Nwr Site)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

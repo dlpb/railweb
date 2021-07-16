@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.547339,
+    "lon" : -0.063230209,
+    "id" : "NAVRDJ",
+    "name" : "Navarino Road Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.545243,
+    "lon" : -0.05883388,
+    "id" : "RDGLNJ",
+    "name" : "Reading Lane Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "NONE",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

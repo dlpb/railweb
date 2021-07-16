@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.1808,
+    "lon" : -3.3301,
+    "id" : "WATCHET",
+    "name" : "Watchet Bus",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.1618,
+    "lon" : -3.369,
+    "id" : "HWSWAS",
+    "name" : "Washford",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

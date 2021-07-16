@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.711448,
+    "lon" : -1.154971,
+    "id" : "SMALBRK",
+    "name" : "Smallbrook Junction",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.695849,
+    "lon" : -1.182244,
+    "id" : "HIOWSRASH",
+    "name" : "Ashey",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

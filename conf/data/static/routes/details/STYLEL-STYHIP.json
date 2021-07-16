@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.412,
+    "lon" : -1.503,
+    "id" : "STYLEL",
+    "name" : "Leppings Lane",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 53.408,
+    "lon" : -1.5014,
+    "id" : "STYHIP",
+    "name" : "Hillsborough Park",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.644792,
+    "lon" : -0.38496505,
+    "id" : "BUSHEY",
+    "name" : "Bushey",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.62834933667867,
+    "lon" : -0.38593909666123744,
+    "id" : "CRPNDPK",
+    "name" : "Carpenders Park",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE/DC",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

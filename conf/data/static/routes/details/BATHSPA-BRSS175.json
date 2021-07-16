@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.378418,
+    "lon" : -2.372843,
+    "id" : "BATHSPA",
+    "name" : "Bath Spa",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.511587,
+    "lon" : -2.5614749,
+    "id" : "BRSS175",
+    "name" : "Bath Goods Sig. B175",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

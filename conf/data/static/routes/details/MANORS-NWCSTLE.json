@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.972739,
+    "lon" : -1.6054442,
+    "id" : "MANORS",
+    "name" : "Manors",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.968228,
+    "lon" : -1.6169534,
+    "id" : "NWCSTLE",
+    "name" : "Newcastle",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

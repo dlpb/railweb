@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.533894,
+    "lon" : -0.89955586,
+    "id" : "HNLYOT",
+    "name" : "Henley-On-Thames",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.510818,
+    "lon" : -0.88211353,
+    "id" : "SHPLAKE",
+    "name" : "Shiplake",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

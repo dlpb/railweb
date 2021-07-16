@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.596653,
+    "lon" : -3.6426121,
+    "id" : "GRTHMG",
+    "name" : "Garth (Mid Glamorgan)",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.605207,
+    "lon" : -3.6482207,
+    "id" : "MAESTER",
+    "name" : "Maesteg (Ewenny Road)",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

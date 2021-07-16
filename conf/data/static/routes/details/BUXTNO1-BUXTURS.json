@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.263018,
+    "lon" : -1.9092157,
+    "id" : "BUXTNO1",
+    "name" : "Buxton S.B.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.265461,
+    "lon" : -1.9070367,
+    "id" : "BUXTURS",
+    "name" : "Buxton Urs",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

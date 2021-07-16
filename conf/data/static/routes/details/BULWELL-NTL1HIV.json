@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.999428,
+    "lon" : -1.1954457,
+    "id" : "BULWELL",
+    "name" : "Bulwell",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.989704,
+    "lon" : -1.190075,
+    "id" : "NTL1HIV",
+    "name" : "Highbury Vale",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

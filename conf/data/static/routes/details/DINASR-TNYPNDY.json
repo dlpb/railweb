@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.617328,
+    "lon" : -3.436904,
+    "id" : "DINASR",
+    "name" : "Dinas Rhondda",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.61976,
+    "lon" : -3.4489414,
+    "id" : "TNYPNDY",
+    "name" : "Tonypandy",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "45-75"
+} ]

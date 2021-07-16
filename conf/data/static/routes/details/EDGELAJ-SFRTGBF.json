@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.450028,
+    "lon" : -3.006158,
+    "id" : "EDGELAJ",
+    "name" : "Edge Lane Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.465831,
+    "lon" : -3.0050857,
+    "id" : "SFRTGBF",
+    "name" : "Seaforth C.T. (Gbrf)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

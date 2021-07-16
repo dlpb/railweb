@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.210052,
+    "lon" : -1.4963866,
+    "id" : "ANDOLSB",
+    "name" : "Ludgershall Brnch Stp Brd",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.211441,
+    "lon" : -1.4930644,
+    "id" : "ANDOVER",
+    "name" : "Andover",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

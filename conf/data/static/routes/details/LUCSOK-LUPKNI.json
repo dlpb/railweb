@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.494066,
+    "lon" : -0.172791,
+    "id" : "LUCSOK",
+    "name" : "South Kensington",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.50169,
+    "lon" : -0.1603,
+    "id" : "LUPKNI",
+    "name" : "Knightsbridge",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

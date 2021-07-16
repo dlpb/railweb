@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.343333,
+    "lon" : -6.464167,
+    "id" : "WEXFDOH",
+    "name" : "Wexford     (Cie",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.2718,
+    "lon" : -6.3915,
+    "id" : "CATZRSS",
+    "name" : "Rosslare Strand (Cie",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

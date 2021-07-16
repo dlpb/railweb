@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.691263,
+    "lon" : -3.668928,
+    "id" : "CRSTRS",
+    "name" : "Carstairs",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.690503,
+    "lon" : -3.7322138,
+    "id" : "LANARKJ",
+    "name" : "Lanark Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "120-125"
+} ]

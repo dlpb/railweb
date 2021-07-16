@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.936529,
+    "lon" : -2.2645443,
+    "id" : "GISBTNL",
+    "name" : "Gisburn Tunnel",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.010458,
+    "lon" : -2.2269574,
+    "id" : "HELIFLD",
+    "name" : "Hellifield",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

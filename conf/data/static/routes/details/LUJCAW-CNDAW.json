@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.50362,
+    "lon" : -0.01987,
+    "id" : "LUJCAW",
+    "name" : "Canary Wharf",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.498333,
+    "lon" : -0.05,
+    "id" : "CNDAW",
+    "name" : "Canada Water",
+    "type" : "Station"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

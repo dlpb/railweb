@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.157817,
+    "lon" : -2.1923555,
+    "id" : "CONGLTN",
+    "name" : "Congleton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.259242,
+    "lon" : -2.1219065,
+    "id" : "MACLSFD",
+    "name" : "Macclesfield",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

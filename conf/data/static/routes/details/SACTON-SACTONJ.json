@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.499523,
+    "lon" : -0.27019253,
+    "id" : "SACTON",
+    "name" : "South Acton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.499022,
+    "lon" : -0.27097508,
+    "id" : "SACTONJ",
+    "name" : "South Acton Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

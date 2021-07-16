@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.918982,
+    "lon" : -3.2641716,
+    "id" : "KNGW",
+    "name" : "Kingsknowe",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.91446,
+    "lon" : -3.2834479,
+    "id" : "WHAILES",
+    "name" : "Wester Hailes",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

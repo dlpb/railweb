@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.327498,
+    "lon" : -1.5153442,
+    "id" : "DORE",
+    "name" : "Dore",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.333503,
+    "lon" : -1.5110715,
+    "id" : "DORESNJ",
+    "name" : "Dore Station Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

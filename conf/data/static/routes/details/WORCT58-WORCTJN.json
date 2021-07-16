@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.200058,
+    "lon" : -2.2080721,
+    "id" : "WORCT58",
+    "name" : "Worcester Tun Jn Sig 58",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.201147,
+    "lon" : -2.2074919,
+    "id" : "WORCTJN",
+    "name" : "Tunnel Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

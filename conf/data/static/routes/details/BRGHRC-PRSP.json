@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.83444,
+    "lon" : -0.14386212,
+    "id" : "BRGHRC",
+    "name" : "Brighton Reception Road",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.846178,
+    "lon" : -0.15530039,
+    "id" : "PRSP",
+    "name" : "Preston Park",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

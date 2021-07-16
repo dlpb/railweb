@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.194753,
+    "lon" : -0.60105785,
+    "id" : "HYKEHAM",
+    "name" : "Hykeham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.187779,
+    "lon" : -0.65191685,
+    "id" : "SWNDTHO",
+    "name" : "Thorpe-On-The-Hill",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

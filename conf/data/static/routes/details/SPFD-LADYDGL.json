@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.295094,
+    "lon" : -3.0525323,
+    "id" : "SPFD",
+    "name" : "Springfield",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.279415,
+    "lon" : -3.1191292,
+    "id" : "LADYDGL",
+    "name" : "Ladybank D.G.L.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

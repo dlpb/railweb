@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.938947,
+    "lon" : -2.3501271,
+    "id" : "CAARMNT",
+    "name" : "Carmont",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.96666,
+    "lon" : -2.2256908,
+    "id" : "SHVN",
+    "name" : "Stonehaven",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

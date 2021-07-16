@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.557474,
+    "lon" : -0.35941052,
+    "id" : "NTHOLTP",
+    "name" : "Northolt Park",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.557018,
+    "lon" : -0.3992845,
+    "id" : "SRUISLP",
+    "name" : "South Ruislip",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

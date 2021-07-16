@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.451373,
+    "lon" : -2.0987008E-4,
+    "id" : "HTHRGRN",
+    "name" : "Hither Green",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.447634,
+    "lon" : 0.0033254263,
+    "id" : "LEESPRJ",
+    "name" : "Lee Spur Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

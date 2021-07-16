@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.737856,
+    "lon" : -2.00965,
+    "id" : "HBDNBDG",
+    "name" : "Hebden Bridge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.736696,
+    "lon" : -2.0063601,
+    "id" : "HBDNURS",
+    "name" : "Hebden Bridge U R S",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

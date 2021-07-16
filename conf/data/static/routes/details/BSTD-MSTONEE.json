@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.275908,
+    "lon" : 0.57764269,
+    "id" : "BSTD",
+    "name" : "Bearsted",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.277707,
+    "lon" : 0.52024164,
+    "id" : "MSTONEE",
+    "name" : "Maidstone East",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "70-90"
+} ]

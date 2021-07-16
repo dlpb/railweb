@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.361676,
+    "lon" : -0.45679378,
+    "id" : "WEYBDGE",
+    "name" : "Weybridge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.372792,
+    "lon" : -0.41442427,
+    "id" : "WONT",
+    "name" : "Walton-On-Thames",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

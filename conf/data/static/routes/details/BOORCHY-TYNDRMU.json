@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.516153,
+    "lon" : -4.7642005,
+    "id" : "BOORCHY",
+    "name" : "Bridge Of Orchy",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.434586,
+    "lon" : -4.7038782,
+    "id" : "TYNDRMU",
+    "name" : "Upper Tyndrum",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

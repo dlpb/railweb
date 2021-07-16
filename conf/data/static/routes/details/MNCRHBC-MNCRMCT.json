@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.4741,
+    "lon" : -2.2908,
+    "id" : "MNCRHBC",
+    "name" : "Harbour Cty Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.4719,
+    "lon" : -2.2978,
+    "id" : "MNCRMCT",
+    "name" : "Media City Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

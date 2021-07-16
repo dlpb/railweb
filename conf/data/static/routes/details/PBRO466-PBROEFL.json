@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.569148,
+    "lon" : -0.24618819,
+    "id" : "PBRO466",
+    "name" : "Peterborough Signal 466",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.583461,
+    "lon" : -0.25534404,
+    "id" : "PBROEFL",
+    "name" : "P'boro Eastfield Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

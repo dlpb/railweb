@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.516374,
+    "lon" : -0.27498786,
+    "id" : "ACTONTC",
+    "name" : "Acton T.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.514858,
+    "lon" : -0.28631553,
+    "id" : "ACTONW",
+    "name" : "Acton West",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

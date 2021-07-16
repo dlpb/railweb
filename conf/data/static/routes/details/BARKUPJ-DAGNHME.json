@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.537426,
+    "lon" : 0.087412551,
+    "id" : "BARKUPJ",
+    "name" : "Barking Upney Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.543982,
+    "lon" : 0.16527563,
+    "id" : "DAGNHME",
+    "name" : "Dagenham East",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

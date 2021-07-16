@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.8879418580705,
+    "lon" : -3.8877110444554175,
+    "id" : "CLDRCRX",
+    "name" : "Caldercruix",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.866085,
+    "lon" : -3.9539647,
+    "id" : "DRMGLCH",
+    "name" : "Drumgelloch",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

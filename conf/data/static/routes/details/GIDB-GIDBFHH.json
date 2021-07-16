@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.474545,
+    "lon" : -2.1132433,
+    "id" : "GIDB",
+    "name" : "Guide Bridge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.475026,
+    "lon" : -2.1085439,
+    "id" : "GIDBFHH",
+    "name" : "Guide Bridge Yard (Flhh)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

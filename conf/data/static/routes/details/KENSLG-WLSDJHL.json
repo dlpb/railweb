@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.530598,
+    "lon" : -0.22426356,
+    "id" : "KENSLG",
+    "name" : "Kensal Green",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.5324947720042,
+    "lon" : -0.24454788456345455,
+    "id" : "WLSDJHL",
+    "name" : "Willesden Junction",
+    "type" : "Station"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

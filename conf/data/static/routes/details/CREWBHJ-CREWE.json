@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.063644,
+    "lon" : -2.4179946,
+    "id" : "CREWBHJ",
+    "name" : "Crewe Basford Hall Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.088144,
+    "lon" : -2.4318491,
+    "id" : "CREWE",
+    "name" : "Crewe",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

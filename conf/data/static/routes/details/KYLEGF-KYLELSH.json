@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.28291,
+    "lon" : -5.7152912,
+    "id" : "KYLEGF",
+    "name" : "Kyle Of Lochalsh G.F.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 57.280595,
+    "lon" : -5.7139122,
+    "id" : "KYLELSH",
+    "name" : "Kyle Of Lochalsh",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

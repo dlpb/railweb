@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.315092,
+    "lon" : -0.94812569,
+    "id" : "RTFD",
+    "name" : "Retford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.326244,
+    "lon" : -0.96219031,
+    "id" : "RTFDCRX",
+    "name" : "Retford Crossover",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

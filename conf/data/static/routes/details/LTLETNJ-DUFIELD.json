@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.961923,
+    "lon" : -1.4649668,
+    "id" : "LTLETNJ",
+    "name" : "Little Eaton Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.985237,
+    "lon" : -1.4842963,
+    "id" : "DUFIELD",
+    "name" : "Duffield",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

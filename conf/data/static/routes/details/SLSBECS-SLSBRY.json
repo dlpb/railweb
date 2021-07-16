@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.072371,
+    "lon" : -1.800099,
+    "id" : "SLSBECS",
+    "name" : "Salisbury East C.H.S.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.074893,
+    "lon" : -1.7977473,
+    "id" : "SLSBRY",
+    "name" : "Salisbury",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

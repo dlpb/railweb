@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.4845,
+    "lon" : -1.90032,
+    "id" : "WMTWBUS",
+    "name" : "Bull Street",
+    "type" : "Metro"
+  },
+  "to" : {
+    "lat" : 52.48716,
+    "lon" : -1.9047,
+    "id" : "WMTWSTC",
+    "name" : "St Chads",
+    "type" : "Metro"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Metro",
+  "speed" : "OHLE"
+} ]

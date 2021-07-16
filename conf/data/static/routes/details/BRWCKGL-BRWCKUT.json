@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.777328,
+    "lon" : -2.0080887,
+    "id" : "BRWCKGL",
+    "name" : "Berwick Upon Tweed Gds Lp",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.774336,
+    "lon" : -2.010798,
+    "id" : "BRWCKUT",
+    "name" : "Berwick-Upon-Tweed",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

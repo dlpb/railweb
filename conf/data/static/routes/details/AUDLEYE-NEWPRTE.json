@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.004487,
+    "lon" : 0.20708946,
+    "id" : "AUDLEYE",
+    "name" : "Audley End",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.979802,
+    "lon" : 0.21529741,
+    "id" : "NEWPRTE",
+    "name" : "Newport (Essex)",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

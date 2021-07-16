@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.614924,
+    "lon" : -4.5077411,
+    "id" : "KILMLTC",
+    "name" : "Kilmarnock Long Lyes T.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.612701,
+    "lon" : -4.4999764,
+    "id" : "KILMRNK",
+    "name" : "Kilmarnock",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

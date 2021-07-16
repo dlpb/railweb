@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.055929,
+    "lon" : -0.13721699,
+    "id" : "BALCOMB",
+    "name" : "Balcombe",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.016684,
+    "lon" : -0.10542763,
+    "id" : "CPYHLDJ",
+    "name" : "Copyhold Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

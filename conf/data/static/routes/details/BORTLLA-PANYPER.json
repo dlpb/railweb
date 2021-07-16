@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.462866,
+    "lon" : -4.0244747,
+    "id" : "BORTLLA",
+    "name" : "Llandre",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.458078,
+    "lon" : -4.024255,
+    "id" : "PANYPER",
+    "name" : "Pant-Y-Peron",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

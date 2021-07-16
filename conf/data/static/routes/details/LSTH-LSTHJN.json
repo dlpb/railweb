@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.724308,
+    "lon" : -2.6871206,
+    "id" : "LSTH",
+    "name" : "Lostock Hall",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.725744,
+    "lon" : -2.6811574,
+    "id" : "LSTHJN",
+    "name" : "Lostock Hall Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 53.488018,
+    "lon" : -2.2412763,
+    "id" : "MNCRVIC",
+    "name" : "Manchester Victoria",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.4387,
+    "lon" : -2.2654,
+    "id" : "MNCRSWM",
+    "name" : "St Werburgh Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "42 MINUTES"
+}, {
+  "from" : {
+    "lat" : 53.488018,
+    "lon" : -2.2412763,
+    "id" : "MNCRVIC",
+    "name" : "Manchester Victoria",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.4387,
+    "lon" : -2.2654,
+    "id" : "MNCRSWM",
+    "name" : "St Werburgh Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "45 MINUTES"
+} ]

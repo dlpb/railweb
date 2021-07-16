@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.242895,
+    "lon" : -3.3580226,
+    "id" : "SILCWIT",
+    "name" : "Whitbeck",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.226291,
+    "lon" : -3.3350198,
+    "id" : "SILCRFT",
+    "name" : "Silecroft",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

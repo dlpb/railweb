@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.830713,
+    "lon" : -0.64016831,
+    "id" : "BRHM",
+    "name" : "Barnham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.83098,
+    "lon" : -0.64308574,
+    "id" : "BRHMUS",
+    "name" : "Barnham Up Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

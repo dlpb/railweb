@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.840452,
+    "lon" : -2.4750164,
+    "id" : "HSTKIR",
+    "name" : "Kirkhaugh",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 54.815,
+    "lon" : -2.442,
+    "id" : "HSTALS",
+    "name" : "Alston",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.968726,
+    "lon" : -1.3499066,
+    "id" : "ELGH",
+    "name" : "Eastleigh",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.950187,
+    "lon" : -1.3635468,
+    "id" : "SOTPKWY",
+    "name" : "Southampton Airpt Parkway",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

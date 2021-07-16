@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.264012,
+    "lon" : -0.50341082,
+    "id" : "CLANDON",
+    "name" : "Clandon",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.279772,
+    "lon" : -0.43505004,
+    "id" : "HRSLEY",
+    "name" : "Horsley",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

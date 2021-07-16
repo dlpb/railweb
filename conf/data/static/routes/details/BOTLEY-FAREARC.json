@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.916572,
+    "lon" : -1.2596044,
+    "id" : "BOTLEY",
+    "name" : "Botley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.857748,
+    "lon" : -1.1951666,
+    "id" : "FAREARC",
+    "name" : "Fareham A.R.C. Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

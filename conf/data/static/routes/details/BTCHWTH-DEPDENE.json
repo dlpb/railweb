@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.247965,
+    "lon" : -0.26771215,
+    "id" : "BTCHWTH",
+    "name" : "Betchworth",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.238819,
+    "lon" : -0.32391196,
+    "id" : "DEPDENE",
+    "name" : "Dorking Deepdene",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

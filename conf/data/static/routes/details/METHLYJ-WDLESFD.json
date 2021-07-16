@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.730085,
+    "lon" : -1.4025343,
+    "id" : "METHLYJ",
+    "name" : "Methley Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.756615,
+    "lon" : -1.442821,
+    "id" : "WDLESFD",
+    "name" : "Woodlesford",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

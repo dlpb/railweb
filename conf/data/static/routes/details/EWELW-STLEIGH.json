@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.350215,
+    "lon" : -0.2570806,
+    "id" : "EWELW",
+    "name" : "Ewell West",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.363812,
+    "lon" : -0.24803176,
+    "id" : "STLEIGH",
+    "name" : "Stoneleigh",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

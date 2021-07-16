@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.034052,
+    "lon" : -2.2722673,
+    "id" : "GLHM",
+    "name" : "Gillingham (Dorset)",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.034052,
+    "lon" : -2.2722673,
+    "id" : "GLHM677",
+    "name" : "Gillingham Signal No.4677",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

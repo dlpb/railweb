@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.568679,
+    "lon" : -3.0071429,
+    "id" : "EBBWJ",
+    "name" : "Ebbw Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.568806,
+    "lon" : -3.0070447,
+    "id" : "NWPT273",
+    "name" : "Newport Signal Nt1273",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

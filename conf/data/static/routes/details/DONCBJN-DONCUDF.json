@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.514742,
+    "lon" : -1.1399198,
+    "id" : "DONCBJN",
+    "name" : "Bridge Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.504591,
+    "lon" : -1.1235252,
+    "id" : "DONCUDF",
+    "name" : "Doncaster Up Decoy F'liner",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

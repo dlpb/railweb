@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.8968,
+    "lon" : -3.0395,
+    "id" : "BTPRSS",
+    "name" : "Rossall School",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 53.9039,
+    "lon" : -3.0322,
+    "id" : "BTPBRO",
+    "name" : "Broadwater",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

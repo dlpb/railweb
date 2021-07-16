@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.368536,
+    "lon" : -0.16652323,
+    "id" : "CRSHLTN",
+    "name" : "Carshalton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.377868,
+    "lon" : -0.15374959,
+    "id" : "HKBG",
+    "name" : "Hackbridge",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.204672,
+    "lon" : 0.40345072,
+    "id" : "BLTRNAB",
+    "name" : "Beltring",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.226715,
+    "lon" : 0.41219061,
+    "id" : "YALDING",
+    "name" : "Yalding",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.825006,
+    "lon" : -4.2874813,
+    "id" : "PLKSHWE",
+    "name" : "Pollokshaws East",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.829283,
+    "lon" : -4.2923632,
+    "id" : "SHWLNDS",
+    "name" : "Shawlands",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.964837,
+    "lon" : -1.0790622,
+    "id" : "CRTN",
+    "name" : "Carlton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.961409,
+    "lon" : -1.0797901,
+    "id" : "NTHRFLD",
+    "name" : "Netherfield",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "10 MINUTES"
+} ]

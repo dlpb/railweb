@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.55986,
+    "lon" : -2.5888545,
+    "id" : "ARBROTH",
+    "name" : "Arbroath",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.500602,
+    "lon" : -2.7058214,
+    "id" : "CNST",
+    "name" : "Carnoustie",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

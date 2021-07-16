@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.39597,
+    "lon" : -0.19942354,
+    "id" : "MORDENS",
+    "name" : "Morden South",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.403459,
+    "lon" : -0.20572865,
+    "id" : "SMERTON",
+    "name" : "South Merton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

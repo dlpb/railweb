@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.937402,
+    "lon" : -1.188184,
+    "id" : "NTL1UON",
+    "name" : "University Of Nottingham",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 52.932347,
+    "lon" : -1.202174,
+    "id" : "NTL1UNB",
+    "name" : "University Boulevard",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.911385,
+    "lon" : -1.4335878,
+    "id" : "MBRK",
+    "name" : "Millbrook (Hampshire)",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.913389,
+    "lon" : -1.4559528,
+    "id" : "SOTOMCT",
+    "name" : "Southampton M.C.T.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

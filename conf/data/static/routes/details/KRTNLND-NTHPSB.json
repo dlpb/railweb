@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.485487,
+    "lon" : -0.59324391,
+    "id" : "KRTNLND",
+    "name" : "Kirton Lindsey",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.45812,
+    "lon" : -0.63796264,
+    "id" : "NTHPSB",
+    "name" : "Northorpe S.B.",
+    "type" : "Point"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

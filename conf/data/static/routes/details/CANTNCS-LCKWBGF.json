@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.474392,
+    "lon" : -3.193932,
+    "id" : "CANTNCS",
+    "name" : "Cardiff Canton Sidings",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.47722,
+    "lon" : -3.2013785,
+    "id" : "LCKWBGF",
+    "name" : "Leckwith Bridge Grnd Frame",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

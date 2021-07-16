@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.480421,
+    "lon" : -4.3619395,
+    "id" : "LNTRAN",
+    "name" : "Lentran",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 57.484068,
+    "lon" : -4.4062214,
+    "id" : "CLUNSIB",
+    "name" : "Clunes I.B.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

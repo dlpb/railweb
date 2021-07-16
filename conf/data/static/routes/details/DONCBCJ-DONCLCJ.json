@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.497677,
+    "lon" : -1.0967139,
+    "id" : "DONCBCJ",
+    "name" : "Black Carr Jn (Doncaster)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.484152,
+    "lon" : -1.0735673,
+    "id" : "DONCLCJ",
+    "name" : "Loversall Carr Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

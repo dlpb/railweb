@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.75685774699433,
+    "lon" : -2.7081278479201925,
+    "id" : "PRST",
+    "name" : "Preston",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.758648,
+    "lon" : -2.707794,
+    "id" : "PRSTDSS",
+    "name" : "Preston Dock St Sdgs",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

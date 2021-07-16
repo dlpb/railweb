@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.673329,
+    "lon" : -2.4163279,
+    "id" : "MADEJN",
+    "name" : "Madeley Jn (Salop)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.665989,
+    "lon" : -2.3716764,
+    "id" : "SHIFNAL",
+    "name" : "Shifnal",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

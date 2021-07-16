@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.8616,
+    "lon" : -3.0489,
+    "id" : "BTPNON",
+    "name" : "Norbreck North",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 53.866,
+    "lon" : -3.0476,
+    "id" : "BTPLIB",
+    "name" : "Little Bispham",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

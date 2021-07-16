@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.8459,
+    "lon" : -1.9245,
+    "id" : "HWYDAM",
+    "name" : "Damems",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 53.85394,
+    "lon" : -1.91476,
+    "id" : "HWYINW",
+    "name" : "Ingrow West",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

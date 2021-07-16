@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.11685,
+    "lon" : -3.0371923,
+    "id" : "HOPC",
+    "name" : "Hope (Flintshire)",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.142611,
+    "lon" : -3.0548116,
+    "id" : "PNYF",
+    "name" : "Penyffordd",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

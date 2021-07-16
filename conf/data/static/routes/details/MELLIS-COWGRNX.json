@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.329502,
+    "lon" : 1.0800828,
+    "id" : "MELLIS",
+    "name" : "Mellis",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.251243,
+    "lon" : 1.0039379,
+    "id" : "COWGRNX",
+    "name" : "Cow Green Crossover",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

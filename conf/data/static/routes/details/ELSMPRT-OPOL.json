@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.282068,
+    "lon" : -2.8957751,
+    "id" : "ELSMPRT",
+    "name" : "Ellesmere Port",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.284066,
+    "lon" : -2.924946,
+    "id" : "OPOL",
+    "name" : "Overpool",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

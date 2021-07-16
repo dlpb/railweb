@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.505882,
+    "lon" : -0.44361307,
+    "id" : "STKYJN",
+    "name" : "Stockley Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.509098,
+    "lon" : -0.46310139,
+    "id" : "WDRYE",
+    "name" : "West Drayton East",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

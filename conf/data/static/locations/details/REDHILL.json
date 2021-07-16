@@ -1,0 +1,10 @@
+[ {
+  "id" : "REDHILL",
+  "crp" : "",
+  "route" : "South East",
+  "changeTime" : "Set(Some(ChangeTime(RDH,SN,SN,3,(Redhill))))",
+  "interchangeType" : "2 - Medium interchange point",
+  "county" : "South East",
+  "district" : "Surrey",
+  "postcode" : "\"RH1 1RB"
+} ]

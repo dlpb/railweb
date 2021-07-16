@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.580015,
+    "lon" : -0.23882047,
+    "id" : "HDON",
+    "name" : "Hendon",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.592424,
+    "lon" : -0.23643487,
+    "id" : "SLKSTRJ",
+    "name" : "Silkstream Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

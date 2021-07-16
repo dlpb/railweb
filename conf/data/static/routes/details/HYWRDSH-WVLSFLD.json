@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.005107,
+    "lon" : -0.10521517,
+    "id" : "HYWRDSH",
+    "name" : "Haywards Heath",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.963912,
+    "lon" : -0.12101909,
+    "id" : "WVLSFLD",
+    "name" : "Wivelsfield",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

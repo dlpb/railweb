@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.482111,
+    "lon" : -5.3329751,
+    "id" : "ACHHSHL",
+    "name" : "Achnashellach",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 57.505869,
+    "lon" : -5.2349784,
+    "id" : "GLCARON",
+    "name" : "Glencarron",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

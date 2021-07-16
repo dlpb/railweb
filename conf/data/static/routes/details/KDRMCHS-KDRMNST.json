@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.382762,
+    "lon" : -2.239196,
+    "id" : "KDRMCHS",
+    "name" : "Kidderminster C.H.S.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.384508,
+    "lon" : -2.2383974,
+    "id" : "KDRMNST",
+    "name" : "Kidderminster",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

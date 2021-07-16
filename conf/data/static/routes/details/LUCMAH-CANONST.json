@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.51256,
+    "lon" : -0.09397,
+    "id" : "LUCMAH",
+    "name" : "Mansion House",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.509749,
+    "lon" : -0.091125012,
+    "id" : "CANONST",
+    "name" : "London Cannon Street",
+    "type" : "Station"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

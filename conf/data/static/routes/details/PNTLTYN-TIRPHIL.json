@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.746687,
+    "lon" : -3.2794934,
+    "id" : "PNTLTYN",
+    "name" : "Pontlottyn",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.720901,
+    "lon" : -3.2458878,
+    "id" : "TIRPHIL",
+    "name" : "Tir-Phil",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "45-75"
+} ]

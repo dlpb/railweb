@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.009128,
+    "lon" : -1.4700639,
+    "id" : "KNRSBGH",
+    "name" : "Knaresborough",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.998995,
+    "lon" : -1.5006415,
+    "id" : "STARBCK",
+    "name" : "Starbeck",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

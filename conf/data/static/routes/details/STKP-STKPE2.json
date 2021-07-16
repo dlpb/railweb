@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.40541,
+    "lon" : -2.1634789,
+    "id" : "STKP",
+    "name" : "Stockport",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.401627,
+    "lon" : -2.1627575,
+    "id" : "STKPE2",
+    "name" : "Edgeley Jn No2",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

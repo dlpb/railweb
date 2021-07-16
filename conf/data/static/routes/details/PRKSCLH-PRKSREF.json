@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.943658,
+    "lon" : 1.2455617,
+    "id" : "PRKSCLH",
+    "name" : "Parkeston Carless Ref Hsht",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.943274,
+    "lon" : 1.2441368,
+    "id" : "PRKSREF",
+    "name" : "Harwich Refinery Crls Slvs",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

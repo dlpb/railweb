@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 51.238819,
+    "lon" : -0.32391196,
+    "id" : "DEPDENE",
+    "name" : "Dorking Deepdene",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.240894,
+    "lon" : -0.32376491,
+    "id" : "DORKING",
+    "name" : "Dorking",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "3 MINUTES"
+}, {
+  "from" : {
+    "lat" : 51.238819,
+    "lon" : -0.32391196,
+    "id" : "DEPDENE",
+    "name" : "Dorking Deepdene",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.240894,
+    "lon" : -0.32376491,
+    "id" : "DORKING",
+    "name" : "Dorking",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : " 3"
+} ]

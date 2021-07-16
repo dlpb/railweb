@@ -1,0 +1,58 @@
+[ {
+  "from" : {
+    "lat" : 51.5162,
+    "lon" : -0.1309,
+    "id" : "TOTCTRD",
+    "name" : "Tottenham Court Road Crossrail",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.506834,
+    "lon" : -0.12227171,
+    "id" : "CHRX",
+    "name" : "London Charing Cross",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "10 MINUTES"
+}, {
+  "from" : {
+    "lat" : 51.5162,
+    "lon" : -0.1309,
+    "id" : "TOTCTRD",
+    "name" : "Tottenham Court Road Crossrail",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.506834,
+    "lon" : -0.12227171,
+    "id" : "CHRX",
+    "name" : "London Charing Cross",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "20 MINUTES"
+}, {
+  "from" : {
+    "lat" : 51.5162,
+    "lon" : -0.1309,
+    "id" : "TOTCTRD",
+    "name" : "Tottenham Court Road Crossrail",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.506834,
+    "lon" : -0.12227171,
+    "id" : "CHRX",
+    "name" : "London Charing Cross",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "15 MINUTES"
+} ]

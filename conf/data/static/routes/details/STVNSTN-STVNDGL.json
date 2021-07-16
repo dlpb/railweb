@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.634276,
+    "lon" : -4.7500743,
+    "id" : "STVNSTN",
+    "name" : "Stevenston",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.634728,
+    "lon" : -4.7475317,
+    "id" : "STVNDGL",
+    "name" : "Stevenston D.G.L.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

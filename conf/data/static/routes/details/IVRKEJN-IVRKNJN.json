@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.041066,
+    "lon" : -3.3920835,
+    "id" : "IVRKEJN",
+    "name" : "Inverkeithing East Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.040282,
+    "lon" : -3.3962288,
+    "id" : "IVRKNJN",
+    "name" : "Inverkeithing North Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.620206,
+    "lon" : -1.2891496,
+    "id" : "MILTJN",
+    "name" : "Milton Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.621446,
+    "lon" : -1.3178176,
+    "id" : "STVTN",
+    "name" : "Steventon",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.5228,
+    "lon" : -7.346,
+    "id" : "CATZMUL",
+    "name" : "Mullingar   (Cie",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.6886,
+    "lon" : -7.6026,
+    "id" : "CATZMOM",
+    "name" : "Edgeworthstown (Cie)",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

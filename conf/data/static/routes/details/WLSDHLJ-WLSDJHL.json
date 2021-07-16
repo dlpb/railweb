@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.530931,
+    "lon" : -0.24401692,
+    "id" : "WLSDHLJ",
+    "name" : "Willesden Jn.H.L.Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.5324947720042,
+    "lon" : -0.24454788456345455,
+    "id" : "WLSDJHL",
+    "name" : "Willesden Junction",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

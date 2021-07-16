@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.398773,
+    "lon" : -2.2489822,
+    "id" : "NTHNSHJ",
+    "name" : "Sharston Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.398469,
+    "lon" : -2.2481081,
+    "id" : "STKPCVJ",
+    "name" : "Cheadle Village Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

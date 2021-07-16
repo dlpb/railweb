@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.024179,
+    "lon" : -1.4825351,
+    "id" : "BELPER",
+    "name" : "Belper",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.985237,
+    "lon" : -1.4842963,
+    "id" : "DUFIELD",
+    "name" : "Duffield",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

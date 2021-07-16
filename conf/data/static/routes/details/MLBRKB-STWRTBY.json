@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.054103,
+    "lon" : -0.53257764,
+    "id" : "MLBRKB",
+    "name" : "Millbrook (Bedfordshire)",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.069266,
+    "lon" : -0.52059848,
+    "id" : "STWRTBY",
+    "name" : "Stewartby",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

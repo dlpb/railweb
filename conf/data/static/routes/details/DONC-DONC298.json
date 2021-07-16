@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.521925,
+    "lon" : -1.1400911,
+    "id" : "DONC",
+    "name" : "Doncaster",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.523702,
+    "lon" : -1.1397534,
+    "id" : "DONC298",
+    "name" : "Doncaster Sig D298",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

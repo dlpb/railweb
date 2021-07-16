@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.348508,
+    "lon" : -1.1723864,
+    "id" : "DVNTYNJ",
+    "name" : "Daventry North Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.3702,
+    "lon" : -1.2265467,
+    "id" : "HMTNJ",
+    "name" : "Hillmorton Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 50.355688,
+    "lon" : -4.7045131,
+    "id" : "PARR",
+    "name" : "Par",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.355324490562595,
+    "lon" : -4.70467525004471,
+    "id" : "PARRSTA",
+    "name" : "Par Stn Bus Stop",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : " 4"
+}, {
+  "from" : {
+    "lat" : 50.355688,
+    "lon" : -4.7045131,
+    "id" : "PARR",
+    "name" : "Par",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.355324490562595,
+    "lon" : -4.70467525004471,
+    "id" : "PARRSTA",
+    "name" : "Par Stn Bus Stop",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "4 MINUTES"
+} ]

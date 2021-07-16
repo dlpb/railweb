@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.452902,
+    "lon" : -2.9947208,
+    "id" : "BOOTLNS",
+    "name" : "Bootle New Strand",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.446816,
+    "lon" : -2.9958133,
+    "id" : "BOOTLOR",
+    "name" : "Bootle Oriel Road",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

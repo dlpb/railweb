@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.881477,
+    "lon" : -4.3621246,
+    "id" : "ARDGAY",
+    "name" : "Ardgay",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 57.919269,
+    "lon" : -4.4042881,
+    "id" : "CULRAIN",
+    "name" : "Culrain",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

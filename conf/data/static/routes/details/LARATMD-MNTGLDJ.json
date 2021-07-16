@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.381509,
+    "lon" : -4.1036926,
+    "id" : "LARATMD",
+    "name" : "Laira T.& R.S.M.D.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.377696,
+    "lon" : -4.1081091,
+    "id" : "MNTGLDJ",
+    "name" : "Mount Gould Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.274128,
+    "lon" : -3.1215425,
+    "id" : "LADY668",
+    "name" : "Ladybank Sig 668",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.348165,
+    "lon" : -3.2500685,
+    "id" : "NBRG",
+    "name" : "Newburgh",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

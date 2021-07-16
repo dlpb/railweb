@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.539915,
+    "lon" : -0.0076220831,
+    "id" : "CARPNRC",
+    "name" : "Carpenters Road Curve",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.542055,
+    "lon" : -0.012388611,
+    "id" : "CHNELSJ",
+    "name" : "Channelsea Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "1",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

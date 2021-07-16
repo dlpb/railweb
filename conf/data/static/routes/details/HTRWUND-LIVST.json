@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 51.472267,
+    "lon" : -0.45087667,
+    "id" : "HTRWUND",
+    "name" : "Heathrow Underground",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.518944,
+    "lon" : -0.080939088,
+    "id" : "LIVST",
+    "name" : "London Liverpool Street",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "61 MINUTES"
+}, {
+  "from" : {
+    "lat" : 51.472267,
+    "lon" : -0.45087667,
+    "id" : "HTRWUND",
+    "name" : "Heathrow Underground",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.518944,
+    "lon" : -0.080939088,
+    "id" : "LIVST",
+    "name" : "London Liverpool Street",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "66 MINUTES"
+} ]

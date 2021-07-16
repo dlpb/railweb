@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.9166,
+    "lon" : -3.0206,
+    "id" : "BTPSTR",
+    "name" : "Stanley Road",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 53.9197,
+    "lon" : -3.0174,
+    "id" : "BTPFIW",
+    "name" : "Fishermans Walk",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

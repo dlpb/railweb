@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.223629,
+    "lon" : 0.158234,
+    "id" : "CAMBNTH",
+    "name" : "Cambridge North",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.262515,
+    "lon" : 0.19705007,
+    "id" : "WATBECH",
+    "name" : "Waterbeach",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

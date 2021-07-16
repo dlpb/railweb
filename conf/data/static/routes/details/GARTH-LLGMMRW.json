@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.133266,
+    "lon" : -3.5302588,
+    "id" : "GARTH",
+    "name" : "Garth (Powys)",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.114011,
+    "lon" : -3.5553469,
+    "id" : "LLGMMRW",
+    "name" : "Llangammarch",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

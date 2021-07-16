@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.384736,
+    "lon" : -0.26117309,
+    "id" : "MALDENM",
+    "name" : "Malden Manor",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.389082,
+    "lon" : -0.24205067,
+    "id" : "MOTSPJN",
+    "name" : "Motspur Park Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

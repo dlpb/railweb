@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.631799,
+    "lon" : -1.1237461,
+    "id" : "LESTER",
+    "name" : "Leicester",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.623402,
+    "lon" : -1.1298819,
+    "id" : "LESTRSJ",
+    "name" : "Leicester South Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

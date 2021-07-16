@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.853562,
+    "lon" : -4.3469677,
+    "id" : "CDNLJN",
+    "name" : "Cardonald Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.854211,
+    "lon" : -4.3548681,
+    "id" : "HLNGTNE",
+    "name" : "Hillington East",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "75-90"
+} ]

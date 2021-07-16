@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.296813,
+    "lon" : -0.7559782,
+    "id" : "FRBRMN",
+    "name" : "Farnborough (Main)",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.296616,
+    "lon" : -0.75857964,
+    "id" : "FRNBRCE",
+    "name" : "Farnborough Country End",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

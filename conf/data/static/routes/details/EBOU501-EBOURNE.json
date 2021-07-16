@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.769927,
+    "lon" : 0.28208214,
+    "id" : "EBOU501",
+    "name" : "Eastbourne Signal Eb501",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.769927,
+    "lon" : 0.28208214,
+    "id" : "EBOURNE",
+    "name" : "Eastbourne",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

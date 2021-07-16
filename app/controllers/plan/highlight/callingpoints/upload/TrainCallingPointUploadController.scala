@@ -8,7 +8,7 @@ import com.google.common.base.Charsets
 import com.google.common.io.BaseEncoding
 import javax.inject.Inject
 import models.auth.roles.PlanUser
-import models.location.MapLocation
+import models.location.Location
 import models.plan.highlight._
 import models.plan.timetable.trains.TrainTimetableService
 import models.srs.SrsService
@@ -110,7 +110,7 @@ class TrainCallingPointUploadController @Inject()(
                                 timetablesF: List[Future[Option[TimetableFound]]],
                                 errors: List[Throwable]) = {
     val locationsCalledAtF: List[Future[Option[LocationsCalledAtFromTimetable]]] = highlightTimetableService.getLocationsCalledAtFuture(timetablesF)
-    val mapLocationsCalledAt: List[MapLocation] = highlightTimetableService.getMapLocationsForLocationsCalledAt(locationsCalledAtF)
+    val mapLocationsCalledAt: List[Location] = highlightTimetableService.getMapLocationsForLocationsCalledAt(locationsCalledAtF)
 
     val trainDataPlanF: List[Future[Option[TrainPlanEntry]]] = highlightTimetableService.getTrainPlanEntriesFuture(locationsCalledAtF)
     val dataPlanEntriesF: Future[List[TrainPlanEntry]] = highlightTimetableService.getSortedTrainPlanEntries(trainDataPlanF)

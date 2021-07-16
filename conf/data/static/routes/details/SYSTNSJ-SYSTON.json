@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.694562,
+    "lon" : -1.0827021,
+    "id" : "SYSTNSJ",
+    "name" : "Syston South Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.694174,
+    "lon" : -1.0825327,
+    "id" : "SYSTON",
+    "name" : "Syston",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.953679,
+    "lon" : -1.5318372,
+    "id" : "PELAWMJ",
+    "name" : "Pelaw Metro Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.953256,
+    "lon" : -1.5365576,
+    "id" : "PELAW",
+    "name" : "Pelaw Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

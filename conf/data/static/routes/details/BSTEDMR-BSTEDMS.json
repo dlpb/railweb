@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.253738,
+    "lon" : 0.70846969,
+    "id" : "BSTEDMR",
+    "name" : "Bury St Edmunds Recp.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.253618,
+    "lon" : 0.71253593,
+    "id" : "BSTEDMS",
+    "name" : "Bury St Edmunds",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

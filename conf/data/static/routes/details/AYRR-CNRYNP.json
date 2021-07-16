@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.458234,
+    "lon" : -4.6257235,
+    "id" : "AYRR",
+    "name" : "Ayr",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.971,
+    "lon" : -5.018,
+    "id" : "CNRYNP",
+    "name" : "Cairnryan",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

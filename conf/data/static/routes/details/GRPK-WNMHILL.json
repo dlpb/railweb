@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.643086,
+    "lon" : -0.097049319,
+    "id" : "GRPK",
+    "name" : "Grange Park",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.63396,
+    "lon" : -0.10098613,
+    "id" : "WNMHILL",
+    "name" : "Winchmore Hill",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

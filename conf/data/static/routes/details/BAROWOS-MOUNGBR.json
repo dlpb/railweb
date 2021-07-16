@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.749337,
+    "lon" : -1.1452726,
+    "id" : "BAROWOS",
+    "name" : "Barrow Upon Soar",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.744709,
+    "lon" : -1.1293792,
+    "id" : "MOUNGBR",
+    "name" : "Mountsorell Gbrf",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

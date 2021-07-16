@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.285714,
+    "lon" : 0.43989201,
+    "id" : "EMALING",
+    "name" : "East Malling",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.29224,
+    "lon" : 0.41840669,
+    "id" : "WMALING",
+    "name" : "West Malling",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "70-90"
+} ]

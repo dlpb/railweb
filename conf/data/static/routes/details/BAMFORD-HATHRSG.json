@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.338907,
+    "lon" : -1.6887069,
+    "id" : "BAMFORD",
+    "name" : "Bamford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.32579,
+    "lon" : -1.6519137,
+    "id" : "HATHRSG",
+    "name" : "Hathersage",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.069652,
+    "lon" : -2.4223212,
+    "id" : "CREWBHN",
+    "name" : "Crewe Bas Hall S.S.N.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.08045,
+    "lon" : -2.4342352,
+    "id" : "CREWH36",
+    "name" : "Crewe Signal Bh36",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

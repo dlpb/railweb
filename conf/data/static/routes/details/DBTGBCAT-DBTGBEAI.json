@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.51388,
+    "lon" : 0.008876,
+    "id" : "DBTGBCAT",
+    "name" : "Canning Town",
+    "type" : "Light Rail"
+  },
+  "to" : {
+    "lat" : 51.509516,
+    "lon" : -0.002128,
+    "id" : "DBTGBEAI",
+    "name" : "East India",
+    "type" : "Light Rail"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Light Rail",
+  "speed" : "OHLE"
+} ]

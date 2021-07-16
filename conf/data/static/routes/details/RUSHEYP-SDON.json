@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.555752,
+    "lon" : -1.8070194,
+    "id" : "RUSHEYP",
+    "name" : "Rushey Platt",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.565714,
+    "lon" : -1.7856254,
+    "id" : "SDON",
+    "name" : "Swindon",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

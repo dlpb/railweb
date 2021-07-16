@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.45038,
+    "lon" : -0.99291898,
+    "id" : "RDNG804",
+    "name" : "Reading Sig T2804",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.454601,
+    "lon" : -0.99027866,
+    "id" : "REDGWST",
+    "name" : "Reading West",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

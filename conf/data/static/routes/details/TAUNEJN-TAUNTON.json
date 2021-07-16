@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.024587,
+    "lon" : -3.087401,
+    "id" : "TAUNEJN",
+    "name" : "Taunton East Jcn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.024852,
+    "lon" : -3.1239529,
+    "id" : "TAUNTON",
+    "name" : "Taunton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

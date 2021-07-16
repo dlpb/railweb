@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.747928,
+    "lon" : -0.73159234,
+    "id" : "GLBRDYK",
+    "name" : "Gilberdyke",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.764827,
+    "lon" : -0.86141564,
+    "id" : "HOWDEN",
+    "name" : "Howden",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.444415,
+    "lon" : -2.7758051,
+    "id" : "HNTL",
+    "name" : "Huntly",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 57.500479,
+    "lon" : -2.7783961,
+    "id" : "RTHIMAY",
+    "name" : "Rothmay",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

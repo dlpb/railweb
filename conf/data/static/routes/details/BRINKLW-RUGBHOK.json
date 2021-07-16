@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.421577,
+    "lon" : -1.3500813,
+    "id" : "BRINKLW",
+    "name" : "Brinklow",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.394961,
+    "lon" : -1.3050614,
+    "id" : "RUGBHOK",
+    "name" : "High Oaks Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

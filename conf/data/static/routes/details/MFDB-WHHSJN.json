@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.790353,
+    "lon" : -2.0373853,
+    "id" : "MFDB",
+    "name" : "Milford And Brocton",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.794127,
+    "lon" : -2.0639935,
+    "id" : "WHHSJN",
+    "name" : "Whitehouse Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

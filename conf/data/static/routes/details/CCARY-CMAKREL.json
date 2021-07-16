@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.099824,
+    "lon" : -2.5224231,
+    "id" : "CCARY",
+    "name" : "Castle Cary",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.055813,
+    "lon" : -2.6739679,
+    "id" : "CMAKREL",
+    "name" : "Charlton Mackrell",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

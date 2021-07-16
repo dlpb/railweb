@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.597847,
+    "lon" : -0.58989168,
+    "id" : "SCNTFOB",
+    "name" : "Scunthorpe F.O.B. Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.603658,
+    "lon" : -0.56228246,
+    "id" : "SCNTAPP",
+    "name" : "Appleby Lc",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

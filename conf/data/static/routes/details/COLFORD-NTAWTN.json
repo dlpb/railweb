@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.78792,
+    "lon" : -3.7393284,
+    "id" : "COLFORD",
+    "name" : "Coleford (Nr/Dr Boundary)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.784282,
+    "lon" : -3.8943088,
+    "id" : "NTAWTN",
+    "name" : "North Tawton",
+    "type" : "Point"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

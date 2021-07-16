@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.934361,
+    "lon" : -1.1847648,
+    "id" : "BESTNMC",
+    "name" : "Beeston Sims Mcintyre Ltd",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.925385,
+    "lon" : -1.1998978,
+    "id" : "BESTNSJ",
+    "name" : "Beeston South Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

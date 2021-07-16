@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.458234,
+    "lon" : -4.6257235,
+    "id" : "AYRR",
+    "name" : "Ayr",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.445091,
+    "lon" : -4.6219879,
+    "id" : "BELTLC",
+    "name" : "Belmont L.C. Ayrshire",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

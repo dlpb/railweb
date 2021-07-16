@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.453884,
+    "lon" : -0.10262491,
+    "id" : "HERNEH",
+    "name" : "Herne Hill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.44057,
+    "lon" : -0.091219329,
+    "id" : "WDULWCH",
+    "name" : "West Dulwich",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

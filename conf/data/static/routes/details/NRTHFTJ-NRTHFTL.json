@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.445895,
+    "lon" : 0.32406259,
+    "id" : "NRTHFTJ",
+    "name" : "Northfleet Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.445895,
+    "lon" : 0.32406259,
+    "id" : "NRTHFTL",
+    "name" : "Northfleet Lafarge",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

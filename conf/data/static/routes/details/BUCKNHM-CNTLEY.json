@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.596874,
+    "lon" : 1.4718228,
+    "id" : "BUCKNHM",
+    "name" : "Buckenham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.578741,
+    "lon" : 1.5132789,
+    "id" : "CNTLEY",
+    "name" : "Cantley",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

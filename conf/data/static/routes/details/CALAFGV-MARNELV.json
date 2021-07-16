@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.901561,
+    "lon" : 1.811651,
+    "id" : "CALAFGV",
+    "name" : "Calais Frethun",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 48.86996,
+    "lon" : 2.782514,
+    "id" : "MARNELV",
+    "name" : "Marne La Vallee",
+    "type" : "Location"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

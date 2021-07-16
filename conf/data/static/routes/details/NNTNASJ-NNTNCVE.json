@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.53736,
+    "lon" : -1.4812713,
+    "id" : "NNTNASJ",
+    "name" : "Ashby Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.522736,
+    "lon" : -1.4578176,
+    "id" : "NNTNCVE",
+    "name" : "Nuneaton Civil Engineers",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

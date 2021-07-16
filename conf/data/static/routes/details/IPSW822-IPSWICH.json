@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.05394,
+    "lon" : 1.1328292,
+    "id" : "IPSW822",
+    "name" : "Ipswich Signal Co.822",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.05059017669498,
+    "lon" : 1.1444255837190085,
+    "id" : "IPSWICH",
+    "name" : "Ipswich",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

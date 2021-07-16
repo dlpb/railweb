@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.672245,
+    "lon" : -4.098934,
+    "id" : "BYNEA",
+    "name" : "Bynea",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.691299,
+    "lon" : -4.0787777,
+    "id" : "LLGNNCH",
+    "name" : "Llangennech",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

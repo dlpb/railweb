@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.902328,
+    "lon" : -4.5008106,
+    "id" : "BISHPTN",
+    "name" : "Bishopton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.924664,
+    "lon" : -4.5864368,
+    "id" : "LGBK",
+    "name" : "Langbank",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "75-90"
+} ]

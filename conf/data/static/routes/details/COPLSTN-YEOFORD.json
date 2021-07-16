@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.814209,
+    "lon" : -3.7512072,
+    "id" : "COPLSTN",
+    "name" : "Copplestone",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.776662,
+    "lon" : -3.7265137,
+    "id" : "YEOFORD",
+    "name" : "Yeoford",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.93377,
+    "lon" : -2.280388,
+    "id" : "CHAT65",
+    "name" : "Chatburn Overbridge 65",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.878698,
+    "lon" : -2.3879209,
+    "id" : "CLITHJN",
+    "name" : "Horrocksford Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

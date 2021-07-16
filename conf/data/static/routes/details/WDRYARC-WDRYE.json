@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.506995,
+    "lon" : -0.44820062,
+    "id" : "WDRYARC",
+    "name" : "West Drayton A.R.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.509098,
+    "lon" : -0.46310139,
+    "id" : "WDRYE",
+    "name" : "West Drayton East",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

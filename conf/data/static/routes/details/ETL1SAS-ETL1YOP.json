@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.9543,
+    "lon" : -3.1921,
+    "id" : "ETL1SAS",
+    "name" : "St Andrew Square",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 55.956597,
+    "lon" : -3.188248,
+    "id" : "ETL1YOP",
+    "name" : "York Place",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

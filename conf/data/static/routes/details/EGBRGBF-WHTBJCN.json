@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.71176,
+    "lon" : -1.1347409,
+    "id" : "EGBRGBF",
+    "name" : "Eggborough P.S. (Gbrf)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.698982,
+    "lon" : -1.1514976,
+    "id" : "WHTBJCN",
+    "name" : "Eggboro' (Whitley Bdge Jn)",
+    "type" : "Point"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

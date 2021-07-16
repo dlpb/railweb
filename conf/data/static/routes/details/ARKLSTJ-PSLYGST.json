@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.854778,
+    "lon" : -4.3990036,
+    "id" : "ARKLSTJ",
+    "name" : "Arkleston Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.847382,
+    "lon" : -4.4246202,
+    "id" : "PSLYGST",
+    "name" : "Paisley Gilmour Street",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "75-90"
+} ]

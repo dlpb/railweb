@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.4748,
+    "lon" : -2.295,
+    "id" : "MNCRBWY",
+    "name" : "Broadway Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.4807,
+    "lon" : -2.2962,
+    "id" : "MNCRLWY",
+    "name" : "Langworthy Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

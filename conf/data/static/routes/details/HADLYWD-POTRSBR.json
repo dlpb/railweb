@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.668774,
+    "lon" : -0.17617582,
+    "id" : "HADLYWD",
+    "name" : "Hadley Wood",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.697633,
+    "lon" : -0.19324857,
+    "id" : "POTRSBR",
+    "name" : "Potters Bar",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

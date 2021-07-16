@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.7779,
+    "lon" : -3.056,
+    "id" : "BTPSTG",
+    "name" : "Starr Gate",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 53.7825,
+    "lon" : -3.058,
+    "id" : "BTPHAP",
+    "name" : "Harrow Place",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

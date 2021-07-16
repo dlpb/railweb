@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.883549,
+    "lon" : -2.3149359,
+    "id" : "GTHS",
+    "name" : "Grantshouse",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.882042,
+    "lon" : -2.3066755,
+    "id" : "GTHSCE",
+    "name" : "Grantshouse C.E.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

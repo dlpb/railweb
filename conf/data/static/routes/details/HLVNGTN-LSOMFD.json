@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.543837,
+    "lon" : -2.1436325,
+    "id" : "HLVNGTN",
+    "name" : "Hullavington",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.556224,
+    "lon" : -2.0479833,
+    "id" : "LSOMFD",
+    "name" : "Little Somerford",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

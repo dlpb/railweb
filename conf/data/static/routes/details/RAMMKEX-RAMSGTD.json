@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.341364,
+    "lon" : 1.406049,
+    "id" : "RAMMKEX",
+    "name" : "Rm Mk Ext Dept Margate End",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.342139,
+    "lon" : 1.4078587,
+    "id" : "RAMSGTD",
+    "name" : "Ramsgate E.M.U.D.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

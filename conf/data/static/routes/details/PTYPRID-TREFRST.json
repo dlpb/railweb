@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.598801,
+    "lon" : -3.3406938,
+    "id" : "PTYPRID",
+    "name" : "Pontypridd",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.59184,
+    "lon" : -3.3249267,
+    "id" : "TREFRST",
+    "name" : "Trefforest",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "45-75"
+} ]

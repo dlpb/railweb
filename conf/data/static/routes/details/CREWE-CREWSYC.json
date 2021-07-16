@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.088144,
+    "lon" : -2.4318491,
+    "id" : "CREWE",
+    "name" : "Crewe",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.079606,
+    "lon" : -2.4290616,
+    "id" : "CREWSYC",
+    "name" : "Crewe Coal Sidings (Drs)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.448348,
+    "lon" : 0.21693494,
+    "id" : "DARTWJN",
+    "name" : "Dartford West Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.4504,
+    "lon" : 0.21206882,
+    "id" : "DARTFDJ",
+    "name" : "Dartford Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

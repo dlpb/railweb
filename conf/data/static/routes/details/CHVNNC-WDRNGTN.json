@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.280885,
+    "lon" : -1.6548975,
+    "id" : "CHVNNC",
+    "name" : "Chevington Nrth Crossovers",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.241025,
+    "lon" : -1.6161301,
+    "id" : "WDRNGTN",
+    "name" : "Widdrington",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

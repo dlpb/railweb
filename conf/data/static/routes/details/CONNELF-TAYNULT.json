@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.452456,
+    "lon" : -5.3829337,
+    "id" : "CONNELF",
+    "name" : "Connel Ferry",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.430888,
+    "lon" : -5.2395843,
+    "id" : "TAYNULT",
+    "name" : "Taynuilt",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

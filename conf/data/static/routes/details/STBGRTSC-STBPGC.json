@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.375016,
+    "lon" : -1.4614968,
+    "id" : "STBGRTSC",
+    "name" : "Granville Road / The Sheffield College",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 53.370109,
+    "lon" : -1.4585236,
+    "id" : "STBPGC",
+    "name" : "Park Grange Croft",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

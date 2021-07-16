@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.59437,
+    "lon" : -0.28655,
+    "id" : "LUJQUE",
+    "name" : "Queensbury",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.6081,
+    "lon" : -0.29487,
+    "id" : "LUJCAP",
+    "name" : "Canons Park",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

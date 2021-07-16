@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.866915,
+    "lon" : -4.3028918,
+    "id" : "FNSTNWJ",
+    "name" : "Finnieston West Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.869823,
+    "lon" : -4.309298,
+    "id" : "PTCK",
+    "name" : "Partick",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

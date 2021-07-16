@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.7119,
+    "lon" : -6.333,
+    "id" : "CATZDRA",
+    "name" : "Drogheda    (Cie",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.35121,
+    "lon" : -6.250185,
+    "id" : "DUBLINC",
+    "name" : "Dublin Connolly (Cie)",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

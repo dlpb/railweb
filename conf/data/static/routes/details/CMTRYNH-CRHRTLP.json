@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.710344,
+    "lon" : -1.2224395,
+    "id" : "CMTRYNH",
+    "name" : "Cemetery North Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.693936,
+    "lon" : -1.2117376,
+    "id" : "CRHRTLP",
+    "name" : "Clarence Road Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

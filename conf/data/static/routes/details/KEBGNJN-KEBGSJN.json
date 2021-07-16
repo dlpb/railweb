@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.96249,
+    "lon" : -1.6153213,
+    "id" : "KEBGNJN",
+    "name" : "King Edward Bridge N. Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.959913,
+    "lon" : -1.61583,
+    "id" : "KEBGSJN",
+    "name" : "King Edward Bridge S. Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

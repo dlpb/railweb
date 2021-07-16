@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.219411,
+    "lon" : -3.0306978,
+    "id" : "DMARSHJ",
+    "name" : "Dee Marsh Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.218157,
+    "lon" : -3.0323001,
+    "id" : "HAWDNBG",
+    "name" : "Hawarden Bridge",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

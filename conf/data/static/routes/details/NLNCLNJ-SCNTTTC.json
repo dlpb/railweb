@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.595968,
+    "lon" : -0.61994874,
+    "id" : "NLNCLNJ",
+    "name" : "North Lincoln Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.595311,
+    "lon" : -0.62143585,
+    "id" : "SCNTTTC",
+    "name" : "Scunthorpe Trent T.C.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.445107,
+    "lon" : -2.5809906,
+    "id" : "BRSS533",
+    "name" : "Bristol Tm Sig 533",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.449221,
+    "lon" : -2.5799635,
+    "id" : "BRSTPL2",
+    "name" : "Bristol Tm Plat 2 Motorail",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

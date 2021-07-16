@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.690959,
+    "lon" : -1.3496706,
+    "id" : "BAGWTHJ",
+    "name" : "Bagworth Jcn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.693438,
+    "lon" : -1.336125,
+    "id" : "CLIFGBR",
+    "name" : "Cliffe Hill Stud Farm Gbrf",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.978235,
+    "lon" : -2.1050784,
+    "id" : "GRGRAVE",
+    "name" : "Gargrave",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.010458,
+    "lon" : -2.2269574,
+    "id" : "HELIFLD",
+    "name" : "Hellifield",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

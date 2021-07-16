@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.800834,
+    "lon" : -1.0683596,
+    "id" : "FRATTNE",
+    "name" : "Fratton East",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.827953,
+    "lon" : -1.0589884,
+    "id" : "HILSEA",
+    "name" : "Hilsea",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

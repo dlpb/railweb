@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.380324,
+    "lon" : -4.1385521,
+    "id" : "PLYM120",
+    "name" : "Plymouth Grnd Posn Sig 120",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.378154,
+    "lon" : -4.143068,
+    "id" : "PLYMTH",
+    "name" : "Plymouth",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

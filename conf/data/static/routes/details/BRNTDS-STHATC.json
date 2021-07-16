@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.490482,
+    "lon" : -0.32566107,
+    "id" : "BRNTDS",
+    "name" : "Brentford Town Day & Sons",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.504492,
+    "lon" : -0.38599639,
+    "id" : "STHATC",
+    "name" : "Southall T.C.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

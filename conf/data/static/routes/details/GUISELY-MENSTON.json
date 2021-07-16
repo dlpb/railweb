@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.876104,
+    "lon" : -1.7152309,
+    "id" : "GUISELY",
+    "name" : "Guiseley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.892292,
+    "lon" : -1.7353886,
+    "id" : "MENSTON",
+    "name" : "Menston",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

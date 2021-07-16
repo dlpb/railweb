@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.505946,
+    "lon" : -0.020493,
+    "id" : "DSBLCAW",
+    "name" : "Canary Wharf",
+    "type" : "Light Rail"
+  },
+  "to" : {
+    "lat" : 51.5046489,
+    "lon" : -0.0207681,
+    "id" : "DSBLHEQ",
+    "name" : "Heron Quays",
+    "type" : "Light Rail"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Light Rail",
+  "speed" : "OHLE"
+} ]

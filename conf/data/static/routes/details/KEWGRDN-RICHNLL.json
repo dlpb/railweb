@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 51.476991,
+    "lon" : -0.28504223,
+    "id" : "KEWGRDN",
+    "name" : "Kew Gardens",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.463324,
+    "lon" : -0.30058406,
+    "id" : "RICHNLL",
+    "name" : "Richmond",
+    "type" : "Station"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+}, {
+  "from" : {
+    "lat" : 51.476991,
+    "lon" : -0.28504223,
+    "id" : "KEWGRDN",
+    "name" : "Kew Gardens",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.463324,
+    "lon" : -0.30058406,
+    "id" : "RICHNLL",
+    "name" : "Richmond",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

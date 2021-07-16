@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.804268,
+    "lon" : -4.3966128,
+    "id" : "BRHD",
+    "name" : "Barrhead",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.744627,
+    "lon" : -4.5252052,
+    "id" : "LUGTON",
+    "name" : "Lugton",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

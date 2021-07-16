@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.364588,
+    "lon" : -2.6213873,
+    "id" : "ACGJN",
+    "name" : "Acton Grange Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.374742,
+    "lon" : -2.6044899,
+    "id" : "WRGTWOJ",
+    "name" : "Walton Old Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

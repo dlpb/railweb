@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.631261,
+    "lon" : -4.6910894,
+    "id" : "BGSDEJN",
+    "name" : "Bogside Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.611159,
+    "lon" : -4.6747996,
+    "id" : "IRVN",
+    "name" : "Irvine",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "75-90"
+} ]

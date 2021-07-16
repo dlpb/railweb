@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.5422,
+    "lon" : -0.0033,
+    "id" : "STFD",
+    "name" : "Stratford (London)",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.465685,
+    "lon" : -0.014240611,
+    "id" : "LEWISHM",
+    "name" : "Lewisham",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "43 MINUTES"
+} ]

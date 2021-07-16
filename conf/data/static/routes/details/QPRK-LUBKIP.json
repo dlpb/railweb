@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.533992,
+    "lon" : -0.20561817,
+    "id" : "QPRK",
+    "name" : "Queens Park (London)",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.53495818,
+    "lon" : -0.193963023,
+    "id" : "LUBKIP",
+    "name" : "Kilburn Park",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

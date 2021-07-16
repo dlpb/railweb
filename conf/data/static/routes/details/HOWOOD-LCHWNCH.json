@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.810679,
+    "lon" : -4.5622515,
+    "id" : "HOWOOD",
+    "name" : "Howwood",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.786902,
+    "lon" : -4.6161061,
+    "id" : "LCHWNCH",
+    "name" : "Lochwinnoch",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "75-90"
+} ]

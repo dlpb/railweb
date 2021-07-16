@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.431434,
+    "lon" : -3.2187482,
+    "id" : "DINASP",
+    "name" : "Dinas Powys",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.437803,
+    "lon" : -3.2062857,
+    "id" : "EASTBRK",
+    "name" : "Eastbrook",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "45-75"
+} ]

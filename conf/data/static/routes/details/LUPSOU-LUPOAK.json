@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.6324,
+    "lon" : -0.12765,
+    "id" : "LUPSOU",
+    "name" : "Southgate",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.64739,
+    "lon" : -0.13192,
+    "id" : "LUPOAK",
+    "name" : "Oakwood",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

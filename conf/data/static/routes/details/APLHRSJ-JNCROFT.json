@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.581852,
+    "lon" : -1.1130465,
+    "id" : "APLHRSJ",
+    "name" : "Applehurst Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.587518,
+    "lon" : -1.1219165,
+    "id" : "JNCROFT",
+    "name" : "Joan Croft Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

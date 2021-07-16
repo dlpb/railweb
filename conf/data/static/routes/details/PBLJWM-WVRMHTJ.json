@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.586511,
+    "lon" : -2.0791724,
+    "id" : "PBLJWM",
+    "name" : "Portobello Jn (West Mids)",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.589248,
+    "lon" : -2.1080198,
+    "id" : "WVRMHTJ",
+    "name" : "Wolverhamptn Heath Town_jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

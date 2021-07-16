@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.345453,
+    "lon" : -0.020352,
+    "id" : "LTAKHD",
+    "name" : "King Henry's Drive",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 51.342624,
+    "lon" : -0.017469,
+    "id" : "LTANEA",
+    "name" : "New Addington",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

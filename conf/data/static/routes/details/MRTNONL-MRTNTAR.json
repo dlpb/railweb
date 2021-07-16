@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.111904,
+    "lon" : -2.7157607,
+    "id" : "MRTNONL",
+    "name" : "Moreton-On-Lugg",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.119305,
+    "lon" : -2.7183184,
+    "id" : "MRTNTAR",
+    "name" : "Moreton-On-Lugg (Tarmac)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.0331,
+    "lon" : -1.5198,
+    "id" : "TAWMYNOP",
+    "name" : "Northumberland Park",
+    "type" : "Metro"
+  },
+  "to" : {
+    "lat" : 55.037,
+    "lon" : -1.5044,
+    "id" : "TAWMYSHI",
+    "name" : "Shiremoor",
+    "type" : "Metro"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Metro",
+  "speed" : "OHLE"
+} ]

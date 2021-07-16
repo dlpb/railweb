@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.64535,
+    "lon" : 0.08364,
+    "id" : "LUCDEB",
+    "name" : "Debden",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.67246,
+    "lon" : 0.10354,
+    "id" : "LUCTHB",
+    "name" : "Theydon Bois",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

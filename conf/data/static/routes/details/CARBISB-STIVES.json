@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.197097,
+    "lon" : -5.463715,
+    "id" : "CARBISB",
+    "name" : "Carbis Bay",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.208687,
+    "lon" : -5.4774658,
+    "id" : "STIVES",
+    "name" : "St Ives",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.360325,
+    "lon" : -2.1626299,
+    "id" : "BMHL",
+    "name" : "Bramhall",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.350472,
+    "lon" : -2.1346958,
+    "id" : "POYNTON",
+    "name" : "Poynton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

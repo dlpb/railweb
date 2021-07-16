@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.960363,
+    "lon" : -4.6533125,
+    "id" : "CDRS",
+    "name" : "Cardross",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.993819,
+    "lon" : -4.7061395,
+    "id" : "CRGDRNJ",
+    "name" : "Craigendoran Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

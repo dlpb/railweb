@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.553635,
+    "lon" : -1.3189642,
+    "id" : "BOWSFLD",
+    "name" : "Bowesfield Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.546127,
+    "lon" : -1.3377322,
+    "id" : "STOCCJN",
+    "name" : "Stockton Cut Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

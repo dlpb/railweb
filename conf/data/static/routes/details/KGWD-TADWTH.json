@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.294852,
+    "lon" : -0.21084094,
+    "id" : "KGWD",
+    "name" : "Kingswood",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.291754,
+    "lon" : -0.23606052,
+    "id" : "TADWTH",
+    "name" : "Tadworth",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

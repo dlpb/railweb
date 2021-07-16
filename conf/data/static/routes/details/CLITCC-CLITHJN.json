@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.886977,
+    "lon" : -2.382201,
+    "id" : "CLITCC",
+    "name" : "Clitheroe Castle Cement",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.878698,
+    "lon" : -2.3879209,
+    "id" : "CLITHJN",
+    "name" : "Horrocksford Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

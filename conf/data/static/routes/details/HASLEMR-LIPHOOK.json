@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.0889,
+    "lon" : -0.71928414,
+    "id" : "HASLEMR",
+    "name" : "Haslemere",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.071314437912584,
+    "lon" : -0.8002284526369142,
+    "id" : "LIPHOOK",
+    "name" : "Liphook",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

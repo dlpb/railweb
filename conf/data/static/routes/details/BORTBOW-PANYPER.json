@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.442134,
+    "lon" : -4.0290856,
+    "id" : "BORTBOW",
+    "name" : "Bow Street",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.458078,
+    "lon" : -4.024255,
+    "id" : "PANYPER",
+    "name" : "Pant-Y-Peron",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

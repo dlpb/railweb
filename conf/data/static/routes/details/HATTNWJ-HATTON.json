@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.292553,
+    "lon" : -1.6798863,
+    "id" : "HATTNWJ",
+    "name" : "Hatton West Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.295132,
+    "lon" : -1.6728589,
+    "id" : "HATTON",
+    "name" : "Hatton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

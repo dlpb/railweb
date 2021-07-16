@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.555752,
+    "lon" : -1.8070194,
+    "id" : "RUSHEYP",
+    "name" : "Rushey Platt",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.535446,
+    "lon" : -1.9071328,
+    "id" : "WTNBSTJ",
+    "name" : "Wootton Bassett Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

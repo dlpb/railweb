@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.415952,
+    "lon" : -1.5102097,
+    "id" : "STYMID",
+    "name" : "Middlewood",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 53.412,
+    "lon" : -1.503,
+    "id" : "STYLEL",
+    "name" : "Leppings Lane",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

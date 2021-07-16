@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.848133,
+    "lon" : -4.271363,
+    "id" : "GLGSLYE",
+    "name" : "Smithy Lye",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.847544,
+    "lon" : -4.2871123,
+    "id" : "SHLDJN",
+    "name" : "Shields Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

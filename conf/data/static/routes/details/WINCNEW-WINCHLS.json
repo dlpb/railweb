@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.933763855056114,
+    "lon" : 0.7022616615985646,
+    "id" : "WINCNEW",
+    "name" : "Winchelsea New I",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.933495,
+    "lon" : 0.70183329,
+    "id" : "WINCHLS",
+    "name" : "Winchelsea",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

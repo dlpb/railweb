@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.760191,
+    "lon" : -4.6907459,
+    "id" : "CORROUR",
+    "name" : "Corrour",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.884101,
+    "lon" : -4.7011605,
+    "id" : "TULLOCH",
+    "name" : "Tulloch",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

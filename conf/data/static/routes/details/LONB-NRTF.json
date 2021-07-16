@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.397046,
+    "lon" : -1.980674,
+    "id" : "LONB",
+    "name" : "Longbridge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.408307,
+    "lon" : -1.9650428,
+    "id" : "NRTF",
+    "name" : "Northfield",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

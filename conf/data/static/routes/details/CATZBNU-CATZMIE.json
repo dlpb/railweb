@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.128889,
+    "lon" : -8.898611,
+    "id" : "CATZBNU",
+    "name" : "Banteer     (Cie",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.0775,
+    "lon" : -9.0696,
+    "id" : "CATZMIE",
+    "name" : "Millstreet  (Cie",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

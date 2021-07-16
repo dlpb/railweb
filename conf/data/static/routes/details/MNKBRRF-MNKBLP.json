@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.572028,
+    "lon" : -1.4383935,
+    "id" : "MNKBRRF",
+    "name" : "Monk Bretton Redfearns",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.582585,
+    "lon" : -1.4315925,
+    "id" : "MNKBLP",
+    "name" : "Monk Bretton Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

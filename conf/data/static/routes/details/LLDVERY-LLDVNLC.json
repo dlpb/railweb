@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.995346,
+    "lon" : -3.802903,
+    "id" : "LLDVERY",
+    "name" : "Llandovery",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.995648,
+    "lon" : -3.8025219,
+    "id" : "LLDVNLC",
+    "name" : "Llandovery North L.C.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

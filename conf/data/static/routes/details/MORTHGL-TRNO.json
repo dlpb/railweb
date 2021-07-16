@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.592319,
+    "lon" : -1.3039333,
+    "id" : "MORTHGL",
+    "name" : "Moorthorpe Goods Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.545416,
+    "lon" : -1.3084153,
+    "id" : "TRNO",
+    "name" : "Thurnscoe",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

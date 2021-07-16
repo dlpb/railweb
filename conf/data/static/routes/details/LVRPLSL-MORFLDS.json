@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.409552,
+    "lon" : -2.9889099,
+    "id" : "LVRPLSL",
+    "name" : "Liverpool Lime Street",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.408651,
+    "lon" : -2.9891748,
+    "id" : "MORFLDS",
+    "name" : "Moorfields",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

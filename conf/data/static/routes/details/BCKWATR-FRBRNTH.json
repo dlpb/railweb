@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.331826,
+    "lon" : -0.77707893,
+    "id" : "BCKWATR",
+    "name" : "Blackwater",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.302494,
+    "lon" : -0.743115,
+    "id" : "FRBRNTH",
+    "name" : "Farnborough North",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

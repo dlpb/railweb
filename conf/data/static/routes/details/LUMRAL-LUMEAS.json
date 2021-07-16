@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.57534,
+    "lon" : -0.3724,
+    "id" : "LUMRAL",
+    "name" : "Rayners Lane",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.57676,
+    "lon" : -0.39629,
+    "id" : "LUMEAS",
+    "name" : "Eastcote",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

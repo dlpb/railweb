@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.033824,
+    "lon" : -1.546772,
+    "id" : "MOTFONT",
+    "name" : "Mottisfont & Dunbridge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.992762,
+    "lon" : -1.4933547,
+    "id" : "ROMSEY",
+    "name" : "Romsey",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

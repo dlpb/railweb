@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.516153,
+    "lon" : -4.7642005,
+    "id" : "BOORCHY",
+    "name" : "Bridge Of Orchy",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.595614,
+    "lon" : -4.617284,
+    "id" : "GRTONIB",
+    "name" : "Gorton (Tayside)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

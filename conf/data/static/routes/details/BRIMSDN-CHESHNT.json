@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.655061,
+    "lon" : -0.030840022,
+    "id" : "BRIMSDN",
+    "name" : "Brimsdown",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.701931,
+    "lon" : -0.02398637,
+    "id" : "CHESHNT",
+    "name" : "Cheshunt",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

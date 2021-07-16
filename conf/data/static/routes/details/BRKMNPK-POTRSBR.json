@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.720848,
+    "lon" : -0.20480324,
+    "id" : "BRKMNPK",
+    "name" : "Brookmans Park",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.697633,
+    "lon" : -0.19324857,
+    "id" : "POTRSBR",
+    "name" : "Potters Bar",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

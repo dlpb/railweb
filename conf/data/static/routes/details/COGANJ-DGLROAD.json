@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.44872,
+    "lon" : -3.1895349,
+    "id" : "COGANJ",
+    "name" : "Cogan Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.439811,
+    "lon" : -3.1795483,
+    "id" : "DGLROAD",
+    "name" : "Dingle Road",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "45-75"
+} ]

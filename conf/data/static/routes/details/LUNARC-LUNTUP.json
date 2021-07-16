@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.56536,
+    "lon" : -0.13474,
+    "id" : "LUNARC",
+    "name" : "Archway",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.55663,
+    "lon" : -0.13813,
+    "id" : "LUNTUP",
+    "name" : "Tufnell Park",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

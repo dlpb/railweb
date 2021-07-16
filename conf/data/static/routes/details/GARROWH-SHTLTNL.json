@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.855311,
+    "lon" : -4.1293526,
+    "id" : "GARROWH",
+    "name" : "Garrowhill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.85335,
+    "lon" : -4.1460053,
+    "id" : "SHTLTNL",
+    "name" : "Shettleston Loop",
+    "type" : "Location"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

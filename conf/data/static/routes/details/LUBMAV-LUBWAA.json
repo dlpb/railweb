@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.52989409,
+    "lon" : -0.185888819,
+    "id" : "LUBMAV",
+    "name" : "Maida Vale",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.52329728,
+    "lon" : -0.183777837,
+    "id" : "LUBWAA",
+    "name" : "Warwick Avenue",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

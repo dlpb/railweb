@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.378321,
+    "lon" : -2.3720808,
+    "id" : "BATHGSL",
+    "name" : "Bath Goods Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.378418,
+    "lon" : -2.372843,
+    "id" : "BATHSPA",
+    "name" : "Bath Spa",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

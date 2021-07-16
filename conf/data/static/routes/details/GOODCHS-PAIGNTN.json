@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.428093,
+    "lon" : -3.5638547,
+    "id" : "GOODCHS",
+    "name" : "Goodrington C.H.S",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.434202,
+    "lon" : -3.5650558,
+    "id" : "PAIGNTN",
+    "name" : "Paignton",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

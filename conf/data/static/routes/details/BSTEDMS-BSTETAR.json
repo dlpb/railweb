@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.253618,
+    "lon" : 0.71253593,
+    "id" : "BSTEDMS",
+    "name" : "Bury St Edmunds",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.253028,
+    "lon" : 0.70964259,
+    "id" : "BSTETAR",
+    "name" : "Bury St Edmunds Fd Tarmac",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

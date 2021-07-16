@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.907539,
+    "lon" : -1.4159273,
+    "id" : "SOTON",
+    "name" : "Southampton Central",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.907623,
+    "lon" : -1.4218002,
+    "id" : "SOTOUGL",
+    "name" : "Southampton Up Goods Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

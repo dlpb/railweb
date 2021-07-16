@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.045878,
+    "lon" : -3.0036994,
+    "id" : "CROESNF",
+    "name" : "Croes Newydd North Fork",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.050776,
+    "lon" : -3.0016352,
+    "id" : "WREXHMG",
+    "name" : "Wrexham General",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

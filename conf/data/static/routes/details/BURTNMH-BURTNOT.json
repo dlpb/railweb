@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.808875,
+    "lon" : -1.6382067,
+    "id" : "BURTNMH",
+    "name" : "Burton Ot W Yd Maurice H",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.805357,
+    "lon" : -1.6430124,
+    "id" : "BURTNOT",
+    "name" : "Burton-On-Trent",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

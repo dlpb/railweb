@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.344985,
+    "lon" : 0.73347151,
+    "id" : "HKSIV",
+    "name" : "Sittingbourne Viaduct",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 51.361708,
+    "lon" : 0.75671688,
+    "id" : "HKKED",
+    "name" : "Kemsley Down",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

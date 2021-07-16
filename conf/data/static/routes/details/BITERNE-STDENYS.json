@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.918572,
+    "lon" : -1.3773931,
+    "id" : "BITERNE",
+    "name" : "Bitterne",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.921803,
+    "lon" : -1.3881057,
+    "id" : "STDENYS",
+    "name" : "St Denys",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

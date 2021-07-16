@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.878698,
+    "lon" : -2.3879209,
+    "id" : "CLITHJN",
+    "name" : "Horrocksford Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.873978,
+    "lon" : -2.394037,
+    "id" : "CLITHRO",
+    "name" : "Clitheroe",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

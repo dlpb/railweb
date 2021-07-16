@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.342044,
+    "lon" : 0.73520541,
+    "id" : "STNGBRN",
+    "name" : "Sittingbourne",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.333469,
+    "lon" : 0.80755949,
+    "id" : "TEYNHAM",
+    "name" : "Teynham",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 54.968228,
+    "lon" : -1.6169534,
+    "id" : "NWCSTLE",
+    "name" : "Newcastle",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.969081,
+    "lon" : -1.6166642,
+    "id" : "NWCSTLL",
+    "name" : "Newcastle Central Metro",
+    "type" : "Location"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "1 MINUTES"
+}, {
+  "from" : {
+    "lat" : 54.968228,
+    "lon" : -1.6169534,
+    "id" : "NWCSTLE",
+    "name" : "Newcastle",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.969081,
+    "lon" : -1.6166642,
+    "id" : "NWCSTLL",
+    "name" : "Newcastle Central Metro",
+    "type" : "Location"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : " 1"
+} ]

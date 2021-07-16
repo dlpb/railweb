@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.956511,
+    "lon" : -1.46289,
+    "id" : "BREADSL",
+    "name" : "Breadsall",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.927624,
+    "lon" : -1.4680375,
+    "id" : "DRBYSMJ",
+    "name" : "St. Mary's Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

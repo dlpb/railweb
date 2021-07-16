@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.492382,
+    "lon" : -1.9432673,
+    "id" : "SOHODED",
+    "name" : "Soho L.M.D.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.49518,
+    "lon" : -1.9480212,
+    "id" : "SOHONJ",
+    "name" : "Soho North Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

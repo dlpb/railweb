@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.91183,
+    "lon" : -1.4456728,
+    "id" : "MBRK758",
+    "name" : "Millbrook Sig. E758",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.913389,
+    "lon" : -1.4559528,
+    "id" : "SOTOMCT",
+    "name" : "Southampton M.C.T.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

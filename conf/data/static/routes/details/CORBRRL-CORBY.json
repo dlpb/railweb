@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.488071,
+    "lon" : -0.68862364,
+    "id" : "CORBRRL",
+    "name" : "Corby North Run-Round Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.487749,
+    "lon" : -0.68879522,
+    "id" : "CORBY",
+    "name" : "Corby",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

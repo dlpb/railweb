@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.639804,
+    "lon" : -2.6711193,
+    "id" : "CHEPSTW",
+    "name" : "Chepstow",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.6468,
+    "lon" : -2.6584174,
+    "id" : "WYEVJGF",
+    "name" : "Wye Valley Jn G.F.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

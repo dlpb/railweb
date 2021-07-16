@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.583461,
+    "lon" : -0.25534404,
+    "id" : "PBROEFL",
+    "name" : "P'boro Eastfield Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.57883,
+    "lon" : -0.25284179,
+    "id" : "PBROLIP",
+    "name" : "Peterborough L.I.P.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

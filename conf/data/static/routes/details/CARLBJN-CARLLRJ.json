@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.886363,
+    "lon" : -2.9297876,
+    "id" : "CARLBJN",
+    "name" : "Bog Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.885808,
+    "lon" : -2.922417,
+    "id" : "CARLLRJ",
+    "name" : "Carlisle London Road Junction",
+    "type" : "Location"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

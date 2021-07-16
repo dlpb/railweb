@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.111728,
+    "lon" : -2.4469601,
+    "id" : "BRUTON",
+    "name" : "Bruton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.164969,
+    "lon" : -2.3700457,
+    "id" : "ESTSOMJ",
+    "name" : "East Somerset Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

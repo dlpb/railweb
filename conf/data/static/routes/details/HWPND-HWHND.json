@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.587127,
+    "lon" : -4.081971,
+    "id" : "HWPND",
+    "name" : "Pendre",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.590902,
+    "lon" : -4.071815,
+    "id" : "HWHND",
+    "name" : "Hendy",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

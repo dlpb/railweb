@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.738812,
+    "lon" : -2.4922393,
+    "id" : "BLKBNTS",
+    "name" : "Blackburn Taylor Street",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.735312,
+    "lon" : -2.50187,
+    "id" : "MLHL",
+    "name" : "Mill Hill (Lancashire)",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

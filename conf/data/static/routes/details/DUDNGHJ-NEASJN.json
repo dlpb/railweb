@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.557618,
+    "lon" : -0.23127545,
+    "id" : "DUDNGHJ",
+    "name" : "Dudding Hill Junction",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 51.550767,
+    "lon" : -0.25117185,
+    "id" : "NEASJN",
+    "name" : "Neasden Junction",
+    "type" : "Location"
+  },
+  "singleTrack" : "2",
+  "electrification" : "NONE",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

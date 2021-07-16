@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.488939,
+    "lon" : -3.1790012,
+    "id" : "CATHAYS",
+    "name" : "Cathays",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.508462,
+    "lon" : -3.2288147,
+    "id" : "LLANDAF",
+    "name" : "Llandaf",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "45-75"
+} ]

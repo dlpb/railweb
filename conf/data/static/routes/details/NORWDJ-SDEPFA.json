@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.396662,
+    "lon" : -0.074963344,
+    "id" : "NORWDJ",
+    "name" : "Norwood Junction",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.39199,
+    "lon" : -0.078508599,
+    "id" : "SDEPFA",
+    "name" : "Sel. D. Fork Arrival",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

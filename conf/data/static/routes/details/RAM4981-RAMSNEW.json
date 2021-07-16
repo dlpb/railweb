@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.339394,
+    "lon" : 1.3942846,
+    "id" : "RAM4981",
+    "name" : "Rm Ek4981 Ramsgate",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.340275,
+    "lon" : 1.4026651,
+    "id" : "RAMSNEW",
+    "name" : "Ramsgate New Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

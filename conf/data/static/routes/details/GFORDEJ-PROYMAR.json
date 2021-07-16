@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.539242,
+    "lon" : -0.33292795,
+    "id" : "GFORDEJ",
+    "name" : "Greenford East Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.52943,
+    "lon" : -0.27987192,
+    "id" : "PROYMAR",
+    "name" : "Park Royal Marcon",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

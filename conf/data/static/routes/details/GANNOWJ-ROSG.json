@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.788807,
+    "lon" : -2.2674685,
+    "id" : "GANNOWJ",
+    "name" : "Gannow Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.786329,
+    "lon" : -2.2819473,
+    "id" : "ROSG",
+    "name" : "Rose Grove",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

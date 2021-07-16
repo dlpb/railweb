@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.074893,
+    "lon" : -1.7977473,
+    "id" : "SLSBRY",
+    "name" : "Salisbury",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.074893,
+    "lon" : -1.7977473,
+    "id" : "SLSBYWE",
+    "name" : "Salisbury West End",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

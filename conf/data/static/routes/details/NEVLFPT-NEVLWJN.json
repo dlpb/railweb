@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.791898,
+    "lon" : -1.505532,
+    "id" : "NEVLFPT",
+    "name" : "Neville Hill Depot (Ews)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.79423,
+    "lon" : -1.5197895,
+    "id" : "NEVLWJN",
+    "name" : "Neville H. West Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

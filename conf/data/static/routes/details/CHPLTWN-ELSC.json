@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.462479,
+    "lon" : -1.466409,
+    "id" : "CHPLTWN",
+    "name" : "Chapeltown",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.498551,
+    "lon" : -1.4277267,
+    "id" : "ELSC",
+    "name" : "Elsecar",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

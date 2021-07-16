@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.788658,
+    "lon" : -0.15726111,
+    "id" : "SPALDNG",
+    "name" : "Spalding",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.721132,
+    "lon" : -0.21209684,
+    "id" : "SPALIT",
+    "name" : "Littleworth",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

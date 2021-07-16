@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.340275,
+    "lon" : 1.4026651,
+    "id" : "HOTH343",
+    "name" : "Hothfield Signal Me343",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.182304,
+    "lon" : 0.83065965,
+    "id" : "HTFDSD",
+    "name" : "Hothfield Siding",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

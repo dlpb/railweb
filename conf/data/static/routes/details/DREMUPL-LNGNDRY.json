@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.006286,
+    "lon" : -2.7780371,
+    "id" : "DREMUPL",
+    "name" : "Drem U.P.L.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.976366,
+    "lon" : -2.8882923,
+    "id" : "LNGNDRY",
+    "name" : "Longniddry",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

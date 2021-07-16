@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.068,
+    "lon" : -4.0783,
+    "id" : "HSSNS",
+    "name" : "Snowdon Summit",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 53.0841,
+    "lon" : -4.0803,
+    "id" : "HSCLO",
+    "name" : "Clogwyn",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

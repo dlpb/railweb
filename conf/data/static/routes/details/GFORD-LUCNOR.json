@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.542186,
+    "lon" : -0.34520789,
+    "id" : "GFORD",
+    "name" : "Greenford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.548054,
+    "lon" : -0.368257,
+    "id" : "LUCNOR",
+    "name" : "Northolt",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

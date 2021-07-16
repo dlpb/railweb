@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.354695,
+    "lon" : -1.7430084,
+    "id" : "ERLEHES",
+    "name" : "Hope (Earles Sidings) Dbs",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.354937,
+    "lon" : -1.7428116,
+    "id" : "ERLESDG",
+    "name" : "Earles Sdgs S.B.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

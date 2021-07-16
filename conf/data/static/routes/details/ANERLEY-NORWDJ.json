@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.412417,
+    "lon" : -0.065658984,
+    "id" : "ANERLEY",
+    "name" : "Anerley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.396662,
+    "lon" : -0.074963344,
+    "id" : "NORWDJ",
+    "name" : "Norwood Junction",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

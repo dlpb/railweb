@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.664695,
+    "lon" : 0.37979959,
+    "id" : "INGTSTL",
+    "name" : "Ingatestone Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.667074,
+    "lon" : 0.38443642,
+    "id" : "INGTSTN",
+    "name" : "Ingatestone",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

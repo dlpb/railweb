@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.788658,
+    "lon" : -0.15726111,
+    "id" : "SPALDNG",
+    "name" : "Spalding",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.791966,
+    "lon" : -0.15494109,
+    "id" : "SPALDUS",
+    "name" : "Spalding Up Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

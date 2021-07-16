@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.405429,
+    "lon" : 0.057397958,
+    "id" : "CHSLHRS",
+    "name" : "Chislehurst",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.416844,
+    "lon" : 0.044420114,
+    "id" : "ELMW",
+    "name" : "Elmstead Woods",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

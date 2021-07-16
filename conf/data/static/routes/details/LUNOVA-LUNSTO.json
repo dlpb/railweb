@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.48214,
+    "lon" : -0.11284,
+    "id" : "LUNOVA",
+    "name" : "Oval",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.47224,
+    "lon" : -0.1227,
+    "id" : "LUNSTO",
+    "name" : "Stockwell",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

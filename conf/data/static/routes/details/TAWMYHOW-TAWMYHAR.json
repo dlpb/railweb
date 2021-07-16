@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.9959,
+    "lon" : -1.4942,
+    "id" : "TAWMYHOW",
+    "name" : "Howdon",
+    "type" : "Metro"
+  },
+  "to" : {
+    "lat" : 54.9923,
+    "lon" : -1.5156,
+    "id" : "TAWMYHAR",
+    "name" : "Hadrian Road",
+    "type" : "Metro"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Metro",
+  "speed" : "OHLE"
+} ]

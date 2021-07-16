@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.818397,
+    "lon" : -0.39299784,
+    "id" : "WWRTHNG",
+    "name" : "West Worthing",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.818042,
+    "lon" : -0.39851826,
+    "id" : "WWRTMS",
+    "name" : "West Worthing Middle Sdg",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

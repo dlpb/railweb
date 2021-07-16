@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.8926,
+    "lon" : -1.4757791,
+    "id" : "SINFINN",
+    "name" : "Sinfin North",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.886488,
+    "lon" : -1.467887,
+    "id" : "SINFINS",
+    "name" : "Sinfin Sdgs",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

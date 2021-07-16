@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.729782,
+    "lon" : -3.5435437,
+    "id" : "EXETRSD",
+    "name" : "Exeter St Davids",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.7323785320102,
+    "lon" : -3.9962148243654285,
+    "id" : "OKHMPWS",
+    "name" : "Okehampton Bus",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

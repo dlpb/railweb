@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.891828,
+    "lon" : -2.1254489,
+    "id" : "STONASH",
+    "name" : "Ashton By Stone",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.909016,
+    "lon" : -2.1559209,
+    "id" : "STONJN",
+    "name" : "Stone Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

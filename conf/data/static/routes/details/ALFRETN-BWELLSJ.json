@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.100961,
+    "lon" : -1.3698228,
+    "id" : "ALFRETN",
+    "name" : "Alfreton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.111944,
+    "lon" : -1.3693784,
+    "id" : "BWELLSJ",
+    "name" : "Blackwell South Jn (Derbs)",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

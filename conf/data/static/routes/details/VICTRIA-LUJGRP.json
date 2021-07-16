@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.49314,
+    "lon" : -0.14608529,
+    "id" : "VICTRIA",
+    "name" : "London Victoria",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.50674,
+    "lon" : -0.14276,
+    "id" : "LUJGRP",
+    "name" : "Green Park",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

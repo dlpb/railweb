@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.751538,
+    "lon" : -4.853206,
+    "id" : "FAIRLIE",
+    "name" : "Fairlie",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.792617,
+    "lon" : -4.8671404,
+    "id" : "LARGS",
+    "name" : "Largs",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "75-90"
+} ]

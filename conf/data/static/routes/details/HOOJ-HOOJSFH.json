@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.436568,
+    "lon" : 0.43742007,
+    "id" : "HOOJ",
+    "name" : "Hoo Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.436358,
+    "lon" : 0.4389053,
+    "id" : "HOOJSFH",
+    "name" : "Hoo Jn Staff Halt",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

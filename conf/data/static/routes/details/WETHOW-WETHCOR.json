@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.901576,
+    "lon" : -2.7651468,
+    "id" : "WETHOW",
+    "name" : "How Mill",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.884771,
+    "lon" : -2.8254971,
+    "id" : "WETHCOR",
+    "name" : "Corby Gates S.B.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

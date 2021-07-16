@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.6183500964786,
+    "lon" : -2.8069004820388157,
+    "id" : "GALASLS",
+    "name" : "Galashiels",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.60574042621791,
+    "lon" : -2.7595311314552293,
+    "id" : "TWDBANK",
+    "name" : "Tweedbank",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

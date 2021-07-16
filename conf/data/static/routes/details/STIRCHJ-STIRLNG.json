@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.128599,
+    "lon" : -3.9336633,
+    "id" : "STIRCHJ",
+    "name" : "Causewayhead Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.120122,
+    "lon" : -3.9349432,
+    "id" : "STIRLNG",
+    "name" : "Stirling",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

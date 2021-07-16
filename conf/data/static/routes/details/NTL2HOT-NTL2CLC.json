@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.897032,
+    "lon" : -1.181321,
+    "id" : "NTL2HOT",
+    "name" : "Holy Trinity",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 52.903606,
+    "lon" : -1.1769789,
+    "id" : "NTL2CLC",
+    "name" : "Clifton Centre",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.460532,
+    "lon" : -0.19734446,
+    "id" : "POINTPJ",
+    "name" : "Point Pleasant Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.46466,
+    "lon" : -0.17066319,
+    "id" : "CLPHMYM",
+    "name" : "Clapham Yard",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

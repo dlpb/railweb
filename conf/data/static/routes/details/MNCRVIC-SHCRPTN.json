@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 53.488018,
+    "lon" : -2.2412763,
+    "id" : "MNCRVIC",
+    "name" : "Manchester Victoria",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.57732,
+    "lon" : -2.0895959,
+    "id" : "SHCRPTN",
+    "name" : "Shaw & Crompton",
+    "type" : "Location"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "38 MINUTES"
+}, {
+  "from" : {
+    "lat" : 53.488018,
+    "lon" : -2.2412763,
+    "id" : "MNCRVIC",
+    "name" : "Manchester Victoria",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.57732,
+    "lon" : -2.0895959,
+    "id" : "SHCRPTN",
+    "name" : "Shaw & Crompton",
+    "type" : "Location"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "35 MINUTES"
+} ]

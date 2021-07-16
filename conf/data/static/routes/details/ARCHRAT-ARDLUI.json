@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.203286,
+    "lon" : -4.723173,
+    "id" : "ARCHRAT",
+    "name" : "Arrochar & Tarbet",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.301745,
+    "lon" : -4.7214638,
+    "id" : "ARDLUI",
+    "name" : "Ardlui",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 58.117649,
+    "lon" : -3.6590029,
+    "id" : "HELMSDL",
+    "name" : "Helmsdale",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 58.17097,
+    "lon" : -3.8690975,
+    "id" : "KILDONN",
+    "name" : "Kildonan",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

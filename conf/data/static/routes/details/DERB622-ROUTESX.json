@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.019285,
+    "lon" : 1.2584429,
+    "id" : "DERB622",
+    "name" : "Levington Signal Co622",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.027543,
+    "lon" : 1.2299843,
+    "id" : "ROUTESX",
+    "name" : "Routes L.C. No.8",
+    "type" : "Point"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

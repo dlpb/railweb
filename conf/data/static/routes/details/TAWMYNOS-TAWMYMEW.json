@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.0085,
+    "lon" : -1.4483,
+    "id" : "TAWMYNOS",
+    "name" : "North Shields",
+    "type" : "Metro"
+  },
+  "to" : {
+    "lat" : 55.0015,
+    "lon" : -1.4658,
+    "id" : "TAWMYMEW",
+    "name" : "Meadow Well",
+    "type" : "Metro"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Metro",
+  "speed" : "OHLE"
+} ]

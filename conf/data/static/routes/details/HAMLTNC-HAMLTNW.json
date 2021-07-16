@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.773189,
+    "lon" : -4.0385498,
+    "id" : "HAMLTNC",
+    "name" : "Hamilton Central",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.779034,
+    "lon" : -4.0550565,
+    "id" : "HAMLTNW",
+    "name" : "Hamilton West",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.137502,
+    "lon" : 1.2918533,
+    "id" : "BCKJN",
+    "name" : "Buckland Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.12605,
+    "lon" : 1.3027456,
+    "id" : "DOVERPS",
+    "name" : "Dover Priory Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

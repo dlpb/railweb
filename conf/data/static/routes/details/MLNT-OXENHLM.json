@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.226529,
+    "lon" : -2.748096,
+    "id" : "MLNT",
+    "name" : "Milnthorpe",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.305241,
+    "lon" : -2.7217527,
+    "id" : "OXENHLM",
+    "name" : "Oxenholme Lake District",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

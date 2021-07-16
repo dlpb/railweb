@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.485152,
+    "lon" : -0.047876633,
+    "id" : "BRCKLAJ",
+    "name" : "Bricklayers Arms Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.489368,
+    "lon" : -0.055864022,
+    "id" : "SBRMNSJ",
+    "name" : "South Bermondsey Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

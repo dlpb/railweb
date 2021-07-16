@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.787582,
+    "lon" : -3.0539122,
+    "id" : "BLCKPB",
+    "name" : "Blackpool Pleasure Beach",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.798277,
+    "lon" : -3.0488665,
+    "id" : "BLCKS",
+    "name" : "Blackpool South",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

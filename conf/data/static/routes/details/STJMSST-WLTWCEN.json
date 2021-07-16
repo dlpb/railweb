@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.581383,
+    "lon" : -0.030201885,
+    "id" : "STJMSST",
+    "name" : "St James Street",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.582892,
+    "lon" : -0.019946011,
+    "id" : "WLTWCEN",
+    "name" : "Walthamstow Central",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

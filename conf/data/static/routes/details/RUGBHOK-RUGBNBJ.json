@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.394961,
+    "lon" : -1.3050614,
+    "id" : "RUGBHOK",
+    "name" : "High Oaks Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.38075,
+    "lon" : -1.275417,
+    "id" : "RUGBNBJ",
+    "name" : "Newbold Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

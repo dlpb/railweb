@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.863773,
+    "lon" : -3.986673,
+    "id" : "AIRD754",
+    "name" : "Airdrie Signal Ys754",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.863939,
+    "lon" : -3.9819671,
+    "id" : "AIRDCS",
+    "name" : "Airdrie C.S.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.9509,
+    "lon" : -4.9262,
+    "id" : "DUNOON",
+    "name" : "Dunoon",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.962411,
+    "lon" : -4.817989,
+    "id" : "GOURPIE",
+    "name" : "Gourock Pier",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

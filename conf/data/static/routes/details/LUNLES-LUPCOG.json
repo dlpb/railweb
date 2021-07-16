@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.51148,
+    "lon" : -0.12849,
+    "id" : "LUNLES",
+    "name" : "Leicester Square",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.51308,
+    "lon" : -0.12427,
+    "id" : "LUPCOG",
+    "name" : "Covent Garden",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

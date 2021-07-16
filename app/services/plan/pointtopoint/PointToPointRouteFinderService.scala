@@ -123,11 +123,11 @@ class PointToPointRouteFinderService @Inject()(
       }
 
       val R = 6371; // Radius of the earth in km
-      val dLat = deg2rad(to.location.lat - from.location.lat)  // deg2rad below
-      val dLon = deg2rad(to.location.lon - from.location.lon)
+      val dLat = deg2rad(to.lat - from.lat)  // deg2rad below
+      val dLon = deg2rad(to.lon - from.lon)
       val a =
         Math.sin(dLat/2) * Math.sin(dLat/2) +
-          Math.cos(deg2rad(from.location.lat)) * Math.cos(deg2rad(to.location.lat)) *
+          Math.cos(deg2rad(from.lat)) * Math.cos(deg2rad(to.lat)) *
             Math.sin(dLon/2) * Math.sin(dLon/2)
 
       val c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a))

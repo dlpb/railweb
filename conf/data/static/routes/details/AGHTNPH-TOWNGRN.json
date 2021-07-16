@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.5544,
+    "lon" : -2.895058,
+    "id" : "AGHTNPH",
+    "name" : "Aughton Park",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.542733,
+    "lon" : -2.9046057,
+    "id" : "TOWNGRN",
+    "name" : "Town Green",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

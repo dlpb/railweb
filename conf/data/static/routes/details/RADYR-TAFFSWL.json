@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.516618,
+    "lon" : -3.2492112,
+    "id" : "RADYR",
+    "name" : "Radyr",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.540709,
+    "lon" : -3.2633102,
+    "id" : "TAFFSWL",
+    "name" : "Taffs Well",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "45-75"
+} ]

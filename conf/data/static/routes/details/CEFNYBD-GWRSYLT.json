@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.098665,
+    "lon" : -3.0308554,
+    "id" : "CEFNYBD",
+    "name" : "Cefn-Y-Bedd",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.072737,
+    "lon" : -3.0175635,
+    "id" : "GWRSYLT",
+    "name" : "Gwersyllt",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

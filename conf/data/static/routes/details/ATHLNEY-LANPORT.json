@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.053468,
+    "lon" : -2.94172,
+    "id" : "ATHLNEY",
+    "name" : "Athelney Crossing",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.041366,
+    "lon" : -2.8312581,
+    "id" : "LANPORT",
+    "name" : "Langport Viaduct",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

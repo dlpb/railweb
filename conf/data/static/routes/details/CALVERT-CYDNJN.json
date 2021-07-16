@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.914666,
+    "lon" : -0.99825521,
+    "id" : "CALVERT",
+    "name" : "Calvert",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 51.925844,
+    "lon" : -1.0027909,
+    "id" : "CYDNJN",
+    "name" : "Claydon London & North Eastern Junction",
+    "type" : "Location"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

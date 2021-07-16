@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.544261,
+    "lon" : -4.0560342,
+    "id" : "ABDVY",
+    "name" : "Aberdovey",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.545619,
+    "lon" : -4.0351991,
+    "id" : "PENHELG",
+    "name" : "Penhelig",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

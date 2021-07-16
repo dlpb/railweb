@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.47869,
+    "lon" : -1.8913692,
+    "id" : "BHAMMRS",
+    "name" : "Birmingham Moor Street",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.471826,
+    "lon" : -1.877121,
+    "id" : "BRDS",
+    "name" : "Bordesley",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.407062,
+    "lon" : -4.2093944,
+    "id" : "SASH",
+    "name" : "Saltash",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.401461,
+    "lon" : -4.1869135,
+    "id" : "STBDXFR",
+    "name" : "St Budeaux Ferry Road",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

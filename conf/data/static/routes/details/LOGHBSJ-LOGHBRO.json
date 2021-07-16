@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.775663,
+    "lon" : -1.189348,
+    "id" : "LOGHBSJ",
+    "name" : "Loughborough South Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.77945,
+    "lon" : -1.1963345,
+    "id" : "LOGHBRO",
+    "name" : "Loughborough",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.398402,
+    "lon" : -1.2967172,
+    "id" : "NEWBRCE",
+    "name" : "Newbury Racecourse (Ce)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.398661,
+    "lon" : -1.3070486,
+    "id" : "NEWBRYR",
+    "name" : "Newbury Racecourse",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

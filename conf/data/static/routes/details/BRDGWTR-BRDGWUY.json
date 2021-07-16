@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.12773,
+    "lon" : -2.9902313,
+    "id" : "BRDGWTR",
+    "name" : "Bridgwater",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.130306,
+    "lon" : -2.9908295,
+    "id" : "BRDGWUY",
+    "name" : "Bridgwater F.D",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

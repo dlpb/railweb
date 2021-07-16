@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.725442,
+    "lon" : -2.5319837,
+    "id" : "HGLYT",
+    "name" : "Lydney Town",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 51.73625,
+    "lon" : -2.53939,
+    "id" : "HGNOR",
+    "name" : "Norchard",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

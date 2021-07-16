@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.4244,
+    "lon" : -2.319,
+    "id" : "SALE",
+    "name" : "Sale Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.4171,
+    "lon" : -2.3261,
+    "id" : "BRKLNDS",
+    "name" : "Brooklands Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

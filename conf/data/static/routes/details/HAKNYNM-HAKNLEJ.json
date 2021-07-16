@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.548445,
+    "lon" : -0.060514918,
+    "id" : "HAKNYNM",
+    "name" : "Hackney Downs",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.547018,
+    "lon" : -0.059623677,
+    "id" : "HAKNLEJ",
+    "name" : "Hackney Downs Londn End Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.921237,
+    "lon" : -1.223084,
+    "id" : "NTL1HRCC",
+    "name" : "High Road – Central College",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 52.922636,
+    "lon" : -1.231485,
+    "id" : "NTL1CAL",
+    "name" : "Cator Lane",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

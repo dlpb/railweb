@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.910286,
+    "lon" : -1.3920401,
+    "id" : "NTHMJN",
+    "name" : "Northam Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.918469,
+    "lon" : -1.3903402,
+    "id" : "STDE706",
+    "name" : "St Denys Signal E706",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

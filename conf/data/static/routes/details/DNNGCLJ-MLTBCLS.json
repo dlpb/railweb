@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.363121,
+    "lon" : -1.2325975,
+    "id" : "DNNGCLJ",
+    "name" : "Dinnington Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.430817,
+    "lon" : -1.1656963,
+    "id" : "MLTBCLS",
+    "name" : "Maltby Colliery S B",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.311192,
+    "lon" : 0.89170105,
+    "id" : "FAVRBRD",
+    "name" : "Faversham Bk Road",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.310224,
+    "lon" : 0.895931,
+    "id" : "FAVRUPS",
+    "name" : "Faversham Up Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

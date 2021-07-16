@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.733437,
+    "lon" : -3.5439615,
+    "id" : "EXETRNY",
+    "name" : "Exeter New Yard",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.729782,
+    "lon" : -3.5435437,
+    "id" : "EXETRSD",
+    "name" : "Exeter St Davids",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

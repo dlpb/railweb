@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.40679,
+    "lon" : 0.38414098,
+    "id" : "SNGWDEP",
+    "name" : "Singlewell Depot",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.412458,
+    "lon" : 0.36586954,
+    "id" : "SNGWLP",
+    "name" : "Singlewell Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

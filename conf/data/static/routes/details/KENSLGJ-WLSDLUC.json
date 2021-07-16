@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.532886,
+    "lon" : -0.23467088,
+    "id" : "KENSLGJ",
+    "name" : "Kensal Green Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.532655,
+    "lon" : -0.23783736,
+    "id" : "WLSDLUC",
+    "name" : "Willesden Jn Ll Up Emu C-O",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.692595,
+    "lon" : -3.2296873,
+    "id" : "BARGOED",
+    "name" : "Bargoed",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.684131,
+    "lon" : -3.2273894,
+    "id" : "GLFCHFR",
+    "name" : "Gilfach Fargoed",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "45-75"
+} ]

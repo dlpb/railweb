@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.382755,
+    "lon" : -4.1108655,
+    "id" : "LIPSONJ",
+    "name" : "Lipson Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.378154,
+    "lon" : -4.143068,
+    "id" : "PLYMTH",
+    "name" : "Plymouth",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

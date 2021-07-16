@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.465685,
+    "lon" : -0.014240611,
+    "id" : "LEWISHM",
+    "name" : "Lewisham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.469201,
+    "lon" : -0.02222302,
+    "id" : "STJOHNS",
+    "name" : "St Johns",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.284511,
+    "lon" : -1.5372359,
+    "id" : "LMNG113",
+    "name" : "Leamington Spa Signal 113",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.284511,
+    "lon" : -1.5372359,
+    "id" : "LMNGTNS",
+    "name" : "Leamington Spa",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.397156,
+    "lon" : -3.2843767,
+    "id" : "BARRY",
+    "name" : "Barry",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.40256,
+    "lon" : -3.2612242,
+    "id" : "BARRYDK",
+    "name" : "Barry Docks",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "45-75"
+} ]

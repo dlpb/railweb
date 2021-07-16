@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.046865,
+    "lon" : -3.4995941,
+    "id" : "WTHH",
+    "name" : "Wath",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.072643,
+    "lon" : -3.6044164,
+    "id" : "DUMFRES",
+    "name" : "Dumfries",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

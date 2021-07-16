@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.799003,
+    "lon" : -3.9961997,
+    "id" : "BRDHSTD",
+    "name" : "Braidhurst Down Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.791687,
+    "lon" : -3.9950757,
+    "id" : "MOTHWCS",
+    "name" : "Motherwell Weighs C.H.S.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

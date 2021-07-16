@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.789343,
+    "lon" : -1.6631914,
+    "id" : "BURTBJN",
+    "name" : "Branston Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.802169,
+    "lon" : -1.6470878,
+    "id" : "BURTNLJ",
+    "name" : "Burton Leicester Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

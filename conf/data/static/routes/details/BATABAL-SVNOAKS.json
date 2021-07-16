@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.290095,
+    "lon" : 0.19407138,
+    "id" : "BATABAL",
+    "name" : "Bat & Ball",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.276438,
+    "lon" : 0.18182083,
+    "id" : "SVNOAKS",
+    "name" : "Sevenoaks",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

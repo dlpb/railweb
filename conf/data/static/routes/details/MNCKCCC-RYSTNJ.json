@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.610475,
+    "lon" : -1.444776,
+    "id" : "MNCKCCC",
+    "name" : "Royston Monckton C.C.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.612326,
+    "lon" : -1.4466109,
+    "id" : "RYSTNJ",
+    "name" : "Royston Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

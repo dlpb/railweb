@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.433969,
+    "lon" : 0.10420204,
+    "id" : "SIDCUP",
+    "name" : "Sidcup",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.434001,
+    "lon" : 0.10844782,
+    "id" : "SIDCUPS",
+    "name" : "Sidcup Siding",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.678542,
+    "lon" : -1.4889656,
+    "id" : "WKFLDKG",
+    "name" : "Wakefield Kirkgate",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.677284,
+    "lon" : -1.4933104,
+    "id" : "WKFLDWJ",
+    "name" : "Wakefield West Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

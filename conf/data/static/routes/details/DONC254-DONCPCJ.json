@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.508204,
+    "lon" : -1.1344731,
+    "id" : "DONC254",
+    "name" : "Doncaster Sig D254",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.502204,
+    "lon" : -1.1143024,
+    "id" : "DONCPCJ",
+    "name" : "Potteric Carr Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

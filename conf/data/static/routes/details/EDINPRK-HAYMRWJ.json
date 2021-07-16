@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.927605,
+    "lon" : -3.3074739,
+    "id" : "EDINPRK",
+    "name" : "Edinburgh Park",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.939088,
+    "lon" : -3.2469437,
+    "id" : "HAYMRWJ",
+    "name" : "Haymarket West Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.249686,
+    "lon" : -0.71283158,
+    "id" : "ASHH",
+    "name" : "Ash",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.249103,
+    "lon" : -0.71134337,
+    "id" : "ASHH331",
+    "name" : "Ash Signal Gd 1331",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

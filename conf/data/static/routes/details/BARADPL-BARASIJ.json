@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.553457,
+    "lon" : -4.6534489,
+    "id" : "BARADPL",
+    "name" : "Barassie Jn D.P.L.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.560152,
+    "lon" : -4.6509981,
+    "id" : "BARASIJ",
+    "name" : "Barassie Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

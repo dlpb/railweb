@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 51.549202,
+    "lon" : 0.022986859,
+    "id" : "FRSTGT",
+    "name" : "Forest Gate",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.551736,
+    "lon" : 0.026214988,
+    "id" : "WNSTDPK",
+    "name" : "Wanstead Park",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "9 MINUTES"
+}, {
+  "from" : {
+    "lat" : 51.549202,
+    "lon" : 0.022986859,
+    "id" : "FRSTGT",
+    "name" : "Forest Gate",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.551736,
+    "lon" : 0.026214988,
+    "id" : "WNSTDPK",
+    "name" : "Wanstead Park",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : " 9"
+} ]

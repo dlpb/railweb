@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.820688,
+    "lon" : -4.1202447,
+    "id" : "NWTLEJ",
+    "name" : "Newton East Jn",
+    "type" : "Junction"
+  },
+  "to" : {
+    "lat" : 55.81896,
+    "lon" : -4.1276533,
+    "id" : "NWTLSCL",
+    "name" : "Newton South Connect Line",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.476987,
+    "lon" : -3.2030859,
+    "id" : "LCKWSTJ",
+    "name" : "Leckwith South Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.488114,
+    "lon" : -3.2295205,
+    "id" : "WAUNGRN",
+    "name" : "Waun-Gron Park",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "45-75"
+} ]

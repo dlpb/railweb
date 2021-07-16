@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.56147,
+    "lon" : -0.44257,
+    "id" : "LUMICK",
+    "name" : "Ickenham",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.5538,
+    "lon" : -0.45,
+    "id" : "HLNDBUS",
+    "name" : "Hillingdon Und",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

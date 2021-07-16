@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.816992,
+    "lon" : -3.9874483,
+    "id" : "MOSENDE",
+    "name" : "Mossend East Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.821161,
+    "lon" : -3.9963928,
+    "id" : "MOSENDN",
+    "name" : "Mossend North Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

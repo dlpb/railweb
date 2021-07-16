@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.775663,
+    "lon" : -1.189348,
+    "id" : "LOGHBSJ",
+    "name" : "Loughborough South Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.847491,
+    "lon" : -1.180275,
+    "id" : "LOGHHOH",
+    "name" : "Hotchley Hill (East Leake)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

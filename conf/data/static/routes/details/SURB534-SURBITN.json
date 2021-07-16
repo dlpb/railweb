@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.38509,
+    "lon" : -0.32246829,
+    "id" : "SURB534",
+    "name" : "Surbiton Signal Wk534",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.392422,
+    "lon" : -0.30397425,
+    "id" : "SURBITN",
+    "name" : "Surbiton",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

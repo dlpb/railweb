@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.53706254983037,
+    "lon" : 0.7117266026695884,
+    "id" : "STHCENT",
+    "name" : "Southend Central",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.53741,
+    "lon" : 0.69158587,
+    "id" : "WCLIFF",
+    "name" : "Westcliff",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

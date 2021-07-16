@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.439272,
+    "lon" : -0.053301272,
+    "id" : "FORESTH",
+    "name" : "Forest Hill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.450475,
+    "lon" : -0.045081642,
+    "id" : "HONROPK",
+    "name" : "Honor Oak Park",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.274015,
+    "lon" : 0.51766579,
+    "id" : "KENNFHH",
+    "name" : "Kennett (Fhh)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.273956,
+    "lon" : 0.51786772,
+    "id" : "KENNTGF",
+    "name" : "Kennet Redland Ground Frme",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,10 @@
+[ {
+  "id" : "ACTNCTL",
+  "crp" : "",
+  "route" : "Anglia",
+  "changeTime" : "Set(None)",
+  "interchangeType" : "0 - Not an interchange point",
+  "county" : "London",
+  "district" : "Greater London",
+  "postcode" : "\"W3 0BH"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.794877,
+    "lon" : -1.5427355,
+    "id" : "LEED694",
+    "name" : "Leeds Sig L3694",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.794832,
+    "lon" : -1.5452104,
+    "id" : "LEEDS",
+    "name" : "Leeds",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

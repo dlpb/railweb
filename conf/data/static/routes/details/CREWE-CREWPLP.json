@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.088144,
+    "lon" : -2.4318491,
+    "id" : "CREWE",
+    "name" : "Crewe",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.079329,
+    "lon" : -2.4184601,
+    "id" : "CREWPLP",
+    "name" : "Crewe Up & Dn Pottery Lp",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

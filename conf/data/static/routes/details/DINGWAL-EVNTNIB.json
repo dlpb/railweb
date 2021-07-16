@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.593909,
+    "lon" : -4.4222608,
+    "id" : "DINGWAL",
+    "name" : "Dingwall",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 57.668827,
+    "lon" : -4.3248818,
+    "id" : "EVNTNIB",
+    "name" : "Evanton I.B.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.22683,
+    "lon" : -0.13251628,
+    "id" : "NUTFILD",
+    "name" : "Nutfield",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.236762,
+    "lon" : -0.16689619,
+    "id" : "REDH502",
+    "name" : "Redhill Signal T502",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

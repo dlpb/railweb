@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.133982,
+    "lon" : -2.6700691,
+    "id" : "BESTTSB",
+    "name" : "Beeston Castle & T. S. B.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.099462,
+    "lon" : -2.4626387,
+    "id" : "CREWESW",
+    "name" : "Crewe Steel Works",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

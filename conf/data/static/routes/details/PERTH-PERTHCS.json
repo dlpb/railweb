@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.391779,
+    "lon" : -3.439605,
+    "id" : "PERTH",
+    "name" : "Perth",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.393323,
+    "lon" : -3.4397281,
+    "id" : "PERTHCS",
+    "name" : "Perth C.S.D.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

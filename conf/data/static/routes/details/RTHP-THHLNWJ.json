@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.675702,
+    "lon" : -1.6552746,
+    "id" : "RTHP",
+    "name" : "Ravensthorpe",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.674589,
+    "lon" : -1.6589167,
+    "id" : "THHLNWJ",
+    "name" : "Thornhill L.N.W. Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

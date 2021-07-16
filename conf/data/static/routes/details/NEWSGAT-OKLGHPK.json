@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.613949,
+    "lon" : -0.14300121,
+    "id" : "NEWSGAT",
+    "name" : "New Southgate",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.637695,
+    "lon" : -0.16626645,
+    "id" : "OKLGHPK",
+    "name" : "Oakleigh Park",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

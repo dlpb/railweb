@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.075485,
+    "lon" : -2.1084744,
+    "id" : "STOKEND",
+    "name" : "Endon",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.0658,
+    "lon" : -2.0274,
+    "id" : "HSCHE",
+    "name" : "Cheddleton",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

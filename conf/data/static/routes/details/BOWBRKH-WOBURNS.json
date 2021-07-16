@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.00415,
+    "lon" : -0.6964609,
+    "id" : "BOWBRKH",
+    "name" : "Bow Brickhill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.018093,
+    "lon" : -0.65458121,
+    "id" : "WOBURNS",
+    "name" : "Woburn Sands",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

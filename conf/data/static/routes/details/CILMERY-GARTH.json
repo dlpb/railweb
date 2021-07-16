@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.150372,
+    "lon" : -3.456799,
+    "id" : "CILMERY",
+    "name" : "Cilmeri",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.133266,
+    "lon" : -3.5302588,
+    "id" : "GARTH",
+    "name" : "Garth (Powys)",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

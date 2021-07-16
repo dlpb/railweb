@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.215152,
+    "lon" : -0.52441078,
+    "id" : "CHLWTH",
+    "name" : "Chilworth",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.214385,
+    "lon" : -0.56688768,
+    "id" : "SHALFD",
+    "name" : "Shalford",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,10 @@
+[ {
+  "id" : "POOLE",
+  "crp" : "",
+  "route" : "Wessex",
+  "changeTime" : "Set(Some(ChangeTime(POO,SW,SW,4,(Poole))))",
+  "interchangeType" : "1 - Small interchange point",
+  "county" : "South West",
+  "district" : "Poole",
+  "postcode" : "\"BH15 2BQ"
+} ]

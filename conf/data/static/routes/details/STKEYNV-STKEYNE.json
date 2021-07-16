@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.416667,
+    "lon" : -4.466667,
+    "id" : "STKEYNV",
+    "name" : "St Keyne Village",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.422862,
+    "lon" : -4.4633417,
+    "id" : "STKEYNE",
+    "name" : "St Keyne Wishing Well Halt",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "15 MINUTES"
+} ]

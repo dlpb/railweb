@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.801275,
+    "lon" : -2.1196996,
+    "id" : "STAFA12",
+    "name" : "Stafford Arrival Sdg 1 & 2",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.803807,
+    "lon" : -2.1229995,
+    "id" : "STAFFRD",
+    "name" : "Stafford",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

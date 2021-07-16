@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.997381,
+    "lon" : -1.3199868,
+    "id" : "CATTAL",
+    "name" : "Cattal",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.000119,
+    "lon" : -1.3687141,
+    "id" : "CATTHOP",
+    "name" : "Hopperton",
+    "type" : "Point"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

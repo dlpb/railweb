@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.887391,
+    "lon" : -4.3638826,
+    "id" : "GSCD",
+    "name" : "Garscadden",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.884904,
+    "lon" : -4.3525057,
+    "id" : "SCTSTNH",
+    "name" : "Scotstounhill",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

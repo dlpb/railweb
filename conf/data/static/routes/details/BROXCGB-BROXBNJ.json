@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.746814,
+    "lon" : -0.010250677,
+    "id" : "BROXCGB",
+    "name" : "Broxbourne Redland Aggs",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.762618,
+    "lon" : 0.005356042,
+    "id" : "BROXBNJ",
+    "name" : "Broxbourne Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

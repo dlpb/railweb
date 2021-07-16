@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.543177,
+    "lon" : -1.4895929,
+    "id" : "NNTNANJ",
+    "name" : "Canal Farm Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.53736,
+    "lon" : -1.4812713,
+    "id" : "NNTNASJ",
+    "name" : "Ashby Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

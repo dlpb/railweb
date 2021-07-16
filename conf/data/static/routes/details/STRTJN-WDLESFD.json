@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.767087,
+    "lon" : -1.500195,
+    "id" : "STRTJN",
+    "name" : "Stourton Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.756615,
+    "lon" : -1.442821,
+    "id" : "WDLESFD",
+    "name" : "Woodlesford",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

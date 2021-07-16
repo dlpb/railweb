@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.455596,
+    "lon" : -1.4084013,
+    "id" : "ATLBSHI",
+    "name" : "Shilton",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.421577,
+    "lon" : -1.3500813,
+    "id" : "BRINKLW",
+    "name" : "Brinklow",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

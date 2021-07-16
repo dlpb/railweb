@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.8404,
+    "lon" : -3.0468,
+    "id" : "GOREBRG",
+    "name" : "Gorebridge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.86699642153141,
+    "lon" : -3.0693657755802732,
+    "id" : "NWTGRNG",
+    "name" : "Newtongrange",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.461043,
+    "lon" : -0.98862513,
+    "id" : "RDNGHLJ",
+    "name" : "Reading High Level Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.461918,
+    "lon" : -0.99626376,
+    "id" : "REDGWJN",
+    "name" : "Reading West Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

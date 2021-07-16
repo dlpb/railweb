@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.49323,
+    "lon" : -0.28438965,
+    "id" : "KEWEJ",
+    "name" : "Kew East Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.499523,
+    "lon" : -0.27019253,
+    "id" : "SACTON",
+    "name" : "South Acton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "NONE",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

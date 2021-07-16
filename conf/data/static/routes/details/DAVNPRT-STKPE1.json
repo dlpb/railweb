@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.390613,
+    "lon" : -2.1519042,
+    "id" : "DAVNPRT",
+    "name" : "Davenport",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.397517,
+    "lon" : -2.1644412,
+    "id" : "STKPE1",
+    "name" : "Edgeley Jn No1",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.417048,
+    "lon" : -4.5970257,
+    "id" : "DLRYMPL",
+    "name" : "Dalrymple Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.354809,
+    "lon" : -4.685199,
+    "id" : "MAYBOLE",
+    "name" : "Maybole",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

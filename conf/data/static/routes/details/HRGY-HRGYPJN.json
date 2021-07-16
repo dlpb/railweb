@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.577421,
+    "lon" : -0.1052489,
+    "id" : "HRGY",
+    "name" : "Harringay",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.574184,
+    "lon" : -0.10916454,
+    "id" : "HRGYPJN",
+    "name" : "Harringay Park Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.828135,
+    "lon" : -4.4932182,
+    "id" : "SRNASCC",
+    "name" : "St Clears Crossing",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.817967,
+    "lon" : -4.6147208,
+    "id" : "WHLAND",
+    "name" : "Whitland",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

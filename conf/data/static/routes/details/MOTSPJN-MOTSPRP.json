@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.389082,
+    "lon" : -0.24205067,
+    "id" : "MOTSPJN",
+    "name" : "Motspur Park Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.395409,
+    "lon" : -0.23942192,
+    "id" : "MOTSPRP",
+    "name" : "Motspur Park",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.331826,
+    "lon" : -0.77707893,
+    "id" : "BCKWATR",
+    "name" : "Blackwater",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.346755,
+    "lon" : -0.80422175,
+    "id" : "SNDHRST",
+    "name" : "Sandhurst",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

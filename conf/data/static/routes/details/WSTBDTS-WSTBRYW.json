@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.266184,
+    "lon" : -2.1995079,
+    "id" : "WSTBDTS",
+    "name" : "Westbury Dn Trowbridge Sdg",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.266444,
+    "lon" : -2.1996667,
+    "id" : "WSTBRYW",
+    "name" : "Westbury",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

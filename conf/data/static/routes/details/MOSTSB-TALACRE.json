@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.31965,
+    "lon" : -3.2718687,
+    "id" : "MOSTSB",
+    "name" : "Mostyn Signal Box",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.344008,
+    "lon" : -3.3257535,
+    "id" : "TALACRE",
+    "name" : "Talacre",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

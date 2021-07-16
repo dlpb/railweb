@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.294518,
+    "lon" : -3.8330014,
+    "id" : "DEGANWY",
+    "name" : "Deganwy",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.283996,
+    "lon" : -3.8096741,
+    "id" : "LANDUDJ",
+    "name" : "Llandudno Junction",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "30-50"
+} ]

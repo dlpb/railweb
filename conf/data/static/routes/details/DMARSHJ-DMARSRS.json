@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.219411,
+    "lon" : -3.0306978,
+    "id" : "DMARSHJ",
+    "name" : "Dee Marsh Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.229944,
+    "lon" : -3.0289733,
+    "id" : "DMARSRS",
+    "name" : "Dee Marsh Recp. Sdgs",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

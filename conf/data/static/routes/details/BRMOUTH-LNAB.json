@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.722313,
+    "lon" : -4.056613,
+    "id" : "BRMOUTH",
+    "name" : "Barmouth",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.741412,
+    "lon" : -4.0771566,
+    "id" : "LNAB",
+    "name" : "Llanaber",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

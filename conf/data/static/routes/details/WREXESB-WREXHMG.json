@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.054165,
+    "lon" : -3.0006545,
+    "id" : "WREXESB",
+    "name" : "Wrexham Exchange Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.050776,
+    "lon" : -3.0016352,
+    "id" : "WREXHMG",
+    "name" : "Wrexham General",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

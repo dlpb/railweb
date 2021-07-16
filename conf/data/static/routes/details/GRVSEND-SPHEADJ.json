@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.44131,
+    "lon" : 0.36620941,
+    "id" : "GRVSEND",
+    "name" : "Gravesend",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.441493,
+    "lon" : 0.33060256,
+    "id" : "SPHEADJ",
+    "name" : "Springhead Junction (Ctrl)",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

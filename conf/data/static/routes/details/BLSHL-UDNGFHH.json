@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.81705,
+    "lon" : -4.0246899,
+    "id" : "BLSHL",
+    "name" : "Bellshill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.82298,
+    "lon" : -4.0695704,
+    "id" : "UDNGFHH",
+    "name" : "Viewpark Sdg Udngstn Lafrg",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

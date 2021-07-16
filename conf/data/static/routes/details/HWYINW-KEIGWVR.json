@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.85394,
+    "lon" : -1.91476,
+    "id" : "HWYINW",
+    "name" : "Ingrow West",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 53.867664,
+    "lon" : -1.90127,
+    "id" : "KEIGWVR",
+    "name" : "Keighley & Wvlr",
+    "type" : "Point"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.612785,
+    "lon" : -2.1469429,
+    "id" : "RCHDLEJ",
+    "name" : "Rochdale East Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.633009,
+    "lon" : -2.1138043,
+    "id" : "SMBG",
+    "name" : "Smithy Bridge",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

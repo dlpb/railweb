@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.455194,
+    "lon" : -0.37149999,
+    "id" : "HOUNSLJ",
+    "name" : "Hounslow Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.462179,
+    "lon" : -0.36166395,
+    "id" : "HOUNSLW",
+    "name" : "Hounslow",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

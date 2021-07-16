@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.317082,
+    "lon" : -3.0090497,
+    "id" : "CUPAR",
+    "name" : "Cupar",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.375274,
+    "lon" : -2.8934094,
+    "id" : "LEUCHRS",
+    "name" : "Leuchars",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

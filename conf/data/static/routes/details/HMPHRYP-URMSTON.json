@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.452299,
+    "lon" : -2.3274328,
+    "id" : "HMPHRYP",
+    "name" : "Humphrey Park",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.44825,
+    "lon" : -2.3539921,
+    "id" : "URMSTON",
+    "name" : "Urmston",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

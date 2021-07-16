@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.563738,
+    "lon" : 0.0080782956,
+    "id" : "LYTNSHR",
+    "name" : "Leytonstone High Road",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.551736,
+    "lon" : 0.026214988,
+    "id" : "WNSTDPK",
+    "name" : "Wanstead Park",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

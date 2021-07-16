@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.579844,
+    "lon" : -2.8752086,
+    "id" : "LLWESWE",
+    "name" : "Llanwern Steelworks East",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.577798,
+    "lon" : -2.8289321,
+    "id" : "MAGOR",
+    "name" : "Magor",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

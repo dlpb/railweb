@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 54.959453,
+    "lon" : -1.4613857,
+    "id" : "BRWHINS",
+    "name" : "Brockley Whins (T & W Metro)",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 54.946505,
+    "lon" : -1.4205468,
+    "id" : "EBOLDON",
+    "name" : "East Boldon (T & W Metro)",
+    "type" : "Location"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE/1500V DC",
+  "type" : "NR",
+  "speed" : "40-75"
+}, {
+  "from" : {
+    "lat" : 54.959453,
+    "lon" : -1.4613857,
+    "id" : "BRWHINS",
+    "name" : "Brockley Whins (T & W Metro)",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 54.946505,
+    "lon" : -1.4205468,
+    "id" : "EBOLDON",
+    "name" : "East Boldon (T & W Metro)",
+    "type" : "Location"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Unknown",
+  "speed" : "OHLE"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.4824,
+    "lon" : -2.1926,
+    "id" : "MNCRVPM",
+    "name" : "Velopark Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.4828,
+    "lon" : -2.1829,
+    "id" : "MNCRCHB",
+    "name" : "Clayton Hal Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

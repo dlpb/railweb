@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.375274,
+    "lon" : -2.8934094,
+    "id" : "LEUCHRS",
+    "name" : "Leuchars",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.338909,
+    "lon" : -2.79893,
+    "id" : "SANWBUS",
+    "name" : "St Andrews Bus",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

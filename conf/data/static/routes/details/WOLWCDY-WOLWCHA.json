@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.491142,
+    "lon" : 0.054743515,
+    "id" : "WOLWCDY",
+    "name" : "Woolwich Dockyard",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.489754,
+    "lon" : 0.069734354,
+    "id" : "WOLWCHA",
+    "name" : "Woolwich Arsenal",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 58.513453,
+    "lon" : -3.4520102,
+    "id" : "GRGMASJ",
+    "name" : "Georgemas Junction",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 58.514705,
+    "lon" : -3.4388778,
+    "id" : "GRGMBOW",
+    "name" : "Bower",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

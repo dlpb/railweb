@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.599336,
+    "lon" : -1.2684069,
+    "id" : "HVRTBSB",
+    "name" : "Belasis Lane S.B.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.584428,
+    "lon" : -1.2183397,
+    "id" : "PRTCPHL",
+    "name" : "Phillips Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

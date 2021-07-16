@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.200233,
+    "lon" : 0.067208465,
+    "id" : "EDNT",
+    "name" : "Edenbridge Town",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.244564,
+    "lon" : 0.0039165517,
+    "id" : "HRSTGRN",
+    "name" : "Hurst Green",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

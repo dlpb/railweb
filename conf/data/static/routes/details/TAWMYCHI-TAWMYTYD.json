@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.9865,
+    "lon" : -1.432,
+    "id" : "TAWMYCHI",
+    "name" : "Chichester",
+    "type" : "Metro"
+  },
+  "to" : {
+    "lat" : 54.9761,
+    "lon" : -1.4417,
+    "id" : "TAWMYTYD",
+    "name" : "Tyne Dock",
+    "type" : "Metro"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Metro",
+  "speed" : "OHLE"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.148724,
+    "lon" : -2.0871957,
+    "id" : "ABRDWAT",
+    "name" : "Aberdeen Waterloo",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 57.165788,
+    "lon" : -2.1138237,
+    "id" : "KITTYGF",
+    "name" : "Kittybrewster Gf",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

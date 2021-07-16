@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.6109,
+    "lon" : -0.4244,
+    "id" : "CATZZND",
+    "name" : "Northwood Und",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.579142,
+    "lon" : -0.33615896,
+    "id" : "HAROOTH",
+    "name" : "Harrow-On-The-Hill",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "20 MINUTES"
+} ]

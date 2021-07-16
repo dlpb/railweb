@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.443828,
+    "lon" : -2.3830874,
+    "id" : "FLIXTON",
+    "name" : "Flixton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.44825,
+    "lon" : -2.3539921,
+    "id" : "URMSTON",
+    "name" : "Urmston",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

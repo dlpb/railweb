@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.955534,
+    "lon" : -4.036417,
+    "id" : "CROY",
+    "name" : "Croy",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.921236,
+    "lon" : -4.154382,
+    "id" : "LENZIE",
+    "name" : "Lenzie",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

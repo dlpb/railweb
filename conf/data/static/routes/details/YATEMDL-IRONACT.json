@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.541519,
+    "lon" : -2.4320545,
+    "id" : "YATEMDL",
+    "name" : "Yate Middle",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.547403,
+    "lon" : -2.468596,
+    "id" : "IRONACT",
+    "name" : "Iron Acton",
+    "type" : "Point"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

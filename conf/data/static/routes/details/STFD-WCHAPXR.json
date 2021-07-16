@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.5422,
+    "lon" : -0.0033,
+    "id" : "STFD",
+    "name" : "Stratford (London)",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.51946719200348,
+    "lon" : -0.059757120098615765,
+    "id" : "WCHAPXR",
+    "name" : "Whitechapel Crossrail",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

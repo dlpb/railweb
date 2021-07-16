@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.490829,
+    "lon" : -0.1951125,
+    "id" : "ELCT",
+    "name" : "Earl's Court Underground",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 51.49085,
+    "lon" : -0.20532,
+    "id" : "LUDWEK",
+    "name" : "West Kensington",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

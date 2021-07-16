@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.524517,
+    "lon" : -0.24440785,
+    "id" : "OLDOEMR",
+    "name" : "Old Oak Common Emu Receptn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.525489,
+    "lon" : -0.23667247,
+    "id" : "OLDOKCE",
+    "name" : "Old Oak Common East",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

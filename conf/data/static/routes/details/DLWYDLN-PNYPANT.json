@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.0520105815927,
+    "lon" : -3.885132099556326,
+    "id" : "DLWYDLN",
+    "name" : "Dolwyddelan",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.06524,
+    "lon" : -3.8626059,
+    "id" : "PNYPANT",
+    "name" : "Pont-Y-Pant",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "30-50"
+} ]

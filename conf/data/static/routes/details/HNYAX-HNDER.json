@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.65163,
+    "lon" : 0.95968,
+    "id" : "HNYAX",
+    "name" : "Yaxham",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.6789,
+    "lon" : 0.9474,
+    "id" : "HNDER",
+    "name" : "Dereham",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

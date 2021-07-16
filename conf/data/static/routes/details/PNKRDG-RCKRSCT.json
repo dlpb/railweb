@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.723821,
+    "lon" : -2.1194277,
+    "id" : "PNKRDG",
+    "name" : "Penkridge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.788698,
+    "lon" : -2.1109016,
+    "id" : "RCKRSCT",
+    "name" : "Rickerscote",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

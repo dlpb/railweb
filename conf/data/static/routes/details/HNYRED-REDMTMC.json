@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.31919,
+    "lon" : -1.9286,
+    "id" : "HNYRED",
+    "name" : "Redmire",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 54.31919,
+    "lon" : -1.9303261,
+    "id" : "REDMTMC",
+    "name" : "Redmire Tarmac",
+    "type" : "Point"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

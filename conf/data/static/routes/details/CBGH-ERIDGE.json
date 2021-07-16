@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.04617,
+    "lon" : 0.18770291,
+    "id" : "CBGH",
+    "name" : "Crowborough",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.089483,
+    "lon" : 0.20062809,
+    "id" : "ERIDGE",
+    "name" : "Eridge",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

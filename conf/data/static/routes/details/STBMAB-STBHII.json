@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.400686,
+    "lon" : -1.5082572,
+    "id" : "STBMAB",
+    "name" : "Malin Bridge",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 53.40164,
+    "lon" : -1.4986446,
+    "id" : "STBHII",
+    "name" : "Hillsborough Interchange",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

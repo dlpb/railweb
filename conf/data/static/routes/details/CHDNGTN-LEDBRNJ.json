@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.858338,
+    "lon" : -0.6620377,
+    "id" : "CHDNGTN",
+    "name" : "Cheddington",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.887725,
+    "lon" : -0.672601,
+    "id" : "LEDBRNJ",
+    "name" : "Ledburn Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

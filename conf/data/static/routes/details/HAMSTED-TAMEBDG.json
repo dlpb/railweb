@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.530878,
+    "lon" : -1.9286979,
+    "id" : "HAMSTED",
+    "name" : "Hamstead",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.552248,
+    "lon" : -1.9760054,
+    "id" : "TAMEBDG",
+    "name" : "Tame Bridge Parkway",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

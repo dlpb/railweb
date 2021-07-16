@@ -1,0 +1,58 @@
+[ {
+  "from" : {
+    "lat" : 51.532256,
+    "lon" : -0.1233741,
+    "id" : "KNGX",
+    "name" : "London Kings Cross",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.518944,
+    "lon" : -0.080939088,
+    "id" : "LIVST",
+    "name" : "London Liverpool Street",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "21 MINUTES"
+}, {
+  "from" : {
+    "lat" : 51.532256,
+    "lon" : -0.1233741,
+    "id" : "KNGX",
+    "name" : "London Kings Cross",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.518944,
+    "lon" : -0.080939088,
+    "id" : "LIVST",
+    "name" : "London Liverpool Street",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "16 MINUTES"
+}, {
+  "from" : {
+    "lat" : 51.532256,
+    "lon" : -0.1233741,
+    "id" : "KNGX",
+    "name" : "London Kings Cross",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.518944,
+    "lon" : -0.080939088,
+    "id" : "LIVST",
+    "name" : "London Liverpool Street",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "11 MINUTES"
+} ]

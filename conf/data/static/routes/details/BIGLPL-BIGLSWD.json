@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.082971,
+    "lon" : -0.26128272,
+    "id" : "BIGLPL",
+    "name" : "Biggleswade Plasmor",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.084519,
+    "lon" : -0.26075552,
+    "id" : "BIGLSWD",
+    "name" : "Biggleswade",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

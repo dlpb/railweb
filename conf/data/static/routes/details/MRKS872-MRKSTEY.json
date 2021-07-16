@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.982334,
+    "lon" : 0.68890685,
+    "id" : "MRKS872",
+    "name" : "Marks Tey Signal L872",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.88093688949532,
+    "lon" : 0.7833273987947587,
+    "id" : "MRKSTEY",
+    "name" : "Marks Tey",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

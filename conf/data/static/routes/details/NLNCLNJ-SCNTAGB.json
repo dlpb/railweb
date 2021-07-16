@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.595968,
+    "lon" : -0.61994874,
+    "id" : "NLNCLNJ",
+    "name" : "North Lincoln Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.586072,
+    "lon" : -0.65154261,
+    "id" : "SCNTAGB",
+    "name" : "Scunthorpe Anchor (Gbrf)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

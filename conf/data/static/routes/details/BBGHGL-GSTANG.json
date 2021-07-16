@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.818141,
+    "lon" : -2.7377171,
+    "id" : "BBGHGL",
+    "name" : "Barton & Broughton Pass Lp",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.887027,
+    "lon" : -2.7476935,
+    "id" : "GSTANG",
+    "name" : "Garstang & Catteral",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.355968,
+    "lon" : -3.40964,
+    "id" : "HCRAR",
+    "name" : "Ravenglass (R&Er)",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 54.367,
+    "lon" : -3.394,
+    "id" : "HCMUM",
+    "name" : "Muncaster Mill",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

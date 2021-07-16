@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.976357,
+    "lon" : -3.5961847,
+    "id" : "LNLTHGW",
+    "name" : "Linlithgow",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.97724,
+    "lon" : -3.5903876,
+    "id" : "LNLTUPL",
+    "name" : "Linlithgow U.P.L.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

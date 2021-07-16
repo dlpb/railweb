@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.043066,
+    "lon" : -1.6792805,
+    "id" : "DEANEGR",
+    "name" : "Dean East Grimstead G.F.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.07535,
+    "lon" : -1.7819298,
+    "id" : "LSTOKSJ",
+    "name" : "Laverstock South Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

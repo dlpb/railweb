@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.021437,
+    "lon" : -3.1162296,
+    "id" : "KRKP863",
+    "name" : "Kirkpatrick Signal Mc863",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.054004,
+    "lon" : -3.2148659,
+    "id" : "KRTLBDG",
+    "name" : "Kirtlebridge G.F.",
+    "type" : "Point"
+  },
+  "singleTrack" : "1",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

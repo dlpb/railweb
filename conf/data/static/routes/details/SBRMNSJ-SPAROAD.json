@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.489368,
+    "lon" : -0.055864022,
+    "id" : "SBRMNSJ",
+    "name" : "South Bermondsey Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.49416,
+    "lon" : -0.064548705,
+    "id" : "SPAROAD",
+    "name" : "Spa Road Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.108822,
+    "lon" : -3.2031663,
+    "id" : "BAROSHJ",
+    "name" : "Salthouse Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.119063,
+    "lon" : -3.2259539,
+    "id" : "BAROW",
+    "name" : "Barrow-In-Furness",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.4853,
+    "lon" : -2.2002,
+    "id" : "MNCRECM",
+    "name" : "Etihad Camp Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.4824,
+    "lon" : -2.1926,
+    "id" : "MNCRVPM",
+    "name" : "Velopark Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

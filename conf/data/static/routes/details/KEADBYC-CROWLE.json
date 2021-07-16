@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.593308,
+    "lon" : -0.75343704,
+    "id" : "KEADBYC",
+    "name" : "Keadby Canal",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.589803,
+    "lon" : -0.81732639,
+    "id" : "CROWLE",
+    "name" : "Crowle",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

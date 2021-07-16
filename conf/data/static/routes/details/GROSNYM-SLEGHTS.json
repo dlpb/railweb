@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.436764,
+    "lon" : -0.72457533,
+    "id" : "GROSNYM",
+    "name" : "Grosmont",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.461074,
+    "lon" : -0.6628812,
+    "id" : "SLEGHTS",
+    "name" : "Sleights",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

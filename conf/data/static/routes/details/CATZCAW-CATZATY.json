@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.8409,
+    "lon" : -6.9226,
+    "id" : "CATZCAW",
+    "name" : "Carlow Cie",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.9925,
+    "lon" : -6.9768,
+    "id" : "CATZATY",
+    "name" : "Athy        (Cie",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

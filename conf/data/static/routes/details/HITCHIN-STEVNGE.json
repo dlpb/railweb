@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.953075,
+    "lon" : -0.26293579,
+    "id" : "HITCHIN",
+    "name" : "Hitchin",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.90145,
+    "lon" : -0.20695896,
+    "id" : "STEVNGE",
+    "name" : "Stevenage",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

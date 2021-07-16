@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.754256,
+    "lon" : 0.39967462,
+    "id" : "PBROKLB",
+    "name" : "Kings Lynn Coach",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.666321,
+    "lon" : 0.16135365,
+    "id" : "WISBBUS",
+    "name" : "Wisbech (Coach)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

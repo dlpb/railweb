@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.510013,
+    "lon" : -0.47534831,
+    "id" : "WDRYJN",
+    "name" : "West Drayton Jcn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.509986,
+    "lon" : -0.4718907,
+    "id" : "WDRYUGL",
+    "name" : "West Drayton Up Goods Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

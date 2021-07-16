@@ -1,0 +1,58 @@
+[ {
+  "from" : {
+    "lat" : 51.546175290908955,
+    "lon" : -0.103763713575122,
+    "id" : "HIGHBYE",
+    "name" : "Highbury & Islington",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.583423,
+    "lon" : -0.075062442,
+    "id" : "SEVNSIS",
+    "name" : "Seven Sisters",
+    "type" : "Station"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+}, {
+  "from" : {
+    "lat" : 51.546175290908955,
+    "lon" : -0.103763713575122,
+    "id" : "HIGHBYE",
+    "name" : "Highbury & Islington",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.583423,
+    "lon" : -0.075062442,
+    "id" : "SEVNSIS",
+    "name" : "Seven Sisters",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "18 MINUTES"
+}, {
+  "from" : {
+    "lat" : 51.546175290908955,
+    "lon" : -0.103763713575122,
+    "id" : "HIGHBYE",
+    "name" : "Highbury & Islington",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.583423,
+    "lon" : -0.075062442,
+    "id" : "SEVNSIS",
+    "name" : "Seven Sisters",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "23 MINUTES"
+} ]

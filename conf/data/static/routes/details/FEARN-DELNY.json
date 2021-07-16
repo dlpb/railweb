@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.778114,
+    "lon" : -3.9939509,
+    "id" : "FEARN",
+    "name" : "Fearn",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 57.725421,
+    "lon" : -4.1080854,
+    "id" : "DELNY",
+    "name" : "Delny",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

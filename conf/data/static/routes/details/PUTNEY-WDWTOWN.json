@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.460971,
+    "lon" : -0.21549418,
+    "id" : "PUTNEY",
+    "name" : "Putney",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.460532,
+    "lon" : -0.19734446,
+    "id" : "WDWTOWN",
+    "name" : "Wandsworth Town",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

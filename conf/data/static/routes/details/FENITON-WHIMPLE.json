@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.786507,
+    "lon" : -3.2851861,
+    "id" : "FENITON",
+    "name" : "Feniton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.768051,
+    "lon" : -3.353713,
+    "id" : "WHIMPLE",
+    "name" : "Whimple",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

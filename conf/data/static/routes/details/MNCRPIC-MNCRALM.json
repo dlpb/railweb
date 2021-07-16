@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.477002,
+    "lon" : -2.2301094,
+    "id" : "MNCRPIC",
+    "name" : "Manchester Piccadilly",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.4904,
+    "lon" : -2.0976,
+    "id" : "MNCRALM",
+    "name" : "Ashton U L Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "42 MINUTES"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.367,
+    "lon" : -2.253,
+    "id" : "SDMMTLK",
+    "name" : "Shadowmoss Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.365287,
+    "lon" : -2.2709674,
+    "id" : "MNCRIAP",
+    "name" : "Manchester Airport",
+    "type" : "Station"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

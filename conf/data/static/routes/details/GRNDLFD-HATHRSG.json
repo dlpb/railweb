@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.305522,
+    "lon" : -1.6256217,
+    "id" : "GRNDLFD",
+    "name" : "Grindleford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.32579,
+    "lon" : -1.6519137,
+    "id" : "HATHRSG",
+    "name" : "Hathersage",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

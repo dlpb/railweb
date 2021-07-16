@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.335974,
+    "lon" : -1.9140921,
+    "id" : "CHNLYEJ",
+    "name" : "Chinley East Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.364782,
+    "lon" : -1.8172131,
+    "id" : "EDALE",
+    "name" : "Edale",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

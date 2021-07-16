@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.848227,
+    "lon" : -4.2608886,
+    "id" : "EGLNSTJ",
+    "name" : "Eglinton St Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.851148,
+    "lon" : -4.2604032,
+    "id" : "GLGCBSJ",
+    "name" : "Glasgow Bridge Street Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "120-125"
+} ]

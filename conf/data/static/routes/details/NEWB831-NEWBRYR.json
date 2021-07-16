@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.398652,
+    "lon" : -1.2994302,
+    "id" : "NEWB831",
+    "name" : "Newbury Signal T6831",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.398661,
+    "lon" : -1.3070486,
+    "id" : "NEWBRYR",
+    "name" : "Newbury Racecourse",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

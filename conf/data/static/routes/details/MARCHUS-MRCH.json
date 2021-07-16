@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.559318,
+    "lon" : 0.094711183,
+    "id" : "MARCHUS",
+    "name" : "March Up R.S.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.560202,
+    "lon" : 0.090976419,
+    "id" : "MRCH",
+    "name" : "March",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

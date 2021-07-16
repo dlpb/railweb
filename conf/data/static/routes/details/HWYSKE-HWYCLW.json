@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.595436,
+    "lon" : -1.6528756,
+    "id" : "HWYSKE",
+    "name" : "Skelmanthorpe",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 53.59714,
+    "lon" : -1.6109495,
+    "id" : "HWYCLW",
+    "name" : "Clayton West",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

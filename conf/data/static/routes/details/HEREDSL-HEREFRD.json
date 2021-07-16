@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.05747,
+    "lon" : -2.7044618,
+    "id" : "HEREDSL",
+    "name" : "Hereford Diesel Sdgs.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.061295,
+    "lon" : -2.708256,
+    "id" : "HEREFRD",
+    "name" : "Hereford",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

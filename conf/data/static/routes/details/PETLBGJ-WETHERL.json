@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.885811,
+    "lon" : -2.9196423,
+    "id" : "PETLBGJ",
+    "name" : "Petteril Bridge Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.883731,
+    "lon" : -2.8316486,
+    "id" : "WETHERL",
+    "name" : "Wetheral",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

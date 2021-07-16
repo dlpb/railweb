@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.191624,
+    "lon" : 0.26966686,
+    "id" : "TONBDG",
+    "name" : "Tonbridge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.19194,
+    "lon" : 0.26634764,
+    "id" : "TONBDLP",
+    "name" : "Tonbridge Down Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

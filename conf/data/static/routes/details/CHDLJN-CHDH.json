@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.377547,
+    "lon" : -2.1867766,
+    "id" : "CHDLJN",
+    "name" : "Cheadle Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.376107,
+    "lon" : -2.1884237,
+    "id" : "CHDH",
+    "name" : "Cheadle Hulme",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

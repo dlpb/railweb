@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.486508,
+    "lon" : -0.12266035,
+    "id" : "VAUXHLM",
+    "name" : "Vauxhall",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.489081,
+    "lon" : -0.133037,
+    "id" : "LUVPIM",
+    "name" : "Pimlico",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

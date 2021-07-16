@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.954774,
+    "lon" : -3.1730374,
+    "id" : "ABHLJN",
+    "name" : "Abbeyhill Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.955792,
+    "lon" : -3.1373357,
+    "id" : "CRGNTYJ",
+    "name" : "Craigentinny Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

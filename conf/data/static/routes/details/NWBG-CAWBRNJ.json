@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.934276,
+    "lon" : -3.3979994,
+    "id" : "NWBG",
+    "name" : "Newbridge Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.919999,
+    "lon" : -3.4854019,
+    "id" : "CAWBRNJ",
+    "name" : "Cawburn Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

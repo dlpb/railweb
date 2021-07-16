@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.51952,
+    "lon" : -2.6101543,
+    "id" : "BMFRLNJ",
+    "name" : "Bamfurlong Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.527796,
+    "lon" : -2.6158247,
+    "id" : "SPRBJN",
+    "name" : "Springs Branch Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

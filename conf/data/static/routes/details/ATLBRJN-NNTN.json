@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.508318,
+    "lon" : -1.4464585,
+    "id" : "ATLBRJN",
+    "name" : "Attleborough Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.526776,
+    "lon" : -1.4644893,
+    "id" : "NNTN",
+    "name" : "Nuneaton",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

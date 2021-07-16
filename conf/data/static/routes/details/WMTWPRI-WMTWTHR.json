@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.57191,
+    "lon" : -2.09798,
+    "id" : "WMTWPRI",
+    "name" : "Priestfield",
+    "type" : "Metro"
+  },
+  "to" : {
+    "lat" : 52.58107,
+    "lon" : -2.11711,
+    "id" : "WMTWTHR",
+    "name" : "The Royal",
+    "type" : "Metro"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Metro",
+  "speed" : "OHLE"
+} ]

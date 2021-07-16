@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.949737,
+    "lon" : -0.81989887,
+    "id" : "BOTESWJ",
+    "name" : "Bottesford West Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.952115,
+    "lon" : -0.85533429,
+    "id" : "ELTON",
+    "name" : "Elton & Orston",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

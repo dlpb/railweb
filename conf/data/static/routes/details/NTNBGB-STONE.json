@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.839529,
+    "lon" : -2.1746885,
+    "id" : "NTNBGB",
+    "name" : "Great Bridgeford",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.908172,
+    "lon" : -2.1551001,
+    "id" : "STONE",
+    "name" : "Stone",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

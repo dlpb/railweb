@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.195559,
+    "lon" : -0.98121537,
+    "id" : "WEEDBAN",
+    "name" : "Banbury Lane L.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.219129,
+    "lon" : -1.0564729,
+    "id" : "WEEDSTO",
+    "name" : "Stowe Hill Tunnel",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

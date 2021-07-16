@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.356287,
+    "lon" : -2.7798069,
+    "id" : "DITTNRH",
+    "name" : "Ditton Reception Headshunt",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.355855,
+    "lon" : -2.7730079,
+    "id" : "DITTNRS",
+    "name" : "Ditton Reception Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

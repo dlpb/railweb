@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.503931,
+    "lon" : -2.1893979,
+    "id" : "NWTNHDD",
+    "name" : "Newton Heath T.M.D.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.523275,
+    "lon" : -2.1710675,
+    "id" : "MSTN",
+    "name" : "Moston",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

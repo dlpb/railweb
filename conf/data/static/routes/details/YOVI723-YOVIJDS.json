@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.944482,
+    "lon" : -2.6131002,
+    "id" : "YOVI723",
+    "name" : "Yeovil Junc Signal 4723",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.924912,
+    "lon" : -2.6118753,
+    "id" : "YOVIJDS",
+    "name" : "Yeovil Jn Dn Sdgs 1&2",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

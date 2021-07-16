@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.395409,
+    "lon" : -0.23942192,
+    "id" : "MOTSPRP",
+    "name" : "Motspur Park",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.409086,
+    "lon" : -0.23041299,
+    "id" : "RAYNSPK",
+    "name" : "Raynes Park",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

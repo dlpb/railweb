@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.62970512,
+    "lon" : -0.432070848,
+    "id" : "LUMMOP",
+    "name" : "Moor Park",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.6109,
+    "lon" : -0.4244,
+    "id" : "CATZZND",
+    "name" : "Northwood Und",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

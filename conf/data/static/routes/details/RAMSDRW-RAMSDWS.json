@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.340275,
+    "lon" : 1.4026651,
+    "id" : "RAMSDRW",
+    "name" : "Rm Dws Dept Receptwest",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.340275,
+    "lon" : 1.4026651,
+    "id" : "RAMSDWS",
+    "name" : "Ramsgate Depot Washer Spur",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

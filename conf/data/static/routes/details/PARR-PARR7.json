@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.355688,
+    "lon" : -4.7045131,
+    "id" : "PARR",
+    "name" : "Par",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.355688,
+    "lon" : -4.7045131,
+    "id" : "PARR7",
+    "name" : "Par Sig Pr7",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

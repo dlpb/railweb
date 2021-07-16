@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.508462,
+    "lon" : -3.2288147,
+    "id" : "LLANDAF",
+    "name" : "Llandaf",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.516618,
+    "lon" : -3.2492112,
+    "id" : "RADYR",
+    "name" : "Radyr",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "45-75"
+} ]

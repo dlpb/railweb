@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.404599,
+    "lon" : -2.9284014,
+    "id" : "BOOTLBJ",
+    "name" : "Bootle Branch Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.442537,
+    "lon" : -2.9595953,
+    "id" : "WAANFLD",
+    "name" : "Walton & Anfield",
+    "type" : "Point"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

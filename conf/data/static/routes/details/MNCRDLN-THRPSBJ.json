@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.504209,
+    "lon" : -2.183851,
+    "id" : "MNCRDLN",
+    "name" : "Dean Lane",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 53.502746,
+    "lon" : -2.1937346,
+    "id" : "THRPSBJ",
+    "name" : "Thorpes Bridge Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

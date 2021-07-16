@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.541719,
+    "lon" : -3.7424144,
+    "id" : "MRGMMJN",
+    "name" : "Margam Moors Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.525369,
+    "lon" : -3.6977503,
+    "id" : "PYLE",
+    "name" : "Pyle",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

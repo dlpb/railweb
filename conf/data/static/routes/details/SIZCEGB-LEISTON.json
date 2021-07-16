@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.203525,
+    "lon" : 1.5958048,
+    "id" : "SIZCEGB",
+    "name" : "Sizewell C.E.G.B.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.210238,
+    "lon" : 1.5711341,
+    "id" : "LEISTON",
+    "name" : "Leiston",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.7052,
+    "lon" : -0.6113,
+    "id" : "CHSM",
+    "name" : "Chesham Und",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.66821,
+    "lon" : -0.56160764,
+    "id" : "CHLFNAL",
+    "name" : "Chalfont & Latimer",
+    "type" : "Station"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

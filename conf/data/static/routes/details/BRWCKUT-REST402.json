@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.774336,
+    "lon" : -2.010798,
+    "id" : "BRWCKUT",
+    "name" : "Berwick-Upon-Tweed",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.813648,
+    "lon" : -2.0413184,
+    "id" : "REST402",
+    "name" : "Reston Signal Eg402",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

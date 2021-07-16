@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.935606,
+    "lon" : -1.155786,
+    "id" : "NTL2WIV",
+    "name" : "Wilford Village",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 52.939009,
+    "lon" : -1.153695,
+    "id" : "NTL2MEE",
+    "name" : "Meadows Embankment",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

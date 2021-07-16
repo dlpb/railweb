@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.575438,
+    "lon" : -0.10495615,
+    "id" : "HRGYURV",
+    "name" : "Harringay Up Rev Sdgs",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.586076,
+    "lon" : -0.11161564,
+    "id" : "HRNSDRS",
+    "name" : "Hornsey Dn Reversing Sdgs",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

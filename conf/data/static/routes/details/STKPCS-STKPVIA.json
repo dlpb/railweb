@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.404978,
+    "lon" : -2.1640639,
+    "id" : "STKPCS",
+    "name" : "Stockport Car. M.D.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.40938,
+    "lon" : -2.1657205,
+    "id" : "STKPVIA",
+    "name" : "Stockport Viaduct",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

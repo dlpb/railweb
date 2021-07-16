@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.587256,
+    "lon" : -1.8770058,
+    "id" : "STNPSTR",
+    "name" : "Streetly Sig Wr5433",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.602037,
+    "lon" : -1.9216286,
+    "id" : "STNPALD",
+    "name" : "Aldridge Sig Wl42",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

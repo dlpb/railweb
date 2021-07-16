@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.664041,
+    "lon" : -0.39592054,
+    "id" : "WATFDJ",
+    "name" : "Watford Junction",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.659909,
+    "lon" : -0.3910061,
+    "id" : "WATFJSJ",
+    "name" : "Watford South Jcn",
+    "type" : "Point"
+  },
+  "singleTrack" : "6",
+  "electrification" : "OHLE/DC",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

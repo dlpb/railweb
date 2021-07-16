@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.263018,
+    "lon" : -1.9092157,
+    "id" : "BUXTNO1",
+    "name" : "Buxton S.B.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.299954,
+    "lon" : -1.8898118,
+    "id" : "DVHL",
+    "name" : "Dove Holes",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

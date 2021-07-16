@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.279926,
+    "lon" : -0.96082008,
+    "id" : "HOOK",
+    "name" : "Hook",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.284733,
+    "lon" : -0.90701116,
+    "id" : "WNCFILD",
+    "name" : "Winchfield",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

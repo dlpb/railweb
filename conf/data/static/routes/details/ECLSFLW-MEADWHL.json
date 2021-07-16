@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.441077,
+    "lon" : -1.4466245,
+    "id" : "ECLSFLW",
+    "name" : "Ecclesfield West S.B.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.416924,
+    "lon" : -1.4143786,
+    "id" : "MEADWHL",
+    "name" : "Meadowhall",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

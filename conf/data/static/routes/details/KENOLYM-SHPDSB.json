@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.49793,
+    "lon" : -0.21016115,
+    "id" : "KENOLYM",
+    "name" : "Kensington Olympia",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.511964,
+    "lon" : -0.22057832,
+    "id" : "SHPDSB",
+    "name" : "Shepherds Bush",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

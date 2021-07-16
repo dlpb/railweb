@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.604199,
+    "lon" : -1.8445772,
+    "id" : "BLKST",
+    "name" : "Blake Street",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.639106,
+    "lon" : -1.8444094,
+    "id" : "SHNS",
+    "name" : "Shenstone",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

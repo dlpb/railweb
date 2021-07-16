@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.959118,
+    "lon" : -1.0983238,
+    "id" : "YORKNRM",
+    "name" : "York N.R.M.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.962126,
+    "lon" : -1.10274,
+    "id" : "YORKTPE",
+    "name" : "York Siemens Trans Systems",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

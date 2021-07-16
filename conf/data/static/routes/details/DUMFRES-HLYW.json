@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.072643,
+    "lon" : -3.6044164,
+    "id" : "DUMFRES",
+    "name" : "Dumfries",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.115884,
+    "lon" : -3.6418991,
+    "id" : "HLYW",
+    "name" : "Holywood",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

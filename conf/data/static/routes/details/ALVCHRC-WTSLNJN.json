@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.346779,
+    "lon" : -1.9678949,
+    "id" : "ALVCHRC",
+    "name" : "Alvechurch",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.324586,
+    "lon" : -1.9521673,
+    "id" : "WTSLNJN",
+    "name" : "Weights Lane Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "1",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.606159,
+    "lon" : -1.9659894,
+    "id" : "SWNACFC",
+    "name" : "Corfe Castle",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.606159,
+    "lon" : -1.9659894,
+    "id" : "SWNAHMC",
+    "name" : "Harman's Cross (Swanage R)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

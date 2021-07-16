@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.794864,
+    "lon" : 1.1547757,
+    "id" : "CLACTON",
+    "name" : "Clacton-On-Sea",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.847698,
+    "lon" : 1.1614048,
+    "id" : "THPLESK",
+    "name" : "Thorpe-Le-Soken",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

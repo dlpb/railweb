@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.60102,
+    "lon" : -0.1924,
+    "id" : "LUNFIC",
+    "name" : "Finchley Central",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.60892,
+    "lon" : -0.20965,
+    "id" : "LUNMHE",
+    "name" : "Mill Hill East",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

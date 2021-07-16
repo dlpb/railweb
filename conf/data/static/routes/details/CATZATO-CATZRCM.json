@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.427222,
+    "lon" : -7.936667,
+    "id" : "CATZATO",
+    "name" : "Athlone     (Cie",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.633333,
+    "lon" : -8.183333,
+    "id" : "CATZRCM",
+    "name" : "Roscommon   (Cie",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

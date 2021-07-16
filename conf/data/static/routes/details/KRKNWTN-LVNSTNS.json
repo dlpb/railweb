@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.889025,
+    "lon" : -3.4330515,
+    "id" : "KRKNWTN",
+    "name" : "Kirknewton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.871622,
+    "lon" : -3.5013906,
+    "id" : "LVNSTNS",
+    "name" : "Livingston South",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

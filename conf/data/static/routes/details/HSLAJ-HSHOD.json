@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.671655,
+    "lon" : -2.4799889,
+    "id" : "HSLAJ",
+    "name" : "Lawley Junction",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.6632,
+    "lon" : -2.482,
+    "id" : "HSHOD",
+    "name" : "Horsehay & Dawley",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

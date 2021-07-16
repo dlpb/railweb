@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.516261,
+    "lon" : -3.43293,
+    "id" : "CARSWS",
+    "name" : "Caersws",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.53264,
+    "lon" : -3.4595582,
+    "id" : "TALRDOG",
+    "name" : "Pontdolgoch",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

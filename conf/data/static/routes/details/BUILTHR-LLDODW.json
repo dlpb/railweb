@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.169176,
+    "lon" : -3.427101,
+    "id" : "BUILTHR",
+    "name" : "Builth Road",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.242147,
+    "lon" : -3.3795122,
+    "id" : "LLDODW",
+    "name" : "Llandrindod",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

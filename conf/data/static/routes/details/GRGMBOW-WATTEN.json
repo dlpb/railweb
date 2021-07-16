@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 58.514705,
+    "lon" : -3.4388778,
+    "id" : "GRGMBOW",
+    "name" : "Bower",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 58.483733,
+    "lon" : -3.2876561,
+    "id" : "WATTEN",
+    "name" : "Watten",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

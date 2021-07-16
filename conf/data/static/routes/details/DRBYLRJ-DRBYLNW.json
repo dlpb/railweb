@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.913315,
+    "lon" : -1.4624577,
+    "id" : "DRBYLRJ",
+    "name" : "Derby London Rd Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.900292,
+    "lon" : -1.4689965,
+    "id" : "DRBYLNW",
+    "name" : "L.N.W. Jn. Derby",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

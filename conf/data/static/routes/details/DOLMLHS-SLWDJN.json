@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.091217,
+    "lon" : 1.0888091,
+    "id" : "DOLMLHS",
+    "name" : "Dollands Moor L.H.S.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.091042,
+    "lon" : 1.0872976,
+    "id" : "SLWDJN",
+    "name" : "Saltwood Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

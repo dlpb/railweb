@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.378527,
+    "lon" : -3.1838448,
+    "id" : "WKIR597",
+    "name" : "West Kirby Signal 597",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.373753,
+    "lon" : -3.1838927,
+    "id" : "WKIRSD1",
+    "name" : "West Kirby Siding No 1",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

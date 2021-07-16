@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.442564,
+    "lon" : -0.18740368,
+    "id" : "ERLFLD",
+    "name" : "Earlsfield",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.421879,
+    "lon" : -0.20474846,
+    "id" : "WDON",
+    "name" : "Wimbledon",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

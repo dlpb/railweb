@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.9672,
+    "lon" : -2.0378,
+    "id" : "HGGOH",
+    "name" : "Gotherington Halt",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 51.920278,
+    "lon" : -2.057778,
+    "id" : "CHLTRAC",
+    "name" : "Chelt Races Bus",
+    "type" : "Point"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

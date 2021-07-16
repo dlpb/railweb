@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.792269,
+    "lon" : -1.5567141,
+    "id" : "LEED631",
+    "name" : "Leeds Sig L3631",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.79258,
+    "lon" : -1.5557393,
+    "id" : "LEEDSWJ",
+    "name" : "Leeds West Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

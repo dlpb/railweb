@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.783263,
+    "lon" : -3.6469464,
+    "id" : "CREDITN",
+    "name" : "Crediton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.776662,
+    "lon" : -3.7265137,
+    "id" : "YEOFORD",
+    "name" : "Yeoford",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

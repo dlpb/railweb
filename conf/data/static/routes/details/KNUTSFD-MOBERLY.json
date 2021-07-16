@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.301771,
+    "lon" : -2.3718054,
+    "id" : "KNUTSFD",
+    "name" : "Knutsford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.329219,
+    "lon" : -2.3336661,
+    "id" : "MOBERLY",
+    "name" : "Mobberley",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.215152,
+    "lon" : -0.52441078,
+    "id" : "CHLWTH",
+    "name" : "Chilworth",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.219106,
+    "lon" : -0.44293597,
+    "id" : "GOMSHAL",
+    "name" : "Gomshall",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

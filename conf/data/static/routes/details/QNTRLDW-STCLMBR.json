@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.404182,
+    "lon" : -5.0290625,
+    "id" : "QNTRLDW",
+    "name" : "Quintrell Downs",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.398773,
+    "lon" : -4.9412519,
+    "id" : "STCLMBR",
+    "name" : "St Columb Road",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "15-50"
+} ]

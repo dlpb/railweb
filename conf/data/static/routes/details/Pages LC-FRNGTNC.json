@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.695747,
+    "lon" : -2.7507654,
+    "id" : "Pages LC",
+    "name" : "Pages Lc",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.731943,
+    "lon" : -2.7019184,
+    "id" : "FRNGTNC",
+    "name" : "Farington Curve Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

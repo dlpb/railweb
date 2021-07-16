@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.760434,
+    "lon" : -2.7112976,
+    "id" : "PRSTNFJ",
+    "name" : "Preston Fylde Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.781624,
+    "lon" : -2.8176775,
+    "id" : "SALWICK",
+    "name" : "Salwick",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

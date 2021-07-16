@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.031923,
+    "lon" : -0.095179277,
+    "id" : "ARDNGLY",
+    "name" : "Ardingly",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.016684,
+    "lon" : -0.10542763,
+    "id" : "CPYHLDJ",
+    "name" : "Copyhold Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

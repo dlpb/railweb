@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.590386,
+    "lon" : -0.102816,
+    "id" : "HRNSTPL",
+    "name" : "Turnpike Lane Und",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.59709,
+    "lon" : -0.10939,
+    "id" : "LUPWOG",
+    "name" : "Wood Green",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

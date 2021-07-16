@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.470119,
+    "lon" : 0.33918905,
+    "id" : "TLBYRCT",
+    "name" : "Tilbury R.C.T.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.464191,
+    "lon" : 0.33429302,
+    "id" : "TLBYTCS",
+    "name" : "Tilbury Container Srvs Ews",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

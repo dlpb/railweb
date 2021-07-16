@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.22184,
+    "lon" : -4.1323975,
+    "id" : "BANG37",
+    "name" : "Bangor Sig.Br37",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.222455,
+    "lon" : -4.1356938,
+    "id" : "BANGRCS",
+    "name" : "Bangor C.S.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

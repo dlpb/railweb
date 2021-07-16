@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.935095,
+    "lon" : -4.2462926,
+    "id" : "DALWHIN",
+    "name" : "Dalwhinnie",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.831877,
+    "lon" : -4.2243695,
+    "id" : "DLNSPDL",
+    "name" : "Dalnaspidal",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-100"
+} ]

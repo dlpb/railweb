@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.673219,
+    "lon" : -2.6614789,
+    "id" : "CHORBUK",
+    "name" : "Buckshaw Parkway",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.678728,
+    "lon" : -2.6777187,
+    "id" : "EUXTONJ",
+    "name" : "Euxton Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

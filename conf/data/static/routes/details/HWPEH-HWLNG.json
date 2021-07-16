@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.86739,
+    "lon" : -3.643121,
+    "id" : "HWPEH",
+    "name" : "Pentrepiod Halt",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.875183,
+    "lon" : -3.632196,
+    "id" : "HWLNG",
+    "name" : "Llangywair",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

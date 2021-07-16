@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.873097,
+    "lon" : -3.9926545,
+    "id" : "FFAIRFC",
+    "name" : "Ffairfach",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.885082,
+    "lon" : -3.9868637,
+    "id" : "LLDEILO",
+    "name" : "Llandeilo",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.489334,
+    "lon" : -4.2565407,
+    "id" : "CLHY",
+    "name" : "Clachnaharry",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 57.480421,
+    "lon" : -4.3619395,
+    "id" : "LNTRAN",
+    "name" : "Lentran",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.378984,
+    "lon" : -0.092072476,
+    "id" : "ECROUS",
+    "name" : "East Croydon Up Sidings",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.383161,
+    "lon" : -0.089024528,
+    "id" : "WNDMLBJ",
+    "name" : "Windmill Bridge Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

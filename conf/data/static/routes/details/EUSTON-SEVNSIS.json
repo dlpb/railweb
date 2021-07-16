@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 51.529911,
+    "lon" : -0.13591268,
+    "id" : "EUSTON",
+    "name" : "London Euston",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.583423,
+    "lon" : -0.075062442,
+    "id" : "SEVNSIS",
+    "name" : "Seven Sisters",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "27 MINUTES"
+}, {
+  "from" : {
+    "lat" : 51.529911,
+    "lon" : -0.13591268,
+    "id" : "EUSTON",
+    "name" : "London Euston",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.583423,
+    "lon" : -0.075062442,
+    "id" : "SEVNSIS",
+    "name" : "Seven Sisters",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "22 MINUTES"
+} ]

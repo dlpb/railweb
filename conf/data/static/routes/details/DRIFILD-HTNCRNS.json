@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.001711,
+    "lon" : -0.43433766,
+    "id" : "DRIFILD",
+    "name" : "Driffield",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.955871,
+    "lon" : -0.43383044,
+    "id" : "HTNCRNS",
+    "name" : "Hutton Cranswick",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

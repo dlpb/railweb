@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.186416,
+    "lon" : -0.61902475,
+    "id" : "GDLMING",
+    "name" : "Godalming",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.163701,
+    "lon" : -0.63670821,
+    "id" : "MLFORD",
+    "name" : "Milford (Surrey)",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

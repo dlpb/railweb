@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.734858,
+    "lon" : -0.63107938,
+    "id" : "BROUCCL",
+    "name" : "Crabley Creek L.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.726901,
+    "lon" : -0.5783927,
+    "id" : "BROUGH",
+    "name" : "Brough",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

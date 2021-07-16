@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.463373,
+    "lon" : -0.10994783,
+    "id" : "CANRDJ",
+    "name" : "Canterbury Road Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.493946,
+    "lon" : -0.098700145,
+    "id" : "ELPHNAC",
+    "name" : "Elephant & Castle",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

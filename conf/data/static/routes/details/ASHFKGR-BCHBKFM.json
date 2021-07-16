@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.148858,
+    "lon" : 0.86188857,
+    "id" : "ASHFKGR",
+    "name" : "Ashford Maidstone Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.166194,
+    "lon" : 0.84887091,
+    "id" : "BCHBKFM",
+    "name" : "Beechbrook Farm Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

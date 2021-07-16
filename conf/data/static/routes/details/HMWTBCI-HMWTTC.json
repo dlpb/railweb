@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.709939,
+    "lon" : -1.9865641,
+    "id" : "HMWTBCI",
+    "name" : "Hamworthy B.C.I",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.710821,
+    "lon" : -1.9976251,
+    "id" : "HMWTTC",
+    "name" : "Hamworthy T.C.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

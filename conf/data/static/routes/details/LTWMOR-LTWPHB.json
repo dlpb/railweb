@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.408843,
+    "lon" : -0.192904,
+    "id" : "LTWMOR",
+    "name" : "Morden Road",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 51.403583,
+    "lon" : -0.182626,
+    "id" : "LTWPHB",
+    "name" : "Phipps Bridge",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

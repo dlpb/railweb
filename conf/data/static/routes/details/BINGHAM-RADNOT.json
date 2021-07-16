@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.954186,
+    "lon" : -0.95124565,
+    "id" : "BINGHAM",
+    "name" : "Bingham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.948785,
+    "lon" : -1.0374768,
+    "id" : "RADNOT",
+    "name" : "Radcliffe (Nottinghamshire)",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

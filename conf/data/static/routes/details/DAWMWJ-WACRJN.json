@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.509878,
+    "lon" : -1.6296588,
+    "id" : "DAWMWJ",
+    "name" : "Daw Mill West Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.520163,
+    "lon" : -1.6791938,
+    "id" : "WACRJN",
+    "name" : "Whitacre Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

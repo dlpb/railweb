@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.525463,
+    "lon" : 0.15176799,
+    "id" : "DGNH826",
+    "name" : "Dagenham Ford Mc Sig Ur826",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.525142,
+    "lon" : 0.1481776,
+    "id" : "DGNHMFD",
+    "name" : "Dagenham Down Yard",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

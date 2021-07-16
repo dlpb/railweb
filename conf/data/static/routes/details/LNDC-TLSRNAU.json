@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.921025,
+    "lon" : -4.0565153,
+    "id" : "LNDC",
+    "name" : "Llandecwyn",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.904476,
+    "lon" : -4.068237,
+    "id" : "TLSRNAU",
+    "name" : "Talsarnau",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -5,9 +5,8 @@ import auth.api.AuthorizedAction
 import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject.{Inject, Singleton}
 import models.auth.UserDao
-import models.data.{Event, RouteVisit, Visit}
+import models.data.{Event, RouteVisit}
 import models.route.Route
-import models.route.display.map.MapRoute
 import play.api.mvc.{AbstractController, AnyContent, Call, ControllerComponents}
 import services.route.RouteService
 import services.visit.route.RouteVisitService
@@ -31,11 +30,8 @@ class RouteVisitsController @Inject()(
       (visit.visited.from.id, visit.visited.to.id) -> events
     }).toMap
 
-    val mapRoutes: List[MapRoute] = routeVisits
+    val visitedRoutes: List[Route] = routeVisits
       .map { r => r.visited }
-      .map {
-        MapRoute(_)
-      }
       .sortBy(r => r.from.id + " - " + r.to.id)
 
     val allVisitedRoutes: List[RouteVisit] = routeVisitService.getVisitsForUser(request.user)
@@ -67,8 +63,8 @@ class RouteVisitsController @Inject()(
     val sortedVisits = (sortField, sortOrder) match {
       case ("date", "asc") => routeVisits.sortBy(_.eventOccurredAt)
       case ("date", "desc") => routeVisits.sortBy(_.eventOccurredAt).reverse
-      case ("name", "asc") => routeVisits.sortBy(r => r.visited.from.name + "-" + r.visited.to.name)
-      case ("name", "desc") => routeVisits.sortBy(r => r.visited.from.name + "-" + r.visited.to.name).reverse
+      case ("name", "asc") => routeVisits.sortBy(r => r.visited.from.id + "-" + r.visited.to.id)
+      case ("name", "desc") => routeVisits.sortBy(r => r.visited.from.id + "-" + r.visited.to.id).reverse
       case ("id", "asc") => routeVisits.sortBy(r => r.visited.from.id + "-" + r.visited.to.id)
       case ("id", "desc") => routeVisits.sortBy(r => r.visited.from.id + "-" + r.visited.to.id).reverse
       case ("count", "asc") => {
@@ -89,12 +85,21 @@ class RouteVisitsController @Inject()(
           .reverse
           .map(_._1)
       }
-      case _ => routeVisits.sortBy(r => r.visited.from.name + "-" + r.visited.to.name)
+      case _ => routeVisits.sortBy(r => r.visited.from.id + "-" + r.visited.to.id)
     }
 
     val call: Call =  routes.RouteVisitsController.index(sortField, sortOrder)
 
-    Ok(views.html.visits.route.index(request.user, sortedVisits, routeVisitEvents, mapRoutes, routeVisitCount, routeVisitIndex, call, sortField, sortOrder))
+    Ok(views.html.visits.route.index(
+      request.user,
+      sortedVisits,
+      routeVisitEvents,
+      visitedRoutes,
+      routeVisitCount,
+      routeVisitIndex,
+      call,
+      sortField,
+      sortOrder))
 
   }
 }

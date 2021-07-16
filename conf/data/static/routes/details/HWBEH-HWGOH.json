@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.697778,
+    "lon" : -4.056389,
+    "id" : "HWBEH",
+    "name" : "Beach Halt",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.701389,
+    "lon" : -4.0575,
+    "id" : "HWGOH",
+    "name" : "Golf Halt",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

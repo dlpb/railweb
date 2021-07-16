@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.634302,
+    "lon" : -1.2289564,
+    "id" : "GREATHM",
+    "name" : "Greatham",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.652504,
+    "lon" : -1.2169257,
+    "id" : "HRTL20",
+    "name" : "Hartlepool Bsc 20 Mill",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

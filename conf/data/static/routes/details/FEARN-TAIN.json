@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.778114,
+    "lon" : -3.9939509,
+    "id" : "FEARN",
+    "name" : "Fearn",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 57.814369,
+    "lon" : -4.0517432,
+    "id" : "TAIN",
+    "name" : "Tain",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

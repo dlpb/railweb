@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.312806,
+    "lon" : 0.19723553,
+    "id" : "OTFORD",
+    "name" : "Otford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.307475,
+    "lon" : 0.19855914,
+    "id" : "OTFO2XO",
+    "name" : "Otford No 2 Xover",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "70-90"
+} ]

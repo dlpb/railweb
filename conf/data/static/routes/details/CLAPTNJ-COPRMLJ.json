@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.568746,
+    "lon" : -0.050516979,
+    "id" : "CLAPTNJ",
+    "name" : "Clapton Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.574069,
+    "lon" : -0.052627137,
+    "id" : "COPRMLJ",
+    "name" : "Coppermill Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

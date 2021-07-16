@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.640553,
+    "lon" : -3.8447803,
+    "id" : "JERSMJS",
+    "name" : "Jersey Marine Jn South",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.62972,
+    "lon" : -3.9372911,
+    "id" : "SWANSBS",
+    "name" : "Swansea Burrows S.S.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

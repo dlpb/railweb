@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.60043795,
+    "lon" : -0.408812575,
+    "id" : "LUMNOH",
+    "name" : "Northwood Hills",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.59270271,
+    "lon" : -0.380539158,
+    "id" : "LUMPIN",
+    "name" : "Pinner",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

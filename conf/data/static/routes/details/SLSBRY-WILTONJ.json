@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.074893,
+    "lon" : -1.7977473,
+    "id" : "SLSBRY",
+    "name" : "Salisbury",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.081001,
+    "lon" : -1.8465434,
+    "id" : "WILTONJ",
+    "name" : "Wilton Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

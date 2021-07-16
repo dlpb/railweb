@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.694728,
+    "lon" : -0.43371451,
+    "id" : "KLGLLP",
+    "name" : "Kings Langley Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.669273,
+    "lon" : -0.40311088,
+    "id" : "WATFDNJ",
+    "name" : "Watford North Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

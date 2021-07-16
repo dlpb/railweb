@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.446097,
+    "lon" : -4.6624485,
+    "id" : "BODMNPW",
+    "name" : "Bodmin Parkway",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.4599,
+    "lon" : -4.6745,
+    "id" : "HBAWRCOH",
+    "name" : "Colesloggett Halt",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

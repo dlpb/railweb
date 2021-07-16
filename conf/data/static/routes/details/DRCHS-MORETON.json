@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.709191,
+    "lon" : -2.4373975,
+    "id" : "DRCHS",
+    "name" : "Dorchester South",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.701198,
+    "lon" : -2.3143145,
+    "id" : "MORETON",
+    "name" : "Moreton (Dorset)",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

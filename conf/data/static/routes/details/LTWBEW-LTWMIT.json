@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.400979,
+    "lon" : -0.178458,
+    "id" : "LTWBEW",
+    "name" : "Belgrave Walk",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 51.397539,
+    "lon" : -0.171125,
+    "id" : "LTWMIT",
+    "name" : "Mitcham",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

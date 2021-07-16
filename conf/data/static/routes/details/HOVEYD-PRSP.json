@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.834577,
+    "lon" : -0.16727551,
+    "id" : "HOVEYD",
+    "name" : "Hove Yard",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.846178,
+    "lon" : -0.15530039,
+    "id" : "PRSP",
+    "name" : "Preston Park",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

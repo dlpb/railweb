@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.463617,
+    "lon" : -0.29723327,
+    "id" : "RICH398",
+    "name" : "Richmond Signal F398",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.46299,
+    "lon" : -0.30055325,
+    "id" : "RICHMND",
+    "name" : "Richmond",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

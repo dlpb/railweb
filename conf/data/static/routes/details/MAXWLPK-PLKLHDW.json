@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.837628,
+    "lon" : -4.2887498,
+    "id" : "MAXWLPK",
+    "name" : "Maxwell Park",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.837619,
+    "lon" : -4.2761161,
+    "id" : "PLKLHDW",
+    "name" : "Pollokshields West",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

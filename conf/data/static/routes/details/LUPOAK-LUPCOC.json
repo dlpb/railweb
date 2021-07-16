@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.64739,
+    "lon" : -0.13192,
+    "id" : "LUPOAK",
+    "name" : "Oakwood",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.65117,
+    "lon" : -0.14811,
+    "id" : "LUPCOC",
+    "name" : "Cockfosters",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.714212,
+    "lon" : -3.4735958,
+    "id" : "DIGBY",
+    "name" : "Digby & Sowton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.73097,
+    "lon" : -3.5007753,
+    "id" : "POLSBDG",
+    "name" : "Polsloe Bridge",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

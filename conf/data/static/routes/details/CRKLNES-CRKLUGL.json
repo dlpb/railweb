@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.570008,
+    "lon" : -0.22643679,
+    "id" : "CRKLNES",
+    "name" : "Cricklewood Nth End Gbf",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.558821,
+    "lon" : -0.21274869,
+    "id" : "CRKLUGL",
+    "name" : "Cricklewood U.G.L.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

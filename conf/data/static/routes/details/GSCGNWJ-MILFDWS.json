@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.779201,
+    "lon" : -1.2174115,
+    "id" : "GSCGNWJ",
+    "name" : "Gascoigne Wood Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.772867,
+    "lon" : -1.2247213,
+    "id" : "MILFDWS",
+    "name" : "Milford West Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

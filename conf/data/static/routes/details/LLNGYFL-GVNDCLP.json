@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.677407,
+    "lon" : -3.9691371,
+    "id" : "LLNGYFL",
+    "name" : "Llangyfelach",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.70357,
+    "lon" : -4.054968,
+    "id" : "GVNDCLP",
+    "name" : "Grovesend Colly Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

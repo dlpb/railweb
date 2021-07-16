@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.591101,
+    "lon" : 1.051945,
+    "id" : "HNKIP",
+    "name" : "Kimberley Park",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.6247,
+    "lon" : 1.001,
+    "id" : "HNTHU",
+    "name" : "Thuxton",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

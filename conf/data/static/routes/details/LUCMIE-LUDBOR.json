@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.525306,
+    "lon" : -0.033471,
+    "id" : "LUCMIE",
+    "name" : "Mile End",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.52709,
+    "lon" : -0.02482,
+    "id" : "LUDBOR",
+    "name" : "Bow Road",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

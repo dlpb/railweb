@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.843417,
+    "lon" : -3.6064629,
+    "id" : "ADIEWEL",
+    "name" : "Addiewell",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.827472,
+    "lon" : -3.6674774,
+    "id" : "BREICH",
+    "name" : "Breich",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

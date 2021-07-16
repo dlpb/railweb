@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.852567,
+    "lon" : -1.3334482,
+    "id" : "CDON",
+    "name" : "Castle Donington",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.852567,
+    "lon" : -1.3334482,
+    "id" : "CDONEDC",
+    "name" : "Castle Donington Emdc",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.92889,
+    "lon" : -3.0544569,
+    "id" : "MNKTNHJ",
+    "name" : "Monktonhall Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.940418,
+    "lon" : -3.0149218,
+    "id" : "WALLYFD",
+    "name" : "Wallyford",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.0088,
+    "lon" : -1.5914,
+    "id" : "TAWMYLON",
+    "name" : "Longbenton",
+    "type" : "Metro"
+  },
+  "to" : {
+    "lat" : 55.011046,
+    "lon" : -1.6084027,
+    "id" : "TAWMGGOD",
+    "name" : "Gosforth Depot",
+    "type" : "Metro"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "Y",
+  "type" : "Metro",
+  "speed" : "OHLE"
+} ]

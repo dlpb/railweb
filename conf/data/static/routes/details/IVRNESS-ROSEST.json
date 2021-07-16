@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.499988,
+    "lon" : -4.1465565,
+    "id" : "IVRNESS",
+    "name" : "Inverness",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 57.48245,
+    "lon" : -4.2247357,
+    "id" : "ROSEST",
+    "name" : "Rose Street",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

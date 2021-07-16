@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.938207,
+    "lon" : -4.2436194,
+    "id" : "DALWCE",
+    "name" : "Dalwhinnie Isu (Ce)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.935095,
+    "lon" : -4.2462926,
+    "id" : "DALWHIN",
+    "name" : "Dalwhinnie",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

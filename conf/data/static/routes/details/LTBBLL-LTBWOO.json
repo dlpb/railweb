@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.384927,
+    "lon" : -0.070329,
+    "id" : "LTBBLL",
+    "name" : "Blackhorse Lane",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 51.386987,
+    "lon" : -0.065566,
+    "id" : "LTBWOO",
+    "name" : "Woodside",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.64285,
+    "lon" : -2.0948023,
+    "id" : "LITLBRO",
+    "name" : "Littleborough",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.633009,
+    "lon" : -2.1138043,
+    "id" : "SMBG",
+    "name" : "Smithy Bridge",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.45167,
+    "lon" : -2.5737345,
+    "id" : "BRSTLEJ",
+    "name" : "Bristol East Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.450729,
+    "lon" : -2.5639225,
+    "id" : "NSMRSTJ",
+    "name" : "North Somerset Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

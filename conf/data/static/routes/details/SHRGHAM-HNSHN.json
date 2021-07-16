@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.941378,
+    "lon" : 1.2107335,
+    "id" : "SHRGHAM",
+    "name" : "Sheringham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.9418,
+    "lon" : 1.208,
+    "id" : "HNSHN",
+    "name" : "Sheringham (Nnr)",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

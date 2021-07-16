@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.3821,
+    "lon" : -1.4722073,
+    "id" : "STYCIH",
+    "name" : "City Hall",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 53.382588,
+    "lon" : -1.4688231,
+    "id" : "STYCAT",
+    "name" : "Cathedral",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

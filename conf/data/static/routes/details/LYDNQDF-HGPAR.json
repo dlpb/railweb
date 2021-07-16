@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.748,
+    "lon" : -2.544,
+    "id" : "LYDNQDF",
+    "name" : "Dean Forest Railway",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.76756,
+    "lon" : -2.55647,
+    "id" : "HGPAR",
+    "name" : "Parkend",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

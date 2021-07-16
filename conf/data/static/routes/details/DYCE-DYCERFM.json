@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.205782,
+    "lon" : -2.1927368,
+    "id" : "DYCE",
+    "name" : "Dyce",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 57.211945,
+    "lon" : -2.1924875,
+    "id" : "DYCERFM",
+    "name" : "Dyce Raiths Farm F.D.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

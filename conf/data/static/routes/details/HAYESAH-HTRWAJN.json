@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.502934,
+    "lon" : -0.41950758,
+    "id" : "HAYESAH",
+    "name" : "Hayes & Harlington",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.503057,
+    "lon" : -0.42324952,
+    "id" : "HTRWAJN",
+    "name" : "Heathrow Airport Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

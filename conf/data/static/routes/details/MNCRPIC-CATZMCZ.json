@@ -1,0 +1,77 @@
+[ {
+  "from" : {
+    "lat" : 53.477002,
+    "lon" : -2.2301094,
+    "id" : "MNCRPIC",
+    "name" : "Manchester Piccadilly",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.476111,
+    "lon" : -2.2475,
+    "id" : "CATZMCZ",
+    "name" : "Manchester Ctlz",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : " 5"
+}, {
+  "from" : {
+    "lat" : 53.477002,
+    "lon" : -2.2301094,
+    "id" : "MNCRPIC",
+    "name" : "Manchester Piccadilly",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.476111,
+    "lon" : -2.2475,
+    "id" : "CATZMCZ",
+    "name" : "Manchester Ctlz",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "20 MINUTES"
+}, {
+  "from" : {
+    "lat" : 53.477002,
+    "lon" : -2.2301094,
+    "id" : "MNCRPIC",
+    "name" : "Manchester Piccadilly",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.476111,
+    "lon" : -2.2475,
+    "id" : "CATZMCZ",
+    "name" : "Manchester Ctlz",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "8 MINUTES"
+}, {
+  "from" : {
+    "lat" : 53.477002,
+    "lon" : -2.2301094,
+    "id" : "MNCRPIC",
+    "name" : "Manchester Piccadilly",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.476111,
+    "lon" : -2.2475,
+    "id" : "CATZMCZ",
+    "name" : "Manchester Ctlz",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "5 MINUTES"
+} ]

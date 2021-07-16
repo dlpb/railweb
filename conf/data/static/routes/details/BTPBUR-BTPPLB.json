@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.7873,
+    "lon" : -3.0583,
+    "id" : "BTPBUR",
+    "name" : "Burlington Road",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 53.7935,
+    "lon" : -3.0567,
+    "id" : "BTPPLB",
+    "name" : "Pleasure Beach",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

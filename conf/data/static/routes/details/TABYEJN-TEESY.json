@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.558971,
+    "lon" : -1.3027778,
+    "id" : "TABYEJN",
+    "name" : "Thornaby East Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.561308,
+    "lon" : -1.2889747,
+    "id" : "TEESY",
+    "name" : "Tees N.Y.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

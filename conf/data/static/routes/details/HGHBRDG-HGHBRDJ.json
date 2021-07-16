@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.217931,
+    "lon" : -2.9720628,
+    "id" : "HGHBRDG",
+    "name" : "Highbridge & Burnham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.215795,
+    "lon" : -2.9726048,
+    "id" : "HGHBRDJ",
+    "name" : "Highbridge Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

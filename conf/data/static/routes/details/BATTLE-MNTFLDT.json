@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.912651,
+    "lon" : 0.49478833,
+    "id" : "BATTLE",
+    "name" : "Battle",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.955503,
+    "lon" : 0.46495797,
+    "id" : "MNTFLDT",
+    "name" : "Mountfield Tunnel",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "70-90"
+} ]

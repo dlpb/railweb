@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.892089,
+    "lon" : -1.1594814,
+    "id" : "HLRUD",
+    "name" : "Ruddington",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.884508,
+    "lon" : -1.1467168,
+    "id" : "HLRUF",
+    "name" : "Ruddington Fields",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

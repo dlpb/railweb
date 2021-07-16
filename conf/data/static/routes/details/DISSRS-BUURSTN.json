@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.375845,
+    "lon" : 1.12563,
+    "id" : "DISSRS",
+    "name" : "Diss Recp.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.405941,
+    "lon" : 1.1518896,
+    "id" : "BUURSTN",
+    "name" : "Burston",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

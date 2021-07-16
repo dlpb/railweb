@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.424129,
+    "lon" : -2.6904052,
+    "id" : "FLAXB",
+    "name" : "Flax Bourton",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.432779,
+    "lon" : -2.6092592,
+    "id" : "PARSNST",
+    "name" : "Parson Street",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

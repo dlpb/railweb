@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.5527,
+    "lon" : -0.11322,
+    "id" : "HLWYRLT",
+    "name" : "Holloway Rd Und",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.55847,
+    "lon" : -0.10561,
+    "id" : "LUPARS",
+    "name" : "Arsenal",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

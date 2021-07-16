@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.9996,
+    "lon" : -1.4746,
+    "id" : "TAWMYPEM",
+    "name" : "Percy Main",
+    "type" : "Metro"
+  },
+  "to" : {
+    "lat" : 54.9959,
+    "lon" : -1.4942,
+    "id" : "TAWMYHOW",
+    "name" : "Howdon",
+    "type" : "Metro"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Metro",
+  "speed" : "OHLE"
+} ]

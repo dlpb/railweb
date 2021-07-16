@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.219808,
+    "lon" : 1.4961302,
+    "id" : "SXMNDHJ",
+    "name" : "Saxmundham Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.215337,
+    "lon" : 1.49039,
+    "id" : "SXMNDHM",
+    "name" : "Saxmundham",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.465628,
+    "lon" : 0.0075975761,
+    "id" : "BLKHTH",
+    "name" : "Blackheath",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.462201,
+    "lon" : 0.027457972,
+    "id" : "KIDBROK",
+    "name" : "Kidbrooke",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

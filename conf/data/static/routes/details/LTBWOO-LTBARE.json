@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.386987,
+    "lon" : -0.065566,
+    "id" : "LTBWOO",
+    "name" : "Woodside",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 51.391564,
+    "lon" : -0.058324,
+    "id" : "LTBARE",
+    "name" : "Arena",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

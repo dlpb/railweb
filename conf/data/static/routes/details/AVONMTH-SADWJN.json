@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.499896,
+    "lon" : -2.6990268,
+    "id" : "AVONMTH",
+    "name" : "Avonmouth",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.504561,
+    "lon" : -2.7007407,
+    "id" : "SADWJN",
+    "name" : "St Andrews Jn (Avon)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "15-50"
+} ]

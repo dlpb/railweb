@@ -1,0 +1,77 @@
+[ {
+  "from" : {
+    "lat" : 51.506834,
+    "lon" : -0.12227171,
+    "id" : "CHRX",
+    "name" : "London Charing Cross",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.49314,
+    "lon" : -0.14608529,
+    "id" : "VICTRIA",
+    "name" : "London Victoria",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : " 7"
+}, {
+  "from" : {
+    "lat" : 51.506834,
+    "lon" : -0.12227171,
+    "id" : "CHRX",
+    "name" : "London Charing Cross",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.49314,
+    "lon" : -0.14608529,
+    "id" : "VICTRIA",
+    "name" : "London Victoria",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "7 MINUTES"
+}, {
+  "from" : {
+    "lat" : 51.506834,
+    "lon" : -0.12227171,
+    "id" : "CHRX",
+    "name" : "London Charing Cross",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.49314,
+    "lon" : -0.14608529,
+    "id" : "VICTRIA",
+    "name" : "London Victoria",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "12 MINUTES"
+}, {
+  "from" : {
+    "lat" : 51.506834,
+    "lon" : -0.12227171,
+    "id" : "CHRX",
+    "name" : "London Charing Cross",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.49314,
+    "lon" : -0.14608529,
+    "id" : "VICTRIA",
+    "name" : "London Victoria",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "17 MINUTES"
+} ]

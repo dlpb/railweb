@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.10392,
+    "lon" : 0.29448063,
+    "id" : "FRANT",
+    "name" : "Frant",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.073262,
+    "lon" : 0.31312086,
+    "id" : "WADHRST",
+    "name" : "Wadhurst",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "70-90"
+} ]

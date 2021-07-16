@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.4067,
+    "lon" : -0.04968,
+    "id" : "LTBAVR",
+    "name" : "Avenue Road",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 51.4096,
+    "lon" : -0.0432,
+    "id" : "LTBBER",
+    "name" : "Beckenham Road",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

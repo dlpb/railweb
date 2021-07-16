@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.75823,
+    "lon" : -3.8939645,
+    "id" : "GRONGLJ",
+    "name" : "Garriongill Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.774175,
+    "lon" : -3.9506374,
+    "id" : "SHILDMT",
+    "name" : "Shieldmuir Mail Terminal",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

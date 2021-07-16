@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.732138,
+    "lon" : -0.46261469,
+    "id" : "APSLEY",
+    "name" : "Apsley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.740595,
+    "lon" : -0.4836912,
+    "id" : "HEMLSJN",
+    "name" : "Hemel Hempstead South Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

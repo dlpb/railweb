@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.875183,
+    "lon" : -3.632196,
+    "id" : "HWLNG",
+    "name" : "Llangywair",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.901389,
+    "lon" : -3.593333,
+    "id" : "HWBLH",
+    "name" : "Bala Lake Halt",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

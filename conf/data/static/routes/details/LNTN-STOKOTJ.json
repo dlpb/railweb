@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.989987,
+    "lon" : -2.1371894,
+    "id" : "LNTN",
+    "name" : "Longton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.001531,
+    "lon" : -2.1762218,
+    "id" : "STOKOTJ",
+    "name" : "Stoke Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

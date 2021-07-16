@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.43026,
+    "lon" : -1.5122475,
+    "id" : "DLTNECX",
+    "name" : "East Cowton Xovers",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.384096,
+    "lon" : -1.4722994,
+    "id" : "NLRTDBW",
+    "name" : "Danby Wiske",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.724021,
+    "lon" : -1.2473626,
+    "id" : "KNNGTNJ",
+    "name" : "Kennington Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.685529,
+    "lon" : -1.2402764,
+    "id" : "RDLEY",
+    "name" : "Radley",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

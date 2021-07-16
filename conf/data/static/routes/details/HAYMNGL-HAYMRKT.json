@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.939088,
+    "lon" : -3.2469437,
+    "id" : "HAYMNGL",
+    "name" : "Haymarket North Goods Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.945225,
+    "lon" : -3.2190396,
+    "id" : "HAYMRKT",
+    "name" : "Haymarket",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

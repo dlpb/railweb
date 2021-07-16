@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.235473,
+    "lon" : -2.3399468,
+    "id" : "BOKNTRE",
+    "name" : "Boat Of Kintore",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 57.286553,
+    "lon" : -2.3736122,
+    "id" : "INVURIE",
+    "name" : "Inverurie",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

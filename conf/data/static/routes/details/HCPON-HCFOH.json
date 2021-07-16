@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.041794,
+    "lon" : -4.4073947,
+    "id" : "HCPON",
+    "name" : "Pontprenshitw",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.040537,
+    "lon" : -4.3948384,
+    "id" : "HCFOH",
+    "name" : "Forest Halt",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

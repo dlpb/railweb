@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.516415,
+    "lon" : -0.27472688,
+    "id" : "ACTOGBR",
+    "name" : "Acton Yard Gbrf",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.522739,
+    "lon" : -0.2548693,
+    "id" : "ACWLJN",
+    "name" : "Acton Wells Junction",
+    "type" : "Location"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

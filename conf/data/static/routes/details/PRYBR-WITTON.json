@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.516385,
+    "lon" : -1.9023729,
+    "id" : "PRYBR",
+    "name" : "Perry Barr",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.512152,
+    "lon" : -1.8839047,
+    "id" : "WITTON",
+    "name" : "Witton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

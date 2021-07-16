@@ -3,10 +3,10 @@ package models.plan.timetable.trains
 import java.io.FileNotFoundException
 
 import javax.inject.{Inject, Singleton}
-import models.location.MapLocation
+import models.location.Location
 import services.plan.pointtopoint.PointToPointRouteFinderService
 import models.plan.timetable.reader.{Reader, WebZipInputStream}
-import models.route.display.map.MapRoute
+import models.route.Route
 import models.timetable.dto.train.detailed.DisplayDetailedTrainTimetable
 import models.timetable.dto.train.simple.DisplaySimpleTrainTimetable
 import models.timetable.model.JsonFormats
@@ -29,11 +29,11 @@ class TrainTimetableService @Inject()(locationsService: LocationService, pathSer
       f =>
         f map {
           tt =>
-            val mapLocations = List()
-            val mapRoutes = List()
+            val locations = List()
+            val routes = List()
             val link = TrainTimetableServiceUrlHelper.buildRouteLink(tt, locationsService)
             val dst = DisplaySimpleTrainTimetable(locationsService, tt, year, month, day)
-            SimpleTrainTimetableWrapper(dst, tt.basicSchedule, mapLocations, mapRoutes, link)
+            SimpleTrainTimetableWrapper(dst, tt.basicSchedule, locations, routes, link)
         }
     }
   }
@@ -42,24 +42,24 @@ class TrainTimetableService @Inject()(locationsService: LocationService, pathSer
       f =>
         f map {
           tt =>
-            val mapLocations = List()
-            val mapRoutes = List()
+            val locations = List()
+            val routes = List()
             val link = TrainTimetableServiceUrlHelper.buildRouteLink(tt, locationsService)
             val ddt = DisplayDetailedTrainTimetable(locationsService, tt, year, month, day)
-            DetailedTrainTimetableWrapper(ddt, tt.basicSchedule, mapLocations, mapRoutes, link)
+            DetailedTrainTimetableWrapper(ddt, tt.basicSchedule, locations, routes, link)
         }
     }
   }
 
-  def createSimpleMapRoutes(tt: IndividualTimetable): List[MapRoute] = {
+  def createSimpleMapRoutes(tt: IndividualTimetable): List[Route] = {
     val waypoints = tt.locations
       .flatMap { l => locationsService.findFirstLocationByTiploc(l.tiploc) }
       .map(_.id)
 
-    val routeParts: Iterator[Future[List[MapRoute]]] = waypoints.sliding(2).map { w => Future {
-      pathService.findRouteForWaypoints(w).routes.map(r => MapRoute(r))
+    val routeParts: Iterator[Future[List[Route]]] = waypoints.sliding(2).map { w => Future {
+      pathService.findRouteForWaypoints(w).routes
     }}
-    val eventualIterator: Future[Iterator[MapRoute]] = Future.sequence(routeParts) map {i => i.flatten}
+    val eventualIterator: Future[Iterator[Route]] = Future.sequence(routeParts) map {i => i.flatten}
 
     try {
       Await.result(eventualIterator, Duration(30, "second")).toList
@@ -71,17 +71,15 @@ class TrainTimetableService @Inject()(locationsService: LocationService, pathSer
     }
   }
 
-  def createSimpleMapLocations(tt: IndividualTimetable): List[MapLocation] = {
+  def createSimpleLocations(tt: IndividualTimetable): List[Location] = {
     tt.locations
       .filter(l => l.publicArrival.isDefined || l.publicDeparture.isDefined)
       .flatMap(l => locationsService.findFirstLocationByTiploc(l.tiploc))
-      .map(l => MapLocation(l))
   }
 
-  def createDetailedMapLocations(tt: IndividualTimetable): List[MapLocation] = {
+  def createDetailedLocations(tt: IndividualTimetable): List[Location] = {
     tt.locations
       .flatMap(l => locationsService.findFirstLocationByTiploc(l.tiploc))
-      .map(l => MapLocation(l))
   }
 
 
@@ -116,7 +114,7 @@ class TrainTimetableService @Inject()(locationsService: LocationService, pathSer
   }
 }
 
-case class SimpleTrainTimetableWrapper(dst: DisplaySimpleTrainTimetable, basicSchedule: BasicSchedule, mapLocations: List[MapLocation], routes: List[MapRoute], routeLink: String)
+case class SimpleTrainTimetableWrapper(dst: DisplaySimpleTrainTimetable, basicSchedule: BasicSchedule, locations: List[Location], routes: List[Route], routeLink: String)
 
-case class DetailedTrainTimetableWrapper(dtt: DisplayDetailedTrainTimetable, basicSchedule: BasicSchedule, mapLocations: List[MapLocation], routes: List[MapRoute], routeLink: String)
+case class DetailedTrainTimetableWrapper(dtt: DisplayDetailedTrainTimetable, basicSchedule: BasicSchedule, locations: List[Location], routes: List[Route], routeLink: String)
 

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.150348,
+    "lon" : -3.0551508,
+    "id" : "PNYFCGF",
+    "name" : "Penyffordd Cement Sdgs Gf",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.152363,
+    "lon" : -3.0590433,
+    "id" : "PNYFDCS",
+    "name" : "Penyffordd Cement Sdgs",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

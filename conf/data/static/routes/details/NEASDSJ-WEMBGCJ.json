@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.554769,
+    "lon" : -0.25360044,
+    "id" : "NEASDSJ",
+    "name" : "Neasden South Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.555622,
+    "lon" : -0.25952541,
+    "id" : "WEMBGCJ",
+    "name" : "Wembley Gcj",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

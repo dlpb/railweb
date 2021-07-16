@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.982825,
+    "lon" : -0.21994794,
+    "id" : "LTCEADL",
+    "name" : "Letchworth A/D Line",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.982825,
+    "lon" : -0.21994794,
+    "id" : "LTCEREC",
+    "name" : "Letchworth Cs Reception",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.943375,
+    "lon" : -1.156655,
+    "id" : "NTL1MWW",
+    "name" : "Meadows Way West",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 52.941853,
+    "lon" : -1.164947,
+    "id" : "NTL1NG2",
+    "name" : "Ng2",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.891193,
+    "lon" : 0.91861518,
+    "id" : "CLCHEGJ",
+    "name" : "Colchester East Gate Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.886493,
+    "lon" : 0.90572428,
+    "id" : "CLCHRTN",
+    "name" : "Colchester Town",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.5044,
+    "lon" : -6.5662,
+    "id" : "ENISCTY",
+    "name" : "Enniscorthy (Cie",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.343333,
+    "lon" : -6.464167,
+    "id" : "WEXFDOH",
+    "name" : "Wexford     (Cie",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

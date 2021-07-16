@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.5538,
+    "lon" : -0.45,
+    "id" : "HLNDBUS",
+    "name" : "Hillingdon Und",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.472267,
+    "lon" : -0.45087667,
+    "id" : "HTRWUND",
+    "name" : "Heathrow Underground",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "99 MINUTES"
+} ]

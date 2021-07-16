@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.660283,
+    "lon" : -3.275379,
+    "id" : "HWCYF",
+    "name" : "Cyfronydd",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.6446,
+    "lon" : -3.241075,
+    "id" : "HWCAC",
+    "name" : "Castle Caereinion",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

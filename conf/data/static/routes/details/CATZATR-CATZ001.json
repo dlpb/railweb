@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.300833,
+    "lon" : -8.749722,
+    "id" : "CATZATR",
+    "name" : "Athenry     (Cie",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.2257,
+    "lon" : -8.735,
+    "id" : "CATZ001",
+    "name" : "Craughwell  (Cie",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

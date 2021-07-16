@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.084762,
+    "lon" : 1.1536584,
+    "id" : "FLKSTNW",
+    "name" : "Folkestone West",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.091042,
+    "lon" : 1.0872976,
+    "id" : "SLWDJN",
+    "name" : "Saltwood Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

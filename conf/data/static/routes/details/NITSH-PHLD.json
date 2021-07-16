@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.811889,
+    "lon" : -4.3599399,
+    "id" : "NITSH",
+    "name" : "Nitshill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.812024,
+    "lon" : -4.3429975,
+    "id" : "PHLD",
+    "name" : "Priesthill & Darnley",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

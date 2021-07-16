@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.891891,
+    "lon" : -1.1661447,
+    "id" : "COLTONJ",
+    "name" : "Colton Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.882859,
+    "lon" : -1.179301,
+    "id" : "COLTONS",
+    "name" : "Colton South Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

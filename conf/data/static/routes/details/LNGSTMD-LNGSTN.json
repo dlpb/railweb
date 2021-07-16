@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.462656,
+    "lon" : -2.2006007,
+    "id" : "LNGSTMD",
+    "name" : "Longsight T.M.D. (D)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.467542,
+    "lon" : -2.2079899,
+    "id" : "LNGSTN",
+    "name" : "Longsight North",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

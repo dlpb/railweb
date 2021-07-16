@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.444949,
+    "lon" : -0.026034114,
+    "id" : "CATFORD",
+    "name" : "Catford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.454657,
+    "lon" : -0.035417499,
+    "id" : "CFPK",
+    "name" : "Crofton Park",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

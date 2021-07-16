@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.54705,
+    "lon" : -0.056636801,
+    "id" : "HACKNYC",
+    "name" : "Hackney Central",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.547045,
+    "lon" : -0.042819878,
+    "id" : "HOMRTON",
+    "name" : "Homerton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

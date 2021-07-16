@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.865008,
+    "lon" : -1.2634419,
+    "id" : "RATCLFJ",
+    "name" : "Ratcliffe Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.876476,
+    "lon" : -1.2672595,
+    "id" : "TRENTJ",
+    "name" : "Trent South Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

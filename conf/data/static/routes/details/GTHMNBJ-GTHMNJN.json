@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.915106,
+    "lon" : -0.6483672,
+    "id" : "GTHMNBJ",
+    "name" : "Nottingham Branch Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.918869,
+    "lon" : -0.64807154,
+    "id" : "GTHMNJN",
+    "name" : "Grantham Nth Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

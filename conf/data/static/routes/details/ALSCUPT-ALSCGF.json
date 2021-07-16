@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.702544,
+    "lon" : -2.6601393,
+    "id" : "ALSCUPT",
+    "name" : "Upton Magna",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.709593,
+    "lon" : -2.5698826,
+    "id" : "ALSCGF",
+    "name" : "Allscott Gf",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

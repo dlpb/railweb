@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.448998,
+    "lon" : -1.3341339,
+    "id" : "ALDW109",
+    "name" : "Sheffield Sig S1092",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.458387,
+    "lon" : -1.3222548,
+    "id" : "ALDWGBF",
+    "name" : "Aldwarke Ues Gbrf",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.249656,
+    "lon" : -3.1321573,
+    "id" : "FLINT",
+    "name" : "Flint",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.228327,
+    "lon" : -3.0785641,
+    "id" : "RCKCLFH",
+    "name" : "Rockcliffe Hall",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

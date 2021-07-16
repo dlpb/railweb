@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.090829,
+    "lon" : 0.0091360869,
+    "id" : "MELDRTH",
+    "name" : "Meldreth",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.114391,
+    "lon" : 0.031461151,
+    "id" : "SHPRTH",
+    "name" : "Shepreth",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

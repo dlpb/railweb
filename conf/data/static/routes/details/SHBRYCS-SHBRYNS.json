@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.532338,
+    "lon" : 0.79232809,
+    "id" : "SHBRYCS",
+    "name" : "Shoeburyness C.S.D.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.531144,
+    "lon" : 0.7948794,
+    "id" : "SHBRYNS",
+    "name" : "Shoeburyness",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

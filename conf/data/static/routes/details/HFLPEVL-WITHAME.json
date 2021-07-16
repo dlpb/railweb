@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.780172,
+    "lon" : 0.5923879,
+    "id" : "HFLPEVL",
+    "name" : "Hatfield Peverel",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.805836,
+    "lon" : 0.63934005,
+    "id" : "WITHAME",
+    "name" : "Witham",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

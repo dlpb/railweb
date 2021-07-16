@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.544835,
+    "lon" : -0.0087628422,
+    "id" : "STFORDI",
+    "name" : "Stratford International",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.544879,
+    "lon" : -0.013448186,
+    "id" : "STFOWJN",
+    "name" : "Stratford Intl W Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "130-155"
+} ]

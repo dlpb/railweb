@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.47869,
+    "lon" : -1.8913692,
+    "id" : "BHAMMRS",
+    "name" : "Birmingham Moor Street",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.484281,
+    "lon" : -1.9004853,
+    "id" : "BHAMSNH",
+    "name" : "Birmingham Snow Hill",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

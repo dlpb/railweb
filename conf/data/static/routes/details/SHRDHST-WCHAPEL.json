@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.52337337876631,
+    "lon" : -0.07524617751528465,
+    "id" : "SHRDHST",
+    "name" : "Shoreditch High Street",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.51946719200348,
+    "lon" : -0.059757120098615765,
+    "id" : "WCHAPEL",
+    "name" : "Whitechapel",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

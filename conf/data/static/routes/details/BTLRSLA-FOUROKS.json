@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.59281,
+    "lon" : -1.8385798,
+    "id" : "BTLRSLA",
+    "name" : "Butlers Lane",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.579769,
+    "lon" : -1.8280613,
+    "id" : "FOUROKS",
+    "name" : "Four Oaks",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

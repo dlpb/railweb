@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.141525,
+    "lon" : 0.8795791,
+    "id" : "ASHFKCY",
+    "name" : "Ashford Dn Yd Cntb End",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.185258,
+    "lon" : 0.92944824,
+    "id" : "WYEE",
+    "name" : "Wye",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

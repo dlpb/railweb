@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.231251,
+    "lon" : -2.3070875,
+    "id" : "FROMNSB",
+    "name" : "Frome North",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.246206,
+    "lon" : -2.3542506,
+    "id" : "WHATLYQ",
+    "name" : "Whatley Quarry",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

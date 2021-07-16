@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.9828,
+    "lon" : -1.6056,
+    "id" : "TAWMGJES",
+    "name" : "Jesmond",
+    "type" : "Metro"
+  },
+  "to" : {
+    "lat" : 54.9774,
+    "lon" : -1.6139,
+    "id" : "TAWMGHAY",
+    "name" : "Haymarket",
+    "type" : "Metro"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Metro",
+  "speed" : "OHLE"
+} ]

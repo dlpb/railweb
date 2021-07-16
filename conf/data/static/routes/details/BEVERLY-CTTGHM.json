@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.842316,
+    "lon" : -0.42288727,
+    "id" : "BEVERLY",
+    "name" : "Beverley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.781285,
+    "lon" : -0.40620487,
+    "id" : "CTTGHM",
+    "name" : "Cottingham",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.476748,
+    "lon" : -2.1346571,
+    "id" : "KSWNJN",
+    "name" : "Kingswinford Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.489644,
+    "lon" : -2.1129737,
+    "id" : "ROUNDOK",
+    "name" : "Round Oak",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.999751,
+    "lon" : -0.73752165,
+    "id" : "BLTCDRJ",
+    "name" : "Bletchley Drayton Road Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.995432,
+    "lon" : -0.73634681,
+    "id" : "BLTCHLY",
+    "name" : "Bletchley",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

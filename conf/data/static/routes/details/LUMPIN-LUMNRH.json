@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.59270271,
+    "lon" : -0.380539158,
+    "id" : "LUMPIN",
+    "name" : "Pinner",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.58503612,
+    "lon" : -0.362595264,
+    "id" : "LUMNRH",
+    "name" : "North Harrow",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 58.589577,
+    "lon" : -3.5280209,
+    "id" : "THURSO",
+    "name" : "Thurso",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 58.609722,
+    "lon" : -3.5525,
+    "id" : "SCRBSTR",
+    "name" : "Scrabster",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "15 MINUTES"
+} ]

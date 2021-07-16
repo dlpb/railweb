@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.506064,
+    "lon" : -0.37742491,
+    "id" : "STHALL",
+    "name" : "Southall",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.507137,
+    "lon" : -0.36851044,
+    "id" : "STHAWCR",
+    "name" : "Southall Wcr",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

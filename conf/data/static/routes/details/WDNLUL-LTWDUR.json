@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.421711,
+    "lon" : -0.20612143,
+    "id" : "WDNLUL",
+    "name" : "Wimbledon",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.417,
+    "lon" : -0.2077,
+    "id" : "LTWDUR",
+    "name" : "Dundonald Road",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

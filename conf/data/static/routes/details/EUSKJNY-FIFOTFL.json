@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.584993,
+    "lon" : -2.9705106,
+    "id" : "EUSKJNY",
+    "name" : "East Usk Jn. N. Y.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.559933,
+    "lon" : -2.9607157,
+    "id" : "FIFOTFL",
+    "name" : "Fifoots Pnt Pwr Stn Fliner",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

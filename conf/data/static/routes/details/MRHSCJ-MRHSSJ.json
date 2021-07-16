@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.839889,
+    "lon" : -4.2700196,
+    "id" : "MRHSCJ",
+    "name" : "Muirhouse Central Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.837497,
+    "lon" : -4.2740007,
+    "id" : "MRHSSJ",
+    "name" : "Muirhouse South Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

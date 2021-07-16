@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.463584,
+    "lon" : -0.170392,
+    "id" : "CLPHMJM",
+    "name" : "Clapham Junction",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.442564,
+    "lon" : -0.18740368,
+    "id" : "ERLFLD",
+    "name" : "Earlsfield",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

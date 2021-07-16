@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.505682,
+    "lon" : -0.089911629,
+    "id" : "BORMRKJ",
+    "name" : "Borough Market Junction",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 51.509749,
+    "lon" : -0.091125012,
+    "id" : "CANONST",
+    "name" : "London Cannon Street",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

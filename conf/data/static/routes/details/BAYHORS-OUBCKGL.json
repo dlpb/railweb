@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.968481,
+    "lon" : -2.7738162,
+    "id" : "BAYHORS",
+    "name" : "Bay Horse",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.007041,
+    "lon" : -2.7942299,
+    "id" : "OUBCKGL",
+    "name" : "Oubeck Goods Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

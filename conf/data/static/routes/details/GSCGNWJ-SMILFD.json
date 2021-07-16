@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.779201,
+    "lon" : -1.2174115,
+    "id" : "GSCGNWJ",
+    "name" : "Gascoigne Wood Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.782325,
+    "lon" : -1.2505141,
+    "id" : "SMILFD",
+    "name" : "South Milford",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

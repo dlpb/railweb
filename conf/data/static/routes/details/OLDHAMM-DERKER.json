@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.541,
+    "lon" : -2.1022,
+    "id" : "OLDHAMM",
+    "name" : "Oldham Mps Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.5498,
+    "lon" : -2.1016,
+    "id" : "DERKER",
+    "name" : "Derker Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.115777,
+    "lon" : 1.0966112,
+    "id" : "CLDON",
+    "name" : "Claydon",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.057496,
+    "lon" : 1.1276215,
+    "id" : "IPSWESJ",
+    "name" : "Ipswich East Suffolk Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

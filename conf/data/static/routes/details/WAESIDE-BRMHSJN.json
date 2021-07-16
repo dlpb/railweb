@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.342759,
+    "lon" : -4.4547353,
+    "id" : "WAESIDE",
+    "name" : "Waterside",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.389191,
+    "lon" : -4.5176331,
+    "id" : "BRMHSJN",
+    "name" : "Holehouse Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

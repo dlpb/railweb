@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.147301,
+    "lon" : -2.163092,
+    "id" : "ABTSWDJ",
+    "name" : "Abbotswood Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.064854,
+    "lon" : -2.1132529,
+    "id" : "ECKNGTL",
+    "name" : "Eckington Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

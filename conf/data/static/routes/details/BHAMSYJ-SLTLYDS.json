@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.488471,
+    "lon" : -1.8654405,
+    "id" : "BHAMSYJ",
+    "name" : "Duddeston Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.485073,
+    "lon" : -1.8654508,
+    "id" : "SLTLYDS",
+    "name" : "Saltley Emr",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

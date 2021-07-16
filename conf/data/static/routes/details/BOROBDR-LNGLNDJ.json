@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.331608,
+    "lon" : -1.4418618,
+    "id" : "BOROBDR",
+    "name" : "Boroughbridge Rd. L.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.317879,
+    "lon" : -1.4329776,
+    "id" : "LNGLNDJ",
+    "name" : "Longlands Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

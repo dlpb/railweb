@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.006823,
+    "lon" : -2.7740868,
+    "id" : "DREMJ",
+    "name" : "Drem",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.987249,
+    "lon" : -2.6298068,
+    "id" : "STENTON",
+    "name" : "Stenton G.S.P.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

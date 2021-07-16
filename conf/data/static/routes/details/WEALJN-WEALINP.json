@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.513295,
+    "lon" : -0.32316741,
+    "id" : "WEALJN",
+    "name" : "West Ealing Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.51331,
+    "lon" : -0.32926302,
+    "id" : "WEALINP",
+    "name" : "West Ealing Plasser Sdgs",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

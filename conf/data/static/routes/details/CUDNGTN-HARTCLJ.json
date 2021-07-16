@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.239917,
+    "lon" : -2.5994111,
+    "id" : "CUDNGTN",
+    "name" : "Cuddington",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.248028,
+    "lon" : -2.5522417,
+    "id" : "HARTCLJ",
+    "name" : "Hartford C.L. Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

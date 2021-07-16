@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.138853,
+    "lon" : -2.0972182,
+    "id" : "ABRD77",
+    "name" : "Aberdeen Sig A77",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 57.142087,
+    "lon" : -2.0973093,
+    "id" : "ABRDEEN",
+    "name" : "Aberdeen",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,10 @@
+[ {
+  "id" : "LMNGTNS",
+  "crp" : "",
+  "route" : "London North Western",
+  "changeTime" : "Set(Some(ChangeTime(LMS,CH,CH,3,(Leamington Spa))))",
+  "interchangeType" : "2 - Medium interchange point",
+  "county" : "West Midlands",
+  "district" : "Warwickshire",
+  "postcode" : "\"CV31 3NS"
+} ]

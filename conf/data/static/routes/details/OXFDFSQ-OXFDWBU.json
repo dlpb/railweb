@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 51.753494241348754,
+    "lon" : -1.2701534314224288,
+    "id" : "OXFDFSQ",
+    "name" : "Oxford Frideswide Square Bus",
+    "type" : "Bus"
+  },
+  "to" : {
+    "lat" : 51.753491,
+    "lon" : -1.269401,
+    "id" : "OXFDWBU",
+    "name" : "Oxford Westgate",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "20 MINUTES"
+}, {
+  "from" : {
+    "lat" : 51.753494241348754,
+    "lon" : -1.2701534314224288,
+    "id" : "OXFDFSQ",
+    "name" : "Oxford Frideswide Square Bus",
+    "type" : "Bus"
+  },
+  "to" : {
+    "lat" : 51.753491,
+    "lon" : -1.269401,
+    "id" : "OXFDWBU",
+    "name" : "Oxford Westgate",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "15 MINUTES"
+} ]

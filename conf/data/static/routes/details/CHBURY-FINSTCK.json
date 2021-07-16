@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.872481,
+    "lon" : -1.4900272,
+    "id" : "CHBURY",
+    "name" : "Charlbury",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.852718,
+    "lon" : -1.4695034,
+    "id" : "FINSTCK",
+    "name" : "Finstock",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.747157,
+    "lon" : -0.51242858,
+    "id" : "BONENDJ",
+    "name" : "Bourne End Jn (Herts)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.74215,
+    "lon" : -0.49069293,
+    "id" : "HEMLHMP",
+    "name" : "Hemel Hempstead",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

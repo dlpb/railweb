@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.818833,
+    "lon" : -4.1334249,
+    "id" : "NWTL",
+    "name" : "Newton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.81896,
+    "lon" : -4.1276533,
+    "id" : "NWTLSCL",
+    "name" : "Newton South Connect Line",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

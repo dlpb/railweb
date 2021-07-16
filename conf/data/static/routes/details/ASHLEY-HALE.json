@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.355255,
+    "lon" : -2.3413966,
+    "id" : "ASHLEY",
+    "name" : "Ashley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.378832,
+    "lon" : -2.347508,
+    "id" : "HALE",
+    "name" : "Hale",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

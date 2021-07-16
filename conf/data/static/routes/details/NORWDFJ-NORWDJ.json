@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.389279,
+    "lon" : -0.081539927,
+    "id" : "NORWDFJ",
+    "name" : "Norwood Fork Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.396662,
+    "lon" : -0.074963344,
+    "id" : "NORWDJ",
+    "name" : "Norwood Junction",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

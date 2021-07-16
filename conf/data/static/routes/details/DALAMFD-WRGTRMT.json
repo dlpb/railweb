@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.398513,
+    "lon" : -2.6000292,
+    "id" : "DALAMFD",
+    "name" : "Dallam Freight Depot",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.402916,
+    "lon" : -2.6002867,
+    "id" : "WRGTRMT",
+    "name" : "Warrington Royal Mail(Dbs)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

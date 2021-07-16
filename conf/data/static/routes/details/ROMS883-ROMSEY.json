@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.99126,
+    "lon" : -1.4872158,
+    "id" : "ROMS883",
+    "name" : "Romsey Signal E883",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.992762,
+    "lon" : -1.4933547,
+    "id" : "ROMSEY",
+    "name" : "Romsey",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

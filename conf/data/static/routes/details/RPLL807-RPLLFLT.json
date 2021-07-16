@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.537718,
+    "lon" : 0.091232835,
+    "id" : "RPLL807",
+    "name" : "Ripple Lane Signal 807",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.530505,
+    "lon" : 0.10684851,
+    "id" : "RPLLFLT",
+    "name" : "Ripple Lane F.L.T.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

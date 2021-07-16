@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.7145,
+    "lon" : -3.442,
+    "id" : "ABDARE",
+    "name" : "Aberdare",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.744745,
+    "lon" : -3.523697,
+    "id" : "TOWRCOL",
+    "name" : "Tower Colly Ews",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

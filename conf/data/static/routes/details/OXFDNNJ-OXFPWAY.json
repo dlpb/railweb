@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.769333,
+    "lon" : -1.2739269,
+    "id" : "OXFDNNJ",
+    "name" : "Oxford North Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.8042,
+    "lon" : -1.2745,
+    "id" : "OXFPWAY",
+    "name" : "Oxford Parkway",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

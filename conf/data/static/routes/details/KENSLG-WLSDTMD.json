@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.530598,
+    "lon" : -0.22426356,
+    "id" : "KENSLG",
+    "name" : "Kensal Green",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.531359,
+    "lon" : -0.24013656,
+    "id" : "WLSDTMD",
+    "name" : "Willesden T.M.D",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

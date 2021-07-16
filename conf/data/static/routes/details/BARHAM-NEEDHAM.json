@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.118373,
+    "lon" : 1.0943222,
+    "id" : "BARHAM",
+    "name" : "Barham",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.152487,
+    "lon" : 1.0556915,
+    "id" : "NEEDHAM",
+    "name" : "Needham Market",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

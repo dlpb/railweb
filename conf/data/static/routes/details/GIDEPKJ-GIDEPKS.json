@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.587227,
+    "lon" : 0.21924371,
+    "id" : "GIDEPKJ",
+    "name" : "Gidea Park Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.586787,
+    "lon" : 0.21780751,
+    "id" : "GIDEPKS",
+    "name" : "Gidea Park C.H.S.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

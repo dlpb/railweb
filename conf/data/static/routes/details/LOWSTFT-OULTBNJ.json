@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.474361,
+    "lon" : 1.7486851,
+    "id" : "LOWSTFT",
+    "name" : "Lowestoft",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.477816,
+    "lon" : 1.7190448,
+    "id" : "OULTBNJ",
+    "name" : "Oulton Broad North Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

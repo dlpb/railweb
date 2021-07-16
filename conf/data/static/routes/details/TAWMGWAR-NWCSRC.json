@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.0143,
+    "lon" : -1.6358,
+    "id" : "TAWMGWAR",
+    "name" : "Wansbeck Road",
+    "type" : "Metro"
+  },
+  "to" : {
+    "lat" : 55.011416,
+    "lon" : -1.6167611,
+    "id" : "NWCSRC",
+    "name" : "Regent Centre (Bus)",
+    "type" : "Location"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Unknown",
+  "speed" : "OHLE"
+} ]

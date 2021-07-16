@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.61095262813155,
+    "lon" : -1.2428934666610905,
+    "id" : "DIDCOTP",
+    "name" : "Didcot Parkway",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.617022,
+    "lon" : -1.2470967,
+    "id" : "DIDCWCJ",
+    "name" : "Didcot West Curve Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.991976,
+    "lon" : -1.5627753,
+    "id" : "HTONNJN",
+    "name" : "Heaton North Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.980996,
+    "lon" : -1.5782071,
+    "id" : "HTONSJN",
+    "name" : "Heaton Sth. Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

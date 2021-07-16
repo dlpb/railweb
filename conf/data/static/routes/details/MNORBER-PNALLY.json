@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.66014,
+    "lon" : -4.7925231,
+    "id" : "MNORBER",
+    "name" : "Manorbier",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.659005,
+    "lon" : -4.7217999,
+    "id" : "PNALLY",
+    "name" : "Penally",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

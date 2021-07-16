@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.29327,
+    "lon" : -2.0356605,
+    "id" : "LAVNGTN",
+    "name" : "Lavington",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.335247,
+    "lon" : -1.8531763,
+    "id" : "WBORO",
+    "name" : "Woodborough",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.480806,
+    "lon" : -4.1872516,
+    "id" : "CRAHALL",
+    "name" : "Cradlehall",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 57.482264,
+    "lon" : -4.0650419,
+    "id" : "CULDNMR",
+    "name" : "Culloden",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-100"
+} ]

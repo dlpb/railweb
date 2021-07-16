@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.529801,
+    "lon" : -1.3498793,
+    "id" : "EGLSCLF",
+    "name" : "Eaglescliffe",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.546127,
+    "lon" : -1.3377322,
+    "id" : "STOCCJN",
+    "name" : "Stockton Cut Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

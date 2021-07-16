@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.755246,
+    "lon" : -0.7872942,
+    "id" : "ESTRNGT",
+    "name" : "Eastrington",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.747928,
+    "lon" : -0.73159234,
+    "id" : "GLBRDYK",
+    "name" : "Gilberdyke",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

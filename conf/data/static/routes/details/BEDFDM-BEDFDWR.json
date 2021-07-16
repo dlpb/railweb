@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.135628,
+    "lon" : -0.47940292,
+    "id" : "BEDFDM",
+    "name" : "Bedford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.132887,
+    "lon" : -0.47743613,
+    "id" : "BEDFDWR",
+    "name" : "Bedford Wash Road",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

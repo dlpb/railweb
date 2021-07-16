@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.832628,
+    "lon" : -1.3940292,
+    "id" : "COMBE",
+    "name" : "Combe",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.852718,
+    "lon" : -1.4695034,
+    "id" : "FINSTCK",
+    "name" : "Finstock",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

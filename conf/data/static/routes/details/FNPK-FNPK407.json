@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.564699,
+    "lon" : -0.10647041,
+    "id" : "FNPK",
+    "name" : "Finsbury Park",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.564699,
+    "lon" : -0.10647041,
+    "id" : "FNPK407",
+    "name" : "Finsbury Park Signal 407",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

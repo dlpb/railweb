@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.016107,
+    "lon" : -4.0244038,
+    "id" : "CHAPLTN",
+    "name" : "Chapleton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.99629,
+    "lon" : -3.9827391,
+    "id" : "UMBRLGH",
+    "name" : "Umberleigh",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

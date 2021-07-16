@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.038291,
+    "lon" : -1.1956771,
+    "id" : "HUCKNAL",
+    "name" : "Hucknall",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.070008,
+    "lon" : -1.221817,
+    "id" : "NWSTEAD",
+    "name" : "Newstead",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

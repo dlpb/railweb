@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.557229,
+    "lon" : -1.9816077,
+    "id" : "BSCTHS",
+    "name" : "Bescot Holding Sidings",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.553929,
+    "lon" : -1.9776563,
+    "id" : "NEWTNJ",
+    "name" : "Newton Jn. (West Midlands)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

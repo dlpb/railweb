@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.958218,
+    "lon" : -2.0249269,
+    "id" : "SKPT",
+    "name" : "Skipton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.957938,
+    "lon" : -2.0321656,
+    "id" : "SKPTBCS",
+    "name" : "Skipton Broughton Rd C.S.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

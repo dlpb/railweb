@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.0658,
+    "lon" : -2.0274,
+    "id" : "HSCHE",
+    "name" : "Cheddleton",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 53.039772,
+    "lon" : -1.89128,
+    "id" : "CALDONL",
+    "name" : "Caldon Low",
+    "type" : "Point"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

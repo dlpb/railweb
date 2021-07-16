@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.328153,
+    "lon" : -0.19268989,
+    "id" : "HNTNGDN",
+    "name" : "Huntingdon",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.231366,
+    "lon" : -0.24726071,
+    "id" : "STNEOTS",
+    "name" : "St Neots",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

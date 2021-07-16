@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.934276,
+    "lon" : -3.3979994,
+    "id" : "NWBG",
+    "name" : "Newbridge Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.93368,
+    "lon" : -3.4037728,
+    "id" : "NWBGDPL",
+    "name" : "Newbridge Jn D.P.L.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

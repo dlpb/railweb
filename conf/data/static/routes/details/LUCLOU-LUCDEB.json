@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.6417,
+    "lon" : 0.05583,
+    "id" : "LUCLOU",
+    "name" : "Loughton",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.64535,
+    "lon" : 0.08364,
+    "id" : "LUCDEB",
+    "name" : "Debden",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

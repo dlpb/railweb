@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.104849,
+    "lon" : -1.2511222,
+    "id" : "KRBYSUM",
+    "name" : "Kirkby Summit Sb",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.114145,
+    "lon" : -1.2455673,
+    "id" : "STTNPWY",
+    "name" : "Sutton Parkway",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

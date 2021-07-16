@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.832306,
+    "lon" : -4.0018502,
+    "id" : "MOSESTR",
+    "name" : "Mossend Shunt & Marshallng",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.824466,
+    "lon" : -3.9976318,
+    "id" : "MOSEUPY",
+    "name" : "Mossend Up Yard",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

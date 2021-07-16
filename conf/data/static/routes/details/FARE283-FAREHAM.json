@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.855499,
+    "lon" : -1.1937704,
+    "id" : "FARE283",
+    "name" : "Fareham Signal E283",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.853683,
+    "lon" : -1.1926226,
+    "id" : "FAREHAM",
+    "name" : "Fareham",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

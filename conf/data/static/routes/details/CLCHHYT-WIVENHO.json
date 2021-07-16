@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.885875,
+    "lon" : 0.92738314,
+    "id" : "CLCHHYT",
+    "name" : "Hythe",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.856659,
+    "lon" : 0.95598636,
+    "id" : "WIVENHO",
+    "name" : "Wivenhoe",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

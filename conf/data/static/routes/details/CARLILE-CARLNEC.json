@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.891278,
+    "lon" : -2.9345781,
+    "id" : "CARLILE",
+    "name" : "Carlisle",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.921974,
+    "lon" : -2.9602071,
+    "id" : "CARLNEC",
+    "name" : "Carlisle Shunt Neck",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

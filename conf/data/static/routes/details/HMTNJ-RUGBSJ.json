@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.3702,
+    "lon" : -1.2265467,
+    "id" : "HMTNJ",
+    "name" : "Hillmorton Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.377614,
+    "lon" : -1.2441045,
+    "id" : "RUGBSJ",
+    "name" : "Rugby South Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.867433,
+    "lon" : -4.0300125,
+    "id" : "SUNSJN",
+    "name" : "Sunnyside Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.866901,
+    "lon" : -4.027939,
+    "id" : "COATBDS",
+    "name" : "Coatbridge Sunnyside",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

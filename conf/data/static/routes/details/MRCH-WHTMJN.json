@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.560202,
+    "lon" : 0.090976419,
+    "id" : "MRCH",
+    "name" : "March",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.562389,
+    "lon" : 0.087273866,
+    "id" : "WHTMJN",
+    "name" : "Whitemoor Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

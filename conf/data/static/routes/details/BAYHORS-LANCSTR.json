@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.968481,
+    "lon" : -2.7738162,
+    "id" : "BAYHORS",
+    "name" : "Bay Horse",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.048871,
+    "lon" : -2.8076742,
+    "id" : "LANCSTR",
+    "name" : "Lancaster",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.551642,
+    "lon" : -0.29591023,
+    "id" : "WMBY",
+    "name" : "Wembley Central",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.562277,
+    "lon" : -0.30382278,
+    "id" : "NWEMBLY",
+    "name" : "North Wembley",
+    "type" : "Station"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

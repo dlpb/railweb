@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.374834,
+    "lon" : -0.092374329,
+    "id" : "ECROYDN",
+    "name" : "East Croydon",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.363016,
+    "lon" : -0.093411281,
+    "id" : "SCROYDN",
+    "name" : "South Croydon",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

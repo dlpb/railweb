@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.451336,
+    "lon" : -2.6371693,
+    "id" : "ERLSTWN",
+    "name" : "Earlestown",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.45061,
+    "lon" : -2.6400947,
+    "id" : "ERLSUDL",
+    "name" : "Earlstown Up & Down Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

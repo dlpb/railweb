@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.377614,
+    "lon" : -1.2441045,
+    "id" : "RUGBSJ",
+    "name" : "Rugby South Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.378914,
+    "lon" : -1.2491946,
+    "id" : "RUGBY",
+    "name" : "Rugby",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

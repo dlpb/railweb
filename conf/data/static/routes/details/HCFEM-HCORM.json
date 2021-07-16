@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.5589,
+    "lon" : -0.3023,
+    "id" : "HCFEM",
+    "name" : "Ferry Meadows",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.559741,
+    "lon" : -0.280981,
+    "id" : "HCORM",
+    "name" : "Orton Mere",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

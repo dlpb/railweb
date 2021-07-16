@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.434202,
+    "lon" : -3.5650558,
+    "id" : "PAIGNTN",
+    "name" : "Paignton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.461025,
+    "lon" : -3.5432576,
+    "id" : "TORQUAY",
+    "name" : "Torquay",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "30-60"
+} ]

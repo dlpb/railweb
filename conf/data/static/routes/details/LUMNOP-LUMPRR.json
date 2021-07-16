@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.57850117,
+    "lon" : -0.317857023,
+    "id" : "LUMNOP",
+    "name" : "Northwick Park",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.57229051,
+    "lon" : -0.295813875,
+    "id" : "LUMPRR",
+    "name" : "Preston Road",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

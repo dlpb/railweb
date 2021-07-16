@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.93514,
+    "lon" : -4.06484,
+    "id" : "HFRPEN",
+    "name" : "Penrhyn",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.948,
+    "lon" : -4.003,
+    "id" : "HFRPLH",
+    "name" : "Plas Halt",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

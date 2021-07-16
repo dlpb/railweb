@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.64035,
+    "lon" : -3.2419875,
+    "id" : "YSTRADM",
+    "name" : "Ystrad Mynach",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.64035,
+    "lon" : -3.2419875,
+    "id" : "YSTRDMS",
+    "name" : "Ystrad Mynach South",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

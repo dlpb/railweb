@@ -1,0 +1,58 @@
+[ {
+  "from" : {
+    "lat" : 51.493946,
+    "lon" : -0.098700145,
+    "id" : "ELPHNAC",
+    "name" : "Elephant & Castle",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.532256,
+    "lon" : -0.1233741,
+    "id" : "KNGX",
+    "name" : "London Kings Cross",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "45 MINUTES"
+}, {
+  "from" : {
+    "lat" : 51.493946,
+    "lon" : -0.098700145,
+    "id" : "ELPHNAC",
+    "name" : "Elephant & Castle",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.532256,
+    "lon" : -0.1233741,
+    "id" : "KNGX",
+    "name" : "London Kings Cross",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "40 MINUTES"
+}, {
+  "from" : {
+    "lat" : 51.493946,
+    "lon" : -0.098700145,
+    "id" : "ELPHNAC",
+    "name" : "Elephant & Castle",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.532256,
+    "lon" : -0.1233741,
+    "id" : "KNGX",
+    "name" : "London Kings Cross",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "35 MINUTES"
+} ]

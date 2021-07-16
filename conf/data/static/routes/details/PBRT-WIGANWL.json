@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.530501,
+    "lon" : -2.6695407,
+    "id" : "PBRT",
+    "name" : "Pemberton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.545188,
+    "lon" : -2.6349113,
+    "id" : "WIGANWL",
+    "name" : "Wigan Wallgate",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

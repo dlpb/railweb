@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.848341,
+    "lon" : 0.52042289,
+    "id" : "STLNSHN",
+    "name" : "St Leonards Shunt Neck",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.848652,
+    "lon" : 0.52184619,
+    "id" : "STLNWCS",
+    "name" : "St Leonards Wm Csd.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

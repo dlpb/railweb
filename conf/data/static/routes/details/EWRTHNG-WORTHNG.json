@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.821508,
+    "lon" : -0.35546642,
+    "id" : "EWRTHNG",
+    "name" : "East Worthing",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.818672,
+    "lon" : -0.37578209,
+    "id" : "WORTHNG",
+    "name" : "Worthing",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

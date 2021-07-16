@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.521027,
+    "lon" : -0.10564459,
+    "id" : "FNTLSR",
+    "name" : "Farringdon Underground",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.520121,
+    "lon" : -0.098547128,
+    "id" : "BRBCNLT",
+    "name" : "Barbican Underground",
+    "type" : "Location"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

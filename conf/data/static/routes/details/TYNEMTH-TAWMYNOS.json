@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.016827,
+    "lon" : -1.4194867,
+    "id" : "TYNEMTH",
+    "name" : "Tynemouth (T & W Metro)",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 55.0085,
+    "lon" : -1.4483,
+    "id" : "TAWMYNOS",
+    "name" : "North Shields",
+    "type" : "Metro"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Unknown",
+  "speed" : "OHLE"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.02481,
+    "lon" : -3.15723,
+    "id" : "HWSRNOF",
+    "name" : "Norton Fitzwarren",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 51.052859,
+    "lon" : -3.1933579,
+    "id" : "BSPSLYD",
+    "name" : "Bishops Lydeard",
+    "type" : "Location"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.785461,
+    "lon" : -3.9771659,
+    "id" : "DALZBSC",
+    "name" : "Dalzell B.S.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.777353,
+    "lon" : -3.9576527,
+    "id" : "SHILDMR",
+    "name" : "Shieldmuir",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

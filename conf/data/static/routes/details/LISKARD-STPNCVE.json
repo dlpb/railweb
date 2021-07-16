@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.447066,
+    "lon" : -4.4701772,
+    "id" : "LISKARD",
+    "name" : "Liskeard",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.452931,
+    "lon" : -4.5583658,
+    "id" : "STPNCVE",
+    "name" : "St Pinnock Viaduct East",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

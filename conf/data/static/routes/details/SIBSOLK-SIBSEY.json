@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.053512,
+    "lon" : 0.050323526,
+    "id" : "SIBSOLK",
+    "name" : "Old Leake",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.035796,
+    "lon" : 0.027497641,
+    "id" : "SIBSEY",
+    "name" : "Sibsey S.B.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

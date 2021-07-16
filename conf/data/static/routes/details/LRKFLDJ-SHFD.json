@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.842038,
+    "lon" : -4.258261,
+    "id" : "LRKFLDJ",
+    "name" : "Larkfield Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.832905,
+    "lon" : -4.2317497,
+    "id" : "SHFD",
+    "name" : "Shawfield",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "120-125"
+} ]

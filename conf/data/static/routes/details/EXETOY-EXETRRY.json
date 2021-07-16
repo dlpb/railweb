@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.732116,
+    "lon" : -3.5438897,
+    "id" : "EXETOY",
+    "name" : "Exeter Old Yd-Waggonersway",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.73758,
+    "lon" : -3.5461952,
+    "id" : "EXETRRY",
+    "name" : "Exeter Riverside N.Y.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

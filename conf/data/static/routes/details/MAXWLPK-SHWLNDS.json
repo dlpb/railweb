@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.837628,
+    "lon" : -4.2887498,
+    "id" : "MAXWLPK",
+    "name" : "Maxwell Park",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.829283,
+    "lon" : -4.2923632,
+    "id" : "SHWLNDS",
+    "name" : "Shawlands",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

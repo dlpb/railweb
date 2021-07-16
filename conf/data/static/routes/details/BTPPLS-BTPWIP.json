@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.8252,
+    "lon" : -3.0555,
+    "id" : "BTPPLS",
+    "name" : "Pleasant Street",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 53.8278,
+    "lon" : -3.0556,
+    "id" : "BTPWIP",
+    "name" : "Wilton Parade",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

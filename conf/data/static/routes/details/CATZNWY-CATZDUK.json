@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.1885,
+    "lon" : -6.3625,
+    "id" : "CATZNWY",
+    "name" : "Newry Ni",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.002,
+    "lon" : -6.413,
+    "id" : "CATZDUK",
+    "name" : "Dundalk     (Cie",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

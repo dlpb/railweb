@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.251243,
+    "lon" : 1.0039379,
+    "id" : "COWGRNX",
+    "name" : "Cow Green Crossover",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.222117,
+    "lon" : 0.9871659,
+    "id" : "HAGHLYJ",
+    "name" : "Haughley Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

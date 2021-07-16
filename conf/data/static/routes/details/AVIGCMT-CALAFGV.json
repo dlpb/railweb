@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 43.956853,
+    "lon" : 4.79196,
+    "id" : "AVIGCMT",
+    "name" : "Avignon",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 50.901561,
+    "lon" : 1.811651,
+    "id" : "CALAFGV",
+    "name" : "Calais Frethun",
+    "type" : "Location"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

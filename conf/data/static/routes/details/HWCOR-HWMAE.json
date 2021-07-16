@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.653,
+    "lon" : -3.841,
+    "id" : "HWCOR",
+    "name" : "Corris",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.64461,
+    "lon" : -3.84462,
+    "id" : "HWMAE",
+    "name" : "Maespoeth",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

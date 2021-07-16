@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.467267,
+    "lon" : -0.13522742,
+    "id" : "VOLTRDJ",
+    "name" : "Voltaire Road Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.470036,
+    "lon" : -0.13858453,
+    "id" : "WNDSWRD",
+    "name" : "Wandsworth Road",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

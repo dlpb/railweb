@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.465551,
+    "lon" : -0.13251875,
+    "id" : "CLPHHS",
+    "name" : "Clapham High Street",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.463409,
+    "lon" : -0.12342131,
+    "id" : "SHPSHLA",
+    "name" : "Shepherds Lane Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

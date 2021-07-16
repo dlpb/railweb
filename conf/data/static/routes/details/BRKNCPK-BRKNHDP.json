@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.393628,
+    "lon" : -3.0235344,
+    "id" : "BRKNCPK",
+    "name" : "Conway Park",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.397612,
+    "lon" : -3.039948,
+    "id" : "BRKNHDP",
+    "name" : "Birkenhead Park",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

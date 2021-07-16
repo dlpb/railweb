@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.779694,
+    "lon" : -1.5815778,
+    "id" : "DRHM",
+    "name" : "Durham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.784082,
+    "lon" : -1.5772565,
+    "id" : "DRHM358",
+    "name" : "Durham Sig Ty358",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

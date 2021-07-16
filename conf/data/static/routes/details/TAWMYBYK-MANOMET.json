@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.9761,
+    "lon" : -1.5798,
+    "id" : "TAWMYBYK",
+    "name" : "Byker",
+    "type" : "Metro"
+  },
+  "to" : {
+    "lat" : 54.973905,
+    "lon" : -1.6048235,
+    "id" : "MANOMET",
+    "name" : "Manors (T & W Metro)",
+    "type" : "Location"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Unknown",
+  "speed" : "OHLE"
+} ]

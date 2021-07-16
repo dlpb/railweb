@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.452717,
+    "lon" : -2.5711571,
+    "id" : "BRSTLCW",
+    "name" : "Bristol Barton Hill W.R.D.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.454193,
+    "lon" : -2.5671458,
+    "id" : "DRDAYSJ",
+    "name" : "Dr Day's Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.282792,
+    "lon" : -3.8179486,
+    "id" : "LAND70",
+    "name" : "Llandudno Jn Sig.Lj70",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.283996,
+    "lon" : -3.8096741,
+    "id" : "LANDUDJ",
+    "name" : "Llandudno Junction",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

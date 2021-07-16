@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.597821,
+    "lon" : -0.26646772,
+    "id" : "NENGLNN",
+    "name" : "New England Nth Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.612374,
+    "lon" : -0.28726545,
+    "id" : "WRNGTNJ",
+    "name" : "Werrington Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

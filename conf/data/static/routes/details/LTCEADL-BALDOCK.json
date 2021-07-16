@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.982825,
+    "lon" : -0.21994794,
+    "id" : "LTCEADL",
+    "name" : "Letchworth A/D Line",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.993031,
+    "lon" : -0.18693092,
+    "id" : "BALDOCK",
+    "name" : "Baldock",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

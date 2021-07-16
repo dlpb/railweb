@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.941853,
+    "lon" : -1.164947,
+    "id" : "NTL1NG2",
+    "name" : "Ng2",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 52.943898,
+    "lon" : -1.177245,
+    "id" : "NTL1GRS",
+    "name" : "Gregory Street",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.955534,
+    "lon" : -4.036417,
+    "id" : "CROY",
+    "name" : "Croy",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.94832,
+    "lon" : -4.061103,
+    "id" : "GTSRUPL",
+    "name" : "Gartshore U.P.L.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

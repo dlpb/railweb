@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.30373,
+    "lon" : -0.63352509,
+    "id" : "BRKWDLE",
+    "name" : "Brookwood London End",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.303672,
+    "lon" : -0.63546346,
+    "id" : "BRKWOOD",
+    "name" : "Brookwood",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

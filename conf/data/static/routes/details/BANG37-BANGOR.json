@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.22184,
+    "lon" : -4.1323975,
+    "id" : "BANG37",
+    "name" : "Bangor Sig.Br37",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.222713,
+    "lon" : -4.1358714,
+    "id" : "BANGOR",
+    "name" : "Bangor (Gwynedd)",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

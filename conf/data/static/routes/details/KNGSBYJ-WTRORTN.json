@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.554069,
+    "lon" : -1.6779439,
+    "id" : "KNGSBYJ",
+    "name" : "Kingsbury Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.518558,
+    "lon" : -1.7439305,
+    "id" : "WTRORTN",
+    "name" : "Water Orton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

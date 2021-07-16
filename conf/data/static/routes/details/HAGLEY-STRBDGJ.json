@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.42229,
+    "lon" : -2.1466076,
+    "id" : "HAGLEY",
+    "name" : "Hagley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.447432,
+    "lon" : -2.1341114,
+    "id" : "STRBDGJ",
+    "name" : "Stourbridge Junction",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

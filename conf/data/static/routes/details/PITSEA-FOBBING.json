@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.560298,
+    "lon" : 0.50740074,
+    "id" : "PITSEA",
+    "name" : "Pitsea",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.549403,
+    "lon" : 0.46557535,
+    "id" : "FOBBING",
+    "name" : "Fobbing Crossing",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.866901,
+    "lon" : -4.027939,
+    "id" : "COATBDS",
+    "name" : "Coatbridge Sunnyside",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.864316,
+    "lon" : -4.0046955,
+    "id" : "COATDYK",
+    "name" : "Coatdyke",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

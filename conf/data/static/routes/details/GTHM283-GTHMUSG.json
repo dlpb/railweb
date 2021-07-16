@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.90117,
+    "lon" : -0.63567279,
+    "id" : "GTHM283",
+    "name" : "Grantham Sub Signal 1283",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.905107,
+    "lon" : -0.64112497,
+    "id" : "GTHMUSG",
+    "name" : "Grantham Up Sdgs",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.383938,
+    "lon" : -0.33688273,
+    "id" : "MKTR",
+    "name" : "Market Rasen",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.330916,
+    "lon" : -0.37468682,
+    "id" : "WCKENBY",
+    "name" : "Wickenby S.B.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

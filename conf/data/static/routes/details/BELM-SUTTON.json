@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.344287,
+    "lon" : -0.19864989,
+    "id" : "BELM",
+    "name" : "Belmont",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.359772,
+    "lon" : -0.1904728,
+    "id" : "SUTTON",
+    "name" : "Sutton (Surrey)",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

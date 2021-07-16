@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.390613,
+    "lon" : -2.1519042,
+    "id" : "DAVNPRT",
+    "name" : "Davenport",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.386113,
+    "lon" : -2.1412134,
+    "id" : "WMOR",
+    "name" : "Woodsmoor",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

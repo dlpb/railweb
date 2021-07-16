@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.858338,
+    "lon" : -0.6620377,
+    "id" : "CHDNGTN",
+    "name" : "Cheddington",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.803693,
+    "lon" : -0.62585928,
+    "id" : "TRINGNJ",
+    "name" : "Tring North Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

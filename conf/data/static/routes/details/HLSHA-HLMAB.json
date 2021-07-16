@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.6555,
+    "lon" : -1.4413,
+    "id" : "HLSHA",
+    "name" : "Shackerstone",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.624583,
+    "lon" : -1.420972,
+    "id" : "HLMAB",
+    "name" : "Market Bosworth",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

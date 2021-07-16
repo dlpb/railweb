@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.006215,
+    "lon" : -3.8182686,
+    "id" : "CAMELON",
+    "name" : "Camelon",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.007946,
+    "lon" : -3.8282464,
+    "id" : "CRMRSEJ",
+    "name" : "Camelon East Junction",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

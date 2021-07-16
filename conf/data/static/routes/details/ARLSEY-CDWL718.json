@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.025493,
+    "lon" : -0.26648636,
+    "id" : "ARLSEY",
+    "name" : "Arlesey",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.97866,
+    "lon" : -0.27110503,
+    "id" : "CDWL718",
+    "name" : "Cadwell Sig K718",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.392468,
+    "lon" : -0.089010455,
+    "id" : "SELH051",
+    "name" : "Selhurst Shunt Signal 1051",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.392468,
+    "lon" : -0.089010455,
+    "id" : "SELHRST",
+    "name" : "Selhurst",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

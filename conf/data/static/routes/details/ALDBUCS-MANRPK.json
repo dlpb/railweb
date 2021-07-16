@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.557041,
+    "lon" : 0.062386535,
+    "id" : "ALDBUCS",
+    "name" : "Aldersbrook Up C.H.S.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.552241,
+    "lon" : 0.045306892,
+    "id" : "MANRPK",
+    "name" : "Manor Park",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

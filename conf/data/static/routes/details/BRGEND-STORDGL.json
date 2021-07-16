@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.506795,
+    "lon" : -3.575039,
+    "id" : "BRGEND",
+    "name" : "Bridgend",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.522601,
+    "lon" : -3.6554844,
+    "id" : "STORDGL",
+    "name" : "Stormy Down Goods Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

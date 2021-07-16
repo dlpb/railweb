@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 51.564699,
+    "lon" : -0.10647041,
+    "id" : "FNPK",
+    "name" : "Finsbury Park",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.583423,
+    "lon" : -0.075062442,
+    "id" : "SEVNSIS",
+    "name" : "Seven Sisters",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "15 MINUTES"
+}, {
+  "from" : {
+    "lat" : 51.564699,
+    "lon" : -0.10647041,
+    "id" : "FNPK",
+    "name" : "Finsbury Park",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.583423,
+    "lon" : -0.075062442,
+    "id" : "SEVNSIS",
+    "name" : "Seven Sisters",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "20 MINUTES"
+} ]

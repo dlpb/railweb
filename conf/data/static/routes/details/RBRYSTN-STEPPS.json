@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.887581,
+    "lon" : -4.172291,
+    "id" : "RBRYSTN",
+    "name" : "Robroyston",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.89011,
+    "lon" : -4.1406941,
+    "id" : "STEPPS",
+    "name" : "Stepps",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

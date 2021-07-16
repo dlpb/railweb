@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.78755,
+    "lon" : -0.78402031,
+    "id" : "STKM",
+    "name" : "Stoke Mandeville",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.761658,
+    "lon" : -0.74747649,
+    "id" : "WENDOVR",
+    "name" : "Wendover",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

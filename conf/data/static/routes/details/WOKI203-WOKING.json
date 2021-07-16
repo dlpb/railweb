@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.322399,
+    "lon" : -0.54765139,
+    "id" : "WOKI203",
+    "name" : "Woking Signal Wk 1203",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.323095,
+    "lon" : -0.54576369,
+    "id" : "WOKING",
+    "name" : "Woking",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.400036,
+    "lon" : 0.043900537,
+    "id" : "BICKLEY",
+    "name" : "Bickley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.400708,
+    "lon" : 0.058925691,
+    "id" : "BICKLYJ",
+    "name" : "Bickley Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

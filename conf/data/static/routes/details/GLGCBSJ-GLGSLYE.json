@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.851148,
+    "lon" : -4.2604032,
+    "id" : "GLGCBSJ",
+    "name" : "Glasgow Bridge Street Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.848133,
+    "lon" : -4.271363,
+    "id" : "GLGSLYE",
+    "name" : "Smithy Lye",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

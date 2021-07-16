@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.404599,
+    "lon" : -2.9284014,
+    "id" : "BOOTLBJ",
+    "name" : "Bootle Branch Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.40319,
+    "lon" : -2.9384335,
+    "id" : "EDGHSB",
+    "name" : "Edge Hill S.B.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

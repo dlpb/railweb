@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.798886,
+    "lon" : -2.1176166,
+    "id" : "STAFFDY",
+    "name" : "Stafford Yard",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.803807,
+    "lon" : -2.1229995,
+    "id" : "STAFFRD",
+    "name" : "Stafford",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

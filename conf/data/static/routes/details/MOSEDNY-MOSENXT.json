@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.825422,
+    "lon" : -4.0002193,
+    "id" : "MOSEDNY",
+    "name" : "Mossend Down Yard",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.824217,
+    "lon" : -3.9980341,
+    "id" : "MOSENXT",
+    "name" : "Mossend North Exit",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

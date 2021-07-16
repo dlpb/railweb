@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.291754,
+    "lon" : -0.23606052,
+    "id" : "TADWTH",
+    "name" : "Tadworth",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.308807,
+    "lon" : -0.24222186,
+    "id" : "TATNHMC",
+    "name" : "Tattenham Corner",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

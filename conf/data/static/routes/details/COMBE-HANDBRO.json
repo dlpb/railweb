@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.832628,
+    "lon" : -1.3940292,
+    "id" : "COMBE",
+    "name" : "Combe",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.824657,
+    "lon" : -1.3726618,
+    "id" : "HANDBRO",
+    "name" : "Hanborough",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

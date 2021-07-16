@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.510818,
+    "lon" : -0.88211353,
+    "id" : "SHPLAKE",
+    "name" : "Shiplake",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.49814,
+    "lon" : -0.87656034,
+    "id" : "WARGRAV",
+    "name" : "Wargrave",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

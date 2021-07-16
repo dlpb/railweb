@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.237996,
+    "lon" : -0.90699231,
+    "id" : "NMPTN",
+    "name" : "Northampton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.243157,
+    "lon" : -0.90799329,
+    "id" : "NMPTNNJ",
+    "name" : "Northampton North Junction",
+    "type" : "Location"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

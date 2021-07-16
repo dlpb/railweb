@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.573383,
+    "lon" : -0.051400932,
+    "id" : "COPR105",
+    "name" : "Coppermill Jn Sig L1005",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.565867,
+    "lon" : -0.035302274,
+    "id" : "LEABDGE",
+    "name" : "Lea Bridge",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

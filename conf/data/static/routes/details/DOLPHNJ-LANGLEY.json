@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.509231,
+    "lon" : -0.56448673,
+    "id" : "DOLPHNJ",
+    "name" : "Dolphin Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.507818,
+    "lon" : -0.54108662,
+    "id" : "LANGLEY",
+    "name" : "Langley",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

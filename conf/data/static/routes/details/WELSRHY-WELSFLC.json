@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.576312,
+    "lon" : -3.1674405,
+    "id" : "WELSRHY",
+    "name" : "Rhydwhimen L C",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.621434,
+    "lon" : -3.1453894,
+    "id" : "WELSFLC",
+    "name" : "Fron Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.9182,
+    "lon" : -1.3829,
+    "id" : "TAWMGSOL",
+    "name" : "Stadium Of Light",
+    "type" : "Metro"
+  },
+  "to" : {
+    "lat" : 54.911214,
+    "lon" : -1.383743,
+    "id" : "SNDRMNK",
+    "name" : "St Peters (T & W Metro)",
+    "type" : "Location"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Unknown",
+  "speed" : "OHLE"
+} ]

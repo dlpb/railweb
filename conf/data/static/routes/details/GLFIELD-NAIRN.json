@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.55345,
+    "lon" : -3.9874044,
+    "id" : "GLFIELD",
+    "name" : "Gollanfield",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 57.580284,
+    "lon" : -3.8717511,
+    "id" : "NAIRN",
+    "name" : "Nairn",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

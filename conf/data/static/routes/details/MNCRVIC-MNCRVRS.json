@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.488018,
+    "lon" : -2.2412763,
+    "id" : "MNCRVIC",
+    "name" : "Manchester Victoria",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.486145,
+    "lon" : -2.2472185,
+    "id" : "MNCRVRS",
+    "name" : "Manchester Vic.(Rev.Sdg)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

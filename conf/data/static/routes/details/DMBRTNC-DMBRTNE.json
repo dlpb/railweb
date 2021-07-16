@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.946511,
+    "lon" : -4.5677119,
+    "id" : "DMBRTNC",
+    "name" : "Dumbarton Central",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.942621,
+    "lon" : -4.5542094,
+    "id" : "DMBRTNE",
+    "name" : "Dumbarton East",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.626519,
+    "lon" : -3.9394519,
+    "id" : "SWANSEA",
+    "name" : "Swansea",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.633611,
+    "lon" : -3.9363587,
+    "id" : "SWANSLE",
+    "name" : "Swansea Loop East",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

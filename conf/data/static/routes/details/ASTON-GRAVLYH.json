@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.504634,
+    "lon" : -1.872286,
+    "id" : "ASTON",
+    "name" : "Aston",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.515121,
+    "lon" : -1.8529369,
+    "id" : "GRAVLYH",
+    "name" : "Gravelly Hill",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

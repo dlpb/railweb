@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.185819,
+    "lon" : -3.8230328,
+    "id" : "DOLGARG",
+    "name" : "Dolgarrog",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.14415,
+    "lon" : -3.8029056,
+    "id" : "NLANRST",
+    "name" : "North Llanrwst",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "30-50"
+} ]

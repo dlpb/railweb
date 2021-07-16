@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.740216,
+    "lon" : -1.0093866,
+    "id" : "MLTNBBY",
+    "name" : "Brooksby Level Crossing",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.730162,
+    "lon" : -1.0361814,
+    "id" : "MLTNRBY",
+    "name" : "Rearsby L.C.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

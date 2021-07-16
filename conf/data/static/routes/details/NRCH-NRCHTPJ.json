@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.625879,
+    "lon" : 1.3082906,
+    "id" : "NRCH",
+    "name" : "Norwich",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.623535,
+    "lon" : 1.3139366,
+    "id" : "NRCHTPJ",
+    "name" : "Thorpe Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

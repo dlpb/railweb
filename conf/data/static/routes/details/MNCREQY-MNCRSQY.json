@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.4677,
+    "lon" : -2.2824,
+    "id" : "MNCREQY",
+    "name" : "Exchge Quay Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.4703,
+    "lon" : -2.284,
+    "id" : "MNCRSQY",
+    "name" : "Salford Qys Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

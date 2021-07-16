@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.853141,
+    "lon" : 0.54208017,
+    "id" : "BOPEEPJ",
+    "name" : "Bopeep Jn S.B.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.853166,
+    "lon" : 0.54013489,
+    "id" : "WSLE",
+    "name" : "West St Leonards",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "70-90"
+} ]

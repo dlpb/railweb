@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.117459,
+    "lon" : -3.794142,
+    "id" : "ALLOALP",
+    "name" : "Alloa Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.068447,
+    "lon" : -3.7229464,
+    "id" : "KNCDNLC",
+    "name" : "Kincardine Level Xing",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

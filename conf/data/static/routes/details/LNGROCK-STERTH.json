@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.12825,
+    "lon" : -5.5025689,
+    "id" : "LNGROCK",
+    "name" : "Long Rock",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.170731,
+    "lon" : -5.4439891,
+    "id" : "STERTH",
+    "name" : "St Erth",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.090463,
+    "lon" : 1.0665774,
+    "id" : "SDLG",
+    "name" : "Sandling",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.09507,
+    "lon" : 1.0372569,
+    "id" : "WENHNGR",
+    "name" : "Westenhanger",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

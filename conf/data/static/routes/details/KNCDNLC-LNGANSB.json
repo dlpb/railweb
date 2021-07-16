@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.068447,
+    "lon" : -3.7229464,
+    "id" : "KNCDNLC",
+    "name" : "Kincardine Level Xing",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.051109,
+    "lon" : -3.6933663,
+    "id" : "LNGANSB",
+    "name" : "Longannet S.B.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

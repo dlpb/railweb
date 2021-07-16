@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.593313,
+    "lon" : -3.7113457,
+    "id" : "BRODIE",
+    "name" : "Brodie",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 57.580284,
+    "lon" : -3.8717511,
+    "id" : "NAIRN",
+    "name" : "Nairn",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

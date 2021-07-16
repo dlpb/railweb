@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.746686,
+    "lon" : -3.5479269,
+    "id" : "CWLYBDG",
+    "name" : "Cowley Bridge Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.729782,
+    "lon" : -3.5435437,
+    "id" : "EXETRSD",
+    "name" : "Exeter St Davids",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

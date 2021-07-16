@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.963126,
+    "lon" : 1.3089794,
+    "id" : "FLXSNEW",
+    "name" : "Felixstowe North Ews",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.976714,
+    "lon" : 1.319288,
+    "id" : "TRIMLEY",
+    "name" : "Trimley",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

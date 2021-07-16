@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.364633,
+    "lon" : -3.4312319,
+    "id" : "HILTONJ",
+    "name" : "Hilton Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.391779,
+    "lon" : -3.439605,
+    "id" : "PERTH",
+    "name" : "Perth",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

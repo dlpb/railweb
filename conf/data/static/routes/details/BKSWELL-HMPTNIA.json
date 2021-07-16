@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.396219,
+    "lon" : -1.6421468,
+    "id" : "BKSWELL",
+    "name" : "Berkswell",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.428356,
+    "lon" : -1.699391,
+    "id" : "HMPTNIA",
+    "name" : "Hampton-In-Arden",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.292483,
+    "lon" : 0.50309206,
+    "id" : "ALLGARC",
+    "name" : "Allington A.R.C. Sdg.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.301582,
+    "lon" : 0.4654962,
+    "id" : "AYLESFD",
+    "name" : "Aylesford",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

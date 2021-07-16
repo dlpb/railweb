@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.65295,
+    "lon" : -0.27999927,
+    "id" : "ELTR",
+    "name" : "Elstree & Borehamwood",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.676781,
+    "lon" : -0.30798044,
+    "id" : "RADLETJ",
+    "name" : "Radlett Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

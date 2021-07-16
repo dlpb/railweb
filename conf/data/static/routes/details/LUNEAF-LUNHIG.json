@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.58729747,
+    "lon" : -0.1649563231,
+    "id" : "LUNEAF",
+    "name" : "East Finchley",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.57722,
+    "lon" : -0.14553,
+    "id" : "LUNHIG",
+    "name" : "Highgate",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

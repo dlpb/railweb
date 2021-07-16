@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.72941,
+    "lon" : -1.1949305,
+    "id" : "MORRISC",
+    "name" : "Morris Cowley",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.731219,
+    "lon" : -1.1898594,
+    "id" : "MORRMAT",
+    "name" : "Morris Cowley M.A.T.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

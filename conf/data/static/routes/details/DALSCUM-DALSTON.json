@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.864629,
+    "lon" : -2.9442135,
+    "id" : "DALSCUM",
+    "name" : "Cummersdale Viaduct",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.846121,
+    "lon" : -2.988835,
+    "id" : "DALSTON",
+    "name" : "Dalston",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

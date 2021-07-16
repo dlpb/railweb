@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.482414,
+    "lon" : -4.2104531,
+    "id" : "MILBRNJ",
+    "name" : "Millburn Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 57.499988,
+    "lon" : -4.1465565,
+    "id" : "IVRNBLC",
+    "name" : "Bunchrew L.C.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

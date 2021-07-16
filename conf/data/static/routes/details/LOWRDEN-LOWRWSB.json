@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.980425,
+    "lon" : -2.6052867,
+    "id" : "LOWRDEN",
+    "name" : "Upper Denton Ahb",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.960353,
+    "lon" : -2.6499778,
+    "id" : "LOWRWSB",
+    "name" : "Low Row S.B.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

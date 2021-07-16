@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.929032,
+    "lon" : -3.230071,
+    "id" : "CRLORTJ",
+    "name" : "Craiglockhart Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.93649,
+    "lon" : -3.2372391,
+    "id" : "GORGIEJ",
+    "name" : "Gorgie Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.904476,
+    "lon" : -4.068237,
+    "id" : "TLSRNAU",
+    "name" : "Talsarnau",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.893749,
+    "lon" : -4.0785786,
+    "id" : "TYGWYN",
+    "name" : "Tygwyn",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

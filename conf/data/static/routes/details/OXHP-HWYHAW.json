@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.816347,
+    "lon" : -1.9502059,
+    "id" : "OXHP",
+    "name" : "Oxenhope",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 53.8312,
+    "lon" : -1.9488,
+    "id" : "HWYHAW",
+    "name" : "Haworth",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

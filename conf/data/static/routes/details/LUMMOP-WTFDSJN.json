@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.62970512,
+    "lon" : -0.432070848,
+    "id" : "LUMMOP",
+    "name" : "Moor Park",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.63938,
+    "lon" : -0.44911981,
+    "id" : "WTFDSJN",
+    "name" : "Watford South Jn_(Met)",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

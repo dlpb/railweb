@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.906883,
+    "lon" : -1.1769789,
+    "id" : "NTL2RIV",
+    "name" : "Rivergreen",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 52.910746,
+    "lon" : -1.170395,
+    "id" : "NTL2SOD",
+    "name" : "Southchurch Drive",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

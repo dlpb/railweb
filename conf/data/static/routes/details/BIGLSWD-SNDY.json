@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.084519,
+    "lon" : -0.26075552,
+    "id" : "BIGLSWD",
+    "name" : "Biggleswade",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.124764,
+    "lon" : -0.28094086,
+    "id" : "SNDY",
+    "name" : "Sandy",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

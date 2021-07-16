@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 53.474074,
+    "lon" : -2.2511256,
+    "id" : "MNCRDGT",
+    "name" : "Deansgate",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.57732,
+    "lon" : -2.0895959,
+    "id" : "SHCRPTN",
+    "name" : "Shaw & Crompton",
+    "type" : "Location"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "52 MINUTES"
+}, {
+  "from" : {
+    "lat" : 53.474074,
+    "lon" : -2.2511256,
+    "id" : "MNCRDGT",
+    "name" : "Deansgate",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.57732,
+    "lon" : -2.0895959,
+    "id" : "SHCRPTN",
+    "name" : "Shaw & Crompton",
+    "type" : "Location"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "55 MINUTES"
+} ]

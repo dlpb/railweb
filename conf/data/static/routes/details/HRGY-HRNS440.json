@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.577421,
+    "lon" : -0.1052489,
+    "id" : "HRGY",
+    "name" : "Harringay",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.585291,
+    "lon" : -0.11147496,
+    "id" : "HRNS440",
+    "name" : "Hornsey Sig K440",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

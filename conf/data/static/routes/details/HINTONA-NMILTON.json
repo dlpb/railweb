@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.75253,
+    "lon" : -1.7138295,
+    "id" : "HINTONA",
+    "name" : "Hinton Admiral",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.755778,
+    "lon" : -1.6576282,
+    "id" : "NMILTON",
+    "name" : "New Milton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.524972,
+    "lon" : -0.21677009,
+    "id" : "LDBRKJ",
+    "name" : "Ladbroke Grove",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.520617,
+    "lon" : -0.19775485,
+    "id" : "PADTNTT",
+    "name" : "Paddn Yd Marcon Topmix",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

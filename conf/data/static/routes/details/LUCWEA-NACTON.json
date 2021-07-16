@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.51818,
+    "lon" : -0.28064,
+    "id" : "LUCWEA",
+    "name" : "West Acton",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.523611,
+    "lon" : -0.259722,
+    "id" : "NACTON",
+    "name" : "North Acton Underground",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

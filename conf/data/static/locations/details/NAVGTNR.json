@@ -1,0 +1,10 @@
+[ {
+  "id" : "NAVGTNR",
+  "crp" : "",
+  "route" : "London North Western",
+  "changeTime" : "Set(None)",
+  "interchangeType" : "1 - Small interchange point",
+  "county" : "North West",
+  "district" : "Greater Manchester",
+  "postcode" : "\"WA14 1SR"
+} ]

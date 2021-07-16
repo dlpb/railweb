@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.37501,
+    "lon" : -0.0782,
+    "id" : "LTBSAN",
+    "name" : "Sandilands",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 51.364188,
+    "lon" : -0.080703,
+    "id" : "LTALLP",
+    "name" : "Lloyd Park",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

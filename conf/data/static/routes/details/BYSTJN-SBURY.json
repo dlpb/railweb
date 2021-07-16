@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.633919,
+    "lon" : -0.064905206,
+    "id" : "BYSTJN",
+    "name" : "Bury Street Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.64771,
+    "lon" : -0.052725218,
+    "id" : "SBURY",
+    "name" : "Southbury",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

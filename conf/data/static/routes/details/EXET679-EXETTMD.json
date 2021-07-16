@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.725838,
+    "lon" : -3.5439667,
+    "id" : "EXET679",
+    "name" : "Exeter Sig 679",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.730423,
+    "lon" : -3.5447126,
+    "id" : "EXETTMD",
+    "name" : "Exeter Tmd",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

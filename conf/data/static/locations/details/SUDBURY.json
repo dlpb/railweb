@@ -1,0 +1,10 @@
+[ {
+  "id" : "SUDBURY",
+  "crp" : "Gainsborough Line",
+  "route" : "Anglia",
+  "changeTime" : "Set(None)",
+  "interchangeType" : "0 - Not an interchange point",
+  "county" : "East",
+  "district" : "Suffolk",
+  "postcode" : "\"CO10 6SU"
+} ]

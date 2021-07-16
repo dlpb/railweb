@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.671328,
+    "lon" : -3.8937416,
+    "id" : "FELNFRN",
+    "name" : "Felin Fran",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.677407,
+    "lon" : -3.9691371,
+    "id" : "LLNGYFL",
+    "name" : "Llangyfelach",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

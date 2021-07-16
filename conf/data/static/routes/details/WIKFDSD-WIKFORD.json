@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.615227,
+    "lon" : 0.51838749,
+    "id" : "WIKFDSD",
+    "name" : "Wickford Down Siding",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.614072,
+    "lon" : 0.52192045,
+    "id" : "WIKFORD",
+    "name" : "Wickford",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

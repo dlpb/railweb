@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.693782,
+    "lon" : -4.9367655,
+    "id" : "PEMBRKD",
+    "name" : "Pembroke Dock",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.673057,
+    "lon" : -4.906522,
+    "id" : "PEMBROK",
+    "name" : "Pembroke",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

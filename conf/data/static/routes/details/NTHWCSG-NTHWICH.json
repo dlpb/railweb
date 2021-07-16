@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.263177,
+    "lon" : -2.4878969,
+    "id" : "NTHWCSG",
+    "name" : "Northwich T.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.261297,
+    "lon" : -2.4968552,
+    "id" : "NTHWICH",
+    "name" : "Northwich",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

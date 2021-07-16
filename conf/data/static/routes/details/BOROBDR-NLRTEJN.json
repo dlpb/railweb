@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.331608,
+    "lon" : -1.4418618,
+    "id" : "BOROBDR",
+    "name" : "Boroughbridge Rd. L.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.341639,
+    "lon" : -1.4420336,
+    "id" : "NLRTEJN",
+    "name" : "Northallerton East Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

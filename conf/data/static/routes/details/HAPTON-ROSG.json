@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.781557,
+    "lon" : -2.3173511,
+    "id" : "HAPTON",
+    "name" : "Hapton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.786329,
+    "lon" : -2.2819473,
+    "id" : "ROSG",
+    "name" : "Rose Grove",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

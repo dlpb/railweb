@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.9982,
+    "lon" : -2.5138099,
+    "id" : "DUNBAR",
+    "name" : "Dunbar",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.997958,
+    "lon" : -2.5116903,
+    "id" : "DUNBUCE",
+    "name" : "Dunbar Up Sdgs Ce",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.538693,
+    "lon" : -0.99415564,
+    "id" : "KIBWRTH",
+    "name" : "Kibworth Summit",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.520253,
+    "lon" : -0.938498,
+    "id" : "MRKTELN",
+    "name" : "East Langton",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

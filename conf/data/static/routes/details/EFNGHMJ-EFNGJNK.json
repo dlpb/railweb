@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.28909,
+    "lon" : -0.42245722,
+    "id" : "EFNGHMJ",
+    "name" : "Effingham Junction",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.28829,
+    "lon" : -0.42378967,
+    "id" : "EFNGJNK",
+    "name" : "Effingham Junction Neck",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

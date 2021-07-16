@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.58363,
+    "lon" : -2.7131855,
+    "id" : "SDBKPST",
+    "name" : "Sudbrook Pumping Station",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.584832,
+    "lon" : -2.7594628,
+    "id" : "SEVTNLE",
+    "name" : "Severn Tunnel East",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

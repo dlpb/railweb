@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.404246,
+    "lon" : 0.29025346,
+    "id" : "ELYYNJN",
+    "name" : "Ely North Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.390457,
+    "lon" : 0.26622959,
+    "id" : "ELYYUGL",
+    "name" : "Ely Up Goods Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.45123,
+    "lon" : -4.1814462,
+    "id" : "BEREFRS",
+    "name" : "Bere Ferrers",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.402149,
+    "lon" : -4.1876066,
+    "id" : "STBDXVR",
+    "name" : "St Budeaux Victoria Road",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "10-55"
+} ]

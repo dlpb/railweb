@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.6886,
+    "lon" : -7.6026,
+    "id" : "CATZMOM",
+    "name" : "Edgeworthstown (Cie)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.7245,
+    "lon" : -7.795,
+    "id" : "CATZLFO",
+    "name" : "Longford    (Cie",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.418297,
+    "lon" : -0.41740923,
+    "id" : "SUNBURY",
+    "name" : "Sunbury",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.413147,
+    "lon" : -0.43091739,
+    "id" : "UHALIFD",
+    "name" : "Upper Halliford",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

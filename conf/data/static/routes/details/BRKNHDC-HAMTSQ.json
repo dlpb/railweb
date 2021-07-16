@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.388096,
+    "lon" : -3.0208756,
+    "id" : "BRKNHDC",
+    "name" : "Birkenhead Central",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.394485,
+    "lon" : -3.0136597,
+    "id" : "HAMTSQ",
+    "name" : "Hamilton Square",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

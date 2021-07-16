@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 51.548666,
+    "lon" : -0.08218382,
+    "id" : "DALS",
+    "name" : "Dalston Junction",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.548189,
+    "lon" : -0.076102877,
+    "id" : "DALSKLD",
+    "name" : "Dalston Kingsland",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : " 7"
+}, {
+  "from" : {
+    "lat" : 51.548666,
+    "lon" : -0.08218382,
+    "id" : "DALS",
+    "name" : "Dalston Junction",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.548189,
+    "lon" : -0.076102877,
+    "id" : "DALSKLD",
+    "name" : "Dalston Kingsland",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "7 MINUTES"
+} ]

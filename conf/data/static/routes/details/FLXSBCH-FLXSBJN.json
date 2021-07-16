@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.952524,
+    "lon" : 1.3334248,
+    "id" : "FLXSBCH",
+    "name" : "Felixstowe Beach",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.952524,
+    "lon" : 1.3334248,
+    "id" : "FLXSBJN",
+    "name" : "Felixstowe Beach Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

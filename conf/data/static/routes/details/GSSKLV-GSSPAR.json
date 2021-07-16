@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.871111,
+    "lon" : -4.300556,
+    "id" : "GSSKLV",
+    "name" : "Kelvinhall",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 55.8698,
+    "lon" : -4.3092,
+    "id" : "GSSPAR",
+    "name" : "Partick",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

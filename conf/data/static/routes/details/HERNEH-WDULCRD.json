@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.453884,
+    "lon" : -0.10262491,
+    "id" : "HERNEH",
+    "name" : "Herne Hill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.44071605857351,
+    "lon" : -0.09137150686502754,
+    "id" : "WDULCRD",
+    "name" : "West Dulwich Croxted Road Bus",
+    "type" : "Bus"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.560202,
+    "lon" : 0.090976419,
+    "id" : "MRCH",
+    "name" : "March",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.558774,
+    "lon" : 0.09542296,
+    "id" : "MRCHDRG",
+    "name" : "March Down R.S Gbrf",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

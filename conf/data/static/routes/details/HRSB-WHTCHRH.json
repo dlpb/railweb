@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.23819,
+    "lon" : -1.385524,
+    "id" : "HRSB",
+    "name" : "Hurstbourne Viaduct",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.237561,
+    "lon" : -1.3377897,
+    "id" : "WHTCHRH",
+    "name" : "Whitchurch (Hampshire)",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

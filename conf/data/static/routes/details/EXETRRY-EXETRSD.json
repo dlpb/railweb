@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.73758,
+    "lon" : -3.5461952,
+    "id" : "EXETRRY",
+    "name" : "Exeter Riverside N.Y.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.729782,
+    "lon" : -3.5435437,
+    "id" : "EXETRSD",
+    "name" : "Exeter St Davids",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

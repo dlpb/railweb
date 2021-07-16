@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.788698,
+    "lon" : -2.1109016,
+    "id" : "RCKRSCT",
+    "name" : "Rickerscote",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.795254,
+    "lon" : -2.1081747,
+    "id" : "STAFTVJ",
+    "name" : "Stafford Trent Valley Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

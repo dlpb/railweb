@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.09216,
+    "lon" : -0.83780874,
+    "id" : "HANSCAS",
+    "name" : "Castlethorpe",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.0654,
+    "lon" : -0.80435262,
+    "id" : "WLVR",
+    "name" : "Wolverton",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

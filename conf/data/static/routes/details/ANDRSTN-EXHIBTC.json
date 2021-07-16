@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.859792,
+    "lon" : -4.2707652,
+    "id" : "ANDRSTN",
+    "name" : "Anderston",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.861535,
+    "lon" : -4.283396,
+    "id" : "EXHIBTC",
+    "name" : "Exhibition Centre",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

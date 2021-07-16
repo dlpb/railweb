@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.562242,
+    "lon" : -0.028850595,
+    "id" : "TMPLOCS",
+    "name" : "Orient Way Cs",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.556814,
+    "lon" : -0.017299237,
+    "id" : "TMPLRRJ",
+    "name" : "Ruckholt Road Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : ""
+} ]

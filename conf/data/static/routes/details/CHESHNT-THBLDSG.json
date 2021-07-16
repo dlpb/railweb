@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.701931,
+    "lon" : -0.02398637,
+    "id" : "CHESHNT",
+    "name" : "Cheshunt",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.692121,
+    "lon" : -0.035279927,
+    "id" : "THBLDSG",
+    "name" : "Theobalds Grove",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

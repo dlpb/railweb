@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.681895,
+    "lon" : -2.1346674,
+    "id" : "WORGRTJ",
+    "name" : "Worgret Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.681654,
+    "lon" : -2.2217289,
+    "id" : "WOOL",
+    "name" : "Wool",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

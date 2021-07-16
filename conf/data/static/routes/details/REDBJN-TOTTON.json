@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.920207,
+    "lon" : -1.4720346,
+    "id" : "REDBJN",
+    "name" : "Redbridge Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.917605,
+    "lon" : -1.4833166,
+    "id" : "TOTTON",
+    "name" : "Totton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

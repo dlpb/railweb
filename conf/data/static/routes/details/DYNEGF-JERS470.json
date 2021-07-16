@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.648859,
+    "lon" : -3.8409545,
+    "id" : "DYNEGF",
+    "name" : "Dynevor Ground Frame",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.640553,
+    "lon" : -3.8447803,
+    "id" : "JERS470",
+    "name" : "Jersey Marine Sth Jn Pt470",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

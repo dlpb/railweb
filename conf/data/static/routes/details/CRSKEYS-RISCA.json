@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.620778,
+    "lon" : -3.1258057,
+    "id" : "CRSKEYS",
+    "name" : "Crosskeys",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.60582,
+    "lon" : -3.0920209,
+    "id" : "RISCA",
+    "name" : "Risca & Pontymister",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "30-50"
+} ]

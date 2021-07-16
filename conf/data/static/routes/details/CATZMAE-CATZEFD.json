@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.37852,
+    "lon" : -6.58854,
+    "id" : "CATZMAE",
+    "name" : "Maynooth    (Cie",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.416389,
+    "lon" : -6.833611,
+    "id" : "CATZEFD",
+    "name" : "Enfield     (Cie",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

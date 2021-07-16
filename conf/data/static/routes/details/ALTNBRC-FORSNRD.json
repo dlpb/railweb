@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 58.388295,
+    "lon" : -3.7059452,
+    "id" : "ALTNBRC",
+    "name" : "Altnabreac",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 58.35685,
+    "lon" : -3.8970998,
+    "id" : "FORSNRD",
+    "name" : "Forsinard",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

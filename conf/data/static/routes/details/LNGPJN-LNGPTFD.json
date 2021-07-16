@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.04626,
+    "lon" : -2.2202884,
+    "id" : "LNGPJN",
+    "name" : "Longport Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.043461,
+    "lon" : -2.217291,
+    "id" : "LNGPTFD",
+    "name" : "Longport F.D.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

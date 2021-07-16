@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.291,
+    "lon" : -1.784184,
+    "id" : "HENLYIA",
+    "name" : "Henley-In-Arden",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.265855,
+    "lon" : -1.7846137,
+    "id" : "WOTONWN",
+    "name" : "Wootton Wawen",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

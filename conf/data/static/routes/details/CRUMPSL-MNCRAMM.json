@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.5174,
+    "lon" : -2.241,
+    "id" : "CRUMPSL",
+    "name" : "Crumpsall Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.5109,
+    "lon" : -2.2363,
+    "id" : "MNCRAMM",
+    "name" : "Abraham Mossmtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

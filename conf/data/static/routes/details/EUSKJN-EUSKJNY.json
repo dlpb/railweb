@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.584525,
+    "lon" : -2.9629808,
+    "id" : "EUSKJN",
+    "name" : "East Usk Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.584993,
+    "lon" : -2.9705106,
+    "id" : "EUSKJNY",
+    "name" : "East Usk Jn. N. Y.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

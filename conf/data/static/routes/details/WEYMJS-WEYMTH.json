@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.62174,
+    "lon" : -2.4596839,
+    "id" : "WEYMJS",
+    "name" : "Weymouth Jersey Siding",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.616737,
+    "lon" : -2.4556774,
+    "id" : "WEYMTH",
+    "name" : "Weymouth",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

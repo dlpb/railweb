@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.455194,
+    "lon" : -0.37149999,
+    "id" : "HOUNSLJ",
+    "name" : "Hounslow Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.451155,
+    "lon" : -0.36947049,
+    "id" : "WHTTONJ",
+    "name" : "Whitton Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.925881,
+    "lon" : -4.0848344,
+    "id" : "MINFORD",
+    "name" : "Minffordd",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.928725,
+    "lon" : -4.0645726,
+    "id" : "PRHN",
+    "name" : "Penrhyndeudraeth",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

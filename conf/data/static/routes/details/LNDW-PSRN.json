@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.83621,
+    "lon" : -4.1236066,
+    "id" : "LNDW",
+    "name" : "Llandanwg",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.830317,
+    "lon" : -4.1112056,
+    "id" : "PSRN",
+    "name" : "Pensarn",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

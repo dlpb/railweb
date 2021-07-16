@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.705816,
+    "lon" : -1.2432693,
+    "id" : "KNTNGEJ",
+    "name" : "Knottingley East Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.706276,
+    "lon" : -1.2535018,
+    "id" : "KNTNLIP",
+    "name" : "Knottingley T.M.D.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

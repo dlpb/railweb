@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.958218,
+    "lon" : -2.0249269,
+    "id" : "SKPT",
+    "name" : "Skipton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.939326,
+    "lon" : -2.0223716,
+    "id" : "SKPT549",
+    "name" : "Skipton Sth Jn Sig L4549",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.473046,
+    "lon" : -4.6253479,
+    "id" : "NWTOAJN",
+    "name" : "Newton Jn_(Strathclyde)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.473781,
+    "lon" : -4.6258715,
+    "id" : "NWTOA",
+    "name" : "Newton-On-Ayr",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "75-90"
+} ]

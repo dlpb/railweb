@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.767923,
+    "lon" : -1.5877222,
+    "id" : "COTNGLY",
+    "name" : "Cottingley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.791467,
+    "lon" : -1.5683653,
+    "id" : "HOLBJCN",
+    "name" : "Holbeck Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.74362,
+    "lon" : 0.95135,
+    "id" : "HNNOE",
+    "name" : "North Elmham",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.765556,
+    "lon" : 0.948056,
+    "id" : "HNCOS",
+    "name" : "County School",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

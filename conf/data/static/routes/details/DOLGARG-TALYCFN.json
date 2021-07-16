@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.185819,
+    "lon" : -3.8230328,
+    "id" : "DOLGARG",
+    "name" : "Dolgarrog",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.22836099829765,
+    "lon" : -3.8182630618053954,
+    "id" : "TALYCFN",
+    "name" : "Tal-Y-Cafn",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "30-50"
+} ]

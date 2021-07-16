@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.845774,
+    "lon" : -2.9927355,
+    "id" : "DALSOGF",
+    "name" : "Dalston Oil Terminal(Gf)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.83565,
+    "lon" : -3.106596,
+    "id" : "WIGTROS",
+    "name" : "Rosewain L C",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

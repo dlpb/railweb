@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.967031,
+    "lon" : -0.64275758,
+    "id" : "BRKSTSJ",
+    "name" : "Barkston South Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.918869,
+    "lon" : -0.64807154,
+    "id" : "GTHMNJN",
+    "name" : "Grantham Nth Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

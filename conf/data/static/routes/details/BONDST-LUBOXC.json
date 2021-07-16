@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.514,
+    "lon" : -0.15,
+    "id" : "BONDST",
+    "name" : "Bond Street Crossrail",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.51517,
+    "lon" : -0.14119,
+    "id" : "LUBOXC",
+    "name" : "Oxford Circus",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.340874,
+    "lon" : -1.2669855,
+    "id" : "KVTNBDG",
+    "name" : "Kiveton Bridge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.336748,
+    "lon" : -1.2395586,
+    "id" : "KVTNPK",
+    "name" : "Kiveton Park",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

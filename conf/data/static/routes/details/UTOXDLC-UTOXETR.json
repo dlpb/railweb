@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.877442,
+    "lon" : -1.7842446,
+    "id" : "UTOXDLC",
+    "name" : "Dovefields L.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.89678,
+    "lon" : -1.8568087,
+    "id" : "UTOXETR",
+    "name" : "Uttoxeter",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

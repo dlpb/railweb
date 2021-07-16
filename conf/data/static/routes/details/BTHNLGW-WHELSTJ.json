@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.523524,
+    "lon" : -0.065278771,
+    "id" : "BTHNLGW",
+    "name" : "Bethnal Green West Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.522608,
+    "lon" : -0.072424275,
+    "id" : "WHELSTJ",
+    "name" : "Wheler Street Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "6",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

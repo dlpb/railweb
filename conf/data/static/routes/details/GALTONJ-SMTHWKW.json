@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.500125,
+    "lon" : -1.9772708,
+    "id" : "GALTONJ",
+    "name" : "Galton Jn",
+    "type" : "Junction"
+  },
+  "to" : {
+    "lat" : 52.501366,
+    "lon" : -1.9831627,
+    "id" : "SMTHWKW",
+    "name" : "Smethwick Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

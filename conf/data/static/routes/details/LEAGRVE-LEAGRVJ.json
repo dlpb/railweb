@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.905428,
+    "lon" : -0.45856606,
+    "id" : "LEAGRVE",
+    "name" : "Leagrave",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.910262,
+    "lon" : -0.46654201,
+    "id" : "LEAGRVJ",
+    "name" : "Leagrave Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

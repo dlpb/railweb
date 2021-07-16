@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.979394,
+    "lon" : -4.1824417,
+    "id" : "INCLEA",
+    "name" : "Inchlea",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 57.059231,
+    "lon" : -4.1187674,
+    "id" : "NWTM",
+    "name" : "Newtonmore",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-100"
+} ]

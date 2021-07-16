@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.465685,
+    "lon" : -0.014240611,
+    "id" : "LEWISHM",
+    "name" : "Lewisham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.468926,
+    "lon" : -0.022422108,
+    "id" : "LEWIVLJ",
+    "name" : "Lewisham Vale Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

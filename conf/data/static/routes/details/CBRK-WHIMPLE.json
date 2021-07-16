@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.749689,
+    "lon" : -3.4223027,
+    "id" : "CBRK",
+    "name" : "Cranbrook (Devon)",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.768051,
+    "lon" : -3.353713,
+    "id" : "WHIMPLE",
+    "name" : "Whimple",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

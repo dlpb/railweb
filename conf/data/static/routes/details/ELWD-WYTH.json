@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.366544,
+    "lon" : -1.8613605,
+    "id" : "ELWD",
+    "name" : "Earlswood (West Midlands)",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.380079,
+    "lon" : -1.8654757,
+    "id" : "WYTH",
+    "name" : "Wythall",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

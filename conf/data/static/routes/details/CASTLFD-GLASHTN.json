@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.724104,
+    "lon" : -1.3549705,
+    "id" : "CASTLFD",
+    "name" : "Castleford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.708987,
+    "lon" : -1.3418696,
+    "id" : "GLASHTN",
+    "name" : "Glasshoughton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

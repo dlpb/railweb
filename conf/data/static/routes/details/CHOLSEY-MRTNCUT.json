@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.570313,
+    "lon" : -1.1586124,
+    "id" : "CHOLSEY",
+    "name" : "Cholsey",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.599855,
+    "lon" : -1.2085278,
+    "id" : "MRTNCUT",
+    "name" : "Moreton Cutting",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

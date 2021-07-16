@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.641381,
+    "lon" : -4.8011294,
+    "id" : "ARDRSSB",
+    "name" : "Ardrossan South Beach",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.633891,
+    "lon" : -4.7846406,
+    "id" : "SLCT",
+    "name" : "Saltcoats",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "75-90"
+} ]

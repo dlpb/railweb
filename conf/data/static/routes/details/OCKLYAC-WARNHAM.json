@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.151261,
+    "lon" : -0.33617996,
+    "id" : "OCKLYAC",
+    "name" : "Ockley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.093183,
+    "lon" : -0.32975386,
+    "id" : "WARNHAM",
+    "name" : "Warnham",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

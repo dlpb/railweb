@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.53824,
+    "lon" : 0.09998,
+    "id" : "LUDUPN",
+    "name" : "Upney",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.539725,
+    "lon" : 0.080494811,
+    "id" : "BARKGLT",
+    "name" : "Barking Underground",
+    "type" : "Location"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.558662,
+    "lon" : -0.21295688,
+    "id" : "CRKLWD",
+    "name" : "Cricklewood",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.563183,
+    "lon" : -0.21872385,
+    "id" : "CRKLWRL",
+    "name" : "Cricklewood Rec Line",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.266353,
+    "lon" : 0.61187306,
+    "id" : "CSMLX",
+    "name" : "Crismill Crossover",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.407092,
+    "lon" : 0.3834808,
+    "id" : "SNGWX",
+    "name" : "Singlewell Crossover",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "130-155"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.742857,
+    "lon" : -1.4569279,
+    "id" : "LOUNJN",
+    "name" : "Lounge Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.735633,
+    "lon" : -1.3927707,
+    "id" : "LOUNSLC",
+    "name" : "Swannington L.C.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

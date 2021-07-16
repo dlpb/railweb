@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.38983,
+    "lon" : -4.1797657,
+    "id" : "KEYHAM",
+    "name" : "Keyham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.398655,
+    "lon" : -4.1840263,
+    "id" : "STBDXJN",
+    "name" : "St Budeaux Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.857051,
+    "lon" : -0.37817497,
+    "id" : "HRPNCG",
+    "name" : "Chiltern Green",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.872643,
+    "lon" : -0.39588817,
+    "id" : "LUTOAPY",
+    "name" : "Luton Airport Parkway",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

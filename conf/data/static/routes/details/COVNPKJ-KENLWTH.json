@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.39398,
+    "lon" : -1.5134906,
+    "id" : "COVNPKJ",
+    "name" : "Coventry Park Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.351539,
+    "lon" : -1.5671622,
+    "id" : "KENLWTH",
+    "name" : "Kenilworth",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

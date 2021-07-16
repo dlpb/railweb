@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.5339,
+    "lon" : -0.0142,
+    "id" : "DSBLPML",
+    "name" : "Pudding Mill Lane",
+    "type" : "Light Rail"
+  },
+  "to" : {
+    "lat" : 51.5422,
+    "lon" : -0.0033,
+    "id" : "STFD",
+    "name" : "Stratford (London)",
+    "type" : "Station"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "Y",
+  "type" : "Unknown",
+  "speed" : "OHLE"
+} ]

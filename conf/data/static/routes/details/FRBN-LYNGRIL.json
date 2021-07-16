@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.695719,
+    "lon" : -4.0492651,
+    "id" : "FRBN",
+    "name" : "Fairbourne",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.666778,
+    "lon" : -4.0877823,
+    "id" : "LYNGRIL",
+    "name" : "Llwyngwril",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

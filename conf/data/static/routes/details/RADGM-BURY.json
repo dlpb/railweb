@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.5624,
+    "lon" : -2.3211,
+    "id" : "RADGM",
+    "name" : "Radcliffe Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.5914,
+    "lon" : -2.297,
+    "id" : "BURY",
+    "name" : "Bury Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

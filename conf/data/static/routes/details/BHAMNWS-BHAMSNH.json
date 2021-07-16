@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 52.477322,
+    "lon" : -1.9003979,
+    "id" : "BHAMNWS",
+    "name" : "Birmingham New Street",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.484281,
+    "lon" : -1.9004853,
+    "id" : "BHAMSNH",
+    "name" : "Birmingham Snow Hill",
+    "type" : "Station"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Unknown",
+  "speed" : "OHLE"
+}, {
+  "from" : {
+    "lat" : 52.477322,
+    "lon" : -1.9003979,
+    "id" : "BHAMNWS",
+    "name" : "Birmingham New Street",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.484281,
+    "lon" : -1.9004853,
+    "id" : "BHAMSNH",
+    "name" : "Birmingham Snow Hill",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "10 MINUTES"
+} ]

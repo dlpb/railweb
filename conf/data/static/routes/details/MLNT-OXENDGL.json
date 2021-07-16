@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.226529,
+    "lon" : -2.748096,
+    "id" : "MLNT",
+    "name" : "Milnthorpe",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.300955,
+    "lon" : -2.7260725,
+    "id" : "OXENDGL",
+    "name" : "Oxenholme Down Goods Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

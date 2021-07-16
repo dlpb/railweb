@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.272628,
+    "lon" : -0.72130822,
+    "id" : "ASHVALE",
+    "name" : "Ash Vale",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.299979,
+    "lon" : -0.67407309,
+    "id" : "PRBRITJ",
+    "name" : "Pirbright Junction",
+    "type" : "Location"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

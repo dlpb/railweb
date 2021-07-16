@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.6113,
+    "lon" : -2.1247,
+    "id" : "MNCRKBM",
+    "name" : "Kingsway Bp Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.6133,
+    "lon" : -2.1355,
+    "id" : "MNCRNBM",
+    "name" : "Newbold Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

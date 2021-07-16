@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.856281,
+    "lon" : -2.7181336,
+    "id" : "WEMM",
+    "name" : "Wem",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.809064,
+    "lon" : -2.7363739,
+    "id" : "YORTON",
+    "name" : "Yorton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "70-90"
+} ]

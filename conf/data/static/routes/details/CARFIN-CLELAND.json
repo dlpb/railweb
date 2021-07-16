@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.807683,
+    "lon" : -3.9559997,
+    "id" : "CARFIN",
+    "name" : "Carfin",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.804418,
+    "lon" : -3.910488,
+    "id" : "CLELAND",
+    "name" : "Cleland",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

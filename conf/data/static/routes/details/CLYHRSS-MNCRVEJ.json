@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.494454,
+    "lon" : -2.2174521,
+    "id" : "CLYHRSS",
+    "name" : "Collyhurst Street",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.488756,
+    "lon" : -2.2405571,
+    "id" : "MNCRVEJ",
+    "name" : "Manchester Vic.(East Jn)",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

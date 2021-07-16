@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.4146,
+    "lon" : -2.2879,
+    "id" : "NMRMTLK",
+    "name" : "Northern Mr Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.403,
+    "lon" : -2.2948,
+    "id" : "MRDMTLK",
+    "name" : "Moor Road Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

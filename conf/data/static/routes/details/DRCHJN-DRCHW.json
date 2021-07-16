@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.70522,
+    "lon" : -2.4410283,
+    "id" : "DRCHJN",
+    "name" : "Dorchester Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.710682,
+    "lon" : -2.4425101,
+    "id" : "DRCHW",
+    "name" : "Dorchester West",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

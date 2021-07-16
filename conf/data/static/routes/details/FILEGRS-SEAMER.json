@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.219624,
+    "lon" : -0.35041242,
+    "id" : "FILEGRS",
+    "name" : "Gristhorpe",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.240509,
+    "lon" : -0.41714648,
+    "id" : "SEAMER",
+    "name" : "Seamer",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

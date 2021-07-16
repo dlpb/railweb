@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.565714,
+    "lon" : -1.7856254,
+    "id" : "SDON",
+    "name" : "Swindon",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.561676,
+    "lon" : -1.7953384,
+    "id" : "SDON212",
+    "name" : "Swindon Signal Sw1212",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

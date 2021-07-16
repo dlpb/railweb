@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.44535,
+    "lon" : -2.741328,
+    "id" : "RAVNHDL",
+    "name" : "Ravenhead Down Goods Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.45253,
+    "lon" : -2.7300537,
+    "id" : "STHLNSC",
+    "name" : "St Helens Central",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

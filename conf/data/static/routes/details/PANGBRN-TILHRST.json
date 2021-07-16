@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.485326,
+    "lon" : -1.090227,
+    "id" : "PANGBRN",
+    "name" : "Pangbourne",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.471659,
+    "lon" : -1.0297407,
+    "id" : "TILHRST",
+    "name" : "Tilehurst",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.357955,
+    "lon" : -2.8883809,
+    "id" : "ALERTNJ",
+    "name" : "Allerton Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.357707,
+    "lon" : -2.8818247,
+    "id" : "ALERTNS",
+    "name" : "Allerton Depot",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

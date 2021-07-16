@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.502,
+    "lon" : -2.1988,
+    "id" : "MNCRCEM",
+    "name" : "Centrl Park Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.5042,
+    "lon" : -2.1843,
+    "id" : "MNCRNMM",
+    "name" : "Newtnh&Mostnmtkl",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

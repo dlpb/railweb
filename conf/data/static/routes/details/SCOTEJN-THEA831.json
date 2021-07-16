@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.442007,
+    "lon" : -0.99688727,
+    "id" : "SCOTEJN",
+    "name" : "Southcote Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.434995,
+    "lon" : -1.0611599,
+    "id" : "THEA831",
+    "name" : "Theale Signal T2831",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

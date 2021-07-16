@@ -1,9 +1,9 @@
 @(
 user: models.auth.User,
 token: String,
-callingPoints: List[models.location.MapLocation],
-notCalledAt: List[models.location.MapLocation],
-highlightPoints: List[models.location.MapLocation],
+callingPoints: List[models.location.Location],
+notCalledAt: List[models.location.Location],
+highlightPoints: List[models.location.Location],
 percentage: Double,
 totalTrains: Int,
 trainsAndStations: String,
@@ -112,8 +112,8 @@ createMap();
 @for(loc <- callingPoints) {
     addLocation({
         "location": {
-            "lat": @loc.location.lat,
-            "lon": @loc.location.lon
+            "lat": @loc.lat,
+            "lon": @loc.lon
         },
         "name":'@loc.name',
         "id": '@loc.id',
@@ -124,8 +124,8 @@ createMap();
  @for(loc <- highlightPoints) {
     addLocation({
         "location": {
-            "lat": @loc.location.lat,
-            "lon": @loc.location.lon
+            "lat": @loc.lat,
+            "lon": @loc.lon
         },
         "name":'@loc.name',
         "id": '@loc.id',

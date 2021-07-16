@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.503932,
+    "lon" : -0.43085587,
+    "id" : "DWLEYLP",
+    "name" : "Dawley Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.503057,
+    "lon" : -0.42324952,
+    "id" : "HTRWAJN",
+    "name" : "Heathrow Airport Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

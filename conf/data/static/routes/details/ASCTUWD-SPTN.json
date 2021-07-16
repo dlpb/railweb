@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.867438,
+    "lon" : -1.5640372,
+    "id" : "ASCTUWD",
+    "name" : "Ascott-Under-Wychwood",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.865922,
+    "lon" : -1.5925457,
+    "id" : "SPTN",
+    "name" : "Shipton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

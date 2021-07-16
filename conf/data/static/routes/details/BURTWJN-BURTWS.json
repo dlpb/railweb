@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.819936,
+    "lon" : -1.6248491,
+    "id" : "BURTWJN",
+    "name" : "Burton Wetmore Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.814208,
+    "lon" : -1.6328064,
+    "id" : "BURTWS",
+    "name" : "Burton Ot Wetmore Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

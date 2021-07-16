@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.51114,
+    "lon" : -0.11341,
+    "id" : "LUCTEM",
+    "name" : "Temple",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.511184,
+    "lon" : -0.10312739,
+    "id" : "BLFR",
+    "name" : "London Blackfriars",
+    "type" : "Station"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

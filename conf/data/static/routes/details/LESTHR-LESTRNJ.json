@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.641371,
+    "lon" : -1.1137862,
+    "id" : "LESTHR",
+    "name" : "Humberstone Road",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.634048,
+    "lon" : -1.1215734,
+    "id" : "LESTRNJ",
+    "name" : "Leicester North Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

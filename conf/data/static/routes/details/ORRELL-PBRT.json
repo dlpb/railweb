@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.530146,
+    "lon" : -2.7091514,
+    "id" : "ORRELL",
+    "name" : "Orrell",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.530501,
+    "lon" : -2.6695407,
+    "id" : "PBRT",
+    "name" : "Pemberton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

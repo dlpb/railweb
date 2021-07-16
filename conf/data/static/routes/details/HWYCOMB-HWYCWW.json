@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.629401,
+    "lon" : -0.74509706,
+    "id" : "HWYCOMB",
+    "name" : "High Wycombe",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.643305,
+    "lon" : -0.7907294,
+    "id" : "HWYCWW",
+    "name" : "West Wycombe",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

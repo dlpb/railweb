@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.076342,
+    "lon" : -2.4486132,
+    "id" : "CREWGW1",
+    "name" : "Gresty Lane Western Sdgs 1",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.079553,
+    "lon" : -2.4359877,
+    "id" : "CREWWSC",
+    "name" : "Crewe Gresty Bridge (Drs)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

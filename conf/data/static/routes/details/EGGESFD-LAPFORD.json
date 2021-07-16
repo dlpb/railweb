@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.887669,
+    "lon" : -3.8749272,
+    "id" : "EGGESFD",
+    "name" : "Eggesford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.857053,
+    "lon" : -3.8107403,
+    "id" : "LAPFORD",
+    "name" : "Lapford",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

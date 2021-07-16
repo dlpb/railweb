@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.459329,
+    "lon" : -0.99005921,
+    "id" : "REDGWCV",
+    "name" : "Reading West Curve",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.461918,
+    "lon" : -0.99626376,
+    "id" : "REDGWJN",
+    "name" : "Reading West Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

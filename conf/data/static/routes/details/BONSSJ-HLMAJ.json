@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.976374,
+    "lon" : -3.6494721,
+    "id" : "BONSSJ",
+    "name" : "Bo'ness Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.9776,
+    "lon" : -3.6562,
+    "id" : "HLMAJ",
+    "name" : "Manuel Junction",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

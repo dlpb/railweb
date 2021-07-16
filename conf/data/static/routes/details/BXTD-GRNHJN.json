@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.990225,
+    "lon" : 0.13152,
+    "id" : "BXTD",
+    "name" : "Buxted",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.004129,
+    "lon" : 0.14725236,
+    "id" : "GRNHJN",
+    "name" : "Greenhurst Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

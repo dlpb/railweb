@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.118373,
+    "lon" : 1.0943222,
+    "id" : "BARHAM",
+    "name" : "Barham",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.115777,
+    "lon" : 1.0966112,
+    "id" : "CLDON",
+    "name" : "Claydon",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.430464,
+    "lon" : 0.022355316,
+    "id" : "GRVPK",
+    "name" : "Grove Park",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.447634,
+    "lon" : 0.0033254263,
+    "id" : "LEESPRJ",
+    "name" : "Lee Spur Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

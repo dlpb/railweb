@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.156166,
+    "lon" : -0.0041776547,
+    "id" : "DORMANS",
+    "name" : "Dormans",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.176413,
+    "lon" : -0.0070375092,
+    "id" : "LINGFLD",
+    "name" : "Lingfield",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

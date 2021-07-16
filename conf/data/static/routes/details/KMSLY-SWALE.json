@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.361844,
+    "lon" : 0.73502055,
+    "id" : "KMSLY",
+    "name" : "Kemsley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.38919,
+    "lon" : 0.74711658,
+    "id" : "SWALE",
+    "name" : "Swale",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

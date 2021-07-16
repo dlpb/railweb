@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.790178,
+    "lon" : 0.05493903,
+    "id" : "NEWHVNH",
+    "name" : "Newhaven Harbour",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.787567,
+    "lon" : 0.056598047,
+    "id" : "NEWHVNM",
+    "name" : "Newhaven Marine (Bus)",
+    "type" : "Location"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

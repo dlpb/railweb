@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.342254,
+    "lon" : -1.7706318,
+    "id" : "PEWSEY",
+    "name" : "Pewsey",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.335247,
+    "lon" : -1.8531763,
+    "id" : "WBORO",
+    "name" : "Woodborough",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

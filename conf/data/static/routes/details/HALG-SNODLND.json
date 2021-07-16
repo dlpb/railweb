@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.352221,
+    "lon" : 0.4450762,
+    "id" : "HALG",
+    "name" : "Halling",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.330415,
+    "lon" : 0.44836601,
+    "id" : "SNODLND",
+    "name" : "Snodland",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

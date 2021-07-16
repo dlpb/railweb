@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.870755,
+    "lon" : 0.013467866,
+    "id" : "LEWES",
+    "name" : "Lewes",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.870943,
+    "lon" : 0.015650545,
+    "id" : "LEWES58",
+    "name" : "Lewes Signal Lw58",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

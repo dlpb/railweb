@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.1416,
+    "lon" : 0.87945508,
+    "id" : "ASHFDYW",
+    "name" : "Ashford Down Yd Washer Rd",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.141525,
+    "lon" : 0.8795791,
+    "id" : "ASHFKCY",
+    "name" : "Ashford Dn Yd Cntb End",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

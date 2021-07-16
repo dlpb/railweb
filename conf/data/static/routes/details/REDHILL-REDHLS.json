@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.24006,
+    "lon" : -0.16561897,
+    "id" : "REDHILL",
+    "name" : "Redhill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.915627,
+    "lon" : -1.4616594,
+    "id" : "REDHLS",
+    "name" : "Redhill L.H.S.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

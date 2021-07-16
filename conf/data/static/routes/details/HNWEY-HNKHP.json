@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.9328,
+    "lon" : 1.1499,
+    "id" : "HNWEY",
+    "name" : "Weybourne",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.932174,
+    "lon" : 1.137592,
+    "id" : "HNKHP",
+    "name" : "Kelling Heath Park",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

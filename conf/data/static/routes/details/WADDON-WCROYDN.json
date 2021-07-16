@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.367388,
+    "lon" : -0.1173937,
+    "id" : "WADDON",
+    "name" : "Waddon",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.378938,
+    "lon" : -0.10198958,
+    "id" : "WCROYDN",
+    "name" : "West Croydon",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

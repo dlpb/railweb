@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.336638,
+    "lon" : -1.4549896,
+    "id" : "NLRTNCH",
+    "name" : "Castle Hills Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.319604,
+    "lon" : -1.533628,
+    "id" : "HWRSCR",
+    "name" : "Scruton",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

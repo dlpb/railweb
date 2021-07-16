@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.188547,
+    "lon" : -3.8288524,
+    "id" : "AVIEMRE",
+    "name" : "Aviemore",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 57.12729,
+    "lon" : -3.9305574,
+    "id" : "KNCRAIG",
+    "name" : "Kincraig",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-100"
+} ]

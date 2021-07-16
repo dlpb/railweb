@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.193408,
+    "lon" : -2.4384914,
+    "id" : "MERHDQ",
+    "name" : "Merehead Quarry",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.184268,
+    "lon" : -2.4321522,
+    "id" : "MERHDQJ",
+    "name" : "Merehead Quarry Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

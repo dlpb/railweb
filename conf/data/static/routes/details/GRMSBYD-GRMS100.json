@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.574144,
+    "lon" : -0.075866931,
+    "id" : "GRMSBYD",
+    "name" : "Grimsby Docks",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.572531,
+    "lon" : -0.076740659,
+    "id" : "GRMS100",
+    "name" : "Grimsby Pasture St Sig1000",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

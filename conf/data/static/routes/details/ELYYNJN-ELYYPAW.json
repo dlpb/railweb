@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.404246,
+    "lon" : 0.29025346,
+    "id" : "ELYYNJN",
+    "name" : "Ely North Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.404738,
+    "lon" : 0.29135216,
+    "id" : "ELYYPAW",
+    "name" : "Ely Mlf Papworth Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

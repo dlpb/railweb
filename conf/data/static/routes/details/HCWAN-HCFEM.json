@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.568325,
+    "lon" : -0.38954,
+    "id" : "HCWAN",
+    "name" : "Wansford",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.5589,
+    "lon" : -0.3023,
+    "id" : "HCFEM",
+    "name" : "Ferry Meadows",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.140225,
+    "lon" : 0.14442657,
+    "id" : "BLCMJN",
+    "name" : "Blackham Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.155437,
+    "lon" : 0.11006657,
+    "id" : "COWDEN",
+    "name" : "Cowden",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

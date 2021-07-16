@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.706414,
+    "lon" : -1.2539842,
+    "id" : "KNTN402",
+    "name" : "Knottingley Sig Fe6402",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.706455,
+    "lon" : -1.2592402,
+    "id" : "KNTNGLY",
+    "name" : "Knottingley",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

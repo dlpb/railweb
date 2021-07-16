@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.074893,
+    "lon" : -1.7977473,
+    "id" : "SLSBRY",
+    "name" : "Salisbury",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.07757,
+    "lon" : -1.7858449,
+    "id" : "SLSBTJN",
+    "name" : "Tunnel Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

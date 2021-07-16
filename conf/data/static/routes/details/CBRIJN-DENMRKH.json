@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.465591,
+    "lon" : -0.098612074,
+    "id" : "CBRIJN",
+    "name" : "Cambria Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.468044,
+    "lon" : -0.089641012,
+    "id" : "DENMRKH",
+    "name" : "Denmark Hill",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

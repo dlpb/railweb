@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.512287,
+    "lon" : -3.3112583,
+    "id" : "NWTP",
+    "name" : "Newtown (Powys)",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.576312,
+    "lon" : -3.1674405,
+    "id" : "WELSRHY",
+    "name" : "Rhydwhimen L C",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

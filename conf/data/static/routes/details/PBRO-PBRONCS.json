@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.575484,
+    "lon" : -0.25089398,
+    "id" : "PBRO",
+    "name" : "Peterborough",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.569895,
+    "lon" : -0.24750115,
+    "id" : "PBRONCS",
+    "name" : "Peterboro Nene C.H.S",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

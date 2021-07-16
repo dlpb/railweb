@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.640207,
+    "lon" : -0.47380405,
+    "id" : "RCKMNSW",
+    "name" : "Rickmansworth",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.63938,
+    "lon" : -0.44911981,
+    "id" : "WTFDSJN",
+    "name" : "Watford South Jn_(Met)",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "750V DC 4th Rail",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

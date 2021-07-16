@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.630669,
+    "lon" : 0.32985507,
+    "id" : "SHENFLD",
+    "name" : "Shenfield",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.6322,
+    "lon" : 0.33156646,
+    "id" : "SHENFMS",
+    "name" : "Shenfield Middle Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

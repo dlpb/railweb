@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.637957,
+    "lon" : -0.63019512,
+    "id" : "SCNTROG",
+    "name" : "Scunthorpe Roxby Gullet",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.592833,
+    "lon" : -0.62946409,
+    "id" : "SCNTTJN",
+    "name" : "Scunthorpe Trent Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

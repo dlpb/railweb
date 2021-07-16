@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.384533,
+    "lon" : -4.0975665,
+    "id" : "LARAJN",
+    "name" : "Laira Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.382755,
+    "lon" : -4.1108655,
+    "id" : "LIPSONJ",
+    "name" : "Lipson Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

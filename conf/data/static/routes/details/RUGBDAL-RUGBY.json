@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.380754,
+    "lon" : -1.2600938,
+    "id" : "RUGBDAL",
+    "name" : "Rugby Depot Access Line",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.378914,
+    "lon" : -1.2491946,
+    "id" : "RUGBY",
+    "name" : "Rugby",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

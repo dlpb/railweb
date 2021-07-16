@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.896268,
+    "lon" : -1.2654244,
+    "id" : "LNGETNX",
+    "name" : "Long Eaton Town X",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.910366,
+    "lon" : -1.2760708,
+    "id" : "TOTODSL",
+    "name" : "Toton North Yard",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

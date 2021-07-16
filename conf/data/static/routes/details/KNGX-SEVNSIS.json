@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 51.532256,
+    "lon" : -0.1233741,
+    "id" : "KNGX",
+    "name" : "London Kings Cross",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.583423,
+    "lon" : -0.075062442,
+    "id" : "SEVNSIS",
+    "name" : "Seven Sisters",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "20 MINUTES"
+}, {
+  "from" : {
+    "lat" : 51.532256,
+    "lon" : -0.1233741,
+    "id" : "KNGX",
+    "name" : "London Kings Cross",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.583423,
+    "lon" : -0.075062442,
+    "id" : "SEVNSIS",
+    "name" : "Seven Sisters",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "25 MINUTES"
+} ]

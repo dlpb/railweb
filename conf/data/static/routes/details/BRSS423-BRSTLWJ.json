@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.511587,
+    "lon" : -2.5614749,
+    "id" : "BRSS423",
+    "name" : "Bristol Tm Signal 423",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.444854,
+    "lon" : -2.5811169,
+    "id" : "BRSTLWJ",
+    "name" : "Bristol West Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

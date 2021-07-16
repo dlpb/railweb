@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.505463,
+    "lon" : -0.48574499,
+    "id" : "THYMFHH",
+    "name" : "Thorney Mill Fhh",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.510013,
+    "lon" : -0.47534831,
+    "id" : "WDRYJN",
+    "name" : "West Drayton Jcn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

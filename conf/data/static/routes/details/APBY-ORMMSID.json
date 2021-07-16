@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.580373,
+    "lon" : -2.4865069,
+    "id" : "APBY",
+    "name" : "Appleby",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.5478,
+    "lon" : -2.4670117,
+    "id" : "ORMMSID",
+    "name" : "Ormside",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

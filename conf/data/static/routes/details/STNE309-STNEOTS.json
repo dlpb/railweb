@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.229624,
+    "lon" : -0.2486179,
+    "id" : "STNE309",
+    "name" : "St Neots South Sig P309",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.231366,
+    "lon" : -0.24726071,
+    "id" : "STNEOTS",
+    "name" : "St Neots",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

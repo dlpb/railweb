@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.676111,
+    "lon" : -1.94694,
+    "id" : "HSCHH",
+    "name" : "Chasewater Heaths",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.674722,
+    "lon" : -1.956806,
+    "id" : "HSNLH",
+    "name" : "Norton Lakeside Halt",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

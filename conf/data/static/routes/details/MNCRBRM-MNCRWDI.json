@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.4286,
+    "lon" : -2.24,
+    "id" : "MNCRBRM",
+    "name" : "Burton Road Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.425741,
+    "lon" : -2.23678,
+    "id" : "MNCRWDI",
+    "name" : "W Didsbury Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

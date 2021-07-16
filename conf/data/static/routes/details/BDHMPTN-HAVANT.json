@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.853749,
+    "lon" : -0.99699773,
+    "id" : "BDHMPTN",
+    "name" : "Bedhampton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.854484,
+    "lon" : -0.98209323,
+    "id" : "HAVANT",
+    "name" : "Havant",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

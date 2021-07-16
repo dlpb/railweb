@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.842143,
+    "lon" : -4.2667168,
+    "id" : "MRHSNJ",
+    "name" : "Muirhouse North Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.840882,
+    "lon" : -4.2688157,
+    "id" : "PLKLHDE",
+    "name" : "Pollokshields East",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

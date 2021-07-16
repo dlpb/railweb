@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.211033,
+    "lon" : -1.2086335,
+    "id" : "SHRBDAV",
+    "name" : "Shirebrook Davis & Son",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.204198,
+    "lon" : -1.202651,
+    "id" : "SHRBROK",
+    "name" : "Shirebrook",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

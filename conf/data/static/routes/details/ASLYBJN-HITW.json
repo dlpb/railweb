@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.58867,
+    "lon" : -2.4172541,
+    "id" : "ASLYBJN",
+    "name" : "Astley Bridge Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.597079,
+    "lon" : -2.4132574,
+    "id" : "HITW",
+    "name" : "Hall I' Th' Wood",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

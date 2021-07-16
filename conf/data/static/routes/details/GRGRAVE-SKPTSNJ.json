@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.978235,
+    "lon" : -2.1050784,
+    "id" : "GRGRAVE",
+    "name" : "Gargrave",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.957812,
+    "lon" : -2.0316474,
+    "id" : "SKPTSNJ",
+    "name" : "Skipton Down Shipley Slow",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

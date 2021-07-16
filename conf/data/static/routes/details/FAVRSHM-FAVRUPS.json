@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.311506,
+    "lon" : 0.89101758,
+    "id" : "FAVRSHM",
+    "name" : "Faversham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.310224,
+    "lon" : 0.895931,
+    "id" : "FAVRUPS",
+    "name" : "Faversham Up Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

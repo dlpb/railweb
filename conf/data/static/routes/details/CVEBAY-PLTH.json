@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.10041,
+    "lon" : -2.0785156,
+    "id" : "CVEBAY",
+    "name" : "Cove Bay",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 57.061616,
+    "lon" : -2.1278158,
+    "id" : "PLTH",
+    "name" : "Portlethen",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

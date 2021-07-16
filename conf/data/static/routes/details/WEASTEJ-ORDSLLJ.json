@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.48342,
+    "lon" : -2.3093634,
+    "id" : "WEASTEJ",
+    "name" : "Weaste",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.478362,
+    "lon" : -2.2632652,
+    "id" : "ORDSLLJ",
+    "name" : "Ordsall Lane Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

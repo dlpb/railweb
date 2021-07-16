@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.8963,
+    "lon" : -8.3181,
+    "id" : "CATZFOT",
+    "name" : "Fota        (Cie",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.848688,
+    "lon" : -8.300944,
+    "id" : "CATZCOQ",
+    "name" : "Cobh        (Cie",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

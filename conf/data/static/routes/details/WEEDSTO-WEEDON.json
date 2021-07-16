@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.219129,
+    "lon" : -1.0564729,
+    "id" : "WEEDSTO",
+    "name" : "Stowe Hill Tunnel",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.23461,
+    "lon" : -1.0814483,
+    "id" : "WEEDON",
+    "name" : "Weedon",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

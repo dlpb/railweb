@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.45167,
+    "lon" : -2.5737345,
+    "id" : "BRSTLEJ",
+    "name" : "Bristol East Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.454193,
+    "lon" : -2.5671458,
+    "id" : "DRDAYSJ",
+    "name" : "Dr Day's Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

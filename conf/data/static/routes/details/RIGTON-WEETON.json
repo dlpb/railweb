@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.937823,
+    "lon" : -1.5600023,
+    "id" : "RIGTON",
+    "name" : "Rigton S.B.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.923213,
+    "lon" : -1.5812762,
+    "id" : "WEETON",
+    "name" : "Weeton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

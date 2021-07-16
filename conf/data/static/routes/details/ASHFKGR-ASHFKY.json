@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.148858,
+    "lon" : 0.86188857,
+    "id" : "ASHFKGR",
+    "name" : "Ashford Maidstone Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.146814,
+    "lon" : 0.86568016,
+    "id" : "ASHFKY",
+    "name" : "Ashford International",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

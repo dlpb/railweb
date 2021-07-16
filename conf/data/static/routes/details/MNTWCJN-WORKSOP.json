@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.300211,
+    "lon" : -1.0781221,
+    "id" : "MNTWCJN",
+    "name" : "Manton Colliery Siding",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.311467,
+    "lon" : -1.1224569,
+    "id" : "WORKSOP",
+    "name" : "Worksop",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

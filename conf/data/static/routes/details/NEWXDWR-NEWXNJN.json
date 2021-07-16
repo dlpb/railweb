@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.475844,
+    "lon" : -0.04082905,
+    "id" : "NEWXDWR",
+    "name" : "New Cross Gate Dpt Wash Rd",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.475844,
+    "lon" : -0.04082905,
+    "id" : "NEWXNJN",
+    "name" : "New Cross Gate North Jcn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

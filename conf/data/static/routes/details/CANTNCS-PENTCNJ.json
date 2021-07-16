@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.474392,
+    "lon" : -3.193932,
+    "id" : "CANTNCS",
+    "name" : "Cardiff Canton Sidings",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.475057,
+    "lon" : -3.1975059,
+    "id" : "PENTCNJ",
+    "name" : "Penarth Curve North Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "45-75"
+} ]

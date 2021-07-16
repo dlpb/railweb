@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.424342,
+    "lon" : -0.015659382,
+    "id" : "BCKNHMH",
+    "name" : "Beckenham Hill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.433529,
+    "lon" : -0.01970692,
+    "id" : "BELNGHM",
+    "name" : "Bellingham",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

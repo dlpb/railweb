@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.582573,
+    "lon" : -2.8016981,
+    "id" : "SEVT730",
+    "name" : "Severn Tunnel Sig Nt1730",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.584159,
+    "lon" : -2.7770888,
+    "id" : "SEVTNLJ",
+    "name" : "Severn Tunnel Junction",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.341156,
+    "lon" : 1.4054735,
+    "id" : "RAMSGTE",
+    "name" : "Ramsgate",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.340275,
+    "lon" : 1.4026651,
+    "id" : "RAMSUSW",
+    "name" : "Ramsgate Up Siding West",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

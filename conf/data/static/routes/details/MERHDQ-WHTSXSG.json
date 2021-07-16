@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.193408,
+    "lon" : -2.4384914,
+    "id" : "MERHDQ",
+    "name" : "Merehead Quarry",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.185644,
+    "lon" : -2.4558592,
+    "id" : "WHTSXSG",
+    "name" : "Whites Crossing Sdg",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

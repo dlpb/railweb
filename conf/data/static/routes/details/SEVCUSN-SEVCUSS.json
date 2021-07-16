@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.546362,
+    "lon" : 0.71095266,
+    "id" : "SEVCUSN",
+    "name" : "Southend Victoria Usn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.544588,
+    "lon" : 0.71104911,
+    "id" : "SEVCUSS",
+    "name" : "Southend Victoria Uss",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

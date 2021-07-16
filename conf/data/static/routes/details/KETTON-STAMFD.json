@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.625229,
+    "lon" : -0.54754426,
+    "id" : "KETTON",
+    "name" : "Ketton S.B.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.647855,
+    "lon" : -0.47993698,
+    "id" : "STAMFD",
+    "name" : "Stamford",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

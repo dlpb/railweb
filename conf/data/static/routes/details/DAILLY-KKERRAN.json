@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.286524,
+    "lon" : -4.7351289,
+    "id" : "DAILLY",
+    "name" : "Dailly",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.305987,
+    "lon" : -4.6807785,
+    "id" : "KKERRAN",
+    "name" : "Kilkerran",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.966213,
+    "lon" : -1.6076479,
+    "id" : "HLBDGJN",
+    "name" : "High Level Bridge Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.9629,
+    "lon" : -1.5949516,
+    "id" : "PKLNJN",
+    "name" : "Park Lane Jn Gateshead",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

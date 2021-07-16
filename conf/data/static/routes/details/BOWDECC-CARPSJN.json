@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.53336,
+    "lon" : -0.01722276,
+    "id" : "BOWDECC",
+    "name" : "Bow Eccq Private Sidings",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.538569,
+    "lon" : -0.0078106386,
+    "id" : "CARPSJN",
+    "name" : "Carpenters Rd South Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

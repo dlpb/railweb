@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.402548,
+    "lon" : -2.9469327,
+    "id" : "EDGH",
+    "name" : "Edge Hill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.40682,
+    "lon" : -2.9713216,
+    "id" : "LVRPCUT",
+    "name" : "Liverpool Lime St Cutting",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

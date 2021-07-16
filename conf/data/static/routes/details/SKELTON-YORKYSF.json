@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.971175,
+    "lon" : -1.1207332,
+    "id" : "SKELTON",
+    "name" : "Skelton Jn. (York)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.968407,
+    "lon" : -1.1183371,
+    "id" : "YORKYSF",
+    "name" : "York Yard South (Fhh)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.455586,
+    "lon" : 0.052570596,
+    "id" : "ELTHAM",
+    "name" : "Eltham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.459362,
+    "lon" : 0.080163339,
+    "id" : "FALCNWD",
+    "name" : "Falconwood",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

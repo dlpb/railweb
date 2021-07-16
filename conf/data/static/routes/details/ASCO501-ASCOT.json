@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.404553,
+    "lon" : -0.66965675,
+    "id" : "ASCO501",
+    "name" : "Ascot Signal F501",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.406163,
+    "lon" : -0.67678443,
+    "id" : "ASCOT",
+    "name" : "Ascot",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

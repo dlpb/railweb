@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.954035,
+    "lon" : -3.2949851,
+    "id" : "TIVITNL",
+    "name" : "Whiteball",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.982945,
+    "lon" : -3.2421381,
+    "id" : "WELISOM",
+    "name" : "Wellington (Somerset)",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.252327,
+    "lon" : -2.5220061,
+    "id" : "HARTEJN",
+    "name" : "Hartford East Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.258321,
+    "lon" : -2.5034763,
+    "id" : "NTHWCWJ",
+    "name" : "Northwich West Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

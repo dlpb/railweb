@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.852567,
+    "lon" : -1.3334482,
+    "id" : "CDON",
+    "name" : "Castle Donington",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.879645,
+    "lon" : -1.2858398,
+    "id" : "LOCKLAX",
+    "name" : "Lock Lane X",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

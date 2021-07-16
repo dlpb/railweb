@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.547812,
+    "lon" : -3.7463106,
+    "id" : "MRGMAWE",
+    "name" : "Margam Abbey Works East",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.539804,
+    "lon" : -3.7326797,
+    "id" : "NWLNDSJ",
+    "name" : "Newlands Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

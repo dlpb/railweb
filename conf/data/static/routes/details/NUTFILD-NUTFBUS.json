@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.22683,
+    "lon" : -0.13251628,
+    "id" : "NUTFILD",
+    "name" : "Nutfield",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.238612,
+    "lon" : -0.1311807,
+    "id" : "NUTFBUS",
+    "name" : "Nutfield Memorial Hall",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "13 MINUTES"
+} ]

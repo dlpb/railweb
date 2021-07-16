@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.61095262813155,
+    "lon" : -1.2428934666610905,
+    "id" : "DIDCOTP",
+    "name" : "Didcot Parkway",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.61358,
+    "lon" : -1.2446406,
+    "id" : "DIDCTFP",
+    "name" : "Didcot Fuelling Point",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

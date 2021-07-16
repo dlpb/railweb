@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.208459,
+    "lon" : 0.060761914,
+    "id" : "EDNB",
+    "name" : "Edenbridge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.19728,
+    "lon" : 0.17308309,
+    "id" : "PNSHRST",
+    "name" : "Penshurst",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

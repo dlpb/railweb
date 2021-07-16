@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.079849,
+    "lon" : -2.356731,
+    "id" : "CLWALL",
+    "name" : "Colwall",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.094418,
+    "lon" : -2.3242087,
+    "id" : "MLVRNWL",
+    "name" : "Malvern Wells",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

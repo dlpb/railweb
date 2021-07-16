@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.577421,
+    "lon" : -0.1052489,
+    "id" : "HRGY",
+    "name" : "Harringay",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.586076,
+    "lon" : -0.11161564,
+    "id" : "HRNSDRS",
+    "name" : "Hornsey Dn Reversing Sdgs",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

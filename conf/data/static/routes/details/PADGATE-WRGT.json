@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.405598,
+    "lon" : -2.5569135,
+    "id" : "PADGATE",
+    "name" : "Padgate",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.391963,
+    "lon" : -2.5921478,
+    "id" : "WRGT",
+    "name" : "Warrington Central",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

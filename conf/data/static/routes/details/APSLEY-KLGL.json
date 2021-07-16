@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.732138,
+    "lon" : -0.46261469,
+    "id" : "APSLEY",
+    "name" : "Apsley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.706249,
+    "lon" : -0.43791902,
+    "id" : "KLGL",
+    "name" : "Kings Langley",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

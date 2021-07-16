@@ -1,0 +1,58 @@
+[ {
+  "from" : {
+    "lat" : 51.529911,
+    "lon" : -0.13591268,
+    "id" : "EUSTON",
+    "name" : "London Euston",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.52339,
+    "lon" : -0.16320752,
+    "id" : "MARYLBN",
+    "name" : "London Marylebone",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "31 MINUTES"
+}, {
+  "from" : {
+    "lat" : 51.529911,
+    "lon" : -0.13591268,
+    "id" : "EUSTON",
+    "name" : "London Euston",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.52339,
+    "lon" : -0.16320752,
+    "id" : "MARYLBN",
+    "name" : "London Marylebone",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "26 MINUTES"
+}, {
+  "from" : {
+    "lat" : 51.529911,
+    "lon" : -0.13591268,
+    "id" : "EUSTON",
+    "name" : "London Euston",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.52339,
+    "lon" : -0.16320752,
+    "id" : "MARYLBN",
+    "name" : "London Marylebone",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "36 MINUTES"
+} ]

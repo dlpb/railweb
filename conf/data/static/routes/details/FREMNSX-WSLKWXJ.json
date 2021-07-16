@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.155695,
+    "lon" : -1.5384834,
+    "id" : "FREMNSX",
+    "name" : "Freemans L.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.155205,
+    "lon" : -1.5690905,
+    "id" : "WSLKWXJ",
+    "name" : "Winning Crossing Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

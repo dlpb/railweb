@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.368157,
+    "lon" : -1.6650363,
+    "id" : "SAVERNK",
+    "name" : "Savernake",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.342254,
+    "lon" : -1.7706318,
+    "id" : "PEWSEY",
+    "name" : "Pewsey",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

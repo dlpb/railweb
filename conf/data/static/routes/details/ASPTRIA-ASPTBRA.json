@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.758937,
+    "lon" : -3.3318885,
+    "id" : "ASPTRIA",
+    "name" : "Aspatria",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.780849,
+    "lon" : -3.298603,
+    "id" : "ASPTBRA",
+    "name" : "Brayton",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

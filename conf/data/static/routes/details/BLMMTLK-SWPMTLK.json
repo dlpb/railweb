@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.4326,
+    "lon" : -2.2699,
+    "id" : "BLMMTLK",
+    "name" : "Barlow M Rd Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.4275,
+    "lon" : -2.2922,
+    "id" : "SWPMTLK",
+    "name" : "Sale W Park Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

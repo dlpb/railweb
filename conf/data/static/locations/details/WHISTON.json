@@ -1,0 +1,10 @@
+[ {
+  "id" : "WHISTON",
+  "crp" : "",
+  "route" : "London North Western",
+  "changeTime" : "Set(None)",
+  "interchangeType" : "0 - Not an interchange point",
+  "county" : "North West",
+  "district" : "Merseyside",
+  "postcode" : "\"L35 3TT"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.382809,
+    "lon" : 0.26135593,
+    "id" : "ELYY259",
+    "name" : "Ely Signal Ca259",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.385206,
+    "lon" : 0.26153725,
+    "id" : "ELYYDLN",
+    "name" : "Ely Dock Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

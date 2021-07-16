@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.09507,
+    "lon" : 1.0372569,
+    "id" : "WENHNGR",
+    "name" : "Westenhanger",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.131807,
+    "lon" : 0.89760076,
+    "id" : "SVNGLP",
+    "name" : "Sevington Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

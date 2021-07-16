@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.408574,
+    "lon" : -3.0819312,
+    "id" : "BDST544",
+    "name" : "Bidston Signal 1544",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.409331,
+    "lon" : -3.0787611,
+    "id" : "BDSTON",
+    "name" : "Bidston",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

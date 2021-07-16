@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.227402,
+    "lon" : -0.54465595,
+    "id" : "EHOLMSB",
+    "name" : "East Holmes S B",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.225859,
+    "lon" : -0.53907576,
+    "id" : "LINCLNC",
+    "name" : "Lincoln Central",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

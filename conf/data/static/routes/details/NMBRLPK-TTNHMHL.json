@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.601174,
+    "lon" : -0.054326861,
+    "id" : "NMBRLPK",
+    "name" : "Northumberland Park",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.588882,
+    "lon" : -0.0598037,
+    "id" : "TTNHMHL",
+    "name" : "Tottenham Hale",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

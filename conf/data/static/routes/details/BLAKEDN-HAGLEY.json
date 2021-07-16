@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.406687,
+    "lon" : -2.176499,
+    "id" : "BLAKEDN",
+    "name" : "Blakedown",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.42229,
+    "lon" : -2.1466076,
+    "id" : "HAGLEY",
+    "name" : "Hagley",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

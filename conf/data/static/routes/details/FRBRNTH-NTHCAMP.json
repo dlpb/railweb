@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.302494,
+    "lon" : -0.743115,
+    "id" : "FRBRNTH",
+    "name" : "Farnborough North",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.275456,
+    "lon" : -0.73082089,
+    "id" : "NTHCAMP",
+    "name" : "North Camp",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.438455,
+    "lon" : -0.12848744,
+    "id" : "STRHILL",
+    "name" : "Streatham Hill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.439663,
+    "lon" : -0.13599223,
+    "id" : "STRHSH",
+    "name" : "Streatham Hill Shed",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

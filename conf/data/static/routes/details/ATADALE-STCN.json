@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.394456,
+    "lon" : -5.4554057,
+    "id" : "ATADALE",
+    "name" : "Attadale",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 57.422714,
+    "lon" : -5.4286274,
+    "id" : "STCN",
+    "name" : "Strathcarron",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

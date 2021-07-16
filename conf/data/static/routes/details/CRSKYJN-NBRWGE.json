@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.62274,
+    "lon" : -3.1293213,
+    "id" : "CRSKYJN",
+    "name" : "Cross Keys Jcn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.663158,
+    "lon" : -3.1432376,
+    "id" : "NBRWGE",
+    "name" : "Newbridge",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "30-50"
+} ]

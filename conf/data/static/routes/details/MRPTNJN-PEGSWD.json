@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.168706,
+    "lon" : -1.6680011,
+    "id" : "MRPTNJN",
+    "name" : "Morpeth North Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.178172,
+    "lon" : -1.6440084,
+    "id" : "PEGSWD",
+    "name" : "Pegswood",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

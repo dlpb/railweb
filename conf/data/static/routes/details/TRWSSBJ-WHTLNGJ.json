@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.6188,
+    "lon" : 1.3156918,
+    "id" : "TRWSSBJ",
+    "name" : "Trowse Swing Bridge",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.625544,
+    "lon" : 1.3499139,
+    "id" : "WHTLNGJ",
+    "name" : "Whitlingham Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

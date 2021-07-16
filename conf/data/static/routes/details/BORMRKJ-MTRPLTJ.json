@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.505682,
+    "lon" : -0.089911629,
+    "id" : "BORMRKJ",
+    "name" : "Borough Market Junction",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 51.504167,
+    "lon" : -0.097410149,
+    "id" : "MTRPLTJ",
+    "name" : "Metropolitan Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

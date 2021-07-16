@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.841793,
+    "lon" : -1.0669052,
+    "id" : "COSHAM",
+    "name" : "Cosham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.848845,
+    "lon" : -1.1251614,
+    "id" : "PCHESTR",
+    "name" : "Portchester",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

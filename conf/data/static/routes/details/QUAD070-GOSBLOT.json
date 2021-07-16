@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.889896,
+    "lon" : -0.2026477,
+    "id" : "QUAD070",
+    "name" : "Quadring Signal Ws7070",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.924994,
+    "lon" : -0.26366084,
+    "id" : "GOSBLOT",
+    "name" : "Blotoft Signal Box",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

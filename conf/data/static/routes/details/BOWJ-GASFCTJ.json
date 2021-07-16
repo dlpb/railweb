@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.531096,
+    "lon" : -0.020550743,
+    "id" : "BOWJ",
+    "name" : "Bow Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.523301,
+    "lon" : -0.023829569,
+    "id" : "GASFCTJ",
+    "name" : "Gas Factory Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "1",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

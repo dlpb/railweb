@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.99174,
+    "lon" : -1.4899604,
+    "id" : "ROMS995",
+    "name" : "Romsey Signal E995",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.992762,
+    "lon" : -1.4933547,
+    "id" : "ROMSEY",
+    "name" : "Romsey",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.529438,
+    "lon" : 0.11811714,
+    "id" : "RPLLHGP",
+    "name" : "Ripple Lane H Group Sdgs",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.529438,
+    "lon" : 0.11811714,
+    "id" : "RPLLSTO",
+    "name" : "Ripple Lane Stora",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

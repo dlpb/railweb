@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.659183,
+    "lon" : -1.5311607,
+    "id" : "HORBRYJ",
+    "name" : "Horbury Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.597587,
+    "lon" : -1.5382946,
+    "id" : "WOLEYCS",
+    "name" : "Woolley Coal Sdgs S.B.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

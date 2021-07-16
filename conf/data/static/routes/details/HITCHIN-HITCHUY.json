@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.953075,
+    "lon" : -0.26293579,
+    "id" : "HITCHIN",
+    "name" : "Hitchin",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.954811,
+    "lon" : -0.2653864,
+    "id" : "HITCHUY",
+    "name" : "Hitchin Up Yard",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

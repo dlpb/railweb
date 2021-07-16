@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.465628,
+    "lon" : 0.0075975761,
+    "id" : "BLKHTH",
+    "name" : "Blackheath",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.465685,
+    "lon" : -0.014240611,
+    "id" : "LEWISHM",
+    "name" : "Lewisham",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

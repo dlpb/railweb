@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.407839,
+    "lon" : -2.9774374,
+    "id" : "LVRPLSH",
+    "name" : "Liverpool Lime Street",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.405,
+    "lon" : -2.995,
+    "id" : "LVRPLSG",
+    "name" : "Liverpool Lnd Sg",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "45 MINUTES"
+} ]

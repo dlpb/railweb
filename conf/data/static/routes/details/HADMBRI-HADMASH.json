@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.837688,
+    "lon" : -1.0299648,
+    "id" : "HADMBRI",
+    "name" : "Brill",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.813477,
+    "lon" : -0.9938995,
+    "id" : "HADMASH",
+    "name" : "Ashendon Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

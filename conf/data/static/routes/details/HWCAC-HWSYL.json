@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.6446,
+    "lon" : -3.241075,
+    "id" : "HWCAC",
+    "name" : "Castle Caereinion",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.649362,
+    "lon" : -3.219703,
+    "id" : "HWSYL",
+    "name" : "Sylfaen",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

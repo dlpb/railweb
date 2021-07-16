@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.674715,
+    "lon" : -2.0233689,
+    "id" : "CNCKMGF",
+    "name" : "Mid Cannock G.F.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.657069,
+    "lon" : -2.0207279,
+    "id" : "LNDYW",
+    "name" : "Landywood",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.5636,
+    "lon" : -0.2794,
+    "id" : "CATEZWY",
+    "name" : "Wembley Park Und",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.58422,
+    "lon" : -0.2788,
+    "id" : "LUJKIN",
+    "name" : "Kingsbury",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.925731,
+    "lon" : -1.7977498,
+    "id" : "BNRHYDN",
+    "name" : "Ben Rhydding",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.924752,
+    "lon" : -1.8208855,
+    "id" : "ILKLEY",
+    "name" : "Ilkley",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

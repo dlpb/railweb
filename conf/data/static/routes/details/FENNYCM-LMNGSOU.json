@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.225075,
+    "lon" : -1.4228875,
+    "id" : "FENNYCM",
+    "name" : "Fenny Compton",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.235415,
+    "lon" : -1.4341313,
+    "id" : "LMNGSOU",
+    "name" : "Southam Road",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

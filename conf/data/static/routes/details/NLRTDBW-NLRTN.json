@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.384096,
+    "lon" : -1.4722994,
+    "id" : "NLRTDBW",
+    "name" : "Danby Wiske",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.332919,
+    "lon" : -1.4416288,
+    "id" : "NLRTN",
+    "name" : "Northallerton",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.196864,
+    "lon" : 0.13931744,
+    "id" : "CAMBDHS",
+    "name" : "Cambridge L.H.S.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.206347,
+    "lon" : 0.14647625,
+    "id" : "CLDHMLJ",
+    "name" : "Coldham Lane Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

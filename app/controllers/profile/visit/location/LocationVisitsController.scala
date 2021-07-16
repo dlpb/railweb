@@ -5,8 +5,8 @@ import auth.api.AuthorizedAction
 import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject.{Inject, Singleton}
 import models.auth.UserDao
-import models.data.{Event, LocationVisit, Visit}
-import models.location.{Location, MapLocation}
+import models.data.{Event, LocationVisit}
+import models.location.{Location}
 import play.api.mvc.{AbstractController, AnyContent, Call, ControllerComponents}
 import services.location.LocationService
 import services.visit.event.EventService
@@ -92,14 +92,13 @@ class LocationVisitsController @Inject()(
       }
       case _ => visits.sortBy(_.visited.name)
     }
-    val mapLocations: List[MapLocation] = visits
+    val locations: List[Location] = visits
       .sortBy(_.eventOccurredAt)
       .map(v => v.visited)
-      .map(MapLocation(_))
 
     val call: Call = routes.LocationVisitsController.index(sortField, sortOrder)
 
-    Ok(views.html.visits.location.index(request.user, sortedVisits, locationVisitEvents, mapLocations, locationVisitCount, locationVisitIndex, call, sortField, sortOrder))
+    Ok(views.html.visits.location.index(request.user, sortedVisits, locationVisitEvents, locations, locationVisitCount, locationVisitIndex, call, sortField, sortOrder))
 
   }
 }

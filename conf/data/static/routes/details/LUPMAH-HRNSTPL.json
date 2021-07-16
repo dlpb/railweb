@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.57038,
+    "lon" : -0.09601,
+    "id" : "LUPMAH",
+    "name" : "Manor House",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.590386,
+    "lon" : -0.102816,
+    "id" : "HRNSTPL",
+    "name" : "Turnpike Lane Und",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

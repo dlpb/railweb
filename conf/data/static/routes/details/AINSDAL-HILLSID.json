@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.601643,
+    "lon" : -3.0428389,
+    "id" : "AINSDAL",
+    "name" : "Ainsdale",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.621713,
+    "lon" : -3.0252663,
+    "id" : "HILLSID",
+    "name" : "Hillside",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

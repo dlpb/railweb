@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.515199,
+    "lon" : -0.014164746,
+    "id" : "DSBLLAP",
+    "name" : "Langdon Park",
+    "type" : "Light Rail"
+  },
+  "to" : {
+    "lat" : 51.522274,
+    "lon" : -0.01708,
+    "id" : "DSBLDER",
+    "name" : "Devons Road",
+    "type" : "Light Rail"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Light Rail",
+  "speed" : "OHLE"
+} ]

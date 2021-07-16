@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.53,
+    "lon" : -0.2929,
+    "id" : "LUCHAL",
+    "name" : "Hanger Lane",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.536673,
+    "lon" : -0.32391,
+    "id" : "LUCPER",
+    "name" : "Perivale",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

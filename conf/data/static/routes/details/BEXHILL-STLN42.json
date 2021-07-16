@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.840904,
+    "lon" : 0.47540421,
+    "id" : "BEXHILL",
+    "name" : "Bexhill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.849406,
+    "lon" : 0.52647595,
+    "id" : "STLN42",
+    "name" : "St Leonards Signal Bj42",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

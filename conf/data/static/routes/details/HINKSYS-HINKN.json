@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.739017,
+    "lon" : -1.2599159,
+    "id" : "HINKSYS",
+    "name" : "Hinksey South",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.743221,
+    "lon" : -1.2635116,
+    "id" : "HINKN",
+    "name" : "Hinksey North",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

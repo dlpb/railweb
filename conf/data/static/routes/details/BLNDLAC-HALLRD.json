@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.487615,
+    "lon" : -3.0403102,
+    "id" : "BLNDLAC",
+    "name" : "Blundellsands & Crosby",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.497842,
+    "lon" : -3.049862,
+    "id" : "HALLRD",
+    "name" : "Hall Road",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.278396,
+    "lon" : -0.91673653,
+    "id" : "GRRDGAM",
+    "name" : "Gamston",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.315092,
+    "lon" : -0.94812569,
+    "id" : "RTFD",
+    "name" : "Retford",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

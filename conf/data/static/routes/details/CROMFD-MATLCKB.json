@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.11256,
+    "lon" : -1.5487325,
+    "id" : "CROMFD",
+    "name" : "Cromford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.122398,
+    "lon" : -1.5567734,
+    "id" : "MATLCKB",
+    "name" : "Matlock Bath",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

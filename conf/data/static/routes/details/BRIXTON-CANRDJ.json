@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.462894,
+    "lon" : -0.11313479,
+    "id" : "BRIXTON",
+    "name" : "Brixton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.463373,
+    "lon" : -0.10994783,
+    "id" : "CANRDJ",
+    "name" : "Canterbury Road Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

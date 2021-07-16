@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.111858,
+    "lon" : -3.1671027,
+    "id" : "KCLD",
+    "name" : "Kirkcaldy",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.114307,
+    "lon" : -3.165633,
+    "id" : "KCLD838",
+    "name" : "Kirkcaldy Sig Ek838",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

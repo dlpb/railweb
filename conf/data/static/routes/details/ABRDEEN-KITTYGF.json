@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.142087,
+    "lon" : -2.0973093,
+    "id" : "ABRDEEN",
+    "name" : "Aberdeen",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 57.165788,
+    "lon" : -2.1138237,
+    "id" : "KITTYGF",
+    "name" : "Kittybrewster Gf",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

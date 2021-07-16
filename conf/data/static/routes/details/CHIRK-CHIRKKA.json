@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.93301,
+    "lon" : -3.0660132,
+    "id" : "CHIRK",
+    "name" : "Chirk",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.93482,
+    "lon" : -3.0666677,
+    "id" : "CHIRKKA",
+    "name" : "Chirk Kronospan Colas Rail",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

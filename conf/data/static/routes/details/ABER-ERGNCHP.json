@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.574883,
+    "lon" : -3.2298118,
+    "id" : "ABER",
+    "name" : "Aber",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.583786,
+    "lon" : -3.2288976,
+    "id" : "ERGNCHP",
+    "name" : "Energlyn & Churchill Park",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "45-75"
+} ]

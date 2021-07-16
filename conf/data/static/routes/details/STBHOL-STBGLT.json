@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.352007,
+    "lon" : -1.4245306,
+    "id" : "STBHOL",
+    "name" : "Hollinsend",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 53.346094,
+    "lon" : -1.4258783,
+    "id" : "STBGLT",
+    "name" : "Gleadless Townend",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

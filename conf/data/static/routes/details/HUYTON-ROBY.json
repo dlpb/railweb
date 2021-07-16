@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.409537,
+    "lon" : -2.8432266,
+    "id" : "HUYTON",
+    "name" : "Huyton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.409987,
+    "lon" : -2.855767,
+    "id" : "ROBY",
+    "name" : "Roby",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.4712899,
+    "lon" : -0.4527438,
+    "id" : "LUPHT1",
+    "name" : "Heathrow Terminals 1-2-3",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.466988,
+    "lon" : -0.423035,
+    "id" : "LUPHAC",
+    "name" : "Hatton Cross",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

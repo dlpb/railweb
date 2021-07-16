@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.278081,
+    "lon" : -1.3579834,
+    "id" : "FOXLOWJ",
+    "name" : "Foxlow Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.272602,
+    "lon" : -1.3809332,
+    "id" : "BRHLJN",
+    "name" : "Barrow Hill North Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.77917,
+    "lon" : -3.0047635,
+    "id" : "AXMNSEJ",
+    "name" : "Axminster East Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.838353,
+    "lon" : -2.9387457,
+    "id" : "CHRDJSB",
+    "name" : "Chard Jn. S.B",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

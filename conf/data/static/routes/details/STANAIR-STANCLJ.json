@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.888295,
+    "lon" : 0.26068447,
+    "id" : "STANAIR",
+    "name" : "Stansted Airport",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.886613,
+    "lon" : 0.25792612,
+    "id" : "STANCLJ",
+    "name" : "Stansted Coopers Lane Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

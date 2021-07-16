@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.838773,
+    "lon" : -4.4741577,
+    "id" : "ELDRSLI",
+    "name" : "Elderslie",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.847382,
+    "lon" : -4.4246202,
+    "id" : "PSLYGST",
+    "name" : "Paisley Gilmour Street",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "75-90"
+} ]

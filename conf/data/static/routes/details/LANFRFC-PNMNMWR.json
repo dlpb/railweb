@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.256824,
+    "lon" : -3.983406,
+    "id" : "LANFRFC",
+    "name" : "Llanfairfechan",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.27065,
+    "lon" : -3.9231442,
+    "id" : "PNMNMWR",
+    "name" : "Penmaenmawr",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

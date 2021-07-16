@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.173014,
+    "lon" : -0.27548391,
+    "id" : "LBRFTMP",
+    "name" : "Tempsford",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.198147,
+    "lon" : -0.26886312,
+    "id" : "LBRF",
+    "name" : "Little Barford Monier",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

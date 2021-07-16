@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.615984,
+    "lon" : -1.069913,
+    "id" : "REDCARC",
+    "name" : "Redcar Central",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.609114,
+    "lon" : -1.0519857,
+    "id" : "REDCARE",
+    "name" : "Redcar East",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

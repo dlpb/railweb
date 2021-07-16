@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.01016,
+    "lon" : -1.5784357,
+    "id" : "TAWMYFLE",
+    "name" : "Four Lane Ends",
+    "type" : "Metro"
+  },
+  "to" : {
+    "lat" : 55.013902,
+    "lon" : -1.5676192,
+    "id" : "BENTMET",
+    "name" : "Benton (T & W Metro)",
+    "type" : "Location"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Unknown",
+  "speed" : "OHLE"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.572426,
+    "lon" : -0.41470419,
+    "id" : "BNTBDS",
+    "name" : "Barnetby Down Sidings",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.569895,
+    "lon" : -0.42043177,
+    "id" : "WRAWBYJ",
+    "name" : "Wrawby Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

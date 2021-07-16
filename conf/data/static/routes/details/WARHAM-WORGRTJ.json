@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.692833,
+    "lon" : -2.1153738,
+    "id" : "WARHAM",
+    "name" : "Wareham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.681895,
+    "lon" : -2.1346674,
+    "id" : "WORGRTJ",
+    "name" : "Worgret Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

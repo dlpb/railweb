@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.293126,
+    "lon" : 0.30539411,
+    "id" : "BORW303",
+    "name" : "Borough Green Signal Me303",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.293126,
+    "lon" : 0.30539411,
+    "id" : "BORWGAW",
+    "name" : "Borough Green & Wrotham",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

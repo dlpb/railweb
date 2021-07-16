@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.0549,
+    "lon" : -3.3005,
+    "id" : "ABDO",
+    "name" : "Aberdour",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.057335,
+    "lon" : -3.2337197,
+    "id" : "BISLND",
+    "name" : "Burntisland",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

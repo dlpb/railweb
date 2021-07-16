@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.552698,
+    "lon" : -0.15239167,
+    "id" : "CTRDJN",
+    "name" : "Carlton Road Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.548336,
+    "lon" : -0.18582797,
+    "id" : "WHMPSJN",
+    "name" : "West Hampstead South Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

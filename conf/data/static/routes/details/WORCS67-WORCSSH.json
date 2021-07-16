@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.189525,
+    "lon" : -2.2061066,
+    "id" : "WORCS67",
+    "name" : "Worcester Signal 67",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.193925,
+    "lon" : -2.2088481,
+    "id" : "WORCSSH",
+    "name" : "Worcester Shrub Hill",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

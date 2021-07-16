@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.488471,
+    "lon" : -1.8654405,
+    "id" : "BHAMSYJ",
+    "name" : "Duddeston Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.486837,
+    "lon" : -1.8666677,
+    "id" : "SLTLYPB",
+    "name" : "Saltley P.S.B.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

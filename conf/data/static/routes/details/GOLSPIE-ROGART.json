@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.970971,
+    "lon" : -3.9876779,
+    "id" : "GOLSPIE",
+    "name" : "Golspie",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 57.988643,
+    "lon" : -4.1584684,
+    "id" : "ROGART",
+    "name" : "Rogart",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

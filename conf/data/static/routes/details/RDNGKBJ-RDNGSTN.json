@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.45874,
+    "lon" : -0.94353745,
+    "id" : "RDNGKBJ",
+    "name" : "Kennet Bridge Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.459051,
+    "lon" : -0.97251935,
+    "id" : "RDNGSTN",
+    "name" : "Reading",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

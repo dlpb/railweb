@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.874009,
+    "lon" : -2.9152281,
+    "id" : "CARLUBJ",
+    "name" : "Upperby Bridge Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.88108,
+    "lon" : -2.9213114,
+    "id" : "CARLUJN",
+    "name" : "Upperby Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

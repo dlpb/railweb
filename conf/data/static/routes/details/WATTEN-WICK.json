@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 58.483733,
+    "lon" : -3.2876561,
+    "id" : "WATTEN",
+    "name" : "Watten",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 58.441664,
+    "lon" : -3.0981807,
+    "id" : "WICK",
+    "name" : "Wick",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

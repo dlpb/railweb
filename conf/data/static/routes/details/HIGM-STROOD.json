@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.426691,
+    "lon" : 0.46634244,
+    "id" : "HIGM",
+    "name" : "Higham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.39653,
+    "lon" : 0.5001577,
+    "id" : "STROOD",
+    "name" : "Strood",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

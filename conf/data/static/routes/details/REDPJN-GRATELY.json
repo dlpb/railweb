@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.204366,
+    "lon" : -1.5255629,
+    "id" : "REDPJN",
+    "name" : "Red Post Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.170315,
+    "lon" : -1.6198132,
+    "id" : "GRATELY",
+    "name" : "Grateley",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

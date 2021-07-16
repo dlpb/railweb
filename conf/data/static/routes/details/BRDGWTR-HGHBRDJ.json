@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.12773,
+    "lon" : -2.9902313,
+    "id" : "BRDGWTR",
+    "name" : "Bridgwater",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.215795,
+    "lon" : -2.9726048,
+    "id" : "HGHBRDJ",
+    "name" : "Highbridge Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.991599,
+    "lon" : -3.79217,
+    "id" : "FALKRKH",
+    "name" : "Falkirk High",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.984473,
+    "lon" : -3.7144643,
+    "id" : "POLMONT",
+    "name" : "Polmont",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

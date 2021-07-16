@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.40225,
+    "lon" : -1.1364696,
+    "id" : "ALDMSTN",
+    "name" : "Aldermaston",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.396087,
+    "lon" : -1.1784853,
+    "id" : "MIDGHAM",
+    "name" : "Midgham",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

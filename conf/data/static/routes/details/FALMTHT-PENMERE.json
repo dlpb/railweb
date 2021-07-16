@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.148323,
+    "lon" : -5.0648777,
+    "id" : "FALMTHT",
+    "name" : "Falmouth Town",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.150303,
+    "lon" : -5.0831488,
+    "id" : "PENMERE",
+    "name" : "Penmere",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "15-50"
+} ]

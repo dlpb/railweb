@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.277411,
+    "lon" : -1.8565469,
+    "id" : "GTRCKSJ",
+    "name" : "Great Rocks Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.276376,
+    "lon" : -1.8555456,
+    "id" : "TUNSTDS",
+    "name" : "Tunstead Sdgs",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

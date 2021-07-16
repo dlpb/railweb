@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.225181,
+    "lon" : -0.53656724,
+    "id" : "PELHMST",
+    "name" : "Pelham Street Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.224699,
+    "lon" : -0.53168535,
+    "id" : "TERCESL",
+    "name" : "Lincoln Terrace C.H.S.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

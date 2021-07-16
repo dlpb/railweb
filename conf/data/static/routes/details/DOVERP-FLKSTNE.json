@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.126134,
+    "lon" : 1.3048387,
+    "id" : "DOVERP",
+    "name" : "Dover Priory",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.087819,
+    "lon" : 1.1894866,
+    "id" : "FLKSTNE",
+    "name" : "Folkestone East",
+    "type" : "Location"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

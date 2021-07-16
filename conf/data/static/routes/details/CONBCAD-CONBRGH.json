@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.489057,
+    "lon" : -1.2317285,
+    "id" : "CONBCAD",
+    "name" : "Cadeby Up Goods Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.489507,
+    "lon" : -1.234584,
+    "id" : "CONBRGH",
+    "name" : "Conisbrough",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

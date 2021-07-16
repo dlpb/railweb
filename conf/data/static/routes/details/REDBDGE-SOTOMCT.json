@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.919604,
+    "lon" : -1.4698364,
+    "id" : "REDBDGE",
+    "name" : "Redbridge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.913389,
+    "lon" : -1.4559528,
+    "id" : "SOTOMCT",
+    "name" : "Southampton M.C.T.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

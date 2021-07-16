@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.640446,
+    "lon" : -4.364638,
+    "id" : "HCLAU",
+    "name" : "Launceston",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 50.640514,
+    "lon" : -4.4060473,
+    "id" : "HCNEW",
+    "name" : "Newmills",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

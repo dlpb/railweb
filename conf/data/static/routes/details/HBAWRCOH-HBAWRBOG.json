@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.4599,
+    "lon" : -4.6745,
+    "id" : "HBAWRCOH",
+    "name" : "Colesloggett Halt",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 50.465628,
+    "lon" : -4.716536,
+    "id" : "HBAWRBOG",
+    "name" : "Bodmin General",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.400067,
+    "lon" : -4.7913941,
+    "id" : "BUGLE",
+    "name" : "Bugle",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.396023,
+    "lon" : -4.7803631,
+    "id" : "GNBARWJ",
+    "name" : "Goonbarrow Junction",
+    "type" : "Junction"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "15-50"
+} ]

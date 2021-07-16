@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.8624566,
+    "lon" : -4.2534051,
+    "id" : "GSSBUS",
+    "name" : "Buchanan Street",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 55.868333,
+    "lon" : -4.259167,
+    "id" : "GSSCOW",
+    "name" : "Cowcaddens",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

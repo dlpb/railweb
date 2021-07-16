@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.566595,
+    "lon" : -1.9940733,
+    "id" : "DIGGDPL",
+    "name" : "Diggle Jn Down Pass Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.603194,
+    "lon" : -1.9307196,
+    "id" : "MRSN",
+    "name" : "Marsden",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

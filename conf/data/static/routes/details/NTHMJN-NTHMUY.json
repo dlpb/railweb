@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.910286,
+    "lon" : -1.3920401,
+    "id" : "NTHMJN",
+    "name" : "Northam Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.919743,
+    "lon" : -1.3896833,
+    "id" : "NTHMUY",
+    "name" : "Southampton Up Yard",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

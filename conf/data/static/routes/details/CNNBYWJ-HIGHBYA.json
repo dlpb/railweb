@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.547255,
+    "lon" : -0.098800628,
+    "id" : "CNNBYWJ",
+    "name" : "Canonbury West Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.546175290908955,
+    "lon" : -0.103763713575122,
+    "id" : "HIGHBYA",
+    "name" : "Highbury & Islington",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

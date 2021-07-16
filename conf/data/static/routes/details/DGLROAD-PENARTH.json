@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.439811,
+    "lon" : -3.1795483,
+    "id" : "DGLROAD",
+    "name" : "Dingle Road",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.435787,
+    "lon" : -3.1746108,
+    "id" : "PENARTH",
+    "name" : "Penarth",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "45-75"
+} ]

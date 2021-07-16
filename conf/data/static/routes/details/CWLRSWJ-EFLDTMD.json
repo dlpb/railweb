@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.883255,
+    "lon" : -4.2385249,
+    "id" : "CWLRSWJ",
+    "name" : "Cowlairs West Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.889814,
+    "lon" : -4.24015,
+    "id" : "EFLDTMD",
+    "name" : "Eastfield H.S.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

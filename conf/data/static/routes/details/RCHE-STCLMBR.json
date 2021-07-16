@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.418621,
+    "lon" : -4.8305824,
+    "id" : "RCHE",
+    "name" : "Roche",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.398773,
+    "lon" : -4.9412519,
+    "id" : "STCLMBR",
+    "name" : "St Columb Road",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "15-50"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.004487,
+    "lon" : 0.20708946,
+    "id" : "AUDLEYE",
+    "name" : "Audley End",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.054338,
+    "lon" : 0.20096915,
+    "id" : "GTCHSFL",
+    "name" : "Great Chesterford Up Gdslp",
+    "type" : "Point"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.500378,
+    "lon" : -3.2339278,
+    "id" : "DANESCT",
+    "name" : "Danescourt",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.516618,
+    "lon" : -3.2492112,
+    "id" : "RADYR",
+    "name" : "Radyr",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "45-75"
+} ]

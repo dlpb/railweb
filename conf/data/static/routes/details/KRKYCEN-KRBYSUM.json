@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.100224,
+    "lon" : -1.253174,
+    "id" : "KRKYCEN",
+    "name" : "Kirkby In Ashfield",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.104849,
+    "lon" : -1.2511222,
+    "id" : "KRBYSUM",
+    "name" : "Kirkby Summit Sb",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

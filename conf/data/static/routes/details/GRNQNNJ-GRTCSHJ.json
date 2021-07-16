@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.892994,
+    "lon" : -4.0412791,
+    "id" : "GRNQNNJ",
+    "name" : "Garnqueen North Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.884564,
+    "lon" : -4.07248,
+    "id" : "GRTCSHJ",
+    "name" : "Gartcosh Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

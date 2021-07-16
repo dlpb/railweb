@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.475765,
+    "lon" : -3.1861923,
+    "id" : "CRDFW",
+    "name" : "Cardiff West",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.47722,
+    "lon" : -3.2013785,
+    "id" : "LCKWBGF",
+    "name" : "Leckwith Bridge Grnd Frame",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

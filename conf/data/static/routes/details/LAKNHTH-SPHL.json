@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.447646,
+    "lon" : 0.5341816,
+    "id" : "LAKNHTH",
+    "name" : "Lakenheath",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.430229,
+    "lon" : 0.41249289,
+    "id" : "SPHL",
+    "name" : "Shippea Hill",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

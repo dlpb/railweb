@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.805583,
+    "lon" : -1.6380697,
+    "id" : "BRMLYSR",
+    "name" : "Bramley (West Yorkshire)",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.804679,
+    "lon" : -1.6803049,
+    "id" : "NPUD",
+    "name" : "New Pudsey",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.4799,
+    "lon" : -2.1549,
+    "id" : "MNCRCRM",
+    "name" : "Cemetery Rd Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.4796,
+    "lon" : -2.1453,
+    "id" : "MNCRDML",
+    "name" : "Droylesden Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

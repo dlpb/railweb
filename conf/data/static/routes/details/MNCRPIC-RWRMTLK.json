@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 53.477002,
+    "lon" : -2.2301094,
+    "id" : "MNCRPIC",
+    "name" : "Manchester Piccadilly",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.3763,
+    "lon" : -2.2586,
+    "id" : "RWRMTLK",
+    "name" : "Robinswd Rd Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "55 MINUTES"
+}, {
+  "from" : {
+    "lat" : 53.477002,
+    "lon" : -2.2301094,
+    "id" : "MNCRPIC",
+    "name" : "Manchester Piccadilly",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.3763,
+    "lon" : -2.2586,
+    "id" : "RWRMTLK",
+    "name" : "Robinswd Rd Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "58 MINUTES"
+} ]

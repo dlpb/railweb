@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.160591,
+    "lon" : -4.7784899,
+    "id" : "GLDL",
+    "name" : "Glen Douglas",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.07994,
+    "lon" : -4.825497,
+    "id" : "GRLCHHD",
+    "name" : "Garelochhead",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

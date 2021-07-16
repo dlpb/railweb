@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.360601,
+    "lon" : -1.9928924,
+    "id" : "BGRN",
+    "name" : "Barnt Green",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.397137,
+    "lon" : -1.9939743,
+    "id" : "LONB23",
+    "name" : "Longbridge Signal 23",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

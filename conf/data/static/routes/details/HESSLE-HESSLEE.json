@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.717349,
+    "lon" : -0.44203857,
+    "id" : "HESSLE",
+    "name" : "Hessle",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.722858,
+    "lon" : -0.40503516,
+    "id" : "HESSLEE",
+    "name" : "Hessle East Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

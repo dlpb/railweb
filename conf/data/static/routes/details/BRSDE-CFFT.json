@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.816927,
+    "lon" : -4.2027885,
+    "id" : "BRSDE",
+    "name" : "Burnside",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.818255,
+    "lon" : -4.2283405,
+    "id" : "CFFT",
+    "name" : "Croftfoot",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.911882,
+    "lon" : -1.4395417,
+    "id" : "MBRKDE",
+    "name" : "Millbrook Dock Entrance",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.907539,
+    "lon" : -1.4159273,
+    "id" : "SOTON",
+    "name" : "Southampton Central",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.216685,
+    "lon" : -2.8320352,
+    "id" : "MIKLTRF",
+    "name" : "Mickle Trafford",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.231804,
+    "lon" : -2.7321645,
+    "id" : "MLDSWTH",
+    "name" : "Mouldsworth",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.557831,
+    "lon" : -1.9808257,
+    "id" : "BSCTESD",
+    "name" : "Bescot Up Engineers Sdgs",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.562921,
+    "lon" : -1.9908547,
+    "id" : "BSCTSTA",
+    "name" : "Bescot Stadium",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

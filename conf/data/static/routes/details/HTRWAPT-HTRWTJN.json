@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.472267,
+    "lon" : -0.45087667,
+    "id" : "HTRWAPT",
+    "name" : "Heathrow Terminals 2,3",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.502896,
+    "lon" : -0.44965101,
+    "id" : "HTRWTJN",
+    "name" : "Heathrow Tunnel Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

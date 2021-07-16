@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.162243,
+    "lon" : -3.1435272,
+    "id" : "GLNR556",
+    "name" : "Glenrothes Sig Et556",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.162284,
+    "lon" : -3.142997,
+    "id" : "GLNRTHS",
+    "name" : "Glenrothes With Thornton",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.143528,
+    "lon" : -3.9471939,
+    "id" : "CORNTLC",
+    "name" : "Cornton Level Crosssing",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.128599,
+    "lon" : -3.9336633,
+    "id" : "STIRCHJ",
+    "name" : "Causewayhead Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

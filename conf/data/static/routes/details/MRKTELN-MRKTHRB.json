@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.520253,
+    "lon" : -0.938498,
+    "id" : "MRKTELN",
+    "name" : "East Langton",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.479898,
+    "lon" : -0.90915112,
+    "id" : "MRKTHRB",
+    "name" : "Market Harborough",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

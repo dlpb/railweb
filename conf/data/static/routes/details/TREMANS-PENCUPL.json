@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.502727,
+    "lon" : -3.5584589,
+    "id" : "TREMANS",
+    "name" : "Tremains",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.522557,
+    "lon" : -3.5031936,
+    "id" : "PENCUPL",
+    "name" : "Pencoed Up Passenger Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

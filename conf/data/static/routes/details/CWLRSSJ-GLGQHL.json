@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.880945,
+    "lon" : -4.2390633,
+    "id" : "CWLRSSJ",
+    "name" : "Cowlairs South Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.863156,
+    "lon" : -4.2510484,
+    "id" : "GLGQHL",
+    "name" : "Glasgow Queen Street",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.998913,
+    "lon" : -1.2802704,
+    "id" : "AYNHOJ",
+    "name" : "Aynho Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.993085,
+    "lon" : -1.2783976,
+    "id" : "AYNHUGL",
+    "name" : "Aynho Up Goods Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

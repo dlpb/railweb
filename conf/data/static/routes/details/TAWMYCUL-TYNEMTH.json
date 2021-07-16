@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.035,
+    "lon" : -1.4363,
+    "id" : "TAWMYCUL",
+    "name" : "Cullercoats",
+    "type" : "Metro"
+  },
+  "to" : {
+    "lat" : 55.016827,
+    "lon" : -1.4194867,
+    "id" : "TYNEMTH",
+    "name" : "Tynemouth (T & W Metro)",
+    "type" : "Location"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Unknown",
+  "speed" : "OHLE"
+} ]

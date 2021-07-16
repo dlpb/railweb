@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.38752,
+    "lon" : -3.9990607,
+    "id" : "KRKC",
+    "name" : "Kirkconnel",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.370672,
+    "lon" : -3.924386,
+    "id" : "SANQHAR",
+    "name" : "Sanquhar",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

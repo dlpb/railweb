@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.276775,
+    "lon" : 0.51422551,
+    "id" : "MSTONEB",
+    "name" : "Maidstone Barracks",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.270564,
+    "lon" : 0.51575019,
+    "id" : "MSTONEW",
+    "name" : "Maidstone West",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

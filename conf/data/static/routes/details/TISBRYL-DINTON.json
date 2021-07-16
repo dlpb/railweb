@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.062652,
+    "lon" : -2.075666,
+    "id" : "TISBRYL",
+    "name" : "Tisbury Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.077558,
+    "lon" : -1.9905282,
+    "id" : "DINTON",
+    "name" : "Dinton",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

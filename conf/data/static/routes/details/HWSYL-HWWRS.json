@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.649362,
+    "lon" : -3.219703,
+    "id" : "HWSYL",
+    "name" : "Sylfaen",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.6599,
+    "lon" : -3.1598,
+    "id" : "HWWRS",
+    "name" : "Welshpool Raven Square",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

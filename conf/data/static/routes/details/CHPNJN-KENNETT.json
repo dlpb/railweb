@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.264774,
+    "lon" : 0.42908815,
+    "id" : "CHPNJN",
+    "name" : "Chippenham Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.277345,
+    "lon" : 0.48954544,
+    "id" : "KENNETT",
+    "name" : "Kennett",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

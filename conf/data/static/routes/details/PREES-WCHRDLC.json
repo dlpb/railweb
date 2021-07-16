@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.899493,
+    "lon" : -2.6895022,
+    "id" : "PREES",
+    "name" : "Prees",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.955907,
+    "lon" : -2.6713312,
+    "id" : "WCHRDLC",
+    "name" : "Darlingtons L.C.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "70-90"
+} ]

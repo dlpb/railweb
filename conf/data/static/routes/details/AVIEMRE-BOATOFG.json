@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.188547,
+    "lon" : -3.8288524,
+    "id" : "AVIEMRE",
+    "name" : "Aviemore",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 57.245902,
+    "lon" : -3.7534978,
+    "id" : "BOATOFG",
+    "name" : "Boat Of Garten Post Off (Bus)",
+    "type" : "Location"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

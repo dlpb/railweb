@@ -6,7 +6,7 @@ import auth.JWTService
 import auth.web.{AuthorizedWebAction, WebUserContext}
 import javax.inject.{Inject, Singleton}
 import models.auth.roles.MapUser
-import models.location.{GroupedListLocation, Location}
+import models.location.Location
 import play.api.mvc._
 import services.location.LocationService
 import services.visit.event.EventService
@@ -25,14 +25,14 @@ class LocationsByCrsController @Inject()(
                          filterOperator: String = "all",
                          filterName: String = "all",
                          filterId: String = "all",
-                         filterSrs: String = "all"): List[GroupedListLocation] =
+                         filterSrs: String = "all"): List[(Location, List[Location])] =
     locationService.sortedListLocationsGroupedByCrs
       .filter({ location =>
-        val filterByOrr = if (filterOrr) location.isOrrStation else true
-        val filterByOperator = if(!filterOperator.equals("all")) location.operator.toLowerCase.contains(filterOperator.toLowerCase()) else true
-        val filterByName = if(!filterName.equals("all")) location.name.toLowerCase.contains(filterName.toLowerCase()) else true
-        val filterById = if(!filterId.equals("all")) location.id.toLowerCase().contains(filterId.toLowerCase()) else true
-        val filterBySrs = if(!filterSrs.equals("all")) location.srs.toLowerCase.contains(filterSrs.toLowerCase()) else true
+        val filterByOrr = if (filterOrr) location._1.isOrrStation else true
+        val filterByOperator = if(!filterOperator.equals("all")) location._1.operator.toLowerCase.contains(filterOperator.toLowerCase()) else true
+        val filterByName = if(!filterName.equals("all")) location._1.name.toLowerCase.contains(filterName.toLowerCase()) else true
+        val filterById = if(!filterId.equals("all")) location._1.id.toLowerCase().contains(filterId.toLowerCase()) else true
+        val filterBySrs = if(!filterSrs.equals("all")) location._1.srs.toLowerCase.contains(filterSrs.toLowerCase()) else true
         filterByOrr && filterByOperator && filterByName && filterById && filterBySrs
       })
 
@@ -43,10 +43,10 @@ class LocationsByCrsController @Inject()(
     })
     .toMap
 
-  def getVisitedLocationIdCount(locations: List[GroupedListLocation], visitedLocationIds: List[String]) = {
+  def getVisitedLocationIdCount(locations: List[(Location, List[Location])], visitedLocationIds: List[String]) = {
 
     val locIds = locations.flatMap {
-      _.relatedLocations.map(_.id)
+      _._2.map(_.id)
     }
 
     val visitedLocs = visitedLocationIds.count({ v =>
@@ -97,21 +97,24 @@ class LocationsByCrsController @Inject()(
           .getVisitedLocations(request.user)
           .map(_.id)
 
-        val visitedLocationGroupsByCrs: Map[GroupedListLocation, Boolean] = locationsGroupedByCrs
+        val visitedLocationGroupsByCrs: Map[(Location, List[Location]), Boolean] = locationsGroupedByCrs
             .map(groupedLocation => {
-              val tiplocsForGroup = groupedLocation.relatedLocations.map(_.id)
+              val tiplocsForGroup = groupedLocation._2.map(_.id)
               val hasAnyTiplocInGroupBeenVisited = tiplocsForGroup.map(visitedLocationTiplocs.contains(_))
               val hasGroupBeenVisited = hasAnyTiplocInGroupBeenVisited.exists(visited => visited)
               groupedLocation -> hasGroupBeenVisited
             }).toMap
 
-        val crsGroupToVisitedStatus: Map[String, Boolean] = visitedLocationGroupsByCrs.iterator.map(visitedGroup => visitedGroup._1.id -> visitedGroup._2).toMap
+        val crsGroupToVisitedStatus: Map[String, Boolean] = visitedLocationGroupsByCrs
+          .iterator
+          .map((visitedGroup: ((Location, List[Location]), Boolean)) => visitedGroup._1._1.id -> visitedGroup._2)
+          .toMap
 
-        val numberOfTiplocsInCrsGroupVisited: Map[String, Int] = locationsGroupedByCrs.map(group => {
-          val tiplocs = group.relatedLocations.map(_.id)
+        val numberOfTiplocsInCrsGroupVisited: Map[String, Int] = locationsGroupedByCrs.map((group: (Location, List[Location])) => {
+          val tiplocs = group._2.map(_.id)
           val visitedTiploc = tiplocs.map(visitedLocationTiplocs.contains(_))
           val visitedCount = visitedTiploc.count(v => v)
-          group.id -> visitedCount
+          group._1.id -> visitedCount
         }).toMap
 
         val tiplocToVisitedStatus = locations

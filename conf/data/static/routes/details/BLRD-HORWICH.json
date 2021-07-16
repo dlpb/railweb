@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.591186,
+    "lon" : -2.5698216,
+    "id" : "BLRD",
+    "name" : "Blackrod",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.578067,
+    "lon" : -2.5400279,
+    "id" : "HORWICH",
+    "name" : "Horwich Parkway",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

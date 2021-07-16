@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.131807,
+    "lon" : 0.89760076,
+    "id" : "SVNGLP",
+    "name" : "Sevington Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.124634,
+    "lon" : 0.90752836,
+    "id" : "SVNGTNS",
+    "name" : "Sevington Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

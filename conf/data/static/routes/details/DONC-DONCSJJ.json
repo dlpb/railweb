@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.521925,
+    "lon" : -1.1400911,
+    "id" : "DONC",
+    "name" : "Doncaster",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.51775,
+    "lon" : -1.1407035,
+    "id" : "DONCSJJ",
+    "name" : "St James Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.817278,
+    "lon" : -4.2616308,
+    "id" : "CCRTWJN",
+    "name" : "Cathcart West Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.820834,
+    "lon" : -4.2759337,
+    "id" : "LNSD",
+    "name" : "Langside",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.53,
+    "lon" : -3.5997,
+    "id" : "NABT",
+    "name" : "Newton Abbot",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.548308,
+    "lon" : -3.4942894,
+    "id" : "TEINMTH",
+    "name" : "Teignmouth",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

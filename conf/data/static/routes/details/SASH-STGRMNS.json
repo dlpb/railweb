@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.407062,
+    "lon" : -4.2093944,
+    "id" : "SASH",
+    "name" : "Saltash",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.394411,
+    "lon" : -4.3087064,
+    "id" : "STGRMNS",
+    "name" : "St Germans",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

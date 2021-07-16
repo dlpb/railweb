@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.211441,
+    "lon" : -1.4930644,
+    "id" : "ANDOVER",
+    "name" : "Andover",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.23819,
+    "lon" : -1.385524,
+    "id" : "HRSB",
+    "name" : "Hurstbourne Viaduct",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.522274,
+    "lon" : -0.01708,
+    "id" : "DSBLDER",
+    "name" : "Devons Road",
+    "type" : "Light Rail"
+  },
+  "to" : {
+    "lat" : 51.5289,
+    "lon" : -0.021,
+    "id" : "DSBLBOC",
+    "name" : "Bow Church",
+    "type" : "Light Rail"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Light Rail",
+  "speed" : "OHLE"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.733173,
+    "lon" : -1.1596815,
+    "id" : "RYDE",
+    "name" : "Ryde Esplanade",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.724035,
+    "lon" : -1.1570256,
+    "id" : "RYDS",
+    "name" : "Ryde St Johns Road",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.17541,
+    "lon" : 0.49305323,
+    "id" : "MARDEN",
+    "name" : "Marden",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.182321,
+    "lon" : 0.38950922,
+    "id" : "PKWD",
+    "name" : "Paddock Wood",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

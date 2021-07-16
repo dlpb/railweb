@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.313757,
+    "lon" : -0.56732376,
+    "id" : "WOKIDRP",
+    "name" : "Woking Down Recp",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.315271,
+    "lon" : -0.5654112,
+    "id" : "WOKINGJ",
+    "name" : "Woking Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

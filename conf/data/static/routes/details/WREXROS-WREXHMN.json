@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.10745,
+    "lon" : -2.9552097,
+    "id" : "WREXROS",
+    "name" : "Rossett Lc",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.060033,
+    "lon" : -3.0019245,
+    "id" : "WREXHMN",
+    "name" : "Wrexham North",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

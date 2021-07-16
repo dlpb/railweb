@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.441901,
+    "lon" : -0.14672203,
+    "id" : "BALHJN",
+    "name" : "Balham Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.439663,
+    "lon" : -0.13599223,
+    "id" : "STRHSH",
+    "name" : "Streatham Hill Shed",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

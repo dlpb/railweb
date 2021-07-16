@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.148048,
+    "lon" : 0.17792961,
+    "id" : "TCULFRY",
+    "name" : "Firsby",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.122943,
+    "lon" : 0.19958699,
+    "id" : "TCULVRT",
+    "name" : "Thorpe Culvert",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

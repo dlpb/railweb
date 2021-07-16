@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.819936,
+    "lon" : -1.6248491,
+    "id" : "BURTWJN",
+    "name" : "Burton Wetmore Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.830356,
+    "lon" : -1.6111638,
+    "id" : "CLMLJN",
+    "name" : "Clay Mills Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.58002,
+    "lon" : 0.02133,
+    "id" : "LUCSNA",
+    "name" : "Snaresbrook",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.59088,
+    "lon" : 0.02726,
+    "id" : "LUCSOW",
+    "name" : "South Woodford",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

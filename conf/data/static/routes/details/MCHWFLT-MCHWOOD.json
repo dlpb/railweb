@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.888209,
+    "lon" : -1.4539144,
+    "id" : "MCHWFLT",
+    "name" : "Marchwood F.L.T.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.88821,
+    "lon" : -1.4539429,
+    "id" : "MCHWOOD",
+    "name" : "Marchwood",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

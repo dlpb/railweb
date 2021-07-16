@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.933028,
+    "lon" : -0.70293362,
+    "id" : "ALNGJN",
+    "name" : "Allington Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.944465,
+    "lon" : -0.79445984,
+    "id" : "BOTESFD",
+    "name" : "Bottesford",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

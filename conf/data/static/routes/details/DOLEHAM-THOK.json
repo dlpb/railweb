@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.918568,
+    "lon" : 0.60998796,
+    "id" : "DOLEHAM",
+    "name" : "Doleham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.900977,
+    "lon" : 0.61312866,
+    "id" : "THOK",
+    "name" : "Three Oaks",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

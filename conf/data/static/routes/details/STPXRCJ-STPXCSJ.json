@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.536927,
+    "lon" : -0.12928142,
+    "id" : "STPXRCJ",
+    "name" : "Regents Canal Jn (Stpx)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.535717,
+    "lon" : -0.12892732,
+    "id" : "STPXCSJ",
+    "name" : "St Pancras Camley St Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

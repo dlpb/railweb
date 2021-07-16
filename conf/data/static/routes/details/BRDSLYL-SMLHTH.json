@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.467565,
+    "lon" : -1.8689486,
+    "id" : "BRDSLYL",
+    "name" : "Bordesley Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.463318,
+    "lon" : -1.8584816,
+    "id" : "SMLHTH",
+    "name" : "Small Heath",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

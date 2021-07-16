@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.030577,
+    "lon" : -0.11008861,
+    "id" : "ASHWELC",
+    "name" : "Ashwell & Morden",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.05265,
+    "lon" : -0.029769924,
+    "id" : "ROYSLP",
+    "name" : "Royston (Herts) Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "1",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

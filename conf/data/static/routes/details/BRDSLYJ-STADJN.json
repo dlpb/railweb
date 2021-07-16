@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.473563,
+    "lon" : -1.8709035,
+    "id" : "BRDSLYJ",
+    "name" : "Bordesley Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.478559,
+    "lon" : -1.8682681,
+    "id" : "STADJN",
+    "name" : "St Andrews Jn (West Mids)",
+    "type" : "Junction"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.573383,
+    "lon" : -0.051400932,
+    "id" : "COPR105",
+    "name" : "Coppermill Jn Sig L1005",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.574069,
+    "lon" : -0.052627137,
+    "id" : "COPRMLJ",
+    "name" : "Coppermill Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "1",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

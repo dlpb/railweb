@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.463318,
+    "lon" : -1.8584816,
+    "id" : "SMLHTH",
+    "name" : "Small Heath",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.460587,
+    "lon" : -1.8521617,
+    "id" : "SMLHTHS",
+    "name" : "Small Heath South Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

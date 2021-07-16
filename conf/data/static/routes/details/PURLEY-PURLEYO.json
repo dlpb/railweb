@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.339437,
+    "lon" : -0.11059946,
+    "id" : "PURLEY",
+    "name" : "Purley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.347227,
+    "lon" : -0.098503931,
+    "id" : "PURLEYO",
+    "name" : "Purley Oaks",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

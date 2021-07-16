@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.6275,
+    "lon" : -2.3145,
+    "id" : "HLSUM",
+    "name" : "Summerseat",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 53.6474,
+    "lon" : -2.3146,
+    "id" : "HLRAM",
+    "name" : "Ramsbottom",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

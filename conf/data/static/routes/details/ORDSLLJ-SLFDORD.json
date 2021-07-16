@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.478362,
+    "lon" : -2.2632652,
+    "id" : "ORDSLLJ",
+    "name" : "Ordsall Lane Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.482639,
+    "lon" : -2.2560888,
+    "id" : "SLFDORD",
+    "name" : "Salford Central",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

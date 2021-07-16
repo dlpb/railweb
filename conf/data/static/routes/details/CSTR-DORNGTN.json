@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.537393,
+    "lon" : -2.8036054,
+    "id" : "CSTR",
+    "name" : "Church Stretton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.625984,
+    "lon" : -2.7706727,
+    "id" : "DORNGTN",
+    "name" : "Dorrington",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 58.512753,
+    "lon" : -3.4551054,
+    "id" : "GRGMACE",
+    "name" : "Georgemas Junction C.E.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 58.513453,
+    "lon" : -3.4520102,
+    "id" : "GRGMASJ",
+    "name" : "Georgemas Junction",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

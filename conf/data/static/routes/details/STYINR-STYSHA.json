@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.390923,
+    "lon" : -1.4825316,
+    "id" : "STYINR",
+    "name" : "Infirmary Road",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 53.388655,
+    "lon" : -1.4779879,
+    "id" : "STYSHA",
+    "name" : "Shalesmoor",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

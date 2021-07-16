@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.9936,
+    "lon" : -1.6099,
+    "id" : "TAWMGWEJ",
+    "name" : "West Jesmond",
+    "type" : "Metro"
+  },
+  "to" : {
+    "lat" : 54.973905,
+    "lon" : -1.6048235,
+    "id" : "MANOMET",
+    "name" : "Manors (T & W Metro)",
+    "type" : "Location"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "Y",
+  "type" : "Unknown",
+  "speed" : "OHLE"
+} ]

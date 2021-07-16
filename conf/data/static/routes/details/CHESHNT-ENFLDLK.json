@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.701931,
+    "lon" : -0.02398637,
+    "id" : "CHESHNT",
+    "name" : "Cheshunt",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.670517,
+    "lon" : -0.028578924,
+    "id" : "ENFLDLK",
+    "name" : "Enfield Lock",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

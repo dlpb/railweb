@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.885537,
+    "lon" : -3.695485,
+    "id" : "ARMDALE",
+    "name" : "Armadale",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.89962,
+    "lon" : -3.6409823,
+    "id" : "BTHGATE",
+    "name" : "Bathgate",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

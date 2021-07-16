@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.524461,
+    "lon" : -2.049332,
+    "id" : "DUDLPT",
+    "name" : "Dudley Port",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.508028,
+    "lon" : -2.0101372,
+    "id" : "SNDWDUD",
+    "name" : "Sandwell & Dudley",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

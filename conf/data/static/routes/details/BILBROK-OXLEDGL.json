@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.623903,
+    "lon" : -2.1873442,
+    "id" : "BILBROK",
+    "name" : "Bilbrook",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.606244,
+    "lon" : -2.1371072,
+    "id" : "OXLEDGL",
+    "name" : "Oxley Down Goods Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

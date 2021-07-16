@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.661857,
+    "lon" : -2.7589902,
+    "id" : "PNTH",
+    "name" : "Penrith",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.648016,
+    "lon" : -2.7648071,
+    "id" : "PNTHSJT",
+    "name" : "Penrith South Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

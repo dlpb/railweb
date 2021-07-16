@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.397046,
+    "lon" : -1.980674,
+    "id" : "LONB",
+    "name" : "Longbridge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.39443,
+    "lon" : -1.9828942,
+    "id" : "LONBRS",
+    "name" : "Longbridge Reversing Sdgs",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

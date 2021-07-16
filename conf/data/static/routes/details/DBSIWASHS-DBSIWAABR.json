@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.5379,
+    "lon" : -6.0E-4,
+    "id" : "DBSIWASHS",
+    "name" : "Stratford High Street",
+    "type" : "Light Rail"
+  },
+  "to" : {
+    "lat" : 51.532,
+    "lon" : 0.004,
+    "id" : "DBSIWAABR",
+    "name" : "Abbey Road",
+    "type" : "Light Rail"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Light Rail",
+  "speed" : "OHLE"
+} ]

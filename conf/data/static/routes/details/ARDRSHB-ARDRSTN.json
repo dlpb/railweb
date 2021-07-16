@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.640017,
+    "lon" : -4.8213751,
+    "id" : "ARDRSHB",
+    "name" : "Ardrossan Harbour",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.639768,
+    "lon" : -4.8126796,
+    "id" : "ARDRSTN",
+    "name" : "Ardrossan Town",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "75-90"
+} ]

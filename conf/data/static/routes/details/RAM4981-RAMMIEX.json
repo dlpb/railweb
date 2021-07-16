@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.339394,
+    "lon" : 1.3942846,
+    "id" : "RAM4981",
+    "name" : "Rm Ek4981 Ramsgate",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.340258,
+    "lon" : 1.4013713,
+    "id" : "RAMMIEX",
+    "name" : "Rm Mi Ext Dept Minster End",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

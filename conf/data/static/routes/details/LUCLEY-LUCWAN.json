@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.56828,
+    "lon" : 0.00739,
+    "id" : "LUCLEY",
+    "name" : "Leytonstone",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.57565,
+    "lon" : 0.02864,
+    "id" : "LUCWAN",
+    "name" : "Wanstead",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

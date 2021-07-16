@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.8466,
+    "lon" : -3.0536,
+    "id" : "BTPCAR",
+    "name" : "Cavendish Road",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 53.8493,
+    "lon" : -3.0535,
+    "id" : "BTPBIS",
+    "name" : "Bispham",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

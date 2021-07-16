@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.208459,
+    "lon" : 0.060761914,
+    "id" : "EDNB",
+    "name" : "Edenbridge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.218137,
+    "lon" : -0.051131126,
+    "id" : "GODSTON",
+    "name" : "Godstone",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

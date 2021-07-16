@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.557474,
+    "lon" : -0.35941052,
+    "id" : "NTHOPKJ",
+    "name" : "Northolt Park Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.55856,
+    "lon" : -0.33623216,
+    "id" : "SDBRYHH",
+    "name" : "Sudbury Hill Harrow",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

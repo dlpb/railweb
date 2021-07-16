@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.539346,
+    "lon" : -3.6699929,
+    "id" : "MLPTABS",
+    "name" : "Aberaiden South",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.547554,
+    "lon" : -3.5951956,
+    "id" : "TONDU",
+    "name" : "Tondu",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

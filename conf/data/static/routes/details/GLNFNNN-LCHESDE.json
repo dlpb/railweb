@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.872494,
+    "lon" : -5.449497,
+    "id" : "GLNFNNN",
+    "name" : "Glenfinnan",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.85598,
+    "lon" : -5.2903986,
+    "id" : "LCHESDE",
+    "name" : "Locheilside",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

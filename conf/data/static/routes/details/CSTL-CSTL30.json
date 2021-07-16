@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.592394,
+    "lon" : -2.1779341,
+    "id" : "CSTL",
+    "name" : "Castleton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.590945,
+    "lon" : -2.1788646,
+    "id" : "CSTL30",
+    "name" : "Castleton Signal Ce30",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

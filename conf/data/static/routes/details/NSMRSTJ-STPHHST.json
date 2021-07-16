@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.450729,
+    "lon" : -2.5639225,
+    "id" : "NSMRSTJ",
+    "name" : "North Somerset Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.446827,
+    "lon" : -2.5637162,
+    "id" : "STPHHST",
+    "name" : "St Philips Mrsh H S T D",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

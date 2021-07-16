@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.513131,
+    "lon" : -0.13538713,
+    "id" : "PICDYCR",
+    "name" : "Piccadilly Circus Underground",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 51.507,
+    "lon" : -0.122,
+    "id" : "EMBKMNT",
+    "name" : "Embankment Und",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

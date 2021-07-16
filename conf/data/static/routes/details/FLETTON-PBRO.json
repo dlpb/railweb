@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.556337,
+    "lon" : -0.24386684,
+    "id" : "FLETTON",
+    "name" : "Fletton Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.575484,
+    "lon" : -0.25089398,
+    "id" : "PBRO",
+    "name" : "Peterborough",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

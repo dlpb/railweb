@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.544079,
+    "lon" : -0.27620453,
+    "id" : "STNBGPK",
+    "name" : "Stonebridge Park",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.551642,
+    "lon" : -0.29591023,
+    "id" : "WMBY",
+    "name" : "Wembley Central",
+    "type" : "Station"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

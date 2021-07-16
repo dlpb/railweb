@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.210238,
+    "lon" : 1.5711341,
+    "id" : "LEISTON",
+    "name" : "Leiston",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.219808,
+    "lon" : 1.4961302,
+    "id" : "SXMNDHJ",
+    "name" : "Saxmundham Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

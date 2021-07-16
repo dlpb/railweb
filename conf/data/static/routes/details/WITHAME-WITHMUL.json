@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.805836,
+    "lon" : 0.63934005,
+    "id" : "WITHAME",
+    "name" : "Witham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.80488,
+    "lon" : 0.63786252,
+    "id" : "WITHMUL",
+    "name" : "Witham Up Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "1",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

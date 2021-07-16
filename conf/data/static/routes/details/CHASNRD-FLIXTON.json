@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.446177,
+    "lon" : -2.3676458,
+    "id" : "CHASNRD",
+    "name" : "Chassen Road",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.443828,
+    "lon" : -2.3830874,
+    "id" : "FLIXTON",
+    "name" : "Flixton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

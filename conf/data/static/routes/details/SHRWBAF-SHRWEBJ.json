@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.70959,
+    "lon" : -2.7410917,
+    "id" : "SHRWBAF",
+    "name" : "Shrewsbury Abbey Foregate",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.707717,
+    "lon" : -2.7458555,
+    "id" : "SHRWEBJ",
+    "name" : "English Bridge Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

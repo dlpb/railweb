@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.398966,
+    "lon" : -0.2815791,
+    "id" : "BRLANDS",
+    "name" : "Berrylands",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.392422,
+    "lon" : -0.30397425,
+    "id" : "SURBITN",
+    "name" : "Surbiton",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

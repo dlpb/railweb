@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.395797,
+    "lon" : -2.3432551,
+    "id" : "NAVGTNR",
+    "name" : "Navigation Road",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.3875,
+    "lon" : -2.3472,
+    "id" : "ALTRMET",
+    "name" : "Altrincham Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

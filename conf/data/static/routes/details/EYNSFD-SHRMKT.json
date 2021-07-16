@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.361871,
+    "lon" : 0.20403639,
+    "id" : "EYNSFD",
+    "name" : "Eynsford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.331528,
+    "lon" : 0.18871327,
+    "id" : "SHRMKT",
+    "name" : "Shoreham (Kent)",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "70-90"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.055813,
+    "lon" : -2.6739679,
+    "id" : "CMAKREL",
+    "name" : "Charlton Mackrell",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.05264,
+    "lon" : -2.7335727,
+    "id" : "SOMEGF",
+    "name" : "Somerton Ground Frame",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

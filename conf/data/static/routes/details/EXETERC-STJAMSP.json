@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.727124,
+    "lon" : -3.5316962,
+    "id" : "EXETERC",
+    "name" : "Exeter Central",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.730966,
+    "lon" : -3.5225969,
+    "id" : "STJAMSP",
+    "name" : "St James' Park",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "30-50"
+} ]

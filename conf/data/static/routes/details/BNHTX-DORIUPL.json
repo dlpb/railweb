@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.378932,
+    "lon" : -1.7603101,
+    "id" : "BNHTX",
+    "name" : "Bentley Heath Crossing",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.374383,
+    "lon" : -1.7555167,
+    "id" : "DORIUPL",
+    "name" : "Dorridge Up Passenger Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.579143,
+    "lon" : -1.2350724,
+    "id" : "MDLSBRO",
+    "name" : "Middlesbrough",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.582341,
+    "lon" : -1.2434913,
+    "id" : "MDLSSDG",
+    "name" : "Middlesbrough Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.115972,
+    "lon" : -4.274778,
+    "id" : "HWHRBON",
+    "name" : "Bontnewydd",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 53.104194,
+    "lon" : -4.276278,
+    "id" : "HWHDIN",
+    "name" : "Dinas",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.9039,
+    "lon" : -3.0322,
+    "id" : "BTPBRO",
+    "name" : "Broadwater",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 53.9099,
+    "lon" : -3.0275,
+    "id" : "BTPLIR",
+    "name" : "Lingfield Road",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

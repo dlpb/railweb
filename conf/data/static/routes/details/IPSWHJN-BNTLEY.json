@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.039253,
+    "lon" : 1.1500171,
+    "id" : "IPSWHJN",
+    "name" : "Ipswich Halifax Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.988788,
+    "lon" : 1.0851713,
+    "id" : "BNTLEY",
+    "name" : "Bentley (Suffolk)",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

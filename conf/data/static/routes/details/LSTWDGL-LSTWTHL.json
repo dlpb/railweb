@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.410104,
+    "lon" : -4.6649618,
+    "id" : "LSTWDGL",
+    "name" : "Lostwithiel Down Gds Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.407074,
+    "lon" : -4.6660866,
+    "id" : "LSTWTHL",
+    "name" : "Lostwithiel",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

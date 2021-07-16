@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.618558,
+    "lon" : -1.130175,
+    "id" : "LEST327",
+    "name" : "Leicester Signal 327",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.61093,
+    "lon" : -1.130646,
+    "id" : "LESTKJN",
+    "name" : "Knighton Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

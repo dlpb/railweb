@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.896173,
+    "lon" : -0.44334619,
+    "id" : "LMBRYNG",
+    "name" : "Limbury Road North G.F.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.894606,
+    "lon" : -0.44047914,
+    "id" : "LMBRYRD",
+    "name" : "Limbury Road",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

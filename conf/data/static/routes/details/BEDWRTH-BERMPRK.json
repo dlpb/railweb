@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.479386,
+    "lon" : -1.4675383,
+    "id" : "BEDWRTH",
+    "name" : "Bedworth",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.503322,
+    "lon" : -1.4725822,
+    "id" : "BERMPRK",
+    "name" : "Bermuda Park (Nuneaton)",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

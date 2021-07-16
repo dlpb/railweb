@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.579142,
+    "lon" : -0.33615896,
+    "id" : "HAROOTH",
+    "name" : "Harrow-On-The-Hill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.5795432,
+    "lon" : -0.353144584,
+    "id" : "LUMWEH",
+    "name" : "West Harrow",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

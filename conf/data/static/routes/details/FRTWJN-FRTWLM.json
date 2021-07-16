@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.824081,
+    "lon" : -5.0914118,
+    "id" : "FRTWJN",
+    "name" : "Fort William Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.820887,
+    "lon" : -5.1038032,
+    "id" : "FRTWLM",
+    "name" : "Fort William",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

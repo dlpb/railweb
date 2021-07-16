@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.795254,
+    "lon" : -2.1081747,
+    "id" : "STAFTVJ",
+    "name" : "Stafford Trent Valley Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.794127,
+    "lon" : -2.0639935,
+    "id" : "WHHSJN",
+    "name" : "Whitehouse Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

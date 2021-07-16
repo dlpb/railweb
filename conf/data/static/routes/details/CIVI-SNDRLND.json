@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.902791,
+    "lon" : -1.3921524,
+    "id" : "CIVI",
+    "name" : "Park Lane (Bus)",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 54.905725,
+    "lon" : -1.3823296,
+    "id" : "SNDRLND",
+    "name" : "Sunderland",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE/1500V DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

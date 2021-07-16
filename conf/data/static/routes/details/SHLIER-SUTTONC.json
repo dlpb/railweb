@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.389255,
+    "lon" : -0.19899725,
+    "id" : "SHLIER",
+    "name" : "St Helier",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.375613,
+    "lon" : -0.19605548,
+    "id" : "SUTTONC",
+    "name" : "Sutton Common",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

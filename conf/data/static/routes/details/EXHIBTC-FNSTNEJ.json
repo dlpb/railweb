@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.861535,
+    "lon" : -4.283396,
+    "id" : "EXHIBTC",
+    "name" : "Exhibition Centre",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.866854,
+    "lon" : -4.3027763,
+    "id" : "FNSTNEJ",
+    "name" : "Finnieston East Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

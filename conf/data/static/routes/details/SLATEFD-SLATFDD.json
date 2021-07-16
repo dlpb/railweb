@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.92652,
+    "lon" : -3.2439153,
+    "id" : "SLATEFD",
+    "name" : "Slateford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.93015,
+    "lon" : -3.2350843,
+    "id" : "SLATFDD",
+    "name" : "Slateford Depot",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

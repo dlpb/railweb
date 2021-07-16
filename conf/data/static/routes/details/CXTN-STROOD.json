@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.373971,
+    "lon" : 0.46207032,
+    "id" : "CXTN",
+    "name" : "Cuxton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.39653,
+    "lon" : 0.5001577,
+    "id" : "STROOD",
+    "name" : "Strood",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

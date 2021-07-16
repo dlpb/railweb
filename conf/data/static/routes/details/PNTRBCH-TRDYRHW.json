@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.725061,
+    "lon" : -3.3627998,
+    "id" : "PNTRBCH",
+    "name" : "Pentre-Bach",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.711935,
+    "lon" : -3.3462373,
+    "id" : "TRDYRHW",
+    "name" : "Troed-Y-Rhiw",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "45-75"
+} ]

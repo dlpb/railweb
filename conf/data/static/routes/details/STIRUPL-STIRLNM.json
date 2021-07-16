@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.112129,
+    "lon" : -3.9283336,
+    "id" : "STIRUPL",
+    "name" : "Stirling U.P.L.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.117534,
+    "lon" : -3.9321268,
+    "id" : "STIRLNM",
+    "name" : "Stirling Middle",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.883549,
+    "lon" : -2.3149359,
+    "id" : "GTHSDPL",
+    "name" : "Grantshouse D.P.L.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.845866,
+    "lon" : -2.175133,
+    "id" : "RESTON",
+    "name" : "Reston",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

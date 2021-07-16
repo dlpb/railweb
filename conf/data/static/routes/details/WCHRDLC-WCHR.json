@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.955907,
+    "lon" : -2.6713312,
+    "id" : "WCHRDLC",
+    "name" : "Darlingtons L.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.968067,
+    "lon" : -2.6716983,
+    "id" : "WCHR",
+    "name" : "Whitchurch (Shropshire)",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "70-90"
+} ]

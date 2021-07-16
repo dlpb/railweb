@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.56606,
+    "lon" : -2.4184507,
+    "id" : "BDENJT",
+    "name" : "Burnden Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.556302,
+    "lon" : -2.4016892,
+    "id" : "MSGT",
+    "name" : "Moses Gate",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

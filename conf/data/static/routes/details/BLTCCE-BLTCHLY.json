@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.000306,
+    "lon" : -0.73389343,
+    "id" : "BLTCCE",
+    "name" : "Bletchley Ce Sdgs",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.995432,
+    "lon" : -0.73634681,
+    "id" : "BLTCHLY",
+    "name" : "Bletchley",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

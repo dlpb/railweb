@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.396667,
+    "lon" : -3.343333,
+    "id" : "CRDFAIR",
+    "name" : "Cardiff Air Bus",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.387202,
+    "lon" : -3.348425,
+    "id" : "RHOOSE",
+    "name" : "Rhoose Cardiff Intl Airport",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

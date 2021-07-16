@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 58.002104,
+    "lon" : -4.3995349,
+    "id" : "LAIRG",
+    "name" : "Lairg",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 58.004665,
+    "lon" : -4.261779,
+    "id" : "ACHLDH",
+    "name" : "Acheildh",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

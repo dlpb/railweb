@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.647613,
+    "lon" : -3.4859355,
+    "id" : "TONPNTR",
+    "name" : "Ton Pentre",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.643557,
+    "lon" : -3.4667397,
+    "id" : "YTRHOND",
+    "name" : "Ystrad Rhondda",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "45-75"
+} ]

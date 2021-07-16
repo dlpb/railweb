@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.77507,
+    "lon" : -1.5386,
+    "id" : "HYMOR",
+    "name" : "Moor Road",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 53.775653,
+    "lon" : -1.5315639,
+    "id" : "HNSLMID",
+    "name" : "Middleton Light Railway",
+    "type" : "Point"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

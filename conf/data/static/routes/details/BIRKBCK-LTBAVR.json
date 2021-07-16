@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.4034,
+    "lon" : -0.056550293,
+    "id" : "BIRKBCK",
+    "name" : "Birkbeck",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.4067,
+    "lon" : -0.04968,
+    "id" : "LTBAVR",
+    "name" : "Avenue Road",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

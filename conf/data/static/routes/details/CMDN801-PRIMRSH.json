@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.543275,
+    "lon" : -0.15766222,
+    "id" : "CMDN801",
+    "name" : "Camden Jn Signal Wm801",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.543116,
+    "lon" : -0.15436616,
+    "id" : "PRIMRSH",
+    "name" : "Primrose Hill",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.449366,
+    "lon" : -1.8188722,
+    "id" : "ACOCKSG",
+    "name" : "Acocks Green",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.438573,
+    "lon" : -1.804515,
+    "id" : "OLTON",
+    "name" : "Olton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

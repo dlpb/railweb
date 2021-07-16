@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.2094,
+    "lon" : -1.8544829,
+    "id" : "BRIGICI",
+    "name" : "Briggs I.C.I. Sdgs",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.220036,
+    "lon" : -1.8722991,
+    "id" : "HNDL",
+    "name" : "Hindlow",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

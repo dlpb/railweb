@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.463553,
+    "lon" : -2.2013581,
+    "id" : "LNGSSTH",
+    "name" : "Longsight South",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.467542,
+    "lon" : -2.2079899,
+    "id" : "LNGSTN",
+    "name" : "Longsight North",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

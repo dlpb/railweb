@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.578536,
+    "lon" : -1.5523878,
+    "id" : "ATHRSTN",
+    "name" : "Atherstone",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.543177,
+    "lon" : -1.4895929,
+    "id" : "NNTNANJ",
+    "name" : "Canal Farm Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

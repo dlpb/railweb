@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.436279,
+    "lon" : -0.46931586,
+    "id" : "ASFDMSX",
+    "name" : "Ashford (Surrey)",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.432313,
+    "lon" : -0.50272314,
+    "id" : "STAINES",
+    "name" : "Staines",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

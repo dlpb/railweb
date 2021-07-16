@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.445493,
+    "lon" : 0.79789862,
+    "id" : "CROXTON",
+    "name" : "Croxton Ahb",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.419149,
+    "lon" : 0.74516277,
+    "id" : "THETFD",
+    "name" : "Thetford",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

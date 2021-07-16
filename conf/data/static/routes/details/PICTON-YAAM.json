@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.46473,
+    "lon" : -1.3491365,
+    "id" : "PICTON",
+    "name" : "Picton",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.493708,
+    "lon" : -1.3514554,
+    "id" : "YAAM",
+    "name" : "Yarm",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

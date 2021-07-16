@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.40136,
+    "lon" : -3.01732,
+    "id" : "BRKNIOM",
+    "name" : "Birkenhead 12 Quays",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.394485,
+    "lon" : -3.0136597,
+    "id" : "HAMTSQ",
+    "name" : "Hamilton Square",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "65 MINUTES"
+} ]

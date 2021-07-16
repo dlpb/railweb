@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.606159,
+    "lon" : -1.9659894,
+    "id" : "SWNANDN",
+    "name" : "Norden (Swanage R)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.681895,
+    "lon" : -2.1346674,
+    "id" : "WORGRTJ",
+    "name" : "Worgret Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.339656,
+    "lon" : -7.615668,
+    "id" : "CATZCLQ",
+    "name" : "Clara       (Cie",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.427222,
+    "lon" : -7.936667,
+    "id" : "CATZATO",
+    "name" : "Athlone     (Cie",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

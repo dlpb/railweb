@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.440315,
+    "lon" : 0.049540359,
+    "id" : "MOTNGHM",
+    "name" : "Mottingham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.438038,
+    "lon" : 0.070129387,
+    "id" : "NWELTHM",
+    "name" : "New Eltham",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

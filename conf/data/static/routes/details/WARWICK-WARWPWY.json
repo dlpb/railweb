@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.286592,
+    "lon" : -1.5818687,
+    "id" : "WARWICK",
+    "name" : "Warwick",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.286113,
+    "lon" : -1.6128787,
+    "id" : "WARWPWY",
+    "name" : "Warwick Parkway",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

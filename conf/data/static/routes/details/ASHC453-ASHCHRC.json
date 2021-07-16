@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.998821,
+    "lon" : -2.1087743,
+    "id" : "ASHC453",
+    "name" : "Ashchurch Signal G453",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.998821,
+    "lon" : -2.1087743,
+    "id" : "ASHCHRC",
+    "name" : "Ashchurch For Tewkesbury",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

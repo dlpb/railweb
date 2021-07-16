@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.924646,
+    "lon" : -0.14569566,
+    "id" : "HASOCKS",
+    "name" : "Hassocks",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.846178,
+    "lon" : -0.15530039,
+    "id" : "PRSP",
+    "name" : "Preston Park",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

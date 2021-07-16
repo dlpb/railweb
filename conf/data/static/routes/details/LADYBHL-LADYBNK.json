@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.278912,
+    "lon" : -3.1230554,
+    "id" : "LADYBHL",
+    "name" : "Ladybank Branch Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.274128,
+    "lon" : -3.1215425,
+    "id" : "LADYBNK",
+    "name" : "Ladybank",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

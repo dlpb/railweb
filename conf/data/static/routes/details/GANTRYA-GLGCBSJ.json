@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.857128,
+    "lon" : -4.2582578,
+    "id" : "GANTRYA",
+    "name" : "Glasgow Central Gantry A",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.851148,
+    "lon" : -4.2604032,
+    "id" : "GLGCBSJ",
+    "name" : "Glasgow Bridge Street Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "120-125"
+} ]

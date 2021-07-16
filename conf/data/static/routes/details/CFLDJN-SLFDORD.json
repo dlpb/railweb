@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.474698,
+    "lon" : -2.2536755,
+    "id" : "CFLDJN",
+    "name" : "Castlefield Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.482639,
+    "lon" : -2.2560888,
+    "id" : "SLFDORD",
+    "name" : "Salford Central",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

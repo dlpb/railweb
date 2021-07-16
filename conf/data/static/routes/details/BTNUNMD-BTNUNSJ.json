@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.757626,
+    "lon" : -1.7029544,
+    "id" : "BTNUNMD",
+    "name" : "Barton Under Needwood Rsmd",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.745929,
+    "lon" : -1.7097593,
+    "id" : "BTNUNSJ",
+    "name" : "Barton Under Needwood S Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

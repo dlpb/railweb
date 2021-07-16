@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.653456,
+    "lon" : -1.7810338,
+    "id" : "HDRS770",
+    "name" : "Huddersfield Sig Hu770",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.649138,
+    "lon" : -1.7843844,
+    "id" : "HDRSFLD",
+    "name" : "Huddersfield",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

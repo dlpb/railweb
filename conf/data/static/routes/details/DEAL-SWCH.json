@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.223258,
+    "lon" : 1.3985762,
+    "id" : "DEAL",
+    "name" : "Deal",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.269976,
+    "lon" : 1.3421863,
+    "id" : "SWCH",
+    "name" : "Sandwich",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

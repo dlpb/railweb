@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.066788,
+    "lon" : -3.2784237,
+    "id" : "ECLFECH",
+    "name" : "Ecclefechan",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.122643,
+    "lon" : -3.3538796,
+    "id" : "LCKRBIE",
+    "name" : "Lockerbie",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

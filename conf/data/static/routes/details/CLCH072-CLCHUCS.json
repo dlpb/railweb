@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.18288,
+    "lon" : 1.009026,
+    "id" : "CLCH072",
+    "name" : "Colchester Signal Co1072",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.900618,
+    "lon" : 0.89129816,
+    "id" : "CLCHUCS",
+    "name" : "Colchester Bridge Road",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.521027,
+    "lon" : -0.10564459,
+    "id" : "FRNDNLT",
+    "name" : "Farringdon Underground",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.532306,
+    "lon" : -0.12762538,
+    "id" : "STPXBOX",
+    "name" : "London St Pancras (Intl)",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

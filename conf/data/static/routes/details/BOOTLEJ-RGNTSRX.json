@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 53.443477,
+    "lon" : -2.9941693,
+    "id" : "BOOTLEJ",
+    "name" : "Bootle Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.449344,
+    "lon" : -3.0063225,
+    "id" : "RGNTSRX",
+    "name" : "Regents Road L.C.",
+    "type" : "Point"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+}, {
+  "from" : {
+    "lat" : 53.443477,
+    "lon" : -2.9941693,
+    "id" : "BOOTLEJ",
+    "name" : "Bootle Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.449344,
+    "lon" : -3.0063225,
+    "id" : "RGNTSRX",
+    "name" : "Regents Road L.C.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

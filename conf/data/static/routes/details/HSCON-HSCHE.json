@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.038095,
+    "lon" : -2.0016,
+    "id" : "HSCON",
+    "name" : "Consall",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 53.0658,
+    "lon" : -2.0274,
+    "id" : "HSCHE",
+    "name" : "Cheddleton",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.101535,
+    "lon" : -1.8334364,
+    "id" : "HONYBRN",
+    "name" : "Honeybourne",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.103622,
+    "lon" : -1.8475905,
+    "id" : "HONYNJN",
+    "name" : "Honeybourne North Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

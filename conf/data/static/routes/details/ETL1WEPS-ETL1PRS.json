@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.948423,
+    "lon" : -3.211843,
+    "id" : "ETL1WEPS",
+    "name" : "West End – Princes Street",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 55.951808,
+    "lon" : -3.197813,
+    "id" : "ETL1PRS",
+    "name" : "Princes Street",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

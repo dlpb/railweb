@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.709796,
+    "lon" : -1.6229538,
+    "id" : "BATLEY",
+    "name" : "Batley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.749556,
+    "lon" : -1.5917385,
+    "id" : "MRLY",
+    "name" : "Morley",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

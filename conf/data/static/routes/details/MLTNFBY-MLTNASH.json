@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.754116,
+    "lon" : -0.97457746,
+    "id" : "MLTNFBY",
+    "name" : "Frisby",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.756119,
+    "lon" : -0.9446728,
+    "id" : "MLTNASH",
+    "name" : "Ashfordby L.C.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

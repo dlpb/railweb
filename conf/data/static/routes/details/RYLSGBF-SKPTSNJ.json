@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.045137,
+    "lon" : -2.0292555,
+    "id" : "RYLSGBF",
+    "name" : "Rylstone Tilcon (Gbrf)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.957812,
+    "lon" : -2.0316474,
+    "id" : "SKPTSNJ",
+    "name" : "Skipton Down Shipley Slow",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

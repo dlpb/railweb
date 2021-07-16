@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.322458,
+    "lon" : -0.13298339,
+    "id" : "COLSTWN",
+    "name" : "Coulsdon Town",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.319014,
+    "lon" : -0.15398963,
+    "id" : "WDMNSTR",
+    "name" : "Woodmansterne",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

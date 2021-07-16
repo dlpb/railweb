@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.134931,
+    "lon" : -0.16148362,
+    "id" : "CRAWRMC",
+    "name" : "Crawley New Yard R.M.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.130921,
+    "lon" : -0.16097112,
+    "id" : "THBD737",
+    "name" : "Three Bridges 1737 Points",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

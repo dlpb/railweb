@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.444222,
+    "lon" : -1.8362831,
+    "id" : "SPRD",
+    "name" : "Spring Road",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.456019,
+    "lon" : -1.8446129,
+    "id" : "TYSLSJ",
+    "name" : "Tyseley South Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

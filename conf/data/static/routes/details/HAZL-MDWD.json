@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.377927,
+    "lon" : -2.1230276,
+    "id" : "HAZL",
+    "name" : "Hazel Grove",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.360101,
+    "lon" : -2.0835938,
+    "id" : "MDWD",
+    "name" : "Middlewood",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

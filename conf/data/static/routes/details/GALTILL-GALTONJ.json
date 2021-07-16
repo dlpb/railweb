@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.502364,
+    "lon" : -1.9809379,
+    "id" : "GALTILL",
+    "name" : "Smethwick Galton Bridge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.500125,
+    "lon" : -1.9772708,
+    "id" : "GALTONJ",
+    "name" : "Galton Jn",
+    "type" : "Junction"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

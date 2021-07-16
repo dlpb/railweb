@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.752357,
+    "lon" : -0.80856494,
+    "id" : "LTLKMBL",
+    "name" : "Little Kimble",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.735877,
+    "lon" : -0.82930172,
+    "id" : "MNKRISB",
+    "name" : "Monks Risborough",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

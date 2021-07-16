@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.013902,
+    "lon" : -1.5676192,
+    "id" : "BENTMET",
+    "name" : "Benton (T & W Metro)",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 55.0239,
+    "lon" : -1.5408,
+    "id" : "TAWMYPAL",
+    "name" : "Palmersville",
+    "type" : "Metro"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Unknown",
+  "speed" : "OHLE"
+} ]

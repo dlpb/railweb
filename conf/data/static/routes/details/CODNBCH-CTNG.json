@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.833294,
+    "lon" : 0.42621567,
+    "id" : "CODNBCH",
+    "name" : "Cooden Beach",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.839263,
+    "lon" : 0.45688002,
+    "id" : "CTNG",
+    "name" : "Collington",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

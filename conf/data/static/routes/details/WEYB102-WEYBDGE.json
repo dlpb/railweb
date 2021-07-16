@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.359271,
+    "lon" : -0.46259114,
+    "id" : "WEYB102",
+    "name" : "Weybridge Sig.Wk1102",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.361676,
+    "lon" : -0.45679378,
+    "id" : "WEYBDGE",
+    "name" : "Weybridge",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

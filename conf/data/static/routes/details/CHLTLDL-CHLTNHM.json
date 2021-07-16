@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.891829,
+    "lon" : -2.1110145,
+    "id" : "CHLTLDL",
+    "name" : "Cheltenham Lansdown Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.896793,
+    "lon" : -2.1003017,
+    "id" : "CHLTNHM",
+    "name" : "Cheltenham Spa",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

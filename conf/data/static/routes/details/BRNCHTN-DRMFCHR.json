@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.940411,
+    "lon" : -4.8041113,
+    "id" : "BRNCHTN",
+    "name" : "Branchton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.941228,
+    "lon" : -4.7715774,
+    "id" : "DRMFCHR",
+    "name" : "Drumfrochar",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "75-90"
+} ]

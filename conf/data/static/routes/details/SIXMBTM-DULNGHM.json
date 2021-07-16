@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.184936,
+    "lon" : 0.29507194,
+    "id" : "SIXMBTM",
+    "name" : "Six Mile Bottom",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.201566,
+    "lon" : 0.36589837,
+    "id" : "DULNGHM",
+    "name" : "Dullingham",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

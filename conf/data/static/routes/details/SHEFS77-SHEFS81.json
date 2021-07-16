@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.3633,
+    "lon" : -1.4707589,
+    "id" : "SHEFS77",
+    "name" : "Sheffield Signal S77",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.370962,
+    "lon" : -1.4616311,
+    "id" : "SHEFS81",
+    "name" : "Sheffield Signal S81",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

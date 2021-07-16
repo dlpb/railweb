@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.731943,
+    "lon" : -2.7019184,
+    "id" : "FRNGTNC",
+    "name" : "Farington Curve Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.716175,
+    "lon" : -2.6947159,
+    "id" : "FRNGTNJ",
+    "name" : "Farington Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

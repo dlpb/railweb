@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.958003,
+    "lon" : -1.155193,
+    "id" : "NTL1NTU",
+    "name" : "Nottingham Trent University",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 52.955242,
+    "lon" : -1.152112,
+    "id" : "NTL1ROC",
+    "name" : "Royal Centre",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

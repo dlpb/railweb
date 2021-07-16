@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.566896,
+    "lon" : -0.91640834,
+    "id" : "CRGHLSB",
+    "name" : "Crag Hall S.B.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.568338,
+    "lon" : -0.90487773,
+    "id" : "SKNGRVW",
+    "name" : "Skinningrove B.S.C.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

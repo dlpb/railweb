@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.465915,
+    "lon" : -2.1237644,
+    "id" : "DNTONJN",
+    "name" : "Denton Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.474545,
+    "lon" : -2.1132433,
+    "id" : "GIDB",
+    "name" : "Guide Bridge",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

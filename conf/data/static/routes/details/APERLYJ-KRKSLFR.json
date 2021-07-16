@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.838684,
+    "lon" : -1.6849699,
+    "id" : "APERLYJ",
+    "name" : "Apperley Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.8271,
+    "lon" : -1.6369,
+    "id" : "KRKSLFR",
+    "name" : "Kirkstall Forge",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

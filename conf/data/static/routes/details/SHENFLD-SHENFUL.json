@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.630669,
+    "lon" : 0.32985507,
+    "id" : "SHENFLD",
+    "name" : "Shenfield",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.621985,
+    "lon" : 0.32605832,
+    "id" : "SHENFUL",
+    "name" : "Shenfield Up Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "1",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

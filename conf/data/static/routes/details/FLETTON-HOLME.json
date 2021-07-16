@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.556337,
+    "lon" : -0.24386684,
+    "id" : "FLETTON",
+    "name" : "Fletton Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.471267,
+    "lon" : -0.2373763,
+    "id" : "HOLME",
+    "name" : "Holme Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

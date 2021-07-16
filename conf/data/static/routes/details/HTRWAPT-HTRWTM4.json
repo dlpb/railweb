@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.472267,
+    "lon" : -0.45087667,
+    "id" : "HTRWAPT",
+    "name" : "Heathrow Terminals 2,3",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.460036,
+    "lon" : -0.44672764,
+    "id" : "HTRWTM4",
+    "name" : "Heathrow Airport T4",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

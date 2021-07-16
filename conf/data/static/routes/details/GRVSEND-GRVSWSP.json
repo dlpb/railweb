@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.44131,
+    "lon" : 0.36620941,
+    "id" : "GRVSEND",
+    "name" : "Gravesend",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.445663,
+    "lon" : 0.36971033,
+    "id" : "GRVSWSP",
+    "name" : "Gravesend Piers",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "20 MINUTES"
+} ]

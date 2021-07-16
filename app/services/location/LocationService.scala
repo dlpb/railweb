@@ -1,10 +1,11 @@
 package services.location
 
 import com.typesafe.config.Config
-import javax.inject.Inject
+import javax.inject.{Inject, Singleton}
 import models.helpers.JsonFileReader
-import models.location.{GroupedListLocation, ListLocation, Location, MapLocation}
+import models.location.Location
 
+@Singleton
 class LocationService @Inject() (config: Config) {
   def findAllLocationsByCrsIdOrName(search: String): Set[Location] = if(search.isBlank) Set.empty else findAllLocationsBy(
     loc => loc.id.equalsIgnoreCase(search) || loc.name.equalsIgnoreCase(search) || loc.crs.map(_.toLowerCase()).contains(search.toLowerCase()))
@@ -53,15 +54,19 @@ class LocationService @Inject() (config: Config) {
   private val locationFileReader = new JsonFileReader
 
   val locations: Set[Location] = {
-    val locs = locationFileReader.readAndParse[Set[Location]](config.getString("data.locations.path"))
+    val locationsListPath = config.getString("data.locations.path")
+    val locationsFileName = config.getString("data.locations.fileName")
+
+    val locationsPath = s"$locationsListPath$locationsFileName"
+    println(s"loading locatiosn from $locationsPath")
+    val locs = locationFileReader.readAndParse[Set[Location]](locationsPath)
     System.gc()
+    println("done")
     locs
   }
 
-  val mapLocations: Set[MapLocation] = locations.map(MapLocation(_))
-
-  val sortedListLocationsGroupedByTiploc: List[ListLocation] = {
-    def sortLocations(a: ListLocation, b: ListLocation): Boolean = {
+  val sortedLocationsGroupedByTiploc: List[Location] = {
+    def sortLocations(a: Location, b: Location): Boolean = {
       if(a.operator.equals(b.operator)) {
         if(a.srs.equals(b.srs))
           a.name < b.name
@@ -70,36 +75,30 @@ class LocationService @Inject() (config: Config) {
       else a.operator < b.operator
     }
 
-    val listItems = locations map { l => ListLocation(l) }
+    val listItems = locations
     listItems.toList.sortWith(sortLocations)
   }
 
-  val sortedListLocationsGroupedByCrs: List[GroupedListLocation] = {
-    def sortLocations(a: GroupedListLocation, b: GroupedListLocation): Boolean = {
-      if(a.operator.equals(b.operator)) {
-        if(a.srs.equals(b.srs))
-          a.name < b.name
-        else a.srs < b.srs
+  val sortedListLocationsGroupedByCrs: List[(Location, List[Location])] = {
+    def sortLocations(a: (Location, List[Location]), b: (Location, List[Location])): Boolean = {
+      if(a._1.operator.equals(b._1.operator)) {
+        if(a._1.srs.equals(b._1.srs))
+          a._1.name < b._1.name
+        else a._1.srs < b._1.srs
       }
-      else a.operator < b.operator
+      else a._1.operator < b._1.operator
     }
 
     val groupedLocations: Map[String, List[Location]] = locations.toList
       .filter(_.orrId.isDefined)
       .groupBy(_.orrId.get)
 
-    val groupedListLocations: List[GroupedListLocation] = groupedLocations.keySet.map({
+    val groupedListLocations = groupedLocations.keySet.map({
       locationKey =>
-        val locationsInGroup = groupedLocations(locationKey)
-        val name = locationsInGroup.map(_.name).sortBy(_.length).headOption.getOrElse("")
-        val toc = locationsInGroup.map(_.operator).headOption.getOrElse("XX")
-        val `type` = locationsInGroup.map(_.`type`).headOption.getOrElse("")
-        val orrStation = locationsInGroup.forall(_.orrStation)
-        val srs = locationsInGroup.flatMap(_.nrInfo.map(_.srs)).headOption.getOrElse("")
-        val relatedLocations = locationsInGroup.map(ListLocation(_))
-        val orrId = locationsInGroup.flatMap(_.orrId).headOption
 
-        val groupedLocation = GroupedListLocation(locationKey, name, toc, `type`,  orrStation, orrId, srs, relatedLocations)
+        val location = findAllLocationsByCrsIdOrName(locationKey).head
+
+        val groupedLocation = (location, groupedLocations(locationKey))
         groupedLocation
     }).toList
 

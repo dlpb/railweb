@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.816547,
+    "lon" : -0.1210879,
+    "id" : "HSHPPP",
+    "name" : "Halfway (Peter Pan's Playground)",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 50.814497,
+    "lon" : -0.11098914,
+    "id" : "HSMAR",
+    "name" : "Marina",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "DC",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

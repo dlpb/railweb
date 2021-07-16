@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.952061,
+    "lon" : 1.3329537,
+    "id" : "FLXSCRS",
+    "name" : "Felixstowe Creek R.S",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.946389,
+    "lon" : 1.3242367,
+    "id" : "FLXSSEW",
+    "name" : "Felixstowe South Ews",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

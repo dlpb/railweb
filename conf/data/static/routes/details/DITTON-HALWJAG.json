@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.35627,
+    "lon" : -2.7671858,
+    "id" : "DITTON",
+    "name" : "Ditton East Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.35369,
+    "lon" : -2.8263635,
+    "id" : "HALWJAG",
+    "name" : "Halewood (Jaguar Cars)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

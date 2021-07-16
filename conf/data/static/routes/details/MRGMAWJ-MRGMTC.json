@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.547812,
+    "lon" : -3.7463106,
+    "id" : "MRGMAWJ",
+    "name" : "Margam Abbey West Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.550948,
+    "lon" : -3.7488827,
+    "id" : "MRGMTC",
+    "name" : "Margam T.C.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

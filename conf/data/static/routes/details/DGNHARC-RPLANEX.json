@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.524016,
+    "lon" : 0.14629379,
+    "id" : "DGNHARC",
+    "name" : "Dagenham Dock A.R.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.529075,
+    "lon" : 0.11782633,
+    "id" : "RPLANEX",
+    "name" : "Ripple Lane Exch Sdgs",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

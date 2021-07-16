@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.863719,
+    "lon" : -0.92654166,
+    "id" : "QUNTRD",
+    "name" : "Quainton Road",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 51.914666,
+    "lon" : -0.99825521,
+    "id" : "CALVGBR",
+    "name" : "Calvert Gbrf",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

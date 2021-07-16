@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.999851,
+    "lon" : -2.1761107,
+    "id" : "STOKSID",
+    "name" : "Sideway Loop (Stoke)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.974484,
+    "lon" : -2.1754266,
+    "id" : "TRNTHAM",
+    "name" : "Trentham",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

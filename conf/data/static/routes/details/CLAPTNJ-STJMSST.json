@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.568746,
+    "lon" : -0.050516979,
+    "id" : "CLAPTNJ",
+    "name" : "Clapton Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.581383,
+    "lon" : -0.030201885,
+    "id" : "STJMSST",
+    "name" : "St James Street",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

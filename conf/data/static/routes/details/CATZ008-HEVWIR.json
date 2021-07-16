@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.0356,
+    "lon" : -1.5692,
+    "id" : "CATZ008",
+    "name" : "Idridgehay",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.0832,
+    "lon" : -1.569,
+    "id" : "HEVWIR",
+    "name" : "Wirksworth",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

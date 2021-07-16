@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.867664,
+    "lon" : -1.90127,
+    "id" : "KEIGWVR",
+    "name" : "Keighley & Wvlr",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.86761,
+    "lon" : -1.9005706,
+    "id" : "KEIGHLY",
+    "name" : "Keighley",
+    "type" : "Station"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

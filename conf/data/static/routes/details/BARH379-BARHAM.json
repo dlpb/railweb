@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.107476,
+    "lon" : 1.1003591,
+    "id" : "BARH379",
+    "name" : "Barham Ground Sig C01379",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.118373,
+    "lon" : 1.0943222,
+    "id" : "BARHAM",
+    "name" : "Barham",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

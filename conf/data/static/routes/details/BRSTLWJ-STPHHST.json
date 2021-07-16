@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.444854,
+    "lon" : -2.5811169,
+    "id" : "BRSTLWJ",
+    "name" : "Bristol West Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.446827,
+    "lon" : -2.5637162,
+    "id" : "STPHHST",
+    "name" : "St Philips Mrsh H S T D",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

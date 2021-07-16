@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.58422,
+    "lon" : -0.2788,
+    "id" : "LUJKIN",
+    "name" : "Kingsbury",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.59437,
+    "lon" : -0.28655,
+    "id" : "LUJQUE",
+    "name" : "Queensbury",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

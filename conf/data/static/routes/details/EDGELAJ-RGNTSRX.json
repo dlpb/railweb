@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.450028,
+    "lon" : -3.006158,
+    "id" : "EDGELAJ",
+    "name" : "Edge Lane Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.449344,
+    "lon" : -3.0063225,
+    "id" : "RGNTSRX",
+    "name" : "Regents Road L.C.",
+    "type" : "Point"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.716377,
+    "lon" : -4.8595578,
+    "id" : "HNTRSJN",
+    "name" : "Hunterston Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.696212,
+    "lon" : -4.8515587,
+    "id" : "WKILBRD",
+    "name" : "West Kilbride",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "75-90"
+} ]

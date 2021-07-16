@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.543524,
+    "lon" : -2.5633559,
+    "id" : "CRWNSTJ",
+    "name" : "Crow Nest Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.542428,
+    "lon" : -2.5747045,
+    "id" : "HINDLEY",
+    "name" : "Hindley",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

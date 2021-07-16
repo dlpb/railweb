@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 51.52835,
+    "lon" : 0.0050934059,
+    "id" : "WHAMHL",
+    "name" : "West Ham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.5173,
+    "lon" : -0.1774,
+    "id" : "PADTLL",
+    "name" : "London Paddington Crossrl",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "52 MINUTES"
+}, {
+  "from" : {
+    "lat" : 51.52835,
+    "lon" : 0.0050934059,
+    "id" : "WHAMHL",
+    "name" : "West Ham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.5173,
+    "lon" : -0.1774,
+    "id" : "PADTLL",
+    "name" : "London Paddington Crossrl",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "57 MINUTES"
+} ]

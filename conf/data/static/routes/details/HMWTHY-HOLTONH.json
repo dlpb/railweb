@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.72519,
+    "lon" : -2.0193853,
+    "id" : "HMWTHY",
+    "name" : "Hamworthy",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.71147,
+    "lon" : -2.0779299,
+    "id" : "HOLTONH",
+    "name" : "Holton Heath",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

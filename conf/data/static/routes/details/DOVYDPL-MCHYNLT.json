@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.564773,
+    "lon" : -3.9237875,
+    "id" : "DOVYDPL",
+    "name" : "Dovey Junction Down Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.595436,
+    "lon" : -3.8542743,
+    "id" : "MCHYNLT",
+    "name" : "Machynlleth",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.483999,
+    "lon" : -1.0736158,
+    "id" : "RSNGCJN",
+    "name" : "Rossington Colliery Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.479123,
+    "lon" : -1.0929491,
+    "id" : "RSNGTCL",
+    "name" : "Rossington Colliery",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

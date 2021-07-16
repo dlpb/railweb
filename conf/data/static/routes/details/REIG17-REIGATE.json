@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.241896,
+    "lon" : -0.2039994,
+    "id" : "REIG17",
+    "name" : "Reigate Shunt Signal 17",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.241896,
+    "lon" : -0.2039994,
+    "id" : "REIGATE",
+    "name" : "Reigate",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

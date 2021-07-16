@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.538883,
+    "lon" : 0.73097294,
+    "id" : "STHNDE",
+    "name" : "Southend East",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.537634,
+    "lon" : 0.76202033,
+    "id" : "THOPBAY",
+    "name" : "Thorpe Bay",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

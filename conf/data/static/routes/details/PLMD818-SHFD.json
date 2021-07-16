@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.838916,
+    "lon" : -4.2486088,
+    "id" : "PLMD818",
+    "name" : "Polmadie Signal 818",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.832905,
+    "lon" : -4.2317497,
+    "id" : "SHFD",
+    "name" : "Shawfield",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.911214,
+    "lon" : -1.383743,
+    "id" : "SNDRMNK",
+    "name" : "St Peters (T & W Metro)",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 54.91312,
+    "lon" : -1.3840258,
+    "id" : "SNDRMSB",
+    "name" : "Monkwearmouth S.B.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE/1500V DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

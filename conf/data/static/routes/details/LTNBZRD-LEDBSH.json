@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.91594,
+    "lon" : -0.67742516,
+    "id" : "LTNBZRD",
+    "name" : "Leighton Buzzard",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.95168,
+    "lon" : -0.7196497,
+    "id" : "LEDBSH",
+    "name" : "Stoke Hammond",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.817071,
+    "lon" : -3.0090025,
+    "id" : "ABRGS38",
+    "name" : "Abergavenny Sig 38",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.902842,
+    "lon" : -2.9624489,
+    "id" : "POWELL",
+    "name" : "Powell",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

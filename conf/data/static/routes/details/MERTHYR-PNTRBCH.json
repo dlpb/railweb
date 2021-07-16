@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.744198,
+    "lon" : -3.3771941,
+    "id" : "MERTHYR",
+    "name" : "Merthyr Tydfil",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.725061,
+    "lon" : -3.3627998,
+    "id" : "PNTRBCH",
+    "name" : "Pentre-Bach",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "45-75"
+} ]

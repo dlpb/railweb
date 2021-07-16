@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.642199,
+    "lon" : -2.0230706,
+    "id" : "BLOX103",
+    "name" : "Bloxwich Signal 103",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.657069,
+    "lon" : -2.0207279,
+    "id" : "LNDYW",
+    "name" : "Landywood",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

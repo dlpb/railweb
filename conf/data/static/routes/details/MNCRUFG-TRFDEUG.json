@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.462254,
+    "lon" : -2.2906683,
+    "id" : "MNCRUFG",
+    "name" : "Manchester United Fc",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.457609,
+    "lon" : -2.3045371,
+    "id" : "TRFDEUG",
+    "name" : "Trafford Pk Euro Tml Gbrf",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

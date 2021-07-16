@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.472781,
+    "lon" : -4.6129711,
+    "id" : "AYRR335",
+    "name" : "Ayr Sig. Pa335",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.473046,
+    "lon" : -4.6253479,
+    "id" : "NWTOAJN",
+    "name" : "Newton Jn_(Strathclyde)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

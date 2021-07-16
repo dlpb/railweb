@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.995881,
+    "lon" : -0.41474251,
+    "id" : "SLEFDTS",
+    "name" : "Sleaford Tamper Siding",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.996407,
+    "lon" : -0.41980439,
+    "id" : "SLEFDUS",
+    "name" : "Sleaford Up Siding",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

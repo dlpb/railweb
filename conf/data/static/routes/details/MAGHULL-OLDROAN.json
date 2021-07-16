@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.506658,
+    "lon" : -2.9308118,
+    "id" : "MAGHULL",
+    "name" : "Maghull",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.486833,
+    "lon" : -2.9507084,
+    "id" : "OLDROAN",
+    "name" : "Old Roan",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

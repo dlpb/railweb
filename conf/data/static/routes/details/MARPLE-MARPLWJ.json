@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.400727,
+    "lon" : -2.0572934,
+    "id" : "MARPLE",
+    "name" : "Marple",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.406951,
+    "lon" : -2.0663121,
+    "id" : "MARPLWJ",
+    "name" : "Marple Wharf Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

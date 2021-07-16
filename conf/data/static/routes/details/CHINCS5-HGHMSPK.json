@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.632755,
+    "lon" : 0.0092033017,
+    "id" : "CHINCS5",
+    "name" : "Chingford Country End Sdgs",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.608179,
+    "lon" : -3.3079128E-4,
+    "id" : "HGHMSPK",
+    "name" : "Highams Park",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

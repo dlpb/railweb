@@ -1,0 +1,10 @@
+[ {
+  "id" : "BOSTON",
+  "crp" : "",
+  "route" : "London North East and East Midlands",
+  "changeTime" : "Set(None)",
+  "interchangeType" : "1 - Small interchange point",
+  "county" : "East Midlands",
+  "district" : "Lincolnshire",
+  "postcode" : "\"PE21 3RN"
+} ]

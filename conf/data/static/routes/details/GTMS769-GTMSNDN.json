@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.703084,
+    "lon" : -0.70906654,
+    "id" : "GTMS769",
+    "name" : "Great Missenden Sig Me769",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.703084,
+    "lon" : -0.70906654,
+    "id" : "GTMSNDN",
+    "name" : "Great Missenden",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

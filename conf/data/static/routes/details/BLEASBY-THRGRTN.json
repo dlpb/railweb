@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.040671,
+    "lon" : -0.94467389,
+    "id" : "BLEASBY",
+    "name" : "Bleasby",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.028578,
+    "lon" : -0.9627876,
+    "id" : "THRGRTN",
+    "name" : "Thurgarton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.560938,
+    "lon" : -4.6512572,
+    "id" : "BARASIE",
+    "name" : "Barassie",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.608684,
+    "lon" : -4.6741228,
+    "id" : "IRVNCPP",
+    "name" : "Irvine Caledonian Paper",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "75-90"
+} ]

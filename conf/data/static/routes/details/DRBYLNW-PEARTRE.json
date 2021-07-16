@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.900292,
+    "lon" : -1.4689965,
+    "id" : "DRBYLNW",
+    "name" : "L.N.W. Jn. Derby",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.897502,
+    "lon" : -1.4723901,
+    "id" : "PEARTRE",
+    "name" : "Peartree",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

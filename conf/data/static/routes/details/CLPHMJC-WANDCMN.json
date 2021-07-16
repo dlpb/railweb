@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.463358,
+    "lon" : -0.17252917,
+    "id" : "CLPHMJC",
+    "name" : "Clapham Junction",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.445948,
+    "lon" : -0.16328031,
+    "id" : "WANDCMN",
+    "name" : "Wandsworth Common",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

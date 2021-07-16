@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.907479,
+    "lon" : -1.4218446,
+    "id" : "SOTO740",
+    "name" : "Southampton Signal E740",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.907539,
+    "lon" : -1.4159273,
+    "id" : "SOTON",
+    "name" : "Southampton Central",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

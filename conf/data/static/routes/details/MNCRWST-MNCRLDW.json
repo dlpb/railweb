@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.480345,
+    "lon" : -2.3063425,
+    "id" : "MNCRWST",
+    "name" : "Weaste Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.484,
+    "lon" : -2.3268,
+    "id" : "MNCRLDW",
+    "name" : "Ladywell Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

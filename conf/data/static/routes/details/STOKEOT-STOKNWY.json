@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.00796,
+    "lon" : -2.1811512,
+    "id" : "STOKEOT",
+    "name" : "Stoke-On-Trent",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.012466,
+    "lon" : -2.1853732,
+    "id" : "STOKNWY",
+    "name" : "Stoke North West Yard",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

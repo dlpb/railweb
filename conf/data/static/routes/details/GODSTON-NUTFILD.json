@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.218137,
+    "lon" : -0.051131126,
+    "id" : "GODSTON",
+    "name" : "Godstone",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.22683,
+    "lon" : -0.13251628,
+    "id" : "NUTFILD",
+    "name" : "Nutfield",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

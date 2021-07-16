@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.423579,
+    "lon" : -0.33991111,
+    "id" : "MKTRCLU",
+    "name" : "Claxby & Usselby",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.383938,
+    "lon" : -0.33688273,
+    "id" : "MKTR",
+    "name" : "Market Rasen",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

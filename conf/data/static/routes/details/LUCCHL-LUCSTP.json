@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.51836,
+    "lon" : -0.11115,
+    "id" : "LUCCHL",
+    "name" : "Chancery Lane",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.515285,
+    "lon" : -0.097598,
+    "id" : "LUCSTP",
+    "name" : "St. Paul's",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.9829,
+    "lon" : -1.5718,
+    "id" : "TAWMYCHR",
+    "name" : "Chillingham Road",
+    "type" : "Metro"
+  },
+  "to" : {
+    "lat" : 54.9761,
+    "lon" : -1.5798,
+    "id" : "TAWMYBYK",
+    "name" : "Byker",
+    "type" : "Metro"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Metro",
+  "speed" : "OHLE"
+} ]

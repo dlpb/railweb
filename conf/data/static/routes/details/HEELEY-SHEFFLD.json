@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.354131,
+    "lon" : -1.4831168,
+    "id" : "HEELEY",
+    "name" : "Heeley Up Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.378119,
+    "lon" : -1.462067,
+    "id" : "SHEFFLD",
+    "name" : "Sheffield",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.938815,
+    "lon" : 1.2806895,
+    "id" : "DOVRCRT",
+    "name" : "Dovercourt",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.944054,
+    "lon" : 1.286355,
+    "id" : "HARWICH",
+    "name" : "Harwich Town",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

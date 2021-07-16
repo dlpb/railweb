@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.49793,
+    "lon" : -0.21016115,
+    "id" : "KENOLYM",
+    "name" : "Kensington Olympia",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.487114,
+    "lon" : -0.19564809,
+    "id" : "WBRMPTN",
+    "name" : "West Brompton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

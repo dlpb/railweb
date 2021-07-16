@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.385193,
+    "lon" : 1.3710947,
+    "id" : "MARGATE",
+    "name" : "Margate",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.381274,
+    "lon" : 1.338335,
+    "id" : "WESGTOS",
+    "name" : "Westgate-On-Sea",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

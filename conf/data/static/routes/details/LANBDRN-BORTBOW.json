@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.406941,
+    "lon" : -4.0639015,
+    "id" : "LANBDRN",
+    "name" : "Llanbadarn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.442134,
+    "lon" : -4.0290856,
+    "id" : "BORTBOW",
+    "name" : "Bow Street",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

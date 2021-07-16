@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.115884,
+    "lon" : -3.6418991,
+    "id" : "HLYW",
+    "name" : "Holywood",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.160544,
+    "lon" : -3.7033052,
+    "id" : "AULDGTH",
+    "name" : "Auldgirth",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

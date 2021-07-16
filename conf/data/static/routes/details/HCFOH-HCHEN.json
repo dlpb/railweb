@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.040537,
+    "lon" : -4.3948384,
+    "id" : "HCFOH",
+    "name" : "Forest Halt",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.041894,
+    "lon" : -4.3875307,
+    "id" : "HCHEN",
+    "name" : "Henllan",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

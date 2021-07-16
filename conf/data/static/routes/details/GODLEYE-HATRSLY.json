@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.448927,
+    "lon" : -2.0496945,
+    "id" : "GODLEYE",
+    "name" : "Godley East",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.445119,
+    "lon" : -2.0399491,
+    "id" : "HATRSLY",
+    "name" : "Hattersley",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

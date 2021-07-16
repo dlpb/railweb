@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.09853,
+    "lon" : -1.9475469,
+    "id" : "EVESHAM",
+    "name" : "Evesham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.100079,
+    "lon" : -1.952786,
+    "id" : "EVESWJN",
+    "name" : "Evesham West Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

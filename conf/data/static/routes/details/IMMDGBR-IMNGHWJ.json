@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.633772,
+    "lon" : -0.20965853,
+    "id" : "IMMDGBR",
+    "name" : "Immingham Mineral Quay Gbr",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.633841,
+    "lon" : -0.20944388,
+    "id" : "IMNGHWJ",
+    "name" : "Immingham West Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

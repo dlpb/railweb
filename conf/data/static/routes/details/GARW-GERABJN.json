@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.48797,
+    "lon" : -2.6721108,
+    "id" : "GARW",
+    "name" : "Garswood",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.460898,
+    "lon" : -2.7300768,
+    "id" : "GERABJN",
+    "name" : "Gerards Bridge Jcn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

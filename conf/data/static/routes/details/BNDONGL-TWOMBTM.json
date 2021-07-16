@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.454718,
+    "lon" : 0.63918468,
+    "id" : "BNDONGL",
+    "name" : "Brandon Down Goods Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.440489,
+    "lon" : 0.7307739,
+    "id" : "TWOMBTM",
+    "name" : "Two Mile Bottom",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

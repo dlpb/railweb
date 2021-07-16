@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.364517,
+    "lon" : -0.68847092,
+    "id" : "BAGSHOT",
+    "name" : "Bagshot",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.336298,
+    "lon" : -0.74420066,
+    "id" : "CMBLEY",
+    "name" : "Camberley",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

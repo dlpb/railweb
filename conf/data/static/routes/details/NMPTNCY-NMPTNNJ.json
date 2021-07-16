@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.239368,
+    "lon" : -0.90653392,
+    "id" : "NMPTNCY",
+    "name" : "Northampton Castle Yard",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.243157,
+    "lon" : -0.90799329,
+    "id" : "NMPTNNJ",
+    "name" : "Northampton North Junction",
+    "type" : "Location"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

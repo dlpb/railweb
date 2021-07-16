@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.380014,
+    "lon" : -0.35389377,
+    "id" : "ESHER",
+    "name" : "Esher",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.3828,
+    "lon" : -0.330887,
+    "id" : "HCRTJN",
+    "name" : "Hampton Court Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

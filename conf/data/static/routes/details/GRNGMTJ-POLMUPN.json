@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.001423,
+    "lon" : -3.7759143,
+    "id" : "GRNGMTJ",
+    "name" : "Grangemouth Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.985785,
+    "lon" : -3.7247978,
+    "id" : "POLMUPN",
+    "name" : "Polmont U.P.L. (North)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.816127,
+    "lon" : -0.19592656,
+    "id" : "DIGSWEL",
+    "name" : "Digswell Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.799023,
+    "lon" : -0.20404937,
+    "id" : "WLWYNGY",
+    "name" : "Welwyn G.C. F.D.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

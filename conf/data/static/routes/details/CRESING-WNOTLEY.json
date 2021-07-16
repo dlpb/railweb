@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.851885,
+    "lon" : 0.57838551,
+    "id" : "CRESING",
+    "name" : "Cressing",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.839043,
+    "lon" : 0.59556618,
+    "id" : "WNOTLEY",
+    "name" : "White Notley",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

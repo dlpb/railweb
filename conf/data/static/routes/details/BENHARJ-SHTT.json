@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.825146,
+    "lon" : -3.738785,
+    "id" : "BENHARJ",
+    "name" : "Benhar Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.818742,
+    "lon" : -3.798547,
+    "id" : "SHTT",
+    "name" : "Shotts",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.140042,
+    "lon" : 0.8817315,
+    "id" : "ASHFEJN",
+    "name" : "Ashford East Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.103364,
+    "lon" : 0.98239706,
+    "id" : "HERRNGE",
+    "name" : "Herringe",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.261309,
+    "lon" : 1.1374643,
+    "id" : "BEKSBRN",
+    "name" : "Bekesbourne",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.274233,
+    "lon" : 1.0755074,
+    "id" : "CNTBE",
+    "name" : "Canterbury East",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

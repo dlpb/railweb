@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.57722,
+    "lon" : -0.14553,
+    "id" : "LUNHIG",
+    "name" : "Highgate",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.56536,
+    "lon" : -0.13474,
+    "id" : "LUNARC",
+    "name" : "Archway",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

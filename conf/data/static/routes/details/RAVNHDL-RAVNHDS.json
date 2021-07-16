@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.44535,
+    "lon" : -2.741328,
+    "id" : "RAVNHDL",
+    "name" : "Ravenhead Down Goods Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.446929,
+    "lon" : -2.7359502,
+    "id" : "RAVNHDS",
+    "name" : "Ravenhead Sdgs",
+    "type" : "Point"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

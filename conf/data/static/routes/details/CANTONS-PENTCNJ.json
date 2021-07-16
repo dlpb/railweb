@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.475746,
+    "lon" : -3.1924986,
+    "id" : "CANTONS",
+    "name" : "Canton Sidings",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.475057,
+    "lon" : -3.1975059,
+    "id" : "PENTCNJ",
+    "name" : "Penarth Curve North Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

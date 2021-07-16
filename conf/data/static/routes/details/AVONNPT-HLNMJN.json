@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.5105,
+    "lon" : -2.6969268,
+    "id" : "AVONNPT",
+    "name" : "Avonmouth Ntl Pwr Silo 1",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.524283,
+    "lon" : -2.689469,
+    "id" : "HLNMJN",
+    "name" : "Hallen Marsh Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

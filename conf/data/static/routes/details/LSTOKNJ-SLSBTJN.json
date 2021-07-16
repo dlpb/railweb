@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.079609,
+    "lon" : -1.780054,
+    "id" : "LSTOKNJ",
+    "name" : "Laverstock North Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.07757,
+    "lon" : -1.7858449,
+    "id" : "SLSBTJN",
+    "name" : "Tunnel Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.40747,
+    "lon" : -0.15480058,
+    "id" : "ESTFLDS",
+    "name" : "Mitcham Eastfields",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.392835,
+    "lon" : -0.15737312,
+    "id" : "MITCHMJ",
+    "name" : "Mitcham Junction",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

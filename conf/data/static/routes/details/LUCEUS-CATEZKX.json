@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.52584,
+    "lon" : -0.1357,
+    "id" : "LUCEUS",
+    "name" : "Euston Square",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.5302,
+    "lon" : -0.1241,
+    "id" : "CATEZKX",
+    "name" : "Kings Cross Und",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

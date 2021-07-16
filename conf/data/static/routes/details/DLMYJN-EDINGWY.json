@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.981129,
+    "lon" : -3.3771071,
+    "id" : "DLMYJN",
+    "name" : "Dalmeny Jn",
+    "type" : "Junction"
+  },
+  "to" : {
+    "lat" : 55.941,
+    "lon" : -3.32,
+    "id" : "EDINGWY",
+    "name" : "Edinburgh Gateway",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

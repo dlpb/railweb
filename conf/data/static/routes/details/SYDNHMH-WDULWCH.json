@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.432593,
+    "lon" : -0.080157566,
+    "id" : "SYDNHMH",
+    "name" : "Sydenham Hill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.44057,
+    "lon" : -0.091219329,
+    "id" : "WDULWCH",
+    "name" : "West Dulwich",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

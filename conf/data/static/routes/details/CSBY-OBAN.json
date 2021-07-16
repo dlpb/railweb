@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.955,
+    "lon" : -7.486,
+    "id" : "CSBY",
+    "name" : "Castlebay",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.41232,
+    "lon" : -5.4743704,
+    "id" : "OBAN",
+    "name" : "Oban",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.4428,
+    "lon" : 0.0093879544,
+    "id" : "GRVPDCE",
+    "name" : "Grove Park Dpt Ctry Ed Ext",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.451373,
+    "lon" : -2.0987008E-4,
+    "id" : "HTHRGRN",
+    "name" : "Hither Green",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

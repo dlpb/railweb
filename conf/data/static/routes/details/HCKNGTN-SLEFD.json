@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.977258,
+    "lon" : -0.29425951,
+    "id" : "HCKNGTN",
+    "name" : "Heckington",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.995422,
+    "lon" : -0.41003587,
+    "id" : "SLEFD",
+    "name" : "Sleaford",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

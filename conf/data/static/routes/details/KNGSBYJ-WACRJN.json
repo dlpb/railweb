@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.554069,
+    "lon" : -1.6779439,
+    "id" : "KNGSBYJ",
+    "name" : "Kingsbury Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.520163,
+    "lon" : -1.6791938,
+    "id" : "WACRJN",
+    "name" : "Whitacre Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

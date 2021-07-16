@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.406687,
+    "lon" : -2.176499,
+    "id" : "BLAKEDN",
+    "name" : "Blakedown",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.384508,
+    "lon" : -2.2383974,
+    "id" : "KDRMNST",
+    "name" : "Kidderminster",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

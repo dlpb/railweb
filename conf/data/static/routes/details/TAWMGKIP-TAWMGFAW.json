@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.0144,
+    "lon" : -1.6661,
+    "id" : "TAWMGKIP",
+    "name" : "Kingston Park",
+    "type" : "Metro"
+  },
+  "to" : {
+    "lat" : 55.0136,
+    "lon" : -1.644,
+    "id" : "TAWMGFAW",
+    "name" : "Fawdon",
+    "type" : "Metro"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Metro",
+  "speed" : "OHLE"
+} ]

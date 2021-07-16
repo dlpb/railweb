@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.858001,
+    "lon" : 0.57718822,
+    "id" : "HASTING",
+    "name" : "Hastings",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.866831,
+    "lon" : 0.59151882,
+    "id" : "OREE",
+    "name" : "Ore",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

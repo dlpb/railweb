@@ -1,0 +1,10 @@
+[ {
+  "id" : "LETHRHD",
+  "crp" : "",
+  "route" : "South East",
+  "changeTime" : "Set(Some(ChangeTime(LHD,SN,SN,4,(Leatherhead))))",
+  "interchangeType" : "2 - Medium interchange point",
+  "county" : "South East",
+  "district" : "Surrey",
+  "postcode" : "\"KT22 7SQ"
+} ]

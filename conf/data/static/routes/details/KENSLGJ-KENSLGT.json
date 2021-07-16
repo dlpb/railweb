@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.532886,
+    "lon" : -0.23467088,
+    "id" : "KENSLGJ",
+    "name" : "Kensal Green Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.530136,
+    "lon" : -0.23059627,
+    "id" : "KENSLGT",
+    "name" : "Kensal Green Turnback",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

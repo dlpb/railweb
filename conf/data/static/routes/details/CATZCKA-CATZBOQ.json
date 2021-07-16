@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.938056,
+    "lon" : -8.106111,
+    "id" : "CATZCKA",
+    "name" : "Carrick-On-Shannon (Cie)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.9675,
+    "lon" : -8.304167,
+    "id" : "CATZBOQ",
+    "name" : "Boyle       (Cie",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.526216,
+    "lon" : 0.14502764,
+    "id" : "DGNHMDC",
+    "name" : "Dagenham Dock",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.517305,
+    "lon" : 0.18971012,
+    "id" : "RNHAME",
+    "name" : "Rainham (Essex)",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

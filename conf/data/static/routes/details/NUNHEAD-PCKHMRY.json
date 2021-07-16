@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.46693,
+    "lon" : -0.053103333,
+    "id" : "NUNHEAD",
+    "name" : "Nunhead",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.470174,
+    "lon" : -0.069840377,
+    "id" : "PCKHMRY",
+    "name" : "Peckham Rye",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

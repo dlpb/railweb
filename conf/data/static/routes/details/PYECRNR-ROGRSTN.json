@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.580281,
+    "lon" : -3.0398571,
+    "id" : "PYECRNR",
+    "name" : "Pye Corner",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.595643,
+    "lon" : -3.0664399,
+    "id" : "ROGRSTN",
+    "name" : "Rogerstone",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "30-50"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.1853,
+    "lon" : -6.8083,
+    "id" : "CATZNBG",
+    "name" : "Newbridge (Cie",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.162802,
+    "lon" : -6.908111,
+    "id" : "CATZKDR",
+    "name" : "Kildare     (Cie",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "40-75"
+} ]

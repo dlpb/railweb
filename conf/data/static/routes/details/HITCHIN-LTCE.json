@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.953075,
+    "lon" : -0.26293579,
+    "id" : "HITCHIN",
+    "name" : "Hitchin",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.980412,
+    "lon" : -0.22866397,
+    "id" : "LTCE",
+    "name" : "Letchworth Garden City",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

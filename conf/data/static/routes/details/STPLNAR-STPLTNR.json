@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.470907,
+    "lon" : -2.5710532,
+    "id" : "STPLNAR",
+    "name" : "Narroways Hill Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.467272,
+    "lon" : -2.566142,
+    "id" : "STPLTNR",
+    "name" : "Stapleton Road",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

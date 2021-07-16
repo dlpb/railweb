@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.887669,
+    "lon" : -3.8749272,
+    "id" : "EGGESFD",
+    "name" : "Eggesford",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.936234,
+    "lon" : -3.9054457,
+    "id" : "KNYMPTN",
+    "name" : "Kings Nympton",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.485681,
+    "lon" : -4.1999215,
+    "id" : "BEREALS",
+    "name" : "Bere Alston",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.45123,
+    "lon" : -4.1814462,
+    "id" : "BEREFRS",
+    "name" : "Bere Ferrers",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "10-55"
+} ]

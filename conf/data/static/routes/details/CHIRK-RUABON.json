@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.93301,
+    "lon" : -3.0660132,
+    "id" : "CHIRK",
+    "name" : "Chirk",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.987377,
+    "lon" : -3.0430699,
+    "id" : "RUABON",
+    "name" : "Ruabon",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

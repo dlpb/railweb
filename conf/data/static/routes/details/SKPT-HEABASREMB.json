@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.958218,
+    "lon" : -2.0249269,
+    "id" : "SKPT",
+    "name" : "Skipton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.975391,
+    "lon" : -1.99124,
+    "id" : "HEABASREMB",
+    "name" : "Embsay",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

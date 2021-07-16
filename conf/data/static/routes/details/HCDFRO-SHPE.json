@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.726638,
+    "lon" : -1.9625522,
+    "id" : "HCDFRO",
+    "name" : "Frosterley",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 54.743336,
+    "lon" : -2.0032613,
+    "id" : "SHPE",
+    "name" : "Stanhope",
+    "type" : "Location"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

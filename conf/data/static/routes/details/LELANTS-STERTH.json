@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.178396,
+    "lon" : -5.4412627,
+    "id" : "LELANTS",
+    "name" : "Lelant Saltings",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.170731,
+    "lon" : -5.4439891,
+    "id" : "STERTH",
+    "name" : "St Erth",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

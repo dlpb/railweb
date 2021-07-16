@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.516897,
+    "lon" : -1.5475175,
+    "id" : "DLTNS",
+    "name" : "Darlington South Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.512621,
+    "lon" : -1.5479509,
+    "id" : "DLTNDPL",
+    "name" : "Darlington Sth Dn Pass Lp",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

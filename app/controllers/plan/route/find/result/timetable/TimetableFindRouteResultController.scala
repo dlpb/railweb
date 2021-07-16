@@ -12,10 +12,9 @@ import controllers.plan.route.find.result.FindRouteResultHelper.mkTime
 import controllers.plan.route.find.result.{FindRouteResultHelper, ResultViewModel, Waypoint}
 import javax.inject.{Inject, Singleton}
 import models.auth.roles.MapUser
-import models.location.{Location, MapLocation}
+import models.location.{Location}
 import models.plan.timetable.trains.TrainTimetableService
 import models.route.Route
-import models.route.display.map.MapRoute
 import play.api.mvc.{AbstractController, AnyContent, ControllerComponents}
 import services.location.LocationService
 import services.plan.pointtopoint.{Path, PointToPointRouteFinderService}
@@ -113,10 +112,8 @@ class TimetableFindRouteResultController @Inject()(
 
         val path: Path = pathService.findRouteForWaypoints(timetable.locations.map(_.tiploc), followFixedLinks, followFreightLinks, followUnknownLinks)
 
-        val mapLocationList = path.locations.map(MapLocation(_))
-        val locationsToRouteVia = path.locations.map(_.id)
+        val locationsList = path.locations
 
-        val mapRouteList = path.routes.map(r => MapRoute(r))
         val routeList = path.routes
         val waypoints = path.locations.map(l => {
           val isPublicStop = timetable.locations.find(_.tiploc.equals(l.id)).exists(t => t.publicArrival.isDefined || t.publicDeparture.isDefined)
@@ -152,8 +149,7 @@ class TimetableFindRouteResultController @Inject()(
         request.user,
         token,
         ResultViewModel(
-        mapLocationList,
-        mapRouteList,
+        locationsList,
         routeList,
         waypoints,
         path.followFreightLinks,

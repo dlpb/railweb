@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.61628,
+    "lon" : -1.2619277,
+    "id" : "DIDC940",
+    "name" : "Didcot Sig. Sb940",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.620206,
+    "lon" : -1.2891496,
+    "id" : "MILTJN",
+    "name" : "Milton Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

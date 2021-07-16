@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.377468,
+    "lon" : 1.3003001,
+    "id" : "BCNGNOS",
+    "name" : "Birchington-On-Sea",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.364431,
+    "lon" : 1.1176862,
+    "id" : "HRNEBAY",
+    "name" : "Herne Bay",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

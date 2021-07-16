@@ -1,11 +1,12 @@
 package services.location
 
-import javax.inject.Inject
+import javax.inject.{Inject, Singleton}
 import models.location.Location
 import models.route.RoutePoint
 import services.route.RouteService
 import services.visit.location.PathElementLocation
 
+@Singleton
 class AdjacentLocationService @Inject() (locationService: LocationService, routeService: RouteService){
   def findAdjacentLocations(startingPoint: Location,
                             orrStationMaxDepth: Int = 2,

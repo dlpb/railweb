@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.378418,
+    "lon" : -2.372843,
+    "id" : "BATHSPA",
+    "name" : "Bath Spa",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.397936,
+    "lon" : -2.3221749,
+    "id" : "BTHMPTJ",
+    "name" : "Bathampton Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

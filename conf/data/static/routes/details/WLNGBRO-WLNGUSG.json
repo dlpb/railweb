@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.303752,
+    "lon" : -0.6764318,
+    "id" : "WLNGBRO",
+    "name" : "Wellingborough",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.310608,
+    "lon" : -0.6744964,
+    "id" : "WLNGUSG",
+    "name" : "Wellingborough Up Tc Gbrf",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

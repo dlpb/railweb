@@ -22,7 +22,7 @@ class LocationsApiController @Inject()(
 
     def getLocationsForList() = {
       authAction { implicit request =>
-        Ok(write(locationService.sortedListLocationsGroupedByTiploc)).as(JSON)
+        Ok(write(locationService.sortedLocationsGroupedByTiploc)).as(JSON)
       }
     }
 

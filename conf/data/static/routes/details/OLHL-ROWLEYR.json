@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.470815,
+    "lon" : -2.0563672,
+    "id" : "OLHL",
+    "name" : "Old Hill",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.477351,
+    "lon" : -2.0309191,
+    "id" : "ROWLEYR",
+    "name" : "Rowley Regis",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

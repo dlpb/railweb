@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.49894,
+    "lon" : -1.93927,
+    "id" : "WMTWWGOC",
+    "name" : "Winson Green Outer Circle",
+    "type" : "Metro"
+  },
+  "to" : {
+    "lat" : 52.5021,
+    "lon" : -1.95229,
+    "id" : "WMTWHBS",
+    "name" : "Handsworth Booth Street",
+    "type" : "Metro"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Metro",
+  "speed" : "OHLE"
+} ]

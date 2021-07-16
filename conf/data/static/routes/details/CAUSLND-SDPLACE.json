@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.405708,
+    "lon" : -4.4663925,
+    "id" : "CAUSLND",
+    "name" : "Causeland",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.387671,
+    "lon" : -4.4648089,
+    "id" : "SDPLACE",
+    "name" : "Sandplace",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.506834,
+    "lon" : -0.12227171,
+    "id" : "CHRX",
+    "name" : "London Charing Cross",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.504259,
+    "lon" : -0.1080692,
+    "id" : "WLOE",
+    "name" : "London Waterloo East",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

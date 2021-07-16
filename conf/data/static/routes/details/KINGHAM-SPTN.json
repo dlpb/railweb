@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.902238,
+    "lon" : -1.6285392,
+    "id" : "KINGHAM",
+    "name" : "Kingham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.865922,
+    "lon" : -1.5925457,
+    "id" : "SPTN",
+    "name" : "Shipton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

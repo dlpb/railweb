@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.587227,
+    "lon" : 0.21924371,
+    "id" : "GIDEPKJ",
+    "name" : "Gidea Park Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.593177,
+    "lon" : 0.23411621,
+    "id" : "HRLDWOD",
+    "name" : "Harold Wood",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

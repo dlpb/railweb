@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.872643,
+    "lon" : -0.39588817,
+    "id" : "LUTOAPY",
+    "name" : "Luton Airport Parkway",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.882446,
+    "lon" : -0.41394801,
+    "id" : "LUTON",
+    "name" : "Luton",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

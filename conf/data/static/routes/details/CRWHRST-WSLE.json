@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.888727,
+    "lon" : 0.50148674,
+    "id" : "CRWHRST",
+    "name" : "Crowhurst",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.853166,
+    "lon" : 0.54013489,
+    "id" : "WSLE",
+    "name" : "West St Leonards",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "70-90"
+} ]

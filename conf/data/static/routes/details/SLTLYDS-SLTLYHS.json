@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.485073,
+    "lon" : -1.8654508,
+    "id" : "SLTLYDS",
+    "name" : "Saltley Emr",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.485937,
+    "lon" : -1.8656544,
+    "id" : "SLTLYHS",
+    "name" : "Saltley L.I.P.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

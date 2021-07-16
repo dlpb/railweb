@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.11735,
+    "lon" : -1.8890838,
+    "id" : "WSHFORD",
+    "name" : "Wishford",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.118458,
+    "lon" : -1.8906384,
+    "id" : "WYLYAHB",
+    "name" : "Wylye Ahb",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

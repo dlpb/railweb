@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.547812,
+    "lon" : -3.7463106,
+    "id" : "MRGMAWE",
+    "name" : "Margam Abbey Works East",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.54073,
+    "lon" : -3.7435879,
+    "id" : "MRGMTMD",
+    "name" : "Margam L.I.P.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

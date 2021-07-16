@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.764828,
+    "lon" : -1.2396452,
+    "id" : "MILFDY",
+    "name" : "Milford Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.775862,
+    "lon" : -1.2361378,
+    "id" : "MILFLOP",
+    "name" : "Milford Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

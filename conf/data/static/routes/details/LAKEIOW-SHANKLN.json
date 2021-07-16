@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.646359,
+    "lon" : -1.166393,
+    "id" : "LAKEIOW",
+    "name" : "Lake",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.634025,
+    "lon" : -1.1796766,
+    "id" : "SHANKLN",
+    "name" : "Shanklin",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

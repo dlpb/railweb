@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.64285,
+    "lon" : -2.0948023,
+    "id" : "LITLBRO",
+    "name" : "Littleborough",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.696456,
+    "lon" : -2.1046917,
+    "id" : "WDEN",
+    "name" : "Walsden",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

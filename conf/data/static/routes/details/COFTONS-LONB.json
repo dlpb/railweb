@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.379965,
+    "lon" : -1.9843982,
+    "id" : "COFTONS",
+    "name" : "Cofton Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.397046,
+    "lon" : -1.980674,
+    "id" : "LONB",
+    "name" : "Longbridge",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

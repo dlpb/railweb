@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.686364,
+    "lon" : -2.8835473,
+    "id" : "WELSYOK",
+    "name" : "Yockleton",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.681193,
+    "lon" : -2.8289488,
+    "id" : "WELSHAN",
+    "name" : "Hanwood",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

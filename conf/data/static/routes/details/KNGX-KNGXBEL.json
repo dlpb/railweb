@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.532256,
+    "lon" : -0.1233741,
+    "id" : "KNGX",
+    "name" : "London Kings Cross",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.54087,
+    "lon" : -0.12277459,
+    "id" : "KNGXBEL",
+    "name" : "Belle Isle",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

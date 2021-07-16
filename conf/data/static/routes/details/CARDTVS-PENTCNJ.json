@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.475799,
+    "lon" : -3.181931,
+    "id" : "CARDTVS",
+    "name" : "Canton Taff Vale Sidings",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.475057,
+    "lon" : -3.1975059,
+    "id" : "PENTCNJ",
+    "name" : "Penarth Curve North Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

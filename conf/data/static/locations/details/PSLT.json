@@ -1,0 +1,10 @@
+[ {
+  "id" : "PSLT",
+  "crp" : "",
+  "route" : "London North Western",
+  "changeTime" : "Set(None)",
+  "interchangeType" : "0 - Not an interchange point",
+  "county" : "North West",
+  "district" : "Merseyside",
+  "postcode" : "\"CH62 4XB"
+} ]

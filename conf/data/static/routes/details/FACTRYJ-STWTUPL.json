@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.470884,
+    "lon" : -0.13932754,
+    "id" : "FACTRYJ",
+    "name" : "Factory Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.475938,
+    "lon" : -0.14270757,
+    "id" : "STWTUPL",
+    "name" : "Stewarts Lane Dpt Up Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

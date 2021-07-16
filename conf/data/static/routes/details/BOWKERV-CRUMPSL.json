@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.5249,
+    "lon" : -2.2499,
+    "id" : "BOWKERV",
+    "name" : "Bowker Vale Mtlk",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.5174,
+    "lon" : -2.241,
+    "id" : "CRUMPSL",
+    "name" : "Crumpsall Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.966268,
+    "lon" : -2.0190561,
+    "id" : "CRBG",
+    "name" : "Corbridge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.948896,
+    "lon" : -1.9719608,
+    "id" : "RIDNGML",
+    "name" : "Riding Mill",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

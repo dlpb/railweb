@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.588882,
+    "lon" : -0.0598037,
+    "id" : "TTNHMHL",
+    "name" : "Tottenham Hale",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.58187,
+    "lon" : -0.059972464,
+    "id" : "TTNHMSJ",
+    "name" : "Tottenham South Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

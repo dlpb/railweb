@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.244564,
+    "lon" : 0.0039165517,
+    "id" : "HRSTGRN",
+    "name" : "Hurst Green",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.176413,
+    "lon" : -0.0070375092,
+    "id" : "LINGFLD",
+    "name" : "Lingfield",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

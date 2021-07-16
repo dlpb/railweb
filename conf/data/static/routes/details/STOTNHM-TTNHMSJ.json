@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.580429,
+    "lon" : -0.071811542,
+    "id" : "STOTNHM",
+    "name" : "South Tottenham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.58187,
+    "lon" : -0.059972464,
+    "id" : "TTNHMSJ",
+    "name" : "Tottenham South Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

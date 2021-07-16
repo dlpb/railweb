@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.46522,
+    "lon" : -0.1295,
+    "id" : "LUNCLN",
+    "name" : "Clapham North",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.46156,
+    "lon" : -0.13802,
+    "id" : "LUNCLC",
+    "name" : "Clapham Common",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

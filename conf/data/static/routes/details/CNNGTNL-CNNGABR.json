@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.437354,
+    "lon" : -0.23447832,
+    "id" : "CNNGTNL",
+    "name" : "Connington Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.383104,
+    "lon" : -0.19952723,
+    "id" : "CNNGABR",
+    "name" : "Abbots Ripton",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

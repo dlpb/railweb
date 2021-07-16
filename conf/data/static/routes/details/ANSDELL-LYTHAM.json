@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.741521,
+    "lon" : -2.9932931,
+    "id" : "ANSDELL",
+    "name" : "Ansdell & Fairhaven",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.73928,
+    "lon" : -2.9639487,
+    "id" : "LYTHAM",
+    "name" : "Lytham",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

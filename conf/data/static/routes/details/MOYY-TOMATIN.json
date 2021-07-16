@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.383911,
+    "lon" : -4.0569783,
+    "id" : "MOYY",
+    "name" : "Moy",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 57.338583,
+    "lon" : -4.0023333,
+    "id" : "TOMATIN",
+    "name" : "Tomatin",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-100"
+} ]

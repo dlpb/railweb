@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.445663,
+    "lon" : 0.36971033,
+    "id" : "GRVSFRY",
+    "name" : "Gravesend Piers",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.4519,
+    "lon" : 0.3646,
+    "id" : "TLBYRSD",
+    "name" : "Tilbury Riverside",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

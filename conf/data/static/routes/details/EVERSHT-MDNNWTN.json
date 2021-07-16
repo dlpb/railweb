@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.83522,
+    "lon" : -2.5801556,
+    "id" : "EVERSHT",
+    "name" : "Evershot",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.780148,
+    "lon" : -2.5695873,
+    "id" : "MDNNWTN",
+    "name" : "Maiden Newton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

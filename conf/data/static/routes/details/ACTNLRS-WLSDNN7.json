@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.53339,
+    "lon" : -0.25149187,
+    "id" : "ACTNLRS",
+    "name" : "Acton Lane Reception Sdgs",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.535748,
+    "lon" : -0.25830817,
+    "id" : "WLSDNN7",
+    "name" : "Willesden No7",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

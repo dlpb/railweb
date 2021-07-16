@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.024534,
+    "lon" : -3.1233321,
+    "id" : "FRWAYD",
+    "name" : "Fairwater Yard",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.024852,
+    "lon" : -3.1239529,
+    "id" : "TAUNTON",
+    "name" : "Taunton",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

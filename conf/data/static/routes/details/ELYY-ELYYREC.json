@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.390457,
+    "lon" : 0.26622959,
+    "id" : "ELYY",
+    "name" : "Ely",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.388698,
+    "lon" : 0.26421418,
+    "id" : "ELYYREC",
+    "name" : "Ely Recp.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

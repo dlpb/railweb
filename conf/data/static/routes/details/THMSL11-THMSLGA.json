@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.507212,
+    "lon" : 0.46488165,
+    "id" : "THMSL11",
+    "name" : "London Gateway Port Lg11",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.507212,
+    "lon" : 0.46488165,
+    "id" : "THMSLGA",
+    "name" : "London Gateway Arrival",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

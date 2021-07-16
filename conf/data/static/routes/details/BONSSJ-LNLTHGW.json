@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.976374,
+    "lon" : -3.6494721,
+    "id" : "BONSSJ",
+    "name" : "Bo'ness Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.976357,
+    "lon" : -3.5961847,
+    "id" : "LNLTHGW",
+    "name" : "Linlithgow",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

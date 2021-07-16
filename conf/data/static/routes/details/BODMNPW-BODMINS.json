@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.446097,
+    "lon" : -4.6624485,
+    "id" : "BODMNPW",
+    "name" : "Bodmin Parkway",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.445545,
+    "lon" : -4.6653193,
+    "id" : "BODMINS",
+    "name" : "Bodmin Sdg",
+    "type" : "Point"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

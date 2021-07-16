@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.69626,
+    "lon" : -1.0833816,
+    "id" : "DRAXBJ",
+    "name" : "Drax Branch Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.69849,
+    "lon" : -1.1145804,
+    "id" : "HENSALL",
+    "name" : "Hensall",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

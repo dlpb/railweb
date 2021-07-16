@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.646791,
+    "lon" : -1.1076167,
+    "id" : "LESTHRJ",
+    "name" : "Humberstone Rd Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.694174,
+    "lon" : -1.0825327,
+    "id" : "SYSTON",
+    "name" : "Syston",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

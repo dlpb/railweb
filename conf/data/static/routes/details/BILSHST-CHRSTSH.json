@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.01508,
+    "lon" : -0.44983586,
+    "id" : "BILSHST",
+    "name" : "Billingshurst",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.05077,
+    "lon" : -0.36386721,
+    "id" : "CHRSTSH",
+    "name" : "Christs Hospital",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

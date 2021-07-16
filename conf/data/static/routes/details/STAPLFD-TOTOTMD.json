@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.937806,
+    "lon" : -1.2811482,
+    "id" : "STAPLFD",
+    "name" : "Stapleford & Sandiacre",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.914672,
+    "lon" : -1.2805497,
+    "id" : "TOTOTMD",
+    "name" : "Toton T.M.D.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

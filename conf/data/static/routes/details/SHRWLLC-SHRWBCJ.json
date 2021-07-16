@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.763391,
+    "lon" : -2.7807442,
+    "id" : "SHRWLLC",
+    "name" : "Leaton L.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.71292,
+    "lon" : -2.7504739,
+    "id" : "SHRWBCJ",
+    "name" : "Shrewsbury Crewe Jn S.B.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

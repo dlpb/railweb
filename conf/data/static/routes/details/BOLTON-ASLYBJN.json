@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.572889,
+    "lon" : -2.4243472,
+    "id" : "BOLTON",
+    "name" : "Bolton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.58867,
+    "lon" : -2.4172541,
+    "id" : "ASLYBJN",
+    "name" : "Astley Bridge Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

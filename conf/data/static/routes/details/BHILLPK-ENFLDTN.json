@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.641581,
+    "lon" : -0.06927621,
+    "id" : "BHILLPK",
+    "name" : "Bush Hill Park",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.651655,
+    "lon" : -0.0787361,
+    "id" : "ENFLDTN",
+    "name" : "Enfield Town",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

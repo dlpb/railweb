@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.693811,
+    "lon" : -1.8575912,
+    "id" : "GRTLNDJ",
+    "name" : "Greetland Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.706843,
+    "lon" : -1.8914658,
+    "id" : "MLNRYDJ",
+    "name" : "Milner Royd Junction",
+    "type" : "Junction"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

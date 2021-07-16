@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.49894,
+    "lon" : -0.11216,
+    "id" : "LUBLAN",
+    "name" : "Lambeth North",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.494557,
+    "lon" : -0.10037463,
+    "id" : "EPHT",
+    "name" : "Elephant & Castle Underground",
+    "type" : "Location"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

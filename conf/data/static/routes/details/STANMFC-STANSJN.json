@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.901197,
+    "lon" : 0.19911503,
+    "id" : "STANMFC",
+    "name" : "Stansted Mountfitchet",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.902583,
+    "lon" : 0.20722176,
+    "id" : "STANSJN",
+    "name" : "Stansted South Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.499988,
+    "lon" : -4.1465565,
+    "id" : "IVRNBLC",
+    "name" : "Bunchrew L.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 57.527161,
+    "lon" : -4.0694845,
+    "id" : "DALCROS",
+    "name" : "Dalcross",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

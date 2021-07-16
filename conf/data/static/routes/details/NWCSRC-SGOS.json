@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 55.011416,
+    "lon" : -1.6167611,
+    "id" : "NWCSRC",
+    "name" : "Regent Centre (Bus)",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 55.001339,
+    "lon" : -1.6187487,
+    "id" : "SGOS",
+    "name" : "South Gosforth (T & W Metro)",
+    "type" : "Location"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Unknown",
+  "speed" : "OHLE"
+}, {
+  "from" : {
+    "lat" : 55.011416,
+    "lon" : -1.6167611,
+    "id" : "NWCSRC",
+    "name" : "Regent Centre (Bus)",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 55.001339,
+    "lon" : -1.6187487,
+    "id" : "SGOS",
+    "name" : "South Gosforth (T & W Metro)",
+    "type" : "Location"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

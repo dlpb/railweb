@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.587969,
+    "lon" : -2.1105997,
+    "id" : "WVRM118",
+    "name" : "Wolverhampton Signal 118",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.587914,
+    "lon" : -2.1200756,
+    "id" : "WVRMPTN",
+    "name" : "Wolverhampton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

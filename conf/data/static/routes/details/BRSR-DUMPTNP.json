@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.360947,
+    "lon" : 1.4334373,
+    "id" : "BRSR",
+    "name" : "Broadstairs",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.345953,
+    "lon" : 1.4241715,
+    "id" : "DUMPTNP",
+    "name" : "Dumpton Park",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

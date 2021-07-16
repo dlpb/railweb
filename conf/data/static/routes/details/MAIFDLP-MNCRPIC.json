@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.474609,
+    "lon" : -2.2218101,
+    "id" : "MAIFDLP",
+    "name" : "Mayfield Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.477002,
+    "lon" : -2.2301094,
+    "id" : "MNCRPIC",
+    "name" : "Manchester Piccadilly",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 53.743754,
+    "lon" : -0.3483644,
+    "id" : "HULL",
+    "name" : "Hull",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.744461,
+    "lon" : -0.3470647,
+    "id" : "HULLBS",
+    "name" : "Hull Bus Stn",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : " 1"
+}, {
+  "from" : {
+    "lat" : 53.743754,
+    "lon" : -0.3483644,
+    "id" : "HULL",
+    "name" : "Hull",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.744461,
+    "lon" : -0.3470647,
+    "id" : "HULLBS",
+    "name" : "Hull Bus Stn",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "1 MINUTES"
+} ]

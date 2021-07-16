@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.341589,
+    "lon" : -1.3886993,
+    "id" : "STBBMR",
+    "name" : "Birley Moor Road",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 53.343592,
+    "lon" : -1.3810901,
+    "id" : "STBHAC",
+    "name" : "Hackenthorpe",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

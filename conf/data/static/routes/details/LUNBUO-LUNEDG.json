@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.603,
+    "lon" : -0.26427,
+    "id" : "LUNBUO",
+    "name" : "Burnt Oak",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.61385,
+    "lon" : -0.27515,
+    "id" : "LUNEDG",
+    "name" : "Edgware",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

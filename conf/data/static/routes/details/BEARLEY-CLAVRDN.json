@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.245046,
+    "lon" : -1.7496073,
+    "id" : "BEARLEY",
+    "name" : "Bearley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.276739,
+    "lon" : -1.6967381,
+    "id" : "CLAVRDN",
+    "name" : "Claverdon",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

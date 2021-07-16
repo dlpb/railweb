@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.75385,
+    "lon" : 0.403251,
+    "id" : "KLYNN",
+    "name" : "Kings Lynn",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.752534,
+    "lon" : 0.4107057,
+    "id" : "KLYNNJN",
+    "name" : "Kings Lynn Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

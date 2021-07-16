@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.915136,
+    "lon" : -4.1812961,
+    "id" : "CDDR",
+    "name" : "Cadder",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.921236,
+    "lon" : -4.154382,
+    "id" : "LENZIE",
+    "name" : "Lenzie",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

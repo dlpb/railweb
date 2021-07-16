@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.55046,
+    "lon" : -0.14067,
+    "id" : "LUNKET",
+    "name" : "Kentish Town",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.5393,
+    "lon" : -0.14316,
+    "id" : "LUNCAT",
+    "name" : "Camden Town",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

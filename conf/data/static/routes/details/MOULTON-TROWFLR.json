@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.462366,
+    "lon" : 1.1817474,
+    "id" : "MOULTON",
+    "name" : "Moulton",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.528382,
+    "lon" : 1.232691,
+    "id" : "TROWFLR",
+    "name" : "Flordon Level Xing",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

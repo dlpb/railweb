@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.229444,
+    "lon" : 0.16290759,
+    "id" : "CESTRNJ",
+    "name" : "Chesterton Junction Yd Nth",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.262515,
+    "lon" : 0.19705007,
+    "id" : "WATBECH",
+    "name" : "Waterbeach",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.385383,
+    "lon" : -3.948169,
+    "id" : "HWNAN",
+    "name" : "Nantyronen",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.390553,
+    "lon" : -3.930085,
+    "id" : "HWAER",
+    "name" : "Aberffrwd",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.418144,
+    "lon" : -2.4961197,
+    "id" : "KEYNSHM",
+    "name" : "Keynsham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.449552,
+    "lon" : -2.5581518,
+    "id" : "BRSTEDT",
+    "name" : "Bristol East Depot Dgl",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

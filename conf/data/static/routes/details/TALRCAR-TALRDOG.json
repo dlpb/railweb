@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.564591,
+    "lon" : -3.5384597,
+    "id" : "TALRCAR",
+    "name" : "Carno L.C.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.53264,
+    "lon" : -3.4595582,
+    "id" : "TALRDOG",
+    "name" : "Pontdolgoch",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

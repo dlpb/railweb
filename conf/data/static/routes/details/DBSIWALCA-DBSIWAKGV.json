@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.50319,
+    "lon" : 0.04864,
+    "id" : "DBSIWALCA",
+    "name" : "London City Airport",
+    "type" : "Light Rail"
+  },
+  "to" : {
+    "lat" : 51.50202,
+    "lon" : 0.06299,
+    "id" : "DBSIWAKGV",
+    "name" : "King George V",
+    "type" : "Light Rail"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Light Rail",
+  "speed" : "OHLE"
+} ]

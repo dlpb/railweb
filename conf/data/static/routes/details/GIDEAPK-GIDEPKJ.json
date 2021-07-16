@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.58190207482915,
+    "lon" : 0.20596430843825325,
+    "id" : "GIDEAPK",
+    "name" : "Gidea Park",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.587227,
+    "lon" : 0.21924371,
+    "id" : "GIDEPKJ",
+    "name" : "Gidea Park Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

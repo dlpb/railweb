@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.55067,
+    "lon" : 0.71058853,
+    "id" : "PRITLWL",
+    "name" : "Prittlewell",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.544395,
+    "lon" : 0.7116434,
+    "id" : "SEVCDSS",
+    "name" : "Southend Victoria Dss",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

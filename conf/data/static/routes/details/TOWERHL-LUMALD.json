@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.509649,
+    "lon" : -0.075680572,
+    "id" : "TOWERHL",
+    "name" : "Tower Hill Underground",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 51.51394,
+    "lon" : -0.07537,
+    "id" : "LUMALD",
+    "name" : "Aldgate",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.900956,
+    "lon" : 0.22055931,
+    "id" : "STANEJN",
+    "name" : "Stansted East Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.905829,
+    "lon" : 0.2201745,
+    "id" : "STANNJN",
+    "name" : "Stansted North Junction",
+    "type" : "Point"
+  },
+  "singleTrack" : "1",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.546232,
+    "lon" : -0.28753113,
+    "id" : "WLSD34",
+    "name" : "Willesden Wm830 & 934",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.551642,
+    "lon" : -0.29591023,
+    "id" : "WMBY",
+    "name" : "Wembley Central",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

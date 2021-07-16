@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.3993,
+    "lon" : -3.98884,
+    "id" : "HWCAB",
+    "name" : "Capel Bangor",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.385383,
+    "lon" : -3.948169,
+    "id" : "HWNAN",
+    "name" : "Nantyronen",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

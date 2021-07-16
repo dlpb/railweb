@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.066921,
+    "lon" : -2.2808974,
+    "id" : "SETTLE",
+    "name" : "Settle",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.039192,
+    "lon" : -2.2857798,
+    "id" : "SETTLEJ",
+    "name" : "Settle Jn",
+    "type" : "Junction"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

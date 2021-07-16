@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.834298,
+    "lon" : -0.21957697,
+    "id" : "FSHRSGT",
+    "name" : "Fishersgate",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.835757,
+    "lon" : -0.20500693,
+    "id" : "PSLDAWH",
+    "name" : "Portslade",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

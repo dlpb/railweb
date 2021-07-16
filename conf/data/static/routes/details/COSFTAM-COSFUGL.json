@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.644831,
+    "lon" : -2.3006589,
+    "id" : "COSFTAM",
+    "name" : "Cosford Tamper Siding",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.644831,
+    "lon" : -2.3006589,
+    "id" : "COSFUGL",
+    "name" : "Cosford Ugl",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

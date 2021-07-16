@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.411686,
+    "lon" : -1.3656323,
+    "id" : "CANKLOW",
+    "name" : "Canklow Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.386483,
+    "lon" : -1.3557679,
+    "id" : "TREETNJ",
+    "name" : "Treeton Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.554769,
+    "lon" : -0.25360044,
+    "id" : "NEASDSJ",
+    "name" : "Neasden South Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.550767,
+    "lon" : -0.25117185,
+    "id" : "NEASJN",
+    "name" : "Neasden Junction",
+    "type" : "Location"
+  },
+  "singleTrack" : "2",
+  "electrification" : "NONE",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.510661,
+    "lon" : -3.5777519,
+    "id" : "BRGE65",
+    "name" : "Bridgend Signal Pt3028",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.506795,
+    "lon" : -3.575039,
+    "id" : "BRGEND",
+    "name" : "Bridgend",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

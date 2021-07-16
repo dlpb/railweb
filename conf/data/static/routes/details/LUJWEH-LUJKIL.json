@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.54678865,
+    "lon" : -0.191016868,
+    "id" : "LUJWEH",
+    "name" : "West Hampstead",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.5471715,
+    "lon" : -0.205002,
+    "id" : "LUJKIL",
+    "name" : "Kilburn",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

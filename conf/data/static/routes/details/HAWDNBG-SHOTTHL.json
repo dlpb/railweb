@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.218157,
+    "lon" : -3.0323001,
+    "id" : "HAWDNBG",
+    "name" : "Hawarden Bridge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.212595,
+    "lon" : -3.0382161,
+    "id" : "SHOTTHL",
+    "name" : "Shotton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

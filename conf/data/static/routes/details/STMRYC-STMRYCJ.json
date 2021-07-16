@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.39476,
+    "lon" : 0.10621164,
+    "id" : "STMRYC",
+    "name" : "St Mary Cray",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.396093,
+    "lon" : 0.076328523,
+    "id" : "STMRYCJ",
+    "name" : "St Mary Cray Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "70-90"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.339437,
+    "lon" : -0.11059946,
+    "id" : "PURLEY",
+    "name" : "Purley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.330941,
+    "lon" : -0.12358097,
+    "id" : "REEDHMS",
+    "name" : "Reedham (Surrey)",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.911882,
+    "lon" : -1.4395417,
+    "id" : "MBRKDE",
+    "name" : "Millbrook Dock Entrance",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.907027,
+    "lon" : -1.4342096,
+    "id" : "SOTD107",
+    "name" : "Soton W Docks Berth 109",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

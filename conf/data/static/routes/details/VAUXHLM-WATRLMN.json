@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.486508,
+    "lon" : -0.12266035,
+    "id" : "VAUXHLM",
+    "name" : "Vauxhall",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.502617,
+    "lon" : -0.1127912,
+    "id" : "WATRLMN",
+    "name" : "London Waterloo",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

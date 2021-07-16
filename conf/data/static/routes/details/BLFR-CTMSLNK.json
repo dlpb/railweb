@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.511184,
+    "lon" : -0.10312739,
+    "id" : "BLFR",
+    "name" : "London Blackfriars",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.51522,
+    "lon" : -0.10356507,
+    "id" : "CTMSLNK",
+    "name" : "City Thameslink",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

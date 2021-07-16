@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.766045,
+    "lon" : -4.1803091,
+    "id" : "EKILBRD",
+    "name" : "East Kilbride",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.76419,
+    "lon" : -4.2107321,
+    "id" : "HARMYRL",
+    "name" : "Hairmyres Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

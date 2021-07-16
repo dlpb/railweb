@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.712354,
+    "lon" : -0.84549778,
+    "id" : "PRIN159",
+    "name" : "Princes Risborough Me159",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.717097,
+    "lon" : -0.84414658,
+    "id" : "PRINRIS",
+    "name" : "Princes Risborough",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

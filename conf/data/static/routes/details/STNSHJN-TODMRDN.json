@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.718781,
+    "lon" : -2.0950037,
+    "id" : "STNSHJN",
+    "name" : "Stansfield Hall Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.713924,
+    "lon" : -2.0995685,
+    "id" : "TODMRDN",
+    "name" : "Todmorden",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

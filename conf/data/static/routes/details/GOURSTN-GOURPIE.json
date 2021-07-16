@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 55.961237,
+    "lon" : -4.8155535,
+    "id" : "GOURSTN",
+    "name" : "Gourock",
+    "type" : "Bus"
+  },
+  "to" : {
+    "lat" : 55.962411,
+    "lon" : -4.817989,
+    "id" : "GOURPIE",
+    "name" : "Gourock Pier",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : " 1"
+}, {
+  "from" : {
+    "lat" : 55.961237,
+    "lon" : -4.8155535,
+    "id" : "GOURSTN",
+    "name" : "Gourock",
+    "type" : "Bus"
+  },
+  "to" : {
+    "lat" : 55.962411,
+    "lon" : -4.817989,
+    "id" : "GOURPIE",
+    "name" : "Gourock Pier",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "1 MINUTES"
+} ]

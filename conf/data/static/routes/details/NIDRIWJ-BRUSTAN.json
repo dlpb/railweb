@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.937217,
+    "lon" : -3.1089362,
+    "id" : "NIDRIWJ",
+    "name" : "Niddrie West Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.942222,
+    "lon" : -3.1009458,
+    "id" : "BRUSTAN",
+    "name" : "Brunstane",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

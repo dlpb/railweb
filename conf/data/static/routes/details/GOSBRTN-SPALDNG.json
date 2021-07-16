@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.855309,
+    "lon" : -0.18604581,
+    "id" : "GOSBRTN",
+    "name" : "Gosberton S.B.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.788658,
+    "lon" : -0.15726111,
+    "id" : "SPALDNG",
+    "name" : "Spalding",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

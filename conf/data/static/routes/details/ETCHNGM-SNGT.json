@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.010882,
+    "lon" : 0.44171818,
+    "id" : "ETCHNGM",
+    "name" : "Etchingham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.020294,
+    "lon" : 0.36321461,
+    "id" : "SNGT",
+    "name" : "Stonegate",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "70-90"
+} ]

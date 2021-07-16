@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.149258,
+    "lon" : 0.27742512,
+    "id" : "HBROOMS",
+    "name" : "High Brooms",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.184263,
+    "lon" : 0.27771946,
+    "id" : "SMHLTUN",
+    "name" : "Somerhill Tunnel",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "70-90"
+} ]

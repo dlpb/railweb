@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.830713,
+    "lon" : -0.64016831,
+    "id" : "BRHM",
+    "name" : "Barnham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.832388,
+    "lon" : -0.73894033,
+    "id" : "DRYTON",
+    "name" : "Drayton",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

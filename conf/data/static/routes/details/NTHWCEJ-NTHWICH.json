@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.265109,
+    "lon" : -2.4814121,
+    "id" : "NTHWCEJ",
+    "name" : "Northwich East Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.261297,
+    "lon" : -2.4968552,
+    "id" : "NTHWICH",
+    "name" : "Northwich",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

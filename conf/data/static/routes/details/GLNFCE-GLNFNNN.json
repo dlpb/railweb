@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.872156,
+    "lon" : -5.4483823,
+    "id" : "GLNFCE",
+    "name" : "Glenfinnan C.E.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.872494,
+    "lon" : -5.449497,
+    "id" : "GLNFNNN",
+    "name" : "Glenfinnan",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

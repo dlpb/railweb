@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.69626,
+    "lon" : -1.0833816,
+    "id" : "DRAXBJ",
+    "name" : "Drax Branch Junction",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.730159,
+    "lon" : -0.99959404,
+    "id" : "DRAXFHH",
+    "name" : "Drax Aes (Flhh)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

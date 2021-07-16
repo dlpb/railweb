@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.498227,
+    "lon" : -3.1353883,
+    "id" : "RUMNYRB",
+    "name" : "Rumney River Bridge Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.516286,
+    "lon" : -3.0875863,
+    "id" : "WENTLOG",
+    "name" : "Wentloog (Freightliners)",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

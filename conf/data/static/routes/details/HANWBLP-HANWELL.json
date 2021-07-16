@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.508433,
+    "lon" : -0.36151845,
+    "id" : "HANWBLP",
+    "name" : "Hanwell Bridge Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.511734,
+    "lon" : -0.33857269,
+    "id" : "HANWELL",
+    "name" : "Hanwell",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

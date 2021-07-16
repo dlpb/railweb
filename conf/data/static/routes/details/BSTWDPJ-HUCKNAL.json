@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.01344,
+    "lon" : -1.1871213,
+    "id" : "BSTWDPJ",
+    "name" : "Bestwood Park Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.038291,
+    "lon" : -1.1956771,
+    "id" : "HUCKNAL",
+    "name" : "Hucknall",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

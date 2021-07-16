@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.44789655929224,
+    "lon" : -0.40983822608523196,
+    "id" : "FELTHAM",
+    "name" : "Feltham",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.45932887671939,
+    "lon" : -0.44696755900678276,
+    "id" : "HTRBUS4",
+    "name" : "Heathrow Terminal 4 Buses Only",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "50 MINUTES"
+} ]

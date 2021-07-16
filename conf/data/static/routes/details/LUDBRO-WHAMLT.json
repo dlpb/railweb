@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.52466,
+    "lon" : -0.01282,
+    "id" : "LUDBRO",
+    "name" : "Bromley-By-Bow",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.527567,
+    "lon" : 0.0045976702,
+    "id" : "WHAMLT",
+    "name" : "West Ham Lt",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

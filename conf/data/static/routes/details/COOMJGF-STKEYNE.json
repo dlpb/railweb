@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.443433,
+    "lon" : -4.4802984,
+    "id" : "COOMJGF",
+    "name" : "Coombe No. 1 G.F.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.422862,
+    "lon" : -4.4633417,
+    "id" : "STKEYNE",
+    "name" : "St Keyne Wishing Well Halt",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

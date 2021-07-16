@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.601643,
+    "lon" : -3.0428389,
+    "id" : "AINSDAL",
+    "name" : "Ainsdale",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.633586,
+    "lon" : -3.0148771,
+    "id" : "BKDLE",
+    "name" : "Birkdale",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

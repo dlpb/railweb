@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.50313,
+    "lon" : -0.15278,
+    "id" : "LUPHPC",
+    "name" : "Hyde Park Corner",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.50674,
+    "lon" : -0.14276,
+    "id" : "LUJGRP",
+    "name" : "Green Park",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

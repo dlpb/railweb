@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.752834,
+    "lon" : -2.3699409,
+    "id" : "ACRNGTN",
+    "name" : "Accrington",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.75052,
+    "lon" : -2.3908176,
+    "id" : "CHOS",
+    "name" : "Church & Oswaldtwistle",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

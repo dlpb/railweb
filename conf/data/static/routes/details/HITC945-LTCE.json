@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.968179,
+    "lon" : -0.2554953,
+    "id" : "HITC945",
+    "name" : "Hitchin East Jn Sig K945",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.980412,
+    "lon" : -0.22866397,
+    "id" : "LTCE",
+    "name" : "Letchworth Garden City",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

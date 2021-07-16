@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.609477,
+    "lon" : -2.1243287,
+    "id" : "BSBYJN",
+    "name" : "Bushbury Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.586511,
+    "lon" : -2.0791724,
+    "id" : "PBLJWM",
+    "name" : "Portobello Jn (West Mids)",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

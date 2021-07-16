@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.51388,
+    "lon" : 0.008876,
+    "id" : "DBTGBCAT",
+    "name" : "Canning Town",
+    "type" : "Light Rail"
+  },
+  "to" : {
+    "lat" : 51.50056,
+    "lon" : 0.0036,
+    "id" : "LUJNOG",
+    "name" : "North Greenwich",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

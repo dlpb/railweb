@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.380324,
+    "lon" : -4.1385521,
+    "id" : "PLYM120",
+    "name" : "Plymouth Grnd Posn Sig 120",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.378823,
+    "lon" : -4.1424089,
+    "id" : "PLYMPSD",
+    "name" : "Plymouth Park Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

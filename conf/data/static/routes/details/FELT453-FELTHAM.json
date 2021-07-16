@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.448629,
+    "lon" : -0.40614303,
+    "id" : "FELT453",
+    "name" : "Feltham Signal F453",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.44789655929224,
+    "lon" : -0.40983822608523196,
+    "id" : "FELTHAM",
+    "name" : "Feltham",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.440526,
+    "lon" : 0.0098780805,
+    "id" : "GRVPKUS",
+    "name" : "Grove Park Up C.H.S.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.4428,
+    "lon" : 0.0093879544,
+    "id" : "GRVPUHS",
+    "name" : "Grove Park Up Headshunt",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

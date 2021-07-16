@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.702151,
+    "lon" : -3.3113463,
+    "id" : "CWMBRGD",
+    "name" : "Cwmbargoed",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.669117,
+    "lon" : -3.2957867,
+    "id" : "TRELEWS",
+    "name" : "Trelewis",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

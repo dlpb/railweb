@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.183282,
+    "lon" : 1.0080729,
+    "id" : "STWMDGL",
+    "name" : "Stowmarket D.G.L.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.152487,
+    "lon" : 1.0556915,
+    "id" : "NEEDHAM",
+    "name" : "Needham Market",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

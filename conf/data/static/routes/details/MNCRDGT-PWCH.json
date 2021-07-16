@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 53.474074,
+    "lon" : -2.2511256,
+    "id" : "MNCRDGT",
+    "name" : "Deansgate",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.5334,
+    "lon" : -2.2823,
+    "id" : "PWCH",
+    "name" : "Prestwich Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "42 MINUTES"
+}, {
+  "from" : {
+    "lat" : 53.474074,
+    "lon" : -2.2511256,
+    "id" : "MNCRDGT",
+    "name" : "Deansgate",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.5334,
+    "lon" : -2.2823,
+    "id" : "PWCH",
+    "name" : "Prestwich Mtlk",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "45 MINUTES"
+} ]

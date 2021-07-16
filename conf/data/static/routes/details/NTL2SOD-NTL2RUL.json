@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.910746,
+    "lon" : -1.170395,
+    "id" : "NTL2SOD",
+    "name" : "Southchurch Drive",
+    "type" : "Tram"
+  },
+  "to" : {
+    "lat" : 52.914597,
+    "lon" : -1.158427,
+    "id" : "NTL2RUL",
+    "name" : "Ruddington Lane",
+    "type" : "Tram"
+  },
+  "singleTrack" : "N",
+  "electrification" : "OHLE",
+  "type" : "Tram",
+  "speed" : "0-35"
+} ]

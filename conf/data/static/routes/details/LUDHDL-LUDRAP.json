@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.492328,
+    "lon" : -0.222825,
+    "id" : "LUDHDL",
+    "name" : "Hammersmith (Dist&Picc Line)",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.49419,
+    "lon" : -0.2356,
+    "id" : "LUDRAP",
+    "name" : "Ravenscourt Park",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

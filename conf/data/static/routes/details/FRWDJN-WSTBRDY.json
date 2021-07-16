@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.258965,
+    "lon" : -2.227966,
+    "id" : "FRWDJN",
+    "name" : "Fairwood Jn",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.260407,
+    "lon" : -2.2168665,
+    "id" : "WSTBRDY",
+    "name" : "Westbury Down T.C.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

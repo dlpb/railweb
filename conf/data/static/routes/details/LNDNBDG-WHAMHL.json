@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 51.503428,
+    "lon" : -0.084040543,
+    "id" : "LNDNBDG",
+    "name" : "London Bridge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.52835,
+    "lon" : 0.0050934059,
+    "id" : "WHAMHL",
+    "name" : "West Ham",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "26 MINUTES"
+}, {
+  "from" : {
+    "lat" : 51.503428,
+    "lon" : -0.084040543,
+    "id" : "LNDNBDG",
+    "name" : "London Bridge",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.52835,
+    "lon" : 0.0050934059,
+    "id" : "WHAMHL",
+    "name" : "West Ham",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "31 MINUTES"
+} ]

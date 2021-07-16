@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.476157,
+    "lon" : -3.1749997,
+    "id" : "CRDFE",
+    "name" : "Cardiff East",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.494423,
+    "lon" : -3.1418769,
+    "id" : "PENGAMJ",
+    "name" : "Pengam Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

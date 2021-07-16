@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.11992,
+    "lon" : 0.27609615,
+    "id" : "STWHTNL",
+    "name" : "Strawberry Hill Tunnel",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.129941,
+    "lon" : 0.26301045,
+    "id" : "TUNWELL",
+    "name" : "Tunbridge Wells",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "70-90"
+} ]

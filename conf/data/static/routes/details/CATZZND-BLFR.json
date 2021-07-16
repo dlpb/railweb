@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.6109,
+    "lon" : -0.4244,
+    "id" : "CATZZND",
+    "name" : "Northwood Und",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.511184,
+    "lon" : -0.10312739,
+    "id" : "BLFR",
+    "name" : "London Blackfriars",
+    "type" : "Station"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "90 MINUTES"
+} ]

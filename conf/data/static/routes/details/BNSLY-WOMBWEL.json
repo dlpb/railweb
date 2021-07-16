@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.554183,
+    "lon" : -1.4772416,
+    "id" : "BNSLY",
+    "name" : "Barnsley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.517444,
+    "lon" : -1.4162969,
+    "id" : "WOMBWEL",
+    "name" : "Wombwell",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

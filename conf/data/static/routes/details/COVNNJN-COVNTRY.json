@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.401487,
+    "lon" : -1.5201692,
+    "id" : "COVNNJN",
+    "name" : "Coventry North Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.400741,
+    "lon" : -1.5136956,
+    "id" : "COVNTRY",
+    "name" : "Coventry",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

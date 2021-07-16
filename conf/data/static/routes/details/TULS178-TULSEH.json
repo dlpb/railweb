@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.437552,
+    "lon" : -0.10754631,
+    "id" : "TULS178",
+    "name" : "Tulse Hill Signal Vc178",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.439946,
+    "lon" : -0.10488611,
+    "id" : "TULSEH",
+    "name" : "Tulse Hill",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

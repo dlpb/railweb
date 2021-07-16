@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.535013,
+    "lon" : -0.25539483,
+    "id" : "HARLSJN",
+    "name" : "Harlesden Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.543187,
+    "lon" : -0.28037714,
+    "id" : "WLSDNBJ",
+    "name" : "Willesden Sudbury Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

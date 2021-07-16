@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.458624,
+    "lon" : 1.5696637,
+    "id" : "BECCLES",
+    "name" : "Beccles",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.395437,
+    "lon" : 1.5436786,
+    "id" : "BRAMPTN",
+    "name" : "Brampton (Suffolk)",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

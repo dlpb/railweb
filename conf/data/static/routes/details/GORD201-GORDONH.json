@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.659541,
+    "lon" : -0.091429681,
+    "id" : "GORD201",
+    "name" : "Gordon Hill Signal 201",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.663006,
+    "lon" : -0.094378434,
+    "id" : "GORDONH",
+    "name" : "Gordon Hill",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

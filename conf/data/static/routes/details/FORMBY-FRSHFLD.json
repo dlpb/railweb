@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.554213,
+    "lon" : -3.0709112,
+    "id" : "FORMBY",
+    "name" : "Formby",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.56668,
+    "lon" : -3.0719359,
+    "id" : "FRSHFLD",
+    "name" : "Freshfield",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

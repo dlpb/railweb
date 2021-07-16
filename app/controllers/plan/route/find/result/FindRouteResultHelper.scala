@@ -4,7 +4,6 @@ import java.net.URLDecoder
 
 import models.location.Location
 import models.route.Route
-import models.route.display.map.MapRoute
 import play.api.mvc.Call
 
 
@@ -67,8 +66,7 @@ object FindRouteResultHelper {
 case class Waypoint(id: String, name: String, isPublicStop: Boolean)
 
 case class ResultViewModel(
-                            mapLocationsList: List[models.location.MapLocation],
-                            mapRouteList: List[MapRoute],
+                            locationsList: List[models.location.Location],
                             routeList: List[models.route.Route],
                             waypoints: List[controllers.plan.route.find.result.Waypoint],
                             followFreightLinks: Boolean,

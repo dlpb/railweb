@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.07994,
+    "lon" : -4.825497,
+    "id" : "GRLCHHD",
+    "name" : "Garelochhead",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 56.012478,
+    "lon" : -4.7310476,
+    "id" : "HLNSBRU",
+    "name" : "Helensburgh Upper",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

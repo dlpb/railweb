@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.581407,
+    "lon" : -0.316548,
+    "id" : "KTON",
+    "name" : "Kenton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.59216686045377,
+    "lon" : -0.3345714670242,
+    "id" : "HROWDC",
+    "name" : "Harrow & Wealdstone",
+    "type" : "Station"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

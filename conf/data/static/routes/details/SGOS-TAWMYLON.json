@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.001339,
+    "lon" : -1.6187487,
+    "id" : "SGOS",
+    "name" : "South Gosforth (T & W Metro)",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 55.0088,
+    "lon" : -1.5914,
+    "id" : "TAWMYLON",
+    "name" : "Longbenton",
+    "type" : "Metro"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Unknown",
+  "speed" : "OHLE"
+} ]

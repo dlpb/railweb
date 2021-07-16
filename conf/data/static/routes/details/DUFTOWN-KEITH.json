@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 57.459488,
+    "lon" : -3.1320013,
+    "id" : "DUFTOWN",
+    "name" : "Dufftown",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 57.551397,
+    "lon" : -2.9545831,
+    "id" : "KEITH",
+    "name" : "Keith",
+    "type" : "Station"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

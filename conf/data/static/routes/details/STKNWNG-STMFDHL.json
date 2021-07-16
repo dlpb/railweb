@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.56477,
+    "lon" : -0.072214343,
+    "id" : "STKNWNG",
+    "name" : "Stoke Newington",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.575121,
+    "lon" : -0.076077059,
+    "id" : "STMFDHL",
+    "name" : "Stamford Hill",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

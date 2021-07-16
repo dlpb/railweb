@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.571278,
+    "lon" : -1.6788212,
+    "id" : "KNGSBSF",
+    "name" : "Kingsbury S.F.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.57416,
+    "lon" : -1.6775164,
+    "id" : "KNGSBYY",
+    "name" : "Kingsbury Sdgs",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.635007,
+    "lon" : -0.32775939,
+    "id" : "HELPSTN",
+    "name" : "Helpston Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.612374,
+    "lon" : -0.28726545,
+    "id" : "WRNGTNJ",
+    "name" : "Werrington Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "4",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.8882,
+    "lon" : -4.4159002,
+    "id" : "PWLHELI",
+    "name" : "Pwllheli",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.888042,
+    "lon" : -4.4161145,
+    "id" : "PWLHELS",
+    "name" : "Pwllheli Station Sidings",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

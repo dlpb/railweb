@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.0279,
+    "lon" : -1.7036,
+    "id" : "TAWMGCAP",
+    "name" : "Callerton Parkway",
+    "type" : "Metro"
+  },
+  "to" : {
+    "lat" : 55.0140295,
+    "lon" : -1.6781107,
+    "id" : "TAWMGBAF",
+    "name" : "Bank Foot",
+    "type" : "Metro"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Metro",
+  "speed" : "OHLE"
+} ]

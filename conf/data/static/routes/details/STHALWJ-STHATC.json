@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.503329,
+    "lon" : -0.39887544,
+    "id" : "STHALWJ",
+    "name" : "Southall West Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.504492,
+    "lon" : -0.38599639,
+    "id" : "STHATC",
+    "name" : "Southall T.C.",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

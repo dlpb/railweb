@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.838773,
+    "lon" : -4.4741577,
+    "id" : "ELDRSLI",
+    "name" : "Elderslie",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.834249,
+    "lon" : -4.5032084,
+    "id" : "JOHNSTN",
+    "name" : "Johnstone",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "75-90"
+} ]

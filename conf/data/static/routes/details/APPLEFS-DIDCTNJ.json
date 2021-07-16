@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.63334,
+    "lon" : -1.244038,
+    "id" : "APPLEFS",
+    "name" : "Appleford Sidings",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.621339,
+    "lon" : -1.244483,
+    "id" : "DIDCTNJ",
+    "name" : "Didcot North Jn",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

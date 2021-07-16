@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.435121,
+    "lon" : 0.44518479,
+    "id" : "HOOJUYD",
+    "name" : "Hoo Junction Up Yard",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.426691,
+    "lon" : 0.46634244,
+    "id" : "HIGM",
+    "name" : "Higham",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

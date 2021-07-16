@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.89312,
+    "lon" : -1.1486315,
+    "id" : "BCSTRTN",
+    "name" : "Bicester Village",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.925844,
+    "lon" : -1.0027909,
+    "id" : "CYDNJN",
+    "name" : "Claydon London & North Eastern Junction",
+    "type" : "Location"
+  },
+  "singleTrack" : "1",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.275518,
+    "lon" : -1.6538737,
+    "id" : "CHVNGTN",
+    "name" : "Chevington Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.266041,
+    "lon" : -1.6518473,
+    "id" : "CHVNLDS",
+    "name" : "Chevington Loop Down Sdg",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.47224,
+    "lon" : -0.1227,
+    "id" : "LUNSTO",
+    "name" : "Stockwell",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.486508,
+    "lon" : -0.12266035,
+    "id" : "VAUXHLM",
+    "name" : "Vauxhall",
+    "type" : "Station"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

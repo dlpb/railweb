@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.282068,
+    "lon" : -2.8957751,
+    "id" : "ELSMPRT",
+    "name" : "Ellesmere Port",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 53.278304,
+    "lon" : -2.8412254,
+    "id" : "STNLWAT",
+    "name" : "Stanlow & Thornton",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

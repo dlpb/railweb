@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.577421,
+    "lon" : -0.1052489,
+    "id" : "HRGY",
+    "name" : "Harringay",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.586076,
+    "lon" : -0.11161564,
+    "id" : "HRNSY",
+    "name" : "Hornsey",
+    "type" : "Station"
+  },
+  "singleTrack" : "6",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.38752,
+    "lon" : -3.9990607,
+    "id" : "KRKC",
+    "name" : "Kirkconnel",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.402221,
+    "lon" : -4.1836014,
+    "id" : "NWCMNCK",
+    "name" : "New Cumnock",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.976366,
+    "lon" : -2.8882923,
+    "id" : "LNGNDRY",
+    "name" : "Longniddry",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.952992,
+    "lon" : -2.9744609,
+    "id" : "PPAN",
+    "name" : "Prestonpans",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "110-125"
+} ]

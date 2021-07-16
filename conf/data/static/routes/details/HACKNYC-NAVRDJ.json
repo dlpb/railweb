@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.54705,
+    "lon" : -0.056636801,
+    "id" : "HACKNYC",
+    "name" : "Hackney Central",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.547339,
+    "lon" : -0.063230209,
+    "id" : "NAVRDJ",
+    "name" : "Navarino Road Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.436863,
+    "lon" : -1.8457099,
+    "id" : "HLGN",
+    "name" : "Hall Green",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 52.444222,
+    "lon" : -1.8362831,
+    "id" : "SPRD",
+    "name" : "Spring Road",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

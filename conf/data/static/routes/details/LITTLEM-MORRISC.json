@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.720039,
+    "lon" : -1.2280594,
+    "id" : "LITTLEM",
+    "name" : "Littlemore",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.72941,
+    "lon" : -1.1949305,
+    "id" : "MORRISC",
+    "name" : "Morris Cowley",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

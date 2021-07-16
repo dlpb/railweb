@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.644435,
+    "lon" : -0.17057632,
+    "id" : "NBAR133",
+    "name" : "New Barnet Signal K133",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.648416,
+    "lon" : -0.17274327,
+    "id" : "NBARNET",
+    "name" : "New Barnet",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

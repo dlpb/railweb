@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.858674,
+    "lon" : -4.2582357,
+    "id" : "GLGC",
+    "name" : "Glasgow Central",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 55.854576,
+    "lon" : -4.2591962,
+    "id" : "GLGCSD4",
+    "name" : "Glasgow Central No 4 Sdg",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

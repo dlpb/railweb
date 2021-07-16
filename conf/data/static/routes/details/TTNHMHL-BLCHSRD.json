@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.588882,
+    "lon" : -0.0598037,
+    "id" : "TTNHMHL",
+    "name" : "Tottenham Hale",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.586599,
+    "lon" : -0.041466928,
+    "id" : "BLCHSRD",
+    "name" : "Blackhorse Road",
+    "type" : "Station"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

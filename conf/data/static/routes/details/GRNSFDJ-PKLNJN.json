@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.963447,
+    "lon" : -1.608159,
+    "id" : "GRNSFDJ",
+    "name" : "Greensfield Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 54.9629,
+    "lon" : -1.5949516,
+    "id" : "PKLNJN",
+    "name" : "Park Lane Jn Gateshead",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

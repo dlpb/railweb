@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.63938,
+    "lon" : -0.44911981,
+    "id" : "WTFDSJN",
+    "name" : "Watford South Jn_(Met)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.6475,
+    "lon" : -0.4413,
+    "id" : "CRXLEY",
+    "name" : "Croxley Und",
+    "type" : "Point"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 53.660511,
+    "lon" : -1.4641241,
+    "id" : "OKNSHSJ",
+    "name" : "Oakenshaw South Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.668094,
+    "lon" : -1.4714745,
+    "id" : "OKNSHWJ",
+    "name" : "Oakenshaw Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+}, {
+  "from" : {
+    "lat" : 53.660511,
+    "lon" : -1.4641241,
+    "id" : "OKNSHSJ",
+    "name" : "Oakenshaw South Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.668094,
+    "lon" : -1.4714745,
+    "id" : "OKNSHWJ",
+    "name" : "Oakenshaw Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Unknown",
+  "speed" : "0-35"
+} ]

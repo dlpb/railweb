@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.540586,
+    "lon" : -0.096252109,
+    "id" : "ESSEXRD",
+    "name" : "Essex Road",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.521453,
+    "lon" : -0.08981395,
+    "id" : "OLDST",
+    "name" : "Old Street",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "0-35"
+} ]

@@ -1,0 +1,39 @@
+[ {
+  "from" : {
+    "lat" : 51.518944,
+    "lon" : -0.080939088,
+    "id" : "LIVST",
+    "name" : "London Liverpool Street",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.7052,
+    "lon" : -0.6113,
+    "id" : "CHSM",
+    "name" : "Chesham Und",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "80 MINUTES"
+}, {
+  "from" : {
+    "lat" : 51.518944,
+    "lon" : -0.080939088,
+    "id" : "LIVST",
+    "name" : "London Liverpool Street",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.7052,
+    "lon" : -0.6113,
+    "id" : "CHSM",
+    "name" : "Chesham Und",
+    "type" : "Point"
+  },
+  "singleTrack" : "NA",
+  "electrification" : "NA",
+  "type" : "Unknown",
+  "speed" : "75 MINUTES"
+} ]

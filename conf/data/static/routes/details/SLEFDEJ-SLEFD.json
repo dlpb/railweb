@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.996091,
+    "lon" : -0.4170146,
+    "id" : "SLEFDEJ",
+    "name" : "Sleaford East Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.995422,
+    "lon" : -0.41003587,
+    "id" : "SLEFD",
+    "name" : "Sleaford",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

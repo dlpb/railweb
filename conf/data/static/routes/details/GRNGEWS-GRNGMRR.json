@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 56.00748,
+    "lon" : -3.7444343,
+    "id" : "GRNGEWS",
+    "name" : "Grangemouth Tdg (Ews)",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 56.005025,
+    "lon" : -3.7477077,
+    "id" : "GRNGMRR",
+    "name" : "Grangemouth Run Round",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

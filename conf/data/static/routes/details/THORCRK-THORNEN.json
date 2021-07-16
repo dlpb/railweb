@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.662431,
+    "lon" : -0.92395564,
+    "id" : "THORCRK",
+    "name" : "Creykes",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.616126,
+    "lon" : -0.97248039,
+    "id" : "THORNEN",
+    "name" : "Thorne North",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

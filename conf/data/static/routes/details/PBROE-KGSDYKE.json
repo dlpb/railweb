@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.566832,
+    "lon" : -0.24219346,
+    "id" : "PBROE",
+    "name" : "Peterborough East Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.557185,
+    "lon" : -0.16640073,
+    "id" : "KGSDYKE",
+    "name" : "Kings Dyke",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

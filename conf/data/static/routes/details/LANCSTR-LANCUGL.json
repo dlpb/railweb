@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.048871,
+    "lon" : -2.8076742,
+    "id" : "LANCSTR",
+    "name" : "Lancaster",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.044357,
+    "lon" : -2.8065939,
+    "id" : "LANCUGL",
+    "name" : "Lancaster South Jn Ugl",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

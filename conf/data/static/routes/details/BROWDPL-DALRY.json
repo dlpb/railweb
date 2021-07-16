@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 55.720472,
+    "lon" : -4.7006174,
+    "id" : "BROWDPL",
+    "name" : "Brownhill D.P.L.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 55.706192,
+    "lon" : -4.7110777,
+    "id" : "DALRY",
+    "name" : "Dalry",
+    "type" : "Station"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.562232,
+    "lon" : -0.056234862,
+    "id" : "CLAPTON",
+    "name" : "Clapton",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.548445,
+    "lon" : -0.060514918,
+    "id" : "HAKNYNM",
+    "name" : "Hackney Downs",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

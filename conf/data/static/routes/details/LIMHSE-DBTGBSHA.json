@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.512658,
+    "lon" : -0.039624643,
+    "id" : "LIMHSE",
+    "name" : "Limehouse",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.51163,
+    "lon" : -0.05625,
+    "id" : "DBTGBSHA",
+    "name" : "Shadwell",
+    "type" : "Light Rail"
+  },
+  "singleTrack" : "METRO",
+  "electrification" : "N",
+  "type" : "Unknown",
+  "speed" : "OHLE"
+} ]

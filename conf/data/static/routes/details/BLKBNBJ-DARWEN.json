@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.741452,
+    "lon" : -2.4863723,
+    "id" : "BLKBNBJ",
+    "name" : "Blackburn Bolton Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.697813,
+    "lon" : -2.4641799,
+    "id" : "DARWEN",
+    "name" : "Darwen",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

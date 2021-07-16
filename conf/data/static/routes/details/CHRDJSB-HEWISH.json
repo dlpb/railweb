@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.838353,
+    "lon" : -2.9387457,
+    "id" : "CHRDJSB",
+    "name" : "Chard Jn. S.B",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 50.871235,
+    "lon" : -2.8250722,
+    "id" : "HEWISH",
+    "name" : "Hewish",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

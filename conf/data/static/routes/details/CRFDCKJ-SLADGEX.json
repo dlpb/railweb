@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.462806,
+    "lon" : 0.19460076,
+    "id" : "CRFDCKJ",
+    "name" : "Crayford Creek Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.466286,
+    "lon" : 0.19174419,
+    "id" : "SLADGEX",
+    "name" : "Slade Green Country Exit",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

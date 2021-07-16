@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.57565,
+    "lon" : 0.02864,
+    "id" : "LUCWAN",
+    "name" : "Wanstead",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.57618,
+    "lon" : 0.04542,
+    "id" : "LUCRED",
+    "name" : "Redbridge",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "40-75"
+} ]

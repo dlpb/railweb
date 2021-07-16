@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.901957,
+    "lon" : 0.8862229,
+    "id" : "CLCHGL",
+    "name" : "Colchester Goods Loop",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.894824,
+    "lon" : 0.83785364,
+    "id" : "CHITSHL",
+    "name" : "Chitts Hill",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

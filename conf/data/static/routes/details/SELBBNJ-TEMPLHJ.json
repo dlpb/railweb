@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.761557,
+    "lon" : -1.0736023,
+    "id" : "SELBBNJ",
+    "name" : "Barlby North Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.710525,
+    "lon" : -1.0905864,
+    "id" : "TEMPLHJ",
+    "name" : "Temple Hirst Jn.",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

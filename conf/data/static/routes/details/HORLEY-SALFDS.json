@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.168116,
+    "lon" : -0.1610082,
+    "id" : "HORLEY",
+    "name" : "Horley",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.201382,
+    "lon" : -0.16217446,
+    "id" : "SALFDS",
+    "name" : "Salfords",
+    "type" : "Station"
+  },
+  "singleTrack" : "4",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

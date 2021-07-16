@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 54.149178,
+    "lon" : -2.3020618,
+    "id" : "HTNRIBL",
+    "name" : "Horton-In-Ribblesdale",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 54.205637,
+    "lon" : -2.3608233,
+    "id" : "RIBLHED",
+    "name" : "Ribblehead",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

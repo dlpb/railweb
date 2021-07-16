@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.5916,
+    "lon" : -1.829,
+    "id" : "HWTVH",
+    "name" : "Taw Valley Halt",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 51.60702,
+    "lon" : -1.84362,
+    "id" : "HWBLU",
+    "name" : "Blunsdon",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

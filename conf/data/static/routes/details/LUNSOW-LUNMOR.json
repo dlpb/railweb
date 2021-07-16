@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.41543048,
+    "lon" : -0.192262754,
+    "id" : "LUNSOW",
+    "name" : "South Wimbledon",
+    "type" : "Underground"
+  },
+  "to" : {
+    "lat" : 51.40222413,
+    "lon" : -0.194599126,
+    "id" : "LUNMOR",
+    "name" : "Morden",
+    "type" : "Underground"
+  },
+  "singleTrack" : "N",
+  "electrification" : "DC",
+  "type" : "Underground",
+  "speed" : "0-35"
+} ]

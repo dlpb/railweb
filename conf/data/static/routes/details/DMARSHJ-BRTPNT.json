@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 53.219411,
+    "lon" : -3.0306978,
+    "id" : "DMARSHJ",
+    "name" : "Dee Marsh Jn.",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 53.263415,
+    "lon" : -3.0459538,
+    "id" : "BRTPNT",
+    "name" : "Burton Point",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

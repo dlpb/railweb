@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.089288,
+    "lon" : 0.16956667,
+    "id" : "DUXFORD",
+    "name" : "Duxford",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.103334,
+    "lon" : 0.16566327,
+    "id" : "WTLESFD",
+    "name" : "Whittlesford Parkway",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

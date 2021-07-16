@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.549403,
+    "lon" : 0.46557535,
+    "id" : "FOBBING",
+    "name" : "Fobbing Crossing",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.51395,
+    "lon" : 0.42294183,
+    "id" : "SLEHOPE",
+    "name" : "Stanford-Le-Hope",
+    "type" : "Station"
+  },
+  "singleTrack" : "2",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

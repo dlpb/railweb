@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.710522,
+    "lon" : -4.0538791,
+    "id" : "HENDYJ",
+    "name" : "Hendy Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.698736,
+    "lon" : -4.0691189,
+    "id" : "MORLASJ",
+    "name" : "Morlais Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "",
+  "type" : "NR",
+  "speed" : "40-75"
+} ]

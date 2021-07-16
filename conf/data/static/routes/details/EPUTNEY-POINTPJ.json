@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.458959,
+    "lon" : -0.21090875,
+    "id" : "EPUTNEY",
+    "name" : "East Putney",
+    "type" : "Location"
+  },
+  "to" : {
+    "lat" : 51.460532,
+    "lon" : -0.19734446,
+    "id" : "POINTPJ",
+    "name" : "Point Pleasant Jn",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

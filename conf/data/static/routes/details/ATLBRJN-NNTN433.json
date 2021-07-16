@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.508318,
+    "lon" : -1.4464585,
+    "id" : "ATLBRJN",
+    "name" : "Attleborough Jn",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 52.521537,
+    "lon" : -1.4569776,
+    "id" : "NNTN433",
+    "name" : "Nuneaton Sig Rn5433",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

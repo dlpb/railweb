@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.738896,
+    "lon" : 0.47766154,
+    "id" : "CHLMDGL",
+    "name" : "Chelmsford D.G.L",
+    "type" : "Point"
+  },
+  "to" : {
+    "lat" : 51.736668,
+    "lon" : 0.46896491,
+    "id" : "CHLMSFD",
+    "name" : "Chelmsford",
+    "type" : "Station"
+  },
+  "singleTrack" : "1",
+  "electrification" : "OHLE",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]

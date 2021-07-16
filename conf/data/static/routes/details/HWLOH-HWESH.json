@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 52.704722,
+    "lon" : -4.058056,
+    "id" : "HWLOH",
+    "name" : "Loop Halt",
+    "type" : "Heritage"
+  },
+  "to" : {
+    "lat" : 52.712222,
+    "lon" : -4.051944,
+    "id" : "HWESH",
+    "name" : "Estuary Halt",
+    "type" : "Heritage"
+  },
+  "singleTrack" : "Y",
+  "electrification" : "NONE",
+  "type" : "Heritage",
+  "speed" : "0-35"
+} ]

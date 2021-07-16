@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 50.757939,
+    "lon" : -1.5294647,
+    "id" : "LMTNPIR",
+    "name" : "Lymington Pier",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 50.70625,
+    "lon" : -1.4972544,
+    "id" : "YMTHIOW",
+    "name" : "Yarmouth Iow",
+    "type" : "Point"
+  },
+  "singleTrack" : "",
+  "electrification" : "",
+  "type" : "Unknown",
+  "speed" : ""
+} ]

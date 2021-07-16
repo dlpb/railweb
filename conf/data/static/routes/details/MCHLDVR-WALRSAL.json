@@ -1,0 +1,20 @@
+[ {
+  "from" : {
+    "lat" : 51.182551,
+    "lon" : -1.2603747,
+    "id" : "MCHLDVR",
+    "name" : "Micheldever",
+    "type" : "Station"
+  },
+  "to" : {
+    "lat" : 51.148263,
+    "lon" : -1.2817815,
+    "id" : "WALRSAL",
+    "name" : "Wallers Ash Loop",
+    "type" : "Point"
+  },
+  "singleTrack" : "2",
+  "electrification" : "DC",
+  "type" : "NR",
+  "speed" : "80-105"
+} ]
